@@ -1,0 +1,28 @@
+<div class="embed-sc-container">
+    <iframe width="100%" height="125px" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/embracingdigital/{{ include.id }}&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+        <a href="https://soundcloud.com/embracingdigital" title="Intel Embracing Digital Transformation" target="_blank"
+           style="color: #cccccc; text-decoration: none;">Intel Embracing Digital Transformation</a> · <a
+            href="https://soundcloud.com/embracingdigital/{{ include.id }}"
+            title="{{ include.title }}"
+            target="_blank" style="color: #cccccc; text-decoration: none;">{{ include.title }}</a></div>
+</div>
+<style>
+    .embed-sc-container {
+        position: relative;
+        padding-bottom: 20%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+    }
+    .embed-sc-container iframe,
+    .embed-sc-container object,
+    .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 125px;
+    }
+</style>

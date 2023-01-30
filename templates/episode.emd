@@ -1,0 +1,37 @@
+---
+layout: posts
+title: "<%- episode.title %>"
+number: <%- episode.number %>
+permalink: episode-EDT<%- episode.number %>
+has_children: false
+parent: Episodes
+nav_order: <%- episode.number %>
+tags:
+<% for(let i in episode.tags) {
+-%>
+    - <%- episode.tags[i].name %>
+<% } %>
+date: <%- episode.releaseDate %>
+guests:
+<% for(let i in episode.guests) {
+-%>
+    - <%= episode.guests[i].name %>
+<% } %>
+img: <%- thumbnail %>
+summary: "<%- episode.summary %>"
+---
+
+{% include soundcloud.html id="edt<%- episode.number %>" title="#<%- episode.number %> <%- episode.title %>" %}
+
+{% include youtube.html id="<%- episode.youtubeTag %>" %}
+
+---
+
+<%- episode.content %>
+
+<details>
+<summary> Podcast Transcript </summary>
+
+<%- episode.transcript %>
+
+</details>

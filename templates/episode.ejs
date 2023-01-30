@@ -1,0 +1,97 @@
+<html>
+<head>
+</head>
+<body>
+<style>
+    body {
+        font-family: "IntelOne Text";
+        font-size: 9pt;
+    }
+
+    #meat {
+        float: left;
+    }
+    #title {
+        font-size: 30pt;
+        margin-top: 10pt;
+        margin-bottom: 10pt;
+    }
+    #headerImage {
+        float: right;
+    }
+    #author {
+        font-family: "IntelOne Text";
+    }
+
+    #headerTitle {
+        font-family: "IntelOne Display Light";
+        font-size: 10pt;
+        color: #1E83C9;
+        clear: none;
+    }
+    #summary {
+        float: left;
+        width: 200px;
+        padding-right: 30px;
+        padding-left: 15px;
+    }
+    h2 {
+       color: #1E83C9;
+        font-size: 12pt;
+    }
+    h3 {
+        color: #1E83C9;
+        font-size: 10pt;
+    }
+    #body {
+        column-gap: 30pt;
+    }
+
+    #footer {
+        font-size: 6pt;
+        padding-top: 15pt;
+    }
+</style>
+
+<div id="header">
+    <div id="headerImage">
+        <img src="./IntelLogoElectric.png" width="100" height="40">
+    </div>
+    <div id="headerTitle">
+        <h1 style="font-size:20pt;">Podcast Episode</h1>
+        <p>Public Sector<br>
+            Embracing Digital Transformation</p>
+        <h1 id="title"><%= episode.title %></h1>
+        <p id="author">by <%= guests.join(', ') %> - <%= episode.releaseDate %></p>
+        <hr>
+        <h2 id="tagline"><%= episode.tagline %></h2>
+    </div>
+</div>
+
+<div id="meat">
+    <div id="summary">
+        <p><%= episode.summary %><br>
+            <br>
+            <img src="<%= episode.thumbnail %>" width="200" height="200"><br>
+            <br>
+            <b>Video</b>: <a href="<%= episode.youtubeURL %>">Youtube Channel</a><br>
+            <b>Podcast</b>: <a href="<%= episode.soundcloudURL %>">SoundCloud</a><br>
+            <b>Keywords:</b> <%= tags.join(', ') %> <br>
+        </p>
+    </div>
+    <div id="body">
+            <%- episode.content %>
+    </div>
+</div>
+<br>
+<div id="footer">
+    <img src="./IntelLogoElectric.png" width="100" height="40"> <br>
+Intel® technologies may require enabled hardware, software, or service activation.<br>
+No product or component can be absolutely secure.<br>
+Your costs and results may vary.<br>
+Intel does not control or audit third-party data. You should consult other sources to evaluate accuracy.<br>
+© 2023 Intel Corporation<br>
+</div>
+</body>
+</html>
+
