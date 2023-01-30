@@ -1,0 +1,60 @@
+---
+layout: default
+title: {{ page.title }}
+parent: Guests
+tags:
+    - {{ page.tags | join: ',\n\t-' }}
+---
+
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+<h1>{{ page.title }}</h1>
+
+{{ content }}
+
+<h2>Topics</h2>
+{% assign rawtags = "" %}
+{% for spage in site.pages %}
+{% if spage.guests contains page.title %}
+{% assign ttags = spage.tags | join:'|' | append:'|' %}
+{% assign rawtags = rawtags | append:ttags %}
+{% endif %}
+{% endfor %}
+{% assign rawtags = rawtags | split:'|' | sort %}
+
+{% assign sortedTags = "" %}
+{% for tag in rawtags %}
+{% unless sortedTags contains tag %}
+{% assign sortedTags = sortedTags | join:'|' | append:'|' | append:tag | split:'|' %}
+{% endunless %}
+{% endfor %}
+
+{% for tag in sortedTags %}
+{% if tag != "" %}
+<a href="/tags/{{ tag }}">#{{ tag }}</a>
+{% endif %}
+{% endfor %}
+
+<h2>Episodes</h2>
+{% for spage in site.pages %}
+{% if spage.guests contains page.title %}
+<div style="display:flex;">
+    <p class="episode">
+    <img class="thumbnail" src="../{{ spage.path | remove: spage.name }}/{{ spage.img }}" width="128" height="128">
+    <a href="{{ spage.url }}">{{ spage.number}} - {{ spage.title }}</a><br>
+    {{ spage.summary }}
+    </p>
+</div>
+{% endif %}
+{% endfor %}
+
+<style>
+    .thumbnail {
+        float: left;
+        margin: 0 15px 0 0;
+    }
+    .episode {
+        margin: 10px 0;
+    }
+</style>
+
