@@ -25,7 +25,7 @@ Digital Transformation. Join the community by checking out the links below.
 <div style="display:flex;">
 <p class="episode">
     <img class="thumbnail" src="{{ page.path | remove: page.name }}/{{ page.img }}" width="128" height="128">
-    <a href="/EmbracingDigitalTransformation/{{ page.url }}">{{ page.number}} - {{ page.title }}</a><br>
+    <a href="/{{ page.url }}">{{ page.number}} - {{ page.title }}</a><br>
     {{ page.summary }}
 </p>
 </div>

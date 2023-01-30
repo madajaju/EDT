@@ -23,7 +23,7 @@ summary: "In this episode, Darren talks with Jason Dunn-Potter, solution archite
 
 {% include soundcloud.html id="edt119" title="#119 Moore's Law is not Dead!" %}
 
-{% include youtube.html id="url" %}
+{% include youtube.html id="4s90TQSpdKA" %}
 
 ---
 
