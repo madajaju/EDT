@@ -31,7 +31,7 @@ tags:
 
 {% for tag in sortedTags %}
 {% if tag != "" %}
-<a href="/EmbracingDigitalTransformation/tags/{{ tag }}">#{{ tag }}</a>
+<a href="/tags/{{ tag }}">#{{ tag }}</a>
 {% endif %}
 {% endfor %}
 
@@ -41,7 +41,7 @@ tags:
 <div style="display:flex;">
     <p class="episode">
     <img class="thumbnail" src="../{{ spage.path | remove: spage.name }}/{{ spage.img }}" width="128" height="128">
-    <a href="/EmbracingDigitalTransformation/{{ spage.url }}">{{ spage.number}} - {{ spage.title }}</a><br>
+    <a href="/{{ spage.url }}">{{ spage.number}} - {{ spage.title }}</a><br>
     {{ spage.summary }}
     </p>
 </div>
