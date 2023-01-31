@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: RemoteWork
+title: SharedResponsibility
 parent: Tags
 ---
 

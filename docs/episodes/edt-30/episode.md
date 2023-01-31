@@ -7,15 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 30
 tags:
-    - Artificial Intelligence
-    - AI
     - AIML
     - DevOps
     - OneAPI
     - AIOps
-    - Software Developer
-    - AI Developer
-    - Portable AI
+    - Developer
 
 date: 2020-11-17
 guests:

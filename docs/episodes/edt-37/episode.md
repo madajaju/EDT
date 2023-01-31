@@ -10,7 +10,7 @@ tags:
     - 2020
     - COVID
     - Cybersecurity
-    - Remote Worker
+    - RemoteWorker
     - Pandemic
 
 date: 2021-02-10

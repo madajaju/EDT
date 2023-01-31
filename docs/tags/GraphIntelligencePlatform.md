@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: RemoteWork
+title: GraphIntelligencePlatform
 parent: Tags
 ---
 

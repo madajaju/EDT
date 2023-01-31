@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: RemoteWork
+title: DataStrategy
 parent: Tags
 ---
 

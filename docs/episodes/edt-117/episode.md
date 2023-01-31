@@ -8,12 +8,12 @@ parent: Episodes
 nav_order: 117
 tags:
     - 2022
-    - Edge Computing
-    - AI
-    - Hybrid Workspace
-    - Multi-Cloud
+    - Edge
+    - AIML
+    - HybridWorkspace
+    - MultiCloud
     - Cybersecurity
-    - Data Management
+    - DataManagement
 
 date: 2023-01-05
 guests:

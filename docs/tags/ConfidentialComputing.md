@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: RemoteWork
+title: ConfidentialComputing
 parent: Tags
 ---
 

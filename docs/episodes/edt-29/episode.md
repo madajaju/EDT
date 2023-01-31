@@ -11,7 +11,7 @@ tags:
     - Database
     - Ingestion
     - Optane
-    - Temporal Database
+    - TemporalDatabase
 
 date: 2020-11-12
 guests:

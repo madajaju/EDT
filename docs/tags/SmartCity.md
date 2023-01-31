@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: RemoteWork
+title: SmartCity
 parent: Tags
 ---
 
