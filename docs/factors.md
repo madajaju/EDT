@@ -2,7 +2,6 @@
 layout: default
 title: Factors
 parent: About
-has_children: false
 ---
 
 # Factors
