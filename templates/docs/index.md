@@ -3,6 +3,7 @@ layout: default
 title: Overview
 nav_order: 1
 ---
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
 
 # Embracing Digital Transformation
 
@@ -17,6 +18,8 @@ Digital Transformation. Join the community by checking out the links below.
 <a href="https://www.linkedin.com/company/embracing-digital-transformation/">LinkedIn Group</a>,
 <a href="https://www.facebook.com/embracingdigital">Facebook </a>
 <a href="https://www.intel.com/content/www/us/en/government/embracing-digital-transformation-overview.html">Intel Blog Site</a>
+
+<!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
 
 <h1>Episodes</h1>
 {% assign sortedPages = site.pages | sort: 'nav_order' | reverse %}
