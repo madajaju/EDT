@@ -3,7 +3,7 @@ layout: default
 title: Factors
 parent: About
 has_children: false
-___
+---
 
 # Factors
 Darren Pulsipher, Chief Solution Architect for Public Sector at Intel, investigates effective change leveraging people, process, and technology.

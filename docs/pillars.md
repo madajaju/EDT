@@ -2,7 +2,8 @@
 layout: default
 title: Pillars
 parent: About
-___
+---
+
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
 
 # Pillars
