@@ -11,7 +11,7 @@ tags:
     - DevSecOps
     - SecDevOps
     - Cybersecurity
-    - Zero Trust
+    - ZeroTrust
 
 date: 2021-04-08
 guests:

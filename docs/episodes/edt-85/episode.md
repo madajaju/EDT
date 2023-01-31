@@ -7,7 +7,7 @@ has_children: false
 parent: Episodes
 nav_order: 85
 tags:
-    - Artificial Intelligence
+    - ArtificialIntelligence
     - Cybersecurity
     - DevOps
 

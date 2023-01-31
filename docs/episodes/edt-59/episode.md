@@ -8,10 +8,10 @@ parent: Episodes
 nav_order: 59
 tags:
     - Cybersecurity
-    - Data Management
-    - Data Privacy
+    - DataManagement
+    - DataPrivacy
     - Healthcare
-    - Sutter Health
+    - SutterHealth
 
 date: 2021-07-29
 guests:

@@ -7,14 +7,14 @@ has_children: false
 parent: Episodes
 nav_order: 4
 tags:
-    - Data Management
-    - Information Management
-    - Information Maturity
-    - Data Governance
-    - Data Warehouse
-    - Data Lake
-    - Data Mesh
-    - Data Lineage
+    - DataManagement
+    - InformationManagement
+    - InformationMaturity
+    - DataGovernance
+    - DataWarehouse
+    - DataLake
+    - DataMesh
+    - DataLineage
 
 date: 2020-06-30
 guests:

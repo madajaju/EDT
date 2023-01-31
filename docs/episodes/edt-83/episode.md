@@ -7,8 +7,8 @@ has_children: false
 parent: Episodes
 nav_order: 83
 tags:
-    - Data Context
-    - Digital Transformation
+    - DataContext
+    - DigitalTransformation
     - IDC2022
 
 date: 20220-04-08

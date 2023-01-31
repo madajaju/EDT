@@ -7,8 +7,8 @@ has_children: false
 parent: Episodes
 nav_order: 95
 tags:
-    - Data Management
-    - Edge Computing
+    - DataManagement
+    - EdgeComputing
     - Cybersecurity
     - Edge
 

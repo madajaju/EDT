@@ -7,7 +7,7 @@ has_children: false
 parent: Episodes
 nav_order: 3
 tags:
-    - Multi-Cloud
+    - MultiCloud
 
 date: 2020-06-23
 guests:

@@ -8,7 +8,7 @@ parent: Episodes
 nav_order: 55
 tags:
     - Communication
-    - Organizational Change
+    - OrganizationalChange
     - HSBC
     - CIO
 

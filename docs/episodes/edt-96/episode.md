@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 96
 tags:
-    - Private Cloud
+    - PrivateCloud
     - SDI
-    - Virtual Datacenter
+    - VirtualDatacenter
     - Verge.io
 
 date: 2022-07-21

@@ -9,7 +9,7 @@ nav_order: 47
 tags:
     - 2021
     - COVID
-    - Remote Worker
+    - RemoteWorker
 
 date: 2021-04-22
 guests:

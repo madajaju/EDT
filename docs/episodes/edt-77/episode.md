@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 77
 tags:
-    - Artificial Intelligence
+    - ArtificialIntelligence
     - Comms
-    - Data Management
+    - DataManagement
     - Edge
-    - Multi-Cloud
+    - MultiCloud
     - Cybersecurity
 
 date: 2022-02-17

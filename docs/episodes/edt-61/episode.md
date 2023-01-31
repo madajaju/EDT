@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 61
 tags:
-    - Data Breach
+    - DataBreach
     - Cybersecurity
-    - Supply Chain
-    - Secure Supply Chain
+    - SupplyChain
+    - SecureSupplyChain
 
 date: 2021-08-12
 guests:

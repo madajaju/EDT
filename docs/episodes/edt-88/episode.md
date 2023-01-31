@@ -10,7 +10,7 @@ tags:
     - Cybersecurity
     - DevSecOps
     - RPA
-    - Zero-Trust
+    - ZeroTrust
     - ZTA
 
 date: 2022-05-24

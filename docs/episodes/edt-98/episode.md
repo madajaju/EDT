@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 98
 tags:
-    - Data Architecture
-    -  Data Management
-    - Global Data Network
+    - DataArchitecture
+    - DataManagement
+    - GlobalDataNetwork
     - MacroMeta
-    - Multi-Cloud
+    - MultiCloud
 
 date: 2022-08-04
 guests:

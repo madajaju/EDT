@@ -8,8 +8,8 @@ parent: Episodes
 nav_order: 86
 tags:
     - CTO
-    - Digital Transformation
-    - Organizational Change
+    - DigitalTransformation
+    - OrganizationalChange
 
 date: 2022-05-12
 guests:

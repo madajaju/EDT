@@ -8,9 +8,9 @@ parent: Episodes
 nav_order: 33
 tags:
     - AWS
-    - Cloud Outage
-    - Cloud Reliability
-    - Multi-Cloud
+    - CloudOutage
+    - CloudReliability
+    - MultiCloud
     - Reliability
 
 date: 2020-12-15

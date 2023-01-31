@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 94
 tags:
-    - Hybrid Cloud
-    - Micro Cloud
-    - Private Cloud
+    - HybridCloud
+    - MicroCloud
+    - PrivateCloud
     - Cloud
     - Verge.io
 

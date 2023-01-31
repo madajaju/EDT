@@ -9,7 +9,7 @@ nav_order: 68
 tags:
     - 5G
     - DOD
-    - Edge Compute
+    - EdgeCompute
     - Edge
     - Comms
 

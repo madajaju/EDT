@@ -9,7 +9,7 @@ nav_order: 67
 tags:
     - 5G
     - Comms
-    - WiFi 6
+    - WiFi6
 
 date: 2021-10-21
 guests:

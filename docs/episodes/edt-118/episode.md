@@ -9,10 +9,10 @@ nav_order: 118
 tags:
     - 2023
     - Cybersecurity
-    - Edge Computing
+    - EdgeComputing
     - Automation
     - Web3.0
-    - Data Management
+    - DataManagement
     - Cloud
 
 date: 2023-01-19

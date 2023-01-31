@@ -9,7 +9,7 @@ nav_order: 115
 tags:
     - ZTA
     - ZeroTrust
-    - Cyber Hygiene
+    - CyberHygiene
     - Cybersecurity
 
 date: 2022-12-01

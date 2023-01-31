@@ -8,7 +8,7 @@ parent: Episodes
 nav_order: 69
 tags:
     - Cybersecurity
-    - Edge Computing
+    - EdgeComputing
     - Security
 
 date: 2021-11-11

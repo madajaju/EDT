@@ -7,7 +7,7 @@ has_children: false
 parent: Episodes
 nav_order: 113
 tags:
-    - Business Process Management
+    - BusinessProcessManagement
     - Automation
     - Camunda
     - CapitalBPM

@@ -10,7 +10,7 @@ tags:
     - CPU
     - FPGA
     - GPU
-    - Heterogeneous Programming
+    - HeterogeneousProgramming
     - NPU
     - OneAPI
 

@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 27
 tags:
-    - Data Governance
-    - Data Management
-    - Data Protection
+    - DataGovernance
+    - DataManagement
+    - DataProtection
     - SGX
-    - Confidential Computing
-    - Secure Enclave
+    - ConfidentialComputing
+    - SecureEnclave
 
 date: 2020-10-28
 guests:

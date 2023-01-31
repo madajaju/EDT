@@ -7,7 +7,7 @@ has_children: false
 parent: Episodes
 nav_order: 66
 tags:
-    - Data Management
+    - DataManagement
     - DevOps
     - DevSecOps
     - Aiven

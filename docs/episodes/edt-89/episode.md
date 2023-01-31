@@ -7,7 +7,7 @@ has_children: false
 parent: Episodes
 nav_order: 89
 tags:
-    - Big Memory
+    - BigMemory
     - MemVerge
     - Optane
     - PMEM

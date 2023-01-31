@@ -7,7 +7,7 @@ has_children: false
 parent: Episodes
 nav_order: 87
 tags:
-    - Confidential Computing
+    - ConfidentialComputing
     - DevOps
     - DevSecOps
     - Cybersecurity

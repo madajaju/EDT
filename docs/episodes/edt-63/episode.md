@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 63
 tags:
-    - Organizational Change
+    - OrganizationalChange
     - COVID
     - CIO
-    - State of California
+    - StateofCalifornia
 
 date: 2021-08-26
 guests:

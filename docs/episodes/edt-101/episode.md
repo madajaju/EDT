@@ -7,7 +7,7 @@ has_children: false
 parent: Episodes
 nav_order: 101
 tags:
-    - Network Security
+    - NetworkSecurity
     - Cybersecurity
     - Elisity
 

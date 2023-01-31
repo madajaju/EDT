@@ -10,7 +10,7 @@ tags:
     - Data
     - Optane
     - Storage
-    - Vast Data
+    - VastData
 
 date: 2020-09-09
 guests:

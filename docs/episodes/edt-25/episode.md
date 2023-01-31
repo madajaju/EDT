@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 25
 tags:
-    - Data Architecture
-    - Data-centric
-    - Data Management
+    - DataArchitecture
+    - Datacentric
+    - DataManagement
     - DataOps
-    - Data Pipeline
+    - DataPipeline
 
 date: 2020-10-14
 guests:

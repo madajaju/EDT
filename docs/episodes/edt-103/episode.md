@@ -10,7 +10,7 @@ tags:
     - AIOps
     - DevOps
     - DevSecOps
-    - Artificial Intelligence
+    - ArtificialIntelligence
 
 date: 2022-08-30
 guests:

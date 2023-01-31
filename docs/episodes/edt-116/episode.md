@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 116
 tags:
-    - Critical Infrastructure
+    - CriticalInfrastructure
     - IoT
-    - IT/OT Convergence
-    - OT Security
+    - IT/OTConvergence
+    - OTSecurity
     - Cybersecurity
 
 date: 2022-12-15

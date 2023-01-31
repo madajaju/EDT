@@ -8,9 +8,9 @@ parent: Episodes
 nav_order: 62
 tags:
     - Edge
-    - Edge Computing
+    - EdgeComputing
     - 5G
-    - Artificial Intelligence
+    - ArtificialIntelligence
     - IoT
 
 date: 2021-08-19

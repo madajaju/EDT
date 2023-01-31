@@ -7,8 +7,8 @@ has_children: false
 parent: Episodes
 nav_order: 24
 tags:
-    - Data Management
-    - Data Architecture
+    - DataManagement
+    - DataArchitecture
     - AIOps
     - SecOps
     - DevOps

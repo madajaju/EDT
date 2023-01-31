@@ -9,7 +9,7 @@ nav_order: 34
 tags:
     - COVID
     - MFA
-    - Remote Worker
+    - RemoteWorker
     - VDI
     - VPN
 

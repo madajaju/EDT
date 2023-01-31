@@ -7,7 +7,7 @@ has_children: false
 parent: Episodes
 nav_order: 99
 tags:
-    - Artificial Intelligence
+    - ArtificialIntelligence
     - Cybersecurity
     - XMCyber
 

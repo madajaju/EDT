@@ -8,10 +8,10 @@ parent: Episodes
 nav_order: 23
 tags:
     - AIML
-    - Artificial Intelligence
-    - Data Architecture
-    - Data-centric
-    - Data Management
+    - ArtificialIntelligence
+    - DataArchitecture
+    - Datacentric
+    - DataManagement
     - Insight
 
 date: 2020-09-30

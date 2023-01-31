@@ -8,8 +8,8 @@ parent: Episodes
 nav_order: 35
 tags:
     - Change
-    - Cultural Change
-    - Organizational Change
+    - CulturalChange
+    - OrganizationalChange
     - Disruption
 
 date: 2021-01-13

@@ -7,8 +7,8 @@ has_children: false
 parent: Episodes
 nav_order: 54
 tags:
-    - Multi-Cloud
-    - Organizational Change
+    - MultiCloud
+    - OrganizationalChange
     - HSBC
     - CIO
 

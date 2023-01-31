@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 50
 tags:
-    - Employee Burnout
-    - Remote Learning
-    - Remote Worker
+    - EmployeeBurnout
+    - RemoteLearning
+    - RemoteWorker
 
 date: 2021-05-26
 guests:

@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 48
 tags:
-    - Data Architecture
-    - Data Management
+    - DataArchitecture
+    - DataManagement
     - Optane
-    - VAST Data
+    - VASTData
 
 date: 2021-04-29
 guests:

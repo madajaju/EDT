@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 52
 tags:
-    - Multi-Cloud
+    - MultiCloud
     - Optimization
-    - Workload Placement
+    - WorkloadPlacement
 
 date: 2021-06-08
 guests:

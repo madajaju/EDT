@@ -8,9 +8,9 @@ parent: Episodes
 nav_order: 100
 tags:
     - Cybersecurity
-    - Multi-Cloud
+    - MultiCloud
     - Edge
-    - Artificial Intelligence
+    - ArtificialIntelligence
 
 date: 2022-08-18
 guests:

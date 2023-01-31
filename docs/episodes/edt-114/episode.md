@@ -7,7 +7,7 @@ has_children: false
 parent: Episodes
 nav_order: 114
 tags:
-    - Business Process Management
+    - BusinessProcessManagement
     - CapitalBPM
     - BPM
     - Automation

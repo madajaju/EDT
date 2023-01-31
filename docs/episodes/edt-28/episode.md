@@ -8,7 +8,7 @@ parent: Episodes
 nav_order: 28
 tags:
     - RPA
-    - Business Automation
+    - BusinessAutomation
 
 date: 2020-11-06
 guests:

@@ -9,7 +9,7 @@ nav_order: 53
 tags:
     - DevOps
     - DevSecOps
-    - Multi-Cloud
+    - MultiCloud
 
 date: 2021-06-15
 guests:

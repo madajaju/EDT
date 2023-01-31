@@ -9,9 +9,9 @@ nav_order: 39
 tags:
     - Collaboration
     - COVID
-    - Organizational Change
-    - Remote Worker
-    - Video Conferencing
+    - OrganizationalChange
+    - RemoteWorker
+    - VideoConferencing
     - SignalWire
 
 date: 2021-02-18

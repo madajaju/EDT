@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 102
 tags:
-    - Micro-segmentation
-    - OT Security
-    - Identity-based Networking
+    - Microsegmentation
+    - OTSecurity
+    - IdentitybasedNetworking
     - Cybersecurity
     - SDN
-    - Software Defined Networking
+    - SoftwareDefinedNetworking
 
 date: 2022-08-25
 guests:

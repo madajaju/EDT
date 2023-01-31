@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 76
 tags:
-    - Cloud Solution Architect
+    - CloudSolutionArchitect
     - CSA
-    - Multi-Cloud
+    - MultiCloud
 
 date: 2022-02-10
 guests:

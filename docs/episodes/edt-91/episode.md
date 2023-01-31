@@ -10,7 +10,7 @@ tags:
     - Cybersecurity
     - DevSecOps
     - SBOM
-    - Secure Supply Chain
+    - SecureSupplyChain
 
 date: 2022-06-09
 guests:

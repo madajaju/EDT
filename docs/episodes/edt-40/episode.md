@@ -7,8 +7,8 @@ has_children: false
 parent: Episodes
 nav_order: 40
 tags:
-    - Confidential Computing
-    - Distributed Analytics
+    - ConfidentialComputing
+    - DistributedAnalytics
     - SGX
     - Healthcare
 

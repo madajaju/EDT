@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 65
 tags:
-    - Cloud Migration
-    - Multi-Cloud
+    - CloudMigration
+    - MultiCloud
     - Aiven
-    - Cloud Cost
-    - Cloud Complexity
+    - CloudCost
+    - CloudComplexity
 
 date: 2021-10-07
 guests:

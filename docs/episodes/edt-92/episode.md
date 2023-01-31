@@ -8,9 +8,9 @@ parent: Episodes
 nav_order: 92
 tags:
     - Cybersecurity
-    - End Point Management
+    - EndPointManagement
     - Vulnerability
-    - Cyber attack
+    - Cyberattack
     - IoT
     - Censys
 

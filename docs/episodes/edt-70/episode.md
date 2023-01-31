@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 70
 tags:
-    - Data Governance
+    - DataGovernance
     - Immuta
     - Cybersecurity
-    - Data Management
+    - DataManagement
 
 date: 2021-11-25
 guests:

@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 5
 tags:
-    - Infrastructure Maturity
+    - InfrastructureMaturity
     - SDI
     - Cloud
-    - Multi-Cloud
+    - MultiCloud
 
 date: 2020-07-24
 guests:

@@ -8,9 +8,9 @@ parent: Episodes
 nav_order: 43
 tags:
     - CIO
-    - Cloud Adoption
+    - CloudAdoption
     - CSP
-    - Multi-Cloud
+    - MultiCloud
 
 date: 2021-03-18
 guests:

@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 111
 tags:
-    - Smart City
+    - SmartCity
     - IoT
-    - Digital Signage
-    - Financial Resilience
+    - DigitalSignage
+    - FinancialResilience
 
 date: 
 guests:

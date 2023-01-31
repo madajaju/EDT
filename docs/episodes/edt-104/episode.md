@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 104
 tags:
-    - Data Management
-    - Information-driven
-    - Organizational Change
-    - Radius Advisory Group
+    - DataManagement
+    - Informationdriven
+    - OrganizationalChange
+    - RadiusAdvisoryGroup
     - CEO
 
 date: 2022-09-08

@@ -7,8 +7,8 @@ has_children: false
 parent: Episodes
 nav_order: 21
 tags:
-    - Big Memory
-    - Memory Controller
+    - BigMemory
+    - MemoryController
     - MemVerge
     - Optane
     - PMEM

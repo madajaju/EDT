@@ -8,8 +8,8 @@ parent: Episodes
 nav_order: 93
 tags:
     - Cybersecurity
-    - Artificial Intelligence
-    - Multi-Cloud
+    - ArtificialIntelligence
+    - MultiCloud
     - Comms
 
 date: 2022-06-24

@@ -8,8 +8,8 @@ parent: Episodes
 nav_order: 108
 tags:
     - 5G
-    - Advanced Communication
-    - Cell Phone
+    - AdvancedCommunication
+    - CellPhone
     - Comms
     - WiFi6
 

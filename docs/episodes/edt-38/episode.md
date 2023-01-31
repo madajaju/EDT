@@ -9,8 +9,8 @@ nav_order: 38
 tags:
     - Contactless
     - COVID
-    - Remote Learning
-    - Remote Work
+    - RemoteLearning
+    - RemoteWork
 
 date: 2021-02-11
 guests:

@@ -9,8 +9,8 @@ nav_order: 36
 tags:
     - Cybersecurity
     - Prevention
-    - Threat Detection
-    - Zero Trust Architecture
+    - ThreatDetection
+    - ZeroTrustArchitecture
     - ZTA
 
 date: 2021-01-21

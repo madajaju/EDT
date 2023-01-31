@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 78
 tags:
-    - Multi-Cloud
+    - MultiCloud
     - Cybersecurity
-    - Shared Responsibility
-    - Cloud Security
+    - SharedResponsibility
+    - CloudSecurity
 
 date: 2022-02-24
 guests:

@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 19
 tags:
-    - Data Architecture
-    - Data Management
-    - Data Strategy
+    - DataArchitecture
+    - DataManagement
+    - DataStrategy
 
 date: 2020-09-08
 guests:

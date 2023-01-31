@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 56
 tags:
-    - Cloud Broker
-    - Multi-Cloud
-    - Organizational Change
+    - CloudBroker
+    - MultiCloud
+    - OrganizationalChange
 
 date: 2021-07-08
 guests:

@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 71
 tags:
-    - Data Governance
-    - Data Management
+    - DataGovernance
+    - DataManagement
     - Immuta
-    - Data Access
-    - Identity Management
+    - DataAccess
+    - IdentityManagement
     - CEO
 
 date: 2021-12-02

@@ -8,9 +8,9 @@ parent: Episodes
 nav_order: 79
 tags:
     - COVID
-    - Remote Worker
-    - Mobile Mentor
-    - Gen Z
+    - RemoteWorker
+    - MobileMentor
+    - GenZ
 
 date: 2022-03-10
 guests:

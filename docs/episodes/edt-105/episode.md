@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 105
 tags:
-    - Change Agent
-    - Radius AG
-    - Organizational Change
-    - Information-driven
+    - ChangeAgent
+    - RadiusAG
+    - OrganizationalChange
+    - Informationdriven
     - Leadership
 
 date: 2022-09-13

@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 110
 tags:
-    - Secure Supply Chain
+    - SecureSupplyChain
     - Cybersecurity
-    - Supply Chain
-    - CHIPS Act
+    - SupplyChain
+    - CHIPSAct
 
 date: 2022-10-20
 guests:

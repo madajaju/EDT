@@ -9,7 +9,7 @@ nav_order: 73
 tags:
     - 2021
     - COVID
-    - Edge Computing
+    - EdgeComputing
     - Security
 
 date: 2022-01-20

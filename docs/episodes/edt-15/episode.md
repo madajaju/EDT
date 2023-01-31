@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 15
 tags:
-    - Data Management
-    - Organizational Management
-    - Data-centric Organization
-    - Organizational Change
+    - DataManagement
+    - OrganizationalManagement
+    - DatacentricOrganization
+    - OrganizationalChange
 
 date: 2020-08-21
 guests:

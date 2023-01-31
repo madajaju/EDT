@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 107
 tags:
-    - Critical Infrastructure
+    - CriticalInfrastructure
     - HOTMS
     - irdeto
-    - OT Security
+    - OTSecurity
     - Cybersecurity
 
 date: 2022-09-20

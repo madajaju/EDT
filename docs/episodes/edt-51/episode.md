@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 51
 tags:
-    - Data Architecture
+    - DataArchitecture
     - MemVerge
-    - Persistent Memory
+    - PersistentMemory
     - PMEM
     - Optane
 

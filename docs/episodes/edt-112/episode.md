@@ -9,8 +9,8 @@ nav_order: 112
 tags:
     - EDT112
     - EmbracingDigital
-    - Multi-Cloud
-    - Cloud Migration
+    - MultiCloud
+    - CloudMigration
     - Cloud
 
 date: 2022-11-15

@@ -8,7 +8,7 @@ parent: Episodes
 nav_order: 109
 tags:
     - 5G
-    - Advanced Communications
+    - AdvancedCommunications
     - Comms
     - WiFi6
 

@@ -9,7 +9,7 @@ nav_order: 60
 tags:
     - Cybersecurity
     - Ransomware
-    - Risk Management
+    - RiskManagement
 
 date: 2021-08-05
 guests:

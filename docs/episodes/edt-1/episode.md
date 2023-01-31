@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 1
 tags:
-    - Data Architecture
-    - Software Developer
-    - Micro-service
+    - DataArchitecture
+    - SoftwareDeveloper
+    - Microservice
     - Containers
     - Virtualization
 
