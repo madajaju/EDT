@@ -5,6 +5,7 @@ parent: Guests
 tags:
     - {{ page.tags | join: ',\n\t-' }}
 ---
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
 
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
@@ -34,6 +35,8 @@ tags:
 <a href="/tags/{{ tag }}">#{{ tag }}</a>
 {% endif %}
 {% endfor %}
+
+<!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
 
 <h2>Episodes</h2>
 {% for spage in site.pages %}
