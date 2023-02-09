@@ -13,7 +13,7 @@ tags:
     - MicroCloud
     - EdgeCloud
 
-date: 
+date: 2023-02-02
 guests:
     - Darren W Pulsipher
     - Aaron Reid

@@ -13,7 +13,7 @@ tags:
     - DataArchitecture
     - EdgeComputing
 
-date: 
+date: 2023-01-26
 guests:
     - Darren W Pulsipher
     - Alan Evans
