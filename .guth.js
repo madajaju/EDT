@@ -648,6 +648,12 @@ module.exports = {
       "email": "tbd",
       "notes": null,
       "socials": {}
+    },
+    "Jim Richberg": {
+      "name": "Jim Richberg",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
     }
   },
   "blueprints": {}

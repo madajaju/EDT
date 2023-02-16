@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: automation
+title: ransomeware
 parent: Tags
 ---
 
