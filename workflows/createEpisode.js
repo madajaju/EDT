@@ -38,47 +38,33 @@ module.exports = {
     },
 
     fn: function (inputs, env) {
-
-        return obj;
+        let output = path.resolve(`${podcast.baseDirectory}/2003/EDT-${inputs.number}`);
+        let source = path.resolve( `${podcast.baseDirectory}`);
+        _generateEpisode(output, source, inputs);
+        return podcast;
     }
 };
 
-const _docDirectory = (output) => {
+const _generateEpisode = (output, source, inputs) => {
+    let guests = [];
+    if(inputs.guests) {
+       guests = inputs.guests.split(/,/);
+    }
+    guests.push("Darren W Pulsipher");
 
     let files = {
         context: {
+            name: inputs.title,
+            number: inputs.number,
+            summary: inputs.summary,
+            guests: guests,
         },
         targets: {
-            'docs': {foldercopy: 'templates/docs'},
+            'EDTBase.prproj': {copy: `${source}/Base/EDT-Base2023.prproj`},
+            'EDTShort.prproj': {copy: `${source}/Base/EDT-Short2023.prproj`},
+            '.episode.js': {template: `${source}/templates/.episode.ejs`},
+            'Production/episode.md': {template: `${source}/templates/_episode.emd`},
         }
     }
     Generator.process(files, output);
-}
-
-const _episodes = (episodes, output) => {
-
-    episodes.forEach( (episode) => {
-      // Check that the episode.md file is there and read it into the content variable.
-        let apath = path.resolve(`${episode.dir}/Production/epsiode.md`);
-        if(fs.exisist)
-      episode.conent = fs.readFileSync(episode.dir)
-    // Check the transcript file is there and read it into the transcript variable.
-        episode.transcript = fs.readFileSync(episode.dir)
-    let files = {
-        context: {
-
-        },
-        targets: {
-            'docs': {foldercopy: 'templates/docs'},
-        }
-    }
-    });
-}
-
-const _guests = (guests, output) => {
-
-}
-
-const _tags = (tag, output) => {
-
 }
