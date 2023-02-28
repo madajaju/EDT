@@ -18,7 +18,7 @@ date: 2023-02-16
 guests:
     - Darren W Pulsipher
 
-img: thumbnail.jpg
+img: thumbnail.png
 summary: "In this episode, Darren discusses leveraging the six cybersecurity domains to develop a Zero Trust Architecture to protect your resources, data, and critical infrastructure."
 ---
 
