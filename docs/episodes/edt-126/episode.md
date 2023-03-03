@@ -20,7 +20,7 @@ guests:
     - Darren W Pulsipher
     - Luuk Van Dijk
 
-img: TBD
+img: thumbnail.png
 summary: "In this episode, Luuk Van Dijk, CEO of Daedalean, talks with Darren about how his company has developed a technique to help governments certify AI-empowered autonomous flight in a highly regulated industry."
 ---
 
