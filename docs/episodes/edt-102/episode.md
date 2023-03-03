@@ -11,8 +11,10 @@ tags:
     - OTSecurity
     - IdentitybasedNetworking
     - Cybersecurity
+    - Comms
+    - technology
+    - edge
     - SDN
-    - SoftwareDefinedNetworking
 
 date: 2022-08-25
 guests:

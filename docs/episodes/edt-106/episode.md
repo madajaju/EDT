@@ -7,10 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 106
 tags:
-    - DataManagement
+    - Data
     - GraphIntelligencePlatform
     - GraphDB
     - KatanaGraph
+    - technology
 
 date: 2022-09-20
 guests:

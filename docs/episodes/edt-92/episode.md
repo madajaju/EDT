@@ -12,6 +12,7 @@ tags:
     - Vulnerability
     - Cyberattack
     - IoT
+    - edge
     - Censys
 
 date: 2022-06-16

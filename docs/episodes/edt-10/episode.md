@@ -8,6 +8,9 @@ parent: Episodes
 nav_order: 10
 tags:
     - Telework
+    - RemoteWorker
+    - process
+    - technology
     - VDI
 
 date: 2020-08-05

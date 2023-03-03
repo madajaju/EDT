@@ -9,6 +9,9 @@ nav_order: 87
 tags:
     - ConfidentialComputing
     - DevOps
+    - compute
+    - technology
+    - process
     - DevSecOps
     - Cybersecurity
     - SGX

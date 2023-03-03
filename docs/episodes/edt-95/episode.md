@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 95
 tags:
-    - DataManagement
-    - EdgeComputing
-    - Cybersecurity
+    - Data
     - Edge
+    - Compute
+    - Cybersecurity
 
 date: 2022-07-12
 guests:

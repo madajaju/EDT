@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 73
 tags:
-    - 2021
     - COVID
-    - EdgeComputing
-    - Security
+    - Edge
+    - Compute
+    - CyberSecurity
 
 date: 2022-01-20
 guests:

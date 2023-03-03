@@ -8,10 +8,12 @@ parent: Episodes
 nav_order: 46
 tags:
     - DevOps
+    - compute
+    - technology
+    - process
     - DevSecOps
-    - SecDevOps
     - Cybersecurity
-    - ZeroTrust
+    - ZeroTrustArchitecture
 
 date: 2021-04-08
 guests:

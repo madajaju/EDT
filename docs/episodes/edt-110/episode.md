@@ -11,6 +11,9 @@ tags:
     - Cybersecurity
     - SupplyChain
     - CHIPSAct
+    - policy
+    - process
+    - compute
 
 date: 2022-10-20
 guests:

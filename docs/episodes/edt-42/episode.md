@@ -9,6 +9,9 @@ nav_order: 42
 tags:
     - Cybersecurity
     - DevOps
+    - compute
+    - process
+    - technology
     - MultiCloud
     - DevSecOps
 

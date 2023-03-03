@@ -7,11 +7,15 @@ has_children: false
 parent: Episodes
 nav_order: 24
 tags:
-    - DataManagement
+    - Data
     - DataArchitecture
     - AIOps
     - SecOps
+    - DevSecOps
     - DevOps
+    - compute
+    - technology
+    - process
 
 date: 2020-10-07
 guests:

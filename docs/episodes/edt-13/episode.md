@@ -7,8 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 13
 tags:
-    - DataManagement
+    - Data
     - OrganizationalChange
+    - people
 
 date: 2020-08-13
 guests:

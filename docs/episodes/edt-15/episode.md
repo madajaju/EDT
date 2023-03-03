@@ -7,8 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 15
 tags:
-    - DataManagement
-    - OrganizationalManagement
+    - Data
+    - Management
+    - people
     - DatacentricOrganization
     - OrganizationalChange
 

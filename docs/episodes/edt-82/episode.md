@@ -8,8 +8,12 @@ parent: Episodes
 nav_order: 82
 tags:
     - CloudMigration
+    - cloud
+    - compute
+    - process
     - Infrastructure
-    - WorkloadMigration
+    - Migration
+    - Workload
 
 date: 2022-03-31
 guests:

@@ -11,6 +11,9 @@ tags:
     - DevSecOps
     - SBOM
     - SecureSupplyChain
+    - policy
+    - process
+    - compute
 
 date: 2022-06-09
 guests:

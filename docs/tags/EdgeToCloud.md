@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: BusinessAutomation
+title: EdgeToCloud
 parent: Tags
 ---
 

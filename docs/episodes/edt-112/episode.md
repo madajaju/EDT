@@ -7,11 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 112
 tags:
-    - EDT112
-    - EmbracingDigital
     - MultiCloud
     - CloudMigration
+    - cloud
+    - compute
+    - process
     - Cloud
+    - technology
 
 date: 2022-11-15
 guests:

@@ -13,6 +13,8 @@ tags:
     - Encryption
     - Decryption
     - SBOM
+    - compute
+    - policy
 
 date: 2023-02-16
 guests:

@@ -8,6 +8,8 @@ parent: Episodes
 nav_order: 5
 tags:
     - InfrastructureMaturity
+    - compute
+    - Technology
     - SDI
     - Cloud
     - MultiCloud

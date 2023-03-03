@@ -8,8 +8,8 @@ parent: Episodes
 nav_order: 18
 tags:
     - DataArchitecture
-    - Datacentric
-    - DataManagement
+    - DataCentric
+    - Data
 
 date: 2020-08-31
 guests:

@@ -8,9 +8,11 @@ parent: Episodes
 nav_order: 115
 tags:
     - ZTA
-    - ZeroTrust
+    - ZeroTrustArchitecture
     - CyberHygiene
     - Cybersecurity
+    - technology
+    - process
 
 date: 2022-12-01
 guests:

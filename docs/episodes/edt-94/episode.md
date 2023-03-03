@@ -10,8 +10,10 @@ tags:
     - HybridCloud
     - MicroCloud
     - PrivateCloud
+    - compute
+    - technology
     - Cloud
-    - Verge.io
+    - Vergeio
 
 date: 2022-07-07
 guests:

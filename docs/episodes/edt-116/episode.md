@@ -12,6 +12,7 @@ tags:
     - IT/OTConvergence
     - OTSecurity
     - Cybersecurity
+    - edge
 
 date: 2022-12-15
 guests:

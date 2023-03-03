@@ -8,6 +8,10 @@ parent: Episodes
 nav_order: 57
 tags:
     - CloudBroker
+    - change
+    - people
+    - process
+    - compute
     - OrganizationalChange
     - MultiCloud
 

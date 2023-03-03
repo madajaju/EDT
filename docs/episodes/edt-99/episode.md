@@ -7,9 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 99
 tags:
-    - ArtificialIntelligence
+    - AIML
     - Cybersecurity
     - XMCyber
+    - technology
+    - process
 
 date: 2022-08-09
 guests:

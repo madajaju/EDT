@@ -8,9 +8,13 @@ parent: Episodes
 nav_order: 78
 tags:
     - MultiCloud
-    - Cybersecurity
-    - SharedResponsibility
+    - compute
+    - cybersecurity
+    - sharedresponsibility
     - CloudSecurity
+    - cloud
+    - technology
+    - process
 
 date: 2022-02-24
 guests:

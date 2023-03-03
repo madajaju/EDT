@@ -11,6 +11,8 @@ tags:
     - CulturalChange
     - OrganizationalChange
     - Disruption
+    - people
+    - process
 
 date: 2021-01-13
 guests:

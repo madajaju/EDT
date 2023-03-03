@@ -9,7 +9,9 @@ nav_order: 2
 tags:
     - IoT
     - DoD
-    - DataManagement
+    - edge
+    - technology
+    - Data
     - CyberSecurity
 
 date: 2020-06-18

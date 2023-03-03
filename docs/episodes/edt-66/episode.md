@@ -7,9 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 66
 tags:
-    - DataManagement
+    - Data
     - DevOps
+    - compute
+    - technology
+    - process
     - DevSecOps
+    - Cybersecurity
     - Aiven
 
 date: 2021-10-14

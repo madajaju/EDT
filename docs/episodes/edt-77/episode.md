@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 77
 tags:
-    - ArtificialIntelligence
+    - AIML
     - Comms
-    - DataManagement
+    - Data
     - Edge
     - MultiCloud
     - Cybersecurity

@@ -8,11 +8,13 @@ parent: Episodes
 nav_order: 71
 tags:
     - DataGovernance
-    - DataManagement
+    - Data
     - Immuta
     - DataAccess
     - IdentityManagement
     - CEO
+    - technology
+    - process
 
 date: 2021-12-02
 guests:

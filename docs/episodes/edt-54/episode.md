@@ -9,6 +9,8 @@ nav_order: 54
 tags:
     - MultiCloud
     - OrganizationalChange
+    - change
+    - people
     - HSBC
     - CIO
 

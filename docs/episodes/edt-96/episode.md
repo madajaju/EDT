@@ -8,9 +8,12 @@ parent: Episodes
 nav_order: 96
 tags:
     - PrivateCloud
+    - cloud
+    - compute
+    - technology
     - SDI
     - VirtualDatacenter
-    - Verge.io
+    - Vergeio
 
 date: 2022-07-21
 guests:

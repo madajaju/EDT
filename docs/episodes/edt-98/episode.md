@@ -9,9 +9,13 @@ nav_order: 98
 tags:
     - DataArchitecture
     - DataManagement
+    - data
+    - technology
+    - cloud
     - GlobalDataNetwork
     - MacroMeta
     - MultiCloud
+    - DataMesh
 
 date: 2022-08-04
 guests:

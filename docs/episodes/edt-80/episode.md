@@ -7,9 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 80
 tags:
-    - CloudSolutionArchitect
     - CSA
+    - CloudSolutionArchitect
     - SolutionArchitect
+    - people
+    - compute
+    - cloud
 
 date: 2022-03-17
 guests:

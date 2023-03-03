@@ -8,8 +8,11 @@ parent: Episodes
 nav_order: 59
 tags:
     - Cybersecurity
-    - DataManagement
+    - Data
     - DataPrivacy
+    - Privacy
+    - process
+    - people
     - Healthcare
     - SutterHealth
 

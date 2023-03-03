@@ -11,7 +11,10 @@ tags:
     - GlobalDataNetwork
     - MacroMeta
     - DataArchitecture
-    - EdgeComputing
+    - data
+    - edge
+    - compute
+    - technology
 
 date: 2023-01-26
 guests:

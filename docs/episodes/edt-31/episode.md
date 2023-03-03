@@ -10,6 +10,9 @@ tags:
     - RPA
     - Automation
     - Catalytic
+    - Compute
+    - process
+    - technology
 
 date: 2020-12-08
 guests:

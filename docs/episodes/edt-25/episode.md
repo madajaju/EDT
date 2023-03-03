@@ -8,10 +8,12 @@ parent: Episodes
 nav_order: 25
 tags:
     - DataArchitecture
-    - Datacentric
-    - DataManagement
-    - DataOps
+    - DataCentric
+    - Data
+    - DataMesh
     - DataPipeline
+    - technology
+    - people
 
 date: 2020-10-14
 guests:

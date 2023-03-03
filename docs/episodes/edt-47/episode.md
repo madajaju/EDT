@@ -7,7 +7,6 @@ has_children: false
 parent: Episodes
 nav_order: 47
 tags:
-    - 2021
     - COVID
     - RemoteWorker
 

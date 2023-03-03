@@ -12,6 +12,7 @@ tags:
     - ThreatDetection
     - ZeroTrustArchitecture
     - ZTA
+    - technology
 
 date: 2021-01-21
 guests:

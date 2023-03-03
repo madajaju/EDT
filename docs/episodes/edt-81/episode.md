@@ -13,6 +13,9 @@ tags:
     - HeterogeneousProgramming
     - NPU
     - OneAPI
+    - compute
+    - technology
+    - process
 
 date: 2022-03-24
 guests:

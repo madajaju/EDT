@@ -8,6 +8,8 @@ parent: Episodes
 nav_order: 12
 tags:
     - RemoteLearning
+    - people
+    - technology
     - TeleLearning
     - Cybersecurity
 

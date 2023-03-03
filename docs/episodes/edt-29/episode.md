@@ -11,7 +11,9 @@ tags:
     - Database
     - Ingestion
     - Optane
-    - TemporalDatabase
+    - data
+    - technology
+    - PMEM
 
 date: 2020-11-12
 guests:

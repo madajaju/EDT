@@ -10,6 +10,9 @@ tags:
     - BigMemory
     - MemVerge
     - Optane
+    - technology
+    - data
+    - compute
     - PMEM
     - CXL
     - CEO

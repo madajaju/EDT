@@ -8,6 +8,10 @@ parent: Episodes
 nav_order: 11
 tags:
     - RemoteLearning
+    - compute
+    - technology
+    - people
+    - Edge
     - TeleLearning
 
 date: 2020-08-12

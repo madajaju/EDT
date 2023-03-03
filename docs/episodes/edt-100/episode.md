@@ -10,7 +10,7 @@ tags:
     - Cybersecurity
     - MultiCloud
     - Edge
-    - ArtificialIntelligence
+    - AIML
 
 date: 2022-08-18
 guests:

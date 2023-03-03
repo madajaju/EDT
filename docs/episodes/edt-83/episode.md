@@ -7,8 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 83
 tags:
-    - DataContext
-    - DigitalTransformation
+    - Data
+    - Datacentric
+    - people
+    - process
     - IDC2022
 
 date: 20220-04-08

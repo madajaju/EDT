@@ -8,8 +8,10 @@ parent: Episodes
 nav_order: 19
 tags:
     - DataArchitecture
-    - DataManagement
+    - Data
     - DataStrategy
+    - people
+    - process
 
 date: 2020-09-08
 guests:

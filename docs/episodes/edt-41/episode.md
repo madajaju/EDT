@@ -8,7 +8,11 @@ parent: Episodes
 nav_order: 41
 tags:
     - DevOps
+    - people
+    - technology
+    - compute
     - DevSecOps
+    - Cybersecurity
     - MultiCloud
 
 date: 2021-03-10

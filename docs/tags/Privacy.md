@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: StateofCalifornia
+title: Privacy
 parent: Tags
 ---
 

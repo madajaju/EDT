@@ -8,8 +8,9 @@ parent: Episodes
 nav_order: 48
 tags:
     - DataArchitecture
-    - DataManagement
+    - Data
     - Optane
+    - technology
     - VASTData
 
 date: 2021-04-29

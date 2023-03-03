@@ -9,6 +9,10 @@ nav_order: 33
 tags:
     - AWS
     - CloudOutage
+    - compute
+    - CSP
+    - cloud
+    - process
     - CloudReliability
     - MultiCloud
     - Reliability

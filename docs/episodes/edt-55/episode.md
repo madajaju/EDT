@@ -9,6 +9,8 @@ nav_order: 55
 tags:
     - Communication
     - OrganizationalChange
+    - people
+    - process
     - HSBC
     - CIO
 

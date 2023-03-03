@@ -8,6 +8,9 @@ parent: Episodes
 nav_order: 44
 tags:
     - CloudMigration
+    - cloud
+    - compute
+    - process
     - Deloitte
     - MultiCloud
 

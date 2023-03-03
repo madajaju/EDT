@@ -9,6 +9,7 @@ nav_order: 20
 tags:
     - Data
     - Optane
+    - technology
     - Storage
     - VastData
 

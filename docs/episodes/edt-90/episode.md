@@ -9,7 +9,9 @@ nav_order: 90
 tags:
     - CTO
     - OrganizationalChange
-    - DigitalTransformation
+    - Change
+    - people
+    - process
 
 date: 2022-06-07
 guests:

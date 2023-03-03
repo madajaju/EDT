@@ -8,7 +8,7 @@ parent: Episodes
 nav_order: 75
 tags:
     - Cybersecurity
-    - Security
+    - technology
 
 date: 2022-02-03
 guests:

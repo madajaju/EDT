@@ -10,6 +10,9 @@ tags:
     - NetworkSecurity
     - Cybersecurity
     - Elisity
+    - Comms
+    - technology
+    - process
 
 date: 2022-08-23
 guests:

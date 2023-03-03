@@ -9,9 +9,13 @@ nav_order: 30
 tags:
     - AIML
     - DevOps
+    - compute
+    - technology
+    - process
     - OneAPI
     - AIOps
     - Developer
+    - people
 
 date: 2020-11-17
 guests:

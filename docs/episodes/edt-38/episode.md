@@ -10,7 +10,9 @@ tags:
     - Contactless
     - COVID
     - RemoteLearning
-    - RemoteWork
+    - RemoteWorker
+    - people
+    - process
 
 date: 2021-02-11
 guests:

@@ -7,7 +7,7 @@ has_children: false
 parent: Episodes
 nav_order: 97
 tags:
-    - DataManagement
+    - Data
     - GraphDB
     - KatanaGraph
 

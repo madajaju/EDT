@@ -7,10 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 122
 tags:
-    - AI
+    - AIML
     - Automation
     - AIEthics
     - WorkerReplacement
+    - people
+    - policy
 
 date: 2023-02-09
 guests:

@@ -7,13 +7,14 @@ has_children: false
 parent: Episodes
 nav_order: 58
 tags:
-    - DataManagement
-    - EdgeComputing
-    - Edgemere
-    - EdgetoCloud
-    - EdgeSecurity
+    - Data
     - Edge
-    - OTSecurity
+    - Compute
+    - Edgemere
+    - EdgeToCloud
+    - Cybersecurity
+    - technology
+    - process
 
 date: 2021-07-22
 guests:

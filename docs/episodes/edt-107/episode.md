@@ -11,7 +11,10 @@ tags:
     - HOTMS
     - irdeto
     - OTSecurity
+    - edge
     - Cybersecurity
+    - technology
+    - process
 
 date: 2022-09-20
 guests:

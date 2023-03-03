@@ -9,6 +9,8 @@ nav_order: 43
 tags:
     - CIO
     - CloudAdoption
+    - compute
+    - Cloud
     - CSP
     - MultiCloud
 

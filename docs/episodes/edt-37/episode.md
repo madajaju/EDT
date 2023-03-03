@@ -7,11 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 37
 tags:
-    - 2020
     - COVID
     - Cybersecurity
     - RemoteWorker
-    - Pandemic
+    - people
+    - process
+    - compute
+    - data
 
 date: 2021-02-10
 guests:

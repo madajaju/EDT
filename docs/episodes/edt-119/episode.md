@@ -11,6 +11,8 @@ tags:
     - Technology
     - Innovation
     - Leadership
+    - process
+    - compute
 
 date: 2022-01-19
 guests:

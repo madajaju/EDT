@@ -10,6 +10,9 @@ tags:
     - EmployeeBurnout
     - RemoteLearning
     - RemoteWorker
+    - people
+    - process
+    - compute
 
 date: 2021-05-26
 guests:

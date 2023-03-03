@@ -8,11 +8,11 @@ parent: Episodes
 nav_order: 23
 tags:
     - AIML
-    - ArtificialIntelligence
     - DataArchitecture
-    - Datacentric
-    - DataManagement
+    - DataCentric
+    - Data
     - Insight
+    - technology
 
 date: 2020-09-30
 guests:

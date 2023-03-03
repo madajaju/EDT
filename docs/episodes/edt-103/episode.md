@@ -9,8 +9,12 @@ nav_order: 103
 tags:
     - AIOps
     - DevOps
+    - compute
+    - technology
+    - process
     - DevSecOps
-    - ArtificialIntelligence
+    - Cybersecurity
+    - AIML
 
 date: 2022-08-30
 guests:

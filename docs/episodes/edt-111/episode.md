@@ -9,6 +9,9 @@ nav_order: 111
 tags:
     - SmartCity
     - IoT
+    - edge
+    - technology
+    - process
     - DigitalSignage
     - FinancialResilience
 

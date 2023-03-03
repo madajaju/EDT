@@ -7,12 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 118
 tags:
-    - 2023
-    - Cybersecurity
-    - EdgeComputing
+    - cybersecurity
+    - compute
+    - technology
+    - Edge
     - Automation
-    - Web3.0
-    - DataManagement
+    - Web30
+    - data
     - Cloud
 
 date: 2023-01-19

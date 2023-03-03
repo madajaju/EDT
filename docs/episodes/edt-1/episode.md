@@ -10,8 +10,11 @@ tags:
     - DataArchitecture
     - SoftwareDeveloper
     - Microservice
-    - Containers
+    - Container
     - Virtualization
+    - technology
+    - compute
+    - data
 
 date: 2020-05-08
 guests:

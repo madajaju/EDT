@@ -11,7 +11,9 @@ tags:
     - PrivateCloud
     - VergeIO
     - MicroCloud
-    - EdgeCloud
+    - Edge
+    - compute
+    - technology
 
 date: 2023-02-02
 guests:

@@ -9,9 +9,10 @@ nav_order: 51
 tags:
     - DataArchitecture
     - MemVerge
-    - PersistentMemory
     - PMEM
     - Optane
+    - technology
+    - data
 
 date: 2021-06-03
 guests:

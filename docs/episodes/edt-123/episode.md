@@ -8,11 +8,12 @@ parent: Episodes
 nav_order: 123
 tags:
     - cybersecurity
-    - publicsector
     - ransomeware
     - automation
-    - stategovernment
     - government
+    - people
+    - process
+    - technology
 
 date: 2023-02-16
 guests:

@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: 2022
+title: people
 parent: Tags
 ---
 

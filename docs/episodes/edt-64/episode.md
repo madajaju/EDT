@@ -8,10 +8,9 @@ parent: Episodes
 nav_order: 64
 tags:
     - Edge
-    - EdgeComputing
+    - Compute
     - MultiCloud
     - Cybersecurity
-    - EdgeSecurity
 
 date: 2021-09-02
 guests:

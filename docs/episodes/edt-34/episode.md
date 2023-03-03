@@ -10,6 +10,9 @@ tags:
     - COVID
     - MFA
     - RemoteWorker
+    - Cybersecurity
+    - people
+    - technology
     - VDI
     - VPN
 

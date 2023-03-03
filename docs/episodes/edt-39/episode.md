@@ -10,6 +10,8 @@ tags:
     - Collaboration
     - COVID
     - OrganizationalChange
+    - people
+    - compute
     - RemoteWorker
     - VideoConferencing
     - SignalWire

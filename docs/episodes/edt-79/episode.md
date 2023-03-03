@@ -11,6 +11,10 @@ tags:
     - RemoteWorker
     - MobileMentor
     - GenZ
+    - people
+    - process
+    - compute
+    - cloud
 
 date: 2022-03-10
 guests:

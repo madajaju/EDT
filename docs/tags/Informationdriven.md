@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: Informationdriven
+title: InformationDriven
 parent: Tags
 ---
 

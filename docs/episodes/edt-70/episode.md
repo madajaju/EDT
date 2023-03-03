@@ -9,8 +9,11 @@ nav_order: 70
 tags:
     - DataGovernance
     - Immuta
+    - DataAccess
+    - IdentityManagement
     - Cybersecurity
-    - DataManagement
+    - Data
+    - technology
 
 date: 2021-11-25
 guests:

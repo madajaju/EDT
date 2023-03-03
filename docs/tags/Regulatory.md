@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: ArtificialIntelligence
+title: Regulatory
 parent: Tags
 ---
 

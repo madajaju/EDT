@@ -8,8 +8,11 @@ parent: Episodes
 nav_order: 26
 tags:
     - Hammerspace
+    - data
+    - technology
     - DataArchitecture
     - MultiCloud
+    - compute
     - MultiHybridCloud
     - DataMesh
 

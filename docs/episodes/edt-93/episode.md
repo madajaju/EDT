@@ -8,7 +8,7 @@ parent: Episodes
 nav_order: 93
 tags:
     - Cybersecurity
-    - ArtificialIntelligence
+    - AIML
     - MultiCloud
     - Comms
 

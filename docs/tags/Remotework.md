@@ -1,6 +1,0 @@
----
-layout: tagTopic
-title: RemoteWork
-parent: Tags
----
-

@@ -8,10 +8,12 @@ parent: Episodes
 nav_order: 6
 tags:
     - Telework
-    - Remotework
+    - Remoteworker
     - VDI
     - MFA
     - Cybersecurity
+    - people
+    - process
 
 date: 2020-07-24
 guests:

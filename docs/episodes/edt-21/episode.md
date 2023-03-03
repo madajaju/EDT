@@ -8,10 +8,13 @@ parent: Episodes
 nav_order: 21
 tags:
     - BigMemory
-    - MemoryController
+    - Edge
+    - Compute
+    - technology
     - MemVerge
     - Optane
     - PMEM
+    - data
 
 date: 2020-09-14
 guests:

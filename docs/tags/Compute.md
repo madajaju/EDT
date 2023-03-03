@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: EdgetoCloud
+title: compute
 parent: Tags
 ---
 

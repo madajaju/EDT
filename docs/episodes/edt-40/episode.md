@@ -8,9 +8,13 @@ parent: Episodes
 nav_order: 40
 tags:
     - ConfidentialComputing
+    - cybersecurity
     - DistributedAnalytics
     - SGX
     - Healthcare
+    - data
+    - technology
+    - edge
 
 date: 2021-02-24
 guests:

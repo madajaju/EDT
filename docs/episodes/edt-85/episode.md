@@ -7,9 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 85
 tags:
-    - ArtificialIntelligence
+    - AIML
     - Cybersecurity
     - DevOps
+    - compute
+    - technology
+    - process
 
 date: 2022-05-05
 guests:

@@ -10,6 +10,8 @@ tags:
     - Cybersecurity
     - DevSecOps
     - RPA
+    - technology
+    - compute
     - ZeroTrust
     - ZTA
 

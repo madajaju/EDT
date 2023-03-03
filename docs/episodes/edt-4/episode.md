@@ -7,7 +7,7 @@ has_children: false
 parent: Episodes
 nav_order: 4
 tags:
-    - DataManagement
+    - Data
     - InformationManagement
     - InformationMaturity
     - DataGovernance
@@ -15,6 +15,10 @@ tags:
     - DataLake
     - DataMesh
     - DataLineage
+    - data
+    - technology
+    - process
+    - people
 
 date: 2020-06-30
 guests:
