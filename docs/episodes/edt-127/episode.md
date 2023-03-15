@@ -52,6 +52,7 @@ Innovation is critical for companies to remain competitive and adapt to changing
 <details>
 <summary> Podcast Transcript </summary>
 
+<p>﻿1</p>
 <p>Hello, this is Darren</p>
 <p>Pulsipher, chief solution,architect of public sector at Intel.</p>
 <p>And welcome to Embracing</p>

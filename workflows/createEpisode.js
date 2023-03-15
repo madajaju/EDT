@@ -38,8 +38,8 @@ module.exports = {
     },
 
     fn: function (inputs, env) {
-        let output = path.resolve(`${podcast.baseDirectory}/2003/EDT-${inputs.number}`);
-        let source = path.resolve( `${podcast.baseDirectory}`);
+        let output = path.resolve(`${podcast.baseDirectory}/2023/EDT-${inputs.number}`);
+        let source = path.resolve(`${podcast.baseDirectory}`);
         _generateEpisode(output, source, inputs);
         return podcast;
     }
@@ -51,6 +51,8 @@ const _generateEpisode = (output, source, inputs) => {
        guests = inputs.guests.split(/,/);
     }
     guests.push("Darren W Pulsipher");
+    console.log("Generate:", output);
+    console.log("Source:", source);
 
     let files = {
         context: {
