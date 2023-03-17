@@ -1,0 +1,79 @@
+---
+layout: default
+title: #{{ page.number }} {{ page.title }}
+number: {{ page.number }}
+lang: {{ page.lang }}
+ref: {{ page.ref }}
+tags:
+- {{ page.tags | join: ',\n\t-' }}
+---
+
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
+
+<style>
+    .thumbnail {
+        float: right;
+        margin: 0 15px 0 0;
+    }
+
+    .embed-sc-container {
+        position: relative;
+        padding-bottom: 20%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    .embed-sc-container iframe,
+    .embed-sc-container object,
+    .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 125px;
+    }
+
+    .subheader {
+        display: flex;
+    }
+
+    .column {
+        flex: 50%;
+    }
+
+</style>
+
+<h1>Week of {{ page.title }}</h1>
+<div>
+    <img src="{{ page.path | remove: page.name }}/{{ page.img }}" width="256" height="256" class="thumbnail">
+    <p><i><b>Keywords:</b>
+        {% for tag in page.tags %}
+        <a href="/tags/{{ tag | replace: ' ', '-' }}">#{{ tag }}</a>
+        {% endfor %}
+    </i></p>
+</div>
+
+<!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
+
+<hr>
+
+Weekly news in digital transformation for the week of {{ page.title }}
+
+{{ content }}
+
+<script src="https://giscus.app/client.js"
+        data-repo="madajaju/EmbracingDigitalTransformation"
+        data-repo-id="R_kgDOIuK9Bg"
+        data-category="BlogComments"
+        data-category-id="DIC_kwDOIuK9Bs4CTr4K"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>

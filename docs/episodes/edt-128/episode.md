@@ -53,6 +53,8 @@ More information can be found about hackathons near you at https://mlh.io/
 
 [Download PDF of this episode](./episode.pdf)
 
+<a href="https://www.embracingdigital.org/episodes/edt-128/episode.pdf" target="_blank">Download the pdf of this episode here</a>
+
 <details>
 <summary> Podcast Transcript </summary>
 
