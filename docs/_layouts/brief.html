@@ -1,6 +1,6 @@
 ---
 layout: default
-title: #{{ page.number }} {{ page.title }}
+title: {{ page.title }}
 number: {{ page.number }}
 lang: {{ page.lang }}
 ref: {{ page.ref }}
@@ -44,10 +44,8 @@ tags:
 
 </style>
 
-<h1>#{{ page.number }} {{ page.title }}</h1>
+<h1>#{{ page.title }}</h1>
 <div>
-    <img src="{{ page.path | remove: page.name }}/{{ page.img }}" width="256" height="256" class="thumbnail">
-    <p><i>on {{page.date}} </i></p>
     <p><i> with
         {% for guest in page.guests %}
         <a href="/guests/{{ guest | replace: ' ', '-'}}">{{ guest }}</a>,
@@ -63,8 +61,6 @@ tags:
 <hr>
 
 <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
-
-{{ page.summary }}
 
 {{ content }}
 

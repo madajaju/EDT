@@ -2,7 +2,7 @@
 layout: brief
 title: "2022-02-20"
 number: 3
-ref: brief-EDW3
+ref: brief-EDW3-en
 lang: en
 has_children: false
 parent: English

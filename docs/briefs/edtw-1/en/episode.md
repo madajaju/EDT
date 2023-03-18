@@ -2,7 +2,7 @@
 layout: brief
 title: "2023-02-06"
 number: 1
-ref: brief-EDW1
+ref: brief-EDW1-en
 lang: en
 has_children: false
 parent: English
