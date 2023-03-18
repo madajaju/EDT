@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Wöchentliche Nachrichten
+title: Deutsch
 has_children: true
-ref: briefs
+parent: Weekly Brief
+ref: deutsch
 lang: de
 child_nav_order: reversed
 ---

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Notícias Semanais 
+title: Português
 has_children: true
-ref: briefs
+ref: português 
 lang: pt
 child_nav_order: reversed
 ---

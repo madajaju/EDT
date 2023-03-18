@@ -5,7 +5,7 @@ number: 2
 ref: episode-EDW2
 lang: de
 has_children: false
-parent: Wöchentliche Nachrichten
+parent: Deutsch
 nav_order: 2
 tags:
     - AI

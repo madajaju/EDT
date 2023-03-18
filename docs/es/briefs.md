@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Noticias semanales
+title: Española
 has_children: true
-ref: briefs
+parent: Weekly Brief
+ref: española
 lang: es
 child_nav_order: reversed
 ---

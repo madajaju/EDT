@@ -5,7 +5,7 @@ number: 2
 ref: episode-EDW2
 lang: en
 has_children: false
-parent: Weekly Brief
+parent: English
 nav_order: 2
 tags:
     - AI

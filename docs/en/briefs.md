@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Weekly Briefs
+title: English
 has_children: true
-ref: briefs
+parent: Weekly Briefs
+ref: english
 lang: en
 child_nav_order: reversed
 ---

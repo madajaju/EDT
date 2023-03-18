@@ -5,7 +5,7 @@ number: 3
 ref: episode-EDW3
 lang: fr
 has_children: false
-parent: Nouvelles Hebdomadaires
+parent: Français
 nav_order: 3
 tags:
     - AI
