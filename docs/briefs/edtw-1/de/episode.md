@@ -2,7 +2,7 @@
 layout: brief
 title: "2023-02-06"
 number: 1
-ref: episode-EDW1
+ref: brief-EDW1
 lang: de
 has_children: false
 parent: Deutsch

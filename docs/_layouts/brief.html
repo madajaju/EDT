@@ -44,9 +44,15 @@ tags:
 
 </style>
 
-<h1>Week of {{ page.title }}</h1>
+<h1>#{{ page.number }} {{ page.title }}</h1>
 <div>
     <img src="{{ page.path | remove: page.name }}/{{ page.img }}" width="256" height="256" class="thumbnail">
+    <p><i>on {{page.date}} </i></p>
+    <p><i> with
+        {% for guest in page.guests %}
+        <a href="/guests/{{ guest | replace: ' ', '-'}}">{{ guest }}</a>,
+        {% endfor %}
+    </i></p>
     <p><i><b>Keywords:</b>
         {% for tag in page.tags %}
         <a href="/tags/{{ tag | replace: ' ', '-' }}">#{{ tag }}</a>
@@ -54,24 +60,25 @@ tags:
     </i></p>
 </div>
 
-<!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
-
 <hr>
 
-Weekly news in digital transformation for the week of {{ page.title }}
+<!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
+
+{{ page.summary }}
 
 {{ content }}
 
+
 <script src="https://giscus.app/client.js"
-        data-repo="madajaju/EmbracingDigitalTransformation"
-        data-repo-id="R_kgDOIuK9Bg"
-        data-category="BlogComments"
-        data-category-id="DIC_kwDOIuK9Bs4CTr4K"
+        data-repo="madajaju/EDT"
+        data-repo-id="R_kgDOI3w9Tw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOI3w9T84CT5hQ"
         data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"
         data-emit-metadata="0"
-        data-input-position="top"
+        data-input-position="bottom"
         data-theme="preferred_color_scheme"
         data-lang="en"
         crossorigin="anonymous"
