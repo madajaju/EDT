@@ -5,7 +5,8 @@ number: 1
 ref: brief-EDW1
 lang: pt
 has_children: false
-parent: Português 
+parent: Português
+grand_parent: Weekly Briefs
 nav_order: 1
 tags:
     - AI

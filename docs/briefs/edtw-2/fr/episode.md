@@ -6,6 +6,7 @@ ref: brief-EDW2
 lang: fr
 has_children: false
 parent: Français
+grand_parent: Weekly Briefs
 nav_order: 2
 tags:
     - AI
