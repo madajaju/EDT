@@ -46,11 +46,6 @@ tags:
 
 <h1>{{ page.title }}</h1>
 <div>
-    <p><i> with
-        {% for guest in page.guests %}
-        <a href="/guests/{{ guest | replace: ' ', '-'}}">{{ guest }}</a>,
-        {% endfor %}
-    </i></p>
     <p><i><b>Keywords:</b>
         {% for tag in page.tags %}
         <a href="/tags/{{ tag | replace: ' ', '-' }}">#{{ tag }}</a>
