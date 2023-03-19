@@ -13,7 +13,6 @@ child_nav_order: reversed
 
 {% assign sortedPages = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'brief' | where: 'lang': 'en' %}
 {% for page in sortedPages limit:5 %}
-{% 
 <div style="display:flex;">
 <p class="episode">
     <a href="{{ page.url }}">{{ page.title }}</a><br>
