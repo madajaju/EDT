@@ -19,5 +19,4 @@ child_nav_order: reversed
     <a href="{{ page.url }}">{{ page.title }}</a><br>
 </p>
 </div>
-{% endif %}
 {% endfor %}
