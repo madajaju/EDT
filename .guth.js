@@ -672,6 +672,12 @@ module.exports = {
       "email": "tbd",
       "notes": null,
       "socials": {}
+    },
+    "Alan Chalker": {
+      "name": "Alan Chalker",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
     }
   },
   "blueprints": {}
