@@ -14,11 +14,11 @@ padding: 10px;
 }
 
 .topleft {
-width: 70%;
+width: 65%;
 }
 
 .topright {
-width: 30%;
+width: 35%;
 }
 
 /* Clear floats after the columns */
@@ -29,9 +29,9 @@ clear: both;
 }
 </style>
 {% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' %}
-{% assign sortedBriefs = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'brief' | where: 'lang', 'en' %}
+{% assign sortedBriefs = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'brief' | where: 'lang': 'en' %}
 {% assign latestEpisode = sortedEpisodes | first %}
-{% assign latestBrief = sortedBrief | first %}
+{% assign latestBrief = sortedBriefs | first %}
 <div class="toprow">
   <div class="topcolumn topleft" >
     <p> 
@@ -50,10 +50,10 @@ clear: both;
     </p>
   </div>
   <div class="topcolumn topright" >
-    <img class="thumbnail" src="{{ latestEpisode.path | remove: latestEpisode.name }}/{{ latestEpisode.img }}" width="128" height="128">
-    <a href="{{ latestEpisode.url }}">{{ latestEpisode.number}} - {{ latestEpisode.title }}</a><br>
-    <img class="thumbnail" src="./EDTW.png" width="128" height="128">
-    <a href="{{ latestBrief.url }}">{{ latestBrief.title }}</a><br>
+    <img class="thumbnail" src="{{ latestEpisode.path | remove: latestEpisode.name }}/{{ latestEpisode.img }}" width="128" height="128"><br>
+    <a href="{{ latestEpisode.url }}"><small>{{ latestEpisode.number}} - {{ latestEpisode.title }}</small></a><br>
+    <img class="thumbnail" src="./EDTW.png" width="128" height="128"><br>
+    <a href="{{ latestBrief.url }}"><small>{{ latestBrief.title }}</small></a><br>
   </div>
 </div>
 <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
