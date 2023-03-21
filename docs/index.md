@@ -30,8 +30,8 @@ clear: both;
 </style>
 {% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' %}
 {% assign sortedBriefs = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'brief' | where: 'lang', 'en' %}
-{% latestEpisode = sortedEpisodes | first %}
-{% latestBrief = sortedBrief | first %}
+{% assign latestEpisode = sortedEpisodes | first %}
+{% assign latestBrief = sortedBrief | first %}
 <div class="toprow">
   <div class="topcolumn topleft" >
     <p> 
