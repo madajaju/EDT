@@ -7,23 +7,59 @@ nav_order: 1
 
 # Embracing Digital Transformation
 
-Embracing Digital Transformation is a weekly podcast that is multicast on <a rehf="https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA">Youtube</a> and <a href="https://soundcloud.com/embracingdigital">SoundCloud</a>.
-Darren Pulsipher, Chief Solution Architect for Public Sector at Intel, investigates effective change leveraging
-people, process, policy and technology.
+<style>
+.topcolumn {
+float: left;
+padding: 10px;
+}
 
-We are building a community of practitioners and strategist to talk about the challenges and successes of adopting
-Digital Transformation. Join the community by checking out the links below.
-<a href="https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA">Youtube</a>,
-<a href="https://soundcloud.com/embracingdigital">SoundCloud</a>,
-<a href="https://www.linkedin.com/company/embracing-digital-transformation/">LinkedIn Group</a>,
-<a href="https://www.facebook.com/embracingdigital">Facebook </a>
-<a href="https://www.intel.com/content/www/us/en/government/embracing-digital-transformation-overview.html">Intel Blog Site</a>
+.topleft {
+width: 70%;
+}
 
+.topright {
+width: 30%;
+}
+
+/* Clear floats after the columns */
+.toprow:after {
+content: "";
+display: table;
+clear: both;
+}
+</style>
+{% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' %}
+{% assign sortedBriefs = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'brief' | where: 'lang', 'en' %}
+{% latestEpisode = sortedEpisodes | first %}
+{% latestBrief = sortedBrief | first %}
+<div class="toprow">
+  <div class="topcolumn topleft" >
+    <p> 
+        Embracing Digital Transformation is a weekly podcast that is multicast on <a rehf="https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA">Youtube</a> and <a href="https://soundcloud.com/embracingdigital">SoundCloud</a>.
+        Darren Pulsipher, Chief Solution Architect for Public Sector at Intel, investigates effective change leveraging
+        people, process, policy and technology.
+    </p>
+    <p> 
+        We are building a community of practitioners and strategist to talk about the challenges and successes of adopting
+        Digital Transformation. Join the community by checking out the links below.
+        <a href="https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA">Youtube</a>,
+        <a href="https://soundcloud.com/embracingdigital">SoundCloud</a>,
+        <a href="https://www.linkedin.com/company/embracing-digital-transformation/">LinkedIn Group</a>,
+        <a href="https://www.facebook.com/embracingdigital">Facebook </a>
+        <a href="https://www.intel.com/content/www/us/en/government/embracing-digital-transformation-overview.html">Intel Blog Site</a>
+    </p>
+  </div>
+  <div class="topcolumn topright" >
+    <img class="thumbnail" src="{{ latestEpisode.path | remove: latestEpisode.name }}/{{ latestEpisode.img }}" width="128" height="128">
+    <a href="{{ latestEpisode.url }}">{{ latestEpisode.number}} - {{ latestEpisode.title }}</a><br>
+    <img class="thumbnail" src="./EDTW.png" width="128" height="128">
+    <a href="{{ latestBrief.url }}">{{ latestBrief.title }}</a><br>
+  </div>
+</div>
 <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
 
 <h1>Episodes</h1>
-{% assign sortedPages = site.pages | sort: 'nav_order' | reverse %}
-{% for page in sortedPages %}
+{% for page in sortedEpisodes %}
 {% if page.number %}
 <div style="display:flex;">
 <p class="episode">
