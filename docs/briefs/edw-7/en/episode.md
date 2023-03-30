@@ -28,7 +28,6 @@ summary: ""
 {% include youtube.html id="UxskO9loflw" %}
 
 ---
-
 ## Artificial Intelligence
 
 In the “Potential for Risky Emergent Behaviors” section of the company’s technical report, OpenAI partnered with the Alignment Research Center to test GPT-4's skills. The Center used the AI to convince a human to send the solution to a CAPTCHA code via text message—and it worked.
