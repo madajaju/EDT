@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: innovation
+title: Innovation
 parent: Tags
 ---
 

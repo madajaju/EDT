@@ -684,6 +684,12 @@ module.exports = {
       "email": "tbd",
       "notes": null,
       "socials": {}
+    },
+    "Mark Valcich": {
+      "name": "Mark Valcich",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
     }
   },
   "blueprints": {}
