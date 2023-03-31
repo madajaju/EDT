@@ -1,0 +1,1 @@
+module.exports = {"name":"Andrew Padilla","email":"tbd","notes":null,"socials":{"linekdin":"andrew-padilla-8988094a"},"bio":"bio.md","thumbnail":"thumbnail.png"}

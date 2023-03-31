@@ -1,0 +1,1 @@
+module.exports = {"name":"Nick Bhadange","email":"tbd","notes":null,"socials":{"linkedin":"nickbhadange"},"bio":"bio.md","thumbnail":"thumbnail.png"}

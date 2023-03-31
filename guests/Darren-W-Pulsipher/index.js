@@ -1,0 +1,1 @@
+module.exports = {"name":"Darren W Pulsipher","email":"darren@pulsipher.org","notes":null,"socials":{"linkedin":"darrenpulsipher","facebook":"darrenpulsipher"},"bio":"bio.md","thumbnail":"thumbnail.jpg"}

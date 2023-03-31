@@ -1,0 +1,1 @@
+module.exports = {"name":"Thomas Horlander","email":"thomashorlander@yahoo.com","notes":null,"socials":{"linkedin":"thomas-horlander-687ab29"},"bio":"bio.md","thumbnail":"thumbnail.png"}

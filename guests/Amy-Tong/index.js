@@ -1,0 +1,1 @@
+module.exports = {"name":"Amy Tong","email":"tbd","notes":null,"socials":{"linkedin":"amy-tong-734aaa5"},"bio":"bio.md","thumbnail":"thumbnail.png"}
