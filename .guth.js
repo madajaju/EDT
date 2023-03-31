@@ -118,122 +118,37 @@ module.exports = {
     }
   },
   "guests": {
-    "Darren W Pulsipher": {
-      "name": "Darren W Pulsipher",
-      "email": "darren@pulsipher.org",
-      "notes": null,
-      "socials": {
-        "linkedin": "darrenpulsipher",
-        "facebook": "darrenpulsipher"
-      }
-    },
-    "Thomas Horlander": {
-      "name": "Thomas Horlander",
-      "email": "thomashorlander@yahoo.com",
-      "notes": null,
-      "socials": {
-        "linkedin": "thomas-horlander-687ab29"
-      }
-    },
-    "Eric Hornsby": {
-      "name": "Eric Hornsby",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "eric-hornsby-b235291"
-      }
-    },
-    "John Evans": {
-      "name": "John Evans",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "john-evans-2773108b"
-      }
-    },
-    "Max Young": {
-      "name": "Max Young",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "maxhabibi"
-      }
-    },
-    "Steve Orrin": {
-      "name": "Steve Orrin",
-      "email": "steve.orrin@intel.com",
-      "notes": null,
-      "socials": {
-        "linkedin": "sorrin"
-      }
-    },
-    "Anna Scott": {
-      "name": "Anna Scott",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "anna-scott-79251a1"
-      }
-    },
-    "Sean Chou": {
-      "name": "Sean Chou",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "chousy"
-      }
-    },
-    "Neil Bahandur": {
-      "name": "Neil Bahandur",
+    "Aaron Reid": {
+      "name": "Aaron Reid",
       "email": "tbd",
       "notes": null,
       "socials": {}
     },
-    "Tim Flynn": {
-      "name": "Tim Flynn",
+    "Alan Chalker": {
+      "name": "Alan Chalker",
       "email": "tbd",
       "notes": null,
       "socials": {}
     },
-    "Pete Schmitz": {
-      "name": "Pete Schmitz",
+    "Alan Evans": {
+      "name": "Alan Evans",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Amy Tong": {
+      "name": "Amy Tong",
       "email": "tbd",
       "notes": null,
       "socials": {
-        "linkedin": "pete-schmitz-043a24"
+        "linkedin": "amy-tong-734aaa5"
       }
     },
-    "Illyse Sheaffer": {
-      "name": "Illyse Sheaffer",
+    "Andrew Cohen": {
+      "name": "Andrew Cohen",
       "email": "tbd",
       "notes": null,
-      "socials": {
-        "linkedin": "illysesheaffer"
-      }
-    },
-    "Erin Moseley": {
-      "name": "Erin Moseley",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "erinomoseley"
-      }
-    },
-    "Grant Kelly": {
-      "name": "Grant Kelly",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "grant-kelly-44081ab"
-      }
-    },
-    "Sarah Kalicin": {
-      "name": "Sarah Kalicin",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "sarahkalicin"
-      }
+      "socials": {}
     },
     "Andrew Padilla": {
       "name": "Andrew Padilla",
@@ -241,126 +156,6 @@ module.exports = {
       "notes": null,
       "socials": {
         "linekdin": "andrew-padilla-8988094a"
-      }
-    },
-    "Charles Fan": {
-      "name": "Charles Fan",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "charlesfan1"
-      }
-    },
-    "Randy Hayes": {
-      "name": "Randy Hayes",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "rfhayes"
-      }
-    },
-    "Johan Ballin": {
-      "name": "Johan Ballin",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "johanballin"
-      }
-    },
-    "Jesse Schrater": {
-      "name": "Jesse Schrater",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "jesse-schrater-1129bb5"
-      }
-    },
-    "Tim Faulkes": {
-      "name": "Tim Faulkes",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "tim-faulkes"
-      }
-    },
-    "Doug Bourgeois": {
-      "name": "Doug Bourgeois",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "dougbourgeois"
-      }
-    },
-    "Rick Herrmann": {
-      "name": "Rick Herrmann",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "rickaherrmann"
-      }
-    },
-    "Rachel Mushawar": {
-      "name": "Rachel Mushawar",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "rachelmushahwar"
-      }
-    },
-    "Sean Heiney": {
-      "name": "Sean Heiney",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "heiney"
-      }
-    },
-    "Nick Bhadange": {
-      "name": "Nick Bhadange",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "nickbhadange"
-      }
-    },
-    "Steven Holt": {
-      "name": "Steven Holt",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "stepheneholt"
-      }
-    },
-    "Greg Ernst": {
-      "name": "Greg Ernst",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "gregernsttechnologysales"
-      }
-    },
-    "Rachel Dreikosen": {
-      "name": "Rachel Dreikosen",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "racheldreiko"
-      }
-    },
-    "Uzair Hussain": {
-      "name": "Uzair Hussain",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "uzairhussain"
-      }
-    },
-    "Robert Looney": {
-      "name": "Robert Looney",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "robert-looney-2973964"
       }
     },
     "Ann Madea": {
@@ -371,69 +166,31 @@ module.exports = {
         "linkedin": "madeaann"
       }
     },
-    "Kevin Bleckmann": {
-      "name": "Kevin Bleckmann",
+    "Anna Scott": {
+      "name": "Anna Scott",
       "email": "tbd",
       "notes": null,
       "socials": {
-        "linkedin": "kevinbleckmann"
+        "linkedin": "anna-scott-79251a1"
       }
     },
-    "Dave Shrestha": {
-      "name": "Dave Shrestha",
+    "Betsy Freeman": {
+      "name": "Betsy Freeman",
       "email": "tbd",
       "notes": null,
-      "socials": {
-        "linkedin": "daveshrestha"
-      }
+      "socials": {}
     },
-    "Jeremy Harris": {
-      "name": "Jeremy Harris",
+    "Callen Sapien": {
+      "name": "Callen Sapien",
       "email": "tbd",
       "notes": null,
-      "socials": {
-        "linkedin": "jeremy-harris-429b168"
-      }
+      "socials": {}
     },
-    "Amy Tong": {
-      "name": "Amy Tong",
+    "Cameron Chehreh": {
+      "name": "Cameron Chehreh",
       "email": "tbd",
       "notes": null,
-      "socials": {
-        "linkedin": "amy-tong-734aaa5"
-      }
-    },
-    "Greg Clifton": {
-      "name": "Greg Clifton",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "greg-clifton-9621235"
-      }
-    },
-    "David Esposito": {
-      "name": "David Esposito",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "davidespo"
-      }
-    },
-    "Leeland Brown": {
-      "name": "Leeland Brown",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "leland-brown-3223a05a"
-      }
-    },
-    "Tom Garrison": {
-      "name": "Tom Garrison",
-      "email": "tbd",
-      "notes": null,
-      "socials": {
-        "linkedin": "tom-garrison-93209771"
-      }
+      "socials": {}
     },
     "Camille Morhardt": {
       "name": "Camille Morhardt",
@@ -443,16 +200,40 @@ module.exports = {
         "linkedin": "camille-morhardt-448a182"
       }
     },
-    "Matthew Carroll": {
-      "name": "Matthew Carroll",
+    "Carla Trevino": {
+      "name": "Carla Trevino",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Charles Fan": {
+      "name": "Charles Fan",
       "email": "tbd",
       "notes": null,
       "socials": {
-        "linkedin": "matthewrcarroll"
+        "linkedin": "charlesfan1"
       }
     },
-    "Cameron Chehreh": {
-      "name": "Cameron Chehreh",
+    "ChatGPT": {
+      "name": "ChatGPT",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Chetan Venkatesh": {
+      "name": "Chetan Venkatesh",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Chris Lehman": {
+      "name": "Chris Lehman",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Colin McLean": {
+      "name": "Colin McLean",
       "email": "tbd",
       "notes": null,
       "socials": {}
@@ -469,38 +250,33 @@ module.exports = {
       "notes": null,
       "socials": {}
     },
-    "Gretchen Stewart": {
-      "name": "Gretchen Stewart",
+    "Darren W Pulsipher": {
+      "name": "Darren W Pulsipher",
+      "email": "darren@pulsipher.org",
+      "notes": null,
+      "socials": {
+        "linkedin": "darrenpulsipher",
+        "facebook": "darrenpulsipher"
+      }
+    },
+    "Dave Shrestha": {
+      "name": "Dave Shrestha",
       "email": "tbd",
       "notes": null,
-      "socials": {}
+      "socials": {
+        "linkedin": "daveshrestha"
+      }
     },
-    "Betsy Freeman": {
-      "name": "Betsy Freeman",
+    "David Esposito": {
+      "name": "David Esposito",
       "email": "tbd",
       "notes": null,
-      "socials": {}
+      "socials": {
+        "linkedin": "davidespo"
+      }
     },
-    "Greg Steck": {
-      "name": "Greg Steck",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
-    },
-    "Carla Trevino": {
-      "name": "Carla Trevino",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
-    },
-    "Stephanie Sabatini": {
-      "name": "Stephanie Sabatini",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
-    },
-    "Colin McLean": {
-      "name": "Colin McLean",
+    "David Richard": {
+      "name": "David Richard",
       "email": "tbd",
       "notes": null,
       "socials": {}
@@ -511,44 +287,100 @@ module.exports = {
       "notes": null,
       "socials": {}
     },
-    "Kiran Agrahara": {
-      "name": "Kiran Agrahara",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
-    },
     "Denis O'Shea": {
       "name": "Denis O'Shea",
       "email": "tbd",
       "notes": null,
       "socials": {}
     },
-    "Stephen Holt": {
-      "name": "Stephen Holt",
+    "Doug Bourgeois": {
+      "name": "Doug Bourgeois",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "dougbourgeois"
+      }
+    },
+    "Eric Greenwald": {
+      "name": "Eric Greenwald",
       "email": "tbd",
       "notes": null,
       "socials": {}
     },
-    "Sarah Musick": {
-      "name": "Sarah Musick",
+    "Eric Hornsby": {
+      "name": "Eric Hornsby",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "eric-hornsby-b235291"
+      }
+    },
+    "Erin Moseley": {
+      "name": "Erin Moseley",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "erinomoseley"
+      }
+    },
+    "Glenn Kurowski": {
+      "name": "Glenn Kurowski",
       "email": "tbd",
       "notes": null,
       "socials": {}
     },
-    "Todd Christ": {
-      "name": "Todd Christ",
+    "Grant Kelly": {
+      "name": "Grant Kelly",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "grant-kelly-44081ab"
+      }
+    },
+    "Greg Campbell": {
+      "name": "Greg Campbell",
       "email": "tbd",
       "notes": null,
       "socials": {}
+    },
+    "Greg Clifton": {
+      "name": "Greg Clifton",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "greg-clifton-9621235"
+      }
+    },
+    "Greg Ernst": {
+      "name": "Greg Ernst",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "gregernsttechnologysales"
+      }
+    },
+    "Greg Steck": {
+      "name": "Greg Steck",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Gretchen Stewart": {
+      "name": "Gretchen Stewart",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Illyse Sheaffer": {
+      "name": "Illyse Sheaffer",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "illysesheaffer"
+      }
     },
     "James Reinders": {
       "name": "James Reinders",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
-    },
-    "David Richard": {
-      "name": "David Richard",
       "email": "tbd",
       "notes": null,
       "socials": {}
@@ -559,62 +391,74 @@ module.exports = {
       "notes": null,
       "socials": {}
     },
-    "Ron Fritzemeier": {
-      "name": "Ron Fritzemeier",
+    "Jeremy Harris": {
+      "name": "Jeremy Harris",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "jeremy-harris-429b168"
+      }
+    },
+    "Jesse Schrater": {
+      "name": "Jesse Schrater",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "jesse-schrater-1129bb5"
+      }
+    },
+    "Jim Richberg": {
+      "name": "Jim Richberg",
       "email": "tbd",
       "notes": null,
       "socials": {}
     },
-    "Ofir Azoulay-Rozanes": {
-      "name": "Ofir Azoulay-Rozanes",
+    "Johan Ballin": {
+      "name": "Johan Ballin",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "johanballin"
+      }
+    },
+    "John Evans": {
+      "name": "John Evans",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "john-evans-2773108b"
+      }
+    },
+    "Jon Gottfried": {
+      "name": "Jon Gottfried",
       "email": "tbd",
       "notes": null,
       "socials": {}
     },
-    "Mike Fraser": {
-      "name": "Mike Fraser",
+    "Kevin Bleckmann": {
+      "name": "Kevin Bleckmann",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "kevinbleckmann"
+      }
+    },
+    "Kiran Agrahara": {
+      "name": "Kiran Agrahara",
       "email": "tbd",
       "notes": null,
       "socials": {}
     },
-    "Callen Sapien": {
-      "name": "Callen Sapien",
+    "Leeland Brown": {
+      "name": "Leeland Brown",
       "email": "tbd",
       "notes": null,
-      "socials": {}
+      "socials": {
+        "linkedin": "leland-brown-3223a05a"
+      }
     },
-    "Glenn Kurowski": {
-      "name": "Glenn Kurowski",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
-    },
-    "Eric Greenwald": {
-      "name": "Eric Greenwald",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
-    },
-    "Matt Lembright": {
-      "name": "Matt Lembright",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
-    },
-    "Greg Campbell": {
-      "name": "Greg Campbell",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
-    },
-    "Aaron Reid": {
-      "name": "Aaron Reid",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
-    },
-    "Chris Lehman": {
-      "name": "Chris Lehman",
+    "Luuk Van Dijk": {
+      "name": "Luuk Van Dijk",
       "email": "tbd",
       "notes": null,
       "socials": {}
@@ -625,8 +469,62 @@ module.exports = {
       "notes": null,
       "socials": {}
     },
-    "Chetan Venkatesh": {
-      "name": "Chetan Venkatesh",
+    "Mark Valcich": {
+      "name": "Mark Valcich",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Matt Lembright": {
+      "name": "Matt Lembright",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Matthew Carroll": {
+      "name": "Matthew Carroll",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "matthewrcarroll"
+      }
+    },
+    "Matthew Pulsipher": {
+      "name": "Matthew Pulsipher",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Max Young": {
+      "name": "Max Young",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "maxhabibi"
+      }
+    },
+    "Mike Fraser": {
+      "name": "Mike Fraser",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Neil Bahandur": {
+      "name": "Neil Bahandur",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Nick Bhadange": {
+      "name": "Nick Bhadange",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "nickbhadange"
+      }
+    },
+    "Ofir Azoulay-Rozanes": {
+      "name": "Ofir Azoulay-Rozanes",
       "email": "tbd",
       "notes": null,
       "socials": {}
@@ -637,59 +535,161 @@ module.exports = {
       "notes": null,
       "socials": {}
     },
-    "Alan Evans": {
-      "name": "Alan Evans",
+    "Pete Schmitz": {
+      "name": "Pete Schmitz",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "pete-schmitz-043a24"
+      }
+    },
+    "Rachel Dreikosen": {
+      "name": "Rachel Dreikosen",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "racheldreiko"
+      }
+    },
+    "Rachel Mushawar": {
+      "name": "Rachel Mushawar",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "rachelmushahwar"
+      }
+    },
+    "Randy Hayes": {
+      "name": "Randy Hayes",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "rfhayes"
+      }
+    },
+    "Rick Herrmann": {
+      "name": "Rick Herrmann",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "rickaherrmann"
+      }
+    },
+    "Robert Looney": {
+      "name": "Robert Looney",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "robert-looney-2973964"
+      }
+    },
+    "Ron Fritzemeier": {
+      "name": "Ron Fritzemeier",
       "email": "tbd",
       "notes": null,
       "socials": {}
     },
-    "ChatGPT": {
-      "name": "ChatGPT",
+    "Sarah Kalicin": {
+      "name": "Sarah Kalicin",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "sarahkalicin"
+      }
+    },
+    "Sarah Musick": {
+      "name": "Sarah Musick",
       "email": "tbd",
       "notes": null,
       "socials": {}
     },
-    "Jim Richberg": {
-      "name": "Jim Richberg",
+    "Sean Chou": {
+      "name": "Sean Chou",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "chousy"
+      }
+    },
+    "Sean Heiney": {
+      "name": "Sean Heiney",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "heiney"
+      }
+    },
+    "Stephanie Sabatini": {
+      "name": "Stephanie Sabatini",
       "email": "tbd",
       "notes": null,
       "socials": {}
     },
-    "Luuk Van Dijk": {
-      "name": "Luuk Van Dijk",
+    "Stephen Holt": {
+      "name": "Stephen Holt",
       "email": "tbd",
       "notes": null,
       "socials": {}
     },
-    "Andrew Cohen": {
-      "name": "Andrew Cohen",
+    "Steve Orrin": {
+      "name": "Steve Orrin",
+      "email": "steve.orrin@intel.com",
+      "notes": null,
+      "socials": {
+        "linkedin": "sorrin"
+      }
+    },
+    "Steven Holt": {
+      "name": "Steven Holt",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "stepheneholt"
+      }
+    },
+    "Thomas Horlander": {
+      "name": "Thomas Horlander",
+      "email": "thomashorlander@yahoo.com",
+      "notes": null,
+      "socials": {
+        "linkedin": "thomas-horlander-687ab29"
+      }
+    },
+    "Tim Faulkes": {
+      "name": "Tim Faulkes",
+      "email": "tbd",
+      "notes": null,
+      "socials": {
+        "linkedin": "tim-faulkes"
+      }
+    },
+    "Tim Flynn": {
+      "name": "Tim Flynn",
       "email": "tbd",
       "notes": null,
       "socials": {}
     },
-    "Jon Gottfried": {
-      "name": "Jon Gottfried",
+    "Todd Christ": {
+      "name": "Todd Christ",
       "email": "tbd",
       "notes": null,
       "socials": {}
     },
-    "Alan Chalker": {
-      "name": "Alan Chalker",
+    "Tom Garrison": {
+      "name": "Tom Garrison",
       "email": "tbd",
       "notes": null,
-      "socials": {}
+      "socials": {
+        "linkedin": "tom-garrison-93209771"
+      }
     },
-    "Matthew Pulsipher": {
-      "name": "Matthew Pulsipher",
+    "Uzair Hussain": {
+      "name": "Uzair Hussain",
       "email": "tbd",
       "notes": null,
-      "socials": {}
-    },
-    "Mark Valcich": {
-      "name": "Mark Valcich",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
+      "socials": {
+        "linkedin": "uzairhussain"
+      }
     }
   },
   "blueprints": {}

@@ -2,7 +2,10 @@
 layout: guest
 title: <%= guest.name %>
 parent: Guests
+
+img: <%- guestName + '-' + thumbnail %>
 ---
+
 
 <% guest.socials.forEach( (social) => {
 if(social.stype === 'linkedin') {
@@ -11,4 +14,5 @@ let linkedinValue = social.name;
 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="<%= linkedinValue %>" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/<%= linkedinValue %>?trk=profile-badge">Click for more details</a></div>
 <% } 
 }); %>
-<%= guest.notes %>
+
+<%= content %>
