@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: Compute
+title: compute
 parent: Tags
 ---
 

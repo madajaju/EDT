@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: People
+title: Baremetal
 parent: Tags
 ---
 

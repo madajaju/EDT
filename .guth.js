@@ -120,13 +120,13 @@ module.exports = {
   "guests": {
     "Aaron Reid": {
       "name": "Aaron Reid",
-      "email": "tbd",
+      "email": "aaron@verge.io",
       "notes": null,
       "socials": {}
     },
     "Alan Chalker": {
       "name": "Alan Chalker",
-      "email": "tbd",
+      "email": "alanc@osc.edu",
       "notes": null,
       "socials": {}
     },
@@ -146,7 +146,7 @@ module.exports = {
     },
     "Andrew Cohen": {
       "name": "Andrew Cohen",
-      "email": "tbd",
+      "email": "AndrewCo@netsurit.com",
       "notes": null,
       "socials": {}
     },
@@ -690,6 +690,24 @@ module.exports = {
       "socials": {
         "linkedin": "uzairhussain"
       }
+    },
+    "Ian Evans": {
+      "name": "Ian Evans",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Mike Rogers": {
+      "name": "Mike Rogers",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Keith Gray": {
+      "name": "Keith Gray",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
     }
   },
   "blueprints": {}

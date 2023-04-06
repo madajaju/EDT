@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: People
+title: Metify
 parent: Tags
 ---
 
