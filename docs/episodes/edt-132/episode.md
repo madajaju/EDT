@@ -18,10 +18,11 @@ date: 2023-04-06
 guests:
     - Darren W Pulsipher
     - Ian Evans
-    - Mike Rogers
+    - Mike Wagner
 
 img: thumbnail.png
-summary: "In this episode, Darren interviews the founders of Metify, Ian Evans and Mike Rogers, about their unique approach to bare metal software-defined infrastructure management using the Redfish standard."
+summary: "In this episode, Darren interviews the founders of Metify, Ian Evans and Mike Wagner, about their unique 
+approach to bare metal software-defined infrastructure management using the Redfish standard."
 ---
 
 {% include soundcloud.html id="edt132" title="#132 Software Defined BareMetal Management" %}

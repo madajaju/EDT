@@ -697,8 +697,8 @@ module.exports = {
       "notes": null,
       "socials": {}
     },
-    "Mike Rogers": {
-      "name": "Mike Rogers",
+    "Mike Wagner": {
+      "name": "Mike Wagner",
       "email": "tbd",
       "notes": null,
       "socials": {}

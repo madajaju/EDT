@@ -1,9 +1,9 @@
 ---
 layout: guest
-title: Mike Rogers
+title: Mike Wagner
 parent: Guests
 
-img: Mike-Rogers-TBD
+img: Mike-Wagner-TBD
 ---
 
 
