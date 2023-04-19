@@ -38,6 +38,17 @@ module.exports = {
     },
 
     fn: function (inputs, env) {
+        let args = inputs;
+        for(let aname in env.req.body) {
+            args[aname]= env.req.body[aname];
+        }
+        let podcast = Podcast.find(args.podcast);
+        if(!podcast) {
+            if(env.res) {
+                env.res.json('Podcast Not Found:' + args.podcast);
+            }
+            return;
+        }
         let output = path.resolve(`${podcast.baseDirectory}/2023/EDT-${inputs.number}`);
         let source = path.resolve(`${podcast.baseDirectory}`);
         _generateEpisode(output, source, inputs);

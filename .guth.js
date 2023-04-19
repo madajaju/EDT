@@ -56,13 +56,21 @@ module.exports = {
       "url": "https://embracingdigital.org",
       "name": "wordpress"
     },
-    "intelWeb": {
-      "id": "intelWeb",
-      "type": "IntelWeb",
+    "blog": {
+      "id": "blog",
+      "type": "GitHubPages",
       "title": "Public Sector Website",
       "user": "darren.w.pulsipher@intel.com",
       "url": "https://www.intel.com/content/www/us/en/government/embracing-digital-transformation-overview.html",
-      "name": "intelWeb"
+      "name": "blog"
+    },
+    "intelBlog": {
+      "id": "intelBlog",
+      "type": "IntelBlog",
+      "title": "Public Sector Website",
+      "user": "darren.w.pulsipher@intel.com",
+      "url": "https://www.intel.com/content/www/us/en/government/embracing-digital-transformation-overview.html",
+      "name": "intelBlog"
     },
     "linkedInGroup": {
       "id": "linkedInGroup",
@@ -705,6 +713,12 @@ module.exports = {
     },
     "Keith Gray": {
       "name": "Keith Gray",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Logan Selby": {
+      "name": "Logan Selby",
       "email": "tbd",
       "notes": null,
       "socials": {}
