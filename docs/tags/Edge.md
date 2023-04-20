@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: edge
+title: Edge
 parent: Tags
 ---
 

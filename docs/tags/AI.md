@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: ai
+title: AI
 parent: Tags
 ---
 
