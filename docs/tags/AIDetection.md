@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: cybersecurity
+title: AIDetection
 parent: Tags
 ---
 

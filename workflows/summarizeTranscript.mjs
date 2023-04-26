@@ -1,9 +1,8 @@
-/*
- import {ChatGPTAPI} from "chatgpt";
+import {ChatGPTAPI} from "chatgpt";
 import {program} from "commander";
 import * as fs from "fs";
 
-
+const API_KEY ="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";
 program
     .option("-f, --file <filename>");
 
@@ -50,4 +49,3 @@ let filename = options.file;
     // Deal with the fact the chain failed
     console.error("Response Error:", e);
 });
-*/

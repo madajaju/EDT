@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: cybersecurity
+title: Ethics
 parent: Tags
 ---
 
