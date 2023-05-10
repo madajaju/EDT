@@ -16,6 +16,7 @@ module.exports = {
       "user": "edt@pulsipher.org",
       "rss": "https://feeds.soundcloud.com/users/soundcloud:users:849124657/sounds.rss",
       "url": "https://soundcloud.com/embracingdigital",
+      "submission": "https://soundcloud.com/embracingdigital",
       "name": "soundCloud"
     },
     "IntelYouTube": {
@@ -25,6 +26,7 @@ module.exports = {
       "user": "darren.w.pulsipher@intel.com",
       "rss": "https://youtube.com/feeds/videos.xml?playlist_id=PLj-81kG3zG5YC2Z4aBncmOpZGh6umLy0n",
       "url": "https://youtube.com/playlist?list=PLj-81kG3zG5YC2Z4aBncmOpZGh6umLy0n",
+      "submission": "",
       "name": "IntelYouTube"
     },
     "YouTube": {
@@ -34,6 +36,7 @@ module.exports = {
       "user": "edt@pulsipher.org",
       "rss": "https://youtube.com/feeds/videos.xml?channel_id=UCveOcNne1kP_ZccC8kOZcDA",
       "url": "https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA",
+      "submission": "",
       "creds": {
         "client_id": "887621111838-907t97oik19mdj20206jjku05894irkk.apps.googleusercontent.com",
         "project_id": "guth-370314",
@@ -46,15 +49,6 @@ module.exports = {
         ]
       },
       "name": "YouTube"
-    },
-    "wordpress": {
-      "id": "wordpress",
-      "type": "WordPress",
-      "title": "Embracing Digital Website",
-      "user": "darren@pulsipher.org",
-      "rss": "https://embracingdigital.org/feed",
-      "url": "https://embracingdigital.org",
-      "name": "wordpress"
     },
     "blog": {
       "id": "blog",
@@ -111,18 +105,6 @@ module.exports = {
       "user": "darren@pulsipher.org",
       "url": "https://twitter.com/darrenpulsipher",
       "name": "twitter"
-    },
-    "email": {
-      "id": "email",
-      "type": "Email",
-      "user": "darren@pulsipher.org",
-      "name": "email"
-    },
-    "salesforce": {
-      "id": "salesforce",
-      "type": "SalesForce",
-      "user": "darren.w.pulsipher@intel.com",
-      "name": "salesforce"
     }
   },
   "guests": {

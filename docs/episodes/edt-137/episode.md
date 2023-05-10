@@ -26,7 +26,7 @@ summary: "In this episode Darren interviews Sam Ceccola, CTO of DOD for HPE abou
 
 {% include soundcloud.html id="edt137" title="#137 Rebirth of the Private Cloud" %}
 
-{% include youtube.html id="TBD" %}
+{% include youtube.html id="ca8WFpYQLss" %}
 
 ---
 
