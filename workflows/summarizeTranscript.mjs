@@ -2,7 +2,6 @@ import {ChatGPTAPI} from "chatgpt";
 import {program} from "commander";
 import * as fs from "fs";
 
-const API_KEY ="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";
 
 program
     .option("-f, --file <filename>");
