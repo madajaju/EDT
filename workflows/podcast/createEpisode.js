@@ -1,6 +1,5 @@
 const path = require('path');
 const fs = require;
-const Generator = require('ailtire/src/Documentation/Generator.js');
 
 module.exports = {
     friendlyName: 'createEpisode',
@@ -37,22 +36,20 @@ module.exports = {
         }
     },
 
-    fn: function (inputs, env) {
+    fn: function (obj, inputs, env) {
         let args = inputs;
         for(let aname in env.req.body) {
             args[aname]= env.req.body[aname];
         }
-        let podcast = Podcast.find(args.podcast);
-        if(!podcast) {
-            if(env.res) {
-                env.res.json('Podcast Not Found:' + args.podcast);
-            }
-            return;
-        }
+        let podcast = obj;
         let output = path.resolve(`${podcast.baseDirectory}/2023/EDT-${inputs.number}`);
         let source = path.resolve(`${podcast.baseDirectory}`);
         _generateEpisode(output, source, inputs);
-        return podcast;
+        // Load the generatedEpisode
+        let episodeTmp = require(`${output}/.episode.js`);
+        let episode = Episode.load(episodeTmp);
+        podcast.addToEpisodes(episode);
+        return episode;
     }
 };
 
@@ -79,5 +76,5 @@ const _generateEpisode = (output, source, inputs) => {
             'Production/episode.md': {template: `${source}/templates/_episode.emd`},
         }
     }
-    Generator.process(files, output);
+    global.Generator.process(files, output);
 }

@@ -15,7 +15,7 @@ tags:
     - DevOps
     - Security
 
-date: 
+date: 2023-05-02
 guests:
     - Darren W Pulsipher
     - Anna Scott

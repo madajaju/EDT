@@ -597,6 +597,12 @@ module.exports = {
       "notes": null,
       "socials": {}
     },
+    "Sam Seccola": {
+      "name": "Sam Seccola",
+      "email": "sam.ceccola@hpe.com",
+      "notes": null,
+      "socials": {}
+    },
     "Sarah Kalicin": {
       "name": "Sarah Kalicin",
       "email": "tbd",
@@ -719,6 +725,18 @@ module.exports = {
     },
     "Logan Selby": {
       "name": "Logan Selby",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Sam Ceccola": {
+      "name": "Sam Ceccola",
+      "email": "tbd",
+      "notes": null,
+      "socials": {}
+    },
+    "Paige Pulsipher&#34;,&#34;Darren W Pulsipher": {
+      "name": "Paige Pulsipher&#34;,&#34;Darren W Pulsipher",
       "email": "tbd",
       "notes": null,
       "socials": {}
