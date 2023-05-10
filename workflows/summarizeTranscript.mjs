@@ -2,6 +2,8 @@ import {ChatGPTAPI} from "chatgpt";
 import {program} from "commander";
 import * as fs from "fs";
 
+const API_KEY ="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";
+
 program
     .option("-f, --file <filename>");
 
@@ -21,12 +23,13 @@ async function summarize(str) {
                totalString += line + " ";
             }
         }
-        if(count > 150) {
+        if(count > 200) {
             count = 0;
             groups.push(totalString);
             totalString = "";
         }
     }
+
     if(totalString.length > 0) { groups.push(totalString); }
     await _summarize(groups);
     console.log("Done")
@@ -35,7 +38,7 @@ const _summarize = async (lines) => {
     const api = new ChatGPTAPI({apiKey: API_KEY});
     console.log("Summarizing:", lines);
     for(let i in lines) {
-        const res = await api.sendMessage(`Write a 100 word blog post for this podcast transcript in past tense: ` + lines[i]);
+        const res = await api.sendMessage(`Write a 150 word informative 3rd person blog post for this podcast transcript: ` + lines[i]);
         console.log(res.text);
     }
 }
