@@ -1,6 +1,5 @@
 const path = require('path');
 const fs = require;
-const Generator = require('ailtire/src/Documentation/Generator.js');
 
 module.exports = {
     friendlyName: 'publishEpisode',
@@ -32,7 +31,7 @@ const _docDirectory = (output) => {
             'docs': {foldercopy: 'templates/docs'},
         }
     }
-    Generator.process(files, output);
+    global.Generator.process(files, output);
 }
 
 const _episodes = (episodes, output) => {

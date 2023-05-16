@@ -17,7 +17,11 @@ module.exports = {
       "rss": "https://feeds.soundcloud.com/users/soundcloud:users:849124657/sounds.rss",
       "url": "https://soundcloud.com/embracingdigital",
       "submission": "https://soundcloud.com/embracingdigital",
-      "name": "soundCloud"
+      "name": "soundCloud",
+      "types": [
+        "audio",
+        "image"
+      ]
     },
     "IntelYouTube": {
       "id": "IntelYouTube",
@@ -26,8 +30,11 @@ module.exports = {
       "user": "darren.w.pulsipher@intel.com",
       "rss": "https://youtube.com/feeds/videos.xml?playlist_id=PLj-81kG3zG5YC2Z4aBncmOpZGh6umLy0n",
       "url": "https://youtube.com/playlist?list=PLj-81kG3zG5YC2Z4aBncmOpZGh6umLy0n",
-      "submission": "",
-      "name": "IntelYouTube"
+      "submission": "https://app.smartsheet.com/b/form/288e77bcb60a4c6da84008d508d8e469",
+      "name": "IntelYouTube",
+      "types": [
+        "video"
+      ]
     },
     "YouTube": {
       "id": "YouTube",
@@ -36,7 +43,7 @@ module.exports = {
       "user": "edt@pulsipher.org",
       "rss": "https://youtube.com/feeds/videos.xml?channel_id=UCveOcNne1kP_ZccC8kOZcDA",
       "url": "https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA",
-      "submission": "",
+      "submission": "https://studio.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA/videos/upload",
       "creds": {
         "client_id": "887621111838-907t97oik19mdj20206jjku05894irkk.apps.googleusercontent.com",
         "project_id": "guth-370314",
@@ -48,7 +55,10 @@ module.exports = {
           "http://localhost/web"
         ]
       },
-      "name": "YouTube"
+      "name": "YouTube",
+      "types": [
+        "video"
+      ]
     },
     "blog": {
       "id": "blog",
@@ -56,7 +66,11 @@ module.exports = {
       "title": "Public Sector Website",
       "user": "darren.w.pulsipher@intel.com",
       "url": "https://www.intel.com/content/www/us/en/government/embracing-digital-transformation-overview.html",
-      "name": "blog"
+      "name": "blog",
+      "types": [
+        "doc",
+        "pdf"
+      ]
     },
     "intelBlog": {
       "id": "intelBlog",
@@ -64,7 +78,11 @@ module.exports = {
       "title": "Public Sector Website",
       "user": "darren.w.pulsipher@intel.com",
       "url": "https://www.intel.com/content/www/us/en/government/embracing-digital-transformation-overview.html",
-      "name": "intelBlog"
+      "name": "intelBlog",
+      "types": [
+        "doc",
+        "pdf"
+      ]
     },
     "linkedInGroup": {
       "id": "linkedInGroup",
@@ -72,7 +90,13 @@ module.exports = {
       "title": "Embracing Digital Transformation",
       "user": "darren@pulsipher.org",
       "url": "https://www.linkedin.com/company/embracing-digital-transformation",
-      "name": "linkedInGroup"
+      "name": "linkedInGroup",
+      "types": [
+        "video",
+        "image",
+        "doc",
+        "pdf"
+      ]
     },
     "facebookPage": {
       "id": "facebookPage",
@@ -80,7 +104,11 @@ module.exports = {
       "title": "Embracing Digital Transformation Page",
       "user": "darren@pulsipher.org",
       "url": "https://www.facebook.com/embracingdigital",
-      "name": "facebookPage"
+      "name": "facebookPage",
+      "types": [
+        "video",
+        "image"
+      ]
     },
     "linkedIn": {
       "id": "linkedIn",
@@ -88,7 +116,12 @@ module.exports = {
       "title": "LinkedIn",
       "user": "darren@pulsipher.org",
       "url": "https://www.linkedin.com/in/darrenpulsipher",
-      "name": "linkedIn"
+      "name": "linkedIn",
+      "types": [
+        "video",
+        "image",
+        "doc"
+      ]
     },
     "facebook": {
       "id": "facebook",
@@ -96,7 +129,11 @@ module.exports = {
       "title": "Darren Pulsipher",
       "user": "darren@pulsipher.org",
       "url": "https://www.facebook.com/darrenpulsipher",
-      "name": "facebook"
+      "name": "facebook",
+      "types": [
+        "video",
+        "image"
+      ]
     },
     "twitter": {
       "id": "twitter",
@@ -104,7 +141,11 @@ module.exports = {
       "title": "Embracing Digital Transformation Twitter",
       "user": "darren@pulsipher.org",
       "url": "https://twitter.com/darrenpulsipher",
-      "name": "twitter"
+      "name": "twitter",
+      "types": [
+        "video",
+        "image"
+      ]
     }
   },
   "guests": {
@@ -713,12 +754,6 @@ module.exports = {
     },
     "Sam Ceccola": {
       "name": "Sam Ceccola",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
-    },
-    "Paige Pulsipher&#34;,&#34;Darren W Pulsipher": {
-      "name": "Paige Pulsipher&#34;,&#34;Darren W Pulsipher",
       "email": "tbd",
       "notes": null,
       "socials": {}
