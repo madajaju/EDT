@@ -62,7 +62,7 @@ async function summarize(srtfile, mdfile) {
                     totalString += line + " ";
                 }
             }
-            if (count > 350) {
+            if (count > 250) {
                 count = 0;
                 groups.push(totalString);
                 totalString = "";

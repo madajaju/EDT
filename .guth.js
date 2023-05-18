@@ -155,6 +155,12 @@ module.exports = {
       "notes": null,
       "socials": {}
     },
+    "Adrian Kosowski": {
+      "name": "Adrian Kosowski",
+      "email": "adrian@pathway.com",
+      "notes": null,
+      "socials": {}
+    },
     "Alan Chalker": {
       "name": "Alan Chalker",
       "email": "alanc@osc.edu",
