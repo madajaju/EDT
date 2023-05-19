@@ -24,7 +24,7 @@ summary: "In this episode Darren interviews the Adrian Kosowski CPO of Pathway a
 
 {% include soundcloud.html id="edt139" title="#139 Resilient Logistical Analytics" %}
 
-{% include youtube.html id="TBD" %}
+{% include youtube.html id="Yn-EUssQG04" %}
 
 ---
 
