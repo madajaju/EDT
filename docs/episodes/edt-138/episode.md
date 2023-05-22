@@ -17,7 +17,6 @@ tags:
 date: 2023-05-16
 guests:
     - Darren W Pulsipher
-    - Sam Ceccola
 
 img: thumbnail.png
 summary: "In this episode Darren interviews Ken White from Dell Technology about how Cloud technology is more than technology, but a process and cultural change in organizations."

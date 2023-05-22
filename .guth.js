@@ -540,6 +540,12 @@ module.exports = {
         "linkedin": "maxhabibi"
       }
     },
+    "Michael Mehlberg": {
+      "name": "Michael Mehlberg",
+      "email": "michael.mehlberg@darkskytechnology.com",
+      "notes": null,
+      "socials": {}
+    },
     "Mike Fraser": {
       "name": "Mike Fraser",
       "email": "tbd",
@@ -733,36 +739,6 @@ module.exports = {
       "socials": {
         "linkedin": "uzairhussain"
       }
-    },
-    "Ian Evans": {
-      "name": "Ian Evans",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
-    },
-    "Mike Wagner": {
-      "name": "Mike Wagner",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
-    },
-    "Keith Gray": {
-      "name": "Keith Gray",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
-    },
-    "Logan Selby": {
-      "name": "Logan Selby",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
-    },
-    "Sam Ceccola": {
-      "name": "Sam Ceccola",
-      "email": "tbd",
-      "notes": null,
-      "socials": {}
     }
   },
   "blueprints": {}

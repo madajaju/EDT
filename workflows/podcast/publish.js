@@ -116,9 +116,15 @@ const _guests = (podcast, output, source) => {
         let gpath = path.resolve(`${edir}/guests/${guest.name.replace(/\s/g,'-').replace(/\./g,'-')}`);
         let apath = path.resolve(`${gpath}/${guest.bio}`);
         let thumbnail = guest.thumbnail || "TBD";
+        console.log("Guest Path:", apath);
         let content = "";
         if (fs.existsSync(apath)) {
-            content = fs.readFileSync(apath).toString('utf-8');
+            try {
+                content = fs.readFileSync(apath).toString('utf-8');
+            }
+            catch(e) {
+                console.error("Conent for bio.md not found", e);
+            }
         }
         let files = {
             context: {

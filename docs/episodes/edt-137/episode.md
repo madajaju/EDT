@@ -18,7 +18,6 @@ tags:
 date: 2023-05-10
 guests:
     - Darren W Pulsipher
-    - Sam Ceccola
 
 img: thumbnail.png
 summary: "In this episode Darren interviews Sam Ceccola, CTO of DOD for HPE about the new business and technology models changing the way organizations consume hybrid cloud."
