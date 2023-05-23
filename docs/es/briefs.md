@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Española
+title: Español
 has_children: true
 parent: Weekly Briefs
 ref: española

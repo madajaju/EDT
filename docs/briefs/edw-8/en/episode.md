@@ -15,7 +15,6 @@ tags:
 
 date: 2023-03-27
 guests:
-    - Darren W Pulsipher
 
 img: thumbnail.png
 summary: ""

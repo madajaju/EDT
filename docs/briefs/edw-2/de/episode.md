@@ -15,7 +15,6 @@ tags:
 
 date: 
 guests:
-    - Darren W Pulsipher
 
 img: thumbnail.png
 summary: ""

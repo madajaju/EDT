@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: cybersecurity
+title: CyberSecurity
 parent: Tags
 ---
 
