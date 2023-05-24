@@ -5,7 +5,7 @@ number: 3
 ref: brief-EDW3-es
 lang: es
 has_children: false
-parent: Española
+parent: Español
 grand_parent: Weekly Briefs
 nav_order: 3
 tags:

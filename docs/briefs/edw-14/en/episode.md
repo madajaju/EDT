@@ -16,7 +16,7 @@ tags:
     - DataManagement
     - AdvancedComms
 
-date: 
+date: 2023-05-08
 guests:
 
 img: thumbnail.png

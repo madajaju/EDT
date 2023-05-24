@@ -5,7 +5,7 @@ number: 8
 ref: brief-EDW8-es
 lang: es
 has_children: false
-parent: Española
+parent: Español
 grand_parent: Weekly Briefs
 nav_order: 8
 tags:

@@ -13,7 +13,7 @@ tags:
     - Edge
     - Cybersecurity
 
-date: 
+date: 2023-04-24
 guests:
 
 img: thumbnail.png

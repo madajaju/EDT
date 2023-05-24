@@ -5,7 +5,7 @@ number: 14
 ref: brief-EDW14-es
 lang: es
 has_children: false
-parent: Española
+parent: Español
 grand_parent: Weekly Briefs
 nav_order: 14
 tags:
@@ -16,7 +16,7 @@ tags:
     - DataManagement
     - AdvancedComms
 
-date: 
+date: 2023-05-08
 guests:
 
 img: thumbnail.png

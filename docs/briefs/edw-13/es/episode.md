@@ -5,7 +5,7 @@ number: 13
 ref: brief-EDW13-es
 lang: es
 has_children: false
-parent: Española
+parent: Español
 grand_parent: Weekly Briefs
 nav_order: 13
 tags:
@@ -13,7 +13,7 @@ tags:
     - CyberSecurity
     - Edge
 
-date: 
+date: 2023-05-01
 guests:
 
 img: thumbnail.png
