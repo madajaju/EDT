@@ -23,9 +23,35 @@ summary: "In this episode, Darren interviews Michael Mehlberg about increasing c
 
 ---
 
-Summary
+Opensource software is the backbone of software development packages today, and 99% of the time, open-source packages are harmless and provide much-needed solutions for developers. But it only takes one malicious line of code to compromise the entire system. This is where background checking your open-source becomes crucial. As Michael Mehlberg, CEO of Darksky Technologies, points out, open-source is a significant aspect of securing the software supply chain. Developers may unwittingly use a package with a vulnerability or malicious code, and the risk can spread through the entire system.
 
-Details
+Mehlberg explains how Darksky Technologies addresses this issue by focusing on fundamental trust issues in the supply chain. They believe that if we can't trust the developers who are developing the software, we can't trust the code that they produce. The company offers a background-checking service to determine the integrity of open-source packages used in the software supply chain. They use a combination of automated and manual checks to ensure the package is trustworthy before it is used in the system.
+
+While open-source offers developers a treasure trove of solutions, it is essential to vet the packages used thoroughly. By taking a proactive approach and background checking open-source, the risk of compromised systems can be significantly reduced. The software supply chain is only as strong as its weakest link, and ensuring that every package is trustworthy is essential for securing the entire system.
+
+About the developer or developers behind it, and it's worth keeping an eye on any changes or updates to that package.
+
+Knowing who is behind the code you are using must be considered. A small percentage of developers can create significant problems for the rest of us, intentionally or not. As the number of vulnerabilities discovered daily grows, it's more important than ever to ensure that your code is trustworthy.
+
+While software assurance tools can catch vulnerabilities, they are not foolproof. A developer who is malicious or unintentionally includes these tools may miss a vulnerability. Knowing who is behind the code and how actively maintained it is can help identify potential risks early on.
+
+Developers need to understand that even seemingly small packages can significantly impact larger software systems. Maintaining a critical program means paying attention to every piece of code used, no matter how small it may seem. Investigating the developer behind a package and actively monitoring updates can help prevent potential disasters. With millions of lines of code being used by developers worldwide, it's worth investing the time and effort to ensure that code is trustworthy and secure.
+
+Instead, we focus on the overall trustworthiness of an open-source package by analyzing various factors, such as its popularity, number of contributors, frequency of updates, and other metrics.
+
+One important aspect that we evaluate is the responsiveness of the maintainers of the open-source package. We look at their track record of fixing security vulnerabilities and addressing bug reports and other issues. If the maintainers quickly respond to issues and provide timely updates, it's a good sign of a healthy and trustworthy package.
+
+Another factor we consider is the license of the open-source package. We analyze the terms of the right to ensure it complies with applicable laws and regulations. We also look for problematic clauses, such as those allowing the package to collect and share user data without consent.
+
+Overall, assessing the trustworthiness of an open-source package is a complex task that requires a combination of automated and manual analysis. At Dark Sky Technology, we use advanced tools and techniques to provide our clients with actionable insights into their open-source software risks and vulnerabilities. Doing so, we help them make informed decisions and mitigate potential threats to their business and customers.
+
+Are you a company using open-source software as part of your technology stack? Do you trust the contributors to that open-source code? Michael DeBolt of Dark Sky Technologies points out that while open source has done amazing things in technology, mindlessly grabbing code and putting it into your systems can be risky. Michael discusses the importance of trust in open-source contributors and the need for software supply chain security in this podcast transcript.
+
+So how do you determine which open-source contributors to trust? Michael says it depends on the program or business unit's security requirements. Some programs will say no to certain countries or companies with any development influence, while others may be less sensitive.
+
+Michael also notes that determining trust goes beyond just looking at programming contributions. It involves looking into a developer's background and online profile to see if they may intend to create malicious harm. Dark Sky Technologies offers solutions to help companies vet open-source contributors and build trust from the ground up.
+
+To learn more about open-source security and vetting contributors, visit Dark Sky Technologies' website www.darkskytechnology.com or connect with them on LinkedIn. Trust is crucial when using open-source software, so take the necessary steps to protect your systems and data.
 
 
 <details>
