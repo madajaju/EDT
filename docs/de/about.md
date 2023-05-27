@@ -1,7 +1,8 @@
 ---
 layout: default
-title: About
+title: Über
 lang: de
+parent: About
 has_children: false
 ---
 

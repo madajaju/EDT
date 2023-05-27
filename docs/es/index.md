@@ -1,12 +1,13 @@
 ---
 layout: default
-title: Overview
+title: Visión
 nav_order: 1
+parent: Overview
 lang: es
 ---
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
 
-# Abraçando a Transformação Digital
+# Abrazando la Transformación Digital
 
 <style>
 .topcolumn {
@@ -50,11 +51,11 @@ Darren Pulsipher, Arquitecto Principal de Soluciones para el Sector Público en 
   </div>
   <div class="topcolumn topright" >
     <a href="{{ latestEpisode.url }}">
-        <img src="{{ latestEpisode.path | remove: latestEpisode.name }}/{{ latestEpisode.img }}" width="128" height="128"><br>
+        <img src="../{{ latestEpisode.path | remove: latestEpisode.name }}/{{ latestEpisode.img }}" width="128" height="128"><br>
         <small>{{ latestEpisode.number}} - {{ latestEpisode.title }}</small>
     </a><br>
     <a href="{{ latestBrief.url }}">
-        <img src="./EDTW.png" width="128" height="128"><br>
+        <img src="../EDTW.png" width="128" height="128"><br>
         <small>Weekly News Brief {{ latestBrief.title }}</small>
     </a><br>
   </div>

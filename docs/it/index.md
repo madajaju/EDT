@@ -1,12 +1,13 @@
 ---
 layout: default
-title: Overview
+title: Panoramica
+parent: Overview
 nav_order: 1
 lang: it
 ---
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
 
-# Abraçando a Transformação Digital
+# Abbracciando la Trasformazione Digitale
 
 <style>
 .topcolumn {
@@ -50,11 +51,11 @@ clear: both;
   </div>
   <div class="topcolumn topright" >
     <a href="{{ latestEpisode.url }}">
-        <img src="{{ latestEpisode.path | remove: latestEpisode.name }}/{{ latestEpisode.img }}" width="128" height="128"><br>
+        <img src="../{{ latestEpisode.path | remove: latestEpisode.name }}/{{ latestEpisode.img }}" width="128" height="128"><br>
         <small>{{ latestEpisode.number}} - {{ latestEpisode.title }}</small>
     </a><br>
     <a href="{{ latestBrief.url }}">
-        <img src="./EDTW.png" width="128" height="128"><br>
+        <img src="../EDTW.png" width="128" height="128"><br>
         <small>Weekly News Brief {{ latestBrief.title }}</small>
     </a><br>
   </div>
@@ -66,7 +67,7 @@ clear: both;
 {% if page.number %}
 <div style="display:flex;">
 <p class="episode">
-    <img class="thumbnail" src="{{ page.path | remove: page.name }}/{{ page.img }}" width="128" height="128">
+    <img class="thumbnail" src="../{{ page.path | remove: page.name }}/{{ page.img }}" width="128" height="128">
     <a href="{{ page.url }}">{{ page.number}} - {{ page.title }}</a><br>
     {{ page.summary }}
 </p>

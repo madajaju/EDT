@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Overview
+title: Visão
+parent: Overview
 nav_order: 1
 lang: pt
 ---

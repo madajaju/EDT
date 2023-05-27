@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-has_children: false
+has_children: true
 lang: en
 ---
 
