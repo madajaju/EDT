@@ -2,11 +2,12 @@
 layout: default
 title: Overview
 nav_order: 1
-lang: en
+lang: pt
 ---
+
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
 
-# Embracing Digital Transformation
+# Abraçando a Transformação Digital
 
 <style>
 .topcolumn {
@@ -36,12 +37,10 @@ clear: both;
 <div class="toprow">
   <div class="topcolumn topleft" >
     <p> 
-        Embracing Digital Transformation is a weekly podcast that is multicast on <a rehf="https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA">Youtube</a> and <a href="https://soundcloud.com/embracingdigital">SoundCloud</a>.
-        Darren Pulsipher, Chief Solution Architect for Public Sector at Intel, investigates effective change leveraging
-        people, process, policy and technology.
+        "Embracing Digital Transformation" é um podcast semanal que é transmitido em várias plataformas, como <a href="https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA">Youtube</a> e <a href="https://soundcloud.com/embracingdigital">SoundCloud</a>. Darren Pulsipher, Arquiteto Principal de Soluções para o Setor Público na Intel, investiga a mudança efetiva utilizando pessoas, processos, políticas e tecnologia.
     </p>
     <p> 
-       We are building a community of practitioners and strategist to talk about the challenges and successes of adopting Digital Transformation. Join the community by checking out the links below. 
+        Estamos construindo uma comunidade de profissionais e estrategistas para discutir os desafios e sucessos da adoção da Transformação Digital. Junte-se à comunidade conferindo os links abaixo:
         <a href="https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA">Youtube</a>,
         <a href="https://soundcloud.com/embracingdigital">SoundCloud</a>,
         <a href="https://www.linkedin.com/company/embracing-digital-transformation/">LinkedIn Group</a>,

@@ -1,7 +1,8 @@
 ---
 layout: default
 title: About
-has_children: true
+has_children: false
+lang: en
 ---
 
 Darren Pulsipher, Chief Solution Architect for Public Sector at Intel, investigates effective change leveraging people, process, and technology.

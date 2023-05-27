@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Overview
+lang: de
 nav_order: 1
-lang: en
 ---
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
 
-# Embracing Digital Transformation
+# Abraçando a Transformação Digital
 
 <style>
 .topcolumn {
@@ -36,12 +36,10 @@ clear: both;
 <div class="toprow">
   <div class="topcolumn topleft" >
     <p> 
-        Embracing Digital Transformation is a weekly podcast that is multicast on <a rehf="https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA">Youtube</a> and <a href="https://soundcloud.com/embracingdigital">SoundCloud</a>.
-        Darren Pulsipher, Chief Solution Architect for Public Sector at Intel, investigates effective change leveraging
-        people, process, policy and technology.
+        "Embracing Digital Transformation" ist ein wöchentlicher Podcast, der auf <a href="https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA">Youtube</a> und <a href="https://soundcloud.com/embracingdigital">SoundCloud</a> multicast wird. Darren Pulsipher, Chief Solution Architect für den öffentlichen Sektor bei Intel, untersucht effektive Veränderungen unter Einbeziehung von Menschen, Prozessen, Richtlinien und Technologie.
     </p>
     <p> 
-       We are building a community of practitioners and strategist to talk about the challenges and successes of adopting Digital Transformation. Join the community by checking out the links below. 
+        Wir bauen eine Gemeinschaft von Fachleuten und Strategen auf, um über die Herausforderungen und Erfolge der Einführung der digitalen Transformation zu sprechen. Treten Sie der Community bei, indem Sie die unten stehenden Links überprüfen.
         <a href="https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA">Youtube</a>,
         <a href="https://soundcloud.com/embracingdigital">SoundCloud</a>,
         <a href="https://www.linkedin.com/company/embracing-digital-transformation/">LinkedIn Group</a>,
