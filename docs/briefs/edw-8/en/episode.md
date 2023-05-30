@@ -20,7 +20,7 @@ img: thumbnail.png
 summary: ""
 ---
 
-{% include transistor.html id="7f769098" %}
+{% include transistor.html id="7369f2b9" %}
 
 
 

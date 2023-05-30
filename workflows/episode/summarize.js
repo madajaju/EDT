@@ -43,6 +43,7 @@ module.exports = {
         let srtpath = path.resolve(artfile);
         let mdpath = path.resolve(mdfile);
         await summarize(srtpath, mdpath);
+        AEvent.emit('summarize.complete', {obj: obj.id, message: 'Summarized Complete'});
         return epi;
     }
 };
@@ -76,6 +77,7 @@ async function summarize(srtfile, mdfile) {
         for (let i in groups) {
             const res = await ask(`Write a 200 word informative 2nd person blog post for this podcast transcript: ` + groups[i]);
             console.log("Response:", res, '\n');
+            AEvent.emit('summarize.inprogress', {message: `${Math.floor(i/groups.length)*100}% Complete`});
             resultString += res + '\n\n';
         }
         fs.writeFileSync(mdfile, resultString);
