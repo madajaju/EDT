@@ -16,7 +16,7 @@ tags:
     - multicloud
     - organizationalchange
 
-date: 2021-07-08
+date: Wed Jul 07 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Kevin Bleckmann

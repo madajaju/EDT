@@ -15,7 +15,7 @@ tags:
     - process
     - technology
 
-date: 2023-02-16
+date: Wed Feb 15 2023 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
     - Jim Richberg

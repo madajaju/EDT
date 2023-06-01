@@ -15,7 +15,7 @@ tags:
     - compute
     - data
 
-date: 2021-02-10
+date: Tue Feb 09 2021 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
 

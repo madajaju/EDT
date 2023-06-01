@@ -15,7 +15,7 @@ tags:
     - technology
     - pmem
 
-date: 2020-11-12
+date: Wed Nov 11 2020 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
     - Tim Faulkes

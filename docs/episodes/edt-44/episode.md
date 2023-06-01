@@ -14,7 +14,7 @@ tags:
     - deloitte
     - multicloud
 
-date: 2021-03-23
+date: Mon Mar 22 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Doug Bourgeois

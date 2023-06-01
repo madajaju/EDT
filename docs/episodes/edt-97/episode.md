@@ -11,7 +11,7 @@ tags:
     - graphdb
     - katanagraph
 
-date: 2022-07-28
+date: Wed Jul 27 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Madi Ahmadi

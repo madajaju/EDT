@@ -17,7 +17,7 @@ tags:
     - technology
     - process
 
-date: 2022-03-24
+date: Wed Mar 23 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - James Reinders

@@ -16,7 +16,7 @@ tags:
     - cloudcost
     - technology
 
-date: 2021-10-07
+date: Wed Oct 06 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - David Esposito

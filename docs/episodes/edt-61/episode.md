@@ -15,7 +15,7 @@ tags:
     - supplychain
     - securesupplychain
 
-date: 2021-08-12
+date: Wed Aug 11 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Steve Orrin

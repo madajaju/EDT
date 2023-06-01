@@ -15,7 +15,7 @@ tags:
     - data
     - technology
 
-date: 2021-11-25
+date: Wed Nov 24 2021 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
     - Matthew Carroll

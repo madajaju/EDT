@@ -13,7 +13,7 @@ tags:
     - waveform
     - technology
 
-date: 2023-04-20
+date: Wed Apr 19 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 

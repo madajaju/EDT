@@ -8,7 +8,7 @@ parent: Episodes
 nav_order: 14
 tags:
 
-date: 2020-08-20
+date: Wed Aug 19 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Sarah Kalicin

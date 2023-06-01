@@ -14,7 +14,7 @@ tags:
     - cybersecurity
     - edge
 
-date: 2022-12-15
+date: Wed Dec 14 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
     - Steve Orrin

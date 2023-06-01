@@ -8,7 +8,7 @@ parent: Episodes
 nav_order: 140
 tags:
 
-date: 05/25/2023
+date: Wed May 24 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Michael Mehlberg

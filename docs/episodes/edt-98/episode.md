@@ -17,7 +17,7 @@ tags:
     - multicloud
     - datamesh
 
-date: 2022-08-04
+date: Wed Aug 03 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Chetan Venkatesh

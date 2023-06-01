@@ -15,7 +15,7 @@ tags:
     - rpa
     - automation
 
-date: 2023-03-09
+date: Wed Mar 08 2023 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
     - Andrew Cohen

@@ -13,7 +13,7 @@ tags:
     - people
     - process
 
-date: 2022-06-07
+date: Mon Jun 06 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Glenn Kurowski

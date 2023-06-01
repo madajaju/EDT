@@ -10,7 +10,7 @@ tags:
     - cybersecurity
     - zerotrust
 
-date: 2022-08-21
+date: Sat Aug 20 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Steve Orrin

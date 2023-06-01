@@ -16,7 +16,7 @@ tags:
     - technology
     - process
 
-date: 2022-09-20
+date: Mon Sep 19 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Carla Trevino

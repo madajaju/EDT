@@ -15,7 +15,7 @@ tags:
     - cybersecurity
     - zerotrustarchitecture
 
-date: 2021-04-08
+date: Wed Apr 07 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 

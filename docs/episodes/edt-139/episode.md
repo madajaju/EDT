@@ -13,7 +13,7 @@ tags:
     - pathway
     - technology
 
-date: 2023-05-18
+date: Wed May 17 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Adrian Kosowski

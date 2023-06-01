@@ -15,7 +15,7 @@ tags:
     - virtualdatacenter
     - vergeio
 
-date: 2022-07-21
+date: Wed Jul 20 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Aaron Reid

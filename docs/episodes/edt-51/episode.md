@@ -14,7 +14,7 @@ tags:
     - technology
     - data
 
-date: 2021-06-03
+date: Wed Jun 02 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 

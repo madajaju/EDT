@@ -9,14 +9,14 @@ parent: Español
 grand_parent: Weekly Briefs
 nav_order: 11
 tags:
-    - AI
-    - Compute
-    - Edge
-    - Cybersecurity
-    - DataManagement
-    - AdvancedComms
+    - ai
+    - compute
+    - edge
+    - cybersecurity
+    - datamanagement
+    - advancedcomms
 
-date: 2023-04-17
+date: Sun Apr 16 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
 
 img: thumbnail.png

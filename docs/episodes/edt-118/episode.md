@@ -16,7 +16,7 @@ tags:
     - data
     - cloud
 
-date: 2023-01-19
+date: Wed Jan 18 2023 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
 

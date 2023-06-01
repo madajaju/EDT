@@ -14,7 +14,7 @@ tags:
     - csp
     - multicloud
 
-date: 2021-03-18
+date: Wed Mar 17 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Doug Bourgeois

@@ -12,7 +12,7 @@ tags:
     - riskmanagement
     - process
 
-date: 2021-08-05
+date: Wed Aug 04 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Steve Orrin

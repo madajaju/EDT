@@ -9,11 +9,11 @@ parent: Português
 grand_parent: Weekly Briefs
 nav_order: 12
 tags:
-    - AI
-    - Edge
-    - Cybersecurity
+    - ai
+    - edge
+    - cybersecurity
 
-date: 2023-04-24
+date: Sun Apr 23 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
 
 img: thumbnail.png

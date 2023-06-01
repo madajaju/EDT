@@ -14,7 +14,7 @@ tags:
     - compute
     - cloud
 
-date: 2022-03-17
+date: Wed Mar 16 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Stephen Holt

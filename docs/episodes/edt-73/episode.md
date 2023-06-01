@@ -12,7 +12,7 @@ tags:
     - compute
     - cybersecurity
 
-date: 2022-01-20
+date: Wed Jan 19 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
 

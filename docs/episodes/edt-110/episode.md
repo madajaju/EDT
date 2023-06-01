@@ -15,7 +15,7 @@ tags:
     - process
     - compute
 
-date: 2022-10-20
+date: Wed Oct 19 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Thomas Horlander

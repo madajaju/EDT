@@ -9,11 +9,11 @@ parent: Español
 grand_parent: Weekly Briefs
 nav_order: 7
 tags:
-    - AI
-    - Compute
-    - DataManagement
+    - ai
+    - compute
+    - datamanagement
 
-date: 2023-03-20
+date: Sun Mar 19 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
 
 img: thumbnail.png

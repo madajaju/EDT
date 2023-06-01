@@ -17,7 +17,7 @@ tags:
     - cxl
     - ceo
 
-date: 2022-06-02
+date: Wed Jun 01 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Charles Fan

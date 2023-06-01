@@ -9,11 +9,11 @@ parent: Português
 grand_parent: Weekly Briefs
 nav_order: 1
 tags:
-    - AI
-    - Compute
-    - Cybersecurity
+    - ai
+    - compute
+    - cybersecurity
 
-date: 2023-02-07
+date: Mon Feb 06 2023 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
 
 img: thumbnail.png

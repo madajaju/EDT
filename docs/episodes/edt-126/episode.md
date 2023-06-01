@@ -8,7 +8,7 @@ parent: Episodes
 nav_order: 126
 tags:
 
-date: 02/23/2023
+date: Thu Feb 23 2023 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
     - Luuk Van Dijk

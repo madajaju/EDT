@@ -13,7 +13,7 @@ tags:
     - telelearning
     - cybersecurity
 
-date: 2020-08-12
+date: Tue Aug 11 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Erin Moseley

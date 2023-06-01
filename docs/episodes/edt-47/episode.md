@@ -10,7 +10,7 @@ tags:
     - covid
     - remoteworker
 
-date: 2021-04-22
+date: Wed Apr 21 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Greg Ernst

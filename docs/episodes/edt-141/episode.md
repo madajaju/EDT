@@ -13,7 +13,7 @@ tags:
     - ai
     - cybersecurity
 
-date: 6/1/2023
+date: Wed May 31 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Pamela Follet

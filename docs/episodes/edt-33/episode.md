@@ -17,7 +17,7 @@ tags:
     - multicloud
     - reliability
 
-date: 2020-12-15
+date: Mon Dec 14 2020 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
 

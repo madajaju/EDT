@@ -13,7 +13,7 @@ tags:
     - datacentricorganization
     - organizationalchange
 
-date: 2020-08-21
+date: Thu Aug 20 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Sarah Kalicin

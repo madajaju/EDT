@@ -16,7 +16,7 @@ tags:
     - cybersecurity
     - aiml
 
-date: 2022-08-30
+date: Mon Aug 29 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Gretchen Stewart

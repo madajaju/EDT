@@ -14,7 +14,7 @@ tags:
     - heterogeneouscompute
     - compute
 
-date: 2023-04-06
+date: Wed Apr 05 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 

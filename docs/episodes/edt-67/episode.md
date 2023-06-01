@@ -11,7 +11,7 @@ tags:
     - comms
     - wifi6
 
-date: 2021-10-21
+date: Wed Oct 20 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Leeland Brown

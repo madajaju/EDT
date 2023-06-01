@@ -12,7 +12,7 @@ tags:
     - multicloud
     - cybersecurity
 
-date: 2021-09-02
+date: Wed Sep 01 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Greg Clifton

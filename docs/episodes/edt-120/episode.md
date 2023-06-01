@@ -16,7 +16,7 @@ tags:
     - compute
     - technology
 
-date: 2023-01-26
+date: Wed Jan 25 2023 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
     - Alan Evans

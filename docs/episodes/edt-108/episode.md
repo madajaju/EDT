@@ -12,7 +12,7 @@ tags:
     - comms
     - wifi6
 
-date: 2022-10-05
+date: Tue Oct 04 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Leeland Brown

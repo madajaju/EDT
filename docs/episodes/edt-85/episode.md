@@ -14,7 +14,7 @@ tags:
     - technology
     - process
 
-date: 2022-05-05
+date: Wed May 04 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 

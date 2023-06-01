@@ -16,7 +16,7 @@ tags:
     - edge
     - sdn
 
-date: 2022-08-25
+date: Wed Aug 24 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Dana Yanch

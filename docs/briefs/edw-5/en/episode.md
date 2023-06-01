@@ -9,15 +9,12 @@ parent: English
 grand_parent: Weekly Briefs
 nav_order: 5
 tags:
-    - AI
-    - Compute
-    - Cybersecurity
 
-date: 
+date: Mon Mar 06 2023 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:
 
 img: thumbnail.png
-summary: ""
+summary: "Summary"
 ---
 
 {% include transistor.html id="0fb95748" %}

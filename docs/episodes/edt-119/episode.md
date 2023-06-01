@@ -14,7 +14,7 @@ tags:
     - process
     - compute
 
-date: 2022-01-19
+date: Tue Jan 18 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
     - Jason Dunn-Potter

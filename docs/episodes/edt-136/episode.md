@@ -15,7 +15,7 @@ tags:
     - devops
     - security
 
-date: 2023-05-02
+date: Mon May 01 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Anna Scott

@@ -17,7 +17,7 @@ tags:
     - technology
     - process
 
-date: 2020-10-07
+date: Tue Oct 06 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 

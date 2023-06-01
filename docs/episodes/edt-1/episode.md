@@ -16,7 +16,7 @@ tags:
     - compute
     - data
 
-date: 2020-05-08
+date: Thu May 07 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 

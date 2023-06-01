@@ -1,6 +1,6 @@
 ---
 layout: brief
-title: "2022-02-27"
+title: "2023-02-27"
 number: 4
 ref: brief-EDW4-es
 lang: es
@@ -9,15 +9,12 @@ parent: Español
 grand_parent: Weekly Briefs
 nav_order: 4
 tags:
-    - AI
-    - Edge
-    - DataManagement
 
-date: 
+date: Mon Feb 27 2023 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:
 
 img: thumbnail.png
-summary: ""
+summary: "Summary"
 ---
 
 

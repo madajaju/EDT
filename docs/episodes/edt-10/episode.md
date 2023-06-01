@@ -13,7 +13,7 @@ tags:
     - technology
     - vdi
 
-date: 2020-08-05
+date: Tue Aug 04 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Illyse Sheaffer
