@@ -10,3 +10,5 @@ img: Adrian-Kosowski-thumbnail.jpg
 
 
 
+Adrian obtained his PhD in Computer Science at the age of 20. He has 15+ years of experience in research. Adrian co-authored over 100 research publications, including articles in the world&#39;s best conferences &amp; journals in different disciplines (Theoretical CS, Physics, Biology). He worked on transportation optimization, route planning, and logistics projects in collaboration with industrial partners. As co-founder of Spoj.com, the first platform and community for online training of programming, Adrian had a chance to impact the lives of millions of programmers around the globe. He is also a distinguished competitive programmer and coach. As Head of Business Development at Spoj.com, he acquired the first major contracts.
+
