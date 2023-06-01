@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 79
 tags:
-    - COVID
-    - RemoteWorker
-    - MobileMentor
-    - GenZ
+    - covid
+    - remoteworker
+    - mobilementor
+    - genz
     - people
     - process
     - compute

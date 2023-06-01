@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 67
 tags:
-    - 5G
-    - Comms
-    - WiFi6
+    - 5g
+    - comms
+    - wifi6
 
 date: 2021-10-21
 guests:

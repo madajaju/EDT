@@ -7,13 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 96
 tags:
-    - PrivateCloud
+    - privatecloud
     - cloud
     - compute
     - technology
-    - SDI
-    - VirtualDatacenter
-    - Vergeio
+    - sdi
+    - virtualdatacenter
+    - vergeio
 
 date: 2022-07-21
 guests:

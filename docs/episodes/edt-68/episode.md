@@ -7,13 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 68
 tags:
-    - 5G
-    - DOD
-    - Compute
+    - 5g
+    - dod
+    - compute
     - technology
-    - Cloud
-    - Edge
-    - Comms
+    - cloud
+    - edge
+    - comms
 
 date: 2021-10-28
 guests:

@@ -7,15 +7,15 @@ has_children: false
 parent: Episodes
 nav_order: 98
 tags:
-    - DataArchitecture
-    - DataManagement
+    - dataarchitecture
+    - datamanagement
     - data
     - technology
     - cloud
-    - GlobalDataNetwork
-    - MacroMeta
-    - MultiCloud
-    - DataMesh
+    - globaldatanetwork
+    - macrometa
+    - multicloud
+    - datamesh
 
 date: 2022-08-04
 guests:

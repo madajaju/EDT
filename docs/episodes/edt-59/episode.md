@@ -7,14 +7,14 @@ has_children: false
 parent: Episodes
 nav_order: 59
 tags:
-    - Cybersecurity
-    - Data
-    - DataPrivacy
-    - Privacy
+    - cybersecurity
+    - data
+    - dataprivacy
+    - privacy
     - process
     - people
-    - Healthcare
-    - SutterHealth
+    - healthcare
+    - sutterhealth
 
 date: 2021-07-29
 guests:

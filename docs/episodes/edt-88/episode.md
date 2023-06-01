@@ -7,13 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 88
 tags:
-    - Cybersecurity
-    - DevSecOps
-    - RPA
+    - cybersecurity
+    - devsecops
+    - rpa
     - technology
     - compute
-    - ZeroTrust
-    - ZTA
+    - zerotrust
+    - zta
 
 date: 2022-05-24
 guests:

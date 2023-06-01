@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 119
 tags:
-    - MooresLaw
-    - Technology
-    - Innovation
-    - Leadership
+    - mooreslaw
+    - technology
+    - innovation
+    - leadership
     - process
     - compute
 

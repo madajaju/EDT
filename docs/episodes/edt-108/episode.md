@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 108
 tags:
-    - 5G
-    - CellPhone
-    - Comms
-    - WiFi6
+    - 5g
+    - cellphone
+    - comms
+    - wifi6
 
 date: 2022-10-05
 guests:

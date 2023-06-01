@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 1
 tags:
-    - DataArchitecture
-    - SoftwareDeveloper
-    - Microservice
-    - Container
-    - Virtualization
+    - dataarchitecture
+    - softwaredeveloper
+    - microservice
+    - container
+    - virtualization
     - technology
     - compute
     - data

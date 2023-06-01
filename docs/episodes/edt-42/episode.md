@@ -7,13 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 42
 tags:
-    - Cybersecurity
-    - DevOps
+    - cybersecurity
+    - devops
     - compute
     - process
     - technology
-    - MultiCloud
-    - DevSecOps
+    - multicloud
+    - devsecops
 
 date: 2021-03-15
 guests:

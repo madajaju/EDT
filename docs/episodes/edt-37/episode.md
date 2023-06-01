@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 37
 tags:
-    - COVID
-    - Cybersecurity
-    - RemoteWorker
+    - covid
+    - cybersecurity
+    - remoteworker
     - people
     - process
     - compute

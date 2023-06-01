@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 12
 tags:
-    - RemoteLearning
+    - remotelearning
     - people
     - technology
-    - TeleLearning
-    - Cybersecurity
+    - telelearning
+    - cybersecurity
 
 date: 2020-08-12
 guests:

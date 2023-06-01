@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 90
 tags:
-    - CTO
-    - OrganizationalChange
-    - Change
+    - cto
+    - organizationalchange
+    - change
     - people
     - process
 

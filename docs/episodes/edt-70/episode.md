@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 70
 tags:
-    - DataGovernance
-    - Immuta
-    - DataAccess
-    - IdentityManagement
-    - Cybersecurity
-    - Data
+    - datagovernance
+    - immuta
+    - dataaccess
+    - identitymanagement
+    - cybersecurity
+    - data
     - technology
 
 date: 2021-11-25

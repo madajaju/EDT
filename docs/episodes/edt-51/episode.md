@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 51
 tags:
-    - DataArchitecture
-    - MemVerge
-    - PMEM
-    - Optane
+    - dataarchitecture
+    - memverge
+    - pmem
+    - optane
     - technology
     - data
 

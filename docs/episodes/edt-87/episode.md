@@ -7,14 +7,14 @@ has_children: false
 parent: Episodes
 nav_order: 87
 tags:
-    - ConfidentialComputing
-    - DevOps
+    - confidentialcomputing
+    - devops
     - compute
     - technology
     - process
-    - DevSecOps
-    - Cybersecurity
-    - SGX
+    - devsecops
+    - cybersecurity
+    - sgx
 
 date: 2022-05-19
 guests:

@@ -7,13 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 94
 tags:
-    - HybridCloud
-    - MicroCloud
-    - PrivateCloud
+    - hybridcloud
+    - microcloud
+    - privatecloud
     - compute
     - technology
-    - Cloud
-    - Vergeio
+    - cloud
+    - vergeio
 
 date: 2022-07-07
 guests:

@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 62
 tags:
-    - Edge
-    - Compute
-    - 5G
-    - AIML
-    - IoT
+    - edge
+    - compute
+    - 5g
+    - aiml
+    - iot
 
 date: 2021-08-19
 guests:

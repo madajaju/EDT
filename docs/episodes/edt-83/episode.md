@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 83
 tags:
-    - Data
-    - Datacentric
+    - data
+    - datacentric
     - people
     - process
-    - IDC2022
+    - idc2022
 
 date: 20220-04-08
 guests:

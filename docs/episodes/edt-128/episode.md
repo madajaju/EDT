@@ -7,7 +7,7 @@ has_children: false
 parent: Episodes
 nav_order: 128
 tags:
-    - Majorleaguehacking
+    - majorleaguehacking
     - hackathon
     - developer
     - people

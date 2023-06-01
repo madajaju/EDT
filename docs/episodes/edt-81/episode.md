@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 81
 tags:
-    - CPU
-    - FPGA
-    - GPU
-    - HeterogeneousProgramming
-    - NPU
-    - OneAPI
+    - cpu
+    - fpga
+    - gpu
+    - heterogeneousprogramming
+    - npu
+    - oneapi
     - compute
     - technology
     - process

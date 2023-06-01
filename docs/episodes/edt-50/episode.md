@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 50
 tags:
-    - EmployeeBurnout
-    - RemoteLearning
-    - RemoteWorker
+    - employeeburnout
+    - remotelearning
+    - remoteworker
     - people
     - process
     - compute

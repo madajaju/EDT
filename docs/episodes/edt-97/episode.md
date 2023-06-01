@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 97
 tags:
-    - Data
-    - GraphDB
-    - KatanaGraph
+    - data
+    - graphdb
+    - katanagraph
 
 date: 2022-07-28
 guests:

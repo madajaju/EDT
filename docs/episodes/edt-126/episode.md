@@ -7,15 +7,8 @@ has_children: false
 parent: Episodes
 nav_order: 126
 tags:
-    - AIML
-    - policy
-    - process
-    - Regulatory
-    - AutonomousFlight
-    - AirTaxi
-    - Daedalean
 
-date: 
+date: 02/23/2023
 guests:
     - Darren W Pulsipher
     - Luuk Van Dijk

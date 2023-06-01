@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 134
 tags:
-    - ArtificialIntelligence
-    - WaveFormAI
-    - DataShapes
-    - WaveForm
-    - Technology
+    - artificialintelligence
+    - waveformai
+    - datashapes
+    - waveform
+    - technology
 
 date: 2023-04-20
 guests:

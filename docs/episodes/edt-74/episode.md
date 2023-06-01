@@ -7,8 +7,8 @@ has_children: false
 parent: Episodes
 nav_order: 74
 tags:
-    - Cybersecurity
-    - Ransomware
+    - cybersecurity
+    - ransomware
 
 date: 2022-01-27
 guests:

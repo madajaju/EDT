@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 18
 tags:
-    - DataArchitecture
-    - DataCentric
-    - Data
+    - dataarchitecture
+    - datacentric
+    - data
 
 date: 2020-08-31
 guests:

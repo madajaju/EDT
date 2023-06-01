@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: Data
+title: data
 parent: Tags
 ---
 

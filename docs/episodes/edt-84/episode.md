@@ -7,8 +7,8 @@ has_children: false
 parent: Episodes
 nav_order: 84
 tags:
-    - Cybersecurity
-    - ZeroTrust
+    - cybersecurity
+    - zerotrust
 
 date: 2022-08-21
 guests:

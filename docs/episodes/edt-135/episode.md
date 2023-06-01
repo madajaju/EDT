@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 135
 tags:
-    - AI
-    - Ethics
-    - Trustworthiness
-    - DeepFake
-    - AIContent
-    - AIDetection
+    - ai
+    - ethics
+    - trustworthiness
+    - deepfake
+    - aicontent
+    - aidetection
 
 date: 2023-04-27
 guests:

@@ -10,11 +10,11 @@ tags:
     - cybersecurity
     - compute
     - technology
-    - Edge
-    - Automation
-    - Web30
+    - edge
+    - automation
+    - web30
     - data
-    - Cloud
+    - cloud
 
 date: 2023-01-19
 guests:

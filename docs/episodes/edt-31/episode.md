@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 31
 tags:
-    - RPA
-    - Automation
-    - Catalytic
-    - Compute
+    - rpa
+    - automation
+    - catalytic
+    - compute
     - process
     - technology
 

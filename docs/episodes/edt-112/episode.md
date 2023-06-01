@@ -7,12 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 112
 tags:
-    - MultiCloud
-    - CloudMigration
+    - multicloud
+    - cloudmigration
     - cloud
     - compute
     - process
-    - Cloud
     - technology
 
 date: 2022-11-15

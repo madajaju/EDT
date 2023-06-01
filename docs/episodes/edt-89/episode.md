@@ -7,15 +7,15 @@ has_children: false
 parent: Episodes
 nav_order: 89
 tags:
-    - BigMemory
-    - MemVerge
-    - Optane
+    - bigmemory
+    - memverge
+    - optane
     - technology
     - data
     - compute
-    - PMEM
-    - CXL
-    - CEO
+    - pmem
+    - cxl
+    - ceo
 
 date: 2022-06-02
 guests:

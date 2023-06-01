@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 35
 tags:
-    - Change
-    - CulturalChange
-    - OrganizationalChange
-    - Disruption
+    - change
+    - culturalchange
+    - organizationalchange
+    - disruption
     - people
     - process
 

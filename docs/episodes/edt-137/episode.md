@@ -7,13 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 137
 tags:
-    - Cloud
-    - Computing
-    - GreenLake
-    - HPE
-    - MultiCloud
-    - HybridCloud
-    - Technology
+    - cloud
+    - computing
+    - greenlake
+    - hpe
+    - multicloud
+    - hybridcloud
+    - technology
 
 date: 2023-05-10
 guests:

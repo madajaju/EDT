@@ -7,15 +7,8 @@ has_children: false
 parent: Episodes
 nav_order: 111
 tags:
-    - SmartCity
-    - IoT
-    - edge
-    - technology
-    - process
-    - DigitalSignage
-    - FinancialResilience
 
-date: 
+date: 10/27/2022
 guests:
     - Darren W Pulsipher
     - Eric Hornsby

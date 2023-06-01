@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 15
 tags:
-    - Data
-    - Management
+    - data
+    - management
     - people
-    - DatacentricOrganization
-    - OrganizationalChange
+    - datacentricorganization
+    - organizationalchange
 
 date: 2020-08-21
 guests:

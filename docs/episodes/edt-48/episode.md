@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 48
 tags:
-    - DataArchitecture
-    - Data
-    - Optane
+    - dataarchitecture
+    - data
+    - optane
     - technology
-    - VASTData
+    - vastdata
 
 date: 2021-04-29
 guests:

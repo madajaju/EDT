@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 85
 tags:
-    - AIML
-    - Cybersecurity
-    - DevOps
+    - aiml
+    - cybersecurity
+    - devops
     - compute
     - technology
     - process

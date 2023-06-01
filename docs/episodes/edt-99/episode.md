@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 99
 tags:
-    - AIML
-    - Cybersecurity
-    - XMCyber
+    - aiml
+    - cybersecurity
+    - xmcyber
     - technology
     - process
 

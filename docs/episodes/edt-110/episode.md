@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 110
 tags:
-    - SecureSupplyChain
-    - Cybersecurity
-    - SupplyChain
-    - CHIPSAct
+    - securesupplychain
+    - cybersecurity
+    - supplychain
+    - chipsact
     - policy
     - process
     - compute

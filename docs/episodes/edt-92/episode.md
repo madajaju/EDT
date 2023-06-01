@@ -7,13 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 92
 tags:
-    - Cybersecurity
-    - EndPointManagement
-    - Vulnerability
-    - Cyberattack
-    - IoT
+    - cybersecurity
+    - endpointmanagement
+    - vulnerability
+    - cyberattack
+    - iot
     - edge
-    - Censys
+    - censys
 
 date: 2022-06-16
 guests:

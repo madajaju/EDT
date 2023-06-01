@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 125
 tags:
-    - Cybersecurity
-    - SupplyChain
-    - RiskManagement
-    - Encryption
-    - Decryption
-    - SBOM
+    - cybersecurity
+    - supplychain
+    - riskmanagement
+    - encryption
+    - decryption
+    - sbom
     - compute
     - policy
 

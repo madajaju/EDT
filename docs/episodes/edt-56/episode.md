@@ -7,14 +7,14 @@ has_children: false
 parent: Episodes
 nav_order: 56
 tags:
-    - CloudBroker
+    - cloudbroker
     - cloud
     - compute
     - technology
     - people
     - process
-    - MultiCloud
-    - OrganizationalChange
+    - multicloud
+    - organizationalchange
 
 date: 2021-07-08
 guests:

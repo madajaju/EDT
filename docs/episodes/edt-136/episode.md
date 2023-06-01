@@ -7,13 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 136
 tags:
-    - SABR
-    - DDIL
-    - Technology
-    - Edge
-    - Process
-    - DevOps
-    - Security
+    - sabr
+    - ddil
+    - technology
+    - edge
+    - process
+    - devops
+    - security
 
 date: 2023-05-02
 guests:

@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 101
 tags:
-    - NetworkSecurity
-    - Cybersecurity
-    - Elisity
-    - Comms
+    - networksecurity
+    - cybersecurity
+    - elisity
+    - comms
     - technology
     - process
 

@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 28
 tags:
-    - RPA
-    - BPM
-    - Automation
-    - Compute
+    - rpa
+    - bpm
+    - automation
+    - compute
     - technology
 
 date: 2020-11-06

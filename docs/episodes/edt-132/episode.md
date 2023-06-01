@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 132
 tags:
-    - Metify
-    - SDI
-    - Technology
-    - Baremetal
-    - HeterogeneousCompute
-    - Compute
+    - metify
+    - sdi
+    - technology
+    - baremetal
+    - heterogeneouscompute
+    - compute
 
 date: 2023-04-06
 guests:

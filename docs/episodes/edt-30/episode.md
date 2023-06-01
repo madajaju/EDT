@@ -7,14 +7,14 @@ has_children: false
 parent: Episodes
 nav_order: 30
 tags:
-    - AIML
-    - DevOps
+    - aiml
+    - devops
     - compute
     - technology
     - process
-    - OneAPI
-    - AIOps
-    - Developer
+    - oneapi
+    - aiops
+    - developer
     - people
 
 date: 2020-11-17

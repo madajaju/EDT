@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 69
 tags:
-    - Cybersecurity
-    - Edge
-    - Compute
+    - cybersecurity
+    - edge
+    - compute
 
 date: 2021-11-11
 guests:

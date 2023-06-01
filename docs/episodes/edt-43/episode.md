@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 43
 tags:
-    - CIO
-    - CloudAdoption
+    - cio
+    - cloudadoption
     - compute
-    - Cloud
-    - CSP
-    - MultiCloud
+    - cloud
+    - csp
+    - multicloud
 
 date: 2021-03-18
 guests:

@@ -7,14 +7,14 @@ has_children: false
 parent: Episodes
 nav_order: 102
 tags:
-    - Microsegmentation
-    - OTSecurity
-    - IdentitybasedNetworking
-    - Cybersecurity
-    - Comms
+    - microsegmentation
+    - otsecurity
+    - identitybasednetworking
+    - cybersecurity
+    - comms
     - technology
     - edge
-    - SDN
+    - sdn
 
 date: 2022-08-25
 guests:

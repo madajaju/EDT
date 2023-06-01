@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 120
 tags:
-    - DataManagement
-    - GlobalDataNetwork
-    - MacroMeta
-    - DataArchitecture
+    - datamanagement
+    - globaldatanetwork
+    - macrometa
+    - dataarchitecture
     - data
     - edge
     - compute

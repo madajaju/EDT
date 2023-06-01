@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 107
 tags:
-    - CriticalInfrastructure
-    - HOTMS
+    - criticalinfrastructure
+    - hotms
     - irdeto
-    - OTSecurity
+    - otsecurity
     - edge
-    - Cybersecurity
+    - cybersecurity
     - technology
     - process
 

@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 20
 tags:
-    - Data
-    - Optane
+    - data
+    - optane
     - technology
-    - Storage
-    - VastData
+    - storage
+    - vastdata
 
 date: 2020-09-09
 guests:

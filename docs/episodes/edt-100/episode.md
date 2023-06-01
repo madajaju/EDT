@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 100
 tags:
-    - Cybersecurity
-    - MultiCloud
-    - Edge
-    - AIML
+    - cybersecurity
+    - multicloud
+    - edge
+    - aiml
 
 date: 2022-08-18
 guests:

@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 25
 tags:
-    - DataArchitecture
-    - DataCentric
-    - Data
-    - DataMesh
-    - DataPipeline
+    - dataarchitecture
+    - datacentric
+    - data
+    - datamesh
+    - datapipeline
     - technology
     - people
 

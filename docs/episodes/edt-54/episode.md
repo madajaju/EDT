@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 54
 tags:
-    - MultiCloud
-    - OrganizationalChange
+    - multicloud
+    - organizationalchange
     - change
     - people
-    - HSBC
-    - CIO
+    - hsbc
+    - cio
 
 date: 2021-06-22
 guests:

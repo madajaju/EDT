@@ -7,14 +7,14 @@ has_children: false
 parent: Episodes
 nav_order: 34
 tags:
-    - COVID
-    - MFA
-    - RemoteWorker
-    - Cybersecurity
+    - covid
+    - mfa
+    - remoteworker
+    - cybersecurity
     - people
     - technology
-    - VDI
-    - VPN
+    - vdi
+    - vpn
 
 date: 2021-01-05
 guests:

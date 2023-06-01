@@ -1,6 +1,6 @@
 ---
 layout: tagTopic
-title: Technology
+title: technology
 parent: Tags
 ---
 

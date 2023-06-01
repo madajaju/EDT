@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 91
 tags:
-    - Cybersecurity
-    - DevSecOps
-    - SBOM
-    - SecureSupplyChain
+    - cybersecurity
+    - devsecops
+    - sbom
+    - securesupplychain
     - policy
     - process
     - compute

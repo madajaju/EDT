@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 115
 tags:
-    - ZTA
-    - ZeroTrustArchitecture
-    - CyberHygiene
-    - Cybersecurity
+    - zta
+    - zerotrustarchitecture
+    - cyberhygiene
+    - cybersecurity
     - technology
     - process
 

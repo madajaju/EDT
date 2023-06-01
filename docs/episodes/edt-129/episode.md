@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 129
 tags:
-    - HPC
+    - hpc
     - technology
     - compute
-    - OpenOnDemand
-    - OhioSuperComputerCenter
-    - OSC
+    - openondemand
+    - ohiosupercomputercenter
+    - osc
 
 date: 2023-03-21
 guests:

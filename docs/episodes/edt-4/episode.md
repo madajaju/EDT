@@ -7,15 +7,14 @@ has_children: false
 parent: Episodes
 nav_order: 4
 tags:
-    - Data
-    - InformationManagement
-    - InformationMaturity
-    - DataGovernance
-    - DataWarehouse
-    - DataLake
-    - DataMesh
-    - DataLineage
     - data
+    - informationmanagement
+    - informationmaturity
+    - datagovernance
+    - datawarehouse
+    - datalake
+    - datamesh
+    - datalineage
     - technology
     - process
     - people

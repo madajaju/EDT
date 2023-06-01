@@ -7,8 +7,8 @@ has_children: false
 parent: Episodes
 nav_order: 13
 tags:
-    - Data
-    - OrganizationalChange
+    - data
+    - organizationalchange
     - people
 
 date: 2020-08-13

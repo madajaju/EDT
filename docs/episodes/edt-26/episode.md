@@ -7,14 +7,14 @@ has_children: false
 parent: Episodes
 nav_order: 26
 tags:
-    - Hammerspace
+    - hammerspace
     - data
     - technology
-    - DataArchitecture
-    - MultiCloud
+    - dataarchitecture
+    - multicloud
     - compute
-    - MultiHybridCloud
-    - DataMesh
+    - multihybridcloud
+    - datamesh
 
 date: 2020-10-22
 guests:

@@ -7,7 +7,7 @@ has_children: false
 parent: Episodes
 nav_order: 9
 tags:
-    - Cybersecurity
+    - cybersecurity
 
 date: 2020-08-04
 guests:

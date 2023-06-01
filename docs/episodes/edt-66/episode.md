@@ -7,14 +7,14 @@ has_children: false
 parent: Episodes
 nav_order: 66
 tags:
-    - Data
-    - DevOps
+    - data
+    - devops
     - compute
     - technology
     - process
-    - DevSecOps
-    - Cybersecurity
-    - Aiven
+    - devsecops
+    - cybersecurity
+    - aiven
 
 date: 2021-10-14
 guests:

@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 38
 tags:
-    - Contactless
-    - COVID
-    - RemoteLearning
-    - RemoteWorker
+    - contactless
+    - covid
+    - remotelearning
+    - remoteworker
     - people
     - process
 

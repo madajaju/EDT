@@ -7,7 +7,7 @@ has_children: false
 parent: Episodes
 nav_order: 75
 tags:
-    - Cybersecurity
+    - cybersecurity
     - technology
 
 date: 2022-02-03

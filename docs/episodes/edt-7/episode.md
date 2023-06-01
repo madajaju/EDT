@@ -7,10 +7,8 @@ has_children: false
 parent: Episodes
 nav_order: 7
 tags:
-    - Teleworker
-    - CyberSecurity
 
-date: 2020-07-28
+date: 2020-07-14
 guests:
     - Darren W Pulsipher
     - Steve Orrin

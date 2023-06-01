@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 55
 tags:
-    - Communication
-    - OrganizationalChange
+    - communication
+    - organizationalchange
     - people
     - process
-    - HSBC
-    - CIO
+    - hsbc
+    - cio
 
 date: 2021-07-01
 guests:

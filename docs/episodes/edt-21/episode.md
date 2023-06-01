@@ -7,13 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 21
 tags:
-    - BigMemory
-    - Edge
-    - Compute
+    - bigmemory
+    - edge
+    - compute
     - technology
-    - MemVerge
-    - Optane
-    - PMEM
+    - memverge
+    - optane
+    - pmem
     - data
 
 date: 2020-09-14

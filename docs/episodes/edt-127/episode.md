@@ -12,7 +12,7 @@ tags:
     - innovation
     - netsurit
     - reengineering
-    - RPA
+    - rpa
     - automation
 
 date: 2023-03-09

@@ -7,14 +7,14 @@ has_children: false
 parent: Episodes
 nav_order: 103
 tags:
-    - AIOps
-    - DevOps
+    - aiops
+    - devops
     - compute
     - technology
     - process
-    - DevSecOps
-    - Cybersecurity
-    - AIML
+    - devsecops
+    - cybersecurity
+    - aiml
 
 date: 2022-08-30
 guests:

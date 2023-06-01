@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 24
 tags:
-    - Data
-    - DataArchitecture
-    - AIOps
-    - SecOps
-    - DevSecOps
-    - DevOps
+    - data
+    - dataarchitecture
+    - aiops
+    - secops
+    - devsecops
+    - devops
     - compute
     - technology
     - process

@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 80
 tags:
-    - CSA
-    - CloudSolutionArchitect
-    - SolutionArchitect
+    - csa
+    - cloudsolutionarchitect
+    - solutionarchitect
     - people
     - compute
     - cloud

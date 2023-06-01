@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 36
 tags:
-    - Cybersecurity
-    - Prevention
-    - ThreatDetection
-    - ZeroTrustArchitecture
-    - ZTA
+    - cybersecurity
+    - prevention
+    - threatdetection
+    - zerotrustarchitecture
+    - zta
     - technology
 
 date: 2021-01-21

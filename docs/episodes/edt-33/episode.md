@@ -7,15 +7,15 @@ has_children: false
 parent: Episodes
 nav_order: 33
 tags:
-    - AWS
-    - CloudOutage
+    - aws
+    - cloudoutage
     - compute
-    - CSP
+    - csp
     - cloud
     - process
-    - CloudReliability
-    - MultiCloud
-    - Reliability
+    - cloudreliability
+    - multicloud
+    - reliability
 
 date: 2020-12-15
 guests:

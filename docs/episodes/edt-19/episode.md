@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 19
 tags:
-    - DataArchitecture
-    - Data
-    - DataStrategy
+    - dataarchitecture
+    - data
+    - datastrategy
     - people
     - process
 

@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 93
 tags:
-    - Cybersecurity
-    - AIML
-    - MultiCloud
-    - Comms
+    - cybersecurity
+    - aiml
+    - multicloud
+    - comms
 
 date: 2022-06-24
 guests:

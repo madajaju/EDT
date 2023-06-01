@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 58
 tags:
-    - Data
-    - Edge
-    - Compute
-    - Edgemere
-    - EdgeToCloud
-    - Cybersecurity
+    - data
+    - edge
+    - compute
+    - edgemere
+    - edgetocloud
+    - cybersecurity
     - technology
     - process
 

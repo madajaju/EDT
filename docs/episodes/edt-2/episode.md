@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 2
 tags:
-    - IoT
-    - DoD
+    - iot
+    - dod
     - edge
     - technology
-    - Data
-    - CyberSecurity
+    - data
+    - cybersecurity
 
 date: 2020-06-18
 guests:

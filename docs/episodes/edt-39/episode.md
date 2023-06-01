@@ -7,14 +7,14 @@ has_children: false
 parent: Episodes
 nav_order: 39
 tags:
-    - Collaboration
-    - COVID
-    - OrganizationalChange
+    - collaboration
+    - covid
+    - organizationalchange
     - people
     - compute
-    - RemoteWorker
-    - VideoConferencing
-    - SignalWire
+    - remoteworker
+    - videoconferencing
+    - signalwire
 
 date: 2021-02-18
 guests:

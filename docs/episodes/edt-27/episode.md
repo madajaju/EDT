@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 27
 tags:
-    - DataGovernance
-    - Data
-    - SGX
-    - ConfidentialComputing
+    - datagovernance
+    - data
+    - sgx
+    - confidentialcomputing
     - cybersecurity
     - technology
 

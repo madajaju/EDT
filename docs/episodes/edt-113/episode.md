@@ -7,13 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 113
 tags:
-    - BPM
-    - Automation
-    - Compute
-    - Management
-    - Camunda
-    - CapitalBPM
-    - RPA
+    - bpm
+    - automation
+    - compute
+    - management
+    - camunda
+    - capitalbpm
+    - rpa
 
 date: 2022-11-18
 guests:

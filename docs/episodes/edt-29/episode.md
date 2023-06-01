@@ -7,13 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 29
 tags:
-    - Aerospike
-    - Database
-    - Ingestion
-    - Optane
+    - aerospike
+    - database
+    - ingestion
+    - optane
     - data
     - technology
-    - PMEM
+    - pmem
 
 date: 2020-11-12
 guests:

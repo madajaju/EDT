@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 133
 tags:
-    - Compute
-    - HPC
-    - People
-    - Innovation
+    - compute
+    - hpc
+    - people
+    - innovation
     - cloud
 
 date: 2023-04-13

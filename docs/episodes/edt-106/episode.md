@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 106
 tags:
-    - Data
-    - GraphIntelligencePlatform
-    - GraphDB
-    - KatanaGraph
+    - data
+    - graphintelligenceplatform
+    - graphdb
+    - katanagraph
     - technology
 
 date: 2022-09-20

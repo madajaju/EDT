@@ -7,13 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 61
 tags:
-    - DatBreach
+    - datbreach
     - data
     - process
     - policy
-    - Cybersecurity
-    - SupplyChain
-    - SecureSupplyChain
+    - cybersecurity
+    - supplychain
+    - securesupplychain
 
 date: 2021-08-12
 guests:

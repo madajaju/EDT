@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 71
 tags:
-    - DataGovernance
-    - Data
-    - Immuta
-    - DataAccess
-    - IdentityManagement
-    - CEO
+    - datagovernance
+    - data
+    - immuta
+    - dataaccess
+    - identitymanagement
+    - ceo
     - technology
     - process
 

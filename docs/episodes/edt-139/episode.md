@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 139
 tags:
-    - Data
-    - Analytics
-    - ArtificialIntelligence
-    - Pathway
-    - Technology
+    - data
+    - analytics
+    - artificialintelligence
+    - pathway
+    - technology
 
 date: 2023-05-18
 guests:

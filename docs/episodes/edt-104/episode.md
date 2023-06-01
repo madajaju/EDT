@@ -7,14 +7,14 @@ has_children: false
 parent: Episodes
 nav_order: 104
 tags:
-    - Data
-    - Informationdriven
-    - OrganizationalChange
-    - RadiusAG
-    - Change
+    - data
+    - informationdriven
+    - organizationalchange
+    - radiusag
+    - change
     - people
     - process
-    - CEO
+    - ceo
 
 date: 2022-09-08
 guests:

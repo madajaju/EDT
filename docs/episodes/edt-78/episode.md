@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 78
 tags:
-    - MultiCloud
+    - multicloud
     - compute
     - cybersecurity
     - sharedresponsibility
-    - CloudSecurity
+    - cloudsecurity
     - cloud
     - technology
     - process

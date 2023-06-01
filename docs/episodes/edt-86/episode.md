@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 86
 tags:
-    - CTO
+    - cto
     - people
     - process
     - change
-    - OrganizationalChange
+    - organizationalchange
 
 date: 2022-05-12
 guests:

@@ -7,14 +7,14 @@ has_children: false
 parent: Episodes
 nav_order: 45
 tags:
-    - MultiCloud
+    - multicloud
     - compute
-    - Optimization
-    - WorkloadPlacement
-    - Workload
-    - Migration
+    - optimization
+    - workloadplacement
+    - workload
+    - migration
     - process
-    - CloudInstance
+    - cloudinstance
 
 date: 2021-03-31
 guests:

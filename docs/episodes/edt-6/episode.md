@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 6
 tags:
-    - Telework
-    - Remoteworker
-    - VDI
-    - MFA
-    - Cybersecurity
+    - telework
+    - remoteworker
+    - vdi
+    - mfa
+    - cybersecurity
     - people
     - process
 

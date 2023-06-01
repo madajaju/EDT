@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 60
 tags:
-    - Cybersecurity
-    - Ransomware
-    - RiskManagement
+    - cybersecurity
+    - ransomware
+    - riskmanagement
     - process
 
 date: 2021-08-05

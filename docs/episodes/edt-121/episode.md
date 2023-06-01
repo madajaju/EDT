@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 121
 tags:
-    - Cloud
-    - PrivateCloud
-    - VergeIO
-    - MicroCloud
-    - Edge
+    - cloud
+    - privatecloud
+    - vergeio
+    - microcloud
+    - edge
     - compute
     - technology
 

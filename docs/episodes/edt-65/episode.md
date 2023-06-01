@@ -7,13 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 65
 tags:
-    - CloudMigration
+    - cloudmigration
     - cloud
     - compute
     - process
-    - MultiCloud
-    - Aiven
-    - CloudCost
+    - multicloud
+    - aiven
+    - cloudcost
     - technology
 
 date: 2021-10-07

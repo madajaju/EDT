@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 44
 tags:
-    - CloudMigration
+    - cloudmigration
     - cloud
     - compute
     - process
-    - Deloitte
-    - MultiCloud
+    - deloitte
+    - multicloud
 
 date: 2021-03-23
 guests:

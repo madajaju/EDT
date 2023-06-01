@@ -7,11 +7,11 @@ has_children: false
 parent: Episodes
 nav_order: 10
 tags:
-    - Telework
-    - RemoteWorker
+    - telework
+    - remoteworker
     - process
     - technology
-    - VDI
+    - vdi
 
 date: 2020-08-05
 guests:

@@ -7,8 +7,8 @@ has_children: false
 parent: Episodes
 nav_order: 49
 tags:
-    - COVID
-    - RemoteWorker
+    - covid
+    - remoteworker
 
 date: 2021-05-06
 guests:

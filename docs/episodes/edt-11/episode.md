@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 11
 tags:
-    - RemoteLearning
+    - remotelearning
     - compute
     - technology
     - people
-    - Edge
-    - TeleLearning
+    - edge
+    - telelearning
 
 date: 2020-08-12
 guests:

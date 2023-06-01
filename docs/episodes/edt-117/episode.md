@@ -7,13 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 117
 tags:
-    - Edge
-    - AIML
-    - HybridWorkspace
+    - edge
+    - aiml
+    - hybridworkspace
     - compute
-    - MultiCloud
-    - Cybersecurity
-    - DataManagement
+    - multicloud
+    - cybersecurity
+    - datamanagement
     - data
     - technology
     - people

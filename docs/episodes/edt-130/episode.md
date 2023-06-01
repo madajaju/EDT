@@ -7,9 +7,9 @@ has_children: false
 parent: Episodes
 nav_order: 130
 tags:
-    - AI
-    - decisionalAI
-    - AIProductization
+    - ai
+    - decisionalai
+    - aiproductization
     - people
     - process
 

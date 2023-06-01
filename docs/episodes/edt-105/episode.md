@@ -7,13 +7,13 @@ has_children: false
 parent: Episodes
 nav_order: 105
 tags:
-    - Change
+    - change
     - people
-    - ChangeAgent
-    - RadiusAG
-    - OrganizationalChange
-    - InformationDriven
-    - Leadership
+    - changeagent
+    - radiusag
+    - organizationalchange
+    - informationdriven
+    - leadership
 
 date: 2022-09-13
 guests:

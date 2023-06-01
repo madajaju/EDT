@@ -7,12 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 138
 tags:
-    - Cloud
-    - Computing
-    - Dell
-    - MultiCloud
-    - HybridCloud
-    - Technology
+    - cloud
+    - computing
+    - dell
+    - multicloud
+    - hybridcloud
+    - technology
 
 date: 2023-05-16
 guests:

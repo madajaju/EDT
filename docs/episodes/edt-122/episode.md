@@ -7,10 +7,10 @@ has_children: false
 parent: Episodes
 nav_order: 122
 tags:
-    - AIML
-    - Automation
-    - AIEthics
-    - WorkerReplacement
+    - aiml
+    - automation
+    - aiethics
+    - workerreplacement
     - people
     - policy
 
