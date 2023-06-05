@@ -21,7 +21,7 @@ summary: "News for Embracing Digital for the week of May 29, 2023, learn about m
 
 
 
-{% include youtube.html id="TBD" %}
+{% include youtube.html id="g853XRlOVHM" %}
 
 ---
 
