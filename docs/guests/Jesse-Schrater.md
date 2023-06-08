@@ -3,7 +3,7 @@ layout: guest
 title: Jesse Schrater
 parent: Guests
 
-img: Jesse-Schrater-thumbnail.png
+img: Jesse-Schrater-thumbnail.jpg
 ---
 
 

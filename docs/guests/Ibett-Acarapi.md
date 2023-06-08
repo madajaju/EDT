@@ -3,7 +3,7 @@ layout: guest
 title: Ibett Acarapi
 parent: Guests
 
-img: Ibett-Acarapi-thumbail.jpg
+img: Ibett-Acarapi-thumbnail.jpg
 ---
 
 
