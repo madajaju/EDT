@@ -3,10 +3,10 @@ layout: guest
 title: Keith Gray
 parent: Guests
 
-img: Keith-Gray-TBD
+img: Keith-Gray-thumbail.jpg
 ---
 
 
 
 
-
+TBD

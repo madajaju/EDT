@@ -16,6 +16,7 @@ tags:
 date: Wed Apr 19 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
+    - Logan Selby
 
 img: thumbnail.png
 summary: "In this episode Darren Pulsipher, welcomed Logan Selby, the co-founder and president of DataShapes, where they discuss a unique approach to Artificial Intelligence that is bucking the trend."

@@ -1,0 +1,3 @@
+Global Director of Security Technologies, Intel Data Center Sales
+
+With over 30 years of experience in Information Technology, Jesse has an extensive background in driving technology solutions for large organizations.  He has led engineering, service, and marketing teams in enterprise cloud and cybersecurity domains.  Jesse currently leads go-to-market activities for Intel data center security technologies.  Prior to joining Intel, Jesse was a consulting Systems Analyst for the State of California and served in Intelligence Systems for the US Air Force.  Jesse has an MS in Information Technology and a BS in Computer Science, both from the University of Maryland.

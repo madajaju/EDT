@@ -3,10 +3,10 @@ layout: guest
 title: Logan Selby
 parent: Guests
 
-img: Logan-Selby-TBD
+img: Logan-Selby-thumbail.jpg
 ---
 
 
 
 
-
+TBD

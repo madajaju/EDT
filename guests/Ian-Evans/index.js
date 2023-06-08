@@ -1,0 +1,1 @@
+module.exports = {"id":"Ian Evans","name":"Ian Evans","email":"Email","notes":"Notes","bio":"bio.md","thumbnail":"thumbail.jpg","socials":{}}

@@ -16,6 +16,7 @@ tags:
 date: Wed Apr 12 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
+    - Keith Gray
 
 img: thumbnail.png
 summary: "In this episode, Darren interviews Keith Gray, a former director of high-performance computing at British Petroleum. With over 30 years of managing HPC centers, Keith gives great insight into the challenges, best practices, and the future of high-performance computing."

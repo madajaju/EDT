@@ -1,1 +1,1 @@
-module.exports = {"name":"Sam Seccola","email":"sam.ceccola@hpe.com","notes":null,"socials":{},"bio":"bio.md","thumbnail":"thumbnail.jpg"}
+module.exports = {"id":"Sam Ceccola","name":"Sam Ceccola","email":"Email","notes":"Notes","bio":"bio.md","thumbnail":"thumbail.jpg","socials":{}}

@@ -17,6 +17,8 @@ tags:
 date: Wed Apr 05 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
+    - Ian Evans
+    - Mike Wagner
 
 img: thumbnail.png
 summary: "In this episode, Darren interviews the founders of Metify, Ian Evans and Mike Wagner, about their unique approach to bare metal software-defined infrastructure management using the Redfish standard."
