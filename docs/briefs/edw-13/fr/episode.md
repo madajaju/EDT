@@ -15,6 +15,7 @@ tags:
 
 date: Sun Apr 30 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
+    - Darren W Pulsipher
 
 img: thumbnail.png
 summary: "News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space."

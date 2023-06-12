@@ -15,6 +15,7 @@ tags:
 
 date: Sun May 14 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
+    - Darren W Pulsipher
 
 img: thumbnail.png
 summary: "News from the week of May 15, 2023 in digital transformation including stories from Edge Computing, Cybersecurity, and Artificial Intelligence."

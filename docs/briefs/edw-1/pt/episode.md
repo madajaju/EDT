@@ -15,6 +15,7 @@ tags:
 
 date: Mon Feb 06 2023 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
+    - Darren W Pulsipher
 
 img: thumbnail.png
 summary: "For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity."
