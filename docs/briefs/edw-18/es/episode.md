@@ -21,7 +21,11 @@ img: thumbnail.png
 summary: "Digital transformation news for June 6, 2023. This week more jobs in AI, major cyber security breaches, and cloud technology best practices."
 ---
 
+{% include transistor.html id="973c11bd" %}
 
+
+
+{% include youtube.html id="09X6eoyWAY0" %}
 
 ---
 

@@ -21,7 +21,7 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: ""
+summary: "Summary"
 ---
 
 

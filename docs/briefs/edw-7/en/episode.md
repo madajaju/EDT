@@ -18,7 +18,7 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: ""
+summary: "Summary"
 ---
 
 {% include transistor.html id="7369f2b9" %}
