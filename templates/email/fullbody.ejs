@@ -1,0 +1,15 @@
+<p>The latest episode in Embracing Digital Transformation is out. Check it out.</p>
+
+<p><%- episode.summary %></p>
+
+<p> Here are the assets that can be leveraged in social media.</p>
+
+<ul>
+    <%
+    for(let i in episode.assets) {
+        let masset = episode.assets[i];
+    %>
+    <ol><%- masset.name %>: <%- masset.url %> - <%- masset.summary %></ol>
+    <% }
+    %>
+</ul>

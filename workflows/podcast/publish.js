@@ -114,11 +114,12 @@ const _guests = (podcast, output, source) => {
     guests.forEach((guest) => {
         let edir = path.resolve(podcast.baseDirectory);
         let gpath = path.resolve(`${edir}/guests/${guest.name.replace(/\s/g,'-').replace(/\./g,'-')}`);
-        let apath = path.resolve(`${gpath}/${guest.bio}`);
+
+        let content = guest.bio;
         let thumbnail = guest.thumbnail || "TBD";
-        console.log("Guest Path:", apath);
-        let content = "";
-        if (fs.existsSync(apath)) {
+        // let apath = apath.resolve(`${gpath}/${guest.bio}`);
+        // console.log("Guest Path:", apath);
+        /* if (fs.existsSync(apath)) {
             try {
                 content = fs.readFileSync(apath).toString('utf-8');
             }
@@ -126,6 +127,8 @@ const _guests = (podcast, output, source) => {
                 console.error("Conent for bio.md not found", e);
             }
         }
+         */
+
         let files = {
             context: {
                 guest: guest,

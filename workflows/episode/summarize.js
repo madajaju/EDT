@@ -26,29 +26,38 @@ module.exports = {
         for(let aname in env.req.body) {
             args[aname]= env.req.body[aname];
         }
+        AEvent.emit('summarize.start', {message: `Starting`});
         let podcast = obj;
         let epi = Episode.find(args.episode);
-        let artfile = null;
-        let mdfile = null;
-        let artifacts = epi.artifacts;
-        for(let i in artifacts) {
-            let artifact = artifacts[i];
-            if(artifact.ext === '.srt') {
-                artfile = artifact.url;
-            }
-            if(artifact.ext === '.md') {
-                mdfile = artifact.url;
-            }
-        }
-        let srtpath = path.resolve(artfile);
-        let mdpath = path.resolve(mdfile);
-        await summarize(srtpath, mdpath);
+        await summarizeEpisode(epi);
         AEvent.emit('summarize.complete', {obj: obj.id, message: 'Summarized Complete'});
         return epi;
     }
 };
 
-async function summarize(srtfile, mdfile) {
+async function summarizeEpisode(episode) {
+    let artfile = null;
+    let mdfile = null;
+    let artifacts = episode.artifacts;
+    for(let aname in artifacts) {
+        let artifact = artifacts[aname];
+        if(aname.includes('episode') && artifact.ext === '.srt') {
+            artfile = artifact.url;
+        }
+        if(artifact.ext === '.md') {
+            mdfile = artifact.url;
+        }
+    }
+    let srtpath = path.resolve(artfile);
+    let summary = await summarize(srtpath);
+    let mdpath = path.resolve(mdfile);
+    console.log("Writing summary to:", mdpath);
+    console.log("Summary :", summary);
+    fs.writeFileSync(mdpath, summary);
+    return;
+
+}
+async function summarize(srtfile) {
     try {
         let str = fs.readFileSync(srtfile).toString('utf-8');
         let groups = [];
@@ -63,7 +72,7 @@ async function summarize(srtfile, mdfile) {
                     totalString += line + " ";
                 }
             }
-            if (count > 250) {
+            if (count > 225) {
                 count = 0;
                 groups.push(totalString);
                 totalString = "";
@@ -76,11 +85,10 @@ async function summarize(srtfile, mdfile) {
         let resultString = "";
         for (let i in groups) {
             const res = await ask(`Write a 200 word informative 2nd person blog post for this podcast transcript: ` + groups[i]);
-            console.log("Response:", res, '\n');
             AEvent.emit('summarize.inprogress', {message: `${Math.floor(i/groups.length)*100}% Complete`});
             resultString += res + '\n\n';
         }
-        fs.writeFileSync(mdfile, resultString);
+        return resultString;
     }
     catch(e) {
         console.error("Problem summarize srt!", e);

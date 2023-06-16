@@ -1,6 +1,3 @@
-const path = require('path');
-const fs = require;
-
 module.exports = {
     friendlyName: 'promote',
     description: 'Promote an Episode',
@@ -11,6 +8,16 @@ module.exports = {
             required: true,
             description: "ID of the episode",
         },
+        channel: {
+            type: 'string',
+            required: true,
+            description: "Name of the channel to promote on."
+        },
+        asset: {
+            type: 'string',
+            required: true,
+            description: "ID of the asset."
+        }
     },
 
     exits: {
@@ -29,40 +36,14 @@ module.exports = {
         for(let aname in env.req.body) {
             args[aname]= env.req.body[aname];
         }
-        let podcast = obj;
-        let output = path.resolve(`${podcast.baseDirectory}/2023/EDT-${inputs.number}`);
-        let source = path.resolve(`${podcast.baseDirectory}`);
-        _generateEpisode(output, source, inputs);
-        // Load the generatedEpisode
-        let episodeTmp = require(`${output}/.episode.js`);
-        let episode = Episode.load(episodeTmp);
-        podcast.addToEpisodes(episode);
+        // let podcast = obj;
+        let channel = Channel.find(args.channel);
+        let asset = Asset.find(args.asset);
+        channel.promoteAsset({
+            asset: asset,
+            text: args.text,
+            to: args.to
+        });
         return episode;
     }
 };
-
-const _generateEpisode = (output, source, inputs) => {
-    let guests = [];
-    if(inputs.guests) {
-       guests = inputs.guests.split(/,/);
-    }
-    guests.push("Darren W Pulsipher");
-    console.log("Generate:", output);
-    console.log("Source:", source);
-
-    let files = {
-        context: {
-            name: inputs.title,
-            number: inputs.number,
-            summary: inputs.summary,
-            guests: guests,
-        },
-        targets: {
-            'EDTBase.prproj': {copy: `${source}/Base/EDT-Base2023.prproj`},
-            'EDTShort.prproj': {copy: `${source}/Base/EDT-Short2023.prproj`},
-            '.episode.js': {template: `${source}/templates/.episode.ejs`},
-            'Production/episode.md': {template: `${source}/templates/_episode.emd`},
-        }
-    }
-    global.Generator.process(files, output);
-}
