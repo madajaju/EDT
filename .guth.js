@@ -27,14 +27,18 @@ module.exports = {
     },
     "intelyoutube": {
       "id": "intelyoutube",
-      "type": "YouTubeIntel",
+      "type": "IntelYoutube",
       "title": "Intel Business Channel",
       "user": "darren.w.pulsipher@intel.com",
       "rss": "https://youtube.com/feeds/videos.xml?playlist_id=PLj-81kG3zG5YC2Z4aBncmOpZGh6umLy0n",
       "url": "https://youtube.com/playlist?list=PLj-81kG3zG5YC2Z4aBncmOpZGh6umLy0n",
       "submission": "https://app.smartsheet.com/b/form/288e77bcb60a4c6da84008d508d8e469",
       "name": "intelyoutube",
+      "creds": {
+        "api_key": "AIzaSyCW7GuNyug5Qcq1MipqyYXI2syZgp6WXG8"
+      },
       "types": [
+        "Video",
         "video"
       ]
     },
@@ -47,6 +51,7 @@ module.exports = {
       "url": "https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA",
       "submission": "https://studio.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA/videos/upload",
       "creds": {
+        "api_key": "AIzaSyCW7GuNyug5Qcq1MipqyYXI2syZgp6WXG8",
         "client_id": "887621111838-907t97oik19mdj20206jjku05894irkk.apps.googleusercontent.com",
         "project_id": "guth-370314",
         "auth_uri": "https://accounts.google.com/o/oauth2/auth",
@@ -161,6 +166,26 @@ module.exports = {
         "image",
         "Post",
         "Video"
+      ]
+    },
+    "transistor": {
+      "id": "transistor",
+      "type": "Transistor",
+      "lang": "en",
+      "title": "EmbracingDigitalTransformation",
+      "user": "contact@wheresthelemonade.org",
+      "rss": "https://feeds.transistor.fm/embracing-digital-transformation-773aba93-f01b-4760-b6dd-b9124960d507",
+      "url": "https://dashboard.transistor.fm/shows/embracing-digital-transformation-773aba93-f01b-4760-b6dd-b9124960d507",
+      "submission": "https://dashboard.transistor.fm/shows/embracing-digital-transformation-773aba93-f01b-4760-b6dd-b9124960d507/episodes/new",
+      "name": "transistor",
+      "creds": {
+        "api_key": "OD-_egSCZ9Zx0y6viJG7cQ"
+      },
+      "types": [
+        "Post",
+        "Podcast",
+        "audio",
+        "image"
       ]
     },
     "twitter": {

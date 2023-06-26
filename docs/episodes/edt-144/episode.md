@@ -17,7 +17,7 @@ guests:
     - Darren W Pulsipher
     - Rob Watts
 
-img: thumbnail.png
+img: thumbnail.jpeg
 summary: "In this episode Darren explores the science and use cases behind digital twin technology with the principal architect of Intel's ScheneScape."
 ---
 
