@@ -27,6 +27,7 @@ summary: "Digital Transformation news from the week of June 19, 2023 including s
 {% include transistor.html id="aef09a72" %}
 
 
+
 {% include youtube.html id="e7ihne_LW6o" %}
 
 ---
