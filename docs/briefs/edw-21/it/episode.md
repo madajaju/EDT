@@ -21,7 +21,11 @@ img: thumbnail.png
 summary: "News this week, June 26, 2023,  in digital transformation, including increased attacks in the cyber war, everyone jumping onto the generative AI bandwagon, and virtualized radio area networks."
 ---
 
+{% include transistor.html id="f7ad6e40" %}
 
+
+
+{% include youtube.html id="GbxX8poRWjU" %}
 
 ---
 
