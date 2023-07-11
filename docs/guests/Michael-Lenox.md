@@ -3,7 +3,7 @@ layout: guest
 title: Michael Lenox
 parent: Guests
 
-img: Michael-Lenox-thumbail.jpg
+img: Michael-Lenox-thumbnail.jpg
 ---
 
 
