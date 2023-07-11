@@ -17,7 +17,7 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.jpg
-summary: "In this episode, Darren talks to Dr. Michael Lenox about the emerging AI revolution and how to embracing it or get destroyed. Michael has just released a new book "Strategy in the Digital Age: Mastering Digital Transformation"."
+summary: "In this episode, Darren talks to Dr. Michael Lenox about the emerging AI revolution and how to embracing it or get destroyed. Michael has just released a new book 'Strategy in the Digital Age: Mastering Digital Transformation.'"
 ---
 
 {% include soundcloud.html id="edt146" title="#146 Embracing the AI Revolution" %}
