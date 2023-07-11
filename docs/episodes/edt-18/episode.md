@@ -11,7 +11,7 @@ tags:
     - datacentric
     - data
 
-date: Sun Aug 30 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Sun Aug 30 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Darren W Pulsipher
 

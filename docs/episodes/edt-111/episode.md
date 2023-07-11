@@ -8,7 +8,7 @@ parent: Episodes
 nav_order: 111
 tags:
 
-date: Thu Oct 27 2022 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: Thu Oct 27 2022 03:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Darren W Pulsipher
     - Eric Hornsby

@@ -13,7 +13,7 @@ tags:
     - confidentialcomputing
     - dataprotection
 
-date: Wed Jun 07 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Wed Jun 07 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Anna Scott
     - Ibett Acarapi
