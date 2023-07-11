@@ -24,7 +24,7 @@ img: thumbnail.png
 summary: "On this episode Darren interviews Andrew Cohen Managing Director at Netsurit about providing Inovation as a Service to it customers through process re-engineering and automation."
 ---
 
-{% include soundcloud.html id="edt127" title="#127 Innovation as a Service" %}
+{% include transistor.html id="994f4521" title="#127 Innovation as a Service" %}
 
 {% include youtube.html id="ZIQo3EbPMQY" %}
 

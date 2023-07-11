@@ -24,7 +24,7 @@ img: thumbnail.png
 summary: "In this episode, Darren talks with Lieutenant General Thomas Horlander, who recently joined the Intel Public Sector Team, about the microelectronics supply chain and national security. "
 ---
 
-{% include soundcloud.html id="edt110" title="#110 Securing the Supply Chain" %}
+{% include transistor.html id="fa673cc9" title="#110 Securing the Supply Chain" %}
 
 {% include youtube.html id="zxcRt7vv7LE" %}
 

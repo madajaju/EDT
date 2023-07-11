@@ -21,7 +21,7 @@ img: thumbnail.png
 summary: "On this episode, part one of two, Darren discusses security trends with frequent guest Steve Orrin, CTO of Intel, Federal. Over the past year, there has been a rise in the number and sophistication of cyber-attacks. The three key areas of recurring attacks are ransomware, supply chain attacks, and data breaches."
 ---
 
-{% include soundcloud.html id="edt60" title="#60 Managing Risk in the Face of Ransomware" %}
+{% include transistor.html id="8b0a716a" title="#60 Managing Risk in the Face of Ransomware" %}
 
 {% include youtube.html id="JOw9LurVHJY" %}
 

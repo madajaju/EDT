@@ -23,7 +23,7 @@ img: thumbnail.png
 summary: "In this episode, Darren Pulsipher, Chief Solution Architect at Intel, asks Rachel Mushawar, VP of Sales at Intel, for her insight on what’s ahead for the Roaring 20s after the disruption of COVID-19."
 ---
 
-{% include soundcloud.html id="edt38" title="#38 Roaring 20's a Look Forward to 2021" %}
+{% include transistor.html id="837567c1" title="#38 Roaring 20's a Look Forward to 2021" %}
 
 {% include youtube.html id="4O-3WndRbU0" %}
 

@@ -21,7 +21,7 @@ img: thumbnail.png
 summary: "Intel’s Darren Pulsipher, Chief Solutions Architect, and Dr. Anna Scott, Chief Edge Architect, Public Sector, discuss essential requirements for edge to cloud service architectures.   "
 ---
 
-{% include soundcloud.html id="edt95" title="#95 Requirements for Edge to Cloud Architectures" %}
+{% include transistor.html id="6279b2d2" title="#95 Requirements for Edge to Cloud Architectures" %}
 
 {% include youtube.html id="wBPm1KcrhWg" %}
 

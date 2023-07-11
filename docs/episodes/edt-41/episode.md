@@ -23,7 +23,7 @@ img: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, defines common DevOps terms and explains where DevOps fits into your organization."
 ---
 
-{% include soundcloud.html id="edt41" title="#41 The Black Art of DevOps" %}
+{% include transistor.html id="b4fe3ea1" title="#41 The Black Art of DevOps" %}
 
 {% include youtube.html id="to0GwF55Ybw" %}
 

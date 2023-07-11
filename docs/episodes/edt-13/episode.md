@@ -20,7 +20,7 @@ img: thumbnail.jpg
 summary: "Thought leader Andrew Padilla of Datacequia envisions new developments in data management and collaboration that would allow data to advance as software has in visibility, accessibility, usability, and portability. He outlines how a composable infrastructure would address the concerns of both software engineers and data scientists."
 ---
 
-{% include soundcloud.html id="edt13" title="#13 Illogical Obsession with Logic" %}
+{% include transistor.html id="4272c3a1" title="#13 Illogical Obsession with Logic" %}
 
 {% include youtube.html id="F1hfANcSQj4" %}
 

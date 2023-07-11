@@ -21,7 +21,7 @@ img: thumbnail.jpeg
 summary: "In this episode Darren explores the science and use cases behind digital twin technology with the principal architect of Intel's ScheneScape."
 ---
 
-{% include soundcloud.html id="edt144" title="#144 Science Behind Digital Twins" %}
+{% include transistor.html id="6b355957" title="#144 Science Behind Digital Twins" %}
 
 {% include youtube.html id="C6xDweCGboU" %}
 

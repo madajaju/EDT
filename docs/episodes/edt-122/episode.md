@@ -23,7 +23,7 @@ img: thumbnail.png
 summary: "In this episode Darren Interviews ChatGPT from OpenAI about utilizing AI for automation, the ethics of using AI, and the replacement of information workers."
 ---
 
-{% include soundcloud.html id="edt122" title="#122 Automation with AI" %}
+{% include transistor.html id="294ba5d0" title="#122 Automation with AI" %}
 
 {% include youtube.html id="SHfQWxb-o6Y" %}
 

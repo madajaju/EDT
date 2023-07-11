@@ -17,7 +17,7 @@ img: thumbnail.png
 summary: "With many employees now working from home, how do you make sure they are working securely yet still give them the flexibility they need to get their jobs done? In this episode, Darren and special Guest Steve Orrin, CTO of Intel Federal, discuss how to leverage Intel technology to effectively help secure the teleworker.  "
 ---
 
-{% include soundcloud.html id="edt8" title="#8 Securing the Teleworker Part 2" %}
+{% include transistor.html id="5fc292e0" title="#8 Securing the Teleworker Part 2" %}
 
 {% include youtube.html id="1PrO05zRapY" %}
 

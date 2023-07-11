@@ -23,7 +23,7 @@ img: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect, Intel, asks his guest, Ann Madea, former CIO of HSBC, to reflect on the process of big transformational changes she spearheaded in organizations."
 ---
 
-{% include soundcloud.html id="edt54" title="#54 People & Process in Digital Transformation" %}
+{% include transistor.html id="5e1c9cfe" title="#54 People & Process in Digital Transformation" %}
 
 {% include youtube.html id="EqX-aSQaZ68" %}
 

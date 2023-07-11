@@ -20,7 +20,7 @@ technology for realizing smart city
 potential."
 ---
 
-{% include soundcloud.html id="edt111" title="#111 Realizing Smart City Potential" %}
+{% include transistor.html id="91e87dfc" title="#111 Realizing Smart City Potential" %}
 
 {% include youtube.html id="lanaZk9q0dI" %}
 

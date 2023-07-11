@@ -20,7 +20,7 @@ img: thumbnail.jpg
 summary: "Darren Pulsipher, Chief Solutions Architect, Intel, Dr. Hadi Ahmadi, Director of Solutions Architecture, Katana Graph discuss the benefits of graph databases. "
 ---
 
-{% include soundcloud.html id="edt97" title="#97 The Benefits of Graph Databses" %}
+{% include transistor.html id="c81eaabc" title="#97 The Benefits of Graph Databses" %}
 
 {% include youtube.html id="h06tRFkeK-E" %}
 

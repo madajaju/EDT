@@ -22,7 +22,7 @@ img: thumbnail.jpg
 summary: "In this episode, Darren checks in with Randy Hayes, now VP of Sales, for the public sector of VAST Data, six months after their last conversation to see how they are doing in the industry, what is new at VAST, and interesting use cases. Their new product, Gemini, offers a different storage business model"
 ---
 
-{% include soundcloud.html id="edt48" title="#48 VAST Data Revisited" %}
+{% include transistor.html id="d6fc5e00" title="#48 VAST Data Revisited" %}
 
 {% include youtube.html id="BvwpmK0Ct-0" %}
 

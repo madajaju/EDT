@@ -21,7 +21,7 @@ img: thumbnail.png
 summary: "Intel’s Darren Pulsipher, Chief Solutions Architect, Leland Brown, Principal Engineer: Technical Director of Advanced Communications, and Dr. Anna Scott, Chief Edge Architect for Public Sector, talk about the history of advanced comms and future use cases with 5G. Part two of two."
 ---
 
-{% include soundcloud.html id="edt109" title="#109 Advancing Operations with 5G" %}
+{% include transistor.html id="b613bc52" title="#109 Advancing Operations with 5G" %}
 
 {% include youtube.html id="ZHyeXrkxQhA" %}
 

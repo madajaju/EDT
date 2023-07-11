@@ -23,7 +23,7 @@ img: thumbnail.png
 summary: "In this episode Dr. Anna Scott interviews Jesse Schrater and Ibett Acarapi about how to protect data using confidential computing."
 ---
 
-{% include soundcloud.html id="edt142" title="#142 Data Protection with Confidential Computing" %}
+{% include transistor.html id="3217af7f" title="#142 Data Protection with Confidential Computing" %}
 
 {% include youtube.html id="U89t0CbBgv8" %}
 

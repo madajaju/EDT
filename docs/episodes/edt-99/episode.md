@@ -22,7 +22,7 @@ img: thumbnail.png
 summary: "Intel’s Darren Pulsipher, Chief Solutions Architect, and Paul Giorgi, Director of Sales Engineering, XM Cyber, discuss how XM Cyber technology can help organizations uncover attack paths and reduce risk."
 ---
 
-{% include soundcloud.html id="edt99" title="#99 Precog Cyber Attack PAth with XM Cyber" %}
+{% include transistor.html id="60eaf764" title="#99 Precog Cyber Attack PAth with XM Cyber" %}
 
 {% include youtube.html id="G9PfJdHZi08" %}
 

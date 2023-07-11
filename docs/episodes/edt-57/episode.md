@@ -25,7 +25,7 @@ img: thumbnail.png
 summary: "In part two of two, Darren Pulsipher, Chief Solution Architect, and Intel Cloud Solution Architects Dave Shrestha and Kevin Bleckman talk about the benefits and services of a cloud broker organization."
 ---
 
-{% include soundcloud.html id="edt57" title="#57 Cloud Broker Organization Part 2" %}
+{% include transistor.html id="3542904b" title="#57 Cloud Broker Organization Part 2" %}
 
 {% include youtube.html id="9cZHCXE64Zs" %}
 

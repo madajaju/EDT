@@ -18,7 +18,7 @@ img: thumbnail.png
 summary: "Securing your device and your data center only gets you so far. With more people working from home you need to help your employee secure their home network and work area. In this episode, Steve Orrin, Federal CTO at Intel helps Darren secure his home network. "
 ---
 
-{% include soundcloud.html id="edt9" title="#9 Telework Securing Your Home Office" %}
+{% include transistor.html id="9fe2f82e" title="#9 Telework Securing Your Home Office" %}
 
 {% include youtube.html id="QIP4mdC_7Uw" %}
 

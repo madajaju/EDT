@@ -22,7 +22,7 @@ img: thumbnail.png
 summary: "In this episode Darren Pulsipher, welcomed Logan Selby, the co-founder and president of DataShapes, where they discuss a unique approach to Artificial Intelligence that is bucking the trend."
 ---
 
-{% include soundcloud.html id="edt134" title="#134 WaveForm AI" %}
+{% include transistor.html id="43198853" title="#134 WaveForm AI" %}
 
 {% include youtube.html id="Gaz-6HGLLg8" %}
 

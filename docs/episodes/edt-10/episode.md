@@ -22,7 +22,7 @@ img: thumbnail.png
 summary: "Organizations need help in building VDI (Virtual Desktop Infrastructure) solutions immediately. As IT Departments are adding VDI licenses locally to their current systems, they need to be aware that licenses alone don’t solve all of their problems."
 ---
 
-{% include soundcloud.html id="edt10" title="#10 Teleworker Sizing Your VDI Solution" %}
+{% include transistor.html id="9967b600" title="#10 Teleworker Sizing Your VDI Solution" %}
 
 {% include youtube.html id="DYmsaCS6Q_o" %}
 

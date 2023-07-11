@@ -20,7 +20,7 @@ img: thumbnail.png
 summary: "On this episode, Darren reflects on the expectations and surprises of 2021"
 ---
 
-{% include soundcloud.html id="edt73" title="#73 2021 a Year in Review" %}
+{% include transistor.html id="cb3a86a3" title="#73 2021 a Year in Review" %}
 
 {% include youtube.html id="fPNfdjHtKns" %}
 

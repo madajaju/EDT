@@ -25,7 +25,7 @@ img: thumbnail.png
 summary: "Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, and Gretchen Stewart, Chief Data Scientist, Public Sector, discuss operationalizing AI projects."
 ---
 
-{% include soundcloud.html id="edt103" title="#103 Operationalizing Your AI Projects" %}
+{% include transistor.html id="dfad3810" title="#103 Operationalizing Your AI Projects" %}
 
 {% include youtube.html id="HbXNLtGkD5E" %}
 

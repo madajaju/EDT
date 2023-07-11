@@ -21,7 +21,7 @@ img: thumbnail.jpg
 summary: "On this episode, Darren discusses the four superpowers of digital transformation with Intel’s Greg Ernst, Corporate VP of Sales, Americas. Ubiquitous compute, Pervasive Connectivity, Cloud to Edge, Artificial Intelligence."
 ---
 
-{% include soundcloud.html id="edt93" title="#93 The Four Superpowers of Digital Transformation" %}
+{% include transistor.html id="f546d88e" title="#93 The Four Superpowers of Digital Transformation" %}
 
 {% include youtube.html id="dsHVk3jONII" %}
 

@@ -17,7 +17,7 @@ img: thumbnail.png
 summary: "In this episode, Darren interviews Michael Mehlberg about increasing confidence in open source through background checking the open source communities."
 ---
 
-{% include soundcloud.html id="edt140" title="#140 Background Checking Your Open Source" %}
+{% include transistor.html id="d17c9ba3" title="#140 Background Checking Your Open Source" %}
 
 {% include youtube.html id="FhrAWLUEN-Q" %}
 

@@ -27,7 +27,7 @@ img: thumbnail.png
 summary: "In this episode Darren reviews 2022. He identifies the most talked about topics on the podcast in 2022 including Data Management, Artificial Intelligence, Cyber Security, Edge Computing, and Hybrid Workspaces. "
 ---
 
-{% include soundcloud.html id="edt117" title="#117 2022 Year In Review" %}
+{% include transistor.html id="b50f4fda" title="#117 2022 Year In Review" %}
 
 {% include youtube.html id="lxRMINWH48g" %}
 

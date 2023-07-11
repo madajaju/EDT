@@ -25,7 +25,7 @@ img: thumbnail.png
 summary: "On this episode, Darren talks with Sophos’ Callen Sapien, Director of Product Management, Sophos Factory, and Mike Fraser, VP of DevSecOps about their product that allows for truly collaborative SecDevOps."
 ---
 
-{% include soundcloud.html id="edt88" title="#88 Collaborative DevSecOps" %}
+{% include transistor.html id="7c72a8c7" title="#88 Collaborative DevSecOps" %}
 
 {% include youtube.html id="4wm1mLse5eM" %}
 

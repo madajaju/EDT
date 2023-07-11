@@ -22,7 +22,7 @@ img: thumbnail.jpg
 summary: "Randy Hayes from VAST Data and Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, discuss VAST Data’s innovative storage architecture that eliminates the need for tiers using NVMe over Fabrics, QLC Flash, and 3D XPoint Optane"
 ---
 
-{% include soundcloud.html id="edt20" title="#20 Destroying the Complexity of Storage Tiers" %}
+{% include transistor.html id="a3a3329f" title="#20 Destroying the Complexity of Storage Tiers" %}
 
 {% include youtube.html id="ZU6BDo0cFac" %}
 

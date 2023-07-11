@@ -23,7 +23,7 @@ img: thumbnail.png
 summary: "With cyber-attacks on the rise in all industries, security is more important than ever. In this episode, Darren Pulsipher, Chief Solution Architect, and Steve Orrin, Federal CTO at Intel Federal, outline the attack vectors, the six pillars of cybersecurity, and how Intel can help. The level of complexity organizations must deal with to secure their data, systems, and applications has never been more difficult."
 ---
 
-{% include soundcloud.html id="edt36" title="#36 Six Pillars of Cybersecurity" %}
+{% include transistor.html id="eba5142a" title="#36 Six Pillars of Cybersecurity" %}
 
 {% include youtube.html id="url" %}
 

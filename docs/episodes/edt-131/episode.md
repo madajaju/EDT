@@ -24,7 +24,7 @@ img: thumbnail.jpg
 summary: "In this episode, Darren interview Mark Valcich director and GM of Federal Civilian Public Sector at Intel. Mark's years of experience shine as he describes the current trends in digital transformation in the federal civilian government."
 ---
 
-{% include soundcloud.html id="edt131" title="#131 Digital Transformation in Federal Government" %}
+{% include transistor.html id="e78c9823" title="#131 Digital Transformation in Federal Government" %}
 
 {% include youtube.html id="eZ2UfSwdcwo" %}
 

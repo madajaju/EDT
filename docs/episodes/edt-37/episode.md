@@ -23,7 +23,7 @@ img: thumbnail.jpg
 summary: "Darren Pulsipher, Chief Solution Architect, Public Sector, at Intel reflects on the disruption, changes, and adjustments the COVID-19 pandemic brought in 2020."
 ---
 
-{% include soundcloud.html id="edt37" title="#37 2020 in Review" %}
+{% include transistor.html id="2ed7f7f2" title="#37 2020 in Review" %}
 
 {% include youtube.html id="86cmrhSTAvc" %}
 

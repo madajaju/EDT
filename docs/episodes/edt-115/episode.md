@@ -23,7 +23,7 @@ img: thumbnail.png
 summary: "In this episode, Darren talks about cybersecurity with returning guest John Evans, Chief Technology Advisor at World Wide Technology (WWT)."
 ---
 
-{% include soundcloud.html id="edt115" title="#115 Blocking and Tackling of Security" %}
+{% include transistor.html id="4c1b2203" title="#115 Blocking and Tackling of Security" %}
 
 {% include youtube.html id="SPmsH6Ia6pM" %}
 

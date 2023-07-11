@@ -23,7 +23,7 @@ img: thumbnail.png
 summary: "In part two of this episode, Darren Pulsipher, Chief Solution Architect, Intel, gives practical tips for securing each stage of the DevOps pipeline, including protecting the hardware and software stacks with hardware root of trust, Security scanning, attested and encrypted containers/VMs. and more."
 ---
 
-{% include soundcloud.html id="edt46" title="#46 Securing your DevOps Pipeline" %}
+{% include transistor.html id="3abb647c" title="#46 Securing your DevOps Pipeline" %}
 
 {% include youtube.html id="sf0VaCpQLVE" %}
 
