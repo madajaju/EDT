@@ -10,7 +10,7 @@ grand_parent: Weekly Briefs
 nav_order: 2
 tags:
 
-date: Mon Feb 13 2023 00:00:00 GMT-0800 (Pacific Standard Time)
+date: Mon Feb 13 2023 03:00:00 GMT-0500 (Eastern Standard Time)
 guests:
 
 img: thumbnail.png
