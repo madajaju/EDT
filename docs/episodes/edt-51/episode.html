@@ -1,0 +1,127 @@
+<html>
+<head>
+</head>
+<body>
+<style>
+    body {
+        font-family: "IntelOne Text";
+        font-size: 9pt;
+    }
+
+    #meat {
+        float: left;
+    }
+    #title {
+        font-size: 30pt;
+        margin-top: 10pt;
+        margin-bottom: 10pt;
+    }
+    #headerImage {
+        float: right;
+    }
+    #author {
+        font-family: "IntelOne Text";
+    }
+
+    #headerTitle {
+        font-family: "IntelOne Display Light";
+        font-size: 10pt;
+        color: #1E83C9;
+        clear: none;
+    }
+    #summary {
+        float: left;
+        width: 200px;
+        padding-right: 30px;
+        padding-left: 15px;
+    }
+    h2 {
+       color: #1E83C9;
+        font-size: 12pt;
+    }
+    h3 {
+        color: #1E83C9;
+        font-size: 10pt;
+    }
+    #body {
+        column-gap: 30pt;
+    }
+
+    #footer {
+        font-size: 6pt;
+        padding-top: 15pt;
+    }
+</style>
+
+<div id="header">
+    <div id="headerImage">
+        <img src="./IntelLogoElectric.png" width="100" height="40">
+    </div>
+    <div id="headerTitle">
+        <h1 style="font-size:20pt;">Podcast Episode</h1>
+        <p>Public Sector<br>
+            Embracing Digital Transformation</p>
+        <h1 id="title">Practical Optane Persistent Memory Use Cases</h1>
+        <p id="author">by Darren W Pulsipher - Wed Jun 02 2021 17:00:00 GMT-0700 (Pacific Daylight Time)</p>
+        <hr>
+        <h2 id="tagline"></h2>
+    </div>
+</div>
+
+<div id="meat">
+    <div id="summary">
+        <p>Darren Pulsipher, Chief Solution Architect, Intel, talks to Charles Fan, CEO of MemVerge, about use cases with their software that utilizes Intel’s Optane persistent memory in an innovative way, removing the bottleneck between memory and storage.<br>
+            <br>
+            <img src="thumbnail.jpg" width="200" height="200"><br>
+            <br>
+            <b>Video</b>: <a href="https://youtu.be/nTy8yXORkOw">Youtube Channel</a><br>
+            <b>Podcast</b>: <a href="https://share.transistor.fm/s/442f5ddb">Podcast Episode</a><br>
+            <b>Blog</b>: <a href="https://embracingdigital.org/archives/663">Blog Entry</a>
+            <b>Keywords:</b> dataarchitecture, memverge, pmem, optane, technology, data <br>
+        </p>
+    </div>
+    <div id="body">
+            
+MemVerge shipped the first version of their software in September 2020, and despite the pandemic, which slowed down educating customers about the new technology, a good pattern of use cases emerged. 
+
+## Cloud Service Providers Cost Reduction
+
+The key metric for a cloud service operator is how many VMs they can deliver to their customers, and at what cost. The size of the memory on the servers becomes the bottleneck of how many VMs they can allocate per server, limiting how low their price per VM can go. 
+
+MemVerge software with Optane delivers a larger amount of memory per server, allocating a larger number of VMs, therefore lowering the cost per VM and increasing the competitiveness of cloud service providers. The cost per VM could be three times cheaper. 
+
+## Reliability with Large Memory Data Bases
+
+Financial customers such as stock exchanges, banks, and mutual funds use a lot of memory databases and in-memory applications. In addition to making their memory bigger so they can have more instances per server, MemVerge solves memory database availability challenges. If the data is not being persisted to storage all the time, but just sitting in memory, all the intraday data is lost if there is a crash. This is catastrophic. Even if you have logged all the transactions, you must replay the log to recover the database, which takes many minutes or even hours to recover. 
+
+MemVerge offers a new data service that has in-memory snapshot. It persists the  database state to Optane, which is much faster than persisting onto storage. If there is a crash, you have the last snapshot captured on persistent memory and you can recover from that. The recovery only takes a minute or two, so it is a 60 to 100x improvement. 
+
+## Genomic Sequencing Reduction Through Memory Snapshot
+
+In the area of genomics, MemVerge software in combination with Optane increases productivity exponentially. In a multistage data analytics workflow, bigger memory means more parallelism of the pipeline and processing so the whole process is faster. Snapshot is handy here, as well. If an organization is doing, for example, cancer or COVID research, and they need to do DNA or RNA sequences, they have to go through something like 50 stages of processing. Each stage might take hours, and they need to take a checkpoint of the state of intermediate computation results for a few reasons: first, re-running or reproducing results, and second, comparing results if they modify some data. The checkpoints are saved onto storage and this takes from five to 30 minutes. In many cases, this can be more time consuming than the compute itself. So if one job takes 24 hours, they might use eight hours for compute and 16 hours just doing these IO jobs saving those intermediate states. 
+
+Rather than doing IO, MemVerge uses a snapshot after each stage and captures it on Optane persistent memory. Instead of 16 hours of IO, this process can take one minute. It’s the new way of doing IO; you don’t need to do the serialization or de-serialization to open a file, read, write, etc. All you have to do is take a snapshot. 
+
+Although this does take a lot of memory, with MemVerge, the memory is bigger than before, and it will continue to improve as Intel innovates. Two other features help with this issue. First, snapshots are taken periodically without creating full copies of the memory state; they are only the change pages so the extra usage of memory is minimized. Second, MemVerge can keep up to 256 layers of snapshots to memory, but at the same time, you can export those snapshots off memory to storage servers or your own storage systems. This is done without interrupting or impacting your running application. 
+
+Essentially, you are creating a memory DVR because instead of only running your application forward, you can also run backward almost instantly. It’s a new experience. 
+
+Genomics is just the first example of many workloads that could benefit from this technology. 
+
+Since MemVerge is a startup, they are narrowly focusing on the three areas of cloud service providers, financial large memory applications, genomics and related data science pipeline jobs, but these use cases all prove the power of the combination of Optane persistent memory and MemVerge software. 
+
+
+    </div>
+</div>
+<br>
+<div id="footer">
+    <img src="./IntelLogoElectric.png" width="100" height="40"> <br>
+Intel® technologies may require enabled hardware, software, or service activation.<br>
+No product or component can be absolutely secure.<br>
+Your costs and results may vary.<br>
+Intel does not control or audit third-party data. You should consult other sources to evaluate accuracy.<br>
+© 2023 Intel Corporation<br>
+</div>
+</body>
+</html>
+

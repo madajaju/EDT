@@ -1,0 +1,122 @@
+<html>
+<head>
+</head>
+<body>
+<style>
+    body {
+        font-family: "IntelOne Text";
+        font-size: 9pt;
+    }
+
+    #meat {
+        float: left;
+    }
+    #title {
+        font-size: 30pt;
+        margin-top: 10pt;
+        margin-bottom: 10pt;
+    }
+    #headerImage {
+        float: right;
+    }
+    #author {
+        font-family: "IntelOne Text";
+    }
+
+    #headerTitle {
+        font-family: "IntelOne Display Light";
+        font-size: 10pt;
+        color: #1E83C9;
+        clear: none;
+    }
+    #summary {
+        float: left;
+        width: 200px;
+        padding-right: 30px;
+        padding-left: 15px;
+    }
+    h2 {
+       color: #1E83C9;
+        font-size: 12pt;
+    }
+    h3 {
+        color: #1E83C9;
+        font-size: 10pt;
+    }
+    #body {
+        column-gap: 30pt;
+    }
+
+    #footer {
+        font-size: 6pt;
+        padding-top: 15pt;
+    }
+</style>
+
+<div id="header">
+    <div id="headerImage">
+        <img src="./IntelLogoElectric.png" width="100" height="40">
+    </div>
+    <div id="headerTitle">
+        <h1 style="font-size:20pt;">Podcast Episode</h1>
+        <p>Public Sector<br>
+            Embracing Digital Transformation</p>
+        <h1 id="title">Fighting the Cyber Adversary by Securing your Software Supply Chain</h1>
+        <p id="author">by Darren W Pulsipher, Eric Greenwald - Wed Jun 08 2022 17:00:00 GMT-0700 (Pacific Daylight Time)</p>
+        <hr>
+        <h2 id="tagline"></h2>
+    </div>
+</div>
+
+<div id="meat">
+    <div id="summary">
+        <p>Darren Pulsipher, Chief Solutions Architect, Intel, and Eric Greenwald, General Counsel of Finite State, talk about securing the software supply chain.<br>
+            <br>
+            <img src="thumbnail.png" width="200" height="200"><br>
+            <br>
+            <b>Video</b>: <a href="https://youtu.be/zyIH533JhyM">Youtube Channel</a><br>
+            <b>Podcast</b>: <a href="https://share.transistor.fm/s/d4b56c70">Podcast Episode</a><br>
+            <b>Blog</b>: <a href="https://embracingdigital.org/archives/1353">Blog Entry</a>
+            <b>Keywords:</b> cybersecurity, devsecops, sbom, securesupplychain, policy, process, compute <br>
+        </p>
+    </div>
+    <div id="body">
+            Darren and Eric Greenwald, General Counsel of Finite State, discuss securing the software supply chain in this episode.
+
+Finite State focuses on finding vulnerabilities in firmware, most often software from third parties that may have already had existing vulnerabilities, before folding it into their device. Finite State focuses primarily on industrial IoT devices, medical devices, automobiles, and consumer electronics.
+
+For seven years before joining Finite State, Eric worked as a lawyer in the private sector, focusing on security testing and identifying vulnerabilities for cybersecurity companies. Before that, he worked in government with cybersecurity and national security, for the FBI and CIA, and as chief counsel for the House Intelligence Committee. His government work culminated when he became the Senior Director for Cybersecurity on the National Security Council at the White House.
+
+Eric believes part of the reason there is now an emphasis on securing the supply chain is that the threat has evolved. The increasingly complex nature of software, including that many components have vulnerabilities when they are first created and only discovered over time, makes it more difficult to find devices built through the software supply chain. In addition, recent high-profile attacks via a breach in the software supply chain such as SolarWinds have made people more aware of the danger.
+
+In the SolarWinds attack, the perpetrator had patience, not immediately causing havoc but waiting a year while roaming through American computer networks, cultivating access and information. That patience is probably the most significant difference between a nation-state and a criminal attack. While sometimes patient criminal attacks are more focused on a financial return on investment, those behind a state attack are willing to take years to develop their intelligence access. With either, however, the attacks are becoming more sophisticated and are much better positioned to take devastating advantage of supply chain complexity.
+
+To combat these attacks, new regulations are cropping up. The Biden administration issued executive order 14028 in May 2021, which has two main points: secure software development and software bill of materials (SBOM). The executive order is only directed at government procurement, but private industry is likely to follow.
+
+The details and technical recommendations of secure software development are still being worked out. Still, part of it would be that software suppliers to the government would have to provide an SBOM. The first draft legislation for SBOMS came out in 2014, so the standards for producing them have become more mature and developed. An SBOM is essentially a list of software components that went into a software product, not so different than a list of ingredients on a food product. This offers transparency in the supply chain, which is essential to assess vulnerabilities or to be able to identify a vulnerability that is discovered at a later date.
+
+An excellent example of this is what happened with Log4j. When that vulnerability was discovered, many companies had no idea if they had it in their stack. It wouldn’t be a magic wand, but an SBOM would allow companies to more easily discover if they have the problem software component in their system and act more quickly to implement a patch.
+
+Arguments against publishing SBOMs are that they will provide a roadmap for attackers and give away proprietary information. While these are legitimate concerns and must be discussed, the Commerce Department and the Department of Homeland Security maintain a much more significant benefit to defenders having transparency than any advantage given to attackers. There are bipartisan bills in support SBOMs. There are ways to reduce the risk that SBOMs will fall into the wrong hands, such as secure or non-fungible contracts. The debates over these concerns will continue in the public sector, and more companies will adopt them.
+
+This legislation is happening because the FDA has suggested that medical device manufacturers incorporate SBOMs as part of the review process, so SBOMs are gaining momentum from these manufacturers. The physical world is becoming more affected by software in medical devices, and embedded systems such as control systems for power plants, HVAC systems, airport controls, etc., so operational systems are at risk, with more significant consequences than business system attacks.
+
+A difficulty for OT professionals is that many of the industrial components are older and have not necessarily been updated. Still, hackers are reluctant to connect to the internet and update because that’s how hackers get in. The best answer to this problem is to try and gain transparency of the components in the stack, scan the system and the devices that are part of the OT network, and do some reverse engineering and decompiling to understand the details. Essentially, you need to create your SBOM and assess where the vulnerabilities are.
+
+This is the primary area of work for Finite State. They look at the systems and devices and do an analysis. They have a platform that automates the embedded code analysis, provides a read-out of the vulnerabilities and identifies and groups the highest priority vulnerabilities. Sometimes you can knock out a whole category of openness with a single fix. Creating the SBOM by itself, then, is not good enough. It must be tied into a risk management system to wade through and sort the many vulnerabilities. Finding the highest priority risks is a complex process, and Finite State can help security teams prioritize their actions to protect their systems. 
+
+
+    </div>
+</div>
+<br>
+<div id="footer">
+    <img src="./IntelLogoElectric.png" width="100" height="40"> <br>
+Intel® technologies may require enabled hardware, software, or service activation.<br>
+No product or component can be absolutely secure.<br>
+Your costs and results may vary.<br>
+Intel does not control or audit third-party data. You should consult other sources to evaluate accuracy.<br>
+© 2023 Intel Corporation<br>
+</div>
+</body>
+</html>
+

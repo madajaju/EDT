@@ -1,0 +1,127 @@
+<html>
+<head>
+</head>
+<body>
+<style>
+    body {
+        font-family: "IntelOne Text";
+        font-size: 9pt;
+    }
+
+    #meat {
+        float: left;
+    }
+    #title {
+        font-size: 30pt;
+        margin-top: 10pt;
+        margin-bottom: 10pt;
+    }
+    #headerImage {
+        float: right;
+    }
+    #author {
+        font-family: "IntelOne Text";
+    }
+
+    #headerTitle {
+        font-family: "IntelOne Display Light";
+        font-size: 10pt;
+        color: #1E83C9;
+        clear: none;
+    }
+    #summary {
+        float: left;
+        width: 200px;
+        padding-right: 30px;
+        padding-left: 15px;
+    }
+    h2 {
+       color: #1E83C9;
+        font-size: 12pt;
+    }
+    h3 {
+        color: #1E83C9;
+        font-size: 10pt;
+    }
+    #body {
+        column-gap: 30pt;
+    }
+
+    #footer {
+        font-size: 6pt;
+        padding-top: 15pt;
+    }
+</style>
+
+<div id="header">
+    <div id="headerImage">
+        <img src="./IntelLogoElectric.png" width="100" height="40">
+    </div>
+    <div id="headerTitle">
+        <h1 style="font-size:20pt;">Podcast Episode</h1>
+        <p>Public Sector<br>
+            Embracing Digital Transformation</p>
+        <h1 id="title">Not All Cores are Equal</h1>
+        <p id="author">by Darren W Pulsipher, Steven Holt - Tue Mar 30 2021 17:00:00 GMT-0700 (Pacific Daylight Time)</p>
+        <hr>
+        <h2 id="tagline"></h2>
+    </div>
+</div>
+
+<div id="meat">
+    <div id="summary">
+        <p>In this episode, Darren Pulsipher, Chief Solution Architect, Intel, and Stephen Holt, Cloud Solution Architect, Intel discuss cloud optimization and studies that show that cores perform differently for various workloads.<br>
+            <br>
+            <img src="thumbnail.png" width="200" height="200"><br>
+            <br>
+            <b>Video</b>: <a href="https://youtu.be/ZqdpCTp5yTY">Youtube Channel</a><br>
+            <b>Podcast</b>: <a href="https://share.transistor.fm/s/cd1f0343">Podcast Episode</a><br>
+            <b>Blog</b>: <a href="https://embracingdigital.org/archives/609">Blog Entry</a>
+            <b>Keywords:</b> multicloud, compute, optimization, workloadplacement, workload, migration, process, cloudinstance <br>
+        </p>
+    </div>
+    <div id="body">
+            Intel has been hiring cloud solution architects to help customers move intelligently to the right cloud instances for their workloads. Stephen has recently come on board at Intel and has a long history in databases in general, with the last seven or eight years focusing on the cloud, leveraging its resources for customers. 
+
+Some of the most difficult aspects that Stephen has run into in helping customers move to the cloud are the pricing and the expectations for the move. Cloud service providers often claim customers will save money by moving to the cloud, but this is often not the case. 
+
+One reason is that there is constant change in the competitive cloud service provider market in features, functions, and abilities. Another reason is ignorance, for example, believing that a core VCP is the same across the board as others. Migrating with a lift and shift mindset can also be very expensive. Optimization is key for intelligent cloud migration. 
+
+To decrease costs and potentially save a large amount of money, you must choose the right instances for the right performances. Not all cores, or virtual CPUs, are equal. Within AWS, they have the M4, Intel’s Broadwell, and the M5, which is a mix of Cascade Lake and Skylake, and various workloads can take advantage of those platforms very differently. 
+
+## CoreMark Performance
+
+CoreMark is a single threaded application that tests register moves and simple additions for any number of CPUs. Across three generations of Intel processors, Broadwell, Skylake, and Cascade Lake, this test shows very little difference among them. This information has been erroneously used in guiding customer decisions, as the test was is not an effective way of measuring the differences in the processes themselves.  There can be huge differences in performances with different workloads. 
+
+## Database WL Performance
+
+Stephen performed digital tests on real workloads, focused on open source databases. The Cascade Lake environment was three times better than the Broadwell environment for open source, which makes sense given the advances in speed and on-chip advances that take advantage of low latency access. So going up two generations gives two and three times better performance on these workloads. 
+
+The workload and the core must be considered together. For example, a customer might be tempted to switch to a VCPU that Amazon says is 10% cheaper. AWS might, however, pack cores onto these processors and you are now moving from an environment where you’re one of 48 virtual machines on a box to one where there’s 128 virtual machines; your access to memory is limited, and you might get 60% less performance for a 10% savings. 
+
+Organizations often believe that if they outsource to the cloud, they no longer need a systems architect. It’s true that architects are no longer racking and stacking machines, but they do it now virtually and need to understand what different instances provide for different workloads. 
+
+Intel is working on a tool to show which workloads run best on which instances. Meanwhile, Intel has some general guidelines and cloud solution architects to help guide customers.  
+
+In addition, a lot of testing is important to understand where to place workloads, but it’s also important to test and benchmark to validate that you are getting what you expect from a provider. 
+
+## Database WL Performance – Non NVMe
+
+Intel did some testing on workloads on fresh installs on 64 core fixed 64 VCPU instance. After getting the initial number, another instance was instantiated and the same test was run again. The results varied dramatically from the same test each time. This could be because there may be a mix of processes that are offered at a certain tier level, or there could be some distance and additional latencies to block storage attachments, for example, or even noisy neighbors. So it is worthwhile to test to make sure the system meets expectations. 
+
+In short, to get the best value out of the cloud, you need to educate yourself, test the systems, and take advantage of available help. 
+
+    </div>
+</div>
+<br>
+<div id="footer">
+    <img src="./IntelLogoElectric.png" width="100" height="40"> <br>
+Intel® technologies may require enabled hardware, software, or service activation.<br>
+No product or component can be absolutely secure.<br>
+Your costs and results may vary.<br>
+Intel does not control or audit third-party data. You should consult other sources to evaluate accuracy.<br>
+© 2023 Intel Corporation<br>
+</div>
+</body>
+</html>
+

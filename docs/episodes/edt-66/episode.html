@@ -1,0 +1,119 @@
+<html>
+<head>
+</head>
+<body>
+<style>
+    body {
+        font-family: "IntelOne Text";
+        font-size: 9pt;
+    }
+
+    #meat {
+        float: left;
+    }
+    #title {
+        font-size: 30pt;
+        margin-top: 10pt;
+        margin-bottom: 10pt;
+    }
+    #headerImage {
+        float: right;
+    }
+    #author {
+        font-family: "IntelOne Text";
+    }
+
+    #headerTitle {
+        font-family: "IntelOne Display Light";
+        font-size: 10pt;
+        color: #1E83C9;
+        clear: none;
+    }
+    #summary {
+        float: left;
+        width: 200px;
+        padding-right: 30px;
+        padding-left: 15px;
+    }
+    h2 {
+       color: #1E83C9;
+        font-size: 12pt;
+    }
+    h3 {
+        color: #1E83C9;
+        font-size: 10pt;
+    }
+    #body {
+        column-gap: 30pt;
+    }
+
+    #footer {
+        font-size: 6pt;
+        padding-top: 15pt;
+    }
+</style>
+
+<div id="header">
+    <div id="headerImage">
+        <img src="./IntelLogoElectric.png" width="100" height="40">
+    </div>
+    <div id="headerTitle">
+        <h1 style="font-size:20pt;">Podcast Episode</h1>
+        <p>Public Sector<br>
+            Embracing Digital Transformation</p>
+        <h1 id="title">Managing Complexity in the Cloud</h1>
+        <p id="author">by Darren W Pulsipher, David Esposito - Wed Oct 13 2021 17:00:00 GMT-0700 (Pacific Daylight Time)</p>
+        <hr>
+        <h2 id="tagline"></h2>
+    </div>
+</div>
+
+<div id="meat">
+    <div id="summary">
+        <p>On this episode, part 2 of 2, Darren continues his conversation with David Esposito, Global Solution Architect, from Aiven about accelerating cloud adoption while reducing complexity and cost.<br>
+            <br>
+            <img src="thumbnail.jpg" width="200" height="200"><br>
+            <br>
+            <b>Video</b>: <a href="https://youtu.be/OIIPkoZHKiw">Youtube Channel</a><br>
+            <b>Podcast</b>: <a href="https://share.transistor.fm/s/49896b3b">Podcast Episode</a><br>
+            <b>Blog</b>: <a href="https://embracingdigital.org/archives/840">Blog Entry</a>
+            <b>Keywords:</b> data, devops, compute, technology, process, devsecops, cybersecurity, aiven <br>
+        </p>
+    </div>
+    <div id="body">
+            ## Reducing Complexity
+
+What business practices should be put into place when managing cloud assets to decrease complexity? First, you must have infrastructure code and automated deployments in place. Everything that comes next is a conversation to define what risks there are to the company such as outages and downtimes, how to mitigate these risks, and how much to invest in that.
+
+For some companies, it’s critical to have the highest level of uptime. In healthcare, for example, you might have to have all of the data backup in multiple locations as well as all services available because critical, life-saving decisions might be based on that data. But if you are in ecommerce in April, maybe you can spend some time in that sick region because the consequences are not as dire.
+
+In healthcare, it makes sense to go multi cloud even though it increases the complexity. Other industries that can benefit from multi cloud are those that are highly regulated such as financial services, oil and gas, or federal agencies. If there is a security incident, they can shut one off and deploy elsewhere.
+
+When considering multi cloud, know that are some complexities with differences of APIs. If you are in GCP and you know how to deploy everything and thinking of going to AWS, you have to relearn the platform and deployment process, perhaps even writing some of that code. For this reason, containerization is popular because you can deploy anywhere. It does become more complex with other services; for example, Postgres has different configurations in AWS versus GCP, maybe with different patching versions, different networking setups, and different extensions. So, a service on one cloud is not the same as services on another.
+
+In addition, containerized environments are not ideal for every situation, and a ideal situation becomes more important at as you scale. If you are doing Kafka and 1,000 messages per second, your own container is fine. But if you are starting to push a million-plus messages per second, a gigabyte, that’s a different conversation.
+
+## Security
+
+Security in the cloud is a different beast than security in your own data center. The most important thing to think about is data going outside of your own walls. You must have appropriate security controls in place to ensure data doesn’t leak or have any unauthorized access and make sure compliance requirements are in place. This requires training because the security measures for on premises data centers don’t directly translate to the cloud. For example, S3 containers are encrypted at rest, but not if you have programmatic access through publicly exposed buckets.
+
+In addition, you need to know what the service providers are doing. For example, Aiven runs databases on GPUs EC2, GCP Compute, or Azure. When they store to disk, there’s one level of encryption that’s done at the cloud level by the cloud provider, so the data is encrypted at rest. Then, Aiven does another layer of encryption with their own managed keys, so data is double encrypted at rest, and any data in transit is encrypted. Anything going to the server is encrypted for that particular server, and when a server is decommissioned, it’s locked with Aiven’s key as well as the cloud provider’s key.
+
+## Aiven
+
+David joined Aiven as part of the solutions architecture team when he saw that the company did cloud solutions better than anyone else he had seen, based on his previous experience with managed Kafka and other open source technologies. The mission of Aiven is to make developers’ lives better. They offer a free trial, with production-ready and Kafka going in five minutes. They also have help articles and tutorials to walk you through, so you’re sending a Kafka message in the cloud with cloud-native best practices in less than ten minutes. 
+
+    </div>
+</div>
+<br>
+<div id="footer">
+    <img src="./IntelLogoElectric.png" width="100" height="40"> <br>
+Intel® technologies may require enabled hardware, software, or service activation.<br>
+No product or component can be absolutely secure.<br>
+Your costs and results may vary.<br>
+Intel does not control or audit third-party data. You should consult other sources to evaluate accuracy.<br>
+© 2023 Intel Corporation<br>
+</div>
+</body>
+</html>
+
