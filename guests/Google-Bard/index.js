@@ -1,0 +1,1 @@
+module.exports = {"id":"Google Bard","name":"Google Bard","email":"Email","notes":"Notes","bio":"bio.md","thumbnail":"thumbail.jpg","socials":{}}
