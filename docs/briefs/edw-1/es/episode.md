@@ -69,4 +69,10 @@ La Agencia de Ciberseguridad e Infraestructura de Seguridad de EE. UU. (CISA por
 
 [CISA publica un modelo de árbol de decisión](https://www.securityweek.com/cisa-releases-decision-tree-model-help-companies-prioritize-vulnerability-patching/) 
 
+## Podcast de Aceptación de la Transformación Digital
+
+Esta semana, Darren Pulsipher entrevista a chatGPT.
+
+[Leer más](https://www.embracingdigital.org/episodes-EDT122)
+
 

@@ -67,10 +67,10 @@ La Cybersecurity and Infrastructure Security Agency (CISA) degli Stati Uniti ha 
 
 [https://www.securityweek.com/cisa-releases-decision-tree-model-help-companies-prioritize-vulnerability-patching/](https://www.securityweek.com/cisa-releases-decision-tree-model-help-companies-prioritize-vulnerability-patching/)
 
-## Podcast dell'Abbraccio alla Trasformazione Digitale
+## Podcast sull'Abbraccio alla Trasformazione Digitale.
 
 Questa settimana Darren Pulsipher intervista chatGPT.
 
-[https://www.embracingdigital.org/episodes-EDT122](https://www.embracingdigital.org/episodes-EDT122)
+[Leggi di più](https://www.embracingdigital.org/episodes-EDT122)
 
 

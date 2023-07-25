@@ -72,3 +72,10 @@ Die US-Behörde für Cybersicherheit und Infrastruktursicherheit (CISA) hat am D
 Das SSVC-System wurde 2019 von CISA und dem Software Engineering Institute (SEI) der Carnegie Mellon University entwickelt, und ein Jahr später entwickelte CISA einen eigenen angepassten SSVC-Entscheidungsbaum für Sicherheitslücken, die für Behörden und Organisationen mit kritischer Infrastruktur relevant sind.
 [CISA veröffentlicht Entscheidungsbaummodell](https://www.securityweek.com/cisa-releases-decision-tree-model-help-companies-prioritize-vulnerability-patching/) 
 
+## Embracing Digital Transformation Podcast
+
+Diese Woche interviewt Darren Pulsipher chatGPT.
+
+[Weiterlesen](https://www.embracingdigital.org/episodes-EDT122)
+
+

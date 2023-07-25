@@ -63,3 +63,10 @@ L'Agence américaine de cybersécurité et de sécurité des infrastructures (CI
 Le système SSVC a été créé en 2019 par la CISA et l'Institut d'ingénierie du logiciel de l'Université Carnegie Mellon (SEI), et un an plus tard, la CISA a développé son propre arbre de décision SSVC personnalisé pour les faiblesses de sécurité pertinentes pour les organisations du gouvernement et les infrastructures critiques.
 CISA Releases Decsiion Tree Model
 
+## Podcast sur l'adoption de la transformation numérique
+
+Cette semaine, Darren Pulsipher interviewe chatGPT.
+
+[Lire la suite](https://www.embracingdigital.org/episodes-EDT122)
+
+
