@@ -143,6 +143,10 @@ module.exports = {
       "user": "darren@pulsipher.org",
       "url": "https://www.linkedin.com/in/darrenpulsipher",
       "name": "linkedin",
+      "creds": {
+        "client_id": "86moxvxwbgq5ha",
+        "client_secret": "QBw5vB7DFTCqZ2mi"
+      },
       "types": [
         "video",
         "image",
@@ -171,7 +175,6 @@ module.exports = {
     "transistor": {
       "id": "transistor",
       "type": "Transistor",
-      "lang": "en",
       "title": "EmbracingDigitalTransformation",
       "user": "contact@wheresthelemonade.org",
       "rss": "https://feeds.transistor.fm/embracing-digital-transformation-773aba93-f01b-4760-b6dd-b9124960d507",
@@ -182,10 +185,10 @@ module.exports = {
         "api_key": "OD-_egSCZ9Zx0y6viJG7cQ"
       },
       "types": [
-        "Post",
         "Podcast",
         "audio",
-        "image"
+        "Post",
+        "Audio"
       ]
     },
     "twitter": {
@@ -195,6 +198,16 @@ module.exports = {
       "user": "darren@pulsipher.org",
       "url": "https://twitter.com/darrenpulsipher",
       "submission": "https://twitter.com/compose/tweet",
+      "creds": {
+        "api_key": "L8fBRxdkptoz7CAVybBldmtpj",
+        "api_key_secret": "LcOf2utsE7aPF4JmVHrfb7fNYB6SxiHyhrSDv2yeKSOoUP3QaB",
+        "bearer_token": "AAAAAAAAAAAAAAAAAAAAAI6WogEAAAAAXcdg5KnLPAMWE1cIy3W5LphfcLU%3DGNevdo7UFLJA3frbRBXnLWPaxCWpPjOAhXZU0alI1aV1Orrnpi",
+        "access_token": "22585127-w8Y4KkZ30EdjD8K3D0nnwoRKn7bB51M7LmsMWAHcg",
+        "access_token_secret": "XStiAaaxNzsF12coLgQE37qSgEaGXssy10f5ciWcQ0QDc",
+        "client_id": "MjJRU3d2SklqSE4yb0tua2JYVDM6MTpjaQ",
+        "client_secret": "AJguk_LO9oUE-_ZLOx3xzeW_XTxvDRYXeSAjIB5hkkCk3qD2de",
+        "handle": "darrenpulsipher"
+      },
       "name": "twitter",
       "types": [
         "video",
@@ -270,6 +283,38 @@ module.exports = {
       "channels": [
         "twitter"
       ]
+    },
+    "youtubeSubmit": {
+      "id": "youtubeSubmit",
+      "name": "Youtube Shorts Submit",
+      "templates": {
+        "Title": "youtube/title.ejs",
+        "Description": "youtube/description.ejs",
+        "Tags": "youtube/tags.ejs"
+      },
+      "channels": []
+    },
+    "intelyoutubeSubmit": {
+      "id": "intelyoutubeSubmit",
+      "name": "Intel You Tube",
+      "templates": {
+        "Title": "intelyoutube/title.ejs",
+        "Summary": "intelyoutube/summary.ejs",
+        "Supporting": "intelyoutube/supporting.ejs",
+        "Tags": "intelyoutube/tags.ejs"
+      },
+      "channels": []
+    },
+    "transistorSubmit": {
+      "id": "transistorSubmit",
+      "name": "Transistor Submit",
+      "templates": {
+        "Title": "transistor/title.ejs",
+        "Summary": "transistor/summary.ejs",
+        "Description": "transistor/description.ejs",
+        "Image": "transistor/image.ejs"
+      },
+      "channels": []
     },
     "soundCloud": {
       "id": "soundCloud",
