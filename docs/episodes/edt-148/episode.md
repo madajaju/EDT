@@ -11,12 +11,14 @@ tags:
   - RemoteWorker
   - RemoteWork
   - MobileVirtualization
+  
 date: Wed Jul 26 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Jared Shepard
     - Darren W Pulsipher
+    
 img: thumbnail.png
-summary: "In this episode of the podcast "Embracing Digital Transformation," host Darren Pulsipher engages in an insightful conversation with special guest Jared Shepard, the CEO of Hypori. The interview focuses on the crucial topic of securing remote workers through mobile virtualization. Jared Shepard's unique journey from a high school dropout to a CEO adds an inspiring dimension to the discussion."
+summary: "In this episode of the podcast Embracing Digital Transformation, host Darren Pulsipher engages in an insightful conversation with special guest Jared Shepard, the CEO of Hypori. The interview focuses on the crucial topic of securing remote workers through mobile virtualization. Jared Shepard's unique journey from a high school dropout to a CEO adds an inspiring dimension to the discussion."
 ---
 
 {% include transistor.html id="fd3c31e0" title="#148 Securing the Remote Worker Through Mobile Virtualization" %}
