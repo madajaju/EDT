@@ -3,7 +3,7 @@ layout: guest
 title: Jared Shepard
 parent: Guests
 
-img: Jared-Shepard-thumbail.png
+img: Jared-Shepard-thumbnail.png
 ---
 
 
