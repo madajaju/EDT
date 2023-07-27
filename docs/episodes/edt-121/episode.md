@@ -30,11 +30,14 @@ summary: "In this episode, Darren interviews Aaron Reid from Verge.io about thei
 
 ---
 
-<p>A new way of thinking about virtualization is beginning to change the private cloud landscape. The software-defined infrastructure industry is starting to look at virtualizing data centers holistically instead of different types of infrastructure.</p>
-<p>This disruptive virtualization approach creates new operating models, including improved business continuity and disaster recovery. Verge.io has this approach, providing new models that include snapshotting data centers and replicating them. This allows organizations to create portable environments named tenets that can be replicated across multiple locations. Examples include creating HIPPA-compliant microenvironments that can be replicated across various small clinics helping organizations keep everything compliant.</p>
-<p>This new virtualization system has a tiny operating footprint and reduces the resources required to combine computing, storage, network, and security elements. Aaron shows how small and powerful the solution is when he installs the key on two Intel 12th Gen NUCs. The answer is compelling for such a small footprint and can be used for edge computing and industrial control systems.</p>
-<p>Aaron shows the simple web interface for deploying computing, storage, network, and security. The ability to snapshot and restore snapshots is also demonstrated.   </p>
-<p>
+A new way of thinking about virtualization is beginning to change the private cloud landscape. The software-defined infrastructure industry is starting to look at virtualizing data centers holistically instead of different types of infrastructure.
+
+This disruptive virtualization approach creates new operating models, including improved business continuity and disaster recovery. Verge.io has this approach, providing new models that include snapshotting data centers and replicating them. This allows organizations to create portable environments named tenets that can be replicated across multiple locations. Examples include creating HIPPA-compliant microenvironments that can be replicated across various small clinics helping organizations keep everything compliant.
+
+This new virtualization system has a tiny operating footprint and reduces the resources required to combine computing, storage, network, and security elements. Aaron shows how small and powerful the solution is when he installs the key on two Intel 12th Gen NUCs. The answer is compelling for such a small footprint and can be used for edge computing and industrial control systems.
+
+Aaron shows the simple web interface for deploying computing, storage, network, and security. The ability to snapshot and restore snapshots is also demonstrated.   
+
 
 <details>
 <summary> Podcast Transcript </summary>

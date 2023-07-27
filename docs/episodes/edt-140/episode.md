@@ -23,12 +23,15 @@ summary: "In this episode, Darren interviews Michael Mehlberg about increasing c
 
 ---
 
-<p>If you're a software developer, you know the feeling of pride that comes with creating a popular package or tool that many people find useful. However, this popularity can sometimes attract the attention of attackers who look for vulnerabilities to exploit.</p>
-<p>In a recent podcast, software engineer Jay Phelps shared his experience of discovering a vulnerability in a widely-used package he created. After realizing the potential impact of the vulnerability and the sheer number of instances of the package in the wild, Phelps quickly worked to fix the issue to prevent attackers from exploiting it.</p>
-<p>This scenario highlights the importance of vigilance for software developers, especially those who create popular packages or tools. While it may be tempting to bask in the glory of a widely-used product, it's crucial to remember that popularity can also attract attackers. Regular checks and updates to address any vulnerabilities can help protect users and prevent exploitation.</p>
-<p>As a software developer, it's important to approach your work with both pride and caution. While it's great to contribute to society with your creations, don't forget to prioritize the security and safety of your users. Stay vigilant and keep your packages up-to-date to prevent vulnerabilities from being exploited by attackers.</p>
-<p></p>
-<p>
+If you're a software developer, you know the feeling of pride that comes with creating a popular package or tool that many people find useful. However, this popularity can sometimes attract the attention of attackers who look for vulnerabilities to exploit.
+
+In a recent podcast, software engineer Jay Phelps shared his experience of discovering a vulnerability in a widely-used package he created. After realizing the potential impact of the vulnerability and the sheer number of instances of the package in the wild, Phelps quickly worked to fix the issue to prevent attackers from exploiting it.
+
+This scenario highlights the importance of vigilance for software developers, especially those who create popular packages or tools. While it may be tempting to bask in the glory of a widely-used product, it's crucial to remember that popularity can also attract attackers. Regular checks and updates to address any vulnerabilities can help protect users and prevent exploitation.
+
+As a software developer, it's important to approach your work with both pride and caution. While it's great to contribute to society with your creations, don't forget to prioritize the security and safety of your users. Stay vigilant and keep your packages up-to-date to prevent vulnerabilities from being exploited by attackers.
+
+
 
 <details>
 <summary> Podcast Transcript </summary>
