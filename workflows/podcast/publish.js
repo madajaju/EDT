@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+
 module.exports = {
     friendlyName: 'publish',
     description: 'Publish the Podcast',
@@ -20,14 +21,14 @@ module.exports = {
         }
     },
 
-    fn: function (obj, inputs, env) {
+    fn: async function (obj, inputs, env) {
 
         let podcast = obj;
 
         let output = path.resolve(`${podcast.baseDirectory}/docs`);
         let source = path.resolve( `${podcast.baseDirectory}/templates`);
         _docDirectory(output, source);
-        _episodes(podcast.episodes, output, source);
+        await _episodes(podcast.episodes, output, source);
         _guests(podcast, output, source);
         _tags(podcast.tags, output, source);
         return podcast;
@@ -45,11 +46,11 @@ const _docDirectory = (output, source) => {
     global.Generator.process(files, output);
 }
 
-const _episodes = (episodes, output, source) => {
+const _episodes = async (episodes, output, source) => {
 
     let outputpath = path.resolve(`${output}/episodes`);
 
-    episodes.forEach((episode) => {
+    episodes.forEach(async (episode) => {
         if(episode._attributes._state === "Published") {
             console.log("Publishing:", episode.number);
             // check that the episode.md file is there and read it into the content variable.
@@ -86,11 +87,17 @@ const _episodes = (episodes, output, source) => {
             // set the thumbnailPath so it can be copied to the destination directory.
             let thumbnailPath = path.resolve(`${episode.dir}/Production/${episode.thumbnail}`);
             let thumbnail = episode.thumbnail || "TBD";
+            let transistorTag = episode.assets[`audio`].url.split('/').pop();
+            let guests = Object.keys(episode.guests);
+            let tags = Object.keys(episode.tags);
             let files = {
                 context: {
                     episode: episode,
+                    guests: guests,
+                    tags: tags,
                     thumbnail: thumbnail,
                     episodeName: "edt-" + episode.number,
+                    transistorTag: transistorTag
                 },
                 targets: {
                     ':episodeName:/episode.md': {template: `${source}/episode.emd`},
@@ -112,41 +119,28 @@ const _guests = (podcast, output, source) => {
     let outputpath = path.resolve(`${output}/guests`);
     let guests = podcast.guests;
     guests.forEach((guest) => {
-        let edir = path.resolve(podcast.baseDirectory);
-        let gpath = path.resolve(`${edir}/guests/${guest.name.replace(/\s/g,'-').replace(/\./g,'-')}`);
-
-        let content = guest.bio;
-        let thumbnail = guest.thumbnail || "TBD";
-        // let apath = apath.resolve(`${gpath}/${guest.bio}`);
-        // console.log("Guest Path:", apath);
-        /* if (fs.existsSync(apath)) {
-            try {
-                content = fs.readFileSync(apath).toString('utf-8');
+        if(guest) {
+            let content = guest.bio;
+            let thumbnail = guest.thumbnail || "TBD";
+            let files = {
+                context: {
+                    guest: guest,
+                    content: content,
+                    thumbnail: thumbnail,
+                    guestName: guest.name.replace(/\s/g, '-'),
+                },
+                targets: {
+                    ':guestName:.md': {template: `${source}/guest.emd`},
+                }
             }
-            catch(e) {
-                console.error("Conent for bio.md not found", e);
+            if (guest.thumbnail) {
+                let tPath = guest.getImage();
+                if (fs.existsSync(tPath)) {
+                    files.targets[":guestName:-:thumbnail:"] = {copy: tPath};
+                }
             }
+            global.Generator.process(files, outputpath);
         }
-         */
-
-        let files = {
-            context: {
-                guest: guest,
-                content: content,
-                thumbnail: thumbnail,
-                guestName: guest.name.replace(/\s/g,'-'),
-            },
-            targets: {
-                ':guestName:.md': {template: `${source}/guest.emd`},
-            }
-        }
-        if (guest.thumbnail) {
-            let tPath = path.resolve(`${gpath}/${guest.thumbnail}`);
-            if (fs.existsSync(tPath)) {
-                files.targets[":guestName:-:thumbnail:"] = {copy: tPath};
-            }
-        }
-        global.Generator.process(files, outputpath);
     });
 }
 

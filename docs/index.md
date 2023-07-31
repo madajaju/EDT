@@ -63,6 +63,8 @@ clear: both;
 </div>
 <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
 
+{% include subscribe_posts.html %}
+
 <h1>Episodes</h1>
 {% for page in sortedEpisodes %}
 {% if page.number %}

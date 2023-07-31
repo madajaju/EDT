@@ -39,9 +39,9 @@ module.exports = {
                 let [summary, text] = await summarize(artfile);
                 artifact.summary = text;
                 let shortmp4 = aname.replace('srt', 'mp4');
-                if(artifacts.hasOwnProperty(shortmp4)) {
+                if (artifacts.hasOwnProperty(shortmp4)) {
                     artifacts[shortmp4].summary = summary;
-                    artifacts[shortmp4].title = epi.title + "- #" + shortmp4.replace('mp4','');
+                    artifacts[shortmp4].title = epi.title + "- #" + shortmp4.replace('mp4', '');
                 }
                 AEvent.emit('summarize.inprogress', {message: `${Math.floor((i / artifactsLength) * 100)}% Complete`});
             }
@@ -79,13 +79,12 @@ async function summarize(srtfile) {
         }
         let resultString = "";
         for (let i in groups) {
-            const res = await ask(`Summarize to 20 words or less the following: ` + groups[i]);
-            AEvent.emit('summarize.inprogress', {message: `${Math.floor(i/groups.length)*100}% Complete`});
+            const res = await ask(groups[i]);
+            AEvent.emit('summarize.inprogress', {message: `${Math.floor(i / groups.length) * 100}% Complete`});
             resultString += res;
         }
-        return [ resultString, groups.join(' ').replaceAll(/\r/g,' ').replaceAll(/\n/g,'')];
-    }
-    catch(e) {
+        return [resultString, groups.join(' ').replaceAll(/\r/g, ' ').replaceAll(/\n/g, '')];
+    } catch (e) {
         console.error("Problem summarize srt!", e);
     }
 }
@@ -98,15 +97,21 @@ async function ask(message) {
                 model: "gpt-3.5-turbo",
                 messages: [
                     {
+                        role: 'system',
+                        content: "When asked by the user, summarize the transcript for a youtube video short of the Podcast Embracing Digital Transformation with host Darren Pulsipher. Make the response playful and informative."
+                    },
+                    {
                         role: 'user',
                         content: message,
                         name: 'guthsummarize',
                     }
                 ]
             });
+            console.log("Results:", completion.data.choices);
             return completion.data.choices[0].message.content;
         } catch (e) {
             console.error(" Failed to respond:", e.response.status);
+            console.error(" Failed to respond:", e.response);
             await new Promise(resolve => setTimeout(resolve, 2000))
         }
     }
