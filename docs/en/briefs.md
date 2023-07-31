@@ -28,11 +28,12 @@ child_nav_order: reversed
 
 # Weekly Briefs
 
-<div class="row">
-    <div class="column">
+<div class="row1">
+    <div class="column1">
         <p>We are in the throws of the digital revolution. During this time, it can be challenging to sift through all of the hype and find what works, what is still viable two years from now, and what contributes to your organization. Many IT organizations need help with confusing messages and conflicting technologies. We help organizations sort through the chatter and embrace digital transformation. The world of digital transformation is constantly changing, and you need to know what is viable today.  Listen to the podcast weekly for the latest news in cybersecurity, advanced communications, data management, artificial intelligence, edge, and cloud computing.</p>
     </div>
-    <div class="column">
+    <div class="column1">
+    <h1>Subcribe to get the latest</h1>
 <nav class="site-subscribe">
   <a href="https://podcasts.apple.com/us/podcast/embracing-digital-this-week/id1677957383?uo=4" class="site-subscribe-link apple_podcasts" target="_apple_podcasts" title="Listen to Embracing Digital This Week on Apple Podcasts">
   <svg role="img" fill="#9933CC" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Apple Podcasts</title><path d="M5.34 0A5.328 5.328 0 000 5.34v13.32A5.328 5.328 0 005.34 24h13.32A5.328 5.328 0 0024 18.66V5.34A5.328 5.328 0 0018.66 0zm6.525 2.568c2.336 0 4.448.902 6.056 2.587 1.224 1.272 1.912 2.619 2.264 4.392.12.59.12 2.2.007 2.864a8.506 8.506 0 01-3.24 5.296c-.608.46-2.096 1.261-2.336 1.261-.088 0-.096-.091-.056-.46.072-.592.144-.715.48-.856.536-.224 1.448-.874 2.008-1.435a7.644 7.644 0 002.008-3.536c.208-.824.184-2.656-.048-3.504-.728-2.696-2.928-4.792-5.624-5.352-.784-.16-2.208-.16-3 0-2.728.56-4.984 2.76-5.672 5.528-.184.752-.184 2.584 0 3.336.456 1.832 1.64 3.512 3.192 4.512.304.2.672.408.824.472.336.144.408.264.472.856.04.36.03.464-.056.464-.056 0-.464-.176-.896-.384l-.04-.03c-2.472-1.216-4.056-3.274-4.632-6.012-.144-.706-.168-2.392-.03-3.04.36-1.74 1.048-3.1 2.192-4.304 1.648-1.737 3.768-2.656 6.128-2.656zm.134 2.81c.409.004.803.04 1.106.106 2.784.62 4.76 3.408 4.376 6.174-.152 1.114-.536 2.03-1.216 2.88-.336.43-1.152 1.15-1.296 1.15-.023 0-.048-.272-.048-.603v-.605l.416-.496c1.568-1.878 1.456-4.502-.256-6.224-.664-.67-1.432-1.064-2.424-1.246-.64-.118-.776-.118-1.448-.008-1.02.167-1.81.562-2.512 1.256-1.72 1.704-1.832 4.342-.264 6.222l.413.496v.608c0 .336-.027.608-.06.608-.03 0-.264-.16-.512-.36l-.034-.011c-.832-.664-1.568-1.842-1.872-2.997-.184-.698-.184-2.024.008-2.72.504-1.878 1.888-3.335 3.808-4.019.41-.145 1.133-.22 1.814-.211zm-.13 2.99c.31 0 .62.06.844.178.488.253.888.745 1.04 1.259.464 1.578-1.208 2.96-2.72 2.254h-.015c-.712-.331-1.096-.956-1.104-1.77 0-.733.408-1.371 1.112-1.745.224-.117.534-.176.844-.176zm-.011 4.728c.988-.004 1.706.349 1.97.97.198.464.124 1.932-.218 4.302-.232 1.656-.36 2.074-.68 2.356-.44.39-1.064.498-1.656.288h-.003c-.716-.257-.87-.605-1.164-2.644-.341-2.37-.416-3.838-.218-4.302.262-.616.974-.966 1.97-.97z"></path></svg>
@@ -159,7 +160,10 @@ child_nav_order: reversed
         <span>Listen On</span>
         <b>Player FM</b>
       </label>
-    </a><a href="https://www.deezer.com/show/5859917" class="site-subscribe-link deezer" target="_deezer" title="Listen to Embracing Digital This Week on Deezer">
+    </a>
+
+
+<a href="https://www.deezer.com/show/5859917" class="site-subscribe-link deezer" target="_deezer" title="Listen to Embracing Digital This Week on Deezer">
   <svg viewBox="0 0 250 163.17" xmlns="http://www.w3.org/2000/svg">
   <defs>
   <linearGradient id="deezer-e" x1="90.71" x2="90.5" y1="62.45" y2="49.29" gradientTransform="matrix(2.4611 0 0 2.4611 0 -77.943)" gradientUnits="userSpaceOnUse">
@@ -212,17 +216,19 @@ child_nav_order: reversed
   </svg>
 
 <label>
-        <span>Listen On</span>
-        <b>Deezer</b>
-      </label>
-    </a><a href="https://feeds.transistor.fm/embracing-digital-this-week" class="site-subscribe-link rss" title="Subscribe by RSS Feed" target="_rss">
-  <svg fill="#FFA500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>RSS Feed</title><path d="M2.66666667,9.33333333 C1.19390733,9.33333333 0,10.5272407 0,12 C0,13.4727593 1.19390733,14.6666667 2.66666667,14.6666667 C6.348565,14.6666667 9.33333333,17.651435 9.33333333,21.3333333 C9.33333333,22.8060927 10.5272407,24 12,24 C13.4727593,24 14.6666667,22.8060927 14.6666667,21.3333333 C14.6666667,14.7059163 9.29408366,9.33333333 2.66666667,9.33333333 Z M2.66666667,18.6666667 C1.19390733,18.6666667 0,19.860574 0,21.3333333 C0,22.8060927 1.19390733,24 2.66666667,24 C4.139426,24 5.33333333,22.8060927 5.33333333,21.3333333 C5.33333333,19.860574 4.139426,18.6666667 2.66666667,18.6666667 Z M2.66666667,0 C1.19390733,0 0,1.19390733 0,2.66666667 C0,4.139426 1.19390733,5.33333333 2.66666667,5.33333333 C11.5032227,5.33333333 18.6666667,12.4967773 18.6666667,21.3333333 C18.6666667,22.8060927 19.860574,24 21.3333333,24 C22.8060927,24 24,22.8060927 24,21.3333333 C24,9.55125867 14.4487413,0 2.66666667,0 Z"></path></svg>
-
-<label>
-        <span>Subscribe</span>
-        <b>RSS Feed</b>
+        <span>listen on</span>
+        <b>deezer</b>
       </label>
     </a>
+
+
+<a href="https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA?sub_confirmation=1" class="site-subscribe-link youtube" title="Subscribe to YouTube" target="youtube">
+<label>
+        <span>Watch On</span>
+        <b>You Tube</b>
+</label>
+</a>
+
 </nav>
 </div>
 </div>
