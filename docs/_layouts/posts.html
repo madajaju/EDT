@@ -53,6 +53,8 @@ image: {{page.img}}
 
 </style>
 
+{% include subscribe_posts.html %}
+
 <h1>#{{ page.number }} {{ page.title }}</h1>
 <div>
     <img src="{{ page.path | remove: page.name }}/{{ page.img }}" width="256" height="256" class="thumbnail">
@@ -73,7 +75,6 @@ image: {{page.img}}
 
 <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
 
-{% include subscribe_posts.html %}
 
 {{ page.summary }}
 
