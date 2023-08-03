@@ -1,0 +1,1 @@
+module.exports = {"id":"Jeffery Lancaster&#34;,&#34;Darren W Pulsipher","name":"Jeffery Lancaster&#34;,&#34;Darren W Pulsipher","email":"Email","notes":"Notes","bio":"bio.md","thumbnail":"thumbail.jpg","socials":{}}
