@@ -1,0 +1,4 @@
+Sonu Panda is the CEO of Prescriptive Data which created Nantum OS, an award-winning platform optimizing building’s operational performance and helping portfolios hit their ESG goals while saving energy, reducing carbon emissions, and lowering costs without sacrificing occupant health or comfort. Sonu develops and executes Prescriptive Data’s business and technology strategy, and oversees all functions within the company, including sales, business development, marketing, customer onboarding and success, engineering, talent management, finance, and administrative operations. Prior to Prescriptive Data, Panda most recently served as the co-founder and COO of H.Bloom, a B2B marketplace company, where he developed the company’s operational model, established both product/technology development and process engineering efforts, and managed day-to-day business operations.
+
+[LinkedIn Profile](https://linkedin.com/in/sonu-panda-b5641)
+
