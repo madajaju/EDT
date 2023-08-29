@@ -16,7 +16,7 @@ tags:
     - healthcare
     - sutterhealth
 
-date: Wed Jul 28 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Wed Jul 28 2021 19:00:00 GMT-0500 (Central Daylight Time)
 guests:
     - Darren W Pulsipher
     - Jeremy Harris

@@ -8,7 +8,7 @@ parent: Episodes
 nav_order: 16
 tags:
 
-date: Mon Aug 24 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Mon Aug 24 2020 19:00:00 GMT-0500 (Central Daylight Time)
 guests:
     - Darren W Pulsipher
 

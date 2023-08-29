@@ -16,7 +16,7 @@ tags:
     - compute
     - cloud
 
-date: Wed Mar 09 2022 16:00:00 GMT-0800 (Pacific Standard Time)
+date: Wed Mar 09 2022 18:00:00 GMT-0600 (Central Standard Time)
 guests:
     - Darren W Pulsipher
     - Denis O&#39;Shea

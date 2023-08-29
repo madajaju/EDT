@@ -13,7 +13,7 @@ tags:
     - mobilevirtualization
     - hypori
 
-date: Wed Jul 26 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Wed Jul 26 2023 19:00:00 GMT-0500 (Central Daylight Time)
 guests:
     - Jared Shepard
     - Darren W Pulsipher

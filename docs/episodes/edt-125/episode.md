@@ -16,7 +16,7 @@ tags:
     - compute
     - policy
 
-date: Wed Feb 15 2023 16:00:00 GMT-0800 (Pacific Standard Time)
+date: Wed Feb 15 2023 18:00:00 GMT-0600 (Central Standard Time)
 guests:
     - Darren W Pulsipher
 

@@ -11,7 +11,7 @@ tags:
     - 5g
     - dod
 
-date: Wed Aug 02 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Wed Aug 02 2023 19:00:00 GMT-0500 (Central Daylight Time)
 guests:
     - Leland Brown
     - Darren W Pulsipher
