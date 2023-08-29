@@ -9,6 +9,9 @@ lang: en
 
 # Embracing Digital Transformation
 
+Darren has just unveiled his latest masterpiece, a captivating 12-part series titled "Embracing Generative AI." In this groundbreaking podcast, "Embracing Digital Transformation" delves deep into the realm of generative AI, featuring insightful discussions with practitioners, educators, and the brilliant minds driving this technological marvel.
+Discover the future of AI as you've never seen it before. Don't miss out – tune in now! [Check it out here.](https://youtube.com/playlist?list=PLj-81kG3zG5ZCywsu4opHm2FBrWy5ilMH&si=UvRPLAdzD2LXFNo4)
+
 <style>
 .topcolumn {
 float: left;
