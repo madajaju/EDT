@@ -1,22 +1,24 @@
 <html>
 <%
 let body = artifact.summary || episode.summary
-let mfile = episode.artifacts[`episode.md`].url;
-let lines = fs.readFileSync(mfile, 'utf8');
-lines = lines.split('\n');
 let content = "";
-for (let i in lines) {
-    let line = lines[i];
-    if (line.includes('###')) {
-        line = line.replace('###', '<b>') + '</b>';
-    } else if (line.includes('##')) {
-        line = line.replace('##', '<b>') + '</b>';
-    } else if (line.includes('[')) {
-        let url = line.split('](')[0].replace('[', '');
-        line = `<a href="${url}">${url}</a>`;
-    }
+let mfile = episode.artifacts[`episode.md`]?.url;
+if(mfile) {
+    let lines = fs.readFileSync(mfile, 'utf8');
+    lines = lines.split('\n');
+    for (let i in lines) {
+        let line = lines[i];
+        if (line.includes('###')) {
+            line = line.replace('###', '<b>') + '</b>';
+        } else if (line.includes('##')) {
+            line = line.replace('##', '<b>') + '</b>';
+        } else if (line.includes('[')) {
+            let url = line.split('](')[0].replace('[', '');
+            line = `<a href="${url}">${url}</a>`;
+        }
 
-    content += `<p>${line}</p><br>`;
+        content += `<p>${line}</p><br>`;
+    }
 }
 -%>
 <p><%- body %></p><br>

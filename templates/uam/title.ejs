@@ -1,0 +1,22 @@
+<%
+let date = new Date(title);
+let months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+];
+let value = `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()} - Embracing Digital This Week`;
+if (lang.id !== 'en') {
+    value = await askAI(`Translate the date into ${lang.name}: ${value}`);
+}
+-%>
+<%- value -%>

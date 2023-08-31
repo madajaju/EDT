@@ -8,28 +8,11 @@ module.exports = {
     "_state": "Backlog",
     "number": "<%= number %>",
     "thumbnail": "thumbnail.png",
+    "saveFile": "<%= saveFile %>",
     "guests": [
-        "<%= guests.join('","') %>"
+        "<%- guests.join('","') %>"
     ],
     "assets": {
-        "video": {
-            "url": "https://youtu.be/TBD",
-            "channel": "IntelYouTube",
-            "title": "Put the title Right Here",
-            "artifact": "episode.mp4"
-        },
-        "audio": {
-            "url": "https://soundcloud.com/embracingdigital/edt<%- number %>",
-            "channel": "SoundCloud",
-            "title": "Put the title Right Here",
-            "artifact": "episode.mp3"
-        },
-        "intelBlog": {
-            "url": "https://www.intel.com/content/www/us/en/government/podcasts/embracing-digital-transformation-episode<%- number %>.html",
-            "channel": "IntelBlog",
-            "title": "Put the title Right Here",
-            "artifact": "episode.md"
-        },
         "blog": {
             "url": "https://embracingdigital.org/episode-EDT<%- number %>",
             "channel": "Blog",
@@ -38,24 +21,6 @@ module.exports = {
         }
     },
     artifacts: {
-        "episode.md": {
-            "ext": ".md",
-            "type": "doc",
-            "url": "C:\\Users\\dwpulsip\\OneDrive - Pulsipher Family\\Podcasts\\EDT\\2023\\EDT-<%- number %>\Production\\episode.md",
-            "summary": ""
-        },
-        "episode.mp3": {
-            "ext": ".mp3",
-            "type": "audio",
-            "url": "C:\\Users\\dwpulsip\\OneDrive - Pulsipher Family\\Podcasts\\EDT\\2023\\EDT-<%- number %>\\Production\\episode.mp3",
-            "summary": ""
-        },
-        "episode.mp4": {
-            "ext": ".mp4",
-            "type": "video",
-            "url": "C:\\Users\\dwpulsip\\OneDrive - Pulsipher Family\\Podcasts\\EDT\\2023\\EDT-<%- number %>\\Production\\episode.mp4",
-            "summary": ""
-        },
     },
     "tags": [
     ]

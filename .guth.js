@@ -25,6 +25,16 @@ module.exports = {
         "image"
       ]
     },
+    "uam": {
+      "id": "uam",
+      "type": "UAM",
+      "title": "UAM",
+      "name": "uam",
+      "url": "https://enterprisecustomcloud.lightning.force.com/lightning/o/TSF_Document__c/list?filterName=00BHu00000FOYPLMA5",
+      "types": [
+        "pdf"
+      ]
+    },
     "intelyoutube": {
       "id": "intelyoutube",
       "type": "IntelYoutube",
@@ -90,9 +100,9 @@ module.exports = {
       "url": "https://www.embracingdigital.org/",
       "name": "blog",
       "types": [
+        "pdf",
         "Blog",
-        "doc",
-        "pdf"
+        "doc"
       ]
     },
     "intelblog": {
@@ -236,7 +246,6 @@ module.exports = {
         "body": "instagram/body.ejs"
       },
       "channels": [
-        "instagram",
         "facebook"
       ]
     },
@@ -316,9 +325,21 @@ module.exports = {
       },
       "channels": []
     },
-    "soundCloud": {
-      "id": "soundCloud",
-      "name": "SoundCloud",
+    "uamSubmit": {
+      "id": "uamSubmit",
+      "name": "UAM",
+      "templates": {
+        "Title": "uam/title.ejs",
+        "Description": "uam/description.ejs",
+        "Keywords": "uam/keywords.ejs"
+      },
+      "channels": [
+        "uam"
+      ]
+    },
+    "soundcloudSubmit": {
+      "id": "soundcloudSubmit",
+      "name": "Sound Cloud",
       "templates": {
         "title": "soundcloud/title.ejs",
         "permalink": "soundcloud/permalink.ejs",
