@@ -13,7 +13,7 @@ tags:
     - compute
     - technology
 
-date: Thu Nov 05 2020 18:00:00 GMT-0600 (Central Standard Time)
+date: Thu Nov 05 2020 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
 

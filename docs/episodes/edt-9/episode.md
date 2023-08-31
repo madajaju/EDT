@@ -9,7 +9,7 @@ nav_order: 9
 tags:
     - cybersecurity
 
-date: Mon Aug 03 2020 19:00:00 GMT-0500 (Central Daylight Time)
+date: Mon Aug 03 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Steve Orrin

@@ -11,7 +11,7 @@ tags:
     - people
     - embracingdigital
 
-date: Mon Jul 10 2023 19:00:00 GMT-0500 (Central Daylight Time)
+date: Mon Jul 10 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Michael Lenox
     - Darren W Pulsipher

@@ -16,7 +16,7 @@ tags:
     - process
     - ceo
 
-date: Wed Sep 07 2022 19:00:00 GMT-0500 (Central Daylight Time)
+date: Wed Sep 07 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Betsy Freeman

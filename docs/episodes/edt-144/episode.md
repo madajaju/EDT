@@ -12,7 +12,7 @@ tags:
     - digitaltwin
     - iot
 
-date: Thu Jun 22 2023 02:00:00 GMT-0500 (Central Daylight Time)
+date: Thu Jun 22 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Rob Watts

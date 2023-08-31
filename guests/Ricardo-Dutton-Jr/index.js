@@ -1,0 +1,1 @@
+module.exports = {"id":"Ricardo Dutton Jr","name":"Ricardo Dutton Jr","email":"Email","notes":"Notes","bio":"bio.md","thumbnail":"thumbail.jpg","socials":{}}
