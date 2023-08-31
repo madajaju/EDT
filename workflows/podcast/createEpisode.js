@@ -16,11 +16,6 @@ module.exports = {
             required: false,
             description: "Number of the episode"
         },
-        title: {
-            type: "string",
-            required: false,
-            description: "Title of the episode",
-        },
         guests: {
             type: "string",
             required: false,
@@ -49,10 +44,9 @@ module.exports = {
         let podcast = obj;
         let output = path.resolve(`${podcast.baseDirectory}/2023/EDT-${inputs.number}`);
         let source = path.resolve(`${podcast.baseDirectory}`);
-        _generateEpisode(output, source, args);
+        _generateEpisode(output, source, inputs);
         // Load the generatedEpisode
         let episodeTmp = require(`${output}/.episode.js`);
-        episodeTmp.saveFile = `${output}/.episode.js`;
         let episode = Episode.load(episodeTmp);
         podcast.addToEpisodes(episode);
         return episode;
@@ -74,7 +68,6 @@ const _generateEpisode = (output, source, inputs) => {
             number: inputs.number,
             summary: inputs.summary,
             guests: guests,
-            saveFile: `${output}/.episode.js`
         },
         targets: {
             'EDTBase.prproj': {copy: `${source}/Base/EDT-Base2023.prproj`},

@@ -23,8 +23,8 @@ module.exports = {
 
     fn: async function (obj, inputs, env) {
         let args = inputs;
-        for (let aname in env.req.body) {
-            args[aname] = env.req.body[aname];
+        for(let aname in env.req.body) {
+            args[aname]= env.req.body[aname];
         }
         AEvent.emit('summarize.start', {message: `Starting`});
         let podcast = obj;
@@ -39,12 +39,12 @@ async function summarizeEpisode(episode) {
     let artfile = null;
     let mdfile = null;
     let artifacts = episode.artifacts;
-    for (let aname in artifacts) {
+    for(let aname in artifacts) {
         let artifact = artifacts[aname];
-        if (aname.includes('episode') && artifact.ext === '.srt') {
+        if(aname.includes('episode') && artifact.ext === '.srt') {
             artfile = artifact.url;
         }
-        if (artifact.ext === '.md') {
+        if(artifact.ext === '.md') {
             mdfile = artifact.url;
         }
     }
@@ -57,7 +57,6 @@ async function summarizeEpisode(episode) {
     return;
 
 }
-
 async function summarize(srtfile) {
     try {
         let str = fs.readFileSync(srtfile).toString('utf-8');
@@ -83,14 +82,15 @@ async function summarize(srtfile) {
         if (totalString.length > 0) {
             groups.push(totalString);
         }
-        let results = [];
-        for (let i = 0; i < groups.length; i++) {
-            results.push(await ask(groups[i]));
-            AEvent.emit('summarize.inprogress', {message: `${Math.floor((i / groups.length) * 100)}% Complete`});
+        let resultString = "";
+        for (let i in groups) {
+            const res = await ask(`Write a 200 word informative 2nd person blog post for this podcast transcript: ` + groups[i]);
+            AEvent.emit('summarize.inprogress', {message: `${Math.floor(i/groups.length)*100}% Complete`});
+            resultString += res + '\n\n';
         }
-        const sumString = await askCleanup(results);
-        return sumString;
-    } catch (e) {
+        return resultString;
+    }
+    catch(e) {
         console.error("Problem summarize srt!", e);
     }
 }
@@ -100,39 +100,11 @@ async function ask(message) {
         model: "gpt-3.5-turbo",
         messages: [
             {
-                role: 'system',
-                content: 'Write a 200 word informative blog post for this podcast transcript'
-            },
-            {
                 role: 'user',
                 content: message,
                 name: 'guth',
             }
         ]
-    });
-    return completion.data.choices[0].message.content;
-};
-
-async function askCleanup(messages) {
-    let prompts = [
-        {
-            role: 'system',
-            content: 'Combine the following messages to be written as one continuous blog post. ' +
-                'Create an brief introduction that states who was on the podcast and the topic. ' +
-                'This should be followed by a blog post about topics in the podcast. It should have 3 to 4 sections. ' +
-                'Make the blog post more informative than a report on the podcast.' +
-                'Each section should have its own heading. Output should be in md format.'
-        },
-    ];
-    for (let i in messages) {
-        prompts.push({
-            role: 'user',
-            content: messages[i]
-        })
-    }
-    const completion = await global.openai.createChatCompletion({
-        model: "gpt-3.5-turbo",
-        messages: prompts
     });
     return completion.data.choices[0].message.content;
 };
