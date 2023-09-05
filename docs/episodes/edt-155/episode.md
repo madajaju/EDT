@@ -7,6 +7,12 @@ has_children: false
 parent: Episodes
 nav_order: 155
 tags:
+    - ai
+    - sdi
+    - vergeio
+    - cloud
+    - privatecloud
+    - hybridcloud
 
 date: Wed Aug 30 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -10,7 +10,7 @@ grand_parent: Weekly Briefs
 nav_order: 16
 tags:
 
-date: Mon May 22 2023 02:00:00 GMT-0500 (Central Daylight Time)
+date: Mon May 22 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
 
 img: thumbnail.png
