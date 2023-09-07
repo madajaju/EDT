@@ -1,9 +1,0 @@
-<% let body = await askAI("Create for linkedIn Post:" + summary) %>
-<%- body %>
-<% if(asset) { %>
-    <%- asset.url %>
-<% } else { %>
-    Blog: <%- episode.assets.blog.url %>
-    Video: <%- episode.assets.video.url %>
-    Podcast: <%- episode.assets.audio.url %>
-<% } %>
