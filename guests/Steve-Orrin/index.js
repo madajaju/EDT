@@ -1,1 +1,0 @@
-module.exports = {"name":"Steve Orrin","email":"steve.orrin@intel.com","notes":null,"socials":{"linkedin":"sorrin"},"bio":"bio.md","thumbnail":"thumbnail.png"}

@@ -1,1 +1,0 @@
-module.exports = {"name":"Callen Sapien","email":"tbd","notes":null,"socials":{},"bio":"bio.md","thumbnail":"thumbnail.png"}

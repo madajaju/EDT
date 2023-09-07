@@ -1,1 +1,0 @@
-module.exports = {"name":"Camille Morhardt","email":"tbd","notes":null,"socials":{"linkedin":"camille-morhardt-448a182"},"bio":"bio.md","thumbnail":"thumbnail.png"}

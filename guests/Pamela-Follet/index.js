@@ -1,1 +1,0 @@
-module.exports = {"id":"Pamela Follet","name":"Pamela Follet","email":"Email","notes":"Notes","bio":"bio.md","thumbnail":"thumbail.jpg","socials":{}}
