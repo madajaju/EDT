@@ -31,7 +31,7 @@ module.exports = {
         await _episodes(podcast.episodes, output, source);
         _guests(podcast, output, source);
         _tags(podcast.tags, output, source);
-        return podcast;
+        return ;
     }
 };
 
@@ -82,7 +82,11 @@ const _episodes = async (episodes, output, source) => {
             // YoutubeTag of the video.
             // Get the asset video and get the url.
             // Now strip off the last part.
-            episode.youtubeTag = episode.assets['video'].url.split('/').pop();
+            if(episode.assets.hasOwnProperty('video')) {
+                episode.youtubeTag = episode.assets['video'].url.split('/').pop();
+            } else {
+                console.log("Video Asset Missing:", episode.title, episode.number);
+            }
 
             // set the thumbnailPath so it can be copied to the destination directory.
             let thumbnailPath = path.resolve(`${episode.dir}/Production/${episode.thumbnail}`);

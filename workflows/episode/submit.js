@@ -3,7 +3,7 @@ const fs = require;
 
 module.exports = {
     friendlyName: 'submit',
-    description: 'Submit an Episode to IntelYouTube',
+    description: 'Submit an Episode to Channel',
     static: true, // True is for Class methods. False is for object based.
     inputs: {
         episode: {

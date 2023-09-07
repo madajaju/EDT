@@ -22,47 +22,28 @@ module.exports = {
     },
 
     fn: function (obj, inputs, env) {
-        // Publish on SoundCloud
-        // Publish on IntelYouTube
-        //
-        let args = inputs;
-        for(let aname in env.req.body) {
-            args[aname]= env.req.body[aname];
+        // let podcast = obj;
+        let episode = Episode.find(inputs.episode);
+        // Check that all of the assets required are published.
+        // This should be blog, audio, and video.
+        if(!episode.assets.hasOwnProperty('blog')) {
+            episode.addToAssets({
+                iname:'blog',
+                url:`https://www.embracingdigital.org/episode-EDT${episode.number}`,
+                title: episode.title,
+                channel: "blog",
+                artifact: "episode.md"
+            });
         }
-        let podcast = obj;
-        let output = path.resolve(`${podcast.baseDirectory}/2023/EDT-${inputs.number}`);
-        let source = path.resolve(`${podcast.baseDirectory}`);
-        _generateEpisode(output, source, inputs);
-        // Load the generatedEpisode
-        let episodeTmp = require(`${output}/.episode.js`);
-        let episode = Episode.load(episodeTmp);
-        podcast.addToEpisodes(episode);
+        if(!episode.assets.hasOwnProperty('audio')) {
+            console.log("Need to publish the audio file");
+        }
+        if(!episode.assets.hasOwnProperty('video')) {
+            console.log("Need to publish the video file");
+        }
+        episode.state = "Published";
+        episode.saveMe();
         return episode;
     }
 };
 
-const _generateEpisode = (output, source, inputs) => {
-    let guests = [];
-    if(inputs.guests) {
-       guests = inputs.guests.split(/,/);
-    }
-    guests.push("Darren W Pulsipher");
-    console.log("Generate:", output);
-    console.log("Source:", source);
-
-    let files = {
-        context: {
-            name: inputs.title,
-            number: inputs.number,
-            summary: inputs.summary,
-            guests: guests,
-        },
-        targets: {
-            'EDTBase.prproj': {copy: `${source}/Base/EDT-Base2023.prproj`},
-            'EDTShort.prproj': {copy: `${source}/Base/EDT-Short2023.prproj`},
-            '.episode.js': {template: `${source}/templates/.episode.ejs`},
-            'Production/episode.md': {template: `${source}/templates/_episode.emd`},
-        }
-    }
-    global.Generator.process(files, output);
-}

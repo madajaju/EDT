@@ -18,12 +18,30 @@ module.exports = {
       "url": "https://soundcloud.com/embracingdigital",
       "submission": "https://soundcloud.com/embracingdigital",
       "name": "soundcloud",
+      "authorized": false,
       "types": [
         "Post",
         "Podcast",
         "audio",
         "image"
       ]
+    },
+    "onedrive": {
+      "id": "onedrive",
+      "type": "OneDrive",
+      "title": "OneDrive Pulsipher Family",
+      "user": "darren@pulsipher.org",
+      "name": "onedrive",
+      "creds": {
+        "grant_type": "client_credentials",
+        "client_id": "356e2003-ee16-4028-b712-bd82c7fe544e",
+        "client_secret": "cb7c27b3-77c7-4480-87d4-bca126ff29dc",
+        "secret_value": "2H38Q~9PKCU2bIRM7izE-ELSa7f8bPhcThweXaaz",
+        "token_end_point": "https://login.microsoftonline.com/88a6815b-8308-4e4e-ad60-47d086028098/oauth2/v2.0/token",
+        "resource": "https://graph.microsoft.com"
+      },
+      "authorized": true,
+      "types": []
     },
     "intelyoutube": {
       "id": "intelyoutube",
@@ -37,6 +55,7 @@ module.exports = {
       "creds": {
         "api_key": "AIzaSyCW7GuNyug5Qcq1MipqyYXI2syZgp6WXG8"
       },
+      "authorized": true,
       "types": [
         "Video",
         "video"
@@ -52,17 +71,25 @@ module.exports = {
       "submission": "https://studio.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA/videos/upload",
       "creds": {
         "api_key": "AIzaSyCW7GuNyug5Qcq1MipqyYXI2syZgp6WXG8",
-        "client_id": "887621111838-907t97oik19mdj20206jjku05894irkk.apps.googleusercontent.com",
+        "client_id": "887621111838-osuqa12f23jclncleo8hv2c4q3j008ec.apps.googleusercontent.com",
         "project_id": "guth-370314",
         "auth_uri": "https://accounts.google.com/o/oauth2/auth",
         "token_uri": "https://oauth2.googleapis.com/token",
         "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-        "client_secret": "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",
+        "client_secret": "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",
         "redirect_uris": [
-          "http://localhost/web"
-        ]
+          "http://localhost/web/channel/authroize?id=youtube"
+        ],
+        "tokens": {
+          "access_token": "ya29.a0AfB_byABIp1bee3T4fz6r8YzxAf3I2moJS2sb8AVkkInpmBYugz4Wp5KbyvrXmf_lnuvsk3mB2QdNPl-DlmdSPbOzxKeXJWnvEL-4CL5TQmj44GhQxRI9JZwd8WZ5EzVIJzKRrDpPJNITmN8Byq19DE4vM94N9LufXNC_AaCgYKAe4SARASFQHsvYlsRP6_dAQM5KhiFpqXkP5LGA0173",
+          "refresh_token": "1//06Hh_gDyzjPDNCgYIARAAGAYSNwF-L9IrTLK1pwhT6e38uwD3LnbioYX3z4yh4APpcQ5E_UHrWo8Y1cshPhvfL6wGg8-fNUu3S4o",
+          "scope": "https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly",
+          "token_type": "Bearer",
+          "expiry_date": 1694036434878
+        }
       },
       "name": "youtube",
+      "authorized": true,
       "types": [
         "video",
         "Post",
@@ -89,6 +116,7 @@ module.exports = {
       "user": "darren.w.pulsipher@intel.com",
       "url": "https://www.embracingdigital.org/",
       "name": "blog",
+      "authorized": true,
       "types": [
         "Blog",
         "doc",
@@ -102,6 +130,7 @@ module.exports = {
       "user": "darren.w.pulsipher@intel.com",
       "url": "https://www.intel.com/content/www/us/en/government/embracing-digital-transformation-overview.html",
       "name": "intelblog",
+      "authorized": true,
       "types": [
         "doc",
         "pdf",
@@ -147,6 +176,7 @@ module.exports = {
         "client_id": "86moxvxwbgq5ha",
         "client_secret": "QBw5vB7DFTCqZ2mi"
       },
+      "authorized": false,
       "types": [
         "video",
         "image",
@@ -165,6 +195,7 @@ module.exports = {
       "user": "darren@pulsipher.org",
       "url": "https://www.facebook.com/darrenpulsipher",
       "name": "facebook",
+      "authorized": true,
       "types": [
         "video",
         "image",
@@ -184,6 +215,7 @@ module.exports = {
       "creds": {
         "api_key": "OD-_egSCZ9Zx0y6viJG7cQ"
       },
+      "authorized": true,
       "types": [
         "Podcast",
         "audio",
@@ -221,6 +253,7 @@ module.exports = {
       "user": "edt@pulsipher.org",
       "pass": "july2711",
       "name": "email",
+      "authorized": true,
       "types": [
         "doc",
         "Post",
@@ -310,9 +343,9 @@ module.exports = {
       "name": "Transistor Submit",
       "templates": {
         "Title": "transistor/title.ejs",
-        "Summary": "transistor/summary.ejs",
         "Description": "transistor/description.ejs",
-        "Image": "transistor/image.ejs"
+        "Image": "transistor/image.ejs",
+        "Tags": "transistor/tags.ejs"
       },
       "channels": []
     },
