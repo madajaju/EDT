@@ -29,7 +29,7 @@ tags:
     - generativeaipolicy
     - highereducation
 
-date: 
+date: Tue Sep 12 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
@@ -37,7 +37,11 @@ img: thumbnail.png
 summary: "Get the latest digital news for the week of September 10, 2023 covering Artificial Intelligence, Cybersecurity, and Ubiquitous Computing. This week, learn about a new iPhone cyber threat, the birthplace of GPT-4, and MIT's approach to tackling quantum computing uncertainty."
 ---
 
+{% include transistor.html id="2d49192a" %}
 
+
+
+{% include youtube.html id="OswZuzs4qXw" %}
 
 ---
 
