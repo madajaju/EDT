@@ -3,7 +3,7 @@ layout: guest
 title: Laura Newey
 parent: Guests
 
-img: Laura-Newey-thumbail.png
+img: Laura-Newey-thumbnail.png
 ---
 
 
