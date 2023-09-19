@@ -13,7 +13,7 @@ tags:
     - process
     - idc2022
 
-date: Sat Apr 08 20220 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: Sat Apr 08 20220 10:00:00 GMT+0300 (Eastern European Summer Time)
 guests:
     - Darren W Pulsipher
     - David Richard

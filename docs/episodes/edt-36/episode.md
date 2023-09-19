@@ -14,7 +14,7 @@ tags:
     - zta
     - technology
 
-date: Wed Jan 20 2021 16:00:00 GMT-0800 (Pacific Standard Time)
+date: Thu Jan 21 2021 02:00:00 GMT+0200 (Eastern European Standard Time)
 guests:
     - Darren W Pulsipher
     - Steve Orrin

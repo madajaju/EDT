@@ -14,7 +14,7 @@ tags:
     - people
     - process
 
-date: Wed Feb 10 2021 16:00:00 GMT-0800 (Pacific Standard Time)
+date: Thu Feb 11 2021 02:00:00 GMT+0200 (Eastern European Standard Time)
 guests:
     - Darren W Pulsipher
     - Rachel Mushawar

@@ -16,7 +16,7 @@ tags:
     - videoconferencing
     - signalwire
 
-date: Wed Feb 17 2021 16:00:00 GMT-0800 (Pacific Standard Time)
+date: Thu Feb 18 2021 02:00:00 GMT+0200 (Eastern European Standard Time)
 guests:
     - Darren W Pulsipher
     - Sean Heiney

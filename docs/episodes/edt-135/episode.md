@@ -14,7 +14,7 @@ tags:
     - aicontent
     - aidetection
 
-date: Wed Apr 26 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Thu Apr 27 2023 03:00:00 GMT+0300 (Eastern European Summer Time)
 guests:
     - Darren W Pulsipher
     - Gretchen Stewart

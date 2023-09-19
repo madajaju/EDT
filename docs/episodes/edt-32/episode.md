@@ -14,7 +14,7 @@ tags:
     - process
     - technology
 
-date: Tue Dec 08 2020 16:00:00 GMT-0800 (Pacific Standard Time)
+date: Wed Dec 09 2020 02:00:00 GMT+0200 (Eastern European Standard Time)
 guests:
     - Darren W Pulsipher
     - Sean Chou

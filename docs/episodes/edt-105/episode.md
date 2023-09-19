@@ -15,7 +15,7 @@ tags:
     - informationdriven
     - leadership
 
-date: Mon Sep 12 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Tue Sep 13 2022 03:00:00 GMT+0300 (Eastern European Summer Time)
 guests:
     - Darren W Pulsipher
     - Betsy Freeman

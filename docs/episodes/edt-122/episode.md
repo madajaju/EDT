@@ -14,7 +14,7 @@ tags:
     - people
     - policy
 
-date: Wed Feb 08 2023 16:00:00 GMT-0800 (Pacific Standard Time)
+date: Thu Feb 09 2023 02:00:00 GMT+0200 (Eastern European Standard Time)
 guests:
     - Darren W Pulsipher
     - ChatGPT

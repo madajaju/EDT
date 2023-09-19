@@ -13,7 +13,7 @@ tags:
     - googlebard
     - technology
 
-date: Wed Jul 19 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Thu Jul 20 2023 03:00:00 GMT+0300 (Eastern European Summer Time)
 guests:
     - Darren W Pulsipher
     - Google Bard

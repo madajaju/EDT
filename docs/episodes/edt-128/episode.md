@@ -12,7 +12,7 @@ tags:
     - developer
     - people
 
-date: Wed Mar 15 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Thu Mar 16 2023 02:00:00 GMT+0200 (Eastern European Standard Time)
 guests:
     - Darren W Pulsipher
     - Jon Gottfried

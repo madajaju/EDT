@@ -9,7 +9,7 @@ nav_order: 3
 tags:
     - multicloud
 
-date: Mon Jun 22 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Tue Jun 23 2020 03:00:00 GMT+0300 (Eastern European Summer Time)
 guests:
     - Darren W Pulsipher
 

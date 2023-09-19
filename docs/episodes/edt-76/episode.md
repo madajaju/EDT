@@ -11,7 +11,7 @@ tags:
     - cloudsolutionarchitect
     - multicloud
 
-date: Wed Feb 09 2022 16:00:00 GMT-0800 (Pacific Standard Time)
+date: Thu Feb 10 2022 02:00:00 GMT+0200 (Eastern European Standard Time)
 guests:
     - Darren W Pulsipher
     - Kiran Agrahara

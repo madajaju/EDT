@@ -15,7 +15,7 @@ tags:
     - edge
     - censys
 
-date: Wed Jun 15 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Thu Jun 16 2022 03:00:00 GMT+0300 (Eastern European Summer Time)
 guests:
     - Darren W Pulsipher
     - Matt Lembright

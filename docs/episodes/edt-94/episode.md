@@ -15,7 +15,7 @@ tags:
     - cloud
     - vergeio
 
-date: Wed Jul 06 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Thu Jul 07 2022 03:00:00 GMT+0300 (Eastern European Summer Time)
 guests:
     - Darren W Pulsipher
     - Greg Campbell

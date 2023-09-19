@@ -16,7 +16,7 @@ tags:
     - technology
     - edge
 
-date: Tue Feb 23 2021 16:00:00 GMT-0800 (Pacific Standard Time)
+date: Wed Feb 24 2021 02:00:00 GMT+0200 (Eastern European Standard Time)
 guests:
     - Darren W Pulsipher
     - Nick Bhadange

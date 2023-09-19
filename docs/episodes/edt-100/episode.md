@@ -12,7 +12,7 @@ tags:
     - edge
     - aiml
 
-date: Wed Aug 17 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Thu Aug 18 2022 03:00:00 GMT+0300 (Eastern European Summer Time)
 guests:
     - Darren W Pulsipher
     - Cameron Chehreh

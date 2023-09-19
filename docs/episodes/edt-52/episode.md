@@ -11,7 +11,7 @@ tags:
     - optimization
     - workloadplacement
 
-date: Mon Jun 07 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Tue Jun 08 2021 03:00:00 GMT+0300 (Eastern European Summer Time)
 guests:
     - Darren W Pulsipher
 

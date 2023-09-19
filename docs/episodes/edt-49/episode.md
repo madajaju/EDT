@@ -10,7 +10,7 @@ tags:
     - covid
     - remoteworker
 
-date: Wed May 05 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Thu May 06 2021 03:00:00 GMT+0300 (Eastern European Summer Time)
 guests:
     - Darren W Pulsipher
     - Rachel Dreikosen

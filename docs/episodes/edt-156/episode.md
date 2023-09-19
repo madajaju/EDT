@@ -29,7 +29,7 @@ tags:
     - emrbacingdigital
     - edt156
 
-date: Mon Sep 04 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Tue Sep 05 2023 03:00:00 GMT+0300 (Eastern European Summer Time)
 guests:
     - Ron Fritzemeier
     - Darren W Pulsipher

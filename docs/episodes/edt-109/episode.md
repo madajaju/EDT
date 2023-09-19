@@ -11,7 +11,7 @@ tags:
     - comms
     - wifi6
 
-date: Mon Oct 05 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Tue Oct 06 2020 03:00:00 GMT+0300 (Eastern European Summer Time)
 guests:
     - Darren W Pulsipher
     - Leeland Brown

@@ -14,7 +14,7 @@ tags:
     - technology
     - process
 
-date: Wed Nov 30 2022 16:00:00 GMT-0800 (Pacific Standard Time)
+date: Thu Dec 01 2022 02:00:00 GMT+0200 (Eastern European Standard Time)
 guests:
     - Darren W Pulsipher
     - John Evans
