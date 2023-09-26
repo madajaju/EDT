@@ -14,7 +14,7 @@ tags:
     - technology
     - process
 
-date: Tue Aug 23 2022 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Mon Aug 22 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Dan Demers

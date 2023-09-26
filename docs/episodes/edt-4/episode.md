@@ -19,7 +19,7 @@ tags:
     - process
     - people
 
-date: Tue Jun 30 2020 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Mon Jun 29 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 

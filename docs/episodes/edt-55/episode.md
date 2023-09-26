@@ -14,7 +14,7 @@ tags:
     - hsbc
     - cio
 
-date: Thu Jul 01 2021 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Wed Jun 30 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Ann Madea

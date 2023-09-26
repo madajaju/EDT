@@ -34,7 +34,7 @@ tags:
     - brainstormingapplications
     - embracingdigital
 
-date: Thu Sep 07 2023 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Wed Sep 06 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Jeffrey Lancaster
     - Darren W Pulsipher

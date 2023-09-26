@@ -14,7 +14,7 @@ tags:
     - people
     - process
 
-date: Wed Jan 13 2021 02:00:00 GMT+0200 (Eastern European Standard Time)
+date: Tue Jan 12 2021 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
     - Rick Herrmann

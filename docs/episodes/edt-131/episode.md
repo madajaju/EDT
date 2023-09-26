@@ -15,7 +15,7 @@ tags:
     - cybersecurity
     - innovation
 
-date: Thu Mar 30 2023 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Wed Mar 29 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Mark Valcich

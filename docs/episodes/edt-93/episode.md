@@ -12,7 +12,7 @@ tags:
     - multicloud
     - comms
 
-date: Fri Jun 24 2022 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Thu Jun 23 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Greg Ernst

@@ -10,7 +10,7 @@ tags:
     - cybersecurity
     - ransomware
 
-date: Thu Jan 27 2022 02:00:00 GMT+0200 (Eastern European Standard Time)
+date: Wed Jan 26 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
     - Stephanie Sabatini

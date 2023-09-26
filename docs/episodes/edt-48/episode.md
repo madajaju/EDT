@@ -13,7 +13,7 @@ tags:
     - technology
     - vastdata
 
-date: Thu Apr 29 2021 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Wed Apr 28 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Randy Hayes

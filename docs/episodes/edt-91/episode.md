@@ -15,7 +15,7 @@ tags:
     - process
     - compute
 
-date: Thu Jun 09 2022 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Wed Jun 08 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Eric Greenwald

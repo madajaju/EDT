@@ -29,7 +29,7 @@ tags:
     - embracingdigital
     - edt159
 
-date: Thu Sep 14 2023 10:00:00 GMT+0300 (Eastern European Summer Time)
+date: Thu Sep 14 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Jeremy Harris
     - Darren W Pulsipher

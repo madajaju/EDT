@@ -11,7 +11,7 @@ tags:
     - organizationalchange
     - people
 
-date: Thu Aug 13 2020 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Wed Aug 12 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Andrew Padilla

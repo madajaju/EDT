@@ -15,7 +15,7 @@ tags:
     - zerotrust
     - zta
 
-date: Tue May 24 2022 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Mon May 23 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Mike Fraser

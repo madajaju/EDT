@@ -30,7 +30,7 @@ tags:
     - embracingdigital
     - edt160
 
-date: Tue Sep 19 2023 10:00:00 GMT+0300 (Eastern European Summer Time)
+date: Tue Sep 19 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Jeffrey Lancaster
     - Darren W Pulsipher

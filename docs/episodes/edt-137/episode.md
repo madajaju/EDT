@@ -15,7 +15,7 @@ tags:
     - hybridcloud
     - technology
 
-date: Wed May 10 2023 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Tue May 09 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Sam Ceccola

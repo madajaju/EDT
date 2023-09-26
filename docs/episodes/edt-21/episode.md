@@ -16,7 +16,7 @@ tags:
     - pmem
     - data
 
-date: Mon Sep 14 2020 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Sun Sep 13 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Charles Fan

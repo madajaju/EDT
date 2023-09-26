@@ -11,7 +11,7 @@ tags:
     - ai
     - datamanagement
 
-date: Tue Aug 22 2023 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Mon Aug 21 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Jeffrey Lancaster
     - Darren W Pulsipher

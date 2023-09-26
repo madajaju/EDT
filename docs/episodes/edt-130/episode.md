@@ -13,7 +13,7 @@ tags:
     - people
     - process
 
-date: Thu Mar 23 2023 02:00:00 GMT+0200 (Eastern European Standard Time)
+date: Wed Mar 22 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Matthew Pulsipher

@@ -15,7 +15,7 @@ tags:
     - capitalbpm
     - rpa
 
-date: Fri Nov 18 2022 02:00:00 GMT+0200 (Eastern European Standard Time)
+date: Thu Nov 17 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
     - Max Young

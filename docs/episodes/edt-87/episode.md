@@ -16,7 +16,7 @@ tags:
     - cybersecurity
     - sgx
 
-date: Thu May 19 2022 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Wed May 18 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Ofir Azoulay-Rozanes

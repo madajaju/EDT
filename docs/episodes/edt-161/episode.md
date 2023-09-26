@@ -49,7 +49,7 @@ tags:
     - context
     - poweroflanguage
 
-date: Thu Sep 21 2023 10:00:00 GMT+0300 (Eastern European Summer Time)
+date: Thu Sep 21 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Steve Wasick

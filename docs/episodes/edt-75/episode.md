@@ -10,7 +10,7 @@ tags:
     - cybersecurity
     - technology
 
-date: Thu Feb 03 2022 02:00:00 GMT+0200 (Eastern European Standard Time)
+date: Wed Feb 02 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
     - Colin McLean

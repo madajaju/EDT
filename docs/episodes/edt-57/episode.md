@@ -15,7 +15,7 @@ tags:
     - organizationalchange
     - multicloud
 
-date: Thu Jul 15 2021 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Wed Jul 14 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Dave Shrestha

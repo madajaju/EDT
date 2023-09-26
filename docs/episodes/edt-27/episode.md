@@ -14,7 +14,7 @@ tags:
     - cybersecurity
     - technology
 
-date: Wed Oct 28 2020 02:00:00 GMT+0200 (Eastern European Standard Time)
+date: Tue Oct 27 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Jesse Schrater

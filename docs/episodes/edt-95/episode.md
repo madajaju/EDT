@@ -12,7 +12,7 @@ tags:
     - compute
     - cybersecurity
 
-date: Tue Jul 12 2022 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Mon Jul 11 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Anna Scott

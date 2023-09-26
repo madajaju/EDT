@@ -12,7 +12,7 @@ tags:
     - datamanagement
     - people
 
-date: Thu Aug 17 2023 10:00:00 GMT+0300 (Eastern European Summer Time)
+date: Thu Aug 17 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Jeffrey Lancaster
     - Darren W Pulsipher
