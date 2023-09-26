@@ -13,7 +13,7 @@ tags:
     - compute
     - cybersecurity
 
-date: Mon Mar 27 2023 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Sun Mar 26 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 

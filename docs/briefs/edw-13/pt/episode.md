@@ -13,7 +13,7 @@ tags:
     - cybersecurity
     - edge
 
-date: Mon May 01 2023 03:00:00 GMT+0300 (Eastern European Summer Time)
+date: Sun Apr 30 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
