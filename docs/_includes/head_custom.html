@@ -1,10 +1,25 @@
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    <meta property="og:title" content="{{page.title}}">
+    <meta property="og:description" content="{{ page.summary }}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{ page.path | remove: page.name }}/{{ page.img }}">
+    <meta property="og:site-name" content="Embracing Digital Transformation">
+
+    <meta name="author" content= "Darren W Pulsipher">
+    <meta name="keywords" content="{{ page.tags || join: ', ' }}">
+    <meta name="robots" content="index, follow">
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
 
     gtag('config', 'G-P4XHVE79DL');
+
+
 </script>
