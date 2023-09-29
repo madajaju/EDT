@@ -18,12 +18,17 @@ guests:
     - Rob Watts
 
 img: thumbnail.jpeg
+image: thumbnail.jpeg
 summary: "In this episode Darren explores the science and use cases behind digital twin technology with the principal architect of Intel's ScheneScape."
+description: "In this episode Darren explores the science and use cases behind digital twin technology with the principal architect of Intel's ScheneScape."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="6b355957" title="#144 Science Behind Digital Twins" %}
 
 {% include youtube.html id="C6xDweCGboU" %}
+</div>
 
 ---
 

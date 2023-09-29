@@ -19,12 +19,17 @@ guests:
     - Google Bard
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode Darren dusts off an interview he did with chatGPT and did the same interview with Google Bard. Interesting comparison with Episode 122 in Embracing Digital Transformation."
+description: "In this episode Darren dusts off an interview he did with chatGPT and did the same interview with Google Bard. Interesting comparison with Episode 122 in Embracing Digital Transformation."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="659a7581" title="#147 GenerativeAI and Automation (Google Bard)" %}
 
 {% include youtube.html id="SnG4zYZto3Q" %}
+</div>
 
 ---
 

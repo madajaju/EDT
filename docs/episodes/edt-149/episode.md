@@ -17,12 +17,17 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode, Darren reunites with Leland Brown, a principal engineer at Capgemini and a previous guest on the show, to discuss the upcoming advancements of 5G technology in the US Department of Defense."
+description: "In this episode, Darren reunites with Leland Brown, a principal engineer at Capgemini and a previous guest on the show, to discuss the upcoming advancements of 5G technology in the US Department of Defense."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="e78b6882" title="#149 Update on 5G in the Department of Defense" %}
 
 {% include youtube.html id="QhJmv7jIb30" %}
+</div>
 
 ---
 

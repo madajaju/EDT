@@ -21,12 +21,17 @@ guests:
     - Grant Kelly
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode, Erin Moseley, Sr. Account Exec for Education at Intel, and Grant Kelly, Solution Architect for Education at Intel, join Darren to talk about the challenges of distance learning and teaching and the overwhelming changes that school districts, teachers, parents, and students are absorbing during the Covid-19 pandemic. Find out how students and teachers are connecting with new technologies and ways of learning."
+description: "In this episode, Erin Moseley, Sr. Account Exec for Education at Intel, and Grant Kelly, Solution Architect for Education at Intel, join Darren to talk about the challenges of distance learning and teaching and the overwhelming changes that school districts, teachers, parents, and students are absorbing during the Covid-19 pandemic. Find out how students and teachers are connecting with new technologies and ways of learning."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="e48d397d" title="#11 Distance Teaching and Learning" %}
 
 {% include youtube.html id="b-PT-b0W4Q4" %}
+</div>
 
 ---
 

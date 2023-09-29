@@ -22,12 +22,17 @@ guests:
     - David Esposito
 
 img: thumbnail.jpg
+image: thumbnail.jpg
 summary: "On this episode, part 1 of 2, Darren talks to David Esposito, Global Solution Architect, from Aiven about accelerating cloud adoption while reducing complexity and cost."
+description: "On this episode, part 1 of 2, Darren talks to David Esposito, Global Solution Architect, from Aiven about accelerating cloud adoption while reducing complexity and cost."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="8775570a" title="#65 Accelerating Cloud Adoption while Decreasing Complexity and Cost" %}
 
 {% include youtube.html id="4QVuxlhq_J4" %}
+</div>
 
 ---
 

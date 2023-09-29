@@ -20,12 +20,17 @@ guests:
     - Jason Dunn-Potter
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode, Darren talks with Jason Dunn-Potter, solution architect for the public sector at Intel,  about Moore’s law and how it continues to drive innovations across the public sector."
+description: "In this episode, Darren talks with Jason Dunn-Potter, solution architect for the public sector at Intel,  about Moore’s law and how it continues to drive innovations across the public sector."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="d6b1bb00" title="#119 Moore's Law is not Dead!" %}
 
 {% include youtube.html id="4s90TQSpdKA" %}
+</div>
 
 ---
 

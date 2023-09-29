@@ -22,12 +22,17 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel outlines digital strategy and architecture to effectively transform your organization. He explains how organizational, procedural, and technological elements must be balanced to work efficiently toward a common, ideal architecture to support a unified vision."
+description: "Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel outlines digital strategy and architecture to effectively transform your organization. He explains how organizational, procedural, and technological elements must be balanced to work efficiently toward a common, ideal architecture to support a unified vision."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="0f3c3117" title="#24 Digital Strategy and Data Architecture" %}
 
 {% include youtube.html id="fA8CWzRDZHM" %}
+</div>
 
 ---
 

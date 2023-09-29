@@ -19,12 +19,17 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode, Darren interviews Greg Clifton, Director of Department of Defense (DOD) and Intelligence for Intel Corp. They discuss the challenges of data management in a complex system that spans multiple clouds, enterprise data centers, regional data centers, and tactical edge. Listen to Darren and Greg follow a bit of data from its collection and journey through this ecosystem to the production of actionable information for analysts and warfighters. Listen to Darren and Greg discuss some of the obstacles in this large, circular environment and solutions to help get actionable information to analysts and back to warfighters."
+description: "In this episode, Darren interviews Greg Clifton, Director of Department of Defense (DOD) and Intelligence for Intel Corp. They discuss the challenges of data management in a complex system that spans multiple clouds, enterprise data centers, regional data centers, and tactical edge. Listen to Darren and Greg follow a bit of data from its collection and journey through this ecosystem to the production of actionable information for analysts and warfighters. Listen to Darren and Greg discuss some of the obstacles in this large, circular environment and solutions to help get actionable information to analysts and back to warfighters."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="caf42ad5" title="#2 Follow the Bit" %}
 
 {% include youtube.html id="N6WTErcBjrM" %}
+</div>
 
 ---
 

@@ -20,12 +20,17 @@ guests:
     - Amy Tong
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect, Intel, discusses inspiring cultural change with Amy Tong, CIO of the state of California, in the wake of the COVID pandemic."
+description: "Darren Pulsipher, Chief Solution Architect, Intel, discusses inspiring cultural change with Amy Tong, CIO of the state of California, in the wake of the COVID pandemic."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="410f5795" title="#63 Inspiring IT Cultural Change" %}
 
 {% include youtube.html id="Nb55aRH93ac" %}
+</div>
 
 ---
 

@@ -17,12 +17,17 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode of the podcast Embracing Digital Transformation, host Darren Pulsipher engages in a thought-provoking conversation with Dr. Jeffrey Lancaster. Their discussion delves into the practical applications of generative AI and the profound impact it is set to bring across various industries."
+description: "In this episode of the podcast Embracing Digital Transformation, host Darren Pulsipher engages in a thought-provoking conversation with Dr. Jeffrey Lancaster. Their discussion delves into the practical applications of generative AI and the profound impact it is set to bring across various industries."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="2c700999" title="#152 Practical Generative AI" %}
 
 {% include youtube.html id="h5frX5OWLC8" %}
+</div>
 
 ---
 

@@ -22,12 +22,17 @@ guests:
     - Nick Bhadange
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "Breakdown the barriers to accelerating medical research for the cure to cancer with confidential computing. Nick Bhadange, Technology Specialist, AI-Vets and Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, discuss the need for confidential computing in healthcare and the potential benefits through use cases."
+description: "Breakdown the barriers to accelerating medical research for the cure to cancer with confidential computing. Nick Bhadange, Technology Specialist, AI-Vets and Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, discuss the need for confidential computing in healthcare and the potential benefits through use cases."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="558eb1c5" title="#40 Collaborative Medical Research with Confidential Computing" %}
 
 {% include youtube.html id="owwhD3g7xRE" %}
+</div>
 
 ---
 

@@ -17,12 +17,17 @@ guests:
     - David Rowley
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect, Intel, talks to Hitachi’s Colin McLean, Intel Global Team Lead, and David Rowley, Senior Solutions Consultant, about Hitachi’s full circle cyber security offerings."
+description: "Darren Pulsipher, Chief Solution Architect, Intel, talks to Hitachi’s Colin McLean, Intel Global Team Lead, and David Rowley, Senior Solutions Consultant, about Hitachi’s full circle cyber security offerings."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="4c85b189" title="#75 Cybersecurity Solutions with Hitachi" %}
 
 {% include youtube.html id="2AnPCAzhmJo" %}
+</div>
 
 ---
 

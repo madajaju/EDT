@@ -21,12 +21,17 @@ guests:
     - Anna Scott
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode, Darren talks about the convergence of OT and IT cybersecurity with Security expert Steve Orrin and Industrial OT expert Dr. Anna Scott"
+description: "In this episode, Darren talks about the convergence of OT and IT cybersecurity with Security expert Steve Orrin and Industrial OT expert Dr. Anna Scott"
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="b7873e57" title="#116 An Argument for a Holistic approach to Critical Infrastructure Security" %}
 
 {% include youtube.html id="DRGy_il_nUg" %}
+</div>
 
 ---
 

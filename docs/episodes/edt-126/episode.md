@@ -14,12 +14,17 @@ guests:
     - Luuk Van Dijk
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode, Luuk Van Dijk, CEO of Daedalean, talks with Darren about how his company has developed a technique to help governments certify AI-empowered autonomous flight in a highly regulated industry."
+description: "In this episode, Luuk Van Dijk, CEO of Daedalean, talks with Darren about how his company has developed a technique to help governments certify AI-empowered autonomous flight in a highly regulated industry."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="1d6a6534" title="#126 Certifying Autonomous Flight" %}
 
 {% include youtube.html id="fDz17_XLmx4" %}
+</div>
 
 ---
 

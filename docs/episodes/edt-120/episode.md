@@ -22,12 +22,17 @@ guests:
     - Alan Evans
 
 img: thumbnail.jpeg
+image: thumbnail.jpeg
 summary: "On this episode Darren interviews Alan Evan, principle technologist at MacroMeta, about distributed data management and the impact of global distribution of data in the cloud to edge ecosystem."
+description: "On this episode Darren interviews Alan Evan, principle technologist at MacroMeta, about distributed data management and the impact of global distribution of data in the cloud to edge ecosystem."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="90c59b10" title="#120 An Argument for Global Data Networks" %}
 
 {% include youtube.html id="H0tDfaGDscQ" %}
+</div>
 
 ---
 

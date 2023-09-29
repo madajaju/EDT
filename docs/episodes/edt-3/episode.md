@@ -14,12 +14,17 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "A multi-hybrid cloud architecture allows organizations to take advantage of the benefits of both private and public clouds, optimizing resources and cost efficiency. This model has five main advantages: agility, flexibility, predictive performance, security and compliance, and efficiency."
+description: "A multi-hybrid cloud architecture allows organizations to take advantage of the benefits of both private and public clouds, optimizing resources and cost efficiency. This model has five main advantages: agility, flexibility, predictive performance, security and compliance, and efficiency."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="f87aa67c" title="#3 Benefits of Multi-Cloud Architecture" %}
 
 {% include youtube.html id="14mcgaHLoPU" %}
+</div>
 
 ---
 

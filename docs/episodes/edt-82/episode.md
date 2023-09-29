@@ -21,12 +21,17 @@ guests:
     - Sarah Musick
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect, Intel, continues his conversation with Sarah Musick, Cloud Solution Architect, Intel, about the shift from infrastructure to workloads. Please place in the Embracing Digital Transformation playlist."
+description: "Darren Pulsipher, Chief Solution Architect, Intel, continues his conversation with Sarah Musick, Cloud Solution Architect, Intel, about the shift from infrastructure to workloads. Please place in the Embracing Digital Transformation playlist."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="a37c2b5e" title="#82 Shifting from Infrastructure to Workloads" %}
 
 {% include youtube.html id="OBaUP6RY4lk" %}
+</div>
 
 ---
 

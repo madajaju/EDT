@@ -18,12 +18,17 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode, host Darren Pulsipher interviewed Dr. Jeffrey Lancaster from Dell Technologies. Their discussion centered on generative AI and its potential impact."
+description: "In this episode, host Darren Pulsipher interviewed Dr. Jeffrey Lancaster from Dell Technologies. Their discussion centered on generative AI and its potential impact."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="f313bebc" title="#151 Understanding Generative AI" %}
 
 {% include youtube.html id="eRoHyHFdKqE" %}
+</div>
 
 ---
 

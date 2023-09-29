@@ -17,12 +17,17 @@ guests:
     - Byron Tarry
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode, Darren talks to the CEO and Managing Director of GPA about the role that collaboration innovation plays in bringing people back into the office and why people need face-to-face interaction."
+description: "In this episode, Darren talks to the CEO and Managing Director of GPA about the role that collaboration innovation plays in bringing people back into the office and why people need face-to-face interaction."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="11bf23e0" title="#145 Attracting People Back to the Office" %}
 
 {% include youtube.html id="I7atsJQP-gg" %}
+</div>
 
 ---
 

@@ -21,12 +21,17 @@ guests:
     - Anna Scott
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "Intel’s Darren Pulsipher, Chief Solution Architect, Dr. Anna Scott, Chief Edge Architect, and Gretchen Stewart, Chief Data Scientist discuss the six pillars of digital transformation in 2022: multi-cloud computing, edge computing, artificial intelligence, machine learning, cyber security, data management, and comms. "
+description: "Intel’s Darren Pulsipher, Chief Solution Architect, Dr. Anna Scott, Chief Edge Architect, and Gretchen Stewart, Chief Data Scientist discuss the six pillars of digital transformation in 2022: multi-cloud computing, edge computing, artificial intelligence, machine learning, cyber security, data management, and comms. "
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="94c4fde2" title="#77 Digital Transformation in 2022" %}
 
 {% include youtube.html id="-UsayFp-UwY" %}
+</div>
 
 ---
 

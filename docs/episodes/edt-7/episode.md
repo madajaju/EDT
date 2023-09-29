@@ -14,12 +14,17 @@ guests:
     - Steve Orrin
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "With the huge shift in people now working from home instead of the office, security is a growing concern for many IT organizations. In this episode, Steve Orrin, CTO of Intel Federal, and Darren discuss the security threats and solutions to help secure your teleworker and enterprise data centers."
+description: "With the huge shift in people now working from home instead of the office, security is a growing concern for many IT organizations. In this episode, Steve Orrin, CTO of Intel Federal, and Darren discuss the security threats and solutions to help secure your teleworker and enterprise data centers."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="edt7" title="#7 Securing the Teleworker" %}
 
 {% include youtube.html id="ncIQpc6FsoQ" %}
+</div>
 
 ---
 

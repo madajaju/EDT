@@ -19,12 +19,17 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "On this episode, Darren discusses the data aspects of artificial intelligence (AI) and the importance of securing that data."
+description: "On this episode, Darren discusses the data aspects of artificial intelligence (AI) and the importance of securing that data."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="ffe877ee" title="#85 Artificial Intelligence and Security" %}
 
 {% include youtube.html id="NVcBCPpJ4rY" %}
+</div>
 
 ---
 

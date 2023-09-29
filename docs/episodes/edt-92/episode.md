@@ -21,12 +21,17 @@ guests:
     - Matt Lembright
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "On this episode, Darren talks to Matt Lembright, Director of Federal Applications, Censys, about how Censys assesses the attack surface for internet-connected devices, allowing organizations to eliminate vulnerabilities."
+description: "On this episode, Darren talks to Matt Lembright, Director of Federal Applications, Censys, about how Censys assesses the attack surface for internet-connected devices, allowing organizations to eliminate vulnerabilities."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="6fdf7422" title="#92 Protecting the Outer Walls of your Castle with Vulnerability Scans" %}
 
 {% include youtube.html id="TzyCREPs7Wk" %}
+</div>
 
 ---
 

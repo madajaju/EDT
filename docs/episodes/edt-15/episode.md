@@ -19,12 +19,17 @@ guests:
     - Sarah Kalicin
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "Creating successful data-driven results starts with a strong organizational foundation. Darren and his guest Sarah Kalicin, Lead Data Scientist Data Center Group Intel, discuss the key aspects to this fundamental change."
+description: "Creating successful data-driven results starts with a strong organizational foundation. Darren and his guest Sarah Kalicin, Lead Data Scientist Data Center Group Intel, discuss the key aspects to this fundamental change."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="f6948ab6" title="#15 Kick-starting Organizational Transformation" %}
 
 {% include youtube.html id="wwIxtgp5a7w" %}
+</div>
 
 ---
 

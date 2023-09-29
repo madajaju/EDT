@@ -17,12 +17,17 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "On this episode, Darren reflects on the expectations and surprises of 2021"
+description: "On this episode, Darren reflects on the expectations and surprises of 2021"
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="cb3a86a3" title="#73 2021 a Year in Review" %}
 
 {% include youtube.html id="fPNfdjHtKns" %}
+</div>
 
 ---
 

@@ -22,12 +22,17 @@ guests:
     - Carla Trevino
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, and Carla Trevino, Solutions Architect, Irdeto, talk about the importance of security in critical infrastructure."
+description: "Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, and Carla Trevino, Solutions Architect, Irdeto, talk about the importance of security in critical infrastructure."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="3778e3fa" title="#107 Securing Critical Infrastructure" %}
 
 {% include youtube.html id="S2C1v5zyZJY" %}
+</div>
 
 ---
 

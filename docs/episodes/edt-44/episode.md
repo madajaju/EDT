@@ -20,12 +20,17 @@ guests:
     - Doug Bourgeois
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In part two of the interview, Darren Pulsipher, Chief Solution Architect, Intel, and Doug Bourgeois, Managing Director, GPS Cloud Strategy Leader, Deloitte, continue their discussion about the cloud migration."
+description: "In part two of the interview, Darren Pulsipher, Chief Solution Architect, Intel, and Doug Bourgeois, Managing Director, GPS Cloud Strategy Leader, Deloitte, continue their discussion about the cloud migration."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="d22f256d" title="#44 Cloud in the Digital Age" %}
 
 {% include youtube.html id="TVhTCxlkCO8" %}
+</div>
 
 ---
 

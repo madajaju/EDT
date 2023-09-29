@@ -19,12 +19,17 @@ guests:
     - David Richard
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "On this episode, Darren, Chief Solution Architect, Public Sector, Intel and David Richard, Lead Solution Architect, Department of Defense, Intel reflect on the trends and ideas they gleaned from the 2022 IDC Directions conference."
+description: "On this episode, Darren, Chief Solution Architect, Public Sector, Intel and David Richard, Lead Solution Architect, Department of Defense, Intel reflect on the trends and ideas they gleaned from the 2022 IDC Directions conference."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="5d171600" title="#83 IDC Directions 2022" %}
 
 {% include youtube.html id="oAvLwIoTtPg" %}
+</div>
 
 ---
 

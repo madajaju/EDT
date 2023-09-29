@@ -21,12 +21,17 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode Darren talks about what's in store for 2023 where he reviews his predictions on the critical elements of digital transformation in the year ahead."
+description: "In this episode Darren talks about what's in store for 2023 where he reviews his predictions on the critical elements of digital transformation in the year ahead."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="55c53a99" title="#118 What's ahead in 2023" %}
 
 {% include youtube.html id="MLMuKaClyUM" %}
+</div>
 
 ---
 

@@ -19,12 +19,17 @@ guests:
     - Anna Scott
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode, Darren talks to frequent Intel guests Leland Brown, Principal Engineer: Technical Director of Advanced Communications, and Dr. Anna Scott, Chief Edge Architect for Public Sector, about the history of advanced comms."
+description: "In this episode, Darren talks to frequent Intel guests Leland Brown, Principal Engineer: Technical Director of Advanced Communications, and Dr. Anna Scott, Chief Edge Architect for Public Sector, about the history of advanced comms."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="a4e3ec11" title="#108 History of Advanced Communications" %}
 
 {% include youtube.html id="XllHSDenC9g" %}
+</div>
 
 ---
 

@@ -21,12 +21,17 @@ guests:
     - Max Young
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, and Max Young, CEO of Capital BPM, discuss operationalizing business process management with modeling programs."
+description: "Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, and Max Young, CEO of Capital BPM, discuss operationalizing business process management with modeling programs."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="98cc2837" title="#114 Automating Business Process Management" %}
 
 {% include youtube.html id="ysjoqIqvOGw" %}
+</div>
 
 ---
 

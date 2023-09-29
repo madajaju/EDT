@@ -21,12 +21,17 @@ guests:
     - Steve Orrin
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect, Intel, discusses data breaches & secure supply chain with frequent guest Steve Orrin, CTO of Intel, Federal."
+description: "Darren Pulsipher, Chief Solution Architect, Intel, discusses data breaches & secure supply chain with frequent guest Steve Orrin, CTO of Intel, Federal."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="2462e3fe" title="#61 Data Breaches & Secure Supply Chain" %}
 
 {% include youtube.html id="zB6-pf_N4u8" %}
+</div>
 
 ---
 

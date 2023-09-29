@@ -19,12 +19,17 @@ guests:
     - Anna Scott
 
 img: thumbnail.jpg
+image: thumbnail.jpg
 summary: "Darren Pulsipher, Chief Solution Architect, Intel, discusses the groundbreaking changes 5G will bring to edge and AI with Dr. Anna Scott, Chief Edge Architect, Intel."
+description: "Darren Pulsipher, Chief Solution Architect, Intel, discusses the groundbreaking changes 5G will bring to edge and AI with Dr. Anna Scott, Chief Edge Architect, Intel."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="50847ff2" title="#62 Demystifying 5G, Edge and AI" %}
 
 {% include youtube.html id="tjuYUh6bJJ8" %}
+</div>
 
 ---
 

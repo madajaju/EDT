@@ -13,12 +13,17 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode, Darren talks about decreasing ingestion congestion using Intel’s Optane DC Persistent Memory, and the experiment he conducted with surprising results. It just might change the way we think about programming in the future."
+description: "In this episode, Darren talks about decreasing ingestion congestion using Intel’s Optane DC Persistent Memory, and the experiment he conducted with surprising results. It just might change the way we think about programming in the future."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="7ca179aa" title="#16 Decreasing Ingestion Congestion with Intel Optane DCPMM" %}
 
 {% include youtube.html id="8vFFbBD9tZQ" %}
+</div>
 
 ---
 

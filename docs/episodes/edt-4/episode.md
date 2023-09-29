@@ -24,12 +24,17 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode, we will talk about the Information Management Maturity Model and how we can use that model to help our organizations move forward. This model can help you identify where your organization is and where it is going in its information management strategy, ultimately deriving maximum business value from your data"
+description: "In this episode, we will talk about the Information Management Maturity Model and how we can use that model to help our organizations move forward. This model can help you identify where your organization is and where it is going in its information management strategy, ultimately deriving maximum business value from your data"
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="b3684303" title="#4 Information Management Maturity Model" %}
 
 {% include youtube.html id="UaUSrh433-Y" %}
+</div>
 
 ---
 

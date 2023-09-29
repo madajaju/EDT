@@ -21,12 +21,17 @@ guests:
     - Eric Greenwald
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solutions Architect, Intel, and Eric Greenwald, General Counsel of Finite State, talk about securing the software supply chain."
+description: "Darren Pulsipher, Chief Solutions Architect, Intel, and Eric Greenwald, General Counsel of Finite State, talk about securing the software supply chain."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="d4b56c70" title="#91 Fighting the Cyber Adversary by Securing your Software Supply Chain" %}
 
 {% include youtube.html id="zyIH533JhyM" %}
+</div>
 
 ---
 

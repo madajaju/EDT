@@ -22,12 +22,17 @@ guests:
     - Steven Holt
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode, Darren Pulsipher, Chief Solution Architect, Intel, and Stephen Holt, Cloud Solution Architect, Intel discuss cloud optimization and studies that show that cores perform differently for various workloads."
+description: "In this episode, Darren Pulsipher, Chief Solution Architect, Intel, and Stephen Holt, Cloud Solution Architect, Intel discuss cloud optimization and studies that show that cores perform differently for various workloads."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="cd1f0343" title="#45 Not All Cores are Equal" %}
 
 {% include youtube.html id="ZqdpCTp5yTY" %}
+</div>
 
 ---
 

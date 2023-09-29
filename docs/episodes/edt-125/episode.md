@@ -21,12 +21,17 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode, Darren discusses leveraging the six cybersecurity domains to develop a Zero Trust Architecture to protect your resources, data, and critical infrastructure."
+description: "In this episode, Darren discusses leveraging the six cybersecurity domains to develop a Zero Trust Architecture to protect your resources, data, and critical infrastructure."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="cf6123e0" title="#125 Ways to Reduce Cybersecurity Risk" %}
 
 {% include youtube.html id="1vTOR_h8r3o" %}
+</div>
 
 ---
 

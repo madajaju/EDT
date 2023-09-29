@@ -18,12 +18,17 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode, Darren Pulsipher, Intel Chief Solution Architect, Public Sector, explores how organizations can move from simply hoarding data to using it as a strategic asset."
+description: "In this episode, Darren Pulsipher, Intel Chief Solution Architect, Public Sector, explores how organizations can move from simply hoarding data to using it as a strategic asset."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="f15f756b" title="#19 Using Data as a Strategic Asset" %}
 
 {% include youtube.html id="TNIK5d9oM4A" %}
+</div>
 
 ---
 

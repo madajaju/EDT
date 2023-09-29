@@ -20,12 +20,17 @@ guests:
     - Sam Ceccola
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode Darren interviews Ken White from Dell Technology about how Cloud technology is more than technology, but a process and cultural change in organizations."
+description: "In this episode Darren interviews Ken White from Dell Technology about how Cloud technology is more than technology, but a process and cultural change in organizations."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="fdf8c82e" title="#138 Evolution of Cloud" %}
 
 {% include youtube.html id="Woc49CCq27g" %}
+</div>
 
 ---
 

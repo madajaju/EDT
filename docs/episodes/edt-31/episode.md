@@ -21,12 +21,17 @@ guests:
     - Neil Bahandur
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In part one of two episodes, Sean Chou, Catalytic CEO, and Neil Bahandur, Catalytic Head of Partnerships, join Darren to talk about Catalytic’s technology and how RPAs can help employees become more valuable through automation of back office repeatable processes. "
+description: "In part one of two episodes, Sean Chou, Catalytic CEO, and Neil Bahandur, Catalytic Head of Partnerships, join Darren to talk about Catalytic’s technology and how RPAs can help employees become more valuable through automation of back office repeatable processes. "
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="c6fb8072" title="#31 Improving Employee Value with Catalytic" %}
 
 {% include youtube.html id="ed5AQMAwJjc" %}
+</div>
 
 ---
 

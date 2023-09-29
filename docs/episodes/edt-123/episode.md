@@ -21,12 +21,17 @@ guests:
     - Jim Richberg
 
 img: thumbnail.jpg
+image: thumbnail.jpg
 summary: "In this episode, Darren interviews Jim Richberg Forinet's Field CISO of the Public Sector, discussing the differences in cybersecurity in the public sector. The federal government is very different from state and local governments concerning cybersecurity and their approaches."
+description: "In this episode, Darren interviews Jim Richberg Forinet's Field CISO of the Public Sector, discussing the differences in cybersecurity in the public sector. The federal government is very different from state and local governments concerning cybersecurity and their approaches."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="e5e637d3" title="#123 Cybersecurity in Public Sector" %}
 
 {% include youtube.html id="o9R9W5x_frA" %}
+</div>
 
 ---
 

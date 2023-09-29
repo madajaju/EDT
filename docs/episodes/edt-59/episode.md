@@ -22,12 +22,17 @@ guests:
     - Jeremy Harris
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect, Intel, discusses what data privacy really means and its future direction with Jeremy Harris, Assistant General Counsel – Privacy/Information Security, at Sutter Health."
+description: "Darren Pulsipher, Chief Solution Architect, Intel, discusses what data privacy really means and its future direction with Jeremy Harris, Assistant General Counsel – Privacy/Information Security, at Sutter Health."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="e9b6d30c" title="#59 Evolution of Data Privacy" %}
 
 {% include youtube.html id="Bjcs4C1_bj8" %}
+</div>
 
 ---
 

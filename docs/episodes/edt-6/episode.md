@@ -22,12 +22,17 @@ guests:
     - Pete Schmitz
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode, Darren, Tim Flynn, Retired Rear Admiral of the Navy, and Pete Schmitz, Account Executive for the Navy from Intel, talk about how to manage the explosive growth of teleworkers due to the Covid-19 pandemic. We discuss the different modes that workers can use to work remotely and still be productive: device as a dumb terminal, device as part of the internal network and device as a portal to services. Understanding these modes of operation can help find bottlenecks that can hamper the effectiveness of your team."
+description: "In this episode, Darren, Tim Flynn, Retired Rear Admiral of the Navy, and Pete Schmitz, Account Executive for the Navy from Intel, talk about how to manage the explosive growth of teleworkers due to the Covid-19 pandemic. We discuss the different modes that workers can use to work remotely and still be productive: device as a dumb terminal, device as part of the internal network and device as a portal to services. Understanding these modes of operation can help find bottlenecks that can hamper the effectiveness of your team."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="24d6e2c7" title="#6 Managing Telework at Capacity" %}
 
 {% include youtube.html id="-uQJGrcYnZ8" %}
+</div>
 
 ---
 

@@ -17,12 +17,17 @@ guests:
     - Cameron Chehreh
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "On this episode, Darren discusses zero trust security with Intel’s Steve Orrin, CTO Public Sector, and Cameron Chehreh, VP-GM Public Sector."
+description: "On this episode, Darren discusses zero trust security with Intel’s Steve Orrin, CTO Public Sector, and Cameron Chehreh, VP-GM Public Sector."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="e3f35ec7" title="#84 Securing Your Castle with Zero-Trust" %}
 
 {% include youtube.html id="BymmhNfm6pE" %}
+</div>
 
 ---
 

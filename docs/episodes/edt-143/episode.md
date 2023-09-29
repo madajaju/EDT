@@ -19,12 +19,17 @@ guests:
     - Jesse Schrater
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode of Embracing Digital Transformation Dr. Anna Scott continues her conversation with Ibett Acarapi and Jesse Schrater about Confidential Computing and their uses in AI, and software development."
+description: "In this episode of Embracing Digital Transformation Dr. Anna Scott continues her conversation with Ibett Acarapi and Jesse Schrater about Confidential Computing and their uses in AI, and software development."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="896bc6e3" title="#143 Use Cases in Confidential Computing" %}
 
 {% include youtube.html id="NZWVC4VLWL4" %}
+</div>
 
 ---
 

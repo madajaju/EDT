@@ -20,12 +20,17 @@ guests:
     - Gretchen Stewart
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "In this episode Darren interviews Gretchen Stewart, Chief Data Scientist of Public Sector at Intel where they discuss the trustworthiness and ethics of artificial intelligence."
+description: "In this episode Darren interviews Gretchen Stewart, Chief Data Scientist of Public Sector at Intel where they discuss the trustworthiness and ethics of artificial intelligence."
 ---
 
+<div>
+<h3>Listen Here</h3>
 {% include transistor.html id="f7d561ee" title="#135 Trustworthy and Ethical AI" %}
 
 {% include youtube.html id="bY8d4oeW60c" %}
+</div>
 
 ---
 
