@@ -47,10 +47,13 @@ image: {{page.img}}
 
 </style>
 
-{% include subscribe_brief.html %}
 <h1>{{ page.title }}</h1>
+{% include subscribe_brief.html %}
 <div>
-    <p><i><b>Keywords:</b>
+    <p>{{ page.summary }}</p>
+
+    <h3>>Keywords</h3>
+    <p><i>
         {% for tag in page.tags %}
         <a href="/tags/{{ tag | replace: ' ', '-' }}">#{{ tag }}</a>
         {% endfor %}
@@ -63,16 +66,15 @@ image: {{page.img}}
 
 
 {{ content }}
-
+<!--
 <script src="https://utteranc.es/client.js"
         repo="madajaju/EDT"
         issue-term="pathname"
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script>
+</script>-->
 
-<!--
 <script src="https://giscus.app/client.js"
         data-repo="madajaju/EDT"
         data-repo-id="R_kgDOI3w9Tw"
@@ -88,4 +90,3 @@ image: {{page.img}}
         crossorigin="anonymous"
         async>
 </script>
--->

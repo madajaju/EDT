@@ -47,9 +47,11 @@ image: {{page.img}}
 
 </style>
 
-{% include subscribe_posts.html %}
 
 <h1>#{{ page.number }} {{ page.title }}</h1>
+
+{% include subscribe_posts.html %}
+
 <div>
     <img src="{{ page.path | remove: page.name }}/{{ page.img }}" width="256" height="256" class="thumbnail">
     <p><i>on {{page.date}} </i></p>
@@ -58,22 +60,25 @@ image: {{page.img}}
         <a href="/guests/{{ guest | replace: ' ', '-'}}">{{ guest }}</a>,
         {% endfor %}
     </i></p>
-    <p><i><b>Keywords:</b>
-        {% for tag in page.tags %}
-        <a href="/tags/{{ tag | replace: ' ', '-' }}">#{{ tag }}</a>
-        {% endfor %}
-    </i></p>
+    <p>
+    {{ page.summary }}
+    </p>
 </div>
-
-<hr>
+<br>
 
 <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
 
-
-{{ page.summary }}
-
+<h3>Keywords</h3>
+<p><i>
+    {% for tag in page.tags %}
+    <a href="/tags/{{ tag | replace: ' ', '-' }}">#{{ tag }}</a>
+    {% endfor %}
+</i></p>
+<div>
 {{ content }}
+</div>
 
+<!--
 
 <script src="https://utteranc.es/client.js"
         repo="madajaju/EDT"
@@ -82,8 +87,8 @@ image: {{page.img}}
         crossorigin="anonymous"
         async>
 </script>
+-->
 
-<!--
 <script src="https://giscus.app/client.js"
         data-repo="madajaju/EDT"
         data-repo-id="R_kgDOI3w9Tw"
@@ -99,4 +104,3 @@ image: {{page.img}}
         crossorigin="anonymous"
         async>
 </script>
--->

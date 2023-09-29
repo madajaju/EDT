@@ -23,8 +23,6 @@ summary: "For the week of February 6, 2023. News from around the world of digita
 
 {% include transistor.html id="9a914f38" %}
 
-
-
 {% include youtube.html id="XSOJHnr-4TY" %}
 
 ---
