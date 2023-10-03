@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-03-20"
+title: 2023-03-20
 number: 7
 ref: brief-EDW7-it
+permalink: brief-EDW7-it
 lang: it
 has_children: false
-parent: Italiano
-grand_parent: Weekly Briefs
+parent: Riepilogo Settimanale
+grand_parent: Italiano
 nav_order: 7
 tags:
     - ai
@@ -18,7 +19,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "Summary"
+image: thumbnail.png
+summary: Summary
+video: https://youtu.be/
+description: Summary
 ---
 
 

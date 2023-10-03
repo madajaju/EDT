@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-05-29"
+title: 2023-05-29
 number: 17
 ref: brief-EDW17-en
+permalink: brief-EDW17-en
 lang: en
 has_children: false
-parent: English
-grand_parent: Weekly Briefs
+parent: News Briefs
+grand_parent: English
 nav_order: 17
 tags:
 
@@ -14,7 +15,10 @@ date: Mon May 29 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
 
 img: thumbnail.png
-summary: "News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments."
+image: thumbnail.png
+summary: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
+video: https://youtu.be/g853XRlOVHM
+description: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
 ---
 
 {% include transistor.html id="abcbbfc8" %}

@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-07-10"
+title: 2023-07-10
 number: 23
 ref: brief-EDW23-es
+permalink: brief-EDW23-es
 lang: es
 has_children: false
-parent: Español
-grand_parent: Weekly Briefs
+parent: Noticias Semanales
+grand_parent: Español
 nav_order: 23
 tags:
     - ai
@@ -21,7 +22,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "Here&#39;s the latest news in digital transformation for July 10, 2023. The ongoing trade war is starting to impact cloud services. Additionally, there&#39;s speculation that the hype around generative AI may be slowing down. On the cybersecurity front, there are concerns about whether we&#39;re doing enough to stay ahead of malicious actors."
+image: thumbnail.png
+summary: Here&#39;s the latest news in digital transformation for July 10, 2023. The ongoing trade war is starting to impact cloud services. Additionally, there&#39;s speculation that the hype around generative AI may be slowing down. On the cybersecurity front, there are concerns about whether we&#39;re doing enough to stay ahead of malicious actors.
+video: https://youtu.be/CBqgsyfAJ0k
+description: Here&#39;s the latest news in digital transformation for July 10, 2023. The ongoing trade war is starting to impact cloud services. Additionally, there&#39;s speculation that the hype around generative AI may be slowing down. On the cybersecurity front, there are concerns about whether we&#39;re doing enough to stay ahead of malicious actors.
 ---
 
 {% include transistor.html id="2d6d9f45" %}

@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-07-31"
+title: 2023-07-31
 number: 26
 ref: brief-EDW26-en
+permalink: brief-EDW26-en
 lang: en
 has_children: false
-parent: English
-grand_parent: Weekly Briefs
+parent: News Briefs
+grand_parent: English
 nav_order: 26
 tags:
     - ai
@@ -21,7 +22,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "Here are the latest updates in the field of Digital Transformation for the week of July 31, 2023. This includes news on the partnership between Ericsson and Intel in advancing 5G technology, ChatGPT's efforts in tackling cybersecurity, and the emergence of AI-powered software development."
+image: thumbnail.png
+summary: Here are the latest updates in the field of Digital Transformation for the week of July 31, 2023. This includes news on the partnership between Ericsson and Intel in advancing 5G technology, ChatGPT's efforts in tackling cybersecurity, and the emergence of AI-powered software development.
+video: https://youtu.be/Odfl_fJTeKU
+description: Here are the latest updates in the field of Digital Transformation for the week of July 31, 2023. This includes news on the partnership between Ericsson and Intel in advancing 5G technology, ChatGPT's efforts in tackling cybersecurity, and the emergence of AI-powered software development.
 ---
 
 {% include transistor.html id="ddd3778e" %}

@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-06-05"
+title: 2023-06-05
 number: 18
 ref: brief-EDW18-fr
+permalink: brief-EDW18-fr
 lang: fr
 has_children: false
-parent: Français
-grand_parent: Weekly Briefs
+parent: Nouvelles hebdomadaires
+grand_parent: Français
 nav_order: 18
 tags:
     - ai
@@ -18,7 +19,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "Digital transformation news for June 6, 2023. This week more jobs in AI, major cyber security breaches, and cloud technology best practices."
+image: thumbnail.png
+summary: Digital transformation news for June 6, 2023. This week more jobs in AI, major cyber security breaches, and cloud technology best practices.
+video: https://youtu.be/QCtR9mWoRxI
+description: Digital transformation news for June 6, 2023. This week more jobs in AI, major cyber security breaches, and cloud technology best practices.
 ---
 
 {% include transistor.html id="57780f55" %}

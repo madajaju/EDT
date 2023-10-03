@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-06-26"
+title: 2023-06-26
 number: 21
 ref: brief-EDW21-it
+permalink: brief-EDW21-it
 lang: it
 has_children: false
-parent: Italiano
-grand_parent: Weekly Briefs
+parent: Riepilogo Settimanale
+grand_parent: Italiano
 nav_order: 21
 tags:
     - ai
@@ -18,7 +19,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "News this week, June 26, 2023,  in digital transformation, including increased attacks in the cyber war, everyone jumping onto the generative AI bandwagon, and virtualized radio area networks."
+image: thumbnail.png
+summary: News this week, June 26, 2023,  in digital transformation, including increased attacks in the cyber war, everyone jumping onto the generative AI bandwagon, and virtualized radio area networks.
+video: https://youtu.be/GbxX8poRWjU
+description: News this week, June 26, 2023,  in digital transformation, including increased attacks in the cyber war, everyone jumping onto the generative AI bandwagon, and virtualized radio area networks.
 ---
 
 {% include transistor.html id="f7ad6e40" %}

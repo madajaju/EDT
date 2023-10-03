@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-06-19"
+title: 2023-06-19
 number: 20
 ref: brief-EDW20-en
+permalink: brief-EDW20-en
 lang: en
 has_children: false
-parent: English
-grand_parent: Weekly Briefs
+parent: News Briefs
+grand_parent: English
 nav_order: 20
 tags:
     - ai
@@ -21,7 +22,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "Digital Transformation news from the week of June 19, 2023 including stories of managers replacing workers with AI, Cloud outages again, and privacy laws taking a bite out of big tech."
+image: thumbnail.png
+summary: Digital Transformation news from the week of June 19, 2023 including stories of managers replacing workers with AI, Cloud outages again, and privacy laws taking a bite out of big tech.
+video: https://youtu.be/e7ihne_LW6o
+description: Digital Transformation news from the week of June 19, 2023 including stories of managers replacing workers with AI, Cloud outages again, and privacy laws taking a bite out of big tech.
 ---
 
 {% include transistor.html id="aef09a72" %}

@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-05-01"
+title: 2023-05-01
 number: 13
 ref: brief-EDW13-en
+permalink: brief-EDW13-en
 lang: en
 has_children: false
-parent: English
-grand_parent: Weekly Briefs
+parent: News Briefs
+grand_parent: English
 nav_order: 13
 tags:
     - ai
@@ -18,7 +19,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space."
+image: thumbnail.png
+summary: News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space.
+video: https://youtu.be/trEhrASxsM4
+description: News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space.
 ---
 
 {% include transistor.html id="72c58c47" %}

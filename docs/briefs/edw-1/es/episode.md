@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-02-06"
+title: 2023-02-06
 number: 1
 ref: brief-EDW1-es
+permalink: brief-EDW1-es
 lang: es
 has_children: false
-parent: Español
-grand_parent: Weekly Briefs
+parent: Noticias Semanales
+grand_parent: Español
 nav_order: 1
 tags:
     - ai
@@ -18,7 +19,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity."
+image: thumbnail.png
+summary: For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity.
+video: https://youtu.be/vtrnskZPA9Murl
+description: For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity.
 ---
 
 {% include transistor.html id="d0473beb" %}

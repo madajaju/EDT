@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-03-13"
+title: 2023-03-13
 number: 6
 ref: brief-EDW6-en
+permalink: brief-EDW6-en
 lang: en
 has_children: false
-parent: English
-grand_parent: Weekly Briefs
+parent: News Briefs
+grand_parent: English
 nav_order: 6
 tags:
 
@@ -14,7 +15,10 @@ date: Mon Mar 13 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
 
 img: thumbnail.png
-summary: "Summary"
+image: thumbnail.png
+summary: Summary
+video: https://youtu.be/ZM2kFyMI7UE
+description: Summary
 ---
 
 {% include transistor.html id="878ced44" %}

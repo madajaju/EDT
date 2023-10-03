@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-05-15"
+title: 2023-05-15
 number: 15
 ref: brief-EDW15-en
+permalink: brief-EDW15-en
 lang: en
 has_children: false
-parent: English
-grand_parent: Weekly Briefs
+parent: News Briefs
+grand_parent: English
 nav_order: 15
 tags:
     - ai
@@ -18,7 +19,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "News from the week of May 15, 2023 in digital transformation including stories from Edge Computing, Cybersecurity, and Artificial Intelligence."
+image: thumbnail.png
+summary: News from the week of May 15, 2023 in digital transformation including stories from Edge Computing, Cybersecurity, and Artificial Intelligence.
+video: https://youtu.be/ugAE476ROCA
+description: News from the week of May 15, 2023 in digital transformation including stories from Edge Computing, Cybersecurity, and Artificial Intelligence.
 ---
 
 {% include transistor.html id="7475f05c" %}

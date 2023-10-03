@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-09-24"
+title: 2023-09-24
 number: 34
 ref: brief-EDW34-pt
+permalink: brief-EDW34-pt
 lang: pt
 has_children: false
-parent: Português
-grand_parent: Weekly Briefs
+parent: Notícias Semanais
+grand_parent: Português
 nav_order: 34
 tags:
     - ai
@@ -21,7 +22,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "Digital Transformation news for September 24, 2023, includes artificial intelligence, ubiquitous computing, and cybersecurity. Listen about Intel’s new CPUs changing AI and high-density computing and how a hacker group of teenagers took down Las Vegas’ MGM casinos."
+image: thumbnail.png
+summary: Digital Transformation news for September 24, 2023, includes artificial intelligence, ubiquitous computing, and cybersecurity. Listen about Intel’s new CPUs changing AI and high-density computing and how a hacker group of teenagers took down Las Vegas’ MGM casinos.
+video: https://youtu.be/s2LMxWAnXyI
+description: Digital Transformation news for September 24, 2023, includes artificial intelligence, ubiquitous computing, and cybersecurity. Listen about Intel’s new CPUs changing AI and high-density computing and how a hacker group of teenagers took down Las Vegas’ MGM casinos.
 ---
 
 {% include transistor.html id="feb27974" %}

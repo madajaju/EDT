@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-09-17"
+title: 2023-09-17
 number: 33
 ref: brief-EDW33-fr
+permalink: brief-EDW33-fr
 lang: fr
 has_children: false
-parent: Français
-grand_parent: Weekly Briefs
+parent: Nouvelles hebdomadaires
+grand_parent: Français
 nav_order: 33
 tags:
     - aisummit
@@ -39,7 +40,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "Stay up-to-date with the latest news in digital transformation for the week of September 17, 2023. Get the latest updates on artificial intelligence, edge computing, and cybersecurity. This week&#39;s highlights include Microsoft uncovering vulnerabilities in their competitors&#39; software, Amazon implementing AI disclosure requirements, and a comprehensive list of upcoming IoT conferences this fall."
+image: thumbnail.png
+summary: Stay up-to-date with the latest news in digital transformation for the week of September 17, 2023. Get the latest updates on artificial intelligence, edge computing, and cybersecurity. This week&#39;s highlights include Microsoft uncovering vulnerabilities in their competitors&#39; software, Amazon implementing AI disclosure requirements, and a comprehensive list of upcoming IoT conferences this fall.
+video: https://youtu.be/rv6VBFAiB_w
+description: Stay up-to-date with the latest news in digital transformation for the week of September 17, 2023. Get the latest updates on artificial intelligence, edge computing, and cybersecurity. This week&#39;s highlights include Microsoft uncovering vulnerabilities in their competitors&#39; software, Amazon implementing AI disclosure requirements, and a comprehensive list of upcoming IoT conferences this fall.
 ---
 
 {% include transistor.html id="266606d1" %}

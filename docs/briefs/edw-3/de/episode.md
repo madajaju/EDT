@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-02-20"
+title: 2023-02-20
 number: 3
 ref: brief-EDW3-de
+permalink: brief-EDW3-de
 lang: de
 has_children: false
-parent: Deutsch
-grand_parent: Weekly Briefs
+parent: Wöchentliche Nachrichten
+grand_parent: Deutsch
 nav_order: 3
 tags:
 
@@ -14,7 +15,10 @@ date: Mon Feb 20 2023 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:
 
 img: thumbnail.png
-summary: "Summary"
+image: thumbnail.png
+summary: Summary
+video: https://youtu.be/
+description: Summary
 ---
 
 

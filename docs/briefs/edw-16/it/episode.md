@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-05-22"
+title: 2023-05-22
 number: 16
 ref: brief-EDW16-it
+permalink: brief-EDW16-it
 lang: it
 has_children: false
-parent: Italiano
-grand_parent: Weekly Briefs
+parent: Riepilogo Settimanale
+grand_parent: Italiano
 nav_order: 16
 tags:
 
@@ -14,7 +15,10 @@ date: Mon May 22 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
 
 img: thumbnail.png
-summary: "Digital Transformation news for the week of May 29, 2023. In this episode."
+image: thumbnail.png
+summary: Digital Transformation news for the week of May 29, 2023. In this episode.
+video: https://youtu.be/
+description: Digital Transformation news for the week of May 29, 2023. In this episode.
 ---
 
 

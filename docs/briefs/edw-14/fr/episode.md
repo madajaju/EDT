@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-05-08"
+title: 2023-05-08
 number: 14
 ref: brief-EDW14-fr
+permalink: brief-EDW14-fr
 lang: fr
 has_children: false
-parent: Français
-grand_parent: Weekly Briefs
+parent: Nouvelles hebdomadaires
+grand_parent: Français
 nav_order: 14
 tags:
     - ai
@@ -21,7 +22,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "News in Digital Transformation for the week of May 8, 2023 including "
+image: thumbnail.png
+summary: News in Digital Transformation for the week of May 8, 2023 including 
+video: https://youtu.be/
+description: News in Digital Transformation for the week of May 8, 2023 including 
 ---
 
 

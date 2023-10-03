@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-04-24"
+title: 2023-04-24
 number: 12
 ref: brief-EDW12-en
+permalink: brief-EDW12-en
 lang: en
 has_children: false
-parent: English
-grand_parent: Weekly Briefs
+parent: News Briefs
+grand_parent: English
 nav_order: 12
 tags:
     - ai
@@ -18,7 +19,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "Summary"
+image: thumbnail.png
+summary: Summary
+video: https://youtu.be/-Ow1qz4SZq4
+description: Summary
 ---
 
 {% include transistor.html id="ebc11ef3" %}

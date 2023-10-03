@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-04-03"
+title: 2023-04-03
 number: 9
 ref: brief-EDW9-de
+permalink: brief-EDW9-de
 lang: de
 has_children: false
-parent: Deutsch
-grand_parent: Weekly Briefs
+parent: Wöchentliche Nachrichten
+grand_parent: Deutsch
 nav_order: 9
 tags:
     - ai
@@ -21,7 +22,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "Summary"
+image: thumbnail.png
+summary: Summary
+video: https://youtu.be/
+description: Summary
 ---
 
 

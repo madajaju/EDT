@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-04-24"
+title: 2023-04-24
 number: 12
 ref: brief-EDW12-pt
+permalink: brief-EDW12-pt
 lang: pt
 has_children: false
-parent: Português
-grand_parent: Weekly Briefs
+parent: Notícias Semanais
+grand_parent: Português
 nav_order: 12
 tags:
     - ai
@@ -18,7 +19,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "Summary"
+image: thumbnail.png
+summary: Summary
+video: https://youtu.be/
+description: Summary
 ---
 
 

@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-03-13"
+title: 2023-03-13
 number: 6
 ref: brief-EDW6-it
+permalink: brief-EDW6-it
 lang: it
 has_children: false
-parent: Italiano
-grand_parent: Weekly Briefs
+parent: Riepilogo Settimanale
+grand_parent: Italiano
 nav_order: 6
 tags:
 
@@ -14,7 +15,10 @@ date: Mon Mar 13 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
 
 img: thumbnail.png
-summary: "Summary"
+image: thumbnail.png
+summary: Summary
+video: https://youtu.be/
+description: Summary
 ---
 
 

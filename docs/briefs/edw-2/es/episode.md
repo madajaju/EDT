@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-02-13"
+title: 2023-02-13
 number: 2
 ref: brief-EDW2-es
+permalink: brief-EDW2-es
 lang: es
 has_children: false
-parent: Español
-grand_parent: Weekly Briefs
+parent: Noticias Semanales
+grand_parent: Español
 nav_order: 2
 tags:
 
@@ -14,7 +15,10 @@ date: Mon Feb 13 2023 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:
 
 img: thumbnail.png
-summary: "Summary"
+image: thumbnail.png
+summary: Summary
+video: https://youtu.be/EUGT81L_fGQ
+description: Summary
 ---
 
 {% include transistor.html id="2411894e" %}

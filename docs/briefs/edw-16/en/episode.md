@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-05-22"
+title: 2023-05-22
 number: 16
 ref: brief-EDW16-en
+permalink: brief-EDW16-en
 lang: en
 has_children: false
-parent: English
-grand_parent: Weekly Briefs
+parent: News Briefs
+grand_parent: English
 nav_order: 16
 tags:
 
@@ -14,7 +15,10 @@ date: Mon May 22 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
 
 img: thumbnail.png
-summary: "Digital Transformation news for the week of May 29, 2023. In this episode."
+image: thumbnail.png
+summary: Digital Transformation news for the week of May 29, 2023. In this episode.
+video: https://youtu.be/YOQyDhW6eJA
+description: Digital Transformation news for the week of May 29, 2023. In this episode.
 ---
 
 {% include transistor.html id="d63b64bc" %}

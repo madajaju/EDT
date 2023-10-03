@@ -1,6 +1,6 @@
 ---
 layout: brief
-title: "2023-02-06"
+title: 2023-02-06
 number: 1
 ref: brief-EDW1-de
 permalink: brief-EDW1-de
@@ -20,11 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity."
-video: "https://youtu.be/function (...args) {
-            return stateNetHandler.processEvent(this, obj, prop, args);
-        }"
-description: "For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity."
+summary: For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity.
+video: https://youtu.be/
+description: For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity.
 ---
 
 

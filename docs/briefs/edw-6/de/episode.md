@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-03-13"
+title: 2023-03-13
 number: 6
 ref: brief-EDW6-de
+permalink: brief-EDW6-de
 lang: de
 has_children: false
-parent: Deutsch
-grand_parent: Weekly Briefs
+parent: Wöchentliche Nachrichten
+grand_parent: Deutsch
 nav_order: 6
 tags:
 
@@ -14,7 +15,10 @@ date: Mon Mar 13 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
 
 img: thumbnail.png
-summary: "Summary"
+image: thumbnail.png
+summary: Summary
+video: https://youtu.be/
+description: Summary
 ---
 
 

@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-09-10"
+title: 2023-09-10
 number: 32
 ref: brief-EDW32-en
+permalink: brief-EDW32-en
 lang: en
 has_children: false
-parent: English
-grand_parent: Weekly Briefs
+parent: News Briefs
+grand_parent: English
 nav_order: 32
 tags:
     - ai
@@ -34,7 +35,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "Get the latest digital news for the week of September 10, 2023 covering Artificial Intelligence, Cybersecurity, and Ubiquitous Computing. This week, learn about a new iPhone cyber threat, the birthplace of GPT-4, and MIT's approach to tackling quantum computing uncertainty."
+image: thumbnail.png
+summary: Get the latest digital news for the week of September 10, 2023 covering Artificial Intelligence, Cybersecurity, and Ubiquitous Computing. This week, learn about a new iPhone cyber threat, the birthplace of GPT-4, and MIT's approach to tackling quantum computing uncertainty.
+video: https://youtu.be/_xbfsWr6Kn8
+description: Get the latest digital news for the week of September 10, 2023 covering Artificial Intelligence, Cybersecurity, and Ubiquitous Computing. This week, learn about a new iPhone cyber threat, the birthplace of GPT-4, and MIT's approach to tackling quantum computing uncertainty.
 ---
 
 {% include transistor.html id="7ca02c21" %}

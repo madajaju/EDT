@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "2023-02-27"
+title: 2023-02-27
 number: 4
 ref: brief-EDW4-fr
+permalink: brief-EDW4-fr
 lang: fr
 has_children: false
-parent: Français
-grand_parent: Weekly Briefs
+parent: Nouvelles hebdomadaires
+grand_parent: Français
 nav_order: 4
 tags:
 
@@ -14,7 +15,10 @@ date: Mon Feb 27 2023 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:
 
 img: thumbnail.png
-summary: "Summary"
+image: thumbnail.png
+summary: Summary
+video: https://youtu.be/
+description: Summary
 ---
 
 

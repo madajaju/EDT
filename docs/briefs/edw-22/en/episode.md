@@ -1,12 +1,13 @@
 ---
 layout: brief
-title: "07-03-2023"
+title: 07-03-2023
 number: 22
 ref: brief-EDW22-en
+permalink: brief-EDW22-en
 lang: en
 has_children: false
-parent: English
-grand_parent: Weekly Briefs
+parent: News Briefs
+grand_parent: English
 nav_order: 22
 tags:
     - ai
@@ -21,7 +22,10 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
-summary: "For the week of July 3, 2023, in digital transformation news. Is AI finding a replacement for Alexa and Siri? Can we hear our data? And where are the cloud service providers making it rain money?"
+image: thumbnail.png
+summary: For the week of July 3, 2023, in digital transformation news. Is AI finding a replacement for Alexa and Siri? Can we hear our data? And where are the cloud service providers making it rain money?
+video: https://youtu.be/Mk1b4pDRYCU
+description: For the week of July 3, 2023, in digital transformation news. Is AI finding a replacement for Alexa and Siri? Can we hear our data? And where are the cloud service providers making it rain money?
 ---
 
 {% include transistor.html id="19c1a84d" %}
