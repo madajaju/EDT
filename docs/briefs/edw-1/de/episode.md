@@ -3,10 +3,11 @@ layout: brief
 title: "2023-02-06"
 number: 1
 ref: brief-EDW1-de
+permalink: brief-EDW1-de
 lang: de
 has_children: false
-parent: Deutsch
-grand_parent: Weekly Briefs
+parent: Wöchentliche Nachrichten
+grand_parent: Deutsch
 nav_order: 1
 tags:
     - ai
@@ -18,7 +19,12 @@ guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
+image: thumbnail.png
 summary: "For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity."
+video: "https://youtu.be/function (...args) {
+            return stateNetHandler.processEvent(this, obj, prop, args);
+        }"
+description: "For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity."
 ---
 
 
