@@ -36,16 +36,22 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Get the latest digital news for the week of September 10, 2023 covering Artificial Intelligence, Cybersecurity, and Ubiquitous Computing. This week, learn about a new iPhone cyber threat, the birthplace of GPT-4, and MIT's approach to tackling quantum computing uncertainty.
+summary: Obtenga las últimas noticias digitales para la semana del 10 de septiembre de 2023 que abarcan Inteligencia Artificial, Ciberseguridad y Computación Ubicua. Esta semana, conozca sobre una nueva amenaza cibernética para iPhone, el lugar de nacimiento de GPT-4 y el enfoque del MIT para abordar la incertidumbre de la computación cuántica.
+
+Get the latest digital news for the week of September 10, 2023 covering Artificial Intelligence, Cybersecurity, and Ubiquitous Computing. This week, learn about a new iPhone cyber threat, the birthplace of GPT-4, and MIT's approach to tackling quantum computing uncertainty.
 video: https://youtu.be/_xbfsWr6Kn8
-description: Get the latest digital news for the week of September 10, 2023 covering Artificial Intelligence, Cybersecurity, and Ubiquitous Computing. This week, learn about a new iPhone cyber threat, the birthplace of GPT-4, and MIT's approach to tackling quantum computing uncertainty.
+description: Obtenga las últimas noticias digitales para la semana del 10 de septiembre de 2023 que abarcan Inteligencia Artificial, Ciberseguridad y Computación Ubicua. Esta semana, conozca sobre una nueva amenaza cibernética para iPhone, el lugar de nacimiento de GPT-4 y el enfoque del MIT para abordar la incertidumbre de la computación cuántica.
+
+Get the latest digital news for the week of September 10, 2023 covering Artificial Intelligence, Cybersecurity, and Ubiquitous Computing. This week, learn about a new iPhone cyber threat, the birthplace of GPT-4, and MIT's approach to tackling quantum computing uncertainty.
 ---
+
 
 {% include transistor.html id="7ca02c21" %}
 
 
 
 {% include youtube.html id="_xbfsWr6Kn8" %}
+
 
 ---
 

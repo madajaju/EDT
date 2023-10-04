@@ -20,10 +20,12 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digital Transformation for the week of June 12, 2023, includes a 1 million cyber force development, many cloud outages, and AI writing code going into the C++ standard library.
+summary: Transformation numérique pour la semaine du 12 juin 2023, comprend un développement d'1 million de forces cybernétiques, de nombreuses pannes de cloud, et l'écriture de code par l'IA qui entre dans la bibliothèque standard de C++.
 video: https://youtu.be/
-description: Digital Transformation for the week of June 12, 2023, includes a 1 million cyber force development, many cloud outages, and AI writing code going into the C++ standard library.
+description: Transformation numérique pour la semaine du 12 juin 2023, comprend un développement d'1 million de forces cybernétiques, de nombreuses pannes de cloud, et l'écriture de code par l'IA qui entre dans la bibliothèque standard de C++.
 ---
+
+
 
 
 

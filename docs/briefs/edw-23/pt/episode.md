@@ -23,10 +23,12 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Here&#39;s the latest news in digital transformation for July 10, 2023. The ongoing trade war is starting to impact cloud services. Additionally, there&#39;s speculation that the hype around generative AI may be slowing down. On the cybersecurity front, there are concerns about whether we&#39;re doing enough to stay ahead of malicious actors.
+summary: Aqui estão as últimas notícias sobre transformação digital em 10 de julho de 2023. A guerra comercial em andamento está começando a impactar os serviços em nuvem. Além disso, há especulações de que o entusiasmo em torno da IA generativa pode estar diminuindo. Na área de cibersegurança, existem preocupações sobre se estamos fazendo o suficiente para ficar à frente dos atores maliciosos.
 video: https://youtu.be/
-description: Here&#39;s the latest news in digital transformation for July 10, 2023. The ongoing trade war is starting to impact cloud services. Additionally, there&#39;s speculation that the hype around generative AI may be slowing down. On the cybersecurity front, there are concerns about whether we&#39;re doing enough to stay ahead of malicious actors.
+description: Aqui estão as últimas notícias sobre transformação digital em 10 de julho de 2023. A guerra comercial em andamento está começando a impactar os serviços em nuvem. Além disso, há especulações de que o entusiasmo em torno da IA generativa pode estar diminuindo. Na área de cibersegurança, existem preocupações sobre se estamos fazendo o suficiente para ficar à frente dos atores maliciosos.
 ---
+
+
 
 
 

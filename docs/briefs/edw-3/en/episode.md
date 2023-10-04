@@ -16,16 +16,18 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Summary
+summary: Unfortunately, I cannot provide a translation without a specific text or sentence to translate. Can you please provide the text or sentence you would like to be translated?
 video: https://youtu.be/pa08kaztW6w
-description: Summary
+description: Unfortunately, I cannot provide a translation without a specific text or sentence to translate. Can you please provide the text or sentence you would like to be translated?
 ---
+
 
 {% include transistor.html id="ba7b0162" %}
 
 
 
 {% include youtube.html id="pa08kaztW6w" %}
+
 
 ---
 

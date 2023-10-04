@@ -41,16 +41,18 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Stay up-to-date with the latest news in digital transformation for the week of September 17, 2023. Get the latest updates on artificial intelligence, edge computing, and cybersecurity. This week&#39;s highlights include Microsoft uncovering vulnerabilities in their competitors&#39; software, Amazon implementing AI disclosure requirements, and a comprehensive list of upcoming IoT conferences this fall.
+summary: Rester à jour avec les dernières nouvelles sur la transformation numérique pour la semaine du 17 septembre 2023. Obtenez les dernières mises à jour sur l'intelligence artificielle, l'informatique en périphérie et la cybersécurité. Les points forts de cette semaine incluent Microsoft qui découvre des vulnérabilités dans les logiciels de leurs concurrents, Amazon mettant en place des exigences de divulgation de l'IA, et une liste complète des prochaines conférences sur l'IoT cet automne.
 video: https://youtu.be/rv6VBFAiB_w
-description: Stay up-to-date with the latest news in digital transformation for the week of September 17, 2023. Get the latest updates on artificial intelligence, edge computing, and cybersecurity. This week&#39;s highlights include Microsoft uncovering vulnerabilities in their competitors&#39; software, Amazon implementing AI disclosure requirements, and a comprehensive list of upcoming IoT conferences this fall.
+description: Rester à jour avec les dernières nouvelles sur la transformation numérique pour la semaine du 17 septembre 2023. Obtenez les dernières mises à jour sur l'intelligence artificielle, l'informatique en périphérie et la cybersécurité. Les points forts de cette semaine incluent Microsoft qui découvre des vulnérabilités dans les logiciels de leurs concurrents, Amazon mettant en place des exigences de divulgation de l'IA, et une liste complète des prochaines conférences sur l'IoT cet automne.
 ---
+
 
 {% include transistor.html id="266606d1" %}
 
 
 
 {% include youtube.html id="rv6VBFAiB_w" %}
+
 
 ---
 

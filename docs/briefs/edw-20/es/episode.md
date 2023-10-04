@@ -23,16 +23,18 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digital Transformation news from the week of June 19, 2023 including stories of managers replacing workers with AI, Cloud outages again, and privacy laws taking a bite out of big tech.
+summary: Noticias de Transformación Digital de la semana del 19 de junio de 2023, que incluyen historias de gerentes reemplazando trabajadores con IA, nuevas interrupciones en la nube y leyes de privacidad afectando a la tecnología de gran escala.
 video: https://youtu.be/Xe55GkyAyaI
-description: Digital Transformation news from the week of June 19, 2023 including stories of managers replacing workers with AI, Cloud outages again, and privacy laws taking a bite out of big tech.
+description: Noticias de Transformación Digital de la semana del 19 de junio de 2023, que incluyen historias de gerentes reemplazando trabajadores con IA, nuevas interrupciones en la nube y leyes de privacidad afectando a la tecnología de gran escala.
 ---
+
 
 {% include transistor.html id="40676790" %}
 
 
 
 {% include youtube.html id="Xe55GkyAyaI" %}
+
 
 ---
 

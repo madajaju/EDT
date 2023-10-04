@@ -23,16 +23,18 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: For the week of July 3, 2023, in digital transformation news. Is AI finding a replacement for Alexa and Siri? Can we hear our data? And where are the cloud service providers making it rain money?
+summary: Pour la semaine du 3 juillet 2023, dans les actualités de la transformation numérique. L'IA trouve-t-elle un remplaçant pour Alexa et Siri ? Pouvons-nous entendre nos données ? Et où les fournisseurs de services cloud font-ils pleuvoir de l'argent ?
 video: https://youtu.be/qs5dyIUJ2wA
-description: For the week of July 3, 2023, in digital transformation news. Is AI finding a replacement for Alexa and Siri? Can we hear our data? And where are the cloud service providers making it rain money?
+description: Pour la semaine du 3 juillet 2023, dans les actualités de la transformation numérique. L'IA trouve-t-elle un remplaçant pour Alexa et Siri ? Pouvons-nous entendre nos données ? Et où les fournisseurs de services cloud font-ils pleuvoir de l'argent ?
 ---
+
 
 {% include transistor.html id="436c113d" %}
 
 
 
 {% include youtube.html id="qs5dyIUJ2wA" %}
+
 
 ---
 

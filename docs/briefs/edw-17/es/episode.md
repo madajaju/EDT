@@ -16,16 +16,18 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
+summary: Noticias sobre la adopción de lo digital para la semana del 29 de mayo de 2023, infórmese sobre más regulaciones para la inteligencia artificial, los crecientes ataques cibernéticos de los Estados-nación y las inversiones en cómputo en el borde.
 video: https://youtu.be/eUFjhvgYRHU
-description: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
+description: Noticias sobre la adopción de lo digital para la semana del 29 de mayo de 2023, infórmese sobre más regulaciones para la inteligencia artificial, los crecientes ataques cibernéticos de los Estados-nación y las inversiones en cómputo en el borde.
 ---
+
 
 {% include transistor.html id="eaecbeb0" %}
 
 
 
 {% include youtube.html id="eUFjhvgYRHU" %}
+
 
 ---
 

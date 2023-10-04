@@ -20,16 +20,18 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: News this week, June 26, 2023,  in digital transformation, including increased attacks in the cyber war, everyone jumping onto the generative AI bandwagon, and virtualized radio area networks.
+summary: Noticias de esta semana, 26 de junio de 2023, en transformación digital, que incluyen el aumento de los ataques en la guerra cibernética, todos subiéndose al carro de la inteligencia artificial generativa y las redes de área de radio virtualizadas.
 video: https://youtu.be/G39zoucda0A
-description: News this week, June 26, 2023,  in digital transformation, including increased attacks in the cyber war, everyone jumping onto the generative AI bandwagon, and virtualized radio area networks.
+description: Noticias de esta semana, 26 de junio de 2023, en transformación digital, que incluyen el aumento de los ataques en la guerra cibernética, todos subiéndose al carro de la inteligencia artificial generativa y las redes de área de radio virtualizadas.
 ---
+
 
 {% include transistor.html id="4a88769d" %}
 
 
 
 {% include youtube.html id="G39zoucda0A" %}
+
 
 ---
 

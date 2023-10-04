@@ -20,10 +20,12 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space.
+summary: Nachrichten und Geschichten der Woche vom 01. Mai 2023 in Bezug auf die digitale Transformation, einschließlich Cyberangriffe und der intelligenten Kante, KI zur nonverbalen Kommunikation und Firmenzusammenschlüsse im IoT-Bereich.
 video: https://youtu.be/
-description: News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space.
+description: Nachrichten und Geschichten der Woche vom 01. Mai 2023 in Bezug auf die digitale Transformation, einschließlich Cyberangriffe und der intelligenten Kante, KI zur nonverbalen Kommunikation und Firmenzusammenschlüsse im IoT-Bereich.
 ---
+
+
 
 
 

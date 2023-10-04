@@ -16,16 +16,18 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Summary
+summary: summary
 video: https://youtu.be/zaXs2VnLiVM
-description: Summary
+description: summary
 ---
+
 
 {% include transistor.html id="fbb08d2e" %}
 
 
 
 {% include youtube.html id="zaXs2VnLiVM" %}
+
 
 ---
 

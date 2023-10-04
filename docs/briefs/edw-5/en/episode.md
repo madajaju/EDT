@@ -21,11 +21,13 @@ video: https://youtu.be/ZM2kFyMI7UE
 description: Summary
 ---
 
+
 {% include transistor.html id="0fb95748" %}
 
 
 
 {% include youtube.html id="ZM2kFyMI7UE" %}
+
 
 ---
 

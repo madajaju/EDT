@@ -23,10 +23,12 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: News in Digital Transformation for the week of May 8, 2023 including 
+summary: Notícias na Transformação Digital para a semana de 8 de maio de 2023, incluindo
 video: https://youtu.be/
-description: News in Digital Transformation for the week of May 8, 2023 including 
+description: Notícias na Transformação Digital para a semana de 8 de maio de 2023, incluindo
 ---
+
+
 
 
 

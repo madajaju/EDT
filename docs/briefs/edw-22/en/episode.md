@@ -28,11 +28,13 @@ video: https://youtu.be/Mk1b4pDRYCU
 description: For the week of July 3, 2023, in digital transformation news. Is AI finding a replacement for Alexa and Siri? Can we hear our data? And where are the cloud service providers making it rain money?
 ---
 
+
 {% include transistor.html id="19c1a84d" %}
 
 
 
 {% include youtube.html id="Mk1b4pDRYCU" %}
+
 
 ---
 

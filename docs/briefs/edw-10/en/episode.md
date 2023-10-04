@@ -23,16 +23,18 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Summary
+summary: The requested text ("Summary") does not need to be translated as it is already in English.
 video: https://youtu.be/url
-description: Summary
+description: The requested text ("Summary") does not need to be translated as it is already in English.
 ---
+
 
 {% include transistor.html id="4c13c152" %}
 
 
 
 {% include youtube.html id="url" %}
+
 
 ---
 

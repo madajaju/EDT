@@ -36,16 +36,18 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Get the latest digital news for the week of September 10, 2023 covering Artificial Intelligence, Cybersecurity, and Ubiquitous Computing. This week, learn about a new iPhone cyber threat, the birthplace of GPT-4, and MIT's approach to tackling quantum computing uncertainty.
+summary: Obtenha as últimas notícias digitais para a semana de 10 de setembro de 2023, cobrindo Inteligência Artificial, Cibersegurança e Computação Ubíqua. Nesta semana, saiba sobre uma nova ameaça cibernética para o iPhone, o local de origem do GPT-4 e a abordagem do MIT para lidar com a incerteza da computação quântica.
 video: https://youtu.be/et96D1DvJX8
-description: Get the latest digital news for the week of September 10, 2023 covering Artificial Intelligence, Cybersecurity, and Ubiquitous Computing. This week, learn about a new iPhone cyber threat, the birthplace of GPT-4, and MIT's approach to tackling quantum computing uncertainty.
+description: Obtenha as últimas notícias digitais para a semana de 10 de setembro de 2023, cobrindo Inteligência Artificial, Cibersegurança e Computação Ubíqua. Nesta semana, saiba sobre uma nova ameaça cibernética para o iPhone, o local de origem do GPT-4 e a abordagem do MIT para lidar com a incerteza da computação quântica.
 ---
+
 
 {% include transistor.html id="e2478966" %}
 
 
 
 {% include youtube.html id="et96D1DvJX8" %}
+
 
 ---
 

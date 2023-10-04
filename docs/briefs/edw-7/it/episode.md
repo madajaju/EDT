@@ -20,10 +20,12 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Summary
+summary: Riepilogo
 video: https://youtu.be/
-description: Summary
+description: Riepilogo
 ---
+
+
 
 
 

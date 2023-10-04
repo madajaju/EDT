@@ -23,16 +23,18 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: In digital transformation news for the week of July 17, 2023, Pope Francis offers guidance on AI ethics, Intel remains America&#39;s cyber fortress, and the edge computing market is set to soar!
+summary: The translation in English is: "In digital transformation news for the week of July 17, 2023, Pope Francis offers guidance on AI ethics, Intel remains America's cyber fortress, and the edge computing market is set to soar!"
 video: https://youtu.be/dedU_w2FdqI
-description: In digital transformation news for the week of July 17, 2023, Pope Francis offers guidance on AI ethics, Intel remains America&#39;s cyber fortress, and the edge computing market is set to soar!
+description: The translation in English is: "In digital transformation news for the week of July 17, 2023, Pope Francis offers guidance on AI ethics, Intel remains America's cyber fortress, and the edge computing market is set to soar!"
 ---
+
 
 {% include transistor.html id="7aa30904" %}
 
 
 
 {% include youtube.html id="dedU_w2FdqI" %}
+
 
 ---
 

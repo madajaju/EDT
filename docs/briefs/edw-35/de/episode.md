@@ -33,16 +33,18 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digital transformation news for the week of October 1st including stories in data management, artificial intelligence, and cybersecurity. Come listen to the celebration of cybersecurity awareness month, an AI that makes Snoop Dogg a dungeon master for D&amp;D, and learn about a new data architecture Polystore.
+summary: Digitale Transformationsnachrichten für die Woche vom 1. Oktober, einschließlich Berichte über Datenmanagement, künstliche Intelligenz und Cybersicherheit. Kommt und hört die Feier des Monats der Cybersicherheitsaufklärung, eine KI, die Snoop Dogg zum Dungeon Master für D&D macht, und erfahrt mehr über eine neue Datenarchitektur namens Polystore.
 video: https://youtu.be/uyj0At7-yg4
-description: Digital transformation news for the week of October 1st including stories in data management, artificial intelligence, and cybersecurity. Come listen to the celebration of cybersecurity awareness month, an AI that makes Snoop Dogg a dungeon master for D&amp;D, and learn about a new data architecture Polystore.
+description: Digitale Transformationsnachrichten für die Woche vom 1. Oktober, einschließlich Berichte über Datenmanagement, künstliche Intelligenz und Cybersicherheit. Kommt und hört die Feier des Monats der Cybersicherheitsaufklärung, eine KI, die Snoop Dogg zum Dungeon Master für D&D macht, und erfahrt mehr über eine neue Datenarchitektur namens Polystore.
 ---
+
 
 {% include transistor.html id="095edb44" %}
 
 
 
 {% include youtube.html id="uyj0At7-yg4" %}
+
 
 ---
 
