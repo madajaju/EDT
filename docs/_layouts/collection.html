@@ -12,11 +12,12 @@ image: {{ page.img }}
 
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
 
-<h1>#{{ page.title }}</h1>
+<h1>{{ page.title }}</h1>
 
 {{ page.summary }}
 
 <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
+{{ page.content }}
 
 <h2>Episodes</h2>
 {% for spage in site.pages %}

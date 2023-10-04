@@ -66,7 +66,7 @@ Darren Pulsipher, Arquitecto Principal de Soluciones para el Sector Público en 
 {% if page.number %}
 <div style="display:flex;">
 <p class="episode">
-    <img class="thumbnail" src="{{ page.path | remove: page.name }}/{{ page.img }}" width="128" height="128">
+    <img class="thumbnail" src="../{{ page.path | remove: page.name }}/{{ page.img }}" width="128" height="128">
     <a href="{{ page.url }}">{{ page.number}} - {{ page.title }}</a><br>
     {{ page.summary }}
 </p>

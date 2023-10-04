@@ -47,7 +47,8 @@ image: {{page.img}}
 <!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
 
 <h2>Episodes</h2>
-{% for spage in site.pages %}
+{% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang', site.lang %}
+{% for spage in sortedEpisodes %}
 {% if spage.guests contains page.title %}
 <div style="display:flex;">
     <p class="episode">
