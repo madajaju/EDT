@@ -3,7 +3,7 @@ layout: default
 title: News Briefs
 has_children: true
 parent: English
-ref: newsbriefs
+nav_order: 2
 lang: en
 child_nav_order: reversed
 ---

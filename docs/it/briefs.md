@@ -3,6 +3,7 @@ layout: default
 title: Riepilogo Settimanale
 parent: Italiano
 has_children: true
+nav_order: 2
 lang: it
 child_nav_order: reversed
 ---

@@ -3,6 +3,7 @@ layout: default
 title: Nouvelles Hebdomadaires
 has_children: true
 parent: Français
+nav_order: 2
 lang: fr
 child_nav_order: reversed
 ---

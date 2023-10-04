@@ -5,7 +5,28 @@ has_children: true
 parent: Deutsch
 lang: de
 child_nav_order: reversed
+nav_order: 2
 ---
+
+<style>
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 48%;
+  padding: 9px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
+
+{% include subscribe_brief.html %}
 
 # Wöchentliche Nachrichten
 

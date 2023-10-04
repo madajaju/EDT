@@ -1,7 +1,7 @@
 ---
 layout: default
 title: English
-nav_order: 1
+nav_order: 2
 has_children: true
 lang: en
 ---
@@ -39,8 +39,8 @@ display: table;
 clear: both;
 }
 </style>
-{% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang': 'en' | limit: 10 %}
-{% assign sortedBriefs = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'brief' | where: 'lang': 'en' | limit: 10 %}
+{% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang', 'en' | limit: 10 %}
+{% assign sortedBriefs = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'brief' | where: 'lang', 'en' | limit: 10 %}
 {% assign latestEpisode = sortedEpisodes | first %}
 {% assign latestBrief = sortedBriefs | first %}
 <div class="toprow">

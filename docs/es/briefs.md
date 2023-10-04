@@ -3,6 +3,7 @@ layout: default
 title: Noticias Semanales
 has_children: true
 parent: Español
+nav_order: 2
 lang: es
 child_nav_order: reversed
 ---

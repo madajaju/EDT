@@ -2,6 +2,7 @@
 layout: default
 title: Acerca de
 lang: es
+nav_order: 1
 parent: Español
 has_children: false
 ---

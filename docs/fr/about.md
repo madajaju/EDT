@@ -3,6 +3,7 @@ layout: default
 title: À propos de
 lang: fr
 parent: Français
+nav_order: 1
 has_children: false
 ---
 

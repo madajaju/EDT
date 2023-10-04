@@ -3,6 +3,7 @@ layout: default
 title: Sobre
 parent: Português
 lang: pt
+nav_order: 1
 has_children: false
 ---
 

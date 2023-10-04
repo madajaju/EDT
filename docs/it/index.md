@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Italiano
-nav_order: 1
+has_children: true
+nav_order: 5
 lang: it
 ---
 <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
@@ -29,8 +30,8 @@ display: table;
 clear: both;
 }
 </style>
-{% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang': 'it' %}
-{% assign sortedBriefs = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'brief' | where: 'lang': 'it' %}
+{% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang', 'it' %}
+{% assign sortedBriefs = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'brief' | where: 'lang', 'it' %}
 {% assign latestEpisode = sortedEpisodes | first %}
 {% assign latestBrief = sortedBriefs | first %}
 <div class="toprow">

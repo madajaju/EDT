@@ -4,6 +4,7 @@ title: Notícias Semanais
 parent: Português
 has_children: true
 lang: pt
+nav_order: 2
 child_nav_order: reversed
 ---
 

@@ -2,6 +2,7 @@
 layout: default
 title: About
 parent: English
+nav_order: 1
 lang: en
 ---
 

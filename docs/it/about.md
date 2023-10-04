@@ -3,6 +3,7 @@ layout: default
 title: Informazioni
 lang: it
 parent: Italiano
+nav_order: 2
 has_children: false
 ---
 
