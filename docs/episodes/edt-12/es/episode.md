@@ -1,0 +1,60 @@
+---
+layout: posts
+title: "Coloque el título aquí."
+number: 12
+permalink: episode-EDT12-es
+has_children: false
+lang: es
+parent: Episodios
+grand_parent: Español
+nav_order: 12
+tags:
+    - remotelearning
+    - people
+    - technology
+    - telelearning
+    - cybersecurity
+
+date: Tue Aug 11 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
+guests:
+    - Darren W Pulsipher
+    - Erin Moseley
+    - Grant Kelly
+
+img: thumbnail.png
+image: thumbnail.png
+summary: "En nuestro último episodio, Erin Moseley, ejecutiva de cuentas senior para Educación en Intel, y Grant Kelly, arquitecto de soluciones para Educación en Intel, se unieron a Darren para hablar sobre los desafíos tecnológicos y opciones en el aprendizaje a distancia. En este episodio, nos adentramos más profundamente en las amenazas y soluciones de privacidad y seguridad."
+video: "https://youtu.be/fGjvx9pKqT8"
+description: "En nuestro último episodio, Erin Moseley, ejecutiva de cuentas senior para Educación en Intel, y Grant Kelly, arquitecto de soluciones para Educación en Intel, se unieron a Darren para hablar sobre los desafíos tecnológicos y opciones en el aprendizaje a distancia. En este episodio, nos adentramos más profundamente en las amenazas y soluciones de privacidad y seguridad."
+---
+
+<div>
+{% include transistor.html id="03c2f4f9" title="#12 Put the Title Right Here" %}
+
+{% include youtube.html id="fGjvx9pKqT8" %}
+</div>
+
+---
+
+# Título
+
+*Eslogan*
+
+Resumen aquí
+
+Traduce lo siguiente al español: ¡Imagen del episodio! (./thumbnail.png)
+
+Episodio Cuerpo aquí.
+
+## La palabra "Media" puede tener varios significados en español, por lo que requiero más contexto para poder ayudarte de manera eficiente. ¿Podrías proporcionar más información o aclarar si te refieres a medios de comunicación, a una medida de valor o a otro concepto?
+
+<video src='url'></video> translates to Spanish as: <video src='url'></video>
+
+
+
+<details>
+<summary> Podcast Transcript </summary>
+
+<p></p>
+
+</details>
