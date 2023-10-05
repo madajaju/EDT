@@ -9,6 +9,7 @@ parent: Épisodes
 grand_parent: Français
 nav_order: 158
 tags:
+    - collectiongenerativeai
     - addressingbiasesingenerativeai
     - preservingauthenticityandindividuality
     - balancingaiintegrationineducation

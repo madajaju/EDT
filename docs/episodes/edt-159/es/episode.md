@@ -9,6 +9,7 @@ parent: Episodios
 grand_parent: Español
 nav_order: 159
 tags:
+    - collectiongenerativeai
     - policies
     - ai
     - generativeai

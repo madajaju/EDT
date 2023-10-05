@@ -9,6 +9,7 @@ parent: Folgen
 grand_parent: Deutsch
 nav_order: 134
 tags:
+    - collectiongenerativeai
     - artificialintelligence
     - waveformai
     - datashapes

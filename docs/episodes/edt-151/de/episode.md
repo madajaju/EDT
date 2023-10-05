@@ -13,6 +13,7 @@ tags:
     - ai
     - datamanagement
     - people
+    - collectiongenerativeai
 
 date: Thu Aug 17 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

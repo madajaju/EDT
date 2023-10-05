@@ -11,6 +11,7 @@ nav_order: 154
 tags:
     - genai
     - ai
+    - collectiongenerativeai
     - datamanangement
 
 date: Mon Aug 28 2023 17:00:00 GMT-0700 (Pacific Daylight Time)

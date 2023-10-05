@@ -10,6 +10,7 @@ grand_parent: Português
 nav_order: 147
 tags:
     - generativeai
+    - collectiongenerativeai
     - ai
     - bard
     - googlebard

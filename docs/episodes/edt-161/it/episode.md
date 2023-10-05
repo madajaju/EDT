@@ -9,6 +9,7 @@ parent: Episódios
 grand_parent: Italiano
 nav_order: 161
 tags:
+    - collectiongenerativeai
     - ai
     - generativeai
     - embracingdigital

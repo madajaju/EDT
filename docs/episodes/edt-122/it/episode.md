@@ -9,6 +9,7 @@ parent: Episódios
 grand_parent: Italiano
 nav_order: 122
 tags:
+    - collectiongenerativeai
     - aiml
     - automation
     - aiethics

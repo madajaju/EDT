@@ -9,6 +9,7 @@ parent: Épisodes
 grand_parent: Français
 nav_order: 134
 tags:
+    - collectiongenerativeai
     - artificialintelligence
     - waveformai
     - datashapes

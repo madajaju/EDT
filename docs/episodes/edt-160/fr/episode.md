@@ -9,6 +9,7 @@ parent: Épisodes
 grand_parent: Français
 nav_order: 160
 tags:
+    - collectiongenerativeai
     - personalizedphishingattacks
     - promptinjection
     - sharingcodeai

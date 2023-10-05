@@ -9,6 +9,7 @@ parent: Folgen
 grand_parent: Deutsch
 nav_order: 158
 tags:
+    - collectiongenerativeai
     - addressingbiasesingenerativeai
     - preservingauthenticityandindividuality
     - balancingaiintegrationineducation

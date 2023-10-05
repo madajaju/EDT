@@ -11,6 +11,7 @@ nav_order: 157
 tags:
     - ai
     - generativeai
+    - collectiongenerativeai
     - infrastructuremanagement
     - aisystems
     - aimodels

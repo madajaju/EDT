@@ -10,6 +10,7 @@ grand_parent: English
 nav_order: 162
 tags:
     - cloudadoption
+    - collectionmultihybridcloud
     - organizationalmodernization
     - barriers
     - riskmitigationplan

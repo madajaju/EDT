@@ -15,6 +15,7 @@ tags:
     - robotics
     - people
     - training
+    - collectiongenerativeai
 
 date: Wed Aug 23 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -9,6 +9,7 @@ parent: Folgen
 grand_parent: Deutsch
 nav_order: 122
 tags:
+    - collectiongenerativeai
     - aiml
     - automation
     - aiethics

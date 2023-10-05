@@ -9,6 +9,7 @@ parent: Folgen
 grand_parent: Deutsch
 nav_order: 156
 tags:
+    - collectiongenerativeai
     - datamanagement
     - automation
     - dataquality

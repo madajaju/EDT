@@ -9,6 +9,7 @@ parent: Episódios
 grand_parent: Italiano
 nav_order: 160
 tags:
+    - collectiongenerativeai
     - personalizedphishingattacks
     - promptinjection
     - sharingcodeai

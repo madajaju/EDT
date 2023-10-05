@@ -9,6 +9,7 @@ parent: Episodi
 grand_parent: Português
 nav_order: 130
 tags:
+    - collectiongenerativeai
     - ai
     - decisionalai
     - aiproductization

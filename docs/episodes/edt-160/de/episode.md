@@ -9,6 +9,7 @@ parent: Folgen
 grand_parent: Deutsch
 nav_order: 160
 tags:
+    - collectiongenerativeai
     - personalizedphishingattacks
     - promptinjection
     - sharingcodeai

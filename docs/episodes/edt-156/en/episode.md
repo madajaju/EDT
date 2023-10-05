@@ -9,6 +9,7 @@ parent: Episodes
 grand_parent: English
 nav_order: 156
 tags:
+    - collectiongenerativeai
     - datamanagement
     - automation
     - dataquality

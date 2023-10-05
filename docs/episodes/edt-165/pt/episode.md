@@ -10,6 +10,7 @@ grand_parent: Português
 nav_order: 165
 tags:
     - cloudcomputeoptions
+    - collectionmultihybridcloud
     - cloudinstance
     - cloudspecialistadvice
     - computeselectiontools

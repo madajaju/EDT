@@ -9,6 +9,7 @@ parent: Folgen
 grand_parent: Deutsch
 nav_order: 146
 tags:
+    - collectiongenerativeai
     - ai
     - people
     - embracingdigital

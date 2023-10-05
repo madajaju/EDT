@@ -9,6 +9,7 @@ parent: Folgen
 grand_parent: Deutsch
 nav_order: 130
 tags:
+    - collectiongenerativeai
     - ai
     - decisionalai
     - aiproductization
