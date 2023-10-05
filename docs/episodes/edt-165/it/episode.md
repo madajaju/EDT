@@ -34,14 +34,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo podcast, Darren e Rico Dutton approfondiscono il mondo delle istanze di cloud e i fattori da considerare quando si seleziona l'istanza giusta per il proprio carico di lavoro. Discutono delle diverse opzioni di calcolo disponibili nel cloud, dell'importanza di trovare il giusto equilibrio tra prestazioni e costi e del ruolo degli specialisti del cloud nel contribuire a prendere decisioni informate per le organizzazioni."
-video: "https://youtu.be/"
+video: "https://youtu.be/iv4WWNI5FXo"
 description: "In questo podcast, Darren e Rico Dutton approfondiscono il mondo delle istanze di cloud e i fattori da considerare quando si seleziona l'istanza giusta per il proprio carico di lavoro. Discutono delle diverse opzioni di calcolo disponibili nel cloud, dell'importanza di trovare il giusto equilibrio tra prestazioni e costi e del ruolo degli specialisti del cloud nel contribuire a prendere decisioni informate per le organizzazioni."
 ---
 
 <div>
 {% include transistor.html id="5870e205" title="#165 Workload Cloud Placement Factors" %}
 
-{% include youtube.html id="" %}
+{% include youtube.html id="iv4WWNI5FXo" %}
 </div>
 
 ---

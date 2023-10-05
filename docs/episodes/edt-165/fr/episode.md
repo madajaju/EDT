@@ -34,14 +34,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans ce podcast, Darren et Rico Dutton plongent dans le monde des instances cloud et des facteurs à prendre en compte lors de la sélection de la bonne instance pour votre charge de travail. Ils discutent des différentes options de calcul disponibles dans le cloud, de l'importance de trouver le bon équilibre entre les performances et les coûts, ainsi que du rôle des spécialistes du cloud dans l'aide aux organisations pour prendre des décisions éclairées."
-video: "https://youtu.be/"
+video: "https://youtu.be/iv4WWNI5FXo"
 description: "Dans ce podcast, Darren et Rico Dutton plongent dans le monde des instances cloud et des facteurs à prendre en compte lors de la sélection de la bonne instance pour votre charge de travail. Ils discutent des différentes options de calcul disponibles dans le cloud, de l'importance de trouver le bon équilibre entre les performances et les coûts, ainsi que du rôle des spécialistes du cloud dans l'aide aux organisations pour prendre des décisions éclairées."
 ---
 
 <div>
 {% include transistor.html id="5870e205" title="#165 Workload Cloud Placement Factors" %}
 
-{% include youtube.html id="" %}
+{% include youtube.html id="iv4WWNI5FXo" %}
 </div>
 
 ---

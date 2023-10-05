@@ -34,14 +34,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In diesem Podcast tauchen Darren und Rico Dutton in die Welt der Cloud-Instanzen ein und erläutern die Faktoren, die bei der Auswahl der richtigen Instanz für Ihre Workload zu beachten sind. Sie diskutieren die verschiedenen Berechnungsoptionen, die in der Cloud verfügbar sind, die Bedeutung des richtigen Gleichgewichts zwischen Leistung und Kosten und die Rolle von Cloud-Spezialisten bei der Unterstützung von Organisationen bei informierten Entscheidungen."
-video: "https://youtu.be/"
+video: "https://youtu.be/iv4WWNI5FXo"
 description: "In diesem Podcast tauchen Darren und Rico Dutton in die Welt der Cloud-Instanzen ein und erläutern die Faktoren, die bei der Auswahl der richtigen Instanz für Ihre Workload zu beachten sind. Sie diskutieren die verschiedenen Berechnungsoptionen, die in der Cloud verfügbar sind, die Bedeutung des richtigen Gleichgewichts zwischen Leistung und Kosten und die Rolle von Cloud-Spezialisten bei der Unterstützung von Organisationen bei informierten Entscheidungen."
 ---
 
 <div>
 {% include transistor.html id="5870e205" title="#165 Workload Cloud Placement Factors" %}
 
-{% include youtube.html id="" %}
+{% include youtube.html id="iv4WWNI5FXo" %}
 </div>
 
 ---
