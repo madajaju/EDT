@@ -22,7 +22,7 @@ image: {{ page.img }}
 <h2>Episodes</h2>
 {% for spage in site.pages %}
 {% if spage.layout == "posts" %}
-{% if spage.lang == page.lang %}
+{% if spage.lang == site.lang %}
 {% if spage.tags contains page.tag %}
 <div style="display: flex;">
     <p class="episode">
