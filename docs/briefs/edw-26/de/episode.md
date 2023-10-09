@@ -23,9 +23,13 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Hier sind die neuesten Updates im Bereich der Digitalen Transformation für die Woche vom 31. Juli 2023. Dies umfasst Nachrichten über die Partnerschaft zwischen Ericsson und Intel bei der Weiterentwicklung der 5G-Technologie, die Bemühungen von ChatGPT bei der Bekämpfung von Cybersicherheit und das Aufkommen KI-gesteuerter Softwareentwicklung.
+summary: 
+Hier sind die neuesten Aktualisierungen im Bereich der Digitalen Transformation für die Woche vom 31. Juli 2023. Dies beinhaltet Neuigkeiten über die Partnerschaft zwischen Ericsson und Intel zur Weiterentwicklung der 5G-Technologie, die Bemühungen von ChatGPT im Kampf gegen Cyberkriminalität und das Aufkommen KI-gesteuerter Softwareentwicklung.
+
 video: https://youtu.be/
-description: Hier sind die neuesten Updates im Bereich der Digitalen Transformation für die Woche vom 31. Juli 2023. Dies umfasst Nachrichten über die Partnerschaft zwischen Ericsson und Intel bei der Weiterentwicklung der 5G-Technologie, die Bemühungen von ChatGPT bei der Bekämpfung von Cybersicherheit und das Aufkommen KI-gesteuerter Softwareentwicklung.
+description: 
+Hier sind die neuesten Aktualisierungen im Bereich der Digitalen Transformation für die Woche vom 31. Juli 2023. Dies beinhaltet Neuigkeiten über die Partnerschaft zwischen Ericsson und Intel zur Weiterentwicklung der 5G-Technologie, die Bemühungen von ChatGPT im Kampf gegen Cyberkriminalität und das Aufkommen KI-gesteuerter Softwareentwicklung.
+
 ---
 
 

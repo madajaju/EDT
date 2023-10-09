@@ -23,9 +23,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: The requested text ("Summary") does not need to be translated as it is already in English.
+summary: Summary
 video: https://youtu.be/url
-description: The requested text ("Summary") does not need to be translated as it is already in English.
+description: Summary
 ---
 
 

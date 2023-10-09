@@ -23,9 +23,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Nouvelles sur la transformation numérique de la semaine du 19 juin 2023, comprenant des histoires de gestionnaires remplaçant les travailleurs par de l'IA, les pannes du Cloud encore une fois, et les lois sur la vie privée mettant à mal les géants de la technologie.
+summary: Nouvelles de la Transformation Digitale de la semaine du 19 juin 2023 comprenant des histoires de gestionnaires remplaçant les travailleurs par l'IA, des pannes Cloud à nouveau, et des lois sur la vie privée qui mordent les géants de la technologie.
 video: https://youtu.be/
-description: Nouvelles sur la transformation numérique de la semaine du 19 juin 2023, comprenant des histoires de gestionnaires remplaçant les travailleurs par de l'IA, les pannes du Cloud encore une fois, et les lois sur la vie privée mettant à mal les géants de la technologie.
+description: Nouvelles de la Transformation Digitale de la semaine du 19 juin 2023 comprenant des histoires de gestionnaires remplaçant les travailleurs par l'IA, des pannes Cloud à nouveau, et des lois sur la vie privée qui mordent les géants de la technologie.
 ---
 
 

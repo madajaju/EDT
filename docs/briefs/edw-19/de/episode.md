@@ -20,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digitale Transformation für die Woche vom 12. Juni 2023 beinhaltet eine Entwicklung von 1 Million Cyber-Kräften, viele Cloud-Ausfälle und die Integration von künstlicher Intelligenz zum Schreiben von Code in die C++-Standardbibliothek.
+summary: Die Digitalisierung für die Woche vom 12. Juni 2023 umfasst die Entwicklung einer 1 Millionen Cyber-Kraft, viele Cloud-Ausfälle und künstliche Intelligenz, die Code für die C++ Standardbibliothek schreibt.
 video: https://youtu.be/ldF4SS1lyVU
-description: Digitale Transformation für die Woche vom 12. Juni 2023 beinhaltet eine Entwicklung von 1 Million Cyber-Kräften, viele Cloud-Ausfälle und die Integration von künstlicher Intelligenz zum Schreiben von Code in die C++-Standardbibliothek.
+description: Die Digitalisierung für die Woche vom 12. Juni 2023 umfasst die Entwicklung einer 1 Millionen Cyber-Kraft, viele Cloud-Ausfälle und künstliche Intelligenz, die Code für die C++ Standardbibliothek schreibt.
 ---
 
 

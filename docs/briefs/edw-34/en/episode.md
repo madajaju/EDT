@@ -23,13 +23,13 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digital Transformation news for September 24, 2023, includes artificial intelligence, ubiquitous computing, and cybersecurity. Listen about Intel's new CPUs changing AI and high-density computing and how a hacker group of teenagers took down Las Vegas' MGM casinos.
+summary: 
+Digital Transformation news for September 24, 2023, includes artificial intelligence, ubiquitous computing, and cybersecurity. Listen about Intel’s new CPUs changing AI and high-density computing and how a hacker group of teenagers took down Las Vegas’ MGM casinos.
 
-Translation: Las novedades de la Transformación Digital para el 24 de septiembre de 2023 incluyen inteligencia artificial, computación ubicua y ciberseguridad. Escucha acerca de los nuevos procesadores de Intel que están cambiando la IA y la computación de alta densidad, y cómo un grupo de adolescentes hackeó los casinos MGM de Las Vegas.
 video: https://youtu.be/wHrXrPjaNdA
-description: Digital Transformation news for September 24, 2023, includes artificial intelligence, ubiquitous computing, and cybersecurity. Listen about Intel's new CPUs changing AI and high-density computing and how a hacker group of teenagers took down Las Vegas' MGM casinos.
+description: 
+Digital Transformation news for September 24, 2023, includes artificial intelligence, ubiquitous computing, and cybersecurity. Listen about Intel’s new CPUs changing AI and high-density computing and how a hacker group of teenagers took down Las Vegas’ MGM casinos.
 
-Translation: Las novedades de la Transformación Digital para el 24 de septiembre de 2023 incluyen inteligencia artificial, computación ubicua y ciberseguridad. Escucha acerca de los nuevos procesadores de Intel que están cambiando la IA y la computación de alta densidad, y cómo un grupo de adolescentes hackeó los casinos MGM de Las Vegas.
 ---
 
 

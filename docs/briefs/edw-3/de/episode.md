@@ -16,9 +16,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Zusammenfassung
+summary: Summary
 video: https://youtu.be/
-description: Zusammenfassung
+description: Summary
 ---
 
 

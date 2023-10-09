@@ -20,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: La trasformazione digitale della settimana del 12 giugno 2023 include lo sviluppo di una forza cibernetica di 1 milione di unità, numerosi interruzioni dei servizi cloud e l'introduzione della scrittura automatica di codice da parte dell'intelligenza artificiale nella libreria standard di C++.
+summary: La trasformazione digitale per la settimana del 12 giugno 2023 include lo sviluppo di una forza cibernetica di 1 milione di unità, molte interruzioni cloud e l'utilizzo dell'IA per la scrittura di codice che andrà nella libreria standard C++.
 video: https://youtu.be/uPdsWfkMbTw
-description: La trasformazione digitale della settimana del 12 giugno 2023 include lo sviluppo di una forza cibernetica di 1 milione di unità, numerosi interruzioni dei servizi cloud e l'introduzione della scrittura automatica di codice da parte dell'intelligenza artificiale nella libreria standard di C++.
+description: La trasformazione digitale per la settimana del 12 giugno 2023 include lo sviluppo di una forza cibernetica di 1 milione di unità, molte interruzioni cloud e l'utilizzo dell'IA per la scrittura di codice che andrà nella libreria standard C++.
 ---
 
 

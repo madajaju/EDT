@@ -23,9 +23,13 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Les actualités de la transformation numérique pour le 24 septembre 2023 comprennent l'intelligence artificielle, l'informatique ubiquitaire et la cybersécurité. Découvrez comment les nouveaux processeurs d'Intel modifient l'IA et le calcul haute densité, ainsi que l'histoire d'un groupe de hackers adolescents ayant paralysé les casinos MGM de Las Vegas.
+summary: 
+Actualités sur la transformation numérique pour le 24 septembre 2023, comprenant l'intelligence artificielle, l'informatique omniprésente et la cybersécurité. Écoutez parler des nouveaux processeurs d'Intel qui transforment l'IA et le calcul haute densité, ainsi que du groupe de hackers composé d'adolescents qui a attaqué les casinos MGM de Las Vegas.
+
 video: https://youtu.be/8xl7p6jiRFk
-description: Les actualités de la transformation numérique pour le 24 septembre 2023 comprennent l'intelligence artificielle, l'informatique ubiquitaire et la cybersécurité. Découvrez comment les nouveaux processeurs d'Intel modifient l'IA et le calcul haute densité, ainsi que l'histoire d'un groupe de hackers adolescents ayant paralysé les casinos MGM de Las Vegas.
+description: 
+Actualités sur la transformation numérique pour le 24 septembre 2023, comprenant l'intelligence artificielle, l'informatique omniprésente et la cybersécurité. Écoutez parler des nouveaux processeurs d'Intel qui transforment l'IA et le calcul haute densité, ainsi que du groupe de hackers composé d'adolescents qui a attaqué les casinos MGM de Las Vegas.
+
 ---
 
 

@@ -41,9 +41,13 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Rimani aggiornato sulle ultime novità della trasformazione digitale per la settimana del 17 settembre 2023. Ottieni gli ultimi aggiornamenti sull'intelligenza artificiale, il computing periferico e la cybersecurity. Tra i momenti salienti di questa settimana ci sono Microsoft che scopre vulnerabilità nel software dei loro concorrenti, Amazon che implementa requisiti di divulgazione dell'IA e un elenco completo delle prossime conferenze IoT in autunno.
+summary: 
+Resta aggiornato sulle ultime notizie sulla trasformazione digitale per la settimana del 17 settembre 2023. Ottieni gli ultimi aggiornamenti sull'intelligenza artificiale, il calcolo sul bordo e la sicurezza informatica. Tra i momenti salienti di questa settimana ci sono Microsoft che scopre vulnerabilità nei software dei loro concorrenti, Amazon che implementa requisiti di divulgazione dell'IA e una lista completa delle prossime conferenze sull'IoT in autunno.
+
 video: https://youtu.be/QenPDDA3q30
-description: Rimani aggiornato sulle ultime novità della trasformazione digitale per la settimana del 17 settembre 2023. Ottieni gli ultimi aggiornamenti sull'intelligenza artificiale, il computing periferico e la cybersecurity. Tra i momenti salienti di questa settimana ci sono Microsoft che scopre vulnerabilità nel software dei loro concorrenti, Amazon che implementa requisiti di divulgazione dell'IA e un elenco completo delle prossime conferenze IoT in autunno.
+description: 
+Resta aggiornato sulle ultime notizie sulla trasformazione digitale per la settimana del 17 settembre 2023. Ottieni gli ultimi aggiornamenti sull'intelligenza artificiale, il calcolo sul bordo e la sicurezza informatica. Tra i momenti salienti di questa settimana ci sono Microsoft che scopre vulnerabilità nei software dei loro concorrenti, Amazon che implementa requisiti di divulgazione dell'IA e una lista completa delle prossime conferenze sull'IoT in autunno.
+
 ---
 
 

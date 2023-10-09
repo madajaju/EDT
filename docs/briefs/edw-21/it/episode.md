@@ -20,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Notizie di questa settimana, 26 giugno 2023, nella trasformazione digitale, incluse crescenti attacchi nella guerra cibernetica, tutti che si uniscono alla moda dell'intelligenza artificiale generativa e reti radio aree virtualizzate.
+summary: Notizie di questa settimana, 26 giugno 2023, sulla trasformazione digitale, compresi gli attacchi sempre più frequenti nella cyber guerra, l'adesione di tutti al carrozzone dell'AI generativa e le reti radio virtualizzate.
 video: https://youtu.be/GbxX8poRWjU
-description: Notizie di questa settimana, 26 giugno 2023, nella trasformazione digitale, incluse crescenti attacchi nella guerra cibernetica, tutti che si uniscono alla moda dell'intelligenza artificiale generativa e reti radio aree virtualizzate.
+description: Notizie di questa settimana, 26 giugno 2023, sulla trasformazione digitale, compresi gli attacchi sempre più frequenti nella cyber guerra, l'adesione di tutti al carrozzone dell'AI generativa e le reti radio virtualizzate.
 ---
 
 

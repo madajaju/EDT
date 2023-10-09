@@ -36,9 +36,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Obtenha as últimas notícias digitais para a semana de 10 de setembro de 2023, cobrindo Inteligência Artificial, Cibersegurança e Computação Ubíqua. Nesta semana, saiba sobre uma nova ameaça cibernética para o iPhone, o local de origem do GPT-4 e a abordagem do MIT para lidar com a incerteza da computação quântica.
+summary: Obtenha as últimas notícias digitais para a semana de 10 de setembro de 2023, abrangendo Inteligência Artificial, Cibersegurança e Computação Ubíqua. Nesta semana, saiba sobre uma nova ameaça cibernética para o iPhone, o local de origem do GPT-4 e a abordagem do MIT para lidar com a incerteza da computação quântica.
 video: https://youtu.be/et96D1DvJX8
-description: Obtenha as últimas notícias digitais para a semana de 10 de setembro de 2023, cobrindo Inteligência Artificial, Cibersegurança e Computação Ubíqua. Nesta semana, saiba sobre uma nova ameaça cibernética para o iPhone, o local de origem do GPT-4 e a abordagem do MIT para lidar com a incerteza da computação quântica.
+description: Obtenha as últimas notícias digitais para a semana de 10 de setembro de 2023, abrangendo Inteligência Artificial, Cibersegurança e Computação Ubíqua. Nesta semana, saiba sobre uma nova ameaça cibernética para o iPhone, o local de origem do GPT-4 e a abordagem do MIT para lidar com a incerteza da computação quântica.
 ---
 
 

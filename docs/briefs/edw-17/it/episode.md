@@ -16,9 +16,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Notizie per Abbracciare il Digitale per la settimana del 29 maggio 2023, scopri di più sulle regolamentazioni per l'IA, gli attacchi informatici di Stato-nazione aumentati e gli investimenti nell'edge computing.
+summary: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
 video: https://youtu.be/
-description: Notizie per Abbracciare il Digitale per la settimana del 29 maggio 2023, scopri di più sulle regolamentazioni per l'IA, gli attacchi informatici di Stato-nazione aumentati e gli investimenti nell'edge computing.
+description: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
 ---
 
 

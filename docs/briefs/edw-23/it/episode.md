@@ -23,9 +23,13 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Ecco le ultime notizie sulla trasformazione digitale del 10 luglio 2023. La guerra commerciale in corso sta iniziando ad influire sui servizi cloud. Inoltre, c'è speculazione sul fatto che l'entusiasmo intorno all'IA generativa potrebbe essere in calo. Sul fronte della cybersecurity, ci preoccupiamo se stiamo facendo abbastanza per stare al passo con gli attori malintenzionati.
+summary: 
+Ecco le ultime notizie sulla trasformazione digitale per il 10 luglio 2023. La continua guerra commerciale sta iniziando a influire sui servizi cloud. Inoltre, c'è speculazione che l'entusiasmo intorno all'IA generativa possa essere in rallentamento. In campo della sicurezza informatica, ci sono preoccupazioni sul fatto che stiamo facendo abbastanza per stare al passo con gli attori malintenzionati.
+
 video: https://youtu.be/
-description: Ecco le ultime notizie sulla trasformazione digitale del 10 luglio 2023. La guerra commerciale in corso sta iniziando ad influire sui servizi cloud. Inoltre, c'è speculazione sul fatto che l'entusiasmo intorno all'IA generativa potrebbe essere in calo. Sul fronte della cybersecurity, ci preoccupiamo se stiamo facendo abbastanza per stare al passo con gli attori malintenzionati.
+description: 
+Ecco le ultime notizie sulla trasformazione digitale per il 10 luglio 2023. La continua guerra commerciale sta iniziando a influire sui servizi cloud. Inoltre, c'è speculazione che l'entusiasmo intorno all'IA generativa possa essere in rallentamento. In campo della sicurezza informatica, ci sono preoccupazioni sul fatto che stiamo facendo abbastanza per stare al passo con gli attori malintenzionati.
+
 ---
 
 

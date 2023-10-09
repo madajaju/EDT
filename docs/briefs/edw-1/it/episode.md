@@ -20,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Per la settimana del 6 febbraio 2023. Notizie provenienti da tutto il mondo della trasformazione digitale nell'intelligenza artificiale, nel cloud computing e nella cibersicurezza.
+summary: For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity.
 video: https://youtu.be/
-description: Per la settimana del 6 febbraio 2023. Notizie provenienti da tutto il mondo della trasformazione digitale nell'intelligenza artificiale, nel cloud computing e nella cibersicurezza.
+description: For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity.
 ---
 
 

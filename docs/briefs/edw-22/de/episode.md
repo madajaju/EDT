@@ -23,9 +23,13 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Für die Woche vom 3. Juli 2023, in den Neuigkeiten zur digitalen Transformation. Findet KI einen Ersatz für Alexa und Siri? Können wir unsere Daten hören? Und wo sorgen die Cloud-Service-Anbieter für einen Geldregen?
+summary: 
+Für die Woche vom 3. Juli 2023 in den Nachrichten zur digitalen Transformation. Findet KI einen Ersatz für Alexa und Siri? Können wir unsere Daten hören? Und wo lassen die Cloud-Dienstanbieter das Geld regnen?
+
 video: https://youtu.be/
-description: Für die Woche vom 3. Juli 2023, in den Neuigkeiten zur digitalen Transformation. Findet KI einen Ersatz für Alexa und Siri? Können wir unsere Daten hören? Und wo sorgen die Cloud-Service-Anbieter für einen Geldregen?
+description: 
+Für die Woche vom 3. Juli 2023 in den Nachrichten zur digitalen Transformation. Findet KI einen Ersatz für Alexa und Siri? Können wir unsere Daten hören? Und wo lassen die Cloud-Dienstanbieter das Geld regnen?
+
 ---
 
 

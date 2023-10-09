@@ -20,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: translation: Summary
+summary: Summary
 video: https://youtu.be/-Ow1qz4SZq4
-description: translation: Summary
+description: Summary
 ---
 
 

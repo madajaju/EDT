@@ -23,9 +23,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Noticias de Transformación Digital de la semana del 19 de junio de 2023, que incluyen historias de gerentes reemplazando trabajadores con IA, nuevas interrupciones en la nube y leyes de privacidad afectando a la tecnología de gran escala.
+summary: Noticias de Transformación Digital de la semana del 19 de junio de 2023 que incluyen historias de gerentes que reemplazan a los trabajadores con inteligencia artificial, nuevas interrupciones en la Nube y leyes de privacidad que afectan a las grandes empresas tecnológicas.
 video: https://youtu.be/Xe55GkyAyaI
-description: Noticias de Transformación Digital de la semana del 19 de junio de 2023, que incluyen historias de gerentes reemplazando trabajadores con IA, nuevas interrupciones en la nube y leyes de privacidad afectando a la tecnología de gran escala.
+description: Noticias de Transformación Digital de la semana del 19 de junio de 2023 que incluyen historias de gerentes que reemplazan a los trabajadores con inteligencia artificial, nuevas interrupciones en la Nube y leyes de privacidad que afectan a las grandes empresas tecnológicas.
 ---
 
 

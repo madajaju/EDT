@@ -20,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Translation: News from the week of May 15, 2023 in digital transformation including stories from Edge Computing, Cybersecurity, and Artificial Intelligence.
+summary: News from the week of May 15, 2023 in digital transformation including stories from Edge Computing, Cybersecurity, and Artificial Intelligence.
 video: https://youtu.be/ugAE476ROCA
-description: Translation: News from the week of May 15, 2023 in digital transformation including stories from Edge Computing, Cybersecurity, and Artificial Intelligence.
+description: News from the week of May 15, 2023 in digital transformation including stories from Edge Computing, Cybersecurity, and Artificial Intelligence.
 ---
 
 

@@ -41,9 +41,13 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Manténgase actualizado con las últimas noticias sobre la transformación digital para la semana del 17 de septiembre de 2023. Obtenga las últimas actualizaciones sobre inteligencia artificial, informática perimetral y ciberseguridad. Los aspectos más destacados de esta semana incluyen la revelación por parte de Microsoft de vulnerabilidades en el software de sus competidores, Amazon implementando requisitos de divulgación de inteligencia artificial, y una lista completa de las próximas conferencias de IoT este otoño.
+summary: 
+Stay up-to-date with the latest news in digital transformation for the week of September 17, 2023. Get the latest updates on artificial intelligence, edge computing, and cybersecurity. This week&#39;s highlights include Microsoft uncovering vulnerabilities in their competitors&#39; software, Amazon implementing AI disclosure requirements, and a comprehensive list of upcoming IoT conferences this fall.
+
 video: https://youtu.be/tJEtdB8tN2Q
-description: Manténgase actualizado con las últimas noticias sobre la transformación digital para la semana del 17 de septiembre de 2023. Obtenga las últimas actualizaciones sobre inteligencia artificial, informática perimetral y ciberseguridad. Los aspectos más destacados de esta semana incluyen la revelación por parte de Microsoft de vulnerabilidades en el software de sus competidores, Amazon implementando requisitos de divulgación de inteligencia artificial, y una lista completa de las próximas conferencias de IoT este otoño.
+description: 
+Stay up-to-date with the latest news in digital transformation for the week of September 17, 2023. Get the latest updates on artificial intelligence, edge computing, and cybersecurity. This week&#39;s highlights include Microsoft uncovering vulnerabilities in their competitors&#39; software, Amazon implementing AI disclosure requirements, and a comprehensive list of upcoming IoT conferences this fall.
+
 ---
 
 

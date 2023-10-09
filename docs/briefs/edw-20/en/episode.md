@@ -24,10 +24,8 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: Digital Transformation news from the week of June 19, 2023 including stories of managers replacing workers with AI, Cloud outages again, and privacy laws taking a bite out of big tech.
-
 video: https://youtu.be/e7ihne_LW6o
 description: Digital Transformation news from the week of June 19, 2023 including stories of managers replacing workers with AI, Cloud outages again, and privacy laws taking a bite out of big tech.
-
 ---
 
 

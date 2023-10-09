@@ -16,9 +16,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Nouvelles pour l'Adoption du Numérique pour la semaine du 29 mai 2023 : découvrez davantage de réglementations sur l'IA, l'augmentation des cyberattaques étatiques et les investissements dans le calcul en périphérie.
+summary: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
 video: https://youtu.be/qz7lz7eGgGw
-description: Nouvelles pour l'Adoption du Numérique pour la semaine du 29 mai 2023 : découvrez davantage de réglementations sur l'IA, l'augmentation des cyberattaques étatiques et les investissements dans le calcul en périphérie.
+description: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
 ---
 
 

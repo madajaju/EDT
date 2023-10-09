@@ -16,9 +16,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: A summary is a condensed version or brief overview of a larger piece of information or work. It is often used to provide readers with a quick and easy understanding of the main points or key elements without having to read the entire text. Summaries can be found in various forms such as articles, reports, essays, or book reviews, and they serve as a helpful tool for those seeking a general understanding or seeking to determine whether or not to delve deeper into the subject matter.
+summary: Summary
 video: https://youtu.be/ZM2kFyMI7UE
-description: A summary is a condensed version or brief overview of a larger piece of information or work. It is often used to provide readers with a quick and easy understanding of the main points or key elements without having to read the entire text. Summaries can be found in various forms such as articles, reports, essays, or book reviews, and they serve as a helpful tool for those seeking a general understanding or seeking to determine whether or not to delve deeper into the subject matter.
+description: Summary
 ---
 
 

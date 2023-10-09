@@ -23,11 +23,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: News in Digital Transformation for the week of May 8, 2023:
-No specific news in Digital Transformation for the week of May 8, 2023
+summary: News in Digital Transformation for the week of May 8, 2023 including 
 video: https://youtu.be/DY9iNUhQ-a8
-description: News in Digital Transformation for the week of May 8, 2023:
-No specific news in Digital Transformation for the week of May 8, 2023
+description: News in Digital Transformation for the week of May 8, 2023 including 
 ---
 
 

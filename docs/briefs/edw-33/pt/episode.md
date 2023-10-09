@@ -41,9 +41,13 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Fique atualizado com as últimas notícias sobre transformação digital para a semana de 17 de setembro de 2023. Obtenha as atualizações mais recentes sobre inteligência artificial, computação em borda e cibersegurança. Os destaques desta semana incluem a Microsoft descobrindo vulnerabilidades nos softwares de seus concorrentes, a Amazon implementando requisitos de divulgação de IA e uma lista abrangente de conferências de IoT que ocorrerão neste outono.
+summary: 
+Mantenha-se atualizado com as últimas notícias sobre transformação digital da semana de 17 de setembro de 2023. Obtenha as últimas atualizações sobre inteligência artificial, computação de borda e cibersegurança. Os destaques desta semana incluem a Microsoft descobrindo vulnerabilidades nos softwares de seus concorrentes, a implementação de requisitos de divulgação de IA pela Amazon e uma lista abrangente de próximas conferências de IoT neste outono.
+
 video: https://youtu.be/CiB3JdtZzgM
-description: Fique atualizado com as últimas notícias sobre transformação digital para a semana de 17 de setembro de 2023. Obtenha as atualizações mais recentes sobre inteligência artificial, computação em borda e cibersegurança. Os destaques desta semana incluem a Microsoft descobrindo vulnerabilidades nos softwares de seus concorrentes, a Amazon implementando requisitos de divulgação de IA e uma lista abrangente de conferências de IoT que ocorrerão neste outono.
+description: 
+Mantenha-se atualizado com as últimas notícias sobre transformação digital da semana de 17 de setembro de 2023. Obtenha as últimas atualizações sobre inteligência artificial, computação de borda e cibersegurança. Os destaques desta semana incluem a Microsoft descobrindo vulnerabilidades nos softwares de seus concorrentes, a implementação de requisitos de divulgação de IA pela Amazon e uma lista abrangente de próximas conferências de IoT neste outono.
+
 ---
 
 

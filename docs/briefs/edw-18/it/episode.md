@@ -20,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Notizie sulla trasformazione digitale per il 6 giugno 2023. Questa settimana più posti di lavoro nell'IA, importanti violazioni della sicurezza informatica e migliori pratiche della tecnologia cloud.
+summary: Digital transformation news for June 6, 2023. This week more jobs in AI, major cyber security breaches, and cloud technology best practices.
 video: https://youtu.be/
-description: Notizie sulla trasformazione digitale per il 6 giugno 2023. Questa settimana più posti di lavoro nell'IA, importanti violazioni della sicurezza informatica e migliori pratiche della tecnologia cloud.
+description: Digital transformation news for June 6, 2023. This week more jobs in AI, major cyber security breaches, and cloud technology best practices.
 ---
 
 

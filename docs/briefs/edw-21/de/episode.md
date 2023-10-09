@@ -20,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Nachrichten dieser Woche, 26. Juni 2023, in der digitalen Transformation, einschließlich zunehmender Angriffe im Cyberkrieg, bei denen alle auf den fahrenden Zug der generativen KI aufspringen, und virtualisierten Radio-Netzwerken.
+summary: Neuigkeiten dieser Woche, 26. Juni 2023, in der digitalen Transformation umfassen eine Zunahme von Angriffen im Cyberkrieg, dass jeder auf den Zug der generativen KI aufspringt und virtualisierte Radio-Bereichsnetzwerke.
 video: https://youtu.be/
-description: Nachrichten dieser Woche, 26. Juni 2023, in der digitalen Transformation, einschließlich zunehmender Angriffe im Cyberkrieg, bei denen alle auf den fahrenden Zug der generativen KI aufspringen, und virtualisierten Radio-Netzwerken.
+description: Neuigkeiten dieser Woche, 26. Juni 2023, in der digitalen Transformation umfassen eine Zunahme von Angriffen im Cyberkrieg, dass jeder auf den Zug der generativen KI aufspringt und virtualisierte Radio-Bereichsnetzwerke.
 ---
 
 

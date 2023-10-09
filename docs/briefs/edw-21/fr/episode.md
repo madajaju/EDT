@@ -20,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Nouvelles cette semaine, le 26 juin 2023, dans la transformation numérique, incluant une augmentation des attaques dans la guerre cybernétique, tout le monde se précipitant sur le wagon générateur d'IA, et les réseaux radio virtualisés.
+summary: Nouvelles de la semaine du 26 juin 2023, dans la transformation numérique, y compris l'augmentation des attaques dans la guerre cybernétique, tout le monde sautant sur la vague de l'IA générative et les réseaux radio virtualisés.
 video: https://youtu.be/1gJWUw3SD6Q
-description: Nouvelles cette semaine, le 26 juin 2023, dans la transformation numérique, incluant une augmentation des attaques dans la guerre cybernétique, tout le monde se précipitant sur le wagon générateur d'IA, et les réseaux radio virtualisés.
+description: Nouvelles de la semaine du 26 juin 2023, dans la transformation numérique, y compris l'augmentation des attaques dans la guerre cybernétique, tout le monde sautant sur la vague de l'IA générative et les réseaux radio virtualisés.
 ---
 
 

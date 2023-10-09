@@ -36,9 +36,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Ottieni le ultime notizie digitali per la settimana del 10 settembre 2023 che coprono Intelligenza Artificiale, Sicurezza informatica e Calcolo Ubiquo. Questa settimana, scopri una nuova minaccia cibernetica per iPhone, il luogo di nascita di GPT-4 e l'approccio del MIT per affrontare l'incertezza del calcolo quantistico.
+summary: Ottieni le ultime notizie digitali per la settimana del 10 settembre 2023 riguardanti Intelligenza Artificiale, Sicurezza Informatica e Informatica Ubiqua. Questa settimana, scopri una nuova minaccia cibernetica per iPhone, il luogo di origine di GPT-4 e l'approccio del MIT per affrontare l'incertezza del calcolo quantistico.
 video: https://youtu.be/bk8GyXOw7pc
-description: Ottieni le ultime notizie digitali per la settimana del 10 settembre 2023 che coprono Intelligenza Artificiale, Sicurezza informatica e Calcolo Ubiquo. Questa settimana, scopri una nuova minaccia cibernetica per iPhone, il luogo di nascita di GPT-4 e l'approccio del MIT per affrontare l'incertezza del calcolo quantistico.
+description: Ottieni le ultime notizie digitali per la settimana del 10 settembre 2023 riguardanti Intelligenza Artificiale, Sicurezza Informatica e Informatica Ubiqua. Questa settimana, scopri una nuova minaccia cibernetica per iPhone, il luogo di origine di GPT-4 e l'approccio del MIT per affrontare l'incertezza del calcolo quantistico.
 ---
 
 

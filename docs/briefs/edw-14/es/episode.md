@@ -23,9 +23,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Traducción al Español: Noticias sobre Transformación Digital para la semana del 8 de mayo de 2023, incluyendo
+summary: News in Digital Transformation for the week of May 8, 2023 including 
 video: https://youtu.be/
-description: Traducción al Español: Noticias sobre Transformación Digital para la semana del 8 de mayo de 2023, incluyendo
+description: News in Digital Transformation for the week of May 8, 2023 including 
 ---
 
 

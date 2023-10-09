@@ -23,9 +23,13 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Ecco gli ultimi aggiornamenti nel campo della Trasformazione Digitale per la settimana del 31 luglio 2023. Questo include notizie sulla partnership tra Ericsson e Intel nello sviluppo della tecnologia 5G, gli sforzi di ChatGPT nel contrastare la sicurezza informatica e l'emergere dello sviluppo di software basato sull'Intelligenza Artificiale.
+summary: 
+Ecco gli ultimi aggiornamenti nel campo della Trasformazione Digitale per la settimana del 31 luglio 2023. Questo include notizie sulla partnership tra Ericsson e Intel nel promuovere la tecnologia 5G, gli sforzi di ChatGPT nel contrastare la cybersecurity e la comparsa dello sviluppo di software basato sull'Intelligenza Artificiale.
+
 video: https://youtu.be/
-description: Ecco gli ultimi aggiornamenti nel campo della Trasformazione Digitale per la settimana del 31 luglio 2023. Questo include notizie sulla partnership tra Ericsson e Intel nello sviluppo della tecnologia 5G, gli sforzi di ChatGPT nel contrastare la sicurezza informatica e l'emergere dello sviluppo di software basato sull'Intelligenza Artificiale.
+description: 
+Ecco gli ultimi aggiornamenti nel campo della Trasformazione Digitale per la settimana del 31 luglio 2023. Questo include notizie sulla partnership tra Ericsson e Intel nel promuovere la tecnologia 5G, gli sforzi di ChatGPT nel contrastare la cybersecurity e la comparsa dello sviluppo di software basato sull'Intelligenza Artificiale.
+
 ---
 
 

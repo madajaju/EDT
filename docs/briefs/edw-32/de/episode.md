@@ -36,9 +36,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Erhalten Sie die neuesten digitalen Nachrichten für die Woche vom 10. September 2023, die sich mit Künstlicher Intelligenz, Cybersicherheit und Ubiquitous Computing befassen. Diese Woche erfahren Sie mehr über eine neue iPhone-Cyberbedrohung, den Geburtsort von GPT-4 und den Ansatz des MIT zur Bewältigung der Unsicherheit bei der Quantenberechnung.
+summary: Erhalten Sie die neuesten digitalen Nachrichten für die Woche vom 10. September 2023, die künstliche Intelligenz, Cybersicherheit und ubiquitäres Computing abdecken. Erfahren Sie diese Woche mehr über eine neue iPhone-Cyberbedrohung, den Geburtsort von GPT-4 und den Ansatz des MIT zur Bewältigung der Unsicherheit bei der Quantencomputertechnik.
 video: https://youtu.be/OswZuzs4qXw
-description: Erhalten Sie die neuesten digitalen Nachrichten für die Woche vom 10. September 2023, die sich mit Künstlicher Intelligenz, Cybersicherheit und Ubiquitous Computing befassen. Diese Woche erfahren Sie mehr über eine neue iPhone-Cyberbedrohung, den Geburtsort von GPT-4 und den Ansatz des MIT zur Bewältigung der Unsicherheit bei der Quantenberechnung.
+description: Erhalten Sie die neuesten digitalen Nachrichten für die Woche vom 10. September 2023, die künstliche Intelligenz, Cybersicherheit und ubiquitäres Computing abdecken. Erfahren Sie diese Woche mehr über eine neue iPhone-Cyberbedrohung, den Geburtsort von GPT-4 und den Ansatz des MIT zur Bewältigung der Unsicherheit bei der Quantencomputertechnik.
 ---
 
 

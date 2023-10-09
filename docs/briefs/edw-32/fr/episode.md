@@ -36,9 +36,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Obtenez les dernières nouvelles numériques de la semaine du 10 septembre 2023 couvrant l'intelligence artificielle, la cybersécurité et l'informatique omniprésente. Cette semaine, découvrez une nouvelle menace cybernétique pour l'iPhone, le lieu de naissance de GPT-4 et l'approche du MIT pour aborder l'incertitude de l'informatique quantique.
+summary: Obtenez les dernières actualités numériques pour la semaine du 10 septembre 2023 couvrant l'intelligence artificielle, la cybersécurité et l'informatique omniprésente. Cette semaine, découvrez une nouvelle menace cybernétique pour l'iPhone, le lieu de naissance du GPT-4 et l'approche du MIT pour faire face à l'incertitude de l'informatique quantique.
 video: https://youtu.be/vs2smu2vR_I
-description: Obtenez les dernières nouvelles numériques de la semaine du 10 septembre 2023 couvrant l'intelligence artificielle, la cybersécurité et l'informatique omniprésente. Cette semaine, découvrez une nouvelle menace cybernétique pour l'iPhone, le lieu de naissance de GPT-4 et l'approche du MIT pour aborder l'incertitude de l'informatique quantique.
+description: Obtenez les dernières actualités numériques pour la semaine du 10 septembre 2023 couvrant l'intelligence artificielle, la cybersécurité et l'informatique omniprésente. Cette semaine, découvrez une nouvelle menace cybernétique pour l'iPhone, le lieu de naissance du GPT-4 et l'approche du MIT pour faire face à l'incertitude de l'informatique quantique.
 ---
 
 

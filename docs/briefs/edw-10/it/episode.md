@@ -23,9 +23,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Sommario
+summary: Riepilogo
 video: https://youtu.be/
-description: Sommario
+description: Riepilogo
 ---
 
 

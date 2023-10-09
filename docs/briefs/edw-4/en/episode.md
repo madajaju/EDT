@@ -16,9 +16,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: A summary is a concise overview or brief account of something such as a book, article, or event. It provides the main points or key information in a condensed form to give readers a quick understanding of the topic without going into too much detail.
+summary: Summary
 video: https://youtu.be/G9BnQeZfbmU
-description: A summary is a concise overview or brief account of something such as a book, article, or event. It provides the main points or key information in a condensed form to give readers a quick understanding of the topic without going into too much detail.
+description: Summary
 ---
 
 

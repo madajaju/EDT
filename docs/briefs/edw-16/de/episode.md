@@ -16,9 +16,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digitale Transformationsnachrichten für die Woche vom 29. Mai 2023. In dieser Episode.
+summary: Digital Transformation news for the week of May 29, 2023. In this episode.
 video: https://youtu.be/
-description: Digitale Transformationsnachrichten für die Woche vom 29. Mai 2023. In dieser Episode.
+description: Digital Transformation news for the week of May 29, 2023. In this episode.
 ---
 
 

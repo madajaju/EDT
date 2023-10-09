@@ -16,9 +16,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Nachrichten zur digitalen Umarmung für die Woche vom 29. Mai 2023: Erfahren Sie mehr über weitere Vorschriften für KI, zunehmende Cyberangriffe von Nationalstaaten und Investitionen in Edge Computing.
+summary: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
 video: https://youtu.be/bpxXLZ5a1Cg
-description: Nachrichten zur digitalen Umarmung für die Woche vom 29. Mai 2023: Erfahren Sie mehr über weitere Vorschriften für KI, zunehmende Cyberangriffe von Nationalstaaten und Investitionen in Edge Computing.
+description: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
 ---
 
 

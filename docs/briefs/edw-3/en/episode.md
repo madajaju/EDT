@@ -16,9 +16,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Unfortunately, I cannot provide a translation without a specific text or sentence to translate. Can you please provide the text or sentence you would like to be translated?
+summary: Summary
 video: https://youtu.be/pa08kaztW6w
-description: Unfortunately, I cannot provide a translation without a specific text or sentence to translate. Can you please provide the text or sentence you would like to be translated?
+description: Summary
 ---
 
 

@@ -20,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Transformación digital para la semana del 12 de junio de 2023, incluye el desarrollo de una fuerza cibernética de 1 millón, muchas interrupciones en la nube y la escritura de código por AI que se incluirá en la biblioteca estándar de C++.
+summary: La Transformación Digital para la semana del 12 de junio de 2023 incluye el desarrollo de una fuerza cibernética de 1 millón, muchas interrupciones en la nube, y la escritura de código de IA que pasará a formar parte de la biblioteca estándar de C++.
 video: https://youtu.be/
-description: Transformación digital para la semana del 12 de junio de 2023, incluye el desarrollo de una fuerza cibernética de 1 millón, muchas interrupciones en la nube y la escritura de código por AI que se incluirá en la biblioteca estándar de C++.
+description: La Transformación Digital para la semana del 12 de junio de 2023 incluye el desarrollo de una fuerza cibernética de 1 millón, muchas interrupciones en la nube, y la escritura de código de IA que pasará a formar parte de la biblioteca estándar de C++.
 ---
 
 

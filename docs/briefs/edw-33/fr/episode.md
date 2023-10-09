@@ -41,9 +41,13 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Rester à jour avec les dernières nouvelles sur la transformation numérique pour la semaine du 17 septembre 2023. Obtenez les dernières mises à jour sur l'intelligence artificielle, l'informatique en périphérie et la cybersécurité. Les points forts de cette semaine incluent Microsoft qui découvre des vulnérabilités dans les logiciels de leurs concurrents, Amazon mettant en place des exigences de divulgation de l'IA, et une liste complète des prochaines conférences sur l'IoT cet automne.
+summary: 
+Rester à jour avec les dernières nouvelles de la transformation digitale pour la semaine du 17 septembre 2023. Obtenez les dernières mises à jour sur l'intelligence artificielle, le calcul en périphérie et la cybersécurité. Les points forts de cette semaine incluent Microsoft découvrant des vulnérabilités dans les logiciels de leurs concurrents, Amazon mettant en place des exigences de divulgation de l'IA, et une liste complète des prochaines conférences IoT cet automne.
+
 video: https://youtu.be/rv6VBFAiB_w
-description: Rester à jour avec les dernières nouvelles sur la transformation numérique pour la semaine du 17 septembre 2023. Obtenez les dernières mises à jour sur l'intelligence artificielle, l'informatique en périphérie et la cybersécurité. Les points forts de cette semaine incluent Microsoft qui découvre des vulnérabilités dans les logiciels de leurs concurrents, Amazon mettant en place des exigences de divulgation de l'IA, et une liste complète des prochaines conférences sur l'IoT cet automne.
+description: 
+Rester à jour avec les dernières nouvelles de la transformation digitale pour la semaine du 17 septembre 2023. Obtenez les dernières mises à jour sur l'intelligence artificielle, le calcul en périphérie et la cybersécurité. Les points forts de cette semaine incluent Microsoft découvrant des vulnérabilités dans les logiciels de leurs concurrents, Amazon mettant en place des exigences de divulgation de l'IA, et une liste complète des prochaines conférences IoT cet automne.
+
 ---
 
 

@@ -16,9 +16,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Translation: Noticias para la Adopción Digital para la semana del 29 de mayo de 2023, conoce más regulaciones para la inteligencia artificial, el aumento de los ciberataques de los estados nacionales e inversiones en computación de borde.
+summary: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
 video: https://youtu.be/g853XRlOVHM
-description: Translation: Noticias para la Adopción Digital para la semana del 29 de mayo de 2023, conoce más regulaciones para la inteligencia artificial, el aumento de los ciberataques de los estados nacionales e inversiones en computación de borde.
+description: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
 ---
 
 
