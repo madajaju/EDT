@@ -23,13 +23,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: 
-Para a semana de 3 de julho de 2023, nas notícias de transformação digital. A IA está encontrando um substituto para a Alexa e a Siri? Podemos ouvir nossos dados? E onde os provedores de serviços em nuvem estão ganhando muito dinheiro?
-
+summary: Para a semana de 3 de julho de 2023, nas notícias de transformação digital. A IA está encontrando um substituto para a Alexa e a Siri? Podemos ouvir nossos dados? E onde os provedores de serviços em nuvem estão ganhando muito dinheiro?
 video: https://youtu.be/
-description: 
-Para a semana de 3 de julho de 2023, nas notícias de transformação digital. A IA está encontrando um substituto para a Alexa e a Siri? Podemos ouvir nossos dados? E onde os provedores de serviços em nuvem estão ganhando muito dinheiro?
-
+description: Para a semana de 3 de julho de 2023, nas notícias de transformação digital. A IA está encontrando um substituto para a Alexa e a Siri? Podemos ouvir nossos dados? E onde os provedores de serviços em nuvem estão ganhando muito dinheiro?
 ---
 
 

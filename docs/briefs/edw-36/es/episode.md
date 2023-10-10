@@ -29,13 +29,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: 
-Obtén las últimas noticias sobre la Transformación Digital para la semana del 8 de octubre de 2023. Los aspectos más destacados de esta semana incluyen un informe sobre la pérdida de $100 millones de MGM Resorts debido a un ciberataque, cómo se está utilizando la IA para ayudar a las víctimas de violencia doméstica y el impacto del Edge computing en los centros de datos de IA. Sintoniza para estar informado.
-
+summary: Obtén las últimas noticias sobre la Transformación Digital para la semana del 8 de octubre de 2023. Los aspectos más destacados de esta semana incluyen un informe sobre la pérdida de $100 millones de MGM Resorts debido a un ciberataque, cómo se está utilizando la IA para ayudar a las víctimas de violencia doméstica y el impacto del Edge computing en los centros de datos de IA. Sintoniza para estar informado.
 video: https://youtu.be/LFx3p-PHVq0
-description: 
-Obtén las últimas noticias sobre la Transformación Digital para la semana del 8 de octubre de 2023. Los aspectos más destacados de esta semana incluyen un informe sobre la pérdida de $100 millones de MGM Resorts debido a un ciberataque, cómo se está utilizando la IA para ayudar a las víctimas de violencia doméstica y el impacto del Edge computing en los centros de datos de IA. Sintoniza para estar informado.
-
+description: Obtén las últimas noticias sobre la Transformación Digital para la semana del 8 de octubre de 2023. Los aspectos más destacados de esta semana incluyen un informe sobre la pérdida de $100 millones de MGM Resorts debido a un ciberataque, cómo se está utilizando la IA para ayudar a las víctimas de violencia doméstica y el impacto del Edge computing en los centros de datos de IA. Sintoniza para estar informado.
 ---
 
 

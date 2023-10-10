@@ -41,13 +41,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: 
-Bleiben Sie auf dem neuesten Stand der aktuellen Nachrichten zur digitalen Transformation für die Woche vom 17. September 2023. Erfahren Sie die neuesten Updates zu künstlicher Intelligenz, Edge Computing und Cybersicherheit. Zu den Highlights dieser Woche gehören Microsofts Aufdeckung von Sicherheitslücken in der Software ihrer Konkurrenten, Amazons Umsetzung von KI-Offenlegungsanforderungen und eine umfassende Liste an bevorstehenden IoT-Konferenzen diesen Herbst.
-
+summary: Bleiben Sie auf dem neuesten Stand der aktuellen Nachrichten zur digitalen Transformation für die Woche vom 17. September 2023. Erfahren Sie die neuesten Updates zu künstlicher Intelligenz, Edge Computing und Cybersicherheit. Zu den Highlights dieser Woche gehören Microsofts Aufdeckung von Sicherheitslücken in der Software ihrer Konkurrenten, Amazons Umsetzung von KI-Offenlegungsanforderungen und eine umfassende Liste an bevorstehenden IoT-Konferenzen diesen Herbst.
 video: https://youtu.be/9cjJOBeaf7s
-description: 
-Bleiben Sie auf dem neuesten Stand der aktuellen Nachrichten zur digitalen Transformation für die Woche vom 17. September 2023. Erfahren Sie die neuesten Updates zu künstlicher Intelligenz, Edge Computing und Cybersicherheit. Zu den Highlights dieser Woche gehören Microsofts Aufdeckung von Sicherheitslücken in der Software ihrer Konkurrenten, Amazons Umsetzung von KI-Offenlegungsanforderungen und eine umfassende Liste an bevorstehenden IoT-Konferenzen diesen Herbst.
-
+description: Bleiben Sie auf dem neuesten Stand der aktuellen Nachrichten zur digitalen Transformation für die Woche vom 17. September 2023. Erfahren Sie die neuesten Updates zu künstlicher Intelligenz, Edge Computing und Cybersicherheit. Zu den Highlights dieser Woche gehören Microsofts Aufdeckung von Sicherheitslücken in der Software ihrer Konkurrenten, Amazons Umsetzung von KI-Offenlegungsanforderungen und eine umfassende Liste an bevorstehenden IoT-Konferenzen diesen Herbst.
 ---
 
 

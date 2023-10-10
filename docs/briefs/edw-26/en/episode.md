@@ -23,13 +23,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: 
-Here are the latest updates in the field of Digital Transformation for the week of July 31, 2023. This includes news on the partnership between Ericsson and Intel in advancing 5G technology, ChatGPT's efforts in tackling cybersecurity, and the emergence of AI-powered software development.
-
+summary: Here are the latest updates in the field of Digital Transformation for the week of July 31, 2023. This includes news on the partnership between Ericsson and Intel in advancing 5G technology, ChatGPT's efforts in tackling cybersecurity, and the emergence of AI-powered software development.
 video: https://youtu.be/Odfl_fJTeKU
-description: 
-Here are the latest updates in the field of Digital Transformation for the week of July 31, 2023. This includes news on the partnership between Ericsson and Intel in advancing 5G technology, ChatGPT's efforts in tackling cybersecurity, and the emergence of AI-powered software development.
-
+description: Here are the latest updates in the field of Digital Transformation for the week of July 31, 2023. This includes news on the partnership between Ericsson and Intel in advancing 5G technology, ChatGPT's efforts in tackling cybersecurity, and the emergence of AI-powered software development.
 ---
 
 

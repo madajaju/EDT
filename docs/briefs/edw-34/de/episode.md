@@ -23,13 +23,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: 
-Digital Transformation News für den 24. September 2023 beinhaltet künstliche Intelligenz, ubiquitäres Computing und Cybersecurity. Erfahre mehr darüber, wie Intels neue CPUs die künstliche Intelligenz und die Hochleistungsrechner verändern und wie eine Hackergruppe von Teenagern die MGM Casinos in Las Vegas lahmgelegt hat.
-
+summary: Digital Transformation News für den 24. September 2023 beinhaltet künstliche Intelligenz, ubiquitäres Computing und Cybersecurity. Erfahre mehr darüber, wie Intels neue CPUs die künstliche Intelligenz und die Hochleistungsrechner verändern und wie eine Hackergruppe von Teenagern die MGM Casinos in Las Vegas lahmgelegt hat.
 video: https://youtu.be/CZdyTfLA5J0
-description: 
-Digital Transformation News für den 24. September 2023 beinhaltet künstliche Intelligenz, ubiquitäres Computing und Cybersecurity. Erfahre mehr darüber, wie Intels neue CPUs die künstliche Intelligenz und die Hochleistungsrechner verändern und wie eine Hackergruppe von Teenagern die MGM Casinos in Las Vegas lahmgelegt hat.
-
+description: Digital Transformation News für den 24. September 2023 beinhaltet künstliche Intelligenz, ubiquitäres Computing und Cybersecurity. Erfahre mehr darüber, wie Intels neue CPUs die künstliche Intelligenz und die Hochleistungsrechner verändern und wie eine Hackergruppe von Teenagern die MGM Casinos in Las Vegas lahmgelegt hat.
 ---
 
 

@@ -23,13 +23,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: 
-Nelle notizie sulla trasformazione digitale della settimana del 17 luglio 2023, Papa Francesco offre orientamenti sull'etica dell'intelligenza artificiale, Intel rimane la fortezza cibernetica d'America, e il mercato del computing periferico è destinato a decollare!
-
+summary: Nelle notizie sulla trasformazione digitale della settimana del 17 luglio 2023, Papa Francesco offre orientamenti sull'etica dell'intelligenza artificiale, Intel rimane la fortezza cibernetica d'America, e il mercato del computing periferico è destinato a decollare!
 video: https://youtu.be/
-description: 
-Nelle notizie sulla trasformazione digitale della settimana del 17 luglio 2023, Papa Francesco offre orientamenti sull'etica dell'intelligenza artificiale, Intel rimane la fortezza cibernetica d'America, e il mercato del computing periferico è destinato a decollare!
-
+description: Nelle notizie sulla trasformazione digitale della settimana del 17 luglio 2023, Papa Francesco offre orientamenti sull'etica dell'intelligenza artificiale, Intel rimane la fortezza cibernetica d'America, e il mercato del computing periferico è destinato a decollare!
 ---
 
 

@@ -29,13 +29,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: 
-Get the latest news on Digital Transformation for the week of October 8, 2023. This week's highlights include a report on MGM Resorts losing $100 million due to a cyber attack, how AI is being used to assist victims of domestic violence, and the impact of Edge computing on AI data centers. Tune in to stay informed.
-
+summary: Get the latest news on Digital Transformation for the week of October 8, 2023. This week&#39;s highlights include a report on MGM Resorts losing $100 million due to a cyber attack, how AI is being used to assist victims of domestic violence, and the impact of Edge computing on AI data centers. Tune in to stay informed.
 video: https://youtu.be/BZW4vGw-GJw
-description: 
-Get the latest news on Digital Transformation for the week of October 8, 2023. This week&#39;s highlights include a report on MGM Resorts losing $100 million due to a cyber attack, how AI is being used to assist victims of domestic violence, and the impact of Edge computing on AI data centers. Tune in to stay informed.
-
+description: Get the latest news on Digital Transformation for the week of October 8, 2023. This week&#39;s highlights include a report on MGM Resorts losing $100 million due to a cyber attack, how AI is being used to assist victims of domestic violence, and the impact of Edge computing on AI data centers. Tune in to stay informed.
 ---
 
 

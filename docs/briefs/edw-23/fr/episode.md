@@ -23,13 +23,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: 
-Voici les dernières nouvelles sur la transformation numérique pour le 10 juillet 2023. La guerre commerciale en cours commence à avoir un impact sur les services cloud. De plus, il y a des spéculations selon lesquelles l'engouement autour de l'IA générative pourrait ralentir. Sur le front de la cybersécurité, il y a des inquiétudes concernant notre capacité à rester en avance sur les acteurs malveillants.
-
+summary: Voici les dernières nouvelles sur la transformation numérique pour le 10 juillet 2023. La guerre commerciale en cours commence à avoir un impact sur les services cloud. De plus, il y a des spéculations selon lesquelles l'engouement autour de l'IA générative pourrait ralentir. Sur le front de la cybersécurité, il y a des inquiétudes concernant notre capacité à rester en avance sur les acteurs malveillants.
 video: https://youtu.be/3tb1LrAeaZ8
-description: 
-Voici les dernières nouvelles sur la transformation numérique pour le 10 juillet 2023. La guerre commerciale en cours commence à avoir un impact sur les services cloud. De plus, il y a des spéculations selon lesquelles l'engouement autour de l'IA générative pourrait ralentir. Sur le front de la cybersécurité, il y a des inquiétudes concernant notre capacité à rester en avance sur les acteurs malveillants.
-
+description: Voici les dernières nouvelles sur la transformation numérique pour le 10 juillet 2023. La guerre commerciale en cours commence à avoir un impact sur les services cloud. De plus, il y a des spéculations selon lesquelles l'engouement autour de l'IA générative pourrait ralentir. Sur le front de la cybersécurité, il y a des inquiétudes concernant notre capacité à rester en avance sur les acteurs malveillants.
 ---
 
 

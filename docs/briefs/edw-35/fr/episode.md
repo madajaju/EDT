@@ -33,9 +33,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Nouvelles sur la transformation numérique pour la semaine du 1er octobre, comprenant des histoires sur la gestion des données, l'intelligence artificielle et la cybersécurité. Venez écouter la célébration du mois de sensibilisation à la cybersécurité, une IA qui fait de Snoop Dogg un maître du donjon pour D&D, et découvrez une nouvelle architecture de données appelée Polystore.
+summary: Actualités sur la transformation numérique pour la semaine du 1er octobre, incluant des histoires sur la gestion des données, l'intelligence artificielle et la cybersécurité. Venez écouter la célébration du mois de sensibilisation à la cybersécurité, une IA qui fait de Snoop Dogg le maître du donjon pour D&D et découvrez une nouvelle architecture de données appelée Polystore.
 video: https://youtu.be/95aGB78svCw
-description: Nouvelles sur la transformation numérique pour la semaine du 1er octobre, comprenant des histoires sur la gestion des données, l'intelligence artificielle et la cybersécurité. Venez écouter la célébration du mois de sensibilisation à la cybersécurité, une IA qui fait de Snoop Dogg un maître du donjon pour D&D, et découvrez une nouvelle architecture de données appelée Polystore.
+description: Actualités sur la transformation numérique pour la semaine du 1er octobre, incluant des histoires sur la gestion des données, l'intelligence artificielle et la cybersécurité. Venez écouter la célébration du mois de sensibilisation à la cybersécurité, une IA qui fait de Snoop Dogg le maître du donjon pour D&D et découvrez une nouvelle architecture de données appelée Polystore.
 ---
 
 

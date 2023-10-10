@@ -29,13 +29,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: 
-Obtenez les dernières nouvelles sur la transformation numérique pour la semaine du 8 octobre 2023. Les faits saillants de cette semaine comprennent un rapport sur la perte de 100 millions de dollars par MGM Resorts suite à une cyberattaque, la manière dont l'IA est utilisée pour aider les victimes de violence domestique, et l'impact de l'informatique de périphérie sur les centres de données d'IA. Restez branché pour rester informé(e).
-
+summary: Obtenez les dernières nouvelles sur la transformation numérique pour la semaine du 8 octobre 2023. Les faits saillants de cette semaine comprennent un rapport sur la perte de 100 millions de dollars par MGM Resorts suite à une cyberattaque, la manière dont l'IA est utilisée pour aider les victimes de violence domestique, et l'impact de l'informatique de périphérie sur les centres de données d'IA. Restez branché pour rester informé(e).
 video: https://youtu.be/BQabp9By69Y
-description: 
-Obtenez les dernières nouvelles sur la transformation numérique pour la semaine du 8 octobre 2023. Les faits saillants de cette semaine comprennent un rapport sur la perte de 100 millions de dollars par MGM Resorts suite à une cyberattaque, la manière dont l'IA est utilisée pour aider les victimes de violence domestique, et l'impact de l'informatique de périphérie sur les centres de données d'IA. Restez branché pour rester informé(e).
-
+description: Obtenez les dernières nouvelles sur la transformation numérique pour la semaine du 8 octobre 2023. Les faits saillants de cette semaine comprennent un rapport sur la perte de 100 millions de dollars par MGM Resorts suite à une cyberattaque, la manière dont l'IA est utilisée pour aider les victimes de violence domestique, et l'impact de l'informatique de périphérie sur les centres de données d'IA. Restez branché pour rester informé(e).
 ---
 
 

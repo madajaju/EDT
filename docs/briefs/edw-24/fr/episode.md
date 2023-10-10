@@ -23,13 +23,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: 
-Dans les actualités de la semaine du 17 juillet 2023 sur la transformation numérique, le Pape François offre des orientations sur l'éthique de l'IA, Intel demeure la forteresse cybernétique de l'Amérique et le marché de l'informatique périphérique est sur le point de décoller !
-
+summary: Dans les actualités de la semaine du 17 juillet 2023 sur la transformation numérique, le Pape François offre des orientations sur l'éthique de l'IA, Intel demeure la forteresse cybernétique de l'Amérique et le marché de l'informatique périphérique est sur le point de décoller !
 video: https://youtu.be/D-w740fa2Go
-description: 
-Dans les actualités de la semaine du 17 juillet 2023 sur la transformation numérique, le Pape François offre des orientations sur l'éthique de l'IA, Intel demeure la forteresse cybernétique de l'Amérique et le marché de l'informatique périphérique est sur le point de décoller !
-
+description: Dans les actualités de la semaine du 17 juillet 2023 sur la transformation numérique, le Pape François offre des orientations sur l'éthique de l'IA, Intel demeure la forteresse cybernétique de l'Amérique et le marché de l'informatique périphérique est sur le point de décoller !
 ---
 
 

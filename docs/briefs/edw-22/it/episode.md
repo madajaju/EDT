@@ -23,13 +23,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: 
-Per la settimana del 3 luglio 2023, nelle notizie sulla trasformazione digitale. L'IA sta trovando un sostituto per Alexa e Siri? Possiamo sentire i nostri dati? E dove sono i fornitori di servizi cloud che fanno diluviare soldi?
-
+summary: Per la settimana del 3 luglio 2023, nelle notizie sulla trasformazione digitale. L'IA sta trovando un sostituto per Alexa e Siri? Possiamo sentire i nostri dati? E dove sono i fornitori di servizi cloud che fanno diluviare soldi?
 video: https://youtu.be/iD8uK7ke3xM
-description: 
-Per la settimana del 3 luglio 2023, nelle notizie sulla trasformazione digitale. L'IA sta trovando un sostituto per Alexa e Siri? Possiamo sentire i nostri dati? E dove sono i fornitori di servizi cloud che fanno diluviare soldi?
-
+description: Per la settimana del 3 luglio 2023, nelle notizie sulla trasformazione digitale. L'IA sta trovando un sostituto per Alexa e Siri? Possiamo sentire i nostri dati? E dove sono i fornitori di servizi cloud che fanno diluviare soldi?
 ---
 
 

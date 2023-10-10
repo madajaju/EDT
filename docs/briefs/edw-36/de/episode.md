@@ -29,13 +29,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: 
-Erhalten Sie die neusten Nachrichten zur Digitalen Transformation für die Woche vom 8. Oktober 2023. Die Highlights dieser Woche umfassen einen Bericht über den Verlust von 100 Millionen Dollar durch MGM Resorts aufgrund eines Cyberangriffs, wie KI zur Unterstützung von Opfern häuslicher Gewalt eingesetzt wird und die Auswirkungen des Edge Computing auf KI-Datenzentren. Bleiben Sie dran, um auf dem Laufenden zu bleiben.
-
+summary: Erhalten Sie die neusten Nachrichten zur Digitalen Transformation für die Woche vom 8. Oktober 2023. Die Highlights dieser Woche umfassen einen Bericht über den Verlust von 100 Millionen Dollar durch MGM Resorts aufgrund eines Cyberangriffs, wie KI zur Unterstützung von Opfern häuslicher Gewalt eingesetzt wird und die Auswirkungen des Edge Computing auf KI-Datenzentren. Bleiben Sie dran, um auf dem Laufenden zu bleiben.
 video: https://youtu.be/ijQUgW_V174
-description: 
-Erhalten Sie die neusten Nachrichten zur Digitalen Transformation für die Woche vom 8. Oktober 2023. Die Highlights dieser Woche umfassen einen Bericht über den Verlust von 100 Millionen Dollar durch MGM Resorts aufgrund eines Cyberangriffs, wie KI zur Unterstützung von Opfern häuslicher Gewalt eingesetzt wird und die Auswirkungen des Edge Computing auf KI-Datenzentren. Bleiben Sie dran, um auf dem Laufenden zu bleiben.
-
+description: Erhalten Sie die neusten Nachrichten zur Digitalen Transformation für die Woche vom 8. Oktober 2023. Die Highlights dieser Woche umfassen einen Bericht über den Verlust von 100 Millionen Dollar durch MGM Resorts aufgrund eines Cyberangriffs, wie KI zur Unterstützung von Opfern häuslicher Gewalt eingesetzt wird und die Auswirkungen des Edge Computing auf KI-Datenzentren. Bleiben Sie dran, um auf dem Laufenden zu bleiben.
 ---
 
 

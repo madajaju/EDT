@@ -23,13 +23,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: 
-Notícias sobre Transformação Digital para 24 de setembro de 2023 incluem inteligência artificial, computação ubíqua e cibersegurança. Ouça sobre os novos CPUs da Intel que estão mudando a IA e a computação de alta densidade, e como um grupo de hackers adolescentes derrubou os cassinos da MGM em Las Vegas.
-
+summary: Notícias sobre Transformação Digital para 24 de setembro de 2023 incluem inteligência artificial, computação ubíqua e cibersegurança. Ouça sobre os novos CPUs da Intel que estão mudando a IA e a computação de alta densidade, e como um grupo de hackers adolescentes derrubou os cassinos da MGM em Las Vegas.
 video: https://youtu.be/s2LMxWAnXyI
-description: 
-Notícias sobre Transformação Digital para 24 de setembro de 2023 incluem inteligência artificial, computação ubíqua e cibersegurança. Ouça sobre os novos CPUs da Intel que estão mudando a IA e a computação de alta densidade, e como um grupo de hackers adolescentes derrubou os cassinos da MGM em Las Vegas.
-
+description: Notícias sobre Transformação Digital para 24 de setembro de 2023 incluem inteligência artificial, computação ubíqua e cibersegurança. Ouça sobre os novos CPUs da Intel que estão mudando a IA e a computação de alta densidade, e como um grupo de hackers adolescentes derrubou os cassinos da MGM em Las Vegas.
 ---
 
 

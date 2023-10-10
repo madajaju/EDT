@@ -33,9 +33,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Notizie sulla trasformazione digitale per la settimana dell'1 ottobre, inclusi articoli su gestione dei dati, intelligenza artificiale e sicurezza informatica. Vieni ad ascoltare la celebrazione del mese della consapevolezza della sicurezza informatica, un'intelligenza artificiale che fa di Snoop Dogg il master del dungeon per il gioco di ruolo Dungeons & Dragons, e scopri una nuova architettura dei dati chiamata Polystore.
+summary: Notizie sulla trasformazione digitale per la settimana del 1 ottobre, inclusi articoli su gestione dei dati, intelligenza artificiale e sicurezza informatica. Vieni ad ascoltare la celebrazione del mese della consapevolezza sulla sicurezza informatica, un'intelligenza artificiale che rende Snoop Dogg un master delle stanze per D&D e scopri una nuova architettura dei dati chiamata Polystore.
 video: https://youtu.be/ZZo15Dz7mt8
-description: Notizie sulla trasformazione digitale per la settimana dell'1 ottobre, inclusi articoli su gestione dei dati, intelligenza artificiale e sicurezza informatica. Vieni ad ascoltare la celebrazione del mese della consapevolezza della sicurezza informatica, un'intelligenza artificiale che fa di Snoop Dogg il master del dungeon per il gioco di ruolo Dungeons & Dragons, e scopri una nuova architettura dei dati chiamata Polystore.
+description: Notizie sulla trasformazione digitale per la settimana del 1 ottobre, inclusi articoli su gestione dei dati, intelligenza artificiale e sicurezza informatica. Vieni ad ascoltare la celebrazione del mese della consapevolezza sulla sicurezza informatica, un'intelligenza artificiale che rende Snoop Dogg un master delle stanze per D&D e scopri una nuova architettura dei dati chiamata Polystore.
 ---
 
 
