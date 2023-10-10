@@ -11,7 +11,7 @@ nav_order: 164
 tags:
     - cloudmigration
     - organizations
-    - collectionmultihybridcloud
+    - collmultihybridcloud
     - cloudnative
     - datacenterdependencies
     - hybridstrategy

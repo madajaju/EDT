@@ -11,7 +11,7 @@ nav_order: 163
 tags:
     - cloudstrategy
     - digitaltransformation
-    - collectionmultihybridcloud
+    - collmultihybridcloud
     - cloudtechnologies
     - businessgoals
     - operationalefficiency
