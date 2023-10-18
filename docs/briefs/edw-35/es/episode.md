@@ -33,9 +33,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Noticias de transformación digital para la semana del 1 de octubre que incluyen historias sobre gestión de datos, inteligencia artificial y ciberseguridad. Ven a escuchar la celebración del mes de concientización sobre ciberseguridad, un IA que convierte a Snoop Dogg en un maestro de mazmorras para D&D, y aprende sobre una nueva arquitectura de datos llamada Polystore.
+summary: Noticias de transformación digital para la semana del 1 de octubre, incluyendo historias sobre gestión de datos, inteligencia artificial y ciberseguridad. Ven a escuchar la celebración del mes de concienciación sobre ciberseguridad, un AI que convierte a Snoop Dogg en el maestro de mazmorras de D&D, y aprende sobre una nueva arquitectura de datos llamada Polystore.
 video: https://youtu.be/lSTh6GKYVpA
-description: Noticias de transformación digital para la semana del 1 de octubre que incluyen historias sobre gestión de datos, inteligencia artificial y ciberseguridad. Ven a escuchar la celebración del mes de concientización sobre ciberseguridad, un IA que convierte a Snoop Dogg en un maestro de mazmorras para D&D, y aprende sobre una nueva arquitectura de datos llamada Polystore.
+description: Noticias de transformación digital para la semana del 1 de octubre, incluyendo historias sobre gestión de datos, inteligencia artificial y ciberseguridad. Ven a escuchar la celebración del mes de concienciación sobre ciberseguridad, un AI que convierte a Snoop Dogg en el maestro de mazmorras de D&D, y aprende sobre una nueva arquitectura de datos llamada Polystore.
 ---
 
 

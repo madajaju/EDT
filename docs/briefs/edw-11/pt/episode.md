@@ -23,9 +23,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Resumo
+summary: Sumário
 video: https://youtu.be/
-description: Resumo
+description: Sumário
 ---
 
 

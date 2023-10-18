@@ -20,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Résumé
+summary: Résumé.
 video: https://youtu.be/
-description: Résumé
+description: Résumé.
 ---
 
 
