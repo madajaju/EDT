@@ -8,8 +8,6 @@ description: {{page.summary}}
 author: darrenpulsipher
 image: {{page.img}}
 ---
-<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
-
 {% if page.img %}
 <meta property="og:image" content="{{ page.path | remove: page.name }}/{{ page.img }}">
 <img src="/{{ page.path | remove: page.name }}{{ page.img }}" width="256" height="256" class="thumbnail">
@@ -44,7 +42,6 @@ image: {{page.img}}
 {% endif %}
 {% endfor %}
 
-<!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
 
 <h2>Episodes</h2>
 {% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang', site.lang %}
