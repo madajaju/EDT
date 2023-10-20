@@ -5,11 +5,10 @@ nav_order: 2
 has_children: true
 lang: en
 ---
-<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
 
 # Embracing Digital Transformation
 
-> Darren has just unveiled his latest masterpiece, a captivating 12-part series titled 
+> Darren has just unveiled his latest masterpiece, a captivating 20-part series titled 
 > "Embracing Generative AI." In this groundbreaking podcast, 
 > "Embracing Digital Transformation" delves deep into the realm of generative AI, 
 > featuring insightful discussions with practitioners, educators, 
@@ -69,7 +68,6 @@ clear: both;
     </a><br>
   </div>
 </div>
-<!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
 
 {% include subscribe_posts.html %}
 

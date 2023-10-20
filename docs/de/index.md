@@ -5,8 +5,6 @@ has_children: true
 lang: de
 nav_order: 1
 ---
-<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
-
 # Umarmung der Digitalen Transformation
 
 <style>

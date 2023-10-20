@@ -24,8 +24,6 @@ nav_order: 2
 }
 </style>
 
-<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
-
 {% include subscribe_brief.html %}
 
 # Wöchentliche Nachrichten

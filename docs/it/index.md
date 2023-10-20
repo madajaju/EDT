@@ -5,7 +5,6 @@ has_children: true
 nav_order: 5
 lang: it
 ---
-<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
 
 # Abbracciando la Trasformazione Digitale
 
@@ -59,7 +58,6 @@ clear: both;
     </a><br>
   </div>
 </div>
-<!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
 
 <h1>Episodi</h1>
 {% for page in sortedEpisodes %}

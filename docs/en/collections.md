@@ -9,9 +9,6 @@ nav_order: 3
 child_nav_order: reversed
 ---
 
-
-<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
-
 {% include subscribe_brief.html %}
 
 Hot topics come and go in the world of digital transformation. So in Embracing Digital Transformation we have pulled together a library of collections of podcast episodes that have focused on the hot topics of today.

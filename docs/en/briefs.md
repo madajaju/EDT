@@ -25,15 +25,12 @@ child_nav_order: reversed
 }
 </style>
 
-<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=63d884dcaa39f90012ccb778&product=inline-share-buttons' async='async'></script>
 
 {% include subscribe_brief.html %}
 
 # Weekly Briefs
 
 We are in the throws of the digital revolution. During this time, it can be challenging to sift through all of the hype and find what works, what is still viable two years from now, and what contributes to your organization. Many IT organizations need help with confusing messages and conflicting technologies. We help organizations sort through the chatter and embrace digital transformation. The world of digital transformation is constantly changing, and you need to know what is viable today.  Listen to the podcast weekly for the latest news in cybersecurity, advanced communications, data management, artificial intelligence, edge, and cloud computing.</p>
-
-<!-- ShareThis BEGIN --><div class="sharethis-inline-share-buttons"></div><!-- ShareThis END -->
 
 <div class="row">
   <div class="column">
