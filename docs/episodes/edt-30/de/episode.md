@@ -19,7 +19,7 @@ tags:
     - developer
     - people
 
-date: Mon Nov 16 2020 16:00:00 GMT-0800 (Pacific Standard Time)
+date: Mon Nov 16 2020 19:00:00 GMT-0500 (Eastern Standard Time)
 guests:
     - Darren W Pulsipher
 

@@ -16,7 +16,7 @@ tags:
     - heterogeneouscompute
     - compute
 
-date: Wed Apr 05 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Wed Apr 05 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Darren W Pulsipher
     - Ian Evans

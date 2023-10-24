@@ -14,7 +14,7 @@ tags:
     - confidentialcomputing
     - ai
 
-date: Thu Jun 15 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: Thu Jun 15 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Anna Scott
     - Ibett Acarapi

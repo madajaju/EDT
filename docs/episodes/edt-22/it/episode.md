@@ -10,7 +10,7 @@ grand_parent: Italiano
 nav_order: 22
 tags:
 
-date: Tue Sep 22 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Tue Sep 22 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Darren W Pulsipher
 

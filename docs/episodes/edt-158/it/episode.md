@@ -27,7 +27,7 @@ tags:
     - embracingdigital
     - edt158
 
-date: Mon Sep 11 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Mon Sep 11 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Laura Newey
     - Darren W Pulsipher
