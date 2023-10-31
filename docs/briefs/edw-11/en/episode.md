@@ -17,14 +17,14 @@ tags:
     - datamanagement
     - advancedcomms
 
-date: Sun Apr 16 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
+date: Sun Apr 16 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Summary
-video: https://youtu.be/fIPUn7bX3Qs
+video: https://youtu.be/qdNkyXKbJEU
 description: Summary
 ---
 
@@ -33,7 +33,7 @@ description: Summary
 
 
 
-{% include youtube.html id="fIPUn7bX3Qs" %}
+{% include youtube.html id="qdNkyXKbJEU" %}
 
 
 ---

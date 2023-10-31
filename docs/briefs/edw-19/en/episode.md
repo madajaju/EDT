@@ -14,14 +14,14 @@ tags:
     - compute
     - cybersecurity
 
-date: Mon Jun 12 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
+date: Mon Jun 12 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Digital Transformation for the week of June 12, 2023, includes a 1 million cyber force development, many cloud outages, and AI writing code going into the C++ standard library.
-video: https://youtu.be/
+video: https://youtu.be/1CbXtRey41w
 description: Digital Transformation for the week of June 12, 2023, includes a 1 million cyber force development, many cloud outages, and AI writing code going into the C++ standard library.
 ---
 
@@ -29,6 +29,8 @@ description: Digital Transformation for the week of June 12, 2023, includes a 1 
 {% include transistor.html id="381e66d6" %}
 
 
+
+{% include youtube.html id="1CbXtRey41w" %}
 
 
 ---

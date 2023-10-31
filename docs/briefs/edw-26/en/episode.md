@@ -17,14 +17,14 @@ tags:
     - datamanagement
     - advancedcomms
 
-date: Mon Jul 31 2023 23:59:34 GMT-0400 (Eastern Daylight Time)
+date: Mon Jul 31 2023 20:59:34 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Here are the latest updates in the field of Digital Transformation for the week of July 31, 2023. This includes news on the partnership between Ericsson and Intel in advancing 5G technology, ChatGPT's efforts in tackling cybersecurity, and the emergence of AI-powered software development.
-video: https://youtu.be/Odfl_fJTeKU
+video: https://youtu.be/whiO5D0hnk8
 description: Here are the latest updates in the field of Digital Transformation for the week of July 31, 2023. This includes news on the partnership between Ericsson and Intel in advancing 5G technology, ChatGPT's efforts in tackling cybersecurity, and the emergence of AI-powered software development.
 ---
 
@@ -33,7 +33,7 @@ description: Here are the latest updates in the field of Digital Transformation 
 
 
 
-{% include youtube.html id="Odfl_fJTeKU" %}
+{% include youtube.html id="whiO5D0hnk8" %}
 
 
 ---

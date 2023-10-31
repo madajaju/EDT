@@ -14,14 +14,14 @@ tags:
     - compute
     - cybersecurity
 
-date: Sun Mar 26 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
+date: Sun Mar 26 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Summary
-video: https://youtu.be/vTGtzDl9vnE
+video: https://youtu.be/RuCqqeC1hP0
 description: Summary
 ---
 
@@ -30,7 +30,7 @@ description: Summary
 
 
 
-{% include youtube.html id="vTGtzDl9vnE" %}
+{% include youtube.html id="RuCqqeC1hP0" %}
 
 
 ---

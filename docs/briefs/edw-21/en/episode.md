@@ -14,14 +14,14 @@ tags:
     - edge
     - cybersecurity
 
-date: Sun Jun 25 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
+date: Sun Jun 25 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: News this week, June 26, 2023,  in digital transformation, including increased attacks in the cyber war, everyone jumping onto the generative AI bandwagon, and virtualized radio area networks.
-video: https://youtu.be/D005F5LA3OU
+video: https://youtu.be/EG3DDdNNRZc
 description: News this week, June 26, 2023,  in digital transformation, including increased attacks in the cyber war, everyone jumping onto the generative AI bandwagon, and virtualized radio area networks.
 ---
 
@@ -30,7 +30,7 @@ description: News this week, June 26, 2023,  in digital transformation, includin
 
 
 
-{% include youtube.html id="D005F5LA3OU" %}
+{% include youtube.html id="EG3DDdNNRZc" %}
 
 
 ---

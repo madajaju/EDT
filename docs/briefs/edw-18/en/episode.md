@@ -14,14 +14,14 @@ tags:
     - compute
     - cybersecurity
 
-date: Sun Jun 04 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
+date: Sun Jun 04 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Digital transformation news for June 6, 2023. This week more jobs in AI, major cyber security breaches, and cloud technology best practices.
-video: https://youtu.be/8VeLgGpspo4
+video: https://youtu.be/KJWlZ_GJIy0
 description: Digital transformation news for June 6, 2023. This week more jobs in AI, major cyber security breaches, and cloud technology best practices.
 ---
 
@@ -30,7 +30,7 @@ description: Digital transformation news for June 6, 2023. This week more jobs i
 
 
 
-{% include youtube.html id="8VeLgGpspo4" %}
+{% include youtube.html id="KJWlZ_GJIy0" %}
 
 
 ---

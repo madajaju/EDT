@@ -23,14 +23,14 @@ tags:
     - iot
     - criticalinfrastructure
 
-date: Tue Oct 10 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
+date: Tue Oct 10 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Get the latest news on Digital Transformation for the week of October 8, 2023. This week&#39;s highlights include a report on MGM Resorts losing $100 million due to a cyber attack, how AI is being used to assist victims of domestic violence, and the impact of Edge computing on AI data centers. Tune in to stay informed.
-video: https://youtu.be/BZW4vGw-GJw
+video: https://youtu.be/kexJxsmT2bc
 description: Get the latest news on Digital Transformation for the week of October 8, 2023. This week&#39;s highlights include a report on MGM Resorts losing $100 million due to a cyber attack, how AI is being used to assist victims of domestic violence, and the impact of Edge computing on AI data centers. Tune in to stay informed.
 ---
 
@@ -39,7 +39,7 @@ description: Get the latest news on Digital Transformation for the week of Octob
 
 
 
-{% include youtube.html id="BZW4vGw-GJw" %}
+{% include youtube.html id="kexJxsmT2bc" %}
 
 
 ---

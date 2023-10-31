@@ -17,14 +17,14 @@ tags:
     - datamanagement
     - advancedcomms
 
-date: Wed Jul 05 2023 22:44:46 GMT-0400 (Eastern Daylight Time)
+date: Wed Jul 05 2023 19:44:46 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: For the week of July 3, 2023, in digital transformation news. Is AI finding a replacement for Alexa and Siri? Can we hear our data? And where are the cloud service providers making it rain money?
-video: https://youtu.be/Mk1b4pDRYCU
+video: https://youtu.be/eSqDvnxPZIM
 description: For the week of July 3, 2023, in digital transformation news. Is AI finding a replacement for Alexa and Siri? Can we hear our data? And where are the cloud service providers making it rain money?
 ---
 
@@ -33,7 +33,7 @@ description: For the week of July 3, 2023, in digital transformation news. Is AI
 
 
 
-{% include youtube.html id="Mk1b4pDRYCU" %}
+{% include youtube.html id="eSqDvnxPZIM" %}
 
 
 ---

@@ -17,14 +17,14 @@ tags:
     - datamanagement
     - advancedcomms
 
-date: Tue Jul 18 2023 08:26:54 GMT-0400 (Eastern Daylight Time)
+date: Tue Jul 18 2023 05:26:54 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: In digital transformation news for the week of July 17, 2023, Pope Francis offers guidance on AI ethics, Intel remains America&#39;s cyber fortress, and the edge computing market is set to soar!
-video: https://youtu.be/dedU_w2FdqI
+video: https://youtu.be/JiRP6tguLHw
 description: In digital transformation news for the week of July 17, 2023, Pope Francis offers guidance on AI ethics, Intel remains America&#39;s cyber fortress, and the edge computing market is set to soar!
 ---
 
@@ -33,7 +33,7 @@ description: In digital transformation news for the week of July 17, 2023, Pope 
 
 
 
-{% include youtube.html id="dedU_w2FdqI" %}
+{% include youtube.html id="JiRP6tguLHw" %}
 
 
 ---

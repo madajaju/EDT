@@ -11,13 +11,13 @@ grand_parent: English
 nav_order: 17
 tags:
 
-date: Mon May 29 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
+date: Mon May 29 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
 
 img: thumbnail.png
 image: thumbnail.png
 summary: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
-video: https://youtu.be/g853XRlOVHM
+video: https://youtu.be/aB-tj6NMui0
 description: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
 ---
 
@@ -26,7 +26,7 @@ description: News for Embracing Digital for the week of May 29, 2023, learn abou
 
 
 
-{% include youtube.html id="g853XRlOVHM" %}
+{% include youtube.html id="aB-tj6NMui0" %}
 
 
 ---

@@ -17,14 +17,14 @@ tags:
     - datamanagement
     - advancedcomms
 
-date: Mon Sep 25 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
+date: Mon Sep 25 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Digital Transformation news for September 24, 2023, includes artificial intelligence, ubiquitous computing, and cybersecurity. Listen about Intel’s new CPUs changing AI and high-density computing and how a hacker group of teenagers took down Las Vegas’ MGM casinos.
-video: https://youtu.be/wHrXrPjaNdA
+video: https://youtu.be/b_9c9CivKbI
 description: Digital Transformation news for September 24, 2023, includes artificial intelligence, ubiquitous computing, and cybersecurity. Listen about Intel’s new CPUs changing AI and high-density computing and how a hacker group of teenagers took down Las Vegas’ MGM casinos.
 ---
 
@@ -33,7 +33,7 @@ description: Digital Transformation news for September 24, 2023, includes artifi
 
 
 
-{% include youtube.html id="wHrXrPjaNdA" %}
+{% include youtube.html id="b_9c9CivKbI" %}
 
 
 ---

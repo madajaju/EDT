@@ -11,13 +11,13 @@ grand_parent: English
 nav_order: 6
 tags:
 
-date: Mon Mar 13 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
+date: Mon Mar 13 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Summary
-video: https://youtu.be/ZM2kFyMI7UE
+video: https://youtu.be/QzTLDXveY20
 description: Summary
 ---
 
@@ -26,7 +26,7 @@ description: Summary
 
 
 
-{% include youtube.html id="ZM2kFyMI7UE" %}
+{% include youtube.html id="QzTLDXveY20" %}
 
 
 ---

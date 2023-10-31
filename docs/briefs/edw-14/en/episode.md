@@ -17,14 +17,14 @@ tags:
     - datamanagement
     - advancedcomms
 
-date: Sun May 07 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
+date: Sun May 07 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: News in Digital Transformation for the week of May 8, 2023 including 
-video: https://youtu.be/DY9iNUhQ-a8
+video: https://youtu.be/h70xK0joaxw
 description: News in Digital Transformation for the week of May 8, 2023 including 
 ---
 
@@ -33,7 +33,7 @@ description: News in Digital Transformation for the week of May 8, 2023 includin
 
 
 
-{% include youtube.html id="DY9iNUhQ-a8" %}
+{% include youtube.html id="h70xK0joaxw" %}
 
 
 ---

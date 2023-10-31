@@ -27,14 +27,14 @@ tags:
     - digitaltransformationpodcast
     - intelcloudsolutionarchitects
 
-date: Tue Oct 03 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
+date: Tue Oct 03 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Digital transformation news for the week of October 1st including stories in data management, artificial intelligence, and cybersecurity. Come listen to the celebration of cybersecurity awareness month, an AI that makes Snoop Dogg a dungeon master for D&amp;D, and learn about a new data architecture Polystore.
-video: https://youtu.be/ojSf9aOq8k0
+video: https://youtu.be/ORj30MRzPvM
 description: Digital transformation news for the week of October 1st including stories in data management, artificial intelligence, and cybersecurity. Come listen to the celebration of cybersecurity awareness month, an AI that makes Snoop Dogg a dungeon master for D&amp;D, and learn about a new data architecture Polystore.
 ---
 
@@ -43,7 +43,7 @@ description: Digital transformation news for the week of October 1st including s
 
 
 
-{% include youtube.html id="ojSf9aOq8k0" %}
+{% include youtube.html id="ORj30MRzPvM" %}
 
 
 ---

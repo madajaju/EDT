@@ -28,14 +28,14 @@ tags:
     - edw37
     - zerotrustarchitecture
 
-date: Tue Oct 17 2023 02:00:00 GMT-0400 (Eastern Daylight Time)
+date: Mon Oct 16 2023 23:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Digital Transformation this Week for October 15, 2023, reports ongoing cyberattacks during the Israel-Hamas conflict and the compromising of the &#39;Red Alert System&#39; app. Additionally, generative AI has been shown to reduce cloud migration efforts while the UK&#39;s CMA investigates the public cloud market.
-video: https://youtu.be/GjeopdhEZqc
+video: https://youtu.be/hKlIKJwC3M0
 description: Digital Transformation this Week for October 15, 2023, reports ongoing cyberattacks during the Israel-Hamas conflict and the compromising of the &#39;Red Alert System&#39; app. Additionally, generative AI has been shown to reduce cloud migration efforts while the UK&#39;s CMA investigates the public cloud market.
 ---
 
@@ -44,7 +44,7 @@ description: Digital Transformation this Week for October 15, 2023, reports ongo
 
 
 
-{% include youtube.html id="GjeopdhEZqc" %}
+{% include youtube.html id="hKlIKJwC3M0" %}
 
 
 ---

@@ -14,14 +14,14 @@ tags:
     - edge
     - cybersecurity
 
-date: Sun May 14 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
+date: Sun May 14 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: News from the week of May 15, 2023 in digital transformation including stories from Edge Computing, Cybersecurity, and Artificial Intelligence.
-video: https://youtu.be/ugAE476ROCA
+video: https://youtu.be/7iGcNMxkz0o
 description: News from the week of May 15, 2023 in digital transformation including stories from Edge Computing, Cybersecurity, and Artificial Intelligence.
 ---
 
@@ -30,7 +30,7 @@ description: News from the week of May 15, 2023 in digital transformation includ
 
 
 
-{% include youtube.html id="ugAE476ROCA" %}
+{% include youtube.html id="7iGcNMxkz0o" %}
 
 
 ---

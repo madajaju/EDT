@@ -14,14 +14,14 @@ tags:
     - compute
     - cybersecurity
 
-date: Mon Feb 06 2023 19:00:00 GMT-0500 (Eastern Standard Time)
+date: Mon Feb 06 2023 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity.
-video: https://youtu.be/XSOJHnr-4TY
+video: https://youtu.be/nxTLeN4r41o
 description: For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity.
 ---
 
@@ -30,7 +30,7 @@ description: For the week of February 6, 2023. News from around the world of dig
 
 
 
-{% include youtube.html id="XSOJHnr-4TY" %}
+{% include youtube.html id="nxTLeN4r41o" %}
 
 
 ---

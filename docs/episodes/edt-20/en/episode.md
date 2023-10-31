@@ -15,7 +15,7 @@ tags:
     - storage
     - vastdata
 
-date: Tue Sep 08 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
+date: Tue Sep 08 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Randy Hayes

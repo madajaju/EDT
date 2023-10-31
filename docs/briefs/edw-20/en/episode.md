@@ -17,14 +17,14 @@ tags:
     - datamanagement
     - advancedcomms
 
-date: Mon Jun 19 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
+date: Mon Jun 19 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Digital Transformation news from the week of June 19, 2023 including stories of managers replacing workers with AI, Cloud outages again, and privacy laws taking a bite out of big tech.
-video: https://youtu.be/e7ihne_LW6o
+video: https://youtu.be/tUEz1p_zJ60
 description: Digital Transformation news from the week of June 19, 2023 including stories of managers replacing workers with AI, Cloud outages again, and privacy laws taking a bite out of big tech.
 ---
 
@@ -33,7 +33,7 @@ description: Digital Transformation news from the week of June 19, 2023 includin
 
 
 
-{% include youtube.html id="e7ihne_LW6o" %}
+{% include youtube.html id="tUEz1p_zJ60" %}
 
 
 ---

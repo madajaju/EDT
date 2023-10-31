@@ -11,13 +11,13 @@ grand_parent: English
 nav_order: 16
 tags:
 
-date: Mon May 22 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
+date: Mon May 22 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Digital Transformation news for the week of May 29, 2023. In this episode.
-video: https://youtu.be/YOQyDhW6eJA
+video: https://youtu.be/xf8UJMuBmz4
 description: Digital Transformation news for the week of May 29, 2023. In this episode.
 ---
 
@@ -26,7 +26,7 @@ description: Digital Transformation news for the week of May 29, 2023. In this e
 
 
 
-{% include youtube.html id="YOQyDhW6eJA" %}
+{% include youtube.html id="xf8UJMuBmz4" %}
 
 
 ---

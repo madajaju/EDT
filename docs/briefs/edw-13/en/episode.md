@@ -14,14 +14,14 @@ tags:
     - cybersecurity
     - edge
 
-date: Sun Apr 30 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
+date: Sun Apr 30 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space.
-video: https://youtu.be/trEhrASxsM4
+video: https://youtu.be/3NHYo7P6y0Q
 description: News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space.
 ---
 
@@ -30,7 +30,7 @@ description: News and stories from the Week of May 01, 2023, in Digital Transfor
 
 
 
-{% include youtube.html id="trEhrASxsM4" %}
+{% include youtube.html id="3NHYo7P6y0Q" %}
 
 
 ---

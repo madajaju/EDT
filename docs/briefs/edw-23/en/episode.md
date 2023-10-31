@@ -17,14 +17,14 @@ tags:
     - datamanagement
     - advancedcomms
 
-date: Tue Jul 11 2023 23:48:41 GMT-0400 (Eastern Daylight Time)
+date: Tue Jul 11 2023 20:48:41 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Here&#39;s the latest news in digital transformation for July 10, 2023. The ongoing trade war is starting to impact cloud services. Additionally, there&#39;s speculation that the hype around generative AI may be slowing down. On the cybersecurity front, there are concerns about whether we&#39;re doing enough to stay ahead of malicious actors.
-video: https://youtu.be/
+video: https://youtu.be/ah8sE08XjDk
 description: Here&#39;s the latest news in digital transformation for July 10, 2023. The ongoing trade war is starting to impact cloud services. Additionally, there&#39;s speculation that the hype around generative AI may be slowing down. On the cybersecurity front, there are concerns about whether we&#39;re doing enough to stay ahead of malicious actors.
 ---
 
@@ -32,6 +32,8 @@ description: Here&#39;s the latest news in digital transformation for July 10, 2
 {% include transistor.html id="be8bee99" %}
 
 
+
+{% include youtube.html id="ah8sE08XjDk" %}
 
 
 ---

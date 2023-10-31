@@ -35,14 +35,14 @@ tags:
     - edge
     - embracingdigital
 
-date: Mon Sep 18 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
+date: Mon Sep 18 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Stay up-to-date with the latest news in digital transformation for the week of September 17, 2023. Get the latest updates on artificial intelligence, edge computing, and cybersecurity. This week&#39;s highlights include Microsoft uncovering vulnerabilities in their competitors&#39; software, Amazon implementing AI disclosure requirements, and a comprehensive list of upcoming IoT conferences this fall.
-video: https://youtu.be/tJEtdB8tN2Q
+video: https://youtu.be/HtZoQzoSnQE
 description: Stay up-to-date with the latest news in digital transformation for the week of September 17, 2023. Get the latest updates on artificial intelligence, edge computing, and cybersecurity. This week&#39;s highlights include Microsoft uncovering vulnerabilities in their competitors&#39; software, Amazon implementing AI disclosure requirements, and a comprehensive list of upcoming IoT conferences this fall.
 ---
 
@@ -51,7 +51,7 @@ description: Stay up-to-date with the latest news in digital transformation for 
 
 
 
-{% include youtube.html id="tJEtdB8tN2Q" %}
+{% include youtube.html id="HtZoQzoSnQE" %}
 
 
 ---

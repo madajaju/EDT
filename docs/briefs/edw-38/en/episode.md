@@ -35,14 +35,14 @@ tags:
     - datasecurity
     - techtrends
 
-date: Tue Oct 24 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
+date: Tue Oct 24 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Embracing Digital news for the week of October 22, 2023 including news in cyber security, Ubiquitous computing, and artificial intelligence. This week’s highlights include going back to pen and paper in school distributes, watching for Q-Day, and AI in healthcare guidelines.
-video: https://youtu.be/x9MvO9T63U8
+video: https://youtu.be/GK18fNCugwE
 description: Embracing Digital news for the week of October 22, 2023 including news in cyber security, Ubiquitous computing, and artificial intelligence. This week’s highlights include going back to pen and paper in school distributes, watching for Q-Day, and AI in healthcare guidelines.
 ---
 
@@ -51,7 +51,7 @@ description: Embracing Digital news for the week of October 22, 2023 including n
 
 
 
-{% include youtube.html id="x9MvO9T63U8" %}
+{% include youtube.html id="GK18fNCugwE" %}
 
 
 ---

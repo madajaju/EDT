@@ -14,14 +14,14 @@ tags:
     - compute
     - datamanagement
 
-date: Sun Mar 19 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
+date: Sun Mar 19 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
 summary: Summary
-video: https://youtu.be/UxskO9loflw
+video: https://youtu.be/MoKH4m3qN2c
 description: Summary
 ---
 
@@ -30,7 +30,7 @@ description: Summary
 
 
 
-{% include youtube.html id="UxskO9loflw" %}
+{% include youtube.html id="MoKH4m3qN2c" %}
 
 
 ---
