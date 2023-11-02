@@ -18,14 +18,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Mit vielen Mitarbeitern, die nun von zu Hause aus arbeiten, wie stellen Sie sicher, dass sie sicher arbeiten, aber ihnen dennoch die Flexibilität geben, die sie brauchen, um ihre Arbeit zu erledigen? In dieser Episode diskutieren Darren und der spezielle Gast Steve Orrin, CTO von Intel Federal, wie man die Intel-Technologie nutzen kann, um den Telearbeiter effektiv abzusichern."
-video: "https://youtu.be/1PrO05zRapY"
+video: "https://youtu.be/2PazR1MX2wc"
 description: "Mit vielen Mitarbeitern, die nun von zu Hause aus arbeiten, wie stellen Sie sicher, dass sie sicher arbeiten, aber ihnen dennoch die Flexibilität geben, die sie brauchen, um ihre Arbeit zu erledigen? In dieser Episode diskutieren Darren und der spezielle Gast Steve Orrin, CTO von Intel Federal, wie man die Intel-Technologie nutzen kann, um den Telearbeiter effektiv abzusichern."
 ---
 
 <div>
 {% include transistor.html id="5fc292e0" title="#8 Securing the Teleworker Part 2" %}
 
-{% include youtube.html id="1PrO05zRapY" %}
+{% include youtube.html id="2PazR1MX2wc" %}
 </div>
 
 ---

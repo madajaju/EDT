@@ -19,14 +19,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Proteggere il tuo dispositivo e il tuo data center ti porta solo fino a un certo punto. Con sempre più persone che lavorano da casa, è necessario aiutare i tuoi dipendenti a proteggere la loro rete domestica e l'area di lavoro. In questo episodio, Steve Orrin, CTO federale di Intel, aiuta Darren a proteggere la sua rete domestica."
-video: "https://youtu.be/QIP4mdC_7Uw"
+video: "https://youtu.be/D2ywrtEO2Bo"
 description: "Proteggere il tuo dispositivo e il tuo data center ti porta solo fino a un certo punto. Con sempre più persone che lavorano da casa, è necessario aiutare i tuoi dipendenti a proteggere la loro rete domestica e l'area di lavoro. In questo episodio, Steve Orrin, CTO federale di Intel, aiuta Darren a proteggere la sua rete domestica."
 ---
 
 <div>
 {% include transistor.html id="9fe2f82e" title="#9 Telework Securing Your Home Office" %}
 
-{% include youtube.html id="QIP4mdC_7Uw" %}
+{% include youtube.html id="D2ywrtEO2Bo" %}
 </div>
 
 ---

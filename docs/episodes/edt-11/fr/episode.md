@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, Erin Moseley, Sr. Account Exec pour l'Éducation chez Intel, et Grant Kelly, Solution Architect pour l'Éducation chez Intel, rejoignent Darren pour parler des défis de l'apprentissage à distance et de l'enseignement, ainsi que des changements massifs que les districts scolaires, les enseignants, les parents et les étudiants absorbent pendant la pandémie de Covid-19. Découvrez comment les étudiants et les enseignants se connectent avec de nouvelles technologies et de nouvelles méthodes d'apprentissage."
-video: "https://youtu.be/b-PT-b0W4Q4"
+video: "https://youtu.be/Yb1rXTCEIeQ"
 description: "Dans cet épisode, Erin Moseley, Sr. Account Exec pour l'Éducation chez Intel, et Grant Kelly, Solution Architect pour l'Éducation chez Intel, rejoignent Darren pour parler des défis de l'apprentissage à distance et de l'enseignement, ainsi que des changements massifs que les districts scolaires, les enseignants, les parents et les étudiants absorbent pendant la pandémie de Covid-19. Découvrez comment les étudiants et les enseignants se connectent avec de nouvelles technologies et de nouvelles méthodes d'apprentissage."
 ---
 
 <div>
 {% include transistor.html id="e48d397d" title="#11 Distance Teaching and Learning" %}
 
-{% include youtube.html id="b-PT-b0W4Q4" %}
+{% include youtube.html id="Yb1rXTCEIeQ" %}
 </div>
 
 ---

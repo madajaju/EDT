@@ -18,14 +18,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Con el gran cambio de las personas que ahora trabajan desde casa en lugar de la oficina, la seguridad es una preocupación creciente para muchas organizaciones de TI. En este episodio, Steve Orrin, CTO de Intel Federal, y Darren discuten las amenazas de seguridad y soluciones para ayudar a proteger a los trabajadores remotos y los centros de datos empresariales."
-video: "https://youtu.be/ncIQpc6FsoQ"
+video: "https://youtu.be/Fjez8L0h2M4"
 description: "Con el gran cambio de las personas que ahora trabajan desde casa en lugar de la oficina, la seguridad es una preocupación creciente para muchas organizaciones de TI. En este episodio, Steve Orrin, CTO de Intel Federal, y Darren discuten las amenazas de seguridad y soluciones para ayudar a proteger a los trabajadores remotos y los centros de datos empresariales."
 ---
 
 <div>
 {% include transistor.html id="edt7" title="#7 Securing the Teleworker" %}
 
-{% include youtube.html id="ncIQpc6FsoQ" %}
+{% include youtube.html id="Fjez8L0h2M4" %}
 </div>
 
 ---

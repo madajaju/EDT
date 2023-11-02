@@ -19,14 +19,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Das Absichern Ihres Geräts und Ihres Rechenzentrums reicht nicht aus. Mit immer mehr Personen, die von zu Hause aus arbeiten, müssen Sie Ihren Mitarbeitern helfen, ihr Heimnetzwerk und ihren Arbeitsbereich abzusichern. In dieser Episode hilft Steve Orrin, Bundes-CTO bei Intel, Darren dabei, sein Heimnetzwerk zu sichern."
-video: "https://youtu.be/QIP4mdC_7Uw"
+video: "https://youtu.be/D2ywrtEO2Bo"
 description: "Das Absichern Ihres Geräts und Ihres Rechenzentrums reicht nicht aus. Mit immer mehr Personen, die von zu Hause aus arbeiten, müssen Sie Ihren Mitarbeitern helfen, ihr Heimnetzwerk und ihren Arbeitsbereich abzusichern. In dieser Episode hilft Steve Orrin, Bundes-CTO bei Intel, Darren dabei, sein Heimnetzwerk zu sichern."
 ---
 
 <div>
 {% include transistor.html id="9fe2f82e" title="#9 Telework Securing Your Home Office" %}
 
-{% include youtube.html id="QIP4mdC_7Uw" %}
+{% include youtube.html id="D2ywrtEO2Bo" %}
 </div>
 
 ---

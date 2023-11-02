@@ -18,14 +18,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Con il grande cambiamento delle persone che ora lavorano da casa invece che in ufficio, la sicurezza è una preoccupazione crescente per molte organizzazioni IT. In questo episodio, Steve Orrin, CTO di Intel Federal, e Darren discutono delle minacce alla sicurezza e delle soluzioni per aiutare a proteggere il telelavoratore e i data center aziendali."
-video: "https://youtu.be/ncIQpc6FsoQ"
+video: "https://youtu.be/Fjez8L0h2M4"
 description: "Con il grande cambiamento delle persone che ora lavorano da casa invece che in ufficio, la sicurezza è una preoccupazione crescente per molte organizzazioni IT. In questo episodio, Steve Orrin, CTO di Intel Federal, e Darren discutono delle minacce alla sicurezza e delle soluzioni per aiutare a proteggere il telelavoratore e i data center aziendali."
 ---
 
 <div>
 {% include transistor.html id="edt7" title="#7 Securing the Teleworker" %}
 
-{% include youtube.html id="ncIQpc6FsoQ" %}
+{% include youtube.html id="Fjez8L0h2M4" %}
 </div>
 
 ---

@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Organizações precisam de ajuda na construção de soluções de VDI (Infraestrutura de Desktop Virtual) imediatamente. À medida que os departamentos de TI adicionam licenças de VDI localmente aos seus sistemas atuais, eles precisam estar cientes de que as licenças por si só não resolvem todos os seus problemas."
-video: "https://youtu.be/DYmsaCS6Q_o"
+video: "https://youtu.be/IbIrb7L1xgI"
 description: "Organizações precisam de ajuda na construção de soluções de VDI (Infraestrutura de Desktop Virtual) imediatamente. À medida que os departamentos de TI adicionam licenças de VDI localmente aos seus sistemas atuais, eles precisam estar cientes de que as licenças por si só não resolvem todos os seus problemas."
 ---
 
 <div>
 {% include transistor.html id="9967b600" title="#10 Teleworker Sizing Your VDI Solution" %}
 
-{% include youtube.html id="DYmsaCS6Q_o" %}
+{% include youtube.html id="IbIrb7L1xgI" %}
 </div>
 
 ---
