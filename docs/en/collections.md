@@ -18,11 +18,29 @@ This is a curated collection that delves deep into the cutting-edge realms of Ge
 In the ever-evolving landscape of digital transformation, staying ahead of the curve is paramount. Businesses today are constantly seeking innovative ways to harness the power of technology, drive efficiency, and secure their digital assets. These three collections of podcast episodes represent key pillars in this transformative journey, each offering unique insights and perspectives that will empower you to navigate the digital future with confidence and clarity.
 
 ## Collections
-
-* [Generative AI](https://www.embracingdigital.org/collections/generativeai.html): Our first collection explores the captivating world of Generative AI, a field that's redefining creativity and automation. Dive into discussions with leading experts who unravel the potential of AI to generate art, music, and content, revolutionizing industries from entertainment to marketing. Discover how Generative AI is not just a tool but a game-changer for those seeking to amplify their creative output and streamline complex processes.
-
-* [Multi-Hybrid Cloud](https://www.embracingdigital.org/collections/en/multihybridcloud.html): In the second collection, we venture into the dynamic realm of Multi-Hybrid Cloud, where agility meets scalability. Modern businesses rely on flexible cloud infrastructures to adapt to changing demands. Join us as we explore the intricacies of managing multi-hybrid cloud environments, addressing security concerns, and optimizing performance. Experts share their experiences and insights, providing a comprehensive guide for organizations looking to harness the full potential of cloud technologies.
-
-* [Zero Trust Architecture](https://www.embracingdigital.org/collections/en/zerotrust.html): Last but certainly not least, our third collection delves into the crucial topic of Zero Trust Architecture. As cybersecurity threats continue to evolve, adopting a proactive and holistic security approach is essential. Our episodes featuring cybersecurity experts will guide you through the principles and practices of Zero Trust, helping you fortify your digital perimeter and protect your assets in an increasingly interconnected world.
+<table style="border:unset">
+<tr> <td style="width:200px;">
+<a href="https://www.embracingdigital.org/collections/en/generativeai.html"><img src="./genai.png" width="175" height="128"><br>Embracing Generative AI
+</td>
+<td>
+ Our first collection explores the captivating world of Generative AI, a field that's redefining creativity and automation. Dive into discussions with leading experts who unravel the potential of AI to generate art, music, and content, revolutionizing industries from entertainment to marketing. Discover how Generative AI is not just a tool but a game-changer for those seeking to amplify their creative output and streamline complex processes.
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.embracingdigital.org/collections/en/multhybridcloud.html"><img src="./multicloud.png" width="175" height="128"><br>Embracing Multi-Hybrid Cloud
+</td>
+<td>
+In the second collection, we venture into the dynamic realm of Multi-Hybrid Cloud, where agility meets scalability. Modern businesses rely on flexible cloud infrastructures to adapt to changing demands. Join us as we explore the intricacies of managing multi-hybrid cloud environments, addressing security concerns, and optimizing performance. Experts share their experiences and insights, providing a comprehensive guide for organizations looking to harness the full potential of cloud technologies.
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.embracingdigital.org/collections/en/zerotrust.html"><img src="./zta.png" width="128" height="128"><br>Embracing Zero Trust</a>
+</td>
+<td>
+Last but certainly not least, our third collection delves into the crucial topic of Zero Trust Architecture. As cybersecurity threats continue to evolve, adopting a proactive and holistic security approach is essential. Our episodes featuring cybersecurity experts will guide you through the principles and practices of Zero Trust, helping you fortify your digital perimeter and protect your assets in an increasingly interconnected world.
+</td>
+</tr></table>
 
 Whether you're an IT professional, a business leader, or simply curious about the digital transformation journey, this collection has something for everyone. We invite you to explore these episodes, gain valuable insights, and embrace the possibilities that Generative AI, Multi-Hybrid Cloud, and Zero Trust Architecture offer in shaping a brighter digital future.

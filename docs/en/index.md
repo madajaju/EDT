@@ -8,14 +8,20 @@ lang: en
 
 # Embracing Digital Transformation
 
-> Darren has just unveiled his latest masterpiece, a captivating 20-part series titled 
-> "Embracing Generative AI." In this groundbreaking podcast, 
-> "Embracing Digital Transformation" delves deep into the realm of generative AI, 
-> featuring insightful discussions with practitioners, educators, 
-> and the brilliant minds driving this technological marvel.
-> 
-> Discover the future of AI as you've never seen it before. Don't miss out – tune in now! 
-> [Check it out here.](https://youtube.com/playlist?list=PLj-81kG3zG5ZCywsu4opHm2FBrWy5ilMH&si=UvRPLAdzD2LXFNo4)
+Embracing Digital Transformation has created three series of episodes where we have focused our conversations on the top topics of the day. Check out these new series.
+
+<table style="border:unset">
+<tr>
+<td>
+<a href="https://www.embracingdigital.org/collections/en/zerotrust.html"><img src="./zta.png" width="128" height="128"><br>Embracing Zero Trust</a>
+</td>
+<td>
+<a href="https://www.embracingdigital.org/collections/en/multhybridcloud.html"><img src="./multicloud.png" width="175" height="128"><br>Embracing Multi-Hybrid Cloud
+</td>
+<td>
+<a href="https://www.embracingdigital.org/collections/en/generativeai.html"><img src="./genai.png" width="175" height="128"><br>Embracing Generative AI
+</td>
+</tr></table>
 
 <style>
 .topcolumn {
