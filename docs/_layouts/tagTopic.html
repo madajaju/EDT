@@ -13,6 +13,7 @@ image: {{page.img}}
 {% for spage in site.pages %}
 {% if spage.layout == "posts" %}
 {% if spage.tags contains page.title %}
+{% if spage.lang == "en" %}
 <div style="display: flex;">
     <p class="episode">
     <img class="thumbnail" src="../{{ spage.path | remove: spage.name }}/{{ spage.img }}" width="128" height="128">
@@ -20,6 +21,7 @@ image: {{page.img}}
     {{ spage.summary }}
     </p>
 </div>
+{% endif %}
 {% endif %}
 {% endif %}
 {% endfor %}

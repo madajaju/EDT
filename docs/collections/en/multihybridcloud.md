@@ -5,7 +5,7 @@ parent: Collections
 ref: collmultihybridcloud
 grand_parent: English
 lang: en
-tag: collmultihybridcloud
+tag: multicloud
 summary: This collection focuses on the dynamic realm of Multi-Hybrid Cloud, where agility meets scalability. Modern businesses rely on flexible cloud infrastructures to adapt to changing demands. Join us as we explore the intricacies of managing multi-hybrid cloud environments, addressing security concerns, and optimizing performance. Experts share their experiences and insights, providing a comprehensive guide for organizations looking to harness the full potential of cloud technologies.
 ---
 
@@ -18,14 +18,14 @@ IT organizations are in the middle of a huge paradigm shift. Application develop
 * [Building a Muilti-Hybrid Cloud Strategy](https://www.embracingdigital.org/episode-EDT162-en) - In this episode Darren interviews Christine McMonigal and discuss the challenges organizations face when transitioning to the cloud and adopting multi-hybrid cloud architectures. 
 * [Developing a Multi-Hybrid Cloud Operating Model](https://www.embracingdigital.org/episode-EDT163-en) - In this episode Darren interview cloud solution architect, Rajiv Mandal, about developing a multi-hybrid cloud strategy in your modern IT organization.
 * [Application and Workload Portfolios in Cloud Migration](https://www.embracingdigital.org/episode-EDT164-en) - In this episode, Darren interviews Sarah Musick, Cloud Solution Architect at Intel. Together, they dive into the topic of application and workload portfolios in cloud migration.
-* [Workload Cloud Placement Factors](https://www.embracingdigital.org/episode-EDW165-en) - In this podcast, the Darren and Rico Dutton dive into the world of cloud instances and the factors to consider when selecting the right instance for your workload.
+* [Workload Cloud Placement Factors](https://www.embracingdigital.org/episode-EDT165-en) - In this podcast, the Darren and Rico Dutton dive into the world of cloud instances and the factors to consider when selecting the right instance for your workload.
 * [Agility in Cloud Adoption](https://www.embracingdigital.org/episode-EDT166-en) - Cloud migration is no longer a one-time process, but rather a continuous journey that requires constant evaluation, monitoring, and adjustment to achieve business objectives.
 
 
 ## Additional Episodes of interest
 
-* [Benefits of Multi-Cloud Architecture](https://www.embracingdigital.org/episode-EDT-en) - A multi-hybrid cloud architecture allows organizations to take advantage of the benefits of both private and public clouds, optimizing resources and cost efficiency. This model has five main advantages: agility, flexibility, predictive performance, security and compliance, and efficiency.
-* [Multi Cloud Data Solutions with Hammerspace](https://www.embracingdigital.org/episode-EDT-en) - Johan Ballin, Director of Technical Marketing at Hammerspace and Darren Pulsipher, Chief Solution Architect, Public Sector, at Intel discuss Hammerspace’s hybrid cloud technology that untethers data from storage infrastructure, providing data portability and performance.
+* [Benefits of Multi-Cloud Architecture](https://www.embracingdigital.org/episode-EDT3-en) - A multi-hybrid cloud architecture allows organizations to take advantage of the benefits of both private and public clouds, optimizing resources and cost efficiency. This model has five main advantages: agility, flexibility, predictive performance, security and compliance, and efficiency.
+* [Multi Cloud Data Solutions with Hammerspace](https://www.embracingdigital.org/episode-EDT26-en) - Johan Ballin, Director of Technical Marketing at Hammerspace and Darren Pulsipher, Chief Solution Architect, Public Sector, at Intel discuss Hammerspace’s hybrid cloud technology that untethers data from storage infrastructure, providing data portability and performance.
 * [The Role of the CIO in Cloud Adoption](https://www.embracingdigital.org/episode-EDT43-en) - In part one of this interview, Darren Pulsipher, Chief Solution Architect, Intel, and Doug Bourgeois, Managing Director, GPS Cloud Strategy Leader, Deloitte, talk about the cloud migration and the role of the CIO.
 * [Cloud in the Digital Age](https://www.embracingdigital.org/episode-EDT44-en) - In part two of the interview, Darren Pulsipher, Chief Solution Architect, Intel, and Doug Bourgeois, Managing Director, GPS Cloud Strategy Leader, Deloitte, continue their discussion about the cloud migration. 
 * [Cloud Broker Organizations](https://www.embracingdigital.org/episode-EDT56-en) - In this episode, part one of two, Darren and Intel Cloud Solution Architects Dave Shrestha and Kevin Bleckman talk about the importance of a cloud broker organization. 
