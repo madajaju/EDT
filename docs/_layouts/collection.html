@@ -13,13 +13,14 @@ image: {{ page.img }}
 
 <h1>{{ page.title }}</h1>
 
-{{ page.summary }}
+{{ summary }}
 
-{{ page.content }}
+{{ content }}
 
-<h2>Episodes</h2>
+<h2>Additional Episodes</h2>
 {% for spage in site.pages %}
 {% if spage.layout == "posts" %}
+{% if page.lang == spage.lang %}
 {% if spage.tags contains page.tag %}
 <div style="display: flex;">
     <p class="episode">
@@ -28,6 +29,7 @@ image: {{ page.img }}
     {{ spage.summary }}
     </p>
 </div>
+{% endif %}
 {% endif %}
 {% endif %}
 {% endfor %}

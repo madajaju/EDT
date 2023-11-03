@@ -29,23 +29,3 @@ The goal is to minimize access and blast radius for bad actors while providing s
 
 * [Zero Trust Principles](https://www.embracingdigital.org/episode-EDT170-en) - In this episode Darren explores the principles of Zero Trust architecture with special guest David Marcus, Senior Security Architect, and returning guest Dr. Anna Scott.
 
-
-## Additional Episodes
-
-{% for spage in site.pages %}
-{% if spage.layout == "posts" %}
-{% if spage.tags contains "zta" %}
-{% if spage.lang == "en" %}
-<div style="display: flex;">
-    <p class="episode">
-    <img class="thumbnail" src="../{{ spage.path | remove: spage.name }}/{{ spage.img }}" width="128" height="128">
-    <a href="{{ spage.url }}">{{ spage.number}} - {{ spage.title }}</a><br>
-    {{ spage.summary }}
-    </p>
-</div>
-{% endif %}
-{% endif %}
-{% endif %}
-{% endfor %}
-
-

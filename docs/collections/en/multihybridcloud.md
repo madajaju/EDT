@@ -23,6 +23,7 @@ IT organizations are in the middle of a huge paradigm shift. Application develop
 
 
 ## Additional Episodes of interest
+
 * [Benefits of Multi-Cloud Architecture](https://www.embracingdigital.org/episode-EDT-en) - A multi-hybrid cloud architecture allows organizations to take advantage of the benefits of both private and public clouds, optimizing resources and cost efficiency. This model has five main advantages: agility, flexibility, predictive performance, security and compliance, and efficiency.
 * [Multi Cloud Data Solutions with Hammerspace](https://www.embracingdigital.org/episode-EDT-en) - Johan Ballin, Director of Technical Marketing at Hammerspace and Darren Pulsipher, Chief Solution Architect, Public Sector, at Intel discuss Hammerspace’s hybrid cloud technology that untethers data from storage infrastructure, providing data portability and performance.
 * [The Role of the CIO in Cloud Adoption](https://www.embracingdigital.org/episode-EDT43-en) - In part one of this interview, Darren Pulsipher, Chief Solution Architect, Intel, and Doug Bourgeois, Managing Director, GPS Cloud Strategy Leader, Deloitte, talk about the cloud migration and the role of the CIO.

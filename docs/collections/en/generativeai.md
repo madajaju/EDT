@@ -22,22 +22,3 @@ Generative AI refers to artificial intelligence systems that are capable of crea
 The common thread among these generative AI models is that they create original artifacts that mimic the patterns and styles found in the training data. Generative AI has many potential applications in content creation, media, gaming, and more. However, it also raises concerns about authenticity, copyright, and the potential for misuse.
 
 ![genAI.png](./genAI.png)
-
-## Embracing Generative AI Services
-
-{% for spage in site.pages %}
-{% if spage.layout == "posts" %}
-{% if spage.tags contains "generativeai" %}
-{% if spage.lang == "en" %}
-<div style="display: flex;">
-    <p class="episode">
-    <img class="thumbnail" src="../{{ spage.path | remove: spage.name }}/{{ spage.img }}" width="128" height="128">
-    <a href="{{ spage.url }}">{{ spage.number}} - {{ spage.title }}</a><br>
-    {{ spage.summary }}
-    </p>
-</div>
-{% endif %}
-{% endif %}
-{% endif %}
-{% endfor %}
-
