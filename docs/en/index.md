@@ -8,20 +8,57 @@ lang: en
 
 # Embracing Digital Transformation
 
-Embracing Digital Transformation has created three series of episodes where we have focused our conversations on the top topics of the day. Check out these new series.
+<style>
+.collection {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
 
-<table style="border:unset">
-<tr>
-<td>
-<a href="https://www.embracingdigital.org/collections/en/zerotrust.html"><img src="./zta.png" width="128" height="128"><br>Embracing Zero Trust</a>
-</td>
-<td>
-<a href="https://www.embracingdigital.org/collections/en/multhybridcloud.html"><img src="./multicloud.png" width="175" height="128"><br>Embracing Multi-Hybrid Cloud
-</td>
-<td>
-<a href="https://www.embracingdigital.org/collections/en/generativeai.html"><img src="./genai.png" width="175" height="128"><br>Embracing Generative AI
-</td>
-</tr></table>
+.collection-item {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  text-align: center;
+}
+
+.collection-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.collection-item img {
+  width: 100%;
+  height: auto;
+}
+</style>
+
+Embracing Digital Transformation has created three series of episodes where we have focused our conversations on the top
+topics of the day. Check out these new series.
+
+<div>
+<div class="collection">
+  <div class="collection-item">
+    <a href="https://www.embracingdigital.org/collections/en/zerotrust.html">
+      <img src="./zta.png" width="128" height="128" alt="Embracing Zero Trust">
+      <br>Embracing Zero Trust
+    </a>
+  </div>
+  <div class="collection-item">
+    <a href="https://www.embracingdigital.org/collections/en/multhybridcloud.html">
+      <img src="./multicloud.png" width="175" height="128" alt="Embracing Multi-Hybrid Cloud">
+      <br>Embracing Multi-Hybrid Cloud
+    </a>
+  </div>
+  <div class="collection-item">
+    <a href="https://www.embracingdigital.org/collections/en/generativeai.html">
+      <img src="./genai.png" width="175" height="128" alt="Embracing Generative AI">
+      <br>Embracing Generative AI
+    </a>
+  </div>
+</div>
+</div>
 
 <style>
 .topcolumn {
@@ -44,8 +81,10 @@ display: table;
 clear: both;
 }
 </style>
-{% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang', 'en' | limit: 10 %}
-{% assign sortedBriefs = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'brief' | where: 'lang', 'en' | limit: 10 %}
+{% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang', 'en' |
+limit: 10 %}
+{% assign sortedBriefs = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'brief' | where: 'lang', 'en' |
+limit: 10 %}
 {% assign latestEpisode = sortedEpisodes | first %}
 {% assign latestBrief = sortedBriefs | first %}
 <div class="toprow">
