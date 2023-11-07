@@ -23,7 +23,7 @@ tags:
     - embracingdigital
     - edt162
 
-date: Tue Sep 26 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: Mon Sep 25 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Christine McMonigal
     - Darren W Pulsipher

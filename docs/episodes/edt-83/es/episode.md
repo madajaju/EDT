@@ -15,7 +15,7 @@ tags:
     - process
     - idc2022
 
-date: Sat Apr 08 20220 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: Fri Apr 07 20220 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Darren W Pulsipher
     - David Richard

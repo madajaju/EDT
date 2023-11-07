@@ -16,7 +16,7 @@ tags:
     - multicloud
     - cybersecurity
 
-date: Wed Feb 16 2022 16:00:00 GMT-0800 (Pacific Standard Time)
+date: Wed Feb 16 2022 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Darren W Pulsipher
     - Gretchen Stewart

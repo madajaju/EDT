@@ -24,7 +24,7 @@ tags:
     - embracingdigital
     - edt168
 
-date: Thu Oct 19 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: Wed Oct 18 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Andy Morris
     - Darren W Pulsipher

@@ -17,7 +17,7 @@ tags:
     - multicloud
     - devsecops
 
-date: Sun Mar 14 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Sun Mar 14 2021 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Darren W Pulsipher
     - Steve Orrin

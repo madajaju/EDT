@@ -16,7 +16,7 @@ tags:
     - ohiosupercomputercenter
     - osc
 
-date: Mon Mar 20 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Mon Mar 20 2023 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Darren W Pulsipher
     - Alan Chalker

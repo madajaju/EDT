@@ -26,7 +26,7 @@ tags:
     - policyenforcement
     - cybersecurity
 
-date: Thu Oct 26 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: Wed Oct 25 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Anna Scott
     - Darren W Pulsipher
@@ -45,6 +45,22 @@ description: "In this episode Darren explores the principles of Zero Trust archi
 </div>
 
 ---
+
+## Implementing Zero Trust Security
+
+Zero trust security has become an increasingly popular model for securing modern IT environments. But what exactly is zero trust and what are some best practices for implementing it? This post provides an introduction to zero trust principles and key considerations for adopting a zero trust architecture.
+
+## What is Zero Trust?
+
+The zero trust model is centered around the concept of "never trust, always verify". Unlike traditional network security that focuses on perimeter defenses, zero trust assumes that attackers are already inside the network. No users or devices are inherently trusted - verification is required every time access is requested.
+
+There are several core principles of zero trust:
+
+- Verify all users and devices before granting access
+
+- Limit access to only what is needed (least privilege)
+
+- Assume breaches will occur and limit blast radius
 
 ## Implementing Zero Trust Security
 

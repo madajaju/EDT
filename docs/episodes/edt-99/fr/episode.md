@@ -15,7 +15,7 @@ tags:
     - technology
     - process
 
-date: Mon Aug 08 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Mon Aug 08 2022 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Darren W Pulsipher
     - Paul Giorgi

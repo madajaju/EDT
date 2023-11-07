@@ -26,7 +26,7 @@ tags:
     - policyenforcement
     - cybersecurity
 
-date: Thu Oct 26 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: Wed Oct 25 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Anna Scott
     - Darren W Pulsipher
@@ -52,19 +52,33 @@ La sicurezza a "zero trust" è diventata un modello sempre più popolare per la 
 
 ## Cos'è Zero Trust?
 
+Il modello zero trust si basa sul concetto di "mai fidarsi, sempre verificare". A differenza della tradizionale sicurezza di rete che si concentra sulle difese del perimetro, il zero trust assume che gli attaccanti siano già all'interno della rete. Nessun utente o dispositivo è intrinsecamente fidato - la verifica è richiesta ogni volta che viene richiesto l'accesso.
+
+Ci sono diversi principi fondamentali del zero trust:
+
+Verifica tutti gli utenti e i dispositivi prima di concedere l'accesso.
+
+Limita l'accesso solo a ciò che è necessario (privilegio minimo)
+
+## Implementare la sicurezza Zero Trust.
+
+La sicurezza a "zero trust" è diventata un modello sempre più popolare per proteggere gli ambienti IT moderni. Ma cosa si intende esattamente per "zero trust" e quali sono le migliori pratiche per implementarlo? Questo post fornisce un'introduzione ai principi del "zero trust" e le considerazioni chiave per adottare un'architettura a "zero trust".
+
+## Cos'è Zero Trust?
+
 Il modello Zero Trust si basa sul concetto di "non fidarsi mai, verificare sempre". A differenza della tradizionale sicurezza di rete che si concentra sulle difese perimetrali, Zero Trust presume che gli attaccanti siano già all'interno della rete. Nessun utente o dispositivo è fidato in modo innato - la verifica è richiesta ogni volta che viene richiesto l'accesso.
 
 Ci sono diversi principi fondamentali della zero trust:
 
-* Verifica tutti gli utenti e i dispositivi prima di concedere l'accesso
+Verifica tutti gli utenti e i dispositivi prima di concedere l'accesso
 
-* Limitare l'accesso solo a ciò che è necessario (privilegio minimo)
+Limitare l'accesso solo a ciò che è necessario (privilegio minimo)
 
-* Assumere che si verifichino violazioni e limitare il raggio d'azione.
+Assumere che si verifichino violazioni e limitare il raggio d'azione.
 
-* Monitorare continuamente l'attività per individuare anomalie.
+Monitorare continuamente l'attività per individuare anomalie.
 
-* Automatizza le risposte alle minacce.
+Automatizza le risposte alle minacce.
 
 Adottare la filosofia del "zero trust" significa passare da una fiducia implicita a un' autenticazione e autorizzazione continua degli utenti, dei dispositivi e dei carichi di lavoro.
 
@@ -100,17 +114,17 @@ Il monitoraggio continuo offre visibilità su tutti gli utenti, dispositivi e at
 
 Passare al principio del zero trust è un percorso che richiede l'aggiornamento delle politiche, dei processi e delle tecnologie in tutta un'organizzazione. I passi chiave includono:
 
-* Identifica i tuoi asset più critici e i dati di alto valore.
+Identifica i tuoi asset più critici e i dati di alto valore.
 
-* Rappresentare graficamente i flussi di lavoro e i requisiti di accesso a questi asset.
+Rappresentare graficamente i flussi di lavoro e i requisiti di accesso a questi asset.
 
-* Implementare l'autenticazione a più fattori e il principio del privilegio minimo.
+Implementare l'autenticazione a più fattori e il principio del privilegio minimo.
 
-* Inizia a segmentare la tua rete con microperimetri e punti di controllo.
+Inizia a segmentare la tua rete con microperimetri e punti di controllo.
 
-* Cripta i dati sensibili sia durante il trasferimento che durante il riposo.
+Cripta i dati sensibili sia durante il trasferimento che durante il riposo.
 
-* Valutare strumenti per l'analisi avanzata, l'automazione e l'orchestrazione.
+Valutare strumenti per l'analisi avanzata, l'automazione e l'orchestrazione.
 
 Adottare il principio di zero trust richiede tempo, ma può migliorare in modo significativo la tua postura di sicurezza contro le minacce moderne. Seguire un approccio incrementale basato sul rischio ti consente di ottenere vantaggi in ogni fase di maturità.
 

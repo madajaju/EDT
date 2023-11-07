@@ -26,7 +26,7 @@ tags:
     - policyenforcement
     - cybersecurity
 
-date: Thu Oct 26 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: Wed Oct 25 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Anna Scott
     - Darren W Pulsipher
@@ -46,6 +46,19 @@ description: "En este episodio, Darren explora los principios de la arquitectura
 
 ---
 
+## Implementando seguridad de confianza cero
+
+La seguridad de confianza cero se ha convertido en un modelo cada vez más popular para proteger los entornos de TI modernos. Pero, ¿qué exactamente es la confianza cero y cuáles son algunas mejores prácticas para implementarla? Esta publicación proporciona una introducción a los principios de confianza cero y consideraciones clave para adoptar una arquitectura de confianza cero.
+
+## ¿Qué es Zero Trust?
+
+El modelo de confianza cero se centra en el concepto de "nunca confiar, siempre verificar". A diferencia de la seguridad tradicional de red que se enfoca en defensas perimetrales, la confianza cero asume que los atacantes ya están dentro de la red. Ningún usuario o dispositivo se considera inherentemente confiable; se requiere verificación cada vez que se solicita acceso.
+
+Hay varios principios fundamentales del modelo de confianza cero:
+
+Verificar a todos los usuarios y dispositivos antes de otorgar acceso.
+
+Limitar el acceso solo a lo que se necesita (privilegio mínimo)
 
 ## Implementando Seguridad de Confianza Cero
 
@@ -59,13 +72,13 @@ Hay varios principios fundamentales de confianza cero:
 
 * Verificar a todos los usuarios y dispositivos antes de otorgar acceso
 
-* Limitar el acceso solo a lo que es necesario (privilegio mínimo)
+Limitar el acceso solo a lo que es necesario (privilegio mínimo)
 
-* Suponga que se producirán brechas y limite el radio de impacto.
+Suponga que se producirán brechas y limite el radio de impacto.
 
-* Monitorear continuamente la actividad en busca de anomalías.
+Monitorear continuamente la actividad en busca de anomalías.
 
-* Automatizar respuestas a amenazas.
+Automatizar respuestas a amenazas.
 
 Adoptar la confianza cero significa pasar de una confianza implícita a una autenticación y autorización continua de los usuarios, dispositivos y cargas de trabajo.
 
@@ -101,17 +114,17 @@ El monitoreo continuo brinda visibilidad sobre todos los usuarios, dispositivos 
 
 Transicionando hacia la confianza cero es un proceso que requiere políticas, procesos y tecnologías actualizadas en toda una organización. Los pasos clave incluyen:
 
-* Identifica tus activos más críticos y datos de alto valor.
+Identifica tus activos más críticos y datos de alto valor.
 
-* Mapear los flujos de trabajo y los requisitos de acceso a estos activos.
+Mapear los flujos de trabajo y los requisitos de acceso a estos activos.
 
-* Implementar la autenticación multifactor y el principio de privilegio mínimo.
+Implementar la autenticación multifactor y el principio de privilegio mínimo.
 
-* Comience a segmentar su red con microperímetros y puntos de control.
+Comience a segmentar su red con microperímetros y puntos de control.
 
 * Encriptar datos sensibles tanto en tránsito como en reposo.
 
-* Evaluar herramientas para análisis avanzado, automatización y orquestación.
+Evaluar herramientas para análisis avanzado, automatización y orquestación.
 
 Adoptar la confianza cero lleva tiempo, pero puede mejorar significativamente tu postura de seguridad contra las amenazas modernas. Tomar un enfoque incremental y basado en riesgos te permite obtener beneficios en cada etapa de madurez.
 

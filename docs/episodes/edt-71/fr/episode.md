@@ -18,7 +18,7 @@ tags:
     - technology
     - process
 
-date: Wed Dec 01 2021 16:00:00 GMT-0800 (Pacific Standard Time)
+date: Wed Dec 01 2021 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Darren W Pulsipher
     - Matthew Carroll

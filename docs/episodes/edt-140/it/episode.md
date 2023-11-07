@@ -10,7 +10,7 @@ grand_parent: Italiano
 nav_order: 140
 tags:
 
-date: Wed May 24 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Wed May 24 2023 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Darren W Pulsipher
     - Michael Mehlberg

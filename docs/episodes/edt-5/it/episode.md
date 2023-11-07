@@ -16,7 +16,7 @@ tags:
     - cloud
     - multicloud
 
-date: Thu Jul 23 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Thu Jul 23 2020 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Darren W Pulsipher
 

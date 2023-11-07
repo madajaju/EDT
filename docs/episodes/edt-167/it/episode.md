@@ -22,7 +22,7 @@ tags:
     - embracingdigital
     - edt167
 
-date: Tue Oct 17 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: Mon Oct 16 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Rachel Dreikosen
     - Darren W Pulsipher

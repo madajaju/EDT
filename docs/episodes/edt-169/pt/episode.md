@@ -21,7 +21,7 @@ tags:
     - humansupport
     - collgenerativeai
 
-date: Tue Oct 24 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: Mon Oct 23 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Sunny Stueve
     - Darren W Pulsipher

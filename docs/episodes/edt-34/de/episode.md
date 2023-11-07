@@ -18,7 +18,7 @@ tags:
     - vdi
     - vpn
 
-date: Mon Jan 04 2021 16:00:00 GMT-0800 (Pacific Standard Time)
+date: Mon Jan 04 2021 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Darren W Pulsipher
     - Robert Looney

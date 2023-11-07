@@ -13,7 +13,7 @@ tags:
     - comms
     - wifi6
 
-date: Wed Oct 20 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Wed Oct 20 2021 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Darren W Pulsipher
     - Leeland Brown

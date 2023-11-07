@@ -26,7 +26,7 @@ tags:
     - policyenforcement
     - cybersecurity
 
-date: Thu Oct 26 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: Wed Oct 25 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Anna Scott
     - Darren W Pulsipher
@@ -46,6 +46,22 @@ description: "In dieser Episode untersucht Darren die Prinzipien der Zero-Trust-
 
 ---
 
+## Umsetzung der Zero Trust-Sicherheit
+
+Null-Vertrauen-Sicherheit hat sich als immer beliebteres Modell zur Absicherung moderner IT-Umgebungen entwickelt. Aber was genau ist Null-Vertrauen und welche bewährten Maßnahmen gibt es für die Implementierung? Dieser Beitrag bietet eine Einführung in die Grundprinzipien des Null-Vertrauens und wichtige Überlegungen für die Annahme einer Null-Vertrauens-Architektur.
+
+## Was ist Zero Trust?
+
+Das Zero-Trust-Modell dreht sich um das Konzept von "niemals vertrauen, immer überprüfen". Im Gegensatz zur traditionellen Netzwerksicherheit, die sich auf Perimeterschutz konzentriert, geht Zero Trust davon aus, dass Angreifer bereits im Netzwerk sind. Es werden keine Benutzer oder Geräte automatisch vertraut - bei jedem Zugriffsversuch ist eine Überprüfung erforderlich.
+
+Es gibt mehrere grundlegende Prinzipien von Zero Trust:
+
+Überprüfen Sie alle Benutzer und Geräte, bevor Sie Zugriff gewähren.
+
+Beschränken Sie den Zugriff nur auf das, was benötigt wird (geringstes Privileg).
+
+Gehen Sie davon aus, dass Verstöße auftreten werden und begrenzen Sie den Radius der Auswirkungen.
+
 ## Die Implementierung von Zero Trust Security.
 
 Null-Vertrauen-Sicherheit ist ein zunehmend beliebtes Modell zur Absicherung moderner IT-Umgebungen geworden. Aber was genau ist Null-Vertrauen und welche bewährten Verfahren gibt es für die Umsetzung? Dieser Beitrag liefert eine Einführung in die Null-Vertrauen-Prinzipien und wichtige Überlegungen zur Einführung einer Null-Vertrauen-Architektur.
@@ -56,15 +72,15 @@ Das Zero-Trust-Modell basiert auf dem Konzept des "niemals vertrauen, immer veri
 
 Es gibt mehrere wichtige Prinzipien des Zero-Trust-Ansatzes:
 
-* Überprüfen Sie alle Benutzer und Geräte, bevor Sie den Zugriff gewähren.
+Überprüfen Sie alle Benutzer und Geräte, bevor Sie den Zugriff gewähren.
 
-* Beschränken Sie den Zugriff nur auf das Notwendige (geringstes Recht)
+Beschränken Sie den Zugriff nur auf das Notwendige (geringstes Recht)
 
-* Gehen Sie davon aus, dass Verstöße auftreten werden, und begrenzen Sie den Explosionsradius.
+Gehen Sie davon aus, dass Verstöße auftreten werden, und begrenzen Sie den Explosionsradius.
 
-* Überwachen Sie die Aktivität kontinuierlich auf Anomalien.
+Überwachen Sie die Aktivität kontinuierlich auf Anomalien.
 
-* Automatisieren Sie die Reaktionen auf Bedrohungen.
+Automatisieren Sie die Reaktionen auf Bedrohungen.
 
 Die Einführung von Zero Trust bedeutet den Wechsel vom impliziten Vertrauen zur kontinuierlichen Authentifizierung und Autorisierung von Nutzern, Geräten und Arbeitslasten.
 
@@ -100,17 +116,17 @@ Die kontinuierliche Überwachung bietet Einblick in alle Benutzer, Geräte und A
 
 Der Übergang zum Zero-Trust-Modell ist eine Reise, die aktualisierte Richtlinien, Prozesse und Technologien in der gesamten Organisation erfordert. Zu den wichtigsten Schritten gehören:
 
-* Identifizieren Sie Ihre wichtigsten Assets und hochwertigen Daten.
+Identifizieren Sie Ihre wichtigsten Assets und hochwertigen Daten.
 
 * Arbeitsabläufe und Zugangsanforderungen für diese Ressourcen skizzieren.
 
-* Implementieren Sie die Zwei-Faktor-Authentifizierung und das Prinzip des geringsten Privilegs.
+Implementieren Sie die Zwei-Faktor-Authentifizierung und das Prinzip des geringsten Privilegs.
 
-* Beginnen Sie mit der Segmentierung Ihres Netzwerks mittels Mikro-Perimeter und Kontrollpunkte.
+Beginnen Sie mit der Segmentierung Ihres Netzwerks mittels Mikro-Perimeter und Kontrollpunkte.
 
-* Verschlüsseln Sie sensible Daten sowohl beim Transport als auch bei Ruhe.
+Verschlüsseln Sie sensible Daten sowohl beim Transport als auch bei Ruhe.
 
-* Bewerten Sie Werkzeuge für erweiterte Analysen, Automatisierung und Orchestrierung.
+Bewerten Sie Werkzeuge für erweiterte Analysen, Automatisierung und Orchestrierung.
 
 Die Einführung von Zero Trust erfordert Zeit, kann aber Ihre Sicherheitsposition gegen moderne Bedrohungen erheblich verbessern. Ein inkrementeller risikobasierter Ansatz ermöglicht es Ihnen, Vorteile in jeder Reifephase zu erkennen.
 

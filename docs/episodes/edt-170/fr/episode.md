@@ -26,7 +26,7 @@ tags:
     - policyenforcement
     - cybersecurity
 
-date: Thu Oct 26 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: Wed Oct 25 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Anna Scott
     - Darren W Pulsipher
@@ -46,6 +46,20 @@ description: "Dans cet épisode, Darren explore les principes de l'architecture 
 
 ---
 
+## Mise en œuvre de la sécurité Zero Trust.
+
+La sécurité Zero Trust est devenue un modèle de plus en plus populaire pour sécuriser les environnements informatiques modernes. Mais qu'est-ce que le zero trust exactement et quelles sont les meilleures pratiques pour le mettre en œuvre ? Cette publication offre une introduction aux principes du zero trust et aux considérations clés pour adopter une architecture de zero trust.
+
+## Qu'est-ce que la confiance zéro ?
+
+Le modèle de confiance zéro repose sur le concept de "ne jamais faire confiance, toujours vérifier". Contrairement à la sécurité réseau traditionnelle qui se concentre sur les défenses périmétriques, la confiance zéro suppose que les attaquants sont déjà à l'intérieur du réseau. Aucun utilisateur ni aucun appareil n'est intrinsèquement digne de confiance - une vérification est requise à chaque demande d'accès.
+
+Il existe plusieurs principes fondamentaux de la confiance zéro :
+
+Vérifiez tous les utilisateurs et appareils avant d'accorder l'accès.
+
+Limitez l'accès uniquement à ce qui est nécessaire (principe du moindre privilège)
+
 ## Mise en œuvre de la sécurité Zero Trust
 
 La sécurité Zero trust est devenue un modèle de plus en plus populaire pour sécuriser les environnements informatiques modernes. Mais qu'est-ce que le zero trust exactement et quelles sont les meilleures pratiques pour le mettre en œuvre ? Cette publication présente une introduction aux principes du zero trust et aux considérations clés pour adopter une architecture de zero trust.
@@ -60,9 +74,9 @@ Vérifiez tous les utilisateurs et appareils avant d'accorder l'accès.
 
 * Limiter l'accès uniquement à ce qui est nécessaire (principe du moindre privilège)
 
-* Supposez que des violations se produiront et limitez la portée de l'impact.
+Supposez que des violations se produiront et limitez la portée de l'impact.
 
-* Surveillez en permanence l'activité à la recherche d'anomalies.
+Surveillez en permanence l'activité à la recherche d'anomalies.
 
 * Réponses automatisées aux menaces
 
@@ -100,17 +114,17 @@ La surveillance continue offre une visibilité sur tous les utilisateurs, appare
 
 Passer à une approche de confiance zéro est un parcours nécessitant des politiques, des processus et des technologies actualisées dans toute une organisation. Les étapes clés comprennent :
 
-* Identifiez vos actifs les plus critiques et les données de haute valeur.
+Identifiez vos actifs les plus critiques et les données de haute valeur.
 
-* Cartographier les flux de travail et les exigences d'accès à ces actifs
+Cartographier les flux de travail et les exigences d'accès à ces actifs
 
-* Mettez en place l'authentification à facteurs multiples et le principe du moindre privilège.
+Mettez en place l'authentification à facteurs multiples et le principe du moindre privilège.
 
-* Commencez à segmenter votre réseau avec des micro-périmètres et des points de contrôle.
+Commencez à segmenter votre réseau avec des micro-périmètres et des points de contrôle.
 
-* Cryptez les données sensibles à la fois en transit et au repos.
+Cryptez les données sensibles à la fois en transit et au repos.
 
-* Évaluer les outils pour l'analyse avancée, l'automatisation et l'orchestration
+Évaluer les outils pour l'analyse avancée, l'automatisation et l'orchestration
 
 Adopter la confiance zéro demande du temps, mais peut considérablement améliorer votre posture de sécurité contre les menaces modernes. Adopter une approche progressive basée sur les risques vous permet de réaliser des avantages à chaque étape de maturité.
 

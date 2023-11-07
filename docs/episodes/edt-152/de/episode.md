@@ -14,7 +14,7 @@ tags:
     - collectiongenerativeai
     - datamanagement
 
-date: Mon Aug 21 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Mon Aug 21 2023 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Jeffrey Lancaster
     - Darren W Pulsipher

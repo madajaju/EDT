@@ -33,7 +33,7 @@ tags:
     - embracingdigital
     - edt163
 
-date: Thu Sep 28 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: Wed Sep 27 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Rajiv Mandal
     - Darren W Pulsipher
