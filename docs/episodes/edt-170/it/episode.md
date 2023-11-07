@@ -29,6 +29,7 @@ tags:
 date: Wed Oct 25 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
 guests:
     - Anna Scott
+    - Dave Marcus
     - Darren W Pulsipher
 
 img: thumbnail.png
