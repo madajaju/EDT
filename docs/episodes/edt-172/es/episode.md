@@ -40,14 +40,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio del podcast, Darren habla con Steve Orrin y Dave Marcus y discute sobre arquitectura de confianza cero, un nuevo modelo de seguridad necesario para los ambientes digitales actuales donde el perímetro de la red está desapareciendo. Los expertos explican qué es la confianza cero, principios claves como el rechazo de acceso por defecto y la autenticación continua, y dan consejos para las organizaciones que inician su viaje hacia la confianza cero."
-video: "https://youtu.be/bMONt4fMbeA"
+video: "https://youtu.be/o66LlmHxuqE"
 description: "En este episodio del podcast, Darren habla con Steve Orrin y Dave Marcus y discute sobre arquitectura de confianza cero, un nuevo modelo de seguridad necesario para los ambientes digitales actuales donde el perímetro de la red está desapareciendo. Los expertos explican qué es la confianza cero, principios claves como el rechazo de acceso por defecto y la autenticación continua, y dan consejos para las organizaciones que inician su viaje hacia la confianza cero."
 ---
 
 <div>
 {% include transistor.html id="2788a3ca" title="#172 Zero Trust Architecture" %}
 
-{% include youtube.html id="bMONt4fMbeA" %}
+{% include youtube.html id="o66LlmHxuqE" %}
 </div>
 
 ---

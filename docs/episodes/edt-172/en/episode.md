@@ -40,14 +40,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In this podcast episode Darren talks with Steve Orrin and Dave Marcus and discusses zero trust architecture, a new security model needed for today's digital environments where the network perimeter is disappearing. Experts explain what zero trust is, key principles like default deny access and continuous authentication, and advice for organizations starting their zero trust journey."
-video: "https://youtu.be/bMONt4fMbeA"
+video: "https://youtu.be/o66LlmHxuqE"
 description: "In this podcast episode Darren talks with Steve Orrin and Dave Marcus and discusses zero trust architecture, a new security model needed for today's digital environments where the network perimeter is disappearing. Experts explain what zero trust is, key principles like default deny access and continuous authentication, and advice for organizations starting their zero trust journey."
 ---
 
 <div>
 {% include transistor.html id="2788a3ca" title="#172 Zero Trust Architecture" %}
 
-{% include youtube.html id="bMONt4fMbeA" %}
+{% include youtube.html id="o66LlmHxuqE" %}
 </div>
 
 ---

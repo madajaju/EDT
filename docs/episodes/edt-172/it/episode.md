@@ -40,14 +40,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo episodio del podcast, Darren parla con Steve Orrin e Dave Marcus e discute l'architettura dell'accesso zero trust, un nuovo modello di sicurezza necessario per gli ambienti digitali odierni in cui il perimetro della rete sta scomparendo. Gli esperti spiegano cos'è l'accesso zero trust, i principi chiave come il rifiuto dell'accesso predefinito e l'autenticazione continua, e forniscono consigli per le organizzazioni che stanno iniziando il loro percorso verso l'accesso zero trust."
-video: "https://youtu.be/bMONt4fMbeA"
+video: "https://youtu.be/o66LlmHxuqE"
 description: "In questo episodio del podcast, Darren parla con Steve Orrin e Dave Marcus e discute l'architettura dell'accesso zero trust, un nuovo modello di sicurezza necessario per gli ambienti digitali odierni in cui il perimetro della rete sta scomparendo. Gli esperti spiegano cos'è l'accesso zero trust, i principi chiave come il rifiuto dell'accesso predefinito e l'autenticazione continua, e forniscono consigli per le organizzazioni che stanno iniziando il loro percorso verso l'accesso zero trust."
 ---
 
 <div>
 {% include transistor.html id="2788a3ca" title="#172 Zero Trust Architecture" %}
 
-{% include youtube.html id="bMONt4fMbeA" %}
+{% include youtube.html id="o66LlmHxuqE" %}
 </div>
 
 ---
