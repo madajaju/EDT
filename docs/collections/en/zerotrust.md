@@ -28,4 +28,5 @@ The goal is to minimize access and blast radius for bad actors while providing s
 ## Embracing Zero Trust Series
 
 * [Zero Trust Principles](https://www.embracingdigital.org/episode-EDT170-en) - In this episode Darren explores the principles of Zero Trust architecture with special guest David Marcus, Senior Security Architect, and returning guest Dr. Anna Scott.
+* [Zero Trust Architecture](https://www.embracingdigital.org/episode-EDT172-en) - In this episode Darren interviews Steve Orrin and David Marcus on the key elements of Zero Trust Architecture.
 
