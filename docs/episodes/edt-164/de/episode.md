@@ -33,7 +33,7 @@ tags:
     - embracingdigital
     - edt164
 
-date: Mon Oct 02 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Tue Oct 03 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Sarah Musick
     - Darren W Pulsipher

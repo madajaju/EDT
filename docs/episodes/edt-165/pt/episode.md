@@ -27,7 +27,7 @@ tags:
     - embracingdigital
     - edt165
 
-date: Wed Oct 04 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Thu Oct 05 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Ricardo Dutton Jr
     - Darren W Pulsipher

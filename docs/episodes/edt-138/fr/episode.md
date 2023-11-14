@@ -16,7 +16,7 @@ tags:
     - hybridcloud
     - technology
 
-date: Mon May 15 2023 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Mon May 15 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Darren W Pulsipher
     - Sam Ceccola

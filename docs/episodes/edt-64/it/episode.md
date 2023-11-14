@@ -14,7 +14,7 @@ tags:
     - multicloud
     - cybersecurity
 
-date: Wed Sep 01 2021 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Wed Sep 01 2021 20:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Darren W Pulsipher
     - Greg Clifton

@@ -18,7 +18,7 @@ tags:
     - cybersecurity
     - aiven
 
-date: Wed Oct 13 2021 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Wed Oct 13 2021 20:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Darren W Pulsipher
     - David Esposito

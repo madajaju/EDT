@@ -31,7 +31,7 @@ tags:
     - mediumriskapplication
     - dependencies
 
-date: Wed Nov 08 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Thu Nov 09 2023 02:00:00 GMT-0500 (Eastern Standard Time)
 guests:
     - Steve Orrin
     - Dave Marcus

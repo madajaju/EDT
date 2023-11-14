@@ -32,7 +32,7 @@ tags:
     - claudeai
     - informedconsent
 
-date: Mon Oct 30 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Tue Oct 31 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Darren W Pulsipher
 

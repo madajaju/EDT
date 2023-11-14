@@ -17,7 +17,7 @@ tags:
     - cybersecurity
     - multicloud
 
-date: Tue Mar 09 2021 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Tue Mar 09 2021 19:00:00 GMT-0500 (Eastern Standard Time)
 guests:
     - Darren W Pulsipher
 

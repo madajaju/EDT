@@ -21,7 +21,7 @@ tags:
     - people
     - process
 
-date: Wed Jan 04 2023 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Wed Jan 04 2023 19:00:00 GMT-0500 (Eastern Standard Time)
 guests:
     - Darren W Pulsipher
 

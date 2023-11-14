@@ -17,7 +17,7 @@ tags:
     - migration
     - workload
 
-date: Wed Mar 30 2022 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Wed Mar 30 2022 20:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Darren W Pulsipher
     - Sarah Musick

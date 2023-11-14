@@ -16,7 +16,7 @@ tags:
     - edge
     - telelearning
 
-date: Tue Aug 11 2020 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Tue Aug 11 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Darren W Pulsipher
     - Erin Moseley

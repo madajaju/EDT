@@ -32,7 +32,7 @@ tags:
     - embracingdigital
     - edt159
 
-date: Wed Sep 13 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Thu Sep 14 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Jeremy Harris
     - Darren W Pulsipher

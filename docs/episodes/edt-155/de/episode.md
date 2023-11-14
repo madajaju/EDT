@@ -17,7 +17,7 @@ tags:
     - collectiongenerativeai
     - hybridcloud
 
-date: Wed Aug 30 2023 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Wed Aug 30 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Greg Campbell
     - Darren W Pulsipher

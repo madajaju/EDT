@@ -52,7 +52,7 @@ tags:
     - context
     - poweroflanguage
 
-date: Wed Sep 20 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Thu Sep 21 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Darren W Pulsipher
     - Steve Wasick

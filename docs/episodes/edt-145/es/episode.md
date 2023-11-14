@@ -13,7 +13,7 @@ tags:
     - remoteworker
     - collaboration
 
-date: Wed Jun 28 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Thu Jun 29 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Darren W Pulsipher
     - Byron Tarry

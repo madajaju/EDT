@@ -26,7 +26,7 @@ tags:
     - policyenforcement
     - cybersecurity
 
-date: Wed Oct 25 2023 21:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Thu Oct 26 2023 03:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Anna Scott
     - Dave Marcus

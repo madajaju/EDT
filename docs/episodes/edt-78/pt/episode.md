@@ -18,7 +18,7 @@ tags:
     - technology
     - process
 
-date: Wed Feb 23 2022 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Wed Feb 23 2022 19:00:00 GMT-0500 (Eastern Standard Time)
 guests:
     - Darren W Pulsipher
 

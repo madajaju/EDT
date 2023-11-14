@@ -17,7 +17,7 @@ tags:
     - edge
     - comms
 
-date: Wed Oct 27 2021 14:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Wed Oct 27 2021 20:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Darren W Pulsipher
     - Leeland Brown

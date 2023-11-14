@@ -28,7 +28,7 @@ tags:
     - edw37
     - zerotrustarchitecture
 
-date: Mon Oct 16 2023 23:00:00 GMT-0700 (Pacific Daylight Time)
+date: Tue Oct 17 2023 02:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Darren W Pulsipher
 

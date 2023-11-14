@@ -10,7 +10,7 @@ grand_parent: Português
 nav_order: 166
 tags:
 
-date: Thu Oct 12 2023 01:00:00 GMT-1000 (Hawaii-Aleutian Standard Time)
+date: Thu Oct 12 2023 07:00:00 GMT-0400 (Eastern Daylight Time)
 guests:
     - Christine McMonigal
     - Darren W Pulsipher
