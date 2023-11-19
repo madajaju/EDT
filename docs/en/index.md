@@ -41,20 +41,17 @@ topics of the day. Check out these new series.
 <div class="collection">
   <div class="collection-item">
     <a href="https://www.embracingdigital.org/collections/en/zerotrust.html">
-      <img src="./zta.png" width="128" height="128" alt="Embracing Zero Trust">
-      <br>Embracing Zero Trust
+      <img src="./ezt.png" width="128" height="128" alt="Embracing Zero Trust">
     </a>
   </div>
   <div class="collection-item">
     <a href="https://www.embracingdigital.org/collections/en/multhybridcloud.html">
-      <img src="./multicloud.png" width="175" height="128" alt="Embracing Multi-Hybrid Cloud">
-      <br>Embracing Multi-Hybrid Cloud
+      <img src="./emhc.png" width="175" height="128" alt="Embracing Multi-Hybrid Cloud">
     </a>
   </div>
   <div class="collection-item">
     <a href="https://www.embracingdigital.org/collections/en/generativeai.html">
-      <img src="./genai.png" width="175" height="128" alt="Embracing Generative AI">
-      <br>Embracing Generative AI
+      <img src="./egai.png" width="175" height="128" alt="Embracing Generative AI">
     </a>
   </div>
 </div>
@@ -108,7 +105,7 @@ limit: 10 %}
         <small>{{ latestEpisode.number}} - {{ latestEpisode.title }}</small>
     </a><br>
     <a href="{{ latestBrief.url }}">
-        <img src="../../EDTW.png" width="128" height="128"><br>
+        <img src="./en.png" width="128" height="128"><br>
         <small>Weekly News Brief {{ latestBrief.title }}</small>
     </a><br>
   </div>

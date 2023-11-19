@@ -17,7 +17,7 @@ tags:
     - datamanagement
     - advancedcomms
 
-date: Mon Jul 31 2023 23:59:34 GMT-0400 (Eastern Daylight Time)
+date: Mon Jul 31 2023 20:59:34 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 

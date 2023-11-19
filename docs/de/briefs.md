@@ -26,6 +26,9 @@ nav_order: 2
 
 {% include subscribe_brief.html %}
 
+
+<img src="./de.png" width="128" height="128">
+
 # Wöchentliche Nachrichten
 
 Wir befinden uns mitten in der digitalen Revolution. In dieser Zeit kann es herausfordernd sein, zwischen all dem Hype herauszufiltern, was funktioniert, was auch noch in zwei Jahren relevant ist und was zu Ihrer Organisation beiträgt. Viele IT-Organisationen benötigen Unterstützung bei verwirrenden Botschaften und widersprüchlichen Technologien. Wir helfen Organisationen dabei, den Rummel zu sortieren und die digitale Transformation zu begrüßen. Die Welt der digitalen Transformation verändert sich ständig, und Sie müssen wissen, was heute machbar ist. Hören Sie unseren wöchentlichen Podcast, um die neuesten Nachrichten aus den Bereichen Cybersicherheit, fortschrittliche Kommunikation, Datenmanagement, künstliche Intelligenz, Edge-Computing und Cloud Computing zu erfahren.

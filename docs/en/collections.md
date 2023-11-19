@@ -51,8 +51,7 @@ In the ever-evolving landscape of digital transformation, staying ahead of the c
 <div class="collection">
   <div class="collection-item">
     <a href="https://www.embracingdigital.org/collections/en/generativeai.html">
-      <img src="./genai.png" width="175" height="128" alt="Embracing Generative AI">
-      Embracing Generative AI
+      <img src="./egai.png" width="128" height="128" alt="Embracing Generative AI">
     </a>
     <p>
       Our first collection explores the captivating world of Generative AI, a field that's redefining creativity and automation. Dive into discussions with leading experts who unravel the potential of AI to generate art, music, and content, revolutionizing industries from entertainment to marketing. Discover how Generative AI is not just a tool but a game-changer for those seeking to amplify their creative output and streamline complex processes.
@@ -60,8 +59,7 @@ In the ever-evolving landscape of digital transformation, staying ahead of the c
   </div>
   <div class="collection-item">
     <a href="https://www.embracingdigital.org/collections/en/multhybridcloud.html">
-      <img src="./multicloud.png" width="175" height="128" alt="Embracing Multi-Hybrid Cloud">
-      Embracing Multi-Hybrid Cloud
+      <img src="./emhc.png" width="128" height="128" alt="Embracing Multi-Hybrid Cloud">
     </a>
     <p>
       In the second collection, we venture into the dynamic realm of Multi-Hybrid Cloud, where agility meets scalability. Modern businesses rely on flexible cloud infrastructures to adapt to changing demands. Join us as we explore the intricacies of managing multi-hybrid cloud environments, addressing security concerns, and optimizing performance. Experts share their experiences and insights, providing a comprehensive guide for organizations looking to harness the full potential of cloud technologies.
@@ -69,8 +67,7 @@ In the ever-evolving landscape of digital transformation, staying ahead of the c
   </div>
   <div class="collection-item">
     <a href="https://www.embracingdigital.org/collections/en/zerotrust.html">
-      <img src="./zta.png" width="128" height="128" alt="Embracing Zero Trust">
-      Embracing Zero Trust
+      <img src="./ezt.png" width="128" height="128" alt="Embracing Zero Trust">
     </a>
     <p>
       Last but certainly not least, our third collection delves into the crucial topic of Zero Trust Architecture. As cybersecurity threats continue to evolve, adopting a proactive and holistic security approach is essential. Our episodes featuring cybersecurity experts will guide you through the principles and practices of Zero Trust, helping you fortify your digital perimeter and protect your assets in an increasingly interconnected world.

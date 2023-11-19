@@ -28,6 +28,8 @@ child_nav_order: reversed
 
 {% include subscribe_brief.html %}
 
+<img src="./en.png" width="128" height="128"><br>
+
 # Weekly Briefs
 
 We are in the throws of the digital revolution. During this time, it can be challenging to sift through all of the hype and find what works, what is still viable two years from now, and what contributes to your organization. Many IT organizations need help with confusing messages and conflicting technologies. We help organizations sort through the chatter and embrace digital transformation. The world of digital transformation is constantly changing, and you need to know what is viable today.  Listen to the podcast weekly for the latest news in cybersecurity, advanced communications, data management, artificial intelligence, edge, and cloud computing.</p>
