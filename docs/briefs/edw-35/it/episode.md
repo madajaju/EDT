@@ -27,7 +27,7 @@ tags:
     - digitaltransformationpodcast
     - intelcloudsolutionarchitects
 
-date: Tue Oct 03 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: Tue Oct 03 2023 01:00:00 GMT-0600 (Central Standard Time)
 guests:
     - Darren W Pulsipher
 

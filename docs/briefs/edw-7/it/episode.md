@@ -14,7 +14,7 @@ tags:
     - compute
     - datamanagement
 
-date: Sun Mar 19 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: Sun Mar 19 2023 18:00:00 GMT-0600 (Central Standard Time)
 guests:
     - Darren W Pulsipher
 

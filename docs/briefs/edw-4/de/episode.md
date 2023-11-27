@@ -11,7 +11,7 @@ grand_parent: Deutsch
 nav_order: 4
 tags:
 
-date: Mon Feb 27 2023 00:00:00 GMT-0800 (Pacific Standard Time)
+date: Mon Feb 27 2023 02:00:00 GMT-0600 (Central Standard Time)
 guests:
 
 img: thumbnail.png
