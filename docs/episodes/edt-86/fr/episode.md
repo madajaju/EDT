@@ -15,7 +15,7 @@ tags:
     - change
     - organizationalchange
 
-date: Wed May 11 2022 20:00:00 GMT-0400 (Eastern Daylight Time)
+date: Wed May 11 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Jason Dunn-Potter

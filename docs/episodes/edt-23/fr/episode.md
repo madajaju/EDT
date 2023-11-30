@@ -16,7 +16,7 @@ tags:
     - insight
     - technology
 
-date: Tue Sep 29 2020 20:00:00 GMT-0400 (Eastern Daylight Time)
+date: Tue Sep 29 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Sarah Kalicin

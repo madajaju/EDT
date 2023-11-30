@@ -10,7 +10,7 @@ grand_parent: Deutsch
 nav_order: 140
 tags:
 
-date: Wed May 24 2023 20:00:00 GMT-0400 (Eastern Daylight Time)
+date: Wed May 24 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Michael Mehlberg

@@ -17,7 +17,7 @@ tags:
     - camunda
     - rpa
 
-date: Tue Nov 22 2022 19:00:00 GMT-0500 (Eastern Standard Time)
+date: Tue Nov 22 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
     - Max Young

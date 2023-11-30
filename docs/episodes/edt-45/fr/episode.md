@@ -18,7 +18,7 @@ tags:
     - process
     - cloudinstance
 
-date: Tue Mar 30 2021 20:00:00 GMT-0400 (Eastern Daylight Time)
+date: Tue Mar 30 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - Steven Holt

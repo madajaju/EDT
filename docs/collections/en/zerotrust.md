@@ -29,4 +29,6 @@ The goal is to minimize access and blast radius for bad actors while providing s
 
 * [Zero Trust Principles](https://www.embracingdigital.org/episode-EDT170-en) - In this episode Darren explores the principles of Zero Trust architecture with special guest David Marcus, Senior Security Architect, and returning guest Dr. Anna Scott.
 * [Zero Trust Architecture](https://www.embracingdigital.org/episode-EDT172-en) - In this episode Darren interviews Steve Orrin and David Marcus on the key elements of Zero Trust Architecture.
+* [Zero Trust Applications](https://www.embracingdigital.org/episode-EDT174-en) - In this episode Darren interviews Patrick Conte from Fortanix about leveraging confidential computing in securiting applications in zero trust architectures.
+* [Zero Trust Operational Technology](https://embracingdigital.org/episode-EDT175-en) - In this episode Darren interviews the CEO of Founder of Veridify Louis Parks. They discuss the unique problems with Operational technology networks that control critical infrastructure, due to legacy complexity, accessibility vulnerabilities, and lack of visibility.
 
