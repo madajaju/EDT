@@ -33,7 +33,7 @@ tags:
     - alibabacloud
     - cloudcomputing
 
-date: Sun Nov 26 2023 00:00:00 GMT-0600 (Central Standard Time)
+date: Sat Nov 25 2023 22:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
 
