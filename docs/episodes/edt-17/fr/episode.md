@@ -17,14 +17,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher montre comment il a augmenté les performances d'Elasticsearch en utilisant la mémoire persistante Intel Optane en mode 100% d'application directe. Ses tests montrent une augmentation incroyable des performances de 2 fois. En doublant la capacité de débit, vous pouvez considérablement réduire le nombre de serveurs dans votre cluster Elasticsearch."
-video: "https://youtu.be/R5TUrX4BcD8"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher montre comment il a augmenté les performances d'Elasticsearch en utilisant la mémoire persistante Intel Optane en mode 100% d'application directe. Ses tests montrent une augmentation incroyable des performances de 2 fois. En doublant la capacité de débit, vous pouvez considérablement réduire le nombre de serveurs dans votre cluster Elasticsearch."
 ---
 
 <div>
 {% include transistor.html id="77870513" title="#17 Elastic Search & Intel Optane DCPMM" %}
 
-{% include youtube.html id="R5TUrX4BcD8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

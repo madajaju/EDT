@@ -27,14 +27,14 @@ guests:
 img: thumbnail.jpeg
 image: thumbnail.jpeg
 summary: "In this episode, Darren reminisces with Chetan Venkatesh, CEO of MacroMeta. Venkatesh has a long history of data management from the beginning days of Grid Computing and has started MacroMeta to tackle data management across the globally dispersed edge, data centers, and clouds. "
-video: "https://youtu.be/9PKbVk-VvZo"
+video: "https://youtu.be/url"
 description: "In this episode, Darren reminisces with Chetan Venkatesh, CEO of MacroMeta. Venkatesh has a long history of data management from the beginning days of Grid Computing and has started MacroMeta to tackle data management across the globally dispersed edge, data centers, and clouds. "
 ---
 
 <div>
 {% include transistor.html id="140001aa" title="#98 The Emergence of the Global Data Network" %}
 
-{% include youtube.html id="9PKbVk-VvZo" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

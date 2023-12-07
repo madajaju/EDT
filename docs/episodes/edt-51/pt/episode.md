@@ -23,14 +23,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Darren Pulsipher, Arquiteto Chefe de Soluções da Intel, conversa com Charles Fan, CEO da MemVerge, sobre casos de uso com seu software que utiliza a memória persistente Intel Optane de forma inovadora, removendo o gargalo entre memória e armazenamento."
-video: "https://youtu.be/nTy8yXORkOw"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquiteto Chefe de Soluções da Intel, conversa com Charles Fan, CEO da MemVerge, sobre casos de uso com seu software que utiliza a memória persistente Intel Optane de forma inovadora, removendo o gargalo entre memória e armazenamento."
 ---
 
 <div>
 {% include transistor.html id="442f5ddb" title="#51 Practical Optane Persistent Memory Use Cases" %}
 
-{% include youtube.html id="nTy8yXORkOw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

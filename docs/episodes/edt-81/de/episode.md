@@ -27,14 +27,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect bei Intel, diskutiert mit James Reinders, dem Chief Evangelist von Intel OneAPI, über die Fähigkeiten und Zukunft von OneAPI. Dabei handelt es sich um ein branchenübergreifendes, offenes, auf Standards basierendes vereinheitlichtes Programmiermodell, das eine gemeinsame Entwicklererfahrung für Beschleunigerarchitekturen bietet."
-video: "https://youtu.be/YDa_EeOzFzc"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solution Architect bei Intel, diskutiert mit James Reinders, dem Chief Evangelist von Intel OneAPI, über die Fähigkeiten und Zukunft von OneAPI. Dabei handelt es sich um ein branchenübergreifendes, offenes, auf Standards basierendes vereinheitlichtes Programmiermodell, das eine gemeinsame Entwicklererfahrung für Beschleunigerarchitekturen bietet."
 ---
 
 <div>
 {% include transistor.html id="28fb34d4" title="#81 Heterogeneous Programming with OneAPI" %}
 
-{% include youtube.html id="YDa_EeOzFzc" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

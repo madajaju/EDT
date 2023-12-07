@@ -21,14 +21,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Architecte en chef des solutions chez Intel, parle des offres de sécurité informatique à 360 degrés de Hitachi avec Colin McLean, responsable mondial de l'équipe Intel, et David Rowley, consultant principal en solutions chez Hitachi."
-video: "https://youtu.be/2AnPCAzhmJo"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Architecte en chef des solutions chez Intel, parle des offres de sécurité informatique à 360 degrés de Hitachi avec Colin McLean, responsable mondial de l'équipe Intel, et David Rowley, consultant principal en solutions chez Hitachi."
 ---
 
 <div>
 {% include transistor.html id="4c85b189" title="#75 Cybersecurity Solutions with Hitachi" %}
 
-{% include youtube.html id="2AnPCAzhmJo" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

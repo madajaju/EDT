@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Arquiteto-chefe de Soluções da Intel, conversa com Uzair Hussain, CEO da District Zero, sobre como o aplicativo da empresa que apoia o bem-estar mental de estudantes do ensino fundamental e médio pode ser aplicado na prevenção do esgotamento dos funcionários."
-video: "https://youtu.be/J-1KQ-J6j18"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquiteto-chefe de Soluções da Intel, conversa com Uzair Hussain, CEO da District Zero, sobre como o aplicativo da empresa que apoia o bem-estar mental de estudantes do ensino fundamental e médio pode ser aplicado na prevenção do esgotamento dos funcionários."
 ---
 
 <div>
 {% include transistor.html id="4a31ff22" title="#50 Understanding Employee Burnout" %}
 
-{% include youtube.html id="J-1KQ-J6j18" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

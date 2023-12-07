@@ -21,14 +21,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, Darren discute avec le PDG et directeur général de GPA du rôle que joue l'innovation en matière de collaboration pour ramener les gens au bureau et pourquoi les gens ont besoin d'interactions en face-à-face."
-video: "https://youtu.be/I7atsJQP-gg"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, Darren discute avec le PDG et directeur général de GPA du rôle que joue l'innovation en matière de collaboration pour ramener les gens au bureau et pourquoi les gens ont besoin d'interactions en face-à-face."
 ---
 
 <div>
 {% include transistor.html id="11bf23e0" title="#145 Attracting People Back to the Office" %}
 
-{% include youtube.html id="I7atsJQP-gg" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

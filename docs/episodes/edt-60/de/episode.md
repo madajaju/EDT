@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode, Teil eins von zwei, diskutiert Darren Sicherheitstrends mit seinem häufigen Gast Steve Orrin, CTO von Intel, Federal. Im vergangenen Jahr gab es einen Anstieg der Anzahl und der Raffinesse von Cyberangriffen. Die drei wichtigsten Bereiche wiederkehrender Angriffe sind Ransomware, Angriffe auf die Lieferkette und Datenlecks."
-video: "https://youtu.be/JOw9LurVHJY"
+video: "https://youtu.be/url"
 description: "In dieser Episode, Teil eins von zwei, diskutiert Darren Sicherheitstrends mit seinem häufigen Gast Steve Orrin, CTO von Intel, Federal. Im vergangenen Jahr gab es einen Anstieg der Anzahl und der Raffinesse von Cyberangriffen. Die drei wichtigsten Bereiche wiederkehrender Angriffe sind Ransomware, Angriffe auf die Lieferkette und Datenlecks."
 ---
 
 <div>
 {% include transistor.html id="8b0a716a" title="#60 Managing Risk in the Face of Ransomware" %}
 
-{% include youtube.html id="JOw9LurVHJY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

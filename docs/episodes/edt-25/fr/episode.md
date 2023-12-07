@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, architecte en chef des solutions, secteur public, chez Intel, parle avec Sarah Kalicin, data scientist en chef, Intel, à propos de l'opérationnalisation du pipeline de données de votre organisation. Cela nécessite un effort d'équipe pour modéliser, surveiller et produire une source continue d'informations précieuses. Il s'agit du dernier épisode de la série "Démarrer votre transformation organisationnelle pour devenir centrée sur les données"."
-video: "https://youtu.be/pKJMKF4USSs"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, architecte en chef des solutions, secteur public, chez Intel, parle avec Sarah Kalicin, data scientist en chef, Intel, à propos de l'opérationnalisation du pipeline de données de votre organisation. Cela nécessite un effort d'équipe pour modéliser, surveiller et produire une source continue d'informations précieuses. Il s'agit du dernier épisode de la série "Démarrer votre transformation organisationnelle pour devenir centrée sur les données"."
 ---
 
 <div>
 {% include transistor.html id="cb72bda4" title="#25 Operationalizing Data Pipelines" %}
 
-{% include youtube.html id="pKJMKF4USSs" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

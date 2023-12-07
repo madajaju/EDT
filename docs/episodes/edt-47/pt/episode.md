@@ -20,14 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Greg lidera as vendas e o marketing da Intel nos Estados Unidos. Os clientes da Intel são principalmente os fabricantes de equipamentos originais (OEMs), e a equipe de vendas da Intel trabalha diariamente atendendo essas contas e ajudando-as a construir sistemas em torno das tecnologias de computação e memória da Intel. Atualmente, há uma demanda sem precedentes por computação. As equipes da Intel trabalham com empresas de software, provedores de nuvem, grandes empresas, escolas e agências governamentais para tornar a computação acessível e ajudar a identificar tendências e aplicar casos de uso que resolvam problemas de negócios de uma maneira que melhore a sociedade. Portanto, a Intel trabalha como uma grande influenciadora e identifica novas tendências para garantir que os clientes tenham os produtos certos."
-video: "https://youtu.be/BBlbBKbtOEw"
+video: "https://youtu.be/url"
 description: "Greg lidera as vendas e o marketing da Intel nos Estados Unidos. Os clientes da Intel são principalmente os fabricantes de equipamentos originais (OEMs), e a equipe de vendas da Intel trabalha diariamente atendendo essas contas e ajudando-as a construir sistemas em torno das tecnologias de computação e memória da Intel. Atualmente, há uma demanda sem precedentes por computação. As equipes da Intel trabalham com empresas de software, provedores de nuvem, grandes empresas, escolas e agências governamentais para tornar a computação acessível e ajudar a identificar tendências e aplicar casos de uso que resolvam problemas de negócios de uma maneira que melhore a sociedade. Portanto, a Intel trabalha como uma grande influenciadora e identifica novas tendências para garantir que os clientes tenham os produtos certos."
 ---
 
 <div>
 {% include transistor.html id="2361146f" title="#47 Looking Forward to 2021" %}
 
-{% include youtube.html id="BBlbBKbtOEw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

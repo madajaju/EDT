@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Die heutige Folge ist Teil 2 eines Gesprächs mit Sean Chou, CEO von Catalytic, und Neil Bahadur, Leiter der Partnerschaften bei Catalytic. Sie sprechen mit Darren über ihren No-Code-Ansatz zur Effizienzsteigerung im Backoffice mit einer Plattform, die RPA- und KI-Technologie nutzt."
-video: "https://youtu.be/jok5CUj32OI"
+video: "https://youtu.be/url"
 description: "Die heutige Folge ist Teil 2 eines Gesprächs mit Sean Chou, CEO von Catalytic, und Neil Bahadur, Leiter der Partnerschaften bei Catalytic. Sie sprechen mit Darren über ihren No-Code-Ansatz zur Effizienzsteigerung im Backoffice mit einer Plattform, die RPA- und KI-Technologie nutzt."
 ---
 
 <div>
 {% include transistor.html id="edt32" title="#32 No Code (RPA) Approach to Back Office Efficiency" %}
 
-{% include youtube.html id="jok5CUj32OI" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

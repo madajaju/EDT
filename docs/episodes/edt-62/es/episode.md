@@ -23,14 +23,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Darren Pulsipher, Arquitecto Jefe de Soluciones, Intel, habla sobre los cambios innovadores que el 5G traerá al borde y a la inteligencia artificial junto con la Dra. Anna Scott, Arquitecta Jefe de Borde, Intel."
-video: "https://youtu.be/tjuYUh6bJJ8"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquitecto Jefe de Soluciones, Intel, habla sobre los cambios innovadores que el 5G traerá al borde y a la inteligencia artificial junto con la Dra. Anna Scott, Arquitecta Jefe de Borde, Intel."
 ---
 
 <div>
 {% include transistor.html id="50847ff2" title="#62 Demystifying 5G, Edge and AI" %}
 
-{% include youtube.html id="tjuYUh6bJJ8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

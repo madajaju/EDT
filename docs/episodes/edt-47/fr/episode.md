@@ -20,14 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Greg dirige les ventes et le marketing d'Intel aux États-Unis. Les clients principaux d'Intel sont les OEM de systèmes, et l'équipe de vente d'Intel travaille quotidiennement pour servir ces clients et les aider à construire des systèmes basés sur les technologies de calcul et de mémoire d'Intel. Actuellement, il y a une demande sans précédent pour le calcul. Les équipes d'Intel travaillent avec des entreprises de logiciels, des fournisseurs de cloud, des entreprises du Fortune 1000, des écoles et des agences gouvernementales pour rendre le calcul accessible et aider à identifier les tendances et à appliquer des cas d'utilisation pour résoudre les problèmes commerciaux de manière à améliorer la société. Intel agit donc en tant que précurseur et identifie les nouvelles tendances pour s'assurer que les clients disposent des bons produits."
-video: "https://youtu.be/BBlbBKbtOEw"
+video: "https://youtu.be/url"
 description: "Greg dirige les ventes et le marketing d'Intel aux États-Unis. Les clients principaux d'Intel sont les OEM de systèmes, et l'équipe de vente d'Intel travaille quotidiennement pour servir ces clients et les aider à construire des systèmes basés sur les technologies de calcul et de mémoire d'Intel. Actuellement, il y a une demande sans précédent pour le calcul. Les équipes d'Intel travaillent avec des entreprises de logiciels, des fournisseurs de cloud, des entreprises du Fortune 1000, des écoles et des agences gouvernementales pour rendre le calcul accessible et aider à identifier les tendances et à appliquer des cas d'utilisation pour résoudre les problèmes commerciaux de manière à améliorer la société. Intel agit donc en tant que précurseur et identifie les nouvelles tendances pour s'assurer que les clients disposent des bons produits."
 ---
 
 <div>
 {% include transistor.html id="2361146f" title="#47 Looking Forward to 2021" %}
 
-{% include youtube.html id="BBlbBKbtOEw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

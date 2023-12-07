@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, Darren y Cameron Chehreh, Vicepresidentes y Gerentes Generales del Sector Público de Intel, hablan sobre los superpoderes de Intel: computación ubicua, conectividad omnipresente, edge a la nube e inteligencia artificial."
-video: "https://youtu.be/QePpk6VExyE"
+video: "https://youtu.be/url"
 description: "En este episodio, Darren y Cameron Chehreh, Vicepresidentes y Gerentes Generales del Sector Público de Intel, hablan sobre los superpoderes de Intel: computación ubicua, conectividad omnipresente, edge a la nube e inteligencia artificial."
 ---
 
 <div>
 {% include transistor.html id="7bf9fc65" title="#100 Intel's Public Sector Superheroes" %}
 
-{% include youtube.html id="QePpk6VExyE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

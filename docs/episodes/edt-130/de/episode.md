@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode interviewt Darren seinen Sohn Matthew Pulsipher über die Produktisierung von entscheidungsbezogener künstlicher Intelligenz. Matthew hat kürzlich seine Produktentwicklungspipeline modernisiert, um entscheidungsbezogene künstliche Intelligenz in seine Produktentwicklung einzubeziehen."
-video: "https://youtu.be/x2sbb-2HI-o"
+video: "https://youtu.be/url"
 description: "In dieser Episode interviewt Darren seinen Sohn Matthew Pulsipher über die Produktisierung von entscheidungsbezogener künstlicher Intelligenz. Matthew hat kürzlich seine Produktentwicklungspipeline modernisiert, um entscheidungsbezogene künstliche Intelligenz in seine Produktentwicklung einzubeziehen."
 ---
 
 <div>
 {% include transistor.html id="d5430a4b" title="#130 Productizing Decisional AI" %}
 
-{% include youtube.html id="x2sbb-2HI-o" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

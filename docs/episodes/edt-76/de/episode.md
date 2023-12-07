@@ -21,14 +21,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode spricht Darren mit Kiran Agrahara darüber, was Intel Cloud Solution Architects (CSAs) den ganzen Tag über tun, um nicht nur Cloud-Service-Anbieter (CSPs), sondern auch Endbenutzern Vorteile zu bringen."
-video: "https://youtu.be/Z6E_-DgYkKI"
+video: "https://youtu.be/url"
 description: "In dieser Episode spricht Darren mit Kiran Agrahara darüber, was Intel Cloud Solution Architects (CSAs) den ganzen Tag über tun, um nicht nur Cloud-Service-Anbieter (CSPs), sondern auch Endbenutzern Vorteile zu bringen."
 ---
 
 <div>
 {% include transistor.html id="d5213b81" title="#76 Day in the Life of a Cloud Solution Architect" %}
 
-{% include youtube.html id="Z6E_-DgYkKI" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

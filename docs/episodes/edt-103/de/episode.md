@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Intel's Darren Pulsipher, Chief Solutions Architect, Public Sector, und Gretchen Stewart, Chief Data Scientist, Public Sector, sprechen über die Operationalisierung von KI-Projekten."
-video: "https://youtu.be/HbXNLtGkD5E"
+video: "https://youtu.be/url"
 description: "Intel's Darren Pulsipher, Chief Solutions Architect, Public Sector, und Gretchen Stewart, Chief Data Scientist, Public Sector, sprechen über die Operationalisierung von KI-Projekten."
 ---
 
 <div>
 {% include transistor.html id="dfad3810" title="#103 Operationalizing Your AI Projects" %}
 
-{% include youtube.html id="HbXNLtGkD5E" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

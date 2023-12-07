@@ -27,14 +27,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, première partie de deux, Darren et les architectes de solutions cloud d'Intel, Dave Shrestha et Kevin Bleckman, discutent de l'importance d'une organisation de courtage cloud. Dave et Kevin ont fondé l'équipe de courtage cloud d'Intel il y a environ sept ans. Les employés d'Intel utilisaient le cloud public, et c'était comme le Far West, avec des gens qui utilisaient simplement leur carte de crédit pour y accéder. La sécurité était un problème et les dépenses étaient incontrôlables. Pour remédier à ce chaos, ils ont créé une organisation de courtage cloud."
-video: "https://youtu.be/o-pBcuqYmJE"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, première partie de deux, Darren et les architectes de solutions cloud d'Intel, Dave Shrestha et Kevin Bleckman, discutent de l'importance d'une organisation de courtage cloud. Dave et Kevin ont fondé l'équipe de courtage cloud d'Intel il y a environ sept ans. Les employés d'Intel utilisaient le cloud public, et c'était comme le Far West, avec des gens qui utilisaient simplement leur carte de crédit pour y accéder. La sécurité était un problème et les dépenses étaient incontrôlables. Pour remédier à ce chaos, ils ont créé une organisation de courtage cloud."
 ---
 
 <div>
 {% include transistor.html id="a41fa330" title="#56 Cloud Broker Organizations" %}
 
-{% include youtube.html id="o-pBcuqYmJE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

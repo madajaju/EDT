@@ -24,14 +24,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Darren Pulsipher, Arquiteto-chefe de Soluções, Setor Público, na Intel, reflete sobre a interrupção, mudanças e ajustes que a pandemia da COVID-19 trouxe em 2020."
-video: "https://youtu.be/86cmrhSTAvc"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquiteto-chefe de Soluções, Setor Público, na Intel, reflete sobre a interrupção, mudanças e ajustes que a pandemia da COVID-19 trouxe em 2020."
 ---
 
 <div>
 {% include transistor.html id="2ed7f7f2" title="#37 2020 in Review" %}
 
-{% include youtube.html id="86cmrhSTAvc" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

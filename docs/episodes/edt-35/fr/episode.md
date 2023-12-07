@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, Darren Pulsipher, architecte principal des solutions pour le secteur public, et Rick Hermann, directeur du secteur public américain chez Intel, discutent de la façon dont Intel a réussi à naviguer avec succès dans les changements perturbateurs au cours des trois dernières décennies."
-video: "https://youtu.be/QXKSRExivp4"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, Darren Pulsipher, architecte principal des solutions pour le secteur public, et Rick Hermann, directeur du secteur public américain chez Intel, discutent de la façon dont Intel a réussi à naviguer avec succès dans les changements perturbateurs au cours des trois dernières décennies."
 ---
 
 <div>
 {% include transistor.html id="fee5a739" title="#35 Navigating Disruptive Change" %}
 
-{% include youtube.html id="QXKSRExivp4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

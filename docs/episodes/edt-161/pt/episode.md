@@ -60,14 +60,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "No último episódio, Darren Pulsipher senta-se com Steve Wasick, o CEO e fundador da InfoSentience, para discutir o poder e o potencial da análise de dados em linguagem natural. Steve, que tem uma trajetória não convencional, iniciando como estudante de inglês, depois roteirista, então advogado e, por fim, fundador de tecnologia, traz uma perspectiva única para o campo."
-video: "https://youtu.be/rLnquSyoCrQ"
+video: "https://youtu.be/url"
 description: "No último episódio, Darren Pulsipher senta-se com Steve Wasick, o CEO e fundador da InfoSentience, para discutir o poder e o potencial da análise de dados em linguagem natural. Steve, que tem uma trajetória não convencional, iniciando como estudante de inglês, depois roteirista, então advogado e, por fim, fundador de tecnologia, traz uma perspectiva única para o campo."
 ---
 
 <div>
 {% include transistor.html id="10e0f66c" title="#161 Natural Language Data Analytics" %}
 
-{% include youtube.html id="rLnquSyoCrQ" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Folge spricht Darren mit Generalleutnant Thomas Horlander, der kürzlich dem Intel Public Sector Team beigetreten ist, über die Lieferkette für Mikroelektronik und nationale Sicherheit."
-video: "https://youtu.be/zxcRt7vv7LE"
+video: "https://youtu.be/url"
 description: "In dieser Folge spricht Darren mit Generalleutnant Thomas Horlander, der kürzlich dem Intel Public Sector Team beigetreten ist, über die Lieferkette für Mikroelektronik und nationale Sicherheit."
 ---
 
 <div>
 {% include transistor.html id="fa673cc9" title="#110 Securing the Supply Chain" %}
 
-{% include youtube.html id="zxcRt7vv7LE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

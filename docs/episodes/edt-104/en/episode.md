@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel talks with Betsy Freeman, CEO of Radius Advisory Group, about her experience as an information-driven leader in the public and private sectors. Part one of two."
-video: "https://youtu.be/uKAMY4j6K3w"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel talks with Betsy Freeman, CEO of Radius Advisory Group, about her experience as an information-driven leader in the public and private sectors. Part one of two."
 ---
 
 <div>
 {% include transistor.html id="7e89b213" title="#104 Information-driven Leadership" %}
 
-{% include youtube.html id="uKAMY4j6K3w" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

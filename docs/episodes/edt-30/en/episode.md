@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "With oneAPI, Intel has created a unified software environment for development, geared toward data processing. Gretchen Stewart, Chief Data Scientist, Public Sector, Intel, discusses this technology with Darren Pulsipher, Chief Solution Architect, Intel, that eliminates the need for using a different language for different architectures."
-video: "https://youtu.be/JZYP2jxQY78"
+video: "https://youtu.be/url"
 description: "With oneAPI, Intel has created a unified software environment for development, geared toward data processing. Gretchen Stewart, Chief Data Scientist, Public Sector, Intel, discusses this technology with Darren Pulsipher, Chief Solution Architect, Intel, that eliminates the need for using a different language for different architectures."
 ---
 
 <div>
 {% include transistor.html id="3d30cd84" title="#30 Application Portability with OneAPI" %}
 
-{% include youtube.html id="JZYP2jxQY78" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

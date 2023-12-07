@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, Darren Pulsipher, chef architecte des solutions chez Intel, et Ofir Azoulay-Rozanes, directeur de la gestion des produits chez Anjuna, discutent des solutions d'Anjuna pour la confidentialité des données dans le cycle de vie DevOps."
-video: "https://youtu.be/hp1mK4AKGTQ"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, Darren Pulsipher, chef architecte des solutions chez Intel, et Ofir Azoulay-Rozanes, directeur de la gestion des produits chez Anjuna, discutent des solutions d'Anjuna pour la confidentialité des données dans le cycle de vie DevOps."
 ---
 
 <div>
 {% include transistor.html id="e31a9c3f" title="#87 Confidential Computing in DevSecOps" %}
 
-{% include youtube.html id="hp1mK4AKGTQ" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

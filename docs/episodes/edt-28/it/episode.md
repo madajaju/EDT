@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Una delle aree in crescita per aiutare con l'integrazione legacy e l'automazione dell'integrazione è l'uso di strumenti e framework di automazione. Negli ultimi 3 anni, è emerso un significativo enfasi sull'automazione dei flussi di lavoro con applicazioni legacy e nuove applicazioni cloud-aware per i lavoratori dell'informazione. Questi set di strumenti vengono chiamati strumenti di automazione dei processi robotici (RPA). Darren Pulsipher, Chief Solution Architect, settore pubblico, Intel, esamina l'industria dell'automazione dei processi robotici (RPA) e le offerte di strumenti."
-video: "https://youtu.be/F15k-tmLXt4"
+video: "https://youtu.be/url"
 description: "Una delle aree in crescita per aiutare con l'integrazione legacy e l'automazione dell'integrazione è l'uso di strumenti e framework di automazione. Negli ultimi 3 anni, è emerso un significativo enfasi sull'automazione dei flussi di lavoro con applicazioni legacy e nuove applicazioni cloud-aware per i lavoratori dell'informazione. Questi set di strumenti vengono chiamati strumenti di automazione dei processi robotici (RPA). Darren Pulsipher, Chief Solution Architect, settore pubblico, Intel, esamina l'industria dell'automazione dei processi robotici (RPA) e le offerte di strumenti."
 ---
 
 <div>
 {% include transistor.html id="73edaeb8" title="#28 Legacy Integration with Cloud and RPA" %}
 
-{% include youtube.html id="F15k-tmLXt4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

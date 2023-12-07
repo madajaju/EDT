@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, Darren interviewe Ken White de Dell Technology sur la manière dont la technologie Cloud est bien plus qu'une simple technologie, mais plutôt un processus et un changement culturel au sein des organisations."
-video: "https://youtu.be/Woc49CCq27g"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, Darren interviewe Ken White de Dell Technology sur la manière dont la technologie Cloud est bien plus qu'une simple technologie, mais plutôt un processus et un changement culturel au sein des organisations."
 ---
 
 <div>
 {% include transistor.html id="fdf8c82e" title="#138 Evolution of Cloud" %}
 
-{% include youtube.html id="Woc49CCq27g" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

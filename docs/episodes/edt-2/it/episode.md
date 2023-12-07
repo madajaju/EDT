@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo episodio, Darren intervista Greg Clifton, Direttore del Dipartimento della Difesa (DOD) e dell'Intelligence per Intel Corp. Discutono delle sfide della gestione dei dati in un sistema complesso che si estende su più cloud, centri dati aziendali, centri dati regionali e frontiere tattiche. Ascolta Darren e Greg seguire un po' di dati dalla loro raccolta e il loro percorso attraverso questo ecosistema fino alla produzione di informazioni utilizzabili per analisti e combattenti. Ascolta Darren e Greg discutere di alcuni ostacoli in questo grande ambiente circolare e soluzioni per aiutare a fornire informazioni utilizzabili agli analisti e nuovamente ai combattenti."
-video: "https://youtu.be/N6WTErcBjrM"
+video: "https://youtu.be/url"
 description: "In questo episodio, Darren intervista Greg Clifton, Direttore del Dipartimento della Difesa (DOD) e dell'Intelligence per Intel Corp. Discutono delle sfide della gestione dei dati in un sistema complesso che si estende su più cloud, centri dati aziendali, centri dati regionali e frontiere tattiche. Ascolta Darren e Greg seguire un po' di dati dalla loro raccolta e il loro percorso attraverso questo ecosistema fino alla produzione di informazioni utilizzabili per analisti e combattenti. Ascolta Darren e Greg discutere di alcuni ostacoli in questo grande ambiente circolare e soluzioni per aiutare a fornire informazioni utilizzabili agli analisti e nuovamente ai combattenti."
 ---
 
 <div>
 {% include transistor.html id="caf42ad5" title="#2 Follow the Bit" %}
 
-{% include youtube.html id="N6WTErcBjrM" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

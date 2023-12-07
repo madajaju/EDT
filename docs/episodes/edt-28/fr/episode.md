@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Une des zones en expansion pour aider à l'intégration des systèmes existants et à l'automatisation de l'intégration est l'utilisation d'outils et de cadres d'automatisation. Au cours des 3 dernières années, une mise en évidence significative de l'automatisation des flux de travaux avec les applications existantes et les nouvelles applications conscientes du cloud pour les travailleurs de l'information est apparue. Ces ensembles d'outils sont appelés outils d'automatisation des processus robotiques (RPA). Darren Pulsipher, architecte principal des solutions, secteur public, Intel, examine l'industrie de l'automatisation des processus robotiques (RPA) et les offres d'outils."
-video: "https://youtu.be/F15k-tmLXt4"
+video: "https://youtu.be/url"
 description: "Une des zones en expansion pour aider à l'intégration des systèmes existants et à l'automatisation de l'intégration est l'utilisation d'outils et de cadres d'automatisation. Au cours des 3 dernières années, une mise en évidence significative de l'automatisation des flux de travaux avec les applications existantes et les nouvelles applications conscientes du cloud pour les travailleurs de l'information est apparue. Ces ensembles d'outils sont appelés outils d'automatisation des processus robotiques (RPA). Darren Pulsipher, architecte principal des solutions, secteur public, Intel, examine l'industrie de l'automatisation des processus robotiques (RPA) et les offres d'outils."
 ---
 
 <div>
 {% include transistor.html id="73edaeb8" title="#28 Legacy Integration with Cloud and RPA" %}
 
-{% include youtube.html id="F15k-tmLXt4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

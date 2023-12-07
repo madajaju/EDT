@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, architecte en chef des solutions chez Intel, et Eric Greenwald, avocat général de Finite State, abordent la sécurité de la chaîne d'approvisionnement logicielle."
-video: "https://youtu.be/zyIH533JhyM"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, architecte en chef des solutions chez Intel, et Eric Greenwald, avocat général de Finite State, abordent la sécurité de la chaîne d'approvisionnement logicielle."
 ---
 
 <div>
 {% include transistor.html id="d4b56c70" title="#91 Fighting the Cyber Adversary by Securing your Software Supply Chain" %}
 
-{% include youtube.html id="zyIH533JhyM" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, architecte en chef des solutions, secteur public, chez Intel, définit les termes courants de DevOps et explique comment DevOps s'intègre dans votre organisation."
-video: "https://youtu.be/to0GwF55Ybw"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, architecte en chef des solutions, secteur public, chez Intel, définit les termes courants de DevOps et explique comment DevOps s'intègre dans votre organisation."
 ---
 
 <div>
 {% include transistor.html id="b4fe3ea1" title="#41 The Black Art of DevOps" %}
 
-{% include youtube.html id="to0GwF55Ybw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

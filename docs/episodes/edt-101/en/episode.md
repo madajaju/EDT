@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, interviews network security experts Dana Yanch and Dan Demers from Elisity about network controller security techniques and zero trust architectures. "
-video: "https://youtu.be/st0HrHNmEUI"
+video: "https://youtu.be/url"
 description: "Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, interviews network security experts Dana Yanch and Dan Demers from Elisity about network controller security techniques and zero trust architectures. "
 ---
 
 <div>
 {% include transistor.html id="d4feba70" title="#101 Network Controller Security with Elisity" %}
 
-{% include youtube.html id="st0HrHNmEUI" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

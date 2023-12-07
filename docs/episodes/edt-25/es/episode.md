@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Arquitecto Jefe de Soluciones, Sector Público, Intel, conversa con Sarah Kalicin, Científica de Datos Principal, Intel, acerca de la operacionalización del flujo de datos de su organización. Se requiere un esfuerzo en equipo para modelar, monitorear y producir una fuente continua de información valiosa. Este es el último episodio de la serie de Cómo impulsar la Transformación Organizativa para Convertirse en una Empresa Centrada en los Datos."
-video: "https://youtu.be/pKJMKF4USSs"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquitecto Jefe de Soluciones, Sector Público, Intel, conversa con Sarah Kalicin, Científica de Datos Principal, Intel, acerca de la operacionalización del flujo de datos de su organización. Se requiere un esfuerzo en equipo para modelar, monitorear y producir una fuente continua de información valiosa. Este es el último episodio de la serie de Cómo impulsar la Transformación Organizativa para Convertirse en una Empresa Centrada en los Datos."
 ---
 
 <div>
 {% include transistor.html id="cb72bda4" title="#25 Operationalizing Data Pipelines" %}
 
-{% include youtube.html id="pKJMKF4USSs" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

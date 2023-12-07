@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Folge sprechen Darren Pulsipher, Chief Solution Architect, Public Sector, und Robert Looney, Americas Data Center Sales Manager für Intel, über den Einsatz eines strategischen Ansatzes, um die aktuelle Entwicklung am Arbeitsplatz zu umarmen. Die COVID-Pandemie hat große Herausforderungen und Übergänge am Arbeitsplatz geschaffen. Intel hilft Kunden dabei, Technologien optimal einzusetzen, um den fortlaufenden Herausforderungen im neuen Normalzustand zu begegnen."
-video: "https://youtu.be/fMF_Tcc0Sh8"
+video: "https://youtu.be/url"
 description: "In dieser Folge sprechen Darren Pulsipher, Chief Solution Architect, Public Sector, und Robert Looney, Americas Data Center Sales Manager für Intel, über den Einsatz eines strategischen Ansatzes, um die aktuelle Entwicklung am Arbeitsplatz zu umarmen. Die COVID-Pandemie hat große Herausforderungen und Übergänge am Arbeitsplatz geschaffen. Intel hilft Kunden dabei, Technologien optimal einzusetzen, um den fortlaufenden Herausforderungen im neuen Normalzustand zu begegnen."
 ---
 
 <div>
 {% include transistor.html id="466480ec" title="#34 Embracing Workspace Evolution" %}
 
-{% include youtube.html id="fMF_Tcc0Sh8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

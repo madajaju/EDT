@@ -27,14 +27,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chef-Lösungsarchitekt bei Intel, spricht mit den führenden Cloud-Lösungsarchitekten von Intel, Stephen Holt, Kiran Agrahara, Sarah Musick und Todd Christ, darüber, wie sie Organisationen kostenlos bei der Migration zur Cloud und der Optimierung ihrer Arbeitslasten unterstützen können."
-video: "https://youtu.be/Q_b37GzRqvE"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chef-Lösungsarchitekt bei Intel, spricht mit den führenden Cloud-Lösungsarchitekten von Intel, Stephen Holt, Kiran Agrahara, Sarah Musick und Todd Christ, darüber, wie sie Organisationen kostenlos bei der Migration zur Cloud und der Optimierung ihrer Arbeitslasten unterstützen können."
 ---
 
 <div>
 {% include transistor.html id="11a4e430" title="#80 Meeting Intel's Cloud Solution Architects" %}
 
-{% include youtube.html id="Q_b37GzRqvE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -27,14 +27,14 @@ guests:
 img: thumbnail.jpeg
 image: thumbnail.jpeg
 summary: "Dans cet épisode, Darren se remémore avec Chetan Venkatesh, PDG de MacroMeta. Venkatesh a une longue expérience de gestion des données depuis les premiers jours du calcul en grille et a lancé MacroMeta pour faire face à la gestion des données à travers les centres de données, le cloud et les sites dispersés à travers le monde."
-video: "https://youtu.be/9PKbVk-VvZo"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, Darren se remémore avec Chetan Venkatesh, PDG de MacroMeta. Venkatesh a une longue expérience de gestion des données depuis les premiers jours du calcul en grille et a lancé MacroMeta pour faire face à la gestion des données à travers les centres de données, le cloud et les sites dispersés à travers le monde."
 ---
 
 <div>
 {% include transistor.html id="140001aa" title="#98 The Emergence of the Global Data Network" %}
 
-{% include youtube.html id="9PKbVk-VvZo" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

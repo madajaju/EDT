@@ -20,14 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode spricht Darren mit Rachel Dreikosen, Business Development Manager im öffentlichen Sektor bei Intel, darüber, wie COVID-19 ihr Work-Life-Balance beeinflusst hat und warum sie einen Blog gestartet hat, um anderen weiblichen technischen Vertriebsprofis zu helfen."
-video: "https://youtu.be/kxWHplocgmw"
+video: "https://youtu.be/url"
 description: "In dieser Episode spricht Darren mit Rachel Dreikosen, Business Development Manager im öffentlichen Sektor bei Intel, darüber, wie COVID-19 ihr Work-Life-Balance beeinflusst hat und warum sie einen Blog gestartet hat, um anderen weiblichen technischen Vertriebsprofis zu helfen."
 ---
 
 <div>
 {% include transistor.html id="57801971" title="#49 Remote Work Before, During and After the Pandemic" %}
 
-{% include youtube.html id="kxWHplocgmw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

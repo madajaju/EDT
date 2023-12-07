@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste episódio, Darren entrevista Sam Ceccola, CTO da DOD para HPE, sobre os novos modelos de negócios e tecnologia que estão mudando a forma como as organizações consomem a nuvem híbrida."
-video: "https://youtu.be/ca8WFpYQLss"
+video: "https://youtu.be/url"
 description: "Neste episódio, Darren entrevista Sam Ceccola, CTO da DOD para HPE, sobre os novos modelos de negócios e tecnologia que estão mudando a forma como as organizações consomem a nuvem híbrida."
 ---
 
 <div>
 {% include transistor.html id="fcf7bb68" title="#137 Rebirth of the Private Cloud" %}
 
-{% include youtube.html id="ca8WFpYQLss" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

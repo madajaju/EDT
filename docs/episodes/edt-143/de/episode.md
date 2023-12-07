@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode von "Digitale Transformation umarmen" setzt Dr. Anna Scott ihr Gespräch mit Ibett Acarapi und Jesse Schrater über Vertraulichkeitsberechnung und deren Verwendung in KI und Softwareentwicklung fort."
-video: "https://youtu.be/NZWVC4VLWL4"
+video: "https://youtu.be/url"
 description: "In dieser Episode von "Digitale Transformation umarmen" setzt Dr. Anna Scott ihr Gespräch mit Ibett Acarapi und Jesse Schrater über Vertraulichkeitsberechnung und deren Verwendung in KI und Softwareentwicklung fort."
 ---
 
 <div>
 {% include transistor.html id="896bc6e3" title="#143 Use Cases in Confidential Computing" %}
 
-{% include youtube.html id="NZWVC4VLWL4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

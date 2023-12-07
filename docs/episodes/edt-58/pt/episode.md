@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Arquiteto-chefe de Soluções, Intel, descreve os problemas comuns em arquiteturas de borda para data center que ele observou e discutiu com clientes do setor público. Ele apresenta a arquitetura ideal para resolver essas questões."
-video: "https://youtu.be/CVeyd3pZTkA"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquiteto-chefe de Soluções, Intel, descreve os problemas comuns em arquiteturas de borda para data center que ele observou e discutiu com clientes do setor público. Ele apresenta a arquitetura ideal para resolver essas questões."
 ---
 
 <div>
 {% include transistor.html id="51a240b0" title="#58 Understanding Edge to Data Center Problems" %}
 
-{% include youtube.html id="CVeyd3pZTkA" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -20,14 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Sarah Kalicin, Lead Data Scientist chez Intel et Darren Pulsipher, Architecte en chef des solutions du secteur public chez Intel, parlent du processus et des avantages de la collecte et de la préparation de données pour devenir une organisation axée sur les données. Il s'agit de la deuxième étape du parcours vers une organisation axée sur les données."
-video: "https://youtu.be/xdt93M5isEA"
+video: "https://youtu.be/url"
 description: "Sarah Kalicin, Lead Data Scientist chez Intel et Darren Pulsipher, Architecte en chef des solutions du secteur public chez Intel, parlent du processus et des avantages de la collecte et de la préparation de données pour devenir une organisation axée sur les données. Il s'agit de la deuxième étape du parcours vers une organisation axée sur les données."
 ---
 
 <div>
 {% include transistor.html id="ef0bf710" title="#18 Data Collection and Preparation" %}
 
-{% include youtube.html id="xdt93M5isEA" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -20,14 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Arquiteto-chefe de Soluções da Intel, fala com Josh Hilliker, Diretor de Arquitetos de Soluções em Nuvem da Intel, sobre o uso de telemetria na nuvem para maximizar valor e eficiência."
-video: "https://youtu.be/l6wZNe_mMfY"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquiteto-chefe de Soluções da Intel, fala com Josh Hilliker, Diretor de Arquitetos de Soluções em Nuvem da Intel, sobre o uso de telemetria na nuvem para maximizar valor e eficiência."
 ---
 
 <div>
 {% include transistor.html id="a732fe89" title="#52 Telemetry in the Cloud" %}
 
-{% include youtube.html id="l6wZNe_mMfY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

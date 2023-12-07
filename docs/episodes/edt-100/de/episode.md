@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode sprechen Darren und Cameron Chehreh, Vizepräsident und General Manager des öffentlichen Sektors bei Intel, über Intels Superkräfte: allgegenwärtiges Rechnen, universelle Konnektivität, Edge-to-Cloud und künstliche Intelligenz."
-video: "https://youtu.be/QePpk6VExyE"
+video: "https://youtu.be/url"
 description: "In dieser Episode sprechen Darren und Cameron Chehreh, Vizepräsident und General Manager des öffentlichen Sektors bei Intel, über Intels Superkräfte: allgegenwärtiges Rechnen, universelle Konnektivität, Edge-to-Cloud und künstliche Intelligenz."
 ---
 
 <div>
 {% include transistor.html id="7bf9fc65" title="#100 Intel's Public Sector Superheroes" %}
 
-{% include youtube.html id="QePpk6VExyE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

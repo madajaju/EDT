@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste episódio, parte um de dois, Darren discute as tendências de segurança com o convidado frequente Steve Orrin, CTO da Intel, Federal. Ao longo do último ano, houve um aumento no número e na sofisticação dos ciberataques. As três áreas-chave de ataques recorrentes são ransomware, ataques à cadeia de suprimentos e violações de dados."
-video: "https://youtu.be/JOw9LurVHJY"
+video: "https://youtu.be/url"
 description: "Neste episódio, parte um de dois, Darren discute as tendências de segurança com o convidado frequente Steve Orrin, CTO da Intel, Federal. Ao longo do último ano, houve um aumento no número e na sofisticação dos ciberataques. As três áreas-chave de ataques recorrentes são ransomware, ataques à cadeia de suprimentos e violações de dados."
 ---
 
 <div>
 {% include transistor.html id="8b0a716a" title="#60 Managing Risk in the Face of Ransomware" %}
 
-{% include youtube.html id="JOw9LurVHJY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

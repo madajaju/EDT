@@ -20,14 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Sarah Kalicin, científica de datos principal en Intel, y Darren Pulsipher, arquitecto principal de soluciones en el sector público en Intel, hablan sobre el proceso y los beneficios de la recopilación y preparación de datos al convertirse en una organización centrada en los datos. Este es el segundo paso en el camino para convertirse en una organización centrada en los datos."
-video: "https://youtu.be/xdt93M5isEA"
+video: "https://youtu.be/url"
 description: "Sarah Kalicin, científica de datos principal en Intel, y Darren Pulsipher, arquitecto principal de soluciones en el sector público en Intel, hablan sobre el proceso y los beneficios de la recopilación y preparación de datos al convertirse en una organización centrada en los datos. Este es el segundo paso en el camino para convertirse en una organización centrada en los datos."
 ---
 
 <div>
 {% include transistor.html id="ef0bf710" title="#18 Data Collection and Preparation" %}
 
-{% include youtube.html id="xdt93M5isEA" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

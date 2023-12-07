@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, Darren Pulsipher accueille Logan Selby, le co-fondateur et président de DataShapes, où ils discutent d'une approche unique de l'intelligence artificielle qui va à l'encontre de la tendance."
-video: "https://youtu.be/Gaz-6HGLLg8"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, Darren Pulsipher accueille Logan Selby, le co-fondateur et président de DataShapes, où ils discutent d'une approche unique de l'intelligence artificielle qui va à l'encontre de la tendance."
 ---
 
 <div>
 {% include transistor.html id="43198853" title="#134 WaveForm AI" %}
 
-{% include youtube.html id="Gaz-6HGLLg8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

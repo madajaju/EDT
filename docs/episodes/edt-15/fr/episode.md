@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "La création de résultats réussis basés sur les données commence par une solide base organisationnelle. Darren et son invité Sarah Kalicin, chef des scientifiques des données du groupe Data Center d'Intel, discutent des aspects clés de ce changement fondamental."
-video: "https://youtu.be/wwIxtgp5a7w"
+video: "https://youtu.be/url"
 description: "La création de résultats réussis basés sur les données commence par une solide base organisationnelle. Darren et son invité Sarah Kalicin, chef des scientifiques des données du groupe Data Center d'Intel, discutent des aspects clés de ce changement fondamental."
 ---
 
 <div>
 {% include transistor.html id="f6948ab6" title="#15 Kick-starting Organizational Transformation" %}
 
-{% include youtube.html id="wwIxtgp5a7w" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

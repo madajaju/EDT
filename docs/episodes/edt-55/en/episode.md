@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In this episode, part two of two, Darren and guest Ann Madea, former CIO of HSBC, talk about communication during organizational transformation. When CIOs deploy solutions, they involve new processes and more than likely organizational change. In Ann’s most recent transformation program, they moved forward with cloud. Ann hired a head of cloud and implemented a multi cloud strategy with Google, AWS, and Azure. This major change caused concern, especially among those who had been working with the infrastructure for a long time."
-video: "https://youtu.be/_35E6HkPuRo"
+video: "https://youtu.be/url"
 description: "In this episode, part two of two, Darren and guest Ann Madea, former CIO of HSBC, talk about communication during organizational transformation. When CIOs deploy solutions, they involve new processes and more than likely organizational change. In Ann’s most recent transformation program, they moved forward with cloud. Ann hired a head of cloud and implemented a multi cloud strategy with Google, AWS, and Azure. This major change caused concern, especially among those who had been working with the infrastructure for a long time."
 ---
 
 <div>
 {% include transistor.html id="74d681c0" title="#55 Communication During Transformation" %}
 
-{% include youtube.html id="_35E6HkPuRo" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

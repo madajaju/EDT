@@ -20,14 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Greg lidera las ventas y el marketing de Intel en los Estados Unidos. Los clientes de Intel son principalmente los fabricantes de equipos originales del sistema, y el equipo de ventas de Intel trabaja diariamente para atender esas cuentas y ayudarles a construir sistemas en torno a las tecnologías de cómputo y memoria de Intel. Actualmente, hay una demanda sin precedentes de cómputo. Los equipos de Intel trabajan con empresas de software, proveedores de servicios en la nube, negocios Fortune 1000, escuelas y agencias gubernamentales para hacer que el cómputo sea accesible y ayudar a identificar tendencias y aplicar casos de uso que resuelvan problemas empresariales de una manera que mejore la sociedad. Intel, entonces, actúa como un marcador de tendencias e identifica nuevas tendencias para asegurarse de que los clientes tengan los productos adecuados."
-video: "https://youtu.be/BBlbBKbtOEw"
+video: "https://youtu.be/url"
 description: "Greg lidera las ventas y el marketing de Intel en los Estados Unidos. Los clientes de Intel son principalmente los fabricantes de equipos originales del sistema, y el equipo de ventas de Intel trabaja diariamente para atender esas cuentas y ayudarles a construir sistemas en torno a las tecnologías de cómputo y memoria de Intel. Actualmente, hay una demanda sin precedentes de cómputo. Los equipos de Intel trabajan con empresas de software, proveedores de servicios en la nube, negocios Fortune 1000, escuelas y agencias gubernamentales para hacer que el cómputo sea accesible y ayudar a identificar tendencias y aplicar casos de uso que resuelvan problemas empresariales de una manera que mejore la sociedad. Intel, entonces, actúa como un marcador de tendencias e identifica nuevas tendencias para asegurarse de que los clientes tengan los productos adecuados."
 ---
 
 <div>
 {% include transistor.html id="2361146f" title="#47 Looking Forward to 2021" %}
 
-{% include youtube.html id="BBlbBKbtOEw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect bei Intel, setzt seine Diskussion mit Leeland Brown, Technischer Direktor für 5G bei Intel Federal, über 5G Vergangenheit, Gegenwart und Zukunft fort, wobei der Schwerpunkt auf dessen Einsatz beim Verteidigungsministerium liegt. Teil 2 von 2."
-video: "https://youtu.be/0AYcyU4qsgQ"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solution Architect bei Intel, setzt seine Diskussion mit Leeland Brown, Technischer Direktor für 5G bei Intel Federal, über 5G Vergangenheit, Gegenwart und Zukunft fort, wobei der Schwerpunkt auf dessen Einsatz beim Verteidigungsministerium liegt. Teil 2 von 2."
 ---
 
 <div>
 {% include transistor.html id="70888ef8" title="#68 5G in Defence" %}
 
-{% include youtube.html id="0AYcyU4qsgQ" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

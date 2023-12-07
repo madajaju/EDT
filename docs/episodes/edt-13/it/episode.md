@@ -21,14 +21,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Il thought leader Andrew Padilla di Datacequia immagina nuovi sviluppi nella gestione dei dati e nella collaborazione che consentirebbero ai dati di avanzare come il software in termini di visibilità, accessibilità, usabilità e portabilità. Egli illustra come un'infrastruttura componibile potrebbe affrontare le preoccupazioni degli ingegneri del software e dei data scientist."
-video: "https://youtu.be/F1hfANcSQj4"
+video: "https://youtu.be/url"
 description: "Il thought leader Andrew Padilla di Datacequia immagina nuovi sviluppi nella gestione dei dati e nella collaborazione che consentirebbero ai dati di avanzare come il software in termini di visibilità, accessibilità, usabilità e portabilità. Egli illustra come un'infrastruttura componibile potrebbe affrontare le preoccupazioni degli ingegneri del software e dei data scientist."
 ---
 
 <div>
 {% include transistor.html id="4272c3a1" title="#13 Illogical Obsession with Logic" %}
 
-{% include youtube.html id="F1hfANcSQj4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

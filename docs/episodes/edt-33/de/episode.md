@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect, Public Sector, bei Intel spricht über die aus dem AWS-Ausfall im November 2020 gewonnenen Erkenntnisse und vorbeugende Lösungen zur Bewältigung solcher Ausfälle."
-video: "https://youtu.be/KQH85zaVUe0"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solution Architect, Public Sector, bei Intel spricht über die aus dem AWS-Ausfall im November 2020 gewonnenen Erkenntnisse und vorbeugende Lösungen zur Bewältigung solcher Ausfälle."
 ---
 
 <div>
 {% include transistor.html id="e81503fc" title="#33 The AWS Outage of Nov 2020" %}
 
-{% include youtube.html id="KQH85zaVUe0" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

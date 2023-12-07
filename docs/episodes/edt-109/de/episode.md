@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Intels Darren Pulsipher, Chief Solutions Architect, Leland Brown, Principal Engineer: Technischer Direktor für fortschrittliche Kommunikation und Dr. Anna Scott, Chief Edge Architect für den öffentlichen Sektor, sprechen über die Geschichte der fortschrittlichen Kommunikation und zukünftige Anwendungsfälle mit 5G. Teil zwei von zwei."
-video: "https://youtu.be/ZHyeXrkxQhA"
+video: "https://youtu.be/url"
 description: "Intels Darren Pulsipher, Chief Solutions Architect, Leland Brown, Principal Engineer: Technischer Direktor für fortschrittliche Kommunikation und Dr. Anna Scott, Chief Edge Architect für den öffentlichen Sektor, sprechen über die Geschichte der fortschrittlichen Kommunikation und zukünftige Anwendungsfälle mit 5G. Teil zwei von zwei."
 ---
 
 <div>
 {% include transistor.html id="b613bc52" title="#109 Advancing Operations with 5G" %}
 
-{% include youtube.html id="ZHyeXrkxQhA" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

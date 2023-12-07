@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect di Intel, spiega i modelli di sicurezza condivisa della responsabilità. Chi è responsabile della sicurezza può diventare confuso nel cloud; la responsabilità dipende dai modelli di fornitura di servizi cloud e da altri fattori."
-video: "https://youtu.be/NY3Ct___1w8"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solution Architect di Intel, spiega i modelli di sicurezza condivisa della responsabilità. Chi è responsabile della sicurezza può diventare confuso nel cloud; la responsabilità dipende dai modelli di fornitura di servizi cloud e da altri fattori."
 ---
 
 <div>
 {% include transistor.html id="975c761c" title="#78 Understanding the Shared Responsibility Security Model" %}
 
-{% include youtube.html id="NY3Ct___1w8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, première partie sur deux, Darren discute des tendances en matière de sécurité avec Steve Orrin, invité régulier et CTO d'Intel, Fédéral. Au cours de l'année écoulée, on a constaté une augmentation du nombre et de la sophistication des cyberattaques. Les trois domaines clés des attaques récurrentes sont les rançongiciels, les attaques de la chaîne logistique et les violations de données."
-video: "https://youtu.be/JOw9LurVHJY"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, première partie sur deux, Darren discute des tendances en matière de sécurité avec Steve Orrin, invité régulier et CTO d'Intel, Fédéral. Au cours de l'année écoulée, on a constaté une augmentation du nombre et de la sophistication des cyberattaques. Les trois domaines clés des attaques récurrentes sont les rançongiciels, les attaques de la chaîne logistique et les violations de données."
 ---
 
 <div>
 {% include transistor.html id="8b0a716a" title="#60 Managing Risk in the Face of Ransomware" %}
 
-{% include youtube.html id="JOw9LurVHJY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

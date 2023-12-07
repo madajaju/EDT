@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo episodio, Darren parla con John Gottfried, co-fondatore di Major League Hacking, riguardo alla chiusura del divario delle competenze digitali attraverso il lavoro collaborativo pratico che utilizza gli hackathon."
-video: "https://youtu.be/UHSf0Tw6U_E"
+video: "https://youtu.be/url"
 description: "In questo episodio, Darren parla con John Gottfried, co-fondatore di Major League Hacking, riguardo alla chiusura del divario delle competenze digitali attraverso il lavoro collaborativo pratico che utilizza gli hackathon."
 ---
 
 <div>
 {% include transistor.html id="4c9c0d9f" title="#128 Closing the Digital Skills Gap" %}
 
-{% include youtube.html id="UHSf0Tw6U_E" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

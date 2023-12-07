@@ -30,14 +30,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "In einem kürzlich erschienenen Podcast begrüßte Darren Pulsipher, Chief Solution Architect im öffentlichen Sektor bei Intel, Rachel Driekosen, eine Technische Direktorin bei Intel, um über den Einsatz von KI zum Schutz von Kindern im Internet zu diskutieren. Die Episode behandelt Herausforderungen bei der Strafverfolgung und Entdeckung von Kinderschändern, die Rolle von KI im Beweismittelmanagement und die Bedeutung von Zusammenarbeit und standardisierten Verfahren."
-video: "https://youtu.be/DBYgSTTLvKY"
+video: "https://youtu.be/url"
 description: "In einem kürzlich erschienenen Podcast begrüßte Darren Pulsipher, Chief Solution Architect im öffentlichen Sektor bei Intel, Rachel Driekosen, eine Technische Direktorin bei Intel, um über den Einsatz von KI zum Schutz von Kindern im Internet zu diskutieren. Die Episode behandelt Herausforderungen bei der Strafverfolgung und Entdeckung von Kinderschändern, die Rolle von KI im Beweismittelmanagement und die Bedeutung von Zusammenarbeit und standardisierten Verfahren."
 ---
 
 <div>
 {% include transistor.html id="45365336" title="#167 Leveraging AI to Protect Children" %}
 
-{% include youtube.html id="DBYgSTTLvKY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

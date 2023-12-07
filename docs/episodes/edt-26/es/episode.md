@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Johan Ballin, Director de Marketing Técnico en Hammerspace, y Darren Pulsipher, Arquitecto Principal de Soluciones en el Sector Público de Intel, discuten la tecnología de nube híbrida de Hammerspace que libera los datos de la infraestructura de almacenamiento, proporcionando portabilidad y rendimiento de datos."
-video: "https://youtu.be/9bLpCtVq9CM"
+video: "https://youtu.be/url"
 description: "Johan Ballin, Director de Marketing Técnico en Hammerspace, y Darren Pulsipher, Arquitecto Principal de Soluciones en el Sector Público de Intel, discuten la tecnología de nube híbrida de Hammerspace que libera los datos de la infraestructura de almacenamiento, proporcionando portabilidad y rendimiento de datos."
 ---
 
 <div>
 {% include transistor.html id="301a5c10" title="#26 Multi Cloud Data Solutions with Hammerspace" %}
 
-{% include youtube.html id="9bLpCtVq9CM" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

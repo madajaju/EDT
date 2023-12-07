@@ -35,14 +35,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "In dieser Podcast-Episode interviewt Darren Pulsipher, Chief Solution Architect im öffentlichen Sektor bei Intel, Laura Torres Newey, eine Bestseller-Autorin der New York Times und Universitätsprofessorin, über die Auswirkungen von generativer KI in der Hochschulbildung. Diese Episode geht auf die Herausforderungen und Chancen ein, die sich durch die Integration von generativer KI im Unterricht ergeben, und hebt die Notwendigkeit von kritischem Denken, die Bedenken hinsichtlich Voreingenommenheit und die Sicherstellung der Bewahrung einzigartiger Stimmen hervor."
-video: "https://youtu.be/HpKkZliyFAk"
+video: "https://youtu.be/url"
 description: "In dieser Podcast-Episode interviewt Darren Pulsipher, Chief Solution Architect im öffentlichen Sektor bei Intel, Laura Torres Newey, eine Bestseller-Autorin der New York Times und Universitätsprofessorin, über die Auswirkungen von generativer KI in der Hochschulbildung. Diese Episode geht auf die Herausforderungen und Chancen ein, die sich durch die Integration von generativer KI im Unterricht ergeben, und hebt die Notwendigkeit von kritischem Denken, die Bedenken hinsichtlich Voreingenommenheit und die Sicherstellung der Bewahrung einzigartiger Stimmen hervor."
 ---
 
 <div>
 {% include transistor.html id="cb47f20b" title="#158 GenAI in Higher Education" %}
 
-{% include youtube.html id="HpKkZliyFAk" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -27,14 +27,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, architecte en chef des solutions chez Intel, discute des capacités et de l'avenir de OneAPI, un modèle de programmation unifié intersectoriel, ouvert et basé sur des normes, qui offre une expérience de développement commune sur différentes architectures d'accélérateurs, avec James Reinders, évangéliste en chef de OneAPI chez Intel."
-video: "https://youtu.be/YDa_EeOzFzc"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, architecte en chef des solutions chez Intel, discute des capacités et de l'avenir de OneAPI, un modèle de programmation unifié intersectoriel, ouvert et basé sur des normes, qui offre une expérience de développement commune sur différentes architectures d'accélérateurs, avec James Reinders, évangéliste en chef de OneAPI chez Intel."
 ---
 
 <div>
 {% include transistor.html id="28fb34d4" title="#81 Heterogeneous Programming with OneAPI" %}
 
-{% include youtube.html id="YDa_EeOzFzc" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

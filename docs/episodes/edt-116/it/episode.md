@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo episodio, Darren parla della convergenza della sicurezza informatica OT e IT con l'esperto di sicurezza Steve Orrin e l'esperta di OT industriale Dr. Anna Scott."
-video: "https://youtu.be/DRGy_il_nUg"
+video: "https://youtu.be/url"
 description: "In questo episodio, Darren parla della convergenza della sicurezza informatica OT e IT con l'esperto di sicurezza Steve Orrin e l'esperta di OT industriale Dr. Anna Scott."
 ---
 
 <div>
 {% include transistor.html id="b7873e57" title="#116 An Argument for a Holistic approach to Critical Infrastructure Security" %}
 
-{% include youtube.html id="DRGy_il_nUg" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

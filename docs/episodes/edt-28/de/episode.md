@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Eine der wachsenden Bereiche, die bei der Integration von Legacy-Systemen und der Automatisierung von Integration helfen können, ist der Einsatz von Automatisierungstools und Frameworks. In den letzten 3 Jahren hat sich insbesondere ein wesentlicher Schwerpunkt auf die Automatisierung von Arbeitsabläufen mit Legacy- und neuen Cloud-fähigen Anwendungen für Mitarbeiter im Informationsbereich herausgebildet. Diese Tool-Sets werden als Robotic Process Automation (RPA)-Tools bezeichnet. Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, überprüft die Robotic Process Automation (RPA)-Branche und die Tool-Angebote."
-video: "https://youtu.be/F15k-tmLXt4"
+video: "https://youtu.be/url"
 description: "Eine der wachsenden Bereiche, die bei der Integration von Legacy-Systemen und der Automatisierung von Integration helfen können, ist der Einsatz von Automatisierungstools und Frameworks. In den letzten 3 Jahren hat sich insbesondere ein wesentlicher Schwerpunkt auf die Automatisierung von Arbeitsabläufen mit Legacy- und neuen Cloud-fähigen Anwendungen für Mitarbeiter im Informationsbereich herausgebildet. Diese Tool-Sets werden als Robotic Process Automation (RPA)-Tools bezeichnet. Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, überprüft die Robotic Process Automation (RPA)-Branche und die Tool-Angebote."
 ---
 
 <div>
 {% include transistor.html id="73edaeb8" title="#28 Legacy Integration with Cloud and RPA" %}
 
-{% include youtube.html id="F15k-tmLXt4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -18,14 +18,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "La migrazione verso il cloud non è più un processo occasionale, ma piuttosto un viaggio continuo che richiede valutazioni costanti, monitoraggio e adattamento per raggiungere gli obiettivi aziendali. In questo episodio del nostro podcast, l'ospite Darren Pulsipher parla con Christine McMonigal dell'importanza di adottare un miglioramento continuo nelle operazioni cloud."
-video: "https://youtu.be/DxohkSTvJRA"
+video: "https://youtu.be/url"
 description: "La migrazione verso il cloud non è più un processo occasionale, ma piuttosto un viaggio continuo che richiede valutazioni costanti, monitoraggio e adattamento per raggiungere gli obiettivi aziendali. In questo episodio del nostro podcast, l'ospite Darren Pulsipher parla con Christine McMonigal dell'importanza di adottare un miglioramento continuo nelle operazioni cloud."
 ---
 
 <div>
 {% include transistor.html id="33da9289" title="#166 Agility in Cloud Adoption" %}
 
-{% include youtube.html id="DxohkSTvJRA" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

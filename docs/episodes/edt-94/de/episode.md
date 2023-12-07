@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solutions Architect bei Intel, diskutiert mit Greg Campbell, CTO von Verge.io, über die softwaredefinierten Rechenzentren von Verge.io, die IT vereinfachen und private Clouds einfach und effizient gestalten."
-video: "https://youtu.be/uXcMwwV8Xho"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solutions Architect bei Intel, diskutiert mit Greg Campbell, CTO von Verge.io, über die softwaredefinierten Rechenzentren von Verge.io, die IT vereinfachen und private Clouds einfach und effizient gestalten."
 ---
 
 <div>
 {% include transistor.html id="bf4a8573" title="#94 the Rebirth of the Private Cloud" %}
 
-{% include youtube.html id="uXcMwwV8Xho" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

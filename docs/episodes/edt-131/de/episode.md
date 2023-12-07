@@ -25,14 +25,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "In dieser Episode führt Darren ein Interview mit Mark Valcich, dem Leiter und Geschäftsführer des Bundeszivilverwaltungssektors bei Intel. Marks langjährige Erfahrung kommt zum Vorschein, während er die aktuellen Trends der digitalen Transformation in der Bundeszivilverwaltung beschreibt."
-video: "https://youtu.be/eZ2UfSwdcwo"
+video: "https://youtu.be/url"
 description: "In dieser Episode führt Darren ein Interview mit Mark Valcich, dem Leiter und Geschäftsführer des Bundeszivilverwaltungssektors bei Intel. Marks langjährige Erfahrung kommt zum Vorschein, während er die aktuellen Trends der digitalen Transformation in der Bundeszivilverwaltung beschreibt."
 ---
 
 <div>
 {% include transistor.html id="e78c9823" title="#131 Digital Transformation in Federal Government" %}
 
-{% include youtube.html id="eZ2UfSwdcwo" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

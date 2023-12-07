@@ -40,14 +40,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, l'animateur Darren interviewe Jeremy Harris et se plonge dans l'importance d'établir des politiques et des lignes directrices pour une transformation numérique réussie. Avec la prévalence croissante des technologies numériques dans diverses industries, les organisations doivent s'adapter et embrasser cette transformation pour rester compétitives et répondre aux attentes évolutives des clients."
-video: "https://youtu.be/W0MzzmUkLr8"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, l'animateur Darren interviewe Jeremy Harris et se plonge dans l'importance d'établir des politiques et des lignes directrices pour une transformation numérique réussie. Avec la prévalence croissante des technologies numériques dans diverses industries, les organisations doivent s'adapter et embrasser cette transformation pour rester compétitives et répondre aux attentes évolutives des clients."
 ---
 
 <div>
 {% include transistor.html id="4192b830" title="#159 GenAI Policies" %}
 
-{% include youtube.html id="W0MzzmUkLr8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

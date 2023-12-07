@@ -23,14 +23,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector and Greg Steck, Senior Director of Industry Solutions, Katana Graph, talk about the benefits of Katana’s graph intelligence platform."
-video: "https://youtu.be/Bx7yeMhnBJg"
+video: "https://youtu.be/url"
 description: "Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector and Greg Steck, Senior Director of Industry Solutions, Katana Graph, talk about the benefits of Katana’s graph intelligence platform."
 ---
 
 <div>
 {% include transistor.html id="5fdeafa4" title="#106 The Birth of Graph Intelligence Platforms" %}
 
-{% include youtube.html id="Bx7yeMhnBJg" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

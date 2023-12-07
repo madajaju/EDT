@@ -18,14 +18,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Die heutige Folge dreht sich ganz um den Beginn der Datenzentrierung in Ihrer Organisation und den Mehrwert, den dies bringen kann. Darrens besonderer Gast ist Sarah Kalicin, führende Datenwissenschaftlerin für Rechenzentren bei Intel."
-video: "https://youtu.be/8kPURu_bcwg"
+video: "https://youtu.be/url"
 description: "Die heutige Folge dreht sich ganz um den Beginn der Datenzentrierung in Ihrer Organisation und den Mehrwert, den dies bringen kann. Darrens besonderer Gast ist Sarah Kalicin, führende Datenwissenschaftlerin für Rechenzentren bei Intel."
 ---
 
 <div>
 {% include transistor.html id="c53aad7b" title="#14 Kickstarting Your Organizational Transformation to Become Data-Centric" %}
 
-{% include youtube.html id="8kPURu_bcwg" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

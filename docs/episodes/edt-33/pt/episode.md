@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Arquiteto Principal de Soluções, Setor Público, na Intel fala sobre as lições aprendidas com a interrupção da AWS em novembro de 2020 e soluções preventivas para lidar com essas interrupções."
-video: "https://youtu.be/KQH85zaVUe0"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquiteto Principal de Soluções, Setor Público, na Intel fala sobre as lições aprendidas com a interrupção da AWS em novembro de 2020 e soluções preventivas para lidar com essas interrupções."
 ---
 
 <div>
 {% include transistor.html id="e81503fc" title="#33 The AWS Outage of Nov 2020" %}
 
-{% include youtube.html id="KQH85zaVUe0" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

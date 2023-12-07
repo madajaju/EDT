@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questa puntata, Darren discute degli aspetti dati dell'intelligenza artificiale (AI) e dell'importanza di proteggere tali dati."
-video: "https://youtu.be/NVcBCPpJ4rY"
+video: "https://youtu.be/url"
 description: "In questa puntata, Darren discute degli aspetti dati dell'intelligenza artificiale (AI) e dell'importanza di proteggere tali dati."
 ---
 
 <div>
 {% include transistor.html id="ffe877ee" title="#85 Artificial Intelligence and Security" %}
 
-{% include youtube.html id="NVcBCPpJ4rY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

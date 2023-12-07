@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solutions Architect di Intel, Aaron Reid, Principal Systems Engineer di https://www.verge.io/ e Chris Lehman, Senior VP of Sales, discutono casi d'uso per il software del data center virtuale di Verge.io."
-video: "https://youtu.be/oYZH273nhUU"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solutions Architect di Intel, Aaron Reid, Principal Systems Engineer di https://www.verge.io/ e Chris Lehman, Senior VP of Sales, discutono casi d'uso per il software del data center virtuale di Verge.io."
 ---
 
 <div>
 {% include transistor.html id="dd535cf2" title="#96 Leveraging Virtual Datacenters with Verge.io" %}
 
-{% include youtube.html id="oYZH273nhUU" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

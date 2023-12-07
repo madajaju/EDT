@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solutions Architect, Settore Pubblico, Intel delinea la strategia digitale e l'architettura per trasformare efficacemente la tua organizzazione. Spiega come gli elementi organizzativi, procedurali e tecnologici debbano essere bilanciati per lavorare in modo efficiente verso un'architettura comune ed ideale per supportare una visione unificata."
-video: "https://youtu.be/fA8CWzRDZHM"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solutions Architect, Settore Pubblico, Intel delinea la strategia digitale e l'architettura per trasformare efficacemente la tua organizzazione. Spiega come gli elementi organizzativi, procedurali e tecnologici debbano essere bilanciati per lavorare in modo efficiente verso un'architettura comune ed ideale per supportare una visione unificata."
 ---
 
 <div>
 {% include transistor.html id="0f3c3117" title="#24 Digital Strategy and Data Architecture" %}
 
-{% include youtube.html id="fA8CWzRDZHM" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

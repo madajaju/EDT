@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Folge des Podcasts "Die digitale Transformation umarmen" führt Gastgeber Darren Pulsipher ein nachdenkliches Gespräch mit Dr. Jeffrey Lancaster. Ihre Diskussion geht auf die praktischen Anwendungen von generativer Künstlicher Intelligenz ein und die tiefgreifende Auswirkung, die sie in verschiedenen Branchen mit sich bringen wird."
-video: "https://youtu.be/h5frX5OWLC8"
+video: "https://youtu.be/url"
 description: "In dieser Folge des Podcasts "Die digitale Transformation umarmen" führt Gastgeber Darren Pulsipher ein nachdenkliches Gespräch mit Dr. Jeffrey Lancaster. Ihre Diskussion geht auf die praktischen Anwendungen von generativer Künstlicher Intelligenz ein und die tiefgreifende Auswirkung, die sie in verschiedenen Branchen mit sich bringen wird."
 ---
 
 <div>
 {% include transistor.html id="2c700999" title="#152 Practical Generative AI" %}
 
-{% include youtube.html id="h5frX5OWLC8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

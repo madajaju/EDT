@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Folge spricht Robert Boule, Head of Solution Engineering bei OpsMx, mit Darren darüber, wie man die Geschwindigkeit im DevOps-Prozess verbessern kann, ohne das Risiko zu erhöhen. Die drei Schlüsselbereiche zur Balance in der Softwarebereitstellung sind Geschwindigkeit, Risiko und Qualität. Die meisten können ein oder zwei dieser Dinge managen, aber das Hinzufügen des Dritten kann schwierig werden. Zum Beispiel können Sie möglicherweise aufgrund Ihres großartigen CD-Systems mit Geschwindigkeit liefern, aber sobald Sie Compliance- und Policy-Checks einführen, stehen Sie vor einer Herausforderung. Sollen Sie anhalten und diese Dinge überprüfen oder vielleicht einige Ergebnisse von einem anderen Tool einbeziehen? Plötzlich leidet Ihre Geschwindigkeit."
-video: "https://youtu.be/50gM62Tl0Tw"
+video: "https://youtu.be/url"
 description: "In dieser Folge spricht Robert Boule, Head of Solution Engineering bei OpsMx, mit Darren darüber, wie man die Geschwindigkeit im DevOps-Prozess verbessern kann, ohne das Risiko zu erhöhen. Die drei Schlüsselbereiche zur Balance in der Softwarebereitstellung sind Geschwindigkeit, Risiko und Qualität. Die meisten können ein oder zwei dieser Dinge managen, aber das Hinzufügen des Dritten kann schwierig werden. Zum Beispiel können Sie möglicherweise aufgrund Ihres großartigen CD-Systems mit Geschwindigkeit liefern, aber sobald Sie Compliance- und Policy-Checks einführen, stehen Sie vor einer Herausforderung. Sollen Sie anhalten und diese Dinge überprüfen oder vielleicht einige Ergebnisse von einem anderen Tool einbeziehen? Plötzlich leidet Ihre Geschwindigkeit."
 ---
 
 <div>
 {% include transistor.html id="9eb5fd35" title="#53 DevOps with Speed While Reducing Risk" %}
 
-{% include youtube.html id="50gM62Tl0Tw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

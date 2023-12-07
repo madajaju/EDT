@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Podcast-Episode spricht Pete Schmitz, ein pensionierter Account Executive von Intel, über seine Arbeit mit Schülern, bei der er ihnen künstliche Intelligenz (KI) beibringt und wie sie diese in ihren Robotikwettbewerben einsetzen können. Er erklärt, dass diese Wettbewerbe die Nutzung von Autonomie erfordern und KI eine entscheidende Komponente dafür ist. Pete teilt ein Beispiel dafür, wie KI-gestützte Bilderkennung im unbemannten Oberflächenfahrzeug D Hunter der Defense Advanced Research Projects Agency (DARPA) eingesetzt wird."
-video: "https://youtu.be/ZllW_RjX60M"
+video: "https://youtu.be/url"
 description: "In dieser Podcast-Episode spricht Pete Schmitz, ein pensionierter Account Executive von Intel, über seine Arbeit mit Schülern, bei der er ihnen künstliche Intelligenz (KI) beibringt und wie sie diese in ihren Robotikwettbewerben einsetzen können. Er erklärt, dass diese Wettbewerbe die Nutzung von Autonomie erfordern und KI eine entscheidende Komponente dafür ist. Pete teilt ein Beispiel dafür, wie KI-gestützte Bilderkennung im unbemannten Oberflächenfahrzeug D Hunter der Defense Advanced Research Projects Agency (DARPA) eingesetzt wird."
 ---
 
 <div>
 {% include transistor.html id="db2248b4" title="#153 Training the Next Generation in AI" %}
 
-{% include youtube.html id="ZllW_RjX60M" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

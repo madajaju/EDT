@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste episódio, Darren discute gestão de processos de negócio e automação com Max Young, CEO da Capital BPM."
-video: "https://youtu.be/bIJRyJxSGvE"
+video: "https://youtu.be/url"
 description: "Neste episódio, Darren discute gestão de processos de negócio e automação com Max Young, CEO da Capital BPM."
 ---
 
 <div>
 {% include transistor.html id="a05071ff" title="#113 Operationalizing Business Process Management" %}
 
-{% include youtube.html id="bIJRyJxSGvE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

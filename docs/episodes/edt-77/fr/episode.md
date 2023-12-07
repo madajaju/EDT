@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Intelligence d'Intel's Darren Pulsipher, Architecte Principale des Solutions, Dr. Anna Scott, Architecte Principale des Limites et Gretchen Stewart, Scientifique Principale des Données discutent des six piliers de la transformation numérique en 2022 : l'informatique multi-cloud, l'informatique en périphérie, l'intelligence artificielle, l'apprentissage automatique, la cybersécurité, la gestion des données et les communications."
-video: "https://youtu.be/-UsayFp-UwY"
+video: "https://youtu.be/url"
 description: "Intelligence d'Intel's Darren Pulsipher, Architecte Principale des Solutions, Dr. Anna Scott, Architecte Principale des Limites et Gretchen Stewart, Scientifique Principale des Données discutent des six piliers de la transformation numérique en 2022 : l'informatique multi-cloud, l'informatique en périphérie, l'intelligence artificielle, l'apprentissage automatique, la cybersécurité, la gestion des données et les communications."
 ---
 
 <div>
 {% include transistor.html id="94c4fde2" title="#77 Digital Transformation in 2022" %}
 
-{% include youtube.html id="-UsayFp-UwY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, architecte principal de solutions chez Intel, discute avec Uzair Hussain, PDG de District Zero, de la manière dont l'application de l'entreprise, qui soutient le bien-être mental des élèves de la maternelle à la 12e année, peut s'appliquer à la prévention de l'épuisement professionnel des employés."
-video: "https://youtu.be/J-1KQ-J6j18"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, architecte principal de solutions chez Intel, discute avec Uzair Hussain, PDG de District Zero, de la manière dont l'application de l'entreprise, qui soutient le bien-être mental des élèves de la maternelle à la 12e année, peut s'appliquer à la prévention de l'épuisement professionnel des employés."
 ---
 
 <div>
 {% include transistor.html id="4a31ff22" title="#50 Understanding Employee Burnout" %}
 
-{% include youtube.html id="J-1KQ-J6j18" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

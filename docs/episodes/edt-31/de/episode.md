@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In Teil eins von zwei Episoden sprechen Sean Chou, CEO von Catalytic, und Neil Bahandur, Leiter der Partnerschaften bei Catalytic, mit Darren über die Technologie von Catalytic und wie RPAs den Mitarbeitern helfen können, durch die Automatisierung wiederholbarer Prozesse im Backoffice wertvoller zu werden."
-video: "https://youtu.be/ed5AQMAwJjc"
+video: "https://youtu.be/url"
 description: "In Teil eins von zwei Episoden sprechen Sean Chou, CEO von Catalytic, und Neil Bahandur, Leiter der Partnerschaften bei Catalytic, mit Darren über die Technologie von Catalytic und wie RPAs den Mitarbeitern helfen können, durch die Automatisierung wiederholbarer Prozesse im Backoffice wertvoller zu werden."
 ---
 
 <div>
 {% include transistor.html id="c6fb8072" title="#31 Improving Employee Value with Catalytic" %}
 
-{% include youtube.html id="ed5AQMAwJjc" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

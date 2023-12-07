@@ -21,14 +21,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Arquiteto Principal de Soluções da Intel, conversa com Colin McLean, Líder Global da Equipe Intel da Hitachi, e David Rowley, Consultor Sênior de Soluções, sobre as ofertas abrangentes de segurança cibernética da Hitachi."
-video: "https://youtu.be/2AnPCAzhmJo"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquiteto Principal de Soluções da Intel, conversa com Colin McLean, Líder Global da Equipe Intel da Hitachi, e David Rowley, Consultor Sênior de Soluções, sobre as ofertas abrangentes de segurança cibernética da Hitachi."
 ---
 
 <div>
 {% include transistor.html id="4c85b189" title="#75 Cybersecurity Solutions with Hitachi" %}
 
-{% include youtube.html id="2AnPCAzhmJo" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

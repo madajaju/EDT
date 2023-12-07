@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "L'intervista di Intel a Darren Pulsipher, architetto delle soluzioni principali, Leland Brown, ingegnere principale: Direttore tecnico delle comunicazioni avanzate, e la dottoressa Anna Scott, architetto principale dell'edge per il settore pubblico, parla della storia delle comunicazioni avanzate e dei casi d'uso futuri con il 5G. Parte due di due."
-video: "https://youtu.be/ZHyeXrkxQhA"
+video: "https://youtu.be/url"
 description: "L'intervista di Intel a Darren Pulsipher, architetto delle soluzioni principali, Leland Brown, ingegnere principale: Direttore tecnico delle comunicazioni avanzate, e la dottoressa Anna Scott, architetto principale dell'edge per il settore pubblico, parla della storia delle comunicazioni avanzate e dei casi d'uso futuri con il 5G. Parte due di due."
 ---
 
 <div>
 {% include transistor.html id="b613bc52" title="#109 Advancing Operations with 5G" %}
 
-{% include youtube.html id="ZHyeXrkxQhA" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

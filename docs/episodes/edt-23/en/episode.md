@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In part 5 of a series, Kick-starting your Organizational Transformation to Become Data Centric, Sarah Kalicin, Lead Data Scientist, Intel, and Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, discuss how to create insight using AI and machine learning in a data-centric organization."
-video: "https://youtu.be/4uLg1TXhsi4"
+video: "https://youtu.be/url"
 description: "In part 5 of a series, Kick-starting your Organizational Transformation to Become Data Centric, Sarah Kalicin, Lead Data Scientist, Intel, and Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, discuss how to create insight using AI and machine learning in a data-centric organization."
 ---
 
 <div>
 {% include transistor.html id="b16d9296" title="#23 Insight Creation in Data-Centric Organizations" %}
 
-{% include youtube.html id="4uLg1TXhsi4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

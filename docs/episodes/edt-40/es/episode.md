@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Romper las barreras para acelerar la investigación médica para la cura del cáncer con la computación confidencial. Nick Bhadange, Especialista en Tecnología, AI-Vets, y Darren Pulsipher, Arquitecto de Soluciones Principal, Sector Público, Intel, discuten la necesidad de la computación confidencial en la atención médica y los posibles beneficios a través de casos de uso."
-video: "https://youtu.be/owwhD3g7xRE"
+video: "https://youtu.be/url"
 description: "Romper las barreras para acelerar la investigación médica para la cura del cáncer con la computación confidencial. Nick Bhadange, Especialista en Tecnología, AI-Vets, y Darren Pulsipher, Arquitecto de Soluciones Principal, Sector Público, Intel, discuten la necesidad de la computación confidencial en la atención médica y los posibles beneficios a través de casos de uso."
 ---
 
 <div>
 {% include transistor.html id="558eb1c5" title="#40 Collaborative Medical Research with Confidential Computing" %}
 
-{% include youtube.html id="owwhD3g7xRE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

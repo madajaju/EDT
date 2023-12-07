@@ -28,14 +28,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Nel presente episodio, Darren fa una recensione del 2022. Identifica gli argomenti più discussi nel podcast nel 2022, tra cui la gestione dei dati, l'intelligenza artificiale, la sicurezza informatica, il computing in edge e gli spazi di lavoro ibridi."
-video: "https://youtu.be/lxRMINWH48g"
+video: "https://youtu.be/url"
 description: "Nel presente episodio, Darren fa una recensione del 2022. Identifica gli argomenti più discussi nel podcast nel 2022, tra cui la gestione dei dati, l'intelligenza artificiale, la sicurezza informatica, il computing in edge e gli spazi di lavoro ibridi."
 ---
 
 <div>
 {% include transistor.html id="b50f4fda" title="#117 2022 Year In Review" %}
 
-{% include youtube.html id="lxRMINWH48g" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

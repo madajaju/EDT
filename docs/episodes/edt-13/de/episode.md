@@ -21,14 +21,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Der Meinungsführer Andrew Padilla von Datacequia sieht neue Entwicklungen im Bereich des Datenmanagements und der Zusammenarbeit vor, die es Daten ermöglichen würden, sich wie Software in Bezug auf Sichtbarkeit, Zugänglichkeit, Benutzerfreundlichkeit und Portabilität weiterzuentwickeln. Er skizziert, wie eine zusammensetzbare Infrastruktur die Anliegen sowohl von Softwareingenieuren als auch von Datenwissenschaftlern angehen würde."
-video: "https://youtu.be/F1hfANcSQj4"
+video: "https://youtu.be/url"
 description: "Der Meinungsführer Andrew Padilla von Datacequia sieht neue Entwicklungen im Bereich des Datenmanagements und der Zusammenarbeit vor, die es Daten ermöglichen würden, sich wie Software in Bezug auf Sichtbarkeit, Zugänglichkeit, Benutzerfreundlichkeit und Portabilität weiterzuentwickeln. Er skizziert, wie eine zusammensetzbare Infrastruktur die Anliegen sowohl von Softwareingenieuren als auch von Datenwissenschaftlern angehen würde."
 ---
 
 <div>
 {% include transistor.html id="4272c3a1" title="#13 Illogical Obsession with Logic" %}
 
-{% include youtube.html id="F1hfANcSQj4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

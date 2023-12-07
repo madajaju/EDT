@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Im Teil 5 einer Serie, Umgestaltung Ihrer Organisation in eine datenzentrierte Organisation mittels Kickstart, diskutieren Sarah Kalicin, Leitende Datenwissenschaftlerin bei Intel, und Darren Pulsipher, Chef-Solutions-Architekt im öffentlichen Sektor bei Intel, wie man mithilfe künstlicher Intelligenz und maschinellem Lernen Erkenntnisse in einer datenzentrierten Organisation schafft."
-video: "https://youtu.be/4uLg1TXhsi4"
+video: "https://youtu.be/url"
 description: "Im Teil 5 einer Serie, Umgestaltung Ihrer Organisation in eine datenzentrierte Organisation mittels Kickstart, diskutieren Sarah Kalicin, Leitende Datenwissenschaftlerin bei Intel, und Darren Pulsipher, Chef-Solutions-Architekt im öffentlichen Sektor bei Intel, wie man mithilfe künstlicher Intelligenz und maschinellem Lernen Erkenntnisse in einer datenzentrierten Organisation schafft."
 ---
 
 <div>
 {% include transistor.html id="b16d9296" title="#23 Insight Creation in Data-Centric Organizations" %}
 
-{% include youtube.html id="4uLg1TXhsi4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

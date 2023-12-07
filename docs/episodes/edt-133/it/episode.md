@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo episodio, Darren intervista Keith Gray, un ex direttore di high-performance computing presso British Petroleum. Con oltre 30 anni di gestione dei centri HPC, Keith offre una grande prospettiva sulle sfide, le migliori pratiche e il futuro dell'high-performance computing."
-video: "https://youtu.be/obnwdUKsSGw"
+video: "https://youtu.be/url"
 description: "In questo episodio, Darren intervista Keith Gray, un ex direttore di high-performance computing presso British Petroleum. Con oltre 30 anni di gestione dei centri HPC, Keith offre una grande prospettiva sulle sfide, le migliori pratiche e il futuro dell'high-performance computing."
 ---
 
 <div>
 {% include transistor.html id="25af1aaa" title="#133 Lessons in HPC Oil & Gas" %}
 
-{% include youtube.html id="obnwdUKsSGw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

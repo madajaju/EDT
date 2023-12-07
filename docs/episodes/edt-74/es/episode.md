@@ -20,14 +20,14 @@ guests:
 img: thumbnail.jpeg
 image: thumbnail.jpeg
 summary: "Darren Pulsipher, Arquitecto Principal de Soluciones de Intel, habla con Stephanie Sabatini, Directora Senior de Servicios Profesionales de Hitachi Systems Security, sobre la prevención y preparación para ataques de ransomware y qué hacer si tu organización es atacada."
-video: "https://youtu.be/UoIpscJOpkQ"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquitecto Principal de Soluciones de Intel, habla con Stephanie Sabatini, Directora Senior de Servicios Profesionales de Hitachi Systems Security, sobre la prevención y preparación para ataques de ransomware y qué hacer si tu organización es atacada."
 ---
 
 <div>
 {% include transistor.html id="4e0ea85f" title="#74 Ransomware: Prepare and Don't Panic" %}
 
-{% include youtube.html id="UoIpscJOpkQ" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

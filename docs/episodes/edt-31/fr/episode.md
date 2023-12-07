@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans la première partie de ces deux épisodes, Sean Chou, PDG de Catalytic, et Neil Bahandur, responsable des partenariats chez Catalytic, se joignent à Darren pour discuter de la technologie de Catalytic et de la manière dont les RPAs peuvent aider les employés à devenir plus précieux grâce à l'automatisation des processus répétables du back-office."
-video: "https://youtu.be/ed5AQMAwJjc"
+video: "https://youtu.be/url"
 description: "Dans la première partie de ces deux épisodes, Sean Chou, PDG de Catalytic, et Neil Bahandur, responsable des partenariats chez Catalytic, se joignent à Darren pour discuter de la technologie de Catalytic et de la manière dont les RPAs peuvent aider les employés à devenir plus précieux grâce à l'automatisation des processus répétables du back-office."
 ---
 
 <div>
 {% include transistor.html id="c6fb8072" title="#31 Improving Employee Value with Catalytic" %}
 
-{% include youtube.html id="ed5AQMAwJjc" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

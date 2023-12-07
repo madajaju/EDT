@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Die digitale Transformation kann schwierig sein. Viele Organisationen werden gelähmt, wenn sie versuchen, all die Technologien zu entschlüsseln, die ihnen jeden Tag entgegengeworfen werden. Auf dieser Reise, wie bei jeder anderen, ist es wichtig, eine Karte zu haben. In dieser Episode erläutert Darren das Infrastruktur-Reifemodell, um Organisationen dabei zu helfen, herauszufinden, wo sie sich in ihrer digitalen Transformation befinden, wohin sie als nächstes gehen können und wie sie dorthin gelangen können."
-video: "https://youtu.be/ZMEXlPBn82o"
+video: "https://youtu.be/url"
 description: "Die digitale Transformation kann schwierig sein. Viele Organisationen werden gelähmt, wenn sie versuchen, all die Technologien zu entschlüsseln, die ihnen jeden Tag entgegengeworfen werden. Auf dieser Reise, wie bei jeder anderen, ist es wichtig, eine Karte zu haben. In dieser Episode erläutert Darren das Infrastruktur-Reifemodell, um Organisationen dabei zu helfen, herauszufinden, wo sie sich in ihrer digitalen Transformation befinden, wohin sie als nächstes gehen können und wie sie dorthin gelangen können."
 ---
 
 <div>
 {% include transistor.html id="d5cf91e3" title="#5 Infrastructure Maturity Model" %}
 
-{% include youtube.html id="ZMEXlPBn82o" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

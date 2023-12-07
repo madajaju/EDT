@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, Darren entrevista a su hijo Matthew Pulsipher sobre la productización de la IA de toma de decisiones. Matthew recientemente ha modernizado y añadido la IA de toma de decisiones en su proceso de desarrollo de productos."
-video: "https://youtu.be/x2sbb-2HI-o"
+video: "https://youtu.be/url"
 description: "En este episodio, Darren entrevista a su hijo Matthew Pulsipher sobre la productización de la IA de toma de decisiones. Matthew recientemente ha modernizado y añadido la IA de toma de decisiones en su proceso de desarrollo de productos."
 ---
 
 <div>
 {% include transistor.html id="d5430a4b" title="#130 Productizing Decisional AI" %}
 
-{% include youtube.html id="x2sbb-2HI-o" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

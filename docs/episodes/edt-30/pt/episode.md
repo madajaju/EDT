@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Com umAPI, a Intel criou um ambiente de software unificado para desenvolvimento, voltado para o processamento de dados. Gretchen Stewart, Cientista Chefe de Dados, Setor Público, Intel, discute essa tecnologia com Darren Pulsipher, Arquiteto de Soluções Chefe, Intel, que elimina a necessidade de usar uma linguagem diferente para arquiteturas diferentes."
-video: "https://youtu.be/JZYP2jxQY78"
+video: "https://youtu.be/url"
 description: "Com umAPI, a Intel criou um ambiente de software unificado para desenvolvimento, voltado para o processamento de dados. Gretchen Stewart, Cientista Chefe de Dados, Setor Público, Intel, discute essa tecnologia com Darren Pulsipher, Arquiteto de Soluções Chefe, Intel, que elimina a necessidade de usar uma linguagem diferente para arquiteturas diferentes."
 ---
 
 <div>
 {% include transistor.html id="3d30cd84" title="#30 Application Portability with OneAPI" %}
 
-{% include youtube.html id="JZYP2jxQY78" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

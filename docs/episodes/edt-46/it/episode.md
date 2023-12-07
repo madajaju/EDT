@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Nella seconda parte di questo episodio, Darren Pulsipher, Chief Solution Architect di Intel, fornisce consigli pratici per proteggere ogni fase del DevOps pipeline, incluso la protezione dell'hardware e delle pile software con il hardware radice di fiducia, la scansione di sicurezza, i container/VM attestati ed criptati e altro ancora."
-video: "https://youtu.be/sf0VaCpQLVE"
+video: "https://youtu.be/url"
 description: "Nella seconda parte di questo episodio, Darren Pulsipher, Chief Solution Architect di Intel, fornisce consigli pratici per proteggere ogni fase del DevOps pipeline, incluso la protezione dell'hardware e delle pile software con il hardware radice di fiducia, la scansione di sicurezza, i container/VM attestati ed criptati e altro ancora."
 ---
 
 <div>
 {% include transistor.html id="3abb647c" title="#46 Securing your DevOps Pipeline" %}
 
-{% include youtube.html id="sf0VaCpQLVE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

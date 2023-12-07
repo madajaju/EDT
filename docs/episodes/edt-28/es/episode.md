@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Una de las áreas en crecimiento para ayudar con la Integración de Legados y la automatización de la integración es el uso de herramientas y marcos de automatización. En los últimos 3 años, ha surgido un énfasis significativo en la automatización de flujos de trabajo con aplicaciones heredadas y nuevas aplicaciones conscientes de la nube para los trabajadores de la información. Estos conjuntos de herramientas se llaman herramientas de Automatización de Procesos Robóticos (RPA, por sus siglas en inglés). Darren Pulsipher, Arquitecto Principal de Soluciones, Sector Público, Intel, revisa la industria de la Automatización de Procesos Robóticos (RPA) y las ofertas de herramientas."
-video: "https://youtu.be/F15k-tmLXt4"
+video: "https://youtu.be/url"
 description: "Una de las áreas en crecimiento para ayudar con la Integración de Legados y la automatización de la integración es el uso de herramientas y marcos de automatización. En los últimos 3 años, ha surgido un énfasis significativo en la automatización de flujos de trabajo con aplicaciones heredadas y nuevas aplicaciones conscientes de la nube para los trabajadores de la información. Estos conjuntos de herramientas se llaman herramientas de Automatización de Procesos Robóticos (RPA, por sus siglas en inglés). Darren Pulsipher, Arquitecto Principal de Soluciones, Sector Público, Intel, revisa la industria de la Automatización de Procesos Robóticos (RPA) y las ofertas de herramientas."
 ---
 
 <div>
 {% include transistor.html id="73edaeb8" title="#28 Legacy Integration with Cloud and RPA" %}
 
-{% include youtube.html id="F15k-tmLXt4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

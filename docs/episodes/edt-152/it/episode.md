@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo episodio del podcast Abbracciando la Trasformazione Digitale, l'host Darren Pulsipher si impegna in una conversazione stimolante con il Dott. Jeffrey Lancaster. La loro discussione approfondisce le applicazioni pratiche dell'IA generativa e l'impatto profondo che sta per portare in diverse industrie."
-video: "https://youtu.be/h5frX5OWLC8"
+video: "https://youtu.be/url"
 description: "In questo episodio del podcast Abbracciando la Trasformazione Digitale, l'host Darren Pulsipher si impegna in una conversazione stimolante con il Dott. Jeffrey Lancaster. La loro discussione approfondisce le applicazioni pratiche dell'IA generativa e l'impatto profondo che sta per portare in diverse industrie."
 ---
 
 <div>
 {% include transistor.html id="2c700999" title="#152 Practical Generative AI" %}
 
-{% include youtube.html id="h5frX5OWLC8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

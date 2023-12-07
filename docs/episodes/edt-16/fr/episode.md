@@ -17,14 +17,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, Darren parle de la diminution de la congestion d'ingestion en utilisant la mémoire persistante Optane DC d'Intel et de l'expérience qu'il a menée avec des résultats surprenants. Cela pourrait bien changer notre manière de penser à la programmation à l'avenir."
-video: "https://youtu.be/8vFFbBD9tZQ"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, Darren parle de la diminution de la congestion d'ingestion en utilisant la mémoire persistante Optane DC d'Intel et de l'expérience qu'il a menée avec des résultats surprenants. Cela pourrait bien changer notre manière de penser à la programmation à l'avenir."
 ---
 
 <div>
 {% include transistor.html id="7ca179aa" title="#16 Decreasing Ingestion Congestion with Intel Optane DCPMM" %}
 
-{% include youtube.html id="8vFFbBD9tZQ" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

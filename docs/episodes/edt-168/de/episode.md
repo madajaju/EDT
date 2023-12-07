@@ -32,14 +32,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Podcast-Episode interviewt Darren Pulsipher Andy Morris, einen Enterprise AI Strategy Lead bei Intel, über die Auswirkungen von generativer Künstlicher Intelligenz auf den Alltag."
-video: "https://youtu.be/cRks7OGShQ0"
+video: "https://youtu.be/url"
 description: "In dieser Podcast-Episode interviewt Darren Pulsipher Andy Morris, einen Enterprise AI Strategy Lead bei Intel, über die Auswirkungen von generativer Künstlicher Intelligenz auf den Alltag."
 ---
 
 <div>
 {% include transistor.html id="41e72bd1" title="#168 Everyday Generative AI" %}
 
-{% include youtube.html id="cRks7OGShQ0" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

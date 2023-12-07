@@ -20,14 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect, Intel, talks to Josh Hilliker, Director of Cloud Solution Architects at Intel about using telemetry in the cloud to maximize value and efficiency."
-video: "https://youtu.be/l6wZNe_mMfY"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solution Architect, Intel, talks to Josh Hilliker, Director of Cloud Solution Architects at Intel about using telemetry in the cloud to maximize value and efficiency."
 ---
 
 <div>
 {% include transistor.html id="a732fe89" title="#52 Telemetry in the Cloud" %}
 
-{% include youtube.html id="l6wZNe_mMfY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

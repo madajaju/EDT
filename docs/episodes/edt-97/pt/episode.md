@@ -21,14 +21,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Darren Pulsipher, Arquiteto Principal de Soluções, Intel, Dr. Hadi Ahmadi, Diretor de Arquitetura de Soluções, Katana Graph discutem os benefícios de bancos de dados de gráficos."
-video: "https://youtu.be/h06tRFkeK-E"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquiteto Principal de Soluções, Intel, Dr. Hadi Ahmadi, Diretor de Arquitetura de Soluções, Katana Graph discutem os benefícios de bancos de dados de gráficos."
 ---
 
 <div>
 {% include transistor.html id="c81eaabc" title="#97 The Benefits of Graph Databses" %}
 
-{% include youtube.html id="h06tRFkeK-E" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

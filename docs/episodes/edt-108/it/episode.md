@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo episodio, Darren parla con i frequenti ospiti Intel Leland Brown, Ingegnere Principale: Direttore Tecnico delle Comunicazioni Avanzate, e la Dott.ssa Anna Scott, Architetto Capo per il Settore Pubblico, sulla storia delle comunicazioni avanzate."
-video: "https://youtu.be/XllHSDenC9g"
+video: "https://youtu.be/url"
 description: "In questo episodio, Darren parla con i frequenti ospiti Intel Leland Brown, Ingegnere Principale: Direttore Tecnico delle Comunicazioni Avanzate, e la Dott.ssa Anna Scott, Architetto Capo per il Settore Pubblico, sulla storia delle comunicazioni avanzate."
 ---
 
 <div>
 {% include transistor.html id="a4e3ec11" title="#108 History of Advanced Communications" %}
 
-{% include youtube.html id="XllHSDenC9g" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

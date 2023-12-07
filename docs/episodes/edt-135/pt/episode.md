@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste episódio, Darren entrevista Gretchen Stewart, Cientista de Dados Chefe do Setor Público na Intel, onde eles discutem a confiabilidade e ética da inteligência artificial."
-video: "https://youtu.be/bY8d4oeW60c"
+video: "https://youtu.be/url"
 description: "Neste episódio, Darren entrevista Gretchen Stewart, Cientista de Dados Chefe do Setor Público na Intel, onde eles discutem a confiabilidade e ética da inteligência artificial."
 ---
 
 <div>
 {% include transistor.html id="f7d561ee" title="#135 Trustworthy and Ethical AI" %}
 
-{% include youtube.html id="bY8d4oeW60c" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

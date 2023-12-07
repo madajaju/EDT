@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, architecte en chef des solutions du secteur public chez Intel, et Max Young, PDG de Capital BPM, discutent de l'opérationnalisation de la gestion des processus métier avec des programmes de modélisation."
-video: "https://youtu.be/ysjoqIqvOGw"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, architecte en chef des solutions du secteur public chez Intel, et Max Young, PDG de Capital BPM, discutent de l'opérationnalisation de la gestion des processus métier avec des programmes de modélisation."
 ---
 
 <div>
 {% include transistor.html id="98cc2837" title="#114 Automating Business Process Management" %}
 
-{% include youtube.html id="ysjoqIqvOGw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

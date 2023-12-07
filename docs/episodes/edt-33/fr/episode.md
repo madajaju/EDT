@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, architecte principal des solutions, secteur public, chez Intel, parle des enseignements tirés de la panne d'AWS en novembre 2020 et des solutions préventives pour naviguer lors de telles pannes."
-video: "https://youtu.be/KQH85zaVUe0"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, architecte principal des solutions, secteur public, chez Intel, parle des enseignements tirés de la panne d'AWS en novembre 2020 et des solutions préventives pour naviguer lors de telles pannes."
 ---
 
 <div>
 {% include transistor.html id="e81503fc" title="#33 The AWS Outage of Nov 2020" %}
 
-{% include youtube.html id="KQH85zaVUe0" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In this podcast episode, Pete Schmitz, a retired Intel account executive, talks about his work with high school students in teaching them about AI and how to use it in their robotics competitions. He explains that these competitions require the use of autonomy, and AI is a crucial component in achieving that. Pete shares an example of how computer vision, powered by AI, is used in the Defense Advanced Research Projects Agency's unmanned surface vehicle, DARPA D Hunter."
-video: "https://youtu.be/ZllW_RjX60M"
+video: "https://youtu.be/url"
 description: "In this podcast episode, Pete Schmitz, a retired Intel account executive, talks about his work with high school students in teaching them about AI and how to use it in their robotics competitions. He explains that these competitions require the use of autonomy, and AI is a crucial component in achieving that. Pete shares an example of how computer vision, powered by AI, is used in the Defense Advanced Research Projects Agency's unmanned surface vehicle, DARPA D Hunter."
 ---
 
 <div>
 {% include transistor.html id="db2248b4" title="#153 Training the Next Generation in AI" %}
 
-{% include youtube.html id="ZllW_RjX60M" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste episódio, Darren entrevista Ken White da Dell Technology sobre como a tecnologia em nuvem é mais do que apenas tecnologia, mas sim uma mudança processual e cultural nas organizações."
-video: "https://youtu.be/Woc49CCq27g"
+video: "https://youtu.be/url"
 description: "Neste episódio, Darren entrevista Ken White da Dell Technology sobre como a tecnologia em nuvem é mais do que apenas tecnologia, mas sim uma mudança processual e cultural nas organizações."
 ---
 
 <div>
 {% include transistor.html id="fdf8c82e" title="#138 Evolution of Cloud" %}
 
-{% include youtube.html id="Woc49CCq27g" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

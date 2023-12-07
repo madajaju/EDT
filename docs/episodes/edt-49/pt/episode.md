@@ -20,14 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste episódio, Darren conversa com Rachel Dreikosen, Gerente de Desenvolvimento de Negócios no Setor Público da Intel, sobre como o COVID-19 afetou seu equilíbrio entre trabalho e vida pessoal e por que ela começou um blog para ajudar outras profissionais de vendas técnicas mulheres."
-video: "https://youtu.be/kxWHplocgmw"
+video: "https://youtu.be/url"
 description: "Neste episódio, Darren conversa com Rachel Dreikosen, Gerente de Desenvolvimento de Negócios no Setor Público da Intel, sobre como o COVID-19 afetou seu equilíbrio entre trabalho e vida pessoal e por que ela começou um blog para ajudar outras profissionais de vendas técnicas mulheres."
 ---
 
 <div>
 {% include transistor.html id="57801971" title="#49 Remote Work Before, During and After the Pandemic" %}
 
-{% include youtube.html id="kxWHplocgmw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Arquiteto Chefe de Soluções, e Paul Giorgi, Diretor de Engenharia de Vendas, da Intel, discutem como a tecnologia da XM Cyber pode ajudar as organizações a descobrir caminhos de ataque e reduzir riscos."
-video: "https://youtu.be/G9PfJdHZi08"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquiteto Chefe de Soluções, e Paul Giorgi, Diretor de Engenharia de Vendas, da Intel, discutem como a tecnologia da XM Cyber pode ajudar as organizações a descobrir caminhos de ataque e reduzir riscos."
 ---
 
 <div>
 {% include transistor.html id="60eaf764" title="#99 Precog Cyber Attack PAth with XM Cyber" %}
 
-{% include youtube.html id="G9PfJdHZi08" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

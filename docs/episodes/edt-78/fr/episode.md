@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, architecte principal des solutions, Intel, explique les modèles de sécurité de responsabilité partagée. La responsabilité de la sécurité peut devenir trouble dans le cloud ; la responsabilité dépend des modèles de prestation de services cloud et d'autres facteurs."
-video: "https://youtu.be/NY3Ct___1w8"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, architecte principal des solutions, Intel, explique les modèles de sécurité de responsabilité partagée. La responsabilité de la sécurité peut devenir trouble dans le cloud ; la responsabilité dépend des modèles de prestation de services cloud et d'autres facteurs."
 ---
 
 <div>
 {% include transistor.html id="975c761c" title="#78 Understanding the Shared Responsibility Security Model" %}
 
-{% include youtube.html id="NY3Ct___1w8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

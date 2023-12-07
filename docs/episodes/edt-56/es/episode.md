@@ -27,14 +27,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, parte uno de dos, Darren y los arquitectos de soluciones en la nube de Intel, Dave Shrestha y Kevin Bleckman, hablan sobre la importancia de una organización de intermediación en la nube. Dave y Kevin fundaron el equipo de intermediación en la nube de Intel hace aproximadamente siete años. Los empleados de Intel consumían la nube pública, y era como el salvaje Oeste, con personas que simplemente usaban sus tarjetas de crédito para acceder a ella. La seguridad era un problema y los gastos estaban fuera de control. Para controlar el caos, crearon una organización de intermediación en la nube."
-video: "https://youtu.be/o-pBcuqYmJE"
+video: "https://youtu.be/url"
 description: "En este episodio, parte uno de dos, Darren y los arquitectos de soluciones en la nube de Intel, Dave Shrestha y Kevin Bleckman, hablan sobre la importancia de una organización de intermediación en la nube. Dave y Kevin fundaron el equipo de intermediación en la nube de Intel hace aproximadamente siete años. Los empleados de Intel consumían la nube pública, y era como el salvaje Oeste, con personas que simplemente usaban sus tarjetas de crédito para acceder a ella. La seguridad era un problema y los gastos estaban fuera de control. Para controlar el caos, crearon una organización de intermediación en la nube."
 ---
 
 <div>
 {% include transistor.html id="a41fa330" title="#56 Cloud Broker Organizations" %}
 
-{% include youtube.html id="o-pBcuqYmJE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

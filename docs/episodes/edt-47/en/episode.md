@@ -20,14 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Greg leads Intel’s US sales and marketing. Intel’s customers are primarily the system OEMs, and Intel’s sales force works daily servicing those accounts and helping them build systems around Intel’s compute and memory technologies. Currently, there is an unprecedented demand for compute. Intel’s teams work with software companies, cloud providers, Fortune 1000 businesses, schools, and government agencies to make compute accessible and help identify trends and apply use cases the solve business problems in a way that improves society. Intel, then, works as a trendsetter and identifies new trends to make sure customers have the right products."
-video: "https://youtu.be/BBlbBKbtOEw"
+video: "https://youtu.be/url"
 description: "Greg leads Intel’s US sales and marketing. Intel’s customers are primarily the system OEMs, and Intel’s sales force works daily servicing those accounts and helping them build systems around Intel’s compute and memory technologies. Currently, there is an unprecedented demand for compute. Intel’s teams work with software companies, cloud providers, Fortune 1000 businesses, schools, and government agencies to make compute accessible and help identify trends and apply use cases the solve business problems in a way that improves society. Intel, then, works as a trendsetter and identifies new trends to make sure customers have the right products."
 ---
 
 <div>
 {% include transistor.html id="2361146f" title="#47 Looking Forward to 2021" %}
 
-{% include youtube.html id="BBlbBKbtOEw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

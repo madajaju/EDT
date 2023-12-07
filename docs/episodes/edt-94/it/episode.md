@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solutions Architect di Intel, discute dei data center definiti dal software di Verge.io che semplificano l'IT e rendono il cloud privato facile ed efficiente insieme al CTO di Verge.io, Greg Campbell."
-video: "https://youtu.be/uXcMwwV8Xho"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solutions Architect di Intel, discute dei data center definiti dal software di Verge.io che semplificano l'IT e rendono il cloud privato facile ed efficiente insieme al CTO di Verge.io, Greg Campbell."
 ---
 
 <div>
 {% include transistor.html id="bf4a8573" title="#94 the Rebirth of the Private Cloud" %}
 
-{% include youtube.html id="uXcMwwV8Xho" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

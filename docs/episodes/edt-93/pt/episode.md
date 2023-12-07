@@ -22,14 +22,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Neste episódio, Darren discute os quatro superpoderes da transformação digital com Greg Ernst, VP Corporativo de Vendas, Américas da Intel. Computação ubíqua, Conectividade pervasiva, Nuvem à borda, Inteligência Artificial."
-video: "https://youtu.be/dsHVk3jONII"
+video: "https://youtu.be/url"
 description: "Neste episódio, Darren discute os quatro superpoderes da transformação digital com Greg Ernst, VP Corporativo de Vendas, Américas da Intel. Computação ubíqua, Conectividade pervasiva, Nuvem à borda, Inteligência Artificial."
 ---
 
 <div>
 {% include transistor.html id="f546d88e" title="#93 The Four Superpowers of Digital Transformation" %}
 
-{% include youtube.html id="dsHVk3jONII" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -21,14 +21,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Arquiteto Chefe de Soluções da Intel, conversa com Leeland Brown, Diretor Técnico de 5G da Intel Federal, sobre o passado, presente e futuro do 5G, com ênfase em seu uso pelo Departamento de Defesa. Parte 1 de 2."
-video: "https://youtu.be/kPepT52ErPg"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquiteto Chefe de Soluções da Intel, conversa com Leeland Brown, Diretor Técnico de 5G da Intel Federal, sobre o passado, presente e futuro do 5G, com ênfase em seu uso pelo Departamento de Defesa. Parte 1 de 2."
 ---
 
 <div>
 {% include transistor.html id="a6f61a57" title="#67 5G Past, Present, and Future" %}
 
-{% include youtube.html id="kPepT52ErPg" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

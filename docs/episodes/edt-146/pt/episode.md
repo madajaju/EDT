@@ -22,14 +22,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Neste episódio, Darren conversa com o Dr. Michael Lenox sobre a emergente revolução da IA e como abraçá-la ou ser destruído. Michael acaba de lançar um novo livro 'Estratégia na Era Digital: Dominando a Transformação Digital'."
-video: "https://youtu.be/kiI5W1lar2w"
+video: "https://youtu.be/url"
 description: "Neste episódio, Darren conversa com o Dr. Michael Lenox sobre a emergente revolução da IA e como abraçá-la ou ser destruído. Michael acaba de lançar um novo livro 'Estratégia na Era Digital: Dominando a Transformação Digital'."
 ---
 
 <div>
 {% include transistor.html id="60395033" title="#146 Embracing the AI Revolution" %}
 
-{% include youtube.html id="kiI5W1lar2w" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, architecte principal des solutions chez Intel, poursuit sa conversation avec Sarah Musick, architecte des solutions cloud chez Intel, sur le passage de l'infrastructure aux charges de travail. Veuillez le placer dans la playlist "Adhérer à la transformation numérique"."
-video: "https://youtu.be/OBaUP6RY4lk"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, architecte principal des solutions chez Intel, poursuit sa conversation avec Sarah Musick, architecte des solutions cloud chez Intel, sur le passage de l'infrastructure aux charges de travail. Veuillez le placer dans la playlist "Adhérer à la transformation numérique"."
 ---
 
 <div>
 {% include transistor.html id="a37c2b5e" title="#82 Shifting from Infrastructure to Workloads" %}
 
-{% include youtube.html id="OBaUP6RY4lk" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

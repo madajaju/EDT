@@ -17,14 +17,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher beschreibt, warum ein Multi-Hybrid Cloud Architekt möglicherweise bereits in Ihrem Rechenzentrum vorhanden sein könnte. Die meisten Organisationen haben bereits alle Zutaten. Sie müssen nur wissen, wie sie zusammenpassen."
-video: "https://youtu.be/1cISpr_FNFM"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher beschreibt, warum ein Multi-Hybrid Cloud Architekt möglicherweise bereits in Ihrem Rechenzentrum vorhanden sein könnte. Die meisten Organisationen haben bereits alle Zutaten. Sie müssen nur wissen, wie sie zusammenpassen."
 ---
 
 <div>
 {% include transistor.html id="e22edf51" title="#22 An Argument for Multi-Hybrid Cloud" %}
 
-{% include youtube.html id="1cISpr_FNFM" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

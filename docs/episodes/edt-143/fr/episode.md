@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode d'Embracing Digital Transformation, le Dr. Anna Scott poursuit sa conversation avec Ibett Acarapi et Jesse Schrater sur la Confidential Computing et ses utilisations dans l'IA et le développement de logiciels."
-video: "https://youtu.be/NZWVC4VLWL4"
+video: "https://youtu.be/url"
 description: "Dans cet épisode d'Embracing Digital Transformation, le Dr. Anna Scott poursuit sa conversation avec Ibett Acarapi et Jesse Schrater sur la Confidential Computing et ses utilisations dans l'IA et le développement de logiciels."
 ---
 
 <div>
 {% include transistor.html id="896bc6e3" title="#143 Use Cases in Confidential Computing" %}
 
-{% include youtube.html id="NZWVC4VLWL4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect, Intel, outlines the common problems throughout edge to data center architectures that he’s observed and discussed with customers in the public sector. He lays out the ideal architecture to resolve these issues"
-video: "https://youtu.be/CVeyd3pZTkA"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solution Architect, Intel, outlines the common problems throughout edge to data center architectures that he’s observed and discussed with customers in the public sector. He lays out the ideal architecture to resolve these issues"
 ---
 
 <div>
 {% include transistor.html id="51a240b0" title="#58 Understanding Edge to Data Center Problems" %}
 
-{% include youtube.html id="CVeyd3pZTkA" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -21,7 +21,7 @@ summary: "In this episode, Darren talks with Eric
 Hornsby, CEO of SmartPoint.io, about
 technology for realizing smart city
 potential."
-video: "https://youtu.be/lanaZk9q0dI"
+video: "https://youtu.be/url"
 description: "In this episode, Darren talks with Eric
 Hornsby, CEO of SmartPoint.io, about
 technology for realizing smart city
@@ -31,7 +31,7 @@ potential."
 <div>
 {% include transistor.html id="91e87dfc" title="#111 Realizing Smart City Potential" %}
 
-{% include youtube.html id="lanaZk9q0dI" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

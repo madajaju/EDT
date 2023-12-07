@@ -27,14 +27,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo episodio, parte uno di due, Darren e gli architetti delle soluzioni cloud di Intel, Dave Shrestha e Kevin Bleckman, parlano dell'importanza di un'organizzazione di broker cloud. Dave e Kevin hanno fondato il team di brokeraggio cloud di Intel circa sette anni fa. I dipendenti di Intel stavano utilizzando il cloud pubblico ed era come il selvaggio West, con le persone che semplicemente utilizzavano le loro carte di credito per accedere. La sicurezza era un problema e le spese sono sfuggite al controllo. Per mettere a freno il caos, hanno creato un'organizzazione di broker cloud."
-video: "https://youtu.be/o-pBcuqYmJE"
+video: "https://youtu.be/url"
 description: "In questo episodio, parte uno di due, Darren e gli architetti delle soluzioni cloud di Intel, Dave Shrestha e Kevin Bleckman, parlano dell'importanza di un'organizzazione di broker cloud. Dave e Kevin hanno fondato il team di brokeraggio cloud di Intel circa sette anni fa. I dipendenti di Intel stavano utilizzando il cloud pubblico ed era come il selvaggio West, con le persone che semplicemente utilizzavano le loro carte di credito per accedere. La sicurezza era un problema e le spese sono sfuggite al controllo. Per mettere a freno il caos, hanno creato un'organizzazione di broker cloud."
 ---
 
 <div>
 {% include transistor.html id="a41fa330" title="#56 Cloud Broker Organizations" %}
 
-{% include youtube.html id="o-pBcuqYmJE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

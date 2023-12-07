@@ -25,14 +25,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Neste episódio, Darren entrevista Mark Valcich, diretor e gerente geral do Setor Público Civil Federal da Intel. Os anos de experiência de Mark brilham enquanto ele descreve as tendências atuais na transformação digital do governo civil federal."
-video: "https://youtu.be/eZ2UfSwdcwo"
+video: "https://youtu.be/url"
 description: "Neste episódio, Darren entrevista Mark Valcich, diretor e gerente geral do Setor Público Civil Federal da Intel. Os anos de experiência de Mark brilham enquanto ele descreve as tendências atuais na transformação digital do governo civil federal."
 ---
 
 <div>
 {% include transistor.html id="e78c9823" title="#131 Digital Transformation in Federal Government" %}
 
-{% include youtube.html id="eZ2UfSwdcwo" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

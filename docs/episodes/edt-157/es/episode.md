@@ -45,14 +45,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio de podcast, el anfitrión Darren Pulsipher, Arquitecto Principal de Soluciones del Sector Público en Intel, discute la puesta en marcha de la IA generativa con el invitado recurrente Dr. Jeffrey Lancaster. Exploran los diferentes modelos de compartición de la IA generativa, incluyendo los modelos públicos, privados y comunitarios. El podcast aborda temas como los modelos de código abierto, la gestión de infraestructura y consideraciones para desplegar y mantener sistemas de IA. También profundiza en la importancia de la creatividad, la personalización y cómo empezar con modelos de IA."
-video: "https://youtu.be/4kXF6Pn-NJg"
+video: "https://youtu.be/url"
 description: "En este episodio de podcast, el anfitrión Darren Pulsipher, Arquitecto Principal de Soluciones del Sector Público en Intel, discute la puesta en marcha de la IA generativa con el invitado recurrente Dr. Jeffrey Lancaster. Exploran los diferentes modelos de compartición de la IA generativa, incluyendo los modelos públicos, privados y comunitarios. El podcast aborda temas como los modelos de código abierto, la gestión de infraestructura y consideraciones para desplegar y mantener sistemas de IA. También profundiza en la importancia de la creatividad, la personalización y cómo empezar con modelos de IA."
 ---
 
 <div>
 {% include transistor.html id="0fb3d4b8" title="#157 Operationalizing GenAI" %}
 
-{% include youtube.html id="4kXF6Pn-NJg" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

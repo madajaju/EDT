@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, Darren Pulsipher, Arquitecto Principal de Soluciones en Intel, le pide a Rachel Mushawar, VP de Ventas en Intel, su visión sobre lo que viene para los Años Dorados después de la interrupción del COVID-19."
-video: "https://youtu.be/4O-3WndRbU0"
+video: "https://youtu.be/url"
 description: "En este episodio, Darren Pulsipher, Arquitecto Principal de Soluciones en Intel, le pide a Rachel Mushawar, VP de Ventas en Intel, su visión sobre lo que viene para los Años Dorados después de la interrupción del COVID-19."
 ---
 
 <div>
 {% include transistor.html id="837567c1" title="#38 Roaring 20's a Look Forward to 2021" %}
 
-{% include youtube.html id="4O-3WndRbU0" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

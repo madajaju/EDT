@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode diskutieren Darren Pulsipher, Chief Solution Architect bei Intel, und Stephen Holt, Cloud Solution Architect bei Intel, Cloud-Optimierung und Studien, die zeigen, dass Kerne unterschiedlich für verschiedene Arbeitslasten arbeiten."
-video: "https://youtu.be/ZqdpCTp5yTY"
+video: "https://youtu.be/url"
 description: "In dieser Episode diskutieren Darren Pulsipher, Chief Solution Architect bei Intel, und Stephen Holt, Cloud Solution Architect bei Intel, Cloud-Optimierung und Studien, die zeigen, dass Kerne unterschiedlich für verschiedene Arbeitslasten arbeiten."
 ---
 
 <div>
 {% include transistor.html id="cd1f0343" title="#45 Not All Cores are Equal" %}
 
-{% include youtube.html id="ZqdpCTp5yTY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

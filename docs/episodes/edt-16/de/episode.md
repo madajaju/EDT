@@ -17,14 +17,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode spricht Darren darüber, wie man den Verzehr von Staus mit Intels Optane DC Persistent-Speicher verringern kann und das Experiment, das er mit überraschenden Ergebnissen durchgeführt hat. Es könnte sich möglicherweise darauf auswirken, wie wir in Zukunft über Programmierung denken."
-video: "https://youtu.be/8vFFbBD9tZQ"
+video: "https://youtu.be/url"
 description: "In dieser Episode spricht Darren darüber, wie man den Verzehr von Staus mit Intels Optane DC Persistent-Speicher verringern kann und das Experiment, das er mit überraschenden Ergebnissen durchgeführt hat. Es könnte sich möglicherweise darauf auswirken, wie wir in Zukunft über Programmierung denken."
 ---
 
 <div>
 {% include transistor.html id="7ca179aa" title="#16 Decreasing Ingestion Congestion with Intel Optane DCPMM" %}
 
-{% include youtube.html id="8vFFbBD9tZQ" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

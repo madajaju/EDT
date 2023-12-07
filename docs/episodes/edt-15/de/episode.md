@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Die Schaffung erfolgreicher datengetriebener Ergebnisse beginnt mit einer starken organisatorischen Grundlage. Darren und sein Gast Sarah Kalicin, Lead Data Scientist Data Center Group Intel, diskutieren die Schlüsselaspekte dieser grundlegenden Veränderung."
-video: "https://youtu.be/wwIxtgp5a7w"
+video: "https://youtu.be/url"
 description: "Die Schaffung erfolgreicher datengetriebener Ergebnisse beginnt mit einer starken organisatorischen Grundlage. Darren und sein Gast Sarah Kalicin, Lead Data Scientist Data Center Group Intel, diskutieren die Schlüsselaspekte dieser grundlegenden Veränderung."
 ---
 
 <div>
 {% include transistor.html id="f6948ab6" title="#15 Kick-starting Organizational Transformation" %}
 
-{% include youtube.html id="wwIxtgp5a7w" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

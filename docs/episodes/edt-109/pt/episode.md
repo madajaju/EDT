@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "O Darren Pulsipher, da Intel, arquiteto-chefe de soluções, Leland Brown, engenheiro principal: diretor técnico de comunicações avançadas, e a Dra. Anna Scott, arquiteta-chefe de borda para o setor público, falam sobre a história das comunicações avançadas e os futuros casos de uso com 5G. Parte dois de dois."
-video: "https://youtu.be/ZHyeXrkxQhA"
+video: "https://youtu.be/url"
 description: "O Darren Pulsipher, da Intel, arquiteto-chefe de soluções, Leland Brown, engenheiro principal: diretor técnico de comunicações avançadas, e a Dra. Anna Scott, arquiteta-chefe de borda para o setor público, falam sobre a história das comunicações avançadas e os futuros casos de uso com 5G. Parte dois de dois."
 ---
 
 <div>
 {% include transistor.html id="b613bc52" title="#109 Advancing Operations with 5G" %}
 
-{% include youtube.html id="ZHyeXrkxQhA" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

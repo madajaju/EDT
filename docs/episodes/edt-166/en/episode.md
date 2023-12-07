@@ -18,14 +18,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Cloud migration is no longer a one-time process, but rather a continuous journey that requires constant evaluation, monitoring, and adjustment to achieve business objectives. In this episode of our podcast, host Darren Pulsipher talks to guest Christine McMonigal about the importance of adopting continuous improvement in cloud operations."
-video: "https://youtu.be/DxohkSTvJRA"
+video: "https://youtu.be/url"
 description: "Cloud migration is no longer a one-time process, but rather a continuous journey that requires constant evaluation, monitoring, and adjustment to achieve business objectives. In this episode of our podcast, host Darren Pulsipher talks to guest Christine McMonigal about the importance of adopting continuous improvement in cloud operations."
 ---
 
 <div>
 {% include transistor.html id="33da9289" title="#166 Agility in Cloud Adoption" %}
 
-{% include youtube.html id="DxohkSTvJRA" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

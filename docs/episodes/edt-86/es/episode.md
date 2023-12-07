@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, Darren Pulsipher, Arquitecto Principal de Soluciones, Sector Público, Intel, da la bienvenida a los invitados especiales Jason Dunn-Potter, Jefe de Oficial Técnico Retirado, Ejército de los Estados Unidos, y Ron Fritzemeier, Contraalmirante Retirado, Marina de los Estados Unidos. Ambos llevan cinco meses en sus nuevos puestos como Arquitectos de Soluciones y Especialistas en Misiones en el Equipo del Departamento de Defensa de Intel."
-video: "https://youtu.be/Sf1GUtYBzek"
+video: "https://youtu.be/url"
 description: "En este episodio, Darren Pulsipher, Arquitecto Principal de Soluciones, Sector Público, Intel, da la bienvenida a los invitados especiales Jason Dunn-Potter, Jefe de Oficial Técnico Retirado, Ejército de los Estados Unidos, y Ron Fritzemeier, Contraalmirante Retirado, Marina de los Estados Unidos. Ambos llevan cinco meses en sus nuevos puestos como Arquitectos de Soluciones y Especialistas en Misiones en el Equipo del Departamento de Defensa de Intel."
 ---
 
 <div>
 {% include transistor.html id="60287be0" title="#86 The Things I Wish I Knew as a Government CTO" %}
 
-{% include youtube.html id="Sf1GUtYBzek" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

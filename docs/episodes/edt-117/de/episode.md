@@ -28,14 +28,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Folge bewertet Darren das Jahr 2022. Er identifiziert die am meisten besprochenen Themen im Podcast in 2022, darunter Datenmanagement, Künstliche Intelligenz, Cybersicherheit, Edge Computing und hybride Arbeitsplätze."
-video: "https://youtu.be/lxRMINWH48g"
+video: "https://youtu.be/url"
 description: "In dieser Folge bewertet Darren das Jahr 2022. Er identifiziert die am meisten besprochenen Themen im Podcast in 2022, darunter Datenmanagement, Künstliche Intelligenz, Cybersicherheit, Edge Computing und hybride Arbeitsplätze."
 ---
 
 <div>
 {% include transistor.html id="b50f4fda" title="#117 2022 Year In Review" %}
 
-{% include youtube.html id="lxRMINWH48g" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

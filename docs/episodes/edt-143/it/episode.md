@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo episodio di Abbracciare la Trasformazione Digitale, la dottoressa Anna Scott continua la sua conversazione con Ibett Acarapi e Jesse Schrater riguardo al Calcolo Confidenziale e ai suoi utilizzi nell'Intelligenza Artificiale e nello sviluppo software."
-video: "https://youtu.be/NZWVC4VLWL4"
+video: "https://youtu.be/url"
 description: "In questo episodio di Abbracciare la Trasformazione Digitale, la dottoressa Anna Scott continua la sua conversazione con Ibett Acarapi e Jesse Schrater riguardo al Calcolo Confidenziale e ai suoi utilizzi nell'Intelligenza Artificiale e nello sviluppo software."
 ---
 
 <div>
 {% include transistor.html id="896bc6e3" title="#143 Use Cases in Confidential Computing" %}
 
-{% include youtube.html id="NZWVC4VLWL4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

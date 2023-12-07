@@ -40,14 +40,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, el presentador Darren entrevista a Jeremy Harris y se adentra en la importancia de establecer políticas y pautas para una exitosa transformación digital. Con la creciente prevalencia de las tecnologías digitales en diversas industrias, las organizaciones necesitan adaptarse y abrazar esta transformación para mantenerse competitivas y cumplir con las expectativas cambiantes de los clientes."
-video: "https://youtu.be/W0MzzmUkLr8"
+video: "https://youtu.be/url"
 description: "En este episodio, el presentador Darren entrevista a Jeremy Harris y se adentra en la importancia de establecer políticas y pautas para una exitosa transformación digital. Con la creciente prevalencia de las tecnologías digitales en diversas industrias, las organizaciones necesitan adaptarse y abrazar esta transformación para mantenerse competitivas y cumplir con las expectativas cambiantes de los clientes."
 ---
 
 <div>
 {% include transistor.html id="4192b830" title="#159 GenAI Policies" %}
 
-{% include youtube.html id="W0MzzmUkLr8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

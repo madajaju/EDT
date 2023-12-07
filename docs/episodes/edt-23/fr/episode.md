@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans la partie 5 d'une série, Sarah Kalicin, scientifique en chef des données chez Intel, et Darren Pulsipher, architecte principal des solutions du secteur public chez Intel, expliquent comment créer des informations en utilisant l'IA et l'apprentissage automatique dans une organisation axée sur les données."
-video: "https://youtu.be/4uLg1TXhsi4"
+video: "https://youtu.be/url"
 description: "Dans la partie 5 d'une série, Sarah Kalicin, scientifique en chef des données chez Intel, et Darren Pulsipher, architecte principal des solutions du secteur public chez Intel, expliquent comment créer des informations en utilisant l'IA et l'apprentissage automatique dans une organisation axée sur les données."
 ---
 
 <div>
 {% include transistor.html id="b16d9296" title="#23 Insight Creation in Data-Centric Organizations" %}
 
-{% include youtube.html id="4uLg1TXhsi4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

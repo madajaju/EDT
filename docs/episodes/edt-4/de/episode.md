@@ -28,14 +28,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode werden wir über das Information Management Reifegradmodell sprechen und wie wir dieses Modell verwenden können, um unseren Organisationen voranzubringen. Dieses Modell kann Ihnen dabei helfen, zu erkennen, wo sich Ihre Organisation in ihrer Informationsmanagementstrategie befindet und wohin sie geht, um letztendlich den maximalen Geschäftswert aus Ihren Daten zu gewinnen."
-video: "https://youtu.be/UaUSrh433-Y"
+video: "https://youtu.be/url"
 description: "In dieser Episode werden wir über das Information Management Reifegradmodell sprechen und wie wir dieses Modell verwenden können, um unseren Organisationen voranzubringen. Dieses Modell kann Ihnen dabei helfen, zu erkennen, wo sich Ihre Organisation in ihrer Informationsmanagementstrategie befindet und wohin sie geht, um letztendlich den maximalen Geschäftswert aus Ihren Daten zu gewinnen."
 ---
 
 <div>
 {% include transistor.html id="b3684303" title="#4 Information Management Maturity Model" %}
 
-{% include youtube.html id="UaUSrh433-Y" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

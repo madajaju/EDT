@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, Darren Pulsipher, architecte en chef des solutions chez Intel, et Stephen Holt, architecte des solutions cloud chez Intel, discutent de l'optimisation du cloud et des études qui montrent que les cœurs ont des performances différentes selon les charges de travail."
-video: "https://youtu.be/ZqdpCTp5yTY"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, Darren Pulsipher, architecte en chef des solutions chez Intel, et Stephen Holt, architecte des solutions cloud chez Intel, discutent de l'optimisation du cloud et des études qui montrent que les cœurs ont des performances différentes selon les charges de travail."
 ---
 
 <div>
 {% include transistor.html id="cd1f0343" title="#45 Not All Cores are Equal" %}
 
-{% include youtube.html id="ZqdpCTp5yTY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

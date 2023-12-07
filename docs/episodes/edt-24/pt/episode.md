@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Arquiteto-Chefe de Soluções, Setor Público, Intel, descreve a estratégia digital e a arquitetura para transformar efetivamente sua organização. Ele explica como os elementos organizacionais, procedimentais e tecnológicos devem ser equilibrados para funcionar de forma eficiente em direção a uma arquitetura comum e ideal que apoie uma visão unificada."
-video: "https://youtu.be/fA8CWzRDZHM"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquiteto-Chefe de Soluções, Setor Público, Intel, descreve a estratégia digital e a arquitetura para transformar efetivamente sua organização. Ele explica como os elementos organizacionais, procedimentais e tecnológicos devem ser equilibrados para funcionar de forma eficiente em direção a uma arquitetura comum e ideal que apoie uma visão unificada."
 ---
 
 <div>
 {% include transistor.html id="0f3c3117" title="#24 Digital Strategy and Data Architecture" %}
 
-{% include youtube.html id="fA8CWzRDZHM" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

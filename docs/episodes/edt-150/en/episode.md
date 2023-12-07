@@ -21,14 +21,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren interviews Sonu Panda, the CEO of Prescriptive Data, in this episode. They discuss how their software helps commercial real estate owners turn their buildings into intelligent and efficient spaces."
-video: "https://youtu.be/FNtFp3pzhBc"
+video: "https://youtu.be/url"
 description: "Darren interviews Sonu Panda, the CEO of Prescriptive Data, in this episode. They discuss how their software helps commercial real estate owners turn their buildings into intelligent and efficient spaces."
 ---
 
 <div>
 {% include transistor.html id="c5695331" title="#150 Embracing Sustainability with Smart Buildings" %}
 
-{% include youtube.html id="FNtFp3pzhBc" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

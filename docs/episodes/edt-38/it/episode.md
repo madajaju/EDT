@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo episodio, Darren Pulsipher, Chief Solution Architect presso Intel, chiede a Rachel Mushawar, VP delle vendite presso Intel, il suo punto di vista su cosa ci aspetta per gli anni '20 ruggenti dopo la interruzione del COVID-19."
-video: "https://youtu.be/4O-3WndRbU0"
+video: "https://youtu.be/url"
 description: "In questo episodio, Darren Pulsipher, Chief Solution Architect presso Intel, chiede a Rachel Mushawar, VP delle vendite presso Intel, il suo punto di vista su cosa ci aspetta per gli anni '20 ruggenti dopo la interruzione del COVID-19."
 ---
 
 <div>
 {% include transistor.html id="837567c1" title="#38 Roaring 20's a Look Forward to 2021" %}
 
-{% include youtube.html id="4O-3WndRbU0" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

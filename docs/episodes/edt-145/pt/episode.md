@@ -21,14 +21,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste episódio, Darren conversa com o CEO e Diretor Executivo da GPA sobre o papel que a inovação colaborativa desempenha ao trazer as pessoas de volta ao escritório e por que as pessoas precisam de interação presencial."
-video: "https://youtu.be/I7atsJQP-gg"
+video: "https://youtu.be/url"
 description: "Neste episódio, Darren conversa com o CEO e Diretor Executivo da GPA sobre o papel que a inovação colaborativa desempenha ao trazer as pessoas de volta ao escritório e por que as pessoas precisam de interação presencial."
 ---
 
 <div>
 {% include transistor.html id="11bf23e0" title="#145 Attracting People Back to the Office" %}
 
-{% include youtube.html id="I7atsJQP-gg" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, architecte principal des solutions du secteur public chez Intel, et Gretchen Stewart, scientifique en chef des données du secteur public, discutent de l'opérationnalisation des projets d'IA."
-video: "https://youtu.be/HbXNLtGkD5E"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, architecte principal des solutions du secteur public chez Intel, et Gretchen Stewart, scientifique en chef des données du secteur public, discutent de l'opérationnalisation des projets d'IA."
 ---
 
 <div>
 {% include transistor.html id="dfad3810" title="#103 Operationalizing Your AI Projects" %}
 
-{% include youtube.html id="HbXNLtGkD5E" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

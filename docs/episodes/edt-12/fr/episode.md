@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans notre dernier épisode, Erin Moseley, responsable des comptes principaux pour l'éducation chez Intel, et Grant Kelly, architecte de solutions pour l'éducation chez Intel, ont rejoint Darren pour parler des défis technologiques et des options dans l'apprentissage à distance. Dans cet épisode, nous approfondissons davantage les menaces et les solutions liées à la confidentialité et à la sécurité."
-video: "https://youtu.be/fGjvx9pKqT8"
+video: "https://youtu.be/url"
 description: "Dans notre dernier épisode, Erin Moseley, responsable des comptes principaux pour l'éducation chez Intel, et Grant Kelly, architecte de solutions pour l'éducation chez Intel, ont rejoint Darren pour parler des défis technologiques et des options dans l'apprentissage à distance. Dans cet épisode, nous approfondissons davantage les menaces et les solutions liées à la confidentialité et à la sécurité."
 ---
 
 <div>
 {% include transistor.html id="03c2f4f9" title="#12 Put the Title Right Here" %}
 
-{% include youtube.html id="fGjvx9pKqT8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

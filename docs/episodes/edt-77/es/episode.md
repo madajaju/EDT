@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher de Intel, Arquitecto Principal de Soluciones, Dra. Anna Scott, Arquitecta Principal de Edge, y Gretchen Stewart, Científica Principal de Datos, discuten los seis pilares de la transformación digital en 2022: computación en múltiples nubes, computación de borde, inteligencia artificial, aprendizaje automático, ciberseguridad, gestión de datos y comunicaciones."
-video: "https://youtu.be/-UsayFp-UwY"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher de Intel, Arquitecto Principal de Soluciones, Dra. Anna Scott, Arquitecta Principal de Edge, y Gretchen Stewart, Científica Principal de Datos, discuten los seis pilares de la transformación digital en 2022: computación en múltiples nubes, computación de borde, inteligencia artificial, aprendizaje automático, ciberseguridad, gestión de datos y comunicaciones."
 ---
 
 <div>
 {% include transistor.html id="94c4fde2" title="#77 Digital Transformation in 2022" %}
 
-{% include youtube.html id="-UsayFp-UwY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

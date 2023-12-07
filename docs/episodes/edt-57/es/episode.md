@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En la segunda parte de dos, Darren Pulsipher, Arquitecto Principal de Soluciones, y los Arquitectos de Soluciones en la Nube de Intel, Dave Shrestha y Kevin Bleckman, hablan sobre los beneficios y servicios de una organización de intermediación en la nube."
-video: "https://youtu.be/9cZHCXE64Zs"
+video: "https://youtu.be/url"
 description: "En la segunda parte de dos, Darren Pulsipher, Arquitecto Principal de Soluciones, y los Arquitectos de Soluciones en la Nube de Intel, Dave Shrestha y Kevin Bleckman, hablan sobre los beneficios y servicios de una organización de intermediación en la nube."
 ---
 
 <div>
 {% include transistor.html id="3542904b" title="#57 Cloud Broker Organization Part 2" %}
 
-{% include youtube.html id="9cZHCXE64Zs" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

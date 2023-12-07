@@ -21,14 +21,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren führt ein Interview mit Sonu Panda, dem CEO von Prescriptive Data, in dieser Folge. Sie diskutieren, wie ihre Software kommerziellen Immobilienbesitzern dabei hilft, ihre Gebäude in intelligente und effiziente Räume zu verwandeln."
-video: "https://youtu.be/FNtFp3pzhBc"
+video: "https://youtu.be/url"
 description: "Darren führt ein Interview mit Sonu Panda, dem CEO von Prescriptive Data, in dieser Folge. Sie diskutieren, wie ihre Software kommerziellen Immobilienbesitzern dabei hilft, ihre Gebäude in intelligente und effiziente Räume zu verwandeln."
 ---
 
 <div>
 {% include transistor.html id="c5695331" title="#150 Embracing Sustainability with Smart Buildings" %}
 
-{% include youtube.html id="FNtFp3pzhBc" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -41,14 +41,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo episodio Darren intervista Rajiv Mandal, architetto delle soluzioni cloud, sulla sviluppo di una strategia multi-ibrida per il tuo moderno organizzazione IT."
-video: "https://youtu.be/Rsw4MXrR1Xo"
+video: "https://youtu.be/url"
 description: "In questo episodio Darren intervista Rajiv Mandal, architetto delle soluzioni cloud, sulla sviluppo di una strategia multi-ibrida per il tuo moderno organizzazione IT."
 ---
 
 <div>
 {% include transistor.html id="4bf5da91" title="#163 Developing a Multi-Hybrid Cloud Operating Model" %}
 
-{% include youtube.html id="Rsw4MXrR1Xo" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -26,14 +26,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Darren Pulsipher, Chief Solution Architect di Intel, Denis O’Shea, fondatore di Mobile Mentor, parla della sua esperienza, ricerca e consigli per l'integrazione dei lavoratori remoti, in particolare i lavoratori della Generazione Z."
-video: "https://youtu.be/Ysrwx9JVpJg"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solution Architect di Intel, Denis O’Shea, fondatore di Mobile Mentor, parla della sua esperienza, ricerca e consigli per l'integrazione dei lavoratori remoti, in particolare i lavoratori della Generazione Z."
 ---
 
 <div>
 {% include transistor.html id="422f479d" title="#79 Onboarding Remote Workers" %}
 
-{% include youtube.html id="Ysrwx9JVpJg" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

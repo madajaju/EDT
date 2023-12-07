@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En el último episodio, el Dr. Jeffrey Lancaster y Darren Pulsipher profundizan en los casos prácticos de uso de la IA generativa y cómo puede liberar la creatividad humana en varios campos."
-video: "https://youtu.be/GyotiK-7SmM"
+video: "https://youtu.be/url"
 description: "En el último episodio, el Dr. Jeffrey Lancaster y Darren Pulsipher profundizan en los casos prácticos de uso de la IA generativa y cómo puede liberar la creatividad humana en varios campos."
 ---
 
 <div>
 {% include transistor.html id="647d0c48" title="#154 GenAI Use Cases" %}
 
-{% include youtube.html id="GyotiK-7SmM" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

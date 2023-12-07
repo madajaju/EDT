@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In this episode of the podcast Embracing Digital Transformation, host Darren Pulsipher engages in an insightful conversation with special guest Jared Shepard, the CEO of Hypori. The interview focuses on the crucial topic of securing remote workers through mobile virtualization. Jared Shepard's unique journey from a high school dropout to a CEO adds an inspiring dimension to the discussion."
-video: "https://youtu.be/O2o4dRHhETE"
+video: "https://youtu.be/url"
 description: "In this episode of the podcast Embracing Digital Transformation, host Darren Pulsipher engages in an insightful conversation with special guest Jared Shepard, the CEO of Hypori. The interview focuses on the crucial topic of securing remote workers through mobile virtualization. Jared Shepard's unique journey from a high school dropout to a CEO adds an inspiring dimension to the discussion."
 ---
 
 <div>
 {% include transistor.html id="fd3c31e0" title="#148 Securing the Remote Worker Through Mobile Virtualization" %}
 
-{% include youtube.html id="O2o4dRHhETE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

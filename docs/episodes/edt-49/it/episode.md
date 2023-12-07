@@ -20,14 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo episodio, Darren parla con Rachel Dreikosen, Business Development Manager del settore pubblico presso Intel, di come COVID-19 abbia influenzato il suo equilibrio tra lavoro e vita privata e del motivo per cui ha iniziato un blog per aiutare altre professioniste tecniche nel settore delle vendite."
-video: "https://youtu.be/kxWHplocgmw"
+video: "https://youtu.be/url"
 description: "In questo episodio, Darren parla con Rachel Dreikosen, Business Development Manager del settore pubblico presso Intel, di come COVID-19 abbia influenzato il suo equilibrio tra lavoro e vita privata e del motivo per cui ha iniziato un blog per aiutare altre professioniste tecniche nel settore delle vendite."
 ---
 
 <div>
 {% include transistor.html id="57801971" title="#49 Remote Work Before, During and After the Pandemic" %}
 
-{% include youtube.html id="kxWHplocgmw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

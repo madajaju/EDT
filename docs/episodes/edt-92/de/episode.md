@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode spricht Darren mit Matt Lembright, Direktor für Bundesanwendungen bei Censys, darüber, wie Censys die Angriffsfläche für internetverbundene Geräte analysiert, um Organisationen dabei zu helfen, Schwachstellen zu beseitigen."
-video: "https://youtu.be/TzyCREPs7Wk"
+video: "https://youtu.be/url"
 description: "In dieser Episode spricht Darren mit Matt Lembright, Direktor für Bundesanwendungen bei Censys, darüber, wie Censys die Angriffsfläche für internetverbundene Geräte analysiert, um Organisationen dabei zu helfen, Schwachstellen zu beseitigen."
 ---
 
 <div>
 {% include transistor.html id="6fdf7422" title="#92 Protecting the Outer Walls of your Castle with Vulnerability Scans" %}
 
-{% include youtube.html id="TzyCREPs7Wk" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

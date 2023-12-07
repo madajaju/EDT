@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In this episode, Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, welcomes special guests Jason Dunn-Potter, Ret Chief Warrant Officer, US Army, and Ron Fritzemeier, Ret Rear Admiral, US Navy. Both are now five months into their positions as Solution Architects and Mission Specialists with Intel’s Department of Defense Team.  "
-video: "https://youtu.be/Sf1GUtYBzek"
+video: "https://youtu.be/url"
 description: "In this episode, Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, welcomes special guests Jason Dunn-Potter, Ret Chief Warrant Officer, US Army, and Ron Fritzemeier, Ret Rear Admiral, US Navy. Both are now five months into their positions as Solution Architects and Mission Specialists with Intel’s Department of Defense Team.  "
 ---
 
 <div>
 {% include transistor.html id="60287be0" title="#86 The Things I Wish I Knew as a Government CTO" %}
 
-{% include youtube.html id="Sf1GUtYBzek" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, arquitecto principal de soluciones de Intel, le pregunta a su invitada, Ann Madea, exdirectora de tecnología de la información de HSBC, que reflexione sobre el proceso de grandes cambios de transformación que lideró en las organizaciones."
-video: "https://youtu.be/EqX-aSQaZ68"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, arquitecto principal de soluciones de Intel, le pregunta a su invitada, Ann Madea, exdirectora de tecnología de la información de HSBC, que reflexione sobre el proceso de grandes cambios de transformación que lideró en las organizaciones."
 ---
 
 <div>
 {% include transistor.html id="5e1c9cfe" title="#54 People & Process in Digital Transformation" %}
 
-{% include youtube.html id="EqX-aSQaZ68" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

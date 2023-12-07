@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Arquitecto Principal de Soluciones, Intel, habla sobre la seguridad del centro de datos a través del borde con otros ejecutivos de Intel y los anfitriones del podcast Tom Garrison, VP de Seguridad del Cliente, y Camille Morhardt, Directora de Innovación y Comunicación de Seguridad."
-video: "https://youtu.be/2Mr5Tl2oHFw"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquitecto Principal de Soluciones, Intel, habla sobre la seguridad del centro de datos a través del borde con otros ejecutivos de Intel y los anfitriones del podcast Tom Garrison, VP de Seguridad del Cliente, y Camille Morhardt, Directora de Innovación y Comunicación de Seguridad."
 ---
 
 <div>
 {% include transistor.html id="e73f3d4a" title="#69 Securing the Data Center Through the Edge" %}
 
-{% include youtube.html id="2Mr5Tl2oHFw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

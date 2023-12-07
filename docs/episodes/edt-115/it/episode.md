@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questa puntata, Darren parla di sicurezza informatica con il ritorno dell'ospite John Evans, Chief Technology Advisor presso World Wide Technology (WWT)."
-video: "https://youtu.be/SPmsH6Ia6pM"
+video: "https://youtu.be/url"
 description: "In questa puntata, Darren parla di sicurezza informatica con il ritorno dell'ospite John Evans, Chief Technology Advisor presso World Wide Technology (WWT)."
 ---
 
 <div>
 {% include transistor.html id="4c1b2203" title="#115 Blocking and Tackling of Security" %}
 
-{% include youtube.html id="SPmsH6Ia6pM" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

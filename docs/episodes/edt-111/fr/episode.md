@@ -18,14 +18,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Dans cet épisode, Darren discute avec Eric Hornsby, PDG de SmartPoint.io, à propos de la technologie pour réaliser le potentiel des villes intelligentes."
-video: "https://youtu.be/lanaZk9q0dI"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, Darren discute avec Eric Hornsby, PDG de SmartPoint.io, à propos de la technologie pour réaliser le potentiel des villes intelligentes."
 ---
 
 <div>
 {% include transistor.html id="91e87dfc" title="#111 Realizing Smart City Potential" %}
 
-{% include youtube.html id="lanaZk9q0dI" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

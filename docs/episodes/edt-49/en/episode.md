@@ -20,14 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In this episode, Darren talks with Rachel Dreikosen, Business Development Manager in Public Sector at Intel, about how COVID-19 has effective her work-life balance and why she started a blog to help other female technical sales professionals."
-video: "https://youtu.be/kxWHplocgmw"
+video: "https://youtu.be/url"
 description: "In this episode, Darren talks with Rachel Dreikosen, Business Development Manager in Public Sector at Intel, about how COVID-19 has effective her work-life balance and why she started a blog to help other female technical sales professionals."
 ---
 
 <div>
 {% include transistor.html id="57801971" title="#49 Remote Work Before, During and After the Pandemic" %}
 
-{% include youtube.html id="kxWHplocgmw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

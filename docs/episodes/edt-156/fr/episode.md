@@ -40,14 +40,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans l'épisode de podcast, le contre-amiral à la retraite Ron Fritzmeier se joint à l'animateur Darren Pulsipher pour discuter de l'importance de la gestion des données dans le contexte de l'intelligence artificielle générationnelle (IA). Avec une formation en génie électrique et une expérience étendue dans les domaines de la cyber et de la cybersécurité, Ron apporte des perspectives précieuses sur le domaine en évolution de la gestion des données et son rôle crucial dans le succès organisationnel à l'ère numérique."
-video: "https://youtu.be/CLjlF8cVq0c"
+video: "https://youtu.be/url"
 description: "Dans l'épisode de podcast, le contre-amiral à la retraite Ron Fritzmeier se joint à l'animateur Darren Pulsipher pour discuter de l'importance de la gestion des données dans le contexte de l'intelligence artificielle générationnelle (IA). Avec une formation en génie électrique et une expérience étendue dans les domaines de la cyber et de la cybersécurité, Ron apporte des perspectives précieuses sur le domaine en évolution de la gestion des données et son rôle crucial dans le succès organisationnel à l'ère numérique."
 ---
 
 <div>
 {% include transistor.html id="60a9723c" title="#156 Becoming a Data Ready Organization" %}
 
-{% include youtube.html id="CLjlF8cVq0c" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

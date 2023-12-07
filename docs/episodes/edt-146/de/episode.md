@@ -22,14 +22,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "In dieser Folge spricht Darren mit Dr. Michael Lenox über die aufkommende KI-Revolution und wie man sie entweder annehmen oder zerstört werden kann. Michael hat gerade ein neues Buch mit dem Titel "Strategie im digitalen Zeitalter: Meistern der digitalen Transformation" veröffentlicht."
-video: "https://youtu.be/kiI5W1lar2w"
+video: "https://youtu.be/url"
 description: "In dieser Folge spricht Darren mit Dr. Michael Lenox über die aufkommende KI-Revolution und wie man sie entweder annehmen oder zerstört werden kann. Michael hat gerade ein neues Buch mit dem Titel "Strategie im digitalen Zeitalter: Meistern der digitalen Transformation" veröffentlicht."
 ---
 
 <div>
 {% include transistor.html id="60395033" title="#146 Embracing the AI Revolution" %}
 
-{% include youtube.html id="kiI5W1lar2w" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

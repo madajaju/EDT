@@ -21,14 +21,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Folge reflektiert Darren über die Erwartungen und Überraschungen im Jahr 2021."
-video: "https://youtu.be/fPNfdjHtKns"
+video: "https://youtu.be/url"
 description: "In dieser Folge reflektiert Darren über die Erwartungen und Überraschungen im Jahr 2021."
 ---
 
 <div>
 {% include transistor.html id="cb3a86a3" title="#73 2021 a Year in Review" %}
 
-{% include youtube.html id="fPNfdjHtKns" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

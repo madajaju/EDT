@@ -26,14 +26,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Neste episódio, parte 2 de 2, Darren continua sua conversa com David Esposito, Arquiteto de Soluções Globais, da Aiven, sobre acelerar a adoção em nuvem enquanto reduz a complexidade e os custos."
-video: "https://youtu.be/OIIPkoZHKiw"
+video: "https://youtu.be/url"
 description: "Neste episódio, parte 2 de 2, Darren continua sua conversa com David Esposito, Arquiteto de Soluções Globais, da Aiven, sobre acelerar a adoção em nuvem enquanto reduz a complexidade e os custos."
 ---
 
 <div>
 {% include transistor.html id="49896b3b" title="#66 Managing Complexity in the Cloud" %}
 
-{% include youtube.html id="OIIPkoZHKiw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

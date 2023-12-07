@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste episódio de podcast, Pete Schmitz, um ex-executivo de contas da Intel, fala sobre seu trabalho com estudantes do ensino médio, ensinando-os sobre IA e como usá-la em suas competições de robótica. Ele explica que essas competições exigem o uso de autonomia e a IA é um componente crucial para alcançar isso. Pete compartilha um exemplo de como a visão computacional, alimentada pela IA, é usada no veículo não tripulado D Hunter da Agência de Projetos de Pesquisa Avançada de Defesa, DARPA."
-video: "https://youtu.be/ZllW_RjX60M"
+video: "https://youtu.be/url"
 description: "Neste episódio de podcast, Pete Schmitz, um ex-executivo de contas da Intel, fala sobre seu trabalho com estudantes do ensino médio, ensinando-os sobre IA e como usá-la em suas competições de robótica. Ele explica que essas competições exigem o uso de autonomia e a IA é um componente crucial para alcançar isso. Pete compartilha um exemplo de como a visão computacional, alimentada pela IA, é usada no veículo não tripulado D Hunter da Agência de Projetos de Pesquisa Avançada de Defesa, DARPA."
 ---
 
 <div>
 {% include transistor.html id="db2248b4" title="#153 Training the Next Generation in AI" %}
 
-{% include youtube.html id="ZllW_RjX60M" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Nella prima parte di questa intervista, Darren Pulsipher, Solution Architect Chief di Intel, e Doug Bourgeois, Direttore Esecutivo, Leader Strategico del Collegamento Cloud, Deloitte, parlano della migrazione verso il cloud e del ruolo del CIO."
-video: "https://youtu.be/OVE3sVDBUls"
+video: "https://youtu.be/url"
 description: "Nella prima parte di questa intervista, Darren Pulsipher, Solution Architect Chief di Intel, e Doug Bourgeois, Direttore Esecutivo, Leader Strategico del Collegamento Cloud, Deloitte, parlano della migrazione verso il cloud e del ruolo del CIO."
 ---
 
 <div>
 {% include transistor.html id="e5807228" title="#43 The Role of the CIO in Cloud Adoption" %}
 
-{% include youtube.html id="OVE3sVDBUls" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -27,14 +27,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Darren Pulsipher, architecte principal des solutions chez Intel, discute avec Charles Fan, PDG de MemVerge, de la façon dont la révolution CXL et le logiciel de MemVerge représentent l'avenir de la mémoire étendue."
-video: "https://youtu.be/1TUCZjI4yns"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, architecte principal des solutions chez Intel, discute avec Charles Fan, PDG de MemVerge, de la façon dont la révolution CXL et le logiciel de MemVerge représentent l'avenir de la mémoire étendue."
 ---
 
 <div>
 {% include transistor.html id="536490f3" title="#89 Future of Big Memory and CXL" %}
 
-{% include youtube.html id="1TUCZjI4yns" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

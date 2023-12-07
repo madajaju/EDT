@@ -31,14 +31,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo episodio Darren intervista Christine McMonigal e discute le sfide che le organizzazioni affrontano durante la transizione al cloud e l'adozione di architetture multi-hybrid cloud. Mettono in evidenza l'importanza di comprendere questi ostacoli e fornire indicazioni per superarli. Questo episodio approfondirà alcune delle principali barriere e strategie per mitigare i rischi, garantendo una trasformazione cloud di successo."
-video: "https://youtu.be/EmI607B9RuA"
+video: "https://youtu.be/url"
 description: "In questo episodio Darren intervista Christine McMonigal e discute le sfide che le organizzazioni affrontano durante la transizione al cloud e l'adozione di architetture multi-hybrid cloud. Mettono in evidenza l'importanza di comprendere questi ostacoli e fornire indicazioni per superarli. Questo episodio approfondirà alcune delle principali barriere e strategie per mitigare i rischi, garantendo una trasformazione cloud di successo."
 ---
 
 <div>
 {% include transistor.html id="afade5ea" title="#162 Building a Multi-Hybrid Cloud Strategy" %}
 
-{% include youtube.html id="EmI607B9RuA" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

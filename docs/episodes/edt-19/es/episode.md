@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, Darren Pulsipher, Arquitecto Jefe de Soluciones de Intel, Sector Público, explora cómo las organizaciones pueden pasar de simplemente acumular datos a utilizarlos como un activo estratégico."
-video: "https://youtu.be/TNIK5d9oM4A"
+video: "https://youtu.be/url"
 description: "En este episodio, Darren Pulsipher, Arquitecto Jefe de Soluciones de Intel, Sector Público, explora cómo las organizaciones pueden pasar de simplemente acumular datos a utilizarlos como un activo estratégico."
 ---
 
 <div>
 {% include transistor.html id="f15f756b" title="#19 Using Data as a Strategic Asset" %}
 
-{% include youtube.html id="TNIK5d9oM4A" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

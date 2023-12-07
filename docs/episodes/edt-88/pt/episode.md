@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste episódio, Darren conversa com Callen Sapien, Diretor de Gerenciamento de Produtos da Sophos Factory, e Mike Fraser, VP de DevSecOps, sobre seu produto que permite uma colaboração verdadeiramente integrada entre Segurança, Desenvolvimento e Operações (SecDevOps)."
-video: "https://youtu.be/4wm1mLse5eM"
+video: "https://youtu.be/url"
 description: "Neste episódio, Darren conversa com Callen Sapien, Diretor de Gerenciamento de Produtos da Sophos Factory, e Mike Fraser, VP de DevSecOps, sobre seu produto que permite uma colaboração verdadeiramente integrada entre Segurança, Desenvolvimento e Operações (SecDevOps)."
 ---
 
 <div>
 {% include transistor.html id="7c72a8c7" title="#88 Collaborative DevSecOps" %}
 
-{% include youtube.html id="4wm1mLse5eM" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

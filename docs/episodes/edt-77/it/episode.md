@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Intel's Darren Pulsipher, Chief Solution Architect, Dr. Anna Scott, Chief Edge Architect, and Gretchen Stewart, Chief Data Scientist discutono dei sei pilastri della trasformazione digitale nel 2022: informatica multi-cloud, informatica periferica, intelligenza artificiale, apprendimento automatico, sicurezza informatica, gestione dei dati e comunicazioni."
-video: "https://youtu.be/-UsayFp-UwY"
+video: "https://youtu.be/url"
 description: "Intel's Darren Pulsipher, Chief Solution Architect, Dr. Anna Scott, Chief Edge Architect, and Gretchen Stewart, Chief Data Scientist discutono dei sei pilastri della trasformazione digitale nel 2022: informatica multi-cloud, informatica periferica, intelligenza artificiale, apprendimento automatico, sicurezza informatica, gestione dei dati e comunicazioni."
 ---
 
 <div>
 {% include transistor.html id="94c4fde2" title="#77 Digital Transformation in 2022" %}
 
-{% include youtube.html id="-UsayFp-UwY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

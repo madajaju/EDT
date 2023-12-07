@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Databases are showing their age, still taking some time to get results. Aerospike, with the help of Intel technology (Optane), breaks through with speed, volume, and low latency. Tim Faulkes, Vice President of Solutions Architecture at Aerospike, joins Darren Pulsipher, Chief Solutions Architect, Intel, to discuss the benefits of Aerospike technology."
-video: "https://youtu.be/btMNND3AH7Q"
+video: "https://youtu.be/url"
 description: "Databases are showing their age, still taking some time to get results. Aerospike, with the help of Intel technology (Optane), breaks through with speed, volume, and low latency. Tim Faulkes, Vice President of Solutions Architecture at Aerospike, joins Darren Pulsipher, Chief Solutions Architect, Intel, to discuss the benefits of Aerospike technology."
 ---
 
 <div>
 {% include transistor.html id="1280ea95" title="#29 Next-Generation Hyperscale Database - Aerospike" %}
 
-{% include youtube.html id="btMNND3AH7Q" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

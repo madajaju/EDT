@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Beseitigen Sie die Barrieren zur Beschleunigung der medizinischen Forschung für die Heilung von Krebs mit vertraulichem Computing. Nick Bhadange, Technologie-Spezialist bei AI-Vets, und Darren Pulsipher, Chef-Lösungsarchitekt im öffentlichen Sektor bei Intel, diskutieren den Bedarf an vertraulichem Computing im Gesundheitswesen und die potenziellen Vorteile anhand von Anwendungsfällen."
-video: "https://youtu.be/owwhD3g7xRE"
+video: "https://youtu.be/url"
 description: "Beseitigen Sie die Barrieren zur Beschleunigung der medizinischen Forschung für die Heilung von Krebs mit vertraulichem Computing. Nick Bhadange, Technologie-Spezialist bei AI-Vets, und Darren Pulsipher, Chef-Lösungsarchitekt im öffentlichen Sektor bei Intel, diskutieren den Bedarf an vertraulichem Computing im Gesundheitswesen und die potenziellen Vorteile anhand von Anwendungsfällen."
 ---
 
 <div>
 {% include transistor.html id="558eb1c5" title="#40 Collaborative Medical Research with Confidential Computing" %}
 
-{% include youtube.html id="owwhD3g7xRE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

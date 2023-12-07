@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Uma das áreas em crescimento para auxiliar na Integração Legada e automação de integração é o uso de ferramentas e estruturas de automação. Nos últimos 3 anos, tem surgido um foco significativo na automação de fluxos de trabalho com aplicativos herdados e novos aplicativos conscientes da nuvem para trabalhadores da informação. Esses conjuntos de ferramentas são chamados de ferramentas de Automação de Processos Robóticos (RPA). Darren Pulsipher, Arquiteto-chefe de Soluções, Setor Público, Intel, analisa a indústria de Automação de Processos Robóticos (RPA) e as ofertas de ferramentas."
-video: "https://youtu.be/F15k-tmLXt4"
+video: "https://youtu.be/url"
 description: "Uma das áreas em crescimento para auxiliar na Integração Legada e automação de integração é o uso de ferramentas e estruturas de automação. Nos últimos 3 anos, tem surgido um foco significativo na automação de fluxos de trabalho com aplicativos herdados e novos aplicativos conscientes da nuvem para trabalhadores da informação. Esses conjuntos de ferramentas são chamados de ferramentas de Automação de Processos Robóticos (RPA). Darren Pulsipher, Arquiteto-chefe de Soluções, Setor Público, Intel, analisa a indústria de Automação de Processos Robóticos (RPA) e as ofertas de ferramentas."
 ---
 
 <div>
 {% include transistor.html id="73edaeb8" title="#28 Legacy Integration with Cloud and RPA" %}
 
-{% include youtube.html id="F15k-tmLXt4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

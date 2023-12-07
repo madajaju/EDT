@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Intel's Darren Pulsipher, Chief Solution Architect, Dr. Anna Scott, Chief Edge Architect, und Gretchen Stewart, Chief Data Scientist, diskutieren die sechs Säulen der digitalen Transformation im Jahr 2022: Multi-Cloud Computing, Edge Computing, Künstliche Intelligenz, Maschinelles Lernen, Cyber-Sicherheit, Datenmanagement und Kommunikation."
-video: "https://youtu.be/-UsayFp-UwY"
+video: "https://youtu.be/url"
 description: "Intel's Darren Pulsipher, Chief Solution Architect, Dr. Anna Scott, Chief Edge Architect, und Gretchen Stewart, Chief Data Scientist, diskutieren die sechs Säulen der digitalen Transformation im Jahr 2022: Multi-Cloud Computing, Edge Computing, Künstliche Intelligenz, Maschinelles Lernen, Cyber-Sicherheit, Datenmanagement und Kommunikation."
 ---
 
 <div>
 {% include transistor.html id="94c4fde2" title="#77 Digital Transformation in 2022" %}
 
-{% include youtube.html id="-UsayFp-UwY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect bei Intel, spricht mit Uzair Hussain, CEO von District Zero, darüber, wie die App des Unternehmens, die die psychische Gesundheit von Schülern der Klassen K-12 unterstützt, dazu beitragen kann, ein Ausbrennen der Mitarbeiter zu verhindern."
-video: "https://youtu.be/J-1KQ-J6j18"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solution Architect bei Intel, spricht mit Uzair Hussain, CEO von District Zero, darüber, wie die App des Unternehmens, die die psychische Gesundheit von Schülern der Klassen K-12 unterstützt, dazu beitragen kann, ein Ausbrennen der Mitarbeiter zu verhindern."
 ---
 
 <div>
 {% include transistor.html id="4a31ff22" title="#50 Understanding Employee Burnout" %}
 
-{% include youtube.html id="J-1KQ-J6j18" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

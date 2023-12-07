@@ -21,14 +21,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Le leader d'opinion Andrew Padilla de Datacequia envisage de nouveaux développements dans la gestion des données et la collaboration, qui permettraient aux données de progresser, tout comme le logiciel, en termes de visibilité, d'accessibilité, d'utilisabilité et de portabilité. Il explique comment une infrastructure composable répondrait aux préoccupations des ingénieurs logiciels et des scientifiques des données."
-video: "https://youtu.be/F1hfANcSQj4"
+video: "https://youtu.be/url"
 description: "Le leader d'opinion Andrew Padilla de Datacequia envisage de nouveaux développements dans la gestion des données et la collaboration, qui permettraient aux données de progresser, tout comme le logiciel, en termes de visibilité, d'accessibilité, d'utilisabilité et de portabilité. Il explique comment une infrastructure composable répondrait aux préoccupations des ingénieurs logiciels et des scientifiques des données."
 ---
 
 <div>
 {% include transistor.html id="4272c3a1" title="#13 Illogical Obsession with Logic" %}
 
-{% include youtube.html id="F1hfANcSQj4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

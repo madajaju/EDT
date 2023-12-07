@@ -23,14 +23,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Darren Pulsipher, Chief Solutions Architect, Intel, discusses the barriers to adopting new technologies in the public sector and what is coming in the future with Glenn Kurowski, CTO of CACI."
-video: "https://youtu.be/wJKIfcqoA6M"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solutions Architect, Intel, discusses the barriers to adopting new technologies in the public sector and what is coming in the future with Glenn Kurowski, CTO of CACI."
 ---
 
 <div>
 {% include transistor.html id="4b764885" title="#90 Barriers to Future Tech Adoption" %}
 
-{% include youtube.html id="wJKIfcqoA6M" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

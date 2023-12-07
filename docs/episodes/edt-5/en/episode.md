@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Digital transformation can be difficult. Many organizations become paralyzed when trying to decipher all of the technologies that are thrown at them every day. On this journey, like any other, it is important to have a map. In this episode, Darren explains the Infrastructure Maturity Model to help organizations find out where they are in their digital transformation, where they can go next, and how to get there."
-video: "https://youtu.be/ZMEXlPBn82o"
+video: "https://youtu.be/url"
 description: "Digital transformation can be difficult. Many organizations become paralyzed when trying to decipher all of the technologies that are thrown at them every day. On this journey, like any other, it is important to have a map. In this episode, Darren explains the Infrastructure Maturity Model to help organizations find out where they are in their digital transformation, where they can go next, and how to get there."
 ---
 
 <div>
 {% include transistor.html id="d5cf91e3" title="#5 Infrastructure Maturity Model" %}
 
-{% include youtube.html id="ZMEXlPBn82o" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

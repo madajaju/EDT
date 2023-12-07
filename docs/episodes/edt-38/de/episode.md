@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode fragt Darren Pulsipher, Chief Solution Architect bei Intel, Rachel Mushawar, VP of Sales bei Intel, nach ihrem Einblick, was die Zukunft der Goldenen Zwanziger nach der Unterbrechung durch COVID-19 bereithält."
-video: "https://youtu.be/4O-3WndRbU0"
+video: "https://youtu.be/url"
 description: "In dieser Episode fragt Darren Pulsipher, Chief Solution Architect bei Intel, Rachel Mushawar, VP of Sales bei Intel, nach ihrem Einblick, was die Zukunft der Goldenen Zwanziger nach der Unterbrechung durch COVID-19 bereithält."
 ---
 
 <div>
 {% include transistor.html id="837567c1" title="#38 Roaring 20's a Look Forward to 2021" %}
 
-{% include youtube.html id="4O-3WndRbU0" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

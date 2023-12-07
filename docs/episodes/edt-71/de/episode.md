@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, der Chief Solution Architect bei Intel, führt seine ausführliche Diskussion über die Realität und Zukunft moderner Datenverwaltung mit Matthew Carroll, dem CEO von Immuta, fort. In dieser Episode diskutieren sie Datenklassifikation, Richtlinien und Governance."
-video: "https://youtu.be/Qv8Y32qjaGA"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, der Chief Solution Architect bei Intel, führt seine ausführliche Diskussion über die Realität und Zukunft moderner Datenverwaltung mit Matthew Carroll, dem CEO von Immuta, fort. In dieser Episode diskutieren sie Datenklassifikation, Richtlinien und Governance."
 ---
 
 <div>
 {% include transistor.html id="068a1dff" title="#71 Modern Data Governance" %}
 
-{% include youtube.html id="Qv8Y32qjaGA" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

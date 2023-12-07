@@ -17,14 +17,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher descrive perché un architetto di Multi-Hybrid Cloud potrebbe già essere nel tuo Data Center. La maggior parte delle organizzazioni ha già tutti gli ingredienti. Devono solo capire come si integrano tra loro."
-video: "https://youtu.be/1cISpr_FNFM"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher descrive perché un architetto di Multi-Hybrid Cloud potrebbe già essere nel tuo Data Center. La maggior parte delle organizzazioni ha già tutti gli ingredienti. Devono solo capire come si integrano tra loro."
 ---
 
 <div>
 {% include transistor.html id="e22edf51" title="#22 An Argument for Multi-Hybrid Cloud" %}
 
-{% include youtube.html id="1cISpr_FNFM" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

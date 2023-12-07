@@ -21,14 +21,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Líder de pensamento Andrew Padilla, da Datacequia, vislumbra novos avanços na gestão de dados e colaboração que permitiriam que os dados evoluíssem da mesma forma que o software em termos de visibilidade, acessibilidade, usabilidade e portabilidade. Ele descreve como uma infraestrutura componível abordaria as preocupações tanto de engenheiros de software quanto de cientistas de dados."
-video: "https://youtu.be/F1hfANcSQj4"
+video: "https://youtu.be/url"
 description: "Líder de pensamento Andrew Padilla, da Datacequia, vislumbra novos avanços na gestão de dados e colaboração que permitiriam que os dados evoluíssem da mesma forma que o software em termos de visibilidade, acessibilidade, usabilidade e portabilidade. Ele descreve como uma infraestrutura componível abordaria as preocupações tanto de engenheiros de software quanto de cientistas de dados."
 ---
 
 <div>
 {% include transistor.html id="4272c3a1" title="#13 Illogical Obsession with Logic" %}
 
-{% include youtube.html id="F1hfANcSQj4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

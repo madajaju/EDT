@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, arquitecto principal de soluciones de Intel, discute la realidad y futuro de la gobernanza de datos moderna con Matthew Carroll, CEO de Immuta."
-video: "https://youtu.be/Y-mBQoKQvHM"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, arquitecto principal de soluciones de Intel, discute la realidad y futuro de la gobernanza de datos moderna con Matthew Carroll, CEO de Immuta."
 ---
 
 <div>
 {% include transistor.html id="752e2562" title="#70 Modern Data Governance" %}
 
-{% include youtube.html id="Y-mBQoKQvHM" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

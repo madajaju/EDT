@@ -18,14 +18,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In this episode, Darren interviews Michael Mehlberg about increasing confidence in open source through background checking the open source communities."
-video: "https://youtu.be/FhrAWLUEN-Q"
+video: "https://youtu.be/url"
 description: "In this episode, Darren interviews Michael Mehlberg about increasing confidence in open source through background checking the open source communities."
 ---
 
 <div>
 {% include transistor.html id="d17c9ba3" title="#140 Background Checking Your Open Source" %}
 
-{% include youtube.html id="FhrAWLUEN-Q" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -35,14 +35,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "In questo episodio del podcast, Darren Pulsipher, architetto delle soluzioni principale del settore pubblico presso Intel, intervista Laura Torres Newey, autrice di successo del New York Times e professore universitario, riguardo all'impatto dell'IA generativa nell'istruzione superiore. Questo episodio approfondisce le sfide e le opportunità presentate dall'integrazione dell'IA generativa in aula, mettendo in evidenza la necessità di abilità di pensiero critico, le preoccupazioni legate ai pregiudizi e garantire la conservazione di voci uniche."
-video: "https://youtu.be/HpKkZliyFAk"
+video: "https://youtu.be/url"
 description: "In questo episodio del podcast, Darren Pulsipher, architetto delle soluzioni principale del settore pubblico presso Intel, intervista Laura Torres Newey, autrice di successo del New York Times e professore universitario, riguardo all'impatto dell'IA generativa nell'istruzione superiore. Questo episodio approfondisce le sfide e le opportunità presentate dall'integrazione dell'IA generativa in aula, mettendo in evidenza la necessità di abilità di pensiero critico, le preoccupazioni legate ai pregiudizi e garantire la conservazione di voci uniche."
 ---
 
 <div>
 {% include transistor.html id="cb47f20b" title="#158 GenAI in Higher Education" %}
 
-{% include youtube.html id="HpKkZliyFAk" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

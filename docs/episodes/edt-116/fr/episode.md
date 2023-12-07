@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, Darren parle de la convergence de la cybersécurité des technologies opérationnelles et informatiques avec l'expert en sécurité Steve Orrin et l'expert en technologies opérationnelles industrielles, le Dr Anna Scott."
-video: "https://youtu.be/DRGy_il_nUg"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, Darren parle de la convergence de la cybersécurité des technologies opérationnelles et informatiques avec l'expert en sécurité Steve Orrin et l'expert en technologies opérationnelles industrielles, le Dr Anna Scott."
 ---
 
 <div>
 {% include transistor.html id="b7873e57" title="#116 An Argument for a Holistic approach to Critical Infrastructure Security" %}
 
-{% include youtube.html id="DRGy_il_nUg" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

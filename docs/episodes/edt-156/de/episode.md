@@ -40,14 +40,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In der Podcast-Episode diskutiert der pensionierte Konteradmiral Ron Fritzmeier mit Gastgeber Darren Pulsipher die Bedeutung des Datenmanagements im Kontext der generativen künstlichen Intelligenz (KI). Mit einem Hintergrund in Elektrotechnik und umfangreicher Erfahrung in den Bereichen Cyber und Cybersicherheit liefert Ron wertvolle Einblicke in das sich entwickelnde Feld des Datenmanagements und seine entscheidende Rolle für den Erfolg von Organisationen im digitalen Zeitalter."
-video: "https://youtu.be/CLjlF8cVq0c"
+video: "https://youtu.be/url"
 description: "In der Podcast-Episode diskutiert der pensionierte Konteradmiral Ron Fritzmeier mit Gastgeber Darren Pulsipher die Bedeutung des Datenmanagements im Kontext der generativen künstlichen Intelligenz (KI). Mit einem Hintergrund in Elektrotechnik und umfangreicher Erfahrung in den Bereichen Cyber und Cybersicherheit liefert Ron wertvolle Einblicke in das sich entwickelnde Feld des Datenmanagements und seine entscheidende Rolle für den Erfolg von Organisationen im digitalen Zeitalter."
 ---
 
 <div>
 {% include transistor.html id="60a9723c" title="#156 Becoming a Data Ready Organization" %}
 
-{% include youtube.html id="CLjlF8cVq0c" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

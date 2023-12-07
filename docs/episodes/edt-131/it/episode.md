@@ -25,14 +25,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "In questo episodio, Darren intervista Mark Valcich, direttore e GM del settore civile federale nel settore pubblico presso Intel. Gli anni di esperienza di Mark emergono mentre descrive le attuali tendenze nella trasformazione digitale nel governo civile federale."
-video: "https://youtu.be/eZ2UfSwdcwo"
+video: "https://youtu.be/url"
 description: "In questo episodio, Darren intervista Mark Valcich, direttore e GM del settore civile federale nel settore pubblico presso Intel. Gli anni di esperienza di Mark emergono mentre descrive le attuali tendenze nella trasformazione digitale nel governo civile federale."
 ---
 
 <div>
 {% include transistor.html id="e78c9823" title="#131 Digital Transformation in Federal Government" %}
 
-{% include youtube.html id="eZ2UfSwdcwo" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

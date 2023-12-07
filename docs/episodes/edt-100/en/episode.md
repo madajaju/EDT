@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "On this episode, Darren and Cameron Chehreh, Vice President and General Manager of Public Sector, Intel, talk about Intel’s superpowers: ubiquitous compute, pervasive connectivity, edge to cloud, and artificial intelligence."
-video: "https://youtu.be/QePpk6VExyE"
+video: "https://youtu.be/url"
 description: "On this episode, Darren and Cameron Chehreh, Vice President and General Manager of Public Sector, Intel, talk about Intel’s superpowers: ubiquitous compute, pervasive connectivity, edge to cloud, and artificial intelligence."
 ---
 
 <div>
 {% include transistor.html id="7bf9fc65" title="#100 Intel's Public Sector Superheroes" %}
 
-{% include youtube.html id="QePpk6VExyE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

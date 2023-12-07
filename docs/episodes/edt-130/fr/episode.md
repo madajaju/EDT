@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, Darren interviewe son fils Matthew Pulsipher sur la productisation de l'IA décisionnelle. Matthew a récemment modernisé son pipeline de développement de produits pour inclure l'IA décisionnelle dans son processus de développement de produits."
-video: "https://youtu.be/x2sbb-2HI-o"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, Darren interviewe son fils Matthew Pulsipher sur la productisation de l'IA décisionnelle. Matthew a récemment modernisé son pipeline de développement de produits pour inclure l'IA décisionnelle dans son processus de développement de produits."
 ---
 
 <div>
 {% include transistor.html id="d5430a4b" title="#130 Productizing Decisional AI" %}
 
-{% include youtube.html id="x2sbb-2HI-o" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

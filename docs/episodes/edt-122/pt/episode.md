@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste episódio, Darren entrevista o ChatGPT da OpenAI sobre a utilização da IA para automação, a ética de usar IA e a substituição de trabalhadores de informação."
-video: "https://youtu.be/SHfQWxb-o6Y"
+video: "https://youtu.be/url"
 description: "Neste episódio, Darren entrevista o ChatGPT da OpenAI sobre a utilização da IA para automação, a ética de usar IA e a substituição de trabalhadores de informação."
 ---
 
 <div>
 {% include transistor.html id="294ba5d0" title="#122 Automation with AI" %}
 
-{% include youtube.html id="SHfQWxb-o6Y" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, l'animateur Darren Pulsipher a interviewé le Dr Jeffrey Lancaster de Dell Technologies. Leur discussion s'est centrée sur l'IA générative et son impact potentiel."
-video: "https://youtu.be/eRoHyHFdKqE"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, l'animateur Darren Pulsipher a interviewé le Dr Jeffrey Lancaster de Dell Technologies. Leur discussion s'est centrée sur l'IA générative et son impact potentiel."
 ---
 
 <div>
 {% include transistor.html id="f313bebc" title="#151 Understanding Generative AI" %}
 
-{% include youtube.html id="eRoHyHFdKqE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

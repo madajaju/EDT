@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, Robert Boule, responsable de l'ingénierie des solutions chez OpsMx, rejoint Darren pour parler d'améliorer la vitesse sans augmenter le risque dans le processus DevOps. Les trois domaines clés à équilibrer dans la livraison de logiciels sont la vitesse, le risque et la qualité. La plupart des gens peuvent gérer un ou deux de ces éléments, mais ajouter le troisième peut être difficile. Par exemple, vous pourriez être capable de livrer à une bonne vitesse parce que vous avez un excellent système de déploiements continus, mais une fois que vous introduisez des contrôles de conformité et de politique, vous êtes confronté à un défi. Est-ce que vous vous arrêtez et vérifiez ces choses, ou peut-être importez-vous des résultats d'un autre outil ? Soudainement, votre vitesse en souffre."
-video: "https://youtu.be/50gM62Tl0Tw"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, Robert Boule, responsable de l'ingénierie des solutions chez OpsMx, rejoint Darren pour parler d'améliorer la vitesse sans augmenter le risque dans le processus DevOps. Les trois domaines clés à équilibrer dans la livraison de logiciels sont la vitesse, le risque et la qualité. La plupart des gens peuvent gérer un ou deux de ces éléments, mais ajouter le troisième peut être difficile. Par exemple, vous pourriez être capable de livrer à une bonne vitesse parce que vous avez un excellent système de déploiements continus, mais une fois que vous introduisez des contrôles de conformité et de politique, vous êtes confronté à un défi. Est-ce que vous vous arrêtez et vérifiez ces choses, ou peut-être importez-vous des résultats d'un autre outil ? Soudainement, votre vitesse en souffre."
 ---
 
 <div>
 {% include transistor.html id="9eb5fd35" title="#53 DevOps with Speed While Reducing Risk" %}
 
-{% include youtube.html id="50gM62Tl0Tw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -28,14 +28,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio Darren revisa 2022. Identifica los temas más hablados en el podcast en 2022, incluyendo Gestión de Datos, Inteligencia Artificial, Ciberseguridad, Computación en la Nube y Espacios de Trabajo Híbridos."
-video: "https://youtu.be/lxRMINWH48g"
+video: "https://youtu.be/url"
 description: "En este episodio Darren revisa 2022. Identifica los temas más hablados en el podcast en 2022, incluyendo Gestión de Datos, Inteligencia Artificial, Ciberseguridad, Computación en la Nube y Espacios de Trabajo Híbridos."
 ---
 
 <div>
 {% include transistor.html id="b50f4fda" title="#117 2022 Year In Review" %}
 
-{% include youtube.html id="lxRMINWH48g" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

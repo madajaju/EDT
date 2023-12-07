@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "On our last episode, Erin Moseley, Sr. Account Exec for Education at Intel, and Grant Kelly, Solution Architect for Education at Intel joined Darren to talk about the technological challenges and options in distance learning. In this episode, we delve more deeply into privacy and security threats and solutions."
-video: "https://youtu.be/fGjvx9pKqT8"
+video: "https://youtu.be/url"
 description: "On our last episode, Erin Moseley, Sr. Account Exec for Education at Intel, and Grant Kelly, Solution Architect for Education at Intel joined Darren to talk about the technological challenges and options in distance learning. In this episode, we delve more deeply into privacy and security threats and solutions."
 ---
 
 <div>
 {% include transistor.html id="03c2f4f9" title="#12 Put the Title Right Here" %}
 
-{% include youtube.html id="fGjvx9pKqT8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

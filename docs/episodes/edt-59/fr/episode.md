@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, architecte en chef des solutions chez Intel, discute de la signification réelle de la vie privée des données et de son orientation future avec Jeremy Harris, avocat général adjoint - Vie privée/Sécurité de l'information, chez Sutter Health."
-video: "https://youtu.be/Bjcs4C1_bj8"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, architecte en chef des solutions chez Intel, discute de la signification réelle de la vie privée des données et de son orientation future avec Jeremy Harris, avocat général adjoint - Vie privée/Sécurité de l'information, chez Sutter Health."
 ---
 
 <div>
 {% include transistor.html id="e9b6d30c" title="#59 Evolution of Data Privacy" %}
 
-{% include youtube.html id="Bjcs4C1_bj8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

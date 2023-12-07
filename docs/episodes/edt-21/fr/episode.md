@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Charles Fan, PDG de MemVerge, discute avec Darren Pulsipher, architecte en chef des solutions pour le secteur public chez Intel, de leur nouvelle technologie, les contrôleurs de mémoire définis par logiciel Big Memory. La technologie utilise la mémoire persistante Intel 3D XPoint Optane pour combler efficacement le fossé entre les architectures actuelles et futures, tout en offrant une plus grande capacité, des coûts plus bas et la persistance."
-video: "https://youtu.be/LTMWXuu59Po"
+video: "https://youtu.be/url"
 description: "Charles Fan, PDG de MemVerge, discute avec Darren Pulsipher, architecte en chef des solutions pour le secteur public chez Intel, de leur nouvelle technologie, les contrôleurs de mémoire définis par logiciel Big Memory. La technologie utilise la mémoire persistante Intel 3D XPoint Optane pour combler efficacement le fossé entre les architectures actuelles et futures, tout en offrant une plus grande capacité, des coûts plus bas et la persistance."
 ---
 
 <div>
 {% include transistor.html id="0458954e" title="#21 Big Memory Software Defined Memory Controller" %}
 
-{% include youtube.html id="LTMWXuu59Po" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

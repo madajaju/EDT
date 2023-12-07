@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Podcast-Episode von "Digitaler Transformation annehmen" teilt Dr. Pamela Follett, eine Neurologin und Mitbegründerin von Lewis Rhodes Labs, ihren Hintergrund und ihre Expertise auf dem Gebiet der Neurologie, insbesondere in Bezug auf Forschung zum sich entwickelnden Gehirn im frühen Kindesalter."
-video: "https://youtu.be/Dv4AdtHNQio"
+video: "https://youtu.be/url"
 description: "In dieser Podcast-Episode von "Digitaler Transformation annehmen" teilt Dr. Pamela Follett, eine Neurologin und Mitbegründerin von Lewis Rhodes Labs, ihren Hintergrund und ihre Expertise auf dem Gebiet der Neurologie, insbesondere in Bezug auf Forschung zum sich entwickelnden Gehirn im frühen Kindesalter."
 ---
 
 <div>
 {% include transistor.html id="f3b2a27c" title="#141 From Neurology to Neuromorphic Computing" %}
 
-{% include youtube.html id="Dv4AdtHNQio" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

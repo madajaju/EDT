@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo episodio, Darren parla con il Lieutenant General Thomas Horlander, che ha recentemente fatto parte del Team Pubblico del settore Intel, sulla catena di fornitura delle microelettroniche e la sicurezza nazionale."
-video: "https://youtu.be/zxcRt7vv7LE"
+video: "https://youtu.be/url"
 description: "In questo episodio, Darren parla con il Lieutenant General Thomas Horlander, che ha recentemente fatto parte del Team Pubblico del settore Intel, sulla catena di fornitura delle microelettroniche e la sicurezza nazionale."
 ---
 
 <div>
 {% include transistor.html id="fa673cc9" title="#110 Securing the Supply Chain" %}
 
-{% include youtube.html id="zxcRt7vv7LE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

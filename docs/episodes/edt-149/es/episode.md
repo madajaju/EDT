@@ -21,14 +21,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, Darren se reúne con Leland Brown, un ingeniero principal en Capgemini y un invitado previo en el programa, para discutir los próximos avances de la tecnología 5G en el Departamento de Defensa de Estados Unidos."
-video: "https://youtu.be/QhJmv7jIb30"
+video: "https://youtu.be/url"
 description: "En este episodio, Darren se reúne con Leland Brown, un ingeniero principal en Capgemini y un invitado previo en el programa, para discutir los próximos avances de la tecnología 5G en el Departamento de Defensa de Estados Unidos."
 ---
 
 <div>
 {% include transistor.html id="e78b6882" title="#149 Update on 5G in the Department of Defense" %}
 
-{% include youtube.html id="QhJmv7jIb30" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

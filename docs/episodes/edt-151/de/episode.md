@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Folge führte Gastgeber Darren Pulsipher ein Interview mit Dr. Jeffrey Lancaster von Dell Technologies. Ihre Diskussion drehte sich um generative KI und deren potenzielle Auswirkungen."
-video: "https://youtu.be/eRoHyHFdKqE"
+video: "https://youtu.be/url"
 description: "In dieser Folge führte Gastgeber Darren Pulsipher ein Interview mit Dr. Jeffrey Lancaster von Dell Technologies. Ihre Diskussion drehte sich um generative KI und deren potenzielle Auswirkungen."
 ---
 
 <div>
 {% include transistor.html id="f313bebc" title="#151 Understanding Generative AI" %}
 
-{% include youtube.html id="eRoHyHFdKqE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

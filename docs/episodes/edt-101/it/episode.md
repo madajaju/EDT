@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher di Intel, Chief Solutions Architect, settore pubblico, intervista gli esperti di sicurezza di rete Dana Yanch e Dan Demers di Elisity sulle tecniche di sicurezza del controller di rete e sulle architetture di fiducia zero."
-video: "https://youtu.be/st0HrHNmEUI"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher di Intel, Chief Solutions Architect, settore pubblico, intervista gli esperti di sicurezza di rete Dana Yanch e Dan Demers di Elisity sulle tecniche di sicurezza del controller di rete e sulle architetture di fiducia zero."
 ---
 
 <div>
 {% include transistor.html id="d4feba70" title="#101 Network Controller Security with Elisity" %}
 
-{% include youtube.html id="st0HrHNmEUI" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

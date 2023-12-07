@@ -40,14 +40,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "No episódio do podcast, o Almirante da reserva Ron Fritzmeier junta-se ao apresentador Darren Pulsipher para discutir a importância da gestão de dados no contexto da inteligência artificial (IA) generativa. Com formação em engenharia elétrica e ampla experiência nos campos de cibersegurança e segurança cibernética, Ron fornece insights valiosos sobre o campo em evolução da gestão de dados e seu papel crítico no sucesso organizacional na era digital."
-video: "https://youtu.be/CLjlF8cVq0c"
+video: "https://youtu.be/url"
 description: "No episódio do podcast, o Almirante da reserva Ron Fritzmeier junta-se ao apresentador Darren Pulsipher para discutir a importância da gestão de dados no contexto da inteligência artificial (IA) generativa. Com formação em engenharia elétrica e ampla experiência nos campos de cibersegurança e segurança cibernética, Ron fornece insights valiosos sobre o campo em evolução da gestão de dados e seu papel crítico no sucesso organizacional na era digital."
 ---
 
 <div>
 {% include transistor.html id="60a9723c" title="#156 Becoming a Data Ready Organization" %}
 
-{% include youtube.html id="CLjlF8cVq0c" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

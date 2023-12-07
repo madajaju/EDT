@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste episódio, Robert Boule, Chefe de Engenharia de Soluções na OpsMx, junta-se a Darren para falar sobre como melhorar a velocidade sem aumentar o risco no processo DevOps. As três áreas-chave a equilibrar na entrega de software são velocidade, risco e qualidade. A maioria consegue gerenciar uma ou duas dessas coisas, mas adicionar a terceira pode se tornar difícil. Por exemplo, você pode ser capaz de entregar com velocidade porque possui um ótimo sistema de entrega contínua (cd), mas uma vez que você introduz verificações de conformidade e políticas, você enfrenta um desafio. Você para e verifica essas coisas, ou talvez importe alguns resultados de outra ferramenta? De repente, sua velocidade sofre."
-video: "https://youtu.be/50gM62Tl0Tw"
+video: "https://youtu.be/url"
 description: "Neste episódio, Robert Boule, Chefe de Engenharia de Soluções na OpsMx, junta-se a Darren para falar sobre como melhorar a velocidade sem aumentar o risco no processo DevOps. As três áreas-chave a equilibrar na entrega de software são velocidade, risco e qualidade. A maioria consegue gerenciar uma ou duas dessas coisas, mas adicionar a terceira pode se tornar difícil. Por exemplo, você pode ser capaz de entregar com velocidade porque possui um ótimo sistema de entrega contínua (cd), mas uma vez que você introduz verificações de conformidade e políticas, você enfrenta um desafio. Você para e verifica essas coisas, ou talvez importe alguns resultados de outra ferramenta? De repente, sua velocidade sofre."
 ---
 
 <div>
 {% include transistor.html id="9eb5fd35" title="#53 DevOps with Speed While Reducing Risk" %}
 
-{% include youtube.html id="50gM62Tl0Tw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

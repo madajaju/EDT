@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, and Jesse Schrater, Security Manager, Data Platforms Group, Intel, discuss the current security landscape and how Intel’s SGX and partnered ecosystem offers a timely and tested solution for data in use and other security concerns."
-video: "https://youtu.be/2F1AgMncBjs"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, and Jesse Schrater, Security Manager, Data Platforms Group, Intel, discuss the current security landscape and how Intel’s SGX and partnered ecosystem offers a timely and tested solution for data in use and other security concerns."
 ---
 
 <div>
 {% include transistor.html id="360a1ce9" title="#27 Hardware Security: Imperative for Transforming Data" %}
 
-{% include youtube.html id="2F1AgMncBjs" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

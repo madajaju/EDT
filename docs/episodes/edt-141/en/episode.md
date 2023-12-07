@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In this podcast episode of Embracing Digital Transformation, Dr. Pamela Follett, a neurologist and co-founder of Lewis Rhodes Labs, shares her background and expertise in the field of neurology, specifically with regards to research on the developing brain in early childhood."
-video: "https://youtu.be/Dv4AdtHNQio"
+video: "https://youtu.be/url"
 description: "In this podcast episode of Embracing Digital Transformation, Dr. Pamela Follett, a neurologist and co-founder of Lewis Rhodes Labs, shares her background and expertise in the field of neurology, specifically with regards to research on the developing brain in early childhood."
 ---
 
 <div>
 {% include transistor.html id="f3b2a27c" title="#141 From Neurology to Neuromorphic Computing" %}
 
-{% include youtube.html id="Dv4AdtHNQio" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

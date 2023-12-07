@@ -23,14 +23,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Randy Hayes de VAST Data et Darren Pulsipher, Architecte Principal des Solutions pour le Secteur Public chez Intel, discutent de l'architecture de stockage innovante de VAST Data qui élimine le besoin de niveaux en utilisant NVMe over Fabrics, QLC Flash et 3D XPoint Optane."
-video: "https://youtu.be/ZU6BDo0cFac"
+video: "https://youtu.be/url"
 description: "Randy Hayes de VAST Data et Darren Pulsipher, Architecte Principal des Solutions pour le Secteur Public chez Intel, discutent de l'architecture de stockage innovante de VAST Data qui élimine le besoin de niveaux en utilisant NVMe over Fabrics, QLC Flash et 3D XPoint Optane."
 ---
 
 <div>
 {% include transistor.html id="a3a3329f" title="#20 Destroying the Complexity of Storage Tiers" %}
 
-{% include youtube.html id="ZU6BDo0cFac" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

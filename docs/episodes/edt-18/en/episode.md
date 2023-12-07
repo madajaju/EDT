@@ -20,14 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Sarah Kalicin, Lead Data Scientist at Intel and Darren Pulsipher, Chief Solution Architect, Public Sector at Intel talk about the process and benefits of data collection and preparation in becoming a data-centric organization. This is step two in the journey of becoming a data-centric organization."
-video: "https://youtu.be/xdt93M5isEA"
+video: "https://youtu.be/url"
 description: "Sarah Kalicin, Lead Data Scientist at Intel and Darren Pulsipher, Chief Solution Architect, Public Sector at Intel talk about the process and benefits of data collection and preparation in becoming a data-centric organization. This is step two in the journey of becoming a data-centric organization."
 ---
 
 <div>
 {% include transistor.html id="ef0bf710" title="#18 Data Collection and Preparation" %}
 
-{% include youtube.html id="xdt93M5isEA" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

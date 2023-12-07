@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste episódio, Darren entrevista Aaron Reid da Verge.io sobre sua tecnologia revolucionária de nuvem privada que está disponibilizando nuvens privadas no data center e na borda."
-video: "https://youtu.be/NnIM_rSOJoM"
+video: "https://youtu.be/url"
 description: "Neste episódio, Darren entrevista Aaron Reid da Verge.io sobre sua tecnologia revolucionária de nuvem privada que está disponibilizando nuvens privadas no data center e na borda."
 ---
 
 <div>
 {% include transistor.html id="b7d0b41f" title="#121 Disruptive Private Clouds" %}
 
-{% include youtube.html id="NnIM_rSOJoM" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -27,14 +27,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans la partie 2 de Sécurité avec Elisity, Darren discute des solutions de micro-segmentation basées sur l'identité avec Dana Yanch, Directrice du marketing technique, et Dan Demers, Architecte technique."
-video: "https://youtu.be/L2g_PjWTlWI"
+video: "https://youtu.be/url"
 description: "Dans la partie 2 de Sécurité avec Elisity, Darren discute des solutions de micro-segmentation basées sur l'identité avec Dana Yanch, Directrice du marketing technique, et Dan Demers, Architecte technique."
 ---
 
 <div>
 {% include transistor.html id="f7d12ab8" title="#102 Identity-based Micro-segmentation with Elisity" %}
 
-{% include youtube.html id="L2g_PjWTlWI" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

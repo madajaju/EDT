@@ -21,14 +21,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In this episode, Darren reunites with Leland Brown, a principal engineer at Capgemini and a previous guest on the show, to discuss the upcoming advancements of 5G technology in the US Department of Defense."
-video: "https://youtu.be/QhJmv7jIb30"
+video: "https://youtu.be/url"
 description: "In this episode, Darren reunites with Leland Brown, a principal engineer at Capgemini and a previous guest on the show, to discuss the upcoming advancements of 5G technology in the US Department of Defense."
 ---
 
 <div>
 {% include transistor.html id="e78b6882" title="#149 Update on 5G in the Department of Defense" %}
 
-{% include youtube.html id="QhJmv7jIb30" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

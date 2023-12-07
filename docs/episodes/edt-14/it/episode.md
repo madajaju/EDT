@@ -18,14 +18,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "L'episodio di oggi è incentrato sull'avvio della tua organizzazione per diventare centrata sui dati e sul valore che ciò può portare. L'ospite speciale di Darren è Sarah Kalicin, data scientist principale per i data center presso Intel."
-video: "https://youtu.be/8kPURu_bcwg"
+video: "https://youtu.be/url"
 description: "L'episodio di oggi è incentrato sull'avvio della tua organizzazione per diventare centrata sui dati e sul valore che ciò può portare. L'ospite speciale di Darren è Sarah Kalicin, data scientist principale per i data center presso Intel."
 ---
 
 <div>
 {% include transistor.html id="c53aad7b" title="#14 Kickstarting Your Organizational Transformation to Become Data-Centric" %}
 
-{% include youtube.html id="8kPURu_bcwg" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "No artigo 5 de uma série, "Iniciando sua Transformação Organizacional para se Tornar Orientada a Dados", Sarah Kalicin, Cientista de Dados Líder, Intel, e Darren Pulsipher, Arquiteto Chefe de Soluções, Setor Público, Intel, discutem como criar insights usando IA e aprendizado de máquina em uma organização orientada a dados."
-video: "https://youtu.be/4uLg1TXhsi4"
+video: "https://youtu.be/url"
 description: "No artigo 5 de uma série, "Iniciando sua Transformação Organizacional para se Tornar Orientada a Dados", Sarah Kalicin, Cientista de Dados Líder, Intel, e Darren Pulsipher, Arquiteto Chefe de Soluções, Setor Público, Intel, discutem como criar insights usando IA e aprendizado de máquina em uma organização orientada a dados."
 ---
 
 <div>
 {% include transistor.html id="b16d9296" title="#23 Insight Creation in Data-Centric Organizations" %}
 
-{% include youtube.html id="4uLg1TXhsi4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

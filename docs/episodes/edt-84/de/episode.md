@@ -21,14 +21,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Folge diskutiert Darren das Thema "Zero Trust Security" mit Steve Orrin, CTO Public Sector von Intel, und Cameron Chehreh, VP-GM Public Sector."
-video: "https://youtu.be/BymmhNfm6pE"
+video: "https://youtu.be/url"
 description: "In dieser Folge diskutiert Darren das Thema "Zero Trust Security" mit Steve Orrin, CTO Public Sector von Intel, und Cameron Chehreh, VP-GM Public Sector."
 ---
 
 <div>
 {% include transistor.html id="e3f35ec7" title="#84 Securing Your Castle with Zero-Trust" %}
 
-{% include youtube.html id="BymmhNfm6pE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

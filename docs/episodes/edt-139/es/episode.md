@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, Darren entrevista a Adrian Kosowski, CPO de Pathway, sobre su capacidad única para manejar datos logísticos desde el borde en entornos DDIL con análisis en tiempo real."
-video: "https://youtu.be/Yn-EUssQG04"
+video: "https://youtu.be/url"
 description: "En este episodio, Darren entrevista a Adrian Kosowski, CPO de Pathway, sobre su capacidad única para manejar datos logísticos desde el borde en entornos DDIL con análisis en tiempo real."
 ---
 
 <div>
 {% include transistor.html id="c01d3f47" title="#139 Resilient Logistical Analytics" %}
 
-{% include youtube.html id="Yn-EUssQG04" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

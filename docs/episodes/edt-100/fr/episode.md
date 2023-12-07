@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, Darren et Cameron Chehreh, vice-président et directeur général du secteur public chez Intel, parlent des super pouvoirs d'Intel : l'informatique omniprésente, la connectivité omniprésente, le bord vers le cloud et l'intelligence artificielle."
-video: "https://youtu.be/QePpk6VExyE"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, Darren et Cameron Chehreh, vice-président et directeur général du secteur public chez Intel, parlent des super pouvoirs d'Intel : l'informatique omniprésente, la connectivité omniprésente, le bord vers le cloud et l'intelligence artificielle."
 ---
 
 <div>
 {% include transistor.html id="7bf9fc65" title="#100 Intel's Public Sector Superheroes" %}
 
-{% include youtube.html id="QePpk6VExyE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

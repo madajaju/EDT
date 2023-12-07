@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Abbattete le barriere per accelerare la ricerca medica per la cura del cancro con il calcolo confidenziale. Nick Bhadange, Technology Specialist, AI-Vets e Darren Pulsipher, Chief Solution Architect, Settore Pubblico, Intel, discutono la necessità di calcolo confidenziale nel settore sanitario e i potenziali vantaggi attraverso casi d'uso."
-video: "https://youtu.be/owwhD3g7xRE"
+video: "https://youtu.be/url"
 description: "Abbattete le barriere per accelerare la ricerca medica per la cura del cancro con il calcolo confidenziale. Nick Bhadange, Technology Specialist, AI-Vets e Darren Pulsipher, Chief Solution Architect, Settore Pubblico, Intel, discutono la necessità di calcolo confidenziale nel settore sanitario e i potenziali vantaggi attraverso casi d'uso."
 ---
 
 <div>
 {% include transistor.html id="558eb1c5" title="#40 Collaborative Medical Research with Confidential Computing" %}
 
-{% include youtube.html id="owwhD3g7xRE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

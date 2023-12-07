@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Arquitecto Principal de Soluciones, Sector Público, Intel, y John Evans, Asesor Principal de Tecnología, WWT, discuten cinco mitos de migración de la nube "lift and shift"."
-video: "https://youtu.be/7pQKyV45ay4"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Arquitecto Principal de Soluciones, Sector Público, Intel, y John Evans, Asesor Principal de Tecnología, WWT, discuten cinco mitos de migración de la nube "lift and shift"."
 ---
 
 <div>
 {% include transistor.html id="cfd34037" title="#112 Myths of Lift and Shift Cloud Migration" %}
 
-{% include youtube.html id="7pQKyV45ay4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

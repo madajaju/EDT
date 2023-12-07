@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio de podcast, Darren Pulsipher, arquitecto jefe de soluciones de Intel para el sector público, es entrevistado por la presentadora invitada, la Dra. Anna Scott, sobre datos resilientes con comunicaciones disruptivas."
-video: "https://youtu.be/XhtXz6hx9AY"
+video: "https://youtu.be/url"
 description: "En este episodio de podcast, Darren Pulsipher, arquitecto jefe de soluciones de Intel para el sector público, es entrevistado por la presentadora invitada, la Dra. Anna Scott, sobre datos resilientes con comunicaciones disruptivas."
 ---
 
 <div>
 {% include transistor.html id="a2a806f7" title="#136 Resilient Data in Disruptive Comms" %}
 
-{% include youtube.html id="XhtXz6hx9AY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

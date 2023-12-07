@@ -17,14 +17,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher describe por qué un Arquitecto de Nube Multi-Híbrida puede estar presente en tu Centro de Datos. La mayoría de las organizaciones ya tienen todos los ingredientes. Solo necesitan saber cómo encajan juntos."
-video: "https://youtu.be/1cISpr_FNFM"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher describe por qué un Arquitecto de Nube Multi-Híbrida puede estar presente en tu Centro de Datos. La mayoría de las organizaciones ya tienen todos los ingredientes. Solo necesitan saber cómo encajan juntos."
 ---
 
 <div>
 {% include transistor.html id="e22edf51" title="#22 An Argument for Multi-Hybrid Cloud" %}
 
-{% include youtube.html id="1cISpr_FNFM" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -22,14 +22,14 @@ guests:
 img: thumbnail.jpeg
 image: thumbnail.jpeg
 summary: "In questo episodio Darren esplora la scienza e i casi d'uso della tecnologia dei gemelli digitali con l'architetto principale di ScheneScape di Intel."
-video: "https://youtu.be/C6xDweCGboU"
+video: "https://youtu.be/url"
 description: "In questo episodio Darren esplora la scienza e i casi d'uso della tecnologia dei gemelli digitali con l'architetto principale di ScheneScape di Intel."
 ---
 
 <div>
 {% include transistor.html id="6b355957" title="#144 Science Behind Digital Twins" %}
 
-{% include youtube.html id="C6xDweCGboU" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

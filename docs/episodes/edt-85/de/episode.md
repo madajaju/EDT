@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Folge diskutiert Darren die datenbezogenen Aspekte der künstlichen Intelligenz (KI) und die Bedeutung der Absicherung dieser Daten."
-video: "https://youtu.be/NVcBCPpJ4rY"
+video: "https://youtu.be/url"
 description: "In dieser Folge diskutiert Darren die datenbezogenen Aspekte der künstlichen Intelligenz (KI) und die Bedeutung der Absicherung dieser Daten."
 ---
 
 <div>
 {% include transistor.html id="ffe877ee" title="#85 Artificial Intelligence and Security" %}
 
-{% include youtube.html id="NVcBCPpJ4rY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

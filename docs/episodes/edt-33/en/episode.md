@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect, Public Sector, at Intel talks about the lessons learned from the AWS outage in November 2020 and preventative solutions to navigating such outages."
-video: "https://youtu.be/KQH85zaVUe0"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solution Architect, Public Sector, at Intel talks about the lessons learned from the AWS outage in November 2020 and preventative solutions to navigating such outages."
 ---
 
 <div>
 {% include transistor.html id="e81503fc" title="#33 The AWS Outage of Nov 2020" %}
 
-{% include youtube.html id="KQH85zaVUe0" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

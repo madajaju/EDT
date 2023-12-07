@@ -27,14 +27,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode, Teil eins von zwei, sprechen Darren und die Intel Cloud Solution Architects Dave Shrestha und Kevin Bleckman über die Bedeutung einer Cloud-Broker-Organisation. Dave und Kevin gründeten vor etwa sieben Jahren das Cloud-Brokerage-Team von Intel. Die Mitarbeiter von Intel nutzten die öffentliche Cloud, und es war wie im Wilden Westen, in dem die Leute einfach ihre Kreditkarten für den Zugriff nutzen. Sicherheit war ein Problem und die Ausgaben gerieten außer Kontrolle. Um das Chaos einzudämmen, haben sie eine Cloud-Broker-Organisation geschaffen."
-video: "https://youtu.be/o-pBcuqYmJE"
+video: "https://youtu.be/url"
 description: "In dieser Episode, Teil eins von zwei, sprechen Darren und die Intel Cloud Solution Architects Dave Shrestha und Kevin Bleckman über die Bedeutung einer Cloud-Broker-Organisation. Dave und Kevin gründeten vor etwa sieben Jahren das Cloud-Brokerage-Team von Intel. Die Mitarbeiter von Intel nutzten die öffentliche Cloud, und es war wie im Wilden Westen, in dem die Leute einfach ihre Kreditkarten für den Zugriff nutzen. Sicherheit war ein Problem und die Ausgaben gerieten außer Kontrolle. Um das Chaos einzudämmen, haben sie eine Cloud-Broker-Organisation geschaffen."
 ---
 
 <div>
 {% include transistor.html id="a41fa330" title="#56 Cloud Broker Organizations" %}
 
-{% include youtube.html id="o-pBcuqYmJE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

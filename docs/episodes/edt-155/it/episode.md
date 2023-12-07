@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In questo episodio l'host Darren Pulsipher si siede con Greg Campbell, CTO di Verge.io, per discutere dell'entusiasmante intersezione tra intelligenza artificiale e gestione dell'infrastruttura. Greg, sviluppatore di software e imprenditore, condivide il suo percorso nella creazione di Verge.io per affrontare le complessità della connessione e gestione dell'infrastruttura."
-video: "https://youtu.be/wYe3SsCRpkY"
+video: "https://youtu.be/url"
 description: "In questo episodio l'host Darren Pulsipher si siede con Greg Campbell, CTO di Verge.io, per discutere dell'entusiasmante intersezione tra intelligenza artificiale e gestione dell'infrastruttura. Greg, sviluppatore di software e imprenditore, condivide il suo percorso nella creazione di Verge.io per affrontare le complessità della connessione e gestione dell'infrastruttura."
 ---
 
 <div>
 {% include transistor.html id="4a6dc3d3" title="#155 GenAI Advisor for Datacenter Management" %}
 
-{% include youtube.html id="wYe3SsCRpkY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

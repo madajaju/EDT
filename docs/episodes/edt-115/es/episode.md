@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, Darren habla sobre ciberseguridad con el invitado recurrente John Evans, Asesor Tecnológico Principal en World Wide Technology (WWT)."
-video: "https://youtu.be/SPmsH6Ia6pM"
+video: "https://youtu.be/url"
 description: "En este episodio, Darren habla sobre ciberseguridad con el invitado recurrente John Evans, Asesor Tecnológico Principal en World Wide Technology (WWT)."
 ---
 
 <div>
 {% include transistor.html id="4c1b2203" title="#115 Blocking and Tackling of Security" %}
 
-{% include youtube.html id="SPmsH6Ia6pM" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

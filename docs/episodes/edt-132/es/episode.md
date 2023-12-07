@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, Darren entrevista a los fundadores de Metify, Ian Evans y Mike Wagner, sobre su enfoque único de gestión de infraestructura definida por software en metal desnudo utilizando el estándar Redfish."
-video: "https://youtu.be/ecB9dPexjIM"
+video: "https://youtu.be/url"
 description: "En este episodio, Darren entrevista a los fundadores de Metify, Ian Evans y Mike Wagner, sobre su enfoque único de gestión de infraestructura definida por software en metal desnudo utilizando el estándar Redfish."
 ---
 
 <div>
 {% include transistor.html id="dd6ccded" title="#132 Software Defined BareMetal Management" %}
 
-{% include youtube.html id="ecB9dPexjIM" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

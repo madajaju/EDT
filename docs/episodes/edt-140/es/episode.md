@@ -18,14 +18,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, Darren entrevista a Michael Mehlberg sobre cómo aumentar la confianza en el software libre a través de la verificación de antecedentes en las comunidades de código abierto."
-video: "https://youtu.be/FhrAWLUEN-Q"
+video: "https://youtu.be/url"
 description: "En este episodio, Darren entrevista a Michael Mehlberg sobre cómo aumentar la confianza en el software libre a través de la verificación de antecedentes en las comunidades de código abierto."
 ---
 
 <div>
 {% include transistor.html id="d17c9ba3" title="#140 Background Checking Your Open Source" %}
 
-{% include youtube.html id="FhrAWLUEN-Q" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

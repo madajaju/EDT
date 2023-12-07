@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode du podcast "Embracing Digital Transformation", l'animateur Darren Pulsipher engage une conversation enrichissante avec l'invité spécial Jared Shepard, PDG de Hypori. L'interview porte sur le sujet crucial de la sécurisation des travailleurs à distance grâce à la virtualisation mobile. Le parcours unique de Jared Shepard, qui est passé d'un décrocheur scolaire à PDG, ajoute une dimension inspirante à la discussion."
-video: "https://youtu.be/O2o4dRHhETE"
+video: "https://youtu.be/url"
 description: "Dans cet épisode du podcast "Embracing Digital Transformation", l'animateur Darren Pulsipher engage une conversation enrichissante avec l'invité spécial Jared Shepard, PDG de Hypori. L'interview porte sur le sujet crucial de la sécurisation des travailleurs à distance grâce à la virtualisation mobile. Le parcours unique de Jared Shepard, qui est passé d'un décrocheur scolaire à PDG, ajoute une dimension inspirante à la discussion."
 ---
 
 <div>
 {% include transistor.html id="fd3c31e0" title="#148 Securing the Remote Worker Through Mobile Virtualization" %}
 
-{% include youtube.html id="O2o4dRHhETE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

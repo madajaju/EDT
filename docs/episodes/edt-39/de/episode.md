@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, und Sean Heiney, Mitbegründer von SignalWire, Inc., diskutieren die Fernarbeitsrichtlinien der Unternehmen mit aktivierten Kameras und ihrer neuen Technologie für remote kollaborative Arbeitsumgebungen, die ad hoc Kommunikation für ihre vollständig remote arbeitende Belegschaft ermöglichen."
-video: "https://youtu.be/Q-Sc4No5Q7o"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, und Sean Heiney, Mitbegründer von SignalWire, Inc., diskutieren die Fernarbeitsrichtlinien der Unternehmen mit aktivierten Kameras und ihrer neuen Technologie für remote kollaborative Arbeitsumgebungen, die ad hoc Kommunikation für ihre vollständig remote arbeitende Belegschaft ermöglichen."
 ---
 
 <div>
 {% include transistor.html id="32293267" title="#39 Watercooler Talk in a Remote Workforce" %}
 
-{% include youtube.html id="Q-Sc4No5Q7o" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

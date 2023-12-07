@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect, Intel, diskutiert die Nachverfolgung des Bits mit Greg Clifton, Director, DOD und Intelligence, Intel, in einem Folgegespräch zur Episode Nr. 2. Steve Orrin, CTO Federal, Intel, bringt seine Expertise in Bezug auf Sicherheit in komplexen Edge-to-Cloud-Umgebungen ein."
-video: "https://youtu.be/aIwxVkw0k0o"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solution Architect, Intel, diskutiert die Nachverfolgung des Bits mit Greg Clifton, Director, DOD und Intelligence, Intel, in einem Folgegespräch zur Episode Nr. 2. Steve Orrin, CTO Federal, Intel, bringt seine Expertise in Bezug auf Sicherheit in komplexen Edge-to-Cloud-Umgebungen ein."
 ---
 
 <div>
 {% include transistor.html id="24225e6c" title="#64 Follow and Secure the Bit Edge to Cloud" %}
 
-{% include youtube.html id="aIwxVkw0k0o" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

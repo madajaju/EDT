@@ -25,14 +25,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "In this episode, Darren Pulsipher, Chief Solution Architect at Intel, and Steve Orrin, CTO of Intel, Federal, discuss why and how the DevOps pipeline must be secured. The only way to deliver solid, resilient, and secure code is if security is built in, and the earlier the better."
-video: "https://youtu.be/U3XA7W5ToHc"
+video: "https://youtu.be/url"
 description: "In this episode, Darren Pulsipher, Chief Solution Architect at Intel, and Steve Orrin, CTO of Intel, Federal, discuss why and how the DevOps pipeline must be secured. The only way to deliver solid, resilient, and secure code is if security is built in, and the earlier the better."
 ---
 
 <div>
 {% include transistor.html id="2fd54175" title="#42 Securing the DevOps Pipeline = SecDevOps" %}
 
-{% include youtube.html id="U3XA7W5ToHc" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

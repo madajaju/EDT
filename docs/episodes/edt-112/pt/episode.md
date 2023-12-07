@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solutions Architect, Setor Público, Intel, e John Evans, Consultor Chefe de Tecnologia, WWT, discutem cinco mitos sobre a migração de nuvem lift and shift."
-video: "https://youtu.be/7pQKyV45ay4"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solutions Architect, Setor Público, Intel, e John Evans, Consultor Chefe de Tecnologia, WWT, discutem cinco mitos sobre a migração de nuvem lift and shift."
 ---
 
 <div>
 {% include transistor.html id="cfd34037" title="#112 Myths of Lift and Shift Cloud Migration" %}
 
-{% include youtube.html id="7pQKyV45ay4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

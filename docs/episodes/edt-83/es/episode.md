@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, Darren, Arquitecto Jefe de Soluciones, Sector Público, Intel, y David Richard, Arquitecto Líder de Soluciones, Departamento de Defensa, Intel, reflexionan sobre las tendencias e ideas que obtuvieron de la conferencia de Direcciones de IDC 2022."
-video: "https://youtu.be/oAvLwIoTtPg"
+video: "https://youtu.be/url"
 description: "En este episodio, Darren, Arquitecto Jefe de Soluciones, Sector Público, Intel, y David Richard, Arquitecto Líder de Soluciones, Departamento de Defensa, Intel, reflexionan sobre las tendencias e ideas que obtuvieron de la conferencia de Direcciones de IDC 2022."
 ---
 
 <div>
 {% include transistor.html id="5d171600" title="#83 IDC Directions 2022" %}
 
-{% include youtube.html id="oAvLwIoTtPg" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

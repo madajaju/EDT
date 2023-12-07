@@ -28,14 +28,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, hablaremos sobre el Modelo de Madurez de Gestión de Información y cómo podemos utilizar ese modelo para ayudar a nuestras organizaciones a avanzar. Este modelo puede ayudarte a identificar dónde se encuentra tu organización y hacia dónde se dirige en su estrategia de gestión de información, obteniendo en última instancia el máximo valor comercial de tus datos."
-video: "https://youtu.be/UaUSrh433-Y"
+video: "https://youtu.be/url"
 description: "En este episodio, hablaremos sobre el Modelo de Madurez de Gestión de Información y cómo podemos utilizar ese modelo para ayudar a nuestras organizaciones a avanzar. Este modelo puede ayudarte a identificar dónde se encuentra tu organización y hacia dónde se dirige en su estrategia de gestión de información, obteniendo en última instancia el máximo valor comercial de tus datos."
 ---
 
 <div>
 {% include transistor.html id="b3684303" title="#4 Information Management Maturity Model" %}
 
-{% include youtube.html id="UaUSrh433-Y" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

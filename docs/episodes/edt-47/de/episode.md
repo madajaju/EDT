@@ -20,14 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Greg führt den US-Vertrieb und das Marketing von Intel. Intels Kunden sind hauptsächlich System-OEMs, und Intels Vertriebsmitarbeiter arbeiten täglich daran, diese Konten zu betreuen und ihnen beim Aufbau von Systemen rund um Intels Rechen- und Speichertechnologien zu helfen. Derzeit herrscht eine beispiellose Nachfrage nach Rechenleistung. Intels Teams arbeiten mit Softwareunternehmen, Cloud-Anbietern, Fortune-1000-Unternehmen, Schulen und Regierungsbehörden zusammen, um den Zugang zu Rechenleistung zu ermöglichen und Trends zu identifizieren und Anwendungsfälle zu entwickeln, die Unternehmensprobleme auf eine Weise lösen, die die Gesellschaft verbessert. Intel gilt damit als Trendsetter und identifiziert neue Trends, um sicherzustellen, dass Kunden die richtigen Produkte erhalten."
-video: "https://youtu.be/BBlbBKbtOEw"
+video: "https://youtu.be/url"
 description: "Greg führt den US-Vertrieb und das Marketing von Intel. Intels Kunden sind hauptsächlich System-OEMs, und Intels Vertriebsmitarbeiter arbeiten täglich daran, diese Konten zu betreuen und ihnen beim Aufbau von Systemen rund um Intels Rechen- und Speichertechnologien zu helfen. Derzeit herrscht eine beispiellose Nachfrage nach Rechenleistung. Intels Teams arbeiten mit Softwareunternehmen, Cloud-Anbietern, Fortune-1000-Unternehmen, Schulen und Regierungsbehörden zusammen, um den Zugang zu Rechenleistung zu ermöglichen und Trends zu identifizieren und Anwendungsfälle zu entwickeln, die Unternehmensprobleme auf eine Weise lösen, die die Gesellschaft verbessert. Intel gilt damit als Trendsetter und identifiziert neue Trends, um sicherzustellen, dass Kunden die richtigen Produkte erhalten."
 ---
 
 <div>
 {% include transistor.html id="2361146f" title="#47 Looking Forward to 2021" %}
 
-{% include youtube.html id="BBlbBKbtOEw" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

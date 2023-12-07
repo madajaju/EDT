@@ -22,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, architecte en chef des solutions, et le Dr Anna Scott, architecte en chef Edge, secteur public, discutent des exigences essentielles pour les architectures de services du bord au cloud d'Intel."
-video: "https://youtu.be/wBPm1KcrhWg"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, architecte en chef des solutions, et le Dr Anna Scott, architecte en chef Edge, secteur public, discutent des exigences essentielles pour les architectures de services du bord au cloud d'Intel."
 ---
 
 <div>
 {% include transistor.html id="6279b2d2" title="#95 Requirements for Edge to Cloud Architectures" %}
 
-{% include youtube.html id="wBPm1KcrhWg" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

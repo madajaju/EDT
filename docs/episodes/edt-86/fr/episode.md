@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, Darren Pulsipher, architecte principal des solutions, secteur public, chez Intel, accueille les invités spéciaux Jason Dunn-Potter, ancien officier en chef des mandats d'officier, US Army, et Ron Fritzemeier, ancien contre-amiral, US Navy. Les deux occupent désormais depuis cinq mois des postes d'architectes de solutions et de spécialistes de mission au sein de l'équipe du département de la défense d'Intel."
-video: "https://youtu.be/Sf1GUtYBzek"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, Darren Pulsipher, architecte principal des solutions, secteur public, chez Intel, accueille les invités spéciaux Jason Dunn-Potter, ancien officier en chef des mandats d'officier, US Army, et Ron Fritzemeier, ancien contre-amiral, US Navy. Les deux occupent désormais depuis cinq mois des postes d'architectes de solutions et de spécialistes de mission au sein de l'équipe du département de la défense d'Intel."
 ---
 
 <div>
 {% include transistor.html id="60287be0" title="#86 The Things I Wish I Knew as a Government CTO" %}
 
-{% include youtube.html id="Sf1GUtYBzek" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

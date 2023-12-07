@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher di Intel, Chief Solutions Architect del settore pubblico, insieme a Carla Trevino, Solutions Architect di Irdeto, parlano dell'importanza della sicurezza nell'infrastruttura critica."
-video: "https://youtu.be/S2C1v5zyZJY"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher di Intel, Chief Solutions Architect del settore pubblico, insieme a Carla Trevino, Solutions Architect di Irdeto, parlano dell'importanza della sicurezza nell'infrastruttura critica."
 ---
 
 <div>
 {% include transistor.html id="3778e3fa" title="#107 Securing Critical Infrastructure" %}
 
-{% include youtube.html id="S2C1v5zyZJY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

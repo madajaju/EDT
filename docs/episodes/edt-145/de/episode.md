@@ -21,14 +21,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Folge spricht Darren mit dem CEO und Geschäftsführer von GPA über die Rolle, die kollaborative Innovation beim Zurückbringen der Menschen ins Büro spielt und warum Menschen persönliche Interaktion benötigen."
-video: "https://youtu.be/I7atsJQP-gg"
+video: "https://youtu.be/url"
 description: "In dieser Folge spricht Darren mit dem CEO und Geschäftsführer von GPA über die Rolle, die kollaborative Innovation beim Zurückbringen der Menschen ins Büro spielt und warum Menschen persönliche Interaktion benötigen."
 ---
 
 <div>
 {% include transistor.html id="11bf23e0" title="#145 Attracting People Back to the Office" %}
 
-{% include youtube.html id="I7atsJQP-gg" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

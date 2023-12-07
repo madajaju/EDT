@@ -22,14 +22,14 @@ guests:
 img: thumbnail.jpeg
 image: thumbnail.jpeg
 summary: "In dieser Episode erkundet Darren die Wissenschaft und Anwendungsfälle der Digital Twin-Technologie mit dem Hauptarchitekten von Intel's ScheneScape."
-video: "https://youtu.be/C6xDweCGboU"
+video: "https://youtu.be/url"
 description: "In dieser Episode erkundet Darren die Wissenschaft und Anwendungsfälle der Digital Twin-Technologie mit dem Hauptarchitekten von Intel's ScheneScape."
 ---
 
 <div>
 {% include transistor.html id="6b355957" title="#144 Science Behind Digital Twins" %}
 
-{% include youtube.html id="C6xDweCGboU" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

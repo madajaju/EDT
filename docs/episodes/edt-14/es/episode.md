@@ -18,14 +18,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "El episodio de hoy trata sobre cómo poner en marcha tu organización para que se vuelva centrada en los datos y el valor que esto puede aportar. El invitado especial de Darren es Sarah Kalicin, la científica de datos principal para los centros de datos en Intel."
-video: "https://youtu.be/8kPURu_bcwg"
+video: "https://youtu.be/url"
 description: "El episodio de hoy trata sobre cómo poner en marcha tu organización para que se vuelva centrada en los datos y el valor que esto puede aportar. El invitado especial de Darren es Sarah Kalicin, la científica de datos principal para los centros de datos en Intel."
 ---
 
 <div>
 {% include transistor.html id="c53aad7b" title="#14 Kickstarting Your Organizational Transformation to Become Data-Centric" %}
 
-{% include youtube.html id="8kPURu_bcwg" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

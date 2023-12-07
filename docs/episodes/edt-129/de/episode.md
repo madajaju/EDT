@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode interviewt Darren Alan Chalker, den Leiter des strategischen Programms am Ohio Super Computer Center, über Open OnDemand für HPC-Cluster weltweit."
-video: "https://youtu.be/L_DVS77ICc4"
+video: "https://youtu.be/url"
 description: "In dieser Episode interviewt Darren Alan Chalker, den Leiter des strategischen Programms am Ohio Super Computer Center, über Open OnDemand für HPC-Cluster weltweit."
 ---
 
 <div>
 {% include transistor.html id="c106fb2a" title="#129 HPC OnDemand" %}
 
-{% include youtube.html id="L_DVS77ICc4" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

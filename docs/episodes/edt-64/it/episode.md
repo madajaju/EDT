@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Chief Solution Architect di Intel, discute in seguito alla puntata n. 2 con Greg Clifton, Director del Dipartimento della Difesa e dell'Intelligence di Intel, insieme a Steve Orrin, CTO per il settore federale di Intel, che mette a disposizione la sua competenza sulla sicurezza nei complessi ambienti di edge to cloud."
-video: "https://youtu.be/aIwxVkw0k0o"
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Chief Solution Architect di Intel, discute in seguito alla puntata n. 2 con Greg Clifton, Director del Dipartimento della Difesa e dell'Intelligence di Intel, insieme a Steve Orrin, CTO per il settore federale di Intel, che mette a disposizione la sua competenza sulla sicurezza nei complessi ambienti di edge to cloud."
 ---
 
 <div>
 {% include transistor.html id="24225e6c" title="#64 Follow and Secure the Bit Edge to Cloud" %}
 
-{% include youtube.html id="aIwxVkw0k0o" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Na segunda parte de duas, Darren Pulsipher, Arquiteto-chefe de Soluções, e os Arquitetos de Soluções em Nuvem da Intel, Dave Shrestha e Kevin Bleckman, falam sobre os benefícios e serviços de uma organização de corretagem de nuvem."
-video: "https://youtu.be/9cZHCXE64Zs"
+video: "https://youtu.be/url"
 description: "Na segunda parte de duas, Darren Pulsipher, Arquiteto-chefe de Soluções, e os Arquitetos de Soluções em Nuvem da Intel, Dave Shrestha e Kevin Bleckman, falam sobre os benefícios e serviços de uma organização de corretagem de nuvem."
 ---
 
 <div>
 {% include transistor.html id="3542904b" title="#57 Cloud Broker Organization Part 2" %}
 
-{% include youtube.html id="9cZHCXE64Zs" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

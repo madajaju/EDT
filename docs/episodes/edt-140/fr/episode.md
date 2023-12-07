@@ -18,14 +18,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Dans cet épisode, Darren interroge Michael Mehlberg sur l'augmentation de la confiance dans les logiciels open source grâce à la vérification des antécédents des communautés open source."
-video: "https://youtu.be/FhrAWLUEN-Q"
+video: "https://youtu.be/url"
 description: "Dans cet épisode, Darren interroge Michael Mehlberg sur l'augmentation de la confiance dans les logiciels open source grâce à la vérification des antécédents des communautés open source."
 ---
 
 <div>
 {% include transistor.html id="d17c9ba3" title="#140 Background Checking Your Open Source" %}
 
-{% include youtube.html id="FhrAWLUEN-Q" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

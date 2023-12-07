@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, Darren Pulsipher, Arquitecto Principal de Soluciones de Intel, y Stephen Holt, Arquitecto de Soluciones en la Nube de Intel, hablan sobre la optimización en la nube y los estudios que demuestran que los núcleos tienen un rendimiento diferente para diferentes cargas de trabajo."
-video: "https://youtu.be/ZqdpCTp5yTY"
+video: "https://youtu.be/url"
 description: "En este episodio, Darren Pulsipher, Arquitecto Principal de Soluciones de Intel, y Stephen Holt, Arquitecto de Soluciones en la Nube de Intel, hablan sobre la optimización en la nube y los estudios que demuestran que los núcleos tienen un rendimiento diferente para diferentes cargas de trabajo."
 ---
 
 <div>
 {% include transistor.html id="cd1f0343" title="#45 Not All Cores are Equal" %}
 
-{% include youtube.html id="ZqdpCTp5yTY" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

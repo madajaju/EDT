@@ -18,14 +18,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode interviewt Darren Michael Mehlberg über die Steigerung des Vertrauens in Open Source durch Hintergrundüberprüfungen der Open-Source-Communitys."
-video: "https://youtu.be/FhrAWLUEN-Q"
+video: "https://youtu.be/url"
 description: "In dieser Episode interviewt Darren Michael Mehlberg über die Steigerung des Vertrauens in Open Source durch Hintergrundüberprüfungen der Open-Source-Communitys."
 ---
 
 <div>
 {% include transistor.html id="d17c9ba3" title="#140 Background Checking Your Open Source" %}
 
-{% include youtube.html id="FhrAWLUEN-Q" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

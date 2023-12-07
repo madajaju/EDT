@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "La transformation numérique peut être difficile. De nombreuses organisations deviennent paralysées lorsqu'elles essaient de décrypter toutes les technologies qui leur sont présentées chaque jour. Dans ce parcours, comme dans tout autre, il est important d'avoir une carte. Dans cet épisode, Darren explique le Modèle de maturité de l'infrastructure pour aider les organisations à déterminer où elles se trouvent dans leur transformation numérique, où elles peuvent aller ensuite et comment y parvenir."
-video: "https://youtu.be/ZMEXlPBn82o"
+video: "https://youtu.be/url"
 description: "La transformation numérique peut être difficile. De nombreuses organisations deviennent paralysées lorsqu'elles essaient de décrypter toutes les technologies qui leur sont présentées chaque jour. Dans ce parcours, comme dans tout autre, il est important d'avoir une carte. Dans cet épisode, Darren explique le Modèle de maturité de l'infrastructure pour aider les organisations à déterminer où elles se trouvent dans leur transformation numérique, où elles peuvent aller ensuite et comment y parvenir."
 ---
 
 <div>
 {% include transistor.html id="d5cf91e3" title="#5 Infrastructure Maturity Model" %}
 
-{% include youtube.html id="ZMEXlPBn82o" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

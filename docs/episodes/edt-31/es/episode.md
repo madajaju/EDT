@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En la primera parte de dos episodios, Sean Chou, CEO de Catalytic, y Neil Bahandur, Jefe de Asociaciones de Catalytic, se unen a Darren para hablar sobre la tecnología de Catalytic y cómo los RPAs pueden ayudar a los empleados a volverse más valiosos a través de la automatización de procesos repetitivos de la oficina."
-video: "https://youtu.be/ed5AQMAwJjc"
+video: "https://youtu.be/url"
 description: "En la primera parte de dos episodios, Sean Chou, CEO de Catalytic, y Neil Bahandur, Jefe de Asociaciones de Catalytic, se unen a Darren para hablar sobre la tecnología de Catalytic y cómo los RPAs pueden ayudar a los empleados a volverse más valiosos a través de la automatización de procesos repetitivos de la oficina."
 ---
 
 <div>
 {% include transistor.html id="c6fb8072" title="#31 Improving Employee Value with Catalytic" %}
 
-{% include youtube.html id="ed5AQMAwJjc" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

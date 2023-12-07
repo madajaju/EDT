@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste episódio, Darren entrevista seu filho Matthew Pulsipher sobre a criação de produtos de inteligência artificial decisória. Matthew recentemente modernizou e incluiu a IA decisória em seu processo de desenvolvimento de produtos."
-video: "https://youtu.be/x2sbb-2HI-o"
+video: "https://youtu.be/url"
 description: "Neste episódio, Darren entrevista seu filho Matthew Pulsipher sobre a criação de produtos de inteligência artificial decisória. Matthew recentemente modernizou e incluiu a IA decisória em seu processo de desenvolvimento de produtos."
 ---
 
 <div>
 {% include transistor.html id="d5430a4b" title="#130 Productizing Decisional AI" %}
 
-{% include youtube.html id="x2sbb-2HI-o" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

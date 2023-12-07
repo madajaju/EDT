@@ -23,14 +23,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Neste episódio, Darren verifica com Randy Hayes, agora vice-presidente de Vendas para o setor público da VAST Data, seis meses após sua última conversa para ver como eles estão se saindo na indústria, o que há de novo na VAST e casos interessantes de uso. Seu novo produto, Gemini, oferece um modelo de negócios de armazenamento diferente."
-video: "https://youtu.be/BvwpmK0Ct-0"
+video: "https://youtu.be/url"
 description: "Neste episódio, Darren verifica com Randy Hayes, agora vice-presidente de Vendas para o setor público da VAST Data, seis meses após sua última conversa para ver como eles estão se saindo na indústria, o que há de novo na VAST e casos interessantes de uso. Seu novo produto, Gemini, oferece um modelo de negócios de armazenamento diferente."
 ---
 
 <div>
 {% include transistor.html id="d6fc5e00" title="#48 VAST Data Revisited" %}
 
-{% include youtube.html id="BvwpmK0Ct-0" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

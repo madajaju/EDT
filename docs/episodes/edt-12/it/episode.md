@@ -24,14 +24,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Nel nostro ultimo episodio, Erin Moseley, Senior Account Exec per l'Educazione presso Intel, e Grant Kelly, Solution Architect per l'Educazione presso Intel, si sono uniti a Darren per parlare delle sfide tecnologiche e delle opzioni nell'apprendimento a distanza. In questo episodio, approfondiremo maggiormente le minacce e le soluzioni in materia di privacy e sicurezza."
-video: "https://youtu.be/fGjvx9pKqT8"
+video: "https://youtu.be/url"
 description: "Nel nostro ultimo episodio, Erin Moseley, Senior Account Exec per l'Educazione presso Intel, e Grant Kelly, Solution Architect per l'Educazione presso Intel, si sono uniti a Darren per parlare delle sfide tecnologiche e delle opzioni nell'apprendimento a distanza. In questo episodio, approfondiremo maggiormente le minacce e le soluzioni in materia di privacy e sicurezza."
 ---
 
 <div>
 {% include transistor.html id="03c2f4f9" title="#12 Put the Title Right Here" %}
 
-{% include youtube.html id="fGjvx9pKqT8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

@@ -23,14 +23,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio de podcast de "Abrazando la Transformación Digital", la Dra. Pamela Follett, una neuróloga y co-fundadora de Lewis Rhodes Labs, comparte su experiencia y conocimiento en el campo de la neurología, específicamente en cuanto a la investigación sobre el desarrollo del cerebro en la primera infancia."
-video: "https://youtu.be/Dv4AdtHNQio"
+video: "https://youtu.be/url"
 description: "En este episodio de podcast de "Abrazando la Transformación Digital", la Dra. Pamela Follett, una neuróloga y co-fundadora de Lewis Rhodes Labs, comparte su experiencia y conocimiento en el campo de la neurología, específicamente en cuanto a la investigación sobre el desarrollo del cerebro en la primera infancia."
 ---
 
 <div>
 {% include transistor.html id="f3b2a27c" title="#141 From Neurology to Neuromorphic Computing" %}
 
-{% include youtube.html id="Dv4AdtHNQio" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

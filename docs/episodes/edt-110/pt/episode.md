@@ -25,14 +25,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste episódio, Darren conversa com o Tenente-General Thomas Horlander, que recentemente juntou-se à equipe do setor público da Intel, sobre a cadeia de suprimentos de microeletrônicos e segurança nacional."
-video: "https://youtu.be/zxcRt7vv7LE"
+video: "https://youtu.be/url"
 description: "Neste episódio, Darren conversa com o Tenente-General Thomas Horlander, que recentemente juntou-se à equipe do setor público da Intel, sobre a cadeia de suprimentos de microeletrônicos e segurança nacional."
 ---
 
 <div>
 {% include transistor.html id="fa673cc9" title="#110 Securing the Supply Chain" %}
 
-{% include youtube.html id="zxcRt7vv7LE" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

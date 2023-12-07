@@ -35,14 +35,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste podcast, Darren e Rico Dutton mergulham no mundo das instâncias em nuvem e nos fatores a serem considerados ao selecionar a instância certa para sua carga de trabalho. Eles discutem as diferentes opções de computação disponíveis na nuvem, a importância de encontrar o equilíbrio certo entre desempenho e custo e o papel dos especialistas em nuvem em ajudar as organizações a tomar decisões informadas."
-video: "https://youtu.be/iv4WWNI5FXo"
+video: "https://youtu.be/url"
 description: "Neste podcast, Darren e Rico Dutton mergulham no mundo das instâncias em nuvem e nos fatores a serem considerados ao selecionar a instância certa para sua carga de trabalho. Eles discutem as diferentes opções de computação disponíveis na nuvem, a importância de encontrar o equilíbrio certo entre desempenho e custo e o papel dos especialistas em nuvem em ajudar as organizações a tomar decisões informadas."
 ---
 
 <div>
 {% include transistor.html id="5870e205" title="#165 Workload Cloud Placement Factors" %}
 
-{% include youtube.html id="iv4WWNI5FXo" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

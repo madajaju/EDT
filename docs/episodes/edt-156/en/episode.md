@@ -40,14 +40,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In the podcast episode, retired Rear Admiral Ron Fritzmeier joins host Darren Pulsipher to discuss the importance of data management in the context of generative artificial intelligence (AI). With a background in electrical engineering and extensive experience in the cyber and cybersecurity fields, Ron provides valuable insights into the evolving field of data management and its critical role in organizational success in the digital age."
-video: "https://youtu.be/CLjlF8cVq0c"
+video: "https://youtu.be/url"
 description: "In the podcast episode, retired Rear Admiral Ron Fritzmeier joins host Darren Pulsipher to discuss the importance of data management in the context of generative artificial intelligence (AI). With a background in electrical engineering and extensive experience in the cyber and cybersecurity fields, Ron provides valuable insights into the evolving field of data management and its critical role in organizational success in the digital age."
 ---
 
 <div>
 {% include transistor.html id="60a9723c" title="#156 Becoming a Data Ready Organization" %}
 
-{% include youtube.html id="CLjlF8cVq0c" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---
