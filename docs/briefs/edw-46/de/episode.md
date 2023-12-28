@@ -105,4 +105,76 @@ Die NSA hat vor russischen Cyber-Akteuren gewarnt, die eine bekannte Schwachstel
 
 Darren schaut sich Open Source für eine Netzwerkarchitektur mit null Vertrauen mit OpenZiti an, zusammen mit einem der Organisatoren der Open-Source-Community, Philip Griffiths. Ein besonderer Dank geht auch an die Hörer von Embracing Digital Transformation, die die Neuigkeiten verbreitet haben. Wir konnten mehr als viertausend Abonnenten zu unserem YouTube-Kanal hinzufügen und hatten letzte Woche über vierzehntausend Downloads oder Aufrufe unseres Podcasts. Vielen Dank nochmal für Ihre Unterstützung. [Weiterlesen](http://www.embracingdigital.org)
 
+## Künstliche Intelligenz
+
+
+
+Intels neueste Ankündigung markiert einen entscheidenden Moment in der Geburt von KI-gesteuerten PCs. Die Einführung von Core Ultra H und U Series Prozessoren stellt die revolutionäre Meteor Lake-Architektur vor, die fortschrittliche KI-Fähigkeiten in extrem dünne Notebooks einbettet. Diese Veröffentlichung verbessert die Leistung und erhöht die Arc-Grafikplattform und hebt das Benutzererlebnis auf neue Höhen. Intels Engagement für Innovation signalisiert eine transformative Ära auf dem Laptop-Markt, in der die KI zu einem integralen Bestandteil des Alltagscomputings wird. [Weiterlesen](https://www.anandtech.com/show/21185/intel-releases-core-ultra-h-and-u-series-processors-meteor-lake-brings-ai-and-arc-to-ultra-thin-notebooks)
+
+
+
+Die neu gewählte Stadträtin von New York, Susan Zhuang, hat zugegeben, im Stillen Künstliche Intelligenz einzusetzen, um mit der Öffentlichkeit zu kommunizieren und auf Medienanfragen zu reagieren. Endlich spricht ein Politiker die Wahrheit! Zhuangs Nutzung von Künstlicher Intelligenz stellt einen einzigartigen Ansatz zur Interaktion mit Wählern dar, und die Auswirkungen dieser technologiegetriebenen Strategie könnten die Landschaft der politischen Kommunikation im digitalen Zeitalter neu gestalten. [Weiterlesen](https://nypost.com/2023/12/16/metro/nyc-councilwoman-elect-susan-zhuang-admits-to-quietly-using-ai-to-communicate-with-the-public-answer-media-questions/)
+
+
+
+Die Erschaffung des personalisierten KI-PCs durch Intel führt zu potenziell massiven Arbeitsstörungen in Unternehmen, da sie weiterhin künstliche Intelligenz (KI) in ihre Abläufe integrieren. Es wird erwartet, dass sich Arbeitsfunktionen und Arbeitstage ändern, wenn KI-Technologien angenommen werden, was Bedenken hinsichtlich möglicher Herausforderungen für die Belegschaft aufwirft. Unternehmen bereiten sich auf diesen transformativen Wandel vor und erkennen den Bedarf an proaktiven Strategien, um mögliche Störungen zu navigieren und einen reibungslosen Übergang zu einer von KI getriebenen Zukunft zu gewährleisten. [Weiterlesen](https://fortune.com/2023/12/12/businesses-prepare-ai-massive-labor-disruption-workday/)
+
+## Datenmanagement
+
+
+
+Schneeflocke, eine führende Cloud-Datenplattform, hat die FedRAMP High Autorisierung auf AWS GovCloud US West und US East erreicht. Dieser bedeutende Meilenstein unterstreicht das Engagement von Schneeflocke, strenge Regierungssicherheitsstandards zu erfüllen, und ermöglicht es Bundesbehörden, ihre fortschrittlichen Datenmanagementfähigkeiten in einer sicheren Cloud-Umgebung zu nutzen. Die FedRAMP High Autorisierung unterstreicht die Position von Schneeflocke als vertrauenswürdiger Partner bei der Bereitstellung schneller und skalierbarer Lösungen für Regierungseinrichtungen und fördert Innovation und Effizienz im Datenmanagement. [Weiterlesen](https://www.snowflake.com/news/snowflake-achieves-fedramp-high-authorization-on-aws-govcloud-us-west-and-us-east/)
+
+
+
+Solix hat die gemeinsame Datenplattform (CDP) Drei Punkt Null eingeführt, die erweiterte Datenmanagement- und Unternehmens-KI-Funktionen für mehrere Clouds umfasst. Diese Veröffentlichung spiegelt das Engagement von Solix wider, modernste Lösungen für das Management und das Ableiten von Erkenntnissen aus großen Datensätzen bereitzustellen. Die verbesserten Funktionen für maschinelles Lernen und KI der CDP Drei Punkt Null ermöglichen Organisationen, fundiertere datengesteuerte Entscheidungen zu treffen. Der Trend des Datenmanagements über mehrere Clouds treibt die Entwicklung vieler neuer kommerzieller Angebote voran und die neueste Veröffentlichung von Solix positioniert sich, um einen bedeutenden Beitrag in diesem Bereich zu leisten. [Weiterlesen](https://aithority.com/machine-learning/solix-common-data-platform-3-0-for-advanced-cloud-data-management-and-enterprise-ai/)
+
+## Künstliche Intelligenz
+
+
+
+Intels neueste Ankündigung markiert einen entscheidenden Moment in der Geburt von KI-gesteuerten PCs. Die Einführung der Prozessoren der Core Ultra H und U Serien stellt die revolutionäre Meteor Lake Architektur vor, die fortschrittliche KI-Fähigkeiten in ultra-dünne Notebooks integriert. Diese Veröffentlichung steigert die Leistung und hebt die Arc-Grafikplattform auf ein neues Niveau, und hebt das Benutzererlebnis auf neue Höhen. Intels Engagement für Innovation signalisiert eine transformative Ära auf dem Laptop-Markt, in der KI zu einem integralen Bestandteil des alltäglichen Computings wird. [Weiterlesen](https://www.anandtech.com/show/21185/intel-releases-core-ultra-h-and-u-series-processors-meteor-lake-brings-ai-and-arc-to-ultra-thin-notebooks)
+
+
+
+Die frisch gewählte Stadträtin von New York, Susan Zhuang, hat zugegeben, stillschweigend Künstliche Intelligenz einzusetzen, um mit der Öffentlichkeit zu kommunizieren und auf Medienanfragen zu reagieren. Endlich eine Politikerin, die die Wahrheit spricht! Zhuangs Einsatz von Künstlicher Intelligenz stellt einen einzigartigen Ansatz zur Interaktion mit ihren Wählern dar, und die Auswirkungen dieser technologiegetriebenen Strategie könnten das Gesicht der politischen Kommunikation im digitalen Zeitalter neu formen. [Weiterlesen](https://nypost.com/2023/12/16/metro/nyc-councilwoman-elect-susan-zhuang-admits-to-quietly-using-ai-to-communicate-with-the-public-answer-media-questions/)
+
+
+
+Die Schaffung des personalisierten KI-PCs durch Intel hat mögliche massive Arbeitsstörungen für Unternehmen mit sich gebracht, da sie weiterhin künstliche Intelligenz (KI) in ihre Abläufe integrieren. Mit der Einführung von KI-Technologien wird erwartet, dass sich Jobfunktionen und Arbeitstage verändern, was Bedenken hinsichtlich möglicher Herausforderungen für die Belegschaft aufwirft. Unternehmen bereiten sich auf diesen transformativen Wandel vor und erkennen die Notwendigkeit proaktiver Strategien, um mögliche Störungen zu bewältigen und einen reibungslosen Übergang zu einer KI-getriebenen Zukunft zu gewährleisten. [Weiterlesen](https://fortune.com/2023/12/12/businesses-prepare-ai-massive-labor-disruption-workday/)
+
+## Datenmanagement
+
+
+
+Snowflake, eine führende Cloud-Datenplattform, hat die FedRAMP-High-Autorisierung auf AWS GovCloud US West und US Ost erreicht. Dieser bedeutende Meilenstein unterstreicht das Engagement von Snowflake, strenge Regierungssicherheitsstandards zu erfüllen, und ermöglicht es Bundesbehörden, ihre fortschrittlichen Datenverwaltungsfähigkeiten in einer sicheren Cloud-Umgebung zu nutzen. Die FedRAMP-High-Autorisierung unterstreicht die Position von Snowflake als vertrauenswürdiger Partner bei der Bereitstellung schneller und skalierbarer Lösungen für Regierungseinrichtungen, was Innovation und Effizienz in der Datenverwaltung fördert. [Weiterlesen](https://www.snowflake.com/news/snowflake-achieves-fedramp-high-authorization-on-aws-govcloud-us-west-and-us-east/)
+
+
+
+Solix hat die Common Data Platform (CDP) drei Punkt null eingeführt, die fortgeschrittene Multi-Cloud-Datenverwaltung und Unternehmens-KI-Funktionen umfasst. Diese Veröffentlichung spiegelt das Engagement von Solix wider, hochmoderne Lösungen für die Verwaltung und Ableitung von Erkenntnissen aus großen Datensätzen bereitzustellen. Die verbesserten Maschinenlern- und KI-Funktionen von CDP drei Punkt null ermöglichen es Organisationen, fundiertere datengesteuerte Entscheidungen zu treffen. Der Trend zur Multi-Cloud-Datenverwaltung treibt die Entwicklung vieler neuer kommerzieller Angebote voran und die neueste Veröffentlichung von Solix steht in diesem Bereich vor einem erheblichen Beitrag. [Weiterlesen](https://aithority.com/machine-learning/solix-common-data-platform-3-0-for-advanced-cloud-data-management-and-enterprise-ai/)
+
+
+
+In einem aktuellen Bericht untersucht Datanami entscheidende Überlegungen, um sicherzustellen, dass Ihre Datenmanagementstrategie auf KI mit fünf Schlüsselindikatoren vorbereitet ist. Priorisieren Sie Datenqualität, Skalierbarkeit, Integrationsfähigkeiten, robuste Sicherheit und Flexibilität. Diese Elemente sind entscheidend für die Optimierung von Systemen, da künstliche Intelligenz weiterhin Datenprozesse prägt. Bleiben Sie in der Ära der KI vorn, indem Sie diese Aspekte bewerten und verbessern, um den Anforderungen sich entwickelnder Technologien gerecht zu werden. Lesen Sie mehr auf datanami.com für umfassende Einblicke. [Weiterlesen](https://www.datanami.com/2023/12/08/is-your-data-management-strategy-ready-for-ai-5-ways-to-tell/)
+
+## Cybersicherheit
+
+
+
+Berichten zufolge hat das britische National Grid am siebzehnten Dezember zweitausenddreiundzwanzig die Beziehungen zu einem in China ansässigen Lieferanten aufgrund von Bedenken hinsichtlich der Cybersicherheit abgebrochen, wie Reuters meldete. Die Entscheidung spiegelt die verschärfte globale Prüfung möglicher Risiken im Zusammenhang mit ausländischen Technologiepartnerschaften wider, insbesondere in kritischen Infrastruktursektoren. Dieser Schritt des National Grid unterstreicht das zunehmende Augenmerk auf die Stärkung der Maßnahmen zur Cybersicherheit zum Schutz lebenswichtiger Dienstleistungen vor möglichen Bedrohungen. [Weiterlesen](https://www.reuters.com/technology/cybersecurity/britains-national-grid-drops-china-based-supplier-over-cyber-security-fears-ft-2023-12-17/)
+
+
+
+Hacker haben die Wasserversorgung der USA ins Visier genommen, was Alarm wegen der Verwundbarkeit kritischer Infrastrukturen auslöst. Axios berichtete am sechzehnten Dezember zweitausenddreiundzwanzig, dass dieser Verstoß erhebliche Bedenken hinsichtlich der nationalen Sicherheit und öffentlichen Sicherheit aufwirft. Der Vorfall unterstreicht die dringende Notwendigkeit robuster Cybersicherheitsmaßnahmen zum Schutz wesentlicher Dienstleistungen. Die Behörden untersuchen den Verstoß, was die anhaltenden Herausforderungen bei der Verteidigung kritischer Infrastrukturen gegen Cyberbedrohungen hervorhebt. [Weiterlesen](https://www.axios.com/2023/12/16/hackers-us-water-supply)
+
+
+
+Die NSA hat vor russischen Cyber-Akteuren gewarnt, die eine bekannte Schwachstelle mit weltweiten Auswirkungen ausnutzen. Die identifizierte Schwachstelle hat einen erheblichen Einfluss weltweit und betont die Bedeutung, Cybersecurity-Risiken zu mildern. Die NSA rät Organisationen, diese Schwachstelle umgehend zu beheben und zu patchen, um ihre Widerstandsfähigkeit gegen potenzielle Cyber-Bedrohungen zu stärken. [Weiterlesen](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3616384/russian-cyber-actors-are-exploiting-a-known-vulnerability-with-worldwide-impact/)
+
+## Umarmung der digitalen Transformation
+
+
+
+Darren setzt bei der Nullvertrauens-Netzwerkarchitektur auf Open Source mit OpenZiti zusammen mit einem der Organisatoren der Open-Source-Community, Philip Griffiths. Ein besonderer Dank gilt auch den Zuhörern von Embracing Digital Transformation dafür, dass sie die Nachrichten verbreitet haben, wir haben mehr als viertausend Abonnenten für unseren YouTube-Kanal hinzugefügt und in der letzten Woche hatten wir mehr als vierzehntausend Downloads oder Aufrufe unseres Podcasts. Vielen Dank nochmals für Ihre Unterstützung. [Weiterlesen](http://www.embracingdigital.org)
+
 

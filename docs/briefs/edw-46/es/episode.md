@@ -105,4 +105,76 @@ La Agencia de Seguridad Nacional ha advertido sobre actores cibernéticos rusos 
 
 Darren busca en el código abierto la arquitectura de red de confianza cero con openZiti en colaboración con uno de los organizadores de la comunidad de código abierto, Philip Griffiths. Además, un agradecimiento especial a los oyentes de Embracing Digital Transformation por difundir las noticias, hemos añadido más de cuatro mil suscriptores a nuestro canal de YouTube y tuvimos más de catorce mil descargas o vistas de nuestro podcast la semana pasada. Gracias de nuevo por su apoyo. [Leer más](http://www.embracingdigital.org)
 
+## Inteligencia Artificial
+
+
+
+El último anuncio de Intel marca un momento crucial en el nacimiento de las PC alimentadas por IA. El lanzamiento de los procesadores de las series Core Ultra H y U introduce la revolucionaria arquitectura Meteor Lake, que incorpora capacidades avanzadas de IA en notebooks ultrafinos. Este lanzamiento mejora el rendimiento y eleva la plataforma de gráficos Arc, llevando la experiencia del usuario a nuevas alturas. El compromiso de Intel con la innovación señala una era transformadora en el mercado de las laptops, donde la IA se convierte en un elemento integral de la informática cotidiana. [Leer más](https://www.anandtech.com/show/21185/intel-releases-core-ultra-h-and-u-series-processors-meteor-lake-brings-ai-and-arc-to-ultra-thin-notebooks)
+
+
+
+Susan Zhuang, la concejal electa de la ciudad de Nueva York, ha admitido discretamente el uso de inteligencia artificial para comunicarse con el público y responder a consultas de los medios. ¡Por fin una política que habla la verdad! El uso de la inteligencia artificial por parte de Zhuang marca un enfoque único para interactuar con los constituyentes, y las implicaciones de esta estrategia impulsada por la tecnología pueden remodelar el panorama de la comunicación política en la era digital. [Leer más](https://nypost.com/2023/12/16/metro/nyc-councilwoman-elect-susan-zhuang-admits-to-quietly-using-ai-to-communicate-with-the-public-answer-media-questions/)
+
+
+
+La creación de la PC de inteligencia artificial personalizada por parte de Intel ha traído una posible gran interrupción laboral a las empresas a medida que continúan integrando la inteligencia artificial (IA) en sus operaciones. A medida que se adoptan las tecnologías de IA, se espera que las funciones laborales y los días de trabajo cambien, lo que genera inquietudes sobre los posibles desafíos de la fuerza laboral. Las empresas se están preparando para este cambio transformador y reconociendo la necesidad de estrategias proactivas para navegar las posibles interrupciones y asegurar una transición suave hacia un futuro impulsado por la IA. [Leer más](https://fortune.com/2023/12/12/businesses-prepare-ai-massive-labor-disruption-workday/)
+
+## Gestión de Datos
+
+
+
+Snowflake, una plataforma líder de datos en la nube, ha logrado la Autorización FedRAMP Alta en AWS GovCloud Estados Unidos Oeste y Estados Unidos Este. Este hito importante destaca el compromiso de Snowflake con el cumplimiento de estrictos estándares de seguridad gubernamentales, permitiendo que las agencias federales aprovechen sus capacidades avanzadas de gestión de datos en un entorno seguro de nube. La Autorización Alta de FedRAMP subraya la posición de Snowflake como socio de confianza en la provisión de soluciones rápidas y escalables para entidades gubernamentales, fomentando la innovación y la eficiencia en la gestión de datos. [Leer más](https://www.snowflake.com/news/snowflake-achieves-fedramp-high-authorization-on-aws-govcloud-us-west-and-us-east/)
+
+
+
+Solix ha introducido la Plataforma de Datos Comunes (CDP por sus siglas en inglés) tres punto cero, que incluye gestión avanzada de datos multi-nube y capacidades de inteligencia artificial empresarial. Este lanzamiento refleja el compromiso de Solix de proporcionar soluciones de última generación para administrar y obtener información de grandes conjuntos de datos. Las mejoradas características de aprendizaje automático e inteligencia artificial de la CDP tres punto cero permiten a las organizaciones tomar decisiones más informadas basadas en datos. La tendencia de la gestión de datos multi-nube está impulsando el desarrollo de muchas nuevas ofertas comerciales, y el último lanzamiento de Solix está preparado para ser un contribuyente significativo en este espacio. [Leer más](https://aithority.com/machine-learning/solix-common-data-platform-3-0-for-advanced-cloud-data-management-and-enterprise-ai/)
+
+## Inteligencia Artificial
+
+
+
+El último anuncio de Intel marca un momento decisivo en el nacimiento de las computadoras impulsadas por la IA. El lanzamiento de los procesadores de las series Core Ultra H y U introduce la revolucionaria arquitectura Meteor Lake, incorporando capacidades avanzadas de IA en notebooks ultrafinas. Este lanzamiento mejora el rendimiento y eleva la plataforma gráfica Arc, elevando la experiencia del usuario a nuevas alturas. El compromiso de Intel con la innovación señala una era transformadora en el mercado de portátiles, donde la IA se convierte en una parte integral de la informática cotidiana. [Leer más](https://www.anandtech.com/show/21185/intel-releases-core-ultra-h-and-u-series-processors-meteor-lake-brings-ai-and-arc-to-ultra-thin-notebooks)
+
+
+
+La concejal electa de la Ciudad de Nueva York, Susan Zhuang, ha admitido emplear discretamente inteligencia artificial para comunicarse con el público y responder a las consultas de los medios de comunicación. ¡Finalmente una política que habla la verdad! El uso de inteligencia artificial por parte de Zhuang marca un enfoque único para interactuar con los electores y las implicancias de esta estrategia impulsada por la tecnología podrían remodelar el panorama de la comunicación política en la era digital. [Leer más](https://nypost.com/2023/12/16/metro/nyc-councilwoman-elect-susan-zhuang-admits-to-quietly-using-ai-to-communicate-with-the-public-answer-media-questions/)
+
+
+
+La creación de la PC de inteligencia artificial personalizada por parte de Intel ha provocado una posible perturbación masiva de la mano de obra para las empresas a medida que continúan integrando la inteligencia artificial (IA) en sus operaciones. A medida que se adoptan las tecnologías de IA, se espera que las funciones laborales y los días de trabajo cambien, lo que genera preocupaciones sobre posibles desafíos para la fuerza laboral. Las compañías se están preparando para este cambio transformador y reconocen la necesidad de estrategias proactivas para navegar por posibles alteraciones y asegurar un cambio suave a un futuro impulsado por la IA. [Leer más](https://fortune.com/2023/12/12/businesses-prepare-ai-massive-labor-disruption-workday/)
+
+## Gestión de Datos
+
+
+
+El copo de nieve, una plataforma de datos en la nube líder, ha conseguido la Autorización de Alto Nivel de FedRAMP en AWS GovCloud Estados Unidos Oeste y Estados Unidos Este. Este hito significativo resalta el compromiso de Snowflake para cumplir con los rigurosos estándares de seguridad del gobierno, permitiendo a las agencias federales aprovechar sus avanzadas capacidades de gestión de datos en un entorno seguro en la nube. La Autorización de Alto Nivel de FedRAMP subraya la posición de Snowflake como un socio de confianza en la provisión de soluciones rápidas y escalables para entidades gubernamentales, fomentando la innovación y eficiencia en la gestión de datos. [Leer más](https://www.snowflake.com/news/snowflake-achieves-fedramp-high-authorization-on-aws-govcloud-us-west-and-us-east/)
+
+
+
+Solix ha presentado la Plataforma de Datos Común (CDP) tres punto cero, que incluye avanzadas capacidades de administración de datos multi-nube y de inteligencia artificial empresarial. Este lanzamiento refleja el compromiso de Solix de proporcionar soluciones punteras para administrar y obtener conocimientos de grandes conjuntos de datos. Las mejoradas características de aprendizaje automático e inteligencia artificial del CDP tres punto cero permiten a las organizaciones tomar decisiones más informadas basadas en datos. La tendencia de la gestión de datos multi-nube está impulsando el desarrollo de muchas nuevas ofertas comerciales, y el último lanzamiento de Solix está listo para ser un importante contribuidor en este espacio. [Leer más](https://aithority.com/machine-learning/solix-common-data-platform-3-0-for-advanced-cloud-data-management-and-enterprise-ai/)
+
+
+
+En un informe reciente, Datanami explora consideraciones cruciales para garantizar que su estrategia de gestión de datos esté preparada para la inteligencia artificial con cinco indicadores clave. Prioriza la calidad de los datos, la escalabilidad, las capacidades de integración, una seguridad sólida y flexibilidad. Estos elementos son cruciales para optimizar los sistemas a medida que la inteligencia artificial continúa dando forma a los procesos de datos. Manténgase a la vanguardia en la era de la inteligencia artificial evaluando y mejorando estos aspectos para satisfacer las demandas de las tecnologías en evolución. Lea más en datanami.com para obtener información completa. [Leer más](https://www.datanami.com/2023/12/08/is-your-data-management-strategy-ready-for-ai-5-ways-to-tell/)
+
+## Ciberseguridad
+
+
+
+La Red Nacional de Gran Bretaña ha informado supuestamente ha roto relaciones con un proveedor con base en China debido a preocupaciones de ciberseguridad, según informó Reuters el diecisiete de diciembre de dos mil veintitrés. La decisión refleja el incremento en el escrutinio global sobre los riesgos potenciales asociados con las asociaciones tecnológicas extranjeras, particularmente en sectores de infraestructura crítica. Esta medida por parte de la Red Nacional subraya el creciente énfasis en reforzar las medidas de ciberseguridad para salvaguardar servicios esenciales contra potenciales amenazas. [Leer más](https://www.reuters.com/technology/cybersecurity/britains-national-grid-drops-china-based-supplier-over-cyber-security-fears-ft-2023-12-17/)
+
+
+
+Los hackers han atacado el suministro de agua de los Estados Unidos, provocando alarmas sobre la vulnerabilidad de la infraestructura crítica. Axios informó el dieciséis de diciembre de dos mil veintitrés que esta brecha representa preocupaciones significativas para la seguridad nacional y la seguridad pública. El incidente subraya la necesidad urgente de medidas sólidas de ciberseguridad para proteger los servicios esenciales. Las autoridades están investigando la brecha, destacando los desafíos continuos en la defensa de la infraestructura crítica contra las amenazas cibernéticas. [Leer más](https://www.axios.com/2023/12/16/hackers-us-water-supply)
+
+
+
+La Agencia de Seguridad Nacional ha advertido sobre los actores cibernéticos rusos que explotan una vulnerabilidad conocida con implicaciones globales. La vulnerabilidad identificada tiene un impacto significativo en todo el mundo, enfatizando la importancia de mitigar los riesgos de ciberseguridad. La Agencia de Seguridad Nacional aconseja a las organizaciones que aborden y parcheen rápidamente esta vulnerabilidad para mejorar su resiliencia contra potenciales amenazas cibernéticas. [Leer más](https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3616384/russian-cyber-actors-are-exploiting-a-known-vulnerability-with-worldwide-impact/)
+
+## Abrazando la Transformación Digital
+
+
+
+Darren busca la arquitectura de red de confianza cero en código abierto con openZiti junto a uno de los organizadores de la comunidad de código abierto, Philip Griffiths. Además, un agradecimiento especial a los oyentes de Embracing Digital Transformation por difundir las noticias, hemos agregado más de cuatro mil suscriptores a nuestro canal de YouTube y hemos tenido más de catorce mil descargas o vistas de nuestro podcast la semana pasada. Nuevamente, gracias por su apoyo. [Leer más](http://www.embracingdigital.org)
+
 
