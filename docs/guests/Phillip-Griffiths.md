@@ -3,7 +3,7 @@ layout: guest
 title: Phillip Griffiths
 parent: Guests
 
-img: Phillip-Griffiths-thumbail.jpg
+img: Phillip-Griffiths-thumbnail.jpg
 ---
 
 
