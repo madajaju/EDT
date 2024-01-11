@@ -10,7 +10,7 @@ child_nav_order: reversed
 
 # Episodes
 
-{% assign spages = site.pages | where: "layout", "posts" | where "lang", "en" | sort: "nav_order" %}
+{% assign spages = site.pages | where: "layout", "posts" | where: "lang", "en" | sort: "nav_order" %}
 {% for spage in spages %}
 <div style="display: flex;">
     <p class="episode">

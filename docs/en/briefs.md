@@ -35,7 +35,7 @@ We are in the throws of the digital revolution. During this time, it can be chal
 
 {% include subscribe_brief.html %}
 
-{% assign spages = site.pages | where: "layout", "brief" | where "lang", "en" | sort: "nav_order" %}
+{% assign spages = site.pages | where: "layout", "brief" | where: "lang", "en" | sort: "nav_order" %}
 {% for spage in spages %}
 <div style="display: flex;">
     <p class="episode">
