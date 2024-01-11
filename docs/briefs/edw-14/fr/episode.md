@@ -5,9 +5,7 @@ number: 14
 ref: brief-EDW14-fr
 permalink: brief-EDW14-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 14
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: News in Digital Transformation for the week of May 8, 2023 including 
-video: https://youtu.be/
-description: News in Digital Transformation for the week of May 8, 2023 including 
+summary: "News in Digital Transformation for the week of May 8, 2023 including "
+video: "https://youtu.be/"
+description: "News in Digital Transformation for the week of May 8, 2023 including "
 ---
 
 

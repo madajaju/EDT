@@ -3,11 +3,8 @@ layout: posts
 title: "Agilidade na adoção da nuvem"
 number: 166
 permalink: episode-EDT166-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 166
 tags:
 

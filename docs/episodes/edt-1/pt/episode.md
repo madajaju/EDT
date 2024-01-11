@@ -3,11 +3,8 @@ layout: posts
 title: "História da Arquitetura Orientada a Dados."
 number: 1
 permalink: episode-EDT1-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 1
 tags:
     - dataarchitecture

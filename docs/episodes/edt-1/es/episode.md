@@ -3,11 +3,8 @@ layout: posts
 title: "Historia de la Arquitectura Centrada en Datos"
 number: 1
 permalink: episode-EDT1-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 1
 tags:
     - dataarchitecture

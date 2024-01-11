@@ -5,9 +5,7 @@ number: 21
 ref: brief-EDW21-fr
 permalink: brief-EDW21-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 21
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Nouvelles de la semaine du 26 juin 2023, dans la transformation numérique, y compris l'augmentation des attaques dans la guerre cybernétique, tout le monde sautant sur la vague de l'IA générative et les réseaux radio virtualisés.
-video: https://youtu.be/1gJWUw3SD6Q
-description: Nouvelles de la semaine du 26 juin 2023, dans la transformation numérique, y compris l'augmentation des attaques dans la guerre cybernétique, tout le monde sautant sur la vague de l'IA générative et les réseaux radio virtualisés.
+summary: "Nouvelles de la semaine du 26 juin 2023, dans la transformation numérique, y compris l'augmentation des attaques dans la guerre cybernétique, tout le monde sautant sur la vague de l'IA générative et les réseaux radio virtualisés."
+video: "https://youtu.be/1gJWUw3SD6Q"
+description: "Nouvelles de la semaine du 26 juin 2023, dans la transformation numérique, y compris l'augmentation des attaques dans la guerre cybernétique, tout le monde sautant sur la vague de l'IA générative et les réseaux radio virtualisés."
 ---
 
 

@@ -58,7 +58,7 @@ In the ever-evolving landscape of digital transformation, staying ahead of the c
     </p>
   </div>
   <div class="collection-item">
-    <a href="https://www.embracingdigital.org/collections/en/multhybridcloud.html">
+    <a href="https://www.embracingdigital.org/collections/en/multihybridcloud.html">
       <img src="./emhc.png" width="128" height="128" alt="Embracing Multi-Hybrid Cloud">
     </a>
     <p>

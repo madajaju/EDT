@@ -3,11 +3,8 @@ layout: posts
 title: "Benefícios da Arquitetura Multi-Cloud"
 number: 3
 permalink: episode-EDT3-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 3
 tags:
     - multicloud

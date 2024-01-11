@@ -3,11 +3,8 @@ layout: posts
 title: "Usando dados como um recurso estratégico"
 number: 19
 permalink: episode-EDT19-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 19
 tags:
     - dataarchitecture

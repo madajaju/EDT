@@ -3,11 +3,8 @@ layout: posts
 title: "Pratico generativo AI"
 number: 152
 permalink: episode-EDT152-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 152
 tags:
     - genai

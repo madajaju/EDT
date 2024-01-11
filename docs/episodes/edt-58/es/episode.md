@@ -3,11 +3,8 @@ layout: posts
 title: "Comprendiendo los problemas desde Edge hasta el centro de datos"
 number: 58
 permalink: episode-EDT58-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 58
 tags:
     - data

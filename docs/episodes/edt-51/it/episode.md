@@ -3,11 +3,8 @@ layout: posts
 title: "Casi d'uso pratici per l'utilizzo della memoria persistente Optane"
 number: 51
 permalink: episode-EDT51-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 51
 tags:
     - dataarchitecture

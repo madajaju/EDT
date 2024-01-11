@@ -5,9 +5,7 @@ number: 20
 ref: brief-EDW20-fr
 permalink: brief-EDW20-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 20
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Nouvelles de la Transformation Digitale de la semaine du 19 juin 2023 comprenant des histoires de gestionnaires remplaçant les travailleurs par l'IA, des pannes Cloud à nouveau, et des lois sur la vie privée qui mordent les géants de la technologie.
-video: https://youtu.be/
-description: Nouvelles de la Transformation Digitale de la semaine du 19 juin 2023 comprenant des histoires de gestionnaires remplaçant les travailleurs par l'IA, des pannes Cloud à nouveau, et des lois sur la vie privée qui mordent les géants de la technologie.
+summary: "Nouvelles de la Transformation Digitale de la semaine du 19 juin 2023 comprenant des histoires de gestionnaires remplaçant les travailleurs par l'IA, des pannes Cloud à nouveau, et des lois sur la vie privée qui mordent les géants de la technologie."
+video: "https://youtu.be/"
+description: "Nouvelles de la Transformation Digitale de la semaine du 19 juin 2023 comprenant des histoires de gestionnaires remplaçant les travailleurs par l'IA, des pannes Cloud à nouveau, et des lois sur la vie privée qui mordent les géants de la technologie."
 ---
 
 

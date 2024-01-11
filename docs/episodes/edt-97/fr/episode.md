@@ -3,11 +3,8 @@ layout: posts
 title: "Les avantages des bases de données graphiques"
 number: 97
 permalink: episode-EDT97-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 97
 tags:
     - data

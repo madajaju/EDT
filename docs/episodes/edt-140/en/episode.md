@@ -3,11 +3,8 @@ layout: posts
 title: "Background Checking Your Open Source"
 number: 140
 permalink: episode-EDT140-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 140
 tags:
 

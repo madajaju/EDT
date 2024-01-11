@@ -3,11 +3,8 @@ layout: posts
 title: "De la neurologie à l'informatique neuromorphique"
 number: 141
 permalink: episode-EDT141-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 141
 tags:
     - neurology
@@ -23,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Dans cet épisode de podcast intitulé "Accueillir la transformation numérique", le Dr Pamela Follett, neurologue et co-fondatrice de Lewis Rhodes Labs, partage son parcours et son expertise dans le domaine de la neurologie, en particulier en ce qui concerne la recherche sur le cerveau en développement chez les jeunes enfants."
+summary: "Dans cet épisode de podcast intitulé Accueillir la transformation numérique, le Dr Pamela Follett, neurologue et co-fondatrice de Lewis Rhodes Labs, partage son parcours et son expertise dans le domaine de la neurologie, en particulier en ce qui concerne la recherche sur le cerveau en développement chez les jeunes enfants."
 video: "https://youtu.be/url"
-description: "Dans cet épisode de podcast intitulé "Accueillir la transformation numérique", le Dr Pamela Follett, neurologue et co-fondatrice de Lewis Rhodes Labs, partage son parcours et son expertise dans le domaine de la neurologie, en particulier en ce qui concerne la recherche sur le cerveau en développement chez les jeunes enfants."
+description: "Dans cet épisode de podcast intitulé Accueillir la transformation numérique, le Dr Pamela Follett, neurologue et co-fondatrice de Lewis Rhodes Labs, partage son parcours et son expertise dans le domaine de la neurologie, en particulier en ce qui concerne la recherche sur le cerveau en développement chez les jeunes enfants."
 ---
 
 <div>

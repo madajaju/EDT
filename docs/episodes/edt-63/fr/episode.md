@@ -3,11 +3,8 @@ layout: posts
 title: "Inspirant un changement culturel dans le domaine de l'informatique"
 number: 63
 permalink: episode-EDT63-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 63
 tags:
     - organizationalchange

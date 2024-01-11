@@ -5,9 +5,7 @@ number: 35
 ref: brief-EDW35-de
 permalink: brief-EDW35-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 35
 tags:
     - ai
@@ -33,9 +31,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digitale Transformationsnachrichten für die Woche ab dem 1. Oktober, einschließlich Geschichten über Datenmanagement, künstliche Intelligenz und Cybersicherheit. Kommen Sie und hören Sie die Feier des cybersecurity awareness month, eine KI, die Snoop Dogg zum Dungeon Master für D&D macht, und erfahren Sie mehr über eine neue Datenarchitektur namens Polystore.
-video: https://youtu.be/uyj0At7-yg4
-description: Digitale Transformationsnachrichten für die Woche ab dem 1. Oktober, einschließlich Geschichten über Datenmanagement, künstliche Intelligenz und Cybersicherheit. Kommen Sie und hören Sie die Feier des cybersecurity awareness month, eine KI, die Snoop Dogg zum Dungeon Master für D&D macht, und erfahren Sie mehr über eine neue Datenarchitektur namens Polystore.
+summary: "Digitale Transformationsnachrichten für die Woche ab dem 1. Oktober, einschließlich Geschichten über Datenmanagement, künstliche Intelligenz und Cybersicherheit. Kommen Sie und hören Sie die Feier des cybersecurity awareness month, eine KI, die Snoop Dogg zum Dungeon Master für D&D macht, und erfahren Sie mehr über eine neue Datenarchitektur namens Polystore."
+video: "https://youtu.be/uyj0At7-yg4"
+description: "Digitale Transformationsnachrichten für die Woche ab dem 1. Oktober, einschließlich Geschichten über Datenmanagement, künstliche Intelligenz und Cybersicherheit. Kommen Sie und hören Sie die Feier des cybersecurity awareness month, eine KI, die Snoop Dogg zum Dungeon Master für D&D macht, und erfahren Sie mehr über eine neue Datenarchitektur namens Polystore."
 ---
 
 

@@ -3,11 +3,8 @@ layout: posts
 title: "An Argument for a Holistic approach to Critical Infrastructure Security"
 number: 116
 permalink: episode-EDT116-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 116
 tags:
     - criticalinfrastructure

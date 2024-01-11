@@ -3,11 +3,8 @@ layout: posts
 title: "Präkog Cyber-Angriffspfad mit XM Cyber"
 number: 99
 permalink: episode-EDT99-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 99
 tags:
     - aiml

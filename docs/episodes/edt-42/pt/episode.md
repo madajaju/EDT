@@ -3,11 +3,8 @@ layout: posts
 title: "Garantindo o Pipeline de DevOps = SecDevOps"
 number: 42
 permalink: episode-EDT42-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 42
 tags:
     - cybersecurity

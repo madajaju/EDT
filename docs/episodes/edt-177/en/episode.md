@@ -3,11 +3,8 @@ layout: posts
 title: "Zero Trust Data with SafelyShare"
 number: 177
 permalink: episode-EDT177-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 177
 tags:
     - safelyshare

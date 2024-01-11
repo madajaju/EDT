@@ -5,9 +5,7 @@ number: 38
 ref: brief-EDW38-de
 permalink: brief-EDW38-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 38
 tags:
     - keywords
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Umarmung digitaler Nachrichten für die Woche ab dem 22. Oktober 2023, einschließlich Neuigkeiten aus der Cybersicherheit, ubiquitärem Computing und künstlicher Intelligenz. Zu den Highlights dieser Woche gehören die Rückkehr zum Stift und Papier bei schulischen Aktivitäten, das Beobachten des Q-Days und Richtlinien für KI im Gesundheitswesen.
-video: https://youtu.be/9dcZnqXDW04
-description: Umarmung digitaler Nachrichten für die Woche ab dem 22. Oktober 2023, einschließlich Neuigkeiten aus der Cybersicherheit, ubiquitärem Computing und künstlicher Intelligenz. Zu den Highlights dieser Woche gehören die Rückkehr zum Stift und Papier bei schulischen Aktivitäten, das Beobachten des Q-Days und Richtlinien für KI im Gesundheitswesen.
+summary: "Umarmung digitaler Nachrichten für die Woche ab dem 22. Oktober 2023, einschließlich Neuigkeiten aus der Cybersicherheit, ubiquitärem Computing und künstlicher Intelligenz. Zu den Highlights dieser Woche gehören die Rückkehr zum Stift und Papier bei schulischen Aktivitäten, das Beobachten des Q-Days und Richtlinien für KI im Gesundheitswesen."
+video: "https://youtu.be/9dcZnqXDW04"
+description: "Umarmung digitaler Nachrichten für die Woche ab dem 22. Oktober 2023, einschließlich Neuigkeiten aus der Cybersicherheit, ubiquitärem Computing und künstlicher Intelligenz. Zu den Highlights dieser Woche gehören die Rückkehr zum Stift und Papier bei schulischen Aktivitäten, das Beobachten des Q-Days und Richtlinien für KI im Gesundheitswesen."
 ---
 
 

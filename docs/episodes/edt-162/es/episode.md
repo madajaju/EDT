@@ -3,11 +3,8 @@ layout: posts
 title: "Crear una estrategia de nube multi-híbrida"
 number: 162
 permalink: episode-EDT162-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 162
 tags:
     - cloudadoption

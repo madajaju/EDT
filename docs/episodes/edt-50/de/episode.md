@@ -3,11 +3,8 @@ layout: posts
 title: "Verständnis für Mitarbeiter-Burnout"
 number: 50
 permalink: episode-EDT50-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 50
 tags:
     - employeeburnout

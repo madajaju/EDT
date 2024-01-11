@@ -3,11 +3,8 @@ layout: posts
 title: "Mantendo o Ser Humano na IA"
 number: 169
 permalink: episode-EDT169-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 169
 tags:
     - userexperience

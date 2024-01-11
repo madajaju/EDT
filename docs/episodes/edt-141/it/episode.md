@@ -3,11 +3,8 @@ layout: posts
 title: "Dalla neurologia alla computazione neuromorfa"
 number: 141
 permalink: episode-EDT141-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 141
 tags:
     - neurology
@@ -23,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "In questo episodio del podcast "Abbracciando la trasformazione digitale", la Dr.ssa Pamela Follett, neurologa e co-fondatrice di Lewis Rhodes Labs, condivide la sua esperienza e competenza nel campo della neurologia, nello specifico per quanto riguarda la ricerca sullo sviluppo del cervello nei primi anni di vita."
+summary: "In questo episodio del podcast Abbracciando la trasformazione digitale, la Dr.ssa Pamela Follett, neurologa e co-fondatrice di Lewis Rhodes Labs, condivide la sua esperienza e competenza nel campo della neurologia, nello specifico per quanto riguarda la ricerca sullo sviluppo del cervello nei primi anni di vita."
 video: "https://youtu.be/url"
-description: "In questo episodio del podcast "Abbracciando la trasformazione digitale", la Dr.ssa Pamela Follett, neurologa e co-fondatrice di Lewis Rhodes Labs, condivide la sua esperienza e competenza nel campo della neurologia, nello specifico per quanto riguarda la ricerca sullo sviluppo del cervello nei primi anni di vita."
+description: "In questo episodio del podcast Abbracciando la trasformazione digitale, la Dr.ssa Pamela Follett, neurologa e co-fondatrice di Lewis Rhodes Labs, condivide la sua esperienza e competenza nel campo della neurologia, nello specifico per quanto riguarda la ricerca sullo sviluppo del cervello nei primi anni di vita."
 ---
 
 <div>

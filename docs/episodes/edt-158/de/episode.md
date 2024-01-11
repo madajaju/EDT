@@ -3,11 +3,8 @@ layout: posts
 title: "GenAI im Hochschulbereich"
 number: 158
 permalink: episode-EDT158-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 158
 tags:
     - collectiongenerativeai

@@ -5,9 +5,7 @@ number: 48
 ref: brief-EDW48-en
 permalink: brief-EDW48-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 48
 tags:
     - ai
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digital Transformation news for the week of January 1, 2024, covering cybersecurity, artificial intelligence, and edge computing. Topics include IoT and AI on the farm, politicians deceived by AI-generated hallucinations, and healthcare-facing cyberattacks.
-video: https://youtu.be/0BLBOzr7kTc
-description: Digital Transformation news for the week of January 1, 2024, covering cybersecurity, artificial intelligence, and edge computing. Topics include IoT and AI on the farm, politicians deceived by AI-generated hallucinations, and healthcare-facing cyberattacks.
+summary: "Digital Transformation news for the week of January 1, 2024, covering cybersecurity, artificial intelligence, and edge computing. Topics include IoT and AI on the farm, politicians deceived by AI-generated hallucinations, and healthcare-facing cyberattacks."
+video: "https://youtu.be/0BLBOzr7kTc"
+description: "Digital Transformation news for the week of January 1, 2024, covering cybersecurity, artificial intelligence, and edge computing. Topics include IoT and AI on the farm, politicians deceived by AI-generated hallucinations, and healthcare-facing cyberattacks."
 ---
 
 

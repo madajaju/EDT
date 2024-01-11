@@ -3,11 +3,8 @@ layout: posts
 title: "Proteggere il tuo castello con la Zero-Trust"
 number: 84
 permalink: episode-EDT84-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 84
 tags:
     - cybersecurity
@@ -21,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "In questo episodio, Darren discute della sicurezza di "zero trust" con Steve Orrin di Intel, CTO del settore pubblico, e Cameron Chehreh, VP-GM del settore pubblico."
+summary: "In questo episodio, Darren discute della sicurezza di zero trust con Steve Orrin di Intel, CTO del settore pubblico, e Cameron Chehreh, VP-GM del settore pubblico."
 video: "https://youtu.be/url"
-description: "In questo episodio, Darren discute della sicurezza di "zero trust" con Steve Orrin di Intel, CTO del settore pubblico, e Cameron Chehreh, VP-GM del settore pubblico."
+description: "In questo episodio, Darren discute della sicurezza di zero trust con Steve Orrin di Intel, CTO del settore pubblico, e Cameron Chehreh, VP-GM del settore pubblico."
 ---
 
 <div>

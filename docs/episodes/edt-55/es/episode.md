@@ -3,11 +3,8 @@ layout: posts
 title: "Comunicación durante la transformación"
 number: 55
 permalink: episode-EDT55-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 55
 tags:
     - communication

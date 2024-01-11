@@ -3,11 +3,8 @@ layout: posts
 title: "Kein Code (RPA) Ansatz zur Effizienzsteigerung im Back-Office"
 number: 32
 permalink: episode-EDT32-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 32
 tags:
     - rpa

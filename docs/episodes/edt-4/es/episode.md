@@ -3,11 +3,8 @@ layout: posts
 title: "Modelo de madurez de gestión de la información"
 number: 4
 permalink: episode-EDT4-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 4
 tags:
     - data

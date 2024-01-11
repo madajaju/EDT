@@ -3,11 +3,8 @@ layout: posts
 title: "Discussion à la machine à eau dans une équipe en télétravail"
 number: 39
 permalink: episode-EDT39-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 39
 tags:
     - collaboration

@@ -5,9 +5,7 @@ number: 23
 ref: brief-EDW23-pt
 permalink: brief-EDW23-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 23
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Aqui estão as últimas notícias sobre transformação digital para 10 de julho de 2023. A guerra comercial em curso está começando a afetar os serviços em nuvem. Além disso, há especulações de que o frenesi em torno da IA generativa possa estar diminuindo. No âmbito da cibersegurança, há preocupações sobre se estamos fazendo o suficiente para nos manter à frente de atores maliciosos.
-video: https://youtu.be/
-description: Aqui estão as últimas notícias sobre transformação digital para 10 de julho de 2023. A guerra comercial em curso está começando a afetar os serviços em nuvem. Além disso, há especulações de que o frenesi em torno da IA generativa possa estar diminuindo. No âmbito da cibersegurança, há preocupações sobre se estamos fazendo o suficiente para nos manter à frente de atores maliciosos.
+summary: "Aqui estão as últimas notícias sobre transformação digital para 10 de julho de 2023. A guerra comercial em curso está começando a afetar os serviços em nuvem. Além disso, há especulações de que o frenesi em torno da IA generativa possa estar diminuindo. No âmbito da cibersegurança, há preocupações sobre se estamos fazendo o suficiente para nos manter à frente de atores maliciosos."
+video: "https://youtu.be/"
+description: "Aqui estão as últimas notícias sobre transformação digital para 10 de julho de 2023. A guerra comercial em curso está começando a afetar os serviços em nuvem. Além disso, há especulações de que o frenesi em torno da IA generativa possa estar diminuindo. No âmbito da cibersegurança, há preocupações sobre se estamos fazendo o suficiente para nos manter à frente de atores maliciosos."
 ---
 
 

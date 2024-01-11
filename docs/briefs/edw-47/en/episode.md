@@ -5,9 +5,7 @@ number: 47
 ref: brief-EDW47-en
 permalink: brief-EDW47-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 47
 tags:
     - ai
@@ -42,9 +40,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: During the week of December 24th, 2023 there were several news stories about digital transformation. These stories covered topics such as cybersecurity, artificial intelligence, and computing. Some of the highlights of the week included an increase in cyberattacks during the holiday season, Intel&#39;s effort to further develop AI technology, and the trend toward cost controls in cloud computing.
-video: https://youtu.be/f1kwoqDAlC0
-description: During the week of December 24th, 2023 there were several news stories about digital transformation. These stories covered topics such as cybersecurity, artificial intelligence, and computing. Some of the highlights of the week included an increase in cyberattacks during the holiday season, Intel&#39;s effort to further develop AI technology, and the trend toward cost controls in cloud computing.
+summary: "During the week of December 24th, 2023 there were several news stories about digital transformation. These stories covered topics such as cybersecurity, artificial intelligence, and computing. Some of the highlights of the week included an increase in cyberattacks during the holiday season, Intel&#39;s effort to further develop AI technology, and the trend toward cost controls in cloud computing."
+video: "https://youtu.be/f1kwoqDAlC0"
+description: "During the week of December 24th, 2023 there were several news stories about digital transformation. These stories covered topics such as cybersecurity, artificial intelligence, and computing. Some of the highlights of the week included an increase in cyberattacks during the holiday season, Intel&#39;s effort to further develop AI technology, and the trend toward cost controls in cloud computing."
 ---
 
 

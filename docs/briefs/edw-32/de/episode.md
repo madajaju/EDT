@@ -5,9 +5,7 @@ number: 32
 ref: brief-EDW32-de
 permalink: brief-EDW32-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 32
 tags:
     - ai
@@ -36,9 +34,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Erhalten Sie die neuesten digitalen Nachrichten für die Woche vom 10. September 2023, die künstliche Intelligenz, Cybersicherheit und ubiquitäres Computing abdecken. Erfahren Sie diese Woche mehr über eine neue iPhone-Cyberbedrohung, den Geburtsort von GPT-4 und den Ansatz des MIT zur Bewältigung der Unsicherheit bei der Quantencomputertechnik.
-video: https://youtu.be/OswZuzs4qXw
-description: Erhalten Sie die neuesten digitalen Nachrichten für die Woche vom 10. September 2023, die künstliche Intelligenz, Cybersicherheit und ubiquitäres Computing abdecken. Erfahren Sie diese Woche mehr über eine neue iPhone-Cyberbedrohung, den Geburtsort von GPT-4 und den Ansatz des MIT zur Bewältigung der Unsicherheit bei der Quantencomputertechnik.
+summary: "Erhalten Sie die neuesten digitalen Nachrichten für die Woche vom 10. September 2023, die künstliche Intelligenz, Cybersicherheit und ubiquitäres Computing abdecken. Erfahren Sie diese Woche mehr über eine neue iPhone-Cyberbedrohung, den Geburtsort von GPT-4 und den Ansatz des MIT zur Bewältigung der Unsicherheit bei der Quantencomputertechnik."
+video: "https://youtu.be/OswZuzs4qXw"
+description: "Erhalten Sie die neuesten digitalen Nachrichten für die Woche vom 10. September 2023, die künstliche Intelligenz, Cybersicherheit und ubiquitäres Computing abdecken. Erfahren Sie diese Woche mehr über eine neue iPhone-Cyberbedrohung, den Geburtsort von GPT-4 und den Ansatz des MIT zur Bewältigung der Unsicherheit bei der Quantencomputertechnik."
 ---
 
 

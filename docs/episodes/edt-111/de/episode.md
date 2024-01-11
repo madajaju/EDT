@@ -3,11 +3,8 @@ layout: posts
 title: "Erschließung des Potenzials einer Smart City"
 number: 111
 permalink: episode-EDT111-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 111
 tags:
 

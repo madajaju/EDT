@@ -3,11 +3,8 @@ layout: posts
 title: "Die Nutzung virtueller Rechenzentren mit Verge.io."
 number: 96
 permalink: episode-EDT96-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 96
 tags:
     - privatecloud

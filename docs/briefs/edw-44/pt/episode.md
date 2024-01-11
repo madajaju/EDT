@@ -5,9 +5,7 @@ number: 44
 ref: brief-EDW44-pt
 permalink: brief-EDW44-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 44
 tags:
     - ai
@@ -37,9 +35,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Por favor, confira as últimas notícias no mundo da Transformação Digital para a semana de 3 de dezembro de 2023. Você encontrará uma variedade de histórias interessantes relacionadas à computação de borda, gerenciamento de dados e inteligência artificial. Esta semana, a AWS e a Siemens colaboraram para simplificar a computação de borda, enquanto a Intel está ajudando a melhorar o gerenciamento de dados baseado em nuvem. Além disso, vários governos estão desenvolvendo novas estratégias para IA.
-video: https://youtu.be/8p3dxwZ9eqU
-description: Por favor, confira as últimas notícias no mundo da Transformação Digital para a semana de 3 de dezembro de 2023. Você encontrará uma variedade de histórias interessantes relacionadas à computação de borda, gerenciamento de dados e inteligência artificial. Esta semana, a AWS e a Siemens colaboraram para simplificar a computação de borda, enquanto a Intel está ajudando a melhorar o gerenciamento de dados baseado em nuvem. Além disso, vários governos estão desenvolvendo novas estratégias para IA.
+summary: "Por favor, confira as últimas notícias no mundo da Transformação Digital para a semana de 3 de dezembro de 2023. Você encontrará uma variedade de histórias interessantes relacionadas à computação de borda, gerenciamento de dados e inteligência artificial. Esta semana, a AWS e a Siemens colaboraram para simplificar a computação de borda, enquanto a Intel está ajudando a melhorar o gerenciamento de dados baseado em nuvem. Além disso, vários governos estão desenvolvendo novas estratégias para IA."
+video: "https://youtu.be/8p3dxwZ9eqU"
+description: "Por favor, confira as últimas notícias no mundo da Transformação Digital para a semana de 3 de dezembro de 2023. Você encontrará uma variedade de histórias interessantes relacionadas à computação de borda, gerenciamento de dados e inteligência artificial. Esta semana, a AWS e a Siemens colaboraram para simplificar a computação de borda, enquanto a Intel está ajudando a melhorar o gerenciamento de dados baseado em nuvem. Além disso, vários governos estão desenvolvendo novas estratégias para IA."
 ---
 
 

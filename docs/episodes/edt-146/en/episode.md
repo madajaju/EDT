@@ -3,11 +3,8 @@ layout: posts
 title: "Embracing the AI Revolution"
 number: 146
 permalink: episode-EDT146-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 146
 tags:
     - collectiongenerativeai

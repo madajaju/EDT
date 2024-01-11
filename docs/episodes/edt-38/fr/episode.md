@@ -3,11 +3,8 @@ layout: posts
 title: "Les années folles : un regard tourné vers 2021"
 number: 38
 permalink: episode-EDT38-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 38
 tags:
     - contactless

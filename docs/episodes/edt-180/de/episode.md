@@ -3,11 +3,8 @@ layout: posts
 title: "Generative KI in der Hochschulbildung (Überarbeitet)"
 number: 180
 permalink: episode-EDT180-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 180
 tags:
     - embracingdigitaltransformation

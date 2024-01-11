@@ -3,11 +3,8 @@ layout: posts
 title: "Génération AI quotidienne"
 number: 168
 permalink: episode-EDT168-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 168
 tags:
     - generativeai

@@ -5,9 +5,7 @@ number: 34
 ref: brief-EDW34-fr
 permalink: brief-EDW34-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 34
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Actualités sur la transformation numérique pour le 24 septembre 2023, comprenant l'intelligence artificielle, l'informatique omniprésente et la cybersécurité. Écoutez parler des nouveaux processeurs d'Intel qui transforment l'IA et le calcul haute densité, ainsi que du groupe de hackers composé d'adolescents qui a attaqué les casinos MGM de Las Vegas.
-video: https://youtu.be/8xl7p6jiRFk
-description: Actualités sur la transformation numérique pour le 24 septembre 2023, comprenant l'intelligence artificielle, l'informatique omniprésente et la cybersécurité. Écoutez parler des nouveaux processeurs d'Intel qui transforment l'IA et le calcul haute densité, ainsi que du groupe de hackers composé d'adolescents qui a attaqué les casinos MGM de Las Vegas.
+summary: "Actualités sur la transformation numérique pour le 24 septembre 2023, comprenant l'intelligence artificielle, l'informatique omniprésente et la cybersécurité. Écoutez parler des nouveaux processeurs d'Intel qui transforment l'IA et le calcul haute densité, ainsi que du groupe de hackers composé d'adolescents qui a attaqué les casinos MGM de Las Vegas."
+video: "https://youtu.be/8xl7p6jiRFk"
+description: "Actualités sur la transformation numérique pour le 24 septembre 2023, comprenant l'intelligence artificielle, l'informatique omniprésente et la cybersécurité. Écoutez parler des nouveaux processeurs d'Intel qui transforment l'IA et le calcul haute densité, ainsi que du groupe de hackers composé d'adolescents qui a attaqué les casinos MGM de Las Vegas."
 ---
 
 

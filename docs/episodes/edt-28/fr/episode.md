@@ -3,11 +3,8 @@ layout: posts
 title: "Intégration héritée avec le Cloud et l'Automatisation des Processus Robotiques (RPA)"
 number: 28
 permalink: episode-EDT28-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 28
 tags:
     - rpa

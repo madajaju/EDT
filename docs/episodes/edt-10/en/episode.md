@@ -3,11 +3,8 @@ layout: posts
 title: "Teleworker Sizing Your VDI Solution"
 number: 10
 permalink: episode-EDT10-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 10
 tags:
     - telework

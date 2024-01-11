@@ -3,11 +3,8 @@ layout: posts
 title: "Meeting Intel's Cloud Solution Architects: Treffen mit den Cloud-Lösungsarchitekten von Intel"
 number: 80
 permalink: episode-EDT80-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 80
 tags:
     - csa

@@ -5,9 +5,7 @@ number: 41
 ref: brief-EDW41-de
 permalink: brief-EDW41-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 41
 tags:
     - homelawncaretools
@@ -24,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digitaler Umarmung In dieser Woche des 12. November 2023, einschließlich Nachrichten im Bereich der Cybersicherheit. Künstliche Intelligenz und allgegenwärtiges Computing. Erfahren Sie mehr über mehrere große Cyber-Angriffe auf kritische Infrastrukturen, KI, die keine Daten mehr hat, und Durchbrüche in der Quantenrechnung.
-video: https://youtu.be/7GQTfYbUp7Q
-description: Digitaler Umarmung In dieser Woche des 12. November 2023, einschließlich Nachrichten im Bereich der Cybersicherheit. Künstliche Intelligenz und allgegenwärtiges Computing. Erfahren Sie mehr über mehrere große Cyber-Angriffe auf kritische Infrastrukturen, KI, die keine Daten mehr hat, und Durchbrüche in der Quantenrechnung.
+summary: "Digitaler Umarmung In dieser Woche des 12. November 2023, einschließlich Nachrichten im Bereich der Cybersicherheit. Künstliche Intelligenz und allgegenwärtiges Computing. Erfahren Sie mehr über mehrere große Cyber-Angriffe auf kritische Infrastrukturen, KI, die keine Daten mehr hat, und Durchbrüche in der Quantenrechnung."
+video: "https://youtu.be/7GQTfYbUp7Q"
+description: "Digitaler Umarmung In dieser Woche des 12. November 2023, einschließlich Nachrichten im Bereich der Cybersicherheit. Künstliche Intelligenz und allgegenwärtiges Computing. Erfahren Sie mehr über mehrere große Cyber-Angriffe auf kritische Infrastrukturen, KI, die keine Daten mehr hat, und Durchbrüche in der Quantenrechnung."
 ---
 
 

@@ -3,11 +3,8 @@ layout: posts
 title: "Störende Private Clouds"
 number: 121
 permalink: episode-EDT121-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 121
 tags:
     - cloud

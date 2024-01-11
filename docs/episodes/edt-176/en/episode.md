@@ -3,11 +3,8 @@ layout: posts
 title: "Zero Trust Shared Data"
 number: 176
 permalink: episode-EDT176-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 176
 tags:
     - shamimnaqvi

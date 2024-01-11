@@ -3,11 +3,8 @@ layout: posts
 title: "Asegurando tu canal de DevOps"
 number: 46
 permalink: episode-EDT46-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 46
 tags:
     - devops

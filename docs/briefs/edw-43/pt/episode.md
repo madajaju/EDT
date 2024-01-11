@@ -5,9 +5,7 @@ number: 43
 ref: brief-EDW43-pt
 permalink: brief-EDW43-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 43
 tags:
     - uniquehandmadewoodfurniture.
@@ -39,9 +37,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Notícias da Transformação Digital para a semana de 26 de Novembro de 2023. Desde as mudanças transformacionais na liderança em inteligência artificial até o enfoque imperativo em cibersegurança e o desvendar de soluções avançadas de computação, esta compilação encapsula momentos cruciais na sempre evolutiva paisagem tecnológica. Junte-se a nós enquanto mergulhamos nas complexidades dos desenvolvimentos recentes, iluminando os impactos profundos que eles carregam em vários setores e orientando a trajetória do futuro digital.
-video: https://youtu.be/5MkH1cqSX3A
-description: Notícias da Transformação Digital para a semana de 26 de Novembro de 2023. Desde as mudanças transformacionais na liderança em inteligência artificial até o enfoque imperativo em cibersegurança e o desvendar de soluções avançadas de computação, esta compilação encapsula momentos cruciais na sempre evolutiva paisagem tecnológica. Junte-se a nós enquanto mergulhamos nas complexidades dos desenvolvimentos recentes, iluminando os impactos profundos que eles carregam em vários setores e orientando a trajetória do futuro digital.
+summary: "Notícias da Transformação Digital para a semana de 26 de Novembro de 2023. Desde as mudanças transformacionais na liderança em inteligência artificial até o enfoque imperativo em cibersegurança e o desvendar de soluções avançadas de computação, esta compilação encapsula momentos cruciais na sempre evolutiva paisagem tecnológica. Junte-se a nós enquanto mergulhamos nas complexidades dos desenvolvimentos recentes, iluminando os impactos profundos que eles carregam em vários setores e orientando a trajetória do futuro digital."
+video: "https://youtu.be/5MkH1cqSX3A"
+description: "Notícias da Transformação Digital para a semana de 26 de Novembro de 2023. Desde as mudanças transformacionais na liderança em inteligência artificial até o enfoque imperativo em cibersegurança e o desvendar de soluções avançadas de computação, esta compilação encapsula momentos cruciais na sempre evolutiva paisagem tecnológica. Junte-se a nós enquanto mergulhamos nas complexidades dos desenvolvimentos recentes, iluminando os impactos profundos que eles carregam em vários setores e orientando a trajetória do futuro digital."
 ---
 
 

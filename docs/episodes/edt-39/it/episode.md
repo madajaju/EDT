@@ -3,11 +3,8 @@ layout: posts
 title: "Discussioni casuali al distributore d'acqua in un team di lavoro a distanza"
 number: 39
 permalink: episode-EDT39-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 39
 tags:
     - collaboration

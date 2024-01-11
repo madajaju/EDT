@@ -5,9 +5,7 @@ number: 21
 ref: brief-EDW21-pt
 permalink: brief-EDW21-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 21
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Notícias desta semana, em 26 de junho de 2023, na transformação digital, incluindo aumento de ataques na guerra cibernética, todos aderindo à onda de inteligência artificial generativa e redes de área de rádio virtualizadas.
-video: https://youtu.be/
-description: Notícias desta semana, em 26 de junho de 2023, na transformação digital, incluindo aumento de ataques na guerra cibernética, todos aderindo à onda de inteligência artificial generativa e redes de área de rádio virtualizadas.
+summary: "Notícias desta semana, em 26 de junho de 2023, na transformação digital, incluindo aumento de ataques na guerra cibernética, todos aderindo à onda de inteligência artificial generativa e redes de área de rádio virtualizadas."
+video: "https://youtu.be/"
+description: "Notícias desta semana, em 26 de junho de 2023, na transformação digital, incluindo aumento de ataques na guerra cibernética, todos aderindo à onda de inteligência artificial generativa e redes de área de rádio virtualizadas."
 ---
 
 

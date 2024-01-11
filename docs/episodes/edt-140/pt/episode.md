@@ -3,11 +3,8 @@ layout: posts
 title: "Verificando o histórico do seu código aberto"
 number: 140
 permalink: episode-EDT140-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 140
 tags:
 

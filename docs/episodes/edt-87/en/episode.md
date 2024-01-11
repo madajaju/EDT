@@ -3,11 +3,8 @@ layout: posts
 title: "Confidential Computing in DevSecOps"
 number: 87
 permalink: episode-EDT87-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 87
 tags:
     - confidentialcomputing

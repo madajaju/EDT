@@ -3,11 +3,8 @@ layout: posts
 title: "Comprensione del modello di sicurezza della responsabilità condivisa"
 number: 78
 permalink: episode-EDT78-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 78
 tags:
     - multicloud

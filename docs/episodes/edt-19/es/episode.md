@@ -3,11 +3,8 @@ layout: posts
 title: "Utilizar datos como un activo estratégico"
 number: 19
 permalink: episode-EDT19-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 19
 tags:
     - dataarchitecture

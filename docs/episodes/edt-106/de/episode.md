@@ -3,11 +3,8 @@ layout: posts
 title: "Die Geburt von Graph Intelligence Plattformen"
 number: 106
 permalink: episode-EDT106-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 106
 tags:
     - data

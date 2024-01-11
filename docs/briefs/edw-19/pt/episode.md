@@ -5,9 +5,7 @@ number: 19
 ref: brief-EDW19-pt
 permalink: brief-EDW19-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 19
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: A Transformação Digital para a semana de 12 de junho de 2023 inclui o desenvolvimento de uma força cibernética de 1 milhão, muitas interrupções na nuvem e a escrita de código por IA sendo adicionada à biblioteca padrão de C++.
-video: https://youtu.be/
-description: A Transformação Digital para a semana de 12 de junho de 2023 inclui o desenvolvimento de uma força cibernética de 1 milhão, muitas interrupções na nuvem e a escrita de código por IA sendo adicionada à biblioteca padrão de C++.
+summary: "A Transformação Digital para a semana de 12 de junho de 2023 inclui o desenvolvimento de uma força cibernética de 1 milhão, muitas interrupções na nuvem e a escrita de código por IA sendo adicionada à biblioteca padrão de C++."
+video: "https://youtu.be/"
+description: "A Transformação Digital para a semana de 12 de junho de 2023 inclui o desenvolvimento de uma força cibernética de 1 milhão, muitas interrupções na nuvem e a escrita de código por IA sendo adicionada à biblioteca padrão de C++."
 ---
 
 

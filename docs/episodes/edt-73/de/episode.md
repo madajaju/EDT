@@ -3,11 +3,8 @@ layout: posts
 title: "2021 Eine Jahresrückblick"
 number: 73
 permalink: episode-EDT73-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 73
 tags:
     - covid

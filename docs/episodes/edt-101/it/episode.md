@@ -3,11 +3,8 @@ layout: posts
 title: "Sicurezza del controller di rete con Elisity"
 number: 101
 permalink: episode-EDT101-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 101
 tags:
     - networksecurity

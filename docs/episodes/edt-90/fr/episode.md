@@ -3,11 +3,8 @@ layout: posts
 title: "Barrières à l'adoption des technologies futures"
 number: 90
 permalink: episode-EDT90-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 90
 tags:
     - cto

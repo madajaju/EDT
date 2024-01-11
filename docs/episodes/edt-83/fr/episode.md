@@ -3,11 +3,8 @@ layout: posts
 title: "IDC Directions 2022: Les directives IDC 2022"
 number: 83
 permalink: episode-EDT83-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 83
 tags:
     - data

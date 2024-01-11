@@ -3,11 +3,8 @@ layout: posts
 title: "Securing the Remote Worker Through Mobile Virtualization"
 number: 148
 permalink: episode-EDT148-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 148
 tags:
     - remoteworker

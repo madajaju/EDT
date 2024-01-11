@@ -3,11 +3,8 @@ layout: posts
 title: "Approche sans code (RPA) pour l'efficacité des services administratifs"
 number: 32
 permalink: episode-EDT32-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 32
 tags:
     - rpa

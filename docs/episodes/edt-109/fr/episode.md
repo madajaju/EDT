@@ -3,11 +3,8 @@ layout: posts
 title: "Faire progresser les opérations avec la 5G"
 number: 109
 permalink: episode-EDT109-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 109
 tags:
     - 5g

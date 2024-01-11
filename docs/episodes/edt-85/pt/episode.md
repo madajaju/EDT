@@ -3,11 +3,8 @@ layout: posts
 title: "Inteligência Artificial e Segurança"
 number: 85
 permalink: episode-EDT85-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 85
 tags:
     - aiml

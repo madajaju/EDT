@@ -5,9 +5,7 @@ number: 44
 ref: brief-EDW44-es
 permalink: brief-EDW44-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 44
 tags:
     - ai
@@ -37,9 +35,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Por favor, echa un vistazo a las últimas noticias en el mundo de la Transformación Digital para la semana del 3 de diciembre de 2023. Encontrarás una variedad de historias interesantes relacionadas con la computación de borde, la gestión de datos y la inteligencia artificial. Esta semana, AWS y Siemens han colaborado para simplificar la computación de borde, mientras que Intel está ayudando a mejorar la gestión de datos basada en la nube. Además, varios gobiernos están desarrollando nuevas estrategias para la inteligencia artificial.
-video: https://youtu.be/ZSsoRCK_dGg
-description: Por favor, echa un vistazo a las últimas noticias en el mundo de la Transformación Digital para la semana del 3 de diciembre de 2023. Encontrarás una variedad de historias interesantes relacionadas con la computación de borde, la gestión de datos y la inteligencia artificial. Esta semana, AWS y Siemens han colaborado para simplificar la computación de borde, mientras que Intel está ayudando a mejorar la gestión de datos basada en la nube. Además, varios gobiernos están desarrollando nuevas estrategias para la inteligencia artificial.
+summary: "Por favor, echa un vistazo a las últimas noticias en el mundo de la Transformación Digital para la semana del 3 de diciembre de 2023. Encontrarás una variedad de historias interesantes relacionadas con la computación de borde, la gestión de datos y la inteligencia artificial. Esta semana, AWS y Siemens han colaborado para simplificar la computación de borde, mientras que Intel está ayudando a mejorar la gestión de datos basada en la nube. Además, varios gobiernos están desarrollando nuevas estrategias para la inteligencia artificial."
+video: "https://youtu.be/ZSsoRCK_dGg"
+description: "Por favor, echa un vistazo a las últimas noticias en el mundo de la Transformación Digital para la semana del 3 de diciembre de 2023. Encontrarás una variedad de historias interesantes relacionadas con la computación de borde, la gestión de datos y la inteligencia artificial. Esta semana, AWS y Siemens han colaborado para simplificar la computación de borde, mientras que Intel está ayudando a mejorar la gestión de datos basada en la nube. Además, varios gobiernos están desarrollando nuevas estrategias para la inteligencia artificial."
 ---
 
 

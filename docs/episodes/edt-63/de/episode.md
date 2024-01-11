@@ -3,11 +3,8 @@ layout: posts
 title: "Inspirierender IT-Kulturwandel"
 number: 63
 permalink: episode-EDT63-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 63
 tags:
     - organizationalchange

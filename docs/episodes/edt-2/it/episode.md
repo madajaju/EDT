@@ -3,11 +3,8 @@ layout: posts
 title: "Segui il Bit"
 number: 2
 permalink: episode-EDT2-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 2
 tags:
     - iot

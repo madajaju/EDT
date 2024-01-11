@@ -3,11 +3,8 @@ layout: posts
 title: "Gestión del teletrabajo al máximo"
 number: 6
 permalink: episode-EDT6-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 6
 tags:
     - telework

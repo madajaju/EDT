@@ -5,9 +5,7 @@ number: 46
 ref: brief-EDW46-en
 permalink: brief-EDW46-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 46
 tags:
     - ai
@@ -42,9 +40,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: The week of December 17, 2023, in Digital Transformation news includes stories about AI, data management, and cybersecurity. Check out the birth of the AI PC, Multi-cloud data management for government clouds, and major warnings for critical infrastructure cybersecurity. 
-video: https://youtu.be/9Uq5ZMvAK3g
-description: The week of December 17, 2023, in Digital Transformation news includes stories about AI, data management, and cybersecurity. Check out the birth of the AI PC, Multi-cloud data management for government clouds, and major warnings for critical infrastructure cybersecurity. 
+summary: "The week of December 17, 2023, in Digital Transformation news includes stories about AI, data management, and cybersecurity. Check out the birth of the AI PC, Multi-cloud data management for government clouds, and major warnings for critical infrastructure cybersecurity. "
+video: "https://youtu.be/9Uq5ZMvAK3g"
+description: "The week of December 17, 2023, in Digital Transformation news includes stories about AI, data management, and cybersecurity. Check out the birth of the AI PC, Multi-cloud data management for government clouds, and major warnings for critical infrastructure cybersecurity. "
 ---
 
 

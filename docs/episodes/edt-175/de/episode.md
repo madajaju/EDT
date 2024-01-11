@@ -3,11 +3,8 @@ layout: posts
 title: "Zero Trust mit Betriebstechnologie"
 number: 175
 permalink: episode-EDT175-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 175
 tags:
     - operationaltechnologysecurity

@@ -3,11 +3,8 @@ layout: posts
 title: "Segurança de Hardware: Imprescindível para Transformar Dados."
 number: 27
 permalink: episode-EDT27-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 27
 tags:
     - datagovernance

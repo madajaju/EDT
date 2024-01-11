@@ -3,11 +3,8 @@ layout: posts
 title: "Resumen del año 2022."
 number: 117
 permalink: episode-EDT117-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 117
 tags:
     - edge

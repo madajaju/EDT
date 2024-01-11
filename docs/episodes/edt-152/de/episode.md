@@ -3,11 +3,8 @@ layout: posts
 title: "Praktische Generative KI"
 number: 152
 permalink: episode-EDT152-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 152
 tags:
     - genai
@@ -22,9 +19,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "In dieser Folge des Podcasts "Die digitale Transformation umarmen" führt Gastgeber Darren Pulsipher ein nachdenkliches Gespräch mit Dr. Jeffrey Lancaster. Ihre Diskussion geht auf die praktischen Anwendungen von generativer Künstlicher Intelligenz ein und die tiefgreifende Auswirkung, die sie in verschiedenen Branchen mit sich bringen wird."
+summary: "In dieser Folge des Podcasts Die digitale Transformation umarmen führt Gastgeber Darren Pulsipher ein nachdenkliches Gespräch mit Dr. Jeffrey Lancaster. Ihre Diskussion geht auf die praktischen Anwendungen von generativer Künstlicher Intelligenz ein und die tiefgreifende Auswirkung, die sie in verschiedenen Branchen mit sich bringen wird."
 video: "https://youtu.be/url"
-description: "In dieser Folge des Podcasts "Die digitale Transformation umarmen" führt Gastgeber Darren Pulsipher ein nachdenkliches Gespräch mit Dr. Jeffrey Lancaster. Ihre Diskussion geht auf die praktischen Anwendungen von generativer Künstlicher Intelligenz ein und die tiefgreifende Auswirkung, die sie in verschiedenen Branchen mit sich bringen wird."
+description: "In dieser Folge des Podcasts Die digitale Transformation umarmen führt Gastgeber Darren Pulsipher ein nachdenkliches Gespräch mit Dr. Jeffrey Lancaster. Ihre Diskussion geht auf die praktischen Anwendungen von generativer Künstlicher Intelligenz ein und die tiefgreifende Auswirkung, die sie in verschiedenen Branchen mit sich bringen wird."
 ---
 
 <div>

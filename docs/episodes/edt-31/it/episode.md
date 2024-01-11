@@ -3,11 +3,8 @@ layout: posts
 title: "Migliorare il valore dell'impiegato con Catalytic"
 number: 31
 permalink: episode-EDT31-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 31
 tags:
     - rpa

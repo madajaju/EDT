@@ -5,9 +5,7 @@ number: 17
 ref: brief-EDW17-pt
 permalink: brief-EDW17-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 17
 tags:
 
@@ -16,9 +14,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
-video: https://youtu.be/
-description: News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments.
+summary: "News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments."
+video: "https://youtu.be/"
+description: "News for Embracing Digital for the week of May 29, 2023, learn about more regulations for AI, increased nation-state cyber attacks, and edge computing investments."
 ---
 
 

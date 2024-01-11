@@ -3,11 +3,8 @@ layout: posts
 title: "Incontro con gli architetti delle soluzioni Cloud di Intel"
 number: 80
 permalink: episode-EDT80-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 80
 tags:
     - csa

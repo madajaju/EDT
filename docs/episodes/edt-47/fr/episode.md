@@ -3,11 +3,8 @@ layout: posts
 title: "Dans l'attente de 2021"
 number: 47
 permalink: episode-EDT47-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 47
 tags:
     - covid

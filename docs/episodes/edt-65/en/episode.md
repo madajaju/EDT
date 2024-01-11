@@ -3,11 +3,8 @@ layout: posts
 title: "Accelerating Cloud Adoption while Decreasing Complexity and Cost"
 number: 65
 permalink: episode-EDT65-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 65
 tags:
     - cloudmigration

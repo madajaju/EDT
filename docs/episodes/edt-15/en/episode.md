@@ -3,11 +3,8 @@ layout: posts
 title: "Kick-starting Organizational Transformation"
 number: 15
 permalink: episode-EDT15-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 15
 tags:
     - data

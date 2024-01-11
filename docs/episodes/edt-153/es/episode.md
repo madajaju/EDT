@@ -3,11 +3,8 @@ layout: posts
 title: "Entrenando a la próxima generación en IA"
 number: 153
 permalink: episode-EDT153-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 153
 tags:
     - genai

@@ -3,11 +3,8 @@ layout: posts
 title: "VAST Data Rivisitato"
 number: 48
 permalink: episode-EDT48-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 48
 tags:
     - dataarchitecture

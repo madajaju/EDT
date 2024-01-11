@@ -3,11 +3,8 @@ layout: posts
 title: "Calcolo confidenziale in DevSecOps"
 number: 87
 permalink: episode-EDT87-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 87
 tags:
     - confidentialcomputing

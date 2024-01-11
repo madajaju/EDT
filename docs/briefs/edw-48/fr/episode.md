@@ -5,9 +5,7 @@ number: 48
 ref: brief-EDW48-fr
 permalink: brief-EDW48-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 48
 tags:
     - ai
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Actualités de la Transformation Numérique pour la semaine du 1er janvier 2024, couvrant la cybersécurité, l'intelligence artificielle et l'informatique en périphérie. Les sujets comprennent l'IoT et l'IA dans l'agriculture, les politiciens trompés par les hallucinations générées par l'IA, et les cyberattaques visant le secteur de la santé.
-video: https://youtu.be/YylKqNUp_xM
-description: Actualités de la Transformation Numérique pour la semaine du 1er janvier 2024, couvrant la cybersécurité, l'intelligence artificielle et l'informatique en périphérie. Les sujets comprennent l'IoT et l'IA dans l'agriculture, les politiciens trompés par les hallucinations générées par l'IA, et les cyberattaques visant le secteur de la santé.
+summary: "Actualités de la Transformation Numérique pour la semaine du 1er janvier 2024, couvrant la cybersécurité, l'intelligence artificielle et l'informatique en périphérie. Les sujets comprennent l'IoT et l'IA dans l'agriculture, les politiciens trompés par les hallucinations générées par l'IA, et les cyberattaques visant le secteur de la santé."
+video: "https://youtu.be/YylKqNUp_xM"
+description: "Actualités de la Transformation Numérique pour la semaine du 1er janvier 2024, couvrant la cybersécurité, l'intelligence artificielle et l'informatique en périphérie. Les sujets comprennent l'IoT et l'IA dans l'agriculture, les politiciens trompés par les hallucinations générées par l'IA, et les cyberattaques visant le secteur de la santé."
 ---
 
 

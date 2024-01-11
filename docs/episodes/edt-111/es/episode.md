@@ -3,11 +3,8 @@ layout: posts
 title: "Darse cuenta del potencial de las ciudades inteligentes"
 number: 111
 permalink: episode-EDT111-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 111
 tags:
 

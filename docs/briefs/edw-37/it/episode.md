@@ -5,9 +5,7 @@ number: 37
 ref: brief-EDW37-it
 permalink: brief-EDW37-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 37
 tags:
     - compute
@@ -34,9 +32,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Trasformazione digitale di questa settimana per il 15 ottobre 2023, riporta gli attacchi informatici in corso durante il conflitto Israele-Hamas e il compromesso dell'app del sistema 'Red Alert'. Inoltre, si è dimostrato che l'IA generativa riduce gli sforzi di migrazione cloud mentre la CMA del Regno Unito indaga sul mercato del cloud pubblico.
-video: https://youtu.be/wRwG3BQLwCQ
-description: Trasformazione digitale di questa settimana per il 15 ottobre 2023, riporta gli attacchi informatici in corso durante il conflitto Israele-Hamas e il compromesso dell'app del sistema 'Red Alert'. Inoltre, si è dimostrato che l'IA generativa riduce gli sforzi di migrazione cloud mentre la CMA del Regno Unito indaga sul mercato del cloud pubblico.
+summary: "Trasformazione digitale di questa settimana per il 15 ottobre 2023, riporta gli attacchi informatici in corso durante il conflitto Israele-Hamas e il compromesso dell'app del sistema 'Red Alert'. Inoltre, si è dimostrato che l'IA generativa riduce gli sforzi di migrazione cloud mentre la CMA del Regno Unito indaga sul mercato del cloud pubblico."
+video: "https://youtu.be/wRwG3BQLwCQ"
+description: "Trasformazione digitale di questa settimana per il 15 ottobre 2023, riporta gli attacchi informatici in corso durante il conflitto Israele-Hamas e il compromesso dell'app del sistema 'Red Alert'. Inoltre, si è dimostrato che l'IA generativa riduce gli sforzi di migrazione cloud mentre la CMA del Regno Unito indaga sul mercato del cloud pubblico."
 ---
 
 

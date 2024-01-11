@@ -3,11 +3,8 @@ layout: posts
 title: "Asegurando tu castillo con la confianza cero"
 number: 84
 permalink: episode-EDT84-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 84
 tags:
     - cybersecurity

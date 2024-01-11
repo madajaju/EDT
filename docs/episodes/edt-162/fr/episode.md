@@ -3,11 +3,8 @@ layout: posts
 title: "Élaborer une stratégie de cloud hybride multiplateforme."
 number: 162
 permalink: episode-EDT162-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 162
 tags:
     - cloudadoption

@@ -3,11 +3,8 @@ layout: posts
 title: "Datenverstöße & sichere Lieferkette"
 number: 61
 permalink: episode-EDT61-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 61
 tags:
     - datbreach

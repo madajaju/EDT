@@ -3,11 +3,8 @@ layout: posts
 title: "Die Vorteile von Graphdatenbanken"
 number: 97
 permalink: episode-EDT97-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 97
 tags:
     - data

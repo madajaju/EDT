@@ -5,9 +5,7 @@ number: 15
 ref: brief-EDW15-es
 permalink: brief-EDW15-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 15
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: News from the week of May 15, 2023 in digital transformation including stories from Edge Computing, Cybersecurity, and Artificial Intelligence.
-video: https://youtu.be/
-description: News from the week of May 15, 2023 in digital transformation including stories from Edge Computing, Cybersecurity, and Artificial Intelligence.
+summary: "News from the week of May 15, 2023 in digital transformation including stories from Edge Computing, Cybersecurity, and Artificial Intelligence."
+video: "https://youtu.be/"
+description: "News from the week of May 15, 2023 in digital transformation including stories from Edge Computing, Cybersecurity, and Artificial Intelligence."
 ---
 
 

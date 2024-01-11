@@ -3,11 +3,8 @@ layout: posts
 title: "Desenvolvendo um Modelo Operacional de Nuvem Multihíbrida"
 number: 163
 permalink: episode-EDT163-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 163
 tags:
     - cloudstrategy

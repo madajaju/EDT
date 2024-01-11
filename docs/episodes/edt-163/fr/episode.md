@@ -3,11 +3,8 @@ layout: posts
 title: "Développer un modèle d'exploitation Multi-Hybrid Cloud"
 number: 163
 permalink: episode-EDT163-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 163
 tags:
     - cloudstrategy

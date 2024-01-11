@@ -3,11 +3,8 @@ layout: posts
 title: "Asegurando al trabajador remoto a través de la virtualización móvil."
 number: 148
 permalink: episode-EDT148-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 148
 tags:
     - remoteworker
@@ -23,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "En este episodio del podcast "Asumiendo la Transformación Digital", el presentador Darren Pulsipher participa en una conversación perspicaz con el invitado especial Jared Shepard, CEO de Hypori. La entrevista se enfoca en el tema crucial de asegurar a los trabajadores remotos a través de la virtualización móvil. El viaje único de Jared Shepard desde abandonar la escuela secundaria hasta convertirse en CEO agrega una dimensión inspiradora a la discusión."
+summary: "En este episodio del podcast Asumiendo la Transformación Digital, el presentador Darren Pulsipher participa en una conversación perspicaz con el invitado especial Jared Shepard, CEO de Hypori. La entrevista se enfoca en el tema crucial de asegurar a los trabajadores remotos a través de la virtualización móvil. El viaje único de Jared Shepard desde abandonar la escuela secundaria hasta convertirse en CEO agrega una dimensión inspiradora a la discusión."
 video: "https://youtu.be/url"
-description: "En este episodio del podcast "Asumiendo la Transformación Digital", el presentador Darren Pulsipher participa en una conversación perspicaz con el invitado especial Jared Shepard, CEO de Hypori. La entrevista se enfoca en el tema crucial de asegurar a los trabajadores remotos a través de la virtualización móvil. El viaje único de Jared Shepard desde abandonar la escuela secundaria hasta convertirse en CEO agrega una dimensión inspiradora a la discusión."
+description: "En este episodio del podcast Asumiendo la Transformación Digital, el presentador Darren Pulsipher participa en una conversación perspicaz con el invitado especial Jared Shepard, CEO de Hypori. La entrevista se enfoca en el tema crucial de asegurar a los trabajadores remotos a través de la virtualización móvil. El viaje único de Jared Shepard desde abandonar la escuela secundaria hasta convertirse en CEO agrega una dimensión inspiradora a la discusión."
 ---
 
 <div>

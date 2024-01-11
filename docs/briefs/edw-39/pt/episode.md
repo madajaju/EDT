@@ -5,9 +5,7 @@ number: 39
 ref: brief-EDW39-pt
 permalink: brief-EDW39-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 39
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Na última edição do nosso Embracing Digital This Week, trazemos para você as últimas novidades e histórias no mundo da cibersegurança, computação de borda e computação ubíqua. Neste episódio, abordamos um novo malware chamado "Elegant", regulamentações de cibersegurança na Califórnia, a investigação do Parlamento do Reino Unido sobre a cibersegurança da infraestrutura crítica e outras notícias interessantes da indústria de tecnologia.
-video: https://youtu.be/
-description: Na última edição do nosso Embracing Digital This Week, trazemos para você as últimas novidades e histórias no mundo da cibersegurança, computação de borda e computação ubíqua. Neste episódio, abordamos um novo malware chamado "Elegant", regulamentações de cibersegurança na Califórnia, a investigação do Parlamento do Reino Unido sobre a cibersegurança da infraestrutura crítica e outras notícias interessantes da indústria de tecnologia.
+summary: "Na última edição do nosso Embracing Digital This Week, trazemos para você as últimas novidades e histórias no mundo da cibersegurança, computação de borda e computação ubíqua. Neste episódio, abordamos um novo malware chamado Elegant, regulamentações de cibersegurança na Califórnia, a investigação do Parlamento do Reino Unido sobre a cibersegurança da infraestrutura crítica e outras notícias interessantes da indústria de tecnologia."
+video: "https://youtu.be/"
+description: "Na última edição do nosso Embracing Digital This Week, trazemos para você as últimas novidades e histórias no mundo da cibersegurança, computação de borda e computação ubíqua. Neste episódio, abordamos um novo malware chamado Elegant, regulamentações de cibersegurança na Califórnia, a investigação do Parlamento do Reino Unido sobre a cibersegurança da infraestrutura crítica e outras notícias interessantes da indústria de tecnologia."
 ---
 
 

@@ -3,11 +3,8 @@ layout: posts
 title: "Grande Memoria Controller di Memoria Definita dal Software"
 number: 21
 permalink: episode-EDT21-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 21
 tags:
     - bigmemory

@@ -5,9 +5,7 @@ number: 10
 ref: brief-EDW10-fr
 permalink: brief-EDW10-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 10
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Résumé
-video: https://youtu.be/
-description: Résumé
+summary: "Résumé"
+video: "https://youtu.be/"
+description: "Résumé"
 ---
 
 

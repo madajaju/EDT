@@ -3,11 +3,8 @@ layout: posts
 title: "Adopter la révolution de l'IA."
 number: 146
 permalink: episode-EDT146-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 146
 tags:
     - collectiongenerativeai
@@ -22,9 +19,9 @@ guests:
 
 img: thumbnail.jpg
 image: thumbnail.jpg
-summary: "Dans cet épisode, Darren discute avec le Dr Michael Lenox de la révolution émergente de l'IA et de la manière de l'embrasser ou de la détruire. Michael vient de sortir un nouveau livre intitulé "Stratégie à l'ère numérique : maîtriser la transformation numérique"."
+summary: "Dans cet épisode, Darren discute avec le Dr Michael Lenox de la révolution émergente de l'IA et de la manière de l'embrasser ou de la détruire. Michael vient de sortir un nouveau livre intitulé Stratégie à l'ère numérique : maîtriser la transformation numérique."
 video: "https://youtu.be/url"
-description: "Dans cet épisode, Darren discute avec le Dr Michael Lenox de la révolution émergente de l'IA et de la manière de l'embrasser ou de la détruire. Michael vient de sortir un nouveau livre intitulé "Stratégie à l'ère numérique : maîtriser la transformation numérique"."
+description: "Dans cet épisode, Darren discute avec le Dr Michael Lenox de la révolution émergente de l'IA et de la manière de l'embrasser ou de la détruire. Michael vient de sortir un nouveau livre intitulé Stratégie à l'ère numérique : maîtriser la transformation numérique."
 ---
 
 <div>

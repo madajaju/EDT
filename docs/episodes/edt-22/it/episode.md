@@ -3,11 +3,8 @@ layout: posts
 title: "Un argomento a favore del cloud multi-ibrido"
 number: 22
 permalink: episode-EDT22-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 22
 tags:
 

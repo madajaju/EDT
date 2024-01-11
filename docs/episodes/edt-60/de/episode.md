@@ -3,11 +3,8 @@ layout: posts
 title: "Risikomanagement bei Ransomware"
 number: 60
 permalink: episode-EDT60-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 60
 tags:
     - cybersecurity

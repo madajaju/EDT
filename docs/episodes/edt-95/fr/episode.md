@@ -3,11 +3,8 @@ layout: posts
 title: "Exigences pour les architectures Edge vers Cloud"
 number: 95
 permalink: episode-EDT95-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 95
 tags:
     - data

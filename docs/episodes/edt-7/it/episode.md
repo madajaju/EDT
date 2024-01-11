@@ -3,11 +3,8 @@ layout: posts
 title: "La sicurezza del lavoratore a distanza"
 number: 7
 permalink: episode-EDT7-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 7
 tags:
 

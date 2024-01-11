@@ -3,11 +3,8 @@ layout: posts
 title: "Acelerando la adopción de la nube al tiempo que se disminuye la complejidad y el costo."
 number: 65
 permalink: episode-EDT65-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 65
 tags:
     - cloudmigration

@@ -3,11 +3,8 @@ layout: posts
 title: "Soluzioni di cibersicurezza con Hitachi"
 number: 75
 permalink: episode-EDT75-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 75
 tags:
     - cybersecurity

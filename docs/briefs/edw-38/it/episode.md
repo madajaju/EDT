@@ -5,9 +5,7 @@ number: 38
 ref: brief-EDW38-it
 permalink: brief-EDW38-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 38
 tags:
     - keywords
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Abbracciando le notizie digitali per la settimana del 22 ottobre 2023, incluse notizie sulla sicurezza informatica, l'informatica pervasiva e l'intelligenza artificiale. I momenti salienti di questa settimana includono il ritorno alla penna e alla carta nella distribuzione scolastica, l'attenzione per il Q-Day e le linee guida sull'IA nella sanità.
-video: https://youtu.be/2n7sRxDTqSE
-description: Abbracciando le notizie digitali per la settimana del 22 ottobre 2023, incluse notizie sulla sicurezza informatica, l'informatica pervasiva e l'intelligenza artificiale. I momenti salienti di questa settimana includono il ritorno alla penna e alla carta nella distribuzione scolastica, l'attenzione per il Q-Day e le linee guida sull'IA nella sanità.
+summary: "Abbracciando le notizie digitali per la settimana del 22 ottobre 2023, incluse notizie sulla sicurezza informatica, l'informatica pervasiva e l'intelligenza artificiale. I momenti salienti di questa settimana includono il ritorno alla penna e alla carta nella distribuzione scolastica, l'attenzione per il Q-Day e le linee guida sull'IA nella sanità."
+video: "https://youtu.be/2n7sRxDTqSE"
+description: "Abbracciando le notizie digitali per la settimana del 22 ottobre 2023, incluse notizie sulla sicurezza informatica, l'informatica pervasiva e l'intelligenza artificiale. I momenti salienti di questa settimana includono il ritorno alla penna e alla carta nella distribuzione scolastica, l'attenzione per il Q-Day e le linee guida sull'IA nella sanità."
 ---
 
 

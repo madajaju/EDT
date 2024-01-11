@@ -3,11 +3,8 @@ layout: posts
 title: "Liderança orientada pela informação"
 number: 104
 permalink: episode-EDT104-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 104
 tags:
     - data

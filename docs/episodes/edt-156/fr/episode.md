@@ -3,11 +3,8 @@ layout: posts
 title: "Devenir une organisation prête pour les données"
 number: 156
 permalink: episode-EDT156-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 156
 tags:
     - collectiongenerativeai

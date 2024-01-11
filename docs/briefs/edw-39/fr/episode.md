@@ -5,9 +5,7 @@ number: 39
 ref: brief-EDW39-fr
 permalink: brief-EDW39-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 39
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Dans la dernière édition de notre rubrique Embracing Digital This Week, nous vous présentons les derniers développements et les histoires du monde de la cybersécurité, de l'informatique en périphérie et de l'informatique omniprésente. Dans cet épisode, nous abordons un nouveau logiciel malveillant appelé "Elegant", les réglementations en matière de cybersécurité en Californie, l'enquête du Parlement britannique sur la cybersécurité des infrastructures critiques, et d'autres actualités intéressantes de l'industrie technologique.
-video: https://youtu.be/Iiw0yaJ_NLY
-description: Dans la dernière édition de notre rubrique Embracing Digital This Week, nous vous présentons les derniers développements et les histoires du monde de la cybersécurité, de l'informatique en périphérie et de l'informatique omniprésente. Dans cet épisode, nous abordons un nouveau logiciel malveillant appelé "Elegant", les réglementations en matière de cybersécurité en Californie, l'enquête du Parlement britannique sur la cybersécurité des infrastructures critiques, et d'autres actualités intéressantes de l'industrie technologique.
+summary: "Dans la dernière édition de notre rubrique Embracing Digital This Week, nous vous présentons les derniers développements et les histoires du monde de la cybersécurité, de l'informatique en périphérie et de l'informatique omniprésente. Dans cet épisode, nous abordons un nouveau logiciel malveillant appelé Elegant, les réglementations en matière de cybersécurité en Californie, l'enquête du Parlement britannique sur la cybersécurité des infrastructures critiques, et d'autres actualités intéressantes de l'industrie technologique."
+video: "https://youtu.be/Iiw0yaJ_NLY"
+description: "Dans la dernière édition de notre rubrique Embracing Digital This Week, nous vous présentons les derniers développements et les histoires du monde de la cybersécurité, de l'informatique en périphérie et de l'informatique omniprésente. Dans cet épisode, nous abordons un nouveau logiciel malveillant appelé Elegant, les réglementations en matière de cybersécurité en Californie, l'enquête du Parlement britannique sur la cybersécurité des infrastructures critiques, et d'autres actualités intéressantes de l'industrie technologique."
 ---
 
 

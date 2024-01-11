@@ -3,11 +3,8 @@ layout: posts
 title: "Securing your DevOps Pipeline"
 number: 46
 permalink: episode-EDT46-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 46
 tags:
     - devops

@@ -3,11 +3,8 @@ layout: posts
 title: "Asesor GenAI para Gestión de Centros de Datos"
 number: 155
 permalink: episode-EDT155-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 155
 tags:
     - ai

@@ -5,9 +5,7 @@ number: 23
 ref: brief-EDW23-it
 permalink: brief-EDW23-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 23
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Ecco le ultime notizie sulla trasformazione digitale per il 10 luglio 2023. La continua guerra commerciale sta iniziando a influire sui servizi cloud. Inoltre, c'è speculazione che l'entusiasmo intorno all'IA generativa possa essere in rallentamento. In campo della sicurezza informatica, ci sono preoccupazioni sul fatto che stiamo facendo abbastanza per stare al passo con gli attori malintenzionati.
-video: https://youtu.be/
-description: Ecco le ultime notizie sulla trasformazione digitale per il 10 luglio 2023. La continua guerra commerciale sta iniziando a influire sui servizi cloud. Inoltre, c'è speculazione che l'entusiasmo intorno all'IA generativa possa essere in rallentamento. In campo della sicurezza informatica, ci sono preoccupazioni sul fatto che stiamo facendo abbastanza per stare al passo con gli attori malintenzionati.
+summary: "Ecco le ultime notizie sulla trasformazione digitale per il 10 luglio 2023. La continua guerra commerciale sta iniziando a influire sui servizi cloud. Inoltre, c'è speculazione che l'entusiasmo intorno all'IA generativa possa essere in rallentamento. In campo della sicurezza informatica, ci sono preoccupazioni sul fatto che stiamo facendo abbastanza per stare al passo con gli attori malintenzionati."
+video: "https://youtu.be/"
+description: "Ecco le ultime notizie sulla trasformazione digitale per il 10 luglio 2023. La continua guerra commerciale sta iniziando a influire sui servizi cloud. Inoltre, c'è speculazione che l'entusiasmo intorno all'IA generativa possa essere in rallentamento. In campo della sicurezza informatica, ci sono preoccupazioni sul fatto che stiamo facendo abbastanza per stare al passo con gli attori malintenzionati."
 ---
 
 

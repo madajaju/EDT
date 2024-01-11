@@ -3,11 +3,8 @@ layout: posts
 title: "Portabilité de l'application avec OneAPI"
 number: 30
 permalink: episode-EDT30-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 30
 tags:
     - aiml

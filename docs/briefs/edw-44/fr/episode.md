@@ -5,9 +5,7 @@ number: 44
 ref: brief-EDW44-fr
 permalink: brief-EDW44-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 44
 tags:
     - ai
@@ -37,9 +35,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Veuillez consulter les dernières actualités dans le monde de la Transformation Numérique pour la semaine du 3 décembre 2023. Vous trouverez une variété d'histoires intéressantes liées à l'informatique en bordure, à la gestion des données et à l'intelligence artificielle. Cette semaine, AWS et Siemens ont collaboré pour simplifier l'informatique en bordure, tandis qu'Intel aide à améliorer la gestion des données basée sur le cloud. De plus, plusieurs gouvernements développent de nouvelles stratégies pour l'IA.
-video: https://youtu.be/UwxA8GsM1lg
-description: Veuillez consulter les dernières actualités dans le monde de la Transformation Numérique pour la semaine du 3 décembre 2023. Vous trouverez une variété d'histoires intéressantes liées à l'informatique en bordure, à la gestion des données et à l'intelligence artificielle. Cette semaine, AWS et Siemens ont collaboré pour simplifier l'informatique en bordure, tandis qu'Intel aide à améliorer la gestion des données basée sur le cloud. De plus, plusieurs gouvernements développent de nouvelles stratégies pour l'IA.
+summary: "Veuillez consulter les dernières actualités dans le monde de la Transformation Numérique pour la semaine du 3 décembre 2023. Vous trouverez une variété d'histoires intéressantes liées à l'informatique en bordure, à la gestion des données et à l'intelligence artificielle. Cette semaine, AWS et Siemens ont collaboré pour simplifier l'informatique en bordure, tandis qu'Intel aide à améliorer la gestion des données basée sur le cloud. De plus, plusieurs gouvernements développent de nouvelles stratégies pour l'IA."
+video: "https://youtu.be/UwxA8GsM1lg"
+description: "Veuillez consulter les dernières actualités dans le monde de la Transformation Numérique pour la semaine du 3 décembre 2023. Vous trouverez une variété d'histoires intéressantes liées à l'informatique en bordure, à la gestion des données et à l'intelligence artificielle. Cette semaine, AWS et Siemens ont collaboré pour simplifier l'informatique en bordure, tandis qu'Intel aide à améliorer la gestion des données basée sur le cloud. De plus, plusieurs gouvernements développent de nouvelles stratégies pour l'IA."
 ---
 
 

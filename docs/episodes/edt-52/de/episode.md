@@ -3,11 +3,8 @@ layout: posts
 title: "Telemetrie in der Cloud"
 number: 52
 permalink: episode-EDT52-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 52
 tags:
     - multicloud

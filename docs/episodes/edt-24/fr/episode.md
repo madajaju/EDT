@@ -3,11 +3,8 @@ layout: posts
 title: "Stratégie numérique et architecture des données"
 number: 24
 permalink: episode-EDT24-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 24
 tags:
     - data

@@ -3,11 +3,8 @@ layout: posts
 title: "Attrarre le persone di nuovo in ufficio."
 number: 145
 permalink: episode-EDT145-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 145
 tags:
     - people

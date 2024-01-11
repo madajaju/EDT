@@ -3,11 +3,8 @@ layout: posts
 title: "Folge und sichere den Bit-Rand zur Cloud."
 number: 64
 permalink: episode-EDT64-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 64
 tags:
     - edge

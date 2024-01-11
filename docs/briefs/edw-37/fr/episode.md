@@ -5,9 +5,7 @@ number: 37
 ref: brief-EDW37-fr
 permalink: brief-EDW37-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 37
 tags:
     - compute
@@ -34,9 +32,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Transformation numérique cette semaine pour le 15 octobre 2023, rapporte des cyberattaques en cours pendant le conflit entre Israël et le Hamas et la compromission de l'application « Red Alert System ». De plus, l'IA générative a montré sa capacité à réduire les efforts de migration vers le cloud tandis que la CMA du Royaume-Uni enquête sur le marché du cloud public.
-video: https://youtu.be/AlZEoCe-fIc
-description: Transformation numérique cette semaine pour le 15 octobre 2023, rapporte des cyberattaques en cours pendant le conflit entre Israël et le Hamas et la compromission de l'application « Red Alert System ». De plus, l'IA générative a montré sa capacité à réduire les efforts de migration vers le cloud tandis que la CMA du Royaume-Uni enquête sur le marché du cloud public.
+summary: "Transformation numérique cette semaine pour le 15 octobre 2023, rapporte des cyberattaques en cours pendant le conflit entre Israël et le Hamas et la compromission de l'application « Red Alert System ». De plus, l'IA générative a montré sa capacité à réduire les efforts de migration vers le cloud tandis que la CMA du Royaume-Uni enquête sur le marché du cloud public."
+video: "https://youtu.be/AlZEoCe-fIc"
+description: "Transformation numérique cette semaine pour le 15 octobre 2023, rapporte des cyberattaques en cours pendant le conflit entre Israël et le Hamas et la compromission de l'application « Red Alert System ». De plus, l'IA générative a montré sa capacité à réduire les efforts de migration vers le cloud tandis que la CMA du Royaume-Uni enquête sur le marché du cloud public."
 ---
 
 

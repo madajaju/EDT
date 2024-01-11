@@ -3,11 +3,8 @@ layout: posts
 title: "Sécurisation de la chaîne d'approvisionnement"
 number: 110
 permalink: episode-EDT110-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 110
 tags:
     - securesupplychain

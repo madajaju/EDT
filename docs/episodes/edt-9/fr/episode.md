@@ -3,11 +3,8 @@ layout: posts
 title: "Télétravail: Sécuriser votre bureau à domicile"
 number: 9
 permalink: episode-EDT9-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 9
 tags:
     - cybersecurity

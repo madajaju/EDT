@@ -5,9 +5,7 @@ number: 42
 ref: brief-EDW42-en
 permalink: brief-EDW42-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 42
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digital Transformation for Cybersecurity, AI, and Computing on the week of November 19, 2023. Topics include legal implications of cybersecurity, Sam Altman&#39;s departure from OpenAI, and Cloud providers competing for government contracts.
-video: https://youtu.be/ro87-zibneA
-description: Digital Transformation for Cybersecurity, AI, and Computing on the week of November 19, 2023. Topics include legal implications of cybersecurity, Sam Altman&#39;s departure from OpenAI, and Cloud providers competing for government contracts.
+summary: "Digital Transformation for Cybersecurity, AI, and Computing on the week of November 19, 2023. Topics include legal implications of cybersecurity, Sam Altman&#39;s departure from OpenAI, and Cloud providers competing for government contracts."
+video: "https://youtu.be/ro87-zibneA"
+description: "Digital Transformation for Cybersecurity, AI, and Computing on the week of November 19, 2023. Topics include legal implications of cybersecurity, Sam Altman&#39;s departure from OpenAI, and Cloud providers competing for government contracts."
 ---
 
 

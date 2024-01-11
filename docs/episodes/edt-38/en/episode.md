@@ -3,11 +3,8 @@ layout: posts
 title: "Roaring 20's a Look Forward to 2021"
 number: 38
 permalink: episode-EDT38-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 38
 tags:
     - contactless

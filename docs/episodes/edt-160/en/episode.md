@@ -3,11 +3,8 @@ layout: posts
 title: "Security in Generative AI"
 number: 160
 permalink: episode-EDT160-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 160
 tags:
     - collectiongenerativeai

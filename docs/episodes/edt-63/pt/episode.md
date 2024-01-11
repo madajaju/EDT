@@ -3,11 +3,8 @@ layout: posts
 title: "Inspirando mudança cultural de TI."
 number: 63
 permalink: episode-EDT63-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 63
 tags:
     - organizationalchange

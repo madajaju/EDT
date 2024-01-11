@@ -3,11 +3,8 @@ layout: posts
 title: "GenAI en la educación superior"
 number: 158
 permalink: episode-EDT158-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 158
 tags:
     - collectiongenerativeai

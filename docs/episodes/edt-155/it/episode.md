@@ -3,11 +3,8 @@ layout: posts
 title: "Consulente GenAI per la gestione del data center"
 number: 155
 permalink: episode-EDT155-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 155
 tags:
     - ai

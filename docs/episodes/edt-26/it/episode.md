@@ -3,11 +3,8 @@ layout: posts
 title: "Soluzioni dati Multi Cloud con Hammerspace"
 number: 26
 permalink: episode-EDT26-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 26
 tags:
     - hammerspace

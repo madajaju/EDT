@@ -3,11 +3,8 @@ layout: posts
 title: "Integração de Herança com Nuvem e RPA"
 number: 28
 permalink: episode-EDT28-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 28
 tags:
     - rpa

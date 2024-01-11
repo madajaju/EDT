@@ -3,11 +3,8 @@ layout: posts
 title: "Arquitectura de Confianza Cero"
 number: 172
 permalink: episode-EDT172-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 172
 tags:
     - zta

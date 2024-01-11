@@ -3,11 +3,8 @@ layout: posts
 title: "Enfoque sin código (RPA) para la eficiencia de la oficina de respaldo."
 number: 32
 permalink: episode-EDT32-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 32
 tags:
     - rpa

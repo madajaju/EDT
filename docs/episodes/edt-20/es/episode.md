@@ -3,11 +3,8 @@ layout: posts
 title: "Destruyendo la complejidad de las capas de almacenamiento"
 number: 20
 permalink: episode-EDT20-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 20
 tags:
     - data

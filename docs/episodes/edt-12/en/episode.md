@@ -3,11 +3,8 @@ layout: posts
 title: "Put the Title Right Here"
 number: 12
 permalink: episode-EDT12-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 12
 tags:
     - remotelearning

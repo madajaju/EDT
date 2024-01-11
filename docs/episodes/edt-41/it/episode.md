@@ -3,11 +3,8 @@ layout: posts
 title: "L'Arte Nera del DevOps"
 number: 41
 permalink: episode-EDT41-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 41
 tags:
     - devops

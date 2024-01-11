@@ -3,11 +3,8 @@ layout: posts
 title: "Opérationnalisation de vos projets d'IA"
 number: 103
 permalink: episode-EDT103-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 103
 tags:
     - aiops

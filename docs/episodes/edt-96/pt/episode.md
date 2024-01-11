@@ -3,11 +3,8 @@ layout: posts
 title: "Aproveitando os Datacenters Virtuais com Verge.io"
 number: 96
 permalink: episode-EDT96-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 96
 tags:
     - privatecloud

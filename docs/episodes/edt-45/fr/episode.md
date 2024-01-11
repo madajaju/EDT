@@ -3,11 +3,8 @@ layout: posts
 title: "Tous les cœurs ne sont pas égaux."
 number: 45
 permalink: episode-EDT45-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 45
 tags:
     - multicloud

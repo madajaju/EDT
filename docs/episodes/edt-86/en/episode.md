@@ -3,11 +3,8 @@ layout: posts
 title: "The Things I Wish I Knew as a Government CTO"
 number: 86
 permalink: episode-EDT86-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 86
 tags:
     - cto

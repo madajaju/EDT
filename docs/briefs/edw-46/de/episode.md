@@ -5,9 +5,7 @@ number: 46
 ref: brief-EDW46-de
 permalink: brief-EDW46-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 46
 tags:
     - ai
@@ -42,9 +40,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Die Woche vom 17. Dezember 2023 beinhaltet in den Nachrichten zur digitalen Transformation Geschichten über KI, Datenmanagement und Cybersicherheit. Schauen Sie sich die Geburt des KI-PCs, Multi-Cloud-Datenmanagement für Regierungsclouds und wichtige Warnungen für die Cybersicherheit kritischer Infrastrukturen an.
-video: https://youtu.be/CLKi9HY4eqA
-description: Die Woche vom 17. Dezember 2023 beinhaltet in den Nachrichten zur digitalen Transformation Geschichten über KI, Datenmanagement und Cybersicherheit. Schauen Sie sich die Geburt des KI-PCs, Multi-Cloud-Datenmanagement für Regierungsclouds und wichtige Warnungen für die Cybersicherheit kritischer Infrastrukturen an.
+summary: "Die Woche vom 17. Dezember 2023 beinhaltet in den Nachrichten zur digitalen Transformation Geschichten über KI, Datenmanagement und Cybersicherheit. Schauen Sie sich die Geburt des KI-PCs, Multi-Cloud-Datenmanagement für Regierungsclouds und wichtige Warnungen für die Cybersicherheit kritischer Infrastrukturen an."
+video: "https://youtu.be/CLKi9HY4eqA"
+description: "Die Woche vom 17. Dezember 2023 beinhaltet in den Nachrichten zur digitalen Transformation Geschichten über KI, Datenmanagement und Cybersicherheit. Schauen Sie sich die Geburt des KI-PCs, Multi-Cloud-Datenmanagement für Regierungsclouds und wichtige Warnungen für die Cybersicherheit kritischer Infrastrukturen an."
 ---
 
 

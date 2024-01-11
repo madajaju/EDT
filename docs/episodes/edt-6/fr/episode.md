@@ -3,11 +3,8 @@ layout: posts
 title: "Gestion du télétravail à pleine capacité"
 number: 6
 permalink: episode-EDT6-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 6
 tags:
     - telework

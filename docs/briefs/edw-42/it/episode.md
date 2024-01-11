@@ -5,9 +5,7 @@ number: 42
 ref: brief-EDW42-it
 permalink: brief-EDW42-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 42
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Trasformazione Digitale per la Cybersecurity, l'IA e il Calcolo nella settimana del 19 Novembre 2023. I temi includono le implicazioni legali della cybersecurity, l'addio di Sam Altman da OpenAI e i fornitori di cloud in competizione per i contratti governativi.
-video: https://youtu.be/9_Hp6lYGUWM
-description: Trasformazione Digitale per la Cybersecurity, l'IA e il Calcolo nella settimana del 19 Novembre 2023. I temi includono le implicazioni legali della cybersecurity, l'addio di Sam Altman da OpenAI e i fornitori di cloud in competizione per i contratti governativi.
+summary: "Trasformazione Digitale per la Cybersecurity, l'IA e il Calcolo nella settimana del 19 Novembre 2023. I temi includono le implicazioni legali della cybersecurity, l'addio di Sam Altman da OpenAI e i fornitori di cloud in competizione per i contratti governativi."
+video: "https://youtu.be/9_Hp6lYGUWM"
+description: "Trasformazione Digitale per la Cybersecurity, l'IA e il Calcolo nella settimana del 19 Novembre 2023. I temi includono le implicazioni legali della cybersecurity, l'addio di Sam Altman da OpenAI e i fornitori di cloud in competizione per i contratti governativi."
 ---
 
 

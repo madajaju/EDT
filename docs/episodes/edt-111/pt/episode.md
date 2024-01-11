@@ -3,11 +3,8 @@ layout: posts
 title: "Percebendo o Potencial das Cidades Inteligentes."
 number: 111
 permalink: episode-EDT111-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 111
 tags:
 

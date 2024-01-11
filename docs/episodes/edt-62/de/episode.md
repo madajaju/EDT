@@ -3,11 +3,8 @@ layout: posts
 title: "Entmystifizierung von 5G, Edge und KI"
 number: 62
 permalink: episode-EDT62-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 62
 tags:
     - edge

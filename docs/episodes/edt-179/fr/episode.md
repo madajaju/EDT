@@ -3,11 +3,8 @@ layout: posts
 title: "Exploiter l'IA générative à l'université"
 number: 179
 permalink: episode-EDT179-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 179
 tags:
     - generativeai

@@ -3,11 +3,8 @@ layout: posts
 title: "HPC à la demande"
 number: 129
 permalink: episode-EDT129-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 129
 tags:
     - hpc

@@ -5,9 +5,7 @@ number: 40
 ref: brief-EDW40-fr
 permalink: brief-EDW40-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 40
 tags:
     - keywords
@@ -24,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Adopter le Digital cette semaine vous apporte les dernières nouvelles du 5 novembre 2023, couvrant la cybersécurité, l'intelligence artificielle et l'informatique en bordure. Le Royaume-Uni a récemment organisé un sommet sur la sécurité de l'IA qui s'est concentré sur l'IA éthique et la coopération mondiale, tandis que le président Biden a publié un décret décrivant les principes pour le développement responsable de l'IA. De plus, Darren a lancé une nouvelle série de podcasts sur l'architecture de confiance zéro et l'IA générative.
-video: https://youtu.be/aHRHXdgA4LY
-description: Adopter le Digital cette semaine vous apporte les dernières nouvelles du 5 novembre 2023, couvrant la cybersécurité, l'intelligence artificielle et l'informatique en bordure. Le Royaume-Uni a récemment organisé un sommet sur la sécurité de l'IA qui s'est concentré sur l'IA éthique et la coopération mondiale, tandis que le président Biden a publié un décret décrivant les principes pour le développement responsable de l'IA. De plus, Darren a lancé une nouvelle série de podcasts sur l'architecture de confiance zéro et l'IA générative.
+summary: "Adopter le Digital cette semaine vous apporte les dernières nouvelles du 5 novembre 2023, couvrant la cybersécurité, l'intelligence artificielle et l'informatique en bordure. Le Royaume-Uni a récemment organisé un sommet sur la sécurité de l'IA qui s'est concentré sur l'IA éthique et la coopération mondiale, tandis que le président Biden a publié un décret décrivant les principes pour le développement responsable de l'IA. De plus, Darren a lancé une nouvelle série de podcasts sur l'architecture de confiance zéro et l'IA générative."
+video: "https://youtu.be/aHRHXdgA4LY"
+description: "Adopter le Digital cette semaine vous apporte les dernières nouvelles du 5 novembre 2023, couvrant la cybersécurité, l'intelligence artificielle et l'informatique en bordure. Le Royaume-Uni a récemment organisé un sommet sur la sécurité de l'IA qui s'est concentré sur l'IA éthique et la coopération mondiale, tandis que le président Biden a publié un décret décrivant les principes pour le développement responsable de l'IA. De plus, Darren a lancé une nouvelle série de podcasts sur l'architecture de confiance zéro et l'IA générative."
 ---
 
 

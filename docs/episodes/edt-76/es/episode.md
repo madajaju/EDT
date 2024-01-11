@@ -3,11 +3,8 @@ layout: posts
 title: "Día en la vida de un Arquitecto de Soluciones en la Nube."
 number: 76
 permalink: episode-EDT76-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 76
 tags:
     - csa

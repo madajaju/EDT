@@ -3,11 +3,8 @@ layout: posts
 title: "Personnes et Processus dans la Transformation Numérique"
 number: 54
 permalink: episode-EDT54-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 54
 tags:
     - multicloud

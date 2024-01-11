@@ -5,9 +5,7 @@ number: 4
 ref: brief-EDW4-fr
 permalink: brief-EDW4-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 4
 tags:
 
@@ -16,9 +14,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Summary
-video: https://youtu.be/
-description: Summary
+summary: "Summary"
+video: "https://youtu.be/"
+description: "Summary"
 ---
 
 

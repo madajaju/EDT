@@ -3,11 +3,8 @@ layout: posts
 title: "Cloud Broker Organizations"
 number: 56
 permalink: episode-EDT56-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 56
 tags:
     - cloudbroker

@@ -3,11 +3,8 @@ layout: posts
 title: "DevOps con velocidad y reducción de riesgos"
 number: 53
 permalink: episode-EDT53-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 53
 tags:
     - devops

@@ -3,11 +3,8 @@ layout: posts
 title: "Agilität bei der Cloud-Adoption"
 number: 166
 permalink: episode-EDT166-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 166
 tags:
 

@@ -3,11 +3,8 @@ layout: posts
 title: "Ich freue mich auf 2021."
 number: 47
 permalink: episode-EDT47-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 47
 tags:
     - covid

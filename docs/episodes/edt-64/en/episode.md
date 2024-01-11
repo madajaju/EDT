@@ -3,11 +3,8 @@ layout: posts
 title: "Follow and Secure the Bit Edge to Cloud"
 number: 64
 permalink: episode-EDT64-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 64
 tags:
     - edge

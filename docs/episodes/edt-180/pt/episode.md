@@ -3,11 +3,8 @@ layout: posts
 title: "IA Gerativa no Ensino Superior (Revisitado)"
 number: 180
 permalink: episode-EDT180-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 180
 tags:
     - embracingdigitaltransformation

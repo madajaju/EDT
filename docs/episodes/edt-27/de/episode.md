@@ -3,11 +3,8 @@ layout: posts
 title: "Hardware-Sicherheit: Unabdingbar für die Transformation von Daten"
 number: 27
 permalink: episode-EDT27-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 27
 tags:
     - datagovernance

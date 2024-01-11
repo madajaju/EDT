@@ -1,13 +1,11 @@
 ---
 layout: brief
-title: January 08, 2024
+title: 2024-01-08
 number: 49
 ref: brief-EDW49-pt
 permalink: brief-EDW49-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 49
 tags:
     - ai
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: A Intel anunciou recentemente a cisão da empresa de software de IA Articul8, apoiada pela DigitalBridge. O movimento tem como objetivo melhorar as capacidades de IA empresarial. A Articul8 se concentrará no desenvolvimento de soluções avançadas de IA, aproveitando a expertise da Intel no campo. Esta jogada estratégica significa o compromisso da Intel em avançar as tecnologias de inteligência artificial para aplicações industriais mais amplas.
-video: https://youtu.be/6do-6M6HM8Y
-description: A Intel anunciou recentemente a cisão da empresa de software de IA Articul8, apoiada pela DigitalBridge. O movimento tem como objetivo melhorar as capacidades de IA empresarial. A Articul8 se concentrará no desenvolvimento de soluções avançadas de IA, aproveitando a expertise da Intel no campo. Esta jogada estratégica significa o compromisso da Intel em avançar as tecnologias de inteligência artificial para aplicações industriais mais amplas.
+summary: "A Intel anunciou recentemente a cisão da empresa de software de IA Articul8, apoiada pela DigitalBridge. O movimento tem como objetivo melhorar as capacidades de IA empresarial. A Articul8 se concentrará no desenvolvimento de soluções avançadas de IA, aproveitando a expertise da Intel no campo. Esta jogada estratégica significa o compromisso da Intel em avançar as tecnologias de inteligência artificial para aplicações industriais mais amplas."
+video: "https://youtu.be/6do-6M6HM8Y"
+description: "A Intel anunciou recentemente a cisão da empresa de software de IA Articul8, apoiada pela DigitalBridge. O movimento tem como objetivo melhorar as capacidades de IA empresarial. A Articul8 se concentrará no desenvolvimento de soluções avançadas de IA, aproveitando a expertise da Intel no campo. Esta jogada estratégica significa o compromisso da Intel em avançar as tecnologias de inteligência artificial para aplicações industriais mais amplas."
 ---
 
 

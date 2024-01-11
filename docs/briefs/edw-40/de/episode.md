@@ -5,9 +5,7 @@ number: 40
 ref: brief-EDW40-de
 permalink: brief-EDW40-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 40
 tags:
     - keywords
@@ -24,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Das "Embracing Digital" dieser Woche bringt Ihnen die neuesten Nachrichten für den 5. November 2023, die sich auf Cybersicherheit, künstliche Intelligenz und Edge-Computing konzentrieren. Das Vereinigte Königreich hat kürzlich einen KI-Sicherheitsgipfel organisiert, der sich auf ethische KI und globale Zusammenarbeit konzentriert, während Präsident Biden eine Exekutivanordnung veröffentlicht hat, die Prinzipien für verantwortungsvolle KI-Entwicklung skizziert. Darüber hinaus hat Darren eine neue Podcast-Serie über Zero-Trust-Architektur und generative KI gestartet.
-video: https://youtu.be/hDQzOtBn4ME
-description: Das "Embracing Digital" dieser Woche bringt Ihnen die neuesten Nachrichten für den 5. November 2023, die sich auf Cybersicherheit, künstliche Intelligenz und Edge-Computing konzentrieren. Das Vereinigte Königreich hat kürzlich einen KI-Sicherheitsgipfel organisiert, der sich auf ethische KI und globale Zusammenarbeit konzentriert, während Präsident Biden eine Exekutivanordnung veröffentlicht hat, die Prinzipien für verantwortungsvolle KI-Entwicklung skizziert. Darüber hinaus hat Darren eine neue Podcast-Serie über Zero-Trust-Architektur und generative KI gestartet.
+summary: "Das Embracing Digital dieser Woche bringt Ihnen die neuesten Nachrichten für den 5. November 2023, die sich auf Cybersicherheit, künstliche Intelligenz und Edge-Computing konzentrieren. Das Vereinigte Königreich hat kürzlich einen KI-Sicherheitsgipfel organisiert, der sich auf ethische KI und globale Zusammenarbeit konzentriert, während Präsident Biden eine Exekutivanordnung veröffentlicht hat, die Prinzipien für verantwortungsvolle KI-Entwicklung skizziert. Darüber hinaus hat Darren eine neue Podcast-Serie über Zero-Trust-Architektur und generative KI gestartet."
+video: "https://youtu.be/hDQzOtBn4ME"
+description: "Das Embracing Digital dieser Woche bringt Ihnen die neuesten Nachrichten für den 5. November 2023, die sich auf Cybersicherheit, künstliche Intelligenz und Edge-Computing konzentrieren. Das Vereinigte Königreich hat kürzlich einen KI-Sicherheitsgipfel organisiert, der sich auf ethische KI und globale Zusammenarbeit konzentriert, während Präsident Biden eine Exekutivanordnung veröffentlicht hat, die Prinzipien für verantwortungsvolle KI-Entwicklung skizziert. Darüber hinaus hat Darren eine neue Podcast-Serie über Zero-Trust-Architektur und generative KI gestartet."
 ---
 
 

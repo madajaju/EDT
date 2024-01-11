@@ -3,11 +3,8 @@ layout: posts
 title: "Operationalizing GenAI"
 number: 157
 permalink: episode-EDT157-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 157
 tags:
     - ai

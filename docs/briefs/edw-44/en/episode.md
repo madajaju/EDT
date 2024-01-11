@@ -5,9 +5,7 @@ number: 44
 ref: brief-EDW44-en
 permalink: brief-EDW44-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 44
 tags:
     - ai
@@ -37,9 +35,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Please check out the latest news in the world of Digital Transformation for the week of December 3, 2023. You&#39;ll find a variety of interesting stories related to edge computing, data management, and artificial intelligence. This week, AWS and Siemens have collaborated to simplify edge computing, while Intel is helping to improve cloud-based data management. Additionally, several governments are developing new strategies for AI.
-video: https://youtu.be/b2cCDf3vnGg
-description: Please check out the latest news in the world of Digital Transformation for the week of December 3, 2023. You&#39;ll find a variety of interesting stories related to edge computing, data management, and artificial intelligence. This week, AWS and Siemens have collaborated to simplify edge computing, while Intel is helping to improve cloud-based data management. Additionally, several governments are developing new strategies for AI.
+summary: "Please check out the latest news in the world of Digital Transformation for the week of December 3, 2023. You&#39;ll find a variety of interesting stories related to edge computing, data management, and artificial intelligence. This week, AWS and Siemens have collaborated to simplify edge computing, while Intel is helping to improve cloud-based data management. Additionally, several governments are developing new strategies for AI."
+video: "https://youtu.be/b2cCDf3vnGg"
+description: "Please check out the latest news in the world of Digital Transformation for the week of December 3, 2023. You&#39;ll find a variety of interesting stories related to edge computing, data management, and artificial intelligence. This week, AWS and Siemens have collaborated to simplify edge computing, while Intel is helping to improve cloud-based data management. Additionally, several governments are developing new strategies for AI."
 ---
 
 

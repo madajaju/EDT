@@ -3,11 +3,8 @@ layout: posts
 title: "Zero Trust networking with OpenZiti"
 number: 178
 permalink: episode-EDT178-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 178
 tags:
     - zerotrustnetworking

@@ -3,11 +3,8 @@ layout: posts
 title: "Création d'aperçus dans les organisations axées sur les données"
 number: 23
 permalink: episode-EDT23-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 23
 tags:
     - aiml

@@ -5,9 +5,7 @@ number: 43
 ref: brief-EDW43-fr
 permalink: brief-EDW43-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 43
 tags:
     - uniquehandmadewoodfurniture.
@@ -39,9 +37,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Nouvelles de la Transformation Numérique pour la semaine du 26 novembre 2023. Des changements transformationnels dans le leadership en intelligence artificielle à l'accent impératif sur la cybersécurité et le dévoilement de solutions informatiques avancées, cette compilation encapsule des moments pivot dans le paysage technologique en constante évolution. Rejoignez-nous alors que nous nous penchons sur les subtilités des développements récents, en mettant en lumière les profonds impacts qu'ils ont à travers les secteurs, et en guidant la trajectoire du futur numérique.
-video: https://youtu.be/reCubhO_bVE
-description: Nouvelles de la Transformation Numérique pour la semaine du 26 novembre 2023. Des changements transformationnels dans le leadership en intelligence artificielle à l'accent impératif sur la cybersécurité et le dévoilement de solutions informatiques avancées, cette compilation encapsule des moments pivot dans le paysage technologique en constante évolution. Rejoignez-nous alors que nous nous penchons sur les subtilités des développements récents, en mettant en lumière les profonds impacts qu'ils ont à travers les secteurs, et en guidant la trajectoire du futur numérique.
+summary: "Nouvelles de la Transformation Numérique pour la semaine du 26 novembre 2023. Des changements transformationnels dans le leadership en intelligence artificielle à l'accent impératif sur la cybersécurité et le dévoilement de solutions informatiques avancées, cette compilation encapsule des moments pivot dans le paysage technologique en constante évolution. Rejoignez-nous alors que nous nous penchons sur les subtilités des développements récents, en mettant en lumière les profonds impacts qu'ils ont à travers les secteurs, et en guidant la trajectoire du futur numérique."
+video: "https://youtu.be/reCubhO_bVE"
+description: "Nouvelles de la Transformation Numérique pour la semaine du 26 novembre 2023. Des changements transformationnels dans le leadership en intelligence artificielle à l'accent impératif sur la cybersécurité et le dévoilement de solutions informatiques avancées, cette compilation encapsule des moments pivot dans le paysage technologique en constante évolution. Rejoignez-nous alors que nous nous penchons sur les subtilités des développements récents, en mettant en lumière les profonds impacts qu'ils ont à travers les secteurs, et en guidant la trajectoire du futur numérique."
 ---
 
 

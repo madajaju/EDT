@@ -3,11 +3,8 @@ layout: posts
 title: "Proteggere la catena di approvvigionamento"
 number: 110
 permalink: episode-EDT110-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 110
 tags:
     - securesupplychain

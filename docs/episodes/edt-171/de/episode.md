@@ -3,11 +3,8 @@ layout: posts
 title: "Generative KI im öffentlichen Sektor"
 number: 171
 permalink: episode-EDT171-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 171
 tags:
     - generativeai

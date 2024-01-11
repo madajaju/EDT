@@ -3,11 +3,8 @@ layout: posts
 title: "Infrastructure Maturity Model"
 number: 5
 permalink: episode-EDT5-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 5
 tags:
     - infrastructurematurity

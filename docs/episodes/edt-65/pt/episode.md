@@ -3,11 +3,8 @@ layout: posts
 title: "Acelerando a adoção da nuvem ao mesmo tempo em que diminui a complexidade e os custos."
 number: 65
 permalink: episode-EDT65-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 65
 tags:
     - cloudmigration

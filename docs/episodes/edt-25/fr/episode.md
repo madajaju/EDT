@@ -3,11 +3,8 @@ layout: posts
 title: "Opérationnalisation des pipelines de données"
 number: 25
 permalink: episode-EDT25-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 25
 tags:
     - dataarchitecture
@@ -25,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Darren Pulsipher, architecte en chef des solutions, secteur public, chez Intel, parle avec Sarah Kalicin, data scientist en chef, Intel, à propos de l'opérationnalisation du pipeline de données de votre organisation. Cela nécessite un effort d'équipe pour modéliser, surveiller et produire une source continue d'informations précieuses. Il s'agit du dernier épisode de la série "Démarrer votre transformation organisationnelle pour devenir centrée sur les données"."
+summary: "Darren Pulsipher, architecte en chef des solutions, secteur public, chez Intel, parle avec Sarah Kalicin, data scientist en chef, Intel, à propos de l'opérationnalisation du pipeline de données de votre organisation. Cela nécessite un effort d'équipe pour modéliser, surveiller et produire une source continue d'informations précieuses. Il s'agit du dernier épisode de la série Démarrer votre transformation organisationnelle pour devenir centrée sur les données."
 video: "https://youtu.be/url"
-description: "Darren Pulsipher, architecte en chef des solutions, secteur public, chez Intel, parle avec Sarah Kalicin, data scientist en chef, Intel, à propos de l'opérationnalisation du pipeline de données de votre organisation. Cela nécessite un effort d'équipe pour modéliser, surveiller et produire une source continue d'informations précieuses. Il s'agit du dernier épisode de la série "Démarrer votre transformation organisationnelle pour devenir centrée sur les données"."
+description: "Darren Pulsipher, architecte en chef des solutions, secteur public, chez Intel, parle avec Sarah Kalicin, data scientist en chef, Intel, à propos de l'opérationnalisation du pipeline de données de votre organisation. Cela nécessite un effort d'équipe pour modéliser, surveiller et produire une source continue d'informations précieuses. Il s'agit du dernier épisode de la série Démarrer votre transformation organisationnelle pour devenir centrée sur les données."
 ---
 
 <div>

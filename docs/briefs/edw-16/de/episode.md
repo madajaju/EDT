@@ -5,9 +5,7 @@ number: 16
 ref: brief-EDW16-de
 permalink: brief-EDW16-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 16
 tags:
 
@@ -16,9 +14,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digital Transformation news for the week of May 29, 2023. In this episode.
-video: https://youtu.be/
-description: Digital Transformation news for the week of May 29, 2023. In this episode.
+summary: "Digital Transformation news for the week of May 29, 2023. In this episode."
+video: "https://youtu.be/"
+description: "Digital Transformation news for the week of May 29, 2023. In this episode."
 ---
 
 

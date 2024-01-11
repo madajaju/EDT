@@ -3,11 +3,8 @@ layout: posts
 title: "2020 im Rückblick"
 number: 37
 permalink: episode-EDT37-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 37
 tags:
     - covid

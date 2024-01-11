@@ -3,11 +3,8 @@ layout: posts
 title: "Assegurando a Cadeia de Suprimentos"
 number: 110
 permalink: episode-EDT110-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 110
 tags:
     - securesupplychain

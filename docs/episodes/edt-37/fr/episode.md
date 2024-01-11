@@ -3,11 +3,8 @@ layout: posts
 title: "2020 en revue"
 number: 37
 permalink: episode-EDT37-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 37
 tags:
     - covid

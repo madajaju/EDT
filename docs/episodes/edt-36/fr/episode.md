@@ -3,11 +3,8 @@ layout: posts
 title: "Six piliers de la cybersécurité"
 number: 36
 permalink: episode-EDT36-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 36
 tags:
     - cybersecurity

@@ -3,11 +3,8 @@ layout: posts
 title: "Operationalizing Data Pipelines"
 number: 25
 permalink: episode-EDT25-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 25
 tags:
     - dataarchitecture

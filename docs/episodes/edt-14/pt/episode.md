@@ -3,11 +3,8 @@ layout: posts
 title: "Iniciando sua transformação organizacional para se tornar centrada em dados"
 number: 14
 permalink: episode-EDT14-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 14
 tags:
 

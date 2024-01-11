@@ -3,11 +3,8 @@ layout: posts
 title: "Le rôle du DSI dans l'adoption du cloud"
 number: 43
 permalink: episode-EDT43-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 43
 tags:
     - cio

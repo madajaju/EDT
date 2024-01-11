@@ -3,11 +3,8 @@ layout: posts
 title: "Identitätsbasierte Mikrosegmentierung mit Elisity"
 number: 102
 permalink: episode-EDT102-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 102
 tags:
     - microsegmentation

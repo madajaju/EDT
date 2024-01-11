@@ -5,9 +5,7 @@ number: 22
 ref: brief-EDW22-es
 permalink: brief-EDW22-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 22
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Para la semana del 3 de julio de 2023, en noticias de transformación digital. ¿Está AI encontrando un reemplazo para Alexa y Siri? ¿Podemos escuchar nuestros datos? ¿Y dónde se están generando grandes ganancias para los proveedores de servicios en la nube?
-video: https://youtu.be/
-description: Para la semana del 3 de julio de 2023, en noticias de transformación digital. ¿Está AI encontrando un reemplazo para Alexa y Siri? ¿Podemos escuchar nuestros datos? ¿Y dónde se están generando grandes ganancias para los proveedores de servicios en la nube?
+summary: "Para la semana del 3 de julio de 2023, en noticias de transformación digital. ¿Está AI encontrando un reemplazo para Alexa y Siri? ¿Podemos escuchar nuestros datos? ¿Y dónde se están generando grandes ganancias para los proveedores de servicios en la nube?"
+video: "https://youtu.be/"
+description: "Para la semana del 3 de julio de 2023, en noticias de transformación digital. ¿Está AI encontrando un reemplazo para Alexa y Siri? ¿Podemos escuchar nuestros datos? ¿Y dónde se están generando grandes ganancias para los proveedores de servicios en la nube?"
 ---
 
 

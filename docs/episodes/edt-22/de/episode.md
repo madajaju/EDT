@@ -3,11 +3,8 @@ layout: posts
 title: "Ein Argument für Multi-Hybrid Cloud."
 number: 22
 permalink: episode-EDT22-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 22
 tags:
 

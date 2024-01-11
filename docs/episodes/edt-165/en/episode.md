@@ -3,11 +3,8 @@ layout: posts
 title: "Workload Cloud Placement Factors"
 number: 165
 permalink: episode-EDT165-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 165
 tags:
     - cloudcomputeoptions

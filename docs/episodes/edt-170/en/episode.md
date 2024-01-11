@@ -3,11 +3,8 @@ layout: posts
 title: "Zero Trust Principles"
 number: 170
 permalink: episode-EDT170-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 170
 tags:
     - zta

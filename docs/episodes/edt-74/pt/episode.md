@@ -3,11 +3,8 @@ layout: posts
 title: "Ransomware: Prepare e Não entre em Pânico"
 number: 74
 permalink: episode-EDT74-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 74
 tags:
     - cybersecurity

@@ -3,11 +3,8 @@ layout: posts
 title: "la Rinascita del Cloud Privato"
 number: 94
 permalink: episode-EDT94-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 94
 tags:
     - hybridcloud

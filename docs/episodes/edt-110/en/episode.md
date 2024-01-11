@@ -3,11 +3,8 @@ layout: posts
 title: "Securing the Supply Chain"
 number: 110
 permalink: episode-EDT110-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 110
 tags:
     - securesupplychain

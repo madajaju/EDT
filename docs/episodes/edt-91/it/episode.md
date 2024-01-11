@@ -3,11 +3,8 @@ layout: posts
 title: "Combattere l'avversario cibernetico mediante la sicurezza della catena di approvvigionamento del software"
 number: 91
 permalink: episode-EDT91-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 91
 tags:
     - cybersecurity

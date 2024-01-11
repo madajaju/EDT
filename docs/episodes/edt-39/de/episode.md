@@ -3,11 +3,8 @@ layout: posts
 title: "Wasserkühler-Gespräche in einem Remote-Arbeitsumfeld"
 number: 39
 permalink: episode-EDT39-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 39
 tags:
     - collaboration

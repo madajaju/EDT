@@ -3,11 +3,8 @@ layout: posts
 title: "Luchando contra el Adversario Cibernético asegurando tu Cadena de Suministro de Software."
 number: 91
 permalink: episode-EDT91-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 91
 tags:
     - cybersecurity

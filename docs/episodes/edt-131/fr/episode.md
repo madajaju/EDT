@@ -3,11 +3,8 @@ layout: posts
 title: "Transformation numérique dans le gouvernement fédéral"
 number: 131
 permalink: episode-EDT131-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 131
 tags:
     - compute

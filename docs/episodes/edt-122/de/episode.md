@@ -3,11 +3,8 @@ layout: posts
 title: "Automatisierung mit KI"
 number: 122
 permalink: episode-EDT122-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 122
 tags:
     - collectiongenerativeai

@@ -3,11 +3,8 @@ layout: posts
 title: "Os Benefícios dos Bancos de Dados de Gráfico"
 number: 97
 permalink: episode-EDT97-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 97
 tags:
     - data

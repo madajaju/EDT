@@ -3,11 +3,8 @@ layout: posts
 title: "Naviguer dans les changements perturbateurs."
 number: 35
 permalink: episode-EDT35-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 35
 tags:
     - change

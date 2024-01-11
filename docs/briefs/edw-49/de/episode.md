@@ -1,13 +1,11 @@
 ---
 layout: brief
-title: January 08, 2024
+title: 2024-01-08
 number: 49
 ref: brief-EDW49-de
 permalink: brief-EDW49-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 49
 tags:
     - ai
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Intel hat kürzlich die Ausgliederung des von DigitalBridge unterstützten KI-Softwareunternehmens Articul8 bekannt gegeben. Der Schritt zielt darauf ab, die KI-Fähigkeiten von Unternehmen zu verbessern. Articul8 wird sich auf die Entwicklung fortgeschrittener KI-Lösungen konzentrieren und dabei die Expertise von Intel in diesem Bereich nutzen. Dieser strategische Schritt signalisiert Intels Engagement für die Weiterentwicklung von Künstlicher Intelligenz-Technologien für breitere Industrieanwendungen.
-video: https://youtu.be/B_J35KdjDZo
-description: Intel hat kürzlich die Ausgliederung des von DigitalBridge unterstützten KI-Softwareunternehmens Articul8 bekannt gegeben. Der Schritt zielt darauf ab, die KI-Fähigkeiten von Unternehmen zu verbessern. Articul8 wird sich auf die Entwicklung fortgeschrittener KI-Lösungen konzentrieren und dabei die Expertise von Intel in diesem Bereich nutzen. Dieser strategische Schritt signalisiert Intels Engagement für die Weiterentwicklung von Künstlicher Intelligenz-Technologien für breitere Industrieanwendungen.
+summary: "Intel hat kürzlich die Ausgliederung des von DigitalBridge unterstützten KI-Softwareunternehmens Articul8 bekannt gegeben. Der Schritt zielt darauf ab, die KI-Fähigkeiten von Unternehmen zu verbessern. Articul8 wird sich auf die Entwicklung fortgeschrittener KI-Lösungen konzentrieren und dabei die Expertise von Intel in diesem Bereich nutzen. Dieser strategische Schritt signalisiert Intels Engagement für die Weiterentwicklung von Künstlicher Intelligenz-Technologien für breitere Industrieanwendungen."
+video: "https://youtu.be/B_J35KdjDZo"
+description: "Intel hat kürzlich die Ausgliederung des von DigitalBridge unterstützten KI-Softwareunternehmens Articul8 bekannt gegeben. Der Schritt zielt darauf ab, die KI-Fähigkeiten von Unternehmen zu verbessern. Articul8 wird sich auf die Entwicklung fortgeschrittener KI-Lösungen konzentrieren und dabei die Expertise von Intel in diesem Bereich nutzen. Dieser strategische Schritt signalisiert Intels Engagement für die Weiterentwicklung von Künstlicher Intelligenz-Technologien für breitere Industrieanwendungen."
 ---
 
 
@@ -103,5 +101,4 @@ Im Jahr zweitausendvierundzwanzig erfahren Unternehmensdaten und KI-Technologien
 
 
 Diese Woche im Podcast führt Darren seine Serie über die Einführung von Generierender KI fort, als er Laura Newey interviewt, nach einem Semester des Englischunterrichts an der Universität mit Chat GPT und Generierender KI als Werkzeug. Sie müssen diese Folge überprüfen und mit Ihren Hochschulstudenten teilen. [Weiterlesen](https://www.embracingdigital.org/en)
-
 

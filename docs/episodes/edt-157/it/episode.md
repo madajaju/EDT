@@ -3,11 +3,8 @@ layout: posts
 title: "Operazionalizzare GenAI"
 number: 157
 permalink: episode-EDT157-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 157
 tags:
     - ai

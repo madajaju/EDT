@@ -5,9 +5,7 @@ number: 23
 ref: brief-EDW23-es
 permalink: brief-EDW23-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 23
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Aquí están las últimas noticias sobre la transformación digital para el 10 de julio de 2023. La guerra comercial en curso está empezando a afectar los servicios en la nube. Además, hay especulaciones de que la euforia alrededor de la inteligencia artificial generativa puede estar disminuyendo. En el ámbito de la ciberseguridad, existen preocupaciones acerca de si estamos haciendo lo suficiente para mantenernos un paso adelante de los actores maliciosos.
-video: https://youtu.be/CBqgsyfAJ0k
-description: Aquí están las últimas noticias sobre la transformación digital para el 10 de julio de 2023. La guerra comercial en curso está empezando a afectar los servicios en la nube. Además, hay especulaciones de que la euforia alrededor de la inteligencia artificial generativa puede estar disminuyendo. En el ámbito de la ciberseguridad, existen preocupaciones acerca de si estamos haciendo lo suficiente para mantenernos un paso adelante de los actores maliciosos.
+summary: "Aquí están las últimas noticias sobre la transformación digital para el 10 de julio de 2023. La guerra comercial en curso está empezando a afectar los servicios en la nube. Además, hay especulaciones de que la euforia alrededor de la inteligencia artificial generativa puede estar disminuyendo. En el ámbito de la ciberseguridad, existen preocupaciones acerca de si estamos haciendo lo suficiente para mantenernos un paso adelante de los actores maliciosos."
+video: "https://youtu.be/CBqgsyfAJ0k"
+description: "Aquí están las últimas noticias sobre la transformación digital para el 10 de julio de 2023. La guerra comercial en curso está empezando a afectar los servicios en la nube. Además, hay especulaciones de que la euforia alrededor de la inteligencia artificial generativa puede estar disminuyendo. En el ámbito de la ciberseguridad, existen preocupaciones acerca de si estamos haciendo lo suficiente para mantenernos un paso adelante de los actores maliciosos."
 ---
 
 

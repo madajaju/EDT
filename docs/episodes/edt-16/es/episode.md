@@ -3,11 +3,8 @@ layout: posts
 title: "Reducción de la congestión de ingestión con Intel Optane DCPMM"
 number: 16
 permalink: episode-EDT16-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 16
 tags:
 

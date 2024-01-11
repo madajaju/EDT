@@ -3,11 +3,8 @@ layout: posts
 title: "Portafoglio delle applicazioni e dei carichi di lavoro nella migrazione del cloud"
 number: 164
 permalink: episode-EDT164-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 164
 tags:
     - cloudmigration

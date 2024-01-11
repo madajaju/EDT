@@ -3,11 +3,8 @@ layout: posts
 title: "Legacy Integration with Cloud and RPA"
 number: 28
 permalink: episode-EDT28-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 28
 tags:
     - rpa

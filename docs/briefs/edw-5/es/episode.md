@@ -5,9 +5,7 @@ number: 5
 ref: brief-EDW5-es
 permalink: brief-EDW5-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 5
 tags:
 
@@ -16,9 +14,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Summary
-video: https://youtu.be/
-description: Summary
+summary: "Summary"
+video: "https://youtu.be/"
+description: "Summary"
 ---
 
 

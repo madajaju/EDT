@@ -5,9 +5,7 @@ number: 19
 ref: brief-EDW19-de
 permalink: brief-EDW19-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 19
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Die Digitalisierung für die Woche vom 12. Juni 2023 umfasst die Entwicklung einer 1 Millionen Cyber-Kraft, viele Cloud-Ausfälle und künstliche Intelligenz, die Code für die C++ Standardbibliothek schreibt.
-video: https://youtu.be/ldF4SS1lyVU
-description: Die Digitalisierung für die Woche vom 12. Juni 2023 umfasst die Entwicklung einer 1 Millionen Cyber-Kraft, viele Cloud-Ausfälle und künstliche Intelligenz, die Code für die C++ Standardbibliothek schreibt.
+summary: "Die Digitalisierung für die Woche vom 12. Juni 2023 umfasst die Entwicklung einer 1 Millionen Cyber-Kraft, viele Cloud-Ausfälle und künstliche Intelligenz, die Code für die C++ Standardbibliothek schreibt."
+video: "https://youtu.be/ldF4SS1lyVU"
+description: "Die Digitalisierung für die Woche vom 12. Juni 2023 umfasst die Entwicklung einer 1 Millionen Cyber-Kraft, viele Cloud-Ausfälle und künstliche Intelligenz, die Code für die C++ Standardbibliothek schreibt."
 ---
 
 

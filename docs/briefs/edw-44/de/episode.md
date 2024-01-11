@@ -5,9 +5,7 @@ number: 44
 ref: brief-EDW44-de
 permalink: brief-EDW44-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 44
 tags:
     - ai
@@ -37,9 +35,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Bitte sehen Sie sich die neuesten Nachrichten aus der Welt der digitalen Transformation für die Woche ab dem 3. Dezember 2023 an. Sie finden eine Vielzahl interessanter Geschichten zum Thema Edge Computing, Datenmanagement und Künstliche Intelligenz. In dieser Woche haben AWS und Siemens zusammengearbeitet, um Edge Computing zu vereinfachen, während Intel dabei hilft, das cloudbasierte Datenmanagement zu verbessern. Darüber hinaus entwickeln mehrere Regierungen neue Strategien für KI.
-video: https://youtu.be/gM1aq-xtBNw
-description: Bitte sehen Sie sich die neuesten Nachrichten aus der Welt der digitalen Transformation für die Woche ab dem 3. Dezember 2023 an. Sie finden eine Vielzahl interessanter Geschichten zum Thema Edge Computing, Datenmanagement und Künstliche Intelligenz. In dieser Woche haben AWS und Siemens zusammengearbeitet, um Edge Computing zu vereinfachen, während Intel dabei hilft, das cloudbasierte Datenmanagement zu verbessern. Darüber hinaus entwickeln mehrere Regierungen neue Strategien für KI.
+summary: "Bitte sehen Sie sich die neuesten Nachrichten aus der Welt der digitalen Transformation für die Woche ab dem 3. Dezember 2023 an. Sie finden eine Vielzahl interessanter Geschichten zum Thema Edge Computing, Datenmanagement und Künstliche Intelligenz. In dieser Woche haben AWS und Siemens zusammengearbeitet, um Edge Computing zu vereinfachen, während Intel dabei hilft, das cloudbasierte Datenmanagement zu verbessern. Darüber hinaus entwickeln mehrere Regierungen neue Strategien für KI."
+video: "https://youtu.be/gM1aq-xtBNw"
+description: "Bitte sehen Sie sich die neuesten Nachrichten aus der Welt der digitalen Transformation für die Woche ab dem 3. Dezember 2023 an. Sie finden eine Vielzahl interessanter Geschichten zum Thema Edge Computing, Datenmanagement und Künstliche Intelligenz. In dieser Woche haben AWS und Siemens zusammengearbeitet, um Edge Computing zu vereinfachen, während Intel dabei hilft, das cloudbasierte Datenmanagement zu verbessern. Darüber hinaus entwickeln mehrere Regierungen neue Strategien für KI."
 ---
 
 

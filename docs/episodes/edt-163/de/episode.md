@@ -3,11 +3,8 @@ layout: posts
 title: "Entwicklung eines Mehrhybrid-Cloud-Betriebsmodells"
 number: 163
 permalink: episode-EDT163-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 163
 tags:
     - cloudstrategy

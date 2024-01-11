@@ -3,11 +3,8 @@ layout: posts
 title: "El apagón de AWS de noviembre de 2020"
 number: 33
 permalink: episode-EDT33-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 33
 tags:
     - aws

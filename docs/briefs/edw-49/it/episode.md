@@ -1,13 +1,11 @@
 ---
 layout: brief
-title: January 08, 2024
+title: 2024-01-08
 number: 49
 ref: brief-EDW49-it
 permalink: brief-EDW49-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 49
 tags:
     - ai
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Intel ha recentemente annunciato la scissione della società di software di intelligenza artificiale Articul8, sostenuta da DigitalBridge. La mossa è volta a migliorare le capacità di intelligenza artificiale aziendale. Articul8 si concentrerà sullo sviluppo di soluzioni avanzate di intelligenza artificiale, sfruttando l'esperienza di Intel nel campo. Questa mossa strategica sottolinea l'impegno di Intel nel promuovere le tecnologie di intelligenza artificiale per applicazioni industriali più ampie.
-video: https://youtu.be/h58bwhZkF1g
-description: Intel ha recentemente annunciato la scissione della società di software di intelligenza artificiale Articul8, sostenuta da DigitalBridge. La mossa è volta a migliorare le capacità di intelligenza artificiale aziendale. Articul8 si concentrerà sullo sviluppo di soluzioni avanzate di intelligenza artificiale, sfruttando l'esperienza di Intel nel campo. Questa mossa strategica sottolinea l'impegno di Intel nel promuovere le tecnologie di intelligenza artificiale per applicazioni industriali più ampie.
+summary: "Intel ha recentemente annunciato la scissione della società di software di intelligenza artificiale Articul8, sostenuta da DigitalBridge. La mossa è volta a migliorare le capacità di intelligenza artificiale aziendale. Articul8 si concentrerà sullo sviluppo di soluzioni avanzate di intelligenza artificiale, sfruttando l'esperienza di Intel nel campo. Questa mossa strategica sottolinea l'impegno di Intel nel promuovere le tecnologie di intelligenza artificiale per applicazioni industriali più ampie."
+video: "https://youtu.be/h58bwhZkF1g"
+description: "Intel ha recentemente annunciato la scissione della società di software di intelligenza artificiale Articul8, sostenuta da DigitalBridge. La mossa è volta a migliorare le capacità di intelligenza artificiale aziendale. Articul8 si concentrerà sullo sviluppo di soluzioni avanzate di intelligenza artificiale, sfruttando l'esperienza di Intel nel campo. Questa mossa strategica sottolinea l'impegno di Intel nel promuovere le tecnologie di intelligenza artificiale per applicazioni industriali più ampie."
 ---
 
 

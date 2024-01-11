@@ -5,9 +5,7 @@ number: 24
 ref: brief-EDW24-es
 permalink: brief-EDW24-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 24
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: En las noticias de transformación digital para la semana del 17 de julio de 2023, el Papa Francisco ofrece orientación sobre ética en la inteligencia artificial, Intel sigue siendo la fortaleza cibernética de América y el mercado de la computación en el borde está listo para despegar.
-video: https://youtu.be/KURLgRAT-lE
-description: En las noticias de transformación digital para la semana del 17 de julio de 2023, el Papa Francisco ofrece orientación sobre ética en la inteligencia artificial, Intel sigue siendo la fortaleza cibernética de América y el mercado de la computación en el borde está listo para despegar.
+summary: "En las noticias de transformación digital para la semana del 17 de julio de 2023, el Papa Francisco ofrece orientación sobre ética en la inteligencia artificial, Intel sigue siendo la fortaleza cibernética de América y el mercado de la computación en el borde está listo para despegar."
+video: "https://youtu.be/KURLgRAT-lE"
+description: "En las noticias de transformación digital para la semana del 17 de julio de 2023, el Papa Francisco ofrece orientación sobre ética en la inteligencia artificial, Intel sigue siendo la fortaleza cibernética de América y el mercado de la computación en el borde está listo para despegar."
 ---
 
 

@@ -3,11 +3,8 @@ layout: posts
 title: "The Four Superpowers of Digital Transformation"
 number: 93
 permalink: episode-EDT93-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 93
 tags:
     - cybersecurity

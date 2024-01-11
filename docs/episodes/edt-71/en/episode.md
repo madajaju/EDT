@@ -3,11 +3,8 @@ layout: posts
 title: "Modern Data Governance"
 number: 71
 permalink: episode-EDT71-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 71
 tags:
     - datagovernance

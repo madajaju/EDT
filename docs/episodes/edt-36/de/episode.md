@@ -3,11 +3,8 @@ layout: posts
 title: "Sechs Säulen der Cybersicherheit"
 number: 36
 permalink: episode-EDT36-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 36
 tags:
     - cybersecurity

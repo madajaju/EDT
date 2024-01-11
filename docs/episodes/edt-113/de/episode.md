@@ -3,11 +3,8 @@ layout: posts
 title: "Operationalisierung des Geschäftsprozessmanagements"
 number: 113
 permalink: episode-EDT113-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 113
 tags:
     - bpm

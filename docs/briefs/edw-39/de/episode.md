@@ -5,9 +5,7 @@ number: 39
 ref: brief-EDW39-de
 permalink: brief-EDW39-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 39
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: In der neuesten Ausgabe unseres Embracing Digital This Week präsentieren wir Ihnen die neuesten Entwicklungen und Geschichten aus der Welt der Cybersicherheit, des Edge Computing und des ubiquitären Computings. In dieser Folge behandeln wir eine neue Malware namens "Elegant", Cybersicherheitsvorschriften in Kalifornien, die Untersuchung des britischen Parlaments zur Cybersicherheit kritischer Infrastrukturen und andere interessante Neuigkeiten aus der Tech-Branche.
-video: https://youtu.be/KuE70lL3OqE
-description: In der neuesten Ausgabe unseres Embracing Digital This Week präsentieren wir Ihnen die neuesten Entwicklungen und Geschichten aus der Welt der Cybersicherheit, des Edge Computing und des ubiquitären Computings. In dieser Folge behandeln wir eine neue Malware namens "Elegant", Cybersicherheitsvorschriften in Kalifornien, die Untersuchung des britischen Parlaments zur Cybersicherheit kritischer Infrastrukturen und andere interessante Neuigkeiten aus der Tech-Branche.
+summary: "In der neuesten Ausgabe unseres Embracing Digital This Week präsentieren wir Ihnen die neuesten Entwicklungen und Geschichten aus der Welt der Cybersicherheit, des Edge Computing und des ubiquitären Computings. In dieser Folge behandeln wir eine neue Malware namens Elegant, Cybersicherheitsvorschriften in Kalifornien, die Untersuchung des britischen Parlaments zur Cybersicherheit kritischer Infrastrukturen und andere interessante Neuigkeiten aus der Tech-Branche."
+video: "https://youtu.be/KuE70lL3OqE"
+description: "In der neuesten Ausgabe unseres Embracing Digital This Week präsentieren wir Ihnen die neuesten Entwicklungen und Geschichten aus der Welt der Cybersicherheit, des Edge Computing und des ubiquitären Computings. In dieser Folge behandeln wir eine neue Malware namens Elegant, Cybersicherheitsvorschriften in Kalifornien, die Untersuchung des britischen Parlaments zur Cybersicherheit kritischer Infrastrukturen und andere interessante Neuigkeiten aus der Tech-Branche."
 ---
 
 

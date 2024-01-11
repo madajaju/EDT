@@ -5,9 +5,7 @@ number: 46
 ref: brief-EDW46-it
 permalink: brief-EDW46-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 46
 tags:
     - ai
@@ -42,9 +40,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: La settimana del 17 Dicembre 2023, nelle notizie sulla Trasformazione Digitale, include storie su AI, gestione dei dati e cybersecurity. Scopri la nascita del PC AI, la gestione dei dati Multi-cloud per i cloud governativi e importanti avvisi per la cybersecurity delle infrastrutture critiche.
-video: https://youtu.be/izGSlZke4S8
-description: La settimana del 17 Dicembre 2023, nelle notizie sulla Trasformazione Digitale, include storie su AI, gestione dei dati e cybersecurity. Scopri la nascita del PC AI, la gestione dei dati Multi-cloud per i cloud governativi e importanti avvisi per la cybersecurity delle infrastrutture critiche.
+summary: "La settimana del 17 Dicembre 2023, nelle notizie sulla Trasformazione Digitale, include storie su AI, gestione dei dati e cybersecurity. Scopri la nascita del PC AI, la gestione dei dati Multi-cloud per i cloud governativi e importanti avvisi per la cybersecurity delle infrastrutture critiche."
+video: "https://youtu.be/izGSlZke4S8"
+description: "La settimana del 17 Dicembre 2023, nelle notizie sulla Trasformazione Digitale, include storie su AI, gestione dei dati e cybersecurity. Scopri la nascita del PC AI, la gestione dei dati Multi-cloud per i cloud governativi e importanti avvisi per la cybersecurity delle infrastrutture critiche."
 ---
 
 

@@ -3,11 +3,8 @@ layout: posts
 title: "Protegendo Infraestruturas Críticas"
 number: 107
 permalink: episode-EDT107-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 107
 tags:
     - criticalinfrastructure

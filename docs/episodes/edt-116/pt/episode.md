@@ -3,11 +3,8 @@ layout: posts
 title: "Um argumento para uma abordagem holística da Segurança de Infraestruturas Críticas."
 number: 116
 permalink: episode-EDT116-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 116
 tags:
     - criticalinfrastructure

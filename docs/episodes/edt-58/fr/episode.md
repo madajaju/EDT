@@ -3,11 +3,8 @@ layout: posts
 title: "Compréhension des problèmes de l'Edge jusqu'au centre de données."
 number: 58
 permalink: episode-EDT58-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 58
 tags:
     - data

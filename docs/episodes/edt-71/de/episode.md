@@ -3,11 +3,8 @@ layout: posts
 title: "Moderne Datenverwaltung"
 number: 71
 permalink: episode-EDT71-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 71
 tags:
     - datagovernance

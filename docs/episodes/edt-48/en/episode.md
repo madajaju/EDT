@@ -3,11 +3,8 @@ layout: posts
 title: "VAST Data Revisited"
 number: 48
 permalink: episode-EDT48-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 48
 tags:
     - dataarchitecture

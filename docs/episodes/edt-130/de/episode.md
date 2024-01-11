@@ -3,11 +3,8 @@ layout: posts
 title: "Produktivierung von entscheidungsbasierter Künstlicher Intelligenz"
 number: 130
 permalink: episode-EDT130-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 130
 tags:
     - collectiongenerativeai

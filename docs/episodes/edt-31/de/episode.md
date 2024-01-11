@@ -3,11 +3,8 @@ layout: posts
 title: "Die Verbesserung des Mitarbeiterwerts mit Hilfe der Katalyse"
 number: 31
 permalink: episode-EDT31-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 31
 tags:
     - rpa

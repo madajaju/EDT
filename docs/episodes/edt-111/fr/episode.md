@@ -3,11 +3,8 @@ layout: posts
 title: "Réaliser le potentiel des villes intelligentes"
 number: 111
 permalink: episode-EDT111-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 111
 tags:
 

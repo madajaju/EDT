@@ -3,11 +3,8 @@ layout: posts
 title: "Information-driven Leadership Part 2"
 number: 105
 permalink: episode-EDT105-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 105
 tags:
     - change

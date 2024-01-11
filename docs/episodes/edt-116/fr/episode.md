@@ -3,11 +3,8 @@ layout: posts
 title: "Un argument en faveur d'une approche holistique de la sécurité des infrastructures critiques."
 number: 116
 permalink: episode-EDT116-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 116
 tags:
     - criticalinfrastructure

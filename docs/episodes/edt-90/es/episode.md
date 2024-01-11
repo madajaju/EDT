@@ -3,11 +3,8 @@ layout: posts
 title: "Barreras para la adopción de tecnología futura."
 number: 90
 permalink: episode-EDT90-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 90
 tags:
     - cto

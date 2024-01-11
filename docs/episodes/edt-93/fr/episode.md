@@ -3,11 +3,8 @@ layout: posts
 title: "Les quatre superpuissances de la transformation numérique."
 number: 93
 permalink: episode-EDT93-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 93
 tags:
     - cybersecurity

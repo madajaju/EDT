@@ -3,11 +3,8 @@ layout: posts
 title: "Leadership axé sur l'information"
 number: 104
 permalink: episode-EDT104-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 104
 tags:
     - data

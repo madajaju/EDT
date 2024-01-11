@@ -3,11 +3,8 @@ layout: posts
 title: "Seguir y asegurar el borde de Bit hasta la nube."
 number: 64
 permalink: episode-EDT64-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 64
 tags:
     - edge

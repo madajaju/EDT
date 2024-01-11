@@ -3,11 +3,8 @@ layout: posts
 title: "Zukunft von Big Memory und CXL"
 number: 89
 permalink: episode-EDT89-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 89
 tags:
     - bigmemory

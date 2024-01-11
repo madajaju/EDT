@@ -5,9 +5,7 @@ number: 18
 ref: brief-EDW18-fr
 permalink: brief-EDW18-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 18
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digital transformation news for June 6, 2023. This week more jobs in AI, major cyber security breaches, and cloud technology best practices.
-video: https://youtu.be/QCtR9mWoRxI
-description: Digital transformation news for June 6, 2023. This week more jobs in AI, major cyber security breaches, and cloud technology best practices.
+summary: "Digital transformation news for June 6, 2023. This week more jobs in AI, major cyber security breaches, and cloud technology best practices."
+video: "https://youtu.be/QCtR9mWoRxI"
+description: "Digital transformation news for June 6, 2023. This week more jobs in AI, major cyber security breaches, and cloud technology best practices."
 ---
 
 

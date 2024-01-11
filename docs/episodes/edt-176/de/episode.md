@@ -3,11 +3,8 @@ layout: posts
 title: "Geteilte Daten ohne Vertrauen"
 number: 176
 permalink: episode-EDT176-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 176
 tags:
     - shamimnaqvi

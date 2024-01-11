@@ -3,11 +3,8 @@ layout: posts
 title: "DevOps avec rapidité tout en réduisant les risques"
 number: 53
 permalink: episode-EDT53-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 53
 tags:
     - devops

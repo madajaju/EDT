@@ -3,11 +3,8 @@ layout: posts
 title: "Sicherung des Heimarbeiters Teil 2"
 number: 8
 permalink: episode-EDT8-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 8
 tags:
 

@@ -3,11 +3,8 @@ layout: posts
 title: "Protección de datos con Computación Confidencial."
 number: 142
 permalink: episode-EDT142-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 142
 tags:
     - cybersecurity

@@ -3,11 +3,8 @@ layout: posts
 title: "Collecte et préparation des données"
 number: 18
 permalink: episode-EDT18-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 18
 tags:
     - dataarchitecture

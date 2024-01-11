@@ -5,9 +5,7 @@ number: 22
 ref: brief-EDW22-en
 permalink: brief-EDW22-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 22
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: For the week of July 3, 2023, in digital transformation news. Is AI finding a replacement for Alexa and Siri? Can we hear our data? And where are the cloud service providers making it rain money?
-video: https://youtu.be/eSqDvnxPZIM
-description: For the week of July 3, 2023, in digital transformation news. Is AI finding a replacement for Alexa and Siri? Can we hear our data? And where are the cloud service providers making it rain money?
+summary: "For the week of July 3, 2023, in digital transformation news. Is AI finding a replacement for Alexa and Siri? Can we hear our data? And where are the cloud service providers making it rain money?"
+video: "https://youtu.be/eSqDvnxPZIM"
+description: "For the week of July 3, 2023, in digital transformation news. Is AI finding a replacement for Alexa and Siri? Can we hear our data? And where are the cloud service providers making it rain money?"
 ---
 
 

@@ -3,11 +3,8 @@ layout: posts
 title: "Digital Strategy and Data Architecture"
 number: 24
 permalink: episode-EDT24-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 24
 tags:
     - data

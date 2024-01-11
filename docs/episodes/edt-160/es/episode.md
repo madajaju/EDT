@@ -3,11 +3,8 @@ layout: posts
 title: "Seguridad en la IA Generativa"
 number: 160
 permalink: episode-EDT160-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 160
 tags:
     - collectiongenerativeai

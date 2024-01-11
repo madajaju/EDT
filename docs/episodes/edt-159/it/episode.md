@@ -3,11 +3,8 @@ layout: posts
 title: "Politiche GenAI"
 number: 159
 permalink: episode-EDT159-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 159
 tags:
     - collectiongenerativeai

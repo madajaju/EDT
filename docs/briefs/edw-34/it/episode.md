@@ -5,9 +5,7 @@ number: 34
 ref: brief-EDW34-it
 permalink: brief-EDW34-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 34
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Notizie sulla Trasformazione Digitale per il 24 settembre 2023 includono intelligenza artificiale, informatica pervasiva e sicurezza informatica. Ascolta riguardo ai nuovi processori Intel che stanno cambiando l'IA e il calcolo ad alta densità e su come un gruppo di hacker adolescenti abbiano bloccato i casinò MGM di Las Vegas.
-video: https://youtu.be/KmNhK2beyfo
-description: Notizie sulla Trasformazione Digitale per il 24 settembre 2023 includono intelligenza artificiale, informatica pervasiva e sicurezza informatica. Ascolta riguardo ai nuovi processori Intel che stanno cambiando l'IA e il calcolo ad alta densità e su come un gruppo di hacker adolescenti abbiano bloccato i casinò MGM di Las Vegas.
+summary: "Notizie sulla Trasformazione Digitale per il 24 settembre 2023 includono intelligenza artificiale, informatica pervasiva e sicurezza informatica. Ascolta riguardo ai nuovi processori Intel che stanno cambiando l'IA e il calcolo ad alta densità e su come un gruppo di hacker adolescenti abbiano bloccato i casinò MGM di Las Vegas."
+video: "https://youtu.be/KmNhK2beyfo"
+description: "Notizie sulla Trasformazione Digitale per il 24 settembre 2023 includono intelligenza artificiale, informatica pervasiva e sicurezza informatica. Ascolta riguardo ai nuovi processori Intel che stanno cambiando l'IA e il calcolo ad alta densità e su come un gruppo di hacker adolescenti abbiano bloccato i casinò MGM di Las Vegas."
 ---
 
 

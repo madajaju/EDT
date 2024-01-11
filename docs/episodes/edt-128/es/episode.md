@@ -3,11 +3,8 @@ layout: posts
 title: "Cerrando la brecha de habilidades digitales"
 number: 128
 permalink: episode-EDT128-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 128
 tags:
     - majorleaguehacking

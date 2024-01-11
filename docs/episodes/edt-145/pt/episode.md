@@ -3,11 +3,8 @@ layout: posts
 title: "Atraindo pessoas de volta ao escritório."
 number: 145
 permalink: episode-EDT145-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 145
 tags:
     - people

@@ -3,11 +3,8 @@ layout: posts
 title: "Leadership axé sur l'information, partie 2."
 number: 105
 permalink: episode-EDT105-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 105
 tags:
     - change

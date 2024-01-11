@@ -3,11 +3,8 @@ layout: posts
 title: "Dimensionando tu solución de VDI para trabajadores remotos"
 number: 10
 permalink: episode-EDT10-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 10
 tags:
     - telework

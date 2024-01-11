@@ -3,11 +3,8 @@ layout: posts
 title: "Operacionalizar la Gestión de Procesos de Negocios"
 number: 113
 permalink: episode-EDT113-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 113
 tags:
     - bpm

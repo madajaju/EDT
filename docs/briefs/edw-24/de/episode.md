@@ -5,9 +5,7 @@ number: 24
 ref: brief-EDW24-de
 permalink: brief-EDW24-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 24
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: In den Nachrichten zur digitalen Transformation für die Woche vom 17. Juli 2023 bietet Papst Franziskus Richtlinien zur Ethik der Künstlichen Intelligenz an, Intel bleibt Amerikas Cyber-Festung und der Markt für Edge Computing steht vor einer steilen Entwicklung!
-video: https://youtu.be/
-description: In den Nachrichten zur digitalen Transformation für die Woche vom 17. Juli 2023 bietet Papst Franziskus Richtlinien zur Ethik der Künstlichen Intelligenz an, Intel bleibt Amerikas Cyber-Festung und der Markt für Edge Computing steht vor einer steilen Entwicklung!
+summary: "In den Nachrichten zur digitalen Transformation für die Woche vom 17. Juli 2023 bietet Papst Franziskus Richtlinien zur Ethik der Künstlichen Intelligenz an, Intel bleibt Amerikas Cyber-Festung und der Markt für Edge Computing steht vor einer steilen Entwicklung!"
+video: "https://youtu.be/"
+description: "In den Nachrichten zur digitalen Transformation für die Woche vom 17. Juli 2023 bietet Papst Franziskus Richtlinien zur Ethik der Künstlichen Intelligenz an, Intel bleibt Amerikas Cyber-Festung und der Markt für Edge Computing steht vor einer steilen Entwicklung!"
 ---
 
 

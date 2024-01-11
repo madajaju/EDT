@@ -3,11 +3,8 @@ layout: posts
 title: "Abrazando la sostenibilidad con edificios inteligentes"
 number: 150
 permalink: episode-EDT150-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 150
 tags:
     - edge

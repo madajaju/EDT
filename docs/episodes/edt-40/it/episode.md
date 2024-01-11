@@ -3,11 +3,8 @@ layout: posts
 title: "Ricerca Medica Collaborativa con Elaborazione dei Dati Riservata"
 number: 40
 permalink: episode-EDT40-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 40
 tags:
     - confidentialcomputing

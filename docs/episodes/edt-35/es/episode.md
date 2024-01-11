@@ -3,11 +3,8 @@ layout: posts
 title: "Navegando el Cambio Disruptivo"
 number: 35
 permalink: episode-EDT35-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 35
 tags:
     - change

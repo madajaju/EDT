@@ -3,11 +3,8 @@ layout: posts
 title: "Protezione del telelavoratore Parte 2"
 number: 8
 permalink: episode-EDT8-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 8
 tags:
 

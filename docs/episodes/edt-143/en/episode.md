@@ -3,11 +3,8 @@ layout: posts
 title: "Use Cases in Confidential Computing"
 number: 143
 permalink: episode-EDT143-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 143
 tags:
     - cybersecurity

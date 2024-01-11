@@ -3,11 +3,8 @@ layout: posts
 title: "Software Defined BareMetal Management: Software Definiertes Bare-Metal-Management"
 number: 132
 permalink: episode-EDT132-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 132
 tags:
     - metify

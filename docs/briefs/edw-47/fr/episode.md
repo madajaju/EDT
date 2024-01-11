@@ -5,9 +5,7 @@ number: 47
 ref: brief-EDW47-fr
 permalink: brief-EDW47-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 47
 tags:
     - ai
@@ -42,9 +40,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Pendant la semaine du 24 décembre 2023, il y a eu plusieurs reportages sur la transformation numérique. Ces histoires couvraient des sujets tels que la cybersécurité, l'intelligence artificielle et l'informatique. Parmi les points forts de la semaine figuraient une augmentation des cyberattaques pendant la période des fêtes, les efforts d'Intel pour développer davantage la technologie d'intelligence artificielle, et la tendance vers le contrôle des coûts en informatique en nuage.
-video: https://youtu.be/gM-mDrnFZSc
-description: Pendant la semaine du 24 décembre 2023, il y a eu plusieurs reportages sur la transformation numérique. Ces histoires couvraient des sujets tels que la cybersécurité, l'intelligence artificielle et l'informatique. Parmi les points forts de la semaine figuraient une augmentation des cyberattaques pendant la période des fêtes, les efforts d'Intel pour développer davantage la technologie d'intelligence artificielle, et la tendance vers le contrôle des coûts en informatique en nuage.
+summary: "Pendant la semaine du 24 décembre 2023, il y a eu plusieurs reportages sur la transformation numérique. Ces histoires couvraient des sujets tels que la cybersécurité, l'intelligence artificielle et l'informatique. Parmi les points forts de la semaine figuraient une augmentation des cyberattaques pendant la période des fêtes, les efforts d'Intel pour développer davantage la technologie d'intelligence artificielle, et la tendance vers le contrôle des coûts en informatique en nuage."
+video: "https://youtu.be/gM-mDrnFZSc"
+description: "Pendant la semaine du 24 décembre 2023, il y a eu plusieurs reportages sur la transformation numérique. Ces histoires couvraient des sujets tels que la cybersécurité, l'intelligence artificielle et l'informatique. Parmi les points forts de la semaine figuraient une augmentation des cyberattaques pendant la période des fêtes, les efforts d'Intel pour développer davantage la technologie d'intelligence artificielle, et la tendance vers le contrôle des coûts en informatique en nuage."
 ---
 
 

@@ -3,11 +3,8 @@ layout: posts
 title: "Évolution de la vie privée des données"
 number: 59
 permalink: episode-EDT59-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 59
 tags:
     - cybersecurity

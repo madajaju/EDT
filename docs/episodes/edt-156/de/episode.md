@@ -3,11 +3,8 @@ layout: posts
 title: "Eine datenbereite Organisation werden"
 number: 156
 permalink: episode-EDT156-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 156
 tags:
     - collectiongenerativeai

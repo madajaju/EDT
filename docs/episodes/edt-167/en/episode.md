@@ -3,11 +3,8 @@ layout: posts
 title: "Leveraging AI to Protect Children"
 number: 167
 permalink: episode-EDT167-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 167
 tags:
     - ai

@@ -3,11 +3,8 @@ layout: posts
 title: "Precog Cyber Attack PAth with XM Cyber"
 number: 99
 permalink: episode-EDT99-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 99
 tags:
     - aiml

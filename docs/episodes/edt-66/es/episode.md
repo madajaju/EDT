@@ -3,11 +3,8 @@ layout: posts
 title: "Gestión de la complejidad en la nube"
 number: 66
 permalink: episode-EDT66-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 66
 tags:
     - data

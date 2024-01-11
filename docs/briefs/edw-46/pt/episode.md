@@ -5,9 +5,7 @@ number: 46
 ref: brief-EDW46-pt
 permalink: brief-EDW46-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 46
 tags:
     - ai
@@ -42,9 +40,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: A semana de 17 de dezembro de 2023, em notícias de Transformação Digital inclui histórias sobre IA, gerenciamento de dados e cibersegurança. Confira o nascimento do PC AI, gerenciamento de dados Multi-cloud para nuvens governamentais, e alertas importantes para a cibersegurança de infraestruturas críticas.
-video: https://youtu.be/aaYPa1gewTM
-description: A semana de 17 de dezembro de 2023, em notícias de Transformação Digital inclui histórias sobre IA, gerenciamento de dados e cibersegurança. Confira o nascimento do PC AI, gerenciamento de dados Multi-cloud para nuvens governamentais, e alertas importantes para a cibersegurança de infraestruturas críticas.
+summary: "A semana de 17 de dezembro de 2023, em notícias de Transformação Digital inclui histórias sobre IA, gerenciamento de dados e cibersegurança. Confira o nascimento do PC AI, gerenciamento de dados Multi-cloud para nuvens governamentais, e alertas importantes para a cibersegurança de infraestruturas críticas."
+video: "https://youtu.be/aaYPa1gewTM"
+description: "A semana de 17 de dezembro de 2023, em notícias de Transformação Digital inclui histórias sobre IA, gerenciamento de dados e cibersegurança. Confira o nascimento do PC AI, gerenciamento de dados Multi-cloud para nuvens governamentais, e alertas importantes para a cibersegurança de infraestruturas críticas."
 ---
 
 

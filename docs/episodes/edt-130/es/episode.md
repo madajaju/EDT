@@ -3,11 +3,8 @@ layout: posts
 title: "Transformando la IA de toma de decisiones en un producto."
 number: 130
 permalink: episode-EDT130-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 130
 tags:
     - collectiongenerativeai

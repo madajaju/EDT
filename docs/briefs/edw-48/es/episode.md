@@ -5,9 +5,7 @@ number: 48
 ref: brief-EDW48-es
 permalink: brief-EDW48-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 48
 tags:
     - ai
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Noticias de Transformación Digital para la semana del 1 de enero de 2024, cubriendo ciberseguridad, inteligencia artificial y computación en el borde. Los temas incluyen IoT y AI en la granja, políticos engañados por alucinaciones generadas por AI y ataques cibernéticos en el sector de la salud.
-video: https://youtu.be/gablznNjlNU
-description: Noticias de Transformación Digital para la semana del 1 de enero de 2024, cubriendo ciberseguridad, inteligencia artificial y computación en el borde. Los temas incluyen IoT y AI en la granja, políticos engañados por alucinaciones generadas por AI y ataques cibernéticos en el sector de la salud.
+summary: "Noticias de Transformación Digital para la semana del 1 de enero de 2024, cubriendo ciberseguridad, inteligencia artificial y computación en el borde. Los temas incluyen IoT y AI en la granja, políticos engañados por alucinaciones generadas por AI y ataques cibernéticos en el sector de la salud."
+video: "https://youtu.be/gablznNjlNU"
+description: "Noticias de Transformación Digital para la semana del 1 de enero de 2024, cubriendo ciberseguridad, inteligencia artificial y computación en el borde. Los temas incluyen IoT y AI en la granja, políticos engañados por alucinaciones generadas por AI y ataques cibernéticos en el sector de la salud."
 ---
 
 

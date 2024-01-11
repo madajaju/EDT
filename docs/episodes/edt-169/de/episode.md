@@ -3,11 +3,8 @@ layout: posts
 title: "Den Menschen in KI bewahren"
 number: 169
 permalink: episode-EDT169-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 169
 tags:
     - userexperience
@@ -29,9 +26,9 @@ guests:
 
 img: thumbnail.jpg
 image: thumbnail.jpg
-summary: "In einer kürzlich ausgestrahlten Folge des Podcasts "Embracing Digital Transformation" interviewt Gastgeber Darren Pulsipher, Chief Solution Architect of Public Sector bei Intel, Sunny Stueve, den Leiter für Human Centered AI bei Leidos. Der Podcast setzt sich mit der Bedeutung von humanzentriertem Design und Benutzererfahrung bei der Integration von KI-Technologie auseinander."
+summary: "In einer kürzlich ausgestrahlten Folge des Podcasts Embracing Digital Transformation interviewt Gastgeber Darren Pulsipher, Chief Solution Architect of Public Sector bei Intel, Sunny Stueve, den Leiter für Human Centered AI bei Leidos. Der Podcast setzt sich mit der Bedeutung von humanzentriertem Design und Benutzererfahrung bei der Integration von KI-Technologie auseinander."
 video: "https://youtu.be/LV_JO0hCG5g"
-description: "In einer kürzlich ausgestrahlten Folge des Podcasts "Embracing Digital Transformation" interviewt Gastgeber Darren Pulsipher, Chief Solution Architect of Public Sector bei Intel, Sunny Stueve, den Leiter für Human Centered AI bei Leidos. Der Podcast setzt sich mit der Bedeutung von humanzentriertem Design und Benutzererfahrung bei der Integration von KI-Technologie auseinander."
+description: "In einer kürzlich ausgestrahlten Folge des Podcasts Embracing Digital Transformation interviewt Gastgeber Darren Pulsipher, Chief Solution Architect of Public Sector bei Intel, Sunny Stueve, den Leiter für Human Centered AI bei Leidos. Der Podcast setzt sich mit der Bedeutung von humanzentriertem Design und Benutzererfahrung bei der Integration von KI-Technologie auseinander."
 ---
 
 <div>

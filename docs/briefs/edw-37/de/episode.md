@@ -5,9 +5,7 @@ number: 37
 ref: brief-EDW37-de
 permalink: brief-EDW37-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 37
 tags:
     - compute
@@ -34,9 +32,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digitale Transformation diese Woche, am 15. Oktober 2023, berichtet über fortlaufende Cyberangriffe während des Israel-Hamas Konflikts und die Kompromittierung der App des 'Red Alert Systems'. Darüber hinaus hat sich gezeigt, dass generative Künstliche Intelligenz die Bemühungen bei der Cloud-Migration reduziert, während die CMA des Vereinigten Königreichs den öffentlichen Cloud-Markt untersucht.
-video: https://youtu.be/dEXn9_pCFmM
-description: Digitale Transformation diese Woche, am 15. Oktober 2023, berichtet über fortlaufende Cyberangriffe während des Israel-Hamas Konflikts und die Kompromittierung der App des 'Red Alert Systems'. Darüber hinaus hat sich gezeigt, dass generative Künstliche Intelligenz die Bemühungen bei der Cloud-Migration reduziert, während die CMA des Vereinigten Königreichs den öffentlichen Cloud-Markt untersucht.
+summary: "Digitale Transformation diese Woche, am 15. Oktober 2023, berichtet über fortlaufende Cyberangriffe während des Israel-Hamas Konflikts und die Kompromittierung der App des 'Red Alert Systems'. Darüber hinaus hat sich gezeigt, dass generative Künstliche Intelligenz die Bemühungen bei der Cloud-Migration reduziert, während die CMA des Vereinigten Königreichs den öffentlichen Cloud-Markt untersucht."
+video: "https://youtu.be/dEXn9_pCFmM"
+description: "Digitale Transformation diese Woche, am 15. Oktober 2023, berichtet über fortlaufende Cyberangriffe während des Israel-Hamas Konflikts und die Kompromittierung der App des 'Red Alert Systems'. Darüber hinaus hat sich gezeigt, dass generative Künstliche Intelligenz die Bemühungen bei der Cloud-Migration reduziert, während die CMA des Vereinigten Königreichs den öffentlichen Cloud-Markt untersucht."
 ---
 
 

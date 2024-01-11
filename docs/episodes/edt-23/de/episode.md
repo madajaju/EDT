@@ -3,11 +3,8 @@ layout: posts
 title: "Erkenntnisschaffung in datenzentrierten Organisationen"
 number: 23
 permalink: episode-EDT23-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 23
 tags:
     - aiml

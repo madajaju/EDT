@@ -3,11 +3,8 @@ layout: posts
 title: "Inserisci il titolo qui"
 number: 12
 permalink: episode-EDT12-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 12
 tags:
     - remotelearning

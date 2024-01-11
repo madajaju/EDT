@@ -5,9 +5,7 @@ number: 41
 ref: brief-EDW41-es
 permalink: brief-EDW41-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 41
 tags:
     - homelawncaretools
@@ -24,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Adoptando lo Digital Esta semana del 12 de noviembre de 2023, incluye noticias en ciberseguridad. Inteligencia artificial y computación ubicua. Conozca sobre varios ciberataques importantes en infraestructura crítica, la inteligencia artificial quedándose sin datos y avances en la computación cuántica.
-video: https://youtu.be/-8Rzc4aUSek
-description: Adoptando lo Digital Esta semana del 12 de noviembre de 2023, incluye noticias en ciberseguridad. Inteligencia artificial y computación ubicua. Conozca sobre varios ciberataques importantes en infraestructura crítica, la inteligencia artificial quedándose sin datos y avances en la computación cuántica.
+summary: "Adoptando lo Digital Esta semana del 12 de noviembre de 2023, incluye noticias en ciberseguridad. Inteligencia artificial y computación ubicua. Conozca sobre varios ciberataques importantes en infraestructura crítica, la inteligencia artificial quedándose sin datos y avances en la computación cuántica."
+video: "https://youtu.be/-8Rzc4aUSek"
+description: "Adoptando lo Digital Esta semana del 12 de noviembre de 2023, incluye noticias en ciberseguridad. Inteligencia artificial y computación ubicua. Conozca sobre varios ciberataques importantes en infraestructura crítica, la inteligencia artificial quedándose sin datos y avances en la computación cuántica."
 ---
 
 

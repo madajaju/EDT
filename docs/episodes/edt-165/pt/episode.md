@@ -3,11 +3,8 @@ layout: posts
 title: "Fatores de colocação de carga de trabalho na nuvem"
 number: 165
 permalink: episode-EDT165-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 165
 tags:
     - cloudcomputeoptions

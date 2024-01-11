@@ -3,11 +3,8 @@ layout: posts
 title: "The Birth of Graph Intelligence Platforms"
 number: 106
 permalink: episode-EDT106-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 106
 tags:
     - data

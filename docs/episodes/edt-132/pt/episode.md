@@ -3,11 +3,8 @@ layout: posts
 title: "Gerenciamento de BareMetal Definido por Software"
 number: 132
 permalink: episode-EDT132-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 132
 tags:
     - metify

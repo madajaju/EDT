@@ -5,9 +5,7 @@ number: 8
 ref: brief-EDW8-it
 permalink: brief-EDW8-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 8
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Riepilogo
-video: https://youtu.be/
-description: Riepilogo
+summary: "Riepilogo"
+video: "https://youtu.be/"
+description: "Riepilogo"
 ---
 
 

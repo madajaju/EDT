@@ -5,9 +5,7 @@ number: 45
 ref: brief-EDW45-es
 permalink: brief-EDW45-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 45
 tags:
     - ai
@@ -43,9 +41,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Noticias de Transformación Digital para la semana del 10 de diciembre de 2023, contienen historias sobre ciberseguridad, inteligencia artificial y computación ubicua. Esta semana, escucha el plan del Ejército de los EE.UU. para mejorar la ciberseguridad a través de la unificación, las guerras de la nube llegan a los tribunales en el Reino Unido, y el drama de OpenAI y Sam Altman.
-video: https://youtu.be/
-description: Noticias de Transformación Digital para la semana del 10 de diciembre de 2023, contienen historias sobre ciberseguridad, inteligencia artificial y computación ubicua. Esta semana, escucha el plan del Ejército de los EE.UU. para mejorar la ciberseguridad a través de la unificación, las guerras de la nube llegan a los tribunales en el Reino Unido, y el drama de OpenAI y Sam Altman.
+summary: "Noticias de Transformación Digital para la semana del 10 de diciembre de 2023, contienen historias sobre ciberseguridad, inteligencia artificial y computación ubicua. Esta semana, escucha el plan del Ejército de los EE.UU. para mejorar la ciberseguridad a través de la unificación, las guerras de la nube llegan a los tribunales en el Reino Unido, y el drama de OpenAI y Sam Altman."
+video: "https://youtu.be/"
+description: "Noticias de Transformación Digital para la semana del 10 de diciembre de 2023, contienen historias sobre ciberseguridad, inteligencia artificial y computación ubicua. Esta semana, escucha el plan del Ejército de los EE.UU. para mejorar la ciberseguridad a través de la unificación, las guerras de la nube llegan a los tribunales en el Reino Unido, y el drama de OpenAI y Sam Altman."
 ---
 
 

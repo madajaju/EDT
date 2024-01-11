@@ -3,11 +3,8 @@ layout: posts
 title: "O papel do CIO na adoção da nuvem"
 number: 43
 permalink: episode-EDT43-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 43
 tags:
     - cio

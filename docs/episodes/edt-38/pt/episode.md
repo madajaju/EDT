@@ -3,11 +3,8 @@ layout: posts
 title: "Os anos 20 rugindo: uma visão para 2021"
 number: 38
 permalink: episode-EDT38-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 38
 tags:
     - contactless
@@ -24,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Neste episódio, Darren Pulsipher, Arquiteto-chefe de Soluções na Intel, pergunta a Rachel Mushawar, VP de Vendas na Intel, sobre sua visão do que está por vir para os "anos dourados" depois da interrupção da COVID-19."
+summary: "Neste episódio, Darren Pulsipher, Arquiteto-chefe de Soluções na Intel, pergunta a Rachel Mushawar, VP de Vendas na Intel, sobre sua visão do que está por vir para os anos dourados depois da interrupção da COVID-19."
 video: "https://youtu.be/url"
-description: "Neste episódio, Darren Pulsipher, Arquiteto-chefe de Soluções na Intel, pergunta a Rachel Mushawar, VP de Vendas na Intel, sobre sua visão do que está por vir para os "anos dourados" depois da interrupção da COVID-19."
+description: "Neste episódio, Darren Pulsipher, Arquiteto-chefe de Soluções na Intel, pergunta a Rachel Mushawar, VP de Vendas na Intel, sobre sua visão do que está por vir para os anos dourados depois da interrupção da COVID-19."
 ---
 
 <div>

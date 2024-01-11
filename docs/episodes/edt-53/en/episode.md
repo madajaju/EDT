@@ -3,11 +3,8 @@ layout: posts
 title: "DevOps with Speed While Reducing Risk"
 number: 53
 permalink: episode-EDT53-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 53
 tags:
     - devops

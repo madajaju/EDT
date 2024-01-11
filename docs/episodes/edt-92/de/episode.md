@@ -3,11 +3,8 @@ layout: posts
 title: "Schützen Sie die Außenmauern Ihres Schlosses mit Verwundbarkeitsscans."
 number: 92
 permalink: episode-EDT92-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 92
 tags:
     - cybersecurity

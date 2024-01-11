@@ -5,9 +5,7 @@ number: 35
 ref: brief-EDW35-pt
 permalink: brief-EDW35-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 35
 tags:
     - ai
@@ -33,9 +31,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Notícias de transformação digital para a semana de 1º de outubro, incluindo histórias sobre gerenciamento de dados, inteligência artificial e segurança cibernética. Venha ouvir a celebração do mês de conscientização em segurança cibernética, uma IA que transforma Snoop Dogg em mestre de calabouço de D&D, e saiba mais sobre uma nova arquitetura de dados chamada Polystore.
-video: https://youtu.be/PzBZTcp2hBs
-description: Notícias de transformação digital para a semana de 1º de outubro, incluindo histórias sobre gerenciamento de dados, inteligência artificial e segurança cibernética. Venha ouvir a celebração do mês de conscientização em segurança cibernética, uma IA que transforma Snoop Dogg em mestre de calabouço de D&D, e saiba mais sobre uma nova arquitetura de dados chamada Polystore.
+summary: "Notícias de transformação digital para a semana de 1º de outubro, incluindo histórias sobre gerenciamento de dados, inteligência artificial e segurança cibernética. Venha ouvir a celebração do mês de conscientização em segurança cibernética, uma IA que transforma Snoop Dogg em mestre de calabouço de D&D, e saiba mais sobre uma nova arquitetura de dados chamada Polystore."
+video: "https://youtu.be/PzBZTcp2hBs"
+description: "Notícias de transformação digital para a semana de 1º de outubro, incluindo histórias sobre gerenciamento de dados, inteligência artificial e segurança cibernética. Venha ouvir a celebração do mês de conscientização em segurança cibernética, uma IA que transforma Snoop Dogg em mestre de calabouço de D&D, e saiba mais sobre uma nova arquitetura de dados chamada Polystore."
 ---
 
 

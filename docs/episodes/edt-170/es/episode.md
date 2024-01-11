@@ -3,11 +3,8 @@ layout: posts
 title: "Principios de Confianza Cero"
 number: 170
 permalink: episode-EDT170-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 170
 tags:
     - zta

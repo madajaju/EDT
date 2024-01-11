@@ -3,11 +3,8 @@ layout: posts
 title: "Améliorer la valeur des employés grâce à l'accélération."
 number: 31
 permalink: episode-EDT31-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 31
 tags:
     - rpa

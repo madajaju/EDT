@@ -5,9 +5,7 @@ number: 47
 ref: brief-EDW47-it
 permalink: brief-EDW47-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 47
 tags:
     - ai
@@ -42,9 +40,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Durante la settimana del 24 dicembre 2023, ci sono state diverse notizie sulla trasformazione digitale. Queste storie coprivano argomenti come la cybersecurity, l'intelligenza artificiale e l'informatica. Alcuni dei momenti salienti della settimana includevano un aumento degli attacchi informatici durante il periodo delle feste, lo sforzo di Intel per sviluppare ulteriormente la tecnologia AI e la tendenza verso il controllo dei costi nel cloud computing.
-video: https://youtu.be/v5hdJQRGju4
-description: Durante la settimana del 24 dicembre 2023, ci sono state diverse notizie sulla trasformazione digitale. Queste storie coprivano argomenti come la cybersecurity, l'intelligenza artificiale e l'informatica. Alcuni dei momenti salienti della settimana includevano un aumento degli attacchi informatici durante il periodo delle feste, lo sforzo di Intel per sviluppare ulteriormente la tecnologia AI e la tendenza verso il controllo dei costi nel cloud computing.
+summary: "Durante la settimana del 24 dicembre 2023, ci sono state diverse notizie sulla trasformazione digitale. Queste storie coprivano argomenti come la cybersecurity, l'intelligenza artificiale e l'informatica. Alcuni dei momenti salienti della settimana includevano un aumento degli attacchi informatici durante il periodo delle feste, lo sforzo di Intel per sviluppare ulteriormente la tecnologia AI e la tendenza verso il controllo dei costi nel cloud computing."
+video: "https://youtu.be/v5hdJQRGju4"
+description: "Durante la settimana del 24 dicembre 2023, ci sono state diverse notizie sulla trasformazione digitale. Queste storie coprivano argomenti come la cybersecurity, l'intelligenza artificiale e l'informatica. Alcuni dei momenti salienti della settimana includevano un aumento degli attacchi informatici durante il periodo delle feste, lo sforzo di Intel per sviluppare ulteriormente la tecnologia AI e la tendenza verso il controllo dei costi nel cloud computing."
 ---
 
 

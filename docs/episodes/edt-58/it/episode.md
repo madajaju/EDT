@@ -3,11 +3,8 @@ layout: posts
 title: "Comprendere i problemi dalla periferia al data center."
 number: 58
 permalink: episode-EDT58-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 58
 tags:
     - data

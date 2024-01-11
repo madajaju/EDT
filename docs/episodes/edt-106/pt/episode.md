@@ -3,11 +3,8 @@ layout: posts
 title: "O Nascimento das Plataformas de Inteligência de Gráficos"
 number: 106
 permalink: episode-EDT106-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 106
 tags:
     - data

@@ -3,11 +3,8 @@ layout: posts
 title: "Dati a Zero Fiducia con SafelyShare"
 number: 177
 permalink: episode-EDT177-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 177
 tags:
     - safelyshare

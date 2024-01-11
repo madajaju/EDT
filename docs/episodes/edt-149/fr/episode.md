@@ -3,11 +3,8 @@ layout: posts
 title: "Mise à jour sur la 5G au Département de la Défense."
 number: 149
 permalink: episode-EDT149-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 149
 tags:
     - advancedcomms

@@ -5,9 +5,7 @@ number: 20
 ref: brief-EDW20-pt
 permalink: brief-EDW20-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 20
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Notícias de Transformação Digital da semana de 19 de junho de 2023, incluindo histórias de gerentes substituindo trabalhadores por IA, interrupções na nuvem novamente e leis de privacidade afetando as gigantes de tecnologia.
-video: https://youtu.be/
-description: Notícias de Transformação Digital da semana de 19 de junho de 2023, incluindo histórias de gerentes substituindo trabalhadores por IA, interrupções na nuvem novamente e leis de privacidade afetando as gigantes de tecnologia.
+summary: "Notícias de Transformação Digital da semana de 19 de junho de 2023, incluindo histórias de gerentes substituindo trabalhadores por IA, interrupções na nuvem novamente e leis de privacidade afetando as gigantes de tecnologia."
+video: "https://youtu.be/"
+description: "Notícias de Transformação Digital da semana de 19 de junho de 2023, incluindo histórias de gerentes substituindo trabalhadores por IA, interrupções na nuvem novamente e leis de privacidade afetando as gigantes de tecnologia."
 ---
 
 

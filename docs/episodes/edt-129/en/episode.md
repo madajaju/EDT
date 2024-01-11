@@ -3,11 +3,8 @@ layout: posts
 title: "HPC OnDemand"
 number: 129
 permalink: episode-EDT129-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 129
 tags:
     - hpc

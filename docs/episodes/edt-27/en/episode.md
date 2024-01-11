@@ -3,11 +3,8 @@ layout: posts
 title: "Hardware Security: Imperative for Transforming Data"
 number: 27
 permalink: episode-EDT27-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 27
 tags:
     - datagovernance

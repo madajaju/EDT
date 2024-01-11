@@ -3,11 +3,8 @@ layout: posts
 title: "Leadership basata sull'informazione"
 number: 104
 permalink: episode-EDT104-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 104
 tags:
     - data

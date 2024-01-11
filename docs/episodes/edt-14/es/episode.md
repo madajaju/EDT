@@ -3,11 +3,8 @@ layout: posts
 title: "Iniciando tu Transformación Organizativa para Convertirte en Centrado en Datos"
 number: 14
 permalink: episode-EDT14-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 14
 tags:
 

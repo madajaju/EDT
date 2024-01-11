@@ -3,11 +3,8 @@ layout: posts
 title: "Fighting the Cyber Adversary by Securing your Software Supply Chain"
 number: 91
 permalink: episode-EDT91-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 91
 tags:
     - cybersecurity

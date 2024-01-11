@@ -3,11 +3,8 @@ layout: posts
 title: "Chiudere la carenza di competenze digitali"
 number: 128
 permalink: episode-EDT128-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 128
 tags:
     - majorleaguehacking

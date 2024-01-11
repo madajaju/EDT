@@ -3,11 +3,8 @@ layout: posts
 title: "Approccio No Code (RPA) per l'efficienza degli uffici amministrativi"
 number: 32
 permalink: episode-EDT32-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 32
 tags:
     - rpa

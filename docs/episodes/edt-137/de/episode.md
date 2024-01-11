@@ -3,11 +3,8 @@ layout: posts
 title: "Wiedergeburt der privaten Cloud"
 number: 137
 permalink: episode-EDT137-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 137
 tags:
     - cloud

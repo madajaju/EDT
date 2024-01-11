@@ -3,11 +3,8 @@ layout: posts
 title: "Addestrare la prossima generazione in AI"
 number: 153
 permalink: episode-EDT153-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 153
 tags:
     - genai

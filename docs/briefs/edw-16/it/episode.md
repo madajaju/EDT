@@ -5,9 +5,7 @@ number: 16
 ref: brief-EDW16-it
 permalink: brief-EDW16-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 16
 tags:
 
@@ -16,9 +14,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digital Transformation news for the week of May 29, 2023. In this episode.
-video: https://youtu.be/
-description: Digital Transformation news for the week of May 29, 2023. In this episode.
+summary: "Digital Transformation news for the week of May 29, 2023. In this episode."
+video: "https://youtu.be/"
+description: "Digital Transformation news for the week of May 29, 2023. In this episode."
 ---
 
 

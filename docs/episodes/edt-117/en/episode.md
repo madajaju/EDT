@@ -3,11 +3,8 @@ layout: posts
 title: "2022 Year In Review"
 number: 117
 permalink: episode-EDT117-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 117
 tags:
     - edge

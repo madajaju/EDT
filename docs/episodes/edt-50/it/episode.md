@@ -3,11 +3,8 @@ layout: posts
 title: "Comprendere il burnout dei dipendenti."
 number: 50
 permalink: episode-EDT50-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 50
 tags:
     - employeeburnout

@@ -3,11 +3,8 @@ layout: posts
 title: "Abraçando a Revolução da IA"
 number: 146
 permalink: episode-EDT146-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 146
 tags:
     - collectiongenerativeai

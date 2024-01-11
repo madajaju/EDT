@@ -5,9 +5,7 @@ number: 21
 ref: brief-EDW21-it
 permalink: brief-EDW21-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 21
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Notizie di questa settimana, 26 giugno 2023, sulla trasformazione digitale, compresi gli attacchi sempre più frequenti nella cyber guerra, l'adesione di tutti al carrozzone dell'AI generativa e le reti radio virtualizzate.
-video: https://youtu.be/GbxX8poRWjU
-description: Notizie di questa settimana, 26 giugno 2023, sulla trasformazione digitale, compresi gli attacchi sempre più frequenti nella cyber guerra, l'adesione di tutti al carrozzone dell'AI generativa e le reti radio virtualizzate.
+summary: "Notizie di questa settimana, 26 giugno 2023, sulla trasformazione digitale, compresi gli attacchi sempre più frequenti nella cyber guerra, l'adesione di tutti al carrozzone dell'AI generativa e le reti radio virtualizzate."
+video: "https://youtu.be/GbxX8poRWjU"
+description: "Notizie di questa settimana, 26 giugno 2023, sulla trasformazione digitale, compresi gli attacchi sempre più frequenti nella cyber guerra, l'adesione di tutti al carrozzone dell'AI generativa e le reti radio virtualizzate."
 ---
 
 

@@ -3,11 +3,8 @@ layout: posts
 title: "Automatización de la Gestión de Procesos Empresariales"
 number: 114
 permalink: episode-EDT114-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 114
 tags:
     - compute

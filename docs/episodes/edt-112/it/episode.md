@@ -3,11 +3,8 @@ layout: posts
 title: "Miti della migrazione di Cloud Lift and Shift"
 number: 112
 permalink: episode-EDT112-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 112
 tags:
     - multicloud

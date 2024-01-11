@@ -3,11 +3,8 @@ layout: posts
 title: "Gestion BareMetal définie par logiciel"
 number: 132
 permalink: episode-EDT132-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 132
 tags:
     - metify
@@ -25,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Dans cet épisode, Darren interviewe les fondateurs de Metify, Ian Evans et Mike Wagner, à propos de leur approche unique de gestion de l'infrastructure définie par logiciel "bare metal" en utilisant la norme Redfish."
+summary: "Dans cet épisode, Darren interviewe les fondateurs de Metify, Ian Evans et Mike Wagner, à propos de leur approche unique de gestion de l'infrastructure définie par logiciel bare metal en utilisant la norme Redfish."
 video: "https://youtu.be/url"
-description: "Dans cet épisode, Darren interviewe les fondateurs de Metify, Ian Evans et Mike Wagner, à propos de leur approche unique de gestion de l'infrastructure définie par logiciel "bare metal" en utilisant la norme Redfish."
+description: "Dans cet épisode, Darren interviewe les fondateurs de Metify, Ian Evans et Mike Wagner, à propos de leur approche unique de gestion de l'infrastructure définie par logiciel bare metal en utilisant la norme Redfish."
 ---
 
 <div>

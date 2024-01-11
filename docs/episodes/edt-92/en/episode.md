@@ -3,11 +3,8 @@ layout: posts
 title: "Protecting the Outer Walls of your Castle with Vulnerability Scans"
 number: 92
 permalink: episode-EDT92-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 92
 tags:
     - cybersecurity

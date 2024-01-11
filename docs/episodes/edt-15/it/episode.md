@@ -3,11 +3,8 @@ layout: posts
 title: "Avvio della trasformazione organizzativa"
 number: 15
 permalink: episode-EDT15-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 15
 tags:
     - data

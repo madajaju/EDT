@@ -3,11 +3,8 @@ layout: posts
 title: "Cambiando de Infraestructura a Cargas de trabajo"
 number: 82
 permalink: episode-EDT82-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 82
 tags:
     - cloudmigration

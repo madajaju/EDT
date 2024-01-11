@@ -5,9 +5,7 @@ number: 34
 ref: brief-EDW34-de
 permalink: brief-EDW34-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 34
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digital Transformation News für den 24. September 2023 beinhaltet künstliche Intelligenz, ubiquitäres Computing und Cybersecurity. Erfahre mehr darüber, wie Intels neue CPUs die künstliche Intelligenz und die Hochleistungsrechner verändern und wie eine Hackergruppe von Teenagern die MGM Casinos in Las Vegas lahmgelegt hat.
-video: https://youtu.be/CZdyTfLA5J0
-description: Digital Transformation News für den 24. September 2023 beinhaltet künstliche Intelligenz, ubiquitäres Computing und Cybersecurity. Erfahre mehr darüber, wie Intels neue CPUs die künstliche Intelligenz und die Hochleistungsrechner verändern und wie eine Hackergruppe von Teenagern die MGM Casinos in Las Vegas lahmgelegt hat.
+summary: "Digital Transformation News für den 24. September 2023 beinhaltet künstliche Intelligenz, ubiquitäres Computing und Cybersecurity. Erfahre mehr darüber, wie Intels neue CPUs die künstliche Intelligenz und die Hochleistungsrechner verändern und wie eine Hackergruppe von Teenagern die MGM Casinos in Las Vegas lahmgelegt hat."
+video: "https://youtu.be/CZdyTfLA5J0"
+description: "Digital Transformation News für den 24. September 2023 beinhaltet künstliche Intelligenz, ubiquitäres Computing und Cybersecurity. Erfahre mehr darüber, wie Intels neue CPUs die künstliche Intelligenz und die Hochleistungsrechner verändern und wie eine Hackergruppe von Teenagern die MGM Casinos in Las Vegas lahmgelegt hat."
 ---
 
 

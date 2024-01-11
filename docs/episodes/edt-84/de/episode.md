@@ -3,11 +3,8 @@ layout: posts
 title: "Sicherung deiner Burg mit Null-Vertrauen"
 number: 84
 permalink: episode-EDT84-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 84
 tags:
     - cybersecurity
@@ -21,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "In dieser Folge diskutiert Darren das Thema "Zero Trust Security" mit Steve Orrin, CTO Public Sector von Intel, und Cameron Chehreh, VP-GM Public Sector."
+summary: "In dieser Folge diskutiert Darren das Thema Zero Trust Security mit Steve Orrin, CTO Public Sector von Intel, und Cameron Chehreh, VP-GM Public Sector."
 video: "https://youtu.be/url"
-description: "In dieser Folge diskutiert Darren das Thema "Zero Trust Security" mit Steve Orrin, CTO Public Sector von Intel, und Cameron Chehreh, VP-GM Public Sector."
+description: "In dieser Folge diskutiert Darren das Thema Zero Trust Security mit Steve Orrin, CTO Public Sector von Intel, und Cameron Chehreh, VP-GM Public Sector."
 ---
 
 <div>

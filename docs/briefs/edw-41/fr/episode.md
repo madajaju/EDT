@@ -5,9 +5,7 @@ number: 41
 ref: brief-EDW41-fr
 permalink: brief-EDW41-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 41
 tags:
     - homelawncaretools
@@ -24,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Adoptant le numérique Cette semaine du 12 novembre 2023, y compris les actualités en cybersécurité. L'intelligence artificielle et l'informatique omniprésente. Découvrez plusieurs cyberattaques importantes sur des infrastructures critiques, l'IA en manque de données, et des percées dans l'informatique quantique.
-video: https://youtu.be/p1AagUAF3GY
-description: Adoptant le numérique Cette semaine du 12 novembre 2023, y compris les actualités en cybersécurité. L'intelligence artificielle et l'informatique omniprésente. Découvrez plusieurs cyberattaques importantes sur des infrastructures critiques, l'IA en manque de données, et des percées dans l'informatique quantique.
+summary: "Adoptant le numérique Cette semaine du 12 novembre 2023, y compris les actualités en cybersécurité. L'intelligence artificielle et l'informatique omniprésente. Découvrez plusieurs cyberattaques importantes sur des infrastructures critiques, l'IA en manque de données, et des percées dans l'informatique quantique."
+video: "https://youtu.be/p1AagUAF3GY"
+description: "Adoptant le numérique Cette semaine du 12 novembre 2023, y compris les actualités en cybersécurité. L'intelligence artificielle et l'informatique omniprésente. Découvrez plusieurs cyberattaques importantes sur des infrastructures critiques, l'IA en manque de données, et des percées dans l'informatique quantique."
 ---
 
 

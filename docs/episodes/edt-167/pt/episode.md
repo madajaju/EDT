@@ -3,11 +3,8 @@ layout: posts
 title: "Aproveitando a IA para Proteger Crianças"
 number: 167
 permalink: episode-EDT167-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 167
 tags:
     - ai

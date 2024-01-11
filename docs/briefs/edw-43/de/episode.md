@@ -5,9 +5,7 @@ number: 43
 ref: brief-EDW43-de
 permalink: brief-EDW43-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 43
 tags:
     - uniquehandmadewoodfurniture.
@@ -39,9 +37,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Nachrichten zur digitalen Transformation für die Woche vom 26. November 2023. Von den transformationalen Verschiebungen in der Führung von künstlicher Intelligenz bis hin zum unerlässlichen Schwerpunkt auf Cybersicherheit und der Enthüllung fortschrittlicher Computertechnologien, fasst diese Zusammenstellung entscheidende Momente in der sich ständig weiterentwickelnden Technologielandschaft zusammen. Begleiten Sie uns, während wir uns in die Feinheiten aktueller Entwicklungen vertiefen, die profunden Auswirkungen, die sie auf Sektoren haben, aufzeigen und die Richtung der digitalen Zukunft leiten.
-video: https://youtu.be/rAS-2z6mUU0
-description: Nachrichten zur digitalen Transformation für die Woche vom 26. November 2023. Von den transformationalen Verschiebungen in der Führung von künstlicher Intelligenz bis hin zum unerlässlichen Schwerpunkt auf Cybersicherheit und der Enthüllung fortschrittlicher Computertechnologien, fasst diese Zusammenstellung entscheidende Momente in der sich ständig weiterentwickelnden Technologielandschaft zusammen. Begleiten Sie uns, während wir uns in die Feinheiten aktueller Entwicklungen vertiefen, die profunden Auswirkungen, die sie auf Sektoren haben, aufzeigen und die Richtung der digitalen Zukunft leiten.
+summary: "Nachrichten zur digitalen Transformation für die Woche vom 26. November 2023. Von den transformationalen Verschiebungen in der Führung von künstlicher Intelligenz bis hin zum unerlässlichen Schwerpunkt auf Cybersicherheit und der Enthüllung fortschrittlicher Computertechnologien, fasst diese Zusammenstellung entscheidende Momente in der sich ständig weiterentwickelnden Technologielandschaft zusammen. Begleiten Sie uns, während wir uns in die Feinheiten aktueller Entwicklungen vertiefen, die profunden Auswirkungen, die sie auf Sektoren haben, aufzeigen und die Richtung der digitalen Zukunft leiten."
+video: "https://youtu.be/rAS-2z6mUU0"
+description: "Nachrichten zur digitalen Transformation für die Woche vom 26. November 2023. Von den transformationalen Verschiebungen in der Führung von künstlicher Intelligenz bis hin zum unerlässlichen Schwerpunkt auf Cybersicherheit und der Enthüllung fortschrittlicher Computertechnologien, fasst diese Zusammenstellung entscheidende Momente in der sich ständig weiterentwickelnden Technologielandschaft zusammen. Begleiten Sie uns, während wir uns in die Feinheiten aktueller Entwicklungen vertiefen, die profunden Auswirkungen, die sie auf Sektoren haben, aufzeigen und die Richtung der digitalen Zukunft leiten."
 ---
 
 

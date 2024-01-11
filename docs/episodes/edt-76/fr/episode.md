@@ -3,11 +3,8 @@ layout: posts
 title: "Une journée dans la vie d'un architecte de solutions cloud."
 number: 76
 permalink: episode-EDT76-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 76
 tags:
     - csa

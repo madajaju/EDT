@@ -3,11 +3,8 @@ layout: posts
 title: "Evolución de la Privacidad de Datos"
 number: 59
 permalink: episode-EDT59-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 59
 tags:
     - cybersecurity

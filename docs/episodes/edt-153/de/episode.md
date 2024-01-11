@@ -3,11 +3,8 @@ layout: posts
 title: "Die Ausbildung der nächsten Generation in Künstlicher Intelligenz"
 number: 153
 permalink: episode-EDT153-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 153
 tags:
     - genai

@@ -3,11 +3,8 @@ layout: posts
 title: "Anwendungs- und Arbeitslastportfolios bei der Cloud-Migration"
 number: 164
 permalink: episode-EDT164-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 164
 tags:
     - cloudmigration

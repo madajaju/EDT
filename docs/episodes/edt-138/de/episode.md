@@ -3,11 +3,8 @@ layout: posts
 title: "Evolution der Cloud"
 number: 138
 permalink: episode-EDT138-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 138
 tags:
     - cloud

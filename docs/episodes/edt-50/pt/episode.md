@@ -3,11 +3,8 @@ layout: posts
 title: "Compreensão do Esgotamento dos Funcionários"
 number: 50
 permalink: episode-EDT50-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 50
 tags:
     - employeeburnout

@@ -5,9 +5,7 @@ number: 41
 ref: brief-EDW41-it
 permalink: brief-EDW41-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 41
 tags:
     - homelawncaretools
@@ -24,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Abbracciando il digitale. Questa settimana del 12 novembre 2023, incluso notizie sulla cybersecurity, intelligenza artificiale e calcolo ubiquitario. Scopri di vari importanti attacchi cibernetici su infrastrutture critiche, l'intelligenza artificiale che sta esaurendo i dati e progressi nel calcolo quantistico.
-video: https://youtu.be/rRBffUa5veM
-description: Abbracciando il digitale. Questa settimana del 12 novembre 2023, incluso notizie sulla cybersecurity, intelligenza artificiale e calcolo ubiquitario. Scopri di vari importanti attacchi cibernetici su infrastrutture critiche, l'intelligenza artificiale che sta esaurendo i dati e progressi nel calcolo quantistico.
+summary: "Abbracciando il digitale. Questa settimana del 12 novembre 2023, incluso notizie sulla cybersecurity, intelligenza artificiale e calcolo ubiquitario. Scopri di vari importanti attacchi cibernetici su infrastrutture critiche, l'intelligenza artificiale che sta esaurendo i dati e progressi nel calcolo quantistico."
+video: "https://youtu.be/rRBffUa5veM"
+description: "Abbracciando il digitale. Questa settimana del 12 novembre 2023, incluso notizie sulla cybersecurity, intelligenza artificiale e calcolo ubiquitario. Scopri di vari importanti attacchi cibernetici su infrastrutture critiche, l'intelligenza artificiale che sta esaurendo i dati e progressi nel calcolo quantistico."
 ---
 
 

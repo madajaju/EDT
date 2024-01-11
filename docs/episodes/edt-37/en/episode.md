@@ -3,11 +3,8 @@ layout: posts
 title: "2020 in Review"
 number: 37
 permalink: episode-EDT37-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 37
 tags:
     - covid

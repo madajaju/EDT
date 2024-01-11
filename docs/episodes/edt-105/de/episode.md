@@ -3,11 +3,8 @@ layout: posts
 title: "Informationsgesteuerte Führung Teil 2"
 number: 105
 permalink: episode-EDT105-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 105
 tags:
     - change

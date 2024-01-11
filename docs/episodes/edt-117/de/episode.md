@@ -3,11 +3,8 @@ layout: posts
 title: "2022 Jahresrückblick"
 number: 117
 permalink: episode-EDT117-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 117
 tags:
     - edge

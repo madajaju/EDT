@@ -1,13 +1,11 @@
 ---
 layout: brief
-title: January 08, 2024
+title: 2024-01-08
 number: 49
 ref: brief-EDW49-fr
 permalink: brief-EDW49-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 49
 tags:
     - ai
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Intel a récemment annoncé la scission de l'entreprise de logiciels d'IA Articul8, soutenue par DigitalBridge. Le but de cette manoeuvre est d'améliorer les capacités d'IA en entreprise. Articul8 se concentrera sur le développement de solutions avancées d'IA, en tirant parti de l'expertise d'Intel dans ce domaine. Ce mouvement stratégique signifie l'engagement d'Intel à faire progresser les technologies d'intelligence artificielle pour des applications industrielles plus larges.
-video: https://youtu.be/Pn4teUs-XFI
-description: Intel a récemment annoncé la scission de l'entreprise de logiciels d'IA Articul8, soutenue par DigitalBridge. Le but de cette manoeuvre est d'améliorer les capacités d'IA en entreprise. Articul8 se concentrera sur le développement de solutions avancées d'IA, en tirant parti de l'expertise d'Intel dans ce domaine. Ce mouvement stratégique signifie l'engagement d'Intel à faire progresser les technologies d'intelligence artificielle pour des applications industrielles plus larges.
+summary: "Intel a récemment annoncé la scission de l'entreprise de logiciels d'IA Articul8, soutenue par DigitalBridge. Le but de cette manoeuvre est d'améliorer les capacités d'IA en entreprise. Articul8 se concentrera sur le développement de solutions avancées d'IA, en tirant parti de l'expertise d'Intel dans ce domaine. Ce mouvement stratégique signifie l'engagement d'Intel à faire progresser les technologies d'intelligence artificielle pour des applications industrielles plus larges."
+video: "https://youtu.be/Pn4teUs-XFI"
+description: "Intel a récemment annoncé la scission de l'entreprise de logiciels d'IA Articul8, soutenue par DigitalBridge. Le but de cette manoeuvre est d'améliorer les capacités d'IA en entreprise. Articul8 se concentrera sur le développement de solutions avancées d'IA, en tirant parti de l'expertise d'Intel dans ce domaine. Ce mouvement stratégique signifie l'engagement d'Intel à faire progresser les technologies d'intelligence artificielle pour des applications industrielles plus larges."
 ---
 
 

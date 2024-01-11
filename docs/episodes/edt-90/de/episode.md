@@ -3,11 +3,8 @@ layout: posts
 title: "Hindernisse bei der Annahme zukünftiger Technologien"
 number: 90
 permalink: episode-EDT90-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 90
 tags:
     - cto

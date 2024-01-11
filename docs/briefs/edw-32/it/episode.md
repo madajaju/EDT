@@ -5,9 +5,7 @@ number: 32
 ref: brief-EDW32-it
 permalink: brief-EDW32-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 32
 tags:
     - ai
@@ -36,9 +34,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Ottieni le ultime notizie digitali per la settimana del 10 settembre 2023 riguardanti Intelligenza Artificiale, Sicurezza Informatica e Informatica Ubiqua. Questa settimana, scopri una nuova minaccia cibernetica per iPhone, il luogo di origine di GPT-4 e l'approccio del MIT per affrontare l'incertezza del calcolo quantistico.
-video: https://youtu.be/bk8GyXOw7pc
-description: Ottieni le ultime notizie digitali per la settimana del 10 settembre 2023 riguardanti Intelligenza Artificiale, Sicurezza Informatica e Informatica Ubiqua. Questa settimana, scopri una nuova minaccia cibernetica per iPhone, il luogo di origine di GPT-4 e l'approccio del MIT per affrontare l'incertezza del calcolo quantistico.
+summary: "Ottieni le ultime notizie digitali per la settimana del 10 settembre 2023 riguardanti Intelligenza Artificiale, Sicurezza Informatica e Informatica Ubiqua. Questa settimana, scopri una nuova minaccia cibernetica per iPhone, il luogo di origine di GPT-4 e l'approccio del MIT per affrontare l'incertezza del calcolo quantistico."
+video: "https://youtu.be/bk8GyXOw7pc"
+description: "Ottieni le ultime notizie digitali per la settimana del 10 settembre 2023 riguardanti Intelligenza Artificiale, Sicurezza Informatica e Informatica Ubiqua. Questa settimana, scopri una nuova minaccia cibernetica per iPhone, il luogo di origine di GPT-4 e l'approccio del MIT per affrontare l'incertezza del calcolo quantistico."
 ---
 
 

@@ -3,11 +3,8 @@ layout: posts
 title: "Controlador de memória definida por software de grande capacidade"
 number: 21
 permalink: episode-EDT21-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 21
 tags:
     - bigmemory

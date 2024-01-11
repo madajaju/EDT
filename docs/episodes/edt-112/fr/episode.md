@@ -3,11 +3,8 @@ layout: posts
 title: "Mythes de la migration vers le cloud "Lift and Shift""
 number: 112
 permalink: episode-EDT112-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 112
 tags:
     - multicloud

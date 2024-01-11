@@ -5,9 +5,7 @@ number: 40
 ref: brief-EDW40-it
 permalink: brief-EDW40-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 40
 tags:
     - keywords
@@ -24,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Abbracciando il Digitale questa settimana vi porta le ultime notizie del 5 Novembre 2023, coprendo la cybersecurity, l'intelligenza artificiale e l'edge computing. Il Regno Unito ha recentemente organizzato un vertice sulla sicurezza dell'IA che si è concentrato sull'IA etica e la cooperazione globale, mentre il presidente Biden ha rilasciato un ordine esecutivo che delinea i principi per lo sviluppo responsabile dell'IA. Inoltre, Darren ha lanciato una nuova serie di podcast sulla architettura zero trust e sull'IA generativa.
-video: https://youtu.be/-jMHS3GFX9s
-description: Abbracciando il Digitale questa settimana vi porta le ultime notizie del 5 Novembre 2023, coprendo la cybersecurity, l'intelligenza artificiale e l'edge computing. Il Regno Unito ha recentemente organizzato un vertice sulla sicurezza dell'IA che si è concentrato sull'IA etica e la cooperazione globale, mentre il presidente Biden ha rilasciato un ordine esecutivo che delinea i principi per lo sviluppo responsabile dell'IA. Inoltre, Darren ha lanciato una nuova serie di podcast sulla architettura zero trust e sull'IA generativa.
+summary: "Abbracciando il Digitale questa settimana vi porta le ultime notizie del 5 Novembre 2023, coprendo la cybersecurity, l'intelligenza artificiale e l'edge computing. Il Regno Unito ha recentemente organizzato un vertice sulla sicurezza dell'IA che si è concentrato sull'IA etica e la cooperazione globale, mentre il presidente Biden ha rilasciato un ordine esecutivo che delinea i principi per lo sviluppo responsabile dell'IA. Inoltre, Darren ha lanciato una nuova serie di podcast sulla architettura zero trust e sull'IA generativa."
+video: "https://youtu.be/-jMHS3GFX9s"
+description: "Abbracciando il Digitale questa settimana vi porta le ultime notizie del 5 Novembre 2023, coprendo la cybersecurity, l'intelligenza artificiale e l'edge computing. Il Regno Unito ha recentemente organizzato un vertice sulla sicurezza dell'IA che si è concentrato sull'IA etica e la cooperazione globale, mentre il presidente Biden ha rilasciato un ordine esecutivo che delinea i principi per lo sviluppo responsabile dell'IA. Inoltre, Darren ha lanciato una nuova serie di podcast sulla architettura zero trust e sull'IA generativa."
 ---
 
 

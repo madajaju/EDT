@@ -5,9 +5,7 @@ number: 37
 ref: brief-EDW37-es
 permalink: brief-EDW37-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 37
 tags:
     - compute
@@ -34,9 +32,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Transformación digital esta semana del 15 de octubre de 2023, informa sobre ataques cibernéticos continuos durante el conflicto entre Israel y Hamas y la vulneración de la aplicación 'Red Alert System'. Además, se ha demostrado que la inteligencia artificial generativa reduce los esfuerzos de migración a la nube, mientras que la CMA del Reino Unido investiga el mercado de la nube pública.
-video: https://youtu.be/_zOfMtKcLiM
-description: Transformación digital esta semana del 15 de octubre de 2023, informa sobre ataques cibernéticos continuos durante el conflicto entre Israel y Hamas y la vulneración de la aplicación 'Red Alert System'. Además, se ha demostrado que la inteligencia artificial generativa reduce los esfuerzos de migración a la nube, mientras que la CMA del Reino Unido investiga el mercado de la nube pública.
+summary: "Transformación digital esta semana del 15 de octubre de 2023, informa sobre ataques cibernéticos continuos durante el conflicto entre Israel y Hamas y la vulneración de la aplicación 'Red Alert System'. Además, se ha demostrado que la inteligencia artificial generativa reduce los esfuerzos de migración a la nube, mientras que la CMA del Reino Unido investiga el mercado de la nube pública."
+video: "https://youtu.be/_zOfMtKcLiM"
+description: "Transformación digital esta semana del 15 de octubre de 2023, informa sobre ataques cibernéticos continuos durante el conflicto entre Israel y Hamas y la vulneración de la aplicación 'Red Alert System'. Además, se ha demostrado que la inteligencia artificial generativa reduce los esfuerzos de migración a la nube, mientras que la CMA del Reino Unido investiga el mercado de la nube pública."
 ---
 
 

@@ -3,11 +3,8 @@ layout: posts
 title: "Verständnis für generative KI"
 number: 151
 permalink: episode-EDT151-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 151
 tags:
     - genai

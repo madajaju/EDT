@@ -3,11 +3,8 @@ layout: posts
 title: "Trasformazione Digitale nel Governo Federale"
 number: 131
 permalink: episode-EDT131-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 131
 tags:
     - compute

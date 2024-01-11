@@ -3,11 +3,8 @@ layout: posts
 title: "The Benefits of Graph Databses"
 number: 97
 permalink: episode-EDT97-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 97
 tags:
     - data

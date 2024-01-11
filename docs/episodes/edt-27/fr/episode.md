@@ -3,11 +3,8 @@ layout: posts
 title: "Sécurité matérielle : un impératif pour transformer les données."
 number: 27
 permalink: episode-EDT27-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 27
 tags:
     - datagovernance

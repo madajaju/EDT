@@ -3,11 +3,8 @@ layout: posts
 title: "5G Pasado, Presente y Futuro"
 number: 67
 permalink: episode-EDT67-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 67
 tags:
     - 5g

@@ -3,11 +3,8 @@ layout: posts
 title: "Il ruolo del CIO nell'adozione del cloud."
 number: 43
 permalink: episode-EDT43-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 43
 tags:
     - cio

@@ -5,9 +5,7 @@ number: 10
 ref: brief-EDW10-it
 permalink: brief-EDW10-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 10
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Sommario
-video: https://youtu.be/
-description: Sommario
+summary: "Sommario"
+video: "https://youtu.be/"
+description: "Sommario"
 ---
 
 

@@ -3,11 +3,8 @@ layout: posts
 title: "Sécuriser votre château avec la confiance zéro."
 number: 84
 permalink: episode-EDT84-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 84
 tags:
     - cybersecurity

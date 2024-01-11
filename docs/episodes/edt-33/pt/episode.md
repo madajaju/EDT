@@ -3,11 +3,8 @@ layout: posts
 title: "A interrupção da AWS de Nov 2020"
 number: 33
 permalink: episode-EDT33-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 33
 tags:
     - aws

@@ -3,11 +3,8 @@ layout: posts
 title: "Sécuriser le télétravailleur Partie 2"
 number: 8
 permalink: episode-EDT8-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 8
 tags:
 

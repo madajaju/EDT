@@ -3,11 +3,8 @@ layout: posts
 title: "Six Pillars of Cybersecurity"
 number: 36
 permalink: episode-EDT36-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 36
 tags:
     - cybersecurity

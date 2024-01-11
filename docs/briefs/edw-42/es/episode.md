@@ -5,9 +5,7 @@ number: 42
 ref: brief-EDW42-es
 permalink: brief-EDW42-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 42
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Transformación Digital para Ciberseguridad, IA y Computación en la semana del 19 de noviembre de 2023. Los temas incluyen implicaciones legales de la ciberseguridad, la salida de Sam Altman de OpenAI y los proveedores de la nube compitiendo por contratos gubernamentales.
-video: https://youtu.be/Dz9wjyFal9w
-description: Transformación Digital para Ciberseguridad, IA y Computación en la semana del 19 de noviembre de 2023. Los temas incluyen implicaciones legales de la ciberseguridad, la salida de Sam Altman de OpenAI y los proveedores de la nube compitiendo por contratos gubernamentales.
+summary: "Transformación Digital para Ciberseguridad, IA y Computación en la semana del 19 de noviembre de 2023. Los temas incluyen implicaciones legales de la ciberseguridad, la salida de Sam Altman de OpenAI y los proveedores de la nube compitiendo por contratos gubernamentales."
+video: "https://youtu.be/Dz9wjyFal9w"
+description: "Transformación Digital para Ciberseguridad, IA y Computación en la semana del 19 de noviembre de 2023. Los temas incluyen implicaciones legales de la ciberseguridad, la salida de Sam Altman de OpenAI y los proveedores de la nube compitiendo por contratos gubernamentales."
 ---
 
 

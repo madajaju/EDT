@@ -5,9 +5,7 @@ number: 45
 ref: brief-EDW45-it
 permalink: brief-EDW45-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 45
 tags:
     - ai
@@ -43,9 +41,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Le notizie sulla Trasformazione Digitale per la settimana del 10 Dicembre 2023, contengono storie su cybersecurity, intelligenza artificiale e informatica ubiqua. Questa settimana ascolta il piano dell'esercito degli Stati Uniti per migliorare la cybersecurity attraverso l'unificazione, la guerra del cloud che va in tribunale nel Regno Unito, e il dramma di OpenAI e Sam Altman.
-video: https://youtu.be/cirAUL_hGo8
-description: Le notizie sulla Trasformazione Digitale per la settimana del 10 Dicembre 2023, contengono storie su cybersecurity, intelligenza artificiale e informatica ubiqua. Questa settimana ascolta il piano dell'esercito degli Stati Uniti per migliorare la cybersecurity attraverso l'unificazione, la guerra del cloud che va in tribunale nel Regno Unito, e il dramma di OpenAI e Sam Altman.
+summary: "Le notizie sulla Trasformazione Digitale per la settimana del 10 Dicembre 2023, contengono storie su cybersecurity, intelligenza artificiale e informatica ubiqua. Questa settimana ascolta il piano dell'esercito degli Stati Uniti per migliorare la cybersecurity attraverso l'unificazione, la guerra del cloud che va in tribunale nel Regno Unito, e il dramma di OpenAI e Sam Altman."
+video: "https://youtu.be/cirAUL_hGo8"
+description: "Le notizie sulla Trasformazione Digitale per la settimana del 10 Dicembre 2023, contengono storie su cybersecurity, intelligenza artificiale e informatica ubiqua. Questa settimana ascolta il piano dell'esercito degli Stati Uniti per migliorare la cybersecurity attraverso l'unificazione, la guerra del cloud che va in tribunale nel Regno Unito, e il dramma di OpenAI e Sam Altman."
 ---
 
 

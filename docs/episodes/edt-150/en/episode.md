@@ -3,11 +3,8 @@ layout: posts
 title: "Embracing Sustainability with Smart Buildings"
 number: 150
 permalink: episode-EDT150-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 150
 tags:
     - edge

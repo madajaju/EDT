@@ -3,11 +3,8 @@ layout: posts
 title: "Obsessão Ilógica com Lógica."
 number: 13
 permalink: episode-EDT13-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 13
 tags:
     - data

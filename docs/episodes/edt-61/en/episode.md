@@ -3,11 +3,8 @@ layout: posts
 title: "Data Breaches & Secure Supply Chain"
 number: 61
 permalink: episode-EDT61-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 61
 tags:
     - datbreach

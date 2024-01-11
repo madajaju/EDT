@@ -3,11 +3,8 @@ layout: posts
 title: "Análisis Logístico Resiliente."
 number: 139
 permalink: episode-EDT139-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 139
 tags:
     - data

@@ -5,9 +5,7 @@ number: 36
 ref: brief-EDW36-pt
 permalink: brief-EDW36-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 36
 tags:
     - ai
@@ -29,9 +27,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Receba as últimas notícias sobre Transformação Digital para a semana de 8 de outubro de 2023. Os destaques desta semana incluem um relatório sobre a perda de $100 milhões da MGM Resorts devido a um ataque cibernético, como a IA está sendo usada para auxiliar vítimas de violência doméstica e o impacto da computação Edge nos centros de dados de IA. Sintonize-se para se manter informado.
-video: https://youtu.be/qIWZOH-9Q6k
-description: Receba as últimas notícias sobre Transformação Digital para a semana de 8 de outubro de 2023. Os destaques desta semana incluem um relatório sobre a perda de $100 milhões da MGM Resorts devido a um ataque cibernético, como a IA está sendo usada para auxiliar vítimas de violência doméstica e o impacto da computação Edge nos centros de dados de IA. Sintonize-se para se manter informado.
+summary: "Receba as últimas notícias sobre Transformação Digital para a semana de 8 de outubro de 2023. Os destaques desta semana incluem um relatório sobre a perda de $100 milhões da MGM Resorts devido a um ataque cibernético, como a IA está sendo usada para auxiliar vítimas de violência doméstica e o impacto da computação Edge nos centros de dados de IA. Sintonize-se para se manter informado."
+video: "https://youtu.be/qIWZOH-9Q6k"
+description: "Receba as últimas notícias sobre Transformação Digital para a semana de 8 de outubro de 2023. Os destaques desta semana incluem um relatório sobre a perda de $100 milhões da MGM Resorts devido a um ataque cibernético, como a IA está sendo usada para auxiliar vítimas de violência doméstica e o impacto da computação Edge nos centros de dados de IA. Sintonize-se para se manter informado."
 ---
 
 

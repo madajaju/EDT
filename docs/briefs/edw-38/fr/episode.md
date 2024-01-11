@@ -5,9 +5,7 @@ number: 38
 ref: brief-EDW38-fr
 permalink: brief-EDW38-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 38
 tags:
     - keywords
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: En adoptant les actualités numériques de la semaine du 22 octobre 2023, incluant des actualités en matière de cybersécurité, d'informatique ubiquitaire et d'intelligence artificielle. Les points forts de cette semaine incluent le retour au stylo et au papier dans les établissements scolaires, la vigilance pour le Jour Q et les directives sur l'IA dans le domaine de la santé.
-video: https://youtu.be/AOcgxpeamyM
-description: En adoptant les actualités numériques de la semaine du 22 octobre 2023, incluant des actualités en matière de cybersécurité, d'informatique ubiquitaire et d'intelligence artificielle. Les points forts de cette semaine incluent le retour au stylo et au papier dans les établissements scolaires, la vigilance pour le Jour Q et les directives sur l'IA dans le domaine de la santé.
+summary: "En adoptant les actualités numériques de la semaine du 22 octobre 2023, incluant des actualités en matière de cybersécurité, d'informatique ubiquitaire et d'intelligence artificielle. Les points forts de cette semaine incluent le retour au stylo et au papier dans les établissements scolaires, la vigilance pour le Jour Q et les directives sur l'IA dans le domaine de la santé."
+video: "https://youtu.be/AOcgxpeamyM"
+description: "En adoptant les actualités numériques de la semaine du 22 octobre 2023, incluant des actualités en matière de cybersécurité, d'informatique ubiquitaire et d'intelligence artificielle. Les points forts de cette semaine incluent le retour au stylo et au papier dans les établissements scolaires, la vigilance pour le Jour Q et les directives sur l'IA dans le domaine de la santé."
 ---
 
 

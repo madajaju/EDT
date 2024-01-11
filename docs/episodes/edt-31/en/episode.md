@@ -3,11 +3,8 @@ layout: posts
 title: "Improving Employee Value with Catalytic"
 number: 31
 permalink: episode-EDT31-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 31
 tags:
     - rpa

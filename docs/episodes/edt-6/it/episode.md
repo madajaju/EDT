@@ -3,11 +3,8 @@ layout: posts
 title: "Gestione del lavoro da remoto alla massima capacità."
 number: 6
 permalink: episode-EDT6-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 6
 tags:
     - telework

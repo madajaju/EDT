@@ -5,9 +5,7 @@ number: 45
 ref: brief-EDW45-de
 permalink: brief-EDW45-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 45
 tags:
     - ai
@@ -43,9 +41,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Nachrichten zur digitalen Transformation für die Woche vom 10. Dezember 2023 enthalten Geschichten über Cybersicherheit, künstliche Intelligenz und ubiquitäres Rechnen. Hören Sie diese Woche auf den Plan der US-Armee, die Cybersicherheit durch Vereinheitlichung zu verbessern, die Cloud-Kriege gehen in Großbritannien vor Gericht und das Drama von OpenAI und Sam Altman.
-video: https://youtu.be/k86N5ExQ_vM
-description: Nachrichten zur digitalen Transformation für die Woche vom 10. Dezember 2023 enthalten Geschichten über Cybersicherheit, künstliche Intelligenz und ubiquitäres Rechnen. Hören Sie diese Woche auf den Plan der US-Armee, die Cybersicherheit durch Vereinheitlichung zu verbessern, die Cloud-Kriege gehen in Großbritannien vor Gericht und das Drama von OpenAI und Sam Altman.
+summary: "Nachrichten zur digitalen Transformation für die Woche vom 10. Dezember 2023 enthalten Geschichten über Cybersicherheit, künstliche Intelligenz und ubiquitäres Rechnen. Hören Sie diese Woche auf den Plan der US-Armee, die Cybersicherheit durch Vereinheitlichung zu verbessern, die Cloud-Kriege gehen in Großbritannien vor Gericht und das Drama von OpenAI und Sam Altman."
+video: "https://youtu.be/k86N5ExQ_vM"
+description: "Nachrichten zur digitalen Transformation für die Woche vom 10. Dezember 2023 enthalten Geschichten über Cybersicherheit, künstliche Intelligenz und ubiquitäres Rechnen. Hören Sie diese Woche auf den Plan der US-Armee, die Cybersicherheit durch Vereinheitlichung zu verbessern, die Cloud-Kriege gehen in Großbritannien vor Gericht und das Drama von OpenAI und Sam Altman."
 ---
 
 

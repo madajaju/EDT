@@ -3,11 +3,8 @@ layout: posts
 title: "Von Infrastruktur zu Workloads wechseln"
 number: 82
 permalink: episode-EDT82-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 82
 tags:
     - cloudmigration
@@ -25,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Darren Pulsipher, Chief Solution Architect, Intel, setzt sein Gespräch mit Sarah Musick, Cloud Solution Architect, Intel, über den Wechsel von Infrastruktur zu Workloads fort. Bitte füge es der Playlist "Embracing Digital Transformation" hinzu."
+summary: "Darren Pulsipher, Chief Solution Architect, Intel, setzt sein Gespräch mit Sarah Musick, Cloud Solution Architect, Intel, über den Wechsel von Infrastruktur zu Workloads fort. Bitte füge es der Playlist Embracing Digital Transformation hinzu."
 video: "https://youtu.be/url"
-description: "Darren Pulsipher, Chief Solution Architect, Intel, setzt sein Gespräch mit Sarah Musick, Cloud Solution Architect, Intel, über den Wechsel von Infrastruktur zu Workloads fort. Bitte füge es der Playlist "Embracing Digital Transformation" hinzu."
+description: "Darren Pulsipher, Chief Solution Architect, Intel, setzt sein Gespräch mit Sarah Musick, Cloud Solution Architect, Intel, über den Wechsel von Infrastruktur zu Workloads fort. Bitte füge es der Playlist Embracing Digital Transformation hinzu."
 ---
 
 <div>

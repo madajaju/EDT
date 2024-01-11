@@ -3,11 +3,8 @@ layout: posts
 title: "La naissance des plates-formes d'intelligence graphique."
 number: 106
 permalink: episode-EDT106-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 106
 tags:
     - data

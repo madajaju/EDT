@@ -3,11 +3,8 @@ layout: posts
 title: "Sicherung des Rechenzentrums über den Netzwerkrand"
 number: 69
 permalink: episode-EDT69-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 69
 tags:
     - cybersecurity

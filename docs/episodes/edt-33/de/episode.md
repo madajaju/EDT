@@ -3,11 +3,8 @@ layout: posts
 title: "Der AWS-Ausfall im November 2020"
 number: 33
 permalink: episode-EDT33-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 33
 tags:
     - aws

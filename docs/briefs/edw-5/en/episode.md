@@ -5,9 +5,7 @@ number: 5
 ref: brief-EDW5-en
 permalink: brief-EDW5-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 5
 tags:
 
@@ -16,9 +14,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Summary
-video: https://youtu.be/F5GEHuUugto
-description: Summary
+summary: "Summary"
+video: "https://youtu.be/F5GEHuUugto"
+description: "Summary"
 ---
 
 

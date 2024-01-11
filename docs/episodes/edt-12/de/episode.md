@@ -3,11 +3,8 @@ layout: posts
 title: "Stelle den Titel hierhin"
 number: 12
 permalink: episode-EDT12-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 12
 tags:
     - remotelearning

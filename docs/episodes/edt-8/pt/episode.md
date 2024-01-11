@@ -3,11 +3,8 @@ layout: posts
 title: "Protegendo o Teletrabalhador Parte 2"
 number: 8
 permalink: episode-EDT8-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 8
 tags:
 

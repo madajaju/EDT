@@ -5,9 +5,7 @@ number: 7
 ref: brief-EDW7-en
 permalink: brief-EDW7-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 7
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Summary
-video: https://youtu.be/MoKH4m3qN2c
-description: Summary
+summary: "Summary"
+video: "https://youtu.be/MoKH4m3qN2c"
+description: "Summary"
 ---
 
 

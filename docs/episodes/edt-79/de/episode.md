@@ -3,11 +3,8 @@ layout: posts
 title: "Die Integration von Fernarbeitern"
 number: 79
 permalink: episode-EDT79-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 79
 tags:
     - covid

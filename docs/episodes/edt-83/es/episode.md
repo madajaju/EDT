@@ -3,11 +3,8 @@ layout: posts
 title: "Direcciones de IDC 2022"
 number: 83
 permalink: episode-EDT83-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 83
 tags:
     - data

@@ -3,11 +3,8 @@ layout: posts
 title: "GenAI-Advisor für das Management von Rechenzentren"
 number: 155
 permalink: episode-EDT155-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 155
 tags:
     - ai

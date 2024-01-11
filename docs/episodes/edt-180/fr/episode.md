@@ -3,11 +3,8 @@ layout: posts
 title: "L'IA générative dans l'enseignement supérieur (Révisité)"
 number: 180
 permalink: episode-EDT180-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 180
 tags:
     - embracingdigitaltransformation

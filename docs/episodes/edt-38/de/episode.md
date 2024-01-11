@@ -3,11 +3,8 @@ layout: posts
 title: "Die wilden Zwanziger – Ein Blick nach vorne auf das Jahr 2021."
 number: 38
 permalink: episode-EDT38-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 38
 tags:
     - contactless

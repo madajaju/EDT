@@ -24,10 +24,11 @@ nav_order: 2
 }
 </style>
 
-{% include subscribe_brief.html %}
 
 
 <img src="./de.png" width="128" height="128">
+
+{% include subscribe_brief.html %}
 
 # Wöchentliche Nachrichten
 
@@ -48,13 +49,24 @@ Wir befinden uns mitten in der digitalen Revolution. In dieser Zeit kann es hera
   clear: both;
 }
 </style>
-<div class="row">
-  <div class="column">
-    <h2>Audiobeitrag</h2>
-    <iframe width="100%" height="400" frameborder="no" scrolling="no" seamless src="https://share.transistor.fm/e/umarmung-der-digitalisierung-diese-woche/playlist"></iframe>
-  </div>
-  <div class="column">
-    <h2>Videos</h2>
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLj-81kG3zG5Ztc-Qinloap5jcSY8n6x-X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
+
+<style>
+.thumbnail {
+    float: left;
+    margin: 0 15px 0 0;
+}
+.episode {
+    margin: 10px 0;
+}
+</style>
+
+{% assign spages = site.pages | where: "layout", "brief" | where: "lang", "de" | sort: "nav_order" | reverse %}
+{% for spage in spages %}
+<div style="display: flex;">
+    <p class="episode">
+    <img class="thumbnail" src="../../{{ spage.path | remove: spage.name }}/{{ spage.img }}" width="100" height="100">
+    <a href="{{ spage.url }}">{{ spage.number}} - {{ spage.title }}</a><br>
+    {{ spage.summary }}
+    </p>
 </div>
+{% endfor %}

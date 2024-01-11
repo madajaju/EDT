@@ -3,11 +3,8 @@ layout: posts
 title: "Sicherung Ihrer DevOps-Pipeline"
 number: 46
 permalink: episode-EDT46-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 46
 tags:
     - devops

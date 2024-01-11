@@ -3,11 +3,8 @@ layout: posts
 title: "Manteniendo lo humano en la IA"
 number: 169
 permalink: episode-EDT169-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 169
 tags:
     - userexperience
@@ -29,9 +26,9 @@ guests:
 
 img: thumbnail.jpg
 image: thumbnail.jpg
-summary: "En un episodio reciente del podcast "Abrazando la Transformación Digital", el anfitrión Darren Pulsipher, arquitecto principal de soluciones del sector público en Intel, entrevista a Sunny Stueve, líder de IA centrada en el ser humano en Leidos. El podcast profundiza en la importancia del diseño centrado en el ser humano y la experiencia del usuario al integrar la tecnología de IA."
+summary: "En un episodio reciente del podcast Abrazando la Transformación Digital, el anfitrión Darren Pulsipher, arquitecto principal de soluciones del sector público en Intel, entrevista a Sunny Stueve, líder de IA centrada en el ser humano en Leidos. El podcast profundiza en la importancia del diseño centrado en el ser humano y la experiencia del usuario al integrar la tecnología de IA."
 video: "https://youtu.be/LV_JO0hCG5g"
-description: "En un episodio reciente del podcast "Abrazando la Transformación Digital", el anfitrión Darren Pulsipher, arquitecto principal de soluciones del sector público en Intel, entrevista a Sunny Stueve, líder de IA centrada en el ser humano en Leidos. El podcast profundiza en la importancia del diseño centrado en el ser humano y la experiencia del usuario al integrar la tecnología de IA."
+description: "En un episodio reciente del podcast Abrazando la Transformación Digital, el anfitrión Darren Pulsipher, arquitecto principal de soluciones del sector público en Intel, entrevista a Sunny Stueve, líder de IA centrada en el ser humano en Leidos. El podcast profundiza en la importancia del diseño centrado en el ser humano y la experiencia del usuario al integrar la tecnología de IA."
 ---
 
 <div>

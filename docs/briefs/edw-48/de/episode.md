@@ -5,9 +5,7 @@ number: 48
 ref: brief-EDW48-de
 permalink: brief-EDW48-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 48
 tags:
     - ai
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Nachrichten zur digitalen Transformation für die Woche vom 1. Januar 2024, mit Schwerpunkt auf Cybersicherheit, künstlicher Intelligenz und Edge-Computing. Themen sind unter anderem IoT und KI auf dem Bauernhof, Politiker, die von KI-erzeugten Halluzinationen getäuscht werden, und auf das Gesundheitswesen ausgerichtete Cyberangriffe.
-video: https://youtu.be/Xyvkw26ZGmE
-description: Nachrichten zur digitalen Transformation für die Woche vom 1. Januar 2024, mit Schwerpunkt auf Cybersicherheit, künstlicher Intelligenz und Edge-Computing. Themen sind unter anderem IoT und KI auf dem Bauernhof, Politiker, die von KI-erzeugten Halluzinationen getäuscht werden, und auf das Gesundheitswesen ausgerichtete Cyberangriffe.
+summary: "Nachrichten zur digitalen Transformation für die Woche vom 1. Januar 2024, mit Schwerpunkt auf Cybersicherheit, künstlicher Intelligenz und Edge-Computing. Themen sind unter anderem IoT und KI auf dem Bauernhof, Politiker, die von KI-erzeugten Halluzinationen getäuscht werden, und auf das Gesundheitswesen ausgerichtete Cyberangriffe."
+video: "https://youtu.be/Xyvkw26ZGmE"
+description: "Nachrichten zur digitalen Transformation für die Woche vom 1. Januar 2024, mit Schwerpunkt auf Cybersicherheit, künstlicher Intelligenz und Edge-Computing. Themen sind unter anderem IoT und KI auf dem Bauernhof, Politiker, die von KI-erzeugten Halluzinationen getäuscht werden, und auf das Gesundheitswesen ausgerichtete Cyberangriffe."
 ---
 
 

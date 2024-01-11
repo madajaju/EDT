@@ -5,9 +5,7 @@ number: 32
 ref: brief-EDW32-en
 permalink: brief-EDW32-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 32
 tags:
     - ai
@@ -36,9 +34,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Get the latest digital news for the week of September 10, 2023 covering Artificial Intelligence, Cybersecurity, and Ubiquitous Computing. This week, learn about a new iPhone cyber threat, the birthplace of GPT-4, and MIT's approach to tackling quantum computing uncertainty.
-video: https://youtu.be/
-description: Get the latest digital news for the week of September 10, 2023 covering Artificial Intelligence, Cybersecurity, and Ubiquitous Computing. This week, learn about a new iPhone cyber threat, the birthplace of GPT-4, and MIT's approach to tackling quantum computing uncertainty.
+summary: "Get the latest digital news for the week of September 10, 2023 covering Artificial Intelligence, Cybersecurity, and Ubiquitous Computing. This week, learn about a new iPhone cyber threat, the birthplace of GPT-4, and MIT's approach to tackling quantum computing uncertainty."
+video: "https://youtu.be/"
+description: "Get the latest digital news for the week of September 10, 2023 covering Artificial Intelligence, Cybersecurity, and Ubiquitous Computing. This week, learn about a new iPhone cyber threat, the birthplace of GPT-4, and MIT's approach to tackling quantum computing uncertainty."
 ---
 
 

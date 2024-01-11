@@ -3,11 +3,8 @@ layout: posts
 title: "Lancement de votre transformation organisationnelle pour devenir axé sur les données."
 number: 14
 permalink: episode-EDT14-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 14
 tags:
 

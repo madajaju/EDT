@@ -3,11 +3,8 @@ layout: posts
 title: "Telelavoro: Sicurezza del tuo ufficio domestico"
 number: 9
 permalink: episode-EDT9-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 9
 tags:
     - cybersecurity

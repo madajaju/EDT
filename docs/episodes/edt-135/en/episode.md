@@ -3,11 +3,8 @@ layout: posts
 title: "Trustworthy and Ethical AI"
 number: 135
 permalink: episode-EDT135-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 135
 tags:
     - ai

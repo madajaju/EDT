@@ -3,11 +3,8 @@ layout: posts
 title: "Scienza dietro i gemelli digitali"
 number: 144
 permalink: episode-EDT144-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 144
 tags:
     - edge

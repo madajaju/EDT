@@ -3,11 +3,8 @@ layout: posts
 title: "Information Management Maturity Model"
 number: 4
 permalink: episode-EDT4-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 4
 tags:
     - data

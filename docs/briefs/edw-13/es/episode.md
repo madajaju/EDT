@@ -5,9 +5,7 @@ number: 13
 ref: brief-EDW13-es
 permalink: brief-EDW13-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 13
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space.
-video: https://youtu.be/
-description: News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space.
+summary: "News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space."
+video: "https://youtu.be/"
+description: "News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space."
 ---
 
 

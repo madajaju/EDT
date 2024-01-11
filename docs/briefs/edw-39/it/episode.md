@@ -5,9 +5,7 @@ number: 39
 ref: brief-EDW39-it
 permalink: brief-EDW39-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 39
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Nell'ultima edizione del nostro Embracing Digital di questa settimana, ti portiamo gli ultimi sviluppi e le storie nel mondo della sicurezza informatica, del calcolo periferico e del calcolo ubiquo. In questa puntata, affrontiamo un nuovo malware chiamato "Elegant", le regolamentazioni sulla sicurezza informatica in California, l'indagine del Parlamento britannico sulla sicurezza informatica delle infrastrutture critiche e altre notizie interessanti dal settore tecnologico.
-video: https://youtu.be/Jmv-OYIOF7Y
-description: Nell'ultima edizione del nostro Embracing Digital di questa settimana, ti portiamo gli ultimi sviluppi e le storie nel mondo della sicurezza informatica, del calcolo periferico e del calcolo ubiquo. In questa puntata, affrontiamo un nuovo malware chiamato "Elegant", le regolamentazioni sulla sicurezza informatica in California, l'indagine del Parlamento britannico sulla sicurezza informatica delle infrastrutture critiche e altre notizie interessanti dal settore tecnologico.
+summary: "Nell'ultima edizione del nostro Embracing Digital di questa settimana, ti portiamo gli ultimi sviluppi e le storie nel mondo della sicurezza informatica, del calcolo periferico e del calcolo ubiquo. In questa puntata, affrontiamo un nuovo malware chiamato Elegant, le regolamentazioni sulla sicurezza informatica in California, l'indagine del Parlamento britannico sulla sicurezza informatica delle infrastrutture critiche e altre notizie interessanti dal settore tecnologico."
+video: "https://youtu.be/Jmv-OYIOF7Y"
+description: "Nell'ultima edizione del nostro Embracing Digital di questa settimana, ti portiamo gli ultimi sviluppi e le storie nel mondo della sicurezza informatica, del calcolo periferico e del calcolo ubiquo. In questa puntata, affrontiamo un nuovo malware chiamato Elegant, le regolamentazioni sulla sicurezza informatica in California, l'indagine del Parlamento britannico sulla sicurezza informatica delle infrastrutture critiche e altre notizie interessanti dal settore tecnologico."
 ---
 
 

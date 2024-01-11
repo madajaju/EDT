@@ -5,9 +5,7 @@ number: 47
 ref: brief-EDW47-de
 permalink: brief-EDW47-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 47
 tags:
     - ai
@@ -42,9 +40,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Während der Woche vom 24. Dezember 2023 gab es mehrere Nachrichtenberichte über die digitale Transformation. Diese Berichte behandelten Themen wie Cybersicherheit, künstliche Intelligenz und Informatik. Zu den Höhepunkten der Woche gehörten eine Zunahme von Cyberattacken während der Ferienzeit, Intels Bemühungen zur weiteren Entwicklung der KI-Technologie und der Trend zu Kostenkontrollen in der Cloud-Computing.
-video: https://youtu.be/CXuFfFiNniA
-description: Während der Woche vom 24. Dezember 2023 gab es mehrere Nachrichtenberichte über die digitale Transformation. Diese Berichte behandelten Themen wie Cybersicherheit, künstliche Intelligenz und Informatik. Zu den Höhepunkten der Woche gehörten eine Zunahme von Cyberattacken während der Ferienzeit, Intels Bemühungen zur weiteren Entwicklung der KI-Technologie und der Trend zu Kostenkontrollen in der Cloud-Computing.
+summary: "Während der Woche vom 24. Dezember 2023 gab es mehrere Nachrichtenberichte über die digitale Transformation. Diese Berichte behandelten Themen wie Cybersicherheit, künstliche Intelligenz und Informatik. Zu den Höhepunkten der Woche gehörten eine Zunahme von Cyberattacken während der Ferienzeit, Intels Bemühungen zur weiteren Entwicklung der KI-Technologie und der Trend zu Kostenkontrollen in der Cloud-Computing."
+video: "https://youtu.be/CXuFfFiNniA"
+description: "Während der Woche vom 24. Dezember 2023 gab es mehrere Nachrichtenberichte über die digitale Transformation. Diese Berichte behandelten Themen wie Cybersicherheit, künstliche Intelligenz und Informatik. Zu den Höhepunkten der Woche gehörten eine Zunahme von Cyberattacken während der Ferienzeit, Intels Bemühungen zur weiteren Entwicklung der KI-Technologie und der Trend zu Kostenkontrollen in der Cloud-Computing."
 ---
 
 

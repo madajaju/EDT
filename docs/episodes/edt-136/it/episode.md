@@ -3,11 +3,8 @@ layout: posts
 title: "Dati resilienti nelle comunicazioni disruptive"
 number: 136
 permalink: episode-EDT136-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 136
 tags:
     - sabr

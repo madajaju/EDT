@@ -3,11 +3,8 @@ layout: posts
 title: "Seguir e Proteger a Conexão de Ponta a Nuvem"
 number: 64
 permalink: episode-EDT64-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 64
 tags:
     - edge

@@ -3,11 +3,8 @@ layout: posts
 title: "5G in Verteidigung"
 number: 68
 permalink: episode-EDT68-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 68
 tags:
     - 5g

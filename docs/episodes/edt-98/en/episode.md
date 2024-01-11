@@ -3,11 +3,8 @@ layout: posts
 title: "The Emergence of the Global Data Network"
 number: 98
 permalink: episode-EDT98-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 98
 tags:
     - dataarchitecture

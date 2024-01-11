@@ -3,11 +3,8 @@ layout: posts
 title: "Bloqueo y Tacleo de Seguridad"
 number: 115
 permalink: episode-EDT115-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 115
 tags:
     - zta

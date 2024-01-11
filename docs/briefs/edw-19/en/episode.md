@@ -5,9 +5,7 @@ number: 19
 ref: brief-EDW19-en
 permalink: brief-EDW19-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 19
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digital Transformation for the week of June 12, 2023, includes a 1 million cyber force development, many cloud outages, and AI writing code going into the C++ standard library.
-video: https://youtu.be/1CbXtRey41w
-description: Digital Transformation for the week of June 12, 2023, includes a 1 million cyber force development, many cloud outages, and AI writing code going into the C++ standard library.
+summary: "Digital Transformation for the week of June 12, 2023, includes a 1 million cyber force development, many cloud outages, and AI writing code going into the C++ standard library."
+video: "https://youtu.be/1CbXtRey41w"
+description: "Digital Transformation for the week of June 12, 2023, includes a 1 million cyber force development, many cloud outages, and AI writing code going into the C++ standard library."
 ---
 
 

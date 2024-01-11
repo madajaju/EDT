@@ -3,11 +3,8 @@ layout: posts
 title: "Decreasing Ingestion Congestion with Intel Optane DCPMM"
 number: 16
 permalink: episode-EDT16-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 16
 tags:
 

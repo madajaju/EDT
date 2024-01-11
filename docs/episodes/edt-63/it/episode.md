@@ -3,11 +3,8 @@ layout: posts
 title: "Ispirando un cambiamento culturale nell'IT"
 number: 63
 permalink: episode-EDT63-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 63
 tags:
     - organizationalchange

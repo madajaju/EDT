@@ -3,11 +3,8 @@ layout: posts
 title: "Scegliere la dimensione della soluzione VDI per i telelavoratori."
 number: 10
 permalink: episode-EDT10-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 10
 tags:
     - telework

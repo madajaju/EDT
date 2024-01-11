@@ -3,11 +3,8 @@ layout: posts
 title: "Portfólios de Aplicação e Cargas de Trabalho na Migração para Cloud"
 number: 164
 permalink: episode-EDT164-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 164
 tags:
     - cloudmigration

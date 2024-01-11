@@ -3,11 +3,8 @@ layout: posts
 title: "Sécurisation des infrastructures critiques."
 number: 107
 permalink: episode-EDT107-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 107
 tags:
     - criticalinfrastructure

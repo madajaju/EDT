@@ -3,11 +3,8 @@ layout: posts
 title: "Teleheimarbeit: Sichern Sie Ihr Home Office"
 number: 9
 permalink: episode-EDT9-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 9
 tags:
     - cybersecurity

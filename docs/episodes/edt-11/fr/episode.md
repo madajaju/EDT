@@ -3,11 +3,8 @@ layout: posts
 title: "Enseignement à distance et apprentissage."
 number: 11
 permalink: episode-EDT11-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 11
 tags:
     - remotelearning

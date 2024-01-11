@@ -3,11 +3,8 @@ layout: posts
 title: "Watercooler Talk in a Remote Workforce"
 number: 39
 permalink: episode-EDT39-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 39
 tags:
     - collaboration

@@ -3,11 +3,8 @@ layout: posts
 title: "Fechando a lacuna de habilidades digitais"
 number: 128
 permalink: episode-EDT128-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 128
 tags:
     - majorleaguehacking

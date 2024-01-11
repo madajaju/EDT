@@ -5,9 +5,7 @@ number: 33
 ref: brief-EDW33-en
 permalink: brief-EDW33-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 33
 tags:
     - aisummit
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Stay up-to-date with the latest news in digital transformation for the week of September 17, 2023. Get the latest updates on artificial intelligence, edge computing, and cybersecurity. This week&#39;s highlights include Microsoft uncovering vulnerabilities in their competitors&#39; software, Amazon implementing AI disclosure requirements, and a comprehensive list of upcoming IoT conferences this fall.
-video: https://youtu.be/HtZoQzoSnQE
-description: Stay up-to-date with the latest news in digital transformation for the week of September 17, 2023. Get the latest updates on artificial intelligence, edge computing, and cybersecurity. This week&#39;s highlights include Microsoft uncovering vulnerabilities in their competitors&#39; software, Amazon implementing AI disclosure requirements, and a comprehensive list of upcoming IoT conferences this fall.
+summary: "Stay up-to-date with the latest news in digital transformation for the week of September 17, 2023. Get the latest updates on artificial intelligence, edge computing, and cybersecurity. This week&#39;s highlights include Microsoft uncovering vulnerabilities in their competitors&#39; software, Amazon implementing AI disclosure requirements, and a comprehensive list of upcoming IoT conferences this fall."
+video: "https://youtu.be/HtZoQzoSnQE"
+description: "Stay up-to-date with the latest news in digital transformation for the week of September 17, 2023. Get the latest updates on artificial intelligence, edge computing, and cybersecurity. This week&#39;s highlights include Microsoft uncovering vulnerabilities in their competitors&#39; software, Amazon implementing AI disclosure requirements, and a comprehensive list of upcoming IoT conferences this fall."
 ---
 
 

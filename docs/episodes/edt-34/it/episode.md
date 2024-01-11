@@ -3,11 +3,8 @@ layout: posts
 title: "Abbracciare l'evoluzione dello spazio di lavoro"
 number: 34
 permalink: episode-EDT34-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 34
 tags:
     - covid

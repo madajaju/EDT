@@ -1,13 +1,11 @@
 ---
 layout: brief
-title: January 08, 2024
+title: 2024-01-08
 number: 49
 ref: brief-EDW49-en
 permalink: brief-EDW49-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 49
 tags:
     - ai
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Intel recently announced the spin-off of AI software company Articul8, backed by DigitalBridge. The move is aimed at improving enterprise AI capabilities. Articul8 will focus on developing advanced AI solutions, leveraging Intel's expertise in the field. This strategic move signifies Intel's commitment to advancing artificial intelligence technologies for broader industry applications.
-video: https://youtu.be/rsDEeljFVwA
-description: Intel recently announced the spin-off of AI software company Articul8, backed by DigitalBridge. The move is aimed at improving enterprise AI capabilities. Articul8 will focus on developing advanced AI solutions, leveraging Intel's expertise in the field. This strategic move signifies Intel's commitment to advancing artificial intelligence technologies for broader industry applications.
+summary: "Intel recently announced the spin-off of AI software company Articul8, backed by DigitalBridge. The move is aimed at improving enterprise AI capabilities. Articul8 will focus on developing advanced AI solutions, leveraging Intel's expertise in the field. This strategic move signifies Intel's commitment to advancing artificial intelligence technologies for broader industry applications."
+video: "https://youtu.be/rsDEeljFVwA"
+description: "Intel recently announced the spin-off of AI software company Articul8, backed by DigitalBridge. The move is aimed at improving enterprise AI capabilities. Articul8 will focus on developing advanced AI solutions, leveraging Intel's expertise in the field. This strategic move signifies Intel's commitment to advancing artificial intelligence technologies for broader industry applications."
 ---
 
 

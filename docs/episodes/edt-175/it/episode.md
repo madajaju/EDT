@@ -3,11 +3,8 @@ layout: posts
 title: "Zero Trust con Tecnologia Operativa"
 number: 175
 permalink: episode-EDT175-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 175
 tags:
     - operationaltechnologysecurity

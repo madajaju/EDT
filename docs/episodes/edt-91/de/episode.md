@@ -3,11 +3,8 @@ layout: posts
 title: "Kämpfe gegen den Cybergegner, indem du deine Software-Lieferkette sicherst."
 number: 91
 permalink: episode-EDT91-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 91
 tags:
     - cybersecurity

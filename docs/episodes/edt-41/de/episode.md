@@ -3,11 +3,8 @@ layout: posts
 title: "Die Schwarze Kunst von DevOps"
 number: 41
 permalink: episode-EDT41-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 41
 tags:
     - devops

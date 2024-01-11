@@ -3,11 +3,8 @@ layout: posts
 title: "Asegurando al trabajador remoto."
 number: 7
 permalink: episode-EDT7-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 7
 tags:
 

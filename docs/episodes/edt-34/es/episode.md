@@ -3,11 +3,8 @@ layout: posts
 title: "Abrazando la Evolución del Espacio de Trabajo."
 number: 34
 permalink: episode-EDT34-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 34
 tags:
     - covid

@@ -3,11 +3,8 @@ layout: posts
 title: "Gobernanza de Datos Moderna"
 number: 71
 permalink: episode-EDT71-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 71
 tags:
     - datagovernance

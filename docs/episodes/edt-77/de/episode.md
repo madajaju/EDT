@@ -3,11 +3,8 @@ layout: posts
 title: "Digitale Transformation im Jahr 2022"
 number: 77
 permalink: episode-EDT77-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 77
 tags:
     - aiml

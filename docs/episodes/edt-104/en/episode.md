@@ -3,11 +3,8 @@ layout: posts
 title: "Information-driven Leadership"
 number: 104
 permalink: episode-EDT104-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 104
 tags:
     - data

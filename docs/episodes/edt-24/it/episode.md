@@ -3,11 +3,8 @@ layout: posts
 title: "Strategia digitale e architettura dei dati"
 number: 24
 permalink: episode-EDT24-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 24
 tags:
     - data

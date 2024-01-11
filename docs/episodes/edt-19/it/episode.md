@@ -3,11 +3,8 @@ layout: posts
 title: "Utilizzando i dati come un patrimonio strategico"
 number: 19
 permalink: episode-EDT19-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 19
 tags:
     - dataarchitecture

@@ -3,11 +3,8 @@ layout: posts
 title: "Nächste Generation der Hyperscale-Datenbank - Aerospike"
 number: 29
 permalink: episode-EDT29-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 29
 tags:
     - aerospike

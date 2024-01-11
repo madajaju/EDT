@@ -3,11 +3,8 @@ layout: posts
 title: "Understanding Generative AI"
 number: 151
 permalink: episode-EDT151-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 151
 tags:
     - genai

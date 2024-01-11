@@ -3,11 +3,8 @@ layout: posts
 title: "Cybersecurity in Public Sector"
 number: 123
 permalink: episode-EDT123-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 123
 tags:
     - cybersecurity

@@ -3,11 +3,8 @@ layout: posts
 title: "Casos de uso en cómputo confidencial"
 number: 143
 permalink: episode-EDT143-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 143
 tags:
     - cybersecurity

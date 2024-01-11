@@ -3,11 +3,8 @@ layout: posts
 title: "Requirements for Edge to Cloud Architectures"
 number: 95
 permalink: episode-EDT95-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 95
 tags:
     - data

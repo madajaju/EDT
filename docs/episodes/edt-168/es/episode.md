@@ -3,11 +3,8 @@ layout: posts
 title: "Inteligencia Artificial Generativa en el día a día"
 number: 168
 permalink: episode-EDT168-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 168
 tags:
     - generativeai

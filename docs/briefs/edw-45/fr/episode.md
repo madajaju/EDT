@@ -5,9 +5,7 @@ number: 45
 ref: brief-EDW45-fr
 permalink: brief-EDW45-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 45
 tags:
     - ai
@@ -43,9 +41,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Les actualités de la Transformation Numérique pour la semaine du 10 décembre 2023, contiennent des histoires sur la cybersécurité, l'intelligence artificielle et l'informatique ubiquitaire. Cette semaine, écoutez le plan de l'armée américaine pour améliorer la cybersécurité par l'unification, la guerre des nuages qui se porte devant les tribunaux au Royaume-Uni, et le drame d'OpenAI et Sam Altman.
-video: https://youtu.be/YO_YGGKV2tQ
-description: Les actualités de la Transformation Numérique pour la semaine du 10 décembre 2023, contiennent des histoires sur la cybersécurité, l'intelligence artificielle et l'informatique ubiquitaire. Cette semaine, écoutez le plan de l'armée américaine pour améliorer la cybersécurité par l'unification, la guerre des nuages qui se porte devant les tribunaux au Royaume-Uni, et le drame d'OpenAI et Sam Altman.
+summary: "Les actualités de la Transformation Numérique pour la semaine du 10 décembre 2023, contiennent des histoires sur la cybersécurité, l'intelligence artificielle et l'informatique ubiquitaire. Cette semaine, écoutez le plan de l'armée américaine pour améliorer la cybersécurité par l'unification, la guerre des nuages qui se porte devant les tribunaux au Royaume-Uni, et le drame d'OpenAI et Sam Altman."
+video: "https://youtu.be/YO_YGGKV2tQ"
+description: "Les actualités de la Transformation Numérique pour la semaine du 10 décembre 2023, contiennent des histoires sur la cybersécurité, l'intelligence artificielle et l'informatique ubiquitaire. Cette semaine, écoutez le plan de l'armée américaine pour améliorer la cybersécurité par l'unification, la guerre des nuages qui se porte devant les tribunaux au Royaume-Uni, et le drame d'OpenAI et Sam Altman."
 ---
 
 

@@ -3,11 +3,8 @@ layout: posts
 title: "Détruire la complexité des niveaux de stockage."
 number: 20
 permalink: episode-EDT20-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 20
 tags:
     - data

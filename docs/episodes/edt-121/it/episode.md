@@ -3,11 +3,8 @@ layout: posts
 title: "Nuvole Private Disruptive"
 number: 121
 permalink: episode-EDT121-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 121
 tags:
     - cloud

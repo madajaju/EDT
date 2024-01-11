@@ -3,11 +3,8 @@ layout: posts
 title: "Fernunterricht und -lernen"
 number: 11
 permalink: episode-EDT11-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 11
 tags:
     - remotelearning

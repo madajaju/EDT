@@ -3,11 +3,8 @@ layout: posts
 title: "Convirtiéndose en una organización lista para los datos"
 number: 156
 permalink: episode-EDT156-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 156
 tags:
     - collectiongenerativeai

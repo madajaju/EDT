@@ -3,11 +3,8 @@ layout: posts
 title: "Ein Argument für einen ganzheitlichen Ansatz zur Sicherheit der kritischen Infrastruktur."
 number: 116
 permalink: episode-EDT116-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 116
 tags:
     - criticalinfrastructure

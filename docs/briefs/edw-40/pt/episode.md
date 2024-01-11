@@ -5,9 +5,7 @@ number: 40
 ref: brief-EDW40-pt
 permalink: brief-EDW40-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 40
 tags:
     - keywords
@@ -24,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Abraçando o Digital esta semana traz a você as últimas notícias de 5 de novembro de 2023, cobrindo cibersegurança, inteligência artificial e edge computing. O Reino Unido organizou recentemente um cúpula de segurança de IA que focou em IA ética e cooperação global, enquanto o presidente Biden lançou uma ordem executiva delineando princípios para o desenvolvimento responsável da IA. Além disso, Darren lançou uma nova série de podcast sobre arquitetura de confiança zero e IA generativa.
-video: https://youtu.be/LVR6ptJvHbA
-description: Abraçando o Digital esta semana traz a você as últimas notícias de 5 de novembro de 2023, cobrindo cibersegurança, inteligência artificial e edge computing. O Reino Unido organizou recentemente um cúpula de segurança de IA que focou em IA ética e cooperação global, enquanto o presidente Biden lançou uma ordem executiva delineando princípios para o desenvolvimento responsável da IA. Além disso, Darren lançou uma nova série de podcast sobre arquitetura de confiança zero e IA generativa.
+summary: "Abraçando o Digital esta semana traz a você as últimas notícias de 5 de novembro de 2023, cobrindo cibersegurança, inteligência artificial e edge computing. O Reino Unido organizou recentemente um cúpula de segurança de IA que focou em IA ética e cooperação global, enquanto o presidente Biden lançou uma ordem executiva delineando princípios para o desenvolvimento responsável da IA. Além disso, Darren lançou uma nova série de podcast sobre arquitetura de confiança zero e IA generativa."
+video: "https://youtu.be/LVR6ptJvHbA"
+description: "Abraçando o Digital esta semana traz a você as últimas notícias de 5 de novembro de 2023, cobrindo cibersegurança, inteligência artificial e edge computing. O Reino Unido organizou recentemente um cúpula de segurança de IA que focou em IA ética e cooperação global, enquanto o presidente Biden lançou uma ordem executiva delineando princípios para o desenvolvimento responsável da IA. Além disso, Darren lançou uma nova série de podcast sobre arquitetura de confiança zero e IA generativa."
 ---
 
 

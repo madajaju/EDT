@@ -3,11 +3,8 @@ layout: posts
 title: "Capire l'IA generativa"
 number: 151
 permalink: episode-EDT151-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 151
 tags:
     - genai

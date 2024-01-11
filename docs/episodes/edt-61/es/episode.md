@@ -3,11 +3,8 @@ layout: posts
 title: "Violaciones de datos y cadena de suministro segura."
 number: 61
 permalink: episode-EDT61-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 61
 tags:
     - datbreach

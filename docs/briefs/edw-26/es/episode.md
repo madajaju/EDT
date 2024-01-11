@@ -5,9 +5,7 @@ number: 26
 ref: brief-EDW26-es
 permalink: brief-EDW26-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 26
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Aquí están las últimas actualizaciones en el campo de la Transformación Digital para la semana del 31 de julio de 2023. Esto incluye noticias sobre la asociación entre Ericsson e Intel para avanzar en la tecnología 5G, los esfuerzos de ChatGPT para abordar la ciberseguridad y el surgimiento del desarrollo de software impulsado por IA.
-video: https://youtu.be/
-description: Aquí están las últimas actualizaciones en el campo de la Transformación Digital para la semana del 31 de julio de 2023. Esto incluye noticias sobre la asociación entre Ericsson e Intel para avanzar en la tecnología 5G, los esfuerzos de ChatGPT para abordar la ciberseguridad y el surgimiento del desarrollo de software impulsado por IA.
+summary: "Aquí están las últimas actualizaciones en el campo de la Transformación Digital para la semana del 31 de julio de 2023. Esto incluye noticias sobre la asociación entre Ericsson e Intel para avanzar en la tecnología 5G, los esfuerzos de ChatGPT para abordar la ciberseguridad y el surgimiento del desarrollo de software impulsado por IA."
+video: "https://youtu.be/"
+description: "Aquí están las últimas actualizaciones en el campo de la Transformación Digital para la semana del 31 de julio de 2023. Esto incluye noticias sobre la asociación entre Ericsson e Intel para avanzar en la tecnología 5G, los esfuerzos de ChatGPT para abordar la ciberseguridad y el surgimiento del desarrollo de software impulsado por IA."
 ---
 
 

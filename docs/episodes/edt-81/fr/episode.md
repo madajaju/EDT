@@ -3,11 +3,8 @@ layout: posts
 title: "Programmation hétérogène avec OneAPI"
 number: 81
 permalink: episode-EDT81-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 81
 tags:
     - cpu

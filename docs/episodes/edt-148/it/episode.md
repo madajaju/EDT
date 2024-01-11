@@ -3,11 +3,8 @@ layout: posts
 title: "Proteggere il lavoratore remoto attraverso la virtualizzazione mobile."
 number: 148
 permalink: episode-EDT148-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 148
 tags:
     - remoteworker

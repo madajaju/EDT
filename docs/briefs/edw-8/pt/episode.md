@@ -5,9 +5,7 @@ number: 8
 ref: brief-EDW8-pt
 permalink: brief-EDW8-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 8
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Resumo
-video: https://youtu.be/
-description: Resumo
+summary: "Resumo"
+video: "https://youtu.be/"
+description: "Resumo"
 ---
 
 

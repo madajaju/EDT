@@ -3,11 +3,8 @@ layout: posts
 title: "Sécurisation du pipeline DevOps = SecDevOps"
 number: 42
 permalink: episode-EDT42-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 42
 tags:
     - cybersecurity

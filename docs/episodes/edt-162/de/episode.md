@@ -3,11 +3,8 @@ layout: posts
 title: "Aufbau einer Multi-Hybrid-Cloud-Strategie"
 number: 162
 permalink: episode-EDT162-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 162
 tags:
     - cloudadoption

@@ -3,11 +3,8 @@ layout: posts
 title: "Modello di Maturità delle Infrastrutture"
 number: 5
 permalink: episode-EDT5-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 5
 tags:
     - infrastructurematurity

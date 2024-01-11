@@ -3,11 +3,8 @@ layout: posts
 title: "Politiques de l'IA"
 number: 159
 permalink: episode-EDT159-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 159
 tags:
     - collectiongenerativeai

@@ -3,11 +3,8 @@ layout: posts
 title: "Passer d'une infrastructure à des charges de travail."
 number: 82
 permalink: episode-EDT82-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 82
 tags:
     - cloudmigration
@@ -25,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Darren Pulsipher, architecte principal des solutions chez Intel, poursuit sa conversation avec Sarah Musick, architecte des solutions cloud chez Intel, sur le passage de l'infrastructure aux charges de travail. Veuillez le placer dans la playlist "Adhérer à la transformation numérique"."
+summary: "Darren Pulsipher, architecte principal des solutions chez Intel, poursuit sa conversation avec Sarah Musick, architecte des solutions cloud chez Intel, sur le passage de l'infrastructure aux charges de travail. Veuillez le placer dans la playlist Adhérer à la transformation numérique."
 video: "https://youtu.be/url"
-description: "Darren Pulsipher, architecte principal des solutions chez Intel, poursuit sa conversation avec Sarah Musick, architecte des solutions cloud chez Intel, sur le passage de l'infrastructure aux charges de travail. Veuillez le placer dans la playlist "Adhérer à la transformation numérique"."
+description: "Darren Pulsipher, architecte principal des solutions chez Intel, poursuit sa conversation avec Sarah Musick, architecte des solutions cloud chez Intel, sur le passage de l'infrastructure aux charges de travail. Veuillez le placer dans la playlist Adhérer à la transformation numérique."
 ---
 
 <div>

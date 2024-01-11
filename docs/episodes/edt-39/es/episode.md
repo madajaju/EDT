@@ -3,11 +3,8 @@ layout: posts
 title: "Charla de la máquina de agua en un equipo de trabajo a distancia."
 number: 39
 permalink: episode-EDT39-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 39
 tags:
     - collaboration

@@ -3,11 +3,8 @@ layout: posts
 title: "Use-Fälle im Bereich des vertraulichen Rechnens"
 number: 143
 permalink: episode-EDT143-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 143
 tags:
     - cybersecurity
@@ -23,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "In dieser Episode von "Digitale Transformation umarmen" setzt Dr. Anna Scott ihr Gespräch mit Ibett Acarapi und Jesse Schrater über Vertraulichkeitsberechnung und deren Verwendung in KI und Softwareentwicklung fort."
+summary: "In dieser Episode von Digitale Transformation umarmen setzt Dr. Anna Scott ihr Gespräch mit Ibett Acarapi und Jesse Schrater über Vertraulichkeitsberechnung und deren Verwendung in KI und Softwareentwicklung fort."
 video: "https://youtu.be/url"
-description: "In dieser Episode von "Digitale Transformation umarmen" setzt Dr. Anna Scott ihr Gespräch mit Ibett Acarapi und Jesse Schrater über Vertraulichkeitsberechnung und deren Verwendung in KI und Softwareentwicklung fort."
+description: "In dieser Episode von Digitale Transformation umarmen setzt Dr. Anna Scott ihr Gespräch mit Ibett Acarapi und Jesse Schrater über Vertraulichkeitsberechnung und deren Verwendung in KI und Softwareentwicklung fort."
 ---
 
 <div>

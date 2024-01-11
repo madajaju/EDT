@@ -5,9 +5,7 @@ number: 38
 ref: brief-EDW38-es
 permalink: brief-EDW38-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 38
 tags:
     - keywords
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Abrazando las noticias digitales para la semana del 22 de octubre de 2023, incluyendo noticias en ciberseguridad, computación ubícua e inteligencia artificial. Los aspectos más destacados de esta semana incluyen el regreso al uso de bolígrafo y papel en la distribución escolar, estar atentos al Día Q y las pautas de IA en el cuidado de la salud.
-video: https://youtu.be/1-Mf-LQsa5c
-description: Abrazando las noticias digitales para la semana del 22 de octubre de 2023, incluyendo noticias en ciberseguridad, computación ubícua e inteligencia artificial. Los aspectos más destacados de esta semana incluyen el regreso al uso de bolígrafo y papel en la distribución escolar, estar atentos al Día Q y las pautas de IA en el cuidado de la salud.
+summary: "Abrazando las noticias digitales para la semana del 22 de octubre de 2023, incluyendo noticias en ciberseguridad, computación ubícua e inteligencia artificial. Los aspectos más destacados de esta semana incluyen el regreso al uso de bolígrafo y papel en la distribución escolar, estar atentos al Día Q y las pautas de IA en el cuidado de la salud."
+video: "https://youtu.be/1-Mf-LQsa5c"
+description: "Abrazando las noticias digitales para la semana del 22 de octubre de 2023, incluyendo noticias en ciberseguridad, computación ubícua e inteligencia artificial. Los aspectos más destacados de esta semana incluyen el regreso al uso de bolígrafo y papel en la distribución escolar, estar atentos al Día Q y las pautas de IA en el cuidado de la salud."
 ---
 
 

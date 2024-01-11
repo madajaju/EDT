@@ -3,11 +3,8 @@ layout: posts
 title: "Absichern der DevOps-Pipeline = SecDevOps"
 number: 42
 permalink: episode-EDT42-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 42
 tags:
     - cybersecurity

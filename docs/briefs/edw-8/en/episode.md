@@ -5,9 +5,7 @@ number: 8
 ref: brief-EDW8-en
 permalink: brief-EDW8-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 8
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Summary
-video: https://youtu.be/RuCqqeC1hP0
-description: Summary
+summary: "Summary"
+video: "https://youtu.be/RuCqqeC1hP0"
+description: "Summary"
 ---
 
 

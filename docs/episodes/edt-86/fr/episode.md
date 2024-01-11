@@ -3,11 +3,8 @@ layout: posts
 title: "Les choses que j'aurais aimé savoir en tant que CTO du gouvernement."
 number: 86
 permalink: episode-EDT86-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 86
 tags:
     - cto

@@ -5,9 +5,7 @@ number: 38
 ref: brief-EDW38-en
 permalink: brief-EDW38-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 38
 tags:
     - keywords
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Embracing Digital news for the week of October 22, 2023 including news in cyber security, Ubiquitous computing, and artificial intelligence. This week’s highlights include going back to pen and paper in school distributes, watching for Q-Day, and AI in healthcare guidelines.
-video: https://youtu.be/GK18fNCugwE
-description: Embracing Digital news for the week of October 22, 2023 including news in cyber security, Ubiquitous computing, and artificial intelligence. This week’s highlights include going back to pen and paper in school distributes, watching for Q-Day, and AI in healthcare guidelines.
+summary: "Embracing Digital news for the week of October 22, 2023 including news in cyber security, Ubiquitous computing, and artificial intelligence. This week’s highlights include going back to pen and paper in school distributes, watching for Q-Day, and AI in healthcare guidelines."
+video: "https://youtu.be/GK18fNCugwE"
+description: "Embracing Digital news for the week of October 22, 2023 including news in cyber security, Ubiquitous computing, and artificial intelligence. This week’s highlights include going back to pen and paper in school distributes, watching for Q-Day, and AI in healthcare guidelines."
 ---
 
 

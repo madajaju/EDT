@@ -3,11 +3,8 @@ layout: posts
 title: "The Black Art of DevOps"
 number: 41
 permalink: episode-EDT41-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 41
 tags:
     - devops

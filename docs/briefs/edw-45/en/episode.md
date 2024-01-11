@@ -5,9 +5,7 @@ number: 45
 ref: brief-EDW45-en
 permalink: brief-EDW45-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 45
 tags:
     - ai
@@ -43,9 +41,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digital Transformation news for the week of Dec 10, 2023, contains stories about cybersecurity, artificial intelligence, and ubiquitous computing. This week listen to the US Army&#39;s plan to improve cybersecurity through unification, the cloud wars going to court in the UK, and the drama of openAI and Sam Altman.
-video: https://youtu.be/lO7laV1Yaag
-description: Digital Transformation news for the week of Dec 10, 2023, contains stories about cybersecurity, artificial intelligence, and ubiquitous computing. This week listen to the US Army&#39;s plan to improve cybersecurity through unification, the cloud wars going to court in the UK, and the drama of openAI and Sam Altman.
+summary: "Digital Transformation news for the week of Dec 10, 2023, contains stories about cybersecurity, artificial intelligence, and ubiquitous computing. This week listen to the US Army&#39;s plan to improve cybersecurity through unification, the cloud wars going to court in the UK, and the drama of openAI and Sam Altman."
+video: "https://youtu.be/lO7laV1Yaag"
+description: "Digital Transformation news for the week of Dec 10, 2023, contains stories about cybersecurity, artificial intelligence, and ubiquitous computing. This week listen to the US Army&#39;s plan to improve cybersecurity through unification, the cloud wars going to court in the UK, and the drama of openAI and Sam Altman."
 ---
 
 

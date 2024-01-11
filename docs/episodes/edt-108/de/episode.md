@@ -3,11 +3,8 @@ layout: posts
 title: "Geschichte der fortgeschrittenen Kommunikation"
 number: 108
 permalink: episode-EDT108-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 108
 tags:
     - 5g

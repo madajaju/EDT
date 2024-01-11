@@ -3,11 +3,8 @@ layout: posts
 title: "La mise en réseau Zero Trust avec OpenZiti"
 number: 178
 permalink: episode-EDT178-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 178
 tags:
     - zerotrustnetworking

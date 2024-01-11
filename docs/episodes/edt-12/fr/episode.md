@@ -3,11 +3,8 @@ layout: posts
 title: "Mettez le titre ici"
 number: 12
 permalink: episode-EDT12-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 12
 tags:
     - remotelearning

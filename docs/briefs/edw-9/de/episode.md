@@ -5,9 +5,7 @@ number: 9
 ref: brief-EDW9-de
 permalink: brief-EDW9-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 9
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Zusammenfassung
-video: https://youtu.be/
-description: Zusammenfassung
+summary: "Zusammenfassung"
+video: "https://youtu.be/"
+description: "Zusammenfassung"
 ---
 
 

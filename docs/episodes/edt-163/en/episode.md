@@ -3,11 +3,8 @@ layout: posts
 title: "Developing a Multi-Hybrid Cloud Operating Model"
 number: 163
 permalink: episode-EDT163-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 163
 tags:
     - cloudstrategy

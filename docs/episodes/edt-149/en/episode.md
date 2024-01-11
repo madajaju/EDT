@@ -3,11 +3,8 @@ layout: posts
 title: "Update on 5G in the Department of Defense"
 number: 149
 permalink: episode-EDT149-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 149
 tags:
     - advancedcomms

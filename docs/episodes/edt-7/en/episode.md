@@ -3,11 +3,8 @@ layout: posts
 title: "Securing the Teleworker"
 number: 7
 permalink: episode-EDT7-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 7
 tags:
 

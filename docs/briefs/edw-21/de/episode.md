@@ -5,9 +5,7 @@ number: 21
 ref: brief-EDW21-de
 permalink: brief-EDW21-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 21
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Neuigkeiten dieser Woche, 26. Juni 2023, in der digitalen Transformation umfassen eine Zunahme von Angriffen im Cyberkrieg, dass jeder auf den Zug der generativen KI aufspringt und virtualisierte Radio-Bereichsnetzwerke.
-video: https://youtu.be/
-description: Neuigkeiten dieser Woche, 26. Juni 2023, in der digitalen Transformation umfassen eine Zunahme von Angriffen im Cyberkrieg, dass jeder auf den Zug der generativen KI aufspringt und virtualisierte Radio-Bereichsnetzwerke.
+summary: "Neuigkeiten dieser Woche, 26. Juni 2023, in der digitalen Transformation umfassen eine Zunahme von Angriffen im Cyberkrieg, dass jeder auf den Zug der generativen KI aufspringt und virtualisierte Radio-Bereichsnetzwerke."
+video: "https://youtu.be/"
+description: "Neuigkeiten dieser Woche, 26. Juni 2023, in der digitalen Transformation umfassen eine Zunahme von Angriffen im Cyberkrieg, dass jeder auf den Zug der generativen KI aufspringt und virtualisierte Radio-Bereichsnetzwerke."
 ---
 
 

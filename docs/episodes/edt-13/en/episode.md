@@ -3,11 +3,8 @@ layout: posts
 title: "Illogical Obsession with Logic"
 number: 13
 permalink: episode-EDT13-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 13
 tags:
     - data

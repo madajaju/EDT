@@ -3,11 +3,8 @@ layout: posts
 title: "Condivisione dati Zero Trust"
 number: 176
 permalink: episode-EDT176-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 176
 tags:
     - shamimnaqvi

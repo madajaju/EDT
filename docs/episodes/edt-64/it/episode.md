@@ -3,11 +3,8 @@ layout: posts
 title: "Segui e proteggi il margine di Bit verso il cloud"
 number: 64
 permalink: episode-EDT64-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 64
 tags:
     - edge

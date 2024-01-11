@@ -3,11 +3,8 @@ layout: posts
 title: "GenAI Advisor for Datacenter Management"
 number: 155
 permalink: episode-EDT155-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 155
 tags:
     - ai

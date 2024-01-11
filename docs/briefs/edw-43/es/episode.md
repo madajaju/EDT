@@ -5,9 +5,7 @@ number: 43
 ref: brief-EDW43-es
 permalink: brief-EDW43-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 43
 tags:
     - uniquehandmadewoodfurniture.
@@ -39,9 +37,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Noticias de Transformación Digital para la semana del 26 de noviembre de 2023. Desde los cambios transformacionales en el liderazgo de la inteligencia artificial hasta el enfoque imperativo en la ciberseguridad y la presentación de soluciones informáticas avanzadas, esta recopilación encapsula momentos fundamentales en el panorama tecnológico en constante evolución. Únase a nosotros mientras nos adentramos en las complejidades de los recientes desarrollos, iluminando los profundos impactos que tienen en todos los sectores y orientando la trayectoria del futuro digital.
-video: https://youtu.be/mXekILwoTdM
-description: Noticias de Transformación Digital para la semana del 26 de noviembre de 2023. Desde los cambios transformacionales en el liderazgo de la inteligencia artificial hasta el enfoque imperativo en la ciberseguridad y la presentación de soluciones informáticas avanzadas, esta recopilación encapsula momentos fundamentales en el panorama tecnológico en constante evolución. Únase a nosotros mientras nos adentramos en las complejidades de los recientes desarrollos, iluminando los profundos impactos que tienen en todos los sectores y orientando la trayectoria del futuro digital.
+summary: "Noticias de Transformación Digital para la semana del 26 de noviembre de 2023. Desde los cambios transformacionales en el liderazgo de la inteligencia artificial hasta el enfoque imperativo en la ciberseguridad y la presentación de soluciones informáticas avanzadas, esta recopilación encapsula momentos fundamentales en el panorama tecnológico en constante evolución. Únase a nosotros mientras nos adentramos en las complejidades de los recientes desarrollos, iluminando los profundos impactos que tienen en todos los sectores y orientando la trayectoria del futuro digital."
+video: "https://youtu.be/mXekILwoTdM"
+description: "Noticias de Transformación Digital para la semana del 26 de noviembre de 2023. Desde los cambios transformacionales en el liderazgo de la inteligencia artificial hasta el enfoque imperativo en la ciberseguridad y la presentación de soluciones informáticas avanzadas, esta recopilación encapsula momentos fundamentales en el panorama tecnológico en constante evolución. Únase a nosotros mientras nos adentramos en las complejidades de los recientes desarrollos, iluminando los profundos impactos que tienen en todos los sectores y orientando la trayectoria del futuro digital."
 ---
 
 

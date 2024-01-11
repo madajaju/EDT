@@ -3,11 +3,8 @@ layout: posts
 title: "Opérationnaliser la gestion des processus métier"
 number: 113
 permalink: episode-EDT113-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 113
 tags:
     - bpm

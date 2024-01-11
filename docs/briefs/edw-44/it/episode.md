@@ -5,9 +5,7 @@ number: 44
 ref: brief-EDW44-it
 permalink: brief-EDW44-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 44
 tags:
     - ai
@@ -37,9 +35,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Si prega di consultare le ultime notizie nel mondo della Trasformazione Digitale per la settimana del 3 dicembre 2023. Troverete una varietà di storie interessanti relative al calcolo edge, alla gestione dei dati e all'intelligenza artificiale. Questa settimana, AWS e Siemens hanno collaborato per semplificare il calcolo edge, mentre Intel sta aiutando a migliorare la gestione dei dati basata su cloud. Inoltre, diversi governi stanno sviluppando nuove strategie per l'IA.
-video: https://youtu.be/7oVIgjhV9ik
-description: Si prega di consultare le ultime notizie nel mondo della Trasformazione Digitale per la settimana del 3 dicembre 2023. Troverete una varietà di storie interessanti relative al calcolo edge, alla gestione dei dati e all'intelligenza artificiale. Questa settimana, AWS e Siemens hanno collaborato per semplificare il calcolo edge, mentre Intel sta aiutando a migliorare la gestione dei dati basata su cloud. Inoltre, diversi governi stanno sviluppando nuove strategie per l'IA.
+summary: "Si prega di consultare le ultime notizie nel mondo della Trasformazione Digitale per la settimana del 3 dicembre 2023. Troverete una varietà di storie interessanti relative al calcolo edge, alla gestione dei dati e all'intelligenza artificiale. Questa settimana, AWS e Siemens hanno collaborato per semplificare il calcolo edge, mentre Intel sta aiutando a migliorare la gestione dei dati basata su cloud. Inoltre, diversi governi stanno sviluppando nuove strategie per l'IA."
+video: "https://youtu.be/7oVIgjhV9ik"
+description: "Si prega di consultare le ultime notizie nel mondo della Trasformazione Digitale per la settimana del 3 dicembre 2023. Troverete una varietà di storie interessanti relative al calcolo edge, alla gestione dei dati e all'intelligenza artificiale. Questa settimana, AWS e Siemens hanno collaborato per semplificare il calcolo edge, mentre Intel sta aiutando a migliorare la gestione dei dati basata su cloud. Inoltre, diversi governi stanno sviluppando nuove strategie per l'IA."
 ---
 
 

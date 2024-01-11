@@ -3,11 +3,8 @@ layout: posts
 title: "Von Neurologie zu neuromorphem Rechnen"
 number: 141
 permalink: episode-EDT141-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 141
 tags:
     - neurology
@@ -23,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "In dieser Podcast-Episode von "Digitaler Transformation annehmen" teilt Dr. Pamela Follett, eine Neurologin und Mitbegründerin von Lewis Rhodes Labs, ihren Hintergrund und ihre Expertise auf dem Gebiet der Neurologie, insbesondere in Bezug auf Forschung zum sich entwickelnden Gehirn im frühen Kindesalter."
+summary: "In dieser Podcast-Episode von Digitaler Transformation annehmen teilt Dr. Pamela Follett, eine Neurologin und Mitbegründerin von Lewis Rhodes Labs, ihren Hintergrund und ihre Expertise auf dem Gebiet der Neurologie, insbesondere in Bezug auf Forschung zum sich entwickelnden Gehirn im frühen Kindesalter."
 video: "https://youtu.be/url"
-description: "In dieser Podcast-Episode von "Digitaler Transformation annehmen" teilt Dr. Pamela Follett, eine Neurologin und Mitbegründerin von Lewis Rhodes Labs, ihren Hintergrund und ihre Expertise auf dem Gebiet der Neurologie, insbesondere in Bezug auf Forschung zum sich entwickelnden Gehirn im frühen Kindesalter."
+description: "In dieser Podcast-Episode von Digitaler Transformation annehmen teilt Dr. Pamela Follett, eine Neurologin und Mitbegründerin von Lewis Rhodes Labs, ihren Hintergrund und ihre Expertise auf dem Gebiet der Neurologie, insbesondere in Bezug auf Forschung zum sich entwickelnden Gehirn im frühen Kindesalter."
 ---
 
 <div>

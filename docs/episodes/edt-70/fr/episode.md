@@ -3,11 +3,8 @@ layout: posts
 title: "Gouvernance des données modernes"
 number: 70
 permalink: episode-EDT70-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 70
 tags:
     - datagovernance

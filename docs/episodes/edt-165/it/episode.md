@@ -3,11 +3,8 @@ layout: posts
 title: "Fattori di assegnazione di Carico di lavoro nel Cloud"
 number: 165
 permalink: episode-EDT165-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 165
 tags:
     - cloudcomputeoptions

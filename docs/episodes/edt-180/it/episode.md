@@ -3,11 +3,8 @@ layout: posts
 title: "Intelligenza Artificiale Generativa nell'Istruzione Superiore (Rivisitato)"
 number: 180
 permalink: episode-EDT180-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 180
 tags:
     - embracingdigitaltransformation

@@ -3,11 +3,8 @@ layout: posts
 title: "Managing Risk in the Face of Ransomware"
 number: 60
 permalink: episode-EDT60-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 60
 tags:
     - cybersecurity

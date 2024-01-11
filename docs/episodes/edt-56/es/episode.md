@@ -3,11 +3,8 @@ layout: posts
 title: "Organizaciones intermediarias en la nube"
 number: 56
 permalink: episode-EDT56-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 56
 tags:
     - cloudbroker

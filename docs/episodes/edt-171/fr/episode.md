@@ -3,11 +3,8 @@ layout: posts
 title: "L'IA générative dans le secteur public."
 number: 171
 permalink: episode-EDT171-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 171
 tags:
     - generativeai

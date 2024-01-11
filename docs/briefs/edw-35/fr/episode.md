@@ -5,9 +5,7 @@ number: 35
 ref: brief-EDW35-fr
 permalink: brief-EDW35-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 35
 tags:
     - ai
@@ -33,9 +31,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Nouvelles sur la transformation numérique pour la semaine du 1er octobre, y compris des histoires sur la gestion des données, l'intelligence artificielle et la cybersécurité. Venez écouter la célébration du mois de sensibilisation à la cybersécurité, une IA qui fait de Snoop Dogg un maître de donjon pour D&D, et découvrez une nouvelle architecture de données nommée Polystore.
-video: https://youtu.be/95aGB78svCw
-description: Nouvelles sur la transformation numérique pour la semaine du 1er octobre, y compris des histoires sur la gestion des données, l'intelligence artificielle et la cybersécurité. Venez écouter la célébration du mois de sensibilisation à la cybersécurité, une IA qui fait de Snoop Dogg un maître de donjon pour D&D, et découvrez une nouvelle architecture de données nommée Polystore.
+summary: "Nouvelles sur la transformation numérique pour la semaine du 1er octobre, y compris des histoires sur la gestion des données, l'intelligence artificielle et la cybersécurité. Venez écouter la célébration du mois de sensibilisation à la cybersécurité, une IA qui fait de Snoop Dogg un maître de donjon pour D&D, et découvrez une nouvelle architecture de données nommée Polystore."
+video: "https://youtu.be/95aGB78svCw"
+description: "Nouvelles sur la transformation numérique pour la semaine du 1er octobre, y compris des histoires sur la gestion des données, l'intelligence artificielle et la cybersécurité. Venez écouter la célébration du mois de sensibilisation à la cybersécurité, une IA qui fait de Snoop Dogg un maître de donjon pour D&D, et découvrez une nouvelle architecture de données nommée Polystore."
 ---
 
 

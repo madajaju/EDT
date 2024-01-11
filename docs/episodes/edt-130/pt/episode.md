@@ -3,11 +3,8 @@ layout: posts
 title: "Produtozando a IA Decisória"
 number: 130
 permalink: episode-EDT130-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 130
 tags:
     - collectiongenerativeai

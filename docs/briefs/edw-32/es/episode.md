@@ -5,9 +5,7 @@ number: 32
 ref: brief-EDW32-es
 permalink: brief-EDW32-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 32
 tags:
     - ai
@@ -36,9 +34,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Obtén las últimas noticias digitales para la semana del 10 de septiembre de 2023 que cubren Inteligencia Artificial, Ciberseguridad y Computación Ubicua. Esta semana, entérate de una nueva amenaza cibernética para el iPhone, el lugar de origen de GPT-4 y el enfoque del MIT para abordar la incertidumbre de la computación cuántica.
-video: https://youtu.be/Nudjf5XKNKM
-description: Obtén las últimas noticias digitales para la semana del 10 de septiembre de 2023 que cubren Inteligencia Artificial, Ciberseguridad y Computación Ubicua. Esta semana, entérate de una nueva amenaza cibernética para el iPhone, el lugar de origen de GPT-4 y el enfoque del MIT para abordar la incertidumbre de la computación cuántica.
+summary: "Obtén las últimas noticias digitales para la semana del 10 de septiembre de 2023 que cubren Inteligencia Artificial, Ciberseguridad y Computación Ubicua. Esta semana, entérate de una nueva amenaza cibernética para el iPhone, el lugar de origen de GPT-4 y el enfoque del MIT para abordar la incertidumbre de la computación cuántica."
+video: "https://youtu.be/Nudjf5XKNKM"
+description: "Obtén las últimas noticias digitales para la semana del 10 de septiembre de 2023 que cubren Inteligencia Artificial, Ciberseguridad y Computación Ubicua. Esta semana, entérate de una nueva amenaza cibernética para el iPhone, el lugar de origen de GPT-4 y el enfoque del MIT para abordar la incertidumbre de la computación cuántica."
 ---
 
 

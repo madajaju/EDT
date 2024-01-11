@@ -3,11 +3,8 @@ layout: posts
 title: "Lezioni in HPC Oil & Gas"
 number: 133
 permalink: episode-EDT133-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 133
 tags:
     - compute

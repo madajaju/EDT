@@ -3,11 +3,8 @@ layout: posts
 title: "Nubes Privadas Disruptivas"
 number: 121
 permalink: episode-EDT121-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 121
 tags:
     - cloud

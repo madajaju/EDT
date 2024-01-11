@@ -3,11 +3,8 @@ layout: posts
 title: "Aprovechando los Centros de Datos Virtuales con Verge.io."
 number: 96
 permalink: episode-EDT96-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 96
 tags:
     - privatecloud

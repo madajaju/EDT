@@ -3,11 +3,8 @@ layout: posts
 title: "Intelligenza Artificiale Generativa con Claude"
 number: 173
 permalink: episode-EDT173-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 173
 tags:
     - genai

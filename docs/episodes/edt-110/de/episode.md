@@ -3,11 +3,8 @@ layout: posts
 title: "Sicherung der Lieferkette"
 number: 110
 permalink: episode-EDT110-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 110
 tags:
     - securesupplychain

@@ -3,11 +3,8 @@ layout: posts
 title: "GenAI-Richtlinien"
 number: 159
 permalink: episode-EDT159-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 159
 tags:
     - collectiongenerativeai

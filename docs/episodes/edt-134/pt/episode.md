@@ -3,11 +3,8 @@ layout: posts
 title: "WaveForm AI (Portuguese Translation: WaveForm AI)"
 number: 134
 permalink: episode-EDT134-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 134
 tags:
     - collectiongenerativeai

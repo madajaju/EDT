@@ -3,11 +3,8 @@ layout: posts
 title: "Navigieren durch disruptiven Wandel"
 number: 35
 permalink: episode-EDT35-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 35
 tags:
     - change

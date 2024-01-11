@@ -5,9 +5,7 @@ number: 47
 ref: brief-EDW47-pt
 permalink: brief-EDW47-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 47
 tags:
     - ai
@@ -42,9 +40,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Durante a semana de 24 de dezembro de 2023, houve várias reportagens sobre transformação digital. Essas histórias cobriram tópicos como cibersegurança, inteligência artificial e computação. Alguns dos destaques da semana incluíram um aumento nos ataques cibernéticos durante a temporada de festas, o esforço da Intel para desenvolver ainda mais a tecnologia de IA, e a tendência em direção ao controle de custos em computação em nuvem.
-video: https://youtu.be/5OSyKvZ2ssM
-description: Durante a semana de 24 de dezembro de 2023, houve várias reportagens sobre transformação digital. Essas histórias cobriram tópicos como cibersegurança, inteligência artificial e computação. Alguns dos destaques da semana incluíram um aumento nos ataques cibernéticos durante a temporada de festas, o esforço da Intel para desenvolver ainda mais a tecnologia de IA, e a tendência em direção ao controle de custos em computação em nuvem.
+summary: "Durante a semana de 24 de dezembro de 2023, houve várias reportagens sobre transformação digital. Essas histórias cobriram tópicos como cibersegurança, inteligência artificial e computação. Alguns dos destaques da semana incluíram um aumento nos ataques cibernéticos durante a temporada de festas, o esforço da Intel para desenvolver ainda mais a tecnologia de IA, e a tendência em direção ao controle de custos em computação em nuvem."
+video: "https://youtu.be/5OSyKvZ2ssM"
+description: "Durante a semana de 24 de dezembro de 2023, houve várias reportagens sobre transformação digital. Essas histórias cobriram tópicos como cibersegurança, inteligência artificial e computação. Alguns dos destaques da semana incluíram um aumento nos ataques cibernéticos durante a temporada de festas, o esforço da Intel para desenvolver ainda mais a tecnologia de IA, e a tendência em direção ao controle de custos em computação em nuvem."
 ---
 
 

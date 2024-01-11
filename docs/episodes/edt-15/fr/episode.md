@@ -3,11 +3,8 @@ layout: posts
 title: "Débuter la transformation organisationnelle"
 number: 15
 permalink: episode-EDT15-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 15
 tags:
     - data

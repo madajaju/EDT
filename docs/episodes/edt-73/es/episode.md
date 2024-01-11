@@ -3,11 +3,8 @@ layout: posts
 title: "2021 Un año en retrospectiva"
 number: 73
 permalink: episode-EDT73-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 73
 tags:
     - covid

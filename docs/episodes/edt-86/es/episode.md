@@ -3,11 +3,8 @@ layout: posts
 title: "Las cosas que desearía haber sabido como CTO del gobierno"
 number: 86
 permalink: episode-EDT86-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 86
 tags:
     - cto

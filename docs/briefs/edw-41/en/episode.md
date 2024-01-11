@@ -5,9 +5,7 @@ number: 41
 ref: brief-EDW41-en
 permalink: brief-EDW41-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 41
 tags:
     - homelawncaretools
@@ -24,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Embracing Digital This week of November 12, 2023, including news in cybersecurity. Artificial intelligence and ubiquitous computing. Find out about several major cyber-attacks on critical infrastructure, AI running out of data, and breakthroughs in quantum computing.
-video: https://youtu.be/jasEFGfNcbs
-description: Embracing Digital This week of November 12, 2023, including news in cybersecurity. Artificial intelligence and ubiquitous computing. Find out about several major cyber-attacks on critical infrastructure, AI running out of data, and breakthroughs in quantum computing.
+summary: "Embracing Digital This week of November 12, 2023, including news in cybersecurity. Artificial intelligence and ubiquitous computing. Find out about several major cyber-attacks on critical infrastructure, AI running out of data, and breakthroughs in quantum computing."
+video: "https://youtu.be/jasEFGfNcbs"
+description: "Embracing Digital This week of November 12, 2023, including news in cybersecurity. Artificial intelligence and ubiquitous computing. Find out about several major cyber-attacks on critical infrastructure, AI running out of data, and breakthroughs in quantum computing."
 ---
 
 

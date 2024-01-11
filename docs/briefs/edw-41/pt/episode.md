@@ -5,9 +5,7 @@ number: 41
 ref: brief-EDW41-pt
 permalink: brief-EDW41-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 41
 tags:
     - homelawncaretools
@@ -24,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Abraçando o Digital Esta semana de 12 de novembro de 2023, incluindo notícias em cibersegurança. Inteligência artificial e computação ubíqua. Descubra sobre vários grandes ataques cibernéticos à infraestrutura crítica, a IA ficando sem dados e avanços na computação quântica.
-video: https://youtu.be/-KSoRdXVlxo
-description: Abraçando o Digital Esta semana de 12 de novembro de 2023, incluindo notícias em cibersegurança. Inteligência artificial e computação ubíqua. Descubra sobre vários grandes ataques cibernéticos à infraestrutura crítica, a IA ficando sem dados e avanços na computação quântica.
+summary: "Abraçando o Digital Esta semana de 12 de novembro de 2023, incluindo notícias em cibersegurança. Inteligência artificial e computação ubíqua. Descubra sobre vários grandes ataques cibernéticos à infraestrutura crítica, a IA ficando sem dados e avanços na computação quântica."
+video: "https://youtu.be/-KSoRdXVlxo"
+description: "Abraçando o Digital Esta semana de 12 de novembro de 2023, incluindo notícias em cibersegurança. Inteligência artificial e computação ubíqua. Descubra sobre vários grandes ataques cibernéticos à infraestrutura crítica, a IA ficando sem dados e avanços na computação quântica."
 ---
 
 

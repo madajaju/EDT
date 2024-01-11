@@ -5,9 +5,7 @@ number: 22
 ref: brief-EDW22-fr
 permalink: brief-EDW22-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 22
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Pour la semaine du 3 juillet 2023, dans l'actualité de la transformation numérique. Est-ce que l'IA trouve un remplaçant pour Alexa et Siri ? Pouvons-nous entendre nos données ? Et où est-ce que les fournisseurs de services cloud font pleuvoir l'argent ?
-video: https://youtu.be/qs5dyIUJ2wA
-description: Pour la semaine du 3 juillet 2023, dans l'actualité de la transformation numérique. Est-ce que l'IA trouve un remplaçant pour Alexa et Siri ? Pouvons-nous entendre nos données ? Et où est-ce que les fournisseurs de services cloud font pleuvoir l'argent ?
+summary: "Pour la semaine du 3 juillet 2023, dans l'actualité de la transformation numérique. Est-ce que l'IA trouve un remplaçant pour Alexa et Siri ? Pouvons-nous entendre nos données ? Et où est-ce que les fournisseurs de services cloud font pleuvoir l'argent ?"
+video: "https://youtu.be/qs5dyIUJ2wA"
+description: "Pour la semaine du 3 juillet 2023, dans l'actualité de la transformation numérique. Est-ce que l'IA trouve un remplaçant pour Alexa et Siri ? Pouvons-nous entendre nos données ? Et où est-ce que les fournisseurs de services cloud font pleuvoir l'argent ?"
 ---
 
 

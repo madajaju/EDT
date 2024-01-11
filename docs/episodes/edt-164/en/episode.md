@@ -3,11 +3,8 @@ layout: posts
 title: "Application and Workload Portfolios in Cloud Migration"
 number: 164
 permalink: episode-EDT164-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 164
 tags:
     - cloudmigration

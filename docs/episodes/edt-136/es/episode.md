@@ -3,11 +3,8 @@ layout: posts
 title: "Datos resistentes en comunicaciones disruptivas"
 number: 136
 permalink: episode-EDT136-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 136
 tags:
     - sabr

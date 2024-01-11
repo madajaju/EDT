@@ -3,11 +3,8 @@ layout: posts
 title: "Automazione con IA"
 number: 122
 permalink: episode-EDT122-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 122
 tags:
     - collectiongenerativeai

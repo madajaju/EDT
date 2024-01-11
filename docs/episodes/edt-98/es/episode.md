@@ -3,11 +3,8 @@ layout: posts
 title: "La aparición de la Red Global de Datos"
 number: 98
 permalink: episode-EDT98-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 98
 tags:
     - dataarchitecture

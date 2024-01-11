@@ -5,9 +5,7 @@ number: 39
 ref: brief-EDW39-en
 permalink: brief-EDW39-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 39
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: In the latest edition of our Embracing Digital This Week, we bring you the latest developments and stories in the world of cybersecurity, edge computing, and ubiquitous computing. In this episode, we cover a new malware called &#34;Elegant,&#34; cybersecurity regulations in California, the UK Parliament&#39;s inquiry into critical infrastructure cybersecurity, and other interesting news from the tech industry.
-video: https://youtu.be/EpBXUOd9qHY
-description: In the latest edition of our Embracing Digital This Week, we bring you the latest developments and stories in the world of cybersecurity, edge computing, and ubiquitous computing. In this episode, we cover a new malware called &#34;Elegant,&#34; cybersecurity regulations in California, the UK Parliament&#39;s inquiry into critical infrastructure cybersecurity, and other interesting news from the tech industry.
+summary: "In the latest edition of our Embracing Digital This Week, we bring you the latest developments and stories in the world of cybersecurity, edge computing, and ubiquitous computing. In this episode, we cover a new malware called &#34;Elegant,&#34; cybersecurity regulations in California, the UK Parliament&#39;s inquiry into critical infrastructure cybersecurity, and other interesting news from the tech industry."
+video: "https://youtu.be/EpBXUOd9qHY"
+description: "In the latest edition of our Embracing Digital This Week, we bring you the latest developments and stories in the world of cybersecurity, edge computing, and ubiquitous computing. In this episode, we cover a new malware called &#34;Elegant,&#34; cybersecurity regulations in California, the UK Parliament&#39;s inquiry into critical infrastructure cybersecurity, and other interesting news from the tech industry."
 ---
 
 

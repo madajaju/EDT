@@ -3,11 +3,8 @@ layout: posts
 title: "Melhorando o Valor do Empregado com Catalisador."
 number: 31
 permalink: episode-EDT31-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 31
 tags:
     - rpa

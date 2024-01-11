@@ -3,11 +3,8 @@ layout: posts
 title: "Zero Trust Architecture"
 number: 172
 permalink: episode-EDT172-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 172
 tags:
     - zta

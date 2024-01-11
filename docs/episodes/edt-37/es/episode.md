@@ -3,11 +3,8 @@ layout: posts
 title: "2020 en revisión"
 number: 37
 permalink: episode-EDT37-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 37
 tags:
     - covid

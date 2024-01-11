@@ -3,11 +3,8 @@ layout: posts
 title: "Il black out di AWS di novembre 2020."
 number: 33
 permalink: episode-EDT33-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 33
 tags:
     - aws

@@ -5,9 +5,7 @@ number: 40
 ref: brief-EDW40-es
 permalink: brief-EDW40-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 40
 tags:
     - keywords
@@ -24,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Abrazando lo Digital esta semana te trae las últimas noticias para el 5 de noviembre de 2023, cubriendo ciberseguridad, inteligencia artificial y computación de borde. Recientemente, el Reino Unido organizó una cumbre de seguridad de IA que se centró en la IA ética y la cooperación global, mientras que el presidente Biden lanzó una orden ejecutiva que esboza principios para el desarrollo responsable de la IA. Además, Darren ha lanzado una nueva serie de podcasts sobre arquitectura de confianza cero y IA generativa.
-video: https://youtu.be/munbx1Lq53o
-description: Abrazando lo Digital esta semana te trae las últimas noticias para el 5 de noviembre de 2023, cubriendo ciberseguridad, inteligencia artificial y computación de borde. Recientemente, el Reino Unido organizó una cumbre de seguridad de IA que se centró en la IA ética y la cooperación global, mientras que el presidente Biden lanzó una orden ejecutiva que esboza principios para el desarrollo responsable de la IA. Además, Darren ha lanzado una nueva serie de podcasts sobre arquitectura de confianza cero y IA generativa.
+summary: "Abrazando lo Digital esta semana te trae las últimas noticias para el 5 de noviembre de 2023, cubriendo ciberseguridad, inteligencia artificial y computación de borde. Recientemente, el Reino Unido organizó una cumbre de seguridad de IA que se centró en la IA ética y la cooperación global, mientras que el presidente Biden lanzó una orden ejecutiva que esboza principios para el desarrollo responsable de la IA. Además, Darren ha lanzado una nueva serie de podcasts sobre arquitectura de confianza cero y IA generativa."
+video: "https://youtu.be/munbx1Lq53o"
+description: "Abrazando lo Digital esta semana te trae las últimas noticias para el 5 de noviembre de 2023, cubriendo ciberseguridad, inteligencia artificial y computación de borde. Recientemente, el Reino Unido organizó una cumbre de seguridad de IA que se centró en la IA ética y la cooperación global, mientras que el presidente Biden lanzó una orden ejecutiva que esboza principios para el desarrollo responsable de la IA. Además, Darren ha lanzado una nueva serie de podcasts sobre arquitectura de confianza cero y IA generativa."
 ---
 
 

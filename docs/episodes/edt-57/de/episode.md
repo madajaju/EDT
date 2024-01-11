@@ -3,11 +3,8 @@ layout: posts
 title: "Cloud-Broker-Organisation Teil 2"
 number: 57
 permalink: episode-EDT57-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 57
 tags:
     - cloudbroker

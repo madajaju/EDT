@@ -3,11 +3,8 @@ layout: posts
 title: "Rebirth of the Private Cloud"
 number: 137
 permalink: episode-EDT137-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 137
 tags:
     - cloud

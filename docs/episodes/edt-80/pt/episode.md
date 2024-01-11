@@ -3,11 +3,8 @@ layout: posts
 title: "Reunião com os arquitetos de soluções em nuvem da Intel"
 number: 80
 permalink: episode-EDT80-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 80
 tags:
     - csa

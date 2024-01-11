@@ -3,11 +3,8 @@ layout: posts
 title: "Compréhension du modèle de sécurité de responsabilité partagée"
 number: 78
 permalink: episode-EDT78-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 78
 tags:
     - multicloud

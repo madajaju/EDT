@@ -3,11 +3,8 @@ layout: posts
 title: "Avanzando le Operazioni con il 5G"
 number: 109
 permalink: episode-EDT109-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 109
 tags:
     - 5g

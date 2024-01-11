@@ -3,11 +3,8 @@ layout: posts
 title: "Percorso di Attacco Cyber Precog con XM Cyber"
 number: 99
 permalink: episode-EDT99-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 99
 tags:
     - aiml

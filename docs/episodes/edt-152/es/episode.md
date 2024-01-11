@@ -3,11 +3,8 @@ layout: posts
 title: "AI Generativa Práctica"
 number: 152
 permalink: episode-EDT152-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 152
 tags:
     - genai
@@ -22,9 +19,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "En este episodio del podcast "Abrazando la Transformación Digital", el presentador Darren Pulsipher se involucra en una conversación que invita a la reflexión con el Dr. Jeffrey Lancaster. Su discusión profundiza en las aplicaciones prácticas de la IA generativa y el impacto profundo que está destinada a tener en diversas industrias."
+summary: "En este episodio del podcast Abrazando la Transformación Digital, el presentador Darren Pulsipher se involucra en una conversación que invita a la reflexión con el Dr. Jeffrey Lancaster. Su discusión profundiza en las aplicaciones prácticas de la IA generativa y el impacto profundo que está destinada a tener en diversas industrias."
 video: "https://youtu.be/url"
-description: "En este episodio del podcast "Abrazando la Transformación Digital", el presentador Darren Pulsipher se involucra en una conversación que invita a la reflexión con el Dr. Jeffrey Lancaster. Su discusión profundiza en las aplicaciones prácticas de la IA generativa y el impacto profundo que está destinada a tener en diversas industrias."
+description: "En este episodio del podcast Abrazando la Transformación Digital, el presentador Darren Pulsipher se involucra en una conversación que invita a la reflexión con el Dr. Jeffrey Lancaster. Su discusión profundiza en las aplicaciones prácticas de la IA generativa y el impacto profundo que está destinada a tener en diversas industrias."
 ---
 
 <div>

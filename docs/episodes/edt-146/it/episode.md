@@ -3,11 +3,8 @@ layout: posts
 title: "Abbracciando la Rivoluzione dell'AI"
 number: 146
 permalink: episode-EDT146-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 146
 tags:
     - collectiongenerativeai
@@ -22,9 +19,9 @@ guests:
 
 img: thumbnail.jpg
 image: thumbnail.jpg
-summary: "In questo episodio, Darren parla con il Dott. Michael Lenox della crescente rivoluzione dell'IA e di come abbracciarla o essere distrutti. Michael ha appena pubblicato un nuovo libro intitolato "Strategia nell'era digitale: padroneggiare la trasformazione digitale"."
+summary: "In questo episodio, Darren parla con il Dott. Michael Lenox della crescente rivoluzione dell'IA e di come abbracciarla o essere distrutti. Michael ha appena pubblicato un nuovo libro intitolato Strategia nell'era digitale: padroneggiare la trasformazione digitale."
 video: "https://youtu.be/url"
-description: "In questo episodio, Darren parla con il Dott. Michael Lenox della crescente rivoluzione dell'IA e di come abbracciarla o essere distrutti. Michael ha appena pubblicato un nuovo libro intitolato "Strategia nell'era digitale: padroneggiare la trasformazione digitale"."
+description: "In questo episodio, Darren parla con il Dott. Michael Lenox della crescente rivoluzione dell'IA e di come abbracciarla o essere distrutti. Michael ha appena pubblicato un nuovo libro intitolato Strategia nell'era digitale: padroneggiare la trasformazione digitale."
 ---
 
 <div>

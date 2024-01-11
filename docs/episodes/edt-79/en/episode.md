@@ -3,11 +3,8 @@ layout: posts
 title: "Onboarding Remote Workers"
 number: 79
 permalink: episode-EDT79-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 79
 tags:
     - covid

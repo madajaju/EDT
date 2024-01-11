@@ -3,11 +3,8 @@ layout: posts
 title: "Understanding Edge to Data Center Problems"
 number: 58
 permalink: episode-EDT58-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 58
 tags:
     - data

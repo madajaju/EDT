@@ -5,9 +5,7 @@ number: 33
 ref: brief-EDW33-fr
 permalink: brief-EDW33-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 33
 tags:
     - aisummit
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Rester à jour avec les dernières nouvelles de la transformation digitale pour la semaine du 17 septembre 2023. Obtenez les dernières mises à jour sur l'intelligence artificielle, le calcul en périphérie et la cybersécurité. Les points forts de cette semaine incluent Microsoft découvrant des vulnérabilités dans les logiciels de leurs concurrents, Amazon mettant en place des exigences de divulgation de l'IA, et une liste complète des prochaines conférences IoT cet automne.
-video: https://youtu.be/rv6VBFAiB_w
-description: Rester à jour avec les dernières nouvelles de la transformation digitale pour la semaine du 17 septembre 2023. Obtenez les dernières mises à jour sur l'intelligence artificielle, le calcul en périphérie et la cybersécurité. Les points forts de cette semaine incluent Microsoft découvrant des vulnérabilités dans les logiciels de leurs concurrents, Amazon mettant en place des exigences de divulgation de l'IA, et une liste complète des prochaines conférences IoT cet automne.
+summary: "Rester à jour avec les dernières nouvelles de la transformation digitale pour la semaine du 17 septembre 2023. Obtenez les dernières mises à jour sur l'intelligence artificielle, le calcul en périphérie et la cybersécurité. Les points forts de cette semaine incluent Microsoft découvrant des vulnérabilités dans les logiciels de leurs concurrents, Amazon mettant en place des exigences de divulgation de l'IA, et une liste complète des prochaines conférences IoT cet automne."
+video: "https://youtu.be/rv6VBFAiB_w"
+description: "Rester à jour avec les dernières nouvelles de la transformation digitale pour la semaine du 17 septembre 2023. Obtenez les dernières mises à jour sur l'intelligence artificielle, le calcul en périphérie et la cybersécurité. Les points forts de cette semaine incluent Microsoft découvrant des vulnérabilités dans les logiciels de leurs concurrents, Amazon mettant en place des exigences de divulgation de l'IA, et une liste complète des prochaines conférences IoT cet automne."
 ---
 
 

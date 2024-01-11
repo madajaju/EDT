@@ -5,9 +5,7 @@ number: 42
 ref: brief-EDW42-de
 permalink: brief-EDW42-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 42
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digitale Transformation für Cybersicherheit, KI und Computing in der Woche vom 19. November 2023. Themen sind unter anderem die rechtlichen Auswirkungen der Cybersicherheit, der Weggang von Sam Altman von OpenAI und Cloud-Anbieter, die um Regierungsverträge konkurrieren.
-video: https://youtu.be/tBqfWijH6IA
-description: Digitale Transformation für Cybersicherheit, KI und Computing in der Woche vom 19. November 2023. Themen sind unter anderem die rechtlichen Auswirkungen der Cybersicherheit, der Weggang von Sam Altman von OpenAI und Cloud-Anbieter, die um Regierungsverträge konkurrieren.
+summary: "Digitale Transformation für Cybersicherheit, KI und Computing in der Woche vom 19. November 2023. Themen sind unter anderem die rechtlichen Auswirkungen der Cybersicherheit, der Weggang von Sam Altman von OpenAI und Cloud-Anbieter, die um Regierungsverträge konkurrieren."
+video: "https://youtu.be/tBqfWijH6IA"
+description: "Digitale Transformation für Cybersicherheit, KI und Computing in der Woche vom 19. November 2023. Themen sind unter anderem die rechtlichen Auswirkungen der Cybersicherheit, der Weggang von Sam Altman von OpenAI und Cloud-Anbieter, die um Regierungsverträge konkurrieren."
 ---
 
 

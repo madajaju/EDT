@@ -3,11 +3,8 @@ layout: posts
 title: "Garder l'humain dans l'IA"
 number: 169
 permalink: episode-EDT169-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 169
 tags:
     - userexperience
@@ -29,9 +26,9 @@ guests:
 
 img: thumbnail.jpg
 image: thumbnail.jpg
-summary: "Dans un récent épisode du podcast "Embracing Digital Transformation", l'animateur Darren Pulsipher, architecte principal des solutions pour le secteur public chez Intel, interviewe Sunny Stueve, responsable de l'intelligence artificielle centrée sur l'humain chez Leidos. Le podcast explore l'importance de la conception centrée sur l'humain et de l'expérience utilisateur lors de l'intégration de la technologie d'intelligence artificielle."
+summary: "Dans un récent épisode du podcast Embracing Digital Transformation, l'animateur Darren Pulsipher, architecte principal des solutions pour le secteur public chez Intel, interviewe Sunny Stueve, responsable de l'intelligence artificielle centrée sur l'humain chez Leidos. Le podcast explore l'importance de la conception centrée sur l'humain et de l'expérience utilisateur lors de l'intégration de la technologie d'intelligence artificielle."
 video: "https://youtu.be/LV_JO0hCG5g"
-description: "Dans un récent épisode du podcast "Embracing Digital Transformation", l'animateur Darren Pulsipher, architecte principal des solutions pour le secteur public chez Intel, interviewe Sunny Stueve, responsable de l'intelligence artificielle centrée sur l'humain chez Leidos. Le podcast explore l'importance de la conception centrée sur l'humain et de l'expérience utilisateur lors de l'intégration de la technologie d'intelligence artificielle."
+description: "Dans un récent épisode du podcast Embracing Digital Transformation, l'animateur Darren Pulsipher, architecte principal des solutions pour le secteur public chez Intel, interviewe Sunny Stueve, responsable de l'intelligence artificielle centrée sur l'humain chez Leidos. Le podcast explore l'importance de la conception centrée sur l'humain et de l'expérience utilisateur lors de l'intégration de la technologie d'intelligence artificielle."
 ---
 
 <div>

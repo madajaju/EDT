@@ -5,9 +5,7 @@ number: 40
 ref: brief-EDW40-en
 permalink: brief-EDW40-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 40
 tags:
     - keywords
@@ -24,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Embracing Digital this week brings you the latest news for November 5, 2023, covering cybersecurity, artificial intelligence, and edge computing. The UK recently organized an AI safety summit that focused on ethical AI and global cooperation, while President Biden released an executive order outlining principles for responsible AI development. Additionally, Darren has launched a new podcast series on zero trust architecture and generative AI.
-video: https://youtu.be/mDNne50_OHU
-description: Embracing Digital this week brings you the latest news for November 5, 2023, covering cybersecurity, artificial intelligence, and edge computing. The UK recently organized an AI safety summit that focused on ethical AI and global cooperation, while President Biden released an executive order outlining principles for responsible AI development. Additionally, Darren has launched a new podcast series on zero trust architecture and generative AI.
+summary: "Embracing Digital this week brings you the latest news for November 5, 2023, covering cybersecurity, artificial intelligence, and edge computing. The UK recently organized an AI safety summit that focused on ethical AI and global cooperation, while President Biden released an executive order outlining principles for responsible AI development. Additionally, Darren has launched a new podcast series on zero trust architecture and generative AI."
+video: "https://youtu.be/mDNne50_OHU"
+description: "Embracing Digital this week brings you the latest news for November 5, 2023, covering cybersecurity, artificial intelligence, and edge computing. The UK recently organized an AI safety summit that focused on ethical AI and global cooperation, while President Biden released an executive order outlining principles for responsible AI development. Additionally, Darren has launched a new podcast series on zero trust architecture and generative AI."
 ---
 
 

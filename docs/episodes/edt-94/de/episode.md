@@ -3,11 +3,8 @@ layout: posts
 title: "die Wiedergeburt der privaten Cloud"
 number: 94
 permalink: episode-EDT94-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 94
 tags:
     - hybridcloud

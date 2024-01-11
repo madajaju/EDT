@@ -3,11 +3,8 @@ layout: posts
 title: "Historische Integration mit Cloud und RPA"
 number: 28
 permalink: episode-EDT28-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 28
 tags:
     - rpa

@@ -3,11 +3,8 @@ layout: posts
 title: "Garantindo a segurança do trabalhador remoto"
 number: 7
 permalink: episode-EDT7-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 7
 tags:
 

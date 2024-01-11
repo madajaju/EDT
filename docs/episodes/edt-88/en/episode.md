@@ -3,11 +3,8 @@ layout: posts
 title: "Collaborative DevSecOps"
 number: 88
 permalink: episode-EDT88-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 88
 tags:
     - cybersecurity

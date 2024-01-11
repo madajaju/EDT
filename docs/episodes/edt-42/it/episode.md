@@ -3,11 +3,8 @@ layout: posts
 title: "Securizzare il flusso di lavoro DevOps = SecDevOps"
 number: 42
 permalink: episode-EDT42-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 42
 tags:
     - cybersecurity

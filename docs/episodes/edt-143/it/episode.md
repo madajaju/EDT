@@ -3,11 +3,8 @@ layout: posts
 title: "Casi d'uso nel calcolo confidenziale"
 number: 143
 permalink: episode-EDT143-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 143
 tags:
     - cybersecurity

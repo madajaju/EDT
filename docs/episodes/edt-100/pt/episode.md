@@ -3,11 +3,8 @@ layout: posts
 title: "Super-Heróis do Setor Público da Intel"
 number: 100
 permalink: episode-EDT100-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 100
 tags:
     - cybersecurity

@@ -27,13 +27,24 @@ Estamos en plena revolución digital. Durante este tiempo, puede resultar desafi
   clear: both;
 }
 </style>
-<div class="row">
-  <div class="column">
-    <h2>Podcast</h2>
-    <iframe width="100%" height="400" frameborder="no" scrolling="no" seamless src="https://share.transistor.fm/e/abrazando-lo-digital-esta-semana/playlist"></iframe>
-  </div>
-  <div class="column">
-    <h2>Videos</h2>
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLWx6UKwM-GsDxTT_Nr-aRRUeW98xMIYCB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
+
+<style>
+.thumbnail {
+    float: left;
+    margin: 0 15px 0 0;
+}
+.episode {
+    margin: 10px 0;
+}
+</style>
+
+{% assign spages = site.pages | where: "layout", "brief" | where: "lang", "es" | sort: "nav_order" | reverse %}
+{% for spage in spages %}
+<div style="display: flex;">
+    <p class="episode">
+    <img class="thumbnail" src="../../{{ spage.path | remove: spage.name }}/{{ spage.img }}" width="100" height="100">
+    <a href="{{ spage.url }}">{{ spage.number}} - {{ spage.title }}</a><br>
+    {{ spage.summary }}
+    </p>
 </div>
+{% endfor %}

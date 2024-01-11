@@ -3,11 +3,8 @@ layout: posts
 title: "Integración de trabajadores remotos"
 number: 79
 permalink: episode-EDT79-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 79
 tags:
     - covid

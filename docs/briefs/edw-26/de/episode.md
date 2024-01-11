@@ -5,9 +5,7 @@ number: 26
 ref: brief-EDW26-de
 permalink: brief-EDW26-de
 lang: de
-has_children: false
-parent: Wöchentliche Nachrichten
-grand_parent: Deutsch
+nav_exclude: true
 nav_order: 26
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Hier sind die neuesten Aktualisierungen im Bereich der Digitalen Transformation für die Woche vom 31. Juli 2023. Dies beinhaltet Neuigkeiten über die Partnerschaft zwischen Ericsson und Intel zur Weiterentwicklung der 5G-Technologie, die Bemühungen von ChatGPT im Kampf gegen Cyberkriminalität und das Aufkommen KI-gesteuerter Softwareentwicklung.
-video: https://youtu.be/
-description: Hier sind die neuesten Aktualisierungen im Bereich der Digitalen Transformation für die Woche vom 31. Juli 2023. Dies beinhaltet Neuigkeiten über die Partnerschaft zwischen Ericsson und Intel zur Weiterentwicklung der 5G-Technologie, die Bemühungen von ChatGPT im Kampf gegen Cyberkriminalität und das Aufkommen KI-gesteuerter Softwareentwicklung.
+summary: "Hier sind die neuesten Aktualisierungen im Bereich der Digitalen Transformation für die Woche vom 31. Juli 2023. Dies beinhaltet Neuigkeiten über die Partnerschaft zwischen Ericsson und Intel zur Weiterentwicklung der 5G-Technologie, die Bemühungen von ChatGPT im Kampf gegen Cyberkriminalität und das Aufkommen KI-gesteuerter Softwareentwicklung."
+video: "https://youtu.be/"
+description: "Hier sind die neuesten Aktualisierungen im Bereich der Digitalen Transformation für die Woche vom 31. Juli 2023. Dies beinhaltet Neuigkeiten über die Partnerschaft zwischen Ericsson und Intel zur Weiterentwicklung der 5G-Technologie, die Bemühungen von ChatGPT im Kampf gegen Cyberkriminalität und das Aufkommen KI-gesteuerter Softwareentwicklung."
 ---
 
 

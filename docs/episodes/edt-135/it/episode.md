@@ -3,11 +3,8 @@ layout: posts
 title: "AI affidabile ed etica"
 number: 135
 permalink: episode-EDT135-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 135
 tags:
     - ai

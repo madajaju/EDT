@@ -3,11 +3,8 @@ layout: posts
 title: "Sicurezza Hardware: Imperativo per la Trasformazione dei Dati"
 number: 27
 permalink: episode-EDT27-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 27
 tags:
     - datagovernance

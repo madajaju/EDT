@@ -3,11 +3,8 @@ layout: posts
 title: "Praktische Anwendungsfälle für Optane Persistent Memory"
 number: 51
 permalink: episode-EDT51-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 51
 tags:
     - dataarchitecture

@@ -5,9 +5,7 @@ number: 38
 ref: brief-EDW38-pt
 permalink: brief-EDW38-pt
 lang: pt
-has_children: false
-parent: Notícias Semanais
-grand_parent: Português
+nav_exclude: true
 nav_order: 38
 tags:
     - keywords
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Abraçando as notícias digitais da semana de 22 de outubro de 2023, incluindo notícias sobre cibersegurança, computação ubíqua e inteligência artificial. Os destaques desta semana incluem voltar ao papel e caneta nas distribuições escolares, ficar atento ao Dia Q e diretrizes de IA na área da saúde.
-video: https://youtu.be/gWZucMFVH3A
-description: Abraçando as notícias digitais da semana de 22 de outubro de 2023, incluindo notícias sobre cibersegurança, computação ubíqua e inteligência artificial. Os destaques desta semana incluem voltar ao papel e caneta nas distribuições escolares, ficar atento ao Dia Q e diretrizes de IA na área da saúde.
+summary: "Abraçando as notícias digitais da semana de 22 de outubro de 2023, incluindo notícias sobre cibersegurança, computação ubíqua e inteligência artificial. Os destaques desta semana incluem voltar ao papel e caneta nas distribuições escolares, ficar atento ao Dia Q e diretrizes de IA na área da saúde."
+video: "https://youtu.be/gWZucMFVH3A"
+description: "Abraçando as notícias digitais da semana de 22 de outubro de 2023, incluindo notícias sobre cibersegurança, computação ubíqua e inteligência artificial. Os destaques desta semana incluem voltar ao papel e caneta nas distribuições escolares, ficar atento ao Dia Q e diretrizes de IA na área da saúde."
 ---
 
 

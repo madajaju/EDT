@@ -3,11 +3,8 @@ layout: posts
 title: "Coloque el título aquí."
 number: 12
 permalink: episode-EDT12-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 12
 tags:
     - remotelearning

@@ -3,11 +3,8 @@ layout: posts
 title: "La nascita delle piattaforme di intelligenza grafica"
 number: 106
 permalink: episode-EDT106-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 106
 tags:
     - data

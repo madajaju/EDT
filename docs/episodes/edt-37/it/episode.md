@@ -3,11 +3,8 @@ layout: posts
 title: "2020 in Rassegna"
 number: 37
 permalink: episode-EDT37-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 37
 tags:
     - covid

@@ -5,9 +5,7 @@ number: 47
 ref: brief-EDW47-es
 permalink: brief-EDW47-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 47
 tags:
     - ai
@@ -42,9 +40,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Durante la semana del 24 de diciembre de 2023, hubo varias noticias sobre transformación digital. Estas historias cubrieron temas como ciberseguridad, inteligencia artificial y computación. Algunos de los aspectos destacados de la semana incluyeron un aumento en los ciberataques durante la temporada de vacaciones, el esfuerzo de Intel para desarrollar aún más la tecnología de IA y la tendencia hacia el control de costos en la computación en la nube.
-video: https://youtu.be/lCB99-h3tYc
-description: Durante la semana del 24 de diciembre de 2023, hubo varias noticias sobre transformación digital. Estas historias cubrieron temas como ciberseguridad, inteligencia artificial y computación. Algunos de los aspectos destacados de la semana incluyeron un aumento en los ciberataques durante la temporada de vacaciones, el esfuerzo de Intel para desarrollar aún más la tecnología de IA y la tendencia hacia el control de costos en la computación en la nube.
+summary: "Durante la semana del 24 de diciembre de 2023, hubo varias noticias sobre transformación digital. Estas historias cubrieron temas como ciberseguridad, inteligencia artificial y computación. Algunos de los aspectos destacados de la semana incluyeron un aumento en los ciberataques durante la temporada de vacaciones, el esfuerzo de Intel para desarrollar aún más la tecnología de IA y la tendencia hacia el control de costos en la computación en la nube."
+video: "https://youtu.be/lCB99-h3tYc"
+description: "Durante la semana del 24 de diciembre de 2023, hubo varias noticias sobre transformación digital. Estas historias cubrieron temas como ciberseguridad, inteligencia artificial y computación. Algunos de los aspectos destacados de la semana incluyeron un aumento en los ciberataques durante la temporada de vacaciones, el esfuerzo de Intel para desarrollar aún más la tecnología de IA y la tendencia hacia el control de costos en la computación en la nube."
 ---
 
 

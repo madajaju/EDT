@@ -3,11 +3,8 @@ layout: posts
 title: "No Code (RPA) Approach to Back Office Efficiency"
 number: 32
 permalink: episode-EDT32-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 32
 tags:
     - rpa

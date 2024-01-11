@@ -3,11 +3,8 @@ layout: posts
 title: "História das Comunicações Avançadas"
 number: 108
 permalink: episode-EDT108-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 108
 tags:
     - 5g

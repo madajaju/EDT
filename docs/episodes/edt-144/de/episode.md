@@ -3,11 +3,8 @@ layout: posts
 title: "Wissenschaft hinter den digitalen Zwillingen"
 number: 144
 permalink: episode-EDT144-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 144
 tags:
     - edge

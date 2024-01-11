@@ -3,11 +3,8 @@ layout: posts
 title: "Shifting from Infrastructure to Workloads"
 number: 82
 permalink: episode-EDT82-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 82
 tags:
     - cloudmigration

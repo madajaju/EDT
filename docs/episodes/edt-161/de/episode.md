@@ -3,11 +3,8 @@ layout: posts
 title: "Natürliche Sprachdatenanalytik"
 number: 161
 permalink: episode-EDT161-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 161
 tags:
     - collectiongenerativeai

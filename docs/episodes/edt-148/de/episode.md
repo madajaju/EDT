@@ -3,11 +3,8 @@ layout: posts
 title: "Sicherung des Remote-Mitarbeiters durch mobile Virtualisierung"
 number: 148
 permalink: episode-EDT148-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 148
 tags:
     - remoteworker
@@ -23,9 +20,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "In dieser Folge des Podcasts "Embracing Digital Transformation" führt Moderator Darren Pulsipher ein aufschlussreiches Gespräch mit dem speziellen Gast Jared Shepard, dem CEO von Hypori. Das Interview konzentriert sich auf das wichtige Thema der Sicherung von Remote-Mitarbeitern durch mobile Virtualisierung. Jared Shepards außergewöhnlicher Werdegang vom Schulabbrecher zum CEO verleiht der Diskussion eine inspirierende Dimension."
+summary: "In dieser Folge des Podcasts Embracing Digital Transformation führt Moderator Darren Pulsipher ein aufschlussreiches Gespräch mit dem speziellen Gast Jared Shepard, dem CEO von Hypori. Das Interview konzentriert sich auf das wichtige Thema der Sicherung von Remote-Mitarbeitern durch mobile Virtualisierung. Jared Shepards außergewöhnlicher Werdegang vom Schulabbrecher zum CEO verleiht der Diskussion eine inspirierende Dimension."
 video: "https://youtu.be/url"
-description: "In dieser Folge des Podcasts "Embracing Digital Transformation" führt Moderator Darren Pulsipher ein aufschlussreiches Gespräch mit dem speziellen Gast Jared Shepard, dem CEO von Hypori. Das Interview konzentriert sich auf das wichtige Thema der Sicherung von Remote-Mitarbeitern durch mobile Virtualisierung. Jared Shepards außergewöhnlicher Werdegang vom Schulabbrecher zum CEO verleiht der Diskussion eine inspirierende Dimension."
+description: "In dieser Folge des Podcasts Embracing Digital Transformation führt Moderator Darren Pulsipher ein aufschlussreiches Gespräch mit dem speziellen Gast Jared Shepard, dem CEO von Hypori. Das Interview konzentriert sich auf das wichtige Thema der Sicherung von Remote-Mitarbeitern durch mobile Virtualisierung. Jared Shepards außergewöhnlicher Werdegang vom Schulabbrecher zum CEO verleiht der Diskussion eine inspirierende Dimension."
 ---
 
 <div>

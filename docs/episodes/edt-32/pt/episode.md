@@ -3,11 +3,8 @@ layout: posts
 title: "Abordagem Sem Codificação (RPA) para Eficiência do Back Office"
 number: 32
 permalink: episode-EDT32-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 32
 tags:
     - rpa
@@ -25,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "O episódio de hoje é a parte 2 de uma conversa com Sean Chou, CEO da Catalytic, e Neil Bahadur, Chefe de Parcerias da Catalytic. Eles falam com Darren sobre sua abordagem de "no-code" para eficiência de escritório com uma plataforma que utiliza tecnologia de RPA e IA."
+summary: "O episódio de hoje é a parte 2 de uma conversa com Sean Chou, CEO da Catalytic, e Neil Bahadur, Chefe de Parcerias da Catalytic. Eles falam com Darren sobre sua abordagem de no-code para eficiência de escritório com uma plataforma que utiliza tecnologia de RPA e IA."
 video: "https://youtu.be/url"
-description: "O episódio de hoje é a parte 2 de uma conversa com Sean Chou, CEO da Catalytic, e Neil Bahadur, Chefe de Parcerias da Catalytic. Eles falam com Darren sobre sua abordagem de "no-code" para eficiência de escritório com uma plataforma que utiliza tecnologia de RPA e IA."
+description: "O episódio de hoje é a parte 2 de uma conversa com Sean Chou, CEO da Catalytic, e Neil Bahadur, Chefe de Parcerias da Catalytic. Eles falam com Darren sobre sua abordagem de no-code para eficiência de escritório com uma plataforma que utiliza tecnologia de RPA e IA."
 ---
 
 <div>

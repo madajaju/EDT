@@ -5,9 +5,7 @@ number: 3
 ref: brief-EDW3-it
 permalink: brief-EDW3-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 3
 tags:
 
@@ -16,9 +14,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Summary
-video: https://youtu.be/
-description: Summary
+summary: "Summary"
+video: "https://youtu.be/"
+description: "Summary"
 ---
 
 

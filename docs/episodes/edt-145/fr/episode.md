@@ -3,11 +3,8 @@ layout: posts
 title: "Attirer les gens de retour au bureau."
 number: 145
 permalink: episode-EDT145-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 145
 tags:
     - people

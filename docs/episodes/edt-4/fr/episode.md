@@ -3,11 +3,8 @@ layout: posts
 title: "Modèle de maturité en gestion de l'information"
 number: 4
 permalink: episode-EDT4-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 4
 tags:
     - data

@@ -3,11 +3,8 @@ layout: posts
 title: "Generative AI in Public Sector"
 number: 171
 permalink: episode-EDT171-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 171
 tags:
     - generativeai

@@ -3,11 +3,8 @@ layout: posts
 title: "Productizing Decisional AI"
 number: 130
 permalink: episode-EDT130-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 130
 tags:
     - collectiongenerativeai

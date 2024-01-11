@@ -5,9 +5,7 @@ number: 48
 ref: brief-EDW48-it
 permalink: brief-EDW48-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 48
 tags:
     - ai
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Notizie sulla Trasformazione Digitale per la settimana del 1 gennaio 2024, che copre la cybersecurity, l'intelligenza artificiale e l'edge computing. Gli argomenti includono IoT e AI in agricoltura, politici ingannati da allucinazioni generate da AI e attacchi cibernetici rivolti all'assistenza sanitaria.
-video: https://youtu.be/2scZ7AoDTqY
-description: Notizie sulla Trasformazione Digitale per la settimana del 1 gennaio 2024, che copre la cybersecurity, l'intelligenza artificiale e l'edge computing. Gli argomenti includono IoT e AI in agricoltura, politici ingannati da allucinazioni generate da AI e attacchi cibernetici rivolti all'assistenza sanitaria.
+summary: "Notizie sulla Trasformazione Digitale per la settimana del 1 gennaio 2024, che copre la cybersecurity, l'intelligenza artificiale e l'edge computing. Gli argomenti includono IoT e AI in agricoltura, politici ingannati da allucinazioni generate da AI e attacchi cibernetici rivolti all'assistenza sanitaria."
+video: "https://youtu.be/2scZ7AoDTqY"
+description: "Notizie sulla Trasformazione Digitale per la settimana del 1 gennaio 2024, che copre la cybersecurity, l'intelligenza artificiale e l'edge computing. Gli argomenti includono IoT e AI in agricoltura, politici ingannati da allucinazioni generate da AI e attacchi cibernetici rivolti all'assistenza sanitaria."
 ---
 
 

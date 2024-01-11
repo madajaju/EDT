@@ -5,9 +5,7 @@ number: 19
 ref: brief-EDW19-fr
 permalink: brief-EDW19-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 19
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: La Transformation Numérique pour la semaine du 12 juin 2023 comprend le développement d'une force cybernétique de 1 million, de nombreuses pannes de cloud et l'écriture de code par l'IA pour la bibliothèque standard C++.
-video: https://youtu.be/
-description: La Transformation Numérique pour la semaine du 12 juin 2023 comprend le développement d'une force cybernétique de 1 million, de nombreuses pannes de cloud et l'écriture de code par l'IA pour la bibliothèque standard C++.
+summary: "La Transformation Numérique pour la semaine du 12 juin 2023 comprend le développement d'une force cybernétique de 1 million, de nombreuses pannes de cloud et l'écriture de code par l'IA pour la bibliothèque standard C++."
+video: "https://youtu.be/"
+description: "La Transformation Numérique pour la semaine du 12 juin 2023 comprend le développement d'une force cybernétique de 1 million, de nombreuses pannes de cloud et l'écriture de code par l'IA pour la bibliothèque standard C++."
 ---
 
 

@@ -3,11 +3,8 @@ layout: posts
 title: "Architecture Zero Trust"
 number: 172
 permalink: episode-EDT172-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 172
 tags:
     - zta

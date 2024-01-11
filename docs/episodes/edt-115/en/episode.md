@@ -3,11 +3,8 @@ layout: posts
 title: "Blocking and Tackling of Security"
 number: 115
 permalink: episode-EDT115-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 115
 tags:
     - zta

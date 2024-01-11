@@ -3,11 +3,8 @@ layout: posts
 title: "Organización del Intermediario de la Nube Parte 2"
 number: 57
 permalink: episode-EDT57-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 57
 tags:
     - cloudbroker

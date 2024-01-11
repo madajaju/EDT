@@ -3,11 +3,8 @@ layout: posts
 title: "Generative KI mit Claude"
 number: 173
 permalink: episode-EDT173-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 173
 tags:
     - genai

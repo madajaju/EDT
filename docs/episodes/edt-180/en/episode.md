@@ -3,11 +3,8 @@ layout: posts
 title: "Generative AI in Higher Education (Revisited)"
 number: 180
 permalink: episode-EDT180-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 180
 tags:
     - embracingdigitaltransformation

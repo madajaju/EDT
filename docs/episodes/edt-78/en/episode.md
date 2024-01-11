@@ -3,11 +3,8 @@ layout: posts
 title: "Understanding the Shared Responsibility Security Model"
 number: 78
 permalink: episode-EDT78-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 78
 tags:
     - multicloud

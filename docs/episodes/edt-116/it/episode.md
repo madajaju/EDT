@@ -3,11 +3,8 @@ layout: posts
 title: "Un argomento per un approccio olistico alla sicurezza delle infrastrutture critiche"
 number: 116
 permalink: episode-EDT116-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 116
 tags:
     - criticalinfrastructure

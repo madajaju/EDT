@@ -5,9 +5,7 @@ number: 20
 ref: brief-EDW20-it
 permalink: brief-EDW20-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 20
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Notizie sulla trasformazione digitale della settimana del 19 giugno 2023, tra cui storie di manager che sostituiscono i lavoratori con l'IA, nuovi guasti alle Cloud e leggi sulla privacy che colpiscono le grandi aziende tech.
-video: https://youtu.be/JTHJTafX0dU
-description: Notizie sulla trasformazione digitale della settimana del 19 giugno 2023, tra cui storie di manager che sostituiscono i lavoratori con l'IA, nuovi guasti alle Cloud e leggi sulla privacy che colpiscono le grandi aziende tech.
+summary: "Notizie sulla trasformazione digitale della settimana del 19 giugno 2023, tra cui storie di manager che sostituiscono i lavoratori con l'IA, nuovi guasti alle Cloud e leggi sulla privacy che colpiscono le grandi aziende tech."
+video: "https://youtu.be/JTHJTafX0dU"
+description: "Notizie sulla trasformazione digitale della settimana del 19 giugno 2023, tra cui storie di manager che sostituiscono i lavoratori con l'IA, nuovi guasti alle Cloud e leggi sulla privacy che colpiscono le grandi aziende tech."
 ---
 
 

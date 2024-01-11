@@ -3,11 +3,8 @@ layout: posts
 title: "Mudando de Infraestrutura para Cargas de Trabalho"
 number: 82
 permalink: episode-EDT82-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 82
 tags:
     - cloudmigration
@@ -25,9 +22,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Darren Pulsipher, Arquiteto Principal de Soluções da Intel, continua sua conversa com Sarah Musick, Arquiteta de Soluções em Nuvem da Intel, sobre a mudança de infraestrutura para cargas de trabalho. Por favor, coloque na playlist "Abraçando a Transformação Digital"."
+summary: "Darren Pulsipher, Arquiteto Principal de Soluções da Intel, continua sua conversa com Sarah Musick, Arquiteta de Soluções em Nuvem da Intel, sobre a mudança de infraestrutura para cargas de trabalho. Por favor, coloque na playlist Abraçando a Transformação Digital."
 video: "https://youtu.be/url"
-description: "Darren Pulsipher, Arquiteto Principal de Soluções da Intel, continua sua conversa com Sarah Musick, Arquiteta de Soluções em Nuvem da Intel, sobre a mudança de infraestrutura para cargas de trabalho. Por favor, coloque na playlist "Abraçando a Transformação Digital"."
+description: "Darren Pulsipher, Arquiteto Principal de Soluções da Intel, continua sua conversa com Sarah Musick, Arquiteta de Soluções em Nuvem da Intel, sobre a mudança de infraestrutura para cargas de trabalho. Por favor, coloque na playlist Abraçando a Transformação Digital."
 ---
 
 <div>

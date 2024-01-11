@@ -3,11 +3,8 @@ layout: posts
 title: "Operazionalizzare i flussi di dati"
 number: 25
 permalink: episode-EDT25-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 25
 tags:
     - dataarchitecture

@@ -3,11 +3,8 @@ layout: posts
 title: "Suivre et sécuriser le passage du Bit de l'Edge vers le Cloud"
 number: 64
 permalink: episode-EDT64-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 64
 tags:
     - edge

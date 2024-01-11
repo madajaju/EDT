@@ -3,11 +3,8 @@ layout: posts
 title: "Generative AI und Automatisierung (Google Bard)."
 number: 147
 permalink: episode-EDT147-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 147
 tags:
     - generativeai

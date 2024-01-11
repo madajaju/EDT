@@ -3,11 +3,8 @@ layout: posts
 title: "Casos de uso de GenAI"
 number: 154
 permalink: episode-EDT154-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 154
 tags:
     - genai

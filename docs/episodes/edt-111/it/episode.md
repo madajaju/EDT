@@ -3,11 +3,8 @@ layout: posts
 title: "Realizzare il potenziale delle Smart City"
 number: 111
 permalink: episode-EDT111-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 111
 tags:
 

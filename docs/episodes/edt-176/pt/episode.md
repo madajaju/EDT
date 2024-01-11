@@ -3,11 +3,8 @@ layout: posts
 title: "Dados Compartilhados de Zero Confiança"
 number: 176
 permalink: episode-EDT176-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 176
 tags:
     - shamimnaqvi

@@ -3,11 +3,8 @@ layout: posts
 title: "Protezione dei dati con elaborazione confidenziale."
 number: 142
 permalink: episode-EDT142-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 142
 tags:
     - cybersecurity

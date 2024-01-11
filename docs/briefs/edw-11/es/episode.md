@@ -5,9 +5,7 @@ number: 11
 ref: brief-EDW11-es
 permalink: brief-EDW11-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 11
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Resumen
-video: https://youtu.be/
-description: Resumen
+summary: "Resumen"
+video: "https://youtu.be/"
+description: "Resumen"
 ---
 
 

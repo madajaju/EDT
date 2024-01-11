@@ -3,11 +3,8 @@ layout: posts
 title: "Trabalho Remoto Antes, Durante e Depois da Pandemia"
 number: 49
 permalink: episode-EDT49-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 49
 tags:
     - covid

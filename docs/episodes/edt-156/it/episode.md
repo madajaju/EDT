@@ -3,11 +3,8 @@ layout: posts
 title: "Diventare un'Organizzazione pronta ai dati"
 number: 156
 permalink: episode-EDT156-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 156
 tags:
     - collectiongenerativeai

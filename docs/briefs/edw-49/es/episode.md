@@ -1,13 +1,11 @@
 ---
 layout: brief
-title: January 08, 2024
+title: 2024-01-08
 number: 49
 ref: brief-EDW49-es
 permalink: brief-EDW49-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 49
 tags:
     - ai
@@ -41,9 +39,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Intel anunció recientemente la escisión de la compañía de software de IA Articul8, respaldada por DigitalBridge. El movimiento tiene como objetivo mejorar las capacidades de IA empresarial. Articul8 se centrará en desarrollar soluciones avanzadas de IA, aprovechando la experiencia de Intel en el campo. Esta movida estratégica significa el compromiso de Intel con el avance de las tecnologías de inteligencia artificial para aplicaciones industriales más amplias.
-video: https://youtu.be/8xdvfzjO8Hw
-description: Intel anunció recientemente la escisión de la compañía de software de IA Articul8, respaldada por DigitalBridge. El movimiento tiene como objetivo mejorar las capacidades de IA empresarial. Articul8 se centrará en desarrollar soluciones avanzadas de IA, aprovechando la experiencia de Intel en el campo. Esta movida estratégica significa el compromiso de Intel con el avance de las tecnologías de inteligencia artificial para aplicaciones industriales más amplias.
+summary: "Intel anunció recientemente la escisión de la compañía de software de IA Articul8, respaldada por DigitalBridge. El movimiento tiene como objetivo mejorar las capacidades de IA empresarial. Articul8 se centrará en desarrollar soluciones avanzadas de IA, aprovechando la experiencia de Intel en el campo. Esta movida estratégica significa el compromiso de Intel con el avance de las tecnologías de inteligencia artificial para aplicaciones industriales más amplias."
+video: "https://youtu.be/8xdvfzjO8Hw"
+description: "Intel anunció recientemente la escisión de la compañía de software de IA Articul8, respaldada por DigitalBridge. El movimiento tiene como objetivo mejorar las capacidades de IA empresarial. Articul8 se centrará en desarrollar soluciones avanzadas de IA, aprovechando la experiencia de Intel en el campo. Esta movida estratégica significa el compromiso de Intel con el avance de las tecnologías de inteligencia artificial para aplicaciones industriales más amplias."
 ---
 
 
@@ -103,5 +101,4 @@ En dos mil veinticuatro, los datos empresariales y las tecnologías de inteligen
 
 
 Esta semana en el podcast, Darren continúa su serie sobre Abrazando la Inteligencia Artificial Generativa cuando entrevista a Laura Newey después de un semestre de enseñar inglés en la universidad con Chat GPT y la Inteligencia Artificial Generativa como herramienta. Tienes que ver este episodio y compartirlo con tus estudiantes universitarios. [Leer más](https://www.embracingdigital.org/en)
-
 

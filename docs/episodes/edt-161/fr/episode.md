@@ -3,11 +3,8 @@ layout: posts
 title: "Analyse des données de langage naturel"
 number: 161
 permalink: episode-EDT161-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 161
 tags:
     - collectiongenerativeai

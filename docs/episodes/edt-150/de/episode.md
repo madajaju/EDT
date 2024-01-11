@@ -3,11 +3,8 @@ layout: posts
 title: "Nachhaltigkeit mit intelligenten Gebäuden umarmen"
 number: 150
 permalink: episode-EDT150-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 150
 tags:
     - edge

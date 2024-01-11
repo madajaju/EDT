@@ -3,11 +3,8 @@ layout: posts
 title: "Tornando-se uma Organização Preparada para Dados"
 number: 156
 permalink: episode-EDT156-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 156
 tags:
     - collectiongenerativeai

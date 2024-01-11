@@ -3,11 +3,8 @@ layout: posts
 title: "Die AI-Revolution umarmen"
 number: 146
 permalink: episode-EDT146-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 146
 tags:
     - collectiongenerativeai
@@ -22,9 +19,9 @@ guests:
 
 img: thumbnail.jpg
 image: thumbnail.jpg
-summary: "In dieser Folge spricht Darren mit Dr. Michael Lenox über die aufkommende KI-Revolution und wie man sie entweder annehmen oder zerstört werden kann. Michael hat gerade ein neues Buch mit dem Titel "Strategie im digitalen Zeitalter: Meistern der digitalen Transformation" veröffentlicht."
+summary: "In dieser Folge spricht Darren mit Dr. Michael Lenox über die aufkommende KI-Revolution und wie man sie entweder annehmen oder zerstört werden kann. Michael hat gerade ein neues Buch mit dem Titel Strategie im digitalen Zeitalter: Meistern der digitalen Transformation veröffentlicht."
 video: "https://youtu.be/url"
-description: "In dieser Folge spricht Darren mit Dr. Michael Lenox über die aufkommende KI-Revolution und wie man sie entweder annehmen oder zerstört werden kann. Michael hat gerade ein neues Buch mit dem Titel "Strategie im digitalen Zeitalter: Meistern der digitalen Transformation" veröffentlicht."
+description: "In dieser Folge spricht Darren mit Dr. Michael Lenox über die aufkommende KI-Revolution und wie man sie entweder annehmen oder zerstört werden kann. Michael hat gerade ein neues Buch mit dem Titel Strategie im digitalen Zeitalter: Meistern der digitalen Transformation veröffentlicht."
 ---
 
 <div>

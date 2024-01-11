@@ -3,11 +3,8 @@ layout: posts
 title: "Los beneficios de las bases de datos gráficas"
 number: 97
 permalink: episode-EDT97-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 97
 tags:
     - data

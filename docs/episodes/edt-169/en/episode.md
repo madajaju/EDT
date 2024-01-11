@@ -3,11 +3,8 @@ layout: posts
 title: "Keeping the Human in AI"
 number: 169
 permalink: episode-EDT169-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 169
 tags:
     - userexperience

@@ -5,9 +5,7 @@ number: 19
 ref: brief-EDW19-it
 permalink: brief-EDW19-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 19
 tags:
     - ai
@@ -20,9 +18,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: La trasformazione digitale per la settimana del 12 giugno 2023 include lo sviluppo di una forza cibernetica di 1 milione di unità, molte interruzioni cloud e l'utilizzo dell'IA per la scrittura di codice che andrà nella libreria standard C++.
-video: https://youtu.be/uPdsWfkMbTw
-description: La trasformazione digitale per la settimana del 12 giugno 2023 include lo sviluppo di una forza cibernetica di 1 milione di unità, molte interruzioni cloud e l'utilizzo dell'IA per la scrittura di codice che andrà nella libreria standard C++.
+summary: "La trasformazione digitale per la settimana del 12 giugno 2023 include lo sviluppo di una forza cibernetica di 1 milione di unità, molte interruzioni cloud e l'utilizzo dell'IA per la scrittura di codice che andrà nella libreria standard C++."
+video: "https://youtu.be/uPdsWfkMbTw"
+description: "La trasformazione digitale per la settimana del 12 giugno 2023 include lo sviluppo di una forza cibernetica di 1 milione di unità, molte interruzioni cloud e l'utilizzo dell'IA per la scrittura di codice che andrà nella libreria standard C++."
 ---
 
 

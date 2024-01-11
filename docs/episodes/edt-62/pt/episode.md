@@ -3,11 +3,8 @@ layout: posts
 title: "Desmistificando 5G, Edge e AI"
 number: 62
 permalink: episode-EDT62-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 62
 tags:
     - edge

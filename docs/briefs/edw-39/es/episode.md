@@ -5,9 +5,7 @@ number: 39
 ref: brief-EDW39-es
 permalink: brief-EDW39-es
 lang: es
-has_children: false
-parent: Noticias Semanales
-grand_parent: Español
+nav_exclude: true
 nav_order: 39
 tags:
     - ai
@@ -23,9 +21,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: En la última edición de nuestro Embracing Digital This Week, te presentamos los últimos avances e historias en el mundo de la ciberseguridad, la computación perimetral y la informática ubicua. En este episodio, cubrimos un nuevo malware llamado "Elegant", las regulaciones de ciberseguridad en California, la investigación del Parlamento del Reino Unido sobre la ciberseguridad de la infraestructura crítica y otras noticias interesantes de la industria tecnológica.
-video: https://youtu.be/pjbxK6N5ao4
-description: En la última edición de nuestro Embracing Digital This Week, te presentamos los últimos avances e historias en el mundo de la ciberseguridad, la computación perimetral y la informática ubicua. En este episodio, cubrimos un nuevo malware llamado "Elegant", las regulaciones de ciberseguridad en California, la investigación del Parlamento del Reino Unido sobre la ciberseguridad de la infraestructura crítica y otras noticias interesantes de la industria tecnológica.
+summary: "En la última edición de nuestro Embracing Digital This Week, te presentamos los últimos avances e historias en el mundo de la ciberseguridad, la computación perimetral y la informática ubicua. En este episodio, cubrimos un nuevo malware llamado Elegant, las regulaciones de ciberseguridad en California, la investigación del Parlamento del Reino Unido sobre la ciberseguridad de la infraestructura crítica y otras noticias interesantes de la industria tecnológica."
+video: "https://youtu.be/pjbxK6N5ao4"
+description: "En la última edición de nuestro Embracing Digital This Week, te presentamos los últimos avances e historias en el mundo de la ciberseguridad, la computación perimetral y la informática ubicua. En este episodio, cubrimos un nuevo malware llamado Elegant, las regulaciones de ciberseguridad en California, la investigación del Parlamento del Reino Unido sobre la ciberseguridad de la infraestructura crítica y otras noticias interesantes de la industria tecnológica."
 ---
 
 

@@ -3,11 +3,8 @@ layout: posts
 title: "Creación de perspicacia en organizaciones centradas en datos"
 number: 23
 permalink: episode-EDT23-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 23
 tags:
     - aiml

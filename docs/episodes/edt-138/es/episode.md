@@ -3,11 +3,8 @@ layout: posts
 title: "Evolución de la Nube"
 number: 138
 permalink: episode-EDT138-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 138
 tags:
     - cloud

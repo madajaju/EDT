@@ -3,11 +3,8 @@ layout: posts
 title: "Gestão de Dados Moderna"
 number: 71
 permalink: episode-EDT71-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 71
 tags:
     - datagovernance

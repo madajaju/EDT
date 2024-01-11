@@ -3,11 +3,8 @@ layout: posts
 title: "IDC Richtungen 2022"
 number: 83
 permalink: episode-EDT83-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 83
 tags:
     - data

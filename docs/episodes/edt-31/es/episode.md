@@ -3,11 +3,8 @@ layout: posts
 title: "Mejorando el valor del empleado con Catalítica"
 number: 31
 permalink: episode-EDT31-es
-has_children: false
 lang: es
 nav_exclude: true
-parent: Episodios
-grand_parent: Español
 nav_order: 31
 tags:
     - rpa

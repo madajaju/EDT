@@ -5,9 +5,7 @@ number: 43
 ref: brief-EDW43-en
 permalink: brief-EDW43-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 43
 tags:
     - uniquehandmadewoodfurniture.
@@ -39,9 +37,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digital Transformation news for the week of November 26, 2023. From the transformational shifts in artificial intelligence leadership to the imperative focus on cybersecurity and the unveiling of advanced computing solutions, this compilation encapsulates pivotal moments in the ever-evolving technology landscape. Join us as we delve into the intricacies of recent developments, illuminating the profound impacts they carry across sectors, and guiding the trajectory of the digital future.
-video: https://youtu.be/dLpMlC52_Pc
-description: Digital Transformation news for the week of November 26, 2023. From the transformational shifts in artificial intelligence leadership to the imperative focus on cybersecurity and the unveiling of advanced computing solutions, this compilation encapsulates pivotal moments in the ever-evolving technology landscape. Join us as we delve into the intricacies of recent developments, illuminating the profound impacts they carry across sectors, and guiding the trajectory of the digital future.
+summary: "Digital Transformation news for the week of November 26, 2023. From the transformational shifts in artificial intelligence leadership to the imperative focus on cybersecurity and the unveiling of advanced computing solutions, this compilation encapsulates pivotal moments in the ever-evolving technology landscape. Join us as we delve into the intricacies of recent developments, illuminating the profound impacts they carry across sectors, and guiding the trajectory of the digital future."
+video: "https://youtu.be/dLpMlC52_Pc"
+description: "Digital Transformation news for the week of November 26, 2023. From the transformational shifts in artificial intelligence leadership to the imperative focus on cybersecurity and the unveiling of advanced computing solutions, this compilation encapsulates pivotal moments in the ever-evolving technology landscape. Join us as we delve into the intricacies of recent developments, illuminating the profound impacts they carry across sectors, and guiding the trajectory of the digital future."
 ---
 
 

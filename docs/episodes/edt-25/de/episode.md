@@ -3,11 +3,8 @@ layout: posts
 title: "Operationalisierung von Datenpipelines"
 number: 25
 permalink: episode-EDT25-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 25
 tags:
     - dataarchitecture

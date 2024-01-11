@@ -5,9 +5,7 @@ number: 35
 ref: brief-EDW35-it
 permalink: brief-EDW35-it
 lang: it
-has_children: false
-parent: Riepilogo Settimanale
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 35
 tags:
     - ai
@@ -33,9 +31,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Notizie sulla trasformazione digitale per la settimana del 1° ottobre, inclusi articoli sulla gestione dei dati, sull'intelligenza artificiale e sulla sicurezza informatica. Vieni a ascoltare la celebrazione del mese della consapevolezza della sicurezza informatica, un'intelligenza artificiale che rende Snoop Dogg un maestro del dungeon per D&D e scopri una nuova architettura dei dati chiamata Polystore.
-video: https://youtu.be/ZZo15Dz7mt8
-description: Notizie sulla trasformazione digitale per la settimana del 1° ottobre, inclusi articoli sulla gestione dei dati, sull'intelligenza artificiale e sulla sicurezza informatica. Vieni a ascoltare la celebrazione del mese della consapevolezza della sicurezza informatica, un'intelligenza artificiale che rende Snoop Dogg un maestro del dungeon per D&D e scopri una nuova architettura dei dati chiamata Polystore.
+summary: "Notizie sulla trasformazione digitale per la settimana del 1° ottobre, inclusi articoli sulla gestione dei dati, sull'intelligenza artificiale e sulla sicurezza informatica. Vieni a ascoltare la celebrazione del mese della consapevolezza della sicurezza informatica, un'intelligenza artificiale che rende Snoop Dogg un maestro del dungeon per D&D e scopri una nuova architettura dei dati chiamata Polystore."
+video: "https://youtu.be/ZZo15Dz7mt8"
+description: "Notizie sulla trasformazione digitale per la settimana del 1° ottobre, inclusi articoli sulla gestione dei dati, sull'intelligenza artificiale e sulla sicurezza informatica. Vieni a ascoltare la celebrazione del mese della consapevolezza della sicurezza informatica, un'intelligenza artificiale che rende Snoop Dogg un maestro del dungeon per D&D e scopri una nuova architettura dei dati chiamata Polystore."
 ---
 
 

@@ -5,9 +5,7 @@ number: 37
 ref: brief-EDW37-en
 permalink: brief-EDW37-en
 lang: en
-has_children: false
-parent: News Briefs
-grand_parent: English
+nav_exclude: true
 nav_order: 37
 tags:
     - compute
@@ -34,9 +32,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Digital Transformation this Week for October 15, 2023, reports ongoing cyberattacks during the Israel-Hamas conflict and the compromising of the &#39;Red Alert System&#39; app. Additionally, generative AI has been shown to reduce cloud migration efforts while the UK&#39;s CMA investigates the public cloud market.
-video: https://youtu.be/hKlIKJwC3M0
-description: Digital Transformation this Week for October 15, 2023, reports ongoing cyberattacks during the Israel-Hamas conflict and the compromising of the &#39;Red Alert System&#39; app. Additionally, generative AI has been shown to reduce cloud migration efforts while the UK&#39;s CMA investigates the public cloud market.
+summary: "Digital Transformation this Week for October 15, 2023, reports ongoing cyberattacks during the Israel-Hamas conflict and the compromising of the &#39;Red Alert System&#39; app. Additionally, generative AI has been shown to reduce cloud migration efforts while the UK&#39;s CMA investigates the public cloud market."
+video: "https://youtu.be/hKlIKJwC3M0"
+description: "Digital Transformation this Week for October 15, 2023, reports ongoing cyberattacks during the Israel-Hamas conflict and the compromising of the &#39;Red Alert System&#39; app. Additionally, generative AI has been shown to reduce cloud migration efforts while the UK&#39;s CMA investigates the public cloud market."
 ---
 
 

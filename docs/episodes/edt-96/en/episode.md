@@ -3,11 +3,8 @@ layout: posts
 title: "Leveraging Virtual Datacenters with Verge.io"
 number: 96
 permalink: episode-EDT96-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 96
 tags:
     - privatecloud

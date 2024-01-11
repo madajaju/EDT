@@ -3,11 +3,8 @@ layout: posts
 title: "Réunion des architectes de solutions Cloud d'Intel"
 number: 80
 permalink: episode-EDT80-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 80
 tags:
     - csa

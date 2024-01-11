@@ -3,11 +3,8 @@ layout: posts
 title: "Combattre l'adversaire cyber en sécurisant votre chaîne d'approvisionnement logicielle"
 number: 91
 permalink: episode-EDT91-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 91
 tags:
     - cybersecurity

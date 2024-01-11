@@ -3,11 +3,8 @@ layout: posts
 title: "Die Dinge, die ich als Regierungs-CTO gewusst hätte"
 number: 86
 permalink: episode-EDT86-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 86
 tags:
     - cto

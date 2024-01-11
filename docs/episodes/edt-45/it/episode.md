@@ -3,11 +3,8 @@ layout: posts
 title: "Non tutti i nuclei sono uguali."
 number: 45
 permalink: episode-EDT45-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 45
 tags:
     - multicloud

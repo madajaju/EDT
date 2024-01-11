@@ -3,11 +3,8 @@ layout: posts
 title: "Données de Confiance Zéro avec SafelyShare"
 number: 177
 permalink: episode-EDT177-fr
-has_children: false
 lang: fr
 nav_exclude: true
-parent: Épisodes
-grand_parent: Français
 nav_order: 177
 tags:
     - safelyshare

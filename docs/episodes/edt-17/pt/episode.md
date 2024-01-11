@@ -3,11 +3,8 @@ layout: posts
 title: "Elastic Search e Intel Optane DCPMM"
 number: 17
 permalink: episode-EDT17-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 17
 tags:
 

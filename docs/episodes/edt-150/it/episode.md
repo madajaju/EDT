@@ -3,11 +3,8 @@ layout: posts
 title: "Abbracciare la sostenibilità con edifici intelligenti."
 number: 150
 permalink: episode-EDT150-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 150
 tags:
     - edge

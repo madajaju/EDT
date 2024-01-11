@@ -3,11 +3,8 @@ layout: posts
 title: "Not All Cores are Equal"
 number: 45
 permalink: episode-EDT45-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 45
 tags:
     - multicloud

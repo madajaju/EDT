@@ -5,9 +5,7 @@ number: 5
 ref: brief-EDW5-fr
 permalink: brief-EDW5-fr
 lang: fr
-has_children: false
-parent: Nouvelles hebdomadaires
-grand_parent: Français
+nav_exclude: true
 nav_order: 5
 tags:
 
@@ -16,9 +14,9 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: Summary
-video: https://youtu.be/
-description: Summary
+summary: "Summary"
+video: "https://youtu.be/"
+description: "Summary"
 ---
 
 

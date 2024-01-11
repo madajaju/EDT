@@ -3,11 +3,8 @@ layout: posts
 title: "Protegendo as Paredes Externas do seu Castelo com Escaneamentos de Vulnerabilidade."
 number: 92
 permalink: episode-EDT92-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 92
 tags:
     - cybersecurity

@@ -3,11 +3,8 @@ layout: posts
 title: "Die Nutzung von KI zum Schutz von Kindern."
 number: 167
 permalink: episode-EDT167-de
-has_children: false
 lang: de
 nav_exclude: true
-parent: Folgen
-grand_parent: Deutsch
 nav_order: 167
 tags:
     - ai

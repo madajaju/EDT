@@ -3,11 +3,8 @@ layout: posts
 title: "Resilient Data in Disruptive Comms"
 number: 136
 permalink: episode-EDT136-en
-has_children: false
 lang: en
 nav_exclude: true
-parent: Episodes
-grand_parent: English
 nav_order: 136
 tags:
     - sabr

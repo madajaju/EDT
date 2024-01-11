@@ -3,11 +3,8 @@ layout: posts
 title: "Violazioni dei dati e catena di approvvigionamento sicura"
 number: 61
 permalink: episode-EDT61-it
-has_children: false
 lang: it
 nav_exclude: true
-parent: Episódios
-grand_parent: Italiano
 nav_order: 61
 tags:
     - datbreach

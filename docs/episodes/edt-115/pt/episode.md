@@ -3,11 +3,8 @@ layout: posts
 title: "Bloqueio e Tackle de Segurança"
 number: 115
 permalink: episode-EDT115-pt
-has_children: false
 lang: pt
 nav_exclude: true
-parent: Episodi
-grand_parent: Português
 nav_order: 115
 tags:
     - zta
