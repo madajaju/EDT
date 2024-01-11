@@ -5,6 +5,7 @@ number: 73
 permalink: episode-EDT73-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 73

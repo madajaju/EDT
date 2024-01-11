@@ -5,6 +5,7 @@ number: 114
 permalink: episode-EDT114-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 114

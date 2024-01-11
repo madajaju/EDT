@@ -5,6 +5,7 @@ number: 109
 permalink: episode-EDT109-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 109

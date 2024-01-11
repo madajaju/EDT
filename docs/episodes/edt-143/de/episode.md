@@ -5,6 +5,7 @@ number: 143
 permalink: episode-EDT143-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 143

@@ -5,6 +5,7 @@ number: 151
 permalink: episode-EDT151-pt
 has_children: false
 lang: pt
+nav_exclude: true
 parent: Episodi
 grand_parent: Português
 nav_order: 151

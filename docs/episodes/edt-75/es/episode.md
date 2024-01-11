@@ -5,6 +5,7 @@ number: 75
 permalink: episode-EDT75-es
 has_children: false
 lang: es
+nav_exclude: true
 parent: Episodios
 grand_parent: Español
 nav_order: 75

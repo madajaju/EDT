@@ -5,6 +5,7 @@ number: 97
 permalink: episode-EDT97-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 97

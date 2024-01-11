@@ -5,6 +5,7 @@ number: 71
 permalink: episode-EDT71-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 71

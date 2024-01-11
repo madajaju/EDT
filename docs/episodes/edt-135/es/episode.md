@@ -5,6 +5,7 @@ number: 135
 permalink: episode-EDT135-es
 has_children: false
 lang: es
+nav_exclude: true
 parent: Episodios
 grand_parent: Español
 nav_order: 135

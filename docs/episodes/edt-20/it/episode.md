@@ -5,6 +5,7 @@ number: 20
 permalink: episode-EDT20-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 20

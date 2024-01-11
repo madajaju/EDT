@@ -5,6 +5,7 @@ number: 93
 permalink: episode-EDT93-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 93

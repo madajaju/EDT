@@ -5,6 +5,7 @@ number: 130
 permalink: episode-EDT130-es
 has_children: false
 lang: es
+nav_exclude: true
 parent: Episodios
 grand_parent: Español
 nav_order: 130

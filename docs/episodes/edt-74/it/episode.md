@@ -5,6 +5,7 @@ number: 74
 permalink: episode-EDT74-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 74

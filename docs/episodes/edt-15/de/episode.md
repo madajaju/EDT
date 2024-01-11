@@ -5,6 +5,7 @@ number: 15
 permalink: episode-EDT15-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 15

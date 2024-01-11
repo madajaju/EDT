@@ -5,6 +5,7 @@ number: 14
 permalink: episode-EDT14-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 14

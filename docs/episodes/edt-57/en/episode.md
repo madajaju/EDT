@@ -5,6 +5,7 @@ number: 57
 permalink: episode-EDT57-en
 has_children: false
 lang: en
+nav_exclude: true
 parent: Episodes
 grand_parent: English
 nav_order: 57

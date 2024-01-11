@@ -5,6 +5,7 @@ number: 52
 permalink: episode-EDT52-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 52

@@ -5,6 +5,7 @@ number: 6
 permalink: episode-EDT6-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 6

@@ -5,6 +5,7 @@ number: 33
 permalink: episode-EDT33-fr
 has_children: false
 lang: fr
+nav_exclude: true
 parent: Épisodes
 grand_parent: Français
 nav_order: 33

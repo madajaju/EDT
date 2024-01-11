@@ -5,6 +5,7 @@ number: 169
 permalink: episode-EDT169-es
 has_children: false
 lang: es
+nav_exclude: true
 parent: Episodios
 grand_parent: Español
 nav_order: 169

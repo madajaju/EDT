@@ -5,6 +5,7 @@ number: 157
 permalink: episode-EDT157-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 157

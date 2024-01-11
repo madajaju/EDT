@@ -5,6 +5,7 @@ number: 114
 permalink: episode-EDT114-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 114

@@ -5,6 +5,7 @@ number: 144
 permalink: episode-EDT144-es
 has_children: false
 lang: es
+nav_exclude: true
 parent: Episodios
 grand_parent: Español
 nav_order: 144

@@ -5,6 +5,7 @@ number: 95
 permalink: episode-EDT95-es
 has_children: false
 lang: es
+nav_exclude: true
 parent: Episodios
 grand_parent: Español
 nav_order: 95

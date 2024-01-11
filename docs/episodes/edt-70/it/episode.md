@@ -5,6 +5,7 @@ number: 70
 permalink: episode-EDT70-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 70

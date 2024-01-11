@@ -5,6 +5,7 @@ number: 57
 permalink: episode-EDT57-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 57

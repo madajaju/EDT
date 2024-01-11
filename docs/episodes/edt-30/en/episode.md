@@ -5,6 +5,7 @@ number: 30
 permalink: episode-EDT30-en
 has_children: false
 lang: en
+nav_exclude: true
 parent: Episodes
 grand_parent: English
 nav_order: 30

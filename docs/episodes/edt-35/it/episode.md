@@ -5,6 +5,7 @@ number: 35
 permalink: episode-EDT35-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 35

@@ -5,6 +5,7 @@ number: 115
 permalink: episode-EDT115-fr
 has_children: false
 lang: fr
+nav_exclude: true
 parent: Épisodes
 grand_parent: Français
 nav_order: 115

@@ -5,6 +5,7 @@ number: 47
 permalink: episode-EDT47-fr
 has_children: false
 lang: fr
+nav_exclude: true
 parent: Épisodes
 grand_parent: Français
 nav_order: 47

@@ -5,6 +5,7 @@ number: 107
 permalink: episode-EDT107-en
 has_children: false
 lang: en
+nav_exclude: true
 parent: Episodes
 grand_parent: English
 nav_order: 107

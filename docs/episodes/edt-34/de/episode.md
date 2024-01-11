@@ -5,6 +5,7 @@ number: 34
 permalink: episode-EDT34-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 34

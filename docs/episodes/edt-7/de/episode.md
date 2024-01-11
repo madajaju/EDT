@@ -5,6 +5,7 @@ number: 7
 permalink: episode-EDT7-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 7

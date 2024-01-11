@@ -5,6 +5,7 @@ number: 65
 permalink: episode-EDT65-fr
 has_children: false
 lang: fr
+nav_exclude: true
 parent: Épisodes
 grand_parent: Français
 nav_order: 65

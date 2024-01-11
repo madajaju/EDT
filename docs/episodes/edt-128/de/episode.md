@@ -5,6 +5,7 @@ number: 128
 permalink: episode-EDT128-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 128

@@ -5,6 +5,7 @@ number: 145
 permalink: episode-EDT145-en
 has_children: false
 lang: en
+nav_exclude: true
 parent: Episodes
 grand_parent: English
 nav_order: 145

@@ -5,6 +5,7 @@ number: 137
 permalink: episode-EDT137-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 137

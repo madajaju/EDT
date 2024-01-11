@@ -5,6 +5,7 @@ number: 18
 permalink: episode-EDT18-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 18

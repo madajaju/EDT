@@ -5,6 +5,7 @@ number: 28
 permalink: episode-EDT28-es
 has_children: false
 lang: es
+nav_exclude: true
 parent: Episodios
 grand_parent: Español
 nav_order: 28

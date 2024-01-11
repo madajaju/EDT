@@ -5,6 +5,7 @@ number: 65
 permalink: episode-EDT65-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 65

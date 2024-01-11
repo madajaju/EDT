@@ -5,6 +5,7 @@ number: 92
 permalink: episode-EDT92-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 92

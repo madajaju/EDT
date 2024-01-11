@@ -5,6 +5,7 @@ number: 85
 permalink: episode-EDT85-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 85

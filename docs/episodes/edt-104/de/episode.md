@@ -5,6 +5,7 @@ number: 104
 permalink: episode-EDT104-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 104

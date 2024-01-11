@@ -5,6 +5,7 @@ number: 68
 permalink: episode-EDT68-es
 has_children: false
 lang: es
+nav_exclude: true
 parent: Episodios
 grand_parent: Español
 nav_order: 68

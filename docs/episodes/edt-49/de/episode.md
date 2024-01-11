@@ -5,6 +5,7 @@ number: 49
 permalink: episode-EDT49-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 49

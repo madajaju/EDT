@@ -5,6 +5,7 @@ number: 171
 permalink: episode-EDT171-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 171

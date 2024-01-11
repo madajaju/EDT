@@ -5,6 +5,7 @@ number: 148
 permalink: episode-EDT148-es
 has_children: false
 lang: es
+nav_exclude: true
 parent: Episodios
 grand_parent: Español
 nav_order: 148

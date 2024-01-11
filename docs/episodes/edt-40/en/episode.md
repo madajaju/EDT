@@ -5,6 +5,7 @@ number: 40
 permalink: episode-EDT40-en
 has_children: false
 lang: en
+nav_exclude: true
 parent: Episodes
 grand_parent: English
 nav_order: 40

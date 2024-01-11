@@ -5,6 +5,7 @@ number: 11
 permalink: episode-EDT11-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 11

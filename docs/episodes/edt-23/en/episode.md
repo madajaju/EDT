@@ -5,6 +5,7 @@ number: 23
 permalink: episode-EDT23-en
 has_children: false
 lang: en
+nav_exclude: true
 parent: Episodes
 grand_parent: English
 nav_order: 23

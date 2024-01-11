@@ -5,6 +5,7 @@ number: 94
 permalink: episode-EDT94-en
 has_children: false
 lang: en
+nav_exclude: true
 parent: Episodes
 grand_parent: English
 nav_order: 94

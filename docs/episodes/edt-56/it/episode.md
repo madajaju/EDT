@@ -5,6 +5,7 @@ number: 56
 permalink: episode-EDT56-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 56

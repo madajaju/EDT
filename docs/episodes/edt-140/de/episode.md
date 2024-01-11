@@ -5,6 +5,7 @@ number: 140
 permalink: episode-EDT140-de
 has_children: false
 lang: de
+nav_exclude: true
 parent: Folgen
 grand_parent: Deutsch
 nav_order: 140

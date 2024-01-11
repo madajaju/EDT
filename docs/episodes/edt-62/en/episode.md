@@ -5,6 +5,7 @@ number: 62
 permalink: episode-EDT62-en
 has_children: false
 lang: en
+nav_exclude: true
 parent: Episodes
 grand_parent: English
 nav_order: 62

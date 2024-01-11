@@ -5,6 +5,7 @@ number: 84
 permalink: episode-EDT84-it
 has_children: false
 lang: it
+nav_exclude: true
 parent: Episódios
 grand_parent: Italiano
 nav_order: 84

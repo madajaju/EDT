@@ -5,6 +5,7 @@ number: 48
 permalink: episode-EDT48-es
 has_children: false
 lang: es
+nav_exclude: true
 parent: Episodios
 grand_parent: Español
 nav_order: 48
