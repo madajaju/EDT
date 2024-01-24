@@ -10,8 +10,8 @@ image: {{page.img}}
 <h1>#{{ page.title }}</h1>
 
 <h2>Episodes</h2>
-{% for spage in site.pages %}
-{% if spage.layout == "posts" %}
+{% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang', 'en' %}
+{% for spage in sortedEpisodes.pages %}
 {% if spage.tags contains page.title %}
 <div style="display: flex;">
     <p class="episode">
@@ -20,7 +20,6 @@ image: {{page.img}}
     {{ spage.summary }}
     </p>
 </div>
-{% endif %}
 {% endif %}
 {% endfor %}
 

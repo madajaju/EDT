@@ -44,7 +44,7 @@ image: {{page.img}}
 
 
 <h2>Episodes</h2>
-{% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang', site.lang %}
+{% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang', 'en' %}
 {% for spage in sortedEpisodes %}
 {% if spage.guests contains page.title %}
 <div style="display:flex;">
