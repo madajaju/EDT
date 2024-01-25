@@ -19,7 +19,6 @@
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 
 <script>
-    // Sample data for indexing
     let index = {};
     let docs = {};
     fetch('assets/js/lunr-index-en.json')
@@ -35,11 +34,10 @@
         })
         .catch(error => console.error("Error:", error))
 
-    // Function to perform search and display results
     function performSearch() {
         var searchTerm = document.getElementById('searchInput').value;
         var resultsContainer = document.getElementById('searchResults');
-        resultsContainer.innerHTML = ''; // Clear previous results
+        resultsContainer.innerHTML = '';
 
         var results = index.search(searchTerm);
         results.forEach(function (result) {
@@ -50,7 +48,5 @@
             resultsContainer.appendChild(listItem);
         });
     }
-
-    // Event listener for search input
     document.getElementById('searchInput').addEventListener('input', performSearch);
 </script>

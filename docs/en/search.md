@@ -2,7 +2,7 @@
 title: Search
 lang: en
 ---
-# Simple Search Page
+# Search the Podcast
 
 <input type="text" id="searchInput" placeholder="Search...">
 <ul id="searchResults"></ul>
