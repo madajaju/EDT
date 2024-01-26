@@ -29,6 +29,19 @@ display: table;
 clear: both;
 }
 </style>
+
+<style>
+.thumbnail {
+    float: left;
+    margin: 0 15px 0 0;
+}
+.episode {
+    margin: 10px 0;
+}
+.episode:hover {
+    background-color: #cceeff;
+}
+</style>
 {% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang', 'it' %}
 {% assign sortedBriefs = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'brief' | where: 'lang', 'it' %}
 {% assign latestEpisode = sortedEpisodes | first %}
@@ -72,12 +85,3 @@ clear: both;
 {% endif %}
 {% endfor %}
 
-<style>
-.thumbnail {
-    float: left;
-    margin: 0 15px 0 0;
-}
-.episode {
-    margin: 10px 0;
-}
-</style>

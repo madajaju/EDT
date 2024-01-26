@@ -36,8 +36,8 @@
           content="Which digital trends are a flash in the pan—and which will form the foundations of lasting change? With in-depth discussion and expert interviews, Embracing Digital Transformation finds the signal in the noise of the digital revolution. Embracing Digital Transformation is about bringing people, processes, and technology together for effective digital transformation.">
     <meta property="og:description"
           content="Which digital trends are a flash in the pan—and which will form the foundations of lasting change? With in-depth discussion and expert interviews, Embracing Digital Transformation finds the signal in the noise of the digital revolution. Embracing Digital Transformation is about bringing people, processes, and technology together for effective digital transformation.">
-    <link rel="canonical" href="https://embracingdigital.org/en/search.html">
-    <meta property="og:url" content="https://embracingdigital.org/en/search.html">
+    <link rel="canonical" href="https://embracingdigital.org/search.html">
+    <meta property="og:url" content="https://embracingdigital.org/search.html">
     <meta property="og:site_name" content="Embracing Digital Transformation Podcast">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
@@ -61,7 +61,7 @@
             },
             "name": "Darren W Pulsipher"
         },
-        "url": "https://embracingdigital.org/en/search.html"
+        "url": "https://embracingdigital.org/search.html"
     }</script> <!-- End Jekyll SEO tag --> <!-- Google tag (gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script> window.dataLayer = window.dataLayer || [];
@@ -933,7 +933,7 @@
                         Krdzalic</a></li>
                 </ul>
             </li>
-            <li class="nav-list-item"><a href="/en/search.html" class="nav-list-link">Search</a></li>
+            <li class="nav-list-item"><a href="search.html" class="nav-list-link">Search</a></li>
             <li class="nav-list-item">
                 <button class="nav-list-expander btn-reset" aria-label="toggle items in Tags category"
                         aria-pressed="false">
@@ -2546,7 +2546,7 @@
         <div></div>
         <nav aria-label="Auxiliary" class="aux-nav">
             <ul class="aux-nav-list">
-                <li class="aux-nav-list-item"><a href="https://embracingdigital.org/en/search" class="site-button">
+                <li class="aux-nav-list-item"><a href="https://embracingdigital.org/search" class="site-button">
                     Search </a></li>
                 <li class="aux-nav-list-item"><a href="https://6704f0-2.myshopify.com" class="site-button"> Shop </a>
                 </li>
@@ -2596,11 +2596,11 @@
                     // Sample data for indexing
                     let index = {};
                     let docs = {};
-                    fetch('../assets/js/lunr-index-en.json')
+                    fetch('./assets/js/lunr-index-en.json')
                         .then(response => response.json())
                         .then(data => {
                             index = lunr.Index.load(data);
-                            fetch(`../assets/js/docs-en.json`)
+                            fetch(`./assets/js/docs-en.json`)
                                 .then(response => response.json())
                                 .then(data => {
                                     docs = data;
@@ -2616,6 +2616,10 @@
                         resultsContainer.innerHTML = ''; // Clear previous results
 
                         var results = index.search(searchTerm);
+                        let length = results.length;
+                        let count = document.createElement('p');
+                        count.innerHTML = `<i>${length} episodes found!</i>`;
+                        resultsContainer.appendChild(count)
                         results.forEach(function (result) {
                             var doc = docs[result.ref];
                             var listItem = document.createElement('li');
@@ -2624,7 +2628,6 @@
                             resultsContainer.appendChild(listItem);
                         });
                     }
-
                     // Event listener for search input
                     document.getElementById('searchInput').addEventListener('input', performSearch);
                 </script>

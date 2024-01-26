@@ -11,13 +11,13 @@ image: {{page.img}}
 
 <h2>Episodes</h2>
 {% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang', 'en' %}
-{% for spage in sortedEpisodes.pages %}
+{% for spage in sortedEpisodes %}
 {% if spage.tags contains page.title %}
 <div style="display: flex;">
     <p class="episode">
-    <img class="thumbnail" src="../{{ spage.path | remove: spage.name }}/{{ spage.img }}" width="128" height="128">
-    <a href="{{ spage.url }}">{{ spage.number}} - {{ spage.title }}</a><br>
-    {{ spage.summary }}
+        <img class="thumbnail" src="../{{ spage.path | remove: spage.name }}/{{ spage.img }}" width="128" height="128">
+        <a href="{{ spage.url }}">{{ spage.number}} - {{ spage.title }}</a><br>
+        {{ spage.summary }}
     </p>
 </div>
 {% endif %}
@@ -30,5 +30,8 @@ image: {{page.img}}
     }
     .episode {
         margin: 10px 0;
+    }
+    .episode:hover {
+        background-color: #cceeff;
     }
 </style>

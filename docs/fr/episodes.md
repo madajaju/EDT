@@ -9,6 +9,19 @@ child_nav_order: reversed
 ---
 
 # Épisodes
+
+<style>
+.thumbnail {
+    float: left;
+    margin: 0 15px 0 0;
+}
+.episode {
+    margin: 10px 0;
+}
+.episode:hover {
+    background-color: #cceeff;
+}
+</style>
 {% assign spages = site.pages | where: "layout", "posts" | where: "lang", "fr" | sort: "nav_order" | reverse %}
 {% for spage in spages %}
 <div style="display: flex;">

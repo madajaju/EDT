@@ -28,6 +28,9 @@ content: "";
 display: table;
 clear: both;
 }
+.episode:hover {
+    background-color: #cceeff;
+}
 </style>
 {% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang', 'es' | limit: 10 %}
 {% assign sortedBriefs = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'brief' | where: 'lang', 'es' | limit: 10 %}

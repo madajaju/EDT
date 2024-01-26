@@ -27,6 +27,18 @@ Estamos no meio da revolução digital. Durante esse período, pode ser desafiad
   clear: both;
 }
 </style>
+<style>
+.thumbnail {
+    float: left;
+    margin: 0 15px 0 0;
+}
+.episode {
+    margin: 10px 0;
+}
+.episode:hover {
+    background-color: #cceeff;
+}
+</style>
 
 {% assign spages = site.pages | where: "layout", "brief" | where: "lang", "pt" | sort: "nav_order" | reverse %}
 {% for spage in spages %}

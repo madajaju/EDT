@@ -134,4 +134,7 @@ limit: 10 %}
 .episode {
     margin: 10px 0;
 }
+.episode:hover {
+    background-color: #cceeff;
+}
 </style>

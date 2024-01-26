@@ -17,6 +17,9 @@ child_nav_order: reversed
 .episode {
     margin: 10px 0;
 }
+.episode:hover {
+    background-color: #cceeff;
+}
 </style>
 
 {% assign spages = site.pages | where: "layout", "posts" | where: "lang", "de" | sort: "nav_order" | reverse %}

@@ -45,6 +45,9 @@ We are in the throws of the digital revolution. During this time, it can be chal
 .episode {
     margin: 10px 0;
 }
+.episode:hover {
+    background-color: #cceeff;
+}
 </style>
 
 {% assign spages = site.pages | where: "layout", "brief" | where: "lang", "en" | sort: "nav_order" | reverse %}

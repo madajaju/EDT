@@ -8,6 +8,11 @@ nav_order: 3
 child_nav_order: reversed
 ---
 
+<style>
+.episode:hover {
+    background-color: #cceeff;
+}
+</style>
 # Episodios 
 
 {% assign spages = site.pages | where: "layout", "posts" | where: "lang", "es" | sort: "nav_order" | reverse %}

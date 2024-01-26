@@ -36,6 +36,9 @@ Estamos en plena revolución digital. Durante este tiempo, puede resultar desafi
 .episode {
     margin: 10px 0;
 }
+.episode:hover {
+    background-color: #cceeff;
+}
 </style>
 
 {% assign spages = site.pages | where: "layout", "brief" | where: "lang", "es" | sort: "nav_order" | reverse %}
