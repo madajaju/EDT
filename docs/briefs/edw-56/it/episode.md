@@ -42,7 +42,7 @@ tags:
     - school
     - transformation
 
-date: 
+date: Mon Feb 26 2024 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
 
