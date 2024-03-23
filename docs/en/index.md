@@ -47,7 +47,7 @@ You can watch the ED-T the fish cam to check out how he is doing.
 </p>
 </div>
 <div>
-<a href=https://www.youtube.com/watch?v=mEs6XM9Yd2k"><img src="./fish.jpg" ></a>
+<a href="https://www.youtube.com/watch?v=mEs6XM9Yd2k"><img src="./fish.jpg" ></a>
 </div>
 </div>
 
