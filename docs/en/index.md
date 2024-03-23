@@ -18,14 +18,14 @@ lang: en
 .collection-item {
   width: 30%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
   margin: 10px;
   text-align: center;
 }
 
 .collection-item a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
 }
 
 .collection-item img {
@@ -34,8 +34,23 @@ lang: en
 }
 </style>
 
+<div class ="collection">
+<div>
+<p>
 Embracing Digital Transformation has created three series of episodes where we have focused our conversations on the top
 topics of the day. Check out these new series.
+</p>
+
+<p>
+Introducing ED-T the fish!!. He is our new mascot of the Embracing Digital Transformation world and its pocasts.
+You can watch the ED-T the fish cam to check out how he is doing.
+</p>
+</div>
+<div>
+<a href=https://www.youtube.com/watch?v=mEs6XM9Yd2k"><img src="./fish.jpg" ></a>
+</div>
+</div>
+
 
 <div>
 <div class="collection">
