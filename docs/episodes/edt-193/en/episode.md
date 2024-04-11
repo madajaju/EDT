@@ -7,24 +7,12 @@ lang: en
 nav_exclude: true
 nav_order: 193
 tags:
-    - navigatingdigitallandscape
-    - technologyinsights
-    - techveteransbusinessinsights
-    - businessovertechnology
-    - embracingdigitaltransformation
-    - digitaltransformationprocess
-    - leadingwithtechnology
-    - businessgoalorientedprojects
-    - techasanenabler
-    - theessenceofsoftware
-    - softwarerolesinbusiness
-    - automatingmanualprocesses
-    - softwareforbusinessanalysis
-    - essentialorganizationalroles
-    - efficiencythroughdigitaltransformation
-    - businessprocesses
-    - technologyasedrivingforce
-    - digitaltransformationfailureprevention
+    - digitaltransformation
+    - sme
+    - changeagent
+    - organizationalchange
+    - people
+    - culture
 
 date: Thu Apr 04 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
