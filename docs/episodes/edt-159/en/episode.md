@@ -38,14 +38,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In this episode, host Darren interviews Jeremy Harris and delve into the importance of establishing policies and guidelines for successful digital transformation. With the increasing prevalence of digital technologies in various industries, organizations need to adapt and embrace this transformation to stay competitive and meet evolving customer expectations."
-video: "https://youtu.be/url"
+video: "https://youtu.be/gDRtUD9tBIs"
 description: "In this episode, host Darren interviews Jeremy Harris and delve into the importance of establishing policies and guidelines for successful digital transformation. With the increasing prevalence of digital technologies in various industries, organizations need to adapt and embrace this transformation to stay competitive and meet evolving customer expectations."
 ---
 
 <div>
 {% include transistor.html id="4192b830" title="#159 GenAI Policies" %}
 
-{% include youtube.html id="url" %}
+{% include youtube.html id="gDRtUD9tBIs" %}
 </div>
 
 ---

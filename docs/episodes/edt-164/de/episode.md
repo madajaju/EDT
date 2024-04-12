@@ -39,14 +39,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode interviewt Darren Sarah Musick, Cloud Solution Architect bei Intel. Gemeinsam tauchen sie in das Thema Anwendungs- und Arbeitslastportfolios bei der Cloudmigration ein. Mit Sarahs Hintergrund in der Cloudberatung und -optimierung bringt sie wertvolle Einblicke in die Diskussion ein."
-video: "https://youtu.be/url"
+video: "https://youtu.be/Jv47E_WJbu8"
 description: "In dieser Episode interviewt Darren Sarah Musick, Cloud Solution Architect bei Intel. Gemeinsam tauchen sie in das Thema Anwendungs- und Arbeitslastportfolios bei der Cloudmigration ein. Mit Sarahs Hintergrund in der Cloudberatung und -optimierung bringt sie wertvolle Einblicke in die Diskussion ein."
 ---
 
 <div>
 {% include transistor.html id="6f8bf732" title="#164 Application and Workload Portfolios in Cloud Migration" %}
 
-{% include youtube.html id="url" %}
+{% include youtube.html id="Jv47E_WJbu8" %}
 </div>
 
 ---

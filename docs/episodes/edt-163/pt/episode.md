@@ -39,14 +39,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Neste episódio, Darren entrevista o arquiteto de soluções em nuvem, Rajiv Mandal, sobre o desenvolvimento de uma estratégia de nuvem multi-híbrida em sua organização de TI moderna."
-video: "https://youtu.be/url"
+video: "https://youtu.be/I7dBxy6e6Os"
 description: "Neste episódio, Darren entrevista o arquiteto de soluções em nuvem, Rajiv Mandal, sobre o desenvolvimento de uma estratégia de nuvem multi-híbrida em sua organização de TI moderna."
 ---
 
 <div>
 {% include transistor.html id="4bf5da91" title="#163 Developing a Multi-Hybrid Cloud Operating Model" %}
 
-{% include youtube.html id="url" %}
+{% include youtube.html id="I7dBxy6e6Os" %}
 </div>
 
 ---

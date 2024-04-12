@@ -39,14 +39,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, el anfitrión Darren Pulsipher se une al Dr. Jeffrey Lancaster para adentrarse en la intersección entre la inteligencia artificial generativa y la seguridad. La conversación profundiza en los riesgos y desafíos potenciales que rodean el uso de la inteligencia artificial generativa en actividades maliciosas, especialmente en el ámbito de la ciberseguridad."
-video: "https://youtu.be/url"
+video: "https://youtu.be/qk1KRCZajIY"
 description: "En este episodio, el anfitrión Darren Pulsipher se une al Dr. Jeffrey Lancaster para adentrarse en la intersección entre la inteligencia artificial generativa y la seguridad. La conversación profundiza en los riesgos y desafíos potenciales que rodean el uso de la inteligencia artificial generativa en actividades maliciosas, especialmente en el ámbito de la ciberseguridad."
 ---
 
 <div>
 {% include transistor.html id="17e65174" title="#160 Security in Generative AI" %}
 
-{% include youtube.html id="url" %}
+{% include youtube.html id="qk1KRCZajIY" %}
 </div>
 
 ---

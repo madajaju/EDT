@@ -39,14 +39,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este episodio, Darren entrevista al arquitecto de soluciones en la nube, Rajiv Mandal, sobre el desarrollo de una estrategia de múltiples nubes híbridas en tu organización de TI moderna."
-video: "https://youtu.be/url"
+video: "https://youtu.be/I7dBxy6e6Os"
 description: "En este episodio, Darren entrevista al arquitecto de soluciones en la nube, Rajiv Mandal, sobre el desarrollo de una estrategia de múltiples nubes híbridas en tu organización de TI moderna."
 ---
 
 <div>
 {% include transistor.html id="4bf5da91" title="#163 Developing a Multi-Hybrid Cloud Operating Model" %}
 
-{% include youtube.html id="url" %}
+{% include youtube.html id="I7dBxy6e6Os" %}
 </div>
 
 ---

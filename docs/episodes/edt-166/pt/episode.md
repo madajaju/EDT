@@ -16,14 +16,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "A migração para a nuvem não é mais um processo único, mas sim uma jornada contínua que requer avaliação constante, monitoramento e ajustes para alcançar os objetivos comerciais. Neste episódio do nosso podcast, o apresentador Darren Pulsipher conversa com a convidada Christine McMonigal sobre a importância de adotar a melhoria contínua nas operações em nuvem."
-video: "https://youtu.be/url"
+video: "https://youtu.be/7ADj905wH8w"
 description: "A migração para a nuvem não é mais um processo único, mas sim uma jornada contínua que requer avaliação constante, monitoramento e ajustes para alcançar os objetivos comerciais. Neste episódio do nosso podcast, o apresentador Darren Pulsipher conversa com a convidada Christine McMonigal sobre a importância de adotar a melhoria contínua nas operações em nuvem."
 ---
 
 <div>
 {% include transistor.html id="33da9289" title="#166 Agility in Cloud Adoption" %}
 
-{% include youtube.html id="url" %}
+{% include youtube.html id="7ADj905wH8w" %}
 </div>
 
 ---

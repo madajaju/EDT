@@ -39,14 +39,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Folge wird Moderator Darren Pulsipher von Dr. Jeffrey Lancaster begleitet, um in die Schnittstelle zwischen generativer KI und Sicherheit einzutauchen. Das Gespräch geht ausführlich auf die potenziellen Risiken und Herausforderungen ein, die mit der Verwendung generativer KI für böswillige Aktivitäten, insbesondere im Bereich der Cybersicherheit, verbunden sind."
-video: "https://youtu.be/url"
+video: "https://youtu.be/qk1KRCZajIY"
 description: "In dieser Folge wird Moderator Darren Pulsipher von Dr. Jeffrey Lancaster begleitet, um in die Schnittstelle zwischen generativer KI und Sicherheit einzutauchen. Das Gespräch geht ausführlich auf die potenziellen Risiken und Herausforderungen ein, die mit der Verwendung generativer KI für böswillige Aktivitäten, insbesondere im Bereich der Cybersicherheit, verbunden sind."
 ---
 
 <div>
 {% include transistor.html id="17e65174" title="#160 Security in Generative AI" %}
 
-{% include youtube.html id="url" %}
+{% include youtube.html id="qk1KRCZajIY" %}
 </div>
 
 ---

@@ -33,14 +33,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "En este podcast, Darren y Rico Dutton exploran el mundo de las instancias en la nube y los factores a considerar al seleccionar la instancia adecuada para tu carga de trabajo. Discuten las diferentes opciones de cómputo disponibles en la nube, la importancia de encontrar el equilibrio adecuado entre rendimiento y costo, y el papel de los especialistas en la nube en ayudar a las organizaciones a tomar decisiones informadas."
-video: "https://youtu.be/url"
+video: "https://youtu.be/UvDKeoqAwH8"
 description: "En este podcast, Darren y Rico Dutton exploran el mundo de las instancias en la nube y los factores a considerar al seleccionar la instancia adecuada para tu carga de trabajo. Discuten las diferentes opciones de cómputo disponibles en la nube, la importancia de encontrar el equilibrio adecuado entre rendimiento y costo, y el papel de los especialistas en la nube en ayudar a las organizaciones a tomar decisiones informadas."
 ---
 
 <div>
 {% include transistor.html id="5870e205" title="#165 Workload Cloud Placement Factors" %}
 
-{% include youtube.html id="url" %}
+{% include youtube.html id="UvDKeoqAwH8" %}
 </div>
 
 ---

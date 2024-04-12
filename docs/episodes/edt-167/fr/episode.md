@@ -28,14 +28,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Dans un podcast récent, Darren Pulsipher, Architecte Principal des Solutions du Secteur Public chez Intel, a accueilli Rachel Driekosen, Directrice Technique chez Intel, pour discuter de l'utilisation de l'IA dans la protection des enfants en ligne. L'épisode aborde les défis liés aux poursuites et à la découverte des prédateurs d'enfants, le rôle de l'IA dans la gestion des preuves, ainsi que l'importance de la collaboration et des pratiques standardisées."
-video: "https://youtu.be/url"
+video: "https://youtu.be/QaGmvnom928"
 description: "Dans un podcast récent, Darren Pulsipher, Architecte Principal des Solutions du Secteur Public chez Intel, a accueilli Rachel Driekosen, Directrice Technique chez Intel, pour discuter de l'utilisation de l'IA dans la protection des enfants en ligne. L'épisode aborde les défis liés aux poursuites et à la découverte des prédateurs d'enfants, le rôle de l'IA dans la gestion des preuves, ainsi que l'importance de la collaboration et des pratiques standardisées."
 ---
 
 <div>
 {% include transistor.html id="45365336" title="#167 Leveraging AI to Protect Children" %}
 
-{% include youtube.html id="url" %}
+{% include youtube.html id="QaGmvnom928" %}
 </div>
 
 ---

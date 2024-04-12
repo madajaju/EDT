@@ -38,14 +38,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "In dieser Episode interviewt Gastgeber Darren Jeremy Harris und gehen auf die Bedeutung der Festlegung von Richtlinien und Leitlinien für eine erfolgreiche digitale Transformation ein. Angesichts der zunehmenden Verbreitung digitaler Technologien in verschiedenen Branchen müssen Organisationen sich anpassen und diese Transformation annehmen, um wettbewerbsfähig zu bleiben und sich den sich entwickelnden Kundenanforderungen anzupassen."
-video: "https://youtu.be/url"
+video: "https://youtu.be/gDRtUD9tBIs"
 description: "In dieser Episode interviewt Gastgeber Darren Jeremy Harris und gehen auf die Bedeutung der Festlegung von Richtlinien und Leitlinien für eine erfolgreiche digitale Transformation ein. Angesichts der zunehmenden Verbreitung digitaler Technologien in verschiedenen Branchen müssen Organisationen sich anpassen und diese Transformation annehmen, um wettbewerbsfähig zu bleiben und sich den sich entwickelnden Kundenanforderungen anzupassen."
 ---
 
 <div>
 {% include transistor.html id="4192b830" title="#159 GenAI Policies" %}
 
-{% include youtube.html id="url" %}
+{% include youtube.html id="gDRtUD9tBIs" %}
 </div>
 
 ---
