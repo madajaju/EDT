@@ -39,14 +39,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Embarque em uma jornada através da sinergia transformadora da Inteligência Artificial (IA) e Automação de Processos Robóticos (RPA), conforme discutido em uma entrevista esclarecedora entre Darren Pulsipher e Michael Greenberg. Desde a aceleração dos contratos governamentais até a visualização do papel da IA na gestão de propostas, este vídeo ilumina o cenário em evolução da eficiência corporativa e da colaboração entre humanos e máquinas, oferecendo um vislumbre do futuro das dinâmicas de trabalho e do aumento da produtividade."
-video: "https://youtu.be/6603f5f5"
+video: "https://youtu.be/vxWdN2lSiZ4"
 description: "Embarque em uma jornada através da sinergia transformadora da Inteligência Artificial (IA) e Automação de Processos Robóticos (RPA), conforme discutido em uma entrevista esclarecedora entre Darren Pulsipher e Michael Greenberg. Desde a aceleração dos contratos governamentais até a visualização do papel da IA na gestão de propostas, este vídeo ilumina o cenário em evolução da eficiência corporativa e da colaboração entre humanos e máquinas, oferecendo um vislumbre do futuro das dinâmicas de trabalho e do aumento da produtividade."
 ---
 
 <div>
-{% include transistor.html id="14ba53ba" title="#196 Pivot to GenAI Automation: Revolutionizing Workflows" %}
+{% include transistor.html id="6603f5f5" title="#196 Pivot to GenAI Automation: Revolutionizing Workflows" %}
 
-{% include youtube.html id="6603f5f5" %}
+{% include youtube.html id="vxWdN2lSiZ4" %}
 </div>
 
 ---
