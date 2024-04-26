@@ -39,14 +39,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Begeben Sie sich auf eine Reise durch die transformative Synergie von Künstlicher Intelligenz (KI) und Robotic Process Automation (RPA), wie es in einem aufschlussreichen Interview zwischen Darren Pulsipher und Michael Greenberg diskutiert wurde. Von der Beschleunigung der Regierungsvertragsvergabe bis hin zur Vorstellung der Rolle der KI im Angebotsmanagement beleuchtet dieses Video die sich verändernde Landschaft der Unternehmenseffizienz und der Zusammenarbeit zwischen Mensch und Maschine. Es bietet einen Einblick in die Zukunft der Arbeitsdynamik und Produktivitätssteigerung."
-video: "https://youtu.be/Mf6k4v9OLIQ"
+video: "https://youtu.be/6603f5f5"
 description: "Begeben Sie sich auf eine Reise durch die transformative Synergie von Künstlicher Intelligenz (KI) und Robotic Process Automation (RPA), wie es in einem aufschlussreichen Interview zwischen Darren Pulsipher und Michael Greenberg diskutiert wurde. Von der Beschleunigung der Regierungsvertragsvergabe bis hin zur Vorstellung der Rolle der KI im Angebotsmanagement beleuchtet dieses Video die sich verändernde Landschaft der Unternehmenseffizienz und der Zusammenarbeit zwischen Mensch und Maschine. Es bietet einen Einblick in die Zukunft der Arbeitsdynamik und Produktivitätssteigerung."
 ---
 
 <div>
 {% include transistor.html id="14ba53ba" title="#196 Pivot to GenAI Automation: Revolutionizing Workflows" %}
 
-{% include youtube.html id="Mf6k4v9OLIQ" %}
+{% include youtube.html id="6603f5f5" %}
 </div>
 
 ---

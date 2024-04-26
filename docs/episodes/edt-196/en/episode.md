@@ -39,14 +39,14 @@ guests:
 img: thumbnail.jpg
 image: thumbnail.jpg
 summary: "Embark on a journey through the transformative synergy of Artificial Intelligence (AI) and Robotic Process Automation (RPA), as discussed in an enlightening interview between Darren Pulsipher and Michael Greenberg. From expediting government contracting to envisioning AI's role in proposal management, this video illuminates the evolving landscape of corporate efficiency and human-machine collaboration, offering a glimpse into the future of work dynamics and productivity enhancement."
-video: "https://youtu.be/Mf6k4v9OLIQ"
+video: "https://youtu.be/6603f5f5"
 description: "Embark on a journey through the transformative synergy of Artificial Intelligence (AI) and Robotic Process Automation (RPA), as discussed in an enlightening interview between Darren Pulsipher and Michael Greenberg. From expediting government contracting to envisioning AI's role in proposal management, this video illuminates the evolving landscape of corporate efficiency and human-machine collaboration, offering a glimpse into the future of work dynamics and productivity enhancement."
 ---
 
 <div>
 {% include transistor.html id="14ba53ba" title="#196 Pivot to GenAI Automation: Revolutionizing Workflows" %}
 
-{% include youtube.html id="Mf6k4v9OLIQ" %}
+{% include youtube.html id="6603f5f5" %}
 </div>
 
 ---
