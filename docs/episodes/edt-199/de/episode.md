@@ -39,13 +39,13 @@ tags:
 date: Tue May 07 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
-    - Chris Sistito
+    - Chris Sestito
 
 img: thumbnail.jpg
 image: thumbnail.jpg
-summary: "In dieser Folge wird Darren vom Gast Chris Sistito, CEO von Hiddenlayer, begleitet, während wir die Schwachstellen aufdecken, die unsere digitale Zukunft bedrohen, und innovative Lösungen zur Absicherung von KI-Systemen vor Ausbeutung und Missbrauch erkunden."
+summary: "In dieser Folge wird Darren vom Gast Chris Sestito, CEO von Hiddenlayer, begleitet, während wir die Schwachstellen aufdecken, die unsere digitale Zukunft bedrohen, und innovative Lösungen zur Absicherung von KI-Systemen vor Ausbeutung und Missbrauch erkunden."
 video: "https://youtu.be/3nzQK2I3yEU"
-description: "In dieser Folge wird Darren vom Gast Chris Sistito, CEO von Hiddenlayer, begleitet, während wir die Schwachstellen aufdecken, die unsere digitale Zukunft bedrohen, und innovative Lösungen zur Absicherung von KI-Systemen vor Ausbeutung und Missbrauch erkunden."
+description: "In dieser Folge wird Darren vom Gast Chris Sestito, CEO von Hiddenlayer, begleitet, während wir die Schwachstellen aufdecken, die unsere digitale Zukunft bedrohen, und innovative Lösungen zur Absicherung von KI-Systemen vor Ausbeutung und Missbrauch erkunden."
 ---
 
 <div>
