@@ -34,15 +34,15 @@ tags:
     - aiformilitary
     - aifordiplomacy
 
-date: Wed Dec 31 1969 00:00:00 GMT-0800 (Pacific Standard Time)
+date: Sat May 04 2024 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Cette semaine du 5 mai 2024, qui célèbre le numérique, inclut les dernières nouvelles dans les domaines de l'informatique en nuage, de l'intelligence artificielle et de la cybersécurité. Cette semaine, explorez les gros paris d'IBM sur la conquête du marché de l'orchestration du cloud, découvrez le premier avion de chasse contrôlé par l'IA, et comprendre comment l'IA est essentielle dans la guerre cybernétique en cours."
+summary: "Adoptant le numérique, cette semaine du 5 mai 2024, inclut les dernières nouveautés en matière d'informatique en nuage, d'intelligence artificielle et de cybersécurité. Cette semaine, explorez les grands paris d'IBM sur le monopole du marché de l'orchestration en nuage, découvrez le premier jet de combat contrôlé par l'IA et découvrez comment l'IA est essentielle à la guerre cybernétique en cours."
 video: "https://youtu.be/m9CsPbpvOU8"
-description: "Cette semaine du 5 mai 2024, qui célèbre le numérique, inclut les dernières nouvelles dans les domaines de l'informatique en nuage, de l'intelligence artificielle et de la cybersécurité. Cette semaine, explorez les gros paris d'IBM sur la conquête du marché de l'orchestration du cloud, découvrez le premier avion de chasse contrôlé par l'IA, et comprendre comment l'IA est essentielle dans la guerre cybernétique en cours."
+description: "Adoptant le numérique, cette semaine du 5 mai 2024, inclut les dernières nouveautés en matière d'informatique en nuage, d'intelligence artificielle et de cybersécurité. Cette semaine, explorez les grands paris d'IBM sur le monopole du marché de l'orchestration en nuage, découvrez le premier jet de combat contrôlé par l'IA et découvrez comment l'IA est essentielle à la guerre cybernétique en cours."
 ---
 
 

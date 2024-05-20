@@ -34,15 +34,15 @@ tags:
     - aiformilitary
     - aifordiplomacy
 
-date: Wed Dec 31 1969 00:00:00 GMT-0800 (Pacific Standard Time)
+date: Sat May 04 2024 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Aderindo ao Digital, nesta semana de 5 de maio de 2024, inclui as últimas notícias sobre computação em nuvem, inteligência artificial e cibersegurança. Nesta semana, explore as grandes apostas da IBM para dominar o mercado de orquestração em nuvem, saiba sobre o primeiro jato de combate controlado por IA e descubra como a IA é central para a guerra cibernética em andamento."
+summary: "Abraçando o Digital, esta semana de 5 de maio de 2024, inclui o mais recente em computação em nuvem, inteligência artificial e cibersegurança. Esta semana, explore as grandes apostas da IBM em dominar o mercado de orquestração em nuvem, ouça sobre o primeiro jato de combate controlado por IA e descubra como a IA é central para a atual guerra cibernética."
 video: "https://youtu.be/brxSE-uOz0o"
-description: "Aderindo ao Digital, nesta semana de 5 de maio de 2024, inclui as últimas notícias sobre computação em nuvem, inteligência artificial e cibersegurança. Nesta semana, explore as grandes apostas da IBM para dominar o mercado de orquestração em nuvem, saiba sobre o primeiro jato de combate controlado por IA e descubra como a IA é central para a guerra cibernética em andamento."
+description: "Abraçando o Digital, esta semana de 5 de maio de 2024, inclui o mais recente em computação em nuvem, inteligência artificial e cibersegurança. Esta semana, explore as grandes apostas da IBM em dominar o mercado de orquestração em nuvem, ouça sobre o primeiro jato de combate controlado por IA e descubra como a IA é central para a atual guerra cibernética."
 ---
 
 

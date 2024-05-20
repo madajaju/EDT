@@ -34,15 +34,15 @@ tags:
     - aiformilitary
     - aifordiplomacy
 
-date: Wed Dec 31 1969 00:00:00 GMT-0800 (Pacific Standard Time)
+date: Sat May 04 2024 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Umarmung des Digitalen, diese Woche vom 5. Mai 2024, beinhaltet das Neueste aus der Cloud-Computing-, Künstlichen Intelligenz- und Cybersicherheitsindustrie. Diese Woche erkunden Sie IBMs große Wetten auf die Eroberung des Cloud-Orchestrierungsmarktes, hören Sie von dem ersten KI-gesteuerten Kampfjet und entdecken Sie, wie KI im laufenden Cyber-Krieg eine zentrale Rolle spielt."
+summary: "Die digitale Umarmung in dieser Woche des 5. Mai 2024 beinhaltet das Neueste aus den Bereichen Cloud Computing, künstliche Intelligenz und Cybersicherheit. Diese Woche erkunden Sie IBMs große Wetten auf die Eroberung des Cloud-Orchestrierungsmarkts, hören Sie von dem ersten KI-kontrollierten Kampfflugzeug und entdecken Sie, wie KI im laufenden Cyber-Krieg von zentraler Bedeutung ist."
 video: "https://youtu.be/TgBKo6Lwoaw"
-description: "Umarmung des Digitalen, diese Woche vom 5. Mai 2024, beinhaltet das Neueste aus der Cloud-Computing-, Künstlichen Intelligenz- und Cybersicherheitsindustrie. Diese Woche erkunden Sie IBMs große Wetten auf die Eroberung des Cloud-Orchestrierungsmarktes, hören Sie von dem ersten KI-gesteuerten Kampfjet und entdecken Sie, wie KI im laufenden Cyber-Krieg eine zentrale Rolle spielt."
+description: "Die digitale Umarmung in dieser Woche des 5. Mai 2024 beinhaltet das Neueste aus den Bereichen Cloud Computing, künstliche Intelligenz und Cybersicherheit. Diese Woche erkunden Sie IBMs große Wetten auf die Eroberung des Cloud-Orchestrierungsmarkts, hören Sie von dem ersten KI-kontrollierten Kampfflugzeug und entdecken Sie, wie KI im laufenden Cyber-Krieg von zentraler Bedeutung ist."
 ---
 
 

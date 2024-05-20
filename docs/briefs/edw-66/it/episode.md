@@ -34,15 +34,15 @@ tags:
     - aiformilitary
     - aifordiplomacy
 
-date: Wed Dec 31 1969 00:00:00 GMT-0800 (Pacific Standard Time)
+date: Sat May 04 2024 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Abbracciando il Digitale, questa settimana del 5 maggio 2024, include le ultime novità dal cloud computing, l'intelligenza artificiale e la cybersecurity. Questa settimana, esplora le grandi scommesse di IBM nel tentativo di conquistare il mercato dell'orchestrazione cloud, scopri il primo jet da combattimento controllato dall'IA e scopri come l'IA è centrale per la guerra cibernetica in corso."
+summary: "Abbracciando il Digitale, questa settimana del 5 maggio 2024, include le ultime novità dal cloud computing, intelligenza artificiale e cybersecurity. Questa settimana, esplora le grandi scommesse di IBM sul dominio del mercato dell'orchestrazione cloud, scopri il primo jet da combattimento controllato dall'IA e scopri come l'IA è centrale nella continua guerra cibernetica."
 video: "https://youtu.be/vEKJq9jeTI4"
-description: "Abbracciando il Digitale, questa settimana del 5 maggio 2024, include le ultime novità dal cloud computing, l'intelligenza artificiale e la cybersecurity. Questa settimana, esplora le grandi scommesse di IBM nel tentativo di conquistare il mercato dell'orchestrazione cloud, scopri il primo jet da combattimento controllato dall'IA e scopri come l'IA è centrale per la guerra cibernetica in corso."
+description: "Abbracciando il Digitale, questa settimana del 5 maggio 2024, include le ultime novità dal cloud computing, intelligenza artificiale e cybersecurity. Questa settimana, esplora le grandi scommesse di IBM sul dominio del mercato dell'orchestrazione cloud, scopri il primo jet da combattimento controllato dall'IA e scopri come l'IA è centrale nella continua guerra cibernetica."
 ---
 
 
