@@ -7,13 +7,13 @@ lang: pt
 nav_exclude: true
 nav_order: 122
 tags:
-    - collectiongenerativeai
-    - aiml
+    - artificial_intelligence
     - automation
-    - aiethics
-    - workerreplacement
+    - moderncomputing
+    - training
+    - generativeai
     - people
-    - policy
+    - technology
 
 date: Wed Feb 08 2023 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

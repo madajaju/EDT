@@ -7,28 +7,19 @@ lang: pt
 nav_exclude: true
 nav_order: 181
 tags:
-    - 5gtechnology
+    - 5g
+    - lonelyislandapproach
     - zerotrustsecurity
-    - embracingdigitaltransformationpodcast
-    - darrenpulsipher
-    - lelandbrown
-    - yazkrdzalic
-    - kenurquhart
-    - trentonsystems
-    - zscaler
-    - advancedcommunications
     - operationaltechnology
     - informationtechnology
-    - lonelyislandapproach
-    - telecominfrastructure
-    - advancedsecuritymodels
-    - commercial5gusage
-    - military5gusage
-    - technicalchallenges
-    - cybersecurity
-    - 5gsecurity
     - integration
-    - solutionarchitecture
+    - advancedcommunications
+    - zerotrust
+    - cybersecurity
+    - people
+    - policy
+    - process
+    - technology
 
 date: Tue Jan 16 2024 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:

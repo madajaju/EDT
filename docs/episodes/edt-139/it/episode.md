@@ -7,10 +7,8 @@ lang: it
 nav_exclude: true
 nav_order: 139
 tags:
-    - data
-    - analytics
-    - artificialintelligence
-    - pathway
+    - datamanagement
+    - multicloud
     - technology
 
 date: Wed May 17 2023 17:00:00 GMT-0700 (Pacific Daylight Time)

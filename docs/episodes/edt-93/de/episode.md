@@ -7,10 +7,9 @@ lang: de
 nav_exclude: true
 nav_order: 93
 tags:
-    - cybersecurity
-    - aiml
+    - datasecurity
     - multicloud
-    - comms
+    - zerotrust
 
 date: Thu Jun 23 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

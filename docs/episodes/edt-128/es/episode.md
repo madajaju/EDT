@@ -7,10 +7,8 @@ lang: es
 nav_exclude: true
 nav_order: 128
 tags:
-    - majorleaguehacking
-    - hackathon
-    - developer
-    - people
+    - communityengagement
+    - technology
 
 date: Wed Mar 15 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

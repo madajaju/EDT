@@ -8,8 +8,10 @@ nav_exclude: true
 nav_order: 67
 tags:
     - 5g
-    - comms
-    - wifi6
+    - edgecomputing
+    - zerotrust
+    - multicloud
+    - technology
 
 date: Wed Oct 20 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

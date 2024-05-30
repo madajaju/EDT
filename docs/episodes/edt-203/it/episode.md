@@ -7,16 +7,12 @@ lang: it
 nav_exclude: true
 nav_order: 203
 tags:
-    - innovation
+    - artificialintelligence
     - ai
-    - sustainability
-    - intel
-    - aieverywhere
+    - corporatesocialresponsibility(csr)
     - digitalsecurity
-    - datacenters
-    - techgiant
-    - ambientairexchange
-    - efficienttech
+    - sustainability
+    - cybersecurity
 
 date: Thu May 23 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

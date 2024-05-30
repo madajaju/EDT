@@ -7,13 +7,11 @@ lang: de
 nav_exclude: true
 nav_order: 131
 tags:
-    - compute
-    - people
-    - technology
+    - riskmanagementpolicies
     - automation
-    - ai
     - cybersecurity
-    - innovation
+    - multicloud
+    - zerotrust
 
 date: Wed Mar 29 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -7,14 +7,12 @@ lang: de
 nav_exclude: true
 nav_order: 59
 tags:
-    - cybersecurity
-    - data
+    - dataprotection
     - dataprivacy
-    - privacy
-    - process
-    - people
-    - healthcare
-    - sutterhealth
+    - incidentresponse
+    - multicloud
+    - zerotrust
+    - cybersecurity
 
 date: Wed Jul 28 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

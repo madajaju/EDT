@@ -7,34 +7,14 @@ lang: pt
 nav_exclude: true
 nav_order: 199
 tags:
-    - aicybersecurity
-    - challengesinaicybersecurity
-    - aiandcybersecurity
-    - aicybersecurityrisks
+    - ai
+    - cybersecurity
     - artificialintelligence
-    - aimodelsecurity
-    - protectionofaimodels
-    - emergingthreatsinaicybersecurity
-    - cybersecurityinnovation
-    - infosecandaitrends
-    - aiincyberdefense
-    - newgenerationofcyberthreats
-    - aimachinelearningvulnerabilities
-    - cybersecuriytrisks
-    - datasecurityandai
-    - aianddataprotection
-    - aimodelprotection
-    - cybersecuritymeasuresforai
-    - threatmitigationinai
-    - aimodeledattacks
-    - evolutionofaicybersecurity
-    - aicybersecuritythreats
-    - aihallucination
-    - aipromptinjection
-    - cybersecurityevolution
-    - intersectionofaiandcybersecurity
-    - hiddenlayer
-    - cybersecurityplatformsforai
+    - zerotrust
+    - technology
+    - people
+    - process
+    - policy
 
 date: Tue May 07 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

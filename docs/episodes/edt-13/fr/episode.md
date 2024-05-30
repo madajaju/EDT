@@ -7,9 +7,8 @@ lang: fr
 nav_exclude: true
 nav_order: 13
 tags:
-    - data
-    - organizationalchange
-    - people
+    - datalineage
+    - multicloud
 
 date: Wed Aug 12 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

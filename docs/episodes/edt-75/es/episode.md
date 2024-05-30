@@ -7,8 +7,13 @@ lang: es
 nav_exclude: true
 nav_order: 75
 tags:
+    - datamanagement
     - cybersecurity
+    - ransomware
+    - zerotrust
+    - people
     - technology
+    - policy
 
 date: Wed Feb 02 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

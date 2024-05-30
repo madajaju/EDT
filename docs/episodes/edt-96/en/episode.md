@@ -7,13 +7,12 @@ lang: en
 nav_exclude: true
 nav_order: 96
 tags:
-    - privatecloud
-    - cloud
-    - compute
-    - technology
-    - sdi
-    - virtualdatacenter
-    - vergeio
+    - workforcereskilling
+    - compliance
+    - security
+    - multicloud
+    - zerotrust
+    - cybersecurity
 
 date: Wed Jul 20 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

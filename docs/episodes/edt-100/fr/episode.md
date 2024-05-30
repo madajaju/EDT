@@ -7,10 +7,13 @@ lang: fr
 nav_exclude: true
 nav_order: 100
 tags:
-    - cybersecurity
+    - cloudcomputing
+    - policyenforcement
+    - edgetocloud
+    - artificialintelligence
+    - advancedcomms
+    - zerotrust
     - multicloud
-    - edge
-    - aiml
 
 date: Wed Aug 17 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

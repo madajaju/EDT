@@ -7,10 +7,14 @@ lang: de
 nav_exclude: true
 nav_order: 73
 tags:
-    - covid
-    - edge
-    - compute
+    - advancedcommunications
+    - ransomware
+    - zerotrust
+    - multicloud
     - cybersecurity
+    - people
+    - process
+    - technology
 
 date: Wed Jan 19 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

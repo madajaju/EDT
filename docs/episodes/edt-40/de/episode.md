@@ -8,13 +8,18 @@ nav_exclude: true
 nav_order: 40
 tags:
     - confidentialcomputing
-    - cybersecurity
-    - distributedanalytics
-    - sgx
     - healthcare
-    - data
+    - dataprivacy
+    - dataintegrity
+    - dataanalysis
+    - moderncomputing
+    - encryption
+    - datasecurity
+    - zerotrust
+    - multicloud
+    - cybersecurity
     - technology
-    - edge
+    - policy
 
 date: Tue Feb 23 2021 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

@@ -7,24 +7,14 @@ lang: en
 nav_exclude: true
 nav_order: 180
 tags:
-    - embracingdigitaltransformation
-    - darrenpulsipher
-    - lauranewey
     - generativeai
-    - aiineducation
-    - educationtransformation
-    - teachingexperience
-    - aiinclassroom
-    - moderneducationdynamics
-    - criticalthinkingskills
+    - artificialintelligence
+    - machinelearning
     - digitaltransformation
-    - resistanceagainstai
-    - traditionalteaching
-    - incoorporatingai
-    - ineducationalcurriculums
-    - innovationandeducation
-    - ethicalusageofai
-    - academicintegrity
+    - ethics
+    - criticalthinking
+    - people
+    - technology
 
 date: Thu Jan 11 2024 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:

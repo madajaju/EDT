@@ -7,11 +7,17 @@ lang: fr
 nav_exclude: true
 nav_order: 90
 tags:
-    - cto
-    - organizationalchange
-    - change
+    - ai
+    - neuromorphic
+    - security
+    - moderncomputing
+    - devsecops
+    - generativeai
+    - multicloud
+    - zerotrust
+    - cybersecurity
     - people
-    - process
+    - technology
 
 date: Mon Jun 06 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

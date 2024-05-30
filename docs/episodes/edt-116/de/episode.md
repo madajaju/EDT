@@ -7,12 +7,11 @@ lang: de
 nav_exclude: true
 nav_order: 116
 tags:
-    - criticalinfrastructure
-    - iot
-    - it/otconvergence
-    - otsecurity
+    - networksecurity
     - cybersecurity
-    - edge
+    - people
+    - process
+    - policy
 
 date: Wed Dec 14 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

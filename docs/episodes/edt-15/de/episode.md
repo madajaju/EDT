@@ -7,11 +7,10 @@ lang: de
 nav_exclude: true
 nav_order: 15
 tags:
-    - data
-    - management
+    - datamanagement
+    - analytics
     - people
-    - datacentricorganization
-    - organizationalchange
+    - policy
 
 date: Thu Aug 20 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

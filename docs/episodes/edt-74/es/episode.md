@@ -7,8 +7,13 @@ lang: es
 nav_exclude: true
 nav_order: 74
 tags:
-    - cybersecurity
     - ransomware
+    - networksecurity
+    - cybersecurity
+    - zerotrust
+    - people
+    - technology
+    - policy
 
 date: Wed Jan 26 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

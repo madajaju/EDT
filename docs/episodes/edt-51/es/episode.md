@@ -7,12 +7,11 @@ lang: es
 nav_exclude: true
 nav_order: 51
 tags:
-    - dataarchitecture
+    - datamanagement
     - memverge
-    - pmem
     - optane
+    - multicloud
     - technology
-    - data
 
 date: Wed Jun 02 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

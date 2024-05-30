@@ -7,17 +7,9 @@ lang: fr
 nav_exclude: true
 nav_order: 169
 tags:
-    - userexperience
-    - humancentereddesign
-    - ai
-    - trust
-    - useradoption
+    - digitalliteracy
     - transparency
     - generativeai
-    - jobdisplacement
-    - opencommunication
-    - humansupport
-    - collgenerativeai
 
 date: Tue Oct 24 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

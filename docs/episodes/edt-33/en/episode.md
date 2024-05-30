@@ -8,14 +8,12 @@ nav_exclude: true
 nav_order: 33
 tags:
     - aws
-    - cloudoutage
-    - compute
-    - csp
-    - cloud
-    - process
-    - cloudreliability
+    - advancedcommunications
+    - infrastructure
+    - microservices
     - multicloud
-    - reliability
+    - technology
+    - process
 
 date: Mon Dec 14 2020 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

@@ -7,10 +7,11 @@ lang: fr
 nav_exclude: true
 nav_order: 144
 tags:
-    - edge
     - artificialintelligence
-    - digitaltwin
-    - iot
+    - multicloud
+    - zerotrust
+    - technology
+    - process
 
 date: Thu Jun 22 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

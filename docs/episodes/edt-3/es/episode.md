@@ -8,6 +8,11 @@ nav_exclude: true
 nav_order: 3
 tags:
     - multicloud
+    - organizationalculture
+    - flexibility
+    - security
+    - compliance
+    - efficiency
 
 date: Mon Jun 22 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

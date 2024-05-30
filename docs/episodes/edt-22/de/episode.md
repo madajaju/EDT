@@ -7,6 +7,12 @@ lang: de
 nav_exclude: true
 nav_order: 22
 tags:
+    - moderncomputing
+    - multicloud
+    - devops
+    - technology
+    - policy
+    - process
 
 date: Tue Sep 22 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

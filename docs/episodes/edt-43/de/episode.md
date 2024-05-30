@@ -7,12 +7,11 @@ lang: de
 nav_exclude: true
 nav_order: 43
 tags:
+    - itgovernance
     - cio
-    - cloudadoption
-    - compute
-    - cloud
-    - csp
     - multicloud
+    - zerotrust
+    - cybersecurity
 
 date: Wed Mar 17 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

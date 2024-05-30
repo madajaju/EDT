@@ -7,14 +7,16 @@ lang: fr
 nav_exclude: true
 nav_order: 103
 tags:
-    - aiops
+    - artificialintelligence
+    - machinelearning
+    - data
+    - deeplearning
     - devops
-    - compute
+    - datamanagement
+    - generativeai
+    - people
     - technology
     - process
-    - devsecops
-    - cybersecurity
-    - aiml
 
 date: Mon Aug 29 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

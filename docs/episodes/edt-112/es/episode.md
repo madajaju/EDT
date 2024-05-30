@@ -7,12 +7,10 @@ lang: es
 nav_exclude: true
 nav_order: 112
 tags:
+    - cybersecuritypolicies
+    - cybersecurity
     - multicloud
-    - cloudmigration
-    - cloud
-    - compute
-    - process
-    - technology
+    - zerotrust
 
 date: Mon Nov 14 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

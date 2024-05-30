@@ -8,11 +8,13 @@ nav_exclude: true
 nav_order: 2
 tags:
     - iot
-    - dod
-    - edge
-    - technology
-    - data
+    - datamanagement
+    - cloud
+    - security
+    - zerotrust
     - cybersecurity
+    - process
+    - technology
 
 date: Wed Jun 17 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

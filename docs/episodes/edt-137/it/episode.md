@@ -7,13 +7,10 @@ lang: it
 nav_exclude: true
 nav_order: 137
 tags:
-    - cloud
-    - computing
-    - greenlake
-    - hpe
+    - dataretentionpolicies
     - multicloud
-    - hybridcloud
-    - technology
+    - zerotrust
+    - cybersecurity
 
 date: Tue May 09 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

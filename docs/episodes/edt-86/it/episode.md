@@ -7,11 +7,13 @@ lang: it
 nav_exclude: true
 nav_order: 86
 tags:
-    - cto
+    - artificialintelligence
+    - cybersecurity
+    - zerotrust
     - people
     - process
-    - change
-    - organizationalchange
+    - policy
+    - technology
 
 date: Wed May 11 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

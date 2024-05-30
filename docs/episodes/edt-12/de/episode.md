@@ -7,11 +7,17 @@ lang: de
 nav_exclude: true
 nav_order: 12
 tags:
-    - remotelearning
-    - people
-    - technology
-    - telelearning
+    - artificialintelligence
+    - deeplearning
+    - innovation
+    - dataprivacy
+    - champions
     - cybersecurity
+    - multicloud
+    - zerotrust
+    - people
+    - policy
+    - technology
 
 date: Tue Aug 11 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

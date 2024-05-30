@@ -7,12 +7,10 @@ lang: en
 nav_exclude: true
 nav_order: 50
 tags:
-    - employeeburnout
-    - remotelearning
-    - remoteworker
+    - artificialintelligence
     - people
     - process
-    - compute
+    - technology
 
 date: Tue May 25 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

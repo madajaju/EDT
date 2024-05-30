@@ -7,12 +7,11 @@ lang: es
 nav_exclude: true
 nav_order: 77
 tags:
-    - aiml
-    - comms
-    - data
-    - edge
+    - employeeengagement
+    - 5g
+    - zerotrust
+    - microservices
     - multicloud
-    - cybersecurity
 
 date: Wed Feb 16 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

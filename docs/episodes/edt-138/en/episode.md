@@ -7,12 +7,10 @@ lang: en
 nav_exclude: true
 nav_order: 138
 tags:
-    - cloud
-    - computing
-    - dell
+    - itgovernance
+    - governance
+    - training
     - multicloud
-    - hybridcloud
-    - technology
 
 date: Mon May 15 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

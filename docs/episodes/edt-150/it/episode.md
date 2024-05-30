@@ -7,10 +7,12 @@ lang: it
 nav_exclude: true
 nav_order: 150
 tags:
-    - edge
-    - smartbuilding
-    - ai
-    - sustainability
+    - edgecomputing
+    - cybersecurity
+    - people
+    - process
+    - policy
+    - technology
 
 date: Wed Aug 09 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

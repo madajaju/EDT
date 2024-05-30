@@ -7,25 +7,12 @@ lang: es
 nav_exclude: true
 nav_order: 198
 tags:
-    - digitaltransformation
-    - enterprisearchitecture
-    - technologytrends
+    - moderncomputing
     - microservices
-    - softwaredevelopment
-    - databasemanagement
-    - insightsbybencort
-    - hardwareoptimization
-    - datalayers
-    - physicaltechnologylayer
-    - continuouslearning
-    - adaptabilityintechnology
-    - strategicsolutions
-    - itindustryinnovation
-    - costsavings
-    - systemvulnerabilities
-    - skillupgradations
-    - peopleprocesstechnology
-    - navigatedigitallandscape
+    - multicloud
+    - people
+    - process
+    - technology
 
 date: Thu May 02 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

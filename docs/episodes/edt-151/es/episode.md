@@ -7,11 +7,12 @@ lang: es
 nav_exclude: true
 nav_order: 151
 tags:
-    - genai
-    - ai
-    - datamanagement
-    - people
-    - collectiongenerativeai
+    - generativeai
+    - artificialintelligence
+    - aiethics
+    - efficiency
+    - dataprotection
+    - ethics
 
 date: Thu Aug 17 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

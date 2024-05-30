@@ -7,13 +7,15 @@ lang: fr
 nav_exclude: true
 nav_order: 82
 tags:
-    - cloudmigration
+    - workloads
     - cloud
-    - compute
+    - advancedcommunications
+    - cio
+    - optimization
+    - multicloud
+    - people
     - process
-    - infrastructure
-    - migration
-    - workload
+    - technology
 
 date: Wed Mar 30 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

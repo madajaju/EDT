@@ -7,18 +7,10 @@ lang: de
 nav_exclude: true
 nav_order: 202
 tags:
-    - intel
-    - itbestpractices
-    - itleadership
-    - technicaldebt
-    - governanceprocess
-    - remoteworking
-    - costcutting
-    - competitiveedge
-    - datacentermanagement
-    - cloudcomputing
-    - softwareappdevelopment
+    - culturalchange
     - sap
+    - generativeai
+    - cybersecurity
 
 date: Thu May 16 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

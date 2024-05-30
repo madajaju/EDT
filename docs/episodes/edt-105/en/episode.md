@@ -7,13 +7,13 @@ lang: en
 nav_exclude: true
 nav_order: 105
 tags:
-    - change
-    - people
-    - changeagent
-    - radiusag
-    - organizationalchange
-    - informationdriven
     - leadership
+    - cybersecurity
+    - strategicdecisionmaking
+    - multicloud
+    - zerotrust
+    - people
+    - process
 
 date: Mon Sep 12 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

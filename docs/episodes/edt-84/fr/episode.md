@@ -7,8 +7,13 @@ lang: fr
 nav_exclude: true
 nav_order: 84
 tags:
-    - cybersecurity
+    - valuechain
+    - security
+    - log4j
     - zerotrust
+    - cybersecurity
+    - policy
+    - people
 
 date: Sat Aug 20 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -7,13 +7,17 @@ lang: es
 nav_exclude: true
 nav_order: 153
 tags:
-    - genai
+    - artificialintelligence
+    - processoptimization
+    - dataprocessing
+    - innovation
+    - continuouslearning
+    - digitaltransformation
     - generativeai
-    - ai
-    - robotics
-    - people
-    - training
-    - collectiongenerativeai
+    - multicloud
+    - advancedcommunications
+    - moderncomputing
+    - datadrivendecisionmaking
 
 date: Wed Aug 23 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

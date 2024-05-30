@@ -7,14 +7,12 @@ lang: de
 nav_exclude: true
 nav_order: 79
 tags:
-    - covid
-    - remoteworker
-    - mobilementor
-    - genz
+    - endpointsecurity
+    - cybersecurity
+    - zerotrust
     - people
-    - process
-    - compute
-    - cloud
+    - policy
+    - technology
 
 date: Wed Mar 09 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

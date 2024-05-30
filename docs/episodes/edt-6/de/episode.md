@@ -8,12 +8,11 @@ nav_exclude: true
 nav_order: 6
 tags:
     - telework
-    - remoteworker
-    - vdi
-    - mfa
-    - cybersecurity
-    - people
+    - vpn
+    - advancedcommunications
+    - multicloud
     - process
+    - technology
 
 date: Thu Jul 23 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

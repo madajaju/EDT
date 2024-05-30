@@ -7,12 +7,11 @@ lang: en
 nav_exclude: true
 nav_order: 147
 tags:
+    - artificialintelligence
+    - bias
     - generativeai
-    - collectiongenerativeai
-    - ai
-    - bard
-    - googlebard
-    - technology
+    - people
+    - process
 
 date: Wed Jul 19 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

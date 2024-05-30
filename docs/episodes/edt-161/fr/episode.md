@@ -7,48 +7,8 @@ lang: fr
 nav_exclude: true
 nav_order: 161
 tags:
-    - collectiongenerativeai
-    - ai
+    - knowledgesharing
     - generativeai
-    - embracingdigital
-    - edt161
-    - challengesinnaturallanguageprocessing
-    - fantasysportsapp
-    - naturallanguagegeneration
-    - highqualitycontent
-    - technicalbackground
-    - outoftheboxthinking
-    - pushingboundaries
-    - diversity
-    - crossdomaincollaboration
-    - innovativeideas
-    - infoscentience'ssolution
-    - dataanalytics
-    - naturallanguageaisystem
-    - conceptualautomata
-    - datasets
-    - revolutionizing
-    - businessesanalyzeinformation
-    - futureofdataanalysis
-    - naturallanguagereporting
-    - flexibility
-    - tailored
-    - differentindustries
-    - customized
-    - specificcontext
-    - jargon
-    - dataanalysis
-    - revolutionizingindustries
-    - sportsanalytics
-    - stevewasick'sjourney
-    - innovativeapproach
-    - entrepreneurs
-    - techfounders
-    - unconventionalpaths
-    - successfulinnovations
-    - embracingvariability
-    - context
-    - poweroflanguage
 
 date: Thu Sep 21 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

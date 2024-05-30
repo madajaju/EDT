@@ -7,14 +7,11 @@ lang: it
 nav_exclude: true
 nav_order: 104
 tags:
-    - data
-    - informationdriven
-    - organizationalchange
-    - radiusag
-    - change
+    - cybersecurity
+    - dataanalytics
+    - leadership
     - people
     - process
-    - ceo
 
 date: Wed Sep 07 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

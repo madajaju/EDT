@@ -8,12 +8,8 @@ nav_exclude: true
 nav_order: 68
 tags:
     - 5g
-    - dod
-    - compute
+    - advancedcommunications
     - technology
-    - cloud
-    - edge
-    - comms
 
 date: Wed Oct 27 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

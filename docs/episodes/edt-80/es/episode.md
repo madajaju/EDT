@@ -7,12 +7,12 @@ lang: es
 nav_exclude: true
 nav_order: 80
 tags:
-    - csa
-    - cloudsolutionarchitect
-    - solutionarchitect
+    - intel
+    - moderncomputing
+    - multicloud
     - people
-    - compute
-    - cloud
+    - process
+    - technology
 
 date: Wed Mar 16 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -7,14 +7,17 @@ lang: en
 nav_exclude: true
 nav_order: 58
 tags:
-    - data
-    - edge
-    - compute
-    - edgemere
-    - edgetocloud
+    - 5g
+    - iot
+    - edgecomputing
     - cybersecurity
+    - datamanagement
+    - cloudcomputing
+    - multicloud
+    - zerotrust
     - technology
     - process
+    - policy
 
 date: Wed Jul 21 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

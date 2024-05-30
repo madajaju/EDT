@@ -8,9 +8,10 @@ nav_exclude: true
 nav_order: 108
 tags:
     - 5g
-    - cellphone
-    - comms
-    - wifi6
+    - advancedcommunications
+    - virtualization
+    - multicloud
+    - technology
 
 date: Tue Oct 04 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

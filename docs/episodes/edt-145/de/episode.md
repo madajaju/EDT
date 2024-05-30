@@ -7,9 +7,11 @@ lang: de
 nav_exclude: true
 nav_order: 145
 tags:
-    - people
-    - remoteworker
+    - space
     - collaboration
+    - people
+    - technology
+    - process
 
 date: Thu Jun 29 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

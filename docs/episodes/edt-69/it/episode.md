@@ -7,9 +7,14 @@ lang: it
 nav_exclude: true
 nav_order: 69
 tags:
+    - security
+    - moderncomputing
+    - iot
+    - zerotrust
     - cybersecurity
-    - edge
-    - compute
+    - people
+    - technology
+    - process
 
 date: Wed Nov 10 2021 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

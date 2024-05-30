@@ -7,13 +7,10 @@ lang: fr
 nav_exclude: true
 nav_order: 110
 tags:
-    - securesupplychain
-    - cybersecurity
-    - supplychain
-    - chipsact
+    - moderncomputing
+    - intel
+    - technology
     - policy
-    - process
-    - compute
 
 date: Wed Oct 19 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

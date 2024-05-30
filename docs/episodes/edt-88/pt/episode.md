@@ -7,13 +7,18 @@ lang: pt
 nav_exclude: true
 nav_order: 88
 tags:
-    - cybersecurity
     - devsecops
-    - rpa
-    - technology
-    - compute
+    - automation
+    - moderncomputing
+    - agile
+    - integration
     - zerotrust
-    - zta
+    - security
+    - multicloud
+    - cybersecurity
+    - people
+    - process
+    - technology
 
 date: Mon May 23 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

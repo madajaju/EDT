@@ -7,14 +7,13 @@ lang: pt
 nav_exclude: true
 nav_order: 78
 tags:
-    - multicloud
-    - compute
-    - cybersecurity
-    - sharedresponsibility
     - cloudsecurity
-    - cloud
-    - technology
-    - process
+    - informationsecuritymanagement
+    - networksecurity
+    - datasecurity
+    - zerotrust
+    - multicloud
+    - cybersecurity
 
 date: Wed Feb 23 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

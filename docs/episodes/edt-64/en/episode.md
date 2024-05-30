@@ -7,10 +7,17 @@ lang: en
 nav_exclude: true
 nav_order: 64
 tags:
-    - edge
-    - compute
-    - multicloud
+    - employeengagement
+    - devops
+    - oneapi
+    - edgecomputing
+    - security
+    - microservices
+    - zerotrust
     - cybersecurity
+    - moderncomputing
+    - changemanagement
+    - organizationalculture
 
 date: Wed Sep 01 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

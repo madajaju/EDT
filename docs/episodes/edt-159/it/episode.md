@@ -7,28 +7,12 @@ lang: it
 nav_exclude: true
 nav_order: 159
 tags:
-    - collectiongenerativeai
-    - policies
-    - ai
-    - generativeai
-    - guidelines
-    - jeremyharris
-    - darrenpulsipher
-    - roadmap
-    - challenges
-    - efficiencies
-    - dataprotection
-    - privacy
+    - datamanagement
     - compliance
-    - ethicalconsiderations
-    - feedback
-    - engagement
-    - ratings
-    - reviews
-    - customersatisfaction
-    - customerengagement
-    - embracingdigital
-    - edt159
+    - cybersecurity
+    - policy
+    - people
+    - process
 
 date: Thu Sep 14 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

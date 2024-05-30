@@ -7,11 +7,12 @@ lang: fr
 nav_exclude: true
 nav_order: 48
 tags:
-    - dataarchitecture
-    - data
-    - optane
-    - technology
     - vastdata
+    - supplychainoptimization
+    - flexibility
+    - highperformancecomputing
+    - multicloud
+    - operationalefficiency
 
 date: Wed Apr 28 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

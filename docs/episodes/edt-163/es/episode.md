@@ -7,29 +7,12 @@ lang: es
 nav_exclude: true
 nav_order: 163
 tags:
-    - cloudstrategy
-    - digitaltransformation
-    - collmultihybridcloud
-    - cloudtechnologies
-    - businessgoals
-    - operationalefficiency
-    - customersatisfaction
-    - itinfrastructure
-    - migrationplan
-    - datasecurity
-    - regulatorycompliance
-    - hybridclouds
-    - publicclouds
-    - privateclouds
-    - clouddeploymentmodels
-    - governanceandsecurity
-    - reducecosts
-    - enhanceefficiency
-    - customerexperience
-    - strategicmove
-    - clearvision
-    - embracingdigital
-    - edt163
+    - datamanagement
+    - governance
+    - multicloud
+    - cybersecurity
+    - technology
+    - policy
 
 date: Thu Sep 28 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

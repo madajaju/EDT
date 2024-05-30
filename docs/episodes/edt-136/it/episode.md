@@ -7,13 +7,16 @@ lang: it
 nav_exclude: true
 nav_order: 136
 tags:
+    - artificialintelligence
+    - cybersecurity
     - sabr
-    - ddil
+    - devsecops
+    - generativeai
+    - multicloud
+    - zerotrust
     - technology
-    - edge
     - process
-    - devops
-    - security
+    - people
 
 date: Mon May 01 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -7,10 +7,9 @@ lang: pt
 nav_exclude: true
 nav_order: 31
 tags:
-    - rpa
-    - automation
-    - catalytic
-    - compute
+    - datamanagement
+    - generativeai
+    - multicloud
     - process
     - technology
 

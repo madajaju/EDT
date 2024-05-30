@@ -8,12 +8,11 @@ nav_exclude: true
 nav_order: 46
 tags:
     - devops
-    - compute
-    - technology
-    - process
-    - devsecops
+    - automatedsecurity
     - cybersecurity
-    - zerotrustarchitecture
+    - people
+    - process
+    - technology
 
 date: Wed Apr 07 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

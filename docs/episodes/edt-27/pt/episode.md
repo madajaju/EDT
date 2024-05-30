@@ -7,12 +7,13 @@ lang: pt
 nav_exclude: true
 nav_order: 27
 tags:
-    - datagovernance
-    - data
-    - sgx
-    - confidentialcomputing
+    - attackers
+    - encryption
+    - compliance
+    - zerotrust
     - cybersecurity
     - technology
+    - policy
 
 date: Tue Oct 27 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

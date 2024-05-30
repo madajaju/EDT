@@ -7,12 +7,11 @@ lang: en
 nav_exclude: true
 nav_order: 130
 tags:
-    - collectiongenerativeai
-    - ai
     - decisionalai
-    - aiproductization
+    - generativeai
+    - machinelearning
+    - datamanagement
     - people
-    - process
 
 date: Wed Mar 22 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

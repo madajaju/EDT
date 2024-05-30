@@ -7,13 +7,14 @@ lang: fr
 nav_exclude: true
 nav_order: 41
 tags:
-    - devops
-    - people
-    - technology
-    - compute
     - devsecops
-    - cybersecurity
+    - devops
+    - automation
+    - advancedcommunications
     - multicloud
+    - process
+    - technology
+    - policy
 
 date: Tue Mar 09 2021 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

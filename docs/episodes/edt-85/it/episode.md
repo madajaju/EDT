@@ -7,12 +7,10 @@ lang: it
 nav_exclude: true
 nav_order: 85
 tags:
-    - aiml
+    - cybersecuritypolicies
+    - encryption
+    - zerotrust
     - cybersecurity
-    - devops
-    - compute
-    - technology
-    - process
 
 date: Wed May 04 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

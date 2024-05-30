@@ -7,12 +7,14 @@ lang: fr
 nav_exclude: true
 nav_order: 5
 tags:
-    - infrastructurematurity
-    - compute
-    - technology
-    - sdi
+    - moderncomputing
+    - automation
+    - virtualization
     - cloud
     - multicloud
+    - people
+    - process
+    - technology
 
 date: Thu Jul 23 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -8,11 +8,10 @@ nav_exclude: true
 nav_order: 135
 tags:
     - ai
-    - ethics
-    - trustworthiness
-    - deepfake
-    - aicontent
-    - aidetection
+    - digitalethics
+    - trust
+    - zerotrust
+    - cybersecurity
 
 date: Wed Apr 26 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

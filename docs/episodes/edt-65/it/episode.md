@@ -8,12 +8,12 @@ nav_exclude: true
 nav_order: 65
 tags:
     - cloudmigration
-    - cloud
-    - compute
-    - process
+    - moderncomputing
+    - devops
     - multicloud
-    - aiven
-    - cloudcost
+    - people
+    - process
+    - policy
     - technology
 
 date: Wed Oct 06 2021 17:00:00 GMT-0700 (Pacific Daylight Time)

@@ -7,12 +7,10 @@ lang: it
 nav_exclude: true
 nav_order: 129
 tags:
+    - datamanagement
     - hpc
+    - data
     - technology
-    - compute
-    - openondemand
-    - ohiosupercomputercenter
-    - osc
 
 date: Mon Mar 20 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

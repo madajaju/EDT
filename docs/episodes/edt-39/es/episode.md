@@ -7,14 +7,10 @@ lang: es
 nav_exclude: true
 nav_order: 39
 tags:
-    - collaboration
-    - covid
-    - organizationalchange
+    - advancedcommunications
+    - technology
     - people
-    - compute
-    - remoteworker
-    - videoconferencing
-    - signalwire
+    - process
 
 date: Wed Feb 17 2021 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

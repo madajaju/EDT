@@ -7,14 +7,12 @@ lang: de
 nav_exclude: true
 nav_order: 1
 tags:
-    - dataarchitecture
-    - softwaredeveloper
-    - microservice
-    - container
+    - moderncomputing
+    - cloudtechnology
     - virtualization
+    - datamanagement
+    - multicloud
     - technology
-    - compute
-    - data
 
 date: Thu May 07 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -7,31 +7,11 @@ lang: en
 nav_exclude: true
 nav_order: 187
 tags:
-    - embracingdigitaltransformationpodcast
-    - eduardoalvarez
-    - intel
-    - liftoffprogram
-    - startups
-    - languagemodels
-    - artificialintelligence
-    - applications
-    - userexperience
-    - operationalefficiency
-    - languagemodelchains
-    - systemoptimization
-    - dataveracity
-    - dataprivacy
-    - aiops
-    - realdataops
-    - configurationmanagement
-    - distributedheterogenouscomputing
-    - aiapplications
-    - aifuture
-    - aitrends
-    - toolintegration
-    - researchanddevelopment
-    - techinsights
-    - edtech.
+    - moderncomputing
+    - multicloud
+    - zerotrust
+    - process
+    - policy
 
 date: Thu Feb 22 2024 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:

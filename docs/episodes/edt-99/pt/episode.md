@@ -7,11 +7,13 @@ lang: pt
 nav_exclude: true
 nav_order: 99
 tags:
-    - aiml
     - cybersecurity
-    - xmcyber
-    - technology
+    - attackpaths
+    - zerotrust
+    - people
     - process
+    - policy
+    - technology
 
 date: Mon Aug 08 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

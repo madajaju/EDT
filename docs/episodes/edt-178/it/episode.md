@@ -8,33 +8,15 @@ nav_exclude: true
 nav_order: 178
 tags:
     - zerotrustnetworking
+    - connectivity
     - overlaynetworks
-    - networksecurity
-    - digitalage
-    - securitychallenges
-    - networkingconcepts
-    - softwaredevelopers
-    - softwareengineers
-    - defensestrategy
-    - databreaches
-    - virtualnetworks
-    - zerotrustprinciples
-    - openzerotrust
-    - securitymeasures
+    - vpn
+    - iot
     - identitymanagement
     - secureconnectivity
-    - networkdefense
-    - iotdevices
-    - datatransmission
-    - smartnetworking
-    - serviceintegration
-    - vpnnetworks
-    - wireguardnetworks
-    - datasecurity
-    - itsecurity
-    - digitalinnovations
-    - digitaltransformation
-    - futureproofsecurity
+    - zerotrust
+    - cybersecurity
+    - security
 
 date: Thu Dec 28 2023 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:

@@ -7,14 +7,10 @@ lang: de
 nav_exclude: true
 nav_order: 66
 tags:
-    - data
-    - devops
-    - compute
-    - technology
-    - process
-    - devsecops
+    - businessprocessmanagement
+    - encryption
+    - multicloud
     - cybersecurity
-    - aiven
 
 date: Wed Oct 13 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -7,11 +7,10 @@ lang: es
 nav_exclude: true
 nav_order: 23
 tags:
-    - aiml
-    - dataarchitecture
-    - datacentric
-    - data
-    - insight
+    - artificialintelligence
+    - multicloud
+    - people
+    - process
     - technology
 
 date: Tue Sep 29 2020 17:00:00 GMT-0700 (Pacific Daylight Time)

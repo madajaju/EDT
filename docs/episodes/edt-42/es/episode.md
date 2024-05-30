@@ -7,13 +7,14 @@ lang: es
 nav_exclude: true
 nav_order: 42
 tags:
-    - cybersecurity
+    - security
     - devops
-    - compute
+    - vulnerabilitymanagement
+    - automation
+    - agile
+    - zerotrust
+    - cybersecurity
     - process
-    - technology
-    - multicloud
-    - devsecops
 
 date: Sun Mar 14 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

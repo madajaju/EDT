@@ -7,11 +7,11 @@ lang: fr
 nav_exclude: true
 nav_order: 20
 tags:
-    - data
-    - optane
-    - technology
     - storage
     - vastdata
+    - datamanagement
+    - hpc
+    - technology
 
 date: Tue Sep 08 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

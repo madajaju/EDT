@@ -7,7 +7,12 @@ lang: en
 nav_exclude: true
 nav_order: 9
 tags:
+    - wifi
+    - twofactorauthentication
+    - zerotrust
     - cybersecurity
+    - people
+    - technology
 
 date: Mon Aug 03 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

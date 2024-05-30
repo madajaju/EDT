@@ -8,19 +8,11 @@ nav_exclude: true
 nav_order: 168
 tags:
     - generativeai
-    - firefly
+    - knowledgesharing
+    - artificialintelligence
+    - machinelearning
+    - deeplearning
     - videogen
-    - figma
-    - enterpriseaistrategy
-    - ai
-    - creativecontentgeneration
-    - enhancingdailytasks
-    - powerofgenerativeai
-    - searchintent
-    - contentcreationautomation
-    - chatbotsincontentcreation
-    - embracingdigital
-    - edt168
 
 date: Thu Oct 19 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -7,22 +7,10 @@ lang: de
 nav_exclude: true
 nav_order: 175
 tags:
-    - operationaltechnologysecurity
-    - otnetworksecurity
-    - icscybersecurity
-    - scadasystemsecurity
-    - otaccesscontrol
-    - otnetworkmonitoring
-    - otnetworksegmentation
-    - zerotrustotnetworks
-    - otnetworkcompliance
-    - otdataprotections
-    - otinsiderthreats
-    - otriskassessments
-    - veridify
-    - zta
-    - zerotrust
-    - security
+    - assetinventory
+    - cybersecurity
+    - technology
+    - policy
 
 date: Thu Nov 30 2023 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:

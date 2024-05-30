@@ -7,19 +7,11 @@ lang: es
 nav_exclude: true
 nav_order: 162
 tags:
-    - cloudadoption
-    - collmultihybridcloud
-    - organizationalmodernization
-    - barriers
-    - riskmitigationplan
-    - applicationrearchitecture
+    - traininganddevelopment
     - governance
-    - organizationalculture
-    - cloud
-    - multihybridcloud
     - multicloud
-    - embracingdigital
-    - edt162
+    - generativeai
+    - cybersecurity
 
 date: Tue Sep 26 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

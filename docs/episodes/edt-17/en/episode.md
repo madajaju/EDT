@@ -7,6 +7,10 @@ lang: en
 nav_exclude: true
 nav_order: 17
 tags:
+    - intel
+    - datamanagement
+    - hybridcloud
+    - technology
 
 date: Sun Aug 30 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -7,24 +7,14 @@ lang: pt
 nav_exclude: true
 nav_order: 184
 tags:
-    - digitaltransformation
-    - seamframework
-    - businessinnovation
-    - drmadeleinewallace
-    - organizationalchange
-    - businessadaptability
-    - digitalage
-    - technologicaladaptation
-    - strategicplanning
-    - digitalintegration
-    - corporatereadyiness
-    - businessstrategy
-    - changeactuation
-    - digitalization
-    - digitalera
-    - barriersofchange
-    - digitalshift
-    - digitalreadiness
+    - edgecomputing
+    - monitoring
+    - generativeai
+    - multicloud
+    - cybersecurity
+    - people
+    - process
+    - policy
 
 date: Thu Feb 01 2024 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:

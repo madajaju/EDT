@@ -7,29 +7,10 @@ lang: en
 nav_exclude: true
 nav_order: 197
 tags:
-    - ageofai
-    - aiineducation
-    - aifuture
-    - aijobs
-    - futureofemployment
-    - aicreativity
-    - businessrevolution
-    - aitechnologies
-    - rotelearning
-    - strategicthinking
-    - criticalthinking
     - artificialintelligence
-    - aieffects
-    - technologicaladvancements
-    - digitalworld
-    - jobautomation
-    - creativityskills
-    - employmentlandscape
-    - contentgeneration
-    - aiinbusiness
-    - humanintelligence
-    - machinelearning
-    - technologicalintegration
+    - generativeai
+    - people
+    - process
 
 date: Thu May 02 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -7,26 +7,12 @@ lang: fr
 nav_exclude: true
 nav_order: 176
 tags:
-    - shamimnaqvi
-    - dataprotectionexpert
-    - zerotrustsecurity
-    - dataprivacyspecialist
-    - safelyshared
-    - startupinnovation
-    - usercontroldata
-    - unauthorizeduserdatause
+    - informationsecuritymanagement
+    - dataprivacy
     - zeroknowledgeproofs
-    - mathematicaldataverification
-    - cuttingedgedatasecurity
-    - fosteringsecurecomputing
-    - valuingdataprivacy
-    - challengingdataprotection
-    - digitaltransformationsecurity
-    - innovativeapproachestoprivacy
-    - battlingdataprotectionissues
-    - dataprotectioninnovation
-    - userdataprivacyconcerns
-    - userdatasafeguarding
+    - datasecurity
+    - zerotrust
+    - cybersecurity
 
 date: Tue Dec 05 2023 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:

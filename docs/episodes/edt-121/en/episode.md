@@ -7,12 +7,9 @@ lang: en
 nav_exclude: true
 nav_order: 121
 tags:
-    - cloud
-    - privatecloud
-    - vergeio
-    - microcloud
-    - edge
-    - compute
+    - virtualization
+    - moderncomputing
+    - multicloud
     - technology
 
 date: Wed Feb 01 2023 16:00:00 GMT-0800 (Pacific Standard Time)

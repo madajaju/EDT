@@ -7,28 +7,11 @@ lang: fr
 nav_exclude: true
 nav_order: 191
 tags:
-    - leilanibloomquist
-    - digitaltransformation
-    - businessoperations
-    - businessstrategies
-    - roleofleadership
-    - digitallyfocusedrole
-    - digitalprojectmanagement
-    - technologicaladaptability
-    - customerexperience
-    - changeanticipation
-    - operationalefficiency
-    - customerengagement
-    - peopleskills
-    - projectmanagement
-    - csuiterole
-    - embracingtechnology
-    - strategicplanning
-    - businessgrowth
-    - businesschange
-    - technologyintegration
-    - successfultransformation
-    - constanttransformation
+    - businessmanagement
+    - leadership
+    - communication
+    - people
+    - process
 
 date: Thu Mar 21 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

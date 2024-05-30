@@ -7,14 +7,8 @@ lang: it
 nav_exclude: true
 nav_order: 26
 tags:
-    - hammerspace
-    - data
-    - technology
-    - dataarchitecture
+    - datadrivendecisionmaking
     - multicloud
-    - compute
-    - multihybridcloud
-    - datamesh
 
 date: Wed Oct 21 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

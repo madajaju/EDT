@@ -7,6 +7,12 @@ lang: es
 nav_exclude: true
 nav_order: 14
 tags:
+    - analytics
+    - data
+    - datamanagement
+    - multicloud
+    - people
+    - process
 
 date: Wed Aug 19 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

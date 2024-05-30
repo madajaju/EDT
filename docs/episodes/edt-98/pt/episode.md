@@ -7,15 +7,9 @@ lang: pt
 nav_exclude: true
 nav_order: 98
 tags:
-    - dataarchitecture
-    - datamanagement
-    - data
-    - technology
-    - cloud
-    - globaldatanetwork
     - macrometa
+    - businessprocessmanagement
     - multicloud
-    - datamesh
 
 date: Wed Aug 03 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

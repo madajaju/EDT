@@ -7,12 +7,14 @@ lang: it
 nav_exclude: true
 nav_order: 55
 tags:
-    - communication
-    - organizationalchange
+    - cloud
+    - transformation
+    - aws
+    - moderncomputing
+    - multicloud
+    - leadership
     - people
-    - process
-    - hsbc
-    - cio
+    - technology
 
 date: Wed Jun 30 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -7,11 +7,9 @@ lang: en
 nav_exclude: true
 nav_order: 19
 tags:
-    - dataarchitecture
-    - data
-    - datastrategy
-    - people
-    - process
+    - dataanalytics
+    - operationalization
+    - multicloud
 
 date: Mon Sep 07 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

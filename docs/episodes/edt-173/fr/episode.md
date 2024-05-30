@@ -7,27 +7,11 @@ lang: fr
 nav_exclude: true
 nav_order: 173
 tags:
-    - genai
-    - generativeai
     - ai
-    - artificialintelligence
-    - machinelearning
-    - deeplearning
-    - nlp
-    - naturallanguageprocessing
-    - aiethics
-    - responsibleai
-    - aifairness
-    - aitransparency
-    - aiaccountability
-    - aibias
-    - aiharm
-    - aimemployment
-    - aijobloss
-    - contentmoderation
-    - conversationai
+    - knowledgesharing
     - anthropic
-    - claude
+    - technology
+    - automation
     - podcast
 
 date: Tue Nov 14 2023 00:00:00 GMT-0800 (Pacific Standard Time)

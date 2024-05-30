@@ -7,25 +7,7 @@ lang: fr
 nav_exclude: true
 nav_order: 183
 tags:
-    - digitaltransformation
-    - materialscience
-    - manufacturingindustry
-    - dataanalytics
-    - machinelearning
-    - artificialintelligence
-    - productdevelopment
-    - structuredmethodologies
-    - projectmanagement
-    - complexdata
-    - unstructureddata
-    - datascience
-    - r&dprocess
-    - newproductdevelopment
-    - datamanagement
-    - technologyinnovation
-    - physicitaldigitalknowledgegap
-    - embracingdigital.org
-    - embracingdigitaltransformationpodcast
+    - datagovernance
 
 date: Thu Jan 25 2024 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:

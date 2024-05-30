@@ -7,6 +7,17 @@ lang: es
 nav_exclude: true
 nav_order: 166
 tags:
+    - cloudmigration
+    - continuousimprovement
+    - workloadoptimization
+    - cloudoperations
+    - organizationalchange
+    - digitaltransformation
+    - multicloud
+    - moderncomputing
+    - people
+    - process
+    - technology
 
 date: Thu Oct 12 2023 04:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

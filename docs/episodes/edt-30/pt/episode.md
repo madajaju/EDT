@@ -7,15 +7,10 @@ lang: pt
 nav_exclude: true
 nav_order: 30
 tags:
-    - aiml
-    - devops
-    - compute
-    - technology
-    - process
     - oneapi
-    - aiops
-    - developer
-    - people
+    - intel
+    - edgecomputing
+    - technology
 
 date: Mon Nov 16 2020 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

@@ -7,17 +7,10 @@ lang: pt
 nav_exclude: true
 nav_order: 117
 tags:
-    - edge
-    - aiml
-    - hybridworkspace
-    - compute
-    - multicloud
+    - riskmanagementpolicies
     - cybersecurity
-    - datamanagement
-    - data
-    - technology
-    - people
-    - process
+    - multicloud
+    - zerotrust
 
 date: Wed Jan 04 2023 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

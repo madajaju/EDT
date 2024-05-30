@@ -7,14 +7,13 @@ lang: pt
 nav_exclude: true
 nav_order: 34
 tags:
-    - covid
-    - mfa
-    - remoteworker
+    - datamanagement
+    - security
+    - multicloud
     - cybersecurity
     - people
+    - process
     - technology
-    - vdi
-    - vpn
 
 date: Mon Jan 04 2021 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

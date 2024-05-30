@@ -7,10 +7,12 @@ lang: pt
 nav_exclude: true
 nav_order: 146
 tags:
-    - collectiongenerativeai
-    - ai
+    - datamanagement
+    - multicloud
+    - cybersecurity
     - people
-    - embracingdigital
+    - process
+    - policy
 
 date: Mon Jul 10 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

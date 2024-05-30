@@ -7,11 +7,13 @@ lang: fr
 nav_exclude: true
 nav_order: 62
 tags:
-    - edge
-    - compute
-    - 5g
-    - aiml
     - iot
+    - 5g
+    - datademands
+    - security
+    - multicloud
+    - zerotrust
+    - cybersecurity
 
 date: Wed Aug 18 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

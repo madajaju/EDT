@@ -7,14 +7,12 @@ lang: es
 nav_exclude: true
 nav_order: 45
 tags:
+    - datamanagement
     - multicloud
-    - compute
-    - optimization
-    - workloadplacement
-    - workload
-    - migration
+    - cybersecurity
+    - people
     - process
-    - cloudinstance
+    - technology
 
 date: Tue Mar 30 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

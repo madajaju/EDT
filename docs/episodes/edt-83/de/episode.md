@@ -7,11 +7,12 @@ lang: de
 nav_exclude: true
 nav_order: 83
 tags:
-    - data
-    - datacentric
+    - advancedcommunications
+    - multicloud
+    - cybersecurity
+    - technology
+    - policy
     - people
-    - process
-    - idc2022
 
 date: Sat Apr 08 20220 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

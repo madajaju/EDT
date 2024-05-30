@@ -7,12 +7,12 @@ lang: it
 nav_exclude: true
 nav_order: 54
 tags:
-    - multicloud
-    - organizationalchange
-    - change
+    - datamanagement
+    - leadership
+    - transformation
+    - cybersecurity
     - people
-    - hsbc
-    - cio
+    - process
 
 date: Mon Jun 21 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

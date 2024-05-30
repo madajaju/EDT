@@ -7,13 +7,14 @@ lang: en
 nav_exclude: true
 nav_order: 114
 tags:
-    - compute
-    - businessprocessmanagement
-    - capitalbpm
     - bpm
-    - automation
-    - camunda
+    - datamanagement
+    - microservices
     - rpa
+    - multicloud
+    - cybersecurity
+    - process
+    - technology
 
 date: Tue Nov 22 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

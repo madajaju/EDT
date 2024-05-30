@@ -7,12 +7,15 @@ lang: pt
 nav_exclude: true
 nav_order: 11
 tags:
-    - remotelearning
-    - compute
-    - technology
+    - advancedcommunications
+    - privacy
+    - security
+    - vpn
+    - zerotrust
+    - cybersecurity
     - people
-    - edge
-    - telelearning
+    - process
+    - policy
 
 date: Tue Aug 11 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

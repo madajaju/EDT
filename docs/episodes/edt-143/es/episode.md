@@ -7,10 +7,12 @@ lang: es
 nav_exclude: true
 nav_order: 143
 tags:
+    - datamanagement
+    - intel
+    - zerotrust
     - cybersecurity
-    - sgx
-    - confidentialcomputing
-    - ai
+    - people
+    - technology
 
 date: Thu Jun 15 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

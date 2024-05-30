@@ -9,8 +9,10 @@ nav_order: 60
 tags:
     - cybersecurity
     - ransomware
-    - riskmanagement
-    - process
+    - datalifecyclemanagement
+    - databreaches
+    - zerotrust
+    - datasecurity
 
 date: Wed Aug 04 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

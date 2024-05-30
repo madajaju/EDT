@@ -8,26 +8,14 @@ nav_exclude: true
 nav_order: 186
 tags:
     - generativeai
-    - artificialintelligence
-    - futureofai
-    - aitechnology
     - geophysics
-    - datasimulation
-    - datamodeling
-    - eduardoalveraz
-    - aiarchitecture
     - machinelearning
-    - dataanalysis
-    - bridgingscientistsusers
-    - proprietarydata
     - datasecurity
-    - cloudplatforms
-    - datainteraction
-    - aigrowth
-    - transformation
-    - aipotential
-    - techinnovation
-    - aifrontier
+    - dataanalysis
+    - dataprivacy
+    - knowledgesharing
+    - cloud
+    - cybersecurity
 
 date: Thu Feb 15 2024 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:

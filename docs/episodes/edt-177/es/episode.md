@@ -8,25 +8,9 @@ nav_exclude: true
 nav_order: 177
 tags:
     - safelyshare
-    - datasecurity
+    - datagovernance
     - zerotrust
-    - secureenclaves
-    - confidentialcomputing
-    - securedatasharing
-    - dataencryption
-    - hybridconfidentialcomputing
-    - dataauthentication
-    - datamanagement
-    - witnessexecution
-    - datasharingsolutions
-    - confidentialcomputingchipsets
-    - endtoendencryption
-    - dataprotection
-    - businessinformationsecurity
-    - securedataaccess
-    - securedataexchange
-    - datasharingtechnology
-    - dataprivacy
+    - cybersecurity
 
 date: Thu Dec 14 2023 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:

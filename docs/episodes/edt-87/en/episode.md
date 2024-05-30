@@ -7,14 +7,17 @@ lang: en
 nav_exclude: true
 nav_order: 87
 tags:
+    - softwaresecurity
+    - dataencryption
+    - devsecops
     - confidentialcomputing
-    - devops
-    - compute
+    - secureenclaves
+    - dataprotection
+    - zerotrust
+    - cybersecurity
     - technology
     - process
-    - devsecops
-    - cybersecurity
-    - sgx
+    - policy
 
 date: Wed May 18 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

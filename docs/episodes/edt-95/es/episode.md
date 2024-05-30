@@ -7,9 +7,13 @@ lang: es
 nav_exclude: true
 nav_order: 95
 tags:
-    - data
-    - edge
-    - compute
+    - edgecomputing
+    - cloudcomputing
+    - datamanagement
+    - itgovernance
+    - security
+    - multicloud
+    - zerotrust
     - cybersecurity
 
 date: Mon Jul 11 2022 17:00:00 GMT-0700 (Pacific Daylight Time)

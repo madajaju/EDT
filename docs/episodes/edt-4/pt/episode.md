@@ -7,17 +7,9 @@ lang: pt
 nav_exclude: true
 nav_order: 4
 tags:
-    - data
-    - informationmanagement
-    - informationmaturity
-    - datagovernance
-    - datawarehouse
-    - datalake
-    - datamesh
-    - datalineage
-    - technology
-    - process
-    - people
+    - dataarchitecture
+    - generativeai
+    - zerotrust
 
 date: Mon Jun 29 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -7,12 +7,9 @@ lang: es
 nav_exclude: true
 nav_order: 32
 tags:
-    - rpa
-    - automation
-    - catalytic
-    - compute
+    - moderncomputing
+    - devops
     - process
-    - technology
 
 date: Tue Dec 08 2020 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

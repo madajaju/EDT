@@ -7,13 +7,12 @@ lang: es
 nav_exclude: true
 nav_order: 92
 tags:
-    - cybersecurity
-    - endpointmanagement
-    - vulnerability
-    - cyberattack
-    - iot
-    - edge
     - censys
+    - cybersecurity
+    - datadrivendecisionmaking
+    - log4j
+    - multicloud
+    - zerotrust
 
 date: Wed Jun 15 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

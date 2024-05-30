@@ -7,11 +7,12 @@ lang: fr
 nav_exclude: true
 nav_order: 148
 tags:
-    - remoteworker
-    - remotework
-    - mobile
-    - mobilevirtualization
+    - useraccessmanagement
     - hypori
+    - 5g
+    - zerotrust
+    - multicloud
+    - cybersecurity
 
 date: Wed Jul 26 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

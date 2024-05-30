@@ -8,17 +8,16 @@ nav_exclude: true
 nav_order: 167
 tags:
     - ai
-    - aipolicy
     - lawenforcement
-    - aiethics
-    - collgenerativeai
+    - artificialintelligence
     - childprotection
-    - aiforgood
-    - chainofcustody
+    - machinelearning
+    - ethics
+    - multicloud
+    - cybersecurity
+    - technology
     - policy
-    - people
-    - embracingdigital
-    - edt167
+    - process
 
 date: Tue Oct 17 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

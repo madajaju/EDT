@@ -7,12 +7,8 @@ lang: en
 nav_exclude: true
 nav_order: 193
 tags:
-    - digitaltransformation
-    - sme
-    - changeagent
-    - organizationalchange
-    - people
-    - culture
+    - riskmanagement
+    - multicloud
 
 date: Thu Apr 04 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

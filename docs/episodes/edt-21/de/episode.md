@@ -7,14 +7,12 @@ lang: de
 nav_exclude: true
 nav_order: 21
 tags:
-    - bigmemory
-    - edge
-    - compute
-    - technology
+    - datamanagement
     - memverge
-    - optane
-    - pmem
-    - data
+    - dataanalytics
+    - technology
+    - process
+    - people
 
 date: Sun Sep 13 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

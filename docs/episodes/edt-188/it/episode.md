@@ -7,32 +7,11 @@ lang: it
 nav_exclude: true
 nav_order: 188
 tags:
-    - embracingdigitaltransformation
-    - businesssurvivalstrategy
-    - burgessinstitute
-    - onlinelearning
-    - workdynamics
-    - covid19pandemic
-    - digitalinfrastructure
-    - workfromhome
-    - onlinespanishcourses
-    - spanishlanguageschool
-    - adulteducation
-    - globalmarketexpansion
-    - codingforbusiness
-    - adaptivedigitalstructure
-    - businessprocessunderstanding
-    - brickandmortarbusiness
-    - socialdistancing
-    - teachingonline
-    - understandingcoding
-    - digitalera
-    - languageinstitutebusiness
-    - growthstrategy
-    - digitaltransition
-    - spanishlanguageinstitute
-    - remotelearning
-    - workflowsadaptation
+    - businessmanagement
+    - multicloud
+    - technology
+    - people
+    - process
 
 date: Thu Feb 29 2024 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:

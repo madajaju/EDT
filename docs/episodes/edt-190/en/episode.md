@@ -7,45 +7,11 @@ lang: en
 nav_exclude: true
 nav_order: 190
 tags:
-    - digitalsecurity
-    - intel
-    - productassurance
-    - proactivesecurity
-    - securitydevelopmentlifecycle
-    - psirt
-    - offensivesecurityresearch
-    - bugbountyprogram
-    - projectcircuitbreaker
-    - hardwarehacking
-    - securitythreats
-    - firmwaresecurity
-    - siliconindustry
-    - intelceo
-    - patgelsinger
-    - abiresearch
-    - securitytraining
-    - securityweaknesses
-    - cybersecurityefforts
-    - postproductlaunch
-    - vulnerabilitymanagement
-    - securitypatches
-    - crowdsourcedsecurity
-    - intelproductsecurity
-    - hardwarescurityresearchers
-    - securityupdates
-    - enduserassurance
-    - securitymindset
-    - intelengineers
-    - securityleadership
-    - trustworthytechnology
-    - productvulnerabilities
-    - securitymitigationstrategies
-    - securityproactiveness
-    - cyberthreatdefense
-    - intelpowereddevices
-    - securityfirstapproach
-    - diligentsecuritydesign
-    - intelproductline.
+    - endusersecurity
+    - cybersecurity
+    - people
+    - process
+    - policy
 
 date: Thu Mar 14 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

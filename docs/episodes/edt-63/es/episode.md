@@ -7,12 +7,11 @@ lang: es
 nav_exclude: true
 nav_order: 63
 tags:
-    - organizationalchange
-    - change
+    - telework
+    - cybersecurity
+    - proofofconcept
     - people
-    - covid
-    - cio
-    - california
+    - technology
 
 date: Wed Aug 25 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

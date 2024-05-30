@@ -7,13 +7,14 @@ lang: it
 nav_exclude: true
 nav_order: 53
 tags:
-    - devops
-    - compute
-    - technology
-    - process
-    - devsecops
+    - auditability
+    - automation
+    - compliance
+    - zerotrust
     - cybersecurity
-    - multicloud
+    - process
+    - technology
+    - policy
 
 date: Mon Jun 14 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

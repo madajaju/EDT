@@ -7,10 +7,14 @@ lang: de
 nav_exclude: true
 nav_order: 28
 tags:
+    - digitaltransformation
+    - moderncomputing
+    - roboticprocessautomation
     - rpa
-    - bpm
-    - automation
-    - compute
+    - changemanagement
+    - multicloud
+    - people
+    - process
     - technology
 
 date: Thu Nov 05 2020 16:00:00 GMT-0800 (Pacific Standard Time)

@@ -7,8 +7,11 @@ lang: en
 nav_exclude: true
 nav_order: 47
 tags:
-    - covid
-    - remoteworker
+    - agileteams
+    - employeeexperience
+    - ai
+    - 5g
+    - multicloud
 
 date: Wed Apr 21 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

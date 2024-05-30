@@ -7,15 +7,9 @@ lang: en
 nav_exclude: true
 nav_order: 81
 tags:
-    - cpu
-    - fpga
-    - gpu
-    - heterogeneousprogramming
-    - npu
     - oneapi
-    - compute
+    - moderncomputing
     - technology
-    - process
 
 date: Wed Mar 23 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

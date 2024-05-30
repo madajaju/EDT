@@ -7,9 +7,9 @@ lang: es
 nav_exclude: true
 nav_order: 76
 tags:
-    - csa
-    - cloudsolutionarchitect
-    - multicloud
+    - savvycustomerengagement
+    - intel
+    - cloud
 
 date: Wed Feb 09 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

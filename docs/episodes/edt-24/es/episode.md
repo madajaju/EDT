@@ -7,15 +7,10 @@ lang: es
 nav_exclude: true
 nav_order: 24
 tags:
-    - data
-    - dataarchitecture
-    - aiops
-    - secops
-    - devsecops
-    - devops
-    - compute
-    - technology
-    - process
+    - itgovernance
+    - communication
+    - security
+    - multicloud
 
 date: Tue Oct 06 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

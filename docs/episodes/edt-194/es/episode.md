@@ -7,14 +7,8 @@ lang: es
 nav_exclude: true
 nav_order: 194
 tags:
-    - projectmanagement
-    - businessanalysts
-    - productowners
-    - agile
-    - waterfall
-    - organizationaloperations
-    - digitalchange
-    - organizationchange
+    - changemanagement
+    - process
 
 date: Thu Apr 11 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

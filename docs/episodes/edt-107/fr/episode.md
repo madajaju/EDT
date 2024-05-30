@@ -7,12 +7,9 @@ lang: fr
 nav_exclude: true
 nav_order: 107
 tags:
-    - criticalinfrastructure
-    - hotms
-    - irdeto
-    - otsecurity
-    - edge
+    - advancedcommunications
     - cybersecurity
+    - people
     - technology
     - process
 

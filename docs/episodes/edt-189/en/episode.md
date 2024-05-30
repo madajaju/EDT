@@ -7,31 +7,9 @@ lang: en
 nav_exclude: true
 nav_order: 189
 tags:
-    - embracingdigitaltransformation
-    - darrenpulsipher
-    - matthewshaxted
-    - parallelworks
-    - highperformancecomputing
+    - moderncomputing
     - hpc
-    - machinelearning
-    - ai
-    - computing
-    - evolutionofhpc
-    - computingcores
-    - supercomputing
-    - hpctechnology
-    - hpcclusters
-    - parallelcomputing
-    - democratizinghpc
-    - computationalcomplexities
-    - computingsolutions
-    - futureofhpc
-    - computinginnovation
-    - dataprocessing
-    - digitaltransformation
-    - computationalboost
-    - dataintensiveindustries
-    - industryspecificworkloads
+    - technology
 
 date: Thu Mar 07 2024 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:

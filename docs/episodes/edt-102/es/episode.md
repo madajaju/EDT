@@ -7,14 +7,17 @@ lang: es
 nav_exclude: true
 nav_order: 102
 tags:
+    - networksecurity
     - microsegmentation
-    - otsecurity
-    - identitybasednetworking
+    - cloudnative
+    - cloudsecurity
+    - virtuallocalareanetwork
+    - operationaltechnology
+    - datasecurity
+    - zerotrust
     - cybersecurity
-    - comms
     - technology
-    - edge
-    - sdn
+    - policy
 
 date: Wed Aug 24 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

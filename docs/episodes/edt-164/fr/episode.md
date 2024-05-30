@@ -7,29 +7,13 @@ lang: fr
 nav_exclude: true
 nav_order: 164
 tags:
-    - cloudmigration
-    - organizations
-    - collmultihybridcloud
-    - cloudnative
-    - datacenterdependencies
-    - hybridstrategy
-    - technicaldebt
-    - applications
-    - workloads
-    - politicalcapital
-    - customerfacingapplications
-    - importance
-    - applicationrationalization
-    - analysis
-    - dependencies
-    - smoothtransition
-    - surprises
-    - decision
-    - compliancerequirements
-    - regulatedindustries
-    - compliancemonitoring
-    - embracingdigital
-    - edt164
+    - datamanagement
+    - compliance
+    - multicloud
+    - cybersecurity
+    - policy
+    - technology
+    - process
 
 date: Tue Oct 03 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

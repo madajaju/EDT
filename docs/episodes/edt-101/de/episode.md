@@ -8,11 +8,14 @@ nav_exclude: true
 nav_order: 101
 tags:
     - networksecurity
+    - ot
+    - iot
+    - microsegmentation
+    - zerotrust
     - cybersecurity
-    - elisity
-    - comms
+    - advancedcommunications
     - technology
-    - process
+    - policy
 
 date: Mon Aug 22 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

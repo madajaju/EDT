@@ -7,23 +7,11 @@ lang: es
 nav_exclude: true
 nav_order: 165
 tags:
-    - cloudcomputeoptions
-    - collmultihybridcloud
-    - cloudinstance
-    - cloudspecialistadvice
-    - computeselectiontools
-    - optimizecloud
-    - workloadcloud
-    - vendorlockinprevention
-    - cloudbestpractices
-    - cloudinstanceperformance
-    - costeffectivecomputesolutions
-    - workloadoptimization
-    - resourceefficiency
-    - cloud
-    - multihybridcloud
-    - embracingdigital
-    - edt165
+    - cloudcomputing
+    - portability
+    - multicloud
+    - moderncomputing
+    - technology
 
 date: Thu Oct 05 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

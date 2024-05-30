@@ -8,10 +8,10 @@ nav_exclude: true
 nav_order: 141
 tags:
     - neurology
-    - neuromorphic
-    - security
-    - ai
+    - moderncomputing
+    - multicloud
     - cybersecurity
+    - technology
 
 date: Wed May 31 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

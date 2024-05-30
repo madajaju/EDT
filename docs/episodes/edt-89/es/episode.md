@@ -7,15 +7,10 @@ lang: es
 nav_exclude: true
 nav_order: 89
 tags:
-    - bigmemory
-    - memverge
-    - optane
-    - technology
-    - data
-    - compute
-    - pmem
     - cxl
-    - ceo
+    - moderncomputing
+    - technology
+    - process
 
 date: Wed Jun 01 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

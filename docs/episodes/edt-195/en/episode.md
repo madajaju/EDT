@@ -7,17 +7,17 @@ lang: en
 nav_exclude: true
 nav_order: 195
 tags:
-    - intel
     - digitaltransformation
-    - ai
-    - genai
-    - cloud
-    - 18a
-    - technologyinnovation
-    - intelinvestments
-    - workforcedevelopment
-    - skillgap
-    - confidentialcomputing
+    - edgecomputing
+    - collaboration
+    - generativeai
+    - multicloud
+    - zerotrust
+    - artificialintelligence
+    - technology
+    - people
+    - process
+    - policy
 
 date: Thu Apr 18 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

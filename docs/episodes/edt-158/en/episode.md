@@ -7,23 +7,13 @@ lang: en
 nav_exclude: true
 nav_order: 158
 tags:
-    - collectiongenerativeai
-    - addressingbiasesingenerativeai
-    - preservingauthenticityandindividuality
-    - balancingaiintegrationineducation
-    - lauratorresnewey
-    - criticalthinkingskills
-    - educationaltechnology
-    - highereducation
-    - aiineducation
-    - aibias
-    - diversityandinclusion
-    - authenticvoices
-    - uniqueperspectives
-    - genai
     - generativeai
-    - embracingdigital
-    - edt158
+    - artificialintelligence
+    - bias
+    - criticalthinking
+    - digitaltransformation
+    - people
+    - technology
 
 date: Mon Sep 11 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -7,29 +7,13 @@ lang: fr
 nav_exclude: true
 nav_order: 185
 tags:
-    - digitaltransformation
-    - historicaltechnologyevolution
-    - datacentricapplicationdevelopment
-    - networkingexplosion
-    - virtualizationrise
-    - technologyshifts
-    - operationaltechnology
-    - linuxdevelopment
-    - cloudtechnology
-    - gridtechnology
-    - applicationdeployment
-    - embracingtechnologicalchange
-    - balancinginnovation
-    - leveragingnewtechnologies
-    - technologicalgrowthandadvancement
-    - highperformancecomputingenvironments
-    - securityissuesintechnology
-    - mooreslaweffect
-    - x86processor
-    - unixbasedoperatingsystem
-    - noisyneighborsphenomenon
-    - heterogeneoushardware
-    - technologicaladvancementsinhistory.
+    - virtualization
+    - cloudcomputing
+    - datalineage
+    - datamanagement
+    - cybersecurity
+    - zerotrust
+    - multicloud
 
 date: Thu Feb 08 2024 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:

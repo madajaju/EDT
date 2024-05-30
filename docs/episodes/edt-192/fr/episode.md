@@ -7,37 +7,11 @@ lang: fr
 nav_exclude: true
 nav_order: 192
 tags:
-    - evolvingdigitalidentity
-    - digitalage
-    - technologyandidentity
-    - identityinsoftware
-    - nonhumanidentity
-    - smartphoneidentity
-    - caridentity
-    - digitalrightsmanagement
-    - nonfungibletokens
-    - nft
-    - blockchaintechnology
-    - identityrecognition
-    - virtualeconomy
-    - securedigitalworld
-    - digitalworld
-    - authenticdigitalworld
-    - reimaginingidentity
-    - identityspectrum
-    - secureworld
-    - identityspecialist
-    - jeffreich
-    - digitaltransaction
-    - nftvalue
-    - softwareorigin
-    - softwareauthentication
-    - idverification
-    - techadvancements
+    - advancedcommunications
+    - technology
     - cybersecurity
-    - identitymanagement
-    - dataprivacy
-    - identitytheftprotection
+    - zerotrust
+    - policy
 
 date: Thu Mar 28 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

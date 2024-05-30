@@ -8,24 +8,12 @@ nav_exclude: true
 nav_order: 201
 tags:
     - generativeai
-    - aitechnology
     - digitaltransformation
-    - universaltranslator
     - datasecurity
-    - dataprivacy
-    - languageprocessing
     - artificialintelligence
-    - aichallenges
-    - aibenefits
-    - aiimplementation
-    - aipitfalls
-    - dataleakage
-    - internetsafety
-    - datasecurityrisks
-    - technologyinnovation
-    - informationbrokers
-    - advancedcommunication
-    - bridgegenerationalgaps
+    - universaltranslator
+    - aibias
+    - cybersecurity
 
 date: Thu May 09 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

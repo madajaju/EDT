@@ -7,13 +7,13 @@ lang: de
 nav_exclude: true
 nav_order: 113
 tags:
+    - moderncomputing
     - bpm
+    - transformation
     - automation
-    - compute
-    - management
-    - camunda
-    - capitalbpm
-    - rpa
+    - enterprisearchitecture
+    - multicloud
+    - process
 
 date: Thu Nov 17 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

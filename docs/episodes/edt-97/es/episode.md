@@ -7,9 +7,13 @@ lang: es
 nav_exclude: true
 nav_order: 97
 tags:
-    - data
-    - graphdb
-    - katanagraph
+    - datavisualization
+    - datamodeling
+    - cybersecurity
+    - dataanalysis
+    - datamanagement
+    - multicloud
+    - zerotrust
 
 date: Wed Jul 27 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

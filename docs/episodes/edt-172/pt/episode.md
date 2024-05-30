@@ -7,27 +7,15 @@ lang: pt
 nav_exclude: true
 nav_order: 172
 tags:
-    - zta
+    - zerotrust
+    - cybersecurity
     - digitaltransformation
-    - initiatives
-    - newtechnologies
-    - businessprocesses
-    - customerexperience
-    - employeeexperience
-    - securitymodel
-    - trustednetworks
-    - cybercriminals
-    - zerotrustarchitecture
-    - continuouspolicies
-    - granularpolicies
-    - accesscontrol
-    - defaultdeny
-    - continuousauthentication
-    - microsegmentation
+    - authentication
     - networksecurity
-    - workflow
-    - mediumriskapplication
-    - dependencies
+    - microsegmentation
+    - encryption
+    - policy
+    - technology
 
 date: Wed Nov 08 2023 23:00:00 GMT-0800 (Pacific Standard Time)
 guests:

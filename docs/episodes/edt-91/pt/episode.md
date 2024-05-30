@@ -8,12 +8,13 @@ nav_exclude: true
 nav_order: 91
 tags:
     - cybersecurity
-    - devsecops
+    - datamanagement
+    - iot
     - sbom
-    - securesupplychain
+    - transparency
+    - zerotrust
+    - technology
     - policy
-    - process
-    - compute
 
 date: Wed Jun 08 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

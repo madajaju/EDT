@@ -7,6 +7,12 @@ lang: it
 nav_exclude: true
 nav_order: 8
 tags:
+    - policy
+    - security
+    - intel
+    - zerotrust
+    - multicloud
+    - cybersecurity
 
 date: Mon Jul 20 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

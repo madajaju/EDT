@@ -8,12 +8,11 @@ nav_exclude: true
 nav_order: 123
 tags:
     - cybersecurity
-    - ransomeware
-    - automation
-    - government
-    - people
-    - process
-    - technology
+    - stateandlocalgovernment
+    - rpa
+    - zerotrust
+    - criticalinfrastructure
+    - policy
 
 date: Wed Feb 15 2023 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

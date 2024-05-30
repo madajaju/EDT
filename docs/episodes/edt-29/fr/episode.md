@@ -7,13 +7,11 @@ lang: fr
 nav_exclude: true
 nav_order: 29
 tags:
-    - aerospike
     - database
-    - ingestion
-    - optane
-    - data
+    - datamanagement
+    - aerospike
+    - iot
     - technology
-    - pmem
 
 date: Wed Nov 11 2020 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

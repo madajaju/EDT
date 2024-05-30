@@ -7,13 +7,11 @@ lang: pt
 nav_exclude: true
 nav_order: 94
 tags:
-    - hybridcloud
-    - microcloud
-    - privatecloud
-    - compute
+    - riskmanagement
+    - virtualization
+    - cybersecurity
+    - multicloud
     - technology
-    - cloud
-    - vergeio
 
 date: Wed Jul 06 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

@@ -7,22 +7,14 @@ lang: es
 nav_exclude: true
 nav_order: 170
 tags:
-    - zta
     - zerotrust
-    - zerotrustarchitecture
-    - implementingzerotrust
-    - identityverification
+    - networksecurity
+    - multifactorauthentication
     - microsegmentation
-    - leastprivilege
-    - encryption
-    - continuousauthentication
-    - anomalydetection
-    - automatedthreatresponse
-    - dataprevention
-    - rightsmanagement
-    - analytics
-    - policyenforcement
-    - cybersecurity
+    - datasecurity
+    - riskmanagementpolicies
+    - data
+    - cybersecuritypolicies
 
 date: Thu Oct 26 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

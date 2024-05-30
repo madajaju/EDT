@@ -7,30 +7,10 @@ lang: it
 nav_exclude: true
 nav_order: 182
 tags:
-    - digitaltransformation
-    - dataintegrity
-    - zerotrust
+    - dataretentionpolicies
     - cybersecurity
-    - strategies
     - walacor
-    - encryption
-    - loganalysis
-    - geographicaldistribution
-    - externalhackers
-    - organizationalthreats
-    - datamanagement
-    - dataaudits
-    - immutableauditlog
-    - systemchange
-    - legalcompliance
-    - reducerisk
-    - dataintelligence
-    - multilayeredsecuirty
-    - dataprotectionsolution
-    - keyvulnerabilities
-    - improveddataprotection
-    - futuredigitalbusinesses
-    - revolutionizedigitallandscape
+    - zerotrust
 
 date: Thu Jan 18 2024 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:

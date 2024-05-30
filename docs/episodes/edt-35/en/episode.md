@@ -7,12 +7,10 @@ lang: en
 nav_exclude: true
 nav_order: 35
 tags:
-    - change
-    - culturalchange
-    - organizationalchange
+    - businessmanagement
     - disruption
+    - generativeai
     - people
-    - process
 
 date: Tue Jan 12 2021 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

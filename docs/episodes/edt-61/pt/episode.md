@@ -7,13 +7,17 @@ lang: pt
 nav_exclude: true
 nav_order: 61
 tags:
-    - datbreach
-    - data
+    - supplychain
+    - encryption
+    - databreaches
+    - zerotrust
+    - opensourcesecurity
+    - networksecurity
+    - cybersecurity
+    - people
     - process
     - policy
-    - cybersecurity
-    - supplychain
-    - securesupplychain
+    - technology
 
 date: Wed Aug 11 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

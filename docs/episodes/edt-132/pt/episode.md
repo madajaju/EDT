@@ -7,12 +7,10 @@ lang: pt
 nav_exclude: true
 nav_order: 132
 tags:
-    - metify
-    - sdi
+    - advancedcommunications
+    - multicloud
+    - process
     - technology
-    - baremetal
-    - heterogeneouscompute
-    - compute
 
 date: Wed Apr 05 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

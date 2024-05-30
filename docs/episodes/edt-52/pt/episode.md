@@ -7,9 +7,14 @@ lang: pt
 nav_exclude: true
 nav_order: 52
 tags:
+    - cloud
+    - data_management
+    - aws
+    - automation
     - multicloud
-    - optimization
-    - workloadplacement
+    - cybersecurity
+    - technology
+    - process
 
 date: Mon Jun 07 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

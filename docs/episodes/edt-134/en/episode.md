@@ -7,11 +7,10 @@ lang: en
 nav_exclude: true
 nav_order: 134
 tags:
-    - collectiongenerativeai
-    - artificialintelligence
-    - waveformai
-    - datashapes
-    - waveform
+    - ai
+    - machinelearning
+    - edgecomputing
+    - anomalydetection
     - technology
 
 date: Wed Apr 19 2023 17:00:00 GMT-0700 (Pacific Daylight Time)

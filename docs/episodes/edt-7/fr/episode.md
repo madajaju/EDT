@@ -7,6 +7,10 @@ lang: fr
 nav_exclude: true
 nav_order: 7
 tags:
+    - datasecurity
+    - cybersecurity
+    - vdi
+    - zerotrust
 
 date: Mon Jul 13 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

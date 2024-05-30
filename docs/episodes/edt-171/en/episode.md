@@ -9,26 +9,9 @@ nav_order: 171
 tags:
     - generativeai
     - artificialintelligence
-    - languagemodels
-    - chatgpt
-    - texttotext
-    - texttoaudio
-    - texttovideo
-    - texttoimage
     - bias
     - accountability
-    - dataleakage
-    - ethics
-    - compliance
-    - responsibleuse
-    - representativedata
-    - unbiaseddata
-    - highqualitydata
-    - harmefuloutput
-    - misleadingoutput
-    - transparency
-    - claudeai
-    - informedconsent
+    - technology
 
 date: Tue Oct 31 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

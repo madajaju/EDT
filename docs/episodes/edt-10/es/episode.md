@@ -7,11 +7,7 @@ lang: es
 nav_exclude: true
 nav_order: 10
 tags:
-    - telework
-    - remoteworker
-    - process
-    - technology
-    - vdi
+    - dimension2
 
 date: Tue Aug 04 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

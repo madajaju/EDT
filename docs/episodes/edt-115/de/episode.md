@@ -7,12 +7,14 @@ lang: de
 nav_exclude: true
 nav_order: 115
 tags:
-    - zta
-    - zerotrustarchitecture
-    - cyberhygiene
     - cybersecurity
-    - technology
+    - ransomware
+    - userbehavioralanalytics
+    - compliance
+    - zerotrust
+    - people
     - process
+    - policy
 
 date: Wed Nov 30 2022 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

@@ -7,25 +7,15 @@ lang: en
 nav_exclude: true
 nav_order: 200
 tags:
-    - embracingdigitaltransformation
-    - futureofai
     - generativeai
-    - aitechnology
-    - aiinteractions
-    - virtualconversations
-    - travelplanningai
-    - creativebrainstorming
-    - householdmanagement
-    - buildingtrustinai
-    - aiadvantages
-    - aichallenges
-    - aiandgooglesearch
-    - aipersonalization
-    - biasinai
-    - humanjudgementvrsai
     - digitaltransformation
-    - aiempoweredfuture
-    - usingaiwisely
+    - aiethics
+    - artificialintelligence
+    - machinelearning
+    - aibias
+    - aipotential
+    - people
+    - technology
 
 date: Wed May 08 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

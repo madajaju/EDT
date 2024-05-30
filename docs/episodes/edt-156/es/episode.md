@@ -7,28 +7,11 @@ lang: es
 nav_exclude: true
 nav_order: 156
 tags:
-    - collectiongenerativeai
-    - datamanagement
+    - artificialintelligence
     - automation
-    - dataquality
-    - strategicanalytics
-    - generativeai
-    - digitaltransformation
-    - datadriveninsights
-    - datareadiness
-    - innovation
-    - decisionmaking
-    - technologytrends
-    - businessintelligence
-    - datastrategy
-    - analytics
-    - bigdata
-    - continuouslearning
-    - operationalefficiency
-    - dataoptimization
-    - datainnovation
-    - emrbacingdigital
-    - edt156
+    - multicloud
+    - process
+    - technology
 
 date: Mon Sep 04 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

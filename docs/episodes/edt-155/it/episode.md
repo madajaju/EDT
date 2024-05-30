@@ -7,13 +7,14 @@ lang: it
 nav_exclude: true
 nav_order: 155
 tags:
-    - ai
-    - sdi
+    - infrastructuremanagement
+    - artificialintelligence
+    - generativeai
     - vergeio
-    - cloud
-    - privatecloud
-    - collectiongenerativeai
-    - hybridcloud
+    - digitaltransformation
+    - automation
+    - technology
+    - process
 
 date: Wed Aug 30 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

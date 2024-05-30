@@ -7,10 +7,12 @@ lang: de
 nav_exclude: true
 nav_order: 152
 tags:
-    - genai
-    - ai
-    - collectiongenerativeai
-    - datamanagement
+    - generativeai
+    - creativity
+    - contentgeneration
+    - artificialintelligence
+    - people
+    - technology
 
 date: Mon Aug 21 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

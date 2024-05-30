@@ -7,9 +7,11 @@ lang: fr
 nav_exclude: true
 nav_order: 149
 tags:
-    - advancedcomms
-    - 5g
     - dod
+    - 5g
+    - advancedcommunications
+    - policy
+    - technology
 
 date: Wed Aug 02 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

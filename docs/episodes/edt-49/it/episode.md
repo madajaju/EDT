@@ -7,8 +7,10 @@ lang: it
 nav_exclude: true
 nav_order: 49
 tags:
-    - covid
-    - remoteworker
+    - adaptiveleadership
+    - communication
+    - leadership
+    - people
 
 date: Wed May 05 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

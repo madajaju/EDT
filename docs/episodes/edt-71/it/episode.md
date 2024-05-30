@@ -7,14 +7,9 @@ lang: it
 nav_exclude: true
 nav_order: 71
 tags:
-    - datagovernance
-    - data
-    - immuta
-    - dataaccess
-    - identitymanagement
-    - ceo
-    - technology
-    - process
+    - datamanagement
+    - zerotrust
+    - policy
 
 date: Wed Dec 01 2021 16:00:00 GMT-0800 (Pacific Standard Time)
 guests:

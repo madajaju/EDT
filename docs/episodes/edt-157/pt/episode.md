@@ -7,33 +7,13 @@ lang: pt
 nav_exclude: true
 nav_order: 157
 tags:
-    - ai
     - generativeai
-    - collectiongenerativeai
     - infrastructuremanagement
-    - aisystems
-    - aimodels
-    - operationalization
-    - datainput
-    - modeltraining
-    - finetuning
-    - digitaltransformation
-    - opensourcemodels
-    - privateclouds
-    - edgecomputing
-    - aitools
-    - creativeoutput
-    - responsibleusage
+    - multicloud
     - reinforcementlearning
-    - monitoring
-    - optimization
-    - sandboxenvironment
-    - cloudbasedinfrastructure
-    - onpremisesinfrastructure
-    - hybridinfrastructure
-    - customerservice
-    - brainstormingapplications
-    - embracingdigital
+    - edgecomputing
+    - datagovernance
+    - dataquality
 
 date: Wed Sep 06 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:

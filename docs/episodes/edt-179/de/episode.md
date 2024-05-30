@@ -8,29 +8,10 @@ nav_exclude: true
 nav_order: 179
 tags:
     - generativeai
-    - academicintegration
-    - aiineducation
-    - digitaltransformation
-    - blogpost
-    - aistudents
-    - byuidaho
+    - artificialintelligence
     - chatgpt
-    - aiassistance
-    - academiccheating
-    - distinguishingguidelines
-    - selfassessment
-    - aiinselfassessment
-    - qualitativeimprovement
-    - ongoingdebates
-    - aishortcomings
-    - aiinaugmentation
-    - futureofai
-    - cheatingconcerns
-    - shortcutculture
-    - academicpolicies
-    - aisuccess
-    - aitoolkit
-    - professionalhabitat
+    - people
+    - policy
 
 date: Thu Jan 04 2024 00:00:00 GMT-0800 (Pacific Standard Time)
 guests:
