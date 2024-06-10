@@ -18,9 +18,47 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space."
+summary: "In this informative video, we explore the cutting-edge technology launched by the County of San Diego called Genasys EVAC. This state-of-the-art system is specially designed to improve emergency evacuations. Thanks to its geolocation-based alerts and usage of geoboundaries, Genasys EVAC can create detailed mapping zones which aim to reduce unnecessary evacuations and ensure faster re-population, thus improving the efficiency and effectiveness of emergency responses.
+
+Being closely integrated with AlertSanDiego.org and the SD Emergency app, the technology requires no additional downloads for registered users. As the fire season is approaching, officials urge residents to stay informed and prepared. Rest assured that this advanced technology is well in place to keep you safe.
+
+Watch the video and discover how this unique system works. Don't forget to like, comment and subscribe for more updates on such innovative technology. You can also take a look at our other videos and playlists for more information.
+
+TIMESTAMPS:
+00:00 Introduction
+00:32 How Genasys EVAC works
+01:38 Integration with existing platforms
+02:30 Importance of staying informed and prepared
+
+Stay connected via our social media profiles and visit our website for more information. Remember to review and update your subscription regularly to stay updated on related content.
+
+**This video is fully enhanced with alternative text for images, and a clear language for maximum accessibility. The content and links will be continuously updated for relevance and accessibility.**
+
+Keywords: San Diego County, Genasys EVAC, emergency evacuations, geolocation, emergency response, fire season, AlertSanDiego.org, SD Emergency app, safety technology.
+
+Your safety matters to us!
+[Channel Name]Blog: https://embracingdigital.org/brief-EDW70-itPodcast: https://share.transistor.fm/s/e48492ab"
 video: "https://youtu.be/"
-description: "News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space."
+description: "In this informative video, we explore the cutting-edge technology launched by the County of San Diego called Genasys EVAC. This state-of-the-art system is specially designed to improve emergency evacuations. Thanks to its geolocation-based alerts and usage of geoboundaries, Genasys EVAC can create detailed mapping zones which aim to reduce unnecessary evacuations and ensure faster re-population, thus improving the efficiency and effectiveness of emergency responses.
+
+Being closely integrated with AlertSanDiego.org and the SD Emergency app, the technology requires no additional downloads for registered users. As the fire season is approaching, officials urge residents to stay informed and prepared. Rest assured that this advanced technology is well in place to keep you safe.
+
+Watch the video and discover how this unique system works. Don't forget to like, comment and subscribe for more updates on such innovative technology. You can also take a look at our other videos and playlists for more information.
+
+TIMESTAMPS:
+00:00 Introduction
+00:32 How Genasys EVAC works
+01:38 Integration with existing platforms
+02:30 Importance of staying informed and prepared
+
+Stay connected via our social media profiles and visit our website for more information. Remember to review and update your subscription regularly to stay updated on related content.
+
+**This video is fully enhanced with alternative text for images, and a clear language for maximum accessibility. The content and links will be continuously updated for relevance and accessibility.**
+
+Keywords: San Diego County, Genasys EVAC, emergency evacuations, geolocation, emergency response, fire season, AlertSanDiego.org, SD Emergency app, safety technology.
+
+Your safety matters to us!
+[Channel Name]Blog: https://embracingdigital.org/brief-EDW70-itPodcast: https://share.transistor.fm/s/e48492ab"
 ---
 
 

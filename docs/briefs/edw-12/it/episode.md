@@ -18,9 +18,71 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Sommario"
+summary: "Seattle Mayor Bruce Harrell has recently taken the decision to set aside the plans for implementing ShotSpotter technology. This bold move, influenced by concerns from the community, including the Seattle City Council, reflects the administration's commitment to listening to its constituents. A significant financial indication of this is the exclusion of a $1 million allocation for ShotSpotter from the 2023-24 budget.
+
+Beliefs surrounding the effectiveness of the technology, potential impact on police response times, and implications on community priorities for human services & support for the homeless all played a role in this decision. Tune in as we delve into how this move may reshape the city's policies.
+
+👉 Subscribe for more updates on local politics. We'd love to hear your thoughts in the comments below!
+
+📖 Timestamps:
+00:00 - Introduction 
+01:02 - Mayor Harrell's Decision  
+02:45 - Community Reactions  
+04:12 - Impact on Police Response Times 
+05:23 - Effect on Homeless Support & Human Services  
+07:10 - Future Prospects
+   
+🔗 Connect with us on social media or visit our website for in-depth reports. See links below:
+[Website] [Twitter] [Facebook] [Instagram]
+
+🔍 Keywords: Seattle, mayor, budget, ShotSpotter, decision, community, police, technology, changed plans, Seattle council, homelessness  
+
+Stay tuned for more videos as we update you on the latest developments surrounding this story. If you found this video valuable, hit the 'like' button and share it around to spread the word! Remember, your voice matters.
+
+🔗 Checkout our playlist on Seattle City Council Decisions: [Link]
+
+In an increasingly noisy world, we stay focused on bringing you the facts. Thanks for watching!
+
+Seattle's voice - because your city matters.
+
+Note: This video description is designed to be accessible to all viewers. If you have any concerns or suggestions, kindly leave a comment below.
+
+Update: as of [latest update date], here's what you need to know [link to related content or latest video]
+
+Avoid stuffing too many keywords and maintain a natural flow of language. Happy viewing!Blog: https://embracingdigital.org/brief-EDW70-itPodcast: https://share.transistor.fm/s/e48492ab"
 video: "https://youtu.be/"
-description: "Sommario"
+description: "Seattle Mayor Bruce Harrell has recently taken the decision to set aside the plans for implementing ShotSpotter technology. This bold move, influenced by concerns from the community, including the Seattle City Council, reflects the administration's commitment to listening to its constituents. A significant financial indication of this is the exclusion of a $1 million allocation for ShotSpotter from the 2023-24 budget.
+
+Beliefs surrounding the effectiveness of the technology, potential impact on police response times, and implications on community priorities for human services & support for the homeless all played a role in this decision. Tune in as we delve into how this move may reshape the city's policies.
+
+👉 Subscribe for more updates on local politics. We'd love to hear your thoughts in the comments below!
+
+📖 Timestamps:
+00:00 - Introduction 
+01:02 - Mayor Harrell's Decision  
+02:45 - Community Reactions  
+04:12 - Impact on Police Response Times 
+05:23 - Effect on Homeless Support & Human Services  
+07:10 - Future Prospects
+   
+🔗 Connect with us on social media or visit our website for in-depth reports. See links below:
+[Website] [Twitter] [Facebook] [Instagram]
+
+🔍 Keywords: Seattle, mayor, budget, ShotSpotter, decision, community, police, technology, changed plans, Seattle council, homelessness  
+
+Stay tuned for more videos as we update you on the latest developments surrounding this story. If you found this video valuable, hit the 'like' button and share it around to spread the word! Remember, your voice matters.
+
+🔗 Checkout our playlist on Seattle City Council Decisions: [Link]
+
+In an increasingly noisy world, we stay focused on bringing you the facts. Thanks for watching!
+
+Seattle's voice - because your city matters.
+
+Note: This video description is designed to be accessible to all viewers. If you have any concerns or suggestions, kindly leave a comment below.
+
+Update: as of [latest update date], here's what you need to know [link to related content or latest video]
+
+Avoid stuffing too many keywords and maintain a natural flow of language. Happy viewing!Blog: https://embracingdigital.org/brief-EDW70-itPodcast: https://share.transistor.fm/s/e48492ab"
 ---
 
 

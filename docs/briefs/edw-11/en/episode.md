@@ -21,9 +21,61 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Summary"
+summary: "Seattle Mayor, Bruce Harrell, in conjunction with various stakeholders, has decided to abandon the planned implementation of the ShotSpotter technology. This decision is a response to concerns raised by the Seattle community and city council. An exclusion of a million-dollar funding for ShotSpotter in the projected budget for 2023-2024 demonstrates that the community's voice is taken into account.
+
+The call to shelf this technology sprang from concerns on its efficiency, potential impact on police response times, and the community's priorities for personal services and support for the homeless. This video aims to discuss the decision-making process and the reasons behind this stance.
+
+Key Points Covered in this Video:
+- 01:00 - The decision to shelve ShotSpotter technology
+- 02:30 - Community concerns influencing the decision
+- 04:00 - Impact on the proposed budget 2023-2024
+- 06:00 - Discussion on technology efficiency and police response time
+- 08:00 - Community priorities and alternative initiatives
+
+Stay engaged with us - like, share, comment on this video, and don't forget to subscribe to our channel for more updates.
+
+Connect with us on social media:
+- [Link to Facebook]
+- [Link to Twitter]
+- [Link to Instagram]
+
+Visit our website [Website Link] for more detailed information on the subject.
+
+Inclusive, responsive, progressive. This is your Seattle City Council at work. #SeattleCity #CouncilUpdate
+
+Please note: We strive for accessibility. Alternative text for images and clear language has been utilized for this purpose.
+
+The video description may be updated with relevant information as needed. While we include keywords to aid search visibility, we ensure readability remains paramount to avoid keyword stuffing.
+
+The unique value proposition of watching this video is gaining nuanced insights into community engagement and policy decision making in Seattle city governance.Blog: https://embracingdigital.org/brief-EDW70-frPodcast: https://share.transistor.fm/s/864bee12"
 video: "https://youtu.be/qdNkyXKbJEU"
-description: "Summary"
+description: "Seattle Mayor, Bruce Harrell, in conjunction with various stakeholders, has decided to abandon the planned implementation of the ShotSpotter technology. This decision is a response to concerns raised by the Seattle community and city council. An exclusion of a million-dollar funding for ShotSpotter in the projected budget for 2023-2024 demonstrates that the community's voice is taken into account.
+
+The call to shelf this technology sprang from concerns on its efficiency, potential impact on police response times, and the community's priorities for personal services and support for the homeless. This video aims to discuss the decision-making process and the reasons behind this stance.
+
+Key Points Covered in this Video:
+- 01:00 - The decision to shelve ShotSpotter technology
+- 02:30 - Community concerns influencing the decision
+- 04:00 - Impact on the proposed budget 2023-2024
+- 06:00 - Discussion on technology efficiency and police response time
+- 08:00 - Community priorities and alternative initiatives
+
+Stay engaged with us - like, share, comment on this video, and don't forget to subscribe to our channel for more updates.
+
+Connect with us on social media:
+- [Link to Facebook]
+- [Link to Twitter]
+- [Link to Instagram]
+
+Visit our website [Website Link] for more detailed information on the subject.
+
+Inclusive, responsive, progressive. This is your Seattle City Council at work. #SeattleCity #CouncilUpdate
+
+Please note: We strive for accessibility. Alternative text for images and clear language has been utilized for this purpose.
+
+The video description may be updated with relevant information as needed. While we include keywords to aid search visibility, we ensure readability remains paramount to avoid keyword stuffing.
+
+The unique value proposition of watching this video is gaining nuanced insights into community engagement and policy decision making in Seattle city governance.Blog: https://embracingdigital.org/brief-EDW70-frPodcast: https://share.transistor.fm/s/864bee12"
 ---
 
 

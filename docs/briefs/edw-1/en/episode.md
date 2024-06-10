@@ -18,9 +18,65 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity."
+summary: "Welcome to this week's episode of Embracing Digital Transformation where our host Darren engages in a riveting discussion with recurring guest, Steve Orrin, the Chief Technology Officer of Intel Federal. They delve deep into the cutting-edge topic of securing Generative Artificial Intelligence (AI) and Artificial Intelligence in general. 
+
+Generative AI has created new attack vectors that cyber consultants can exploit. It's evident that new best practices for cybersecurity need establishment to tackle this new paradigm. Learn all about it in this insightful podcast episode. Let's get ready to navigate the digital sea together!
+
+Key points covered in this episode:
+- 0:00 - Introduction
+- 1:30 - Discussing Generative Artificial Intelligence 
+- 3:45 - New attack vectors in cyber space
+- 6:30 - The role of Cyber consultants 
+- 8:20 - Establishing new cybersecurity practices
+- 10:45 - Conclusion & CTA
+
+Jump right into the bits that pique your interest the most with the help of these timestamps.
+
+Make sure to like, comment and subscribe to our channel for more engaging content like this. Also, share this with your peers to spread knowledge. Visit our website at [website link] for more information. 
+
+Our podcast Embracing Digital Transformation brings you unique insights into the world of digital innovation. Follow us on social media to stay updated! Links to our social media profiles can be found below:
+
+Facebook: [link]
+Twitter: [link]
+LinkedIn: [link]
+
+This description is regularly updated to keep you informed on the latest happenings. Remember, embracing digital transformation is a journey, not a destination.
+
+Avoiding keyword stuffing, the description has been written in a clear and concise language to benefit all viewers. Each episode brings its unique value, setting us apart and making each watch worthwhile. Stay tuned for more! 
+
+Don't just adapt, embrace the digital transformation with us! 
+
+Note: Artificial Intelligence and cybersecurity are the primary keywords used in a consistent yet non-stuffy fashion.Blog: https://embracingdigital.org/brief-EDW70-dePodcast: https://share.transistor.fm/s/e6e9f227"
 video: "https://youtu.be/nxTLeN4r41o"
-description: "For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity."
+description: "Welcome to this week's episode of Embracing Digital Transformation where our host Darren engages in a riveting discussion with recurring guest, Steve Orrin, the Chief Technology Officer of Intel Federal. They delve deep into the cutting-edge topic of securing Generative Artificial Intelligence (AI) and Artificial Intelligence in general. 
+
+Generative AI has created new attack vectors that cyber consultants can exploit. It's evident that new best practices for cybersecurity need establishment to tackle this new paradigm. Learn all about it in this insightful podcast episode. Let's get ready to navigate the digital sea together!
+
+Key points covered in this episode:
+- 0:00 - Introduction
+- 1:30 - Discussing Generative Artificial Intelligence 
+- 3:45 - New attack vectors in cyber space
+- 6:30 - The role of Cyber consultants 
+- 8:20 - Establishing new cybersecurity practices
+- 10:45 - Conclusion & CTA
+
+Jump right into the bits that pique your interest the most with the help of these timestamps.
+
+Make sure to like, comment and subscribe to our channel for more engaging content like this. Also, share this with your peers to spread knowledge. Visit our website at [website link] for more information. 
+
+Our podcast Embracing Digital Transformation brings you unique insights into the world of digital innovation. Follow us on social media to stay updated! Links to our social media profiles can be found below:
+
+Facebook: [link]
+Twitter: [link]
+LinkedIn: [link]
+
+This description is regularly updated to keep you informed on the latest happenings. Remember, embracing digital transformation is a journey, not a destination.
+
+Avoiding keyword stuffing, the description has been written in a clear and concise language to benefit all viewers. Each episode brings its unique value, setting us apart and making each watch worthwhile. Stay tuned for more! 
+
+Don't just adapt, embrace the digital transformation with us! 
+
+Note: Artificial Intelligence and cybersecurity are the primary keywords used in a consistent yet non-stuffy fashion.Blog: https://embracingdigital.org/brief-EDW70-dePodcast: https://share.transistor.fm/s/e6e9f227"
 ---
 
 

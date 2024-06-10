@@ -18,9 +18,47 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space."
+summary: "Welcome to our latest video where we discuss the remarkable rise of GenAI-capable smartphones in Q1 2024. In the initial quarter of this year, the market share for these cutting-edge devices jumped from 1.3% to a notable 6%. 
+
+Main takeaways from this video:
+
+• The premium segment led the way, with Samsung's Galaxy S24 series securing the top three places.
+• Chinese brands, including Xiaomi and Vivo, also showed strong performances, claiming six spots in the top ten.
+• The rise is fueled by innovative GenAI features, including chat/note assistance which uses AI to enhance note-taking and messaging, and AI-generated portraits that employ AI algorithms to create realistic paintings.
+
+By the end of 2024, GenAI-enabled smartphones are predicted to make up a remarkable 11% of the market. 
+
+Key sections of this video:
+0:30 - Introduction to GenAI Smartphones
+1:15 - Dominance of Premium Segment
+2:00 - Rise of Chinese Brands
+2:50 - Impact of GenAI Features
+3:45 - Future Projections
+
+For further in-depth analysis on this subject, don't forget to check out [insert link here] and do tap the like button below if you found this content helpful. Also, subscribing to our channel will ensure that you won't miss any updates in this exciting tech field! 
+
+As part of the TechTrends community, we remain committed to delivering unique content that adds value and answers questions you didn't even know you had. Stay connected with us on Facebook [insert link here] and Instagram [insert link here] for other tech insight!Blog: https://embracingdigital.org/brief-EDW70-itPodcast: https://share.transistor.fm/s/e48492ab"
 video: "https://youtu.be/3NHYo7P6y0Q"
-description: "News and stories from the Week of May 01, 2023, in Digital Transformation, including cyberattacks and intelligent edge, non-verbal communication AI, and company merges in the IoT space."
+description: "Welcome to our latest video where we discuss the remarkable rise of GenAI-capable smartphones in Q1 2024. In the initial quarter of this year, the market share for these cutting-edge devices jumped from 1.3% to a notable 6%. 
+
+Main takeaways from this video:
+
+• The premium segment led the way, with Samsung's Galaxy S24 series securing the top three places.
+• Chinese brands, including Xiaomi and Vivo, also showed strong performances, claiming six spots in the top ten.
+• The rise is fueled by innovative GenAI features, including chat/note assistance which uses AI to enhance note-taking and messaging, and AI-generated portraits that employ AI algorithms to create realistic paintings.
+
+By the end of 2024, GenAI-enabled smartphones are predicted to make up a remarkable 11% of the market. 
+
+Key sections of this video:
+0:30 - Introduction to GenAI Smartphones
+1:15 - Dominance of Premium Segment
+2:00 - Rise of Chinese Brands
+2:50 - Impact of GenAI Features
+3:45 - Future Projections
+
+For further in-depth analysis on this subject, don't forget to check out [insert link here] and do tap the like button below if you found this content helpful. Also, subscribing to our channel will ensure that you won't miss any updates in this exciting tech field! 
+
+As part of the TechTrends community, we remain committed to delivering unique content that adds value and answers questions you didn't even know you had. Stay connected with us on Facebook [insert link here] and Instagram [insert link here] for other tech insight!Blog: https://embracingdigital.org/brief-EDW70-itPodcast: https://share.transistor.fm/s/e48492ab"
 ---
 
 

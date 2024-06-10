@@ -21,9 +21,55 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Resumen"
+summary: "Descubre cómo una brecha podría cambiar la industria de la inteligencia artificial en nuestra última actualización enfocada en Hugging Face. Con un incidente de acceso no autorizado reciente en su plataforma Spaces, estamos analizando las implicaciones, la respuesta de la empresa y lo que los usuarios pueden hacer ahora. 
+
+🎯Características principales:
+
+0:00 Introducción al incidente
+1:20 ¿Qué es Hugging Face, y qué es Spaces?
+2:00 Detalles del acceso no autorizado
+3:20 Las implicaciones para los usuarios y la inteligencia artificial
+4:10 ¿Cómo respondió Hugging Face al incidente?
+5:30 El papel de los tokens de acceso y los consejos de seguridad para los usuarios
+7:00 Enfoque de los ciberatacantes en la inteligencia artificial como servicio
+8:00 Conclusiones y reflexiones finales
+
+La empresa de inteligencia artificial Hugging Face notificó recientemente sobre un acceso no autorizado a su plataforma Spaces. Este hecho podría haber expuesto secretos sensitivos y llevó a la empresa a anular los tokens de HF afectados, así como a aconsejar a los usuarios que actualicen sus claves y cambien a tokens de acceso con granularidad fina.
+
+🔔Recuerden seguirnos para recibir actualizaciones sobre este tema y más contenido sobre ciberseguridad, refrésquen las notificaciones y aprovechen para suscribirse aquí: [Link de Suscripción]
+
+Si les resultó útil este video, asegúrate de dale like, dejar comentarios y compartirlo con tus colegas. Visita nuestro sitio web para más información detallada sobre este incidente y otros temas relevantes: [Link al sitio web]
+
+Este incidente resalta la importancia de mantener prácticas sólidas de seguridad en el creciente campo de la inteligencia artificial como servicio. No te pierdas nuestras próximas actualizaciones sobre este tema. ¡Hasta el próximo video!
+
+Palabras clave: Hugging Face, Inteligencia artificial, plataforma Spaces, tokens de HF, ciberatacantes, seguridad de datos, ciberseguridad, actualización de claves, tokens de acceso.
+
+*Actualizado el [Fecha] para incorporar la última información disponible.*Blog: https://embracingdigital.org/brief-EDW70-esPodcast: https://share.transistor.fm/s/1792d234"
 video: "https://youtu.be/"
-description: "Resumen"
+description: "Descubre cómo una brecha podría cambiar la industria de la inteligencia artificial en nuestra última actualización enfocada en Hugging Face. Con un incidente de acceso no autorizado reciente en su plataforma Spaces, estamos analizando las implicaciones, la respuesta de la empresa y lo que los usuarios pueden hacer ahora. 
+
+🎯Características principales:
+
+0:00 Introducción al incidente
+1:20 ¿Qué es Hugging Face, y qué es Spaces?
+2:00 Detalles del acceso no autorizado
+3:20 Las implicaciones para los usuarios y la inteligencia artificial
+4:10 ¿Cómo respondió Hugging Face al incidente?
+5:30 El papel de los tokens de acceso y los consejos de seguridad para los usuarios
+7:00 Enfoque de los ciberatacantes en la inteligencia artificial como servicio
+8:00 Conclusiones y reflexiones finales
+
+La empresa de inteligencia artificial Hugging Face notificó recientemente sobre un acceso no autorizado a su plataforma Spaces. Este hecho podría haber expuesto secretos sensitivos y llevó a la empresa a anular los tokens de HF afectados, así como a aconsejar a los usuarios que actualicen sus claves y cambien a tokens de acceso con granularidad fina.
+
+🔔Recuerden seguirnos para recibir actualizaciones sobre este tema y más contenido sobre ciberseguridad, refrésquen las notificaciones y aprovechen para suscribirse aquí: [Link de Suscripción]
+
+Si les resultó útil este video, asegúrate de dale like, dejar comentarios y compartirlo con tus colegas. Visita nuestro sitio web para más información detallada sobre este incidente y otros temas relevantes: [Link al sitio web]
+
+Este incidente resalta la importancia de mantener prácticas sólidas de seguridad en el creciente campo de la inteligencia artificial como servicio. No te pierdas nuestras próximas actualizaciones sobre este tema. ¡Hasta el próximo video!
+
+Palabras clave: Hugging Face, Inteligencia artificial, plataforma Spaces, tokens de HF, ciberatacantes, seguridad de datos, ciberseguridad, actualización de claves, tokens de acceso.
+
+*Actualizado el [Fecha] para incorporar la última información disponible.*Blog: https://embracingdigital.org/brief-EDW70-esPodcast: https://share.transistor.fm/s/1792d234"
 ---
 
 

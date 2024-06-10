@@ -18,9 +18,51 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Résumé"
+summary: "In this week's Embracing Digital Transformation podcast, our regular guest Steve Orrin, CTO of Intel Federal, joins host Darren to discuss the thorny issue of securing generative AI and AI in general. Given that generative AI has created new paths of attack that cybersecurity counsellors are exploiting, it's clear that fresh best practices in cybersecurity must be established to manage this new paradigm. 
+
+What you'll learn: 
+- [00:37] Understanding generative AI
+- [02:45] New cybersecurity threats
+- [05:20] Establishing best practices in cybersecurity 
+- [07:30] Role of AI in threat detection 
+- [10:45] Upcoming AI trends and concerns 
+
+In this enlightening episode, we deep dive into the emerging cybersecurity challenges and how technology like AI can both pose threats and offer solutions. Don’t miss this fascinating discussion. Subscribe, like, and comment to let us know your views!
+
+For more episodes, visit our playlist [Link], follow us on social media [Link] and visit our official website [Link]. Be sure to tune in every week for fresh insights into digital transformation and technologies like AI, Cloud, IoT, and more. 
+
+Remember to click on the bell icon to get notified whenever we post a new episode. Thanks for watching and stay tuned for more!
+
+Note: This podcast is developed to be accessible for all viewers. The language is clear, and alternative text for images is provided.
+
+This description was last updated on [Last Update Date].
+
+Tags: #EmbracingDigitalTransformation #Podcast #SteveOrrin #IntelFederal #AI #Cybersecurity 
+
+Never miss an episode. Subscribe to our channel for regular insights into embracing the digital world.Blog: https://embracingdigital.org/brief-EDW70-frPodcast: https://share.transistor.fm/s/864bee12"
 video: "https://youtu.be/"
-description: "Résumé"
+description: "In this week's Embracing Digital Transformation podcast, our regular guest Steve Orrin, CTO of Intel Federal, joins host Darren to discuss the thorny issue of securing generative AI and AI in general. Given that generative AI has created new paths of attack that cybersecurity counsellors are exploiting, it's clear that fresh best practices in cybersecurity must be established to manage this new paradigm. 
+
+What you'll learn: 
+- [00:37] Understanding generative AI
+- [02:45] New cybersecurity threats
+- [05:20] Establishing best practices in cybersecurity 
+- [07:30] Role of AI in threat detection 
+- [10:45] Upcoming AI trends and concerns 
+
+In this enlightening episode, we deep dive into the emerging cybersecurity challenges and how technology like AI can both pose threats and offer solutions. Don’t miss this fascinating discussion. Subscribe, like, and comment to let us know your views!
+
+For more episodes, visit our playlist [Link], follow us on social media [Link] and visit our official website [Link]. Be sure to tune in every week for fresh insights into digital transformation and technologies like AI, Cloud, IoT, and more. 
+
+Remember to click on the bell icon to get notified whenever we post a new episode. Thanks for watching and stay tuned for more!
+
+Note: This podcast is developed to be accessible for all viewers. The language is clear, and alternative text for images is provided.
+
+This description was last updated on [Last Update Date].
+
+Tags: #EmbracingDigitalTransformation #Podcast #SteveOrrin #IntelFederal #AI #Cybersecurity 
+
+Never miss an episode. Subscribe to our channel for regular insights into embracing the digital world.Blog: https://embracingdigital.org/brief-EDW70-frPodcast: https://share.transistor.fm/s/864bee12"
 ---
 
 

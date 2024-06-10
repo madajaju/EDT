@@ -18,9 +18,63 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity."
+summary: "Title: The Mayor of Seattle's Decision to Postpone ShotSpotter Implementation 
+
+Description:
+In this video, we discuss the recent decision of Seattle’s Mayor, Bruce Harrell, to postpone the implementation of ShotSpotter technology. This decision is the result of a collaborative effort, responding to concerns raised by the Seattle community and its City Council. Key points include:
+
+0:00 - Introduction
+0:45 - Background on ShotSpotter technology
+1:30 - Community and City Council's concerns
+2:05 - Mayor’s response to the concerns
+2:35 - Decision to defer $1 million ShotSpotter funding from 2023-24 budget
+3:15 - Influence of community voices
+3:50 - Concerns about ShotSpotter's effectiveness and potential impacts on police response times
+4:30 - Community priorities for human services and support for homeless individuals
+5:00 - Conclusion 
+
+The decision clearly underscores that community voices are being heard. We go in-depth into the effectiveness of the technology itself and its potential impact on police response times, along with community needs in terms of human services and homeless support. 
+
+For more city policies and community news, subscribe to our channel and be part of the conversation in the comments. Visit our website for related content at [Website Link] and follow us on our social media platforms [Social Media Links]. 
+
+Stay updated with us on this issue and many others directly affecting Seattle’s community. We provide you with information that is timely, participant-focused, and unique to our channel. Join our community to stay informed.
+
+Note: This description is accessible to all viewers. We use clear language to ensure our content is understandable. Updates will be made whenever necessary.
+
+Keywords: Seattle, Mayor Bruce Harrell, ShotSpotter, city council, community concerns, budget, police response times, human services, homelessness. 
+
+This video gives importance to community engagement in civic affairs. Injecting humanity into city news - it's what makes us unique. Join us for more exclusive content. Don't forget to share this video with your network. Together, we can make a difference. 
+
+Disclaimer: Remember not to flood the comment section with the same keyword repetitively. Please keep the conversation engaging and respectful.Blog: https://embracingdigital.org/brief-EDW70-esPodcast: https://share.transistor.fm/s/1792d234"
 video: "https://youtu.be/"
-description: "For the week of February 6, 2023. News from around the world of digital transformation in artificial intelligence, cloud computing, and cybersecurity."
+description: "Title: The Mayor of Seattle's Decision to Postpone ShotSpotter Implementation 
+
+Description:
+In this video, we discuss the recent decision of Seattle’s Mayor, Bruce Harrell, to postpone the implementation of ShotSpotter technology. This decision is the result of a collaborative effort, responding to concerns raised by the Seattle community and its City Council. Key points include:
+
+0:00 - Introduction
+0:45 - Background on ShotSpotter technology
+1:30 - Community and City Council's concerns
+2:05 - Mayor’s response to the concerns
+2:35 - Decision to defer $1 million ShotSpotter funding from 2023-24 budget
+3:15 - Influence of community voices
+3:50 - Concerns about ShotSpotter's effectiveness and potential impacts on police response times
+4:30 - Community priorities for human services and support for homeless individuals
+5:00 - Conclusion 
+
+The decision clearly underscores that community voices are being heard. We go in-depth into the effectiveness of the technology itself and its potential impact on police response times, along with community needs in terms of human services and homeless support. 
+
+For more city policies and community news, subscribe to our channel and be part of the conversation in the comments. Visit our website for related content at [Website Link] and follow us on our social media platforms [Social Media Links]. 
+
+Stay updated with us on this issue and many others directly affecting Seattle’s community. We provide you with information that is timely, participant-focused, and unique to our channel. Join our community to stay informed.
+
+Note: This description is accessible to all viewers. We use clear language to ensure our content is understandable. Updates will be made whenever necessary.
+
+Keywords: Seattle, Mayor Bruce Harrell, ShotSpotter, city council, community concerns, budget, police response times, human services, homelessness. 
+
+This video gives importance to community engagement in civic affairs. Injecting humanity into city news - it's what makes us unique. Join us for more exclusive content. Don't forget to share this video with your network. Together, we can make a difference. 
+
+Disclaimer: Remember not to flood the comment section with the same keyword repetitively. Please keep the conversation engaging and respectful.Blog: https://embracingdigital.org/brief-EDW70-esPodcast: https://share.transistor.fm/s/1792d234"
 ---
 
 

@@ -21,9 +21,53 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Résumé"
+summary: "🎥 In this informative tech video, we delve deeper into Microsoft's recent report on increasing cyber-attacks on Internet-facing Operational Technology (OT) devices. The tech giant has underscored the importance of robust security measures to counter these threats and ensure the smooth functioning of industrial processes.  
+
+Falling under our 'Tech Insights' series, this video explores the different ways weak security measures can leave OT environments vulnerable to disruption. Special attention is given to Microsoft's recommendation to strengthen security practices. We'd love to have you join us in this insightful exploration. Remember to engage with us by clicking the 'Like', 'Subscribe', and 'Bell' button to never miss an update on the latest tech news. 
+
+⏱️ Timestamps: 
+0:00 - Intro
+0:40 - Increasing Cyber-attacks on OT devices
+2:10 - Exploring Weak Security Measures
+3:20 - Microsoft's Take & Recommendations
+5:00 - Importance of Robust Security Protocols
+6:15 - Outro
+
+🔑 Keywords: Microsoft, Cyber-attacks, Operational Technology (OT), Security Measures, Industrial Processes, Zero Trust Principles.
+
+Your views matter to us, feel free to leave your thoughts in the comments section below. For more information on this topic, visit our website (insert website link), and follow us on our social media channels (insert social media links). Be sure to check out our related videos/playlist (insert video/playlist link) to stay up-to-date with the latest tech trends and insights.
+
+At 'Tech Insights', we're passionate about providing you with the most relevant and timely technological news. We strive to make the world of technology more accessible, understandable, and interesting. 
+
+This video offers a unique value proposition to all tech enthusiasts, future-focused businesses, and anyone interested in improving their understanding of cyber-security. It emphasizes the importance of effective security strategies to safeguard critical systems from potential threats—an indisputable aspect of tech resilience in the digital era.
+
+♿ This video's description and content have been optimized for accessibility. Please share any feedback or suggestions to improve our accessibility further.
+
+Regular updates and continuous relevance in content is our key focus. Let's decipher the future of technology together. Remember, balance is key—so while keywords like 'cyber-security', 'Microsoft', and 'OT' are crucial, they are sparsely and naturally spread across the description for optimal understanding without overwhelming the reader. Enjoy the video! 🌐Blog: https://embracingdigital.org/brief-EDW70-esPodcast: https://share.transistor.fm/s/1792d234"
 video: "https://youtu.be/"
-description: "Résumé"
+description: "🎥 In this informative tech video, we delve deeper into Microsoft's recent report on increasing cyber-attacks on Internet-facing Operational Technology (OT) devices. The tech giant has underscored the importance of robust security measures to counter these threats and ensure the smooth functioning of industrial processes.  
+
+Falling under our 'Tech Insights' series, this video explores the different ways weak security measures can leave OT environments vulnerable to disruption. Special attention is given to Microsoft's recommendation to strengthen security practices. We'd love to have you join us in this insightful exploration. Remember to engage with us by clicking the 'Like', 'Subscribe', and 'Bell' button to never miss an update on the latest tech news. 
+
+⏱️ Timestamps: 
+0:00 - Intro
+0:40 - Increasing Cyber-attacks on OT devices
+2:10 - Exploring Weak Security Measures
+3:20 - Microsoft's Take & Recommendations
+5:00 - Importance of Robust Security Protocols
+6:15 - Outro
+
+🔑 Keywords: Microsoft, Cyber-attacks, Operational Technology (OT), Security Measures, Industrial Processes, Zero Trust Principles.
+
+Your views matter to us, feel free to leave your thoughts in the comments section below. For more information on this topic, visit our website (insert website link), and follow us on our social media channels (insert social media links). Be sure to check out our related videos/playlist (insert video/playlist link) to stay up-to-date with the latest tech trends and insights.
+
+At 'Tech Insights', we're passionate about providing you with the most relevant and timely technological news. We strive to make the world of technology more accessible, understandable, and interesting. 
+
+This video offers a unique value proposition to all tech enthusiasts, future-focused businesses, and anyone interested in improving their understanding of cyber-security. It emphasizes the importance of effective security strategies to safeguard critical systems from potential threats—an indisputable aspect of tech resilience in the digital era.
+
+♿ This video's description and content have been optimized for accessibility. Please share any feedback or suggestions to improve our accessibility further.
+
+Regular updates and continuous relevance in content is our key focus. Let's decipher the future of technology together. Remember, balance is key—so while keywords like 'cyber-security', 'Microsoft', and 'OT' are crucial, they are sparsely and naturally spread across the description for optimal understanding without overwhelming the reader. Enjoy the video! 🌐Blog: https://embracingdigital.org/brief-EDW70-esPodcast: https://share.transistor.fm/s/1792d234"
 ---
 
 

@@ -21,9 +21,57 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "News in Digital Transformation for the week of May 8, 2023 including "
+summary: "Title: 72-Hour Cyberattack: Hacker Disables 600,000 Routers
+
+Over the course of just 72 hours, a hacker has rendered over half a million routers inoperable! This alarming cyberattack, born out of exploiting obsolete firmware vulnerabilities, has led to widespread internet disruptions (00:15). The attack underscores the dire need for regular firmware updates and robust security measures to prevent such incidents in future (01:00).
+
+Those affected experienced total internet connectivity loss, demonstrating the far-reaching potential impacts of such cyberattacks on everyday life (01:45). Cybersecurity experts have stressed the crucial importance of routine firmware updates and bolstered security measures as preventive actions (02:15). 
+
+In light of this event, it is advised that affected users immediately contact their Internet Service Providers for assistance and promptly update their devices to avoid further troubles (02:45). Stay informed, stay secure!
+
+For more information and guidance on securing your internet connections, check out our other videos/visit our website (insert link here). If you found this video helpful, don't forget to like, comment and subscribe!
+
+Disclaimer: Always consult with a cyber security expert to make sure that the information is current and applicable to your specific situation.
+
+Remember - when in doubt, reach out to professionals (03:30). Join us next time for more in-depth tech and cybersecurity analysis.
+
+Your safety is our priority.
+
+🔹For more on this, check the link: (website)
+🔹To get instant updates, follow us: (social media links)
+🔹Subscribe to our channel: (subscribe link)
+🔹For more relevant videos click here: (playlist link)
+
+- (Channel Name) Team
+
+Remember to use natural language and relevant content while including target keywords such as cyberattack, firmware, vulnerabilities, hackers and Internet Service Provider to increase search visibility. Avoid keyword stuffing and maintain an engaging and accessible language style for viewers of all levels of understanding.
+Blog: https://embracingdigital.org/brief-EDW70-itPodcast: https://share.transistor.fm/s/e48492ab"
 video: "https://youtu.be/"
-description: "News in Digital Transformation for the week of May 8, 2023 including "
+description: "Title: 72-Hour Cyberattack: Hacker Disables 600,000 Routers
+
+Over the course of just 72 hours, a hacker has rendered over half a million routers inoperable! This alarming cyberattack, born out of exploiting obsolete firmware vulnerabilities, has led to widespread internet disruptions (00:15). The attack underscores the dire need for regular firmware updates and robust security measures to prevent such incidents in future (01:00).
+
+Those affected experienced total internet connectivity loss, demonstrating the far-reaching potential impacts of such cyberattacks on everyday life (01:45). Cybersecurity experts have stressed the crucial importance of routine firmware updates and bolstered security measures as preventive actions (02:15). 
+
+In light of this event, it is advised that affected users immediately contact their Internet Service Providers for assistance and promptly update their devices to avoid further troubles (02:45). Stay informed, stay secure!
+
+For more information and guidance on securing your internet connections, check out our other videos/visit our website (insert link here). If you found this video helpful, don't forget to like, comment and subscribe!
+
+Disclaimer: Always consult with a cyber security expert to make sure that the information is current and applicable to your specific situation.
+
+Remember - when in doubt, reach out to professionals (03:30). Join us next time for more in-depth tech and cybersecurity analysis.
+
+Your safety is our priority.
+
+🔹For more on this, check the link: (website)
+🔹To get instant updates, follow us: (social media links)
+🔹Subscribe to our channel: (subscribe link)
+🔹For more relevant videos click here: (playlist link)
+
+- (Channel Name) Team
+
+Remember to use natural language and relevant content while including target keywords such as cyberattack, firmware, vulnerabilities, hackers and Internet Service Provider to increase search visibility. Avoid keyword stuffing and maintain an engaging and accessible language style for viewers of all levels of understanding.
+Blog: https://embracingdigital.org/brief-EDW70-itPodcast: https://share.transistor.fm/s/e48492ab"
 ---
 
 

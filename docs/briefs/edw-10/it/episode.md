@@ -21,9 +21,89 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Sommario"
+summary: "**Descripción del video**
+
+Bienvenidos a una nueva entrega de nuestro podcast: *Abrazando la Transformación Digital*. En el episodio de esta semana, nuestro anfitrión Darren tiene una conversación fascinante con el invitado recurrente, Steve Orrin, director técnico de Intel Federal.
+
+En este diálogo inmersivo, discuten el tema emergente de la Inteligencia Artificial Generativa (IAG) y cómo asegurarla de los ataques cibernéticos. La IAG ha abierto nuevos canales de ataques que los ciberdelincuentes están explotando cada vez más. Por lo tanto, debemos establecer nuevas mejores prácticas de ciberseguridad para manejar este nuevo paradigma.
+
+**Timestamps**
+
+- 0:00 Introducción 
+- 7:10 El papel de Intel en la ciberseguridad
+- 14:30 ¿Qué es la Inteligencia Artificial Generativa?
+- 20:00 Nuevas potenciales amenazas de la IAG
+- 29:10 Mejores prácticas para una ciberseguridad efectiva
+
+Este video es parte importante de nuestro esfuerzo por proporcionar información crucial y actualizada sobre transformación digital y temas de ciberseguridad. 
+
+**Palabras Claves**: podcast, transformación digital, inteligencia artificial generativa, ciberseguridad, ataques cibernéticos.
+
+**Call-to-Action**
+
+Si te interesa conocer más sobre estos temas, ¡Suscríbete a nuestro canal, dale like y comparte el video! 
+
+También puedes seguirnos en nuestras redes sociales (enlaces a continuación) para estar al día con los episodios más recientes de nuestro podcast. 
+
+**Links**: 
+
+- Podcast - Abrazando la Transformación Digital
+- Facebook - @canalDeTransformacionDigital
+- Twitter - @TransformacionDigital
+
+**Propuesta Única de Valor**: Nuestro podcast desglosa y explica las tendencias emergentes en transformación digital y ciberseguridad, con invitados expertos en la materia como Steve Orrin de Intel.
+
+**Branding**:  Este video es una producción de 'Abrazando la Transformación Digital', su fuente confiable para la comprensión de la revolución de la transformación digital. 
+
+**Actualizaciones**: Estén atentos para nuestro próximo episodio!
+
+Recuerden, no somos un canal común, somos una comunidad. Contribuyan al diálogo y hagamos crecer juntos nuestro entendimiento de la ciberseguridad y la transformación digital.  
+
+**Optimización para Accesibilidad**: Todas nuestras descripciones de video incluyen texto alternativo para imágenes y usamos un lenguaje claro para nuestros visitantes con discapacidades visuales.
+
+Acompáñanos en esta travesía de aprendizaje y transformación. Mira, escucha y descubre con nosotros en *'Abrazando la Transformación Digital'*.Blog: https://embracingdigital.org/brief-EDW70-esPodcast: https://share.transistor.fm/s/1792d234"
 video: "https://youtu.be/"
-description: "Sommario"
+description: "**Descripción del video**
+
+Bienvenidos a una nueva entrega de nuestro podcast: *Abrazando la Transformación Digital*. En el episodio de esta semana, nuestro anfitrión Darren tiene una conversación fascinante con el invitado recurrente, Steve Orrin, director técnico de Intel Federal.
+
+En este diálogo inmersivo, discuten el tema emergente de la Inteligencia Artificial Generativa (IAG) y cómo asegurarla de los ataques cibernéticos. La IAG ha abierto nuevos canales de ataques que los ciberdelincuentes están explotando cada vez más. Por lo tanto, debemos establecer nuevas mejores prácticas de ciberseguridad para manejar este nuevo paradigma.
+
+**Timestamps**
+
+- 0:00 Introducción 
+- 7:10 El papel de Intel en la ciberseguridad
+- 14:30 ¿Qué es la Inteligencia Artificial Generativa?
+- 20:00 Nuevas potenciales amenazas de la IAG
+- 29:10 Mejores prácticas para una ciberseguridad efectiva
+
+Este video es parte importante de nuestro esfuerzo por proporcionar información crucial y actualizada sobre transformación digital y temas de ciberseguridad. 
+
+**Palabras Claves**: podcast, transformación digital, inteligencia artificial generativa, ciberseguridad, ataques cibernéticos.
+
+**Call-to-Action**
+
+Si te interesa conocer más sobre estos temas, ¡Suscríbete a nuestro canal, dale like y comparte el video! 
+
+También puedes seguirnos en nuestras redes sociales (enlaces a continuación) para estar al día con los episodios más recientes de nuestro podcast. 
+
+**Links**: 
+
+- Podcast - Abrazando la Transformación Digital
+- Facebook - @canalDeTransformacionDigital
+- Twitter - @TransformacionDigital
+
+**Propuesta Única de Valor**: Nuestro podcast desglosa y explica las tendencias emergentes en transformación digital y ciberseguridad, con invitados expertos en la materia como Steve Orrin de Intel.
+
+**Branding**:  Este video es una producción de 'Abrazando la Transformación Digital', su fuente confiable para la comprensión de la revolución de la transformación digital. 
+
+**Actualizaciones**: Estén atentos para nuestro próximo episodio!
+
+Recuerden, no somos un canal común, somos una comunidad. Contribuyan al diálogo y hagamos crecer juntos nuestro entendimiento de la ciberseguridad y la transformación digital.  
+
+**Optimización para Accesibilidad**: Todas nuestras descripciones de video incluyen texto alternativo para imágenes y usamos un lenguaje claro para nuestros visitantes con discapacidades visuales.
+
+Acompáñanos en esta travesía de aprendizaje y transformación. Mira, escucha y descubre con nosotros en *'Abrazando la Transformación Digital'*.Blog: https://embracingdigital.org/brief-EDW70-esPodcast: https://share.transistor.fm/s/1792d234"
 ---
 
 
