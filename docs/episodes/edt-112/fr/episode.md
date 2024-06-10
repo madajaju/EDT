@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "Mythes de la migration vers le cloud "Lift and Shift""
+title: "Mythes de la migration vers le cloud Lift and Shift"
 number: 112
 permalink: episode-EDT112-fr
 lang: fr
