@@ -24,6 +24,7 @@ video: "https://youtu.be/url"
 description: "Darren Pulsipher, Architecte Principal des Solutions, Secteur Public, Intel, et John Evans, Conseiller Principal en Technologie, WWT, discutent de cinq mythes sur la migration vers le cloud par transfert et déplacement."
 ---
 
+
 <div>
 {% include transistor.html id="cfd34037" title="#112 Myths of Lift and Shift Cloud Migration" %}
 
