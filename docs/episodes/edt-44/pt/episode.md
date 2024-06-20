@@ -3,10 +3,8 @@ layout: posts
 title: "Nuvem na Era Digital"
 number: 44
 permalink: episode-EDT44-pt
-has_children: false
 lang: pt
-parent: Episodi
-grand_parent: Português
+nav_exclude: true
 nav_order: 44
 tags:
     - cloudmigration
@@ -24,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Na segunda parte da entrevista, Darren Pulsipher, Arquiteto Chefe de Soluções da Intel, e Doug Bourgeois, Diretor Gerente e Líder de Estratégia em Nuvem da GPS da Deloitte, continuam sua discussão sobre a migração para a nuvem."
-video: "https://youtu.be/TVhTCxlkCO8"
+video: "https://youtu.be/url"
 description: "Na segunda parte da entrevista, Darren Pulsipher, Arquiteto Chefe de Soluções da Intel, e Doug Bourgeois, Diretor Gerente e Líder de Estratégia em Nuvem da GPS da Deloitte, continuam sua discussão sobre a migração para a nuvem."
 ---
 
 <div>
 {% include transistor.html id="d22f256d" title="#44 Cloud in the Digital Age" %}
 
-{% include youtube.html id="TVhTCxlkCO8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

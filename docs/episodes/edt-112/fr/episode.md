@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "Mythes de la migration vers le cloud Lift and Shift"
+title: "Mythes de la migration vers le cloud "Lift and Shift""
 number: 112
 permalink: episode-EDT112-fr
 lang: fr
@@ -20,12 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Architecte Principal des Solutions, Secteur Public, Intel, et John Evans, Conseiller Principal en Technologie, WWT, discutent de cinq mythes sur la migration vers le cloud par transfert et déplacement."
+video: "https://youtu.be/url"
 description: "Darren Pulsipher, Architecte Principal des Solutions, Secteur Public, Intel, et John Evans, Conseiller Principal en Technologie, WWT, discutent de cinq mythes sur la migration vers le cloud par transfert et déplacement."
 ---
 
 <div>
 {% include transistor.html id="cfd34037" title="#112 Myths of Lift and Shift Cloud Migration" %}
 
+{% include youtube.html id="url" %}
 </div>
 
 ---

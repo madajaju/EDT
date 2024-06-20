@@ -1,12 +1,11 @@
 ---
 layout: posts
-title: "Nube en la Era Digital"
+title: "Generative AI in Higher Education (Revisited) #180 #Shorts Improving Critical Thinking
+"
 number: 44
 permalink: episode-EDT44-es
-has_children: false
 lang: es
-parent: Episodios
-grand_parent: Español
+nav_exclude: true
 nav_order: 44
 tags:
     - cloudmigration
@@ -23,15 +22,39 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "En la segunda parte de la entrevista, Darren Pulsipher, Arquitecto Principal de Soluciones de Intel, y Doug Bourgeois, Director Gerente, Líder de Estrategia en la Nube de GPS en Deloitte, continúan su discusión sobre la migración a la nube."
-video: "https://youtu.be/TVhTCxlkCO8"
-description: "En la segunda parte de la entrevista, Darren Pulsipher, Arquitecto Principal de Soluciones de Intel, y Doug Bourgeois, Director Gerente, Líder de Estrategia en la Nube de GPS en Deloitte, continúan su discusión sobre la migración a la nube."
+summary: "
+In this episode of the podcast Embracing Digital Transformation, host Darren Pulsipher discusses how technology tools like AI can contribute to both effective communication and complex problems such as plagiarism. The narrative centers around a student who used AI to improve a paragraph but ended with a completely new text, raising issues about the boundaries of AI usage in academic work. Despite not initially intending to cheat, his lack of understanding resulted in a failure to provide proper citations - an essential aspect of academic integrity. This podcast episode emphasizes the need for clarity when using technology tools and the importance of proper AI tool usage education, especially in an ever-evolving digital world. Additionally, it highlights the potential pitfalls and ethical boundaries that may be encountered in digital transformation journeys.
+
+
+    Full Episode: https://youtu.be/yOmmAZR7GtI
+
+
+    Audio Episode: https://share.transistor.fm/s/8f5fb1d0
+
+
+    Blog Post: https://embracingdigital.org/episode-EDT180-en
+
+"
+video: "https://youtu.be/url"
+description: "
+In this episode of the podcast Embracing Digital Transformation, host Darren Pulsipher discusses how technology tools like AI can contribute to both effective communication and complex problems such as plagiarism. The narrative centers around a student who used AI to improve a paragraph but ended with a completely new text, raising issues about the boundaries of AI usage in academic work. Despite not initially intending to cheat, his lack of understanding resulted in a failure to provide proper citations - an essential aspect of academic integrity. This podcast episode emphasizes the need for clarity when using technology tools and the importance of proper AI tool usage education, especially in an ever-evolving digital world. Additionally, it highlights the potential pitfalls and ethical boundaries that may be encountered in digital transformation journeys.
+
+
+    Full Episode: https://youtu.be/yOmmAZR7GtI
+
+
+    Audio Episode: https://share.transistor.fm/s/8f5fb1d0
+
+
+    Blog Post: https://embracingdigital.org/episode-EDT180-en
+
+"
 ---
 
 <div>
 {% include transistor.html id="d22f256d" title="#44 Cloud in the Digital Age" %}
 
-{% include youtube.html id="TVhTCxlkCO8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

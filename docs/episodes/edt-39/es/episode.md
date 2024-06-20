@@ -20,14 +20,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Darren Pulsipher, Arquitecto Principal de Soluciones del Sector Público de Intel, y Sean Heiney, co-fundador de SignalWire, Inc., discuten las políticas de trabajo remoto de las compañías en cuanto a las cámaras encendidas y su nueva tecnología de espacios de trabajo colaborativos remotos que fomenta la comunicación ad hoc para su fuerza laboral totalmente remota."
-video: "https://youtu.be/url"
+video: "https://youtu.be/TVhTCxlkCO8"
 description: "Darren Pulsipher, Arquitecto Principal de Soluciones del Sector Público de Intel, y Sean Heiney, co-fundador de SignalWire, Inc., discuten las políticas de trabajo remoto de las compañías en cuanto a las cámaras encendidas y su nueva tecnología de espacios de trabajo colaborativos remotos que fomenta la comunicación ad hoc para su fuerza laboral totalmente remota."
 ---
 
 <div>
 {% include transistor.html id="32293267" title="#39 Watercooler Talk in a Remote Workforce" %}
 
-{% include youtube.html id="url" %}
+{% include youtube.html id="TVhTCxlkCO8" %}
 </div>
 
 ---

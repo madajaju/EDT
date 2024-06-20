@@ -34,7 +34,7 @@ description: "Abattre les barrières pour accélérer la recherche médicale pou
 ---
 
 <div>
-{% include transistor.html id="558eb1c5" title="#40 Collaborative Medical Research with Confidential Computing" %}
+{% include transistor.html id="embracing-digital-transformation-episode44.html" title="#40 Collaborative Medical Research with Confidential Computing" %}
 
 {% include youtube.html id="url" %}
 </div>

@@ -1,12 +1,11 @@
 ---
 layout: posts
-title: "Le nuage à l'ère numérique."
+title: "Generative AI in Higher Education (Revisited) #180 #Shorts short4.mp4
+"
 number: 44
 permalink: episode-EDT44-fr
-has_children: false
 lang: fr
-parent: Épisodes
-grand_parent: Français
+nav_exclude: true
 nav_order: 44
 tags:
     - cloudmigration
@@ -23,15 +22,39 @@ guests:
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Dans la deuxième partie de l'interview, Darren Pulsipher, architecte en chef des solutions chez Intel, et Doug Bourgeois, directeur général et responsable de la stratégie des services cloud chez Deloitte, poursuivent leur discussion sur la migration vers le cloud."
-video: "https://youtu.be/TVhTCxlkCO8"
-description: "Dans la deuxième partie de l'interview, Darren Pulsipher, architecte en chef des solutions chez Intel, et Doug Bourgeois, directeur général et responsable de la stratégie des services cloud chez Deloitte, poursuivent leur discussion sur la migration vers le cloud."
+summary: "
+In this week's episode of Embracing Digital Transformation, Darren Pulsipher interviews guest speaker Laura Newey about her fascinating journey through the critically emerging world of Generative AI, particularly in the education sector. Covering the transformation of her teaching experience and enriching her students' learning outcomes through AI, she extensively analyzed adapting to modern education dynamics.
+
+
+    Full Episode: https://youtu.be/yOmmAZR7GtI
+
+
+    Audio Episode: https://share.transistor.fm/s/8f5fb1d0
+
+
+    Blog Post: https://embracingdigital.org/episode-EDT180-en
+
+"
+video: "https://youtu.be/url"
+description: "
+In this week's episode of Embracing Digital Transformation, Darren Pulsipher interviews guest speaker Laura Newey about her fascinating journey through the critically emerging world of Generative AI, particularly in the education sector. Covering the transformation of her teaching experience and enriching her students' learning outcomes through AI, she extensively analyzed adapting to modern education dynamics.
+
+
+    Full Episode: https://youtu.be/yOmmAZR7GtI
+
+
+    Audio Episode: https://share.transistor.fm/s/8f5fb1d0
+
+
+    Blog Post: https://embracingdigital.org/episode-EDT180-en
+
+"
 ---
 
 <div>
 {% include transistor.html id="d22f256d" title="#44 Cloud in the Digital Age" %}
 
-{% include youtube.html id="TVhTCxlkCO8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---

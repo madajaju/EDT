@@ -3,10 +3,8 @@ layout: posts
 title: "Cloud nell'epoca digitale"
 number: 44
 permalink: episode-EDT44-it
-has_children: false
 lang: it
-parent: Episódios
-grand_parent: Italiano
+nav_exclude: true
 nav_order: 44
 tags:
     - cloudmigration
@@ -24,14 +22,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Nella seconda parte dell'intervista, Darren Pulsipher, Chief Solution Architect, Intel, e Doug Bourgeois, Managing Director, GPS Cloud Strategy Leader, Deloitte, continuano la loro discussione sulla migrazione verso il cloud."
-video: "https://youtu.be/TVhTCxlkCO8"
+video: "https://youtu.be/url"
 description: "Nella seconda parte dell'intervista, Darren Pulsipher, Chief Solution Architect, Intel, e Doug Bourgeois, Managing Director, GPS Cloud Strategy Leader, Deloitte, continuano la loro discussione sulla migrazione verso il cloud."
 ---
 
 <div>
 {% include transistor.html id="d22f256d" title="#44 Cloud in the Digital Age" %}
 
-{% include youtube.html id="TVhTCxlkCO8" %}
+{% include youtube.html id="url" %}
 </div>
 
 ---
