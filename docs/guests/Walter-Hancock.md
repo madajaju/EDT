@@ -8,6 +8,8 @@ img: Walter-Hancock-thumbail.jpg
 
 
 
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="walter-hancock-896995207" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/walter-hancock-896995207?trk=profile-badge">Click for more details</a></div>
+
 
 In 1983, I discovered computers and have been driven to find ways to make them useful. The last 30 years I have created shareholder value for over 50 large and medium companies. Its been fun and I have learned a lot along the way.
 

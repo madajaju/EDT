@@ -8,6 +8,8 @@ img: Yazz-Krdzalic-thumbnail.jpg
 
 
 
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="yazzk" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/yazzk?trk=profile-badge">Click for more details</a></div>
+
 
 I&#39;m a revenue-driven marketing executive passionate about strategic partnerships, alliances, and turbocharging business success. 🚀
 

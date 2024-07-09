@@ -8,6 +8,8 @@ img: Chris-Sestito-thumbnail.jpg
 
 
 
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="ctito" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/ctito?trk=profile-badge">Click for more details</a></div>
+
 
 Chris Sestito has had a diverse work experience spanning various roles and industries. In 2012, they worked as a Territory Manager at US Foods until 2014. In 2015, they transitioned to a role as a Malware Analyst at The Media Trust and later joined Cylance Inc., where they held multiple positions including Senior Threat Researcher, Manager of Threat Research, and Director of Threat Research. Chris continued their career in data security at Agari in 2020 as the Senior Director of Data Science. In 2021, they joined Qualys as the VP of Engineering, Data Science. Finally, in 2022, Chris co-founded HiddenLayer and currently serves as the CEO.
 

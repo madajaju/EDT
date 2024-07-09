@@ -8,6 +8,8 @@ img: Ken-Urquhart-thumbnail.jpg
 
 
 
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="kenu" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/kenu?trk=profile-badge">Click for more details</a></div>
+
 
 I am the Global Vice President of 5G Strategy at Zscaler, the world&#39;s leading cloud security platform. With over four decades of experience in the technology industry, I have a deep understanding of the opportunities and challenges that 5G/6G brings to enterprises and start-ups across various sectors and regions.
 

@@ -8,6 +8,8 @@ img: Alan-Chalker-thumbnail.jpg
 
 
 
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/?trk=profile-badge">Click for more details</a></div>
+
 
 Alan Chalker, Ph.D., is Director of Strategic Programs at the Ohio Supercomputer Center (OSC), as well as Director of Awesim, OSC’s industry outreach program. In this role he is responsible for all non-academic client relationships for OSC.
 

@@ -14,7 +14,7 @@ tags:
 date: Thu May 30 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
-    - Manish Tandor
+    - Manish Tandon
 
 img: thumbnail.jpg
 image: thumbnail.jpg

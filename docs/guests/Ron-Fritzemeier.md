@@ -8,6 +8,8 @@ img: Ron-Fritzemeier-thumbnail.png
 
 
 
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="ron-fritzemeier-7612ab14" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/ron-fritzemeier-7612ab14?trk=profile-badge">Click for more details</a></div>
+
 
 Ron joined Intel in 2022 and is part of Intel’s Public Sector Defense and National Security group. His role is to support and advise DoD and Intelligence Community leaders in pursuit of digital transformation for secure &amp; strategic management, analysis and employment of their data to solve critical mission challenges.
 

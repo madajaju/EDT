@@ -21,6 +21,7 @@ tags:
 date: Thu Jul 04 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
+    - Rob Atkinson
 
 img: thumbnail.jpg
 image: thumbnail.jpg

@@ -18,7 +18,7 @@ tags:
 date: Wed Jul 27 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
-    - Madi Ahmadi
+    - Hadi Ahmadi
 
 img: thumbnail.jpg
 image: thumbnail.jpg

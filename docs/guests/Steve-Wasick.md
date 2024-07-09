@@ -8,6 +8,8 @@ img: Steve-Wasick-thumbail.jpg
 
 
 
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="steven-wasick-bb85044b" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/steven-wasick-bb85044b?trk=profile-badge">Click for more details</a></div>
+
 
 Dedicated to automating the world&#39;s data analysis problems. World&#39;s
 most prolific fantasy sports trash talker.

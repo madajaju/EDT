@@ -8,6 +8,8 @@ img: Madeline-Pulsipher-thumbnail.jpg
 
 
 
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/?trk=profile-badge">Click for more details</a></div>
+
 
 I hold a firm conviction in sustainable agriculture&#39;s transformative potential to bolster the well-being of our planet. My foundation combines a background in leadership coupled with hands-on exposure across various arenas, stitched by a pledge to superior performance and an unyielding fervor to bring about substantial outcomes.
 

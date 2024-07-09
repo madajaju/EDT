@@ -8,6 +8,8 @@ img: Shamim-Naqvi-thumbnail.jpg
 
 
 
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="shamim-naqvi-2a5b49233" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/shamim-naqvi-2a5b49233?trk=profile-badge">Click for more details</a></div>
+
 
 Experienced CEO and Co-founder with a passion for advancing the field of artificial intelligence and Machine Learning, ensuring its ethical and responsible use. I am proud to lead SafeLiShare, an innovative AI governance platform leveraging the power of confidential computing.
 

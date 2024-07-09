@@ -8,6 +8,8 @@ img: Leilani-Bloomquist-thumbnail.jpg
 
 
 
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="leilanibloomquist" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/leilanibloomquist?trk=profile-badge">Click for more details</a></div>
+
 
 Leilani has over 20+ years of experience leading digital transformation
 efforts in highly regulated industries like health care, higher education, and
