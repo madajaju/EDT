@@ -3,7 +3,7 @@ layout: guest
 title: Walter Hancock
 parent: Guests
 
-img: Walter-Hancock-thumbail.jpg
+img: Walter-Hancock-thumbnail.jpg
 ---
 
 

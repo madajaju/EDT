@@ -20,7 +20,7 @@ tags:
 
 date: Thu Jun 03 0202 00:00:00 GMT-0752 (Pacific Daylight Time)
 guests:
-    - Steven Orrin
+    - Steve Orrin
     - Darren W Pulsipher
 
 img: thumbnail.jpg
