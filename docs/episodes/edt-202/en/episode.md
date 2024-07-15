@@ -15,6 +15,7 @@ tags:
 date: Thu May 16 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
+    - Robert Vaughn
 
 img: thumbnail.png
 image: thumbnail.png

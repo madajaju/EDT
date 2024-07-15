@@ -48,7 +48,7 @@ L'idée d'une main-d'œuvre mixte n'est pas seulement une solution; c'est une in
 
 ## Démystification des mythes numériques
 
-Le livre à succès de Rob fait sensation dans la communauté technologique en raison de son analyse approfondie des politiques technologiques et de leur impact sur la transformation numérique. Co-écrit avec David McCullough, une figure hautement respectée de l'industrie technologique et ancien rédacteur en chef de Computer World, le livre a été salué comme une lecture incontournable pour toute personne impliquée dans le paysage numérique.
+Le livre à succès de Rob fait sensation dans la communauté technologique en raison de son analyse approfondie des politiques technologiques et de leur impact sur la transformation numérique. Co-écrit avec David Moschella, une figure hautement respectée de l'industrie technologique et ancien rédacteur en chef de Computer World, le livre a été salué comme une lecture incontournable pour toute personne impliquée dans le paysage numérique.
 
 Un des aspects les plus convaincants du livre est la façon dont l'expertise combinée des auteurs leur permet de déboulonner habilement 40 mythes répandus concernant l'innovation numérique. Ce déboulonnage méticuleux procure aux lecteurs une compréhension claire et précise des défis et des opportunités dans le domaine numérique. Avec les aperçus autoritaires de Rob et David, le livre offre des conseils précieux et une prévoyance pour naviguer dans le monde complexe de la technologie numérique.
 

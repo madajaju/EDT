@@ -48,7 +48,7 @@ The idea of a blended workforce is not just a solution; it's an innovation that 
 
 ## Debunking Digital Myths
 
-Rob's best-selling book has been making waves in the tech community due to its in-depth analysis of tech policies and their impact on digital transformation. Co-authored with David McCullough, a highly respected figure in the tech industry who also served as the ex-editor of Computer World, the book has been hailed as a must-read for anyone involved in the digital landscape.
+Rob's best-selling book has been making waves in the tech community due to its in-depth analysis of tech policies and their impact on digital transformation. Co-authored with David Moschella, a highly respected figure in the tech industry who also served as the ex-editor of Computer World, the book has been hailed as a must-read for anyone involved in the digital landscape.
 
 One of the most compelling aspects of the book is how the authors' combined expertise allows them to deftly debunk 40 pervasive myths surrounding digital innovation. This meticulous debunking provides readers with a clear and accurate understanding of the challenges and opportunities in the digital realm. With Rob and David's authoritative insights, the book offers valuable guidance and foresight for navigating the complex world of digital technology.
 

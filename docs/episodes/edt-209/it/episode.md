@@ -48,7 +48,7 @@ L'idea di una forza lavoro integrata non è solo una soluzione; è un'innovazion
 
 ## Sfatare i Miti Digitali
 
-Il libro più venduto di Rob sta creando onde nella comunità tecnologica a causa della sua analisi approfondita delle politiche tecnologiche e del loro impatto sulla trasformazione digitale. Scritto in collaborazione con David McCullough, una figura molto rispettata nell'industria tecnologica che è stato anche l'ex-editore di Computer World, il libro è stato acclamato come una lettura obbligatoria per chiunque sia coinvolto nel panorama digitale.
+Il libro più venduto di Rob sta creando onde nella comunità tecnologica a causa della sua analisi approfondita delle politiche tecnologiche e del loro impatto sulla trasformazione digitale. Scritto in collaborazione con David Moschella, una figura molto rispettata nell'industria tecnologica che è stato anche l'ex-editore di Computer World, il libro è stato acclamato come una lettura obbligatoria per chiunque sia coinvolto nel panorama digitale.
 
 Uno degli aspetti più avvincenti del libro è come la competenza combinata degli autori permetta loro di svelare abilmente 40 miti diffusi riguardo all'innovazione digitale. Questa scrupolosa smitizzazione fornisce ai lettori una chiara e accurata comprensione delle sfide e delle opportunità nella sfera digitale. Con le autorevoli intuizioni di Rob e David, il libro offre preziose indicazioni e previsioni per navigare nel complesso mondo della tecnologia digitale.
 

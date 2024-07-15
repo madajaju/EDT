@@ -48,7 +48,7 @@ A ideia de uma força de trabalho mista não é apenas uma solução; é uma ino
 
 ## Desmascarando Mitos Digitais
 
-O livro mais vendido de Rob tem causado impacto na comunidade de tecnologia devido à sua análise aprofundada das políticas de tecnologia e seu impacto na transformação digital. Co-autoria com David McCullough, uma figura altamente respeitada na indústria de tecnologia que também atuou como ex-editor do Computer World, o livro tem sido aclamado como leitura obrigatória para qualquer pessoa envolvida no cenário digital.
+O livro mais vendido de Rob tem causado impacto na comunidade de tecnologia devido à sua análise aprofundada das políticas de tecnologia e seu impacto na transformação digital. Co-autoria com David Moschella, uma figura altamente respeitada na indústria de tecnologia que também atuou como ex-editor do Computer World, o livro tem sido aclamado como leitura obrigatória para qualquer pessoa envolvida no cenário digital.
 
 Um dos aspectos mais convincentes do livro é como a experiência combinada dos autores permite que eles desmascarem habilmente 40 mitos predominantes em torno da inovação digital. Este meticuloso desmascaramento proporciona aos leitores uma compreensão clara e precisa dos desafios e oportunidades no âmbito digital. Com as perspectivas autorizadas de Rob e David, o livro oferece orientação valiosa e previsão para navegar pelo complexo mundo da tecnologia digital.
 

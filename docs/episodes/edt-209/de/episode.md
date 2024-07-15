@@ -48,7 +48,7 @@ Die Idee einer gemischten Belegschaft ist nicht nur eine Lösung; es ist eine In
 
 ## Entlarvung digitaler Mythen
 
-Rob's Bestseller-Buch sorgt in der Tech-Gemeinde aufgrund seiner detaillierten Analyse von Tech-Politiken und deren Auswirkungen auf die digitale Transformation für Aufsehen. Das Buch wurde zusammen mit David McCullough verfasst, einer hoch angesehenen Persönlichkeit in der Tech-Industrie, der auch als ehemaliger Chefredakteur von Computer World tätig war. Es wurde als Muss-Lektüre für jeden, der in der digitalen Landschaft tätig ist, gelobt.
+Rob's Bestseller-Buch sorgt in der Tech-Gemeinde aufgrund seiner detaillierten Analyse von Tech-Politiken und deren Auswirkungen auf die digitale Transformation für Aufsehen. Das Buch wurde zusammen mit David Moschella  verfasst, einer hoch angesehenen Persönlichkeit in der Tech-Industrie, der auch als ehemaliger Chefredakteur von Computer World tätig war. Es wurde als Muss-Lektüre für jeden, der in der digitalen Landschaft tätig ist, gelobt.
 
 Eines der überzeugendsten Aspekte des Buches ist, wie die kombinierte Expertise der Autoren es ihnen ermöglicht, 40 weit verbreitete Mythen rund um die digitale Innovation gekonnt zu entlarven. Diese sorgfältige Enttarnung bietet den Lesern ein klares und genaues Verständnis für die Herausforderungen und Chancen im digitalen Bereich. Mit Robs und Davids autoritären Einblicken bietet das Buch wertvolle Anleitungen und Weitsicht für die Navigation in der komplexen Welt der digitalen Technologie.
 

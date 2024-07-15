@@ -48,7 +48,7 @@ La idea de una fuerza laboral combinada no es solo una solución; es una innovac
 
 ## Desmintiendo Mitos Digitales
 
-El libro más vendido de Rob ha estado causando sensación en la comunidad tecnológica debido a su análisis en profundidad de las políticas tecnológicas y su impacto en la transformación digital. Coescrito con David McCullough, una figura altamente respetada en la industria tecnológica que también se desempeñó como ex editor de Computer World, el libro ha sido aclamado como una lectura obligatoria para cualquiera involucrado en el panorama digital.
+El libro más vendido de Rob ha estado causando sensación en la comunidad tecnológica debido a su análisis en profundidad de las políticas tecnológicas y su impacto en la transformación digital. Coescrito con David Moschella, una figura altamente respetada en la industria tecnológica que también se desempeñó como ex editor de Computer World, el libro ha sido aclamado como una lectura obligatoria para cualquiera involucrado en el panorama digital.
 
 Uno de los aspectos más convincentes del libro es cómo la experiencia combinada de los autores les permite desacreditar hábilmente 40 mitos generalizados en torno a la innovación digital. Esta meticulosa desacreditación brinda a los lectores una comprensión clara y precisa de los desafíos y oportunidades en el ámbito digital. Con las autorizadas percepciones de Rob y David, el libro ofrece una valiosa orientación y previsión para navegar por el complejo mundo de la tecnología digital.
 
