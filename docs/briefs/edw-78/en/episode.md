@@ -30,7 +30,7 @@ tags:
     - digitaltransformation
     - crowdstrikeevent
 
-date: 
+date: Sat Jul 27 2024 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
@@ -52,10 +52,6 @@ description: "Digital Transformation for the week of July 27, 2024 including new
 
 
 ---
-
-## Cybersecurity
-
-## Cybersecurity
 
 ## Cybersecurity
 

@@ -30,15 +30,15 @@ tags:
     - digitaltransformation
     - crowdstrikeevent
 
-date: 
+date: Sat Jul 27 2024 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Digitale Transformation für die Woche vom 27. Juli 2024, einschließlich Neuigkeiten aus den Bereichen Cybersicherheit, Ubiquitäres Computing und Künstliche Intelligenz. Erforschen Sie wichtige Erkenntnisse zur drohenden Cybersicherheitskrise in US-Unternehmen, dem dringenden Bedarf an effektiven Hybrid-Cloud-Strategien, der steigenden Stromnachfrage von Rechenzentren, die das Ziel der Netto-Null-Emissionen herausfordert, Durchbrüche bei AI-Anwendungen in Betrugsprävention und Suchtechnologien, und der beunruhigende Anstieg von KI-gestütztem Plagiat in unserem umfassenden Review der neuesten Cybersicherheits-, Computing-, KI- und Digitaltransformation-Trends."
+summary: "Digitale Transformation für die Woche vom 27. Juli 2024, einschließlich Neuigkeiten aus den Bereichen Cybersicherheit, Ubiquitäres Computing und Künstliche Intelligenz. Erkunden Sie entscheidende Einblicke in die drohende Cybersicherheitskrise in US-Unternehmen, den dringenden Bedarf an effektiven Hybrid-Cloud-Strategien, die steigende Stromnachfrage von Rechenzentren, die das Netto-Null-Versprechen herausfordern, Durchbruch-KI-Anwendungen in Betrugsprävention und Suchtechnologien sowie den beunruhigenden Anstieg von KI-gesteuerten Plagiaten in unserem umfassenden Rückblick auf die neuesten Trends in den Bereichen Cybersicherheit, Computing, KI und digitale Transformation."
 video: "https://youtu.be/2DPUkFdrT0I"
-description: "Digitale Transformation für die Woche vom 27. Juli 2024, einschließlich Neuigkeiten aus den Bereichen Cybersicherheit, Ubiquitäres Computing und Künstliche Intelligenz. Erforschen Sie wichtige Erkenntnisse zur drohenden Cybersicherheitskrise in US-Unternehmen, dem dringenden Bedarf an effektiven Hybrid-Cloud-Strategien, der steigenden Stromnachfrage von Rechenzentren, die das Ziel der Netto-Null-Emissionen herausfordert, Durchbrüche bei AI-Anwendungen in Betrugsprävention und Suchtechnologien, und der beunruhigende Anstieg von KI-gestütztem Plagiat in unserem umfassenden Review der neuesten Cybersicherheits-, Computing-, KI- und Digitaltransformation-Trends."
+description: "Digitale Transformation für die Woche vom 27. Juli 2024, einschließlich Neuigkeiten aus den Bereichen Cybersicherheit, Ubiquitäres Computing und Künstliche Intelligenz. Erkunden Sie entscheidende Einblicke in die drohende Cybersicherheitskrise in US-Unternehmen, den dringenden Bedarf an effektiven Hybrid-Cloud-Strategien, die steigende Stromnachfrage von Rechenzentren, die das Netto-Null-Versprechen herausfordern, Durchbruch-KI-Anwendungen in Betrugsprävention und Suchtechnologien sowie den beunruhigenden Anstieg von KI-gesteuerten Plagiaten in unserem umfassenden Rückblick auf die neuesten Trends in den Bereichen Cybersicherheit, Computing, KI und digitale Transformation."
 ---
 
 

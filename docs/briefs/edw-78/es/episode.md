@@ -30,15 +30,15 @@ tags:
     - digitaltransformation
     - crowdstrikeevent
 
-date: 
+date: Sat Jul 27 2024 17:00:00 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
 
 img: thumbnail.png
 image: thumbnail.png
-summary: "Transformación Digital para la semana del 27 de julio de 2024 incluyendo noticias de Ciberseguridad, Computación Ubicua e Inteligencia Artificial. Explore percepciones vitales sobre la inminente crisis de ciberseguridad en las corporaciones de EE.UU, la urgente necesidad de estrategias efectivas de nube híbrida, el creciente demanda de energía por parte de los centros de datos que desafían los compromisos de emisiones netas cero, las revolucionarias aplicaciones de IA en la prevención de fraudes y tecnologías de búsqueda, y el preocupante aumento del plagio habilitado por IA en nuestra revisión exhaustiva de las últimas tendencias en ciberseguridad, computación, IA y transformación digital."
+summary: "Transformación digital para la semana del 27 de julio de 2024, incluyendo noticias sobre Ciberseguridad, Computación Ubicua e Inteligencia Artificial. Explora perspectivas vitales sobre la inminente crisis de ciberseguridad en las corporaciones de EE.UU., la urgente necesidad de estrategias híbridas efectivas para la nube, la creciente demanda de energía por parte de los centros de datos que desafía los compromisos de net-zero, las revolucionarias aplicaciones de IA en la prevención de fraudes y tecnologías de búsqueda, y el preocupante aumento del plagio habilitado por la IA en nuestra revisión exhaustiva de las últimas tendencias en ciberseguridad, computación, IA y transformación digital."
 video: "https://youtu.be/vFX83tq4zg4"
-description: "Transformación Digital para la semana del 27 de julio de 2024 incluyendo noticias de Ciberseguridad, Computación Ubicua e Inteligencia Artificial. Explore percepciones vitales sobre la inminente crisis de ciberseguridad en las corporaciones de EE.UU, la urgente necesidad de estrategias efectivas de nube híbrida, el creciente demanda de energía por parte de los centros de datos que desafían los compromisos de emisiones netas cero, las revolucionarias aplicaciones de IA en la prevención de fraudes y tecnologías de búsqueda, y el preocupante aumento del plagio habilitado por IA en nuestra revisión exhaustiva de las últimas tendencias en ciberseguridad, computación, IA y transformación digital."
+description: "Transformación digital para la semana del 27 de julio de 2024, incluyendo noticias sobre Ciberseguridad, Computación Ubicua e Inteligencia Artificial. Explora perspectivas vitales sobre la inminente crisis de ciberseguridad en las corporaciones de EE.UU., la urgente necesidad de estrategias híbridas efectivas para la nube, la creciente demanda de energía por parte de los centros de datos que desafía los compromisos de net-zero, las revolucionarias aplicaciones de IA en la prevención de fraudes y tecnologías de búsqueda, y el preocupante aumento del plagio habilitado por la IA en nuestra revisión exhaustiva de las últimas tendencias en ciberseguridad, computación, IA y transformación digital."
 ---
 
 
