@@ -23,7 +23,7 @@ tags:
     - futureplanning
     - digitalbusinesslandscape
 
-date: Wed Aug 07 2024 08:27:38 GMT-0700 (Pacific Daylight Time)
+date: Wed Aug 07 2024 21:08:41 GMT-0700 (Pacific Daylight Time)
 guests:
     - Darren W Pulsipher
     - John Rossman
