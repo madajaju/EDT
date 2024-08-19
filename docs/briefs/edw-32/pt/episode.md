@@ -28,7 +28,7 @@ tags:
     - generativeaipolicy
     - highereducation
 
-date: Tue Sep 12 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-09-12T07:00:00.000Z
 guests:
     - Darren W Pulsipher
 

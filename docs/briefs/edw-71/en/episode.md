@@ -35,7 +35,7 @@ tags:
     - financeai
     - ainews
 
-date: Sun Jun 09 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-06-09T07:00:00.000Z
 guests:
     - Darren W Pulsipher
 

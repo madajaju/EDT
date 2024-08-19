@@ -37,7 +37,7 @@ tags:
     - llms
     - ragdesign
 
-date: Mon Feb 12 2024 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2024-02-12T08:00:00.000Z
 guests:
     - Darren W Pulsipher
 

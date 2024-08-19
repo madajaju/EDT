@@ -30,7 +30,7 @@ tags:
     - aiequality
     - digitaltransformation
 
-date: Sat Jul 13 2024 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-07-14T00:00:00.000Z
 guests:
     - Darren W Pulsipher
 

@@ -34,7 +34,7 @@ tags:
     - sealsq
     - embracingdigital
 
-date: Mon Feb 19 2024 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2024-02-19T08:00:00.000Z
 guests:
     - Darren W Pulsipher
 

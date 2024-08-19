@@ -34,7 +34,7 @@ tags:
     - aiformilitary
     - aifordiplomacy
 
-date: Sat May 04 2024 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-05-05T00:00:00.000Z
 guests:
     - Darren W Pulsipher
 

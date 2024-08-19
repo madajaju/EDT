@@ -36,7 +36,7 @@ tags:
     - digitaltransformation
     - embracingdigital
 
-date: Tue Apr 02 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-04-02T07:00:00.000Z
 guests:
     - Darren W Pulsipher
 

@@ -12,7 +12,7 @@ tags:
     - compute
     - datamanagement
 
-date: Sun Mar 19 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-03-20T00:00:00.000Z
 guests:
     - Darren W Pulsipher
 

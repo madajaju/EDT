@@ -9,7 +9,7 @@ nav_exclude: true
 nav_order: 3
 tags:
 
-date: Mon Feb 20 2023 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2023-02-20T08:00:00.000Z
 guests:
 
 img: thumbnail.png

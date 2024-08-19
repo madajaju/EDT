@@ -25,7 +25,7 @@ tags:
     - microsoftrecovery
     - digitaltransformation
 
-date: Sun Jul 21 2024 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-07-22T00:00:00.000Z
 guests:
     - Darren W Pulsipher
 

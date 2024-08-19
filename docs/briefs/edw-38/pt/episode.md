@@ -33,7 +33,7 @@ tags:
     - datasecurity
     - techtrends
 
-date: Tue Oct 24 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-10-24T07:00:00.000Z
 guests:
     - Darren W Pulsipher
 

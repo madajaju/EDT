@@ -34,7 +34,7 @@ tags:
     - nsa
     - genai
 
-date: Mon Apr 22 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-04-22T07:00:00.000Z
 guests:
     - Darren W Pulsipher
 

@@ -35,7 +35,7 @@ tags:
     - digiorgtran
     - wallaceinsight
 
-date: Mon Jan 29 2024 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2024-01-29T08:00:00.000Z
 guests:
     - Darren W Pulsipher
 

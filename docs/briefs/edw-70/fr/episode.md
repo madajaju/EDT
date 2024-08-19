@@ -34,7 +34,7 @@ tags:
     - transformpod
     - embracedigi
 
-date: Sat Jun 01 2024 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-06-02T00:00:00.000Z
 guests:
     - Darren W Pulsipher
 

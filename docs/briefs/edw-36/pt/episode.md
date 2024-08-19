@@ -21,7 +21,7 @@ tags:
     - iot
     - criticalinfrastructure
 
-date: Tue Oct 10 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-10-10T07:00:00.000Z
 guests:
     - Darren W Pulsipher
 

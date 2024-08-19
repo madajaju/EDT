@@ -9,7 +9,7 @@ nav_exclude: true
 nav_order: 17
 tags:
 
-date: Mon May 29 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-05-29T07:00:00.000Z
 guests:
 
 img: thumbnail.png

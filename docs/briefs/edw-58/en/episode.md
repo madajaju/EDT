@@ -34,7 +34,7 @@ tags:
     - productassurance
     - chipsecurity
 
-date: Sun Mar 10 2024 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2024-03-10T08:00:00.000Z
 guests:
     - Darren W Pulsipher
 

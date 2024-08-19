@@ -35,7 +35,7 @@ tags:
     - nutanix
     - embracingdt
 
-date: Wed Dec 31 1969 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 1969-12-31T08:00:00.000Z
 guests:
     - Darren W Pulsipher
 

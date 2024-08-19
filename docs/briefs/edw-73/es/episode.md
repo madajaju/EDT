@@ -35,7 +35,7 @@ tags:
     - digitransform
     - embracingdigital
 
-date: Mon Jun 24 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-06-24T07:00:00.000Z
 guests:
     - Darren W Pulsipher
 

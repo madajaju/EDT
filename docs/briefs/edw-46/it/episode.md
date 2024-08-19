@@ -34,7 +34,7 @@ tags:
     - openziti
     - zerotrust
 
-date: Sun Dec 17 2023 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2023-12-17T08:00:00.000Z
 guests:
     - Darren W Pulsipher
 
