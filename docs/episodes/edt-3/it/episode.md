@@ -14,7 +14,7 @@ tags:
     - compliance
     - efficiency
 
-date: Mon Jun 22 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2020-06-23T00:00:00.000Z
 guests:
     - Darren W Pulsipher
 

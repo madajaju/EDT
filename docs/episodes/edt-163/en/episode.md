@@ -14,7 +14,7 @@ tags:
     - technology
     - policy
 
-date: Thu Sep 28 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-09-28T07:00:00.000Z
 guests:
     - Rajiv Mandal
     - Darren W Pulsipher

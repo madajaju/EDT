@@ -18,7 +18,7 @@ tags:
     - aitransparency
     - aietics
 
-date: Thu Jun 13 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-06-13T07:00:00.000Z
 guests:
     - Steve Orrin
     - Darren W Pulsipher

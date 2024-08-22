@@ -18,7 +18,7 @@ tags:
     - infrastructureupdates
     - digitransformation
 
-date: Tue Jul 23 2024 08:37:02 GMT-0700 (Pacific Daylight Time)
+date: 2024-07-23T15:37:02.909Z
 guests:
     - Steve Orrin
     - Darren W Pulsipher

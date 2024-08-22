@@ -16,7 +16,7 @@ tags:
     - technology
     - process
 
-date: Wed Aug 30 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-08-31T00:00:00.000Z
 guests:
     - Greg Campbell
     - Darren W Pulsipher

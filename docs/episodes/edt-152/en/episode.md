@@ -14,7 +14,7 @@ tags:
     - people
     - technology
 
-date: Mon Aug 21 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-08-22T00:00:00.000Z
 guests:
     - Jeffrey Lancaster
     - Darren W Pulsipher

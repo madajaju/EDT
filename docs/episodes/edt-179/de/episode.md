@@ -13,7 +13,7 @@ tags:
     - people
     - policy
 
-date: Thu Jan 04 2024 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2024-01-04T08:00:00.000Z
 guests:
     - Madeline Pulsipher
     - Darren W Pulsipher

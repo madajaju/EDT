@@ -13,7 +13,7 @@ tags:
     - multicloud
     - technology
 
-date: Wed Jul 06 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2022-07-07T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Greg Campbell

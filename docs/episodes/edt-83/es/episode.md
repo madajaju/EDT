@@ -14,7 +14,7 @@ tags:
     - policy
     - people
 
-date: Sat Apr 08 20220 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: +020220-04-08T07:00:00.000Z
 guests:
     - Darren W Pulsipher
     - David Richard

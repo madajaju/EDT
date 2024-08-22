@@ -19,7 +19,7 @@ tags:
     - people
     - technology
 
-date: Mon Jun 06 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2022-06-07T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Glenn Kurowski

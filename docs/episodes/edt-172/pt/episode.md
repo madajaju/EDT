@@ -17,7 +17,7 @@ tags:
     - policy
     - technology
 
-date: Wed Nov 08 2023 23:00:00 GMT-0800 (Pacific Standard Time)
+date: 2023-11-09T07:00:00.000Z
 guests:
     - Steve Orrin
     - Dave Marcus

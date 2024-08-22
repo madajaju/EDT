@@ -14,7 +14,7 @@ tags:
     - people
     - process
 
-date: Thu Sep 14 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-09-14T07:00:00.000Z
 guests:
     - Jeremy Harris
     - Darren W Pulsipher

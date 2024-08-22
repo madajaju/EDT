@@ -13,7 +13,7 @@ tags:
     - technology
     - process
 
-date: Thu Jun 29 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-06-29T07:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Byron Tarry

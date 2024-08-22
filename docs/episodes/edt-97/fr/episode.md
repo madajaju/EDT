@@ -15,7 +15,7 @@ tags:
     - multicloud
     - zerotrust
 
-date: Wed Jul 27 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2022-07-28T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Hadi Ahmadi

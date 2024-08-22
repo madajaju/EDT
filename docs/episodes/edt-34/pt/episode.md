@@ -15,7 +15,7 @@ tags:
     - process
     - technology
 
-date: Mon Jan 04 2021 16:00:00 GMT-0800 (Pacific Standard Time)
+date: 2021-01-05T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Robert Looney

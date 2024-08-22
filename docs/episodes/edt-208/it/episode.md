@@ -18,7 +18,7 @@ tags:
     - digitalage
     - generalei
 
-date: Thu Jun 27 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-06-27T07:00:00.000Z
 guests:
     - Darren W Pulsipher
 

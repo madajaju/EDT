@@ -15,7 +15,7 @@ tags:
     - policy
     - technology
 
-date: Wed May 11 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2022-05-12T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Jason Dunn-Potter

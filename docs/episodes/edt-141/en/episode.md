@@ -13,7 +13,7 @@ tags:
     - cybersecurity
     - technology
 
-date: Wed May 31 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-06-01T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Pamela Follet

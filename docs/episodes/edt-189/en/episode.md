@@ -11,7 +11,7 @@ tags:
     - hpc
     - technology
 
-date: Thu Mar 07 2024 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2024-03-07T08:00:00.000Z
 guests:
     - Darren W Pulsipher
 

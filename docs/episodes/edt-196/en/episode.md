@@ -18,7 +18,7 @@ tags:
     - process
     - technology
 
-date: Thu Apr 25 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-04-25T07:00:00.000Z
 guests:
     - Michael Greenberg
     - Darren W Pulsipher

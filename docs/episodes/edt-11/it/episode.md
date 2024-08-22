@@ -17,7 +17,7 @@ tags:
     - process
     - policy
 
-date: Tue Aug 11 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2020-08-12T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Erin Moseley

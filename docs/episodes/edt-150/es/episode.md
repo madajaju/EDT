@@ -14,7 +14,7 @@ tags:
     - policy
     - technology
 
-date: Wed Aug 09 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-08-10T00:00:00.000Z
 guests:
     - Sonu Panda
 

@@ -16,7 +16,7 @@ tags:
     - people
     - technology
 
-date: Wed Jun 30 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2021-07-01T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Ann Madea

@@ -11,7 +11,7 @@ tags:
     - devops
     - process
 
-date: Tue Dec 08 2020 16:00:00 GMT-0800 (Pacific Standard Time)
+date: 2020-12-09T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Sean Chou

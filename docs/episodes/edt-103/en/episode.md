@@ -18,7 +18,7 @@ tags:
     - technology
     - process
 
-date: Mon Aug 29 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2022-08-30T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Gretchen Stewart

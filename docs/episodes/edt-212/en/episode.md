@@ -18,7 +18,7 @@ tags:
     - communitydevelopment
     - somersetbuildersclub
 
-date: Tue Jul 30 2024 06:40:44 GMT-0700 (Pacific Daylight Time)
+date: 2024-07-30T13:40:44.066Z
 guests:
     - Zack Hadley
     - Darren W Pulsipher

@@ -18,7 +18,7 @@ tags:
     - humanroleindata
     - hybriddataemodels
 
-date: Thu Jul 18 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-07-18T07:00:00.000Z
 guests:
     - Bob Buda
     - Darren W Pulsipher

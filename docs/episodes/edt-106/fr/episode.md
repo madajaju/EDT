@@ -9,7 +9,7 @@ nav_order: 106
 tags:
     - datagovernance
 
-date: Mon Sep 19 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2022-09-20T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Greg Steck

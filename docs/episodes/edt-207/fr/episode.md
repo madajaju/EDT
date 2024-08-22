@@ -24,7 +24,7 @@ tags:
     - secureinfrastructure
     - cloudcenter
 
-date: Thu Jun 20 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-06-20T07:00:00.000Z
 guests:
     - Darren W Pulsipher
 

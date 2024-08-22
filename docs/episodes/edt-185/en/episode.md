@@ -15,7 +15,7 @@ tags:
     - zerotrust
     - multicloud
 
-date: Thu Feb 08 2024 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2024-02-08T08:00:00.000Z
 guests:
     - Darren W Pulsipher
 

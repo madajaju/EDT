@@ -13,7 +13,7 @@ tags:
     - people
     - process
 
-date: Thu Feb 29 2024 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2024-02-29T08:00:00.000Z
 guests:
     - Darren W Pulsipher
 

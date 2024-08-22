@@ -15,7 +15,7 @@ tags:
     - multicloud
     - process
 
-date: Thu Nov 17 2022 16:00:00 GMT-0800 (Pacific Standard Time)
+date: 2022-11-18T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Max Young

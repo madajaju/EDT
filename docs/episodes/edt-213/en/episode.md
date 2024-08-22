@@ -18,7 +18,7 @@ tags:
     - aibenefits
     - preservingtradition
 
-date: Thu Aug 01 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-08-01T07:00:00.000Z
 guests:
     - George Davelman
     - Darren W Pulsipher

@@ -14,7 +14,7 @@ tags:
     - policy
     - process
 
-date: Tue Sep 22 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2020-09-23T00:00:00.000Z
 guests:
     - Darren W Pulsipher
 

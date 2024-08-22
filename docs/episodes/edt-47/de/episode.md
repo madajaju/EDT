@@ -13,7 +13,7 @@ tags:
     - 5g
     - multicloud
 
-date: Wed Apr 21 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2021-04-22T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Greg Ernst

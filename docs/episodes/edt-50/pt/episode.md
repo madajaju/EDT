@@ -12,7 +12,7 @@ tags:
     - process
     - technology
 
-date: Tue May 25 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2021-05-26T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Uzair Hussain

@@ -12,7 +12,7 @@ tags:
     - machinelearning
     - policy
 
-date: Thu Feb 23 2023 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2023-02-23T08:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Luuk Van Dijk

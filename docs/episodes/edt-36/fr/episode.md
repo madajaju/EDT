@@ -15,7 +15,7 @@ tags:
     - policy
     - technology
 
-date: Wed Jan 20 2021 16:00:00 GMT-0800 (Pacific Standard Time)
+date: 2021-01-21T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Steve Orrin

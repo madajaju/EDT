@@ -30,8 +30,92 @@ tags:
     - aiintegration
     - datalifecycle
     - technologyinsights
+    - aiinsights
+    - automationtools
+    - humanintuitive
+    - operationaleff
+    - datatechnology
+    - aianalytics
+    - datadriiven
+    - datagovernance
+    - dataquality
+    - businessinsights
+    - datafidelity
+    - humanmachine
+    - aiandanalytics
+    - operationalinsights
+    - techstrategy
+    - machinelearning
+    - automation
+    - humanfactor
+    - dataclarity
+    - datadriven
+    - feedbackloop
+    - automationdata
+    - improvingdata
+    - operationaltech
+    - dataintegrity
+    - tacticaldatamgmt
+    - datageneration
+    - dataconsistency
+    - datatrust
+    - smartdecisions
+    - dataautomation
+    - aitechnology
+    - insightsgeneration
+    - operationalai
+    - futureofdata
+    - datastreamlining
+    - digitaltrans
+    - humanintuit
+    - technologyadv
+    - strategicdata
+    - automationhuman
+    - aianddata
+    - tacticaldatamgt
+    - aiinbusiness
+    - predictiveai
+    - emergingtech
+    - automatedsystems
+    - aiandhumans
+    - datadriveninsights
+    - industryinnovation
+    - datavisibility
+    - smlbusinessinsights
+    - operationalstrategy
+    - predictivean
+    - aienhancement
+    - predictiveana
+    - datadecisions
+    - automateddata
+    - techadaptation
+    - reliabledata
+    - datadrivenculture
+    - technologyadoption
+    - tacticaldatamanagement
+    - dataanalytics
+    - qualitydata
+    - operationalexcellence
+    - automationskills
+    - operationaldata
+    - datacollaboration
+    - datarelevance
+    - advancedtech
+    - datadiversity
+    - humaninsights
+    - datatech
+    - operationalims
+    - businesssuccess
+    - aiefficiency
+    - streamlinedata
+    - businessgrowth
+    - technologytrends
+    - dataauditing
+    - digitalinnovation
+    - humanfactors
+    - strategyinsight
 
-date: Wed Aug 14 2024 22:13:53 GMT-0700 (Pacific Daylight Time)
+date: 2024-08-15T07:00:00.000Z
 guests:
     - Ron Fritzemeier
     - Darren W Pulsipher

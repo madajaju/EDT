@@ -13,7 +13,7 @@ tags:
     - multicloud
     - technology
 
-date: Tue Oct 04 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2022-10-05T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Leland Brown

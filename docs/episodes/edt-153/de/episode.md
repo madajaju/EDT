@@ -19,7 +19,7 @@ tags:
     - moderncomputing
     - datadrivendecisionmaking
 
-date: Wed Aug 23 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-08-24T00:00:00.000Z
 guests:
     - Pete Schmitz
     - Darren W Pulsipher

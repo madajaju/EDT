@@ -9,7 +9,7 @@ nav_order: 10
 tags:
     - dimension2
 
-date: Tue Aug 04 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2020-08-05T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Illyse Sheaffer

@@ -14,7 +14,7 @@ tags:
     - process
     - policy
 
-date: Mon Jul 10 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-07-11T00:00:00.000Z
 guests:
     - Michael Lenox
     - Darren W Pulsipher

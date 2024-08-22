@@ -13,7 +13,7 @@ tags:
     - multicloud
     - zerotrust
 
-date: Wed Mar 29 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-03-30T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Mark Valcich

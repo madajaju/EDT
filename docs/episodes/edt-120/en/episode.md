@@ -10,7 +10,7 @@ tags:
     - clouddatamanagement
     - multicloud
 
-date: Wed Jan 25 2023 16:00:00 GMT-0800 (Pacific Standard Time)
+date: 2023-01-26T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Alan Evans

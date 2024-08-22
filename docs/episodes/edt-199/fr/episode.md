@@ -16,7 +16,7 @@ tags:
     - process
     - policy
 
-date: Tue May 07 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-05-07T07:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Chris Sestito

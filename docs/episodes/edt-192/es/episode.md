@@ -13,7 +13,7 @@ tags:
     - zerotrust
     - policy
 
-date: Thu Mar 28 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-03-28T07:00:00.000Z
 guests:
     - Darren W Pulsipher
 

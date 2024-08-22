@@ -14,7 +14,7 @@ tags:
     - criticalinfrastructure
     - policy
 
-date: Wed Feb 15 2023 16:00:00 GMT-0800 (Pacific Standard Time)
+date: 2023-02-16T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Jim Richberg

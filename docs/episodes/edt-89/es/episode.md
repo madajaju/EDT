@@ -12,7 +12,7 @@ tags:
     - technology
     - process
 
-date: Wed Jun 01 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2022-06-02T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Charles Fan

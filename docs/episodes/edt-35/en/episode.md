@@ -12,7 +12,7 @@ tags:
     - generativeai
     - people
 
-date: Tue Jan 12 2021 16:00:00 GMT-0800 (Pacific Standard Time)
+date: 2021-01-13T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Rick Herrmann

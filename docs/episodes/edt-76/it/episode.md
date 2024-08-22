@@ -11,7 +11,7 @@ tags:
     - intel
     - cloud
 
-date: Wed Feb 09 2022 16:00:00 GMT-0800 (Pacific Standard Time)
+date: 2022-02-10T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Kiran Agrahara

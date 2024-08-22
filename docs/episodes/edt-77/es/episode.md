@@ -13,7 +13,7 @@ tags:
     - microservices
     - multicloud
 
-date: Wed Feb 16 2022 16:00:00 GMT-0800 (Pacific Standard Time)
+date: 2022-02-17T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Gretchen Stewart

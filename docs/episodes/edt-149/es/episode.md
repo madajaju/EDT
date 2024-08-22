@@ -13,7 +13,7 @@ tags:
     - policy
     - technology
 
-date: Wed Aug 02 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-08-03T00:00:00.000Z
 guests:
     - Leland Brown
     - Darren W Pulsipher

@@ -14,7 +14,7 @@ tags:
     - multicloud
     - zerotrust
 
-date: Wed Jun 15 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2022-06-16T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Matt Lembright

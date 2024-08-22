@@ -11,7 +11,7 @@ tags:
     - 5g
     - multicloud
 
-date: Thu Oct 27 2022 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2022-10-27T07:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Eric Hornsby

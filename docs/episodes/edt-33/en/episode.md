@@ -15,7 +15,7 @@ tags:
     - technology
     - process
 
-date: Mon Dec 14 2020 16:00:00 GMT-0800 (Pacific Standard Time)
+date: 2020-12-15T00:00:00.000Z
 guests:
     - Darren W Pulsipher
 

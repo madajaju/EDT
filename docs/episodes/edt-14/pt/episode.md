@@ -14,7 +14,7 @@ tags:
     - people
     - process
 
-date: Wed Aug 19 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2020-08-20T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Sarah Kalicin

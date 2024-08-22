@@ -19,7 +19,7 @@ tags:
     - process
     - policy
 
-date: Thu Apr 18 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-04-18T07:00:00.000Z
 guests:
     - Greg Clifton
     - Darren W Pulsipher

@@ -14,7 +14,7 @@ tags:
     - people
     - process
 
-date: Mon Jun 21 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2021-06-22T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Ann Madea

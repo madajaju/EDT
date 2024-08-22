@@ -14,7 +14,7 @@ tags:
     - sustainability
     - cybersecurity
 
-date: Thu May 23 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-05-23T07:00:00.000Z
 guests:
     - Robert Vaughn
     - Darren W Pulsipher

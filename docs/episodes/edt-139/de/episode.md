@@ -11,7 +11,7 @@ tags:
     - multicloud
     - technology
 
-date: Wed May 17 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-05-18T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Adrian Kosowski

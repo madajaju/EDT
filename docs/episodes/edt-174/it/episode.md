@@ -28,7 +28,7 @@ tags:
     - zta
     - cybersecurity
 
-date: Thu Nov 16 2023 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2023-11-16T08:00:00.000Z
 guests:
     - Patrick Conte
     - Darren W Pulsipher

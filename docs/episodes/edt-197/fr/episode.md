@@ -12,7 +12,7 @@ tags:
     - people
     - process
 
-date: Thu May 02 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-05-02T07:00:00.000Z
 guests:
     - Michael Greenberg
     - Darren W Pulsipher

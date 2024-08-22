@@ -21,7 +21,7 @@ tags:
     - process
     - technology
 
-date: Tue Jan 16 2024 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2024-01-16T08:00:00.000Z
 guests:
     - Leland Brown
     - Yazz Krdzalic

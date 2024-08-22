@@ -16,7 +16,7 @@ tags:
     - cybersecurity
     - process
 
-date: Sun Mar 14 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2021-03-15T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Steve Orrin

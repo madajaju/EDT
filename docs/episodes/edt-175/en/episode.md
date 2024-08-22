@@ -12,7 +12,7 @@ tags:
     - technology
     - policy
 
-date: Thu Nov 30 2023 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2023-11-30T08:00:00.000Z
 guests:
     - Louis Parks
     - Darren W Pulsipher

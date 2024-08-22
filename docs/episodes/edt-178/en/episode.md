@@ -18,7 +18,7 @@ tags:
     - cybersecurity
     - security
 
-date: Thu Dec 28 2023 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2023-12-28T08:00:00.000Z
 guests:
     - Phillip Griffiths
     - Darren W Pulsipher

@@ -14,7 +14,7 @@ tags:
     - policy
     - technology
 
-date: Wed Mar 09 2022 16:00:00 GMT-0800 (Pacific Standard Time)
+date: 2022-03-10T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Denis O&#39;Shea

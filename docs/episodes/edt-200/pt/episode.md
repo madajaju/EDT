@@ -17,7 +17,7 @@ tags:
     - people
     - technology
 
-date: Wed May 08 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-05-08T07:00:00.000Z
 guests:
     - Darren W Pulsipher
 

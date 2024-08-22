@@ -12,7 +12,7 @@ tags:
     - generativeai
     - cybersecurity
 
-date: Thu May 16 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-05-16T07:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Robert Vaughn

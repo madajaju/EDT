@@ -18,7 +18,7 @@ tags:
     - podcastdiscussion
     - digitaltransformation
 
-date: Mon Jul 22 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-07-22T07:00:00.000Z
 guests:
     - Matthew Pulsipher
     - Darren W Pulsipher

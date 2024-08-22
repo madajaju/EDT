@@ -14,7 +14,7 @@ tags:
     - automation
     - podcast
 
-date: Tue Nov 14 2023 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2023-11-14T08:00:00.000Z
 guests:
     - Darren W Pulsipher
 

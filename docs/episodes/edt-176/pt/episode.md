@@ -14,7 +14,7 @@ tags:
     - zerotrust
     - cybersecurity
 
-date: Tue Dec 05 2023 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2023-12-05T08:00:00.000Z
 guests:
     - Shamim Naqvi
     - Darren W Pulsipher

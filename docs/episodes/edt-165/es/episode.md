@@ -13,7 +13,7 @@ tags:
     - moderncomputing
     - technology
 
-date: Thu Oct 05 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-10-05T07:00:00.000Z
 guests:
     - Ricardo Dutton Jr
     - Darren W Pulsipher

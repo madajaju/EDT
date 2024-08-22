@@ -16,7 +16,7 @@ tags:
     - technology
     - policy
 
-date: Wed Jul 07 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2021-07-08T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Kevin Bleckmann

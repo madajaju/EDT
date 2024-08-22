@@ -13,7 +13,7 @@ tags:
     - people
     - process
 
-date: Thu Mar 21 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-03-21T07:00:00.000Z
 guests:
     - Leilani Bloomquist
     - Darren W Pulsipher

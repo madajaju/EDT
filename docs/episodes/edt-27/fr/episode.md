@@ -15,7 +15,7 @@ tags:
     - technology
     - policy
 
-date: Tue Oct 27 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2020-10-28T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Jesse Schrater

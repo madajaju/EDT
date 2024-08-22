@@ -14,7 +14,7 @@ tags:
     - multicloud
     - cybersecurity
 
-date: Wed Jul 26 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-07-27T00:00:00.000Z
 guests:
     - Jared Shepard
     - Darren W Pulsipher

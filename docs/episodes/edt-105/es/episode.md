@@ -15,7 +15,7 @@ tags:
     - people
     - process
 
-date: Mon Sep 12 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2022-09-13T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Betsy Freeman

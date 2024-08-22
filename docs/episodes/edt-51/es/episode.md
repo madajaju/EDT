@@ -13,7 +13,7 @@ tags:
     - multicloud
     - technology
 
-date: Wed Jun 02 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2021-06-03T00:00:00.000Z
 guests:
     - Darren W Pulsipher
 

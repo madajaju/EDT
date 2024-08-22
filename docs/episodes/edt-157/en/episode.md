@@ -15,7 +15,7 @@ tags:
     - datagovernance
     - dataquality
 
-date: Wed Sep 06 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-09-07T00:00:00.000Z
 guests:
     - Jeffrey Lancaster
     - Darren W Pulsipher

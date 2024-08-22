@@ -14,7 +14,7 @@ tags:
     - process
     - technology
 
-date: Tue Mar 30 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2021-03-31T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Stephen Holt

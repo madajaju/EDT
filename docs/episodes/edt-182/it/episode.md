@@ -12,7 +12,7 @@ tags:
     - walacor
     - zerotrust
 
-date: Thu Jan 18 2024 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2024-01-18T08:00:00.000Z
 guests:
     - Walter Hancock
     - Darren W Pulsipher

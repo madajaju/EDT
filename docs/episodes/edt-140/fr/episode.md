@@ -13,7 +13,7 @@ tags:
     - process
     - policy
 
-date: Wed May 24 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-05-25T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Michael Mehlberg

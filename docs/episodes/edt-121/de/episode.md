@@ -12,7 +12,7 @@ tags:
     - multicloud
     - technology
 
-date: Wed Feb 01 2023 16:00:00 GMT-0800 (Pacific Standard Time)
+date: 2023-02-02T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Aaron Reid

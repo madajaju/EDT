@@ -15,7 +15,7 @@ tags:
     - technology
     - process
 
-date: Tue Oct 03 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-10-03T07:00:00.000Z
 guests:
     - Sarah Musick
     - Darren W Pulsipher

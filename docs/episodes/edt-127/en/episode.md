@@ -14,7 +14,7 @@ tags:
     - zerotrust
     - cybersecurity
 
-date: Wed Mar 08 2023 16:00:00 GMT-0800 (Pacific Standard Time)
+date: 2023-03-09T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Andrew Cohen

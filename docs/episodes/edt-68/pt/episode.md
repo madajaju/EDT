@@ -11,7 +11,7 @@ tags:
     - advancedcommunications
     - technology
 
-date: Wed Oct 27 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2021-10-28T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Leland Brown

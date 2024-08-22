@@ -13,7 +13,7 @@ tags:
     - generativeai
     - cybersecurity
 
-date: Tue Sep 26 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-09-26T07:00:00.000Z
 guests:
     - Christine McMonigal
     - Darren W Pulsipher

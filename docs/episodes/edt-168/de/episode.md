@@ -14,7 +14,7 @@ tags:
     - deeplearning
     - videogen
 
-date: Thu Oct 19 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-10-19T07:00:00.000Z
 guests:
     - Andy Morris
     - Darren W Pulsipher

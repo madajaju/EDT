@@ -13,7 +13,7 @@ tags:
     - artificialintelligence
     - workplaceproductivity
 
-date: Mon Aug 28 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-08-29T00:00:00.000Z
 guests:
     - Jeffrey Lancaster
     - Darren W Pulsipher

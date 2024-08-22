@@ -15,7 +15,7 @@ tags:
     - people
     - technology
 
-date: Mon Sep 11 2023 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-09-12T00:00:00.000Z
 guests:
     - Laura Newey
     - Darren W Pulsipher

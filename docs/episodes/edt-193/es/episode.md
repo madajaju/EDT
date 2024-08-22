@@ -10,7 +10,7 @@ tags:
     - riskmanagement
     - multicloud
 
-date: Thu Apr 04 2024 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2024-04-04T07:00:00.000Z
 guests:
     - Dave Burrill
     - Darren W Pulsipher

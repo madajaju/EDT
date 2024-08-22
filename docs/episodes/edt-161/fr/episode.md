@@ -10,7 +10,7 @@ tags:
     - knowledgesharing
     - generativeai
 
-date: Thu Sep 21 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-09-21T07:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Steve Wasick

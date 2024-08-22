@@ -14,7 +14,7 @@ tags:
     - people
     - technology
 
-date: Thu Jun 15 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-06-15T07:00:00.000Z
 guests:
     - Anna Scott
     - Ibett Acarapi

@@ -19,7 +19,7 @@ tags:
     - process
     - technology
 
-date: Thu Oct 12 2023 04:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-10-12T11:00:00.000Z
 guests:
     - Christine McMonigal
     - Darren W Pulsipher

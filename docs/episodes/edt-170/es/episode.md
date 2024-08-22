@@ -16,7 +16,7 @@ tags:
     - data
     - cybersecuritypolicies
 
-date: Thu Oct 26 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-10-26T07:00:00.000Z
 guests:
     - Anna Scott
     - Dave Marcus

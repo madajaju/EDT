@@ -14,7 +14,7 @@ tags:
     - multicloud
     - technology
 
-date: Thu May 07 2020 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2020-05-08T00:00:00.000Z
 guests:
     - Darren W Pulsipher
 

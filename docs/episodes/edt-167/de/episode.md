@@ -19,7 +19,7 @@ tags:
     - policy
     - process
 
-date: Tue Oct 17 2023 00:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2023-10-17T07:00:00.000Z
 guests:
     - Rachel Dreikosen
     - Darren W Pulsipher

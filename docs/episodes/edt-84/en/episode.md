@@ -15,7 +15,7 @@ tags:
     - policy
     - people
 
-date: Sat Aug 20 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2022-08-21T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Steve Orrin

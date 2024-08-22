@@ -17,7 +17,7 @@ tags:
     - process
     - technology
 
-date: Wed Mar 30 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2022-03-31T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Sarah Musick

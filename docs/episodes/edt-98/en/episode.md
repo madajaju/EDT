@@ -11,7 +11,7 @@ tags:
     - businessprocessmanagement
     - multicloud
 
-date: Wed Aug 03 2022 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2022-08-04T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Chetan Venkatesh

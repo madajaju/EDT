@@ -18,7 +18,7 @@ tags:
     - aioperation
     - aitechsecurity
 
-date: Thu Jun 03 0202 00:00:00 GMT-0752 (Pacific Daylight Time)
+date: 0202-06-03T07:52:58.000Z
 guests:
     - Steve Orrin
     - Darren W Pulsipher

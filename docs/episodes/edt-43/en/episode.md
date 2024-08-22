@@ -13,7 +13,7 @@ tags:
     - zerotrust
     - cybersecurity
 
-date: Wed Mar 17 2021 17:00:00 GMT-0700 (Pacific Daylight Time)
+date: 2021-03-18T00:00:00.000Z
 guests:
     - Darren W Pulsipher
     - Doug Bourgeois

@@ -17,7 +17,7 @@ tags:
     - cloud
     - cybersecurity
 
-date: Thu Feb 15 2024 00:00:00 GMT-0800 (Pacific Standard Time)
+date: 2024-02-15T08:00:00.000Z
 guests:
     - Eduardo Alverez
     - Darren W Pulsipher
