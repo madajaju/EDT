@@ -18,7 +18,7 @@ tags:
     - continuousimprov
     - devtools
 
-date: 8/29/2024
+date: 2024-08-29:00:00.000Z
 guests:
     - Jonathan Schneider
     - Darren W Pulsipher
