@@ -24,7 +24,7 @@ tags:
     - financialai
     - digitaltransformation
 
-date: 2024-08-19T03:09:49.956Z
+date: 2024-08-22T18:16:07.175Z
 guests:
     - Darren W Pulsipher
 
