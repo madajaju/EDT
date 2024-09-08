@@ -60,7 +60,7 @@ You can watch the ED-T the fish cam to check out how he is doing.
     </a>
   </div>
   <div class="collection-item">
-    <a href="https://www.embracingdigital.org/collections/en/multhybridcloud.html">
+    <a href="https://www.embracingdigital.org/collections/en/multihybridcloud.html">
       <img src="./emhc.png" width="175" height="128" alt="Embracing Multi-Hybrid Cloud">
     </a>
   </div>
