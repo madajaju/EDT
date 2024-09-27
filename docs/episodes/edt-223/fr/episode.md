@@ -26,7 +26,7 @@ tags:
     - dataprivacy
     - digitaltransformation
 
-date: Thu Sep 19 2024 03:39:25 GMT-0700 (Pacific Daylight Time)
+date: 2024-09-19T10:39:25.252Z
 guests:
     - Darren W Pulsipher
 
