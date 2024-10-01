@@ -33,7 +33,7 @@ tags:
     - socureceo
     - socure
 
-date: 
+date: 9/23/2024
 guests:
     - Darren W Pulsipher
 
