@@ -13,17 +13,13 @@ tags:
     - datamanagement
     - cybersecurity
     - k12education
-    - k12education
-    - k12education
     - privacyconcerns
     - ai
     - compute
     - edge
-    - cybersecurity
-    - datamanagement
     - advancedcomms
 
-date: Sun Sep 29 2024 06:58:18 GMT-0700 (Pacific Daylight Time)
+date: 2024-09-29T13:58:18.581Z
 guests:
     - Darren W Pulsipher
 
