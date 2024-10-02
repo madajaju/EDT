@@ -22,7 +22,7 @@ child_nav_order: reversed
 }
 </style>
 
-{% assign spages = site.pages | where: "layout", "posts" | where: "lang", "pt" | sort: "nav_order" | reverse %}
+{% assign spages = site.pages | where: "layout", "posts" | where: "lang", "ja" | sort: "nav_order" | reverse %}
 {% for spage in spages %}
 <div style="display: flex;">
     <p class="episode">

@@ -81,8 +81,8 @@ display: table;
 clear: both;
 }
 </style>
-{% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang', 'en' | limit: 10 %}
-{% assign sortedBriefs = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'brief' | where: 'lang', 'en' | limit: 10 %}
+{% assign sortedEpisodes = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'posts' | where: 'lang', 'ar' | limit: 10 %}
+{% assign sortedBriefs = site.pages | sort: 'nav_order' | reverse | where: 'layout', 'brief' | where: 'lang', 'ar' | limit: 10 %}
 {% assign latestEpisode = sortedEpisodes | first %}
 {% assign latestBrief = sortedBriefs | first %}
 <div class="toprow">
