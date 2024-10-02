@@ -41,13 +41,6 @@ Embracing Digital Transformation has created three series of episodes where we h
 topics of the day. Check out these new series.
 </p>
 
-<p>
-Introducing ED-T the fish!!. He is our new mascot of the Embracing Digital Transformation world and its pocasts.
-You can watch the ED-T the fish cam to check out how he is doing.
-</p>
-</div>
-<div>
-<a href="https://www.youtube.com/watch?v=mEs6XM9Yd2k"><img src="./fish.jpg" ></a>
 </div>
 </div>
 
@@ -120,7 +113,7 @@ limit: 10 %}
         <small>{{ latestEpisode.number}} - {{ latestEpisode.title }}</small>
     </a><br>
     <a href="{{ latestBrief.url }}">
-        <img src="./en.png" width="128" height="128"><br>
+        <img src="./en.jpeg" width="128" height="128"><br>
         <small>Weekly News Brief {{ latestBrief.title }}</small>
     </a><br>
   </div>

@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Português
+title: 日本語
 has_children: true
 nav_order: 1
-lang: pt
+lang: ja
 ---
 
-# Abraçando a Transformação Digital
+# デジタルトランスフォーメーションを受け入れる
 
 <style>
 .topcolumn {
@@ -47,32 +47,32 @@ clear: both;
 {% assign latestEpisode = sortedEpisodes | first %}
 {% assign latestBrief = sortedBriefs | first %}
 <div class="toprow">
-  <div class="topcolumn topleft" >
+  <div class="topcolumn topleft">
     <p> 
-        "Embracing Digital Transformation" é um podcast semanal que é transmitido em várias plataformas, como <a href="https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA">Youtube</a> e <a href="https://soundcloud.com/embracingdigital">SoundCloud</a>. Darren Pulsipher, Arquiteto Principal de Soluções para o Setor Público na Intel, investiga a mudança efetiva utilizando pessoas, processos, políticas e tecnologia.
+        "デジタルトランスフォーメーションを受け入れる"は、<a href="https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA">YouTube</a>や<a href="https://soundcloud.com/embracingdigital">SoundCloud</a>などのプラットフォームで毎週放送されるポッドキャストです。インテルの公共部門主任ソリューションアーキテクト、ダレン・パルシファーは、人々、プロセス、ポリシー、テクノロジーを活用した効果的な変革を探求します。
     </p>
     <p> 
-        Estamos construindo uma comunidade de profissionais e estrategistas para discutir os desafios e sucessos da adoção da Transformação Digital. Junte-se à comunidade conferindo os links abaixo:
-        <a href="https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA">Youtube</a>,
-        <a href="https://soundcloud.com/embracingdigital">SoundCloud</a>,
-        <a href="https://www.linkedin.com/company/embracing-digital-transformation/">LinkedIn Group</a>,
-        <a href="https://www.facebook.com/embracingdigital">Facebook </a>
+        私たちは、デジタルトランスフォーメーションの採用における課題と成功について議論する専門家や戦略家のコミュニティを構築しています。以下のリンクからコミュニティに参加してください：
+        <a href="https://www.youtube.com/channel/UCveOcNne1kP_ZccC8kOZcDA">YouTube</a>、
+        <a href="https://soundcloud.com/embracingdigital">SoundCloud</a>、
+        <a href="https://www.linkedin.com/company/embracing-digital-transformation/">LinkedIn Group</a>、
+        <a href="https://www.facebook.com/embracingdigital">Facebook </a>、
         <a href="https://www.intel.com/content/www/us/en/government/embracing-digital-transformation-overview.html">Intel Blog Site</a>
     </p>
   </div>
-  <div class="topcolumn topright" >
+  <div class="topcolumn topright">
     <a href="{{ latestEpisode.url }}">
         <img src="{{ latestEpisode.path | remove: latestEpisode.name }}/{{ latestEpisode.img }}" width="128" height="128"><br>
         <small>{{ latestEpisode.number}} - {{ latestEpisode.title }}</small>
     </a><br>
     <a href="{{ latestBrief.url }}">
-        <img src="./pt.jpeg" width="128" height="128"><br>
-        <small>Weekly News Brief {{ latestBrief.title }}</small>
+        <img src="./ja.jpeg" width="128" height="128"><br>
+        <small>週間ニュースブリーフ {{ latestBrief.title }}</small>
     </a><br>
   </div>
 </div>
 
-<h1>Episódios</h1>
+<h1>エピソード</h1>
 {% for page in sortedEpisodes %}
 {% if page.number %}
 <div style="display:flex;">

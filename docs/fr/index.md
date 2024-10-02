@@ -67,7 +67,7 @@ clear: both;
         <small>{{ latestEpisode.number}} - {{ latestEpisode.title }}</small>
     </a><br>
     <a href="{{ latestBrief.url }}">
-        <img src="./fr.png" width="128" height="128"><br>
+        <img src="./fr.jpeg" width="128" height="128"><br>
         <small>Weekly News Brief {{ latestBrief.title }}</small>
     </a><br>
   </div>

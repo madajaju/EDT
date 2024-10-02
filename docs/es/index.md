@@ -56,7 +56,7 @@ Darren Pulsipher, Arquitecto Principal de Soluciones para el Sector Público en 
         <small>{{ latestEpisode.number}} - {{ latestEpisode.title }}</small>
     </a><br>
     <a href="{{ latestBrief.url }}">
-        <img src="./es.png" width="128" height="128"><br>
+        <img src="./es.jpeg" width="128" height="128"><br>
         <small>Noticias Breves {{ latestBrief.title }}</small>
     </a><br>
   </div>

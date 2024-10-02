@@ -27,7 +27,7 @@ child_nav_order: reversed
 
 
 
-<img src="./en.png" width="128" height="128"><br>
+<img src="./en.jpeg" width="128" height="128"><br>
 
 
 # Weekly Briefs

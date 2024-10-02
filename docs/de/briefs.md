@@ -26,7 +26,7 @@ nav_order: 2
 
 
 
-<img src="./de.png" width="128" height="128">
+<img src="./de.jpeg" width="128" height="128">
 
 {% include subscribe_brief.html %}
 
