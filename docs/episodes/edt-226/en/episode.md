@@ -24,9 +24,9 @@ guests:
 
 img: thumbnail.jpeg
 image: thumbnail.jpeg
-summary: "In%20this%20episode,%20we%92ll%20explore%20how%20organizations%20can%20harness%20digital%20storytelling%20to%20create%20meaningful%20connections%20with%20their%20audiences.%20By%20integrating%20rich%20historical%20narratives%20with%20cutting-edge%20technology,%20businesses%20can%20preserve%20their%20heritage%20while%20engaging%20modern%20audiences%20in%20new,%20dynamic%20ways.%20Darren%20digs%20deep%20into%20history%20with%20Kristen%20Gwinn-Becker,%20CEO%20of%20HistoryIT."
+summary: "In this episode, we’ll explore how organizations can harness digital storytelling to create meaningful connections with their audiences. By integrating rich historical narratives with cutting-edge technology, businesses can preserve their heritage while engaging modern audiences in new, dynamic ways. Darren digs deep into history with Kristen Gwinn-Becker, CEO of HistoryIT."
 video: "https://youtu.be/ZfnA0asZbiU"
-description: "In%20this%20episode,%20we%92ll%20explore%20how%20organizations%20can%20harness%20digital%20storytelling%20to%20create%20meaningful%20connections%20with%20their%20audiences.%20By%20integrating%20rich%20historical%20narratives%20with%20cutting-edge%20technology,%20businesses%20can%20preserve%20their%20heritage%20while%20engaging%20modern%20audiences%20in%20new,%20dynamic%20ways.%20Darren%20digs%20deep%20into%20history%20with%20Kristen%20Gwinn-Becker,%20CEO%20of%20HistoryIT."
+description: "In this episode, we’ll explore how organizations can harness digital storytelling to create meaningful connections with their audiences. By integrating rich historical narratives with cutting-edge technology, businesses can preserve their heritage while engaging modern audiences in new, dynamic ways. Darren digs deep into history with Kristen Gwinn-Becker, CEO of HistoryIT."
 ---
 
 <div>
