@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "O rápido crescimento da IA Generativa mudou o foco dos Diretores de Inovação (CIOs) do gerenciamento de infraestrutura para o gerenciamento de informações e dados. Neste episódio, Darren entrevista Collin Graves, o fundador da NorthLabs."
-video: "https://youtu.be/"
+video: "https://youtu.be/C_MW42OT6R0"
 description: "O rápido crescimento da IA Generativa mudou o foco dos Diretores de Inovação (CIOs) do gerenciamento de infraestrutura para o gerenciamento de informações e dados. Neste episódio, Darren entrevista Collin Graves, o fundador da NorthLabs."
 ---
 
 <div>
 {% include transistor.html id="607bd777" title="#228 Embracing Data Operations" %}
 
-{% include youtube.html id="" %}
+{% include youtube.html id="C_MW42OT6R0" %}
 </div>
 
 ---

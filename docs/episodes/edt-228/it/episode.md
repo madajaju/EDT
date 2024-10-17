@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "L'ascesa rapida dell'Intelligenza Artificiale Generativa ha spostato l'attenzione dei Chief Innovation Officers (CIOs) dalla gestione dell'infrastruttura alla gestione delle informazioni e dei dati. In questo episodio, Darren intervista Collin Graves, il fondatore di NorthLabs."
-video: "https://youtu.be/"
+video: "https://youtu.be/C_MW42OT6R0"
 description: "L'ascesa rapida dell'Intelligenza Artificiale Generativa ha spostato l'attenzione dei Chief Innovation Officers (CIOs) dalla gestione dell'infrastruttura alla gestione delle informazioni e dei dati. In questo episodio, Darren intervista Collin Graves, il fondatore di NorthLabs."
 ---
 
 <div>
 {% include transistor.html id="607bd777" title="#228 Embracing Data Operations" %}
 
-{% include youtube.html id="" %}
+{% include youtube.html id="C_MW42OT6R0" %}
 </div>
 
 ---

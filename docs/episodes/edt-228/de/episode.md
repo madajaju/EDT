@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Der rasche Aufstieg der Generativen KI hat den Fokus der Chief Innovation Officers (CIOs) von der Infrastrukturverwaltung auf die Informations- und Datenverwaltung verschoben. In dieser Folge interviewt Darren Collin Graves, den Gründer von NorthLabs."
-video: "https://youtu.be/"
+video: "https://youtu.be/C_MW42OT6R0"
 description: "Der rasche Aufstieg der Generativen KI hat den Fokus der Chief Innovation Officers (CIOs) von der Infrastrukturverwaltung auf die Informations- und Datenverwaltung verschoben. In dieser Folge interviewt Darren Collin Graves, den Gründer von NorthLabs."
 ---
 
 <div>
 {% include transistor.html id="607bd777" title="#228 Embracing Data Operations" %}
 
-{% include youtube.html id="" %}
+{% include youtube.html id="C_MW42OT6R0" %}
 </div>
 
 ---

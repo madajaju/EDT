@@ -26,14 +26,14 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "The rapid rise of Generative AI has shifted the focus of Chief Innovation Officers (CIOs) from infrastructure management to information and data management. In this episode, Darren interviews Collin Graves, the founder of NorthLabs."
-video: "https://youtu.be/"
+video: "https://youtu.be/C_MW42OT6R0"
 description: "The rapid rise of Generative AI has shifted the focus of Chief Innovation Officers (CIOs) from infrastructure management to information and data management. In this episode, Darren interviews Collin Graves, the founder of NorthLabs."
 ---
 
 <div>
 {% include transistor.html id="607bd777" title="#228 Embracing Data Operations" %}
 
-{% include youtube.html id="" %}
+{% include youtube.html id="C_MW42OT6R0" %}
 </div>
 
 ---
