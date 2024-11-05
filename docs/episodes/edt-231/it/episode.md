@@ -18,7 +18,7 @@ tags:
     - enterprisetech
     - innovation
 
-date: "2024-10-30T20:17:01.473Z"
+date: 11/4/2024
 guests:
     - Darren W Pulsipher
 
