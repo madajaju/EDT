@@ -15,7 +15,7 @@ tags:
     - digitaltransformation
     - dataprotection
 
-date: Sun Nov 03 2024 16:00:00 GMT-0800 (Pacific Standard Time)
+date: 2024-11-04T00:00:00.000Z
 guests:
     - Darren W Pulsipher
 
