@@ -18,7 +18,7 @@ tags:
     - healthsystems
     - ehealthrecords
 
-date: 11/14/2024
+date: Thu Nov 14 2024 04:58:18 GMT-0800 (Pacific Standard Time)
 guests:
     - Darren W Pulsipher
 
