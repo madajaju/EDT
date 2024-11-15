@@ -5,6 +5,7 @@ parent: About
 ---
 
 # Factors
+
 Darren Pulsipher, Chief Solution Architect for Public Sector at Intel, investigates effective change leveraging people, process, and technology.
 
 Which digital trends are a flash in the pan—and which will form the foundations of lasting change? With in-depth discussion and expert interviews, Embracing Digital Transformation finds the signal in the noise of the digital revolution. Embracing Digital Transformation is about bringing people, processes, and technology together for effective digital transformation.
