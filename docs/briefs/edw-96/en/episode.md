@@ -15,7 +15,7 @@ tags:
     - datamanagement
     - advancedcomms
 
-date: "2024-12-15T00:00:00.000Z"
+date: 
 guests:
     - Darren W Pulsipher
 
