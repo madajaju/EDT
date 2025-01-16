@@ -21,6 +21,7 @@ tags:
 date: 2024-11-23T03:49:02.981Z
 guests:
     - Darren W Pulsipher
+    - Walter Riviera
 
 img: thumbnail.jpeg
 image: thumbnail.jpeg

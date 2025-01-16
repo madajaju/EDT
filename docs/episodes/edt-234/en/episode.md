@@ -18,7 +18,7 @@ tags:
     - organizationalculture
     - changeadvocacy
 
-date: 2024-12-05T03:45:37.245Z
+date: 2025-01-14T13:21:28.849Z
 guests:
     - Darren W Pulsipher
     - Suriel Arellano
