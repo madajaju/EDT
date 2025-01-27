@@ -22,7 +22,7 @@ guests:
 img: thumbnail.png
 image: thumbnail.png
 summary: "Our Digital Transformation for January 25, 2025, is a special one as it marks our 100th episode. We're thrilled about this milestone and can't wait to bring you more exciting content in the next 100 episodes. This week, our latest article explores cutting-edge advancements in semiconductor technologies, AI innovations, and cybersecurity challenges that are shaping the future of industries, from computing to healthcare."
-video: "https://youtu.be/"
+video: "https://youtu.be/XMPCsTHTRfs"
 description: "Our Digital Transformation for January 25, 2025, is a special one as it marks our 100th episode. We're thrilled about this milestone and can't wait to bring you more exciting content in the next 100 episodes. This week, our latest article explores cutting-edge advancements in semiconductor technologies, AI innovations, and cybersecurity challenges that are shaping the future of industries, from computing to healthcare."
 ---
 
@@ -30,6 +30,8 @@ description: "Our Digital Transformation for January 25, 2025, is a special one 
 {% include transistor.html id="a0a55125" %}
 
 
+
+{% include youtube.html id="XMPCsTHTRfs" %}
 
 
 ---
