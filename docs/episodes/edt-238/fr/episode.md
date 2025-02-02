@@ -18,7 +18,7 @@ tags:
     - industrychallenges
     - manufacturing
 
-date: 1/30/2025
+date: Thu Jan 30 2025 06:56:40 GMT-0800 (Pacific Standard Time)
 guests:
     - David Richard
     - Darren W Pulsipher
