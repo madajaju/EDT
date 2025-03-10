@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abbracciare la trasformazione digitale</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>
+        // Funzione per estrarre i parametri della query dall'URL
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ottieni il parametro "query" dall'URL
+            const queryValue = getQueryParam('query');
+
+            // Se è presente una query, popola il campo di input di ricerca
+            if (queryValue) {
+                const searchInput = document.getElementById('search-input');
+                if (searchInput) {
+                    searchInput.value = queryValue;
+                }
+            }
+        });
+    </script>
+</head>
+<body>
+<!-- Barra di navigazione -->
+<header>
+    <div class="logo-container">
+        <img src="../images/logo.png" alt="Abbracciare la trasformazione digitale" class="site-icon">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../it/home/index.html">Home</a></li>
+            <li><a href="../it/about.html">Chi siamo</a></li>
+            <li><a href="../it/episodes/index.html">Interviste</a></li>
+            <li><a href="../it/briefs/index.html">Notizie</a></li>
+            <li><a href="../it/community.html">Comunità</a></li>
+            <li><a href="../it/guests/index.html">Ospiti</a></li>
+            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
+            <li><a href="../it/search.html">Cerca</a></li>
+            <li class="dropdown">
+                <a href="#">Lingue</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../ar/community.html">العربية</a></li>
+                    <li><a href="../de/community.html">Deutsch</a></li>
+                    <li><a href="../en/community.html">English</a></li>
+                    <li><a href="../fr/community.html">Français</a></li>
+                    <li><a href="../it/community.html">Italiano</a></li>
+                    <li><a href="../pt/community.html">Português</a></li>
+                    <li><a href="../ja/community.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section id="one-brief">
+    <h1>Cerca Episodi di Abbracciare la trasformazione digitale</h1>
+    <div class="brief-container">
+        <div class="category grid-box">
+            <input type="text" id="searchInput" placeholder="Cerca gli episodi...">
+            <ul id="searchResults"></ul>
+            <!-- Includi Lunr.js -->
+            <script src="https://unpkg.com/lunr/lunr.js"></script>
+            <script src="../it/assets/js/lunr-index.js"></script>
+            <script src="../it/assets/js/search.js"></script>
+        </div>
+    </div>
+</section>
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; 2025 Paidar Productions LLC</p>
+        <p>Tutti i diritti riservati</p>
+    </div>
+</footer>
+</body>
+</html>

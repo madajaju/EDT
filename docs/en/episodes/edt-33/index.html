@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Dynamic Page Title -->
+        <title>Embracing Digital Transformation</title>
+
+        <!-- Meta Description for SEO -->
+        <meta name="description" content="&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Public Sector, at Intel talks about the lessons learned from the AWS outage in November 2020 and preventative solutions to navigating such outages.&lt;/p&gt;
+">
+
+        <!-- Keywords for SEO -->
+        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, digital transformation">
+
+        <!-- Author Meta -->
+        <meta name="author" content="Darren W Pulsipher">
+
+        <!-- Open Graph Meta Tags for Social Media -->
+        <meta property="og:title" content="Embracing Digital Transformation">
+        <meta property="og:description" content="&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Public Sector, at Intel talks about the lessons learned from the AWS outage in November 2020 and preventative solutions to navigating such outages.&lt;/p&gt;
+">
+        <meta property="og:image" content="thumbnail.png">
+
+        <meta property="og:url" content="https://embracingdigital.org">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Embracing Digital Transformation">
+        <meta name="twitter:description" content="&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Public Sector, at Intel talks about the lessons learned from the AWS outage in November 2020 and preventative solutions to navigating such outages.&lt;/p&gt;
+">
+        <meta name="twitter:image" content="thumbnail.png">
+
+    <title>Embracing Digital Transformation</title>
+
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script> window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-P4XHVE79DL'); </script>
+</head>
+<body>
+
+<!-- 🌍 Navigation Bar -->
+<header>
+    <div class="logo-container">
+        <img src="../../../images/logo.png" alt="Embracing Digital Transformation" class="site-icon">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../../../en/home/index.html">Home</a></li>
+            <li><a href="../../../en/about.html">About</a></li>
+            <li><a href="../../../en/episodes/index.html">Interviews</a></li>
+            <li><a href="../../../en/briefs/index.html">News</a></li>
+            <li><a href="../../../en/community.html">Community</a></li>
+            <li><a href="../../../en/guests/index.html">Guests</a></li>
+            <li><a href="https://6704f0-2.myshopify.com/">Shop</a></li>
+            <li><a href="../../../en/search.html">Search</a></li>
+            <li class="dropdown">
+                <a href="#">Languages</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabic -->
+                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- German -->
+                    <li><a href="../../../en/home/index.html">English</a></li> <!-- English -->
+                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- French -->
+                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italian -->
+                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portuguese -->
+                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Japanese -->
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section id="one-episode">
+    <h1 id="episode-title">#33 The AWS Outage of Nov 2020</h1>
+    <div class="episode-container">
+        <!-- YouTube Video Section -->
+        <div class="video-container">
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/XquYoUXxJks?autoplay=1" title="Episode Playback"></iframe>
+        </div>
+
+        <!-- Podcast Audio Section -->
+        <div class="podcast-container">
+            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/e81503fc"></iframe>
+        </div>
+        <div class="show-summary">
+            <p><p>Darren Pulsipher, Chief Solution Architect, Public Sector, at Intel talks about the lessons learned from the AWS outage in November 2020 and preventative solutions to navigating such outages.</p>
+</p>
+
+            <!-- Tags Section -->
+            <div class="tags">
+                
+                    <a href="../../../en/search.html?query=aws"><span>aws</span></a>
+                
+                    <a href="../../../en/search.html?query=advancedcommunications"><span>advancedcommunications</span></a>
+                
+                    <a href="../../../en/search.html?query=infrastructure"><span>infrastructure</span></a>
+                
+                    <a href="../../../en/search.html?query=microservices"><span>microservices</span></a>
+                
+                    <a href="../../../en/search.html?query=multicloud"><span>multicloud</span></a>
+                
+                    <a href="../../../en/search.html?query=technology"><span>technology</span></a>
+                
+                    <a href="../../../en/search.html?query=process"><span>process</span></a>
+                
+            </div>
+
+            <!-- Guests Section -->
+            <div class="guests">
+                
+                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
+            </div>
+        </div>
+
+        <!-- Show Notes Section -->
+        <div class="show-notes">
+            <h2>What We Learned from the AWS Outage</h2>
+<p>Amazon Web Services (AWS) suffered a substantial outage at an inopportune time – the day before Thanksgiving in 2020. Since they published their service logs, it’s interesting to review them to see what happened and what we can learn.</p>
+<h2>Timeline of the AWS Outage</h2>
+<p>On Wednesday, November 25, 2020 around 3:00 am PST, AWS was updating the East region, adding servers to increase the capacity of Kinesis. Kinesis is a popular AI service that does pattern matching on log files and video files. About an hour and a half into the upgrade, the server alarms began firing errors in the Kinesis records. Fairly quickly, by 8 am, they initially identified a couple of candidates on the front-end services as the root cause. Kinesis has several different smaller services, a group of front-end services and a group of back-end services. The way the system is architected, each time a back-end service is running, a thread fires off the front end. One of the problems was that the front end hit the thread threshold as they added servers to the back end during the upgrade. Once they had determined this problem, they made a temporary fix with updates (patches) to the operating system and Kinesis was back online by about 10:30 pm and fully restored by 1:15 am on November 26th.  In the end, Kinesis was not fully operational for 21 hours, and although not everyone uses this AI tool, the impact was widespread.</p>
+<h2>Kinesis Impact</h2>
+<p>Several other Amazon services use Kinesis, such as Amazon Cognito and CloudWatch, and they suffered varying degrees of disruption. Cognito was overloaded until about 2 pm; CloudWatch was down until about 10 pm. In a domino effect, services dependent on CloudWatch such as Lambda and EventBridge were also down. Since EventBridge was unavailable, the container services LCS and LKS were affected as well.</p>
+<p>The outages only happened in the East region, and AWS quickly added capacity in the other regions to prevent Kinesis from failing in a similar manner. But during the outage, users in the East region encountered a perplexing problem, as their service dashboard and personal service dashboards were not receiving information and showed false positives. So, there were many other IT organizations investigating the issues since they weren’t getting the correct information. Surprisingly, AWS has been open about the whole incident, so it’s a great learning experience.</p>
+<h2>Lessons Learned</h2>
+<p>One of the first lessons is that simple operations to infrastructure such as increasing capacity need to be understood and planned. Obviously, AWS didn’t just make the upgrades off the cuff, but they didn’t fully understand the impact. Even if an operation seems rote, it’s always a good idea to run things to failure in a test environment during upgrades, even if it takes more time. This is especially important with services that are critical to other core dependent services.</p>
+<p>In addition, service or micro-service architectures must understand their whole service dependency tree so they can troubleshoot when there are outages. In addition, it’s important to be as loosely coupled to a dependency as possible and include defensive programming with microservices to avoid the domino effect that happened in this case.</p>
+<p>Another issue to watch out for is circular dependencies. If, in a chain of micro services that are dependent on each other, one hiccups, everything can come to a screeching halt, consuming resources and accomplishing nothing.</p>
+<p>When developing micro services, keep in mind that you will not always have connectivity to the services you are dependent on. Writing programs that can run in a degraded state, or at least indicate that a service is not working, can save time and trouble. In this outage, remember that dashboards were running green even though no new information was coming through.</p>
+<h2>Who Handled the Outage Best</h2>
+<p>Many companies were affected by the AWS outage, including some owned by Amazon itself. Some flew right though the outage, almost unscathed, while others had a harder time recuperating. Those that were able to adjust quickly had a multi hybrid cloud strategy, so they had alternate clouds as backups. Some used a different region of AWS, while others used Google or Azure, and some even ran it back to their own data centers or external websites. At the very least, websites displayed message that they were currently experiencing problems, rather than a 404 error.</p>
+<p>Companies that were not using some of Amazon’s specialized services also did better. For example, the EKS and ECS managed container offerings and Lambda were hit hard and were down for a substantial amount of time, so those dependent on these services were without options.</p>
+<p>During the outage, auto scaling services were not working properly, so any company that had a lot of traffic at the time had to find out what was going on and scale up services manually. This was a bigger issue than it might normally be since it was the day before Thanksgiving, a time when many consumers are traveling and buying online.  For example, Etsy stayed up, but they could not scale as much as they normally would, leading to decreased sales.</p>
+<p>The companies that have their own external monitoring also fared better. Some even alerted AWS to the outages. They were not dependent only on AWS’s health dashboard, but had their own monitoring running on their servers.</p>
+<p>What is the main lesson we should learn from this? Organizations should take ownership of their cloud resources, much like any utility. Just like having a backup generator for electricity to assure continuation of business in the event of an outage, companies should use the same best practices for cloud services. This means having a backup cloud that can keep you running, even at diminished capacity, is essential to weathering a storm such as the AWS outage. </p>
+<h2>Resources</h2>
+<ul>
+<li><p><a href="https://aws.amazon.com/message/11201/">https://aws.amazon.com/message/11201/</a></p>
+</li>
+<li><p><a href="https://www.theverge.com/2020/11/25/21719396/amazon-web-services-aws-outage-down-internet">https://www.theverge.com/2020/11/25/21719396/amazon-web-services-aws-outage-down-internet</a></p>
+</li>
+<li><p><a href="https://www.zdnet.com/article/amazon-heres-what-caused-major-aws-outage-last-week-apologies">https://www.zdnet.com/article/amazon-heres-what-caused-major-aws-outage-last-week-apologies</a></p>
+</li>
+<li><p><a href="https://www.wsj.com/articles/amazon-web-services-hit-by-outage-11606326714">https://www.wsj.com/articles/amazon-web-services-hit-by-outage-11606326714</a></p>
+</li>
+<li><p><a href="https://www.washingtonpost.com/technology/2020/11/28/amazon-outage-explained">https://www.washingtonpost.com/technology/2020/11/28/amazon-outage-explained</a></p>
+</li>
+</ul>
+
+        </div>
+    </div>
+</section>
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; 2025 Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>

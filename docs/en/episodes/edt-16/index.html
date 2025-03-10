@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Dynamic Page Title -->
+        <title>Embracing Digital Transformation</title>
+
+        <!-- Meta Description for SEO -->
+        <meta name="description" content="&lt;p&gt;In this episode, Darren talks about decreasing ingestion congestion using Intel’s Optane DC Persistent Memory, and the experiment he conducted with surprising results. It just might change the way we think about programming in the future.&lt;/p&gt;
+">
+
+        <!-- Keywords for SEO -->
+        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, digital transformation">
+
+        <!-- Author Meta -->
+        <meta name="author" content="Darren W Pulsipher">
+
+        <!-- Open Graph Meta Tags for Social Media -->
+        <meta property="og:title" content="Embracing Digital Transformation">
+        <meta property="og:description" content="&lt;p&gt;In this episode, Darren talks about decreasing ingestion congestion using Intel’s Optane DC Persistent Memory, and the experiment he conducted with surprising results. It just might change the way we think about programming in the future.&lt;/p&gt;
+">
+        <meta property="og:image" content="thumbnail.png">
+
+        <meta property="og:url" content="https://embracingdigital.org">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Embracing Digital Transformation">
+        <meta name="twitter:description" content="&lt;p&gt;In this episode, Darren talks about decreasing ingestion congestion using Intel’s Optane DC Persistent Memory, and the experiment he conducted with surprising results. It just might change the way we think about programming in the future.&lt;/p&gt;
+">
+        <meta name="twitter:image" content="thumbnail.png">
+
+    <title>Embracing Digital Transformation</title>
+
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script> window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-P4XHVE79DL'); </script>
+</head>
+<body>
+
+<!-- 🌍 Navigation Bar -->
+<header>
+    <div class="logo-container">
+        <img src="../../../images/logo.png" alt="Embracing Digital Transformation" class="site-icon">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../../../en/home/index.html">Home</a></li>
+            <li><a href="../../../en/about.html">About</a></li>
+            <li><a href="../../../en/episodes/index.html">Interviews</a></li>
+            <li><a href="../../../en/briefs/index.html">News</a></li>
+            <li><a href="../../../en/community.html">Community</a></li>
+            <li><a href="../../../en/guests/index.html">Guests</a></li>
+            <li><a href="https://6704f0-2.myshopify.com/">Shop</a></li>
+            <li><a href="../../../en/search.html">Search</a></li>
+            <li class="dropdown">
+                <a href="#">Languages</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabic -->
+                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- German -->
+                    <li><a href="../../../en/home/index.html">English</a></li> <!-- English -->
+                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- French -->
+                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italian -->
+                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portuguese -->
+                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Japanese -->
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<section id="one-episode">
+    <h1 id="episode-title">#16 Decreasing Ingestion Congestion with Intel Optane DCPMM</h1>
+    <div class="episode-container">
+        <!-- YouTube Video Section -->
+        <div class="video-container">
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
+        </div>
+
+        <!-- Podcast Audio Section -->
+        <div class="podcast-container">
+            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/7ca179aa"></iframe>
+        </div>
+        <div class="show-summary">
+            <p><p>In this episode, Darren talks about decreasing ingestion congestion using Intel’s Optane DC Persistent Memory, and the experiment he conducted with surprising results. It just might change the way we think about programming in the future.</p>
+</p>
+
+            <!-- Tags Section -->
+            <div class="tags">
+                
+                    <a href="../../../en/search.html?query=datamanagement"><span>datamanagement</span></a>
+                
+                    <a href="../../../en/search.html?query=analytics"><span>analytics</span></a>
+                
+                    <a href="../../../en/search.html?query=multicloud"><span>multicloud</span></a>
+                
+                    <a href="../../../en/search.html?query=process"><span>process</span></a>
+                
+                    <a href="../../../en/search.html?query=technology"><span>technology</span></a>
+                
+            </div>
+
+            <!-- Guests Section -->
+            <div class="guests">
+                
+                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
+            </div>
+        </div>
+
+        <!-- Show Notes Section -->
+        <div class="show-notes">
+            <h2>Service Stack Details</h2>
+<p>A customer in the automotive industry was having a hard time trying to effectively get information out of their cars and into their data center so that they could do machine learning and analytics. There has been research in this area, but only for a small number of cars, not the customer’s hundred million cars. When I looked at their whole service stack and how everything was coming into the data center, data ingestion became the clear issue: How do I ingest that much data, and how do I do it quickly?</p>
+<h2>High Level Kafka Architecture Overview</h2>
+<p>The customer wanted to use Kafka for their ingestion. Kafka is a broker than can scale well, and the key is that it can handle several producers, different consumers, and a lot of data. Using several Kafka brokers to place and land data in the most appropriate places offers great flexibility.</p>
+<p>Kafka, however, was primarily designed for message sizes of about one to 10 kilobytes and the customer’s data was approximately 240 kilobytes per car.  There are work-arounds, but I wanted to bring the whole 240 kilobyte message into the Kafka bus so I could move it as I needed to.</p>
+<h2>Performance Best Practices</h2>
+<p>I looked at the performance best practices of others working with Kafka to see if I could scale it for my customer. Increasing the buffer size to accommodate the whole message is one fine-tuning solution, along with managing batch size for optimal performance. Another successful practice is spreading out the logs. The flexibility of Kafka would allow me to put the data into different topics. I can break the topics into several partitions that I can span over multiple drives.  The question is, then, how many drives am I spreading the Kafka logs over? In addition, I want the fastest drives possible.</p>
+<p>An example I examined was LinkedIn. Their published numbers from a year ago are that they can handle 13 million messages a second, or 2.7 gigabytes per second. They say they have about 1,100 Kafka brokers and more than 60 on a cluster, so that’s a pretty big configuration.</p>
+<h2>Automotive Space</h2>
+<p>If I look at the customer’s raw numbers (1.6 million messages per second and 800 gigabytes per second), and compared them to LinkedIn, which is probably not optimized for 240 kilobytes, I come up with 44,000 brokers. If I optimized it, I could probably get down to 4,400 brokers, which is still 240 clusters. That’s a huge amount of machines, so I had to come up with a way to make things faster. With more optimization, I could probably get it down to 400 to 500 brokers, but I wanted to see what else I could do.</p>
+<h2>Intel Optane DC Persistent Memory</h2>
+<p>I looked to our Optane Persistent Memory. It fits in a DDR4 format, so it sits right on the DDR4 bus. It goes up to 512 gigabyte modules, so in one two-socket server, I can have six terabytes of persistent memory. I wanted to figure out a way to leverage this highly reliable technology with great features such as built-in hardware encryption to help me solve this problem.</p>
+<h2>Support for Breadth of Applications</h2>
+<p>There are two modes of operation with this Optane Memory: direct app mode and memory mode. The memory mode is simple. It uses the persistent memory as normal RAM because it’s cheaper than normal DDR4. It&#39;s not the same as DDR4, but it’s close enough so that in most applications, you can’t see a difference.  In app direct mode, you can actually write from your program directly into persistent memory. This way, I don’t have to marshal and unmarshal data structures and stream them; I can just push them into persistent memory. I can also mount app direct mode as a file system so it’s on the memory bus, which is much faster than on the IO bus. Now, what can I do with this memory?</p>
+<h2>Using Linux Kernel</h2>
+<p>There are two primary tools available using the Linux kernel: ndctl and ipmctl. Ndctl is a non-volatile memory device controller, and then there is IPM, the Intel Persistent Memory controller, which lets me manipulate and control this persistent memory. I can set it up in the memory mode or app direct mode.  I had a bit to learn about these tools and how they work.</p>
+<h2>Ingestion Approach</h2>
+<p>My first thought was that if I gave Kafka a lot more memory with large buffer sizes, it should run a lot faster. Code changes in the configuration would be unnecessary or minimal.  Another option was changing Kafka to write to persistent memory rather than writing to a file system, bypassing the hard drive. The last thing I looked at was creating a persistent file system using persistent memory and then putting the Kafka logs on this new file system.</p>
+<p>The easiest of the three options was the first – more memory. I ran all my tasks with more memory, and there was no change in performance. The reasons why is because eventually my buffers filled up and I had to ride out to a drive. Everything ultimately had to go to the Kafka logs, which was my bottleneck.</p>
+<p>The second option involves rewriting code and waiting on approvals, so I jumped to the third option. The results of this experiment where I pointed the logs to this new, ultra-fast file system, were fascinating. Let’s take a look at the process and the results.</p>
+<h2>Testing Constraints</h2>
+<p>To remove obstacles to testing performance, I took network out of the equation by running my test on the same machine that my broker was on. Also, I only ran producers, then only consumers, then mixed, so I could weigh the differences. My goal was not to look at total production improvement, but at an individual broker to see if this drive would really make a difference.</p>
+<h2>First Approach 50/50</h2>
+<p>The first thing I did was take half of my persistent memory into app direct mode and turned it into a file system. I left the other half as memory. I used the commands ndctl and ipmctl and created name spaces. I mounted these file systems and ran my test.</p>
+<h2>Changing Message Size</h2>
+<p>I ran the tests over several different message sizes. I was expecting certain optimization, primarily for 1 kilobyte. I saw that I got better and better performance up to around 10 producers. Past 10 producers, I started saturating the bus and getting some variability. That tells me I was cashing things. I could now compare these numbers to what I ran before on just a SATA drive for the Kafka logs. I also tried our Optane NVMe drives for the logs.</p>
+<h2>Technology Comparison</h2>
+<p>Let’s take a look at the differences. For 240 kilobyte, with a normal SATA drive, it’s pretty flat. I got some improvement, and then it decreased as the number of producers increased. With the Optane NVMe drive, I got a nice peak, almost twice as fast as a SATA drive, which is what I would expect because it&#39;s an NVMe bus instead of a SATA bus. The Pmem is almost five times faster than a SATA drive and two and a half times faster than the Optane NVMe drive. That’s because I’m using a memory bus instead of the SATA or NVMe bus.</p>
+<h2>Additional Optimization (100% App Direct)</h2>
+<p>This was running fast and I was quickly filling up this temporary 750 GB drive. Since I needed to run the test a little longer, I went back and reconfigured my machine to do a 100 percent direct app mode so that I could now take the whole 1.5 terabytes.</p>
+<h2>Optimized PMEM and 100% App Direct</h2>
+<p>After I did this and ran the same tests, I got a surprising result. I could add more producers, and my throughput went up almost another two or three times. Now it’s between 12 and 15 times faster than a SATA drive at 25-30 producers at 240 kilobytes message size. This is incredible and would greatly reduce my customer’s need for so many brokers, rows and rows of machines. I ran the test several times because I didn’t believe the results I was getting. I called one of our architects that designed this technology and learned that one reason for the increased speed was when I was using part of the persistent memory as memory, the data would have to go through two or three hops that are not necessary with app direct mode. That creates less contention on the memory bus, and the throughput went up dramatically.</p>
+<h2>Call to Action</h2>
+<p>The end result is that I was able to use Kafka with Optane DC Persistent Memory as an ultra-fast file system to get major improvements in throughput on both producers and consumers.  A single broker can handle 15 times more messages and throughput than before, decreasing the number of servers required to handle large, complex system architectures. It’s time to evaluate your current architecture and see if this would benefit your organization.</p>
+
+        </div>
+    </div>
+</section>
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; 2025 Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>

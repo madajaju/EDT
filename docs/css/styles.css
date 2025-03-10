@@ -1,0 +1,903 @@
+/* 🌍 General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* 🌍 Navigation Bar */
+header {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background: #497BA3;
+    padding: 0px 0;
+    text-align: center;
+}
+/* Style the logo container */
+.logo-container {
+    float: left; /* Push logo to the left */
+    margin-left: 15px; /* Add spacing between logo and navigation */
+    margin-right: 15px; /* Add spacing between logo and navigation */
+    padding-top: 10px;
+}
+
+.site-icon {
+    width: 75px; /* Adjust icon size */
+    height: auto; /* Adjust icon size (same as width for proportion) */
+    display: block;
+}
+
+
+nav {
+    padding: 20px 0;
+    display: inline-block; /* Make navigation bar appear beside the logo */
+    vertical-align: middle; /* Align navigation with the logo vertically */
+}
+/* Basic nav styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffff; /* Adjust based on your theme */
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Dropdown menu styling */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.news-icon {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* Background of dropdown */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 10; /* Ensures it overlays other content */
+    min-width: 150px;
+}
+
+.dropdown-menu li {
+    padding: 5px 15px;
+    text-align: left;
+}
+
+.dropdown-menu li a {
+    padding: 5px 10px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f4f4f4; /* Highlight color for hover */
+    color: #000;
+}
+nav ul li a:hover {
+    color: #f4a261;
+}
+
+/* 📱 Responsive Navigation Menu */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-open nav ul {
+        display: flex;
+    }
+}
+
+/* 🎙️ Hero Section */
+#hero {
+    background: linear-gradient(180deg, #497BA3, #193B73);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#hero h1 {
+    font-size: 36px;
+}
+
+.featured-episode {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+}
+
+.featured-episode img {
+    width: 100%;
+    border-radius: 8px;
+}
+.featured-episode video {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+.listen-now {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #f4a261;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.listen-now:hover {
+    background: #e76f51;
+}
+
+/* General Section */
+#news {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Spacing between grid items */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
+    padding: 20px;
+}
+
+/* Grid Box */
+.grid-box {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.show-summary {
+    background-color: #dddddd;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Article Layout */
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.article {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.article h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    color: #333;
+}
+
+.article:last-child {
+    border-bottom: none; /* Remove underline for the last article */
+}
+
+/* Article Image */
+.article img {
+    width: 125px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Article Content */
+.article-content {
+    text-align: left;
+    flex: 1; /* Take up full remaining horizontal space */
+}
+
+.article-content h4 {
+    font-size: 1rem;
+    margin-bottom: 0px;
+    color: #345;
+}
+
+.article-content p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.article-content a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article-content a:hover {
+    text-decoration: underline;
+}
+
+.main-brief-image {
+    width: 100%;
+    height: auto;
+    max-width: 640px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+
+    .article {
+        flex-direction: column; /* Stack image and text for narrow screens */
+        align-items: flex-start;
+    }
+
+    .article img {
+        width: 100%; /* Full width for smaller screens */
+        height: auto;
+    }
+}
+
+/* Dark Background for Latest Interviews */
+#latest-interviews {
+    background: linear-gradient(180deg, #497BA3, #193B73);
+    color: #ffffff; /* White text for contrast */
+    padding: 40px 20px; /* Add padding for better spacing */
+}
+
+/* Center the Section Header */
+#latest-interviews h2 {
+    text-align: center; /* Center-align header text */
+    font-size: 2rem; /* Large font size for visibility */
+    color: #f9f9f9; /* Bright white text */
+    margin-bottom: 30px; /* Space below the header */
+}
+
+/* Two Column Grid Styling */
+.interviews-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 30px; /* Space between items */
+    max-width: 1200px; /* Restrict container width */
+    margin: 0 auto; /* Ensure the entire container is centered */
+    justify-items: center; /* Center the items inside each grid cell */
+    align-items: center; /* Vertically center-align content if needed */
+}
+
+/* Individual Interview Boxes */
+.interview {
+    text-align: center; /* Center-align text inside each box */
+    padding: 20px; /* Add padding around the content */
+    max-width: 500px; /* Restrict the width of each box */
+    border-radius: 10px; /* Rounded corners for the boxes */
+    background-color: #2a2a2a; /* Slightly lighter dark color for the boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Subtle box shadow for depth */
+    overflow: hidden; /* Ensure no content overflows */
+}
+
+/* Image Styling */
+.interview-image {
+    max-width: 100%; /* Prevent images from exceeding parent width */
+    height: auto; /* Maintain proper aspect ratio */
+    border-radius: 10px; /* Rounded edges */
+    margin-bottom: 15px; /* Add space below images */
+}
+
+/* Text Styling */
+.interview h3 {
+    font-size: 1.5rem; /* Header text size */
+    color: #ffffff; /* White text */
+    margin-bottom: 10px; /* Add space below headers */
+}
+
+.interview p {
+    color: #cccccc; /* Grey text for body paragraphs */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .interviews-container {
+        grid-template-columns: 1fr; /* Switch to single column for small screens */
+        justify-items: center; /* Ensure items remain centered */
+    }
+
+    #latest-interviews h2 {
+        font-size: 1.5rem; /* Adjust header size for smaller screens */
+    }
+}
+
+/* 💬 Community & Shop */
+#community {
+    padding: 40px 20px;
+    background: white;
+    text-align: center;
+}
+
+#community a {
+    color: #e76f51;
+    font-weight: bold;
+}
+
+#community a:hover {
+    text-decoration: underline;
+}
+#shop {
+    padding: 40px 20px;
+    background: white;
+    text-align: center;
+}
+
+#shop a {
+    color: #e76f51;
+    font-weight: bold;
+}
+
+#shop a:hover {
+    text-decoration: underline;
+}
+/* 📌 Footer */
+footer {
+    background: #222;
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* 🌙 Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #181818;
+}
+
+.dark-mode nav ul li a {
+    color: #f4a261;
+}
+
+.dark-mode .category,
+.dark-mode .interview-card {
+    background: #222;
+    color: #e0e0e0;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .listen-now {
+    background: #f4a261;
+    color: black;
+}
+
+.dark-mode .listen-now:hover {
+    background: #e76f51;
+}
+
+/* 🌙 Dark Mode Toggle Button */
+#dark-mode-toggle {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    background: #f4a261;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+#dark-mode-toggle:hover {
+    background: #e76f51;
+}
+
+/* Footer Styles */
+#footer {
+    position: sticky;
+    z-index: 1000;
+    bottom: 0;
+    background-color: #497BA3;
+    color: #fff; /* White text for contrast */
+    text-align: center; /* Center-align the text */
+    padding: 15px 10px; /* Space around the text */
+    font-size: 0.9rem; /* Slightly smaller text size */
+}
+
+#footer .footer-content p {
+    margin: 0; /* Remove default margins to keep things tidy */
+    font-family: Arial, sans-serif; /* Use a clean, readable font */
+}
+/* Grid Layout */
+#all-episodes {
+    background: linear-gradient(180deg, #497BA3, #193B73);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#all-episodes h1 {
+    font-size: 36px;
+}
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px;
+    margin: 0 auto;
+}
+.guest-grid {
+    display: grid;
+    color: black;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px;
+    margin: 0 auto;
+}
+/* Episode Card */
+.episode-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.episode-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.episode-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.episode-card-content {
+    padding: 20px;
+}
+.guest-card-content {
+    padding: 20px;
+}
+.episode-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.episode-card .guests {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.episode-card .summary {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+.episode-card p {
+    color: #000;
+}
+
+/* Tags Section */
+.tags {
+    margin-bottom: 15px;
+}
+
+.tags span {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: background 0.3s ease;
+}
+
+.tags span:hover {
+    background: #0056b3;
+}
+
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 600px) {
+    .episode-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .episode-card .guests,
+    .episode-card .summary,
+    .tags span {
+        font-size: 0.85rem;
+    }
+
+    .episode-card a {
+        font-size: 0.85rem;
+    }
+}
+#one-brief {
+    background: linear-gradient(180deg, #497BA3, #193B73);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#one-brief h1 {
+    font-size: 36px;
+}
+
+#one-episode {
+    background: linear-gradient(180deg, #497BA3, #193B73);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#one-episode h1 {
+    font-size: 36px;
+}
+.brief-container {
+    max-width: 1280px;
+    text-align: left;
+    margin: 0 auto;
+    background: #ddd;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.episode-container {
+    max-width: 1200px;
+    text-align: left;
+    margin: 0 auto;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container,
+.podcast-container {
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 720px;
+    border: none;
+    border-radius: 10px;
+}
+
+.watch-on-youtube {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.watch-on-youtube a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.watch-on-youtube a:hover {
+    color: #0056B3;
+}
+
+.podcast-container audio {
+    width: 100%;
+    height: 40px;
+}
+
+.tags {
+    margin-bottom: 15px;
+}
+
+.tags span {
+    display: inline-block;
+    background: #007BFF;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: background 0.3s ease;
+}
+
+.tags span:hover {
+    background: #0056B3;
+}
+
+.guests {
+    margin-bottom: 20px;
+}
+
+.guests a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #007BFF;
+    padding: 4px 8px;
+    border: 1px solid #007BFF;
+    border-radius: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.guests a:hover {
+    background: #007BFF;
+    color: white;
+}
+
+.show-notes {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.show-notes h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.show-notes p {
+    margin-bottom: 10px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    .video-container iframe {
+        height: auto;
+    }
+}
+#one-guest {
+    background: linear-gradient(180deg, #497BA3, #193B73);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#one-guest h1 {
+    font-size: 36px;
+}
+.guest-container {
+    text-align: left;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-header img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-right: 20px;
+}
+
+.profile-header .guest-info {
+    flex: 1;
+}
+
+.profile-header .linkedIn-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #007BFF;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.profile-header .linkedIn-link:hover {
+    background: #0056B3;
+}
+
+.biography {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+#guests {
+    background: linear-gradient(180deg, #497BA3, #193B73);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#guests h1 {
+    font-size: 36px;
+}
+.guests-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.guests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px;
+    margin: 0 auto;
+}
+.guest-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.guest-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-right: 20px;
+}
+
+.guest-info {
+    flex: 1;
+}
+
+.guest-info h3 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.guest-info h3 a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.guest-info h3 a:hover {
+    color: #0056B3;
+}
+
+.guest-info .topics {
+    margin-bottom: 10px;
+}
+
+.guest-info .topics span {
+    display: inline-block;
+    background: #007BFF;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: background 0.3s ease;
+}
+
+.guest-info .topics span:hover {
+    background: #0056B3;
+}
+
+.guest-info .episode-count {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+    .guest-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .guest-card img {
+        margin: 0 auto 10px auto;
+    }
+
+    .guest-info {
+        text-align: center;
+    }
+}
+#all-guests {
+    background: linear-gradient(180deg, #497BA3, #193B73);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#all-guests h1 {
+    font-size: 36px;
+}
+.search-results-count {
+    font-size: 0.8rem;
+    font-style: italic;
+}
