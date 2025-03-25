@@ -23,6 +23,30 @@
         window.location = './it/home/index.html';
     else
         window.location = './en/home/index.html';
+
+    document.addEventListener("DOMContentLoaded", () => {
+        // Get the current URL
+        const currentUrl = window.location.href;
+
+        // Match the old URL format
+        const oldUrlPattern = /episode-(EDT\d+)-(\w+)/i; // Matches episode ID (like EDT252) and language (like en)
+        const match = currentUrl.match(oldUrlPattern);
+
+        if (match) {
+            // Extract the episode ID (e.g., "EDT252") and the language (e.g., "en")
+            const episodeId = match[1].toLowerCase(); // Lowercase for the episode ID
+            const language = match[2]; // Language remains as-is
+
+            // Convert episode ID to new format - add a dash in "edt-252"
+            const newEpisodeId = episodeId.replace(/(\d+)/, "-$1");
+
+            // Generate the new URL
+            const newUrl = `http://www.embracingdigital.org/${language}/episodes/${newEpisodeId}/index.html`;
+
+            // Redirect the browser to the new URL
+            window.location.href = newUrl;
+        }
+    });
 </script>
 
 </body>
