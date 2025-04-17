@@ -13024,7 +13024,7 @@ const lobjects = {
       "title": "Thomas Jorgensen",
       "summary": "تسليم المطلوب",
       "id": 56,
-      "image": "guests\\thomas-jorgensen/thumbail.jpg",
+      "image": "guests\\thomas-jorgensen/thumbnail.jpg",
       "type": "Guest",
       "link": "./guests\\thomas-jorgensen\\index.html"
     },
