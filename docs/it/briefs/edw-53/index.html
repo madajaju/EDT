@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="La Trasformazione Digitale per la settimana del 4 Febbraio 2024 presenterà storie sulla Cybersecurity, l&#39;Intelligenza Artificiale e l&#39;Edge Computing. Questa settimana segna il nostro primo anniversario e abbiamo delle notizie emozionanti da condividere, inclusi aggiornamenti sulla internet spaziale, un recente attacco cyber all&#39;ospedale e le regolazioni dell&#39;UE riguardanti l&#39;IA.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="La Trasformazione Digitale per la settimana del 4 Febbraio 2024 presenterà storie sulla Cybersecurity, l&#39;Intelligenza Artificiale e l&#39;Edge Computing. Questa settimana segna il nostro primo anniversario e abbiamo delle notizie emozionanti da condividere, inclusi aggiornamenti sulla internet spaziale, un recente attacco cyber all&#39;ospedale e le regolazioni dell&#39;UE riguardanti l&#39;IA.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="La Trasformazione Digitale per la settimana del 4 Febbraio 2024 presenterà storie sulla Cybersecurity, l&#39;Intelligenza Artificiale e l&#39;Edge Computing. Questa settimana segna il nostro primo anniversario e abbiamo delle notizie emozionanti da condividere, inclusi aggiornamenti sulla internet spaziale, un recente attacco cyber all&#39;ospedale e le regolazioni dell&#39;UE riguardanti l&#39;IA.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="La Trasformazione Digitale per la settimana del 4 Febbraio 2024 presenterà storie sulla Cybersecurity, l&#39;Intelligenza Artificiale e l&#39;Edge Computing. Questa settimana segna il nostro primo anniversario e abbiamo delle notizie emozionanti da condividere, inclusi aggiornamenti sulla internet spaziale, un recente attacco cyber all&#39;ospedale e le regolazioni dell&#39;UE riguardanti l&#39;IA.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="La Trasformazione Digitale per la settimana del 4 Febbraio 2024 presenterà storie sulla Cybersecurity, l&#39;Intelligenza Artificiale e l&#39;Edge Computing. Questa settimana segna il nostro primo anniversario e abbiamo delle notizie emozionanti da condividere, inclusi aggiornamenti sulla internet spaziale, un recente attacco cyber all&#39;ospedale e le regolazioni dell&#39;UE riguardanti l&#39;IA.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="La Trasformazione Digitale per la settimana del 4 Febbraio 2024 presenterà storie sulla Cybersecurity, l&#39;Intelligenza Artificiale e l&#39;Edge Computing. Questa settimana segna il nostro primo anniversario e abbiamo delle notizie emozionanti da condividere, inclusi aggiornamenti sulla internet spaziale, un recente attacco cyber all&#39;ospedale e le regolazioni dell&#39;UE riguardanti l&#39;IA.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#53 2024-02-04</h2>
@@ -171,7 +251,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-53/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Allerta Ransomware: Un Pericolo Crescente</h4>
                                 <p>Sapevi che durante la seconda metà del duemilaventitré, gli attacchi di ransomware sono stati subiti da una strabiliante settantanove percento delle organizzazioni negli Stati Uniti? Sebbene questa statistica non sia per nulla da ridere, è un buon promemoria per fare attenzione e implementare forti misure di sicurezza informatica. Teniamo lontani quei pirati informatici e teniamo i nostri dati al sicuro e protetti!</p>
@@ -180,7 +260,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-53/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Attacco Informatico all&#39;Ospedale Pediatrico Lurie</h4>
                                 <p>Gli attacchi alle infrastrutture critiche continuano, in particolare nel settore sanitario. L&#39;Ospedale Pediatrico Lurie a Chicago ha subito un attacco informatico, causando un&#39;interruzione della rete. L&#39;incidente ha interrotto le operazioni ospedaliere, influenzando la cura e i servizi ai pazienti. L&#39;ospedale sta lavorando attivamente per risolvere il problema e ripristinare la normalità. Questo attacco informatico sottolinea la vulnerabilità delle infrastrutture critiche alle attività malevole, mettendo in evidenza la necessità di rafforzare le misure di sicurezza informatica nelle istituzioni sanitarie.</p>
@@ -189,7 +269,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.webp" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-53/12.webp" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>USA Sanctions Iranian Officials for Cyberattacks</h4>
                                 <p>Nelle ultime evoluzioni, gli Stati Uniti hanno imposto sanzioni a sei funzionari iraniani per il loro coinvolgimento in una campagna di attacchi informatici. La campagna ha preso di mira l&#39;infrastruttura critica americana, compresi i settori dell&#39;energia e dei trasporti. Le sanzioni mirano a prevenire attività malevole simili, evidenziando le tensioni geopolitiche in corso nella guerra cibernetica in corso. Robuste misure di sicurezza informatica sono sempre più necessarie per salvaguardare gli interessi nazionali.</p>
@@ -209,7 +289,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-53/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>UE Approva Legge Innovativa sull&#39;IA</h4>
                                 <p>L&#39;Unione Europea ha approvato una legge rivoluzionaria sull&#39;intelligenza artificiale per regolare le tecnologie AI. La legge stabilisce linee guida etiche per le applicazioni di intelligenza artificiale, sottolineando trasparenza e responsabilità. Questa decisione riflette l&#39;impegno dell&#39;UE nello sviluppo responsabile dell&#39;IA, bilanciando l&#39;innovazione. Imposta un precedente globale per la governance dell&#39;IA e affronta le preoccupazioni etiche sulle tecnologie avanzate. Alcuni sostengono che l&#39;UE rimarrà indietro rispetto ai paesi con regolamenti di intelligenza artificiale più liberali.</p>
@@ -218,7 +298,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-53/22.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Rischi dei Deepfake nelle Elezioni 2023</h4>
                                 <p>L&#39;emergere di un video deepfake con protagonista il presidente Biden evidenzia i potenziali rischi dell&#39;intelligenza artificiale negli anni elettorali. Man mano che la tecnologia deepfake si evolve, la minaccia di disinformazione e manipolazione nei contesti politici aumenta. Questo incidente sottolinea la necessità di una maggiore consapevolezza, regolamentazione e misure di sicurezza informatica per mitigare l&#39;inganno guidato dall&#39;intelligenza artificiale sul discorso pubblico e sui processi democratici. L&#39;Europa e l&#39;Asia condividono preoccupazioni simili in quanto oltre la metà della popolazione mondiale è in programma di avere elezioni cruciali quest&#39;anno in mezzo alla lotta con la tecnologia deepfake.</p>
@@ -227,7 +307,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-53/26.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Intel Prepares Pivotal AI Announcement</h4>
                                 <p>Intel si sta preparando per fare un grande annuncio riguardo ai progressi nel campo dell&#39;intelligenza artificiale (IA), che ha il potenziale per rivoluzionare numerose industrie. L&#39;azienda è profondamente impegnata a spingere i confini della tecnologia IA e si sta posizionando come un attore cruciale nella definizione del futuro della tecnologia. La comunità tecnologica attende con impazienza i dettagli di queste attese innovazioni. Tenete gli occhi aperti per il loro annuncio il ventuno febbraio.</p>
@@ -247,7 +327,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-53/32.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Air Force Invests in Commercial Satellite Networks</h4>
                                 <p>L&#39;Air Force degli Stati Uniti sta investendo in reti satellitari commerciali per migliorare la connettività internet dallo spazio. Collaborando con i fornitori privati, l&#39;Air Force mira a utilizzare le loro capacità per esigenze di comunicazione globale. Questa mossa strategica sottolinea una crescente dipendenza dall&#39;infrastruttura spaziale commerciale e sottolinea l&#39;interesse militare nel garantire capacità avanzate di comunicazione satellitare. La partnership rappresenta un passaggio verso soluzioni più flessibili ed economicamente vantaggiose per soddisfare le crescenti richieste di servizi internet basati nello spazio.</p>
@@ -256,7 +336,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-53/36.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Rivoluzione dello Spazio con Internet Orbitale</h4>
                                 <p>Lo spazio è l&#39;ultima frontiera dell&#39;internet? Avalanche Technology sta facilitando lo sviluppo dell&#39;Internet Orbitale e di un Gateway per Marte/Luna attraverso la sua architettura di Space IoT. Questa innovazione promette di migliorare le capacità di comunicazione per le missioni basate nello spazio. L&#39;architettura coinvolge la tecnologia della Memoria Non Volatile (NVM) di Avalanche, offrendo un affidabile archiviazione dati per le applicazioni spaziali. L&#39;annuncio mette in evidenza il ruolo critico delle tecnologie avanzate nel far espandere l&#39;infrastruttura dell&#39;esplorazione dello spazio, con l&#39;obiettivo di migliorare la connettività e la gestione dei dati per le missioni oltre la Terra.</p>
@@ -265,7 +345,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="edge.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-53/edge.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Futuro dell&#39;IA: L&#39;importanza dell&#39;Edge Computing</h4>
                                 <p>Gli esperti prevedono che il cinquanta percento dell&#39;elaborazione dei dati di intelligenza artificiale si sposterà sull&#39;edge, evidenziando l&#39;importanza del calcolo decentralizzato. I micro-datacenter sono fondamentali per l&#39;efficienza e la compattezza. Integrarli è fondamentale per le aziende che adottano l&#39;edge computing per l&#39;IA, ridisegnando gli approcci all&#39;elaborazione dei dati. Un&#39;efficace gestione dei dati e delle applicazioni sull&#39;edge è essenziale per realizzare questa trasformazione.</p>
@@ -289,3 +369,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

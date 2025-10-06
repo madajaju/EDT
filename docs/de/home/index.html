@@ -1,75 +1,156 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Dynamischer Seitentitel -->
-        <title>Digitale Transformation annehmen</title>
+    <!-- Dynamischer Seitentitel -->
+    <title>Embracing Digital Transformation</title>
 
-        <!-- Meta-Beschreibung für SEO -->
-        <meta name="description" content="This is the home page for the Embracing Digital Podcast. It is a collection of news briefs and articles from the Embracing Digital team.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/de/home/">
+    <meta name="description" content="Embracing Digital is a podcast about the digital transformation of the world.">
+    <meta name="keywords" content="Digitale Transformation, Podcast, Interviews, Nachrichten, KI, Cybersicherheit, Edge Computing, Datenmanagement">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Schlüsselwörter für SEO -->
-        <meta name="keywords" content="podcast, ki, edge computing, cybersicherheit, digitale transformation">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Embracing Digital Transformation — Interviews, Nachrichten und Community">
+    <meta property="og:description" content="Embracing Digital is a podcast about the digital transformation of the world.">
+    <meta property="og:url" content="https://embracingdigital.org/de/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Autor-Meta -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, Nachrichten und Community">
+    <meta name="twitter:description" content="Embracing Digital is a podcast about the digital transformation of the world.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Open Graph-Meta-Tags für soziale Medien -->
-        <meta property="og:title" content="Digitale Transformation annehmen">
-        <meta property="og:description" content="This is the home page for the Embracing Digital Podcast. It is a collection of news briefs and articles from the Embracing Digital team.">
-        <meta property="og:image" content="../../images/logo.png">
+    <!-- Hreflang (Alternativen) -->
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Styles -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Twitter-Karte-Meta-Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Digitale Transformation annehmen">
-        <meta name="twitter:description" content="This is the home page for the Embracing Digital Podcast. It is a collection of news briefs and articles from the Embracing Digital team.">
-        <meta name="twitter:image" content="../../images/logo.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link zu Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Digitale Transformation annehmen</title>
-
-    <link rel="stylesheet" href="../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Digitale Transformation gestalten",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Digitale Transformation gestalten",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/de/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Navigationsleiste -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../images/logo.png" alt="Digitale Transformation annehmen" class="site-icon">
+        <a href="/de/home/" aria-label="Startseite — Digitale Transformation gestalten">
+            <img src="/images/logo.png" alt="Logo — Digitale Transformation gestalten" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Mobile Navigation -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Menü umschalten">☰</button>
+
+    <!-- Hauptnavigation -->
+    <nav id="primary-nav" aria-label="Hauptnavigation">
         <ul>
-            <li><a href="../../de/home/index.html">Startseite</a></li>
-            <li><a href="../../de/about.html">Über uns</a></li>
-            <li><a href="../../de/episodes/index.html">Interviews</a></li>
-            <li><a href="../../de/briefs/index.html">Nachrichten</a></li>
-            <li><a href="../../de/community.html">Gemeinschaft</a></li>
-            <li><a href="../../de/guests/index.html">Gäste</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Shop</a></li>
-            <li><a href="../../de/search.html">Suche</a></li>
+            <li><a href="/de/home/index.html" >Start</a></li>
+
             <li class="dropdown">
-                <a href="#">Sprachen</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../ar/home/index.html">العربية</a></li> <!-- Arabisch -->
-                    <li><a href="../../de/home/index.html">Deutsch</a></li> <!-- Deutsch -->
-                    <li><a href="../../en/home/index.html">Englisch</a></li> <!-- Englisch -->
-                    <li><a href="../../fr/home/index.html">Französisch</a></li> <!-- Französisch -->
-                    <li><a href="../../it/home/index.html">Italienisch</a></li> <!-- Italienisch -->
-                    <li><a href="../../pt/home/index.html">Portugiesisch</a></li> <!-- Portugiesisch -->
-                    <li><a href="../../ja/home/index.html">日本語</a></li> <!-- Japanisch -->
+                <a href="/de/shows/index.html" aria-haspopup="true" aria-expanded="false">Sendungen</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/de/episodes/index.html" aria-label="Interviews — Digitale Transformation gestalten">
+                            Digitale Transformation gestalten
+                            <small class="nav-note">Interviews</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/briefs/index.html" aria-label="Nachrichten — Digital diese Woche">
+                            Digital diese Woche
+                            <small class="nav-note">Nachrichten</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/de/guests/index.html">Gäste</a></li>
+            <li><a href="/de/articles/index.html">Artikel</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/de/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">LinkedIn Gruppe</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Über uns -->
+            <li class="dropdown">
+                <a href="/de/about.html" aria-haspopup="true" aria-expanded="false">Über uns</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/about.html">Über die Sendung</a></li>
+                    <li role="none"><a role="menuitem" href="/de/host.html">Moderator: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/de/sponsors/index.html">Sponsoring & Kontakt</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/de/search.html">Suche</a></li>
+
+            <!-- Sprachen -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Sprachen</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
@@ -132,7 +213,7 @@
                 <div class="main-brief grid-box">
                     <h3>Digitale Transformation annehmen</h3>
                     <a href="">
-                        <img src="../briefs/edw-135/45.jpeg" alt="Recap" class="main-brief-image">
+                        <img src="../briefs/edw-135/../../../images/briefs/edw-135/45.jpeg" alt="Recap" class="main-brief-image">
                     </a>
                     <h3>Technologie neu denken: Nutzerzentrierte Lösungen</h3>
                     <p>In dieser Woche begrüßt Dr. Darren im Podcast „Digitale Transformation Willkommen Heißen“ den Halbleiterexperten Rick Lisa, um über die entscheidenden Veränderungen in der Technologie der letzten vier Jahrzehnte zu diskutieren. Als neu gewählter Vorsitzender des Open Digital Transformation Forum betont Darren den Übergang von technologiegetriebenen zu nutzerzentrierten Lösungen, die für eine erfolgreiche digitale Transformation unerlässlich sind. Schalten Sie ein, um herauszufinden, wie Organisationen Technologie effektiv nutzen können, um die Servicebereitstellung zu verbessern und bedeutende Innovationen voranzutreiben.</p>
@@ -148,7 +229,7 @@
                 <div class="articles">
                     
                     <div class="article">
-                        <img src="../briefs/edw-135/4.png" alt="AI Breakthrough">
+                        <img src="../briefs/edw-135/../../../images/briefs/edw-135/4.png" alt="AI Breakthrough">
                         <div class="article-content">
                             <h4>Monat der Cyber-Sicherheit: Wachsamkeit fördern</h4>
                             <p>Diese Woche markiert den Monat für Cyber-Sicherheit, der die Bedeutung individueller Wachsamkeit beim Schutz digitaler Vermögenswerte hervorhebt. Organisationen werden aufgefordert, eine Kultur zu fördern, in der Cyber-Sicherheit die Verantwortung aller ist. Der Aufruf zum Handeln umfasst fortlaufende Bildung und proaktive Maßnahmen zur Verhinderung von Sicherheitsverletzungen. Angesichts steigender Cyber-Bedrohungen ist es von entscheidender Bedeutung, das Bewusstsein zu erhöhen. Effektive Cyber-Sicherheitspraktiken können Risiken erheblich mindern und die Widerstandsfähigkeit in einer sich wandelnden digitalen Landschaft verbessern.</p>
@@ -157,7 +238,7 @@
                     </div>
                     
                     <div class="article">
-                        <img src="../briefs/edw-135/8.jpeg" alt="AI Breakthrough">
+                        <img src="../briefs/edw-135/../../../images/briefs/edw-135/8.jpeg" alt="AI Breakthrough">
                         <div class="article-content">
                             <h4>Anstieg der Cyberangriffe auf EU-Einrichtungen</h4>
                             <p>Cybersecurity-Beamte berichten von einem Anstieg der Angriffe, die auf EU-Einrichtungen abzielen, insbesondere im Bereich der betrieblichen Technologie. Die Cybersecurity-Agentur warnt, dass diese Angriffe Schwachstellen ausnutzen und Risiken für die kritische Infrastruktur darstellen. Dieser Anstieg unterstreicht die Notwendigkeit weiterer Sicherheitsmaßnahmen und gesteigerter Wachsamkeit in Organisationen aller Sektoren. Mit der beschleunigten digitalen Transformation wird es unerlässlich, die betrieblichen Technologien zu sichern. Ein erhöhtes Bewusstsein und eine bessere Vorbereitung können helfen, diese Bedrohungen abzuwenden und die Geschäftskontinuität zu gewährleisten.</p>
@@ -166,7 +247,7 @@
                     </div>
                     
                     <div class="article">
-                        <img src="../briefs/edw-135/security.png" alt="AI Breakthrough">
+                        <img src="../briefs/edw-135/../../../images/briefs/edw-135/security.png" alt="AI Breakthrough">
                         <div class="article-content">
                             <h4>Stärkung der Cybersicherheit durch Gesetzesreformen</h4>
                             <p>Aktuelle legislative Vorschläge zielen darauf ab, die Maßnahmen zur Cybersicherheit angesichts sich entwickelnder Bedrohungen zu stärken. Bemerkenswerterweise spiegeln die Diskussionen über die Schließung des CISA zweitausendfünfzehn fortlaufende Bedenken hinsichtlich der Governance der Cybersicherheit wider. Um sich anzupassen, müssen Organisationen über regulatorische Änderungen informiert bleiben und Strategien implementieren, die mit diesen übereinstimmen. Darrens Führung als Vorsitzender des Open Digital Transformation Forum, die digitale Strategie mit robusten Cybersicherheitsrahmen in Einklang bringt, wird unerlässlich. Das Antizipieren rechtlicher Veränderungen wird die organisatorische Widerstandsfähigkeit in einem sich schnell verändernden digitalen Umfeld verbessern.</p>
@@ -186,7 +267,7 @@
                 <div class="articles">
                     
                     <div class="article">
-                        <img src="../briefs/edw-135/cloud.png" alt="AI Breakthrough">
+                        <img src="../briefs/edw-135/../../../images/briefs/edw-135/cloud.png" alt="AI Breakthrough">
                         <div class="article-content">
                             <h4>Corning: Vorreiter in KI-Datenzentren</h4>
                             <p>Corning positioniert sich als führendes Unternehmen im Bereich KI-Datenzentrumslösungen. Das Unternehmen betont die Bedeutung fortschrittlicher Optik zur Verbesserung der Datenverarbeitungsfähigkeiten. Dieser Schritt zeigt ein wachsendes Augenmerk auf die Optimierung der Hardware für KI-Anwendungen, da die Nachfrage nach effizienter Technologieinfrastruktur steigt. Corning&#39;s Strategie wird eine entscheidende Rolle spielen. Dieser Wandel unterstreicht die Notwendigkeit für Unternehmen, zu innovieren, um den steigenden Anforderungen der digitalen Transformation gerecht zu werden.</p>
@@ -195,7 +276,7 @@
                     </div>
                     
                     <div class="article">
-                        <img src="../briefs/edw-135/cloud.png" alt="AI Breakthrough">
+                        <img src="../briefs/edw-135/../../../images/briefs/edw-135/cloud.png" alt="AI Breakthrough">
                         <div class="article-content">
                             <h4>Steigende Strompreise: Herausforderung für KI-Datenzentren</h4>
                             <p>Mit dem Ausbau von KI-Datenzentren sind steigende Strompreise ein wachsendes Anliegen. Analysten prognostizieren, dass hohe Betriebskosten das Wachstum in diesem kritischen Sektor bis zweitausendfünfundzwanzig behindern könnten. Diese Beobachtung unterstreicht die Bedeutung der Energieeffizienz für Unternehmen. Firmen müssen innovativ sein oder sich anpassen, um wettbewerbsfähig zu bleiben, während der Strombedarf steigt. Effizienz in den Abläufen wird entscheidend sein, um den geschäftlichen Erfolg angesichts der sich wandelnden Herausforderungen zu sichern.</p>
@@ -204,7 +285,7 @@
                     </div>
                     
                     <div class="article">
-                        <img src="../briefs/edw-135/26.jpeg" alt="AI Breakthrough">
+                        <img src="../briefs/edw-135/../../../images/briefs/edw-135/26.jpeg" alt="AI Breakthrough">
                         <div class="article-content">
                             <h4>Nachhaltigkeit durch Unterwasser-Datenzentrum: China führt.</h4>
                             <p>China plant, ein kommerzielles Unterwasser-Datenzentrum zu eröffnen, das eine Reduzierung des Stromverbrauchs für Kühlung um bis zu neunzig Prozent verspricht. Dieser innovative Ansatz hebt einen Wandel hin zu nachhaltigen technologischen Lösungen im Datenmanagement hervor. Die Initiative könnte einen neuen Standard für Energieeffizienz in der Branche setzen. Während die Welt nach umweltfreundlicheren Alternativen sucht, betont diese Entwicklung die Bedeutung nachhaltiger Praktiken. Solche Fortschritte sind entscheidend, um die Zukunft der digitalen Transformation zu gestalten.</p>
@@ -224,7 +305,7 @@
                 <div class="articles">
                     
                     <div class="article">
-                        <img src="../briefs/edw-135/32.jpeg" alt="AI Breakthrough">
+                        <img src="../briefs/edw-135/../../../images/briefs/edw-135/32.jpeg" alt="AI Breakthrough">
                         <div class="article-content">
                             <h4>KI und Cybersecurity: Vertrauen und Verantwortung</h4>
                             <p>Während sich die Cybersecurity Awareness Week entfaltet, intensivieren sich die Diskussionen über die Auswirkungen von Künstlicher Intelligenz. Unternehmen erkennen das transformative Potenzial von KI an, während sie die damit verbundenen Risiken akzeptieren. Dies wirft Fragen nach Vertrauen und Verantwortung auf. Darren&#39;s kürzliche Ernennung zum Vorsitzenden des Open Digital Transformation Forum unterstreicht die Notwendigkeit eines fokussierteren Ansatzes für Sicherheitsstrategien. Organisationen müssen es priorisieren, ihre digitalen Vermögenswerte in einem Zeitalter, in dem KI weit verbreitet ist, zu schützen. Die Auseinandersetzung mit diesen Bedenken ist entscheidend für eine sichere digitale Transformation.</p>
@@ -233,7 +314,7 @@
                     </div>
                     
                     <div class="article">
-                        <img src="../briefs/edw-135/36.jpeg" alt="AI Breakthrough">
+                        <img src="../briefs/edw-135/../../../images/briefs/edw-135/36.jpeg" alt="AI Breakthrough">
                         <div class="article-content">
                             <h4>KI-Lösungen zur Bekämpfung von Burnout</h4>
                             <p>Angesichts des zunehmenden Burnouts von Gesundheitsfachkräften sorgen innovative, KI-unterstützte Lösungen für Furore. Das Gesundheitssystem von Nordost-Georgia hat diese Technologien übernommen, um das Wohlbefinden und die Effizienz der Mitarbeiter zu verbessern. Während die digitale Transformation an Geschwindigkeit gewinnt, ist die Nutzung von Künstlicher Intelligenz im Gesundheitswesen von entscheidender Bedeutung. Dies verbessert nicht nur die Patientenversorgung, sondern steigert auch das Wohlbefinden der Belegschaft. Mit Fortschritten in der Künstlichen Intelligenz kann die Gesundheitsbranche ihren Ansatz im Gesundheitswesen neu definieren. Solche Maßnahmen können Unternehmen helfen, angesichts der anhaltenden Herausforderungen zu florieren.</p>
@@ -242,7 +323,7 @@
                     </div>
                     
                     <div class="article">
-                        <img src="../briefs/edw-135/40.jpeg" alt="AI Breakthrough">
+                        <img src="../briefs/edw-135/../../../images/briefs/edw-135/40.jpeg" alt="AI Breakthrough">
                         <div class="article-content">
                             <h4>Ethische Bedenken zur AI-Freundschafts-Halskette</h4>
                             <p>Eine neue, mit Künstlicher Intelligenz betriebene Freundschafts-Halskette hat Debatten über die ethischen Implikationen von künstlicher Intelligenz in persönlichen Geräten ausgelöst. Kritiker argumentieren, dass diese Technologie tiefgehende menschliche Beziehungen trivialisiert. Dieser Aufruhr fällt in den größeren Kontext der Cybersecurity Awareness Week, in der der ethische Einsatz von Künstlicher Intelligenz von größter Bedeutung ist. Darrens Führung im Open Digital Transformation Forum wird voraussichtlich solche Bedenken ansprechen. Die Förderung verantwortungsvoller Anwendungen von Künstlicher Intelligenz ist entscheidend, um das Vertrauen in die Technologie aufrechtzuerhalten, während sie sich weiterhin entwickelt.</p>
@@ -303,3 +384,56 @@
         <p>Alle Rechte vorbehalten</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

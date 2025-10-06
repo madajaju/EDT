@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="Trasformazione Digitale per la settimana dell&#39;1 settembre 2024, inclusi notizie da Ubiquitous Computing, Cybersecurity e Intelligenza Artificiale. Scopri come gli innovativi progressi nel calcolo quantistico e nell&#39;IA non solo stanno ridefinendo le industrie e la cybersecurity, ma stanno anche trasformando le strategie politiche poiché i leader navigano nel costantemente mutevole panorama digitale, pieno sia di opportunità senza precedenti che di rischi significativi.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="Trasformazione Digitale per la settimana dell&#39;1 settembre 2024, inclusi notizie da Ubiquitous Computing, Cybersecurity e Intelligenza Artificiale. Scopri come gli innovativi progressi nel calcolo quantistico e nell&#39;IA non solo stanno ridefinendo le industrie e la cybersecurity, ma stanno anche trasformando le strategie politiche poiché i leader navigano nel costantemente mutevole panorama digitale, pieno sia di opportunità senza precedenti che di rischi significativi.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="Trasformazione Digitale per la settimana dell&#39;1 settembre 2024, inclusi notizie da Ubiquitous Computing, Cybersecurity e Intelligenza Artificiale. Scopri come gli innovativi progressi nel calcolo quantistico e nell&#39;IA non solo stanno ridefinendo le industrie e la cybersecurity, ma stanno anche trasformando le strategie politiche poiché i leader navigano nel costantemente mutevole panorama digitale, pieno sia di opportunità senza precedenti che di rischi significativi.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="Trasformazione Digitale per la settimana dell&#39;1 settembre 2024, inclusi notizie da Ubiquitous Computing, Cybersecurity e Intelligenza Artificiale. Scopri come gli innovativi progressi nel calcolo quantistico e nell&#39;IA non solo stanno ridefinendo le industrie e la cybersecurity, ma stanno anche trasformando le strategie politiche poiché i leader navigano nel costantemente mutevole panorama digitale, pieno sia di opportunità senza precedenti che di rischi significativi.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="Trasformazione Digitale per la settimana dell&#39;1 settembre 2024, inclusi notizie da Ubiquitous Computing, Cybersecurity e Intelligenza Artificiale. Scopri come gli innovativi progressi nel calcolo quantistico e nell&#39;IA non solo stanno ridefinendo le industrie e la cybersecurity, ma stanno anche trasformando le strategie politiche poiché i leader navigano nel costantemente mutevole panorama digitale, pieno sia di opportunità senza precedenti che di rischi significativi.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="Trasformazione Digitale per la settimana dell&#39;1 settembre 2024, inclusi notizie da Ubiquitous Computing, Cybersecurity e Intelligenza Artificiale. Scopri come gli innovativi progressi nel calcolo quantistico e nell&#39;IA non solo stanno ridefinendo le industrie e la cybersecurity, ma stanno anche trasformando le strategie politiche poiché i leader navigano nel costantemente mutevole panorama digitale, pieno sia di opportunità senza precedenti che di rischi significativi.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#83 2024-09-02</h2>
@@ -138,7 +218,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-83/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Gestire il Debito Tecnico Efficacemente</h3>
                 <p>Nell&#39;ultimo episodio di Abbracciare il Digitale, le interviste di Darren approfondiscono il debito tecnico. Le organizzazioni affrontano spesso sfide con il debito tecnico, che può rallentare il processo di sviluppo e far rimanere i team di sviluppo intrappolati in un intrico di aggiornamenti di codice, modifiche alle API e dipendenze di terze parti. In questo episodio, Darren intervista Jonathan Schneider, amministratore delegato di Moderene, riguardo al suo approccio all&#39;abbracciare il debito tecnico e a come gestirlo in modo efficace.</p>
@@ -153,7 +233,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-83/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Prototipo di Processore Quantistico Raggiunge 99.9% Fedeltà</h4>
                                 <p>Un progresso nell&#39;informatica quantistica è stato raggiunto con un processore prototipo che mostra un&#39;impressionante fedeltà dei qubit del novantanove e nove percento. Questo avanzamento non è solo una pietra miliare, ma un faro di speranza per il futuro della tecnologia. Affronta una delle sfide significative del settore: ridurre gli errori nei calcoli quantistici. I ricercatori credono che mantenere una fedeltà così alta potrebbe accelera lo sviluppo di computer quantistici pratici, spalancando la strada per la loro applicazione in vari settori.</p>
@@ -162,7 +242,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-83/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>MIT&#39;s Quantum Computers: A Cryptography Revolution</h4>
                                 <p>I ricercatori del MIT si stanno avvicinando alla creazione di computer quantistici in grado di decifrare codici. Il loro lavoro si concentra sullo sviluppo di algoritmi che sfruttano le proprietà uniche dei sistemi quantistici, con il potenziale di perturbare i metodi di crittografia tradizionale. Man mano che queste tecnologie si evolvono, il panorama della cybersicurezza affronterà sfide significative, sollecitando una risposta rapida da parte di coloro che si affidano alla crittografia classica.</p>
@@ -171,7 +251,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="cloud.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-83/cloud.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Rischi e Opportunità dei Computer Quantistici</h4>
                                 <p>IBM sottolinea la spada a doppio taglio dei computer quantistici nella cybersicurezza. Mentre promettono di migliorare la velocità di elaborazione dei dati, rappresentano un rischio significativo per i protocolli di crittografia esistenti. Con il miglioramento delle capacità della tecnologia quantistica, diventa sempre più fondamentale per le industrie adottare con urgenza metodi di crittografia sicuri contro il quantistico per proteggere i dati sensibili. La corsa agli armamenti tra lo sviluppo quantistico e la sicurezza dei dati continua a svolgersi, e il momento di agire è adesso.</p>
@@ -191,7 +271,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-83/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Hong Kong&#39;s Major Cybersecurity Law Unveiled</h4>
                                 <p>Hong Kong è pronto a implementare la sua prima legge sulla cybersicurezza per infrastrutture critiche per rafforzare le difese in settori essenziali. La legislazione richiederà alle organizzazioni di migliorare le proprie misure di cybersicurezza e di segnalare gli incidenti, riflettendo un crescente impegno nella gestione delle vulnerabilità nella tecnologia e nelle infrastrutture. Questa legge rappresenta un passo significativo verso un futuro digitale più sicuro, sottolineando l&#39;importanza di misure di sicurezza proattive per proteggere i servizi critici dalle crescenti minacce informatiche.</p>
@@ -200,7 +280,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.webp" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-83/22.webp" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Minacce Interne: Il Rischio dei Dipendenti</h4>
                                 <p>Un ex ingegnere del Missouri è stato accusato di compromettere sistemi sicuri per rubare dati sensibili, sollevando preoccupazioni riguardo alle minacce interne nel panorama della cybersicurezza. Queste accuse sottolineano una tendenza significativa in cui i dipendenti fidati possono sfruttare il loro accesso ai sistemi per guadagni personali. I funzionari delle forze dell&#39;ordine enfatizzano la necessità di un monitoraggio attento e di una supervisione del personale interno per mitigare questi rischi, poiché anche i dipendenti apparentemente affidabili possono diventare potenziali vulnerabilità nel quadro di sicurezza di un&#39;organizzazione.</p>
@@ -209,7 +289,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.webp" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-83/26.webp" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>RansomHub: Una Minaccia Ransomware Crescente</h4>
                                 <p>Il gruppo di ransomware RansomHub ha violato con successo ben duecentodieci organizzazioni, suscitando notevoli preoccupazioni all&#39;interno delle comunità di cybersicurezza. Questo incidente sottolinea le tecniche avanzate del gruppo nell&#39;estorsione e mette in evidenza l&#39;assoluta necessità di una pianificazione completa per la risposta agli incidenti. Gli esperti di cybersicurezza esortano tutte le organizzazioni a rafforzare le proprie difese e a sviluppare strategie robuste per combattere potenziali violazioni. Con l&#39;aumento e la sofisticazione delle minacce informatiche, potenziare la resilienza contro tali attacchi dovrebbe essere una priorità per tutte le aziende nel panorama digitale odierno.</p>
@@ -229,7 +309,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-83/32.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Trump&#39;s AI Strategy: Memes and Deepfakes</h4>
                                 <p>Un recente articolo di NPR discute come Donald Trump utilizzi l&#39;intelligenza artificiale per creare meme e deepfake, specificamente nella sua strategia di campagna. Mira a coinvolgere gli elettori più giovani e ad adattarsi a paesaggi digitali in evoluzione sfruttando le tecnologie di intelligenza artificiale. Questo approccio solleva interrogativi sull&#39;impatto dell&#39;intelligenza artificiale sul discorso politico e sulla percezione pubblica, specialmente in mezzo a crescenti preoccupazioni riguardo alla disinformazione e all&#39;autenticità online.</p>
@@ -238,7 +318,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-83/36.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Futuro Incerto per Progetti di AI</h4>
                                 <p>Secondo Gartner, quasi un terzo di tutti i progetti di intelligenza artificiale generativa è previsto che venga abbandonato nei prossimi anni. Questa statistica riflette le sfide che le organizzazioni affrontano quando implementano tecnologie così innovative. I fattori di abbandono includono alti costi, mancanza di competenze e strategie incomplete. Mentre le aziende navigano in questo campo in evoluzione, comprendere questi ostacoli è essenziale per il futuro successo nelle imprese legate all&#39;intelligenza artificiale.</p>
@@ -247,7 +327,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="40.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-83/40.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Nuovo Catalizzatore AI per Idrogeno Verde</h4>
                                 <p>I ricercatori dell&#39;Università di Toronto hanno compiuto progressi significativi nello sviluppo di un nuovo catalizzatore per elettrolizzatori attraverso l&#39;intelligenza artificiale. Questo catalizzatore potrebbe migliorare l&#39;efficienza dell&#39;elettrolisi nella produzione di idrogeno verde, aprendo la strada a soluzioni energetiche più sostenibili. Integrando l&#39;intelligenza artificiale nel processo di ricerca, stanno accelerando l&#39;innovazione che potrebbe avere un impatto trasformativo sulle tecnologie per l&#39;energia pulita e sulla mitigazione del cambiamento climatico.</p>
@@ -271,3 +351,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

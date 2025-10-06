@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="Trasformazione Digitale per la settimana del 23 marzo 2025, inclusi aggiornamenti sulla salute nell&#39;intelligenza artificiale, sulla cybersecurity e sulla gestione dei dati. Scopri come l&#39;intelligenza artificiale sta rivoluzionando la sanità e l&#39;assicurazione sanitaria, migliorando l&#39;assistenza ai pazienti, semplificando le operazioni e sbloccando nuove efficienze in un contesto di crescenti sfide nella cybersecurity.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="Trasformazione Digitale per la settimana del 23 marzo 2025, inclusi aggiornamenti sulla salute nell&#39;intelligenza artificiale, sulla cybersecurity e sulla gestione dei dati. Scopri come l&#39;intelligenza artificiale sta rivoluzionando la sanità e l&#39;assicurazione sanitaria, migliorando l&#39;assistenza ai pazienti, semplificando le operazioni e sbloccando nuove efficienze in un contesto di crescenti sfide nella cybersecurity.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="Trasformazione Digitale per la settimana del 23 marzo 2025, inclusi aggiornamenti sulla salute nell&#39;intelligenza artificiale, sulla cybersecurity e sulla gestione dei dati. Scopri come l&#39;intelligenza artificiale sta rivoluzionando la sanità e l&#39;assicurazione sanitaria, migliorando l&#39;assistenza ai pazienti, semplificando le operazioni e sbloccando nuove efficienze in un contesto di crescenti sfide nella cybersecurity.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 23 marzo 2025, inclusi aggiornamenti sulla salute nell&#39;intelligenza artificiale, sulla cybersecurity e sulla gestione dei dati. Scopri come l&#39;intelligenza artificiale sta rivoluzionando la sanità e l&#39;assicurazione sanitaria, migliorando l&#39;assistenza ai pazienti, semplificando le operazioni e sbloccando nuove efficienze in un contesto di crescenti sfide nella cybersecurity.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="Trasformazione Digitale per la settimana del 23 marzo 2025, inclusi aggiornamenti sulla salute nell&#39;intelligenza artificiale, sulla cybersecurity e sulla gestione dei dati. Scopri come l&#39;intelligenza artificiale sta rivoluzionando la sanità e l&#39;assicurazione sanitaria, migliorando l&#39;assistenza ai pazienti, semplificando le operazioni e sbloccando nuove efficienze in un contesto di crescenti sfide nella cybersecurity.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 23 marzo 2025, inclusi aggiornamenti sulla salute nell&#39;intelligenza artificiale, sulla cybersecurity e sulla gestione dei dati. Scopri come l&#39;intelligenza artificiale sta rivoluzionando la sanità e l&#39;assicurazione sanitaria, migliorando l&#39;assistenza ai pazienti, semplificando le operazioni e sbloccando nuove efficienze in un contesto di crescenti sfide nella cybersecurity.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#107 2025-03-24</h2>
@@ -118,7 +198,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-107/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Futuro Digitale nell&#39;Istruzione Innovativa</h3>
                 <p>Abbracciare il Digitale si concentra sul futuro dell&#39;istruzione integrando la tecnologia e approcci innovativi. L&#39;iniziativa mira a fornire agli studenti competenze digitali essenziali per prosperare in un&#39;economia digitale in rapida evoluzione, promuovendo una generazione di apprendimento pronta ad affrontare le sfide future.</p>
@@ -133,7 +213,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.gif" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-107/4.gif" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>IA: Rivoluzione nella Sanità e Assistenza</h4>
                                 <p>L&#39;intelligenza artificiale trasforma la sanità migliorando le diagnosi, semplificando le operazioni e potenziando l&#39;assistenza ai pazienti. Con l&#39;IA, i fornitori possono analizzare rapidamente enormi quantità di dati, portando a trattamenti più accurati e a una riduzione dei costi. Questa tecnologia non è una minaccia per la sicurezza del lavoro, ma piuttosto una potenziale soluzione per alleviare le carenze di personale. Si prevede che offra strumenti per assistere i professionisti umani, migliorando così la qualità dell&#39;assistenza. L&#39;integrazione dell&#39;IA potrebbe rimodellare significativamente il modo in cui viene fornita l&#39;assistenza nei prossimi anni mentre i sistemi sanitari si adattano.</p>
@@ -142,7 +222,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-107/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>AI Transforming Health Insurance Experience</h4>
                                 <p>L&#39;integrazione dell&#39;intelligenza artificiale nell&#39;assicurazione sanitaria non sta solo rivoluzionando il settore, ma sta anche migliorando l&#39;esperienza assicurativa per i consumatori. Gli algoritmi guidati dall&#39;intelligenza artificiale migliorano i processi di valutazione del rischio, ottimizzano la gestione dei sinistri e personalizzano le interazioni con i clienti. Questa tecnologia non solo snellisce le operazioni, ma rafforza anche gli sforzi di rilevamento delle frodi, beneficiando così sia gli assicuratori che gli assicurati. Con l&#39;adozione dell&#39;intelligenza artificiale, il settore apre nuove strade per risparmi sui costi e per l&#39;efficienza, migliorando infine l&#39;esperienza assicurativa per i consumatori.</p>
@@ -151,7 +231,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="ai.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-107/ai.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Infermieristica AI: Innovazione e Preoccupazioni</h4>
                                 <p>Le tecnologie infermieristiche alimentate dall&#39;intelligenza artificiale stanno facendo scalpore nel settore sanitario, offrendo soluzioni innovative per le carenze di personale e le sfide nella cura dei pazienti. Queste infermiere artificiali possono gestire compiti di routine, consentendo agli infermieri umani di concentrarsi su una cura più complessa. Tuttavia, l&#39;ascesa dell&#39;intelligenza artificiale nell&#39;infermieristica ha suscitato reazioni negative da parte dei professionisti preoccupati per la sicurezza del lavoro e la qualità dell&#39;assistenza. È importante sottolineare che bilanciare l&#39;automazione con l&#39;empatia umana sarà fondamentale mentre il panorama sanitario si evolve, rassicurando i professionisti sull&#39;importanza continua dei loro ruoli.</p>
@@ -171,7 +251,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-107/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Attacchi informatici: esigenza di sicurezza sanitaria</h4>
                                 <p>Un recente articolo di Gov Tech sottolinea l&#39;allarmante aumento degli attacchi informatici nel settore sanitario, rivelando un urgente bisogno di soluzioni complete per la sicurezza informatica. Con l&#39;aumento significativo degli incidenti che prendono di mira le organizzazioni sanitarie, gli esperti enfatizzano l&#39;importanza di implementare misure di sicurezza avanzate e di fornire un&#39;adeguata formazione al personale per mitigare i rischi in modo efficace. In un&#39;era in cui le vulnerabilità digitali sono in continua evoluzione, l&#39;industria sanitaria deve dare priorità alla protezione dei dati dei pazienti, garantendo che la fiducia rimanga intatta mentre si naviga in questo complesso panorama tecnologico.</p>
@@ -180,7 +260,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="security.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-107/security.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Incidente Dati: Allerta per Sicurezza Sanitaria</h4>
                                 <p>Una violazione massiccia dei dati che coinvolge un&#39;azienda nel settore del benessere ha spinto il governo federale ad agire, rivelando significative violazioni delle normative HIPAA. Questo incidente ha esposto le informazioni sanitarie sensibili di numerosi individui, suscitando preoccupazioni diffuse sulla privacy e sulla sicurezza dei dati. Mentre le indagini si sviluppano, gli esperti esortano le organizzazioni sanitarie a rafforzare i meccanismi di protezione contro violazioni simili, sottolineando l&#39;importanza di salvaguardare la riservatezza dei pazienti nei registri digitali.</p>
@@ -189,7 +269,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-107/26.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Indiana Health Systems Boost Cybersecurity Together</h4>
                                 <p>In una collaborazione innovativa, i sistemi sanitari dell&#39;Indiana stanno unendo gli sforzi per assistere i fornitori più piccoli nel rafforzare la loro posizione in materia di cybersicurezza. Questa iniziativa affronta le crescenti preoccupazioni riguardanti le minacce informatiche affrontate dalle strutture sanitarie con meno risorse, che spesso mancano degli strumenti e delle competenze necessarie. Mettendo in comune risorse e conoscenze, questi sistemi mirano a creare un ambiente più sicuro per i dati dei pazienti, assicurando che tutti i fornitori siano meglio attrezzati per gestire le sfide della cybersicurezza.</p>
@@ -209,7 +289,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-107/32.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Rivoluzione Dati: Futuro della Sanità</h4>
                                 <p>La sanità è sul punto di una rivoluzione dei dati con l&#39;integrazione di dati connessi e multimodali. Questo approccio innovativo, unito al potenziale dell&#39;intelligenza artificiale, offre la promessa di migliorare i risultati per i pazienti e di semplificare le operazioni. Sfruttando diverse fonti di dati, i fornitori di assistenza sanitaria possono svelare intuizioni precedentemente nascoste. Questa metodologia, quando combinata con l&#39;intelligenza artificiale, può migliorare significativamente la cura dei pazienti e consentire sistemi di erogazione dei servizi sanitari più efficienti, favorendo infine una migliore presa di decisioni in tutto il settore.</p>
@@ -218,7 +298,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="data.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-107/data.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Trasformare Dati Sanitari per Migliorare Cure</h4>
                                 <p>Omny Health ha compiuto un passo audace nella gestione dei dati sanitari elaborando quattro miliardi di dollari di note cliniche non strutturate. Questa iniziativa mira a trasformare il modo in cui tali dati vengono utilizzati, rendendoli accessibili e azionabili per i professionisti della salute. Sbloccando preziosi approfondimenti da informazioni precedentemente inaccessibili, i fornitori di assistenza sanitaria possono migliorare la cura dei pazienti e prendere decisioni mediche più informate, avanzando significativamente l&#39;utilizzo dei dati clinici.</p>
@@ -227,7 +307,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="40.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-107/40.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Ottimizzazione del Caricamento Dati Sanitario</h4>
                                 <p>Ottimizzare il caricamento di dati su larga scala è emerso come un approccio trasformativo nella gestione dei dati sanitarie. Questa strategia migliora l&#39;efficienza nella gestione dei dati e garantisce che le informazioni critiche siano prontamente disponibili per i professionisti della salute. Semplificando i processi di gestione dei dati, le organizzazioni possono concentrarsi sul fornire una migliore cura ai pazienti, riducendo al contempo i costi operativi, evidenziando l&#39;importanza delle soluzioni moderne per i dati nel panorama in evoluzione della tecnologia sanitaria.</p>
@@ -251,3 +331,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

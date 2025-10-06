@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="Trasformazione Digitale per la settimana del 19 aprile 2025, inclusi aggiornamenti dall&#39;Intelligenza Artificiale, Sicurezza Informatica e Comunicazioni Avanzate nel settore dei viaggi. Scopri come l&#39;Intelligenza Artificiale è pronta a rivoluzionare l&#39;industria dei viaggi personalizzando le esperienze e ottimizzando le operazioni, sottolineando anche l&#39;importanza fondamentale di misure di sicurezza informatica robuste in un panorama digitale in rapida evoluzione.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="Trasformazione Digitale per la settimana del 19 aprile 2025, inclusi aggiornamenti dall&#39;Intelligenza Artificiale, Sicurezza Informatica e Comunicazioni Avanzate nel settore dei viaggi. Scopri come l&#39;Intelligenza Artificiale è pronta a rivoluzionare l&#39;industria dei viaggi personalizzando le esperienze e ottimizzando le operazioni, sottolineando anche l&#39;importanza fondamentale di misure di sicurezza informatica robuste in un panorama digitale in rapida evoluzione.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="Trasformazione Digitale per la settimana del 19 aprile 2025, inclusi aggiornamenti dall&#39;Intelligenza Artificiale, Sicurezza Informatica e Comunicazioni Avanzate nel settore dei viaggi. Scopri come l&#39;Intelligenza Artificiale è pronta a rivoluzionare l&#39;industria dei viaggi personalizzando le esperienze e ottimizzando le operazioni, sottolineando anche l&#39;importanza fondamentale di misure di sicurezza informatica robuste in un panorama digitale in rapida evoluzione.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 19 aprile 2025, inclusi aggiornamenti dall&#39;Intelligenza Artificiale, Sicurezza Informatica e Comunicazioni Avanzate nel settore dei viaggi. Scopri come l&#39;Intelligenza Artificiale è pronta a rivoluzionare l&#39;industria dei viaggi personalizzando le esperienze e ottimizzando le operazioni, sottolineando anche l&#39;importanza fondamentale di misure di sicurezza informatica robuste in un panorama digitale in rapida evoluzione.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="Trasformazione Digitale per la settimana del 19 aprile 2025, inclusi aggiornamenti dall&#39;Intelligenza Artificiale, Sicurezza Informatica e Comunicazioni Avanzate nel settore dei viaggi. Scopri come l&#39;Intelligenza Artificiale è pronta a rivoluzionare l&#39;industria dei viaggi personalizzando le esperienze e ottimizzando le operazioni, sottolineando anche l&#39;importanza fondamentale di misure di sicurezza informatica robuste in un panorama digitale in rapida evoluzione.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 19 aprile 2025, inclusi aggiornamenti dall&#39;Intelligenza Artificiale, Sicurezza Informatica e Comunicazioni Avanzate nel settore dei viaggi. Scopri come l&#39;Intelligenza Artificiale è pronta a rivoluzionare l&#39;industria dei viaggi personalizzando le esperienze e ottimizzando le operazioni, sottolineando anche l&#39;importanza fondamentale di misure di sicurezza informatica robuste in un panorama digitale in rapida evoluzione.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#111 2025-04-20</h2>
@@ -118,7 +198,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-111/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Thomas Jorgensen on AI and Innovation</h3>
                 <p>Il Dottor Darren intervista Thomas Jorgensen di Supermicro. Con oltre trenta anni di esperienza nella tecnologia di accelerazione, Thomas Jorgensen porta con sé una grande ricchezza di conoscenze. Condivide le sue intuizioni sull&#39;evoluzione del calcolo, sul passaggio verso l&#39;intelligenza artificiale e il video come principali motori tecnologici, sull&#39;importanza dei modelli di intelligenza artificiale pre-addestrati per le aziende e sugli approcci innovativi che Supermicro sta adottando nella costruzione di data center, compresi i vantaggi del raffreddamento a liquido. La conversazione tocca anche le capacità produttive globali dell&#39;azienda, la flessibilità che offre in un panorama geopolitico in cambiamento e l&#39;importanza della prossimità ai giganti della tecnologia nella Silicon Valley—un ringraziamento speciale ai nostri ascoltatori. Abbiamo aggiunto altre diecimila persone alla nostra lista di ascoltatori settimanali. Grazie ancora per il vostro supporto e condividete il podcast con amici e familiari.</p>
@@ -133,7 +213,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="ai.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-111/ai.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>IA: Rivoluzione nel Settore Viaggi</h4>
                                 <p>L&#39;intelligenza artificiale (IA) trasforma significativamente l&#39;industria dei viaggi a livello globale, migliorando le esperienze dei clienti, ottimizzando la pianificazione dei viaggi e innovando i modelli di guadagno. Questo cambiamento tecnologico è previsto per prosperare fino al duemilatrenta, con applicazioni di IA che consentono raccomandazioni di viaggio personalizzate e operazioni efficienti. Man mano che il settore dei viaggi si adatta, le imprese che sfruttano strumenti di IA avranno probabilmente un vantaggio competitivo, portando a un approccio più basato sui dati per soddisfare le esigenze in continua evoluzione dei viaggiatori.</p>
@@ -142,7 +222,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-111/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Rivoluzione AI nell&#39;Industria dei Viaggi</h4>
                                 <p>Gli agenti di intelligenza artificiale sono pronti a rivoluzionare l&#39;industria dei viaggi, offrendo servizi più efficienti e automatizzati. Questi agenti possono gestire le richieste dei clienti, ottimizzare le prenotazioni e fornire soluzioni di viaggio personalizzate. Integrando l&#39;intelligenza artificiale, le compagnie di viaggio possono migliorare significativamente l&#39;efficienza operativa e aumentare la soddisfazione dei clienti, assicurando un viaggio più fluido dalla pianificazione al feedback post-viaggio. Poiché queste tecnologie continuano a evolversi, il panorama del settore dei viaggi è destinato a cambiare drasticamente, inaugurando una nuova era di esperienze di viaggio.</p>
@@ -151,7 +231,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-111/12.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Turismo e Intelligenza Artificiale: Crescita Inarrestabile</h4>
                                 <p>Il mercato del turismo basato sull&#39;intelligenza artificiale sta vivendo una crescita significativa, poiché le imprese integrano sempre più tecnologie innovative per ottimizzare le esperienze di viaggio. Secondo un recente rapporto del settore, si prevede che la domanda di soluzioni basate sull&#39;intelligenza artificiale nel turismo aumenterà notevolmente, spinta dalla necessità di esperienze personalizzate e di efficienze operative. Le aziende che adottano l&#39;intelligenza artificiale possono aspettarsi una maggiore competitività, poiché i viaggiatori cercano servizi più su misura e processi di garanzia e pianificazione dei viaggi più snelli. Questa crescita segnala un futuro promettente per l&#39;industria dei viaggi, con l&#39;intelligenza artificiale in prima linea nell&#39;innovazione.</p>
@@ -171,7 +251,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-111/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>AI: Safeguarding Business Travelers in 2023</h4>
                                 <p>L&#39;intelligenza artificiale svolge un ruolo cruciale nell&#39;affrontare le principali preoccupazioni dei viaggiatori d&#39;affari nel duemilaventitré, come le minacce alla cybersicurezza e i rischi geopolitici. Con l&#39;aumento delle tensioni globali, i professionisti sono sempre più preoccupati per le violazioni dei dati e gli incidenti di hacking che potrebbero compromettere informazioni sensibili. Le compagnie di viaggio sono invitate a migliorare le misure di sicurezza e l&#39;intelligenza artificiale può essere uno strumento potente. L&#39;intelligenza artificiale può aiutare nella rilevazione precoce di potenziali minacce informatiche, garantendo che i propri clienti siano protetti dagli attacchi informatici durante i loro viaggi. Questa crescente consapevolezza sottolinea la necessità di strategie di cybersicurezza robuste nell&#39;industria dei viaggi, con l&#39;intelligenza artificiale che gioca un ruolo significativo nel garantire la sicurezza dei viaggiatori.</p>
@@ -180,7 +260,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-111/22.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Proteggi i tuoi dati mentre viaggi</h4>
                                 <p>Viaggiare può esporre informazioni personali a vari rischi, rendendo fondamentale per i viaggiatori adottare le necessarie precauzioni. AARP consiglia di utilizzare password forti e uniche per gli account di viaggio e di evitare il Wi-Fi pubblico per le transazioni sensibili. Invece, i viaggiatori dovrebbero utilizzare piani di dati mobili o VPN per proteggere le loro informazioni personali. Informarsi sui potenziali rischi della cybersicurezza può ridurre significativamente la probabilità di furto d&#39;identità o violazioni dei dati mentre si è in viaggio, garantendo un&#39;esperienza di viaggio più sicura e priva di preoccupazioni.</p>
@@ -189,7 +269,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-111/26.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Consigli FCC per Viaggiatori Sicuri</h4>
                                 <p>La FCC ha emesso importanti suggerimenti di cybersecurity per i viaggiatori internazionali al fine di proteggere i loro dispositivi e i dati personali. Le raccomandazioni includono l&#39;aggiornamento del software prima di partire, l&#39;abilitazione dell&#39;autenticazione a più fattori e la cautela con le connessioni Wi-Fi non criptate. I viaggiatori dovrebbero anche eseguire il backup dei dati essenziali e considerare l&#39;uso di una rete privata virtuale (VPN) per migliorare la sicurezza. Questi passaggi sono fondamentali per proteggere le informazioni sensibili dalle minacce informatiche all&#39;estero e promuovere esperienze di viaggio più sicure.</p>
@@ -209,7 +289,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-111/32.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Connettività 5G a Bordo degli Aeromobili</h4>
                                 <p>La Commissione Europea ha autorizzato le compagnie aeree ad utilizzare le frequenze di cinque G a bordo degli aeromobili, un significativo avanzamento normativo nella connettività in volo. Questa decisione ha l&#39;obiettivo di migliorare l&#39;esperienza dei passeggeri offrendo accesso a internet ad alta velocità durante i voli. Le compagnie aeree si stanno ora preparando ad implementare questa tecnologia, che si prevede migliorerà le opzioni di comunicazione e intrattenimento, rendendo i viaggi aerei più piacevoli ed efficienti per i passeggeri. Questa approvazione normativa apre la strada a una nuova era di connettività in volo, migliorando significativamente l&#39;esperienza di viaggio dei passeggeri.</p>
@@ -218,7 +298,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-111/36.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Crescita del Mercato Roaming Fino al 2032</h4>
                                 <p>Il mercato delle tariffe di roaming è previsto raggiungere centoquaranta miliardi e trecento milioni di dollari entro il duemilatrentadue, alimentato dall&#39;espansione della tecnologia 5G e dall&#39;aumento della domanda di viaggi. I ricercatori di SNS Insider attribuiscono questa crescita alla crescente dipendenza dalla connettività mobile durante i viaggi. Man mano che sempre più viaggiatori richiedono comunicazioni fluide all&#39;estero, i fornitori di telecomunicazioni probabilmente capitalizzeranno su questa tendenza, migliorando i servizi e la copertura a livello mondiale.</p>
@@ -227,7 +307,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="comms.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-111/comms.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Langkawi: Innovazione Turistica con 5G</h4>
                                 <p>Il Langkawi della Malaysia sta rivoluzionando l&#39;industria del turismo implementando iniziative innovative basate sul 5G che stabiliscono un nuovo punto di riferimento per le esperienze di viaggio. Queste iniziative includono soluzioni di turismo intelligente che sfruttano le capacità di alta velocità e bassa latenza del 5G per fornire ai visitatori un accesso senza soluzione di continuità a piattaforme digitali e una connettività migliorata. Questa pittoresca destinazione è impegnata a migliorare le interazioni con i visitatori attraverso soluzioni di connettività all&#39;avanguardia. Sfruttando la tecnologia 5G, Langkawi punta ad attrarre un numero crescente di viaggiatori esperti di tecnologia, offrendo loro un accesso fluido a piattaforme digitali. Questo assicura che i loro soggiorni siano memorabili e arricchiti da comodità moderne in questa località mozzafiato.</p>
@@ -251,3 +331,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

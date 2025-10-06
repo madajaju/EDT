@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="Trasformazione Digitale per la settimana del 18 maggio 2025, inclusa la notizia sul Governo riguardante l&#39;Intelligenza Artificiale, la Cybersecurity e le Comunicazioni Avanzate. Scopri come l&#39;integrazione dell&#39;intelligenza artificiale sta rivoluzionando le operazioni governative, migliorando l&#39;efficienza e aprendo la strada a un futuro più trasparente e responsabile.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="Trasformazione Digitale per la settimana del 18 maggio 2025, inclusa la notizia sul Governo riguardante l&#39;Intelligenza Artificiale, la Cybersecurity e le Comunicazioni Avanzate. Scopri come l&#39;integrazione dell&#39;intelligenza artificiale sta rivoluzionando le operazioni governative, migliorando l&#39;efficienza e aprendo la strada a un futuro più trasparente e responsabile.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="Trasformazione Digitale per la settimana del 18 maggio 2025, inclusa la notizia sul Governo riguardante l&#39;Intelligenza Artificiale, la Cybersecurity e le Comunicazioni Avanzate. Scopri come l&#39;integrazione dell&#39;intelligenza artificiale sta rivoluzionando le operazioni governative, migliorando l&#39;efficienza e aprendo la strada a un futuro più trasparente e responsabile.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 18 maggio 2025, inclusa la notizia sul Governo riguardante l&#39;Intelligenza Artificiale, la Cybersecurity e le Comunicazioni Avanzate. Scopri come l&#39;integrazione dell&#39;intelligenza artificiale sta rivoluzionando le operazioni governative, migliorando l&#39;efficienza e aprendo la strada a un futuro più trasparente e responsabile.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="Trasformazione Digitale per la settimana del 18 maggio 2025, inclusa la notizia sul Governo riguardante l&#39;Intelligenza Artificiale, la Cybersecurity e le Comunicazioni Avanzate. Scopri come l&#39;integrazione dell&#39;intelligenza artificiale sta rivoluzionando le operazioni governative, migliorando l&#39;efficienza e aprendo la strada a un futuro più trasparente e responsabile.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 18 maggio 2025, inclusa la notizia sul Governo riguardante l&#39;Intelligenza Artificiale, la Cybersecurity e le Comunicazioni Avanzate. Scopri come l&#39;integrazione dell&#39;intelligenza artificiale sta rivoluzionando le operazioni governative, migliorando l&#39;efficienza e aprendo la strada a un futuro più trasparente e responsabile.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#115 2025-05-19</h2>
@@ -118,7 +198,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-115/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <p>Il nuovo episodio del podcast esplora l&#39;importanza di abbracciare la trasformazione digitale in diversi settori. Gli esperti condividono idee su strategie innovative e sull&#39;impatto della tecnologia sulla crescita e sull&#39;efficienza. Gli ascoltatori possono apprendere approcci pratici per navigare efficacemente il paesaggio digitale.</p>
@@ -133,7 +213,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-115/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>AI Integration in Government Operations</h4>
                                 <p>L&#39;integrazione dell&#39;intelligenza artificiale nelle operazioni governative sta guadagnando terreno poiché la flessibilità diventa cruciale. Gli esperti affermano che la tecnologia dell&#39;intelligenza artificiale non solo può snellire i flussi di lavoro, migliorare il coinvolgimento pubblico e ottimizzare la fornitura dei servizi, ma può anche aprire la strada a un governo più efficiente e reattivo. Man mano che i governi si adattano ai progressi tecnologici, i vantaggi potenziali sono enormi, inclusi l&#39;aumento dell&#39;efficienza e la capacità di rispondere rapidamente ai bisogni in cambiamento. Comprendere l&#39;equilibrio tra innovazione e processi burocratici è fondamentale per un&#39;implementazione di successo.</p>
@@ -142,7 +222,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-115/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>California Embraces Generative AI for Governance</h4>
                                 <p>Il governatore della California, Gavin Newsom, ha annunciato il lancio di tecnologie all&#39;avanguardia di intelligenza artificiale generativa, posizionando lo stato come pioniere nell&#39;utilizzo dell&#39;IA per migliorare l&#39;efficienza governativa. Questa iniziativa ha l&#39;obiettivo di semplificare i servizi e fornire soluzioni innovative alle sfide pubbliche, soddisfacendo le aspettative in continua evoluzione dei cittadini. Abbracciando l&#39;intelligenza artificiale, la California cerca di stabilire un precedente per altri stati, enfatizzando il ruolo della tecnologia nel migliorare le operazioni governative e nel soddisfare le aspettative in continua evoluzione dei suoi cittadini.</p>
@@ -151,7 +231,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-115/12.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Intelligenza Artificiale per una Governance Etica</h4>
                                 <p>Una nuova legge sta aprendo la strada per un miglioramento della governance attraverso l&#39;intelligenza artificiale, preparando il terreno per la trasparenza e la responsabilità nelle pratiche di governo. La legislazione non solo supporta l&#39;uso dell&#39;intelligenza artificiale in vari settori pubblici, ma mette anche in risalto degli standard per una implementazione etica. Mentre i governi esplorano il potenziale dell&#39;intelligenza artificiale, questo quadro mira a garantire un uso responsabile, massimizzando i benefici dell&#39;intelligenza artificiale per la società.</p>
@@ -171,7 +251,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-115/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Panorama Aggiornato sulla Cybersicurezza</h4>
                                 <p>L&#39;ultimo aggiornamento sulla sicurezza delle informazioni evidenzia sviluppi significativi nel panorama della cybersicurezza, comprese le recenti vulnerabilità scoperte nel software ampiamente utilizzato e le implicazioni per le imprese. Con l&#39;accelerazione della trasformazione digitale, le organizzazioni devono dare priorità a misure di cybersicurezza robuste per proteggersi dalle minacce in evoluzione. Le sfide in corso sottolineano la necessità di vigilanza continua e adattamento nelle loro strategie di sicurezza per proteggere i dati sensibili e mantenere la fiducia dei clienti.</p>
@@ -180,7 +260,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="security.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-115/security.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Riautorizzazione della Cybersecurity Act Cruciale</h4>
                                 <p>Mentre si avvicina la scadenza del duemilaventicinque della Cybersecurity Information Sharing Act, un comitato della Camera si sta preparando a discutere la sua riautorizzazione. Questo atto, che facilita la condivisione di informazioni sulle minacce informatiche tra il governo e l&#39;industria, è stato fondamentale per migliorare la resilienza della cybersicurezza nazionale. La sua possibile riautorizzazione è cruciale per mantenere un ambiente digitale sicuro per tutti i soggetti coinvolti. I legislatori sottolineano che una collaborazione continua sarà essenziale per affrontare minacce informatiche sempre più sofisticate e garantire un ambiente digitale più sicuro per tutti.</p>
@@ -189,7 +269,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-115/26.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Cybersicurezza: Urgente Priorità per la Nigeria</h4>
                                 <p>Il governo della Nigeria è esortato a dare priorità alla cybersicurezza con urgenza, poiché le minacce alla sicurezza nazionale e alla stabilità economica continuano a crescere. Con una crescente dipendenza dalle infrastrutture digitali, affrontare le vulnerabilità è fondamentale per lo sviluppo del paese. Gli esperti sostengono politiche più forti, collaborazione tra le parti interessate e un aumento degli investimenti nell&#39;istruzione sulla cybersicurezza. Queste misure sono essenziali per salvaguardare il paesaggio digitale della Nigeria e proteggere i cittadini dalle minacce informatiche in aumento.</p>
@@ -209,7 +289,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-115/32.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>York Space Systems Launches Mission Bard</h4>
                                 <p>York Space Systems è pronta a lanciare la Missione Bard, un test di tecnologie avanzate di comunicazione per la NASA. La missione, programmata per avere luogo a breve, è fondamentale nella valutazione di nuove capacità che potrebbero migliorare le comunicazioni satellitari. Queste nuove capacità potrebbero potenzialmente rivoluzionare le comunicazioni satellitari, rendendole più affidabili ed efficienti. Come parte degli sforzi continui della NASA per migliorare l&#39;efficacia delle missioni, questo lancio rappresenta un passo significativo verso sistemi di comunicazione spaziale più efficienti. Rimanete sintonizzati per ulteriori aggiornamenti su questa entusiasmante iniziativa.</p>
@@ -218,7 +298,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-115/36.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Starlink Amplifies Africa&#39;s Internet Potential</h4>
                                 <p>La rapida crescita di Starlink in Africa evidenzia il potenziale non sfruttato del continente per l&#39;internet satellitare. Il servizio ha registrato un aumento record nell&#39;assunzione, dimostrando una domanda significativa per un accesso a banda larga affidabile. Questa espansione non solo sottolinea la necessità di una connettività digitale migliorata, ma indica anche opportunità per lo sviluppo economico in tutta la regione. Con l&#39;aumento degli utenti online, l&#39;impatto sull&#39;istruzione e sul commercio potrebbe essere trasformativo.</p>
@@ -227,7 +307,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="40.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-115/40.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Ritardi Starlink: Preoccupazioni per la Connessione</h4>
                                 <p>Un rilascio ritardato di Starlink in un comune ha sollevato preoccupazioni tra i residenti ansiosi di migliorare l&#39;accesso alla banda larga. Questo ritardo non solo frustra i residenti, ma sottolinea anche le sfide in corso nell&#39;ampliare i servizi internet di alta qualità nelle aree svantaggiate. Mette in evidenza la necessità di strategie di distribuzione più efficienti e l&#39;importanza di superare gli ostacoli per garantire che ogni cittadino benefici di un internet veloce e affidabile, fondamentale per il lavoro, l&#39;istruzione e la connettività nell&#39;era digitale odierna.</p>
@@ -251,3 +331,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

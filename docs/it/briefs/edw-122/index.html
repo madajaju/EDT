@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="Trasformazione Digitale per la settimana del 7 luglio 2025, inclusa la notizia dall&#39;Intelligenza Artificiale, Sicurezza Informatica e Informatica Ubiqua. Scopri come Amazon e Walmart stanno ridefinendo il commercio al dettaglio attraverso l&#39;IA, mentre l&#39;industria legale affronta le sue implicazioni etiche. Il Texas è in prima linea nella governance responsabile dell&#39;IA, il tutto in un contesto di urgenti sfide di sicurezza informatica e strategie digitali trasformative.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="Trasformazione Digitale per la settimana del 7 luglio 2025, inclusa la notizia dall&#39;Intelligenza Artificiale, Sicurezza Informatica e Informatica Ubiqua. Scopri come Amazon e Walmart stanno ridefinendo il commercio al dettaglio attraverso l&#39;IA, mentre l&#39;industria legale affronta le sue implicazioni etiche. Il Texas è in prima linea nella governance responsabile dell&#39;IA, il tutto in un contesto di urgenti sfide di sicurezza informatica e strategie digitali trasformative.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="Trasformazione Digitale per la settimana del 7 luglio 2025, inclusa la notizia dall&#39;Intelligenza Artificiale, Sicurezza Informatica e Informatica Ubiqua. Scopri come Amazon e Walmart stanno ridefinendo il commercio al dettaglio attraverso l&#39;IA, mentre l&#39;industria legale affronta le sue implicazioni etiche. Il Texas è in prima linea nella governance responsabile dell&#39;IA, il tutto in un contesto di urgenti sfide di sicurezza informatica e strategie digitali trasformative.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 7 luglio 2025, inclusa la notizia dall&#39;Intelligenza Artificiale, Sicurezza Informatica e Informatica Ubiqua. Scopri come Amazon e Walmart stanno ridefinendo il commercio al dettaglio attraverso l&#39;IA, mentre l&#39;industria legale affronta le sue implicazioni etiche. Il Texas è in prima linea nella governance responsabile dell&#39;IA, il tutto in un contesto di urgenti sfide di sicurezza informatica e strategie digitali trasformative.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="Trasformazione Digitale per la settimana del 7 luglio 2025, inclusa la notizia dall&#39;Intelligenza Artificiale, Sicurezza Informatica e Informatica Ubiqua. Scopri come Amazon e Walmart stanno ridefinendo il commercio al dettaglio attraverso l&#39;IA, mentre l&#39;industria legale affronta le sue implicazioni etiche. Il Texas è in prima linea nella governance responsabile dell&#39;IA, il tutto in un contesto di urgenti sfide di sicurezza informatica e strategie digitali trasformative.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 7 luglio 2025, inclusa la notizia dall&#39;Intelligenza Artificiale, Sicurezza Informatica e Informatica Ubiqua. Scopri come Amazon e Walmart stanno ridefinendo il commercio al dettaglio attraverso l&#39;IA, mentre l&#39;industria legale affronta le sue implicazioni etiche. Il Texas è in prima linea nella governance responsabile dell&#39;IA, il tutto in un contesto di urgenti sfide di sicurezza informatica e strategie digitali trasformative.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#122 2025-07-07</h2>
@@ -118,7 +198,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="46.jpeg" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-122/46.jpeg" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>AI&#39;s Impact on IT Management</h3>
                 <p>Nel più recente episodio di &#39;Abbracciare la Trasformazione Digitale,&#39; il Dottor Darren ospita Shirish Nimgaonkar, amministratore delegato di eBlissAI, discutendo l&#39;impatto dell&#39;intelligenza artificiale sulla gestione IT. Esplorano come l&#39;intelligenza artificiale trasformi le dinamiche sul posto di lavoro, con un focus sulle complessità della gestione dei dispositivi. L&#39;episodio sottolinea la necessità di tecniche diagnostiche più avanzate, cercando di trovare un equilibrio tra automazione e intervento umano, e mette in evidenza le capacità predittive dell&#39;intelligenza artificiale per migliorare la produttività e la soddisfazione dei dipendenti in un mondo guidato dalla tecnologia.</p>
@@ -133,7 +213,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="ai.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-122/ai.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>IA: Il Futuro del Commercio al Dettaglio</h4>
                                 <p>Amazon e Walmart sono in prima linea in un&#39;era trasformativa, adottando continuamente tecnologie di intelligenza artificiale (IA) per rivoluzionare le loro operazioni e migliorare l&#39;esperienza del cliente. Questi giganti della vendita al dettaglio stanno sfruttando il potere dell&#39;IA per la gestione dell&#39;inventario, esperienze di shopping personalizzate e logistica snella. Integrando algoritmi sofisticati, mirano non solo a ottimizzare il processo decisionale e migliorare l&#39;efficienza, ma anche a ridefinire il mercato della vendita al dettaglio, offrendo un&#39;esperienza di acquisto più personalizzata ed efficiente. Questo cambiamento sottolinea il potenziale immenso dell&#39;IA nel plasmare il futuro del commercio, promettendo un paesaggio commerciale più dinamico e incentrato sul cliente.</p>
@@ -142,7 +222,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-122/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Intelligenza Artificiale e Riforma Legale</h4>
                                 <p>Con l&#39;evoluzione continua dell&#39;intelligenza artificiale, il settore legale è pronto per una trasformazione significativa. Gli esperti avvertono di una potenziale catastrofe legale, come decisioni distorte da parte dell&#39;intelligenza artificiale o perdite di posti di lavoro a causa dell&#39;automazione, derivanti dall&#39;influenza dell&#39;intelligenza artificiale sulle pratiche legali. Stanno emergendo discussioni riguardo alle implicazioni etiche, alla responsabilità e alla necessità di quadri normativi per garantire l&#39;uso responsabile dell&#39;intelligenza artificiale all&#39;interno del settore legale. Affrontare queste sfide è cruciale man mano che l&#39;intelligenza artificiale diventa sempre più integrata nei processi legali.</p>
@@ -151,7 +231,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-122/12.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Texas Unveils Comprehensive AI Legislation</h4>
                                 <p>Il Texas è pronto a implementare una legge completa sull&#39;intelligenza artificiale progettata per affrontare le sfide presentate dalle tecnologie di intelligenza artificiale emergenti. La legislazione mira a garantire trasparenza, responsabilità e pratiche etiche nell&#39;impiego dell&#39;intelligenza artificiale in vari settori. Questo approccio proattivo cerca di tutelare i diritti dei consumatori mentre promuove l&#39;innovazione all&#39;interno dello stato. Con l&#39;intelligenza artificiale che diventa sempre più parte integrante della vita quotidiana, il Texas punta a posizionarsi come un leader nella governance responsabile dell&#39;intelligenza artificiale.</p>
@@ -171,7 +251,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-122/18.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Cyber Attack Exposes ICC&#39;s Security Flaws</h4>
                                 <p>Un recente attacco informatico alla Corte Penale Internazionale (CPI) all&#39;Aia ha messo in evidenza vulnerabilità digitali significative all&#39;interno dei sistemi di difesa legale. Questo incidente funge da campanello d&#39;allarme, sottolineando l&#39;urgenza di misure di cybersicurezza potenziate per proteggere informazioni legali sensibili. Gli esperti chiedono ora una revisione immediata e completa dei protocolli di sicurezza della CPI per garantire l&#39;integrità delle procedure legali e tutelarsi contro future violazioni. Il momento di agire è adesso.</p>
@@ -180,7 +260,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-122/22.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Leadership Innovativa nella Cybersecurity Aziendale</h4>
                                 <p>Le aziende leader, come Google, Mercado Livre e Petrobras, stanno rimodellando la leadership nella cybersecurity all&#39;interno dei loro team legali. Dare priorità a strategie proattive, come il monitoraggio continuo, la condivisione dell&#39;intelligence sulle minacce e la conduzione di audit di sicurezza regolari, è l&#39;obiettivo di queste imprese per mitigare i rischi e migliorare le loro difese contro le minacce informatiche. I loro approcci innovativi servono da modello per le organizzazioni che cercano di rafforzare i loro frameworks di cybersecurity, assicurando la conformità legale mentre mantengono la sicurezza dei dati vitali in un panorama delle minacce in rapida evoluzione.</p>
@@ -189,7 +269,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-122/26.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Riforma Normative Cybersecurity: Richiesta NAM</h4>
                                 <p>L&#39;Associazione Nazionale dei Fabricanti (NAM) sta esortando la Commissione per i Titoli e gli Scambi degli Stati Uniti (SEC) a rivedere le sue norme sulla divulgazione della cybersecurity. Le organizzazioni sostengono che le normative attuali possano creare panico inutile, poiché potrebbero costringere le aziende a rivelare rischi potenziali prima che una minaccia sia completamente compresa e valutata. NAM sostiene un approccio equilibrato che protegga sia le aziende sia gli investitori dalla disinformazione, promuovendo al contempo la trasparenza nelle pratiche di cybersecurity.</p>
@@ -209,7 +289,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-122/32.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Transformazione Digitale di SEC e PTO</h4>
                                 <p>La SEC e il PTO stanno intraprendendo la prossima fase della loro trasformazione digitale, concentrandosi sul miglioramento dell&#39;efficienza operativa attraverso l&#39;uso di tecnologie avanzate. Questa iniziativa mira a semplificare i processi e migliorare la fornitura dei servizi sfruttando il potere degli strumenti digitali per soddisfare le crescenti richieste. Prioritizzando gli aggiornamenti dell&#39;infrastruttura e dell&#39;esperienza dell&#39;utente, le agenzie si sforzano di mantenere la trasparenza e migliorare il coinvolgimento degli stakeholder in un panorama digitale in rapida evoluzione.</p>
@@ -218,7 +298,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-122/36.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Investimenti USA in AI e Cloud</h4>
                                 <p>Nel tentativo di rafforzare la sicurezza nazionale, il governo degli Stati Uniti sta investendo in intelligenza artificiale sovrana e modelli di cloud computing open-source. Questa iniziativa mira a potenziare l’autosufficienza tecnologica sviluppando capacità domestiche nell’intelligenza artificiale, proteggendo al contempo i dati sensibili da potenziali minacce. Promuovendo innovazione e collaborazione all&#39;interno dell&#39;industria, i funzionari mirano a stabilire un quadro robusto per il cloud computing che equilibri sia la sicurezza che l&#39;efficienza.</p>
@@ -227,7 +307,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="cloud.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-122/cloud.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Ripatrizione del Cloud: Una Scelta Strategica</h4>
                                 <p>La ripatrizione del cloud, il processo di spostamento dei carichi di lavoro dal cloud ai server on-premises, sta emergendo come una conversazione strategica tra le organizzazioni che valutano i costi e le implicazioni di sicurezza dei carichi di lavoro on-premises. Le sfumature coinvolte nella decisione di spostare i carichi di lavoro sui server locali o mantenerli nel cloud sono fondamentali. Le aziende devono valutare attentamente le proprie esigenze di sicurezza, l&#39;efficacia economica e l&#39;efficienza operativa complessiva mentre navigano in questo panorama in evoluzione, sottolineando l&#39;importanza di prendere decisioni informate nell&#39;economia tecnologica di oggi.</p>
@@ -251,3 +331,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

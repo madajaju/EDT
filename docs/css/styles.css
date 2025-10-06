@@ -52,14 +52,17 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #ffff; /* Adjust based on your theme */
-    padding: 10px 15px;
+    padding: 10px 5px;
     display: block;
+    line-height: 1;
 }
 
 /* Dropdown menu styling */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+/* Keep hover behavior, also show when JS adds .open */
+.dropdown.open .dropdown-menu { display: block; }
 
 .news-icon {
     width: 100%;
@@ -135,6 +138,47 @@ nav ul li a:hover {
     .menu-open nav ul {
         display: flex;
     }
+    body.menu-open nav ul { display: block; }
+}
+
+/* --- Mobile toggle visibility (if not already set) --- */
+.menu-toggle { display: none; }
+
+/* Show hamburger & hide nav list by default on small screens */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: inline-block;
+        background: none;
+        border: 0;
+        font-size: 28px;
+        line-height: 1;
+        color: #fff;
+        cursor: pointer;
+        padding: 8px 12px;
+    }
+
+    /* The base rule in your CSS already hides the menu: nav ul { display:none; } */
+    body.menu-open nav ul {
+        display: flex;           /* aligns with your flex-direction: column; */
+    }
+
+    /* Make dropdown menus flow in the stacked layout */
+    nav ul li.dropdown .dropdown-menu {
+        position: static;        /* stop absolute positioning on mobile */
+        width: 100%;
+    }
+}
+
+/* Keep your existing :hover behavior on desktop,
+   but also show submenu when JS adds .open */
+.dropdown.open > .dropdown-menu {
+    display: block;
+}
+
+/* Accessibility: make tap targets comfy */
+nav a {
+    display: inline-flex;
+    align-items: center;
 }
 
 /* 🎙️ Hero Section */
@@ -900,4 +944,53 @@ body.dark-mode {
 .search-results-count {
     font-size: 0.8rem;
     font-style: italic;
+}
+
+.show-card {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 3rem auto;
+    flex-wrap: wrap;
+}
+.show-card.reverse {
+    flex-direction: row-reverse;
+}
+.show-image img {
+    max-width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.show-content {
+    flex: 1;
+    min-width: 260px;
+}
+.show-content h2 {
+    margin-top: 0;
+}
+.show-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.show-links .btn {
+    background: #2563eb;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.show-links .btn:hover {
+    background: #1e40af;
+}
+@media (max-width: 768px) {
+    .show-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .show-card.reverse {
+        flex-direction: column;
+    }
 }

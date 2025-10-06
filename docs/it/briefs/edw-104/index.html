@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="La Trasformazione Digitale per il 23 febbraio 2025 include notizie su Intelligenza Artificiale, Cybersecurity e Informatica Ubiqua. Scopri come le recenti scoperte nell&#39;addestramento dell&#39;IA, le intuizioni sul sistema immunitario e le misure di cybersecurity stanno rivoluzionando le industrie e migliorando la privacy personale nel nostro paesaggio digitale in rapida evoluzione.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="La Trasformazione Digitale per il 23 febbraio 2025 include notizie su Intelligenza Artificiale, Cybersecurity e Informatica Ubiqua. Scopri come le recenti scoperte nell&#39;addestramento dell&#39;IA, le intuizioni sul sistema immunitario e le misure di cybersecurity stanno rivoluzionando le industrie e migliorando la privacy personale nel nostro paesaggio digitale in rapida evoluzione.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="La Trasformazione Digitale per il 23 febbraio 2025 include notizie su Intelligenza Artificiale, Cybersecurity e Informatica Ubiqua. Scopri come le recenti scoperte nell&#39;addestramento dell&#39;IA, le intuizioni sul sistema immunitario e le misure di cybersecurity stanno rivoluzionando le industrie e migliorando la privacy personale nel nostro paesaggio digitale in rapida evoluzione.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="La Trasformazione Digitale per il 23 febbraio 2025 include notizie su Intelligenza Artificiale, Cybersecurity e Informatica Ubiqua. Scopri come le recenti scoperte nell&#39;addestramento dell&#39;IA, le intuizioni sul sistema immunitario e le misure di cybersecurity stanno rivoluzionando le industrie e migliorando la privacy personale nel nostro paesaggio digitale in rapida evoluzione.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="La Trasformazione Digitale per il 23 febbraio 2025 include notizie su Intelligenza Artificiale, Cybersecurity e Informatica Ubiqua. Scopri come le recenti scoperte nell&#39;addestramento dell&#39;IA, le intuizioni sul sistema immunitario e le misure di cybersecurity stanno rivoluzionando le industrie e migliorando la privacy personale nel nostro paesaggio digitale in rapida evoluzione.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="La Trasformazione Digitale per il 23 febbraio 2025 include notizie su Intelligenza Artificiale, Cybersecurity e Informatica Ubiqua. Scopri come le recenti scoperte nell&#39;addestramento dell&#39;IA, le intuizioni sul sistema immunitario e le misure di cybersecurity stanno rivoluzionando le industrie e migliorando la privacy personale nel nostro paesaggio digitale in rapida evoluzione.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#104 2025-02-24</h2>
@@ -118,7 +198,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-104/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Transforming Visitor Experiences with Technology</h3>
                 <p>In questo episodio, il Dottor Darren intervista Donny White, che condivide il suo percorso da un background nella finanza alla co-fondazione di SatisfiLabs. Questa azienda è dedicata a migliorare le esperienze dei visitatori nello sport, nell&#39;intrattenimento e nel turismo attraverso una tecnologia innovativa. La discussione affronta le sfide dell&#39;integrazione tra esperienze fisiche e digitali, l&#39;importanza della gestione dei dati e il futuro ruolo dell&#39;intelligenza artificiale nelle interazioni con i clienti. Donny sottolinea la necessità di una tecnologia basata sui risultati che dia priorità all&#39;esperienza dell&#39;utente e discute il potenziale di espansione in settori correlati.</p>
@@ -133,7 +213,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-104/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Sakana AI Rivoluziona Formazione Intelligenza Artificiale</h4>
                                 <p>L&#39;azienda giapponese Sakana AI ha annunciato un&#39;importante svolta nella formazione dell&#39;intelligenza artificiale, affermando di migliorare l&#39;efficienza nello sviluppo di modelli di intelligenza artificiale. Questo progresso potrebbe portare a tempi di formazione ridotti e a un minor consumo di risorse, il che è cruciale per le aziende tecnologiche che mirano a una più rapida implementazione delle applicazioni di intelligenza artificiale. L&#39;innovazione è prevista a beneficio di settori come la finanza, la salute e i veicoli autonomi, segnando un passo significativo avanti nella tecnologia dell&#39;intelligenza artificiale.</p>
@@ -142,7 +222,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-104/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>AI Unveils Immune System Secrets</h4>
                                 <p>Recenti progressi nell&#39;apprendimento automatico hanno rivelato nuovi segreti del sistema immunitario, trasformando potenzialmente la medicina di precisione. Analizzando enormi quantità di dati sulle risposte immunitarie, i ricercatori possono sviluppare trattamenti personalizzati più efficaci. Questa scoperta apre la strada a terapie su misura per varie malattie, ottimizzando i risultati per i pazienti e minimizzando gli effetti avversi, segnando un futuro promettente per l&#39;innovazione sanitaria e le strategie di trattamento individualizzato.</p>
@@ -151,7 +231,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-104/12.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Piccoli Modelli: Rivoluzione nell&#39;IA</h4>
                                 <p>I piccoli modelli linguistici stanno emergendo come fattori di cambiamento nel panorama dell&#39;intelligenza artificiale, potenzialmente ridefinendo le dinamiche competitive del settore. Questi modelli, con la loro efficienza ed efficacia in vari compiti di elaborazione del linguaggio naturale, offrono un futuro promettente per l&#39;intelligenza artificiale. Mentre le aziende cercano soluzioni economiche ma robuste, i piccoli modelli linguistici potrebbero fornire vantaggi significativi, spingendo i grandi nomi della tecnologia a rivalutare le loro strategie di implementazione e sviluppo dell&#39;intelligenza artificiale.</p>
@@ -171,7 +251,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.webp" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-104/18.webp" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Bybit Submits to $146M Security Breach</h4>
                                 <p>Bybit, un exchange di criptovalute, ha confermato una straordinaria perdita di centoquarantasei milioni di dollari a causa di una gigantesca violazione di sicurezza. L&#39;attacco ha sfruttato vulnerabilità nella loro infrastruttura, suscitando preoccupazioni riguardo alla sicurezza degli attivi digitali su piattaforme centralizzate. Bybit ha esortato gli utenti a migliorare la sicurezza dei propri account e a rimanere vigili contro futuri attacchi, sottolineando l&#39;importanza di proteggere le informazioni personali nel paesaggio digitale in continua evoluzione.</p>
@@ -180,7 +260,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="security.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-104/security.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Darcula: Nuovo Kit di Phishing Svelato</h4>
                                 <p>Un sofisticato kit di phishing, soprannominato &#39;Darcula&#39;, è stato identificato. È in grado di impersonare marchi noti per ingannare gli utenti e costringerli a rivelare informazioni sensibili. Gli analisti della sicurezza avvertono che questo toolkit malevolo si sta diffondendo rapidamente tra i criminali informatici. Tuttavia, le organizzazioni possono potenziare la loro protezione rimanendo vigili rispetto a potenziali truffe e adottando misure proattive per educare i dipendenti a riconoscere i tentativi di phishing, poiché questa tattica continua a rappresentare minacce significative per la sicurezza dei dati.</p>
@@ -189,7 +269,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-104/26.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Salt Typhoon Exploits Cisco Vulnerability</h4>
                                 <p>Il gruppo di attori malevoli &#39;Salt Typhoon&#39; ha sfruttato una vulnerabilità critica di Cisco, consentendo l&#39;accesso non autorizzato ai sistemi. Questo sfruttamento evidenzia l&#39;urgente bisogno per le organizzazioni di implementare tempestivamente le patch di sicurezza e i protocolli di monitoraggio. Con l&#39;espansione del campo operativo del gruppo, gli esperti di cybersecurity sottolineano la necessità di un&#39;azione immediata per mitigare l&#39;esposizione a queste vulnerabilità, garantendo l&#39;integrità e la riservatezza dei dati sensibili.</p>
@@ -209,7 +289,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-104/32.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Apple Potenzia Privacy con Nuove Funzionalità</h4>
                                 <p>L&#39;ultima funzionalità di sicurezza dell&#39;iPhone di Apple mira a migliorare la protezione dei dati contro le infiltrazioni governative. La tecnologia cripta i dati degli utenti, consentendo agli individui un maggiore controllo sulla propria privacy. Questa iniziativa sottolinea le crescenti preoccupazioni riguardo alla sorveglianza e cerca di dare potere agli utenti per proteggere le proprie informazioni personali. La mossa di Apple è destinata a influenzare il modo in cui le aziende tecnologiche affrontano la privacy degli utenti e le regolamentazioni governative in un mondo sempre più digitale.</p>
@@ -218,7 +298,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-104/36.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Revolutionizing Precision Medicine with AWS</h4>
                                 <p>Amazon Web Services (AWS) ha collaborato con MSK per promuovere i progressi nella medicina di precisione attraverso il calcolo ad alte prestazioni (HPC) e l&#39;intelligenza artificiale (AI). Questa collaborazione mira a perfezionare l&#39;analisi dei dati e a migliorare i risultati per i pazienti utilizzando tecnologie all&#39;avanguardia. Sfruttando le capacità di HPC e AI, AWS e MSK cercano di accelerare la ricerca medica e semplificare i processi di trattamento, segnando una significativa evoluzione nella tecnologia sanitaria.</p>
@@ -227,7 +307,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="40.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-104/40.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Nuovo Framework Cloud per Telemedicina</h4>
                                 <p>È stato introdotto un nuovo framework nebbioso di cloud per migliorare i servizi di telemedicina. Questa architettura innovativa mira a migliorare l&#39;efficienza e l&#39;affidabilità delle applicazioni mediche distribuendo l&#39;elaborazione dei dati più vicino ai pazienti. Il framework supporta una consegna tempestiva delle cure e la medicina personalizzata consentendo la raccolta e l&#39;analisi dei dati in tempo reale. Questo progresso tecnologico è pronto a trasformare il modo in cui i fornitori di assistenza sanitaria sfruttano i sistemi distribuiti per una migliore cura dei pazienti, potenzialmente riducendo i tempi di risposta e migliorando i risultati per i pazienti.</p>
@@ -251,3 +331,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

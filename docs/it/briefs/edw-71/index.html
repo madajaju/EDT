@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="Notizie sulla Trasformazione Digitale per la settimana del 9 giugno 2024, inclusi articoli su intelligenza artificiale, Cybersecurity e gestione dei dati. Questa settimana Intel riscalda il marketing dei chip AI con Gaudi 3, Microsoft annulla una gaffe di cybersecurity, e stanno emergendo nuovi modelli di gestione dei dati.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="Notizie sulla Trasformazione Digitale per la settimana del 9 giugno 2024, inclusi articoli su intelligenza artificiale, Cybersecurity e gestione dei dati. Questa settimana Intel riscalda il marketing dei chip AI con Gaudi 3, Microsoft annulla una gaffe di cybersecurity, e stanno emergendo nuovi modelli di gestione dei dati.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="Notizie sulla Trasformazione Digitale per la settimana del 9 giugno 2024, inclusi articoli su intelligenza artificiale, Cybersecurity e gestione dei dati. Questa settimana Intel riscalda il marketing dei chip AI con Gaudi 3, Microsoft annulla una gaffe di cybersecurity, e stanno emergendo nuovi modelli di gestione dei dati.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="Notizie sulla Trasformazione Digitale per la settimana del 9 giugno 2024, inclusi articoli su intelligenza artificiale, Cybersecurity e gestione dei dati. Questa settimana Intel riscalda il marketing dei chip AI con Gaudi 3, Microsoft annulla una gaffe di cybersecurity, e stanno emergendo nuovi modelli di gestione dei dati.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="Notizie sulla Trasformazione Digitale per la settimana del 9 giugno 2024, inclusi articoli su intelligenza artificiale, Cybersecurity e gestione dei dati. Questa settimana Intel riscalda il marketing dei chip AI con Gaudi 3, Microsoft annulla una gaffe di cybersecurity, e stanno emergendo nuovi modelli di gestione dei dati.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="Notizie sulla Trasformazione Digitale per la settimana del 9 giugno 2024, inclusi articoli su intelligenza artificiale, Cybersecurity e gestione dei dati. Questa settimana Intel riscalda il marketing dei chip AI con Gaudi 3, Microsoft annulla una gaffe di cybersecurity, e stanno emergendo nuovi modelli di gestione dei dati.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#71 2024-06-09</h2>
@@ -158,7 +238,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-71/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>AI Security Insights with Intel&#39;s CTO</h3>
                 <p>Questa settimana su Embracing Digital Transformation, Darren prosegue con un&#39;altra intervista con il CTO di Intel Federal, Steve Orrin. Parlano della sicurezza delle operazioni AI/ML e dell&#39;affidabilità dei modelli di Intelligenza Artificiale in fase di addestramento e produzione.</p>
@@ -173,7 +253,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-71/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>SAP Launches Game-Changing AI Integration</h4>
                                 <p>SAP ha presentato un&#39;integrazione rivoluzionaria dell&#39;intelligenza artificiale (IA) nella sua suite di prodotti, una mossa destinata a rivoluzionare i processi aziendali in tutti i settori. Questa strategia pionieristica include strumenti potenziati da IA per l&#39;ottimizzazione della catena di fornitura, l&#39;automazione finanziaria e le risorse umane. Le capacità all&#39;avanguardia di SAP in termini di IA sono pronte a potenziare l&#39;efficienza, ridurre i costi e consentire alle imprese di prendere decisioni più intelligenti. L&#39;uso di partnership e innovazioni interne dell&#39;azienda per fornire queste soluzioni avanzate segna un cambiamento significativo nella strategia tecnologica, promettendo un futuro di possibilità senza precedenti.</p>
@@ -182,7 +262,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-71/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Apple Unveils User-Centric AI Innovation</h4>
                                 <p>L&#39;ultima innovazione di Apple, &#39;Apple Intelligence&#39;, è un sistema di intelligenza artificiale incentrato sull&#39;utente integrato nei sistemi operativi iPhone, iPad e Mac. Questa iniziativa, svelata al WWDC, è progettata per migliorare le esperienze degli utenti attraverso funzionalità alimentate da IA e un chatbot simile a ChatGPT. Il piano di Apple include il rilascio di nuovi software per Vision Pro, Apple Watch e piattaforme TV, con le funzionalità di IA che sono opzionali e disponibili sui modelli di dispositivo più recenti. L&#39;attenzione dell&#39;azienda sul mettere in evidenza le misure di sicurezza per l&#39;elaborazione dei dati di IA affronta le preoccupazioni sulla privacy, garantendo un&#39;esperienza utente sicura e migliorata.</p>
@@ -191,7 +271,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="ai.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-71/ai.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Intel Sfida Nvidia nel Mercato IA</h4>
                                 <p>Il CEO di Intel Pat Gelsinger ha fatto una mossa audace in risposta al dominio di Nvidia nei chip IA, sottolineando i progressi strategici e gli investimenti di Intel nella tecnologia IA. Gelsinger ha messo in risalto i futuri chip di Intel, che sono pronti a competere con le GPU di Nvidia e riconquistare la leadership nel mercato dell&#39;IA. Gli sforzi di Intel, inclusi le innovazioni nell&#39;architettura dei chip e le partnership con i principali sviluppatori di IA, dimostrano l&#39;impegno incrollabile dell&#39;azienda a sfidare l&#39;attuale posizione di mercato di Nvidia e ad avanzare le capacità dell&#39;IA.</p>
@@ -211,7 +291,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-71/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Microsoft Riconsidera Decisione sulla Sicurezza</h4>
                                 <p>Microsoft ha invertito una significativa decisione sulla sicurezza informatica ampiamente criticata come la mossa &#34;più stupida&#34; dell&#39;ultimo decennio. L&#39;annullamento segue le reazioni di esperti di sicurezza e utenti che hanno evidenziato l&#39;aumento delle vulnerabilità che ha causato. I cambiamenti specifici riguardavano le impostazioni predefinite che indebolivano le posizioni di sicurezza. Microsoft ha riconosciuto l&#39;errore e ripristinato protezioni più forti, ribadendo il suo impegno per la sicurezza e la privacy degli utenti.</p>
@@ -220,7 +300,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-71/22.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Partnership AI: Trend Micro e Intel</h4>
                                 <p>Trend Micro e Intel si sono unite per sviluppare nuove soluzioni di sicurezza alimentate da intelligenza artificiale. Questa collaborazione mira a migliorare la sicurezza informatica integrando tecnologie avanzate di intelligenza artificiale nei prodotti di sicurezza di Trend Micro, sfruttando le capacità hardware di Intel. L&#39;obiettivo è migliorare il rilevamento delle minacce e i tempi di risposta, fornendo una protezione più robusta contro le emergenti minacce informatiche. Questa partnership sottolinea l&#39;importanza crescente dell&#39;intelligenza artificiale nel panorama della sicurezza informatica.</p>
@@ -229,7 +309,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-71/26.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Nuovo Ransomware Utilizza Intelligenza Artificiale</h4>
                                 <p>Ricercatori della Texas A&amp;M University e della Ho Technical University hanno sviluppato un nuovo metodo d&#39;attacco ransomware chiamato Evolutional Generative Adversarial Network (EGAN). Questo approccio utilizza l&#39;intelligenza artificiale avanzata per creare ransomware in grado di eludere molti sistemi antivirus commerciali. Combinando strategie evolutive e GANs, il ransomware può mutare e apparire benigno, rendendo la rilevazione difficile. Le scoperte evidenziano la necessità di misure di sicurezza informatica più robuste per contrastare queste minacce sofisticate.</p>
@@ -249,7 +329,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg; charset=binary" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-71/32.jpeg; charset=binary" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Franchising: Innovazione nella Gestione dei Dati</h4>
                                 <p>Una recente ricerca della Harvard Business Review dimostra che i leader IT dovrebbero considerare l&#39;adozione di un modello di franchising per la gestione dei dati per migliorare la coerenza, l&#39;escalabilità e l&#39;efficienza nelle loro organizzazioni. Questo approccio prevede la creazione di pratiche e strumenti di dati standardizzati che possono essere replicati in vari dipartimenti o unità, similmente a come opera un franchising. Facendo ciò, le organizzazioni possono garantire una migliore governance dei dati, ridurre la ridondanza e migliorare la qualità complessiva dei dati, portando a decisioni più informate e all&#39;eccellenza operativa.</p>
@@ -258,7 +338,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="data.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-71/data.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Databricks Acquires Tabular to Enhance Analytics</h4>
                                 <p>Databricks ha annunciato l&#39;acquisizione della startup di gestione dei dati Tabular. Questa mossa strategica mira a potenziare le capacità di gestione dei dati e di analisi di Databricks, integrando le innovative tecnologie di Tabular nella sua piattaforma esistente. Si prevede che l&#39;acquisizione rafforzerà la posizione di Databricks nel mercato dell&#39;analisi dei dati fornendo agli utenti soluzioni più avanzate e complete. Questo sviluppo segnala un trend crescente di consolidamento nel settore della gestione dei dati.</p>
@@ -267,7 +347,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="40.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-71/40.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Blockchain: Sicurezza e Conformità Documentale</h4>
                                 <p>Sfruttare la blockchain per la gestione dei documenti migliora la sicurezza e la conformità fornendo un sistema a prova di manomissione e trasparente. La blockchain garantisce l&#39;integrità del documento, migliora le tracce di verifica e facilita la condivisione sicura degli stakeholder. Questa tecnologia beneficia le industrie con requisiti normativi rigorosi, in quanto automatizza i processi di conformità e riduce il rischio di violazioni dei dati. Integrando la blockchain, le organizzazioni possono semplificare i flussi di lavoro dei documenti e garantire un affidabile tenuta dei registri.</p>
@@ -291,3 +371,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

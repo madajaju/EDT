@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="Notizie sulla trasformazione digitale per la settimana del 26 maggio 2024, inclusi articoli su calcolo ad alte prestazioni, intelligenza artificiale e cybersecurity. Non perdere l&#39;arrivo del supercomputer Aurora di Intel all&#39;exascale mentre il calcolo quantistico fa passi da gigante all&#39;Università di Basilea. Le vulnerabilità dell&#39;IA evidenziano l&#39;urgenza della cybersecurity. Con i regolamenti che impongono difese più robuste, le organizzazioni devono rafforzare l&#39;infrastruttura digitale contro le crescenti minacce informatiche.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="Notizie sulla trasformazione digitale per la settimana del 26 maggio 2024, inclusi articoli su calcolo ad alte prestazioni, intelligenza artificiale e cybersecurity. Non perdere l&#39;arrivo del supercomputer Aurora di Intel all&#39;exascale mentre il calcolo quantistico fa passi da gigante all&#39;Università di Basilea. Le vulnerabilità dell&#39;IA evidenziano l&#39;urgenza della cybersecurity. Con i regolamenti che impongono difese più robuste, le organizzazioni devono rafforzare l&#39;infrastruttura digitale contro le crescenti minacce informatiche.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="Notizie sulla trasformazione digitale per la settimana del 26 maggio 2024, inclusi articoli su calcolo ad alte prestazioni, intelligenza artificiale e cybersecurity. Non perdere l&#39;arrivo del supercomputer Aurora di Intel all&#39;exascale mentre il calcolo quantistico fa passi da gigante all&#39;Università di Basilea. Le vulnerabilità dell&#39;IA evidenziano l&#39;urgenza della cybersecurity. Con i regolamenti che impongono difese più robuste, le organizzazioni devono rafforzare l&#39;infrastruttura digitale contro le crescenti minacce informatiche.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="Notizie sulla trasformazione digitale per la settimana del 26 maggio 2024, inclusi articoli su calcolo ad alte prestazioni, intelligenza artificiale e cybersecurity. Non perdere l&#39;arrivo del supercomputer Aurora di Intel all&#39;exascale mentre il calcolo quantistico fa passi da gigante all&#39;Università di Basilea. Le vulnerabilità dell&#39;IA evidenziano l&#39;urgenza della cybersecurity. Con i regolamenti che impongono difese più robuste, le organizzazioni devono rafforzare l&#39;infrastruttura digitale contro le crescenti minacce informatiche.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="Notizie sulla trasformazione digitale per la settimana del 26 maggio 2024, inclusi articoli su calcolo ad alte prestazioni, intelligenza artificiale e cybersecurity. Non perdere l&#39;arrivo del supercomputer Aurora di Intel all&#39;exascale mentre il calcolo quantistico fa passi da gigante all&#39;Università di Basilea. Le vulnerabilità dell&#39;IA evidenziano l&#39;urgenza della cybersecurity. Con i regolamenti che impongono difese più robuste, le organizzazioni devono rafforzare l&#39;infrastruttura digitale contro le crescenti minacce informatiche.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="Notizie sulla trasformazione digitale per la settimana del 26 maggio 2024, inclusi articoli su calcolo ad alte prestazioni, intelligenza artificiale e cybersecurity. Non perdere l&#39;arrivo del supercomputer Aurora di Intel all&#39;exascale mentre il calcolo quantistico fa passi da gigante all&#39;Università di Basilea. Le vulnerabilità dell&#39;IA evidenziano l&#39;urgenza della cybersecurity. Con i regolamenti che impongono difese più robuste, le organizzazioni devono rafforzare l&#39;infrastruttura digitale contro le crescenti minacce informatiche.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#69 2024-05-26</h2>
@@ -154,7 +234,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-69/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Transformazione Digitale: Intervista con Manish Tandon</h3>
                 <p>Questa settimana, Darren ha intervistato l&#39;amministratore delegato e direttore generale di Zensar Technologies, Manish Tandon, riguardo all&#39;abbracciare la trasformazione digitale. Hanno discusso del ciclo di hype dell&#39;IA e dell&#39;importanza di mantenere le persone coinvolte e di addestrarle a diventare pensatori critici. Scopri le ultime novità su embracingdigital.org.</p>
@@ -169,7 +249,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-69/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Intel&#39;s Aurora Breaks Exascale Barrier</h4>
                                 <p>Il supercomputer Aurora di Intel, anche in fase di costruzione, ha infranto la barriera dell&#39;esascala, raggiungendo un incredibile uno zero uno due esaflops. Questa notevole impresa lo posiziona come il secondo supercomputer più veloce al mondo, preceduto solo dal Frontier di Oak Ridge. Significativamente, Aurora detiene anche il titolo di sistema di intelligenza artificiale più veloce per la scienza aperta, fornendo un impressionante dieci virgola sei esaflops di intelligenza artificiale. Il design di Aurora, che incorpora numerosi CPU e GPU di Intel, è orientato a promuovere la ricerca nella scienza del clima, nell&#39;energia di fusione e in altre aree critiche.</p>
@@ -178,7 +258,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-69/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Repatriation of Cloud Workloads: Overrated Trend</h4>
                                 <p>Nonostante l&#39;entusiasmo recente, la repatriazione del cloud - ovvero il ritorno dei carichi di lavoro dal cloud alle sede - rimane minima. Gli analisti suggeriscono che la tendenza è esagerata, con la maggior parte delle organizzazioni che mantengono o aumentano i loro investimenti nel cloud a causa della flessibilità, scalabilità e vantaggi nell&#39;innovazione. Il ruolo del cloud nelle moderne strategie IT continua a crescere, sottolineando il suo valore integrato nonostante alcuni casi di repatriazione di alto profilo.</p>
@@ -187,7 +267,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-69/12.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Rivoluzione nei Qubit: Spin di Buchi</h4>
                                 <p>All&#39;avanguardia dell&#39;informatica quantistica, i ricercatori dell&#39;Università di Basilea hanno svelato una rivoluzionaria tecnologia di qubit che utilizza spin di buchi. Questa svolta non solo spiana la strada per computer quantistici pratici, ma consente anche interazioni di qubit efficienti e scalabili su chip di silicio. La padronanza del team nel controllare le interazioni di qubit promette operazioni quantistiche più veloci e affidabili, annunciando un salto significativo verso applicazioni di calcolo quantistico su larga scala che potrebbero ridisegnare il nostro panorama tecnologico.</p>
@@ -207,7 +287,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.webp" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-69/18.webp" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Vulnerabilità Critica nel Servizio AI di Replicate</h4>
                                 <p>In uno sviluppo preoccupante, gli esperti di cybersecurity hanno scoperto una vulnerabilità nel servizio AI di Replicate. Questa vulnerabilità ha esposto i modelli e i dati dei clienti a potenziali attacchi di tipo cross-tenant, una grave violazione della sicurezza. La falla, che coinvolgeva l&#39;esecuzione di codice arbitrario tramite modelli malevoli, è stata segnalata in modo responsabile e corretta. Nonostante non ci sia alcuna prova che la falla sia stata sfruttata in natura, questo incidente sottolinea i significativi rischi che i fornitori di AI come servizio devono affrontare.</p>
@@ -216,7 +296,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-69/22.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>AI Tutors Transforming U.S. Education</h4>
                                 <p>I tutor AI stanno rivoluzionando l&#39;istruzione negli Stati Uniti, con le principali applicazioni provenienti dalla Cina. Questi strumenti AI, come quelli sviluppati da aziende come Khan Academy e Saga Education, offrono esperienze di apprendimento personalizzate, migliorano la ritenzione e la comprensione, e forniscono uguali opportunità di istruzione adattando le lezioni alle esigenze individuali degli studenti. Nonostante le sfide nel costruire connessioni personali e nell&#39;affrontare argomenti complessi, i tutor AI stanno diventando integrali nelle aule, integrando i metodi di insegnamento tradizionali con l&#39;apprendimento adattivo e il feedback in tempo reale.</p>
@@ -225,7 +305,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-69/26.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Google&#39;s AI Struggles Amidst Competition</h4>
                                 <p>Gli sforzi di Google nell&#39;IA hanno affrontato critiche a causa di errori notevoli nei risultati di ricerca e di sfide nel mantenere il passo con OpenAI. Nonostante investimenti sostanziali, l&#39;IA di Google ha avuto problemi con l&#39;accuratezza e l&#39;affidabilità, influenzando la fiducia degli utenti. La competizione con OpenAI rimane intensa poiché entrambe le aziende gareggiano per dominare il panorama dell&#39;IA.</p>
@@ -245,7 +325,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.webp" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-69/32.webp" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Vulnerabilità Critica nell&#39;Intelligenza Artificiale</h4>
                                 <p>La recente scoperta di un difetto critico nel servizio di intelligenza artificiale di Replicate sottolinea l&#39;importanza di garantire le infrastrutture di intelligenza artificiale. Questa vulnerabilità ha esposto modelli e dati dei clienti a potenziali attacchi, consentendo l&#39;accesso non autorizzato attraverso modelli maligni. Il difetto è stato segnalato in modo responsabile e corretto, ma l&#39;incidente serve come un severo monito sui rischi associati con le piattaforme di intelligenza artificiale come servizio. Nonostante non ci siano prove di sfruttamento di tale vulnerabilità, l&#39;incidente mette in luce l&#39;urgente necessità di misure di sicurezza cibernetica robuste per proteggere le infrastrutture di intelligenza artificiale.</p>
@@ -254,7 +334,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.gif" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-69/36.gif" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>AI Risk Intelligence Enhances Olympic Cybersecurity</h4>
                                 <p>La Francia sta sfruttando l&#39;intelligenza del rischio guidata dall&#39;IA per potenziare la sicurezza informatica per le Olimpiadi di Parigi due mila ventiquattro. La piattaforma Constellation di Blackbird.AI identifica e analizza la disinformazione online, valutando il suo rischio e fornendo un contesto per mitigare le minacce potenziali. La piattaforma offre un monitoraggio in tempo reale delle narrazioni dannose su varie piattaforme online. Questa iniziativa, supportata dall&#39;istituzione di Viginum da parte del presidente francese Emmanuel Macron nel duemilaventuno, mira a contrastare l&#39;interferenza digitale straniera e proteggere l&#39;integrità dei Giochi Olimpici.</p>
@@ -263,7 +343,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="40.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-69/40.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Rinforzare le Difese Digitali Urgentemente</h4>
                                 <p>L&#39;incremento delle minacce informatiche è un monito severo della necessità urgente di rafforzare le nostre difese digitali. Con attacchi informatici che avvengono ogni trentanove secondi, la posta in gioco è alta. Le nuove regole della SEC obbligano le piccole imprese a divulgare le violazioni entro il quindici giugno, mentre le agenzie federali devono adottare architetture a zero fiducia entro il trenta settembre. L&#39;impatto reale di attacchi come la chiusura del Colonial Pipeline nel due mila ventuno sottolinea la gravità della situazione. Tuttavia, garantire la conformità e investire in cybersecurity non sono solo opzioni, ma imperativi per la resilienza futura nel nostro mondo sempre più digitale. Rimanete vigili e informati per ulteriori aggiornamenti e approfondimenti.</p>
@@ -287,3 +367,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="Trasformazione Digitale per la settimana del 7 Luglio 2024, inclusi notizie da Intelligenza Artificiale, Cybersecurity e Gestione dei Dati. Esplorate il potenziale rivoluzionario dell&#39;IA nei servizi pubblici, il vantaggio della Cina nella corsa ai brevetti di IA, il futuro della cybersecurity grazie a sforzi collaborativi e misure rigorose, il ruolo fondamentale della gestione dei dati con l&#39;integrazione dell&#39;IA e il percorso della trasformazione digitale nelle imprese.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="Trasformazione Digitale per la settimana del 7 Luglio 2024, inclusi notizie da Intelligenza Artificiale, Cybersecurity e Gestione dei Dati. Esplorate il potenziale rivoluzionario dell&#39;IA nei servizi pubblici, il vantaggio della Cina nella corsa ai brevetti di IA, il futuro della cybersecurity grazie a sforzi collaborativi e misure rigorose, il ruolo fondamentale della gestione dei dati con l&#39;integrazione dell&#39;IA e il percorso della trasformazione digitale nelle imprese.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="Trasformazione Digitale per la settimana del 7 Luglio 2024, inclusi notizie da Intelligenza Artificiale, Cybersecurity e Gestione dei Dati. Esplorate il potenziale rivoluzionario dell&#39;IA nei servizi pubblici, il vantaggio della Cina nella corsa ai brevetti di IA, il futuro della cybersecurity grazie a sforzi collaborativi e misure rigorose, il ruolo fondamentale della gestione dei dati con l&#39;integrazione dell&#39;IA e il percorso della trasformazione digitale nelle imprese.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 7 Luglio 2024, inclusi notizie da Intelligenza Artificiale, Cybersecurity e Gestione dei Dati. Esplorate il potenziale rivoluzionario dell&#39;IA nei servizi pubblici, il vantaggio della Cina nella corsa ai brevetti di IA, il futuro della cybersecurity grazie a sforzi collaborativi e misure rigorose, il ruolo fondamentale della gestione dei dati con l&#39;integrazione dell&#39;IA e il percorso della trasformazione digitale nelle imprese.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="Trasformazione Digitale per la settimana del 7 Luglio 2024, inclusi notizie da Intelligenza Artificiale, Cybersecurity e Gestione dei Dati. Esplorate il potenziale rivoluzionario dell&#39;IA nei servizi pubblici, il vantaggio della Cina nella corsa ai brevetti di IA, il futuro della cybersecurity grazie a sforzi collaborativi e misure rigorose, il ruolo fondamentale della gestione dei dati con l&#39;integrazione dell&#39;IA e il percorso della trasformazione digitale nelle imprese.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 7 Luglio 2024, inclusi notizie da Intelligenza Artificiale, Cybersecurity e Gestione dei Dati. Esplorate il potenziale rivoluzionario dell&#39;IA nei servizi pubblici, il vantaggio della Cina nella corsa ai brevetti di IA, il futuro della cybersecurity grazie a sforzi collaborativi e misure rigorose, il ruolo fondamentale della gestione dei dati con l&#39;integrazione dell&#39;IA e il percorso della trasformazione digitale nelle imprese.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#75 2024-07-07</h2>
@@ -118,7 +198,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-75/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Futuro della Politica Digitale</h3>
                 <p>L&#39;ultimo podcast &#34;Abbracciando la Trasformazione Digitale&#34; presenta Rob Atkinson che discute il futuro della politica digitale. Gli argomenti chiave includono l&#39;integrazione della forza lavoro tradizionale e digitale per migliorare la produttività, sfatare i miti sull&#39;innovazione digitale dal suo libro più venduto e le strategie per la presa di decisioni informate nell&#39;era digitale. Questo episodio offre preziosi spunti per i leader aziendali e gli appassionati di tecnologia.</p>
@@ -133,7 +213,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-75/4.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>IA: Rivoluzione nei Servizi Pubblici</h4>
                                 <p>L&#39;Intelligenza Artificiale (IA) si trova sull&#39;orlo della trasformazione dei servizi pubblici in settori che vanno dalla sanità ai trasporti. In particolare, l&#39;implementazione dell&#39;IA potrebbe semplificare processi complessi, migliorare la precisione delle decisioni e aiutare un&#39;efficace allocazione delle risorse, massimizzando così l&#39;efficienza. L&#39;integrazione dell&#39;IA in questi servizi pubblici fondamentali promette significativi benefici per la società, compresa un&#39;ottima erogazione dei servizi, la riduzione dei costi operativi e migliori risultati nelle cure ai pazienti, contribuendo notevolmente a migliorare la qualità della vita per il pubblico generale.</p>
@@ -142,7 +222,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg; charset=binary" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-75/8.jpeg; charset=binary" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Cina Sorpassa USA nella Corsa all&#39;IA</h4>
                                 <p>Il recente sorpasso della Cina sugli Stati Uniti nella corsa ai brevetti di intelligenza artificiale è un chiaro segnale della sua crescente predominanza nel campo dell&#39;IA. Questo ha innescato un aumento della competizione strategica tra questi giganti economici globali, spingendo ulteriormente i confini dell&#39;innovazione tecnologica. L&#39;impatto è significativo poiché apre la strada a una rivoluzione nell&#39;industria tecnologica, stabilendo nuovi standard e ridefinendo i paradigmi esistenti nello sviluppo dell&#39;IA e della tecnologia in generale.</p>
@@ -151,7 +231,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-75/12.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>IA: Promesse, Ritardi e Futuri Incertezze</h4>
                                 <p>Malgrado le promesse di una rapida rivoluzione dell&#39;intelligenza artificiale, i più lenti progressi nella tecnologia dell&#39;intelligenza artificiale hanno suscitato preoccupazione e scetticismo in molti. I critici ritengono che i ritardi potrebbero indicare un problema più ampio, mettendo in discussione l&#39;affidabilità e l&#39;efficienza degli attuali sistemi di intelligenza artificiale. Tuttavia, i sostenitori dell&#39;IA sostengono che questi lenti progressi sono solo la calma prima della tempesta. Credono che questi problemi siano solo dei ritardi temporanei, prevedendo che, una volta risolti, la tecnologia dell&#39;intelligenza artificiale esploderà in termini di crescita, trasformando il nostro panorama digitale oltre la nostra immaginazione.</p>
@@ -171,7 +251,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.webp" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-75/18.webp" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Collaborative Effort Disables Major Cybercrime VPN</h4>
                                 <p>In uno sforzo collaborativo globale di sicurezza informatica senza precedenti, è stato disabilitato con successo un servizio VPN utilizzato dai criminali informatici per eseguire attacchi. Il VPN permetteva ai criminali di rimanere anonimi mentre lanciavano attacchi online in tutto il mondo. La chiusura di massa, che è considerata un importante risultato nel combattere la criminalità informatica, ha assistito alla disattivazione di oltre seicento server. Questa operazione esemplifica la cooperazione globale nella lotta contro il crescente maleficio di Internet.</p>
@@ -180,7 +260,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.webp" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-75/22.webp" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>OVHcloud Multato: Lezione sulla Sicurezza</h4>
                                 <p>Il fornitore di cloud basato in Francia, OVHcloud, si trova di fronte a una multa record di ottocentoquaranta milioni di dollari a causa di una violazione della sicurezza informatica. Questa enorme sanzione arriva come un duro promemoria delle crescenti conseguenze economiche di adeguate misure di sicurezza informatica. La severità di questa penalità riflette quanto siano fondamentali i sistemi di sicurezza informatica efficaci nell&#39;era digitale. Il caso OVHcloud serve come un severo monito ad altre aziende sull&#39;importanza di investire in robuste infrastrutture di sicurezza informatica.</p>
@@ -189,7 +269,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-75/26.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>ZOTAC Data Breach Highlights Security Flaws</h4>
                                 <p>ZOTAC, un produttore globale di schede grafiche, mini PC e altri hardware per il calcolo, ha subito una significativa perdita di dati che ha avuto ripercussioni su numerosi documenti RMA dei clienti a causa di un errore di configurazione del server. Questi documenti esposti contenevano preziose informazioni sui clienti, mettendo in evidenza l&#39;importanza cruciale di configurazioni di sicurezza del server stringenti ed efficaci strategie di gestione dei dati. In questa era digitale, incidenti come questi servono come promemoria potenti per le aziende di dare priorità alla protezione dei dati del cliente per mantenere la fiducia e la credibilità.</p>
@@ -209,7 +289,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="data.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-75/data.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Denodo 9.0: AI-Enhanced Data Management</h4>
                                 <p>Denodo Technologies ha presentato la versione aggiornata della sua soluzione di punta, Denodo Platform nove punto zero. La nuova versione incorpora capacità di intelligenza artificiale (AI) nella sua API, migliorando la gestione intelligente dei dati. Il sistema alimentato da AI semplifica notevolmente le procedure come la catalogazione e la preparazione dei dati. Questo progresso rappresenta una progressione notevole nel campo delle soluzioni di gestione dei dati, fornendo efficienza e precisione in varie attività relative ai dati.</p>
@@ -218,7 +298,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="data.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-75/data.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Rivoluzione dell&#39;Intelligenza Artificiale nei Dati</h4>
                                 <p>L&#39;Intelligenza Artificiale Generativa, una tecnologia innovativa che impiega algoritmi complessi per creare e prevedere le tendenze dei dati, è pronta a trasformare radicalmente il panorama della gestione dei dati. Questa tecnologia non riguarda solo l&#39;organizzazione dei dati; riguarda anche lo sfruttamento delle intuizioni critiche per migliorare le capacità decisionali. Le aziende hanno molto da guadagnare dall&#39;adozione di questa tecnologia poiché trasforma i dati in intelligenza azionabile, consentendo così decisioni più intelligenti basate sui dati che possono stimolare la crescita e il successo.</p>
@@ -227,7 +307,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="40.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-75/40.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>SendBlocks Raccoglie 8,2 Milioni per Innovazione Blockchain</h4>
                                 <p>La startup di blockchain SendBlocks ha recentemente raccolto otto milioni e duecentomila dollari in finanziamenti per potenziare la sua innovazione nella gestione dei dati basata su blockchain. La piattaforma consente agli utenti di registrare, gestire e monitorare gli asset digitali, fornendo un mezzo trasparente e legittimo per le transazioni. Questo significativo sostegno finanziario consentirà inoltre a SendBlocks di ridefinire la gestione degli asset digitali sicura ed efficiente. Si allinea con la crescente tendenza verso le innovazioni tecnologiche che assicurano integrità e trasparenza nella proprietà degli asset digitali.</p>
@@ -251,3 +331,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

@@ -1,75 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Título de la Página Dinámica -->
-        <title>Adoptando la Transformación Digital</title>
+    <!-- Título de página dinámico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descripción para SEO -->
-        <meta name="description" content="Transformación Digital para la semana del 28 de abril de 20214, incluyendo inteligencia artificial, ciberseguridad y computación en el borde. Descubre quién es culpable de &#34;lavar&#34; su negocio con IA, los hacks de tarjetas SIM físicas e introducción de Intel a la IA en el borde.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/es/home/">
+    <meta name="description" content="Transformación Digital para la semana del 28 de abril de 20214, incluyendo inteligencia artificial, ciberseguridad y computación en el borde. Descubre quién es culpable de &#34;lavar&#34; su negocio con IA, los hacks de tarjetas SIM físicas e introducción de Intel a la IA en el borde.">
+    <meta name="keywords" content="Transformación Digital, pódcast, entrevistas, noticias, IA, ciberseguridad, edge computing, gestión de datos">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Palabras Clave para SEO -->
-        <meta name="keywords" content="podcast, ia, computación en el borde, ciberseguridad, transformación digital">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Entrevistas, Noticias y Comunidad">
+    <meta property="og:description" content="Transformación Digital para la semana del 28 de abril de 20214, incluyendo inteligencia artificial, ciberseguridad y computación en el borde. Descubre quién es culpable de &#34;lavar&#34; su negocio con IA, los hacks de tarjetas SIM físicas e introducción de Intel a la IA en el borde.">
+    <meta property="og:url" content="https://embracingdigital.org/es/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta del Autor -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Entrevistas, Noticias y Comunidad">
+    <meta name="twitter:description" content="Transformación Digital para la semana del 28 de abril de 20214, incluyendo inteligencia artificial, ciberseguridad y computación en el borde. Descubre quién es culpable de &#34;lavar&#34; su negocio con IA, los hacks de tarjetas SIM físicas e introducción de Intel a la IA en el borde.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Etiquetas Meta de Open Graph para Redes Sociales -->
-        <meta property="og:title" content="Adoptando la Transformación Digital">
-        <meta property="og:description" content="Transformación Digital para la semana del 28 de abril de 20214, incluyendo inteligencia artificial, ciberseguridad y computación en el borde. Descubre quién es culpable de &#34;lavar&#34; su negocio con IA, los hacks de tarjetas SIM físicas e introducción de Intel a la IA en el borde.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternativas) -->
+    <link rel="alternate" href="https://embracingdigital.org/es/home/" hreflang="es">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/es/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon y estilos -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Etiquetas Meta de Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Adoptando la Transformación Digital">
-        <meta name="twitter:description" content="Transformación Digital para la semana del 28 de abril de 20214, incluyendo inteligencia artificial, ciberseguridad y computación en el borde. Descubre quién es culpable de &#34;lavar&#34; su negocio con IA, los hacks de tarjetas SIM físicas e introducción de Intel a la IA en el borde.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analítica -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Enlace al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Adoptando la Transformación Digital</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abrazando la Transformación Digital",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abrazando la Transformación Digital",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/es/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra de Navegación -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abrazando la Transformación Digital" class="site-icon">
+        <a href="/es/home/" aria-label="Inicio — Abrazando la Transformación Digital">
+            <img src="/images/logo.png" alt="Logo — Abrazando la Transformación Digital" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Botón móvil -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Alternar menú">☰</button>
+
+    <!-- Navegación principal -->
+    <nav id="primary-nav" aria-label="Principal">
         <ul>
-            <li><a href="../../../es/home/index.html">Inicio</a></li>
-            <li><a href="../../../es/about.html">Acerca de</a></li>
-            <li><a href="../../../es/episodes/index.html">Entrevistas</a></li>
-            <li><a href="../../../es/briefs/index.html">Noticias</a></li>
-            <li><a href="../../../es/community.html">Comunidad</a></li>
-            <li><a href="../../../es/guests/index.html">Invitados</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Tienda</a></li>
-            <li><a href="../../../es/search.html">Buscar</a></li>
+            <li><a href="/es/home/index.html" >Inicio</a></li>
+
             <li class="dropdown">
-                <a href="#">Idiomas</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Árabe -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Alemán -->
-                    <li><a href="../../../es/home/index.html">Español</a></li> <!-- Español -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francés -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portugués -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Japonés -->
+                <a href="/es/shows/index.html" aria-haspopup="true" aria-expanded="false">Programas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/es/episodes/index.html" aria-label="Entrevistas — Abrazando la Transformación Digital">
+                            Abrazando la Transformación Digital
+                            <small class="nav-note">Entrevistas</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/es/briefs/index.html" aria-label="Noticias — Digital esta semana">
+                            Digital esta semana
+                            <small class="nav-note">Noticias</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/es/guests/index.html">Invitados</a></li>
+            <li><a href="/es/articles/index.html">Artículos</a></li>
+
+            <!-- Comunidad -->
+            <li class="dropdown">
+                <a href="/es/community.html" aria-haspopup="true" aria-expanded="false">Comunidad</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/es/newsletter.html">Boletín</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Grupo de LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Tienda</a></li>
+
+            <!-- Acerca de -->
+            <li class="dropdown">
+                <a href="/es/about.html" aria-haspopup="true" aria-expanded="false">Acerca de</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/es/about.html">Sobre el programa</a></li>
+                    <li role="none"><a role="menuitem" href="/es/host.html">Anfitrión: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/es/sponsors/index.html">Patrocinios y contacto</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/es/search.html">Buscar</a></li>
+
+            <!-- Idiomas -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Idiomas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
@@ -154,7 +236,7 @@
             <div class="main-brief grid-box">
                 <h3>Adoptando la Transformación Digital</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-65/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Empresas Pequeñas Usan IA para Competir</h3>
                 <p>Esta semana, Darren continúa su entrevista con Michael Greenberg mientras descubren cómo las pequeñas y medianas empresas están desafiando y ganando contra grandes competidores utilizando Inteligencia Artificial Generativa para mejorar las relaciones con los clientes, incluyendo la generación de leads, los servicios al cliente, y la adquisición de clientes.</p>
@@ -169,7 +251,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-65/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>¿Es Necesario un CAIO?</h4>
                                 <p>El último artículo de Forbes cuestiona la necesidad de un Director Jefe de Inteligencia Artificial (CAIO, por sus siglas en inglés). A medida que crece la prominencia de la IA, se examina la necesidad de un liderazgo dedicado. Algunos argumentan a favor de una supervisión especializada, citando el potencial transformador de la IA. Otros cuestionan la practicidad y redundancia del papel. A medida que las organizaciones navegan la integración de la IA, las discusiones en torno a la posición del CAIO destacan los enfoques en evolución hacia la gobernanza de la IA y las estructuras de liderazgo.</p>
@@ -178,7 +260,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-65/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>“Inteligencia Artificial: Revolución en la Educación”</h4>
                                 <p>Desarrollos educativos emocionantes: Eurasia Review explora cómo la Inteligencia Artificial está transformando las aulas en todo el mundo. Desde el aprendizaje personalizado hasta las ideas basadas en datos, la Inteligencia Artificial está revolucionando los métodos de enseñanza tradicionales. La Inteligencia Artificial está reformando el panorama educativo adaptándose a las necesidades individuales de los estudiantes y proporcionando retroalimentación en tiempo real. A medida que las escuelas adoptan la tecnología, el potencial para mejorar las experiencias de aprendizaje y los resultados se vuelve cada vez más evidente. Manténgase en sintonía mientras la Inteligencia Artificial continúa revolucionando la forma en que aprendemos.</p>
@@ -187,7 +269,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-65/12.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Desenmascarando el Lavado de IA</h4>
                                 <p>Los analistas están investigando a las empresas que sobrevaloran la inteligencia artificial (IA). A medida que la IA se vuelve omnipresente, algunas organizaciones exageran sus capacidades de IA para fines de marketing. Esta tendencia, denominada &#34;lavado de IA&#34;, corre el riesgo de engañar a los consumidores e inversores. Bernard Marr discute la importancia de discernir la verdadera innovación de la IA de las afirmaciones exageradas, enfatizando la necesidad de transparencia y responsabilidad en el panorama de la IA.</p>
@@ -207,7 +289,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="19.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-65/19.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Vulnerabilidad Crítica en VMware ESXi</h4>
                                 <p>Se ha descubierto una vulnerabilidad crítica en el Servicio de Shell de VMware ESXi. Según GBHackers, este exploit podría conducir a un acceso no autorizado y al compromiso de entornos virtualizados. VMware ha lanzado parches para abordar este problema. Se recomienda encarecidamente a los usuarios aplicar las actualizaciones de inmediato para reducir el riesgo. Manténgase vigilante y asegure su infraestructura virtual contra amenazas potenciales.</p>
@@ -216,7 +298,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="23.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-65/23.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Alerta: Fraude de Intercambio de SIM</h4>
                                 <p>GBHackers informa sobre un nuevo plan de soborno de intercambio de SIM. Los cibercriminales explotan esta táctica para controlar los números de teléfono de las víctimas, eludiendo la autenticación de dos factores y accediendo a cuentas sensibles. Manténgase cauteloso y verifique cualquier solicitud inesperada de su operador de telefonía móvil. Edúquese a sí mismo y a sus seres queridos sobre los peligros del fraude de intercambio de SIM para prevenir ser víctima de esta estafa cada vez más común.</p>
@@ -225,7 +307,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="27.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-65/27.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Alerta: Malware PlugX Infecta USBs</h4>
                                 <p>El gusano USB PlugX golpea las calles. Este malware infecta unidades USB y se propaga rápidamente a través de los dispositivos conectados. El potencial de robar datos sensibles y comprometer sistemas representa un serio riesgo para las organizaciones e individuos. Mantente vigilante, evita utilizar unidades USB desconocidas y mantén tu software de seguridad actualizado para protegerte contra esta amenaza en evolución.</p>
@@ -245,7 +327,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="edge.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-65/edge.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Seguridad en el Internet de las Cosas</h4>
                                 <p>Los dispositivos del Internet de las cosas enfrentan amenazas cibernéticas en aumento. Los hackers apuntan a vulnerabilidades en dispositivos inteligentes, poniendo en riesgo los datos personales y organizacionales. A pesar de su conveniencia, estos dispositivos exigen medidas de seguridad intensificadas. Las actualizaciones regulares e invertir en soluciones de seguridad son cruciales. Manténgase informado y proactivo para proteger su vida digital. Más actualizaciones pronto. Manténgase vigilante.</p>
@@ -254,7 +336,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="37.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-65/37.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Revolución en Conectividad: MEC</h4>
                                 <p>El Cómputo en el Borde de Múltiples Accesos (MEC, por sus siglas en inglés) está revolucionando la conectividad. Destacado en un artículo reciente, el MEC acerca el poder de computación a los usuarios finales, mejorando la velocidad y eficiencia para aplicaciones como la Realidad Aumentada / Realidad Virtual y el Internet de las Cosas. Con MEC, el procesamiento de datos ocurre más cerca de la fuente, reduciendo la latencia y mejorando la experiencia del usuario. Manténganse atentos para más perspectivas sobre esta tecnología transformadora.</p>
@@ -263,7 +345,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="41.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-65/41.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Intel Meteor Lake: Revolución en Computación Periférica</h4>
                                 <p>Los chips Meteor Lake de Intel están destinados a revolucionar la computación periférica. Como lo informó Tom&#39;s Hardware, estos chips integran gráficos Arc y NPU para cargas de trabajo de inteligencia artificial empaquetadas en un socket. Este avance promete un rendimiento y eficiencia mejorados para aplicaciones periféricas. Esté atento a las últimas innovaciones de Intel que están remodelando el panorama de la computación.</p>
@@ -287,3 +369,56 @@
         <p>Todos los derechos reservados</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="Trasformazione Digitale per la settimana del 20 luglio 2025, comprese notizie su Cybersecurity, Intelligenza Artificiale e Informatica Ubiqua. Da allarmanti violazioni della sicurezza informatica a progressi innovativi nell&#39;IA e iniziative tecnologiche sostenibili, scopri come gli ultimi sviluppi stanno rimodellando il nostro paesaggio digitale e richiedendo un&#39;azione urgente sia da parte degli individui che delle organizzazioni.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="Trasformazione Digitale per la settimana del 20 luglio 2025, comprese notizie su Cybersecurity, Intelligenza Artificiale e Informatica Ubiqua. Da allarmanti violazioni della sicurezza informatica a progressi innovativi nell&#39;IA e iniziative tecnologiche sostenibili, scopri come gli ultimi sviluppi stanno rimodellando il nostro paesaggio digitale e richiedendo un&#39;azione urgente sia da parte degli individui che delle organizzazioni.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="Trasformazione Digitale per la settimana del 20 luglio 2025, comprese notizie su Cybersecurity, Intelligenza Artificiale e Informatica Ubiqua. Da allarmanti violazioni della sicurezza informatica a progressi innovativi nell&#39;IA e iniziative tecnologiche sostenibili, scopri come gli ultimi sviluppi stanno rimodellando il nostro paesaggio digitale e richiedendo un&#39;azione urgente sia da parte degli individui che delle organizzazioni.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 20 luglio 2025, comprese notizie su Cybersecurity, Intelligenza Artificiale e Informatica Ubiqua. Da allarmanti violazioni della sicurezza informatica a progressi innovativi nell&#39;IA e iniziative tecnologiche sostenibili, scopri come gli ultimi sviluppi stanno rimodellando il nostro paesaggio digitale e richiedendo un&#39;azione urgente sia da parte degli individui che delle organizzazioni.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="Trasformazione Digitale per la settimana del 20 luglio 2025, comprese notizie su Cybersecurity, Intelligenza Artificiale e Informatica Ubiqua. Da allarmanti violazioni della sicurezza informatica a progressi innovativi nell&#39;IA e iniziative tecnologiche sostenibili, scopri come gli ultimi sviluppi stanno rimodellando il nostro paesaggio digitale e richiedendo un&#39;azione urgente sia da parte degli individui che delle organizzazioni.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 20 luglio 2025, comprese notizie su Cybersecurity, Intelligenza Artificiale e Informatica Ubiqua. Da allarmanti violazioni della sicurezza informatica a progressi innovativi nell&#39;IA e iniziative tecnologiche sostenibili, scopri come gli ultimi sviluppi stanno rimodellando il nostro paesaggio digitale e richiedendo un&#39;azione urgente sia da parte degli individui che delle organizzazioni.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#124 2025-07-20</h2>
@@ -113,7 +193,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-124/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>IA: Dalla Sperimentazione alla Scalabilità</h3>
                 <p>Nel più recente episodio di &#39;Abbracciare la Trasformazione Digitale&#39;, il Dottor Darren è accompagnato da due luminari dell&#39;intelligenza artificiale: Lynn Comp di Intel e Russell Fishman di NetApp. Insieme, esplorano tre temi principali: il divario tra i progetti pilota di intelligenza artificiale e i sistemi pronti per la produzione. Sottolineano che, mentre molte organizzazioni sperimentano con l&#39;intelligenza artificiale, poche riescono a scalare con successo i loro sforzi per generare valore coerente in tutta l&#39;azienda. La conversazione distingue tra &#39;IA sperimentale&#39; e &#39;IA d&#39;impresa&#39;: quest&#39;ultima richiede un&#39;architettura rigorosa, governance e ritorno sugli investimenti, oltre alla protezione della proprietà intellettuale e dei dati nei pipeline di intelligenza artificiale. Proteggere i dati sensibili è non negoziabile quando si implementa l&#39;IA su larga scala. Il trio delinea le migliori pratiche per salvaguardare i modelli e garantire l&#39;integrità dei dati, dagli ambienti on-premises e ibridi ai sistemi cloud, e costruire un framework di IA di livello enterprise resiliente. Sottolineano l&#39;importanza di un&#39;infrastruttura robusta, dell&#39;interoperabilità dei dati e delle partnership strategiche con i fornitori. La collaborazione tra Intel e NetApp si distingue come un modello, offrendo strumenti integrati che semplificano lo sviluppo, l&#39;implementazione e la scalabilità sicura.</p>
@@ -128,7 +208,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.webp" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-124/4.webp" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Attacco a Elmo: Vulnerabilità dei Social Media</h4>
                                 <p>Il recente attacco a Elmo, che ha messo in evidenza serie vulnerabilità nella cybersicurezza delle piattaforme di social media, ha avuto implicazioni significative. Gli hacker hanno sfruttato le vulnerabilità del sistema per accedere agli account degli utenti e ai dati privati, con il risultato di potenziali violazioni della privacy e perdite finanziarie. Questo incidente sottolinea l&#39;urgenza di adottare misure di sicurezza potenziate e aumentare la consapevolezza degli utenti sulle reti sociali. Gli esperti esortano sia gli individui che le aziende a intraprendere passi proattivi per proteggere le informazioni sensibili e migliorare l&#39;igiene digitale complessiva per prevenire tali violazioni in futuro.</p>
@@ -137,7 +217,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="security.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-124/security.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Attacco informatico a United Natural Foods</h4>
                                 <p>United Natural Foods è recentemente caduta vittima di un significativo attacco informatico, potenzialmente comportando costi superiori a quattrocento milioni di dollari. La violazione ha compromesso operazioni commerciali sensibili e ha sollevato allarmi riguardo ai protocolli di sicurezza in vigore all&#39;interno della filiera alimentare. Questo incidente funge da chiaro promemoria delle crescenti minacce che affrontano le aziende in vari settori, sottolineando l&#39;urgente necessità di misure di cybersicurezza più forti per proteggere le infrastrutture critiche.</p>
@@ -146,7 +226,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.webp" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-124/12.webp" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Vulnerabilità Critica in Microsoft SharePoint</h4>
                                 <p>È stata scoperta una vulnerabilità critica in Microsoft SharePoint, che consente agli attaccanti di eseguire comandi malevoli da remoto. Questa vulnerabilità rappresenta un rischio significativo per le organizzazioni che si affidano a SharePoint per la collaborazione e la gestione dei documenti. Microsoft ha esortato gli utenti ad applicare immediatamente le patch di sicurezza per proteggersi contro potenziali sfruttamenti. La situazione mette in evidenza le sfide continue nel mantenere ambienti software sicuri, poiché le minacce informatiche continuano a evolversi e diventare sempre più sofisticate.</p>
@@ -166,7 +246,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-124/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>AI&#39;s Impact on Employment: A Call to Action</h4>
                                 <p>Dario Amodei, co-fondatore di Anthropic, evidenzia il panorama in evoluzione dei lavori impiegatizi di fronte ai progressi dell&#39;intelligenza artificiale. In una recente discussione, ha enfatizzato la necessità per i leader tecnologici di assumersi la responsabilità per il potenziale impatto dell&#39;intelligenza artificiale sull&#39;occupazione entro il duemilaventicinque. Amodei sostiene la necessità di misure proattive per mitigare il potenziale spostamento di posti di lavoro, che potrebbe colpire ruoli che prevedono compiti ripetitivi o analisi dei dati, ottimizzando nel contempo l&#39;uso dell&#39;intelligenza artificiale. Questo solleva domande cruciali sul bilanciamento tra innovazione e sostenibilità della forza lavoro in un ambiente economico in rapida evoluzione.</p>
@@ -175,7 +255,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-124/22.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Nuova AI Trasforma l&#39;Apprendimento Automatico</h4>
                                 <p>Un agente di intelligenza artificiale innovativo, sviluppato da ex top ricercatori di Google, è destinato a rivoluzionare il campo dell&#39;apprendimento automatico. Questa tecnologia innovativa, progettata per migliorare le capacità dell&#39;apprendimento automatico, ha il potenziale di creare sistemi più intelligenti e adattabili. Man mano che questa tecnologia avanza, promette di rivoluzionare le operazioni in vari settori, offrendo nuove possibilità per un aumento dell&#39;efficienza e dell&#39;automazione nelle attività quotidiane.</p>
@@ -184,7 +264,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-124/26.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Andy Jassy&#39;s AI Plans Spark Controversy</h4>
                                 <p>Il CEO di Amazon, Andy Jassy, sta affrontando una significativa critica dopo il suo annuncio riguardo ai piani per l&#39;integrazione dell&#39;intelligenza artificiale all&#39;interno dell&#39;azienda. Alcuni dipendenti hanno espresso preoccupazioni per la sicurezza del lavoro e le implicazioni dell&#39;utilizzo della tecnologia AI. I critici sostengono che il passaggio verso l&#39;automazione potrebbe portare a un&#39;ampia perdita di posti di lavoro. Tuttavia, i commenti di Jassy giungono amid dibattiti crescenti sul ruolo dell&#39;intelligenza artificiale nelle pratiche aziendali moderne e sui suoi impatti sociali, con alcuni che sostengono che l&#39;integrazione dell&#39;intelligenza artificiale potrebbe portare a operazioni più efficienti e a nuove opportunità di lavoro.</p>
@@ -204,7 +284,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="cloud.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-124/cloud.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Regno Unito Lancia Piano Informatica Ambizioso</h4>
                                 <p>Il governo del Regno Unito ha svelato un ambizioso nuovo piano riguardante l&#39;informatica, segnalando l&#39;impegno del paese verso l&#39;avanzamento tecnologico. Il piano, che mira a fornire sei gigawatt di capacità di centri dati compatibili con l&#39;intelligenza artificiale entro il duemilatrenta, rappresenta un passo significativo per sostenere le capacità tecnologiche del paese e supportare la crescente domanda di servizi di intelligenza artificiale. Questa iniziativa migliora il vantaggio competitivo del Regno Unito nel mercato tecnologico globale, poiché i centri dati svolgono un ruolo cruciale nel promuovere l&#39;innovazione e la crescita economica.</p>
@@ -213,7 +293,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="cloud.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-124/cloud.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Google e Brookfield: Energia Sostenibile</h4>
                                 <p>Google e Brookfield hanno lanciato una partnership incentrata su un progetto idroelettrico da tremila megawatt. Questa collaborazione mira a migliorare la sostenibilità dei centri dati sfruttando l&#39;energia rinnovabile. L&#39;iniziativa non solo affronta le preoccupazioni legate ai cambiamenti climatici, ma riflette anche la crescente tendenza verso soluzioni energetiche ecologiche nel settore tecnologico. È un passo significativo verso la riduzione dell&#39;impronta di carbonio associata all&#39;archiviazione e all&#39;elaborazione dei dati.</p>
@@ -222,7 +302,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="40.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-124/40.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Amazon Invests in Green Computing Initiative</h4>
                                 <p>Amazon è pronta a effettuare un investimento significativo nel futuro dell&#39;informatica verde con la sua iniziativa da venti miliardi di dollari per il centro dati alimentato da energia nucleare in Pennsylvania. Questo progetto rivoluzionario, che mira a sfruttare l&#39;energia nucleare per alimentare i centri dati, promette di garantire una fonte di energia a basso carbonio per le operazioni di Amazon. Questa iniziativa è in linea con gli obiettivi di sostenibilità di Amazon e dimostra l&#39;impegno dell&#39;azienda verso soluzioni energetiche innovative. Si prevede che l&#39;iniziativa avanzi nel campo dell&#39;informatica verde, soddisfacendo nel contempo le crescenti esigenze tecnologiche.</p>
@@ -246,3 +326,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

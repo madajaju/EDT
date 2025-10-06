@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="Trasformazione Digitale per la settimana del 30 marzo 2025, con notizie sull&#39;istruzione superiore provenienti da Intelligenza Artificiale, Cybersecurity e Gestione dei Dati. Scopri come l&#39;intelligenza artificiale è pronta a rivoluzionare l&#39;istruzione, la sanità e la cybersecurity, presentando un mondo di possibilità per un futuro migliore e sostenibile.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="Trasformazione Digitale per la settimana del 30 marzo 2025, con notizie sull&#39;istruzione superiore provenienti da Intelligenza Artificiale, Cybersecurity e Gestione dei Dati. Scopri come l&#39;intelligenza artificiale è pronta a rivoluzionare l&#39;istruzione, la sanità e la cybersecurity, presentando un mondo di possibilità per un futuro migliore e sostenibile.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="Trasformazione Digitale per la settimana del 30 marzo 2025, con notizie sull&#39;istruzione superiore provenienti da Intelligenza Artificiale, Cybersecurity e Gestione dei Dati. Scopri come l&#39;intelligenza artificiale è pronta a rivoluzionare l&#39;istruzione, la sanità e la cybersecurity, presentando un mondo di possibilità per un futuro migliore e sostenibile.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 30 marzo 2025, con notizie sull&#39;istruzione superiore provenienti da Intelligenza Artificiale, Cybersecurity e Gestione dei Dati. Scopri come l&#39;intelligenza artificiale è pronta a rivoluzionare l&#39;istruzione, la sanità e la cybersecurity, presentando un mondo di possibilità per un futuro migliore e sostenibile.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="Trasformazione Digitale per la settimana del 30 marzo 2025, con notizie sull&#39;istruzione superiore provenienti da Intelligenza Artificiale, Cybersecurity e Gestione dei Dati. Scopri come l&#39;intelligenza artificiale è pronta a rivoluzionare l&#39;istruzione, la sanità e la cybersecurity, presentando un mondo di possibilità per un futuro migliore e sostenibile.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 30 marzo 2025, con notizie sull&#39;istruzione superiore provenienti da Intelligenza Artificiale, Cybersecurity e Gestione dei Dati. Scopri come l&#39;intelligenza artificiale è pronta a rivoluzionare l&#39;istruzione, la sanità e la cybersecurity, presentando un mondo di possibilità per un futuro migliore e sostenibile.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#108 2025-03-31</h2>
@@ -113,7 +193,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-108/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>AI Empatica e Comunicazione Efficace</h3>
                 <p>Questa settimana su Embracing Digital, il Dottor Darren Pulsipher esplora due argomenti cruciali: l&#39;ascesa dell&#39;AI empatica e la padronanza della comunicazione nel settore tecnologico. L&#39;innovatore dell&#39;AI Artem Rodichev discute di come l&#39;AI empatica stia affrontando la solitudine, le sfide etiche della compagnia fornita dall&#39;AI e la necessità di una regolamentazione responsabile. Nel frattempo, l&#39;esperta di comunicazione della Silicon Valley Loreta Tarozaite condivide intuizioni su come superare le comuni barriere comunicative nella tecnologia, il potere della narrazione visiva e come l&#39;AI generativa possa aiutare a creare messaggi efficaci senza sostituire l&#39;autenticità. Che tu sia interessato al futuro dell&#39;AI o stia cercando di migliorare le tue connessioni con gli altri, questo episodio è ricco di preziose intuizioni.</p>
@@ -128,7 +208,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-108/4.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Intelligenza Artificiale: Soluzioni per il Futuro</h4>
                                 <p>Uno studio recente pubblicato su Nature esamina il potenziale dell&#39;intelligenza artificiale per migliorare vari aspetti della vita umana, inclusa la sanità e la sostenibilità ambientale. Lo studio sottolinea come l&#39;intelligenza artificiale possa essere uno strumento potente nell&#39;affrontare le sfide globali come il cambiamento climatico e le crisi di salute pubblica. I ricercatori hanno enfatizzato la necessità di una collaborazione interdisciplinare per sbloccare nuove soluzioni a queste complesse sfide globali. I risultati suggeriscono che il ruolo dell&#39;intelligenza artificiale diventerà sempre più vitale man mano che la tecnologia continua a integrarsi nelle pratiche quotidiane, aprendo la strada a approcci innovativi a questioni di lunga data.</p>
@@ -137,7 +217,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-108/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>AI in Higher Education: A New Era</h4>
                                 <p>Con l&#39;intelligenza artificiale che rimodella l&#39;insegnamento universitario, gli educatori affrontano la sfida di adattarsi a questo cambiamento rivoluzionario nell&#39;istruzione. Un recente articolo di opinione sottolinea l&#39;importanza per le istituzioni di prepararsi adeguatamente, garantendo che i membri del corpo docente ricevano il supporto e le risorse necessarie. Sottolinea l&#39;importanza di sfruttare gli strumenti di intelligenza artificiale non solo per l&#39;efficienza ma anche per migliorare le esperienze di apprendimento, accendendo un dialogo sull&#39;equilibrare l&#39;innovazione con l&#39;integrità pedagogica nel mondo accademico.</p>
@@ -146,7 +226,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="ai.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-108/ai.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Rivoluzione AI nell&#39;Istruzione Superiore</h4>
                                 <p>Il Colby College esamina la prossima trasformazione dell&#39;istruzione superiore provocata dall&#39;intelligenza artificiale. Con il potenziale dell&#39;intelligenza artificiale di influenzare la progettazione dei curricula, i metodi di insegnamento e il coinvolgimento degli studenti, l&#39;articolo affronta le domande critiche che gli educatori devono prendere in considerazione. Questo focus sul potenziale dell&#39;intelligenza artificiale può far sentire i responsabili politici entusiasti riguardo al futuro dell&#39;istruzione superiore mentre essa si evolve e si adatta alle nuove tecnologie.</p>
@@ -166,7 +246,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-108/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Cybersecurity Education for Future Generations</h4>
                                 <p>Man mano che le minacce informatiche continuano a evolversi, le previsioni per il duemilaventicinque suggeriscono un focus sull&#39;istruzione K-venti. Le istituzioni dovranno enfatizzare misure di cybersecurity proattive, integrando tecnologie avanzate e migliori pratiche nei loro curricula. Questo approccio non solo fornirà agli studenti le competenze necessarie, ma migliorerà anche le difese istituzionali contro le minacce digitali sempre crescenti. Il cambiamento evidenzia l&#39;importanza di preparare le future generazioni a navigare efficacemente in paesaggi complessi di cybersecurity.</p>
@@ -175,7 +255,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-108/22.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Collaborazione per la Cybersecurity nelle Università</h4>
                                 <p>Un ecosistema di cybersecurity robusto è essenziale per le istituzioni di istruzione superiore, in particolare mentre il panorama digitale continua a evolversi. Gli esperti sostengono che la collaborazione tra le istituzioni educative, le entità governative e il settore privato sia fondamentale. Condividendo risorse, migliori pratiche e informazioni sulle minacce, queste collaborazioni possono migliorare le difese contro le minacce informatiche. Stabilire politiche complete e coinvolgere la comunità favorirà un ambiente di cybersecurity resiliente, cruciale per proteggere beni digitali e dati sensibili.</p>
@@ -184,7 +264,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-108/26.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Rischi finanziari per la cybersecurity universitaria</h4>
                                 <p>Una pausa nel finanziamento dell&#39;istruzione superiore rappresenta un rischio significativo per i progressi nella cybersecurity. Le università stanno trovando sempre più difficile allocare risorse per misure essenziali di cybersecurity e per attrarre talenti di alto livello in questo settore. La mancanza di supporto finanziario mette a rischio lo sviluppo di una forza lavoro qualificata in cybersecurity, necessaria per difendersi dalle moderne minacce informatiche. Gli esperti chiedono un nuovo investimento per salvaguardare l&#39;integrità e la sicurezza delle informazioni delle istituzioni.</p>
@@ -204,7 +284,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-108/32.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Gestione dati: chiave per successo educativo</h4>
                                 <p>Un recente studio sottolinea il ruolo cruciale di una gestione efficace dei dati nell&#39;istruzione superiore. Sottolinea il concetto di &#39;spazzatura dentro, spazzatura fuori&#39;, illustrando come una scarsa qualità dei dati possa portare a decisioni errate. Investendo in solidi quadri di governance dei dati, le istituzioni possono garantire la raccolta di dati accurati e affidabili, migliorando così le performance istituzionali e fornendo agli amministratori una maggiore sicurezza riguardo alla qualità delle decisioni.</p>
@@ -213,7 +293,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-108/36.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Sicurezza Dati Educativi: Un Mercato in Crescita</h4>
                                 <p>Con l&#39;intensificarsi delle preoccupazioni riguardo alla privacy dei dati, si prevede che il mercato della sicurezza dei dati educativi raggiunga un miliardo e quattrocento milioni di dollari entro il duemilatrenta. Le istituzioni educative stanno dando sempre più priorità a pratiche di gestione dei dati sicure per proteggere informazioni sensibili da violazioni e abusi. Questo focus sulla sicurezza dei dati non solo protegge i dati degli studenti e delle istituzioni, ma contribuisce anche a costruire fiducia all&#39;interno della comunità educativa, garantendo la conformità alle normative e agli standard di privacy in evoluzione.</p>
@@ -222,7 +302,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="data.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-108/data.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Evoluzione della Governance dei Dati</h4>
                                 <p>Un&#39;analisi approfondita rivela il panorama in evoluzione della governance dei dati nell&#39;istruzione superiore. Lo studio discute le sfide che le istituzioni affrontano, inclusi sistemi di dati frammentati e politiche inadeguate. Propone un approccio strategico nello sviluppo di strutture di governance coerenti che promuovano l&#39;integrità e l&#39;accessibilità dei dati. Una governance dei dati efficace è cruciale per migliorare i processi decisionali e coltivare una cultura basata sui dati all&#39;interno degli ambienti accademici, beneficiando in ultima analisi gli studenti e migliorando i risultati educativi.</p>
@@ -246,3 +326,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

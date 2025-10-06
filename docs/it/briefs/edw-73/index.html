@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="Abbracciando il Digitale per la settimana del 23 giugno 2024, inclusi racconti su calcolo ubiquo, cybersecurity e intelligenza artificiale. Ascolta come la Marina degli Stati Uniti sta mettendo nuvole sulle navi, come l&#39;igiene della cybersecurity può portare a accuse penali e come Anthropic lancia un nuovo IA.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="Abbracciando il Digitale per la settimana del 23 giugno 2024, inclusi racconti su calcolo ubiquo, cybersecurity e intelligenza artificiale. Ascolta come la Marina degli Stati Uniti sta mettendo nuvole sulle navi, come l&#39;igiene della cybersecurity può portare a accuse penali e come Anthropic lancia un nuovo IA.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="Abbracciando il Digitale per la settimana del 23 giugno 2024, inclusi racconti su calcolo ubiquo, cybersecurity e intelligenza artificiale. Ascolta come la Marina degli Stati Uniti sta mettendo nuvole sulle navi, come l&#39;igiene della cybersecurity può portare a accuse penali e come Anthropic lancia un nuovo IA.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="Abbracciando il Digitale per la settimana del 23 giugno 2024, inclusi racconti su calcolo ubiquo, cybersecurity e intelligenza artificiale. Ascolta come la Marina degli Stati Uniti sta mettendo nuvole sulle navi, come l&#39;igiene della cybersecurity può portare a accuse penali e come Anthropic lancia un nuovo IA.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="Abbracciando il Digitale per la settimana del 23 giugno 2024, inclusi racconti su calcolo ubiquo, cybersecurity e intelligenza artificiale. Ascolta come la Marina degli Stati Uniti sta mettendo nuvole sulle navi, come l&#39;igiene della cybersecurity può portare a accuse penali e come Anthropic lancia un nuovo IA.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="Abbracciando il Digitale per la settimana del 23 giugno 2024, inclusi racconti su calcolo ubiquo, cybersecurity e intelligenza artificiale. Ascolta come la Marina degli Stati Uniti sta mettendo nuvole sulle navi, come l&#39;igiene della cybersecurity può portare a accuse penali e come Anthropic lancia un nuovo IA.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#73 2024-06-23</h2>
@@ -158,7 +238,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-73/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Darren Monologues on the Significance of Enterprise Architecture in Managing Complex Operational Environments.</h3>
                 <p>Questa settimana, in un atto solista, Darren si lancia in un monologo sull&#39;importanza dell&#39;Architettura d&#39;Impresa per aiutare le organizzazioni a gestire i complessi ambienti operativi in cui vivono. Grazie ancora ai miei ascoltatori; continuiamo a infrangere nuovi record di ascolto settimanali. Continuate ad ascoltare e condividete con i vostri amici.</p>
@@ -173,7 +253,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-73/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>US Navy adopts cloud computing to boost operational efficiency and data management on ships.</h4>
                                 <p>La Marina degli Stati Uniti sta adottando un atteggiamento proattivo per avanzare le sue capacità IT integrando il cloud computing sulle sue navi. Questa promettente mossa è destinata ad aumentare l&#39;efficienza operativa e la gestione dei dati, mentre rafforza anche la sicurezza informatica e facilita rapidi aggiornamenti del software. Il passaggio della Marina ai servizi cloud è una testimonianza del suo impegno a gestire ed elaborare enormi quantità di dati più efficacemente, un aspetto fondamentale per le missioni e la gestione della flotta nelle operazioni globali.</p>
@@ -182,7 +262,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-73/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Cohesity and Intel Partner to Enhance FortKnox Cloud Service with Confidential Computing, Boosting Security and Feasibility for Industries Managing Regulated Data.</h4>
                                 <p>Cohesity e Intel uniscono le forze in una partnership significativa per migliorare il servizio cloud di FortKnox con il calcolo confidenziale. Questa collaborazione, che integra le Software Guard Extensions (SGX) di Intel per proteggere i dati durante l&#39;elaborazione, rappresenta un passo importante verso la protezione delle informazioni sensibili da violazioni e minacce interne. Le misure di sicurezza potenziate sono pronte a rendere i servizi cloud più fattibili per le industrie che gestiscono dati regolamentati, infondendo fiducia nel futuro delle soluzioni di calcolo cloud.</p>
@@ -191,7 +271,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="cloud.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-73/cloud.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Oracle to Invest Over $1 Billion in AI and Cloud Computing in Spain, Plans to Set up New Cloud Region in Collaboration with Telefonica España</h4>
                                 <p>Oracle sta facendo un impegno significativo negli sforzi di trasformazione digitale della Spagna, prevedendo di investire oltre un miliardo di dollari in intelligenza artificiale e cloud computing nel corso del prossimo decennio. Questo notevole investimento include l&#39;istituzione di una nuova regione cloud per assistere i clienti nella migrazione dei carichi di lavoro verso l&#39;infrastruttura cloud di Oracle nel rispetto delle normative dell&#39;Unione Europea. L&#39;iniziativa, che costituirà la terza regione cloud di Oracle a Madrid in collaborazione con Telefonica España, è destinata a svolgere un ruolo fondamentale nel sostenere le imprese e le organizzazioni del settore pubblico spagnolo.</p>
@@ -211,7 +291,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-73/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>UK Nuclear Site Sellafield Faces Legal Action for Violations in Cybersecurity Standards.</h4>
                                 <p>Le organizzazioni sono ritenute penalmente responsabili per la mancanza di sicurezza informatica. Sellafield, un principale sito di elaborazione nucleare del Regno Unito, ha dichiarato colpevolezza a imputazioni penali per mancanze nella sicurezza informatica. L&#39;Ufficio per la Regolamentazione Nucleare ha riscontrato che Sellafield ha violato le Normative di Sicurezza delle Industrie Nucleari tra il 2019 e l&#39;inizio del 2023. Nonostante non ci fosse un&#39;imminente minaccia per la sicurezza pubblica, il sito ha affrontato ripetuti problemi di sicurezza informatica e ora affronterà dei procedimenti legali per risolvere queste violazioni.</p>
@@ -220,7 +300,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-73/22.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Multi-Factor Authentication No Longer Enough for Cloud Data Protection, Zero Trust Architecture Urged</h4>
                                 <p>Nonostante l&#39;uso diffuso, l&#39;autenticazione multifattore (MFA) non è più sufficiente a proteggere i dati nel cloud. Gli aggressori hanno trovato modi per bypassare l&#39;MFA attraverso attacchi di phishing e ingegneria sociale, evidenziando la necessità di ulteriori misure di sicurezza. Una di queste misure è l&#39;implementazione di un&#39;Architettura Zero Trust, un modello di sicurezza che richiede una rigorosa verifica dell&#39;identità per ogni utente e dispositivo che cercano di accedere alle risorse su una rete, fornendo una difesa più completa attraverso l&#39;obbligo di più livelli di autenticazione e valutazioni continue di affidabilità.</p>
@@ -229,7 +309,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="security.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-73/security.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>AMD Investigating Data Breach Claims After Hacker Offers Stolen Sensitive Information for Sale</h4>
                                 <p>AMD sta indagando sulle accuse di una violazione dei dati dopo che un hacker ha offerto di vendere informazioni sensibili presumibilmente rubate dall&#39;azienda. L&#39;hacker, IntelBroker, ha postato su un forum di cyber-crimine che i dati rubati includono dettagli sui futuri prodotti AMD, informazioni sui clienti e sui dipendenti, schede tecniche, codice sorgente, firmware e documenti finanziari. AMD collabora con le forze dell&#39;ordine e con esperti terzi per verificare la violazione e valutare l&#39;impatto potenziale.</p>
@@ -249,7 +329,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-73/32.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Swift Adoption of Generative AI Increases Internal Threat Risks and Expands Attack Surface for Companies, Necessitating Stricter Security Measures Against &#39;Shadow AI&#39;</h4>
                                 <p>L&#39;adozione rapida dell&#39;intelligenza artificiale generativa (GenAI) sta aumentando i rischi associati alle minacce interne ed espandendo la superficie di attacco per le aziende. Strumenti come ChatGPT e la tecnologia deep fake possono esporre involontariamente dati sensibili se non gestiti correttamente. Questo comporta la necessità di misure e politiche di sicurezza più severe per contrastare la &#34;Shadow AI&#34;, dove gli strumenti di intelligenza artificiale vengono utilizzati al di fuori della governance organizzativa. Le aziende devono proteggere le catene di fornitura del software di intelligenza artificiale e bilanciare l&#39;innovazione con pratiche di cybersecurity solide per mitigare queste minacce emergenti.</p>
@@ -258,7 +338,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-73/36.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Anthropic Launches Its Latest and Most Powerful Generative AI Model, Sparks Interest and Speculation Across Several Sectors</h4>
                                 <p>Anthropic ha introdotto il suo modello di intelligenza artificiale generativa più recente e potente, suscitando notevole interesse e speculazione. Le capacità del modello e i potenziali impatti su vari settori, compresi tecnologia e società, sono sotto esame. Questo lancio rappresenta una pietra miliare nello sviluppo dell&#39;IA, sollevando questioni sulle implicazioni etiche e le considerazioni normative: Anthropic mira a promuovere l&#39;IA in modo responsabile, massimizzando i suoi benefici.</p>
@@ -267,7 +347,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="ai.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-73/ai.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>DHS Gives Priority to AI Threats on Critical Infrastructure in New Guidelines
 </h4>
@@ -292,3 +372,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

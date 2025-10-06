@@ -1,75 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Título de la Página Dinámica -->
-        <title>Adoptando la Transformación Digital</title>
+    <!-- Título de página dinámico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descripción para SEO -->
-        <meta name="description" content="Transformación Digital para la semana del 15 de septiembre de 2024, incluyendo noticias de Ciberseguridad, Computación Ubicua e Inteligencia Artificial. Manténgase informado y empoderado a medida que evolucionan las amenazas de ciberseguridad: descubra cómo la nueva lista de verificación de la CISA y otras iniciativas están moldeando la seguridad de nuestro proceso electoral e infraestructura crítica justo antes de las elecciones pívotales de 2024.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/es/home/">
+    <meta name="description" content="Transformación Digital para la semana del 15 de septiembre de 2024, incluyendo noticias de Ciberseguridad, Computación Ubicua e Inteligencia Artificial. Manténgase informado y empoderado a medida que evolucionan las amenazas de ciberseguridad: descubra cómo la nueva lista de verificación de la CISA y otras iniciativas están moldeando la seguridad de nuestro proceso electoral e infraestructura crítica justo antes de las elecciones pívotales de 2024.">
+    <meta name="keywords" content="Transformación Digital, pódcast, entrevistas, noticias, IA, ciberseguridad, edge computing, gestión de datos">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Palabras Clave para SEO -->
-        <meta name="keywords" content="podcast, ia, computación en el borde, ciberseguridad, transformación digital">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Entrevistas, Noticias y Comunidad">
+    <meta property="og:description" content="Transformación Digital para la semana del 15 de septiembre de 2024, incluyendo noticias de Ciberseguridad, Computación Ubicua e Inteligencia Artificial. Manténgase informado y empoderado a medida que evolucionan las amenazas de ciberseguridad: descubra cómo la nueva lista de verificación de la CISA y otras iniciativas están moldeando la seguridad de nuestro proceso electoral e infraestructura crítica justo antes de las elecciones pívotales de 2024.">
+    <meta property="og:url" content="https://embracingdigital.org/es/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta del Autor -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Entrevistas, Noticias y Comunidad">
+    <meta name="twitter:description" content="Transformación Digital para la semana del 15 de septiembre de 2024, incluyendo noticias de Ciberseguridad, Computación Ubicua e Inteligencia Artificial. Manténgase informado y empoderado a medida que evolucionan las amenazas de ciberseguridad: descubra cómo la nueva lista de verificación de la CISA y otras iniciativas están moldeando la seguridad de nuestro proceso electoral e infraestructura crítica justo antes de las elecciones pívotales de 2024.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Etiquetas Meta de Open Graph para Redes Sociales -->
-        <meta property="og:title" content="Adoptando la Transformación Digital">
-        <meta property="og:description" content="Transformación Digital para la semana del 15 de septiembre de 2024, incluyendo noticias de Ciberseguridad, Computación Ubicua e Inteligencia Artificial. Manténgase informado y empoderado a medida que evolucionan las amenazas de ciberseguridad: descubra cómo la nueva lista de verificación de la CISA y otras iniciativas están moldeando la seguridad de nuestro proceso electoral e infraestructura crítica justo antes de las elecciones pívotales de 2024.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternativas) -->
+    <link rel="alternate" href="https://embracingdigital.org/es/home/" hreflang="es">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/es/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon y estilos -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Etiquetas Meta de Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Adoptando la Transformación Digital">
-        <meta name="twitter:description" content="Transformación Digital para la semana del 15 de septiembre de 2024, incluyendo noticias de Ciberseguridad, Computación Ubicua e Inteligencia Artificial. Manténgase informado y empoderado a medida que evolucionan las amenazas de ciberseguridad: descubra cómo la nueva lista de verificación de la CISA y otras iniciativas están moldeando la seguridad de nuestro proceso electoral e infraestructura crítica justo antes de las elecciones pívotales de 2024.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analítica -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Enlace al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Adoptando la Transformación Digital</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abrazando la Transformación Digital",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abrazando la Transformación Digital",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/es/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra de Navegación -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abrazando la Transformación Digital" class="site-icon">
+        <a href="/es/home/" aria-label="Inicio — Abrazando la Transformación Digital">
+            <img src="/images/logo.png" alt="Logo — Abrazando la Transformación Digital" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Botón móvil -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Alternar menú">☰</button>
+
+    <!-- Navegación principal -->
+    <nav id="primary-nav" aria-label="Principal">
         <ul>
-            <li><a href="../../../es/home/index.html">Inicio</a></li>
-            <li><a href="../../../es/about.html">Acerca de</a></li>
-            <li><a href="../../../es/episodes/index.html">Entrevistas</a></li>
-            <li><a href="../../../es/briefs/index.html">Noticias</a></li>
-            <li><a href="../../../es/community.html">Comunidad</a></li>
-            <li><a href="../../../es/guests/index.html">Invitados</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Tienda</a></li>
-            <li><a href="../../../es/search.html">Buscar</a></li>
+            <li><a href="/es/home/index.html" >Inicio</a></li>
+
             <li class="dropdown">
-                <a href="#">Idiomas</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Árabe -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Alemán -->
-                    <li><a href="../../../es/home/index.html">Español</a></li> <!-- Español -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francés -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portugués -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Japonés -->
+                <a href="/es/shows/index.html" aria-haspopup="true" aria-expanded="false">Programas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/es/episodes/index.html" aria-label="Entrevistas — Abrazando la Transformación Digital">
+                            Abrazando la Transformación Digital
+                            <small class="nav-note">Entrevistas</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/es/briefs/index.html" aria-label="Noticias — Digital esta semana">
+                            Digital esta semana
+                            <small class="nav-note">Noticias</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/es/guests/index.html">Invitados</a></li>
+            <li><a href="/es/articles/index.html">Artículos</a></li>
+
+            <!-- Comunidad -->
+            <li class="dropdown">
+                <a href="/es/community.html" aria-haspopup="true" aria-expanded="false">Comunidad</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/es/newsletter.html">Boletín</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Grupo de LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Tienda</a></li>
+
+            <!-- Acerca de -->
+            <li class="dropdown">
+                <a href="/es/about.html" aria-haspopup="true" aria-expanded="false">Acerca de</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/es/about.html">Sobre el programa</a></li>
+                    <li role="none"><a role="menuitem" href="/es/host.html">Anfitrión: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/es/sponsors/index.html">Patrocinios y contacto</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/es/search.html">Buscar</a></li>
+
+            <!-- Idiomas -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Idiomas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
@@ -138,7 +220,7 @@
             <div class="main-brief grid-box">
                 <h3>Adoptando la Transformación Digital</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-85/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Explorando la Computación Cuántica Práctica</h3>
                 <p>Esta semana en Abrazando la Transformación Digital, la parte dos de la entrevista de Darren con Yuval Boger, un compañero podcaster y experto en Computación Cuántica. Se mueven más allá de lo teórico y se adentran en los aspectos prácticos de la computación cuántica, lo que se puede hacer hoy, mañana y en el futuro. Descubre esta nueva tecnología en ascenso. También, gracias nuevamente a nuestros oyentes que continúan haciendo crecer nuestra audiencia. No olvides compartirlo con tus amigos.</p>
@@ -153,7 +235,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-85/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Guía de Ciberseguridad para Elecciones 2024</h4>
                                 <p>La Agencia de Ciberseguridad y Seguridad de Infraestructura (CISA) ha publicado de manera urgente una lista de verificación integral de ciberseguridad para las oficinas electorales de los Estados Unidos de América antes de las elecciones dos mil veinticuatro. Esta iniciativa es de suma importancia, ya que tiene como objetivo fortalecer la seguridad de la infraestructura electoral crítica y mitigar los riesgos asociados con las amenazas cibernéticas. Se insta a los funcionarios electorales a seguir estas pautas para proteger la integridad del proceso electoral.</p>
@@ -162,7 +244,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-85/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Zoomlion: Amenaza Cibernética para Puertos</h4>
                                 <p>Un informe reciente ha subrayado la potencial amenaza cibernética que representa el fabricante chino de grúas Zoomlion para los puertos de Estados Unidos. Se han planteado serias preocupaciones sobre la integración de la tecnología china en la infraestructura crítica, lo que podría exponer vulnerabilidades al espionaje cibernético y a ataques. Esta situación resalta la necesidad crítica de evaluaciones de seguridad rigurosas en el panorama de la ciberseguridad.</p>
@@ -171,7 +253,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-85/12.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Cumbre de Microsoft sobre Ciberseguridad</h4>
                                 <p>En respuesta a una reciente interrupción global en la tecnología de la información, Microsoft está organizando una cumbre de ciberseguridad fundamental para abordar las vulnerabilidades existentes y fortalecer los marcos de seguridad digital. Este evento significativo contará con destacados líderes de la industria compartiendo estrategias innovadoras para mejorar la resiliencia frente a futuras amenazas cibernéticas. Al enfatizar el papel crucial de la ciberseguridad en garantizar la continuidad de los negocios, la cumbre tiene como objetivo capacitar a las organizaciones con el conocimiento necesario para navegar en un paisaje digital cada vez más complejo.</p>
@@ -191,7 +273,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.webp; charset=binary" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-85/18.webp; charset=binary" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Alianza Oracle y Google Cloud</h4>
                                 <p>Oracle y Google Cloud han formado una alianza estratégica de múltiples nubes para fortalecer las capacidades empresariales. Esta colaboración tiene como objetivo simplificar la gestión de datos en las plataformas, asegurando que las empresas puedan aprovechar las fortalezas de ambos proveedores. La asociación surge en medio del creciente interés en soluciones en la nube, ya que las empresas buscan mejorar la eficiencia operativa y reducir costos. Los clientes pueden esperar una mejor integración e interoperabilidad de esta colaboración tecnológica significativa.</p>
@@ -200,7 +282,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-85/22.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Oracle Planifica Superordenador con Energía Nuclear</h4>
                                 <p>Oracle tiene como objetivo construir el superordenador más poderoso del mundo con tres reactores nucleares. Este ambicioso proyecto busca llevar los límites computacionales más allá incluso de Coloso, un hito significativo en la supercomputación. Como una de las empresas de software más grandes del mundo, la iniciativa de Oracle está preparada para revolucionar las capacidades de procesamiento de datos y análisis. Integrar la energía nuclear en los centros de datos representa un paso audaz hacia la sostenibilidad.</p>
@@ -209,7 +291,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="cloud.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-85/cloud.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Grupo para Acelerar Permisos de Infraestructura</h4>
                                 <p>La Casa Blanca está lista para establecer un grupo de trabajo dedicado a acelerar la concesión de permisos para la infraestructura de centros de datos, con el objetivo de abordar las crecientes necesidades de las tecnologías de inteligencia artificial. Esta iniciativa es crucial ya que la rápida expansión de los centros de datos se ha vuelto esencial para gestionar la creciente demanda de capacidad de procesamiento impulsada por la inteligencia artificial. El grupo de trabajo será fundamental para simplificar las regulaciones y facilitar aprobaciones más rápidas.</p>
@@ -229,7 +311,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-85/32.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Oprah y la Evolución de la IA</h4>
                                 <p>El reciente especial de inteligencia artificial de Oprah proporcionó cinco ideas críticas sobre el papel cambiante de la inteligencia artificial en la sociedad. El evento destacó cómo la inteligencia artificial puede mejorar la creatividad, la importancia de las consideraciones éticas y el potencial de la inteligencia artificial para mejorar diversas industrias. Oprah también discutió los desafíos que plantea la inteligencia artificial y la necesidad de un uso responsable, con el objetivo de cerrar la brecha entre la tecnología y su impacto en las experiencias humanas.</p>
@@ -238,7 +320,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-85/36.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Los Riesgos de la AI en Programación</h4>
                                 <p>Las recientes interrupciones causadas por código generado por inteligencia artificial han suscitado preocupaciones significativas dentro de la industria tecnológica. Los expertos advierten que la dependencia excesiva de la inteligencia artificial para la programación puede llevar a problemas imprevistos, deteniendo los proyectos en seco. Esto subraya la necesidad crucial de supervisión humana en las aplicaciones de inteligencia artificial para prevenir fallas críticas. A medida que las organizaciones integran cada vez más la inteligencia artificial en sus flujos de trabajo, abordar estas deficiencias es vital para garantizar la fiabilidad de los sistemas.</p>
@@ -247,7 +329,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="40.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-85/40.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Firefly: Revolución en Creación de Video</h4>
                                 <p>El Firefly de Adobe está preparado para lanzar características innovadoras de texto a video, aprovechando la inteligencia artificial generativa para transformar el contenido escrito en narrativas visuales atractivas. Esta herramienta innovadora está lista para revolucionar la creación de video, permitiendo a los usuarios producir clips interesantes con una velocidad sin precedentes. El compromiso de Adobe de mejorar la creatividad a través de la inteligencia artificial podría cambiar la producción de contenido en los medios y el marketing. Una vista previa de Firefly subraya su potencial para transformar la narración de historias.</p>
@@ -271,3 +353,56 @@
         <p>Todos los derechos reservados</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

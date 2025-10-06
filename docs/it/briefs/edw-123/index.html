@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="Trasformazione Digitale per la settimana del 13 luglio 2025, comprese le notizie su Intelligenza Artificiale, Cybersecurity e Edge Computing. Scopri come le innovative innovazioni dell&#39;IA come Streamdit e MedGemma sono pronte a rivoluzionare la creazione di contenuti e la sanità. Inoltre, esplora il potenziale trasformativo dell&#39;edge computing, una tecnologia che è pronta a portare entusiasmanti cambiamenti nel panorama digitale.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="Trasformazione Digitale per la settimana del 13 luglio 2025, comprese le notizie su Intelligenza Artificiale, Cybersecurity e Edge Computing. Scopri come le innovative innovazioni dell&#39;IA come Streamdit e MedGemma sono pronte a rivoluzionare la creazione di contenuti e la sanità. Inoltre, esplora il potenziale trasformativo dell&#39;edge computing, una tecnologia che è pronta a portare entusiasmanti cambiamenti nel panorama digitale.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="Trasformazione Digitale per la settimana del 13 luglio 2025, comprese le notizie su Intelligenza Artificiale, Cybersecurity e Edge Computing. Scopri come le innovative innovazioni dell&#39;IA come Streamdit e MedGemma sono pronte a rivoluzionare la creazione di contenuti e la sanità. Inoltre, esplora il potenziale trasformativo dell&#39;edge computing, una tecnologia che è pronta a portare entusiasmanti cambiamenti nel panorama digitale.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 13 luglio 2025, comprese le notizie su Intelligenza Artificiale, Cybersecurity e Edge Computing. Scopri come le innovative innovazioni dell&#39;IA come Streamdit e MedGemma sono pronte a rivoluzionare la creazione di contenuti e la sanità. Inoltre, esplora il potenziale trasformativo dell&#39;edge computing, una tecnologia che è pronta a portare entusiasmanti cambiamenti nel panorama digitale.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="Trasformazione Digitale per la settimana del 13 luglio 2025, comprese le notizie su Intelligenza Artificiale, Cybersecurity e Edge Computing. Scopri come le innovative innovazioni dell&#39;IA come Streamdit e MedGemma sono pronte a rivoluzionare la creazione di contenuti e la sanità. Inoltre, esplora il potenziale trasformativo dell&#39;edge computing, una tecnologia che è pronta a portare entusiasmanti cambiamenti nel panorama digitale.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="Trasformazione Digitale per la settimana del 13 luglio 2025, comprese le notizie su Intelligenza Artificiale, Cybersecurity e Edge Computing. Scopri come le innovative innovazioni dell&#39;IA come Streamdit e MedGemma sono pronte a rivoluzionare la creazione di contenuti e la sanità. Inoltre, esplora il potenziale trasformativo dell&#39;edge computing, una tecnologia che è pronta a portare entusiasmanti cambiamenti nel panorama digitale.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#123 2025-07-14</h2>
@@ -118,7 +198,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="46.jpeg" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-123/46.jpeg" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Adattarsi all&#39;AI: Insight da Freepik</h3>
                 <p>Nel più recente episodio del podcast *Abbracciando la Trasformazione Digitale*, il conduttore Dr. Darren intervista Joaquin Abela, CEO di Freepik. Esplorano l&#39;integrazione dell&#39;intelligenza artificiale generativa nei modelli di business e il percorso della trasformazione digitale. Abela condivide intuizioni su come adattarsi alle disruption, sfruttare i punti di forza esistenti e l&#39;impatto delle tecnologie innovative sull&#39;industria della licenza delle immagini. Sintonizzati per scoprire come rimanere competitivi in un paesaggio digitale in rapida evoluzione.</p>
@@ -133,7 +213,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-123/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Streamdit: Rivoluzione nella Creazione Video</h4>
                                 <p>Un nuovo sistema di intelligenza artificiale, Streamdit, ha fatto scalpore nel mondo della tecnologia generando video in diretta da richieste testuali a una velocità straordinaria di sedici fotogrammi al secondo. Questa innovazione rivoluzionaria non solo trasforma il modo in cui viene creato il contenuto, ma offre anche uno sguardo sul futuro entusiasmante della produzione video. Gli sviluppatori sono ottimisti riguardo al suo potenziale, consentendo ai creatori di produrre trasmissioni in diretta coinvolgenti con semplici input di testo.</p>
@@ -142,7 +222,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-123/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>AI&#39;s Color Metaphors: Understanding Challenges</h4>
                                 <p>Studi recenti evidenziano le sfide significative che l&#39;intelligenza artificiale incontra nella comprensione delle metafore del colore, che gli esseri umani afferrano intuitivamente attraverso l&#39;esperienza e il contesto culturale. Sebbene l&#39;intelligenza artificiale abbia raggiunto progressi notevoli in diversi campi, spesso inciampa nell&#39;interpretazione di concetti sfumati come le associazioni di colore. Questa lacuna sottolinea la necessità di una continua ricerca volta a migliorare la capacità dell&#39;intelligenza artificiale di comprendere i significati culturali e contestuali. Facendo ciò, possiamo garantire che l&#39;intelligenza artificiale si allinei più da vicino con le prospettive e l&#39;espressione umana, migliorando la sua efficacia nella comunicazione e instillando speranza per i futuri progressi.</p>
@@ -151,7 +231,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-123/12.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>MedGemma: Rivoluzione nell&#39;Assistenza Sanitaria</h4>
                                 <p>Google ha recentemente introdotto il suo innovativo modello di intelligenza artificiale, MedGemma, progettato specificamente per migliorare la fornitura di assistenza sanitaria. Questo sofisticato sistema utilizza algoritmi avanzati per analizzare meticolosamente vaste quantità di dati medici, consentendo ai professionisti della salute di prendere decisioni più informate e accurate. Migliorando le diagnosi e la cura complessiva dei pazienti, MedGemma segna un significativo passo avanti nell&#39;integrazione dell&#39;intelligenza artificiale nel campo medico. Possiede il potenziale per semplificare i processi, ridurre gli errori e, infine, migliorare i risultati sanitari per i pazienti in vari scenari medici, instillando ottimismo riguardo al futuro dell&#39;assistenza sanitaria.</p>
@@ -171,7 +251,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-123/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Cybersecurity: Urgent Need for Innovation</h4>
                                 <p>Analisi recenti mettono in evidenza lo stato allarmante della cybersecurity, rivelando che molti sistemi stanno cominciando a vacillare sotto la pressione di minacce in aumento. Gli esperti stanno suonando l&#39;allarme, avvertendo che man mano che gli attacchi informatici diventano più sofisticati, le difese esistenti potrebbero rivelarsi insufficienti. In risposta a queste sfide, le organizzazioni sono fortemente incoraggiate a innovare le loro strategie di cybersecurity. Incorporare meccanismi di risposta agili è essenziale per contrastare i pericoli in rapida evoluzione nel panorama digitale, garantendo una difesa più robusta contro potenziali violazioni e attacchi.</p>
@@ -180,7 +260,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-123/22.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Formazione Pratica: Chiave per Cybersecurity</h4>
                                 <p>L&#39;importanza della formazione pratica in cybersecurity è fondamentale, come evidenziato dai professionisti del settore. A differenza dei concetti teorici presenti nei libri di testo, l&#39;esperienza pratica fornisce agli individui competenze essenziali per affrontare in modo efficace le minacce cyber nel mondo reale. Impegnarsi nell&#39;apprendimento esperienziale prepara gli aspiranti esperti di cybersecurity a rispondere in modo dinamico a vari scenari di attacco. Di conseguenza, le organizzazioni dovrebbero dare priorità all&#39;investimento in programmi di formazione completi che enfatizzino questo approccio pratico, garantendo che i loro team siano ben attrezzati per difendersi in modo competente e sicuro dalle crescenti sfide informatiche.</p>
@@ -189,7 +269,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="security.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-123/security.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Rivalutare la Reportistica sulla Cybersicurezza</h4>
                                 <p>La reportistica sulla cybersicurezza nelle tecnologie operative affronta sfide significative poiché i modelli di governance tradizionali faticano a tenere il passo con il rapido avanzamento delle minacce. La ricerca indica che i framework obsoleti spesso non riescono ad affrontare le vulnerabilità attuali, lasciando le organizzazioni a rischio. Gli esperti chiedono una rivalutazione delle strategie di cybersicurezza per incorporare pratiche di reportistica e governance moderne, garantendo che le organizzazioni possano mitigarne efficacemente i rischi in un ambiente digitale sempre più complesso.</p>
@@ -209,7 +289,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-123/32.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Rivoluzione Aziendale: AI e Tecnologie Decentralizzate</h4>
                                 <p>La convergenza dell&#39;intelligenza artificiale, dell&#39;Internet delle Cose e del calcolo decentralizzato è pronta a rimodellare in modo significativo l&#39;innovazione aziendale. Forbes sottolinea l&#39;importanza di massimizzare queste tecnologie su larga scala. Sfruttando le capacità dell&#39;intelligenza artificiale e dell&#39;Internet delle Cose insieme al calcolo decentralizzato, le imprese possono aumentare l&#39;efficienza, migliorare i processi decisionali e offrire esperienze cliente superiori. Questo approccio sinergico potrebbe essere fondamentale per rimanere competitivi in mercati in rapida evoluzione.</p>
@@ -218,7 +298,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-123/36.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Edarat: Pioneering Saudi Arabia&#39;s Digital Transformation</h4>
                                 <p>Edarat Communication guida la trasformazione digitale dell’Arabia Saudita, pionierando il calcolo edge e l&#39;innovazione cloud. L&#39;azienda si concentra sulla creazione di un&#39;infrastruttura digitale robusta che supporta le esigenze aziendali in evoluzione. Implementando tecnologie all&#39;avanguardia, Edarat mira a migliorare la connettività e la fornitura di servizi in vari settori. Questa iniziativa contribuisce non solo agli obiettivi della Visione duemilatrenta del Regno, ma la posiziona anche come leader tecnologico regionale, promuovendo la crescita economica. Gli sforzi di Edarat stanno non solo trasformando il panorama digitale dell’Arabia Saudita, ma stanno anche fissando un punto di riferimento per altri paesi della regione.</p>
@@ -227,7 +307,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="40.webp" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-123/40.webp" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Il Futuro del Computing Edge</h4>
                                 <p>Mentre ci avviciniamo all&#39;anno duemilaventicinque, il panorama del computing di edge è previsto cambiare drasticamente a causa dei progressi nell&#39;intelligenza artificiale e nell&#39;apprendimento automatico. TechI.com discute di come le aziende sceglieranno tra infrastrutture di edge e cloud in base a prestazioni, latenza e esigenze di elaborazione dei dati. L&#39;ascesa del computing di edge offre capacità di gestione dei dati più rapide, rendendolo vantaggioso per applicazioni in tempo reale. Questa tecnologia è fondamentale per le industrie che dipendono da decisioni rapide e reattività, come i veicoli autonomi, le città intelligenti e il trading finanziario in tempo reale.</p>
@@ -251,3 +331,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

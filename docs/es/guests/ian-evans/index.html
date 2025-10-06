@@ -1,76 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Título de la Página Dinámica -->
-        <title>Adoptando la Transformación Digital</title>
+    <!-- Título de página dinámico -->
+    <title>Ian Evans</title>
 
-        <!-- Meta Descripción para SEO -->
-        <meta name="description" content="&lt;p&gt;Por determinar.&lt;/p&gt;
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/es/home/">
+    <meta name="description" content="&lt;p&gt;Por determinar.&lt;/p&gt;
 ">
+    <meta name="keywords" content="Transformación Digital, pódcast, entrevistas, noticias, IA, ciberseguridad, edge computing, gestión de datos">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Palabras Clave para SEO -->
-        <meta name="keywords" content="podcast, ia, computación en el borde, ciberseguridad, transformación digital">
-
-        <!-- Meta del Autor -->
-        <meta name="author" content="Darren W Pulsipher">
-
-        <!-- Etiquetas Meta de Open Graph para Redes Sociales -->
-        <meta property="og:title" content="Adoptando la Transformación Digital">
-        <meta property="og:description" content="&lt;p&gt;Por determinar.&lt;/p&gt;
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ian Evans — Entrevistas, Noticias y Comunidad">
+    <meta property="og:description" content="&lt;p&gt;Por determinar.&lt;/p&gt;
 ">
-        <meta property="og:image" content="thumbail.jpg">
+    <meta property="og:url" content="https://embracingdigital.org/es/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
-
-        <!-- Etiquetas Meta de Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Adoptando la Transformación Digital">
-        <meta name="twitter:description" content="&lt;p&gt;Por determinar.&lt;/p&gt;
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ian Evans — Entrevistas, Noticias y Comunidad">
+    <meta name="twitter:description" content="&lt;p&gt;Por determinar.&lt;/p&gt;
 ">
-        <meta name="twitter:image" content="thumbail.jpg">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-    <title>Adoptando la Transformación Digital</title>
+    <!-- Hreflang (alternativas) -->
+    <link rel="alternate" href="https://embracingdigital.org/es/home/" hreflang="es">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/es/home/" hreflang="x-default">
 
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Favicon y estilos -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analítica -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abrazando la Transformación Digital",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abrazando la Transformación Digital",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/es/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra de Navegación -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abrazando la Transformación Digital" class="site-icon">
+        <a href="/es/home/" aria-label="Inicio — Abrazando la Transformación Digital">
+            <img src="/images/logo.png" alt="Logo — Abrazando la Transformación Digital" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Botón móvil -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Alternar menú">☰</button>
+
+    <!-- Navegación principal -->
+    <nav id="primary-nav" aria-label="Principal">
         <ul>
-            <li><a href="../../../es/home/index.html">Inicio</a></li>
-            <li><a href="../../../es/about.html">Acerca de</a></li>
-            <li><a href="../../../es/episodes/index.html">Entrevistas</a></li>
-            <li><a href="../../../es/briefs/index.html">Noticias</a></li>
-            <li><a href="../../../es/community.html">Comunidad</a></li>
-            <li><a href="../../../es/guests/index.html">Invitados</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Tienda</a></li>
-            <li><a href="../../../es/search.html">Buscar</a></li>
+            <li><a href="/es/home/index.html" >Inicio</a></li>
+
             <li class="dropdown">
-                <a href="#">Idiomas</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Árabe -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Alemán -->
-                    <li><a href="../../../es/home/index.html">Español</a></li> <!-- Español -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francés -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portugués -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Japonés -->
+                <a href="/es/shows/index.html" aria-haspopup="true" aria-expanded="false">Programas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/es/episodes/index.html" aria-label="Entrevistas — Abrazando la Transformación Digital">
+                            Abrazando la Transformación Digital
+                            <small class="nav-note">Entrevistas</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/es/briefs/index.html" aria-label="Noticias — Digital esta semana">
+                            Digital esta semana
+                            <small class="nav-note">Noticias</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/es/guests/index.html">Invitados</a></li>
+            <li><a href="/es/articles/index.html">Artículos</a></li>
+
+            <!-- Comunidad -->
+            <li class="dropdown">
+                <a href="/es/community.html" aria-haspopup="true" aria-expanded="false">Comunidad</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/es/newsletter.html">Boletín</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Grupo de LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Tienda</a></li>
+
+            <!-- Acerca de -->
+            <li class="dropdown">
+                <a href="/es/about.html" aria-haspopup="true" aria-expanded="false">Acerca de</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/es/about.html">Sobre el programa</a></li>
+                    <li role="none"><a role="menuitem" href="/es/host.html">Anfitrión: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/es/sponsors/index.html">Patrocinios y contacto</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/es/search.html">Buscar</a></li>
+
+            <!-- Idiomas -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Idiomas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
@@ -136,3 +220,55 @@
         <p>Todos los derechos reservados</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>

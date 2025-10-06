@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="Abbracciando il Digitale ti porta le ultime notizie su cybersecurity, intelligenza artificiale e gestione dei dati per la settimana del 3 Marzo 2024. I punti salienti di questa settimana includono storie su pagamenti di ransomware, guasti tecnici a Gemini e le nuove piattaforme dati open source di LinkedIn. Rimanete informati con Abbracciando il Digitale.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="Abbracciando il Digitale ti porta le ultime notizie su cybersecurity, intelligenza artificiale e gestione dei dati per la settimana del 3 Marzo 2024. I punti salienti di questa settimana includono storie su pagamenti di ransomware, guasti tecnici a Gemini e le nuove piattaforme dati open source di LinkedIn. Rimanete informati con Abbracciando il Digitale.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="Abbracciando il Digitale ti porta le ultime notizie su cybersecurity, intelligenza artificiale e gestione dei dati per la settimana del 3 Marzo 2024. I punti salienti di questa settimana includono storie su pagamenti di ransomware, guasti tecnici a Gemini e le nuove piattaforme dati open source di LinkedIn. Rimanete informati con Abbracciando il Digitale.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="Abbracciando il Digitale ti porta le ultime notizie su cybersecurity, intelligenza artificiale e gestione dei dati per la settimana del 3 Marzo 2024. I punti salienti di questa settimana includono storie su pagamenti di ransomware, guasti tecnici a Gemini e le nuove piattaforme dati open source di LinkedIn. Rimanete informati con Abbracciando il Digitale.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="Abbracciando il Digitale ti porta le ultime notizie su cybersecurity, intelligenza artificiale e gestione dei dati per la settimana del 3 Marzo 2024. I punti salienti di questa settimana includono storie su pagamenti di ransomware, guasti tecnici a Gemini e le nuove piattaforme dati open source di LinkedIn. Rimanete informati con Abbracciando il Digitale.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="Abbracciando il Digitale ti porta le ultime notizie su cybersecurity, intelligenza artificiale e gestione dei dati per la settimana del 3 Marzo 2024. I punti salienti di questa settimana includono storie su pagamenti di ransomware, guasti tecnici a Gemini e le nuove piattaforme dati open source di LinkedIn. Rimanete informati con Abbracciando il Digitale.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#57 2024-03-03</h2>
@@ -154,7 +234,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-57/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Convergenza di HPC e AI</h3>
                 <p>Nell&#39;episodio di questa settimana del podcast Embracing Digital Transformation, Darren discute la convergenza di HPC, supercomputer, tecnologia cloud e intelligenza artificiale con l&#39;amministratore delegato di Parallel Works. Parallel Works offre un approccio semplificato alla gestione dei carichi di lavoro e dei cluster di supercomputer dinamici sia on-premises che nel cloud.</p>
@@ -169,7 +249,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-57/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Priorità alla Sicurezza Informatica nell&#39;Indo-Pacifico</h4>
                                 <p>Alla luce delle crescenti minacce informatiche, si consiglia alle nazioni della regione Indo-Pacifico di dare priorità alla sicurezza informatica per proteggere le loro economie e infrastrutture. Si sottolinea che sono necessari sforzi collaborativi per affrontare le sfide mutevoli nel regno digitale. Gli esperti sottolineano l&#39;importanza di sviluppare robusti quadri di sicurezza informatica e meccanismi di condivisione delle informazioni per contrastare le minacce informatiche nella regione.</p>
@@ -178,7 +258,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.png;charset=UTF-8" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-57/8.png;charset=UTF-8" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Intel&#39;s Commitment to Product Security 2023</h4>
                                 <p>Intel ha rilasciato il proprio quinto rapporto annuale sulla sicurezza dei prodotti per il due mila ventitré, evidenziando il suo impegno nel campo della cybersecurity. Il CEO di Intel, Pat Gelsinger, ha sfidato l&#39;industria a eguagliare gli investimenti di Intel nel settore. ABI Research ha classificato Intel al primo posto nella sicurezza del prodotto in tutta l&#39;industria del silicio, con Intel che ha superato AMD in varie categorie. Intel sottolinea la propria dedizione al miglioramento continuo nella sicurezza dei prodotti.</p>
@@ -187,7 +267,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-57/12.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Divieto di Riscatti: Esperti a Confronto</h4>
                                 <p>Gli esperti di cybersecurity sono divisi su una proposta di divieto dei pagamenti dei riscatti di ransomware. I sostenitori dicono che interromperebbe il modello economico dei cybercriminali e scoraggerebbe gli attacchi, mentre gli oppositori temono che potrebbe lasciare le vittime senza possibilità di recuperare i loro dati. Il dibattito evidenzia le sfide coinvolte nel combattere il ransomware, con opinioni diverse sulle strategie più efficaci per affrontare la crescente minaccia.</p>
@@ -207,7 +287,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-57/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Google&#39;s Gemini Launch Faces Major Issues</h4>
                                 <p>Il CEO di Google, Sundar Pichai, ha definito &#34;inaccettabile&#34; il fallimento dell&#39;azienda nel generare immagini durante il lancio del sistema operativo Gemini. Pichai ha promesso un&#39;indagine approfondita e un impegno a rettificare il problema. Il sistema operativo Gemini, che era stato progettato per fornire una maggiore privacy, ha affrontato notevoli critiche a causa di problemi di prestazioni e difetti tecnici. Questi commenti di Pichai sottolineano la dedizione di Google nel rispondere alle preoccupazioni degli utenti e migliorare l&#39;affidabilità dei suoi prodotti.</p>
@@ -216,7 +296,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="24.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-57/24.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>SORA: L&#39;IA che Trasforma Testo in Video</h4>
                                 <p>OpenAI ha sviluppato SORA, un generatore di testo in video che utilizza GPT-tre virgola cinque per trasformare i richiami scritti in contenuti video. La tecnologia combina l&#39;input testuale con l&#39;output video, dimostrando il potenziale dell&#39;IA multimodale per la generazione di contenuti creativi. Nonostante alcune sfide relative alla coerenza e all&#39;accuratezza, SORA rappresenta un passo avanti significativo per il campo, aprendo nuove possibilità per diverse applicazioni.</p>
@@ -225,7 +305,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="28.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-57/28.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Intel: 100 Million AI-Powered Chips by 2025</h4>
                                 <p>Intel punta a fornire chip per cento milioni di computer personali alimentati da AI entro il due mila venticinque. L&#39;azienda prevede di integrare acceleratori AI specializzati nei suoi processori per migliorare le prestazioni e l&#39;efficienza dei dispositivi. Questa iniziativa è in linea con la strategia più ampia di Intel per avanzare le tecnologie AI e sottolinea la crescente integrazione dell&#39;AI nei dispositivi di calcolo quotidiani.</p>
@@ -245,7 +325,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="34.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-57/34.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>LinkedIn Rilascia OpenHouse per Data Lakehouse</h4>
                                 <p>LinkedIn ha reso open-source OpenHouse, il suo strumento per la gestione del data lakehouse, per incentivare la collaborazione e l&#39;innovazione nella comunità di analisi dei dati. OpenHouse aiuta a semplificare la gestione dei data lakehouse, che combinano data lakes e data warehouses per un&#39;efficienza migliore. La mossa di LinkedIn riflette il suo impegno a promuovere soluzioni di analisi dei dati e a favorire un ambiente collaborativo.</p>
@@ -254,7 +334,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="38.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-57/38.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Gestione Sicura dei Dati nel Cloud</h4>
                                 <p>Informatica ha lancato la sua soluzione per la gestione dell&#39;accesso ai dati nel cloud, che combina il controllo dell&#39;accesso ai dati con strumenti di classificazione e metadati per le organizzazioni basate sui dati. La soluzione utilizza il motore AI CLAIRE per automatizzare le classificazioni dei dati sensibili, garantendo conformità e fiducia. CDAM si integra anche con l&#39;Intelligent Data Management Cloud di Informatica per fornire casi d&#39;uso di intelligenza artificiale e analisi automatiche e sicure, affrontando le sfide sulla privacy dei dati e migliorando la sicurezza in ambienti diversi.</p>
@@ -263,7 +343,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="42.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-57/42.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Assicurazioni e Data Mesh: Agilità Digitale</h4>
                                 <p>Le compagnie di assicurazioni stanno adottando strategie di data mesh per aumentare la loro agilità durante la trasformazione digitale. Questo approccio comporta la decentralizzazione della proprietà dei dati e la creazione di prodotti di dati specifici per il dominio per promuovere la flessibilità e la collaborazione. Le compagnie di assicurazioni stanno sfruttando il data mesh per adattarsi al panorama digitale in continua evoluzione e per allinearsi con i loro obiettivi di essere reattivi e adattabili ai cambiamenti tecnologici.</p>
@@ -287,3 +367,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

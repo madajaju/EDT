@@ -1,75 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Título de la Página Dinámica -->
-        <title>Adoptando la Transformación Digital</title>
+    <!-- Título de página dinámico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descripción para SEO -->
-        <meta name="description" content="Transformación Digital para la semana del 11 de agosto de 2024, incluye noticias de Gestión de Datos, Ciberseguridad e Inteligencia Artificial. Descubre cómo una sólida gobernanza de datos mejora la toma de decisiones y la tecnología de IA, aprende de la infiltración de una importante organización de cibercrimen, y explora las legalidades y el uso militar de la IA, todo en el contexto de prosperar en la rápida era digital en cambio.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/es/home/">
+    <meta name="description" content="Transformación Digital para la semana del 11 de agosto de 2024, incluye noticias de Gestión de Datos, Ciberseguridad e Inteligencia Artificial. Descubre cómo una sólida gobernanza de datos mejora la toma de decisiones y la tecnología de IA, aprende de la infiltración de una importante organización de cibercrimen, y explora las legalidades y el uso militar de la IA, todo en el contexto de prosperar en la rápida era digital en cambio.">
+    <meta name="keywords" content="Transformación Digital, pódcast, entrevistas, noticias, IA, ciberseguridad, edge computing, gestión de datos">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Palabras Clave para SEO -->
-        <meta name="keywords" content="podcast, ia, computación en el borde, ciberseguridad, transformación digital">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Entrevistas, Noticias y Comunidad">
+    <meta property="og:description" content="Transformación Digital para la semana del 11 de agosto de 2024, incluye noticias de Gestión de Datos, Ciberseguridad e Inteligencia Artificial. Descubre cómo una sólida gobernanza de datos mejora la toma de decisiones y la tecnología de IA, aprende de la infiltración de una importante organización de cibercrimen, y explora las legalidades y el uso militar de la IA, todo en el contexto de prosperar en la rápida era digital en cambio.">
+    <meta property="og:url" content="https://embracingdigital.org/es/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta del Autor -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Entrevistas, Noticias y Comunidad">
+    <meta name="twitter:description" content="Transformación Digital para la semana del 11 de agosto de 2024, incluye noticias de Gestión de Datos, Ciberseguridad e Inteligencia Artificial. Descubre cómo una sólida gobernanza de datos mejora la toma de decisiones y la tecnología de IA, aprende de la infiltración de una importante organización de cibercrimen, y explora las legalidades y el uso militar de la IA, todo en el contexto de prosperar en la rápida era digital en cambio.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Etiquetas Meta de Open Graph para Redes Sociales -->
-        <meta property="og:title" content="Adoptando la Transformación Digital">
-        <meta property="og:description" content="Transformación Digital para la semana del 11 de agosto de 2024, incluye noticias de Gestión de Datos, Ciberseguridad e Inteligencia Artificial. Descubre cómo una sólida gobernanza de datos mejora la toma de decisiones y la tecnología de IA, aprende de la infiltración de una importante organización de cibercrimen, y explora las legalidades y el uso militar de la IA, todo en el contexto de prosperar en la rápida era digital en cambio.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternativas) -->
+    <link rel="alternate" href="https://embracingdigital.org/es/home/" hreflang="es">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/es/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon y estilos -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Etiquetas Meta de Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Adoptando la Transformación Digital">
-        <meta name="twitter:description" content="Transformación Digital para la semana del 11 de agosto de 2024, incluye noticias de Gestión de Datos, Ciberseguridad e Inteligencia Artificial. Descubre cómo una sólida gobernanza de datos mejora la toma de decisiones y la tecnología de IA, aprende de la infiltración de una importante organización de cibercrimen, y explora las legalidades y el uso militar de la IA, todo en el contexto de prosperar en la rápida era digital en cambio.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analítica -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Enlace al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Adoptando la Transformación Digital</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abrazando la Transformación Digital",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abrazando la Transformación Digital",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/es/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra de Navegación -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abrazando la Transformación Digital" class="site-icon">
+        <a href="/es/home/" aria-label="Inicio — Abrazando la Transformación Digital">
+            <img src="/images/logo.png" alt="Logo — Abrazando la Transformación Digital" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Botón móvil -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Alternar menú">☰</button>
+
+    <!-- Navegación principal -->
+    <nav id="primary-nav" aria-label="Principal">
         <ul>
-            <li><a href="../../../es/home/index.html">Inicio</a></li>
-            <li><a href="../../../es/about.html">Acerca de</a></li>
-            <li><a href="../../../es/episodes/index.html">Entrevistas</a></li>
-            <li><a href="../../../es/briefs/index.html">Noticias</a></li>
-            <li><a href="../../../es/community.html">Comunidad</a></li>
-            <li><a href="../../../es/guests/index.html">Invitados</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Tienda</a></li>
-            <li><a href="../../../es/search.html">Buscar</a></li>
+            <li><a href="/es/home/index.html" >Inicio</a></li>
+
             <li class="dropdown">
-                <a href="#">Idiomas</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Árabe -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Alemán -->
-                    <li><a href="../../../es/home/index.html">Español</a></li> <!-- Español -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francés -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portugués -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Japonés -->
+                <a href="/es/shows/index.html" aria-haspopup="true" aria-expanded="false">Programas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/es/episodes/index.html" aria-label="Entrevistas — Abrazando la Transformación Digital">
+                            Abrazando la Transformación Digital
+                            <small class="nav-note">Entrevistas</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/es/briefs/index.html" aria-label="Noticias — Digital esta semana">
+                            Digital esta semana
+                            <small class="nav-note">Noticias</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/es/guests/index.html">Invitados</a></li>
+            <li><a href="/es/articles/index.html">Artículos</a></li>
+
+            <!-- Comunidad -->
+            <li class="dropdown">
+                <a href="/es/community.html" aria-haspopup="true" aria-expanded="false">Comunidad</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/es/newsletter.html">Boletín</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Grupo de LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Tienda</a></li>
+
+            <!-- Acerca de -->
+            <li class="dropdown">
+                <a href="/es/about.html" aria-haspopup="true" aria-expanded="false">Acerca de</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/es/about.html">Sobre el programa</a></li>
+                    <li role="none"><a role="menuitem" href="/es/host.html">Anfitrión: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/es/sponsors/index.html">Patrocinios y contacto</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/es/search.html">Buscar</a></li>
+
+            <!-- Idiomas -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Idiomas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
@@ -132,7 +214,7 @@
             <div class="main-brief grid-box">
                 <h3>Adoptando la Transformación Digital</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-80/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Transformación Digital: Claves de Liderazgo</h3>
                 <p>Darren entrevista a John Rossman, autor de Big Bet Leadership, acerca de la Transformación Digital y cómo efectuar cambios profundos en las organizaciones, no solo pequeños cambios evolutivos. El podcast continúa creciendo, pero necesitamos tu ayuda. Corre la voz acerca de Embracing Digital Transformation, y veamos si podemos llevar a nuestros suscriptores a más de cien mil este año.</p>
@@ -147,7 +229,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-80/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Governanza de Datos: Clave en Decisiones</h4>
                                 <p>La gobernanza de datos, un factor clave para garantizar la limpieza y consistencia de los datos, juega un papel crucial en la mejora de los procesos de toma de decisiones, incluso durante los períodos de inactividad. Los expertos aconsejan encarecidamente que las organizaciones mantengan continuamente la fluidez, precisión y privacidad de los datos. Este proceso continuo valida y fortalece la calidad de los datos, que a su vez optimiza las capacidades de toma de decisiones de una organización, empoderando a los profesionales en sus roles.</p>
@@ -156,7 +238,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-80/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Inteligencia Artificial: Beneficios y Retos Éticos</h4>
                                 <p>La inteligencia artificial generativa aprovecha los grandes datos para transformar la información compleja en contenido comprensible, reforzando el papel crucial de la gobernanza de datos y la confianza. A pesar de sus muchos beneficios, intensifica los problemas de privacidad y seguridad de los datos, lo que requiere una atención cuidadosa y soluciones prácticas para proteger los datos sensibles. Estas preocupaciones son un recordatorio significativo de la necesidad de mecanismos robustos para no solo aprovechar el poder de esta tecnología, sino también garantizar su uso responsable y seguro.</p>
@@ -165,7 +247,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-80/12.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Transformación de Datos Espaciales en Ciudades</h4>
                                 <p>La gestión de datos espaciales ha evolucionado como una parte vital del marco de la ciudad innovadora, no solo almacenando datos sino agregando capas de contexto a estos. Ayuda a comprender y maniobrar paisajes urbanos complejos para una planificación de la ciudad e infraestructura eficientes. A medida que la tecnología evoluciona, la gestión de datos espaciales está redefiniendo la perspectiva convencional de la gestión de datos al aumentar su alcance y proporcionar mejores perspectivas en la planificación urbana. Por lo tanto, mejora enormemente nuestra capacidad para diseñar y navegar por entornos urbanos.</p>
@@ -185,7 +267,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-80/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Infiltración en LockBit: Claves de Defensa</h4>
                                 <p>Un experto en ciberseguridad penetró con éxito en el grupo de ransomware LockBit, desenmascarando al principal orquestador de la peligrosa operación. El investigador enfatizó que comprender las mentalidades, tácticas y objetivos de los actores de delitos digitales es crucial para fortalecer las defensas contra las amenazas cibernéticas. La realización de esta infiltración ofrece una visión única sobre el funcionamiento de las organizaciones de cibercrimen, lo cual resulta invalorable para formular estrategias sólidas para combatir futuras amenazas cibernéticas.</p>
@@ -194,7 +276,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-80/22.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Instituciones Educativas Fortalecen Ciberseguridad Nacional</h4>
                                 <p>El director de ciberseguridad de la Casa Blanca recientemente elogió los programas de ciberseguridad en el Colegio del Sur de Nevada (CSN) y la Universidad de Nevada, Las Vegas (UNLV). Este reconocimiento subraya el papel crucial que desempeñan estas instituciones educativas en la seguridad nacional. Los programas bien estructurados e intensos proporcionan un grupo de profesionales altamente capacitados aptos para combatir distintas amenazas de ciberseguridad. Las contribuciones de sus graduados han reforzado significativamente las defensas de la nación contra los ataques digitales, incidiendo notablemente en la postura general de seguridad del país.</p>
@@ -203,7 +285,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-80/26.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Claves del Black Hat USA 2024</h4>
                                 <p>El Black Hat USA dos mil veinticuatro concluyó con varias conclusiones clave significativas que los profesionales de la ciberseguridad deberían considerar detenidamente. La comunicación efectiva es crucial en la ciberseguridad, ya que es instrumental para lograr un robusto protocolo de seguridad. La conferencia iluminó la creciente prominencia de la inteligencia artificial (IA) en el campo, indicando su potencial para transformar y revolucionar la ciberseguridad. Este emocionante potencial de la IA en la ciberseguridad es algo que los profesionales en el campo pueden esperar con ansias, ya que promete mejorar significativamente los protocolos de seguridad. El crecimiento del ransomware y las amenazas de seguridad en la nube se destacaron en la conferencia, confirmando la necesidad de medidas de protección avanzadas en los espacios digitales. Este énfasis en la necesidad de medidas avanzadas recuerda a los profesionales que deben permanecer vigilantes y preparados para posibles amenazas, asegurando que siempre estén un paso adelante.</p>
@@ -223,7 +305,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-80/32.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Legisladores Evaluan Regulación de la IA</h4>
                                 <p>A medida que se acercan las elecciones de noviembre, los legisladores estatales examinan críticamente las ventajas y los peligros potenciales de la Inteligencia Artificial (IA). La creciente influencia de la IA en la vida cotidiana está llevando a las autoridades legislativas a contemplar seriamente la implementación de políticas regulatorias. Desde la atención médica hasta el transporte y más allá, las tecnologías de IA están transformando los sistemas tradicionales, lo que requiere un marco regulatorio adecuado para manejar los riesgos potenciales y asegurar un uso responsable y ético.</p>
@@ -232,7 +314,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-80/36.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Legal Challenges of Advancing Artificial Intelligence</h4>
                                 <p>A medida que la Inteligencia Artificial (IA) se integra más en la vida diaria, las implicaciones legales apenas comienzan a desentrañarse. Los expertos legales sugieren que la ley debe evolucionar en respuesta a los problemas únicos que plantea la tecnología de IA, ya que nuestra legislación existente puede no atender adecuadamente a estos. Esto incluye disputas sobre el sesgo del aprendizaje automático, los derechos de propiedad intelectual del contenido generado por IA, la responsabilidad por las decisiones derivadas de la IA y la garantía de privacidad con la vigilancia de la IA. Por lo tanto, el sector legal debe adaptarse y transformarse en sincronía con los avances de la IA.</p>
@@ -241,7 +323,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="40.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-80/40.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>IA en Estrategias Militares: Un Futuro Colectivo</h4>
                                 <p>Estados Unidos, Reino Unido y Australia están trabajando colectivamente para incorporar la inteligencia artificial (IA) en sus estrategias militares. Este movimiento estratégico indica un paso significativo hacia la mejora de las capacidades de defensa para cumplir con las obligaciones futuras. Estas naciones reconocen el potencial de la IA para revolucionar la guerra, mejorando su capacidad para predecir, responder y adaptarse en un amplio espectro de escenarios militares. Este esfuerzo conjunto subraya el papel vital de la IA en la redefinición de los enfoques de defensa en el siglo veintiuno.</p>
@@ -265,3 +347,56 @@
         <p>Todos los derechos reservados</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

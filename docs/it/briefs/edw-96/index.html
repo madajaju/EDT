@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="La Trasformazione Digitale per il 14 dicembre 2024 include notizie su Informatica Ubiqua, Cybersecurity e Intelligenza Artificiale. Scopri come Google sta sfidando il potenziale monopolio di Microsoft nel cloud computing, approfondisci i dibattiti critici riguardanti il potenziale inespresso del 5G e scopri i benefici delle strategie di cloud ibrido in un panorama tecnologico in rapida evoluzione.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="La Trasformazione Digitale per il 14 dicembre 2024 include notizie su Informatica Ubiqua, Cybersecurity e Intelligenza Artificiale. Scopri come Google sta sfidando il potenziale monopolio di Microsoft nel cloud computing, approfondisci i dibattiti critici riguardanti il potenziale inespresso del 5G e scopri i benefici delle strategie di cloud ibrido in un panorama tecnologico in rapida evoluzione.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="La Trasformazione Digitale per il 14 dicembre 2024 include notizie su Informatica Ubiqua, Cybersecurity e Intelligenza Artificiale. Scopri come Google sta sfidando il potenziale monopolio di Microsoft nel cloud computing, approfondisci i dibattiti critici riguardanti il potenziale inespresso del 5G e scopri i benefici delle strategie di cloud ibrido in un panorama tecnologico in rapida evoluzione.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="La Trasformazione Digitale per il 14 dicembre 2024 include notizie su Informatica Ubiqua, Cybersecurity e Intelligenza Artificiale. Scopri come Google sta sfidando il potenziale monopolio di Microsoft nel cloud computing, approfondisci i dibattiti critici riguardanti il potenziale inespresso del 5G e scopri i benefici delle strategie di cloud ibrido in un panorama tecnologico in rapida evoluzione.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="La Trasformazione Digitale per il 14 dicembre 2024 include notizie su Informatica Ubiqua, Cybersecurity e Intelligenza Artificiale. Scopri come Google sta sfidando il potenziale monopolio di Microsoft nel cloud computing, approfondisci i dibattiti critici riguardanti il potenziale inespresso del 5G e scopri i benefici delle strategie di cloud ibrido in un panorama tecnologico in rapida evoluzione.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="La Trasformazione Digitale per il 14 dicembre 2024 include notizie su Informatica Ubiqua, Cybersecurity e Intelligenza Artificiale. Scopri come Google sta sfidando il potenziale monopolio di Microsoft nel cloud computing, approfondisci i dibattiti critici riguardanti il potenziale inespresso del 5G e scopri i benefici delle strategie di cloud ibrido in un panorama tecnologico in rapida evoluzione.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#96 2024-12-15</h2>
@@ -118,7 +198,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-96/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Adottare l&#39;IA: Opportunità e Sfide</h3>
                 <p>L&#39;evoluzione rapida dell&#39;intelligenza artificiale (IA) ha generato un mix di entusiasmo e ansia tra le aziende. In questo episodio, Darren e il suo ospite, Walter Riviera, discutono delle complessità dell&#39;adozione dell&#39;IA, della pressione sulle aziende affinché abbraccino gli ultimi trend tecnologici e dei passi essenziali che le organizzazioni possono compiere per assicurarsi di ottenere un reale valore dalle loro iniziative relative all&#39;IA.</p>
@@ -133,7 +213,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-96/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Google Urges FTC to Block Microsoft Acquisition</h4>
                                 <p>Google esorta la Commissione Federale del Commercio a bloccare l&#39;acquisizione proposta da Microsoft della divisione cloud di OpenAI. Il gigante della tecnologia sostiene che l&#39;accordo potrebbe ostacolare gravemente la concorrenza nel mercato del cloud, potenzialmente monopolizzando l&#39;industria. Google sottolinea l&#39;importanza di un ambiente equo per l&#39;innovazione e la scelta dei consumatori, citando preoccupazioni sul fatto che l&#39;acquisizione soffocherebbe i concorrenti più piccoli e disturberebbe il panorama in evoluzione delle tecnologie di cloud computing.</p>
@@ -142,7 +222,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-96/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Cinque G e Cloud: Opportunità Future</h4>
                                 <p>Nonostante il dibattito attuale sugli effetti del cinque G sul cloud computing, c&#39;è un lato positivo. Sebbene la sinergia tra la tecnologia cinque G e le applicazioni cloud non abbia ancora fornito i miglioramenti attesi in termini di velocità e affidabilità, gli esperti sono ottimisti. Chiedono migliori strategie di integrazione e casi d&#39;uso per realizzare appieno i potenziali benefici del cinque G per i servizi cloud in vari settori, offrendo speranza per il futuro della tecnologia.</p>
@@ -151,7 +231,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-96/12.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Vantaggi del Cloud Ibrido per Aziende</h4>
                                 <p>Uno studio recente evidenzia i vantaggi di una strategia di cloud ibrido per le organizzazioni che desiderano migliorare l&#39;efficienza operativa e la gestione dei costi. Le aziende che hanno adottato un approccio ibrido stanno vivendo un miglior utilizzo delle risorse e una riduzione dei costi fissi. Mentre le imprese si muovono in un ambiente competitivo, combinare soluzioni di cloud pubblico e privato offre flessibilità e scalabilità, rendendolo una scelta sempre più popolare nel cloud computing.</p>
@@ -171,7 +251,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-96/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Telecomunicazioni: Nuovi Standard di Cybersicurezza</h4>
                                 <p>Il settore delle telecomunicazioni affronta nuovi standard di cybersicurezza mirati a migliorare la sicurezza delle reti. Con la crescente sofisticazione delle minacce informatiche, i regolatori sottolineano protocolli robusti per i fornitori di telecomunicazioni. Questi standard fanno parte di un&#39;iniziativa più ampia per proteggere le infrastrutture critiche, garantire la protezione dei dati dei clienti e accrescere la fiducia nelle telecomunicazioni. Il cronoprogramma di attuazione è ancora in discussione, ma le parti interessate del settore sono incoraggiate a prepararsi per la conformità.</p>
@@ -180,7 +260,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-96/22.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Sequestro del Mercato Cibernetico Rydox</h4>
                                 <p>Una recente azione di repressione da parte del Dipartimento di Giustizia degli Stati Uniti ha portato al sequestro del mercato cibernetico Rydox, una piattaforma nota per facilitare transazioni e servizi illegali. L&#39;operazione, che ha coinvolto la coordinazione con le autorità di Albania e Kosovo, segna un passo significativo nella lotta contro il crimine informatico. Questa mossa è prevista per interrompere varie attività criminali online, riducendo potenzialmente il numero di crimini informatici e aumentando la fiducia nelle transazioni online. Serve inoltre come avvertimento per altri cibercriminali, segnalando la crescente cooperazione globale nella lotta contro le minacce informatiche.</p>
@@ -189,7 +269,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="security.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-96/security.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Rischio di AuthQuake: Attacco MFA Esposto</h4>
                                 <p>Recenti scoperte hanno rivelato che l&#39;autenticazione a più fattori di Microsoft può essere aggirata utilizzando un nuovo metodo di attacco chiamato AuthQuake. Questa vulnerabilità espone gli utenti a un potenziale rischio, poiché gli aggressori potrebbero ottenere accesso agli account anche con l&#39;autenticazione a più fattori attivata. Le conseguenze di un simile attacco potrebbero essere gravi, includendo violazioni dei dati, perdite finanziarie e danni reputazionali. Microsoft esorta gli utenti ad adottare misure protettive aggiuntive mentre l&#39;azienda indaga sulla questione. Gli esperti di cybersicurezza sottolineano l&#39;importanza di rimanere informati sulle minacce in evoluzione e di utilizzare difese di sicurezza stratificate.</p>
@@ -209,7 +289,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-96/32.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Cina promuove studi su intelligenza artificiale</h4>
                                 <p>La Cina esorta le istituzioni educative ad incorporare programmi di studio legati all&#39;intelligenza artificiale e alla tecnologia per affrontare la crescente domanda di talento qualificato in un&#39;economia guidata dall&#39;IA. Con l&#39;aumento dell&#39;influenza di strumenti come ChatGPT, il governo cinese sottolinea l&#39;importanza di dotare gli studenti delle conoscenze necessarie per avere successo nei futuri scenari tecnologici. Questa iniziativa rafforza il vantaggio competitivo del paese nei settori avanzati della tecnologia.</p>
@@ -218,7 +298,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-96/36.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Energia Sostenibile per l&#39;Intelligenza Artificiale</h4>
                                 <p>Le maggiori compagnie petrolifere stanno cercando di collaborare con i giganti della tecnologia per sostenere le esigenze energetiche dei centri dati dell&#39;intelligenza artificiale. Con l&#39;aumento della domanda di potenza di elaborazione per l&#39;IA, queste compagnie petrolifere si stanno posizionando come partner essenziali nella fornitura di soluzioni energetiche sostenibili. Questo partenariato mira a colmare il divario tra i settori energetici tradizionali e la rapida crescita dell&#39;infrastruttura dell&#39;IA, evidenziando l&#39;intersezione tra tecnologia ed energia.</p>
@@ -227,7 +307,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="40.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-96/40.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Intelligenza Artificiale: Rivoluzione nella Difesa</h4>
                                 <p>La nuova cellula di capacità rapida del Dipartimento della Difesa è una testimonianza del potenziale dell&#39;intelligenza artificiale nella difesa nazionale. Guidata dal chief AI officer del DOD, questa iniziativa mira a migliorare le applicazioni dell&#39;intelligenza artificiale all&#39;interno delle operazioni militari. L&#39;obiettivo è sviluppare e integrare strumenti avanzati di intelligenza artificiale per i piloti militari, facilitando una più rapida presa di decisioni e un&#39;efficienza operativa. Questa mossa strategica non solo modernizza le capacità militari, ma ci ispira anche con le possibilità offerte dalla tecnologia nella difesa nazionale.</p>
@@ -251,3 +331,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

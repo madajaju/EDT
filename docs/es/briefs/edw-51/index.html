@@ -1,75 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Título de la Página Dinámica -->
-        <title>Adoptando la Transformación Digital</title>
+    <!-- Título de página dinámico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descripción para SEO -->
-        <meta name="description" content="Prepárese para las Noticias de Transformación Digital de esta semana para el 22 de enero de 2024, que presenta historias sobre gestión de datos, ciberseguridad e inteligencia artificial. Esta semana, tenemos noticias sobre los derechos de privacidad de datos en California, consejos sobre cómo proteger su organización de ciberataques relacionados con la IA y la computación cuántica, y una mirada a cómo se está utilizando la IA para ayudar al gobierno a tomar decisiones en tiempo de guerra.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/es/home/">
+    <meta name="description" content="Prepárese para las Noticias de Transformación Digital de esta semana para el 22 de enero de 2024, que presenta historias sobre gestión de datos, ciberseguridad e inteligencia artificial. Esta semana, tenemos noticias sobre los derechos de privacidad de datos en California, consejos sobre cómo proteger su organización de ciberataques relacionados con la IA y la computación cuántica, y una mirada a cómo se está utilizando la IA para ayudar al gobierno a tomar decisiones en tiempo de guerra.">
+    <meta name="keywords" content="Transformación Digital, pódcast, entrevistas, noticias, IA, ciberseguridad, edge computing, gestión de datos">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Palabras Clave para SEO -->
-        <meta name="keywords" content="podcast, ia, computación en el borde, ciberseguridad, transformación digital">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Entrevistas, Noticias y Comunidad">
+    <meta property="og:description" content="Prepárese para las Noticias de Transformación Digital de esta semana para el 22 de enero de 2024, que presenta historias sobre gestión de datos, ciberseguridad e inteligencia artificial. Esta semana, tenemos noticias sobre los derechos de privacidad de datos en California, consejos sobre cómo proteger su organización de ciberataques relacionados con la IA y la computación cuántica, y una mirada a cómo se está utilizando la IA para ayudar al gobierno a tomar decisiones en tiempo de guerra.">
+    <meta property="og:url" content="https://embracingdigital.org/es/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta del Autor -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Entrevistas, Noticias y Comunidad">
+    <meta name="twitter:description" content="Prepárese para las Noticias de Transformación Digital de esta semana para el 22 de enero de 2024, que presenta historias sobre gestión de datos, ciberseguridad e inteligencia artificial. Esta semana, tenemos noticias sobre los derechos de privacidad de datos en California, consejos sobre cómo proteger su organización de ciberataques relacionados con la IA y la computación cuántica, y una mirada a cómo se está utilizando la IA para ayudar al gobierno a tomar decisiones en tiempo de guerra.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Etiquetas Meta de Open Graph para Redes Sociales -->
-        <meta property="og:title" content="Adoptando la Transformación Digital">
-        <meta property="og:description" content="Prepárese para las Noticias de Transformación Digital de esta semana para el 22 de enero de 2024, que presenta historias sobre gestión de datos, ciberseguridad e inteligencia artificial. Esta semana, tenemos noticias sobre los derechos de privacidad de datos en California, consejos sobre cómo proteger su organización de ciberataques relacionados con la IA y la computación cuántica, y una mirada a cómo se está utilizando la IA para ayudar al gobierno a tomar decisiones en tiempo de guerra.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternativas) -->
+    <link rel="alternate" href="https://embracingdigital.org/es/home/" hreflang="es">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/es/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon y estilos -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Etiquetas Meta de Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Adoptando la Transformación Digital">
-        <meta name="twitter:description" content="Prepárese para las Noticias de Transformación Digital de esta semana para el 22 de enero de 2024, que presenta historias sobre gestión de datos, ciberseguridad e inteligencia artificial. Esta semana, tenemos noticias sobre los derechos de privacidad de datos en California, consejos sobre cómo proteger su organización de ciberataques relacionados con la IA y la computación cuántica, y una mirada a cómo se está utilizando la IA para ayudar al gobierno a tomar decisiones en tiempo de guerra.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analítica -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Enlace al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Adoptando la Transformación Digital</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abrazando la Transformación Digital",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abrazando la Transformación Digital",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/es/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra de Navegación -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abrazando la Transformación Digital" class="site-icon">
+        <a href="/es/home/" aria-label="Inicio — Abrazando la Transformación Digital">
+            <img src="/images/logo.png" alt="Logo — Abrazando la Transformación Digital" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Botón móvil -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Alternar menú">☰</button>
+
+    <!-- Navegación principal -->
+    <nav id="primary-nav" aria-label="Principal">
         <ul>
-            <li><a href="../../../es/home/index.html">Inicio</a></li>
-            <li><a href="../../../es/about.html">Acerca de</a></li>
-            <li><a href="../../../es/episodes/index.html">Entrevistas</a></li>
-            <li><a href="../../../es/briefs/index.html">Noticias</a></li>
-            <li><a href="../../../es/community.html">Comunidad</a></li>
-            <li><a href="../../../es/guests/index.html">Invitados</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Tienda</a></li>
-            <li><a href="../../../es/search.html">Buscar</a></li>
+            <li><a href="/es/home/index.html" >Inicio</a></li>
+
             <li class="dropdown">
-                <a href="#">Idiomas</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Árabe -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Alemán -->
-                    <li><a href="../../../es/home/index.html">Español</a></li> <!-- Español -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francés -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portugués -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Japonés -->
+                <a href="/es/shows/index.html" aria-haspopup="true" aria-expanded="false">Programas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/es/episodes/index.html" aria-label="Entrevistas — Abrazando la Transformación Digital">
+                            Abrazando la Transformación Digital
+                            <small class="nav-note">Entrevistas</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/es/briefs/index.html" aria-label="Noticias — Digital esta semana">
+                            Digital esta semana
+                            <small class="nav-note">Noticias</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/es/guests/index.html">Invitados</a></li>
+            <li><a href="/es/articles/index.html">Artículos</a></li>
+
+            <!-- Comunidad -->
+            <li class="dropdown">
+                <a href="/es/community.html" aria-haspopup="true" aria-expanded="false">Comunidad</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/es/newsletter.html">Boletín</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Grupo de LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Tienda</a></li>
+
+            <!-- Acerca de -->
+            <li class="dropdown">
+                <a href="/es/about.html" aria-haspopup="true" aria-expanded="false">Acerca de</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/es/about.html">Sobre el programa</a></li>
+                    <li role="none"><a role="menuitem" href="/es/host.html">Anfitrión: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/es/sponsors/index.html">Patrocinios y contacto</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/es/search.html">Buscar</a></li>
+
+            <!-- Idiomas -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Idiomas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
@@ -150,7 +232,7 @@
             <div class="main-brief grid-box">
                 <h3>Adoptando la Transformación Digital</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-51/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Desafíos de Datos en Fabricación Digital</h3>
                 <p>El último episodio de Darren en el podcast Aceptando la Transformación Digital profundiza en el mundo de la gestión de datos de fabricación de Investigación y Desarrollo. Analiza las complejidades de la recolección y análisis de datos, desde la innovadora investigación pura hasta el más predecible proceso de fabricación. Es una exploración perspicaz de los desafíos y oportunidades de la transformación digital en este campo.</p>
@@ -165,7 +247,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-51/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Hammerspace Mejora Gestión de Datos Global</h4>
                                 <p>Hammerspace ha integrado recientemente el almacenamiento en cinta en su sistema de archivos global para mejorar las capacidades de gestión de datos. Esta integración permite a los usuarios acceder y gestionar de manera eficiente los datos a través de diferentes medios de almacenamiento, promoviendo la flexibilidad en las soluciones de almacenamiento de archivos. La solución actual ofrecida por Hammerspace establece un sistema de archivos global que cubre múltiples centros de datos, nubes y límites de borde tradicionales.</p>
@@ -174,7 +256,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-51/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Toad Data Studio: Gestión Integral de Datos</h4>
                                 <p>La gestión de datos heterogéneos es esencial para las empresas modernas. Toad Data Studio admite SQL, NoSQL y bases de datos en la nube, proporcionando capacidades integrales de gestión de bases de datos. La compatibilidad multiplataforma agiliza los flujos de trabajo, la optimización de consultas mejora el rendimiento de la base de datos y las herramientas de colaboración permiten un trabajo en equipo eficiente. Por lo tanto, Toad Data Studio es un recurso indispensable para gestionar y administrar bases de datos en diversos entornos.</p>
@@ -183,7 +265,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-51/12.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Preparación para la CPRA en California</h4>
                                 <p>Si opera un negocio en California, es crucial prepararse para la próxima Ley de Derechos de Privacidad de California (CPRA) perfeccionando sus prácticas de privacidad de datos. Mejorando la gestión de datos, los mecanismos de consentimiento y las estrategias de cumplimiento, puede cumplir con los requisitos de la CPRA y mantenerse a la vanguardia en la protección de la privacidad del consumidor. Se recomienda implementar medidas proactivas para garantizar que su negocio cumpla completamente con la CPRA.</p>
@@ -203,7 +285,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-51/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Guía de Ciberseguridad para Empresas de Agua</h4>
                                 <p>La CISA ha lanzado una guía de respuesta integral a incidentes de ciberseguridad adaptada a las empresas de servicios de agua. La guía está diseñada para ayudar a las empresas de agua a responder de manera efectiva a los incidentes de ciberseguridad y mitigar posibles amenazas cibernéticas. Proporciona valiosas ideas y sirve como recurso para que las empresas de agua refuercen sus capacidades de respuesta a incidentes. Este movimiento es un paso significativo en la lucha contra los ataques cibernéticos a la infraestructura crítica en el sector del agua.</p>
@@ -212,7 +294,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-51/22.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>OpenAI y Pentágono: Nueva Alianza Cibernética</h4>
                                 <p>OpenAI se ha asociado con el Pentágono en una iniciativa de ciberseguridad, lo que representa un cambio respecto a su postura anterior. Al aprovechar la experiencia de OpenAI, la asociación busca avanzar en las capacidades de ciberseguridad para la defensa. Este desarrollo destaca el papel en evolución de la IA en los esfuerzos de seguridad nacional, con OpenAI contribuyendo activamente a los proyectos de ciberseguridad en colaboración con el Pentágono.</p>
@@ -221,7 +303,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="security.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-51/security.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Computación Cuántica: Amenaza a la Ciberseguridad</h4>
                                 <p>IBM ha advertido que la aparición de la computación cuántica podría resultar en una amenaza severa para la ciberseguridad. La preocupación es que las computadoras cuánticas podrían romper los métodos de cifrado ampliamente utilizados, lo que requerirá el desarrollo de medidas de seguridad resistentes a lo cuántico. Se insta a las organizaciones a tomar medidas proactivas para prepararse para los desafíos futuros que plantea la computación cuántica en la ciberseguridad.</p>
@@ -241,7 +323,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-51/32.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>IA y Seguridad Nuclear: Retos y Oportunidades</h4>
                                 <p>La integración de la inteligencia artificial (IA) en los procesos de toma de decisiones dentro de la seguridad atómica plantea preguntas provocativas sobre cómo las tecnologías de IA podrían influir en la estabilidad, la dinámica de la confianza y el equilibrio estratégico en general en el contexto de las capacidades nucleares. Es esencial garantizar una implementación responsable de la IA para evitar consecuencias no deseadas que podrían amenazar la seguridad y la estabilidad globales. La necesidad crítica de una integración confiable de la IA enfatiza la importancia de proporcionar un entorno internacional seguro y estable en el contexto de las capacidades nucleares.</p>
@@ -250,7 +332,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-51/36.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Transformación Ejecutiva: La Era de IA</h4>
                                 <p>La inteligencia artificial (IA) está en camino de perturbar la suite ejecutiva de tres formas significativas. Los ejecutivos pueden esperar cambios en los procesos de toma de decisiones, la dinámica de la fuerza laboral y el papel general de los líderes. A medida que la IA sigue evolucionando, su impacto transformador reforma los paradigmas de liderazgo tradicionales. Se anima a los ejecutivos a adaptarse a estos cambios y a aprovechar estratégicamente la IA para obtener una ventaja competitiva en el dinámico entorno empresarial.</p>
@@ -259,7 +341,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="40.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-51/40.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>McAfee Lanza Detección de Audio Deepfake</h4>
                                 <p>McAfee ha lanzado un sistema de detección de audio deepfake impulsado por inteligencia artificial para abordar la creciente amenaza del contenido de audio manipulado. La tecnología está diseñada para identificar y mitigar los riesgos asociados con el audio deepfake, enfatizando la necesidad de soluciones avanzadas de detección y prevención. Esto refleja la creciente importancia de la inteligencia artificial en la lucha contra las amenazas emergentes en medios manipulados y en la mejora de las medidas de ciberseguridad.</p>
@@ -283,3 +365,56 @@
         <p>Todos los derechos reservados</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

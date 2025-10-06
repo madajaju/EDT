@@ -1,75 +1,156 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Dynamischer Seitentitel -->
-        <title>Digitale Transformation annehmen</title>
+    <!-- Dynamischer Seitentitel -->
+    <title>News Briefs</title>
 
-        <!-- Meta-Beschreibung für SEO -->
-        <meta name="description" content="Umarmen Sie digitale Nachrichten für die Woche im April 2024, einschließlich Geschichten über Cloud-Technologie, künstliche Intelligenz und Cybersicherheit. Hören Sie sich Besorgnisse der US-Regierung über Microsoft-Sicherheitsverletzungen, Fortschritte bei AI-PCs und neue Cyber-Schwachstellen an.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/de/home/">
+    <meta name="description" content="Umarmen Sie digitale Nachrichten für die Woche im April 2024, einschließlich Geschichten über Cloud-Technologie, künstliche Intelligenz und Cybersicherheit. Hören Sie sich Besorgnisse der US-Regierung über Microsoft-Sicherheitsverletzungen, Fortschritte bei AI-PCs und neue Cyber-Schwachstellen an.">
+    <meta name="keywords" content="Digitale Transformation, Podcast, Interviews, Nachrichten, KI, Cybersicherheit, Edge Computing, Datenmanagement">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Schlüsselwörter für SEO -->
-        <meta name="keywords" content="podcast, ki, edge computing, cybersicherheit, digitale transformation">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviews, Nachrichten und Community">
+    <meta property="og:description" content="Umarmen Sie digitale Nachrichten für die Woche im April 2024, einschließlich Geschichten über Cloud-Technologie, künstliche Intelligenz und Cybersicherheit. Hören Sie sich Besorgnisse der US-Regierung über Microsoft-Sicherheitsverletzungen, Fortschritte bei AI-PCs und neue Cyber-Schwachstellen an.">
+    <meta property="og:url" content="https://embracingdigital.org/de/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Autor-Meta -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviews, Nachrichten und Community">
+    <meta name="twitter:description" content="Umarmen Sie digitale Nachrichten für die Woche im April 2024, einschließlich Geschichten über Cloud-Technologie, künstliche Intelligenz und Cybersicherheit. Hören Sie sich Besorgnisse der US-Regierung über Microsoft-Sicherheitsverletzungen, Fortschritte bei AI-PCs und neue Cyber-Schwachstellen an.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Open Graph-Meta-Tags für soziale Medien -->
-        <meta property="og:title" content="Digitale Transformation annehmen">
-        <meta property="og:description" content="Umarmen Sie digitale Nachrichten für die Woche im April 2024, einschließlich Geschichten über Cloud-Technologie, künstliche Intelligenz und Cybersicherheit. Hören Sie sich Besorgnisse der US-Regierung über Microsoft-Sicherheitsverletzungen, Fortschritte bei AI-PCs und neue Cyber-Schwachstellen an.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (Alternativen) -->
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Styles -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Twitter-Karte-Meta-Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Digitale Transformation annehmen">
-        <meta name="twitter:description" content="Umarmen Sie digitale Nachrichten für die Woche im April 2024, einschließlich Geschichten über Cloud-Technologie, künstliche Intelligenz und Cybersicherheit. Hören Sie sich Besorgnisse der US-Regierung über Microsoft-Sicherheitsverletzungen, Fortschritte bei AI-PCs und neue Cyber-Schwachstellen an.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link zu Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Digitale Transformation annehmen</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Digitale Transformation gestalten",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Digitale Transformation gestalten",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/de/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Navigationsleiste -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Digitale Transformation annehmen" class="site-icon">
+        <a href="/de/home/" aria-label="Startseite — Digitale Transformation gestalten">
+            <img src="/images/logo.png" alt="Logo — Digitale Transformation gestalten" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Mobile Navigation -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Menü umschalten">☰</button>
+
+    <!-- Hauptnavigation -->
+    <nav id="primary-nav" aria-label="Hauptnavigation">
         <ul>
-            <li><a href="../../../de/home/index.html">Startseite</a></li>
-            <li><a href="../../../de/about.html">Über uns</a></li>
-            <li><a href="../../../de/episodes/index.html">Interviews</a></li>
-            <li><a href="../../../de/briefs/index.html">Nachrichten</a></li>
-            <li><a href="../../../de/community.html">Gemeinschaft</a></li>
-            <li><a href="../../../de/guests/index.html">Gäste</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Shop</a></li>
-            <li><a href="../../../de/search.html">Suche</a></li>
+            <li><a href="/de/home/index.html" >Start</a></li>
+
             <li class="dropdown">
-                <a href="#">Sprachen</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabisch -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Deutsch -->
-                    <li><a href="../../../en/home/index.html">Englisch</a></li> <!-- Englisch -->
-                    <li><a href="../../../fr/home/index.html">Französisch</a></li> <!-- Französisch -->
-                    <li><a href="../../../it/home/index.html">Italienisch</a></li> <!-- Italienisch -->
-                    <li><a href="../../../pt/home/index.html">Portugiesisch</a></li> <!-- Portugiesisch -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Japanisch -->
+                <a href="/de/shows/index.html" aria-haspopup="true" aria-expanded="false">Sendungen</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/de/episodes/index.html" aria-label="Interviews — Digitale Transformation gestalten">
+                            Digitale Transformation gestalten
+                            <small class="nav-note">Interviews</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/briefs/index.html" aria-label="Nachrichten — Digital diese Woche">
+                            Digital diese Woche
+                            <small class="nav-note">Nachrichten</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/de/guests/index.html">Gäste</a></li>
+            <li><a href="/de/articles/index.html">Artikel</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/de/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">LinkedIn Gruppe</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Über uns -->
+            <li class="dropdown">
+                <a href="/de/about.html" aria-haspopup="true" aria-expanded="false">Über uns</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/about.html">Über die Sendung</a></li>
+                    <li role="none"><a role="menuitem" href="/de/host.html">Moderator: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/de/sponsors/index.html">Sponsoring & Kontakt</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/de/search.html">Suche</a></li>
+
+            <!-- Sprachen -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Sprachen</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
@@ -154,7 +235,7 @@
             <div class="main-brief grid-box">
                 <h3>Digitale Transformation annehmen</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-62/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Digitaler Wandel: Darren und Dave diskutieren</h3>
                 <p>Es ist großartig zu sehen, dass Darren die Gelegenheit hatte, sein Interview mit Dave Burrill zum Thema Digitalen Wandel Umarmen fortzusetzen. Durch ihre Unterhaltung beleuchtet Darren die verlorene Kunst eines Geschäftsanalysten, was für sein Publikum sicherlich aufschlussreich sein wird. Es ist wunderbar zu wissen, dass der Podcast und die Videos mit mehr Menschen geteilt werden und das Universum des Digitalen Wandels jede Woche mit über neunundzwanzigtausend wöchentlichen Downloads wächst. Lassen Sie uns weiterhin das Wort verbreiten und danke an alle, die zu seinem Erfolg beigetragen haben.</p>
@@ -169,7 +250,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-62/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>KI-PCs verbessern Effizienz im öffentlichen Sektor</h4>
                                 <p>Iron Bow Technologies stellt KI-gesteuerte PCs vor, um die Effizienz der Regierungsbelegschaft zu verbessern. Die innovative Lösung integriert künstliche Intelligenz, um Aufgaben zu vereinfachen, die Entscheidungsfindung zu verbessern und die Produktivität in verschiedenen Bereichen zu steigern. Der KI-PC ist darauf ausgelegt, strenge Regierungsstandards zu erfüllen und verspricht erweiterte Sicherheitsfunktionen. Seine Einführung markiert einen bedeutenden Schritt in Richtung Nutzung neuester Technologie zur Stärkung von Mitarbeitern im öffentlichen Sektor und zur Optimierung von Betriebsabläufen.</p>
@@ -178,7 +259,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="ai.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-62/ai.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Intel&#39;s AI Ambitions: Energy Efficiency Challenge</h4>
                                 <p>Intel steht kurz davor, AMD und Qualcomm bei der Integration von KI in Smartphones zu übertreffen, steht jedoch vor einem Schlüsselhindernis. Trotz der Fortschritte von Intel bleibt der Energieverbrauch eine Herausforderung, die eine breite Akzeptanz behindert. Während AMD und Qualcomm bei energieeffizienten Designs führen, könnten die KI-Fähigkeiten von Intel die Mobiltechnologie revolutionieren, wenn die Hürden bei der Energieeffizienz überwunden werden. Marktanlytiker erwarten einen intensiven Wettbewerb, da Unternehmen darum kämpfen, die KI-Smartphone-Landschaft zu dominieren, wobei die Energieeffizienz zum entscheidenden Faktor wird.</p>
@@ -187,7 +268,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="ai.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-62/ai.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Datensammlung und KI: Ethik im Fokus</h4>
                                 <p>Technikgiganten stehen aufgrund umfangreicher Datenerfassungspraktiken zur Überprüfung, um Künstliche Intelligenz-Systeme zu versorgen. Unternehmen wie Google, Facebook und Amazon sammeln große Mengen an Nutzerdaten, was Bedenken hinsichtlich der Privatsphäre und des monopolistischen Verhaltens aufwirft. Diese Daten speisen KI-Algorithmen, ermöglichen gezielte Werbung und personalisierte Dienstleistungen. Kritiker fordern strengere Regulierungen zur Eindämmung der Datenausbeutung und Förderung der Privatsphäre der Nutzer. Mit zunehmendem Verlass auf künstliche Intelligenz wird eine Ausgewogenheit von Innovation und ethischer Datennutzung für die Zukunft der Technik immer wichtiger.</p>
@@ -207,7 +288,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-62/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Bösartige PDFs: Neue Bedrohung für Cybersicherheit</h4>
                                 <p>Cybersicherheitsexperten warnen, dass Hacker PDF-Dateien als Waffentools ausnutzen. Diese bösartigen PDFs dienen als Vektoren für Malware, die es Angreifern ermöglicht, Systeme zu infiltrieren und sensible Daten zu kompromittieren. Durch die Ausnutzung von Schwachstellen in PDF-Lesesoftware können Hacker schädlichen Code ausführen, ohne dass eine Benutzerinteraktion erforderlich ist. Benutzer werden dazu aufgerufen, Vorsicht beim Öffnen von PDF-Anhängen zu walten und sicherzustellen, dass ihre Software auf dem neuesten Stand ist. Wachsamkeit und robuste Cybersicherheitsmaßnahmen sind entscheidend, um diese sich entwickelnden Bedrohungen abzuwehren.</p>
@@ -216,7 +297,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.webp" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-62/22.webp" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Verbesserte Cybersecurity durch NVD und NIST</h4>
                                 <p>Das Nationale Schwachstellen-Datenbank (NVD) und das Nationale Institut für Standards und Technologie (NIST) kündigen verbesserte Unterstützungslösungen zur Stärkung der Cybersecurity-Anstrengungen an. Das Nationale Schwachstellen-Datenbank und das Nationale Institut für Standards und Technologie stellen Maßnahmen vor, um die Verwaltung von Sicherheitslücken zu vereinfachen und die Informationsverbreitung zu verbessern. Diese Initiativen sollen Organisationen befähigen, Sicherheitslücken effizient zu identifizieren und anzugehen, wodurch letztendlich die allgemeine Cybersecurity-Haltung verbessert wird. Die Zusammenarbeit unterstreicht das Engagement zur Förderung von Cybersecurity-Standards und zur Erleichterung proaktiver Risikominderungsstrategien.</p>
@@ -225,7 +306,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-62/26.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Neue Bedrohung: KI-Paket-Halluzination</h4>
                                 <p>Cybersicherheitsexperten warnen, dass die &#34;KI-Paket-Halluzination&#34; eine neue Bedrohung darstellt. Diese Technik besteht darin, KI-Modelle zu täuschen, indem bösartige Daten in vortrainierte Modelle injiziert werden, was zu falschen Ergebnissen führt. Hacker nutzen Schwachstellen in KI-Algorithmen aus, um Ergebnisse zu manipulieren, was potenziell erheblichen Schaden verursachen kann. Cybersicherheitsfachleute drängen zu Wachsamkeit und zur Einführung robuster Abwehrmaßnahmen, um dieser neu auftretenden Bedrohung entgegenzuwirken. Bleiben Sie informiert, um sich vor sich weiterentwickelnden Cyberrisiken zu schützen.</p>
@@ -245,7 +326,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="33.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-62/33.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Cloud-Pionierpartnerschaft: Microsoft und Cloud Software Group</h4>
                                 <p>Cloud Software Group und Microsoft schmieden eine achtjährige strategische Partnerschaft, um gemeinsame Cloud-Lösungen und generative KI für über hundert Millionen Nutzer zu liefern. Die Zusammenarbeit zielt darauf ab, die digitale Transformation in verschiedenen Branchen zu verbessern, indem die Azure Cloud-Plattform von Microsoft und die Expertise der Cloud Software Group genutzt wird. Mit einem Fokus auf Innovation und Skalierbarkeit streben beide Unternehmen danach, Organisationen weltweit mit fortschrittlichen Cloud-Technologien und KI-gesteuerten Lösungen zu stärken. Die Partnerschaft läutet eine neue Ära der digitalen Stärkung und Zusammenarbeit ein.</p>
@@ -254,7 +335,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="37.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-62/37.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>CISA fordert Microsoft zu besseren Sicherheitsupdates</h4>
                                 <p>Die Regulierungsbehörde der Agentur für Cybersicherheit und Infrastruktursicherheit (CISA) kritisiert Microsoft wegen unzureichender Maßnahmen zur Sicherung der Bundes-Cloud und fordert umgehende Updates. Die Regulierungsbehörde der Agentur für Cybersicherheit und Infrastruktursicherheit betont die Schwachstellen in den Cloud-Angeboten von Microsoft und hebt die Dringlichkeit verbesserter Sicherheitsprotokolle hervor. Da Bundesbehörden zunehmend auf Cloud-Dienste angewiesen sind, ist die Gewährleistung robuster Cybersicherheitsmaßnahmen von größter Bedeutung, um sensible Daten zu schützen. Die Kritik unterstreicht die Bedeutung einer kontinuierlichen Verbesserung der Standards für die Cloud-Sicherheit, um Cyber-Bedrohungen wirksam zu mindern.</p>
@@ -263,7 +344,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="41.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-62/41.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Cloud-Kosten: Mangelnde Sichtbarkeit gefährdet Budget</h4>
                                 <p>Ein Bericht warnt, dass unzureichende architektonische Sichtbarkeit zu Kostenausreißungen bei der Cloud führt. Organisationen kämpfen darum, Ausgaben zu verwalten aufgrund mangelnder Einblicke in die Cloud-Architektur, was zu unerwarteten Kosten führt. Der Bericht betont die Wichtigkeit, die Sichtbarkeit zu verbessern und Kostenmanagementstrategien zu implementieren, um finanzielle Risiken, die mit der Nutzung der Cloud verbunden sind, zu mindern. Verbesserte Transparenz ist entscheidend für die Optimierung von Cloud-Ausgaben und die Maximierung der Rendite von Investitionen.</p>
@@ -287,3 +368,56 @@
         <p>Alle Rechte vorbehalten</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

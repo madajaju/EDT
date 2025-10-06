@@ -1,82 +1,162 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Titolo della Pagina Dinamico -->
-        <title>Abbracciare la Trasformazione Digitale</title>
+    <!-- Titolo pagina dinamico -->
+    <title>News Briefs</title>
 
-        <!-- Meta Descrizione per SEO -->
-        <meta name="description" content="Notizie sulla Trasformazione Digitale per la settimana del 25 febbraio 2024. Le storie di questa settimana coprono la cybersecurity, l&#39;informatica e le comunicazioni avanzate, incluso il rapporto sulla sicurezza dei prodotti Intel, l&#39;impatto dell&#39;IA sulla produzione di silicio e un importante interruzione di servizio presso AT&amp;T.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="Notizie sulla Trasformazione Digitale per la settimana del 25 febbraio 2024. Le storie di questa settimana coprono la cybersecurity, l&#39;informatica e le comunicazioni avanzate, incluso il rapporto sulla sicurezza dei prodotti Intel, l&#39;impatto dell&#39;IA sulla produzione di silicio e un importante interruzione di servizio presso AT&amp;T.">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- Parole Chiave per SEO -->
-        <meta name="keywords" content="podcast, ai, edge computing, cybersecurity, trasformazione digitale">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta property="og:description" content="Notizie sulla Trasformazione Digitale per la settimana del 25 febbraio 2024. Le storie di questa settimana coprono la cybersecurity, l&#39;informatica e le comunicazioni avanzate, incluso il rapporto sulla sicurezza dei prodotti Intel, l&#39;impatto dell&#39;IA sulla produzione di silicio e un importante interruzione di servizio presso AT&amp;T.">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Autore -->
-        <meta name="author" content="Darren W Pulsipher">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="Notizie sulla Trasformazione Digitale per la settimana del 25 febbraio 2024. Le storie di questa settimana coprono la cybersecurity, l&#39;informatica e le comunicazioni avanzate, incluso il rapporto sulla sicurezza dei prodotti Intel, l&#39;impatto dell&#39;IA sulla produzione di silicio e un importante interruzione di servizio presso AT&amp;T.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- Meta Tag Open Graph per i Social Media -->
-        <meta property="og:title" content="Abbracciare la Trasformazione Digitale">
-        <meta property="og:description" content="Notizie sulla Trasformazione Digitale per la settimana del 25 febbraio 2024. Le storie di questa settimana coprono la cybersecurity, l&#39;informatica e le comunicazioni avanzate, incluso il rapporto sulla sicurezza dei prodotti Intel, l&#39;impatto dell&#39;IA sulla produzione di silicio e un importante interruzione di servizio presso AT&amp;T.">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Meta Tag Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Abbracciare la Trasformazione Digitale">
-        <meta name="twitter:description" content="Notizie sulla Trasformazione Digitale per la settimana del 25 febbraio 2024. Le storie di questa settimana coprono la cybersecurity, l&#39;informatica e le comunicazioni avanzate, incluso il rapporto sulla sicurezza dei prodotti Intel, l&#39;impatto dell&#39;IA sulla produzione di silicio e un importante interruzione di servizio presso AT&amp;T.">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- Link al Favicon -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>Abbracciare la Trasformazione Digitale</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 Barra di Navigazione -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="Abbracciare la Trasformazione Digitale" class="site-icon">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
         <ul>
-            <li><a href="../../../it/home/index.html">Home</a></li>
-            <li><a href="../../../it/about.html">Informazioni</a></li>
-            <li><a href="../../../it/episodes/index.html">Interviste</a></li>
-            <li><a href="../../../it/briefs/index.html">Notizie</a></li>
-            <li><a href="../../../it/community.html">Comunità</a></li>
-            <li><a href="../../../it/guests/index.html">Ospiti</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">Negozio</a></li>
-            <li><a href="../../../it/search.html">Cerca</a></li>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
             <li class="dropdown">
-                <a href="#">Lingue</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- Arabo -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- Tedesco -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- Inglese -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- Francese -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- Italiano -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- Portoghese -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- Giapponese -->
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
-```
 <section id="one-brief">
     <h1>Abbracciare la Trasformazione Digitale</h1>
     <h2 id="episode-title">#56 2024-02-25</h2>
@@ -172,7 +252,7 @@
             <div class="main-brief grid-box">
                 <h3>Abbracciare la Trasformazione Digitale</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-56/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>Trasformazione Digitale Durante la Pandemia</h3>
                 <p>Darren ha intervistato Dan Berges, Direttore Generale e Fondatore dell&#39;Istituto Berges, riguardo alla sua esperienza con la trasformazione digitale durante la pandemia di COVID-diciannove. A causa della pandemia, la scuola di formazione in lingua spagnola di Dan è stata chiusa nei primi giorni della crisi. Tuttavia, entro settimane dalla chiusura, la scuola è stata in grado di trasformarsi con successo in una piattaforma completamente online. Non solo ciò ha salvato la scuola, ma ha anche portato ad un aumento del numero di studenti iscritti.</p>
@@ -187,7 +267,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-56/4.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Intel: Leader nella Sicurezza dei Prodotti</h4>
                                 <p>Il rapporto sulla sicurezza dei prodotti del duemilaventitré di Intel ha rivelato che ha rilevato il novantaquattro percento delle vulnerabilità in modo proattivo, ha avuto tre volte meno bug del firmware rispetto ad AMD, ed ha riscontrato un aumento del centocinquanta percento di ricercatori sulla sicurezza unici coinvolti. Questo evidenzia la leadership di Intel nell&#39;industria, l&#39;approccio proattivo alla sicurezza, il successo nell&#39;identificare e risolvere le vulnerabilità e l&#39;interazione con i ricercatori. Questi sforzi sono fondamentali per proteggersi dalla crescente frequenza e sofisticatezza degli attacchi informatici.</p>
@@ -196,7 +276,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-56/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Attacco informatico colpisce UnitedHealth: indagini in corso</h4>
                                 <p>Il ventiquattro febbraio duemilaventicuattro, UnitedHealth ha subito un problema di sicurezza informatica che ha compromesso la sua capacità di fornire servizi sanitari. La natura e l&#39;entità dell&#39;attacco sono attualmente sconosciute, ma il disturbo ha causato difficoltà alle operazioni dell&#39;azienda. UnitedHealth sta lavorando attivamente per risolvere il problema e ripristinare la normalità nei suoi servizi. È in corso un&#39;ulteriore indagine per determinare l&#39;origine e l&#39;impatto della violazione della sicurezza informatica.</p>
@@ -205,7 +285,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-56/12.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Attacchi informatici colpiscono servizi farmaceutici</h4>
                                 <p>L&#39;assistenza sanitaria è ancora presa di mira da attacchi informatici, e nel weekend del ventiquattro-venticinque febbraio duemilaventiquattro, un problema di sicurezza informatica a livello nazionale ha causato ritardi e interruzioni ai servizi farmaceutici in tutta gli Stati Uniti. Anche se la natura specifica del problema di sicurezza informatica e le sue conseguenze per le farmacie sono ancora sconosciute, sono in corso sforzi per indagare sulla situazione e risolvere il problema il più presto possibile. L&#39;obiettivo è minimizzare ulteriori interruzioni ai servizi farmaceutici a livello nazionale.</p>
@@ -225,7 +305,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-56/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Crescita Esplosiva del Mercato dell&#39;IA</h4>
                                 <p>Il mercato mondiale dell&#39;Intelligenza Artificiale era valutato a ventisette miliardi di dollari nel due mila diciannove e si prevede che raggiunga i quattrocento miliardi di dollari entro il due mila ventisette, con un tasso di crescita annuo composto (CAGR) del quaranta percento. Questa crescita è dovuta principalmente all&#39;aumentata adozione dell&#39;IA in settori come la sanità, la finanza, la vendita al dettaglio e la produzione. Con giganti della tecnologia come OpenAI e Intel che guidano l&#39;innovazione nell&#39;apprendimento automatico e nei chip di IA, il mercato sta sperimentando una significativa crescita. Questi progressi evidenziano un futuro in cui le tecnologie di IA avranno un ruolo fondamentale nel ridisegnare le industrie e favorire l&#39;innovazione.</p>
@@ -234,7 +314,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="22.webp" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-56/22.webp" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>IBM Cloud: Sovranità dei Dati Prioritaria</h4>
                                 <p>IBM Cloud attribuisce un&#39;alta priorità alla sovranità dei dati e fornisce soluzioni personalizzate ai clienti che operano in settori fortemente regolamentati. L&#39;Enterprise Cloud per le Industrie Regolamentate, che comprende l&#39;IBM Cloud per i Servizi Finanziari, è progettata per affrontare requisiti specifici del settore, con un focus sulla residenza dei dati e sulla privacy. I servizi più recenti di IBM offrono approcci innovativi alla protezione dei dati, come la crittografia avanzata, il computing confidenziale e le misure di sicurezza dei dati. Questo impegno aiuta i clienti a livello globale a rispettare le normative in evoluzione mentre costruiscono fiducia e resilienza nell&#39;adozione dei servizi cloud per settori altamente regolamentati.</p>
@@ -243,7 +323,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-56/26.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Ripatriare il Cloud: Nuove Strategie Aziendali</h4>
                                 <p>Per quanto riguarda le preoccupazioni relative ai costi, alla sicurezza dei dati e al controllo dell&#39;infrastruttura continuano a crescere, le organizzazioni stanno optando per progetti di ripatriazione cloud. Questo comporta lo spostamento di dati e applicazioni dal cloud di nuovo a ambienti on-premises o privati su cloud. Per ottimizzare le strategie cloud, le aziende stanno adottando un approccio più sfumato, considerando i vantaggi dei servizi cloud rispetto a specifici requisiti operativi e normativi. È fondamentale che le organizzazioni adattino i loro modelli di distribuzione cloud alle esigenze aziendali individuali, garantendo una strategia cloud ben pianificata e personalizzata che soddisfi le considerazioni in continua evoluzione.</p>
@@ -263,7 +343,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-56/32.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Interruzione AT&amp;T: Errore Software, Nessun Attacco</h4>
                                 <p>AT&amp;T ha subito un&#39;interruzione temporanea il ventidue febbraio duemilaventiquattro, attribuita a un errore di aggiornamento del software durante l&#39;espansione della rete, non a un attacco informatico. Il disturbo ha colpito i servizi wireless per alcuni clienti ma è stato completamente ripristinato. Le agenzie di indagine, tra cui l&#39;FBI e il DHS, non hanno trovato segni di attività malevole. AT&amp;T si è scusata e ha garantito misure per evitare incidenti futuri. I concorrenti Verizon e T-Mobile hanno segnalato operazioni normali ma hanno riconosciuto potenziali sfide nel collegarsi con gli utenti AT&amp;T colpiti.</p>
@@ -272,7 +352,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-56/36.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Rete Satellitare per Elaborazione Dati Innovativa</h4>
                                 <p>In un&#39;iniziativa rivoluzionaria, NTT e SKY Perfect JSAT stanno sviluppando la Rete di Calcolo Integrata Spaziale, un sistema di rete satellitare che utilizza centri di dati spaziali alimentati da fotonica e tecnologia ottica. Questo approccio innovativo mira a superare le limitazioni dell&#39;elaborazione dei dati terrestri, offrendo un&#39;analisi dei dati più rapida, un minor consumo di energia e una maggiore resistenza alla radiazione spaziale. Si prevede che la Rete di Calcolo Integrata Spaziale sarà lanciata nel due mila venticinque, inaugurando una nuova era di infrastruttura dati sostenibile e resiliente sfruttando la potenza dello spazio.</p>
@@ -281,7 +361,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="40.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-56/40.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>Verizon and Audi Create 5G Test Network</h4>
                                 <p>Verizon Business e Audi hanno collaborato per creare una rete wireless privata di quinta generazione presso la pista di prova di Audi in Germania, replicando gli ambienti di connettività globali. La rete, dotata della piattaforma dual 5G e LTE di Nokia, del servizio di calcolo multi-accesso al bordo di Amazon Web Services e di altre tecnologie, facilita il test di varie applicazioni, tra cui voce, video, funzioni di sicurezza, mobilità autonoma e funzionalità di veicolo a tutto cellulare (C-V2X). Questa collaborazione mira a migliorare l&#39;efficienza dei test e a fornire un vantaggio competitivo nel mercato globale.</p>
@@ -305,3 +385,56 @@
         <p>Diritti riservati</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

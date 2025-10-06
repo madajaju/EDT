@@ -1,80 +1,162 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- 動的ページタイトル -->
-        <title>デジタル変革を受け入れる</title>
+    <!-- Dynamic Page Title -->
+    <title>News Briefs</title>
 
-        <!-- SEO用メタディスクリプション -->
-        <meta name="description" content="2024年9月30日のデジタルトランスフォーメーションには、人工知能、サイバーセキュリティ、およびデータ管理に関するニュースが含まれています。ルイジアナ州の学校における人工知能統合の画期的な取り組みは教育を革新する準備が整っており、Active Directoryで発見されたサイバーセキュリティの脆弱性、そしてNASAに採用された新しいデータ管理のオープンソースツールが含まれています。">
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/ja/home/">
+    <meta name="description" content="2024年9月30日のデジタルトランスフォーメーションには、人工知能、サイバーセキュリティ、およびデータ管理に関するニュースが含まれています。ルイジアナ州の学校における人工知能統合の画期的な取り組みは教育を革新する準備が整っており、Active Directoryで発見されたサイバーセキュリティの脆弱性、そしてNASAに採用された新しいデータ管理のオープンソースツールが含まれています。">
+    <meta name="keywords" content="デジタルトランスフォーメーション, ポッドキャスト, インタビュー, ニュース, AI, サイバーセキュリティ, エッジコンピューティング, データ管理">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
 
-        <!-- SEO用キーワード -->
-        <meta name="keywords" content="ポッドキャスト, AI, エッジコンピューティング, サイバーセキュリティ, デジタルトランスフォーメーション">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="News Briefs — インタビュー、ニュース、コミュニティ">
+    <meta property="og:description" content="2024年9月30日のデジタルトランスフォーメーションには、人工知能、サイバーセキュリティ、およびデータ管理に関するニュースが含まれています。ルイジアナ州の学校における人工知能統合の画期的な取り組みは教育を革新する準備が整っており、Active Directoryで発見されたサイバーセキュリティの脆弱性、そしてNASAに採用された新しいデータ管理のオープンソースツールが含まれています。">
+    <meta property="og:url" content="https://embracingdigital.org/ja/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- 著者メタ -->
-        <meta name="author" content="ダレン・W・パルシファー">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="News Briefs — インタビュー、ニュース、コミュニティ">
+    <meta name="twitter:description" content="2024年9月30日のデジタルトランスフォーメーションには、人工知能、サイバーセキュリティ、およびデータ管理に関するニュースが含まれています。ルイジアナ州の学校における人工知能統合の画期的な取り組みは教育を革新する準備が整っており、Active Directoryで発見されたサイバーセキュリティの脆弱性、そしてNASAに採用された新しいデータ管理のオープンソースツールが含まれています。">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
-        <!-- ソーシャルメディア用オープングラフメタタグ -->
-        <meta property="og:title" content="デジタル変革を受け入れる">
-        <meta property="og:description" content="2024年9月30日のデジタルトランスフォーメーションには、人工知能、サイバーセキュリティ、およびデータ管理に関するニュースが含まれています。ルイジアナ州の学校における人工知能統合の画期的な取り組みは教育を革新する準備が整っており、Active Directoryで発見されたサイバーセキュリティの脆弱性、そしてNASAに採用された新しいデータ管理のオープンソースツールが含まれています。">
-        <meta property="og:image" content="thumbnail.png">
+    <!-- Hreflang (alternates) -->
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="x-default">
 
-        <meta property="og:url" content="https://embracingdigital.org">
-        <meta property="og:type" content="website">
+    <!-- Favicon & Styles -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Twitterカードメタタグ -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="デジタル変革を受け入れる">
-        <meta name="twitter:description" content="2024年9月30日のデジタルトランスフォーメーションには、人工知能、サイバーセキュリティ、およびデータ管理に関するニュースが含まれています。ルイジアナ州の学校における人工知能統合の画期的な取り組みは教育を革新する準備が整っており、Active Directoryで発見されたサイバーセキュリティの脆弱性、そしてNASAに採用された新しいデータ管理のオープンソースツールが含まれています。">
-        <meta name="twitter:image" content="thumbnail.png">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
 
-        <!-- ファビコンへのリンク -->
-        <link rel="icon" href="/path/to/favicon.ico" type="image/x-icon">
-    <title>デジタル変革を受け入れる</title>
-
-    <link rel="stylesheet" href="../../../css/styles.css">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
-    <script> window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-P4XHVE79DL'); </script>
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "デジタルトランスフォーメーションを受け入れる",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "デジタルトランスフォーメーションを受け入れる",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/ja/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
 </head>
 <body>
 
-<!-- 🌍 ナビゲーションバー -->
-<header>
+<header role="banner">
+    <!-- Logo -->
     <div class="logo-container">
-        <img src="../../../images/logo.png" alt="デジタルトランスフォーメーションの受け入れ" class="site-icon">
+        <a href="/ja/home/" aria-label="デジタルトランスフォーメーションを受け入れる ホーム">
+            <img src="/images/logo.png" alt="デジタルトランスフォーメーションを受け入れる ロゴ" class="site-icon">
+        </a>
     </div>
-    <nav>
+
+    <!-- Mobile toggle -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="メニューを切り替える">☰</button>
+
+    <!-- Primary Nav -->
+    <nav id="primary-nav" aria-label="メインナビゲーション">
         <ul>
-            <li><a href="../../../ja/home/index.html">ホーム</a></li>
-            <li><a href="../../../ja/about.html">について</a></li>
-            <li><a href="../../../ja/episodes/index.html">インタビュー</a></li>
-            <li><a href="../../../ja/briefs/index.html">ニュース</a></li>
-            <li><a href="../../../ja/community.html">コミュニティ</a></li>
-            <li><a href="../../../ja/guests/index.html">ゲスト</a></li>
-            <li><a href="https://6704f0-2.myshopify.com/">ショップ</a></li>
-            <li><a href="../../../ja/search.html">検索</a></li>
+            <li><a href="/ja/home/index.html" >ホーム</a></li>
+
             <li class="dropdown">
-                <a href="#">言語</a>
-                <ul class="dropdown-menu">
-                    <li><a href="../../../ar/home/index.html">العربية</a></li> <!-- アラビア語 -->
-                    <li><a href="../../../de/home/index.html">Deutsch</a></li> <!-- ドイツ語 -->
-                    <li><a href="../../../en/home/index.html">English</a></li> <!-- 英語 -->
-                    <li><a href="../../../fr/home/index.html">Français</a></li> <!-- フランス語 -->
-                    <li><a href="../../../it/home/index.html">Italiano</a></li> <!-- イタリア語 -->
-                    <li><a href="../../../pt/home/index.html">Português</a></li> <!-- ポルトガル語 -->
-                    <li><a href="../../../ja/home/index.html">日本語</a></li> <!-- 日本語 -->
+                <a href="/ja/shows/index.html" aria-haspopup="true" aria-expanded="false">番組</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/ja/episodes/index.html" aria-label="インタビュー — デジタルトランスフォーメーションを受け入れる">
+                            デジタルトランスフォーメーションを受け入れる
+                            <small class="nav-note">インタビュー</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/ja/briefs/index.html" aria-label="ニュース — 今週のデジタルを受け入れる">
+                            今週のデジタルを受け入れる
+                            <small class="nav-note">ニュース</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/guests/index.html">ゲスト</a></li>
+            <li><a href="/ja/articles/index.html">記事</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/ja/community.html" aria-haspopup="true" aria-expanded="false">コミュニティ</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ja/newsletter.html">ニュースレター</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">LinkedIn グループ</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">ショップ</a></li>
+
+            <!-- About -->
+            <li class="dropdown">
+                <a href="/ja/about.html" aria-haspopup="true" aria-expanded="false">概要</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ja/about.html">番組について</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/host.html">ホスト：Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/sponsors/index.html">スポンサーシップ & お問い合わせ</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/search.html">検索</a></li>
+
+            <!-- Languages -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">言語</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
 </header>
+
 <section id="one-brief">
     <h1>デジタル変革を受け入れる</h1>
     <h2 id="episode-title">#87 2024-09-30</h2>
@@ -115,7 +197,7 @@
             <div class="main-brief grid-box">
                 <h3>デジタル変革を受け入れる</h3>
                 <a href="">
-                    <img src="edt.png" alt="Recap" class="main-brief-image">
+                    <img src="../../../images/briefs/edw-87/edt.png" alt="Recap" class="main-brief-image">
                 </a>
                 <h3>デジタル変革の障害と解決策</h3>
                 <p>デジタル変革に対する障害は、最新の「デジタル変革を受け入れる」のエピソードによれば、魅力度、実現可能性、そして実行可能性です。ダレンは、CitiusTechのCEO、ラジャン・コーリに、医療におけるデジタル変革についてインタビューを行いました。また、今週の「デジタルを受け入れる」は、二つの追加の言語、すなわち日本語とアラビア語に拡大します。ファミリーへようこそ。</p>
@@ -130,7 +212,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="4.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-87/4.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>ルイジアナ州、AI教育ガイドライン導入へ</h4>
                                 <p>ルイジアナ州は、学校での人工知能の使用に関する新しいガイドラインを採用することを予定しており、教育成果を向上させ、安全面の懸念に対処することを目指しています。このイニシアティブは、教育者に教室での人工知能の責任ある統合のための枠組みを提供し、学生が技術主導の未来に備えることを確実にすることを目的としています。この動きは、アメリカ全体での教育システムを技術の進展に適応させる広範な傾向の一部です。</p>
@@ -139,7 +221,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="8.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-87/8.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>「AIと教育の協力による未来」</h4>
                                 <p>テクノロジー開発者と教育者の協力的なアプローチは、学校における人工知能の効果的な統合にとって不可欠です。専門家は、学習体験を向上させるために人工知能を活用するパートナーシップを推奨しており、教育における人工知能の役割に対するより楽観的な見方を示しています。関係者は、ワークショップや対話を促進することにより懸念に対処し、人工知能の潜在能力を活用できるようになります。これにより、教室での革新がより手の届きやすいものとなります。人工知能を受け入れることは、個々の学生のニーズに合わせた個別化された学習へとつながります。</p>
@@ -148,7 +230,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="12.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-87/12.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>AIの教育統合: 利点とリスク</h4>
                                 <p>K十二教育における人工知能の統合は、個別化された学習体験や行政の効率化など、重要な利点をもたらします。専門家は、教員を支援し学生の関与を高めるためにAIツールを活用することを推奨しています。しかし、学校はプライバシーの懸念や適切な監視なしにテクノロジーに依存することなど、AIに関連する潜在的なリスクに対して警戒を怠らなければなりません。教育が進化する中で、革新と倫理的考慮のバランスを取ることが重要です。</p>
@@ -168,7 +250,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="18.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-87/18.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>「アクティブディレクトリの脆弱性警告」</h4>
                                 <p>最近の報告によると、マイクロソフトのアクティブディレクトリシステムに重大な脆弱性が存在しており、組織は潜在的な侵害にさらされています。調査では、悪意のある行為者がこれらのシステムを標的にし、壊滅的なサイバー攻撃を仕掛ける傾向が高まっていることが示されています。業界の専門家は、企業に対してセキュリティ対策を強化し、アクティブディレクトリの設定を徹底的に評価してリスクを軽減するよう促しています。重要なデータを保護し、業務の整合性を維持するためには、積極的な対策を講じることが不可欠です。</p>
@@ -177,7 +259,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="security.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-87/security.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>カンザスの水処理システムとサイバー攻撃</h4>
                                 <p>最近、カンザスでサイバー攻撃が発生したことを受けて、水処理および配水システムのサイバーセキュリティに対する懸念が高まっています。関係者は、保護措置の弱点がこの分野における重大な脆弱性につながる恐れがあると懸念しています。この事件は、公共水システムを保護するための強化されたサイバーセキュリティプロトコルの必要性を強調しています。脅威が増大し続ける中、専門のサイバーセキュリティ専門家を雇うことが、水サービスにおけるリスクを軽減するために不可欠である可能性があります。</p>
@@ -186,7 +268,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="26.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-87/26.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>「医療機関向けサイバーセキュリティ法案」</h4>
                                 <p>新しいアメリカ合衆国上院の法案は、医療機関が敏感な患者データを増大するサイバー脅威から保護するために、最低限のサイバーセキュリティ基準を設けることを提案しています。不遵守に対する提案された罰則も含まれており、これらの規制の重要性が強調されています。医療分野がサイバーリスクの増加に直面し続ける中、立法者たちは患者の安全と医療機関への信頼を確保するために、強固なサイバーセキュリティ対策の重要性を強調し、医療従事者に安心感と保護を提供しています。</p>
@@ -206,7 +288,7 @@
                 <div class="articles">
                     
                         <div class="article">
-                            <img src="32.png" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-87/32.png" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>NASA&#39;s Commitment to Open Science</h4>
                                 <p>NASAは、生物科学と物理科学に特化した新しいデータ管理ポリシーを通じて、オープンサイエンスへのコミットメントを進めています。これらの取り組みは、データのアクセシビリティを向上させ、研究におけるコラボレーションとイノベーションを促進することを目的としています。ステークホルダーにデータをより効果的に共有するよう促すことで、NASAは研究プロセスを効率化し、透明性を促進するとともに、厳格な科学的実践への高まる要求に対応することを期待しています。</p>
@@ -215,7 +297,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="36.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-87/36.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>「医療データ管理の未来」</h4>
                                 <p>二千二十四年のデータ管理プラットフォーム業界レポートは、医療分野におけるデータ管理プラットフォーム（DMP）への依存が高まっていることを強調しており、患者データ管理の改善を目指しています。予測される市場機会は二千三十年まで延びており、医療機関はこれらのプラットフォームをますます採用して、データ共有、セキュリティ、患者の結果を向上させています。このレポートは、より良いサービス提供のために医療データの能力を変革する技術の重要な役割を強調しています。</p>
@@ -224,7 +306,7 @@
                         </div>
                     
                         <div class="article">
-                            <img src="40.jpeg" alt="AI Breakthrough">
+                            <img src="../../../images/briefs/edw-87/40.jpeg" alt="AI Breakthrough">
                             <div class="article-content">
                                 <h4>マイクロソフトのデータガバナンス強化</h4>
                                 <p>マイクロソフトは、堅牢なデータ管理ソリューションを提供するための戦略的な取り組みの一環として、データガバナンスとセキュリティ対策を強化しています。最近のアップデートは、組織がデータをより効果的に管理できるようにすることに焦点を当てており、コンプライアンスの確保と脅威からの保護を保証しています。これらの強化は、企業がデータの整合性とセキュリティを優先する必要性の高まりを反映しています。</p>
@@ -248,3 +330,56 @@
         <p>全著作権所有</p>
     </div>
 </footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
