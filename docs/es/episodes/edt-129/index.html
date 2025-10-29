@@ -160,54 +160,86 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#129 HPC OnDemand</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/c106fb2a"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>En este episodio, Darren entrevista a Alan Chalker, director del programa estratégico en el Centro de Supercomputación de Ohio, sobre Open OnDemand para clústeres de HPC en todo el mundo.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #129 <span>HPC OnDemand</span>
+    </h1>
+    <time datetime="2023-03-21T00:00:00.000Z"
+          itemprop="datePublished">
+      2023-03-21T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="129"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="HPC OnDemand">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="HPC OnDemand Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="HPC OnDemand">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/c106fb2a">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/c106fb2a"
+            title="HPC OnDemand Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>En este episodio, Darren entrevista a Alan Chalker, director del programa estratégico en el Centro de Supercomputación de Ohio, sobre Open OnDemand para clústeres de HPC en todo el mundo.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../es/search.html?query=highperformancecomputing"
+           itemprop="keywords">highperformancecomputing</a>
+      
+        <a href="../../../es/search.html?query=datamanagement"
+           itemprop="keywords">datamanagement</a>
+      
+        <a href="../../../es/search.html?query=cloudcomputing"
+           itemprop="keywords">cloudcomputing</a>
+      
+        <a href="../../../es/search.html?query=researchcomputing"
+           itemprop="keywords">researchcomputing</a>
+      
+        <a href="../../../es/search.html?query=generativeai"
+           itemprop="keywords">generativeai</a>
+      
+        <a href="../../../es/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../es/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../es/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../es/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../es/guests/alan-chalker/index.html"
+           itemprop="name" target="_blank">Alan Chalker</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../es/search.html?query=highperformancecomputing"><span>highperformancecomputing</span></a>
-                
-                    <a href="../../../es/search.html?query=datamanagement"><span>datamanagement</span></a>
-                
-                    <a href="../../../es/search.html?query=cloudcomputing"><span>cloudcomputing</span></a>
-                
-                    <a href="../../../es/search.html?query=researchcomputing"><span>researchcomputing</span></a>
-                
-                    <a href="../../../es/search.html?query=generativeai"><span>generativeai</span></a>
-                
-                    <a href="../../../es/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../es/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../es/search.html?query=process"><span>process</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../es/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../es/guests/alan-chalker/index.html" target="_blank">Alan Chalker</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>En este episodio de podcast, Darren Pulsipher, el arquitecto principal de soluciones del sector público en Intel, entrevista a Alan Chalker del Ohio Supercomputer Center sobre cómo derribar barreras para la informática de alto rendimiento (HPC, por sus siglas en inglés). Alan es el director de programas estratégicos del Ohio Supercomputer y ha estado trabajando en un proyecto financiado por la NSF llamado Open OnDemand durante más de una década. El proyecto tiene como objetivo hacer que la informática de alto rendimiento sea más accesible para los consumidores habituales de actividades en línea, como la banca y las compras en línea. Open OnDemand simplifica el proceso de uso de HPC al eliminar la necesidad de ingresar comandos en la línea de comandos. La formación de Alan incluye obtener su licenciatura en ingeniería eléctrica e informática en la Universidad Estatal de Ohio y luego obtener su doctorado en ingeniería biomédica en la Universidad de Carolina del Norte en Chapel Hill.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>En este episodio de podcast, Darren Pulsipher, el arquitecto principal de soluciones del sector público en Intel, entrevista a Alan Chalker del Ohio Supercomputer Center sobre cómo derribar barreras para la informática de alto rendimiento (HPC, por sus siglas en inglés). Alan es el director de programas estratégicos del Ohio Supercomputer y ha estado trabajando en un proyecto financiado por la NSF llamado Open OnDemand durante más de una década. El proyecto tiene como objetivo hacer que la informática de alto rendimiento sea más accesible para los consumidores habituales de actividades en línea, como la banca y las compras en línea. Open OnDemand simplifica el proceso de uso de HPC al eliminar la necesidad de ingresar comandos en la línea de comandos. La formación de Alan incluye obtener su licenciatura en ingeniería eléctrica e informática en la Universidad Estatal de Ohio y luego obtener su doctorado en ingeniería biomédica en la Universidad de Carolina del Norte en Chapel Hill.</p>
 <h2>Historia de Open OnDemand</h2>
 <p>En 2006 y 2007, se desarrolló una interfaz web con el Instituto de Soldadura Edison en colaboración con algunos técnicos, quienes luego la llamaron Open OnDemand. Comenzó como una simulación en línea de soldadura y se expandió para incluir una de polímeros y una de propósito general. Al exhibirlo en varias conferencias, otras instituciones de investigación expresaron interés en implementarlo en sus sistemas. Para convertirlo en código abierto, la Fundación Nacional de Ciencia les otorgó un programa de tres años y $300,000 que hizo que el prototipo fuera más sólido. El éxito de Open OnDemand condujo a otro programa de cinco años por valor de $3 millones. Hoy en día, se implementa en todos los continentes excepto la Antártida, sirviendo a más de 400 instituciones de investigación informática.</p>
 <h2>Expansión de la influencia de HPC</h2>
@@ -221,16 +253,65 @@
 <h2>Abrir OnDemand</h2>
 <p>Muchas universidades y centros de HPC están aprovechando Open OnDemand como una interfaz web sencilla para hacer que el HPC esté más disponible para los investigadores que necesitan aprender o comprender las complejidades de programar trabajos, descomponer conjuntos de problemas y gestionar datos en un clúster. Incluso los proveedores de servicios en la nube tienen interfaces de Open OnDemand para su oferta de HPC.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "HPC OnDemand",
+  "episodeNumber": "129",
+  "datePublished": "2023-03-21T00:00:00.000Z",
+  "description": "<p>En este episodio, Darren entrevista a Alan Chalker, director del programa estratégico en el Centro de Supercomputación de Ohio, sobre Open OnDemand para clústeres de HPC en todo el mundo.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "HPC OnDemand Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "HPC OnDemand Audio",
+      "contentUrl": "https://share.transistor.fm/e/c106fb2a"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Alan Chalker"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

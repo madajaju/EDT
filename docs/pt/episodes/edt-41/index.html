@@ -160,51 +160,80 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#41 A Arte Negra de DevOps</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/b4fe3ea1"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher, Arquiteto Chefe de Soluções, Setor Público, Intel, define termos comuns de DevOps e explica onde o DevOps se encaixa em sua organização.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #41 <span>A Arte Negra de DevOps</span>
+    </h1>
+    <time datetime="2021-03-10T00:00:00.000Z"
+          itemprop="datePublished">
+      2021-03-10T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="41"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="A Arte Negra de DevOps">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="A Arte Negra de DevOps Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="A Arte Negra de DevOps">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/b4fe3ea1">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/b4fe3ea1"
+            title="A Arte Negra de DevOps Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher, Arquiteto Chefe de Soluções, Setor Público, Intel, define termos comuns de DevOps e explica onde o DevOps se encaixa em sua organização.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../pt/search.html?query=devops"
+           itemprop="keywords">devops</a>
+      
+        <a href="../../../pt/search.html?query=datamanagement"
+           itemprop="keywords">datamanagement</a>
+      
+        <a href="../../../pt/search.html?query=automation"
+           itemprop="keywords">automation</a>
+      
+        <a href="../../../pt/search.html?query=data_management"
+           itemprop="keywords">data_management</a>
+      
+        <a href="../../../pt/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../pt/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../pt/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../pt/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../pt/search.html?query=devops"><span>devops</span></a>
-                
-                    <a href="../../../pt/search.html?query=datamanagement"><span>datamanagement</span></a>
-                
-                    <a href="../../../pt/search.html?query=automation"><span>automation</span></a>
-                
-                    <a href="../../../pt/search.html?query=data_management"><span>data_management</span></a>
-                
-                    <a href="../../../pt/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../pt/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../pt/search.html?query=process"><span>process</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../pt/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>Vamos dar uma olhada em como o DevOps se encaixa na sua infraestrutura.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>Vamos dar uma olhada em como o DevOps se encaixa na sua infraestrutura.</p>
 <p>No fundo de uma pilha normal, temos uma camada física que pode significar uma nuvem, centro de dados, dispositivos IOT ou infraestrutura legada.</p>
 <p>Além disso, geralmente há uma infraestrutura definida por software que abstrai a complexidade de gerenciar as peças individuais de hardware.</p>
 <p>A seguir está uma camada de gerenciamento de serviços, que inclui a virtualização do ecossistema de contêineres, bem como uma camada de gerenciamento de informações distribuídas, que inclui a infraestrutura de dados, lagos de dados e tudo o que gerencia seus dados.</p>
@@ -248,16 +277,60 @@
 <h2>Colocando tudo junto</h2>
 <p>Quando um desenvolvedor está criando um novo serviço, ele não apenas está desenvolvendo o código para a imagem; ele também está definindo o ambiente, ou configuração, no qual ele precisa ser executado. É aqui que o ambiente e a definição do serviço se encontram. Na execução, ele produzirá o ambiente necessário para que o contêiner seja executado de forma eficiente e repetível, para que você possa mover facilmente o código de execução em uma área de trabalho para execução em produção completa o mais rápido possível.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "A Arte Negra de DevOps",
+  "episodeNumber": "41",
+  "datePublished": "2021-03-10T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher, Arquiteto Chefe de Soluções, Setor Público, Intel, define termos comuns de DevOps e explica onde o DevOps se encaixa em sua organização.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "A Arte Negra de DevOps Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "A Arte Negra de DevOps Audio",
+      "contentUrl": "https://share.transistor.fm/e/b4fe3ea1"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

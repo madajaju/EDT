@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;In this episode host Darren Pulsipher sits down with Greg Campbell, CTO of Verge.io, to discuss the exciting intersection of AI and infrastructure management. Greg, a software developer and entrepreneur, shares his journey of creating Verge.io to address the complexities of infrastructure stitching and management.&lt;/p&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;In this episode host Darren Pulsipher sits down with Greg Campbell, CTO of Verge.io, to discuss the exciting intersection of AI and infrastructure management. Greg, a software developer and entrepreneur, shares his journey of creating Verge.io to address the complexities of infrastructure stitching and management.&lt;/p&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;In this episode host Darren Pulsipher sits down with Greg Campbell, CTO of Verge.io, to discuss the exciting intersection of AI and infrastructure management. Greg, a software developer and entrepreneur, shares his journey of creating Verge.io to address the complexities of infrastructure stitching and management.&lt;/p&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;In this episode host Darren Pulsipher sits down with Greg Campbell, CTO of Verge.io, to discuss the exciting intersection of AI and infrastructure management. Greg, a software developer and entrepreneur, shares his journey of creating Verge.io to address the complexities of infrastructure stitching and management.&lt;/p&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -161,58 +187,92 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#155 GenAI Advisor for Datacenter Management</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/4a6dc3d3"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>In this episode host Darren Pulsipher sits down with Greg Campbell, CTO of Verge.io, to discuss the exciting intersection of AI and infrastructure management. Greg, a software developer and entrepreneur, shares his journey of creating Verge.io to address the complexities of infrastructure stitching and management.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #155 <span>GenAI Advisor for Datacenter Management</span>
+    </h1>
+    <time datetime="2023-08-31T00:00:00.000Z"
+          itemprop="datePublished">
+      2023-08-31T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="155"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="GenAI Advisor for Datacenter Management">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="GenAI Advisor for Datacenter Management Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="GenAI Advisor for Datacenter Management">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/4a6dc3d3">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/4a6dc3d3"
+            title="GenAI Advisor for Datacenter Management Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>In this episode host Darren Pulsipher sits down with Greg Campbell, CTO of Verge.io, to discuss the exciting intersection of AI and infrastructure management. Greg, a software developer and entrepreneur, shares his journey of creating Verge.io to address the complexities of infrastructure stitching and management.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=infrastructuremanagement"
+           itemprop="keywords">infrastructuremanagement</a>
+      
+        <a href="../../../en/search.html?query=generativeai"
+           itemprop="keywords">generativeai</a>
+      
+        <a href="../../../en/search.html?query=userfriendliness"
+           itemprop="keywords">userfriendliness</a>
+      
+        <a href="../../../en/search.html?query=cloudcomputing"
+           itemprop="keywords">cloudcomputing</a>
+      
+        <a href="../../../en/search.html?query=digitaltransformation"
+           itemprop="keywords">digitaltransformation</a>
+      
+        <a href="../../../en/search.html?query=aiapplication"
+           itemprop="keywords">aiapplication</a>
+      
+        <a href="../../../en/search.html?query=artificialintelligence"
+           itemprop="keywords">artificialintelligence</a>
+      
+        <a href="../../../en/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../en/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../en/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/greg-campbell/index.html"
+           itemprop="name" target="_blank">Greg Campbell</a>
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=infrastructuremanagement"><span>infrastructuremanagement</span></a>
-                
-                    <a href="../../../en/search.html?query=generativeai"><span>generativeai</span></a>
-                
-                    <a href="../../../en/search.html?query=userfriendliness"><span>userfriendliness</span></a>
-                
-                    <a href="../../../en/search.html?query=cloudcomputing"><span>cloudcomputing</span></a>
-                
-                    <a href="../../../en/search.html?query=digitaltransformation"><span>digitaltransformation</span></a>
-                
-                    <a href="../../../en/search.html?query=aiapplication"><span>aiapplication</span></a>
-                
-                    <a href="../../../en/search.html?query=artificialintelligence"><span>artificialintelligence</span></a>
-                
-                    <a href="../../../en/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../en/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../en/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/greg-campbell/index.html" target="_blank">Greg Campbell</a>
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>In the &quot;Embracing Digital Transformation&quot; podcast episode, Chief Solution Architect Darren Pulsipher interviews Greg Campbell, the CTO of Verge.io. The conversation revolves around innovative solutions in infrastructure management and the potential of augmented intelligence. Greg shares his background as a software developer and entrepreneur, discussing the challenges he aimed to address with Verge.io, a company focused on simplifying infrastructure management in distributed servers.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>In the &quot;Embracing Digital Transformation&quot; podcast episode, Chief Solution Architect Darren Pulsipher interviews Greg Campbell, the CTO of Verge.io. The conversation revolves around innovative solutions in infrastructure management and the potential of augmented intelligence. Greg shares his background as a software developer and entrepreneur, discussing the challenges he aimed to address with Verge.io, a company focused on simplifying infrastructure management in distributed servers.</p>
 <h2>Simplifying Complex Infrastructure Management</h2>
 <p>Managing infrastructure in today&#39;s digital landscape poses significant challenges. The complexity arises from various components, vendors, licenses, and versioning. This necessitates skilled staff and often results in high costs and a shortage of expertise. While the cloud was initially seen as a solution, it introduced its own complexities.</p>
 <p>Verge.io offers a solution through its operating system, VergeOS. This system allows developers to easily manage and connect storage, compute, and networking resources across different hardware configurations. By providing a virtual data center, VergeOS simplifies infrastructure management, making it more intuitive and user-friendly.</p>
@@ -226,16 +286,65 @@
 <p>The podcast concludes with a discussion on the future of augmented intelligence and the potential impact on industries and the workforce. Greg&#39;s optimism lies in the ability of augmented intelligence to improve efficiency and productivity, but with a recognition that it should not replace human judgment entirely. The conversation highlights the importance of careful implementation, ongoing human oversight, and ethical considerations when leveraging augmented intelligence.</p>
 <p>Overall, this podcast episode offers valuable insights into innovative infrastructure management solutions, the potential of generative AI in streamlining processes, and the benefits of augmented intelligence as a valuable assistant. It demonstrates the power of embracing digital transformation and leveraging technology to drive efficiency and success in organizations.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "GenAI Advisor for Datacenter Management",
+  "episodeNumber": "155",
+  "datePublished": "2023-08-31T00:00:00.000Z",
+  "description": "<p>In this episode host Darren Pulsipher sits down with Greg Campbell, CTO of Verge.io, to discuss the exciting intersection of AI and infrastructure management. Greg, a software developer and entrepreneur, shares his journey of creating Verge.io to address the complexities of infrastructure stitching and management.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "GenAI Advisor for Datacenter Management Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "GenAI Advisor for Datacenter Management Audio",
+      "contentUrl": "https://share.transistor.fm/e/4a6dc3d3"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Greg Campbell"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;In this episode, Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, welcomes special guests Jason Dunn-Potter, Ret Chief Warrant Officer, US Army, and Ron Fritzemeier, Ret Rear Admiral, US Navy. Both are now five months into their positions as Solution Architects and Mission Specialists with Intel’s Department of Defense Team.  &lt;/p&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;In this episode, Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, welcomes special guests Jason Dunn-Potter, Ret Chief Warrant Officer, US Army, and Ron Fritzemeier, Ret Rear Admiral, US Navy. Both are now five months into their positions as Solution Architects and Mission Specialists with Intel’s Department of Defense Team.  &lt;/p&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;In this episode, Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, welcomes special guests Jason Dunn-Potter, Ret Chief Warrant Officer, US Army, and Ron Fritzemeier, Ret Rear Admiral, US Navy. Both are now five months into their positions as Solution Architects and Mission Specialists with Intel’s Department of Defense Team.  &lt;/p&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;In this episode, Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, welcomes special guests Jason Dunn-Potter, Ret Chief Warrant Officer, US Army, and Ron Fritzemeier, Ret Rear Admiral, US Navy. Both are now five months into their positions as Solution Architects and Mission Specialists with Intel’s Department of Defense Team.  &lt;/p&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -161,65 +187,104 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#86 The Things I Wish I Knew as a Government CTO</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/60287be0"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>In this episode, Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, welcomes special guests Jason Dunn-Potter, Ret Chief Warrant Officer, US Army, and Ron Fritzemeier, Ret Rear Admiral, US Navy. Both are now five months into their positions as Solution Architects and Mission Specialists with Intel’s Department of Defense Team.  </p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #86 <span>The Things I Wish I Knew as a Government CTO</span>
+    </h1>
+    <time datetime="2022-05-12T00:00:00.000Z"
+          itemprop="datePublished">
+      2022-05-12T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="86"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="The Things I Wish I Knew as a Government CTO">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="The Things I Wish I Knew as a Government CTO Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="The Things I Wish I Knew as a Government CTO">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/60287be0">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/60287be0"
+            title="The Things I Wish I Knew as a Government CTO Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>In this episode, Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, welcomes special guests Jason Dunn-Potter, Ret Chief Warrant Officer, US Army, and Ron Fritzemeier, Ret Rear Admiral, US Navy. Both are now five months into their positions as Solution Architects and Mission Specialists with Intel’s Department of Defense Team.  </p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=cloudoperations"
+           itemprop="keywords">cloudoperations</a>
+      
+        <a href="../../../en/search.html?query=userexperience"
+           itemprop="keywords">userexperience</a>
+      
+        <a href="../../../en/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../en/search.html?query=artificialintelligence"
+           itemprop="keywords">artificialintelligence</a>
+      
+        <a href="../../../en/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../en/search.html?query=teamwork"
+           itemprop="keywords">teamwork</a>
+      
+        <a href="../../../en/search.html?query=digitaltransformation"
+           itemprop="keywords">digitaltransformation</a>
+      
+        <a href="../../../en/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../en/search.html?query=advancedcommunications"
+           itemprop="keywords">advancedcommunications</a>
+      
+        <a href="../../../en/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../en/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../en/search.html?query=policy"
+           itemprop="keywords">policy</a>
+      
+        <a href="../../../en/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../en/guests/jason-dunn-potter/index.html"
+           itemprop="name" target="_blank">Jason Dunn-Potter</a>
+      
+        <a href="../../../en/guests/ron-fritzemeier/index.html"
+           itemprop="name" target="_blank">Ron Fritzemeier</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=cloudoperations"><span>cloudoperations</span></a>
-                
-                    <a href="../../../en/search.html?query=userexperience"><span>userexperience</span></a>
-                
-                    <a href="../../../en/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../en/search.html?query=artificialintelligence"><span>artificialintelligence</span></a>
-                
-                    <a href="../../../en/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../en/search.html?query=teamwork"><span>teamwork</span></a>
-                
-                    <a href="../../../en/search.html?query=digitaltransformation"><span>digitaltransformation</span></a>
-                
-                    <a href="../../../en/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../en/search.html?query=advancedcommunications"><span>advancedcommunications</span></a>
-                
-                    <a href="../../../en/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../en/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../en/search.html?query=policy"><span>policy</span></a>
-                
-                    <a href="../../../en/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../en/guests/jason-dunn-potter/index.html" target="_blank">Jason Dunn-Potter</a>
-                <a href="../../../en/guests/ron-fritzemeier/index.html" target="_blank">Ron Fritzemeier</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>What have Jason and Ron learned since joining Intel that they wished they knew when they were in the military?</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>What have Jason and Ron learned since joining Intel that they wished they knew when they were in the military?</p>
 <p>Jason was surprised how much better industry integrated solutions and developed some incredible capabilities missing in the army. He learned that business use cases show that understanding the customer’s problem set is more valuable than simply pushing technology. CTOs need to know the technology and learn how to change the culture of team members to adapt to it. Making the user experience friendlier, building the technology smarter, leaner, and faster, and getting people on board are what can make smoother transitions. He would have liked to have seen more outcomes and solutions in the army instead of simply products.</p>
 <p>Ron agrees with Jason’s assessment and adds that the challenge he saw from inside the government was how to get industry to come along as mission solution partners so they could better inform military teams on how to apply their technology to those missions. Great technology without understanding how to solve the actual mission problem can be a train wreck.</p>
 <p>Another element both agree is important is user experience. Matching the technology with the people that have to operate it is critical. Everyone using the technology does not need to have a Ph.D. in engineering. The user experience must be built for your people’s level of skills. The outcome is seldom independent of humans. When bringing solutions to defense or industry, you need to understand the mission&#39;s technological needs, but the entire space and how to operate in that space. Particularly in the military, you have to plan to execute in moments when things have not gone well and make it work. Technology will not win the day if you aren’t planning for the human element and challenging circumstances.</p>
@@ -234,16 +299,70 @@
 <p>Jason adds that another space where the DOD has been slow to adapt is AI due to a lack of people with suitable backgrounds. You don’t come out of Army Ranger School as an AI expert. The same problem existed with cybersecurity for years until the DOD made a significant investment. Some complex resources need to go to AI operations because AI can change everything.</p>
 <p>Ron, having spent the last few years in the service in the nuclear space, points out that the US will never take the human element out of critical decision loops. AI will be hugely valuable as it can ensure the technology can dynamically adapt. It will reduce the cognitive load and process countless data points so human decision-makers can have a more apparent situational awareness and be better prepared to make informed decisions quickly. That’s the AI space that the DOD must pursue. </p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "The Things I Wish I Knew as a Government CTO",
+  "episodeNumber": "86",
+  "datePublished": "2022-05-12T00:00:00.000Z",
+  "description": "<p>In this episode, Darren Pulsipher, Chief Solution Architect, Public Sector, Intel, welcomes special guests Jason Dunn-Potter, Ret Chief Warrant Officer, US Army, and Ron Fritzemeier, Ret Rear Admiral, US Navy. Both are now five months into their positions as Solution Architects and Mission Specialists with Intel’s Department of Defense Team.  </p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "The Things I Wish I Knew as a Government CTO Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "The Things I Wish I Knew as a Government CTO Audio",
+      "contentUrl": "https://share.transistor.fm/e/60287be0"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Jason Dunn-Potter"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Ron Fritzemeier"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

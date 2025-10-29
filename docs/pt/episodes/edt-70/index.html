@@ -160,52 +160,83 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#70 Governança Moderna de Dados</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/752e2562"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher, Arquiteto Principal de Soluções da Intel, discute a realidade e o futuro da governança de dados moderna com Matthew Carroll, CEO da Immuta.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #70 <span>Governança Moderna de Dados</span>
+    </h1>
+    <time datetime="2021-11-25T00:00:00.000Z"
+          itemprop="datePublished">
+      2021-11-25T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="70"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Governança Moderna de Dados">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Governança Moderna de Dados Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Governança Moderna de Dados">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/752e2562">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/752e2562"
+            title="Governança Moderna de Dados Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher, Arquiteto Principal de Soluções da Intel, discute a realidade e o futuro da governança de dados moderna com Matthew Carroll, CEO da Immuta.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../pt/search.html?query=datamanagement"
+           itemprop="keywords">datamanagement</a>
+      
+        <a href="../../../pt/search.html?query=generativeai"
+           itemprop="keywords">generativeai</a>
+      
+        <a href="../../../pt/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../pt/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../pt/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../pt/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../pt/search.html?query=policy"
+           itemprop="keywords">policy</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../pt/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../pt/guests/matthew-carroll/index.html"
+           itemprop="name" target="_blank">Matthew Carroll</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../pt/search.html?query=datamanagement"><span>datamanagement</span></a>
-                
-                    <a href="../../../pt/search.html?query=generativeai"><span>generativeai</span></a>
-                
-                    <a href="../../../pt/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../pt/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../pt/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../pt/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../pt/search.html?query=policy"><span>policy</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../pt/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../pt/guests/matthew-carroll/index.html" target="_blank">Matthew Carroll</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>À medida que as organizações migram para a nuvem, a forma como pensamos sobre dados e como os utilizamos está mudando completamente; nos últimos cinco ou seis anos, toda a camada de infraestrutura mudou. O desempenho, a escala, as regras necessárias e o número de usuários que desejam combinar dados aumentaram exponencialmente. Gerenciar isso em escala não é trivial, e é onde a Immuta entra em cena.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>À medida que as organizações migram para a nuvem, a forma como pensamos sobre dados e como os utilizamos está mudando completamente; nos últimos cinco ou seis anos, toda a camada de infraestrutura mudou. O desempenho, a escala, as regras necessárias e o número de usuários que desejam combinar dados aumentaram exponencialmente. Gerenciar isso em escala não é trivial, e é onde a Immuta entra em cena.</p>
 <p>Com o tempo, a indústria repensou o paradigma do armazenamento de dados. Anteriormente, cada equipe de dados construía produtos de dados em células isoladas e, em seguida, entregava a uma unidade de negócios. A unidade de negócios possuía seus dados apropriados que forneciam um serviço de qualidade a eles. Agora, de repente, queremos que qualquer pessoa possa combinar dados em toda a empresa: analistas de negócios, cientistas de dados, engenheiros de dados, etc. O número de usuários mudou, e não se trata mais de aplicativos de pesquisa; trata-se de transformar e construir fluxos de dados.</p>
 <p>Isso é uma diferença que requer um nível de serviço, tempo e sofisticação diferentes, que nunca existiram antes. Torna-se ainda mais complexo quando se adiciona leis de privacidade, classificação de dados e regras e regulamentações em constante mudança.</p>
 <p>O que a Immuta está tentando fazer é tornar possível para qualquer usuário combinar potencialmente qualquer conjunto de dados, interno ou externo à organização, para obter alguma compreensão. Tudo se trata de escala. A política precisa ser separada da plataforma para escalar a política para todos esses novos usuários e todas as diferentes combinações de dados. Segurança, privacidade e governança são ótimas, mas se você não conseguir fazer, ninguém fica satisfeito.</p>
@@ -219,16 +250,65 @@
 <p>Immuta aplica regras aos dados por meio de tags em vez de usar os dados brutos, porque cada domínio possui sua própria terminologia sobre como classificar e falar sobre seus dados. Portanto, eles começaram a classificar e marcar de forma genérica para aplicar modelos conceituais gerais, como no caso do HIPAA. No entanto, esses modelos ainda não são infalíveis e há um longo caminho a percorrer.</p>
 <p>A visão de Matt como CEO do Immuta é chegar a um estado em que domínios possam compartilhar suas políticas. Por exemplo, na área da saúde, há uma boa razão para que a Moderna e a Pfizer queiram trabalhar juntas. Poderia haver um acordo sobre como lidar com controles de dados do mundo real com a academia. Portanto, se houvesse uma política consistente que pudesse ser compartilhada e colaborada em uma nuvem de políticas conceituais, isso seria o certo a se fazer.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Governança Moderna de Dados",
+  "episodeNumber": "70",
+  "datePublished": "2021-11-25T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher, Arquiteto Principal de Soluções da Intel, discute a realidade e o futuro da governança de dados moderna com Matthew Carroll, CEO da Immuta.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Governança Moderna de Dados Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Governança Moderna de Dados Audio",
+      "contentUrl": "https://share.transistor.fm/e/752e2562"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Matthew Carroll"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

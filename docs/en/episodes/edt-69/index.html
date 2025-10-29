@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, discusses securing the data center through the edge with fellow Intel executives and podcast hosts Tom Garrison, VP of Client Security, and Camille Morhardt, Director of Security Innovation and Communication.&lt;/p&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, discusses securing the data center through the edge with fellow Intel executives and podcast hosts Tom Garrison, VP of Client Security, and Camille Morhardt, Director of Security Innovation and Communication.&lt;/p&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, discusses securing the data center through the edge with fellow Intel executives and podcast hosts Tom Garrison, VP of Client Security, and Camille Morhardt, Director of Security Innovation and Communication.&lt;/p&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, discusses securing the data center through the edge with fellow Intel executives and podcast hosts Tom Garrison, VP of Client Security, and Camille Morhardt, Director of Security Innovation and Communication.&lt;/p&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -161,67 +187,107 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#69 Securing the Data Center Through the Edge</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/e73f3d4a"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher, Chief Solution Architect, Intel, discusses securing the data center through the edge with fellow Intel executives and podcast hosts Tom Garrison, VP of Client Security, and Camille Morhardt, Director of Security Innovation and Communication.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #69 <span>Securing the Data Center Through the Edge</span>
+    </h1>
+    <time datetime="2021-11-11T00:00:00.000Z"
+          itemprop="datePublished">
+      2021-11-11T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="69"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Securing the Data Center Through the Edge">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Securing the Data Center Through the Edge Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Securing the Data Center Through the Edge">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/e73f3d4a">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/e73f3d4a"
+            title="Securing the Data Center Through the Edge Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher, Chief Solution Architect, Intel, discusses securing the data center through the edge with fellow Intel executives and podcast hosts Tom Garrison, VP of Client Security, and Camille Morhardt, Director of Security Innovation and Communication.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=security"
+           itemprop="keywords">security</a>
+      
+        <a href="../../../en/search.html?query=cloudsecurity"
+           itemprop="keywords">cloudsecurity</a>
+      
+        <a href="../../../en/search.html?query=iot"
+           itemprop="keywords">iot</a>
+      
+        <a href="../../../en/search.html?query=riskmanagement"
+           itemprop="keywords">riskmanagement</a>
+      
+        <a href="../../../en/search.html?query=dataprivacy"
+           itemprop="keywords">dataprivacy</a>
+      
+        <a href="../../../en/search.html?query=endpointsecurity"
+           itemprop="keywords">endpointsecurity</a>
+      
+        <a href="../../../en/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../en/search.html?query=employeeengagement"
+           itemprop="keywords">employeeengagement</a>
+      
+        <a href="../../../en/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../en/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../en/search.html?query=edgecomputing"
+           itemprop="keywords">edgecomputing</a>
+      
+        <a href="../../../en/search.html?query=policy"
+           itemprop="keywords">policy</a>
+      
+        <a href="../../../en/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../en/search.html?query=people"
+           itemprop="keywords">people</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../en/guests/tom-garrison/index.html"
+           itemprop="name" target="_blank">Tom Garrison</a>
+      
+        <a href="../../../en/guests/camille-morhardt/index.html"
+           itemprop="name" target="_blank">Camille Morhardt</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=security"><span>security</span></a>
-                
-                    <a href="../../../en/search.html?query=cloudsecurity"><span>cloudsecurity</span></a>
-                
-                    <a href="../../../en/search.html?query=iot"><span>iot</span></a>
-                
-                    <a href="../../../en/search.html?query=riskmanagement"><span>riskmanagement</span></a>
-                
-                    <a href="../../../en/search.html?query=dataprivacy"><span>dataprivacy</span></a>
-                
-                    <a href="../../../en/search.html?query=endpointsecurity"><span>endpointsecurity</span></a>
-                
-                    <a href="../../../en/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../en/search.html?query=employeeengagement"><span>employeeengagement</span></a>
-                
-                    <a href="../../../en/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../en/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../en/search.html?query=edgecomputing"><span>edgecomputing</span></a>
-                
-                    <a href="../../../en/search.html?query=policy"><span>policy</span></a>
-                
-                    <a href="../../../en/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../en/search.html?query=people"><span>people</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../en/guests/tom-garrison/index.html" target="_blank">Tom Garrison</a>
-                <a href="../../../en/guests/camille-morhardt/index.html" target="_blank">Camille Morhardt</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>A holistic look at security includes the whole infrastructure, from within the cloud environment all the way out to the edge. If you can’t secure the client, you can’t secure the enterprise, so it&#39;s essential to have honest conversations in an approachable way, without the jargon, about security.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>A holistic look at security includes the whole infrastructure, from within the cloud environment all the way out to the edge. If you can’t secure the client, you can’t secure the enterprise, so it&#39;s essential to have honest conversations in an approachable way, without the jargon, about security.</p>
 <p>Gone are the days when an employee would get a laptop shipped to an IT cage, then configured and delivered by IT. Sometimes employees never even come to the worksite, so devices need to show up at someone&#39;s doorstep. They must be provisioned to make sure they are safe and haven’t been tampered with. From a security standpoint, this is a challenging problem. The supply chain is problematic. There’s less control over the devices and how they get deployed.</p>
 <p>The sudden switch to working from home because of the COVID pandemic required an unprecedented rapid response to this problem.  It may have taken years if it had been a natural progression, but the situation didn’t allow an alternative; IT had to rise to the occasion.</p>
 <p>When Camille worked in the IoT group, they tried to solve the connectivity and manageability between devices. Complex ecosystems like wind farms, underground mines, implanted medical devices are hard to update when connectivity is sporadic. They were trying to solve these connectivity issues on the edge, and when COVID hit, the intersection between OT and IT suddenly became the center of all enterprise IT departments.</p>
@@ -240,16 +306,70 @@
 <p>Another trend in security, one that didn&#39;t start with the COVID pandemic but was undoubtedly accelerated by it, is protecting against physical attack. Historically, security has been focused on something that could happen over the wire such as a network attack or a malicious application. With IoT devices out there with no human attached or watching, we have to protect the data and the devices from being tampered with. That&#39;s a difficult challenge.</p>
 <p>Nowadays, you can&#39;t think holistically about security unless you’re also addressing privacy. One complication is that privacy can sometimes be in direct conflict with security. There are no agreed-upon regulations or standards worldwide, so organizations have to figure out how to operate: Hit the highest common denominator, or address every geopolitical requirement? To complicate it further, laws and regulations are constantly changing.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Securing the Data Center Through the Edge",
+  "episodeNumber": "69",
+  "datePublished": "2021-11-11T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher, Chief Solution Architect, Intel, discusses securing the data center through the edge with fellow Intel executives and podcast hosts Tom Garrison, VP of Client Security, and Camille Morhardt, Director of Security Innovation and Communication.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Securing the Data Center Through the Edge Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Securing the Data Center Through the Edge Audio",
+      "contentUrl": "https://share.transistor.fm/e/e73f3d4a"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Tom Garrison"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Camille Morhardt"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

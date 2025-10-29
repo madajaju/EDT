@@ -160,60 +160,137 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#140 Vérification des antécédents de votre source ouverte.</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/d17c9ba3"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Dans cet épisode, Darren interroge Michael Mehlberg sur l&#39;augmentation de la confiance dans les logiciels open source grâce à la vérification des antécédents des communautés open source.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #140 <span>Vérification des antécédents de votre source ouverte.</span>
+    </h1>
+    <time datetime="2023-05-25T00:00:00.000Z"
+          itemprop="datePublished">
+      2023-05-25T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="140"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Vérification des antécédents de votre source ouverte.">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Vérification des antécédents de votre source ouverte. Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Vérification des antécédents de votre source ouverte.">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/d17c9ba3">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/d17c9ba3"
+            title="Vérification des antécédents de votre source ouverte. Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Dans cet épisode, Darren interroge Michael Mehlberg sur l&#39;augmentation de la confiance dans les logiciels open source grâce à la vérification des antécédents des communautés open source.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../fr/search.html?query=vulnerabilitymanagement"
+           itemprop="keywords">vulnerabilitymanagement</a>
+      
+        <a href="../../../fr/search.html?query=developerawareness"
+           itemprop="keywords">developerawareness</a>
+      
+        <a href="../../../fr/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../fr/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../fr/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../fr/guests/michael-mehlberg/index.html"
+           itemprop="name" target="_blank">Michael Mehlberg</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../fr/search.html?query=vulnerabilitymanagement"><span>vulnerabilitymanagement</span></a>
-                
-                    <a href="../../../fr/search.html?query=developerawareness"><span>developerawareness</span></a>
-                
-                    <a href="../../../fr/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../fr/search.html?query=process"><span>process</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../fr/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../fr/guests/michael-mehlberg/index.html" target="_blank">Michael Mehlberg</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>Si vous êtes un développeur de logiciels, vous connaissez le sentiment de fierté qui accompagne la création d&#39;un package ou d&#39;un outil populaire que de nombreuses personnes trouvent utile. Cependant, cette popularité peut parfois attirer l&#39;attention d&#39;attaquants qui recherchent des vulnérabilités à exploiter.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>Si vous êtes un développeur de logiciels, vous connaissez le sentiment de fierté qui accompagne la création d&#39;un package ou d&#39;un outil populaire que de nombreuses personnes trouvent utile. Cependant, cette popularité peut parfois attirer l&#39;attention d&#39;attaquants qui recherchent des vulnérabilités à exploiter.</p>
 <p>Dans un podcast récent, l&#39;ingénieur logiciel Jay Phelps a partagé son expérience de découverte d&#39;une vulnérabilité dans un package largement utilisé qu&#39;il a créé. Après avoir pris conscience de l&#39;impact potentiel de la vulnérabilité et du nombre important d&#39;instances du package dans la nature, Phelps a rapidement travaillé pour résoudre le problème afin d&#39;empêcher les attaquants de l&#39;exploiter.</p>
 <p>Ce scénario met en évidence l&#39;importance de la vigilance pour les développeurs de logiciels, en particulier ceux qui créent des packages ou des outils populaires. Bien qu&#39;il puisse être tentant de se prélasser dans la gloire d&#39;un produit largement utilisé, il est crucial de se rappeler que la popularité peut également attirer les attaquants. Des vérifications régulières et des mises à jour pour remédier à toute vulnérabilité peuvent aider à protéger les utilisateurs et prévenir l&#39;exploitation.</p>
 <p>En tant que développeur de logiciels, il est important d&#39;aborder votre travail avec à la fois fierté et prudence. Bien qu&#39;il soit formidable de contribuer à la société avec vos créations, n&#39;oubliez pas de donner la priorité à la sécurité et à la sûreté de vos utilisateurs. Restez vigilant et gardez vos packages à jour pour empêcher les vulnérabilités d&#39;être exploitées par des attaquants.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Vérification des antécédents de votre source ouverte.",
+  "episodeNumber": "140",
+  "datePublished": "2023-05-25T00:00:00.000Z",
+  "description": "<p>Dans cet épisode, Darren interroge Michael Mehlberg sur l&#39;augmentation de la confiance dans les logiciels open source grâce à la vérification des antécédents des communautés open source.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Vérification des antécédents de votre source ouverte. Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Vérification des antécédents de votre source ouverte. Audio",
+      "contentUrl": "https://share.transistor.fm/e/d17c9ba3"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Michael Mehlberg"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Droit d'auteur &copy; 2025 Paidar Productions LLC</p>

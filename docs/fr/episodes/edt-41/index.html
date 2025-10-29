@@ -160,51 +160,80 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#41 L'art obscur de DevOps</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/b4fe3ea1"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher, architecte en chef des solutions, secteur public, chez Intel, définit les termes courants de DevOps et explique comment DevOps s&#39;intègre dans votre organisation.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #41 <span>L'art obscur de DevOps</span>
+    </h1>
+    <time datetime="2021-03-10T00:00:00.000Z"
+          itemprop="datePublished">
+      2021-03-10T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="41"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="L'art obscur de DevOps">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="L'art obscur de DevOps Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="L'art obscur de DevOps">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/b4fe3ea1">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/b4fe3ea1"
+            title="L'art obscur de DevOps Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher, architecte en chef des solutions, secteur public, chez Intel, définit les termes courants de DevOps et explique comment DevOps s&#39;intègre dans votre organisation.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../fr/search.html?query=devops"
+           itemprop="keywords">devops</a>
+      
+        <a href="../../../fr/search.html?query=datamanagement"
+           itemprop="keywords">datamanagement</a>
+      
+        <a href="../../../fr/search.html?query=automation"
+           itemprop="keywords">automation</a>
+      
+        <a href="../../../fr/search.html?query=data_management"
+           itemprop="keywords">data_management</a>
+      
+        <a href="../../../fr/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../fr/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../fr/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../fr/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../fr/search.html?query=devops"><span>devops</span></a>
-                
-                    <a href="../../../fr/search.html?query=datamanagement"><span>datamanagement</span></a>
-                
-                    <a href="../../../fr/search.html?query=automation"><span>automation</span></a>
-                
-                    <a href="../../../fr/search.html?query=data_management"><span>data_management</span></a>
-                
-                    <a href="../../../fr/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../fr/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../fr/search.html?query=process"><span>process</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../fr/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>Jetons un coup d&#39;œil à la place de DevOps dans votre infrastructure.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>Jetons un coup d&#39;œil à la place de DevOps dans votre infrastructure.</p>
 <p>Au bas d&#39;une pile normale, nous avons une couche physique qui peut signifier un nuage, un centre de données, des appareils d&#39;IoT ou une infrastructure héritée.</p>
 <p>De plus, il y a généralement une infrastructure définie par logiciel qui dissocie la complexité de la gestion des composants matériels individuels.</p>
 <p>Ensuite se trouve une couche de gestion des services, qui comprend la virtualisation de l&#39;écosystème des conteneurs et une couche de gestion des informations distribuées, qui comprend le plan de données, les data lakes et tout ce qui gère vos données.</p>
@@ -248,16 +277,60 @@
 <h2>Mettre tout cela ensemble.</h2>
 <p>Lorsqu&#39;un développeur crée un nouveau service, il ne se contente pas de développer le code de l&#39;image ; il définit également l&#39;environnement ou la configuration dans lequel il doit s&#39;exécuter. C&#39;est là que l&#39;enchevêtrement de votre environnement et de la définition du service peut se rejoindre. Au moment de l&#39;exécution, cela produira l&#39;environnement nécessaire pour que le conteneur s&#39;exécute de manière efficace et répétable, de sorte que vous puissiez facilement déplacer le code de l&#39;exécution sur un ordinateur de bureau à l&#39;exécution en production complète le plus rapidement possible.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "L'art obscur de DevOps",
+  "episodeNumber": "41",
+  "datePublished": "2021-03-10T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher, architecte en chef des solutions, secteur public, chez Intel, définit les termes courants de DevOps et explique comment DevOps s&#39;intègre dans votre organisation.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "L'art obscur de DevOps Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "L'art obscur de DevOps Audio",
+      "contentUrl": "https://share.transistor.fm/e/b4fe3ea1"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Droit d'auteur &copy; 2025 Paidar Productions LLC</p>

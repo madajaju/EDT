@@ -160,51 +160,80 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#18 Coleta e Preparação de Dados</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/ef0bf710"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Sarah Kalicin, Cientista de Dados Líder na Intel, e Darren Pulsipher, Arquiteto Principal de Soluções, Setor Público da Intel, falam sobre o processo e os benefícios da coleta e preparação de dados para se tornar uma organização centrada em dados. Este é o segundo passo na jornada de se tornar uma organização centrada em dados.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #18 <span>Coleta e Preparação de Dados</span>
+    </h1>
+    <time datetime="2020-08-31T00:00:00.000Z"
+          itemprop="datePublished">
+      2020-08-31T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="18"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Coleta e Preparação de Dados">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Coleta e Preparação de Dados Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Coleta e Preparação de Dados">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/ef0bf710">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/ef0bf710"
+            title="Coleta e Preparação de Dados Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Sarah Kalicin, Cientista de Dados Líder na Intel, e Darren Pulsipher, Arquiteto Principal de Soluções, Setor Público da Intel, falam sobre o processo e os benefícios da coleta e preparação de dados para se tornar uma organização centrada em dados. Este é o segundo passo na jornada de se tornar uma organização centrada em dados.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../pt/search.html?query=artificialintelligence"
+           itemprop="keywords">artificialintelligence</a>
+      
+        <a href="../../../pt/search.html?query=analytics"
+           itemprop="keywords">analytics</a>
+      
+        <a href="../../../pt/search.html?query=machinelearning"
+           itemprop="keywords">machinelearning</a>
+      
+        <a href="../../../pt/search.html?query=deeplearning"
+           itemprop="keywords">deeplearning</a>
+      
+        <a href="../../../pt/search.html?query=continuousimprovement"
+           itemprop="keywords">continuousimprovement</a>
+      
+        <a href="../../../pt/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../pt/search.html?query=people"
+           itemprop="keywords">people</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../pt/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../pt/search.html?query=artificialintelligence"><span>artificialintelligence</span></a>
-                
-                    <a href="../../../pt/search.html?query=analytics"><span>analytics</span></a>
-                
-                    <a href="../../../pt/search.html?query=machinelearning"><span>machinelearning</span></a>
-                
-                    <a href="../../../pt/search.html?query=deeplearning"><span>deeplearning</span></a>
-                
-                    <a href="../../../pt/search.html?query=continuousimprovement"><span>continuousimprovement</span></a>
-                
-                    <a href="../../../pt/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../pt/search.html?query=people"><span>people</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../pt/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>Precisamos de dados! Nossos dados estão uma bagunça!</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>Precisamos de dados! Nossos dados estão uma bagunça!</h2>
 <p>A primeira coisa a se pensar nesta parte do processo é o fluxo de dados. Como identificamos quais dados brutos precisamos e como os levamos pelo fluxo e os transformamos em conhecimento? Existem cinco etapas-chave no fluxo: determinar o valor empresarial dos dados, ingestão, preparação, análise e, por fim, agir com base nos insights resultantes.</p>
 <p>Vamos analisar a fabricação como exemplo. Ao determinar quais dados oferecem valor para o negócio, você deve fazer três perguntas fundamentais: Qual é a demanda pelo meu produto? Qual é o suprimento atual? Qual é a perda de rendimento? Essas são perguntas aparentemente simples, mas então você precisa pensar em coisas mais complexas, como como quantificar a demanda, capacidades de fabricação, suprimento e perda de rendimento? De onde vêm os dados? Como eu os incorporo? Quão confiáveis e estáveis são esses dados? Há muitas perguntas e variáveis, como o tempo de entrega de produtos brutos, demanda projetada e perda de rendimento desconhecida, que podem criar uma grande complexidade.</p>
 <p>O pipeline simplifica como todos esses componentes se juntam. Cada tipo de dado passa pelas etapas-chave do pipeline, mas cada um será diferente. Por exemplo, a ingestão de um tipo de dado será diferente da ingestão de outro. A ideia, no entanto, é reunir todos os dados para criar uma imagem clara.</p>
@@ -216,16 +245,60 @@
 <p>Como conseguimos isso? Essencialmente, você está reunindo todos os dados, preparando-os e vinculando-os para, por exemplo, quantificar o abastecimento e previsões de perda de rendimento. Ao longo do tempo, você vai precisar de práticas de solução de problemas e melhoria contínua para lidar com as condições em constante mudança. É aí que entra a cultura da organização. Resolver um problema uma vez, sem o compromisso com a melhoria contínua, pode fazer com que a organização perca o verdadeiro valor da análise a longo prazo.</p>
 <p>Estamos presenciando hoje uma grande mudança em direção a organizações com uma infraestrutura centrada em dados. Os dados não estão mais apenas no centro de dados, mas também na nuvem e na borda. Com o processo de negócio no topo, levando a melhorias contínuas, compreensão dos negócios e dos dados, e até mesmo a implementação, organizações construídas com base nessa infraestrutura podem perceber uma diferença significativa.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Coleta e Preparação de Dados",
+  "episodeNumber": "18",
+  "datePublished": "2020-08-31T00:00:00.000Z",
+  "description": "<p>Sarah Kalicin, Cientista de Dados Líder na Intel, e Darren Pulsipher, Arquiteto Principal de Soluções, Setor Público da Intel, falam sobre o processo e os benefícios da coleta e preparação de dados para se tornar uma organização centrada em dados. Este é o segundo passo na jornada de se tornar uma organização centrada em dados.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Coleta e Preparação de Dados Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Coleta e Preparação de Dados Audio",
+      "contentUrl": "https://share.transistor.fm/e/ef0bf710"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

@@ -160,53 +160,86 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#132 Administración de BareMetal definido por software</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/dd6ccded"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>En este episodio, Darren entrevista a los fundadores de Metify, Ian Evans y Mike Wagner, sobre su enfoque único de gestión de infraestructura definida por software en metal desnudo utilizando el estándar Redfish.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #132 <span>Administración de BareMetal definido por software</span>
+    </h1>
+    <time datetime="2023-04-06T00:00:00.000Z"
+          itemprop="datePublished">
+      2023-04-06T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="132"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Administración de BareMetal definido por software">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Administración de BareMetal definido por software Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Administración de BareMetal definido por software">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/dd6ccded">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/dd6ccded"
+            title="Administración de BareMetal definido por software Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>En este episodio, Darren entrevista a los fundadores de Metify, Ian Evans y Mike Wagner, sobre su enfoque único de gestión de infraestructura definida por software en metal desnudo utilizando el estándar Redfish.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../es/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../es/search.html?query=hybridcloud"
+           itemprop="keywords">hybridcloud</a>
+      
+        <a href="../../../es/search.html?query=infrastructure"
+           itemprop="keywords">infrastructure</a>
+      
+        <a href="../../../es/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../es/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../es/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../es/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../es/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../es/guests/ian-evans/index.html"
+           itemprop="name" target="_blank">Ian Evans</a>
+      
+        <a href="../../../es/guests/mike-wagner/index.html"
+           itemprop="name" target="_blank">Mike Wagner</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../es/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../es/search.html?query=hybridcloud"><span>hybridcloud</span></a>
-                
-                    <a href="../../../es/search.html?query=infrastructure"><span>infrastructure</span></a>
-                
-                    <a href="../../../es/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../es/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../es/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../es/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../es/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../es/guests/ian-evans/index.html" target="_blank">Ian Evans</a>
-                <a href="../../../es/guests/mike-wagner/index.html" target="_blank">Mike Wagner</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>Con más de dos décadas de experiencia en el espacio de los centros de datos, Ian comparte sus ideas sobre la optimización de la infraestructura, la automatización de la gestión de servidores y la simplificación de los diferentes componentes en un centro de datos. Por otro lado, Mike, quien trabajó previamente con IBM y Red Hat, se enfoca en la venta consultiva y en ventas lideradas por canales para comprender mejor los problemas y patrones de las empresas en la operación de sus centros de datos. Juntos, crearon Metify en 2020 para proporcionar soluciones de automatización para gestionar servidores, almacenamiento y dispositivos de red en centros de datos, a pesar del aumento de los servicios de nube pública como RWC Azure y GCP.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>Con más de dos décadas de experiencia en el espacio de los centros de datos, Ian comparte sus ideas sobre la optimización de la infraestructura, la automatización de la gestión de servidores y la simplificación de los diferentes componentes en un centro de datos. Por otro lado, Mike, quien trabajó previamente con IBM y Red Hat, se enfoca en la venta consultiva y en ventas lideradas por canales para comprender mejor los problemas y patrones de las empresas en la operación de sus centros de datos. Juntos, crearon Metify en 2020 para proporcionar soluciones de automatización para gestionar servidores, almacenamiento y dispositivos de red en centros de datos, a pesar del aumento de los servicios de nube pública como RWC Azure y GCP.</p>
 <h2>Automatización del centro de datos</h2>
 <p>Automatizar la gestión del centro de datos puede acercar la gestión local a una experiencia de nube pública al tiempo que reduce costos. Uno de los elementos vitales de esta transformación es la estandarización y los estándares abiertos como la especificación redfish de DMCA que hacen posible esta automatización. La ubicuidad de esta especificación en placas base de clase empresarial la hace accesible para todos los actores que deseen integrarla. Las presiones financieras y la demanda de los usuarios son esenciales para impulsar a los OEM a implementar estos estándares abiertos. En general, la automatización y la estandarización pueden ayudar a los centros de datos a competir con los proveedores de servicios en la nube en términos de costos operativos mientras mejoran las capacidades de gestión de servidores.</p>
 <p>La eficiencia del centro de datos se puede mejorar utilizando herramientas que permiten la automatización e integración con marcos estándar. Los proveedores de hardware enfrentan presión debido a la comoditización de la tecnología, por lo que deben diferenciarse ofreciendo servidores de caja blanca similares pero de menor escala. Metify proporciona una única interfaz para gestionar dispositivos de cualquier fabricante, siempre que estén habilitados para BMC y cumplan con la especificación Redfish. Existen estándares emergentes para gestionar dispositivos pequeños a través de Redfish, pero la pregunta sigue siendo hasta qué punto se extiende la extensibilidad a las partes de la pila específicas de la red.</p>
@@ -216,16 +249,70 @@
 <h2>BareMetal SDI</h2>
 <p>Muchas tecnologías modernas de centro de datos dependen de la virtualización como base de su plano de control de gestión. Sin embargo, la gestión de hardware en bruto sigue siendo una tarea tradicional y manualmente intensiva. Este enfoque único para la infraestructura de nube privada no depende de la virtualización. En su lugar, utiliza el enfoque de infraestructura definida por software para la gestión de hardware en bruto, lo que permite una combinación de hardware en bruto, máquinas virtuales y contenedores. Este enfoque permite a los administradores de sistemas gestionar de manera más efectiva la infraestructura subyacente y brindar una experiencia similar a la nube sin fricciones. Este enfoque puede admitir entornos informáticos heterogéneos, donde se pueden aprovechar CPU, GPU, FPGA, VPU y NPUs para múltiples flujos de trabajo. Con Redfish y una extensión del esquema, Metify puede controlar fácilmente nuevos dispositivos, y ven el ecosistema en expansión como algo increíblemente valioso para el desarrollo de productos.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Administración de BareMetal definido por software",
+  "episodeNumber": "132",
+  "datePublished": "2023-04-06T00:00:00.000Z",
+  "description": "<p>En este episodio, Darren entrevista a los fundadores de Metify, Ian Evans y Mike Wagner, sobre su enfoque único de gestión de infraestructura definida por software en metal desnudo utilizando el estándar Redfish.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Administración de BareMetal definido por software Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Administración de BareMetal definido por software Audio",
+      "contentUrl": "https://share.transistor.fm/e/dd6ccded"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Ian Evans"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Mike Wagner"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

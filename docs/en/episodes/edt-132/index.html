@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;In this episode, Darren interviews the founders of Metify, Ian Evans and Mike Wagner, about their unique approach to bare metal software-defined infrastructure management using the Redfish standard.&lt;/p&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;In this episode, Darren interviews the founders of Metify, Ian Evans and Mike Wagner, about their unique approach to bare metal software-defined infrastructure management using the Redfish standard.&lt;/p&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;In this episode, Darren interviews the founders of Metify, Ian Evans and Mike Wagner, about their unique approach to bare metal software-defined infrastructure management using the Redfish standard.&lt;/p&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;In this episode, Darren interviews the founders of Metify, Ian Evans and Mike Wagner, about their unique approach to bare metal software-defined infrastructure management using the Redfish standard.&lt;/p&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -161,53 +187,86 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#132 Software Defined BareMetal Management</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/dd6ccded"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>In this episode, Darren interviews the founders of Metify, Ian Evans and Mike Wagner, about their unique approach to bare metal software-defined infrastructure management using the Redfish standard.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #132 <span>Software Defined BareMetal Management</span>
+    </h1>
+    <time datetime="2023-04-06T00:00:00.000Z"
+          itemprop="datePublished">
+      2023-04-06T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="132"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Software Defined BareMetal Management">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Software Defined BareMetal Management Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Software Defined BareMetal Management">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/dd6ccded">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/dd6ccded"
+            title="Software Defined BareMetal Management Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>In this episode, Darren interviews the founders of Metify, Ian Evans and Mike Wagner, about their unique approach to bare metal software-defined infrastructure management using the Redfish standard.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../en/search.html?query=hybridcloud"
+           itemprop="keywords">hybridcloud</a>
+      
+        <a href="../../../en/search.html?query=infrastructure"
+           itemprop="keywords">infrastructure</a>
+      
+        <a href="../../../en/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../en/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../en/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../en/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../en/guests/ian-evans/index.html"
+           itemprop="name" target="_blank">Ian Evans</a>
+      
+        <a href="../../../en/guests/mike-wagner/index.html"
+           itemprop="name" target="_blank">Mike Wagner</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../en/search.html?query=hybridcloud"><span>hybridcloud</span></a>
-                
-                    <a href="../../../en/search.html?query=infrastructure"><span>infrastructure</span></a>
-                
-                    <a href="../../../en/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../en/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../en/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../en/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../en/guests/ian-evans/index.html" target="_blank">Ian Evans</a>
-                <a href="../../../en/guests/mike-wagner/index.html" target="_blank">Mike Wagner</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>With over two decades of experience in the data center space, Ian shares his insights on optimizing infrastructure, automating server management, and streamlining different components in a data center. On the other hand, Mike, who previously worked with IBM and Red Hat, focuses on consultative selling and channeled-led sales to better understand the problems and patterns of enterprises in operating their data centers. Together, they created Metify in 2020 to provide automation solutions for managing servers, storage, and network devices in data centers, despite the rise of public cloud services like RWC Azure and GCP.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>With over two decades of experience in the data center space, Ian shares his insights on optimizing infrastructure, automating server management, and streamlining different components in a data center. On the other hand, Mike, who previously worked with IBM and Red Hat, focuses on consultative selling and channeled-led sales to better understand the problems and patterns of enterprises in operating their data centers. Together, they created Metify in 2020 to provide automation solutions for managing servers, storage, and network devices in data centers, despite the rise of public cloud services like RWC Azure and GCP.</p>
 <h2>Datacenter Automation</h2>
 <p>Automating data center management can bring on-prem management closer to a public cloud experience while reducing costs. One of the vital elements of this transformation is standardization and open standards like the DMCA redfish specification in making this automation possible. The ubiquity of this specification across enterprise-class motherboards has made it accessible for all players to integrate with it. Financial pressures and user demand are essential in pushing OEMs toward implementing these open standards. Overall, automation and standardization can help data centers compete with cloud service providers on OpEx costs while improving server management capabilities.</p>
 <p>Datacenter efficiency can be improved using tools that allow automation and integration with standard frameworks. The hardware providers face pressure due to technology commoditization, so they must differentiate themselves by offering similar scaled-down white box servers. Metify provides a single pane of glass to manage any manufacturer&#39;s devices as long as they are BMC enabled and adhere to the Redfish specification. There are emerging standards to manage small devices through redfish; the question remains about how far the extensibility gets down to the networking-specific parts of the stack.</p>
@@ -217,16 +276,70 @@
 <h2>BareMetal SDI</h2>
 <p>Many modern data center technologies rely on virtualization as the foundation of their management control plane. However, bare metal management remains a traditional, manually intensive task. This unique approach to private cloud infrastructure doesn&#39;t rely on virtualization. Instead, it uses the software-defined infrastructure approach for bare metal management, allowing for a mix of bare metal, VMs, and containers. This approach enables system administrators to manage the underlying infrastructure more effectively and provide a frictionless cloud-like experience. This approach can support heterogeneous computing environments, where CPU, GPU, FPGA, VPU, and NPUs can be leveraged for multiple workflows. With Redfish and an extension of the schema, Metify can easily control new devices, and they see the expanding ecosystem as incredibly valuable for product development. </p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Software Defined BareMetal Management",
+  "episodeNumber": "132",
+  "datePublished": "2023-04-06T00:00:00.000Z",
+  "description": "<p>In this episode, Darren interviews the founders of Metify, Ian Evans and Mike Wagner, about their unique approach to bare metal software-defined infrastructure management using the Redfish standard.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Software Defined BareMetal Management Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Software Defined BareMetal Management Audio",
+      "contentUrl": "https://share.transistor.fm/e/dd6ccded"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Ian Evans"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Mike Wagner"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

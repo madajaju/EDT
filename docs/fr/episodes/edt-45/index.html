@@ -160,48 +160,77 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#45 Tous les cœurs ne sont pas égaux.</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/cd1f0343"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Dans cet épisode, Darren Pulsipher, architecte en chef des solutions chez Intel, et Stephen Holt, architecte des solutions cloud chez Intel, discutent de l&#39;optimisation du cloud et des études qui montrent que les cœurs ont des performances différentes selon les charges de travail.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #45 <span>Tous les cœurs ne sont pas égaux.</span>
+    </h1>
+    <time datetime="2021-03-31T00:00:00.000Z"
+          itemprop="datePublished">
+      2021-03-31T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="45"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Tous les cœurs ne sont pas égaux.">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Tous les cœurs ne sont pas égaux. Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Tous les cœurs ne sont pas égaux.">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/cd1f0343">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/cd1f0343"
+            title="Tous les cœurs ne sont pas égaux. Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Dans cet épisode, Darren Pulsipher, architecte en chef des solutions chez Intel, et Stephen Holt, architecte des solutions cloud chez Intel, discutent de l&#39;optimisation du cloud et des études qui montrent que les cœurs ont des performances différentes selon les charges de travail.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../fr/search.html?query=cloudmigration"
+           itemprop="keywords">cloudmigration</a>
+      
+        <a href="../../../fr/search.html?query=testingandbenchmarking"
+           itemprop="keywords">testingandbenchmarking</a>
+      
+        <a href="../../../fr/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../fr/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../fr/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../fr/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../fr/guests/stephen-holt/index.html"
+           itemprop="name" target="_blank">Stephen Holt</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../fr/search.html?query=cloudmigration"><span>cloudmigration</span></a>
-                
-                    <a href="../../../fr/search.html?query=testingandbenchmarking"><span>testingandbenchmarking</span></a>
-                
-                    <a href="../../../fr/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../fr/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../fr/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../fr/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../fr/guests/stephen-holt/index.html" target="_blank">Stephen Holt</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>Intel a engagé des architectes de solution cloud pour aider les clients à migrer intelligemment vers les instances cloud appropriées pour leurs charges de travail. Stephen vient récemment de rejoindre Intel et possède une longue expérience générale dans les bases de données, les sept ou huit dernières années étant principalement axées sur le cloud, en tirant parti de ses ressources pour les clients.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>Intel a engagé des architectes de solution cloud pour aider les clients à migrer intelligemment vers les instances cloud appropriées pour leurs charges de travail. Stephen vient récemment de rejoindre Intel et possède une longue expérience générale dans les bases de données, les sept ou huit dernières années étant principalement axées sur le cloud, en tirant parti de ses ressources pour les clients.</p>
 <p>Certaines des difficultés les plus importantes auxquelles Stephen a été confronté en aidant les clients à migrer vers le cloud sont la tarification et les attentes liées à cette migration. Les fournisseurs de services cloud prétendent souvent que les clients économiseront de l&#39;argent en passant au cloud, mais ce n&#39;est souvent pas le cas.</p>
 <p>Une raison est qu&#39;il y a un changement constant dans le marché des fournisseurs de services cloud compétitifs en termes de fonctionnalités, de performances et de capacités. Une autre raison est l&#39;ignorance, par exemple, le fait de croire qu&#39;un VCP de base est identique pour tous les fournisseurs. Migrer avec une mentalité de &quot;lift and shift&quot; peut également être très coûteux. L&#39;optimisation est essentielle pour une migration cloud intelligente.</p>
 <p>Pour réduire les coûts et potentiellement économiser une grande quantité d&#39;argent, vous devez choisir les instances adaptées aux performances requises. Tous les cœurs ou processeurs virtuels ne sont pas égaux. Au sein d&#39;AWS, il existe les instances M4, basées sur l&#39;architecture Broadwell d&#39;Intel, et les instances M5, qui sont un mélange des architectures Cascade Lake et Skylake. Différentes charges de travail peuvent exploiter ces plates-formes de manière très différente.</p>
@@ -217,16 +246,65 @@
 <p>Intel a réalisé des tests sur des charges de travail lors d&#39;installations fraîches sur une instance à 64 cœurs fixes et 64 VCPU. Après avoir obtenu le nombre initial, une autre instance a été instanciée et le même test a été exécuté à nouveau. Les résultats variaient considérablement à chaque fois pour le même test. Cela pourrait être dû au fait qu&#39;il peut y avoir un mélange de processus proposés à un certain niveau de service, ou il peut y avoir une certaine distance et des latences supplémentaires pour les attaches de stockage en bloc, par exemple, ou même des voisins bruyants. Il est donc utile de tester pour s&#39;assurer que le système répond aux attentes.</p>
 <p>En résumé, pour tirer le meilleur parti du cloud, vous devez vous former, tester les systèmes et profiter de l&#39;aide disponible.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Tous les cœurs ne sont pas égaux.",
+  "episodeNumber": "45",
+  "datePublished": "2021-03-31T00:00:00.000Z",
+  "description": "<p>Dans cet épisode, Darren Pulsipher, architecte en chef des solutions chez Intel, et Stephen Holt, architecte des solutions cloud chez Intel, discutent de l&#39;optimisation du cloud et des études qui montrent que les cœurs ont des performances différentes selon les charges de travail.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Tous les cœurs ne sont pas égaux. Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Tous les cœurs ne sont pas égaux. Audio",
+      "contentUrl": "https://share.transistor.fm/e/cd1f0343"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Stephen Holt"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Droit d'auteur &copy; 2025 Paidar Productions LLC</p>

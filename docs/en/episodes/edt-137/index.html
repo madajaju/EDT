@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;In this episode Darren interviews Sam Ceccola, CTO of DOD for HPE about the new business and technology models changing the way organizations consume hybrid cloud.&lt;/p&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;In this episode Darren interviews Sam Ceccola, CTO of DOD for HPE about the new business and technology models changing the way organizations consume hybrid cloud.&lt;/p&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;In this episode Darren interviews Sam Ceccola, CTO of DOD for HPE about the new business and technology models changing the way organizations consume hybrid cloud.&lt;/p&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;In this episode Darren interviews Sam Ceccola, CTO of DOD for HPE about the new business and technology models changing the way organizations consume hybrid cloud.&lt;/p&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -161,52 +187,83 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#137 Rebirth of the Private Cloud</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/fcf7bb68"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>In this episode Darren interviews Sam Ceccola, CTO of DOD for HPE about the new business and technology models changing the way organizations consume hybrid cloud.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #137 <span>Rebirth of the Private Cloud</span>
+    </h1>
+    <time datetime="2023-05-10T00:00:00.000Z"
+          itemprop="datePublished">
+      2023-05-10T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="137"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Rebirth of the Private Cloud">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Rebirth of the Private Cloud Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Rebirth of the Private Cloud">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/fcf7bb68">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/fcf7bb68"
+            title="Rebirth of the Private Cloud Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>In this episode Darren interviews Sam Ceccola, CTO of DOD for HPE about the new business and technology models changing the way organizations consume hybrid cloud.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../en/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../en/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../en/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../en/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../en/search.html?query=policy"
+           itemprop="keywords">policy</a>
+      
+        <a href="../../../en/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../en/guests/sam-ceccola/index.html"
+           itemprop="name" target="_blank">Sam Ceccola</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../en/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../en/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../en/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../en/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../en/search.html?query=policy"><span>policy</span></a>
-                
-                    <a href="../../../en/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../en/guests/sam-ceccola/index.html" target="_blank">Sam Ceccola</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>There has been a trend towards repatriation in the commercial sector, where businesses are bringing workloads and virtual machines back from public cloud environments due to financial reasons such as egress charges and budgeting for hyper-scaler workloads. Data sovereignty, security concerns, performance, and latency issues have also led to more companies moving away from the public cloud and back to private cloud technologies. Despite this shift, many cloud promises have been fulfilled to provide ease of use, elasticity, and consumption-based pricing. In order to ease the transition between clouds, the private cloud must provide ease of use, portability of workloads, and new consumption pricing models so highly demanded from the public clouds.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>There has been a trend towards repatriation in the commercial sector, where businesses are bringing workloads and virtual machines back from public cloud environments due to financial reasons such as egress charges and budgeting for hyper-scaler workloads. Data sovereignty, security concerns, performance, and latency issues have also led to more companies moving away from the public cloud and back to private cloud technologies. Despite this shift, many cloud promises have been fulfilled to provide ease of use, elasticity, and consumption-based pricing. In order to ease the transition between clouds, the private cloud must provide ease of use, portability of workloads, and new consumption pricing models so highly demanded from the public clouds.</p>
 <h2>Cost Control</h2>
 <p>Sam Ceccola, the HPE DoD CTO, believes it&#39;s essential to understand the risks and challenges associated with each private, public, and hybrid cloud technology. And architect solutions that take advantage of each technology’s strength. This is where HPE’s production offering, GreenLake, comes to play. GreenLake’s consumption-based service procurement model was first implemented in 2005 and has since evolved to include a self-service portal for managing multiple private and public cloud environments. GreenLake provides customers with the ability to deploy additional resources across the private/public cloud boundary on demand. It also manages and visualizes complex costs, such as egress charges and budgeting for hyper-scale workloads.</p>
 <h2>Data Management</h2>
@@ -217,16 +274,65 @@
 <p>GreenLake does not limit customers to on-premises deployment, as it allows them to provision workloads across various cloud environments, including Amazon, Google, and Azure. In addition, GreenLake supports true hybrid workloads, where a workload can run both on-premises and in hyperscale cloud environments simultaneously. Running workloads across cloud boundaries can cause additional exposure to cyber-attacks. Understanding the security models of the different public and private cloud technologies can be a daunting task and increases the human capital required to effectively architect and manage a strong security position. The GreenLake platform handles security through its agnostic security engine, Security Central, which supports multi-cloud attestation and zero-trust architectures for independent clouds, managing the complexity and integration of security models.</p>
 <p>Architecting a multi-hybrid cloud solution is nontrivial and requires an understanding of private and public cloud technologies, their limitations, and their strengths. luckily, there are organizations like HPE that have been working with multi-hybrid cloud architectures for several years and have learned the INS and outs of effective management of workloads across this new flexible environment.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Rebirth of the Private Cloud",
+  "episodeNumber": "137",
+  "datePublished": "2023-05-10T00:00:00.000Z",
+  "description": "<p>In this episode Darren interviews Sam Ceccola, CTO of DOD for HPE about the new business and technology models changing the way organizations consume hybrid cloud.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Rebirth of the Private Cloud Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Rebirth of the Private Cloud Audio",
+      "contentUrl": "https://share.transistor.fm/e/fcf7bb68"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Sam Ceccola"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

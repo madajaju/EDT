@@ -160,53 +160,83 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#52 Telemetria nel Cloud</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/a732fe89"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher, Chief Solution Architect, Intel, parla con Josh Hilliker, Direttore degli Architetti di Soluzioni Cloud presso Intel, sull&#39;utilizzo della telemetria nel cloud per massimizzare valore ed efficienza.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #52 <span>Telemetria nel Cloud</span>
+    </h1>
+    <time datetime="2021-06-08T00:00:00.000Z"
+          itemprop="datePublished">
+      2021-06-08T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="52"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Telemetria nel Cloud">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Telemetria nel Cloud Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Telemetria nel Cloud">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/a732fe89">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/a732fe89"
+            title="Telemetria nel Cloud Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher, Chief Solution Architect, Intel, parla con Josh Hilliker, Direttore degli Architetti di Soluzioni Cloud presso Intel, sull&#39;utilizzo della telemetria nel cloud per massimizzare valore ed efficienza.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../it/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../it/search.html?query=automation"
+           itemprop="keywords">automation</a>
+      
+        <a href="../../../it/search.html?query=workloadoptimization"
+           itemprop="keywords">workloadoptimization</a>
+      
+        <a href="../../../it/search.html?query=cloudnative"
+           itemprop="keywords">cloudnative</a>
+      
+        <a href="../../../it/search.html?query=intel"
+           itemprop="keywords">intel</a>
+      
+        <a href="../../../it/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../it/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../it/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../it/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../it/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../it/search.html?query=automation"><span>automation</span></a>
-                
-                    <a href="../../../it/search.html?query=workloadoptimization"><span>workloadoptimization</span></a>
-                
-                    <a href="../../../it/search.html?query=cloudnative"><span>cloudnative</span></a>
-                
-                    <a href="../../../it/search.html?query=intel"><span>intel</span></a>
-                
-                    <a href="../../../it/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../it/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../it/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../it/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>Benefici degli architetti delle soluzioni cloud (CSAs)</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>Benefici degli architetti delle soluzioni cloud (CSAs)</h2>
 <p>Il ruolo di CSA è molto richiesto nell&#39;industria al momento, e Intel ha assunto un team di CSA per offrire valore ai loro clienti. I CSA possono aiutare i clienti ad evitare la mentalità del &quot;lift and shift&quot; che porta a costi eccessivamente alti. Questi nuovi CSA portano una prospettiva esterna e si collegano alla più grande comunità di CSA per risolvere problemi.</p>
 <h2>Fasi della telemetria</h2>
 <p>La telemetria nel cloud non dovrebbe essere relegata al tuo fornitore di servizi cloud. Ad esempio, Amazon Web Services (AWS) ha avuto un&#39;importante interruzione sulla costa orientale lo scorso novembre, e i loro strumenti non stavano segnalando, quindi molti clienti non avevano idea che fossero inattivi. Le organizzazioni hanno bisogno della propria telemetria per il monitoraggio.</p>
@@ -224,16 +254,60 @@
 <p>I professionisti dell&#39;IT non dovrebbero temere di perdere il loro lavoro perché le cose si stanno spostando verso il cloud. Invece, dovrebbero trasferire le loro competenze per imparare a utilizzare il rilevamento dei parametri di riferimento anziché avere una mentalità di spostamento semplice e diretto. Diventare competenti nell&#39;utilizzo del cloud implica anche l&#39;uso delle funzionalità native del cloud come Kubernetes e i contenitori. Anche il rilevamento dei parametri di riferimento funziona in queste aree. Con l&#39;advisor C di Intel, è possibile ottenere dati ricchi di telemetria come i dati relativi al core e all&#39;esterno del core dai propri contenitori.</p>
 <p>Anche se può sembrare un po&#39; intimidatorio quando si considera tutto ciò che è possibile nel cloud, iniziare con piccoli passi è la scelta migliore. Guarda le applicazioni più adatte in base al rischio. Cataloga le tue app, valuta la suddivisione delle applicazioni per livelli e inizia a spostarle nel cloud in porzioni di dimensioni importanti, raggruppando funzioni e app simili. Mentre esplori nuovi servizi e impari nuove applicazioni, prendi in considerazione l&#39;architettura che sta dietro di esse e poni le domande giuste in modo da diventare un architetto tecnico più informato.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Telemetria nel Cloud",
+  "episodeNumber": "52",
+  "datePublished": "2021-06-08T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher, Chief Solution Architect, Intel, parla con Josh Hilliker, Direttore degli Architetti di Soluzioni Cloud presso Intel, sull&#39;utilizzo della telemetria nel cloud per massimizzare valore ed efficienza.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Telemetria nel Cloud Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Telemetria nel Cloud Audio",
+      "contentUrl": "https://share.transistor.fm/e/a732fe89"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

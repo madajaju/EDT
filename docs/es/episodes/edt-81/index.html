@@ -160,50 +160,80 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#81 Programación heterogénea con OneAPI</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/28fb34d4"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher, Arquitecto Principal de Soluciones de Intel, discute las capacidades y el futuro de OneAPI, un modelo de programación unificado basado en estándares y abierto para diferentes industrias que ofrece una experiencia de desarrollo común en diversas arquitecturas de aceleradores, con James Reinders, Evangelista Principal de OneAPI de Intel.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #81 <span>Programación heterogénea con OneAPI</span>
+    </h1>
+    <time datetime="2022-03-24T00:00:00.000Z"
+          itemprop="datePublished">
+      2022-03-24T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="81"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Programación heterogénea con OneAPI">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Programación heterogénea con OneAPI Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Programación heterogénea con OneAPI">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/28fb34d4">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/28fb34d4"
+            title="Programación heterogénea con OneAPI Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher, Arquitecto Principal de Soluciones de Intel, discute las capacidades y el futuro de OneAPI, un modelo de programación unificado basado en estándares y abierto para diferentes industrias que ofrece una experiencia de desarrollo común en diversas arquitecturas de aceleradores, con James Reinders, Evangelista Principal de OneAPI de Intel.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../es/search.html?query=oneapi"
+           itemprop="keywords">oneapi</a>
+      
+        <a href="../../../es/search.html?query=artificialintelligence"
+           itemprop="keywords">artificialintelligence</a>
+      
+        <a href="../../../es/search.html?query=highperformancecomputing"
+           itemprop="keywords">highperformancecomputing</a>
+      
+        <a href="../../../es/search.html?query=iot"
+           itemprop="keywords">iot</a>
+      
+        <a href="../../../es/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../es/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../es/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../es/guests/james-reinders/index.html"
+           itemprop="name" target="_blank">James Reinders</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../es/search.html?query=oneapi"><span>oneapi</span></a>
-                
-                    <a href="../../../es/search.html?query=artificialintelligence"><span>artificialintelligence</span></a>
-                
-                    <a href="../../../es/search.html?query=highperformancecomputing"><span>highperformancecomputing</span></a>
-                
-                    <a href="../../../es/search.html?query=iot"><span>iot</span></a>
-                
-                    <a href="../../../es/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../es/search.html?query=process"><span>process</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../es/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../es/guests/james-reinders/index.html" target="_blank">James Reinders</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>El objetivo de oneAPI es ayudar a abstraer la enorme diversidad que viene en el hardware para que los ingenieros de software puedan aprovecharlo mejor en niveles superiores y sacar el máximo provecho del hardware. James, un ingeniero de software que también trabaja estrechamente con el hardware, está encantado con lo que oneAPI puede aportar en el contexto de la computación heterogénea de tendencia.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>El objetivo de oneAPI es ayudar a abstraer la enorme diversidad que viene en el hardware para que los ingenieros de software puedan aprovecharlo mejor en niveles superiores y sacar el máximo provecho del hardware. James, un ingeniero de software que también trabaja estrechamente con el hardware, está encantado con lo que oneAPI puede aportar en el contexto de la computación heterogénea de tendencia.</p>
 <p>La palabra heterogéneo aquí básicamente significa que hay diferentes dispositivos en un sistema que pueden realizar computación, pero no ejecutan el mismo conjunto de instrucciones. Por ejemplo, la CPU tiene una forma de ejecutar instrucciones y la GPU tiene una forma diferente. Los FPGA, otros ASIC y dispositivos especializados tienen diferentes formas de ser programados. Aprovechar todas esas distintas formas es el objetivo.</p>
 <p>John Hennessy y David Patterson, líderes en el campo de la arquitectura de computadoras, llaman a esto la nueva edad de oro de la arquitectura de computadoras. Para los arquitectos de computadoras, es un momento increíble para diseñar todo tipo de dispositivos especializados que hagan cosas mejores para dominios específicos, pero para los programadores, puede ser difícil e incluso aterrador debido a la complejidad. Aquí es donde entra en juego la iniciativa oneAPI y los productos oneAPI.</p>
 <p>El nombre, oneAPI, es tanto una iniciativa con una especificación como una implementación. La iniciativa es un concepto sencillo: los desarrolladores de software deberían tener la libertad de utilizar cualquier dispositivo que deseen con un rendimiento total, y su código debería preservar su valor; no deberían tener que volver a escribirlo para cada nuevo dispositivo. Estas cualidades se pueden aplicar a compiladores, bibliotecas, depuradores y cualquier tipo de herramienta.</p>
@@ -221,16 +251,65 @@
 <p>La idea de una API ha pasado de ser una idea loca de la que solo hablaban unas pocas personas, a ser cada vez más reconocida como algo razonable y solucionador de problemas en sus organizaciones.</p>
 <p>El lugar más sencillo para aprender sobre la iniciativa es en el sitio web de oneapi.io. Para aprender sobre la implementación, haz clic en la pestaña de implementación para obtener un enlace que te dirija a las implementaciones de Intel. Allí, puedes descargar los diferentes kits de herramientas. Busca el Intel dev cloud para probar las herramientas en la nube de forma gratuita, incluso en hardware diferente. El sitio web de oneapi.io también cuenta con una variedad de tutoriales y recursos.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Programación heterogénea con OneAPI",
+  "episodeNumber": "81",
+  "datePublished": "2022-03-24T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher, Arquitecto Principal de Soluciones de Intel, discute las capacidades y el futuro de OneAPI, un modelo de programación unificado basado en estándares y abierto para diferentes industrias que ofrece una experiencia de desarrollo común en diversas arquitecturas de aceleradores, con James Reinders, Evangelista Principal de OneAPI de Intel.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Programación heterogénea con OneAPI Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Programación heterogénea con OneAPI Audio",
+      "contentUrl": "https://share.transistor.fm/e/28fb34d4"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "James Reinders"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

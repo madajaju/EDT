@@ -160,49 +160,77 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#30 Portabilità dell'applicazione con OneAPI</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/3d30cd84"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Con oneAPI, Intel ha creato un ambiente unificato per lo sviluppo software, incentrato sul processing dei dati. Gretchen Stewart, Chief Data Scientist, Public Sector, Intel, discute questa tecnologia con Darren Pulsipher, Chief Solution Architect, Intel, che elimina la necessità di utilizzare un linguaggio diverso per architetture diverse.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #30 <span>Portabilità dell'applicazione con OneAPI</span>
+    </h1>
+    <time datetime="2020-11-17T00:00:00.000Z"
+          itemprop="datePublished">
+      2020-11-17T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="30"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Portabilità dell'applicazione con OneAPI">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Portabilità dell'applicazione con OneAPI Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Portabilità dell'applicazione con OneAPI">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/3d30cd84">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/3d30cd84"
+            title="Portabilità dell'applicazione con OneAPI Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Con oneAPI, Intel ha creato un ambiente unificato per lo sviluppo software, incentrato sul processing dei dati. Gretchen Stewart, Chief Data Scientist, Public Sector, Intel, discute questa tecnologia con Darren Pulsipher, Chief Solution Architect, Intel, che elimina la necessità di utilizzare un linguaggio diverso per architetture diverse.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../it/search.html?query=oneapi"
+           itemprop="keywords">oneapi</a>
+      
+        <a href="../../../it/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../it/search.html?query=generativeai"
+           itemprop="keywords">generativeai</a>
+      
+        <a href="../../../it/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../it/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../it/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../it/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../it/search.html?query=oneapi"><span>oneapi</span></a>
-                
-                    <a href="../../../it/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../it/search.html?query=generativeai"><span>generativeai</span></a>
-                
-                    <a href="../../../it/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../it/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../it/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../it/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>Con oneAPI, Intel ha creato un ambiente software unificato per lo sviluppo, orientato al trattamento dei dati. Si tratta di programmazione parallela dei dati basata su un C++ open source. Diverse tipologie di librerie come MKL, DNN di Intel e altre open source fanno parte del kit di strumenti oneAPI, insieme ad accessori come un traduttore CUDA. Puoi sviluppare software in oneAPI e poi puntarlo alle diverse librerie a seconda di ciò che stai facendo. Ha eliminato la complessità di imparare un linguaggio diverso per diverse architetture.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>Con oneAPI, Intel ha creato un ambiente software unificato per lo sviluppo, orientato al trattamento dei dati. Si tratta di programmazione parallela dei dati basata su un C++ open source. Diverse tipologie di librerie come MKL, DNN di Intel e altre open source fanno parte del kit di strumenti oneAPI, insieme ad accessori come un traduttore CUDA. Puoi sviluppare software in oneAPI e poi puntarlo alle diverse librerie a seconda di ciò che stai facendo. Ha eliminato la complessità di imparare un linguaggio diverso per diverse architetture.</p>
 <h2>Iniziativa Industriale oneAPI - Alternativa alla Soluzione di un Unico Fornitore</h2>
 <p>Fondamentalmente, un ingegnere del software può scrivere il codice una volta e questo verrà eseguito su diversi processori: CPU, GPU, FPGA, NPU e VPU. A seconda dell&#39;architettura e delle librerie che si stanno utilizzando, potrebbe essere necessaria una ricompilazione, ma non saranno richieste riscritture del codice.</p>
 <h2>Potenti librerie di API</h2>
@@ -217,16 +245,60 @@
 <h2>Risorse</h2>
 <p>Intel ha reso disponibile generalmente oneAPI all&#39;inizio di novembre 2020 ed è stato uno dei momenti salienti della convention virtuale Super Computing dal 17 al 19 novembre.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Portabilità dell'applicazione con OneAPI",
+  "episodeNumber": "30",
+  "datePublished": "2020-11-17T00:00:00.000Z",
+  "description": "<p>Con oneAPI, Intel ha creato un ambiente unificato per lo sviluppo software, incentrato sul processing dei dati. Gretchen Stewart, Chief Data Scientist, Public Sector, Intel, discute questa tecnologia con Darren Pulsipher, Chief Solution Architect, Intel, che elimina la necessità di utilizzare un linguaggio diverso per architetture diverse.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Portabilità dell'applicazione con OneAPI Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Portabilità dell'applicazione con OneAPI Audio",
+      "contentUrl": "https://share.transistor.fm/e/3d30cd84"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

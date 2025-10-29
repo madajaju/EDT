@@ -160,53 +160,83 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#22 Un argumento a favor del Multi-Hybrid Cloud</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/e22edf51"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher describe por qué un Arquitecto de Nube Multi-Híbrida puede estar presente en tu Centro de Datos. La mayoría de las organizaciones ya tienen todos los ingredientes. Solo necesitan saber cómo encajan juntos.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #22 <span>Un argumento a favor del Multi-Hybrid Cloud</span>
+    </h1>
+    <time datetime="2020-09-23T00:00:00.000Z"
+          itemprop="datePublished">
+      2020-09-23T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="22"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Un argumento a favor del Multi-Hybrid Cloud">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Un argumento a favor del Multi-Hybrid Cloud Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Un argumento a favor del Multi-Hybrid Cloud">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/e22edf51">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/e22edf51"
+            title="Un argumento a favor del Multi-Hybrid Cloud Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher describe por qué un Arquitecto de Nube Multi-Híbrida puede estar presente en tu Centro de Datos. La mayoría de las organizaciones ya tienen todos los ingredientes. Solo necesitan saber cómo encajan juntos.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../es/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../es/search.html?query=devops"
+           itemprop="keywords">devops</a>
+      
+        <a href="../../../es/search.html?query=publiccloud"
+           itemprop="keywords">publiccloud</a>
+      
+        <a href="../../../es/search.html?query=privatecloud"
+           itemprop="keywords">privatecloud</a>
+      
+        <a href="../../../es/search.html?query=infrastructuremanagement"
+           itemprop="keywords">infrastructuremanagement</a>
+      
+        <a href="../../../es/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../es/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../es/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../es/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../es/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../es/search.html?query=devops"><span>devops</span></a>
-                
-                    <a href="../../../es/search.html?query=publiccloud"><span>publiccloud</span></a>
-                
-                    <a href="../../../es/search.html?query=privatecloud"><span>privatecloud</span></a>
-                
-                    <a href="../../../es/search.html?query=infrastructuremanagement"><span>infrastructuremanagement</span></a>
-                
-                    <a href="../../../es/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../es/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../es/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../es/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>Entorno de nube actual.</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>Entorno de nube actual.</h2>
 <p>En los últimos cinco años, ha habido un cambio fundamental en el entorno de IT. El crecimiento continuo de la Nube Pública y la aparición de opciones de Nube Privada han dejado a muchos CIO(s) y departamentos de IT en una situación de desventaja. En el mercado competitivo de hoy en día, muchos equipos de desarrollo necesitan moverse más rápido de lo que la mayoría de los departamentos de IT pueden entregar. Los equipos de desarrollo han encontrado en las Nubes Públicas como AWS, GCE y Azure una opción viable para el antiguo estilo de &quot;IT casero&quot; &quot;debajo del escritorio&quot;. Los proveedores de nube pública han facilitado y acelerado la creación de nueva infraestructura. Ya no es necesario esperar aprobaciones técnicas y comerciales en varios niveles, espacio físico en el centro de datos y problemas de suministro del proveedor. Ahora, en cuestión de minutos, un equipo de desarrollo puede tener toda la infraestructura que necesita para su nuevo proyecto.</p>
 <p>Antes de la Nube Pública, los CIO(s) podían &quot;caminar alrededor&quot; de los cubículos y contar la cantidad de máquinas de &quot;TI casera&quot; que estaban funcionando debajo de los escritorios de las personas. Con las máquinas físicas ya no visibles para los departamentos de TI, es imposible identificar los equipos y las infraestructuras de sus proyectos. Muchas nubes públicas han dado a las organizaciones la capacidad de consolidar la contabilidad de todas las cuentas de dominios específicos, pero la visibilidad de lo que se está ejecutando y quién está trabajando en la infraestructura sigue siendo algo así como una &quot;búsqueda del tesoro&quot;. Muchas veces, estos proyectos &quot;rebeldes&quot; se hacen visibles cuando los proyectos se convierten en productos y necesitan ser incluidos en una infraestructura segura de la empresa. Las políticas de seguridad, privacidad y regulación pueden hacer que la &quot;productización&quot; de los proyectos sea casi imposible. Especialmente si los desarrolladores han acoplado estrechamente sus aplicaciones a la infraestructura en la Nube.</p>
 <p>Los departamentos de TI con visión de futuro están haciendo todo lo posible por captar la &quot;TI de tipo cabaña&quot; trabajando con nubes públicas y proveedores de software independientes para implementar &quot;portales de la empresa&quot; en las nubes. Establecer un portal de paso es un buen comienzo para capturar proyectos utilizando infraestructura, pero muchas organizaciones encuentran que solo un portal deja a los equipos de desarrollo queriendo más. En los últimos años, he estado trabajando con muchas de estas organizaciones para identificar casos de uso, arquitecturas y tecnologías que ayuden a desarrollar estos portales aumentados que llamamos &quot;Multi-Nubes Híbridas&quot; (MHC). Por lo general, se integran tres tecnologías principales para construir estos MHC: Plataformas de Gestión en la Nube (CMP), Marcos de Automatización y Herramientas de Plataforma como Servicio (PaaS).</p>
@@ -235,16 +265,60 @@
 <h2>Implementando una solución.</h2>
 <p>El ecosistema híbrido de múltiples nubes todavía es bastante nuevo y aún requiere algunas integraciones complejas entre las herramientas. Hay algunas herramientas que están empezando a ofrecer soluciones completas de forma predeterminada, pero aún con su visión particular del mundo. Debido a que el ecosistema es incipiente, hay muchos actores y opciones. El tiempo dirá quién ganará este espacio. Por ahora, será interesante observar cómo las herramientas convergen y se consolidan mientras las características maduran.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Un argumento a favor del Multi-Hybrid Cloud",
+  "episodeNumber": "22",
+  "datePublished": "2020-09-23T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher describe por qué un Arquitecto de Nube Multi-Híbrida puede estar presente en tu Centro de Datos. La mayoría de las organizaciones ya tienen todos los ingredientes. Solo necesitan saber cómo encajan juntos.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Un argumento a favor del Multi-Hybrid Cloud Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Un argumento a favor del Multi-Hybrid Cloud Audio",
+      "contentUrl": "https://share.transistor.fm/e/e22edf51"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;On this episode, Dr. Darren engages in a stimulating conversation with Nilesh Agarwal, co-founder and CTO of InferLess. Nilesh explores the evolution of AI and the crucial role of data management in the current landscape. He highlights the challenges organizations face in terms of data security, efficiency, and the need for innovative data architectures. The discussion also delves into the significance of edge computing, the potential of hybrid AI models, and the emergence of specialized hardware to meet the evolving demands of AI applications. Nilesh emphasizes the importance of integrating AI into data pipelines to improve data access and security, while addressing the complexities of managing multiple models and ensuring the efficient use of compute resources.&lt;/p&gt;
 &lt;h2&gt;Takeaways&lt;/h2&gt;
 &lt;ul&gt;
@@ -24,99 +25,111 @@
 &lt;li&gt;Data cleaning is crucial to prevent the leakage of PII.&lt;/li&gt;
 &lt;/ul&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;On this episode, Dr. Darren engages in a stimulating conversation with Nilesh Agarwal, co-founder and CTO of InferLess. Nilesh explores the evolution of AI and the crucial role of data management in the current landscape. He highlights the challenges organizations face in terms of data security, efficiency, and the need for innovative data architectures. The discussion also delves into the significance of edge computing, the potential of hybrid AI models, and the emergence of specialized hardware to meet the evolving demands of AI applications. Nilesh emphasizes the importance of integrating AI into data pipelines to improve data access and security, while addressing the complexities of managing multiple models and ensuring the efficient use of compute resources.&lt;/p&gt;
-&lt;h2&gt;Takeaways&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;AI has shifted the focus from compute to data management.&lt;/li&gt;
-&lt;li&gt;Data efficiency is crucial for effective model training.&lt;/li&gt;
-&lt;li&gt;Organizations are increasingly concerned about data security.&lt;/li&gt;
-&lt;li&gt;Data warehouses are often inadequate for modern data needs.&lt;/li&gt;
-&lt;li&gt;New architectures, such as vector databases, are emerging.&lt;/li&gt;
-&lt;li&gt;AI can enhance data access through natural language queries.&lt;/li&gt;
-&lt;li&gt;Hybrid models will dominate the future of AI..&lt;/li&gt;
-&lt;li&gt;Edge computing is essential for real-time applications.&lt;/li&gt;
-&lt;li&gt;Specialized hardware will become more prevalent in AI.&lt;/li&gt;
-&lt;li&gt;Data cleaning is crucial to prevent the leakage of PII.&lt;/li&gt;
-&lt;/ul&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;On this episode, Dr. Darren engages in a stimulating conversation with Nilesh Agarwal, co-founder and CTO of InferLess. Nilesh explores the evolution of AI and the crucial role of data management in the current landscape. He highlights the challenges organizations face in terms of data security, efficiency, and the need for innovative data architectures. The discussion also delves into the significance of edge computing, the potential of hybrid AI models, and the emergence of specialized hardware to meet the evolving demands of AI applications. Nilesh emphasizes the importance of integrating AI into data pipelines to improve data access and security, while addressing the complexities of managing multiple models and ensuring the efficient use of compute resources.&lt;/p&gt;
-&lt;h2&gt;Takeaways&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;AI has shifted the focus from compute to data management.&lt;/li&gt;
-&lt;li&gt;Data efficiency is crucial for effective model training.&lt;/li&gt;
-&lt;li&gt;Organizations are increasingly concerned about data security.&lt;/li&gt;
-&lt;li&gt;Data warehouses are often inadequate for modern data needs.&lt;/li&gt;
-&lt;li&gt;New architectures, such as vector databases, are emerging.&lt;/li&gt;
-&lt;li&gt;AI can enhance data access through natural language queries.&lt;/li&gt;
-&lt;li&gt;Hybrid models will dominate the future of AI..&lt;/li&gt;
-&lt;li&gt;Edge computing is essential for real-time applications.&lt;/li&gt;
-&lt;li&gt;Specialized hardware will become more prevalent in AI.&lt;/li&gt;
-&lt;li&gt;Data cleaning is crucial to prevent the leakage of PII.&lt;/li&gt;
-&lt;/ul&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;On this episode, Dr. Darren engages in a stimulating conversation with Nilesh Agarwal, co-founder and CTO of InferLess. Nilesh explores the evolution of AI and the crucial role of data management in the current landscape. He highlights the challenges organizations face in terms of data security, efficiency, and the need for innovative data architectures. The discussion also delves into the significance of edge computing, the potential of hybrid AI models, and the emergence of specialized hardware to meet the evolving demands of AI applications. Nilesh emphasizes the importance of integrating AI into data pipelines to improve data access and security, while addressing the complexities of managing multiple models and ensuring the efficient use of compute resources.&lt;/p&gt;
+&lt;h2&gt;Takeaways&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;AI has shifted the focus from compute to data management.&lt;/li&gt;
+&lt;li&gt;Data efficiency is crucial for effective model training.&lt;/li&gt;
+&lt;li&gt;Organizations are increasingly concerned about data security.&lt;/li&gt;
+&lt;li&gt;Data warehouses are often inadequate for modern data needs.&lt;/li&gt;
+&lt;li&gt;New architectures, such as vector databases, are emerging.&lt;/li&gt;
+&lt;li&gt;AI can enhance data access through natural language queries.&lt;/li&gt;
+&lt;li&gt;Hybrid models will dominate the future of AI..&lt;/li&gt;
+&lt;li&gt;Edge computing is essential for real-time applications.&lt;/li&gt;
+&lt;li&gt;Specialized hardware will become more prevalent in AI.&lt;/li&gt;
+&lt;li&gt;Data cleaning is crucial to prevent the leakage of PII.&lt;/li&gt;
+&lt;/ul&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -200,20 +213,45 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#270 AI at the Edge: Securing, Scaling, and Streamlining Data Workflows</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/vb1_zGRatgQ?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/3dcb549b"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>On this episode, Dr. Darren engages in a stimulating conversation with Nilesh Agarwal, co-founder and CTO of InferLess. Nilesh explores the evolution of AI and the crucial role of data management in the current landscape. He highlights the challenges organizations face in terms of data security, efficiency, and the need for innovative data architectures. The discussion also delves into the significance of edge computing, the potential of hybrid AI models, and the emergence of specialized hardware to meet the evolving demands of AI applications. Nilesh emphasizes the importance of integrating AI into data pipelines to improve data access and security, while addressing the complexities of managing multiple models and ensuring the efficient use of compute resources.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #270 <span>AI at the Edge: Securing, Scaling, and Streamlining Data Workflows</span>
+    </h1>
+    <time datetime="&#34;2025-06-12T14:22:13.844Z&#34;"
+          itemprop="datePublished">
+      &#34;2025-06-12T14:22:13.844Z&#34;
+    </time>
+    <meta itemprop="episodeNumber" content="270"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="AI at the Edge: Securing, Scaling, and Streamlining Data Workflows">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/vb1_zGRatgQ">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/vb1_zGRatgQ?autoplay=1"
+            title="AI at the Edge: Securing, Scaling, and Streamlining Data Workflows Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="AI at the Edge: Securing, Scaling, and Streamlining Data Workflows">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/3dcb549b">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/3dcb549b"
+            title="AI at the Edge: Securing, Scaling, and Streamlining Data Workflows Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>On this episode, Dr. Darren engages in a stimulating conversation with Nilesh Agarwal, co-founder and CTO of InferLess. Nilesh explores the evolution of AI and the crucial role of data management in the current landscape. He highlights the challenges organizations face in terms of data security, efficiency, and the need for innovative data architectures. The discussion also delves into the significance of edge computing, the potential of hybrid AI models, and the emergence of specialized hardware to meet the evolving demands of AI applications. Nilesh emphasizes the importance of integrating AI into data pipelines to improve data access and security, while addressing the complexities of managing multiple models and ensuring the efficient use of compute resources.</p>
 <h2>Takeaways</h2>
 <ul>
 <li>AI has shifted the focus from compute to data management.</li>
@@ -228,43 +266,52 @@
 <li>Data cleaning is crucial to prevent the leakage of PII.</li>
 </ul>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=dataefficiency"
+           itemprop="keywords">dataefficiency</a>
+      
+        <a href="../../../en/search.html?query=aiinsights"
+           itemprop="keywords">aiinsights</a>
+      
+        <a href="../../../en/search.html?query=datamanagement"
+           itemprop="keywords">datamanagement</a>
+      
+        <a href="../../../en/search.html?query=datascience"
+           itemprop="keywords">datascience</a>
+      
+        <a href="../../../en/search.html?query=scalableai"
+           itemprop="keywords">scalableai</a>
+      
+        <a href="../../../en/search.html?query=datagovernance"
+           itemprop="keywords">datagovernance</a>
+      
+        <a href="../../../en/search.html?query=hybridstorage"
+           itemprop="keywords">hybridstorage</a>
+      
+        <a href="../../../en/search.html?query=dataprocessing"
+           itemprop="keywords">dataprocessing</a>
+      
+        <a href="../../../en/search.html?query=aitechnology"
+           itemprop="keywords">aitechnology</a>
+      
+        <a href="../../../en/search.html?query=datawarehousing"
+           itemprop="keywords">datawarehousing</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../en/guests/nilesh-agarwal/index.html"
+           itemprop="name" target="_blank">Nilesh Agarwal</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=dataefficiency"><span>dataefficiency</span></a>
-                
-                    <a href="../../../en/search.html?query=aiinsights"><span>aiinsights</span></a>
-                
-                    <a href="../../../en/search.html?query=datamanagement"><span>datamanagement</span></a>
-                
-                    <a href="../../../en/search.html?query=datascience"><span>datascience</span></a>
-                
-                    <a href="../../../en/search.html?query=scalableai"><span>scalableai</span></a>
-                
-                    <a href="../../../en/search.html?query=datagovernance"><span>datagovernance</span></a>
-                
-                    <a href="../../../en/search.html?query=hybridstorage"><span>hybridstorage</span></a>
-                
-                    <a href="../../../en/search.html?query=dataprocessing"><span>dataprocessing</span></a>
-                
-                    <a href="../../../en/search.html?query=aitechnology"><span>aitechnology</span></a>
-                
-                    <a href="../../../en/search.html?query=datawarehousing"><span>datawarehousing</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../en/guests/nilesh-agarwal/index.html" target="_blank">Nilesh Agarwal</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>In today&#39;s digital landscape, the conversation around data has taken center stage, especially as artificial intelligence (AI) technologies continue to evolve at an unprecedented pace. With millions of transactions and interactions occurring across various devices and platforms, businesses are facing increasing pressure to effectively manage data flows, ensure security, and leverage insights for informed decision-making. The implications of these challenges stretch far beyond technical constraints; they touch on the core of how businesses operate in a rapidly changing environment. </p>
+  <div class="show-notes" itemprop="transcript">
+    <p>In today&#39;s digital landscape, the conversation around data has taken center stage, especially as artificial intelligence (AI) technologies continue to evolve at an unprecedented pace. With millions of transactions and interactions occurring across various devices and platforms, businesses are facing increasing pressure to effectively manage data flows, ensure security, and leverage insights for informed decision-making. The implications of these challenges stretch far beyond technical constraints; they touch on the core of how businesses operate in a rapidly changing environment. </p>
 <h2>The Shift from Compute to Data Efficiency</h2>
 <p>Traditionally, the mantra in technology has been &#39;whoever has the best compute wins.&#39; This statement made sense when computing power was the primary driver of success. However, as AI has permeated sectors from finance to healthcare, the focus has shifted significantly from merely having superior computing resources to ensuring data efficiency. This shift is not a future possibility, but a current necessity. Efficiency in data relates not just to the volume of data but also to the relevance and quality of the data being utilized.</p>
 <p>Organizations now need to ask critical questions as they design their data strategies. Is the training data varied enough? Does it provide the right balance of information without disclosing sensitive personal data? When it comes to model training, the redundancy of data can lead to diminished returns, where simply feeding large volumes of data into a model does not guarantee superior outcomes. Hence, businesses are requiring more sophisticated data governance and management strategies to ensure they can provide meaningful insights from diverse data sets while adhering to privacy regulations.</p>
@@ -278,16 +325,78 @@
 <hr>
 <p>In an era of accelerated technological change, businesses must prioritize their data management practices. Embracing innovative solutions and understanding the evolving needs for data efficiency will not only equip organizations to face new challenges but also enable them to leverage AI&#39;s full potential, opening up a world of possibilities. As practices within this domain continue to develop, the future lies in our ability to adapt, learn, and collaborate on building better data ecosystems.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "AI at the Edge: Securing, Scaling, and Streamlining Data Workflows",
+  "episodeNumber": "270",
+  "datePublished": "&#34;2025-06-12T14:22:13.844Z&#34;",
+  "description": "<p>On this episode, Dr. Darren engages in a stimulating conversation with Nilesh Agarwal, co-founder and CTO of InferLess. Nilesh explores the evolution of AI and the crucial role of data management in the current landscape. He highlights the challenges organizations face in terms of data security, efficiency, and the need for innovative data architectures. The discussion also delves into the significance of edge computing, the potential of hybrid AI models, and the emergence of specialized hardware to meet the evolving demands of AI applications. Nilesh emphasizes the importance of integrating AI into data pipelines to improve data access and security, while addressing the complexities of managing multiple models and ensuring the efficient use of compute resources.</p>
+<h2>Takeaways</h2>
+<ul>
+<li>AI has shifted the focus from compute to data management.</li>
+<li>Data efficiency is crucial for effective model training.</li>
+<li>Organizations are increasingly concerned about data security.</li>
+<li>Data warehouses are often inadequate for modern data needs.</li>
+<li>New architectures, such as vector databases, are emerging.</li>
+<li>AI can enhance data access through natural language queries.</li>
+<li>Hybrid models will dominate the future of AI..</li>
+<li>Edge computing is essential for real-time applications.</li>
+<li>Specialized hardware will become more prevalent in AI.</li>
+<li>Data cleaning is crucial to prevent the leakage of PII.</li>
+</ul>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "AI at the Edge: Securing, Scaling, and Streamlining Data Workflows Video",
+      "embedUrl": "https://www.youtube.com/embed/vb1_zGRatgQ"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "AI at the Edge: Securing, Scaling, and Streamlining Data Workflows Audio",
+      "contentUrl": "https://share.transistor.fm/e/3dcb549b"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Nilesh Agarwal"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

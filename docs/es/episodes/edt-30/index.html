@@ -160,49 +160,77 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#30 Portabilidad de aplicaciones con OneAPI.</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/3d30cd84"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Con oneAPI, Intel ha creado un entorno de software unificado para el desarrollo, orientado al procesamiento de datos. Gretchen Stewart, Científica de Datos Principal en el Sector Público de Intel, discute esta tecnología con Darren Pulsipher, Arquitecto de Soluciones Principal de Intel, que elimina la necesidad de utilizar un lenguaje diferente para diferentes arquitecturas.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #30 <span>Portabilidad de aplicaciones con OneAPI.</span>
+    </h1>
+    <time datetime="2020-11-17T00:00:00.000Z"
+          itemprop="datePublished">
+      2020-11-17T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="30"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Portabilidad de aplicaciones con OneAPI.">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Portabilidad de aplicaciones con OneAPI. Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Portabilidad de aplicaciones con OneAPI.">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/3d30cd84">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/3d30cd84"
+            title="Portabilidad de aplicaciones con OneAPI. Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Con oneAPI, Intel ha creado un entorno de software unificado para el desarrollo, orientado al procesamiento de datos. Gretchen Stewart, Científica de Datos Principal en el Sector Público de Intel, discute esta tecnología con Darren Pulsipher, Arquitecto de Soluciones Principal de Intel, que elimina la necesidad de utilizar un lenguaje diferente para diferentes arquitecturas.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../es/search.html?query=oneapi"
+           itemprop="keywords">oneapi</a>
+      
+        <a href="../../../es/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../es/search.html?query=generativeai"
+           itemprop="keywords">generativeai</a>
+      
+        <a href="../../../es/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../es/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../es/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../es/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../es/search.html?query=oneapi"><span>oneapi</span></a>
-                
-                    <a href="../../../es/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../es/search.html?query=generativeai"><span>generativeai</span></a>
-                
-                    <a href="../../../es/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../es/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../es/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../es/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>Con oneAPI, Intel ha creado un entorno de software unificado para el desarrollo, orientado al procesamiento de datos. Es una programación paralela basada en código abierto C++. Diversos tipos de bibliotecas como MKL, DNN de Intel y otras fuentes abiertas forman parte del kit de herramientas oneAPI, junto con accesorios como un traductor CUDA. Puedes desarrollar software en oneAPI y luego apuntarlo a diferentes bibliotecas dependiendo de lo que estés haciendo. Ha eliminado la complejidad de aprender un lenguaje diferente para diferentes arquitecturas.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>Con oneAPI, Intel ha creado un entorno de software unificado para el desarrollo, orientado al procesamiento de datos. Es una programación paralela basada en código abierto C++. Diversos tipos de bibliotecas como MKL, DNN de Intel y otras fuentes abiertas forman parte del kit de herramientas oneAPI, junto con accesorios como un traductor CUDA. Puedes desarrollar software en oneAPI y luego apuntarlo a diferentes bibliotecas dependiendo de lo que estés haciendo. Ha eliminado la complejidad de aprender un lenguaje diferente para diferentes arquitecturas.</p>
 <h2>Iniciativa de la Industria oneAPI: una alternativa a las soluciones de un solo proveedor.</h2>
 <p>Básicamente, un ingeniero de software puede escribir código una vez y este se ejecutará en diferentes procesadores: CPU, GPU, FPGA, NPU y VPU. Dependiendo de la arquitectura y bibliotecas que estés utilizando, podría ser necesario hacer una recompilación, pero no se requiere volver a escribir el código.</p>
 <h2>Bibliotecas de API poderosas</h2>
@@ -217,16 +245,60 @@
 <h2>Recursos</h2>
 <p>Intel puso a disposición de manera general el proyecto oneAPI a principios de noviembre de 2020, y fue uno de los puntos destacados de la convención virtual Super Computing del 17 al 19 de noviembre.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Portabilidad de aplicaciones con OneAPI.",
+  "episodeNumber": "30",
+  "datePublished": "2020-11-17T00:00:00.000Z",
+  "description": "<p>Con oneAPI, Intel ha creado un entorno de software unificado para el desarrollo, orientado al procesamiento de datos. Gretchen Stewart, Científica de Datos Principal en el Sector Público de Intel, discute esta tecnología con Darren Pulsipher, Arquitecto de Soluciones Principal de Intel, que elimina la necesidad de utilizar un lenguaje diferente para diferentes arquitecturas.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Portabilidad de aplicaciones con OneAPI. Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Portabilidad de aplicaciones con OneAPI. Audio",
+      "contentUrl": "https://share.transistor.fm/e/3d30cd84"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

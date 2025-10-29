@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;Organizations often face challenges with technical debt, which can slow down the development process and get development teams stuck in a tangle of code updates, API changes, and third-party dependencies. In this episode, Darren interviews Jonathan Schneider, CEO of Moderene, about his approach to embracing technical debt and how to manage it effectively.&lt;/p&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;Organizations often face challenges with technical debt, which can slow down the development process and get development teams stuck in a tangle of code updates, API changes, and third-party dependencies. In this episode, Darren interviews Jonathan Schneider, CEO of Moderene, about his approach to embracing technical debt and how to manage it effectively.&lt;/p&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;Organizations often face challenges with technical debt, which can slow down the development process and get development teams stuck in a tangle of code updates, API changes, and third-party dependencies. In this episode, Darren interviews Jonathan Schneider, CEO of Moderene, about his approach to embracing technical debt and how to manage it effectively.&lt;/p&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;Organizations often face challenges with technical debt, which can slow down the development process and get development teams stuck in a tangle of code updates, API changes, and third-party dependencies. In this episode, Darren interviews Jonathan Schneider, CEO of Moderene, about his approach to embracing technical debt and how to manage it effectively.&lt;/p&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -161,64 +187,101 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#220 Embracing Technical Debt</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/XG0faqL9_Ic?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/ced4e292"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Organizations often face challenges with technical debt, which can slow down the development process and get development teams stuck in a tangle of code updates, API changes, and third-party dependencies. In this episode, Darren interviews Jonathan Schneider, CEO of Moderene, about his approach to embracing technical debt and how to manage it effectively.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #220 <span>Embracing Technical Debt</span>
+    </h1>
+    <time datetime="2024-08-29T00:00:00.000Z"
+          itemprop="datePublished">
+      2024-08-29T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="220"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Embracing Technical Debt">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/XG0faqL9_Ic">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/XG0faqL9_Ic?autoplay=1"
+            title="Embracing Technical Debt Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Embracing Technical Debt">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/ced4e292">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/ced4e292"
+            title="Embracing Technical Debt Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Organizations often face challenges with technical debt, which can slow down the development process and get development teams stuck in a tangle of code updates, API changes, and third-party dependencies. In this episode, Darren interviews Jonathan Schneider, CEO of Moderene, about his approach to embracing technical debt and how to manage it effectively.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=technicaldebt"
+           itemprop="keywords">technicaldebt</a>
+      
+        <a href="../../../en/search.html?query=refactoring"
+           itemprop="keywords">refactoring</a>
+      
+        <a href="../../../en/search.html?query=automation"
+           itemprop="keywords">automation</a>
+      
+        <a href="../../../en/search.html?query=maintainability"
+           itemprop="keywords">maintainability</a>
+      
+        <a href="../../../en/search.html?query=continuousimprovement"
+           itemprop="keywords">continuousimprovement</a>
+      
+        <a href="../../../en/search.html?query=codequality"
+           itemprop="keywords">codequality</a>
+      
+        <a href="../../../en/search.html?query=digitaltransformation"
+           itemprop="keywords">digitaltransformation</a>
+      
+        <a href="../../../en/search.html?query=generativeai"
+           itemprop="keywords">generativeai</a>
+      
+        <a href="../../../en/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../en/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../en/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../en/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../en/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/jonathan-schneider/index.html"
+           itemprop="name" target="_blank">Jonathan Schneider</a>
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=technicaldebt"><span>technicaldebt</span></a>
-                
-                    <a href="../../../en/search.html?query=refactoring"><span>refactoring</span></a>
-                
-                    <a href="../../../en/search.html?query=automation"><span>automation</span></a>
-                
-                    <a href="../../../en/search.html?query=maintainability"><span>maintainability</span></a>
-                
-                    <a href="../../../en/search.html?query=continuousimprovement"><span>continuousimprovement</span></a>
-                
-                    <a href="../../../en/search.html?query=codequality"><span>codequality</span></a>
-                
-                    <a href="../../../en/search.html?query=digitaltransformation"><span>digitaltransformation</span></a>
-                
-                    <a href="../../../en/search.html?query=generativeai"><span>generativeai</span></a>
-                
-                    <a href="../../../en/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../en/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../en/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../en/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../en/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/jonathan-schneider/index.html" target="_blank">Jonathan Schneider</a>
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h1>Embracing Technical Debt: The Journey Towards Simplifying Software Engineering</h1>
+  <div class="show-notes" itemprop="transcript">
+    <h1>Embracing Technical Debt: The Journey Towards Simplifying Software Engineering</h1>
 <p>In today&#39;s fast-paced tech landscape, enterprise software development is often riddled with challenges, particularly concerning technical debt. Navigating the complexities of updating libraries, managing legacy systems, and implementing new tools can be daunting for any organization. By diving deep into refactoring techniques, we can uncover valuable insights that can streamline this process, ease the burden of technical debt, and foster a culture of continuous improvement.</p>
 <h2>Understanding Technical Debt</h2>
 <p>Technical debt is a metaphor that describes the eventual consequences of poor software architecture or software development within a codebase. Just like financial debt, incurring technical debt can yield immediate benefits but results in larger costs down the line if not addressed. Organizations may choose to prioritize short-term deliverables over meticulous coding practices, leading to technical debt accumulation. </p>
@@ -235,16 +298,65 @@
 <hr>
 <p>If you found this discussion valuable, consider exploring additional resources and tools that can help streamline your software development processes. Engage with your peers in the industry and share your experiences to foster a collaborative atmosphere centered on continuous improvement and evolution in technology.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Embracing Technical Debt",
+  "episodeNumber": "220",
+  "datePublished": "2024-08-29T00:00:00.000Z",
+  "description": "<p>Organizations often face challenges with technical debt, which can slow down the development process and get development teams stuck in a tangle of code updates, API changes, and third-party dependencies. In this episode, Darren interviews Jonathan Schneider, CEO of Moderene, about his approach to embracing technical debt and how to manage it effectively.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Embracing Technical Debt Video",
+      "embedUrl": "https://www.youtube.com/embed/XG0faqL9_Ic"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Embracing Technical Debt Audio",
+      "contentUrl": "https://share.transistor.fm/e/ced4e292"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Jonathan Schneider"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

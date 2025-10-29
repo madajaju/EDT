@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, discusses the capabilities and future of OneAPI, a cross-industry, open, standards-based unified programming model that delivers a common developer experience across accelerator architectures, with Intel’s OneAPI Chief Evangelist, James Reinders.  &lt;/p&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, discusses the capabilities and future of OneAPI, a cross-industry, open, standards-based unified programming model that delivers a common developer experience across accelerator architectures, with Intel’s OneAPI Chief Evangelist, James Reinders.  &lt;/p&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, discusses the capabilities and future of OneAPI, a cross-industry, open, standards-based unified programming model that delivers a common developer experience across accelerator architectures, with Intel’s OneAPI Chief Evangelist, James Reinders.  &lt;/p&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, discusses the capabilities and future of OneAPI, a cross-industry, open, standards-based unified programming model that delivers a common developer experience across accelerator architectures, with Intel’s OneAPI Chief Evangelist, James Reinders.  &lt;/p&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -161,50 +187,80 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#81 Heterogeneous Programming with OneAPI</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/28fb34d4"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher, Chief Solution Architect, Intel, discusses the capabilities and future of OneAPI, a cross-industry, open, standards-based unified programming model that delivers a common developer experience across accelerator architectures, with Intel’s OneAPI Chief Evangelist, James Reinders.  </p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #81 <span>Heterogeneous Programming with OneAPI</span>
+    </h1>
+    <time datetime="2022-03-24T00:00:00.000Z"
+          itemprop="datePublished">
+      2022-03-24T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="81"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Heterogeneous Programming with OneAPI">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Heterogeneous Programming with OneAPI Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Heterogeneous Programming with OneAPI">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/28fb34d4">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/28fb34d4"
+            title="Heterogeneous Programming with OneAPI Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher, Chief Solution Architect, Intel, discusses the capabilities and future of OneAPI, a cross-industry, open, standards-based unified programming model that delivers a common developer experience across accelerator architectures, with Intel’s OneAPI Chief Evangelist, James Reinders.  </p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=oneapi"
+           itemprop="keywords">oneapi</a>
+      
+        <a href="../../../en/search.html?query=artificialintelligence"
+           itemprop="keywords">artificialintelligence</a>
+      
+        <a href="../../../en/search.html?query=highperformancecomputing"
+           itemprop="keywords">highperformancecomputing</a>
+      
+        <a href="../../../en/search.html?query=iot"
+           itemprop="keywords">iot</a>
+      
+        <a href="../../../en/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../en/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../en/guests/james-reinders/index.html"
+           itemprop="name" target="_blank">James Reinders</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=oneapi"><span>oneapi</span></a>
-                
-                    <a href="../../../en/search.html?query=artificialintelligence"><span>artificialintelligence</span></a>
-                
-                    <a href="../../../en/search.html?query=highperformancecomputing"><span>highperformancecomputing</span></a>
-                
-                    <a href="../../../en/search.html?query=iot"><span>iot</span></a>
-                
-                    <a href="../../../en/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../en/search.html?query=process"><span>process</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../en/guests/james-reinders/index.html" target="_blank">James Reinders</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>The objective of oneAPI is to help abstract the enormous diversity that’s coming in hardware so software engineers can take advantage of it higher up in the stack and get the most out of the hardware. James, a software engineer who also works closely with the hardware, loves what oneAPI can contribute in light of trending heterogeneous computing.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>The objective of oneAPI is to help abstract the enormous diversity that’s coming in hardware so software engineers can take advantage of it higher up in the stack and get the most out of the hardware. James, a software engineer who also works closely with the hardware, loves what oneAPI can contribute in light of trending heterogeneous computing.</p>
 <p>The word heterogeneous here basically means that there are different devices in a system that can do computation, but they don’t run the same instruction set. For example, the CPU has one way of running instructions and the GPU has a different way. FPGA, other ASICs, and specialty devices each have different ways of being programmed. Taking advantage of all of those is the goal.</p>
 <p>John Hennessy and David Patterson, leaders in the computer architecture field, called this the new golden age of computer architecture. For computer architects, it’s an amazing time to design all sorts of specialty devices to do better things for specific domains, but for programmers, it can be difficult and even scary because of the complexity. This is where the oneAPI initiative and oneAPI products come in.</p>
 <p>The name, oneAPI, is both an initiative with a specification and an implementation. The initiative is a simple concept: software developers should have the freedom to use any device they want with full performance, and their coding should preserve its value; they should not have to rewrite for every new device. These qualities can be applied to compilers, libraries, debuggers, and any type of tool.</p>
@@ -222,16 +278,65 @@
 <p>The idea of one API has moved from being a crazy idea that only a few people were talking about to now more and more recognizing that it makes sense and solves problems in their organization.</p>
 <p>The simplest place to learn about the initiative is at the oneapi.io website. To learn about implementation, click on the implementation tab for a link to follow to find Intel implementations. There, you can download the different toolkits. Search for the Intel dev cloud to try out the tools in the cloud for free, including on different hardware. The oneapi.io website also has a variety of tutorials and resources. </p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Heterogeneous Programming with OneAPI",
+  "episodeNumber": "81",
+  "datePublished": "2022-03-24T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher, Chief Solution Architect, Intel, discusses the capabilities and future of OneAPI, a cross-industry, open, standards-based unified programming model that delivers a common developer experience across accelerator architectures, with Intel’s OneAPI Chief Evangelist, James Reinders.  </p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Heterogeneous Programming with OneAPI Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Heterogeneous Programming with OneAPI Audio",
+      "contentUrl": "https://share.transistor.fm/e/28fb34d4"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "James Reinders"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

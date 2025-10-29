@@ -159,59 +159,92 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#33 Der AWS-Ausfall im November 2020</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/XquYoUXxJks?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/e81503fc"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher, Chief Solution Architect, Public Sector, bei Intel spricht über die aus dem AWS-Ausfall im November 2020 gewonnenen Erkenntnisse und vorbeugende Lösungen zur Bewältigung solcher Ausfälle.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #33 <span>Der AWS-Ausfall im November 2020</span>
+    </h1>
+    <time datetime="2020-12-15T00:00:00.000Z"
+          itemprop="datePublished">
+      2020-12-15T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="33"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Der AWS-Ausfall im November 2020">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/XquYoUXxJks">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/XquYoUXxJks?autoplay=1"
+            title="Der AWS-Ausfall im November 2020 Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Der AWS-Ausfall im November 2020">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/e81503fc">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/e81503fc"
+            title="Der AWS-Ausfall im November 2020 Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher, Chief Solution Architect, Public Sector, bei Intel spricht über die aus dem AWS-Ausfall im November 2020 gewonnenen Erkenntnisse und vorbeugende Lösungen zur Bewältigung solcher Ausfälle.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../de/search.html?query=aws"
+           itemprop="keywords">aws</a>
+      
+        <a href="../../../de/search.html?query=datamanagement"
+           itemprop="keywords">datamanagement</a>
+      
+        <a href="../../../de/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../de/search.html?query=devops"
+           itemprop="keywords">devops</a>
+      
+        <a href="../../../de/search.html?query=microservices"
+           itemprop="keywords">microservices</a>
+      
+        <a href="../../../de/search.html?query=incidentresponse"
+           itemprop="keywords">incidentresponse</a>
+      
+        <a href="../../../de/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../de/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../de/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+        <a href="../../../de/search.html?query=policy"
+           itemprop="keywords">policy</a>
+      
+        <a href="../../../de/search.html?query=people"
+           itemprop="keywords">people</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../de/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../de/search.html?query=aws"><span>aws</span></a>
-                
-                    <a href="../../../de/search.html?query=datamanagement"><span>datamanagement</span></a>
-                
-                    <a href="../../../de/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../de/search.html?query=devops"><span>devops</span></a>
-                
-                    <a href="../../../de/search.html?query=microservices"><span>microservices</span></a>
-                
-                    <a href="../../../de/search.html?query=incidentresponse"><span>incidentresponse</span></a>
-                
-                    <a href="../../../de/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../de/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../de/search.html?query=technology"><span>technology</span></a>
-                
-                    <a href="../../../de/search.html?query=policy"><span>policy</span></a>
-                
-                    <a href="../../../de/search.html?query=people"><span>people</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../de/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>Was wir aus dem AWS-Ausfall gelernt haben</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>Was wir aus dem AWS-Ausfall gelernt haben</h2>
 <p>Amazon Web Services (AWS) hatte zu einem ungünstigen Zeitpunkt eine erhebliche Störung – am Tag vor Thanksgiving 2020. Da sie ihre Service-Protokolle veröffentlicht haben, ist es interessant, diese zu überprüfen, um herauszufinden, was passiert ist und was wir daraus lernen können.</p>
 <h2>Zeitstrahl des AWS-Ausfalls</h2>
 <p>Am Mittwoch, den 25. November 2020 gegen 3:00 Uhr PST, aktualisierte AWS die Ost-Region und fügte Server hinzu, um die Kapazität von Kinesis zu erhöhen. Kinesis ist ein beliebter KI-Dienst, der Musterabgleiche in Logdateien und Videodateien durchführt. Etwa anderthalb Stunden nach dem Upgrade begannen die Serveralarme Fehler in den Kinesis-Datensätzen zu melden. Ziemlich schnell, gegen 8 Uhr, identifizierten sie zunächst ein paar Kandidaten in den Front-End-Services als Ursache. Kinesis besteht aus verschiedenen kleineren Diensten, einer Gruppe von Front-End-Services und einer Gruppe von Back-End-Services. Wie das System aufgebaut ist, wird jedes Mal, wenn ein Back-End-Service läuft, ein Thread im Front-End gestartet. Eines der Probleme war, dass das Front-End die Thread-Grenzwerte erreichte, als sie während des Upgrades Server zum Back-End hinzufügten. Sobald sie dieses Problem erkannt hatten, führten sie eine vorübergehende Lösung mit Updates (Patches) für das Betriebssystem durch und Kinesis war gegen ungefähr 10:30 Uhr wieder online und wurde bis 1:15 Uhr am 26. November vollständig wiederhergestellt. Letztendlich war Kinesis 21 Stunden lang nicht voll funktionsfähig und obwohl nicht jeder dieses KI-Tool verwendet, war die Auswirkung weitreichend.</p>
@@ -242,16 +275,60 @@
 <p><a href="https://www.wsj.com/articles/amazon-web-services-hit-by-outage-11606326714">https://www.wsj.com/articles/amazon-web-services-hit-by-outage-11606326714</a></p>
 <p>Erklärt: Amazon-Ausfall einfach gemacht</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Der AWS-Ausfall im November 2020",
+  "episodeNumber": "33",
+  "datePublished": "2020-12-15T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher, Chief Solution Architect, Public Sector, bei Intel spricht über die aus dem AWS-Ausfall im November 2020 gewonnenen Erkenntnisse und vorbeugende Lösungen zur Bewältigung solcher Ausfälle.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Der AWS-Ausfall im November 2020 Video",
+      "embedUrl": "https://www.youtube.com/embed/XquYoUXxJks"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Der AWS-Ausfall im November 2020 Audio",
+      "contentUrl": "https://share.transistor.fm/e/e81503fc"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Urheberrecht &copy; 2025 Paidar Productions LLC</p>

@@ -160,48 +160,77 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#45 Nem todos os núcleos são iguais</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/cd1f0343"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Neste episódio, Darren Pulsipher, Arquiteto-chefe de Soluções, Intel, e Stephen Holt, Arquiteto de Soluções em Nuvem, Intel, discutem otimização de nuvem e estudos que mostram que os núcleos têm desempenhos diferentes para várias cargas de trabalho.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #45 <span>Nem todos os núcleos são iguais</span>
+    </h1>
+    <time datetime="2021-03-31T00:00:00.000Z"
+          itemprop="datePublished">
+      2021-03-31T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="45"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Nem todos os núcleos são iguais">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Nem todos os núcleos são iguais Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Nem todos os núcleos são iguais">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/cd1f0343">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/cd1f0343"
+            title="Nem todos os núcleos são iguais Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Neste episódio, Darren Pulsipher, Arquiteto-chefe de Soluções, Intel, e Stephen Holt, Arquiteto de Soluções em Nuvem, Intel, discutem otimização de nuvem e estudos que mostram que os núcleos têm desempenhos diferentes para várias cargas de trabalho.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../pt/search.html?query=cloudmigration"
+           itemprop="keywords">cloudmigration</a>
+      
+        <a href="../../../pt/search.html?query=testingandbenchmarking"
+           itemprop="keywords">testingandbenchmarking</a>
+      
+        <a href="../../../pt/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../pt/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../pt/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../pt/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../pt/guests/stephen-holt/index.html"
+           itemprop="name" target="_blank">Stephen Holt</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../pt/search.html?query=cloudmigration"><span>cloudmigration</span></a>
-                
-                    <a href="../../../pt/search.html?query=testingandbenchmarking"><span>testingandbenchmarking</span></a>
-                
-                    <a href="../../../pt/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../pt/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../pt/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../pt/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../pt/guests/stephen-holt/index.html" target="_blank">Stephen Holt</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>A Intel tem contratado arquitetos de soluções em nuvem para ajudar os clientes a migrarem de forma inteligente para as instâncias de nuvem certas para suas cargas de trabalho. Stephen recentemente entrou para a Intel e possui uma longa experiência em bancos de dados em geral, com os últimos sete ou oito anos focados na nuvem, aproveitando seus recursos para os clientes.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>A Intel tem contratado arquitetos de soluções em nuvem para ajudar os clientes a migrarem de forma inteligente para as instâncias de nuvem certas para suas cargas de trabalho. Stephen recentemente entrou para a Intel e possui uma longa experiência em bancos de dados em geral, com os últimos sete ou oito anos focados na nuvem, aproveitando seus recursos para os clientes.</p>
 <p>Alguns dos aspectos mais difíceis com os quais o Stephen se deparou ao ajudar os clientes a migrarem para a nuvem são os preços e as expectativas da mudança. Fornecedores de serviços em nuvem frequentemente afirmam que os clientes economizarão dinheiro ao migrarem para a nuvem, mas isso nem sempre é verdade.</p>
 <p>Uma razão é que há uma mudança constante no mercado de provedores de serviços em nuvem em relação a recursos, funcionalidades e habilidades. Outra razão é a ignorância, por exemplo, acreditar que um VCP central é o mesmo em todos os lugares. Migrar com a mentalidade de &quot;levantar e transferir&quot; também pode ser muito caro. A otimização é fundamental para uma migração inteligente para a nuvem.</p>
 <p>Para diminuir os custos e potencialmente economizar uma grande quantidade de dinheiro, você deve escolher as instâncias certas para as performances certas. Nem todos os núcleos, ou CPUs virtuais, são iguais. Dentro da AWS, eles têm o M4, o Broadwell da Intel e o M5, que é uma mistura de Cascade Lake e Skylake, e várias cargas de trabalho podem se beneficiar dessas plataformas de maneiras muito diferentes.</p>
@@ -217,16 +246,65 @@
 <p>A Intel realizou alguns testes em cargas de trabalho em instalações novas em uma instância fixa de 64 núcleos e 64 VCPU. Após obter o número inicial, outra instância foi iniciada e o mesmo teste foi executado novamente. Os resultados variaram drasticamente a cada vez do mesmo teste. Isso pode ocorrer devido a uma mistura de processos oferecidos em um determinado nível de camada, ou pode haver alguma distância e latência adicional para os anexos de armazenamento em bloco, por exemplo, ou até mesmo vizinhos ruidosos. Portanto, vale a pena testar para garantir que o sistema atenda às expectativas.</p>
 <p>Em resumo, para obter o melhor valor da nuvem, você precisa se educar, testar os sistemas e aproveitar a ajuda disponível.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Nem todos os núcleos são iguais",
+  "episodeNumber": "45",
+  "datePublished": "2021-03-31T00:00:00.000Z",
+  "description": "<p>Neste episódio, Darren Pulsipher, Arquiteto-chefe de Soluções, Intel, e Stephen Holt, Arquiteto de Soluções em Nuvem, Intel, discutem otimização de nuvem e estudos que mostram que os núcleos têm desempenhos diferentes para várias cargas de trabalho.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Nem todos os núcleos são iguais Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Nem todos os núcleos são iguais Audio",
+      "contentUrl": "https://share.transistor.fm/e/cd1f0343"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Stephen Holt"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

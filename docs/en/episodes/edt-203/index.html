@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;Darren continues his discussion with Robert Vaughn about IT@Intel and how it is helping organizations all over the world with modernizing their information systems by sharing best practices.&lt;/p&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;Darren continues his discussion with Robert Vaughn about IT@Intel and how it is helping organizations all over the world with modernizing their information systems by sharing best practices.&lt;/p&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;Darren continues his discussion with Robert Vaughn about IT@Intel and how it is helping organizations all over the world with modernizing their information systems by sharing best practices.&lt;/p&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;Darren continues his discussion with Robert Vaughn about IT@Intel and how it is helping organizations all over the world with modernizing their information systems by sharing best practices.&lt;/p&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -161,66 +187,104 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#203 Next Steps: Intel IT&#39;s Best Practices Journey</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/bHSuLQGgo58?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/79c022e9"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren continues his discussion with Robert Vaughn about IT@Intel and how it is helping organizations all over the world with modernizing their information systems by sharing best practices.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #203 <span>Next Steps: Intel IT&#39;s Best Practices Journey</span>
+    </h1>
+    <time datetime="2024-05-23T07:00:00.000Z"
+          itemprop="datePublished">
+      2024-05-23T07:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="203"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Next Steps: Intel IT&#39;s Best Practices Journey">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/bHSuLQGgo58">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/bHSuLQGgo58?autoplay=1"
+            title="Next Steps: Intel IT&#39;s Best Practices Journey Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Next Steps: Intel IT&#39;s Best Practices Journey">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/79c022e9">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/79c022e9"
+            title="Next Steps: Intel IT&#39;s Best Practices Journey Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren continues his discussion with Robert Vaughn about IT@Intel and how it is helping organizations all over the world with modernizing their information systems by sharing best practices.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=artificialintelligence"
+           itemprop="keywords">artificialintelligence</a>
+      
+        <a href="../../../en/search.html?query=datasecurity"
+           itemprop="keywords">datasecurity</a>
+      
+        <a href="../../../en/search.html?query=sustainability"
+           itemprop="keywords">sustainability</a>
+      
+        <a href="../../../en/search.html?query=digitaltransformation"
+           itemprop="keywords">digitaltransformation</a>
+      
+        <a href="../../../en/search.html?query=datamanagement"
+           itemprop="keywords">datamanagement</a>
+      
+        <a href="../../../en/search.html?query=operationalefficiency"
+           itemprop="keywords">operationalefficiency</a>
+      
+        <a href="../../../en/search.html?query=employeeengagement"
+           itemprop="keywords">employeeengagement</a>
+      
+        <a href="../../../en/search.html?query=changechampions"
+           itemprop="keywords">changechampions</a>
+      
+        <a href="../../../en/search.html?query=generativeai"
+           itemprop="keywords">generativeai</a>
+      
+        <a href="../../../en/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../en/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../en/search.html?query=people"
+           itemprop="keywords">people</a>
+      
+        <a href="../../../en/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../en/search.html?query=policy"
+           itemprop="keywords">policy</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/robert-vaughn/index.html"
+           itemprop="name" target="_blank">Robert Vaughn</a>
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=artificialintelligence"><span>artificialintelligence</span></a>
-                
-                    <a href="../../../en/search.html?query=datasecurity"><span>datasecurity</span></a>
-                
-                    <a href="../../../en/search.html?query=sustainability"><span>sustainability</span></a>
-                
-                    <a href="../../../en/search.html?query=digitaltransformation"><span>digitaltransformation</span></a>
-                
-                    <a href="../../../en/search.html?query=datamanagement"><span>datamanagement</span></a>
-                
-                    <a href="../../../en/search.html?query=operationalefficiency"><span>operationalefficiency</span></a>
-                
-                    <a href="../../../en/search.html?query=employeeengagement"><span>employeeengagement</span></a>
-                
-                    <a href="../../../en/search.html?query=changechampions"><span>changechampions</span></a>
-                
-                    <a href="../../../en/search.html?query=generativeai"><span>generativeai</span></a>
-                
-                    <a href="../../../en/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../en/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../en/search.html?query=people"><span>people</span></a>
-                
-                    <a href="../../../en/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../en/search.html?query=policy"><span>policy</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/robert-vaughn/index.html" target="_blank">Robert Vaughn</a>
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>There&#39;s never been a better time to be in technology, specifically in digital transformation. In this exciting epoch, our strides in innovation are far-reaching, extending from advances in artificial intelligence (AI) to sweeping adaptations for greener operations. A leading proponent of integrating the two spheres is global tech giant, Intel.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>There&#39;s never been a better time to be in technology, specifically in digital transformation. In this exciting epoch, our strides in innovation are far-reaching, extending from advances in artificial intelligence (AI) to sweeping adaptations for greener operations. A leading proponent of integrating the two spheres is global tech giant, Intel.</p>
 <p>On the forefront of AI democratization stands Intel&#39;s initiative, &quot;AI Everywhere&quot;. Aimed to decrease the barriers to AI adoption, Intel’s approach empowers every employee with AI tools, a significant progress marker in the journey of democratizing AI. This innovative strategy means AI&#39;s benefits are no longer confined to those with specific skills or budgets. Instead, it’s making waves across workplaces, enhancing efficiency, and fostering broader creativity. </p>
 <p>While the expanded accessibility of AI is certainly a cause for celebration, it&#39;s vital to be aware of the potential risks that accompany it, such as breaches of confidentiality. To mitigate these concerns, Intel has rolled out comprehensive training programmes, providing employees with the necessary tools to navigate this innovative terrain without crippling their inventiveness. </p>
 <p>When the world is racing towards digital transformation, ensuring the security of the enormous sea of valuable data becomes paramount. Intel’s proven track record of securing massive infrastructure like data centers from potential threats and their substantial contributions to security dialogues within the industry testifies their commitment in this field.</p>
@@ -228,16 +292,65 @@
 <p>Intel’s data centres embody this commitment to sustainability, having made notable shifts towards ambient air exchange. With less reliance on active cooling, they are consequently warmer spaces - a surprising, yet pleasing testament to the company&#39;s commitment to eco-friendly practices. </p>
 <p>In sum, Intel has been successfully managing to pioneer in AI, digital security, and sustainability. They are charting a course for the future — a course where innovation isn&#39;t an impediment but a bridge towards a technology-driven, efficient, and sustainable era. This journey is replete with valuable insights, practical tips, and suggestive approaches for businesses and tech enthusiasts alike, fostering an environment ripe for learning and progress. Stay tuned to our blog as we delve further into these technological advancements and continue to unlock their immense potential.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Next Steps: Intel IT&#39;s Best Practices Journey",
+  "episodeNumber": "203",
+  "datePublished": "2024-05-23T07:00:00.000Z",
+  "description": "<p>Darren continues his discussion with Robert Vaughn about IT@Intel and how it is helping organizations all over the world with modernizing their information systems by sharing best practices.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Next Steps: Intel IT&#39;s Best Practices Journey Video",
+      "embedUrl": "https://www.youtube.com/embed/bHSuLQGgo58"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Next Steps: Intel IT&#39;s Best Practices Journey Audio",
+      "contentUrl": "https://share.transistor.fm/e/79c022e9"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Robert Vaughn"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

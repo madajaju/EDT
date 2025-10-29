@@ -160,54 +160,86 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#13 Obsesión ilógica con la lógica</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/4272c3a1"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Líder de pensamiento Andrew Padilla de Datacequia visualiza nuevos avances en la gestión de datos y colaboración que permitirían que los datos avancen de la misma forma que lo ha hecho el software en cuanto a visibilidad, accesibilidad, usabilidad y portabilidad. Explica cómo una infraestructura componible abordaría las preocupaciones tanto de los ingenieros de software como de los científicos de datos.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #13 <span>Obsesión ilógica con la lógica</span>
+    </h1>
+    <time datetime="2020-08-13T00:00:00.000Z"
+          itemprop="datePublished">
+      2020-08-13T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="13"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Obsesión ilógica con la lógica">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Obsesión ilógica con la lógica Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Obsesión ilógica con la lógica">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/4272c3a1">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/4272c3a1"
+            title="Obsesión ilógica con la lógica Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Líder de pensamiento Andrew Padilla de Datacequia visualiza nuevos avances en la gestión de datos y colaboración que permitirían que los datos avancen de la misma forma que lo ha hecho el software en cuanto a visibilidad, accesibilidad, usabilidad y portabilidad. Explica cómo una infraestructura componible abordaría las preocupaciones tanto de los ingenieros de software como de los científicos de datos.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../es/search.html?query=community_based_curation"
+           itemprop="keywords">community_based_curation</a>
+      
+        <a href="../../../es/search.html?query=collaboration"
+           itemprop="keywords">collaboration</a>
+      
+        <a href="../../../es/search.html?query=generativeai"
+           itemprop="keywords">generativeai</a>
+      
+        <a href="../../../es/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../es/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../es/search.html?query=data_management"
+           itemprop="keywords">data_management</a>
+      
+        <a href="../../../es/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../es/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../es/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../es/guests/andrew-padilla/index.html"
+           itemprop="name" target="_blank">Andrew Padilla</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../es/search.html?query=community_based_curation"><span>community_based_curation</span></a>
-                
-                    <a href="../../../es/search.html?query=collaboration"><span>collaboration</span></a>
-                
-                    <a href="../../../es/search.html?query=generativeai"><span>generativeai</span></a>
-                
-                    <a href="../../../es/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../es/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../es/search.html?query=data_management"><span>data_management</span></a>
-                
-                    <a href="../../../es/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../es/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../es/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../es/guests/andrew-padilla/index.html" target="_blank">Andrew Padilla</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>Una Contraposición de Preocupaciones.</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>Una Contraposición de Preocupaciones.</h2>
 <p>En los últimos diez años, los profesionales de datos han experimentado un crecimiento exponencial en su capacidad para hacer que el software sea visible, accesible, utilizable y portable, pero en el ámbito de los datos no ha habido un avance tan significativo. Esto es algo en lo que tanto los profesionales del software como los de datos deberían pensar. ¿Cuáles son las preocupaciones de cada lado? ¿Qué podemos aprender el uno del otro? Actualmente, ambos lados están diametralmente opuestos en muchos aspectos.</p>
 <p>En el lado de la ingeniería de software, la lógica de negocio es la principal preocupación. Para tener interfaces consistentes, los ingenieros ocultan los detalles. Los datos se ven como una salida. Por otro lado, los científicos de datos se preocupan más por el contexto de estas salidas y construcciones de datos: los metadatos. Por ejemplo, la genealogía de los datos es importante para un científico de datos para ver cómo las cosas cambian con el tiempo, mientras que un ingeniero de software trataría de ocultar estos detalles para evitar problemas como la variabilidad y los errores.</p>
 <p>Tratar el desarrollo de datos y metadatos como una disciplina por sí misma, y no en el contexto de cómo actualmente hacemos software, podría ayudar a que la industria crezca. En otras palabras, necesitamos analizar la construcción de una infraestructura componible que tenga en cuenta las preocupaciones de ambos lados.</p>
@@ -222,16 +254,65 @@
 <p>Imagina si los profesionales de datos pudieran bifurcar un conjunto de datos en cualquier repositorio central. Podrían gestionarlo y desarrollarlo según sus propias necesidades. Si hay un cambio en el repositorio central que es administrado por un organismo estándar, podrían incorporar esos cambios de inmediato, o elegir no hacerlo. En cualquier caso, tendrían la relación con la fuente original. Hoy en día, cuando utilizamos un activo que está fuera de la empresa, hacemos una copia que permanece estática en el tiempo. Eso requiere un seguimiento manual y la gestión de las actualizaciones. Con un repositorio central, todos podrían co-crear, colaborar y crear comunidades con bases comunes y una línea de tiempo visible.</p>
 <p>Esta es solo la punta del iceberg de lo que es un cambio fundamental en la industria para hacer que los datos sean más valiosos para tu organización. Para obtener más información sobre Andrew Padilla y Datacequia, visita datacequia.com.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Obsesión ilógica con la lógica",
+  "episodeNumber": "13",
+  "datePublished": "2020-08-13T00:00:00.000Z",
+  "description": "<p>Líder de pensamiento Andrew Padilla de Datacequia visualiza nuevos avances en la gestión de datos y colaboración que permitirían que los datos avancen de la misma forma que lo ha hecho el software en cuanto a visibilidad, accesibilidad, usabilidad y portabilidad. Explica cómo una infraestructura componible abordaría las preocupaciones tanto de los ingenieros de software como de los científicos de datos.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Obsesión ilógica con la lógica Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Obsesión ilógica con la lógica Audio",
+      "contentUrl": "https://share.transistor.fm/e/4272c3a1"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Andrew Padilla"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

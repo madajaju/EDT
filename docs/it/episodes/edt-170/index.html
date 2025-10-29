@@ -160,51 +160,83 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#170 Principi di Zero Trust.</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/Ps9ajHB-lGg?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/7d887ec6"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>In questo episodio Darren esplora i principi dell&#39;architettura Zero Trust con l&#39;ospite speciale David Marcus, Senior Security Architect, e il ritorno dell&#39;ospite Dr. Anna Scott.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #170 <span>Principi di Zero Trust.</span>
+    </h1>
+    <time datetime="2023-10-26T07:00:00.000Z"
+          itemprop="datePublished">
+      2023-10-26T07:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="170"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Principi di Zero Trust.">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/Ps9ajHB-lGg">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/Ps9ajHB-lGg?autoplay=1"
+            title="Principi di Zero Trust. Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Principi di Zero Trust.">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/7d887ec6">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/7d887ec6"
+            title="Principi di Zero Trust. Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>In questo episodio Darren esplora i principi dell&#39;architettura Zero Trust con l&#39;ospite speciale David Marcus, Senior Security Architect, e il ritorno dell&#39;ospite Dr. Anna Scott.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../it/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../it/search.html?query=visibility"
+           itemprop="keywords">visibility</a>
+      
+        <a href="../../../it/search.html?query=data"
+           itemprop="keywords">data</a>
+      
+        <a href="../../../it/search.html?query=analytics"
+           itemprop="keywords">analytics</a>
+      
+        <a href="../../../it/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../it/search.html?query=policy"
+           itemprop="keywords">policy</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../it/guests/anna-scott/index.html"
+           itemprop="name" target="_blank">Anna Scott</a>
+      
+        <a href="../../../it/guests/dave-marcus/index.html"
+           itemprop="name" target="_blank">Dave Marcus</a>
+      
+        <a href="../../../it/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../it/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../it/search.html?query=visibility"><span>visibility</span></a>
-                
-                    <a href="../../../it/search.html?query=data"><span>data</span></a>
-                
-                    <a href="../../../it/search.html?query=analytics"><span>analytics</span></a>
-                
-                    <a href="../../../it/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../it/search.html?query=policy"><span>policy</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../it/guests/anna-scott/index.html" target="_blank">Anna Scott</a>
-                <a href="../../../it/guests/dave-marcus/index.html" target="_blank">Dave Marcus</a>
-                <a href="../../../it/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>Implementare la sicurezza Zero Trust.</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>Implementare la sicurezza Zero Trust.</h2>
 <p>La sicurezza a &quot;zero trust&quot; è diventata un modello sempre più popolare per la protezione degli ambienti IT moderni. Ma cosa significa esattamente &quot;zero trust&quot; e quali sono le migliori pratiche per implementarlo? Questo post fornisce un&#39;introduzione ai principi del &quot;zero trust&quot; e alcune considerazioni chiave per adottare un&#39;architettura a &quot;zero trust&quot;.</p>
 <h2>Cos&#39;è Zero Trust?</h2>
 <p>Il modello zero trust si basa sul concetto di &quot;mai fidarsi, sempre verificare&quot;. A differenza della tradizionale sicurezza di rete che si concentra sulle difese del perimetro, il zero trust assume che gli attaccanti siano già all&#39;interno della rete. Nessun utente o dispositivo è intrinsecamente fidato - la verifica è richiesta ogni volta che viene richiesto l&#39;accesso.</p>
@@ -246,16 +278,70 @@
 <p>Valutare strumenti per l&#39;analisi avanzata, l&#39;automazione e l&#39;orchestrazione.</p>
 <p>Adottare il principio di zero trust richiede tempo, ma può migliorare in modo significativo la tua postura di sicurezza contro le minacce moderne. Seguire un approccio incrementale basato sul rischio ti consente di ottenere vantaggi in ogni fase di maturità.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Principi di Zero Trust.",
+  "episodeNumber": "170",
+  "datePublished": "2023-10-26T07:00:00.000Z",
+  "description": "<p>In questo episodio Darren esplora i principi dell&#39;architettura Zero Trust con l&#39;ospite speciale David Marcus, Senior Security Architect, e il ritorno dell&#39;ospite Dr. Anna Scott.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Principi di Zero Trust. Video",
+      "embedUrl": "https://www.youtube.com/embed/Ps9ajHB-lGg"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Principi di Zero Trust. Audio",
+      "contentUrl": "https://share.transistor.fm/e/7d887ec6"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Anna Scott"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Dave Marcus"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

@@ -160,55 +160,86 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#46 Proteggere la tua pipeline DevOps</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/3abb647c"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Nella seconda parte di questo episodio, Darren Pulsipher, Chief Solution Architect di Intel, fornisce consigli pratici per proteggere ogni fase del DevOps pipeline, incluso la protezione dell&#39;hardware e delle pile software con il hardware radice di fiducia, la scansione di sicurezza, i container/VM attestati ed criptati e altro ancora.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #46 <span>Proteggere la tua pipeline DevOps</span>
+    </h1>
+    <time datetime="2021-04-08T00:00:00.000Z"
+          itemprop="datePublished">
+      2021-04-08T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="46"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Proteggere la tua pipeline DevOps">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Proteggere la tua pipeline DevOps Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Proteggere la tua pipeline DevOps">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/3abb647c">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/3abb647c"
+            title="Proteggere la tua pipeline DevOps Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Nella seconda parte di questo episodio, Darren Pulsipher, Chief Solution Architect di Intel, fornisce consigli pratici per proteggere ogni fase del DevOps pipeline, incluso la protezione dell&#39;hardware e delle pile software con il hardware radice di fiducia, la scansione di sicurezza, i container/VM attestati ed criptati e altro ancora.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../it/search.html?query=security"
+           itemprop="keywords">security</a>
+      
+        <a href="../../../it/search.html?query=devops"
+           itemprop="keywords">devops</a>
+      
+        <a href="../../../it/search.html?query=hardware_security"
+           itemprop="keywords">hardware_security</a>
+      
+        <a href="../../../it/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../it/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../it/search.html?query=people"
+           itemprop="keywords">people</a>
+      
+        <a href="../../../it/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../it/search.html?query=policy"
+           itemprop="keywords">policy</a>
+      
+        <a href="../../../it/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../it/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../it/search.html?query=security"><span>security</span></a>
-                
-                    <a href="../../../it/search.html?query=devops"><span>devops</span></a>
-                
-                    <a href="../../../it/search.html?query=hardware_security"><span>hardware_security</span></a>
-                
-                    <a href="../../../it/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../it/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../it/search.html?query=people"><span>people</span></a>
-                
-                    <a href="../../../it/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../it/search.html?query=policy"><span>policy</span></a>
-                
-                    <a href="../../../it/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../it/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>I Vettori di Attacco</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>I Vettori di Attacco</h2>
 <p>Molti attacchi avvengono a livello individuale delle persone. Alcuni degli attacchi più recenti e subdoli si sono concentrati sul phishing e sull&#39;ingegneria sociale rivolta agli individui all&#39;interno di DevOps. Abbiamo bisogno di addestrare meglio le persone a tutti i livelli. In un caso, è stato uno stagista con accesso alle chiavi che è caduto vittima di un piano malvagio.</p>
 <p>Un altro vettore è la tecnologia: attacchi tradizionali di negazione del servizio, attacchi di iniezione SQL o attacchi di andamento dell&#39;overflow. Gli ultimi incidenti utilizzano sia persone che tecnologia per attaccare il processo. Sono insidiosi perché si verificano durante il processo di costruzione e possono essere molto difficili da individuare. Possono anche propagare codice maligno attraverso i clienti. Per instillare fiducia nei clienti, le organizzazioni devono avere una strategia per proteggere la pipeline di fornitura.</p>
 <h2>Sicurezza della pipeline</h2>
@@ -234,16 +265,60 @@
 <p>Una volta che hai istituito i tuoi team di sicurezza degli sviluppatori, assicurati di iniettare le politiche e gli strumenti in tutti i tuoi prodotti e ambienti. Oggi esistono delle ottime tecnologie che ti consentono di gestire più ambienti. Quindi, quando viene creato un nuovo applicativo, viene creato con un profilo di sicurezza usando le tue immagini di macchine virtuali o contenitori come immagini di base utilizzate dai team di sviluppo. Configurando la sicurezza nelle tue VM o contenitori nelle immagini di base, otterrai una conformità istantanea su diversi ambienti. È inoltre possibile integrarsi con strumenti di sicurezza, in modo che se si trova qualcosa di insolito nell&#39;applicazione, è possibile notificarlo agli strumenti di sicurezza. Non cercare di creare strumenti di sicurezza che gestiscano il cento per cento dei casi, perché non li finiresti mai; punta all&#39;ottanta percento come base solida e creali in modo che gli sviluppatori possano innovare l&#39;ultimo venti percento se necessario, in collaborazione con il tuo team di sicurezza.</p>
 <p>Un ultimo consiglio importante è automatizzare tutto ciò che puoi, soprattutto nel processo DevOps, per prevenire iniezioni maliziose. Proteggi la tua pipeline; proteggi il tuo processo.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Proteggere la tua pipeline DevOps",
+  "episodeNumber": "46",
+  "datePublished": "2021-04-08T00:00:00.000Z",
+  "description": "<p>Nella seconda parte di questo episodio, Darren Pulsipher, Chief Solution Architect di Intel, fornisce consigli pratici per proteggere ogni fase del DevOps pipeline, incluso la protezione dell&#39;hardware e delle pile software con il hardware radice di fiducia, la scansione di sicurezza, i container/VM attestati ed criptati e altro ancora.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Proteggere la tua pipeline DevOps Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Proteggere la tua pipeline DevOps Audio",
+      "contentUrl": "https://share.transistor.fm/e/3abb647c"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

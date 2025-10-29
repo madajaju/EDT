@@ -160,51 +160,80 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#17 Elastic Search e Intel Optane DCPMM</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/77870513"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher mostra come ha aumentato le prestazioni di Elasticsearch utilizzando la memoria persistente Optane di Intel in modalità 100% app direct. I suoi test mostrano un incredibile aumento delle prestazioni del 2x. Raddoppiando la capacità di throughput, è possibile ridurre notevolmente il numero di server nel cluster Elasticsearch.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #17 <span>Elastic Search e Intel Optane DCPMM</span>
+    </h1>
+    <time datetime="2020-08-31T00:00:00.000Z"
+          itemprop="datePublished">
+      2020-08-31T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="17"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Elastic Search e Intel Optane DCPMM">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Elastic Search e Intel Optane DCPMM Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Elastic Search e Intel Optane DCPMM">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/77870513">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/77870513"
+            title="Elastic Search e Intel Optane DCPMM Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher mostra come ha aumentato le prestazioni di Elasticsearch utilizzando la memoria persistente Optane di Intel in modalità 100% app direct. I suoi test mostrano un incredibile aumento delle prestazioni del 2x. Raddoppiando la capacità di throughput, è possibile ridurre notevolmente il numero di server nel cluster Elasticsearch.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../it/search.html?query=intel"
+           itemprop="keywords">intel</a>
+      
+        <a href="../../../it/search.html?query=optane"
+           itemprop="keywords">optane</a>
+      
+        <a href="../../../it/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../it/search.html?query=dataanalytics"
+           itemprop="keywords">dataanalytics</a>
+      
+        <a href="../../../it/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../it/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../it/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../it/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../it/search.html?query=intel"><span>intel</span></a>
-                
-                    <a href="../../../it/search.html?query=optane"><span>optane</span></a>
-                
-                    <a href="../../../it/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../it/search.html?query=dataanalytics"><span>dataanalytics</span></a>
-                
-                    <a href="../../../it/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../it/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../it/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../it/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>Di recente, ho effettuato alcuni test con la nuova tecnologia di Intel chiamata Optane DC Persistent Memory (PMEM) con Kafka. Utilizzando Optane in modo non tradizionale, montato come un sistema di file, sono riuscito a ottenere un notevole miglioramento nella velocità di trasferimento dei dati. Dai un&#39;occhiata al mio podcast su questo argomento qui. (puoi mettere un link qui?). Ho provato la stessa cosa con Elasticsearch per vedere se potevo ottenere un miglioramento simile delle prestazioni.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>Di recente, ho effettuato alcuni test con la nuova tecnologia di Intel chiamata Optane DC Persistent Memory (PMEM) con Kafka. Utilizzando Optane in modo non tradizionale, montato come un sistema di file, sono riuscito a ottenere un notevole miglioramento nella velocità di trasferimento dei dati. Dai un&#39;occhiata al mio podcast su questo argomento qui. (puoi mettere un link qui?). Ho provato la stessa cosa con Elasticsearch per vedere se potevo ottenere un miglioramento simile delle prestazioni.</p>
 <p>Elasticsearch è un motore di ricerca e analisi altamente scalabile che consente di distribuire i dati su più nodi per espandere la soluzione e supportare quantità di dati più consistenti. In altre parole, è un gestore distribuito dei metadati, utilizzato principalmente per l&#39;analisi dei log. Elastic stesso è un ottimo strumento per normalizzare i dati nel formato JSON. Posso inviare qualsiasi tipo di dati in Elastic e posso estenderlo su un cluster distribuito. Non è un bus di messaggi come Kafka, ma invece indicizza i dati che arrivano. Dal momento che Elastic memorizza questi dati su drive, ho realizzato che potevo utilizzare PMEM allo stesso modo in cui ero abituato a fare con Kafka.</p>
 <h2>Intel Optane DC Persistent Memory è una tecnologia di memoria avanzata sviluppata da Intel.</h2>
 <p>Intel Optane DC Persistent Memory viene fornito nel formato DDR4, quindi si adatta perfettamente al tuo server in uno slot di memoria DDR4. I moduli sono disponibili in capacità di 128, 256 e 512 gigabyte, quindi in un sistema a due socket posso avere 6 terabyte di PMEM. Una caratteristica importante è che l&#39;hardware è crittografato e collegato alla tua CPU con quella crittografia, quindi è sicuro ed estremamente affidabile. È già utilizzato per apportare profonde modifiche nel modo in cui viene utilizzato in molti database, come nella piattaforma Exadata di Oracle e SAP HANA.</p>
@@ -233,16 +262,60 @@
 <h2>Per ulteriori informazioni</h2>
 <p>Per informazioni più dettagliate, consulta il link nel podcast al documento che abbiamo creato in risposta a questi risultati dei test. Puoi anche contattarmi all&#39;indirizzo <a href="mailto:darren.w.pulsipher@intel.com">darren.w.pulsipher@intel.com</a> o su LinkedIn @darrenpulsipher.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Elastic Search e Intel Optane DCPMM",
+  "episodeNumber": "17",
+  "datePublished": "2020-08-31T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher mostra come ha aumentato le prestazioni di Elasticsearch utilizzando la memoria persistente Optane di Intel in modalità 100% app direct. I suoi test mostrano un incredibile aumento delle prestazioni del 2x. Raddoppiando la capacità di throughput, è possibile ridurre notevolmente il numero di server nel cluster Elasticsearch.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Elastic Search e Intel Optane DCPMM Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Elastic Search e Intel Optane DCPMM Audio",
+      "contentUrl": "https://share.transistor.fm/e/77870513"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

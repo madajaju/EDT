@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;On this episode, Darren, Chief Solution Architect, Public Sector, Intel and David Richard, Lead Solution Architect, Department of Defense, Intel reflect on the trends and ideas they gleaned from the 2022 IDC Directions conference.&lt;/p&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;On this episode, Darren, Chief Solution Architect, Public Sector, Intel and David Richard, Lead Solution Architect, Department of Defense, Intel reflect on the trends and ideas they gleaned from the 2022 IDC Directions conference.&lt;/p&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;On this episode, Darren, Chief Solution Architect, Public Sector, Intel and David Richard, Lead Solution Architect, Department of Defense, Intel reflect on the trends and ideas they gleaned from the 2022 IDC Directions conference.&lt;/p&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;On this episode, Darren, Chief Solution Architect, Public Sector, Intel and David Richard, Lead Solution Architect, Department of Defense, Intel reflect on the trends and ideas they gleaned from the 2022 IDC Directions conference.&lt;/p&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -161,58 +187,92 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#83 IDC Directions 2022</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/5d171600"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>On this episode, Darren, Chief Solution Architect, Public Sector, Intel and David Richard, Lead Solution Architect, Department of Defense, Intel reflect on the trends and ideas they gleaned from the 2022 IDC Directions conference.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #83 <span>IDC Directions 2022</span>
+    </h1>
+    <time datetime="+020220-04-08T07:00:00.000Z"
+          itemprop="datePublished">
+      +020220-04-08T07:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="83"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="IDC Directions 2022">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="IDC Directions 2022 Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="IDC Directions 2022">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/5d171600">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/5d171600"
+            title="IDC Directions 2022 Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>On this episode, Darren, Chief Solution Architect, Public Sector, Intel and David Richard, Lead Solution Architect, Department of Defense, Intel reflect on the trends and ideas they gleaned from the 2022 IDC Directions conference.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../en/search.html?query=cloudcomputing"
+           itemprop="keywords">cloudcomputing</a>
+      
+        <a href="../../../en/search.html?query=datamanagement"
+           itemprop="keywords">datamanagement</a>
+      
+        <a href="../../../en/search.html?query=edgecomputing"
+           itemprop="keywords">edgecomputing</a>
+      
+        <a href="../../../en/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../en/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../en/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../en/search.html?query=people"
+           itemprop="keywords">people</a>
+      
+        <a href="../../../en/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../en/search.html?query=policy"
+           itemprop="keywords">policy</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../en/guests/david-richard/index.html"
+           itemprop="name" target="_blank">David Richard</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../en/search.html?query=cloudcomputing"><span>cloudcomputing</span></a>
-                
-                    <a href="../../../en/search.html?query=datamanagement"><span>datamanagement</span></a>
-                
-                    <a href="../../../en/search.html?query=edgecomputing"><span>edgecomputing</span></a>
-                
-                    <a href="../../../en/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../en/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../en/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../en/search.html?query=people"><span>people</span></a>
-                
-                    <a href="../../../en/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../en/search.html?query=policy"><span>policy</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../en/guests/david-richard/index.html" target="_blank">David Richard</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>David is based in Maryland, close to the government epicenter. He has over 25 years of background experience in both technical and business development across critical infrastructures such as health care, energy, financial, and industrial. Much of his specialization is on the edge: things out in the hyperedge and embedded space, but also those hard problems in accelerating workloads and trying to get the most out of an architecture that translates up to enterprise and the cloud.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>David is based in Maryland, close to the government epicenter. He has over 25 years of background experience in both technical and business development across critical infrastructures such as health care, energy, financial, and industrial. Much of his specialization is on the edge: things out in the hyperedge and embedded space, but also those hard problems in accelerating workloads and trying to get the most out of an architecture that translates up to enterprise and the cloud.</p>
 <p>Darren, David, and some of their peers attended the IDC conference partly to see if their proposals and predictions were in line with the trends IDC has been seeing, and they came away feeling validated. They also went to see if there are gaps they need to understand and how they can leverage the ideas and services from IDC.</p>
 <p>The biggest long-term trend, upon which the whole conference was set, is digital-first, and how it is impacting virtually every market. Meredith Whalen, IDC Chief Research Officer, expanded on what digital-first really means. Essentially any organization, business or government, needs to ask how to make digitization into an actual product. By 2024, there is going to be about $10 trillion to spend across all markets in digital products alone. This consumer shift is forcing the government to look at digitization as well, not just in their services, but in how they approach it around world trade, economies, and currencies.</p>
 <p>This is a particular challenge for governments on every level because they grapple with computer networks on many different systems, and in many cases, they are siloed. Effective bridges don’t yet exist to link them together. Government systems need to look at how they can make things streamlined and simple.</p>
@@ -223,16 +283,65 @@
 <p>How close is digital first in reality? One example is digital tokens as real currency, such as in the gaming community. Digital tokens are part of this world relative to how apps and ecosystems use non-fungible data. Another example is in healthcare. Today, you go to the doctor or see them virtually, and they can see what is going on and you can describe symptoms. That all shifts through real-time wearables that can monitor glucose levels, heart rate, weight changes, etc. That data belongs to the individual, so it has to be secure and authenticated, but they can also use it for services that aren’t about symptoms, but tailored algorithms and services about what is actually happening in their body to get the best diagnoses.</p>
 <p>Data points to consider: Meredith Whalen brought up that in 2021  service spending exceeded regular licensed spending in IT for the first time. So, as a service is dominant currently; the trend is that it will move to an outcome-based model.  In 2023, IDC expects the digital spend will be greater than the non-digital spend in companies across the board. Each industry will vary, but on a macro level, 2023 is the tipping point. In 2024, the talent pool follows. IDC predicts that most companies will spend more on technical talent versus non-digital talent. </p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "IDC Directions 2022",
+  "episodeNumber": "83",
+  "datePublished": "+020220-04-08T07:00:00.000Z",
+  "description": "<p>On this episode, Darren, Chief Solution Architect, Public Sector, Intel and David Richard, Lead Solution Architect, Department of Defense, Intel reflect on the trends and ideas they gleaned from the 2022 IDC Directions conference.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "IDC Directions 2022 Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "IDC Directions 2022 Audio",
+      "contentUrl": "https://share.transistor.fm/e/5d171600"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "David Richard"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

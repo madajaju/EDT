@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, discusses the groundbreaking changes 5G will bring to edge and AI with Dr. Anna Scott, Chief Edge Architect, Intel.&lt;/p&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, discusses the groundbreaking changes 5G will bring to edge and AI with Dr. Anna Scott, Chief Edge Architect, Intel.&lt;/p&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, discusses the groundbreaking changes 5G will bring to edge and AI with Dr. Anna Scott, Chief Edge Architect, Intel.&lt;/p&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, discusses the groundbreaking changes 5G will bring to edge and AI with Dr. Anna Scott, Chief Edge Architect, Intel.&lt;/p&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -161,58 +187,92 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#62 Demystifying 5G, Edge and AI</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/50847ff2"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher, Chief Solution Architect, Intel, discusses the groundbreaking changes 5G will bring to edge and AI with Dr. Anna Scott, Chief Edge Architect, Intel.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #62 <span>Demystifying 5G, Edge and AI</span>
+    </h1>
+    <time datetime="2021-08-19T00:00:00.000Z"
+          itemprop="datePublished">
+      2021-08-19T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="62"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Demystifying 5G, Edge and AI">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Demystifying 5G, Edge and AI Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Demystifying 5G, Edge and AI">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/50847ff2">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/50847ff2"
+            title="Demystifying 5G, Edge and AI Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher, Chief Solution Architect, Intel, discusses the groundbreaking changes 5G will bring to edge and AI with Dr. Anna Scott, Chief Edge Architect, Intel.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=5g"
+           itemprop="keywords">5g</a>
+      
+        <a href="../../../en/search.html?query=iot"
+           itemprop="keywords">iot</a>
+      
+        <a href="../../../en/search.html?query=edgecomputing"
+           itemprop="keywords">edgecomputing</a>
+      
+        <a href="../../../en/search.html?query=artificialintelligence"
+           itemprop="keywords">artificialintelligence</a>
+      
+        <a href="../../../en/search.html?query=augmentedreality"
+           itemprop="keywords">augmentedreality</a>
+      
+        <a href="../../../en/search.html?query=generativeai"
+           itemprop="keywords">generativeai</a>
+      
+        <a href="../../../en/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../en/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../en/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../en/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../en/guests/anna-scott/index.html"
+           itemprop="name" target="_blank">Anna Scott</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=5g"><span>5g</span></a>
-                
-                    <a href="../../../en/search.html?query=iot"><span>iot</span></a>
-                
-                    <a href="../../../en/search.html?query=edgecomputing"><span>edgecomputing</span></a>
-                
-                    <a href="../../../en/search.html?query=artificialintelligence"><span>artificialintelligence</span></a>
-                
-                    <a href="../../../en/search.html?query=augmentedreality"><span>augmentedreality</span></a>
-                
-                    <a href="../../../en/search.html?query=generativeai"><span>generativeai</span></a>
-                
-                    <a href="../../../en/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../en/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../en/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../en/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../en/guests/anna-scott/index.html" target="_blank">Anna Scott</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>Anna’s background is in the industrial and manufacturing side in information. She has a PhD in chemical engineering, as well as an MBA. She spent 15 years working as a process and design engineer, later doing startup work and engineering management. She has been with Intel for a little over six years, the last two and a half working in the public sector team where she primarily supports Intel’s IoT and edge activities, with increasing involvement in 5G because 5G, along with AI, is dramatically changing that space.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>Anna’s background is in the industrial and manufacturing side in information. She has a PhD in chemical engineering, as well as an MBA. She spent 15 years working as a process and design engineer, later doing startup work and engineering management. She has been with Intel for a little over six years, the last two and a half working in the public sector team where she primarily supports Intel’s IoT and edge activities, with increasing involvement in 5G because 5G, along with AI, is dramatically changing that space.</p>
 <h2>Network Transformation Foundational to 5G Infrastructure</h2>
 <p>In the industrial world, IoT was not anything new; it was just hardwired. With systems now moving to wireless, they have the close coupling of IT plus OT to convert analytics, instead of just having a set of process data specific to that OT world. A different set systems now marry that to the business, so all of this is being pulled into the same space. Although there are some very defined differences in use cases and architectures in the public sector such as military and smart cities, there is a common convergence in the analysis, application, and timeframe to make better business decisions.</p>
 <p>One reason IoT has taken so long to move out of manufacturing and into other areas is primarily hardwiring cost. Security has also been a roadblock.</p>
@@ -237,16 +297,65 @@
 <p>Anna predicts that for non-control applications, the next two years will be different because of 5G. A simple example is that in industry, someone could take their regular PC out of the office and onto the factory floor and be able to do everything there. 5G will change what’s possible with respect to controls and doing control of robots and machines over a wireless network in the next five years. The next level of transformation will be that you can do control over a wireless network and do it safely and effectively, putting no one at risk. This will take a lot of validation and stringency of review, but it’s on the horizon.</p>
 <p>Also, it will be exciting what your favorite cloud service provider and telco are going to do together to change what’s possible from a services standpoint. </p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Demystifying 5G, Edge and AI",
+  "episodeNumber": "62",
+  "datePublished": "2021-08-19T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher, Chief Solution Architect, Intel, discusses the groundbreaking changes 5G will bring to edge and AI with Dr. Anna Scott, Chief Edge Architect, Intel.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Demystifying 5G, Edge and AI Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Demystifying 5G, Edge and AI Audio",
+      "contentUrl": "https://share.transistor.fm/e/50847ff2"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Anna Scott"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

@@ -159,48 +159,77 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#115 Blockieren und tackeln der Sicherheit</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/4c1b2203"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>In dieser Folge spricht Darren mit dem wiederkehrenden Gast John Evans, Chief Technology Advisor bei World Wide Technology (WWT), über Cybersicherheit.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #115 <span>Blockieren und tackeln der Sicherheit</span>
+    </h1>
+    <time datetime="2022-12-01T00:00:00.000Z"
+          itemprop="datePublished">
+      2022-12-01T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="115"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Blockieren und tackeln der Sicherheit">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Blockieren und tackeln der Sicherheit Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Blockieren und tackeln der Sicherheit">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/4c1b2203">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/4c1b2203"
+            title="Blockieren und tackeln der Sicherheit Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>In dieser Folge spricht Darren mit dem wiederkehrenden Gast John Evans, Chief Technology Advisor bei World Wide Technology (WWT), über Cybersicherheit.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../de/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../de/search.html?query=passwordpolicies"
+           itemprop="keywords">passwordpolicies</a>
+      
+        <a href="../../../de/search.html?query=compliance"
+           itemprop="keywords">compliance</a>
+      
+        <a href="../../../de/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../de/search.html?query=policy"
+           itemprop="keywords">policy</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../de/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../de/guests/john-evans/index.html"
+           itemprop="name" target="_blank">John Evans</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../de/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../de/search.html?query=passwordpolicies"><span>passwordpolicies</span></a>
-                
-                    <a href="../../../de/search.html?query=compliance"><span>compliance</span></a>
-                
-                    <a href="../../../de/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../de/search.html?query=policy"><span>policy</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../de/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../de/guests/john-evans/index.html" target="_blank">John Evans</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>Grundlegend für alle anderen Cyber-Sicherheitsmaßnahmen ist eine grundlegende Cyber-Hygiene. Viele Unternehmen müssen diese Grundlagen beachten. Dies wird durch aktuelle Nachrichtenschlagzeilen belegt, die einen Anstieg von Angriffen wie Distributed-Denial-of-Service-Angriffen zeigen, die leicht zu verhindern sein sollten.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>Grundlegend für alle anderen Cyber-Sicherheitsmaßnahmen ist eine grundlegende Cyber-Hygiene. Viele Unternehmen müssen diese Grundlagen beachten. Dies wird durch aktuelle Nachrichtenschlagzeilen belegt, die einen Anstieg von Angriffen wie Distributed-Denial-of-Service-Angriffen zeigen, die leicht zu verhindern sein sollten.</p>
 <p>Aus seiner Erfahrung in der Arbeit mit der staatlichen Gemeinde glaubt John, dass die meisten Angriffe einer typischen Angriffskette folgen. Die meisten Angriffe auf staatliche und lokale Regierungen resultieren aus freiliegenden Netzwerkprotokollen oder E-Mail-Phishing. Diese stellen attraktive Eintrittspunkte für Hacker dar, und sobald sie drin sind, sind schlechte Patching-Praktiken oft der Grund, warum sie Fuß fassen und sich seitlich bewegen können. Das zusammen mit schwachen Passwortrichtlinien oder schwacher Durchsetzung von Passwortrichtlinien und Unfähigkeit zur Wiederherstellung kann zu einer Katastrophe führen.</p>
 <p>In einem 2019 viel beachteten Ransomware-Zwischenfall nahm die betroffene Organisation an, dass sie sicher sei, da sie dieselbe Datenmenge in ihrer Produktions- und Backup-Umgebung hatte. Aber sie hatten ihre Backups oder Wiederherstellungsfähigkeiten nie getestet, was sich als schlecht erwies. Eine grundlegende Cybersicherheit hätte diesen Vorfall verhindern können.</p>
 <p>Es gibt vier wesentliche Grundlagen, auf die jede Organisation achten sollte. Erstens müssen sie die Menschen wiederholt schulen, um Phishing-Betrug zu vermeiden. Das Training mag wiederholt oder banal erscheinen, aber dass Menschen auf diese Betrugsversuche hereinfallen, ist eine erhebliche Schwachstelle in einer Organisation. Hoffentlich werden Passwörter in naher Zukunft nicht mehr nötig sein.</p>
@@ -218,16 +247,65 @@
 <p>Digitale Identität wird immer ausgeklügelter. John glaubt, dass unsere Transaktionen in Zukunft hauptsächlich auf einem Ansatz des sogenannten &quot;Zero Trust&quot; basieren werden. Zum Beispiel, wenn er $10.000 von seiner Bank auf ein Offshore-Konto überweisen möchte, sollte die Bank sicherstellen, dass es sich tatsächlich um ihn handelt und diese Transaktion behandeln, als würde jemand versuchen, auf sehr sensible, hochriskante Informationen zuzugreifen. Wenn er jedoch in den Laden geht, um eine Tasse Kaffee für einen Dollar zu kaufen, ist diese Art von Sicherheit nicht notwendig. Viele der &quot;Zero Trust&quot; Prinzipien werden sich in unseren Alltag integrieren.</p>
 <p>Benutzerverhaltensanalyse wird ebenfalls ins Spiel kommen. Genauso wie ein Kreditkartenunternehmen bei ungewöhnlichen Einkäufen Alarm schlägt, zum Beispiel, wenn ein System weiß, dass John 20 Wörter pro Minute tippt und plötzlich 100 Wörter pro Minute tippt und versucht, auf sensible Informationen zuzugreifen, gibt es eine Warnung.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Blockieren und tackeln der Sicherheit",
+  "episodeNumber": "115",
+  "datePublished": "2022-12-01T00:00:00.000Z",
+  "description": "<p>In dieser Folge spricht Darren mit dem wiederkehrenden Gast John Evans, Chief Technology Advisor bei World Wide Technology (WWT), über Cybersicherheit.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Blockieren und tackeln der Sicherheit Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Blockieren und tackeln der Sicherheit Audio",
+      "contentUrl": "https://share.transistor.fm/e/4c1b2203"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "John Evans"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Urheberrecht &copy; 2025 Paidar Productions LLC</p>

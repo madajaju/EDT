@@ -160,52 +160,83 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#8 Asegurando al teletrabajador Parte 2.</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/2PazR1MX2wc?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/5fc292e0"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Con muchos empleados trabajando desde casa ahora, ¿cómo te aseguras de que estén trabajando de manera segura pero aún así les das la flexibilidad que necesitan para completar sus tareas? En este episodio, Darren y el invitado especial Steve Orrin, CTO de Intel Federal, discuten cómo aprovechar la tecnología de Intel para ayudar de manera efectiva a proteger al teletrabajador.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #8 <span>Asegurando al teletrabajador Parte 2.</span>
+    </h1>
+    <time datetime="2020-07-21T00:00:00.000Z"
+          itemprop="datePublished">
+      2020-07-21T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="8"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Asegurando al teletrabajador Parte 2.">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/2PazR1MX2wc">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/2PazR1MX2wc?autoplay=1"
+            title="Asegurando al teletrabajador Parte 2. Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Asegurando al teletrabajador Parte 2.">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/5fc292e0">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/5fc292e0"
+            title="Asegurando al teletrabajador Parte 2. Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Con muchos empleados trabajando desde casa ahora, ¿cómo te aseguras de que estén trabajando de manera segura pero aún así les das la flexibilidad que necesitan para completar sus tareas? En este episodio, Darren y el invitado especial Steve Orrin, CTO de Intel Federal, discuten cómo aprovechar la tecnología de Intel para ayudar de manera efectiva a proteger al teletrabajador.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../es/search.html?query=datamanagement"
+           itemprop="keywords">datamanagement</a>
+      
+        <a href="../../../es/search.html?query=encryption"
+           itemprop="keywords">encryption</a>
+      
+        <a href="../../../es/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../es/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../es/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../es/search.html?query=policy"
+           itemprop="keywords">policy</a>
+      
+        <a href="../../../es/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../es/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../es/guests/steve-orrin/index.html"
+           itemprop="name" target="_blank">Steve Orrin</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../es/search.html?query=datamanagement"><span>datamanagement</span></a>
-                
-                    <a href="../../../es/search.html?query=encryption"><span>encryption</span></a>
-                
-                    <a href="../../../es/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../es/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../es/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../es/search.html?query=policy"><span>policy</span></a>
-                
-                    <a href="../../../es/search.html?query=process"><span>process</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../es/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../es/guests/steve-orrin/index.html" target="_blank">Steve Orrin</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>Tecnologías para asegurar al trabajador remoto.</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>Tecnologías para asegurar al trabajador remoto.</h2>
 <p>La seguridad en el lado del cliente comienza y termina con la capacidad de verificar al cliente mediante un arranque seguro. Intel ha proporcionado esta tecnología en los sistemas de nuestros clientes durante años con Secure Boot con Trusted Execution Technology (TXT) y, más recientemente, BootGuard (BtG). En las plataformas más recientes, tenemos Intel Hardware Shield, un conjunto de tecnologías que aseguran el sistema en su nivel más bajo, en el firmware y el nivel del BIOS. Así es como un sistema de control de acceso empresarial puede verificar que un cliente se haya iniciado de manera segura y tenga el firmware correcto y los controles de seguridad correctos antes de acceder a la empresa.</p>
 <p>Intel también ha realizado mucho trabajo a lo largo de los años para ayudar a las organizaciones a proteger mejor sus datos. Además, hemos permitido que el cliente active el cifrado en todas partes sin afectar al rendimiento. Hemos estado implementando nuevas instrucciones en casi todas las generaciones de nuestros productos, agregando nuevas capacidades para asegurar al teletrabajador.</p>
 <p>Nuestro otro enfoque ha sido proteger las aplicaciones y sus datos en uso. Aquí es donde entran en juego las Extensiones de Intel Software Guard (SGX, por sus siglas en inglés). Esto brinda a las organizaciones la capacidad de colocar partes clave de las aplicaciones y datos importantes en recintos de memoria seguros y encriptados. Con el teletrabajo, esto significa que puedes implementar aplicaciones en entornos no confiables y mantener un alto nivel de seguridad.</p>
@@ -222,16 +253,65 @@
 <p>Un plan a largo plazo para la seguridad en un entorno con trabajadores remotos es ahora necesario, ya sea para un cambio permanente hacia más trabajadores a distancia o para enfrentar otra pandemia o situación similar. Hay varios pasos que las organizaciones deben tomar ahora para apoyar esta realidad en el futuro.</p>
 <p>Una de las mejores prácticas es implementar políticas de confianza cero. Esto reduce la dependencia de tener que confiar en todos los aspectos de los usuarios y clientes que ingresan. Además, la autenticación multifactor con usuarios y dispositivos debería convertirse en estándar en toda la organización. Para aquellos que aún no han adoptado ERM y el control de acceso a datos basado en políticas, ahora es el momento de hacerlo para proteger los datos tanto fuera como dentro del lugar de trabajo. Es importante implementar soluciones de seguridad en múltiples capas en lugar de solo a nivel de aplicación o de red. Esto incluye el inicio seguro con certificación, la virtualización y la seguridad de contención, y la seguridad y monitorización del firmware. Es importante ampliar la auditoría, la inteligencia de amenazas y la monitorización a los entornos de teletrabajo, a pesar de la resistencia de los usuarios que no desean una mayor monitorización en sus sistemas. También se debe considerar ampliar la seguridad más allá del dispositivo en las ubicaciones de teletrabajo siempre que sea posible, como en dispositivos y redes gestionadas.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Asegurando al teletrabajador Parte 2.",
+  "episodeNumber": "8",
+  "datePublished": "2020-07-21T00:00:00.000Z",
+  "description": "<p>Con muchos empleados trabajando desde casa ahora, ¿cómo te aseguras de que estén trabajando de manera segura pero aún así les das la flexibilidad que necesitan para completar sus tareas? En este episodio, Darren y el invitado especial Steve Orrin, CTO de Intel Federal, discuten cómo aprovechar la tecnología de Intel para ayudar de manera efectiva a proteger al teletrabajador.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Asegurando al teletrabajador Parte 2. Video",
+      "embedUrl": "https://www.youtube.com/embed/2PazR1MX2wc"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Asegurando al teletrabajador Parte 2. Audio",
+      "contentUrl": "https://share.transistor.fm/e/5fc292e0"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Steve Orrin"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

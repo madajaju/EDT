@@ -160,52 +160,83 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#20 Distruggere la complessità dei livelli di archiviazione</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/a3a3329f"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Randy Hayes di VAST Data e Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, discutono dell&#39;innovativa architettura di storage di VAST Data che elimina la necessità di livelli utilizzando NVMe over Fabrics, QLC Flash e 3D XPoint Optane.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #20 <span>Distruggere la complessità dei livelli di archiviazione</span>
+    </h1>
+    <time datetime="2020-09-09T00:00:00.000Z"
+          itemprop="datePublished">
+      2020-09-09T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="20"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Distruggere la complessità dei livelli di archiviazione">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Distruggere la complessità dei livelli di archiviazione Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Distruggere la complessità dei livelli di archiviazione">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/a3a3329f">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/a3a3329f"
+            title="Distruggere la complessità dei livelli di archiviazione Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Randy Hayes di VAST Data e Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, discutono dell&#39;innovativa architettura di storage di VAST Data che elimina la necessità di livelli utilizzando NVMe over Fabrics, QLC Flash e 3D XPoint Optane.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../it/search.html?query=storage"
+           itemprop="keywords">storage</a>
+      
+        <a href="../../../it/search.html?query=cloudcomputing"
+           itemprop="keywords">cloudcomputing</a>
+      
+        <a href="../../../it/search.html?query=datamanagement"
+           itemprop="keywords">datamanagement</a>
+      
+        <a href="../../../it/search.html?query=dataarchitecture"
+           itemprop="keywords">dataarchitecture</a>
+      
+        <a href="../../../it/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../it/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../it/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../it/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../it/guests/randy-hayes/index.html"
+           itemprop="name" target="_blank">Randy Hayes</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../it/search.html?query=storage"><span>storage</span></a>
-                
-                    <a href="../../../it/search.html?query=cloudcomputing"><span>cloudcomputing</span></a>
-                
-                    <a href="../../../it/search.html?query=datamanagement"><span>datamanagement</span></a>
-                
-                    <a href="../../../it/search.html?query=dataarchitecture"><span>dataarchitecture</span></a>
-                
-                    <a href="../../../it/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../it/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../it/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../it/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../it/guests/randy-hayes/index.html" target="_blank">Randy Hayes</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>Trent&#39;anni di complessità di archiviazione</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>Trent&#39;anni di complessità di archiviazione</h2>
 <p>L&#39;archiviazione potrebbe essere un concetto vecchio, ma VAST Data è diventata una startup di successo in poco più di un anno di vendite. VAST ha sostituito la vecchia architettura dei sistemi di archiviazione a più livelli con un unico sistema monolitico che è veloce ed economico. Le soluzioni VAST eliminano anche il problema dei grossi e disordinati sistemi di archiviazione composti da diversi sistemi di file e diverse architetture.</p>
 <h2>Una Fondazione per una Nuova Architettura</h2>
 <p>Il fondatore di VAST stava analizzando lo storage da una prospettiva totalmente nuova. Ha scoperto che i clienti non avevano necessariamente bisogno di prestazioni superiori dal Flash, ma avevano bisogno di supporto per lo storage di file e oggetti a un costo inferiore. Ha sfruttato tre tecnologie che non esistevano prima del 2018. La prima è NVMe over Fabrics, che viene utilizzato come una sorta di SAN ad iperscala per collegare tutto insieme con bassa latenza. Successivamente c&#39;è il QLC Flash, perché è economico e non ha parti in movimento come gli hard disk. La terza è l&#39;Intel 3D XPoint Optane. Optane ha una parità di lettura-scrittura ed è molto resistente ad un prezzo ragionevole. Unendo queste tre tecnologie, VAST è in grado di offrire ai clienti prestazioni all-flash, ma a un prezzo paragonabile a quello di un hard disk. Elimina la necessità di altri livelli che le organizzazioni acquistano perché sono economici.</p>
@@ -220,16 +251,65 @@
 <p>Questa non è solo una soluzione ideata per i cluster HPC; non è costosa. Molte aziende utilizzano VAST prima per il backup per stabilire la fiducia. Ad esempio, il National Cancer Institute ha un archivio di librerie a nastro e voleva essere in grado di accedere alle informazioni più velocemente. Hanno valutato diverse piattaforme e VAST è risultato più conveniente e dotato di un sistema All-Flash, più veloce del loro sistema di produzione NAS. Quindi la soluzione ha un buon rapporto qualità-prezzo ed è utile per la condivisione generale dei file e una varietà di carichi di lavoro, come l&#39;IA, l&#39;analisi dei log, Splunk, ecc., non solo per l&#39;HPC. Le soluzioni VAST sono semplici da gestire e veramente universali.</p>
 <p>VAST è una giovane azienda, ma ha diverse installazioni in agenzie governative come l&#39;Istituto Nazionale della Salute e i Tri-labs del Dipartimento dell&#39;Energia, dove è necessario un alto livello di prestazioni per questi supercomputer. Si tratta di un potente sistema in alcuni dei più grandi ambienti HPC al mondo, che supporta applicazioni mission-critical.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Distruggere la complessità dei livelli di archiviazione",
+  "episodeNumber": "20",
+  "datePublished": "2020-09-09T00:00:00.000Z",
+  "description": "<p>Randy Hayes di VAST Data e Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, discutono dell&#39;innovativa architettura di storage di VAST Data che elimina la necessità di livelli utilizzando NVMe over Fabrics, QLC Flash e 3D XPoint Optane.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Distruggere la complessità dei livelli di archiviazione Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Distruggere la complessità dei livelli di archiviazione Audio",
+      "contentUrl": "https://share.transistor.fm/e/a3a3329f"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Randy Hayes"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

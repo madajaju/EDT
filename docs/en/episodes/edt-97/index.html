@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;Darren Pulsipher, Chief Solutions Architect, Intel, Dr. Hadi Ahmadi, Director of Solutions Architecture, Katana Graph discuss the benefits of graph databases. &lt;/p&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;Darren Pulsipher, Chief Solutions Architect, Intel, Dr. Hadi Ahmadi, Director of Solutions Architecture, Katana Graph discuss the benefits of graph databases. &lt;/p&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;Darren Pulsipher, Chief Solutions Architect, Intel, Dr. Hadi Ahmadi, Director of Solutions Architecture, Katana Graph discuss the benefits of graph databases. &lt;/p&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;Darren Pulsipher, Chief Solutions Architect, Intel, Dr. Hadi Ahmadi, Director of Solutions Architecture, Katana Graph discuss the benefits of graph databases. &lt;/p&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -161,58 +187,92 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#97 The Benefits of Graph Databses</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/c81eaabc"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher, Chief Solutions Architect, Intel, Dr. Hadi Ahmadi, Director of Solutions Architecture, Katana Graph discuss the benefits of graph databases. </p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #97 <span>The Benefits of Graph Databses</span>
+    </h1>
+    <time datetime="2022-07-28T00:00:00.000Z"
+          itemprop="datePublished">
+      2022-07-28T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="97"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="The Benefits of Graph Databses">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="The Benefits of Graph Databses Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="The Benefits of Graph Databses">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/c81eaabc">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/c81eaabc"
+            title="The Benefits of Graph Databses Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher, Chief Solutions Architect, Intel, Dr. Hadi Ahmadi, Director of Solutions Architecture, Katana Graph discuss the benefits of graph databases. </p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../en/search.html?query=datamodeling"
+           itemprop="keywords">datamodeling</a>
+      
+        <a href="../../../en/search.html?query=identitymanagement"
+           itemprop="keywords">identitymanagement</a>
+      
+        <a href="../../../en/search.html?query=dataanalytics"
+           itemprop="keywords">dataanalytics</a>
+      
+        <a href="../../../en/search.html?query=generativeai"
+           itemprop="keywords">generativeai</a>
+      
+        <a href="../../../en/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../en/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../en/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../en/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../en/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../en/guests/hadi-ahmadi/index.html"
+           itemprop="name" target="_blank">Hadi Ahmadi</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../en/search.html?query=datamodeling"><span>datamodeling</span></a>
-                
-                    <a href="../../../en/search.html?query=identitymanagement"><span>identitymanagement</span></a>
-                
-                    <a href="../../../en/search.html?query=dataanalytics"><span>dataanalytics</span></a>
-                
-                    <a href="../../../en/search.html?query=generativeai"><span>generativeai</span></a>
-                
-                    <a href="../../../en/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../en/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../en/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../en/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../en/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../en/guests/hadi-ahmadi/index.html" target="_blank">Hadi Ahmadi</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>Hadi earned his Ph.D. in computer science in 2012 and researched cryptography and network information security. He worked in academia for a few years and then moved into industry, focused on different aspects of security solutions, including identity and access management. He began to learn more about graph modeling in 2015 and realized how graph data modeling could solve some of the exciting and complex problems in his field of study.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>Hadi earned his Ph.D. in computer science in 2012 and researched cryptography and network information security. He worked in academia for a few years and then moved into industry, focused on different aspects of security solutions, including identity and access management. He began to learn more about graph modeling in 2015 and realized how graph data modeling could solve some of the exciting and complex problems in his field of study.</p>
 <p>In graph databases, a graph does not mean charts or graphical interfaces but a way to structure data at the storage level so it can be retrieved and processed for some complex problems, especially if the data is interconnected. The graph offers many benefits and can complement existing data structures or solutions, such as relational database models or object storage.</p>
 <p>The main difference between graph and relational databases is that while both are about relationships, relational databases take the relationships to the metadata and schema level, whereas graph databases are data-driven relationships. In other words, you are relating columns of tables in relational databases. To introduce a new relationship, you must change your schema. The graph provides a schema-less infrastructure where you can add more structure around your data but still be flexible so you can ingest any unstructured data.</p>
 <p>Half of the world’s data has been created within the last few years, collected from many different sources, but less than two percent has been analyzed, most of which is structured data. The data is being collected, but the information is insufficient for processing. There must be a way to flexibly add a bit of structure that’s dynamic enough to change if you are uncertain but still benefit from the advanced optimized computation. The graph is an excellent way to do this.</p>
@@ -229,16 +289,65 @@
 <p>Good use cases of graphs would be the early invention of graph solutions specific to some companies such as LinkedIn and Facebook that have their social graphs. Now, a natural fit is in e-commerce for recommendation engines. Finding connections between customers, accounts, purchases, and other behaviors will enable better recommendations immediately to the shoppers in a way that can’t be done with relational database queries.</p>
 <p>To find out more about Katana or how to contact Hadi, go to embracingdigital.org.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "The Benefits of Graph Databses",
+  "episodeNumber": "97",
+  "datePublished": "2022-07-28T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher, Chief Solutions Architect, Intel, Dr. Hadi Ahmadi, Director of Solutions Architecture, Katana Graph discuss the benefits of graph databases. </p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "The Benefits of Graph Databses Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "The Benefits of Graph Databses Audio",
+      "contentUrl": "https://share.transistor.fm/e/c81eaabc"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Hadi Ahmadi"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

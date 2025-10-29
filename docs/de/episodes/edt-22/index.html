@@ -159,53 +159,83 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#22 Ein Argument für Multi-Hybrid Cloud.</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/e22edf51"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher beschreibt, warum ein Multi-Hybrid Cloud Architekt möglicherweise bereits in Ihrem Rechenzentrum vorhanden sein könnte. Die meisten Organisationen haben bereits alle Zutaten. Sie müssen nur wissen, wie sie zusammenpassen.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #22 <span>Ein Argument für Multi-Hybrid Cloud.</span>
+    </h1>
+    <time datetime="2020-09-23T00:00:00.000Z"
+          itemprop="datePublished">
+      2020-09-23T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="22"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Ein Argument für Multi-Hybrid Cloud.">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Ein Argument für Multi-Hybrid Cloud. Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Ein Argument für Multi-Hybrid Cloud.">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/e22edf51">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/e22edf51"
+            title="Ein Argument für Multi-Hybrid Cloud. Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher beschreibt, warum ein Multi-Hybrid Cloud Architekt möglicherweise bereits in Ihrem Rechenzentrum vorhanden sein könnte. Die meisten Organisationen haben bereits alle Zutaten. Sie müssen nur wissen, wie sie zusammenpassen.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../de/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../de/search.html?query=devops"
+           itemprop="keywords">devops</a>
+      
+        <a href="../../../de/search.html?query=publiccloud"
+           itemprop="keywords">publiccloud</a>
+      
+        <a href="../../../de/search.html?query=privatecloud"
+           itemprop="keywords">privatecloud</a>
+      
+        <a href="../../../de/search.html?query=infrastructuremanagement"
+           itemprop="keywords">infrastructuremanagement</a>
+      
+        <a href="../../../de/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../de/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../de/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../de/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../de/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../de/search.html?query=devops"><span>devops</span></a>
-                
-                    <a href="../../../de/search.html?query=publiccloud"><span>publiccloud</span></a>
-                
-                    <a href="../../../de/search.html?query=privatecloud"><span>privatecloud</span></a>
-                
-                    <a href="../../../de/search.html?query=infrastructuremanagement"><span>infrastructuremanagement</span></a>
-                
-                    <a href="../../../de/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../de/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../de/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../de/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>Aktuelle Cloud-Umgebung.</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>Aktuelle Cloud-Umgebung.</h2>
 <p>In den letzten fünf Jahren hat es eine grundlegende Veränderung in der IT-Umgebung gegeben. Das kontinuierliche Wachstum der öffentlichen Cloud und das Aufkommen von privaten Cloud-Optionen haben viele CIOs und IT-Abteilungen ins Hintertreffen geraten lassen. In dem heutigen wettbewerbsintensiven Markt müssen viele Entwicklungsteams schneller vorankommen als die meisten IT-Abteilungen liefern können. Entwicklungsteams haben öffentliche Clouds wie AWS, GCE und Azure als eine praktikable Option für die altmodische &quot;Unter-dem-Schreibtisch&quot;-&quot;Hobby-IT&quot; gefunden. Die öffentlichen Cloud-Anbieter haben das schnelle und einfache Einrichten neuer Infrastrukturen ermöglicht. Es ist nicht mehr nötig, auf mehrere Ebenen technischer und geschäftlicher Genehmigungen, physischen Platz im Rechenzentrum und Lieferprobleme der Anbieter zu warten. Jetzt kann ein Entwicklungsteam innerhalb von Minuten die gesamte Infrastruktur für ihr neues Projekt bereitstellen.</p>
 <p>Vor der öffentlichen Cloud konnten CIO(s) leicht &quot;umhergehen&quot; und die Anzahl der &quot;Cottage IT&quot; -Maschinen unter den Schreibtischen der Menschen zählen. Mit den physischen Maschinen, die den IT-Abteilungen nicht mehr sichtbar sind, ist es unmöglich, Teams und die Infrastrukturen ihrer Projekte zu identifizieren. Viele öffentliche Clouds haben Organisationen die Möglichkeit gegeben, die Buchhaltung von allen Konten für bestimmte Domains zu konsolidieren, aber die Sichtbarkeit darüber, was läuft und wer an der Infrastruktur arbeitet, ist immer noch eine Art &quot;Schnitzeljagd&quot;. Oft werden diese &quot;Schurken&quot; -Projekte sichtbar, wenn Projekte marktfähig gemacht werden sollen und in eine unternehmenseigene Infrastruktur eingebracht werden müssen. Sicherheits-, Datenschutz- und Regulierungspolitiken können die &quot;Marktfähigkeit&quot; von Projekten nahezu unmöglich machen. Vor allem, wenn Entwickler ihre Anwendungen eng an die Cloud-Infrastruktur gekoppelt haben.</p>
 <p>Zukunftsorientierte IT-Abteilungen geben ihr Bestes, um &quot;Cottage IT&quot; zu erfassen, indem sie mit Public Clouds und ISVs zusammenarbeiten, um &quot;Unternehmensportale&quot; in die Clouds zu integrieren. Das Einrichten eines Durchgangsportals ist ein guter Anfang, um Projekte mit Infrastruktur zu erfassen, aber viele Organisationen stellen fest, dass nur ein Portal die Entwicklungsteams nicht zufriedenstellt. In den letzten Jahren habe ich mit vielen dieser Organisationen zusammengearbeitet, um Anwendungsfälle, Architekturen und Technologien zu identifizieren, um diese erweiterten Portale zu entwickeln, die wir Hybrid Multi-Clouds (MHC) nennen. In der Regel werden drei Haupttechnologien integriert, um diese MHCs aufzubauen: Cloud Management Plattformen (CMPs), Automatisierungsframeworks und Platform as a Service-Tools (PaaS).</p>
@@ -238,16 +268,60 @@
 <h2>Bereitstellung einer Lösung</h2>
 <p>Das hybride Multi-Cloud-Ökosystem ist noch recht neu und erfordert immer noch einige umfangreiche Integrationen zwischen den Tools. Es gibt einige Tools, die bereits vollständige Lösungen bieten, allerdings mit ihrer eigenen Sicht auf die Welt. Aufgrund der jungen Entwicklungsphase des Ökosystems gibt es viele Akteure und Auswahlmöglichkeiten. Die Zeit wird zeigen, wer diesen Bereich dominieren wird. Momentan wird es interessant sein, zu beobachten, wie die Tools zusammenkommen und eine einheitliche Basis schaffen, während die Funktionen ausgereift werden.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Ein Argument für Multi-Hybrid Cloud.",
+  "episodeNumber": "22",
+  "datePublished": "2020-09-23T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher beschreibt, warum ein Multi-Hybrid Cloud Architekt möglicherweise bereits in Ihrem Rechenzentrum vorhanden sein könnte. Die meisten Organisationen haben bereits alle Zutaten. Sie müssen nur wissen, wie sie zusammenpassen.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Ein Argument für Multi-Hybrid Cloud. Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Ein Argument für Multi-Hybrid Cloud. Audio",
+      "contentUrl": "https://share.transistor.fm/e/e22edf51"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Urheberrecht &copy; 2025 Paidar Productions LLC</p>

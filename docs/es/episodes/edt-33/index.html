@@ -160,59 +160,92 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#33 El apagón de AWS de noviembre de 2020</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/XquYoUXxJks?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/e81503fc"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher, Arquitecto Principal de Soluciones del Sector Público en Intel, habla sobre las lecciones aprendidas de la interrupción de AWS en noviembre de 2020 y soluciones preventivas para navegar por dichas interrupciones.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #33 <span>El apagón de AWS de noviembre de 2020</span>
+    </h1>
+    <time datetime="2020-12-15T00:00:00.000Z"
+          itemprop="datePublished">
+      2020-12-15T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="33"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="El apagón de AWS de noviembre de 2020">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/XquYoUXxJks">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/XquYoUXxJks?autoplay=1"
+            title="El apagón de AWS de noviembre de 2020 Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="El apagón de AWS de noviembre de 2020">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/e81503fc">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/e81503fc"
+            title="El apagón de AWS de noviembre de 2020 Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher, Arquitecto Principal de Soluciones del Sector Público en Intel, habla sobre las lecciones aprendidas de la interrupción de AWS en noviembre de 2020 y soluciones preventivas para navegar por dichas interrupciones.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../es/search.html?query=aws"
+           itemprop="keywords">aws</a>
+      
+        <a href="../../../es/search.html?query=datamanagement"
+           itemprop="keywords">datamanagement</a>
+      
+        <a href="../../../es/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../es/search.html?query=devops"
+           itemprop="keywords">devops</a>
+      
+        <a href="../../../es/search.html?query=microservices"
+           itemprop="keywords">microservices</a>
+      
+        <a href="../../../es/search.html?query=incidentresponse"
+           itemprop="keywords">incidentresponse</a>
+      
+        <a href="../../../es/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../es/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../es/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+        <a href="../../../es/search.html?query=policy"
+           itemprop="keywords">policy</a>
+      
+        <a href="../../../es/search.html?query=people"
+           itemprop="keywords">people</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../es/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../es/search.html?query=aws"><span>aws</span></a>
-                
-                    <a href="../../../es/search.html?query=datamanagement"><span>datamanagement</span></a>
-                
-                    <a href="../../../es/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../es/search.html?query=devops"><span>devops</span></a>
-                
-                    <a href="../../../es/search.html?query=microservices"><span>microservices</span></a>
-                
-                    <a href="../../../es/search.html?query=incidentresponse"><span>incidentresponse</span></a>
-                
-                    <a href="../../../es/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../es/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../es/search.html?query=technology"><span>technology</span></a>
-                
-                    <a href="../../../es/search.html?query=policy"><span>policy</span></a>
-                
-                    <a href="../../../es/search.html?query=people"><span>people</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../es/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>Lo que aprendimos del apagón de AWS.</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>Lo que aprendimos del apagón de AWS.</h2>
 <p>Amazon Web Services (AWS) sufrió un importante tiempo de inactividad en un momento inoportuno: el día antes del Día de Acción de Gracias en 2020. Dado que publicaron los registros de su servicio, resulta interesante revisarlos para ver qué sucedió y qué podemos aprender.</p>
 <h2>Cronología del Corte de Servicio de AWS</h2>
 <p>El miércoles 25 de noviembre de 2020, alrededor de las 3:00 am PST, AWS estaba actualizando la región Este, agregando servidores para aumentar la capacidad de Kinesis. Kinesis es un servicio de IA popular que realiza coincidencias de patrones en archivos de registro y archivos de video. Aproximadamente una hora y media después de la actualización, las alarmas del servidor comenzaron a mostrar errores en los registros de Kinesis. Bastante rápido, para las 8 am, identificaron inicialmente un par de posibles causantes en los servicios de front-end. Kinesis tiene varios servicios más pequeños, un grupo de servicios de front-end y un grupo de servicios de back-end. De acuerdo con la arquitectura del sistema, cada vez que un servicio de back-end se está ejecutando, se dispara un hilo en el front-end. Uno de los problemas fue que el front-end alcanzó el umbral de hilos a medida que se añadían servidores al back-end durante la actualización. Una vez que determinaron este problema, realizaron una solución temporal con actualizaciones (parches) para el sistema operativo y Kinesis volvió a estar en línea alrededor de las 10:30 pm y totalmente restaurado para la 1:15 am del 26 de noviembre. En total, Kinesis no estuvo completamente operativo durante 21 horas y, aunque no todos utilizan esta herramienta de IA, el impacto fue amplio.</p>
@@ -242,16 +275,60 @@
 <p><a href="https://www.washingtonpost.com/technology/2020/11/28/amazon-outage-explained">https://www.washingtonpost.com/technology/2020/11/28/amazon-outage-explained</a></p>
 <p>Explicación de la interrupción de Amazon</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "El apagón de AWS de noviembre de 2020",
+  "episodeNumber": "33",
+  "datePublished": "2020-12-15T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher, Arquitecto Principal de Soluciones del Sector Público en Intel, habla sobre las lecciones aprendidas de la interrupción de AWS en noviembre de 2020 y soluciones preventivas para navegar por dichas interrupciones.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "El apagón de AWS de noviembre de 2020 Video",
+      "embedUrl": "https://www.youtube.com/embed/XquYoUXxJks"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "El apagón de AWS de noviembre de 2020 Audio",
+      "contentUrl": "https://share.transistor.fm/e/e81503fc"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

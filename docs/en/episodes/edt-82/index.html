@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, continues his conversation with Sarah Musick, Cloud Solution Architect, Intel, about the shift from infrastructure to workloads. Please place in the Embracing Digital Transformation playlist.&lt;/p&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, continues his conversation with Sarah Musick, Cloud Solution Architect, Intel, about the shift from infrastructure to workloads. Please place in the Embracing Digital Transformation playlist.&lt;/p&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, continues his conversation with Sarah Musick, Cloud Solution Architect, Intel, about the shift from infrastructure to workloads. Please place in the Embracing Digital Transformation playlist.&lt;/p&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;Darren Pulsipher, Chief Solution Architect, Intel, continues his conversation with Sarah Musick, Cloud Solution Architect, Intel, about the shift from infrastructure to workloads. Please place in the Embracing Digital Transformation playlist.&lt;/p&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -161,52 +187,83 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#82 Shifting from Infrastructure to Workloads</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/a37c2b5e"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher, Chief Solution Architect, Intel, continues his conversation with Sarah Musick, Cloud Solution Architect, Intel, about the shift from infrastructure to workloads. Please place in the Embracing Digital Transformation playlist.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #82 <span>Shifting from Infrastructure to Workloads</span>
+    </h1>
+    <time datetime="2022-03-31T00:00:00.000Z"
+          itemprop="datePublished">
+      2022-03-31T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="82"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Shifting from Infrastructure to Workloads">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Shifting from Infrastructure to Workloads Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Shifting from Infrastructure to Workloads">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/a37c2b5e">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/a37c2b5e"
+            title="Shifting from Infrastructure to Workloads Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher, Chief Solution Architect, Intel, continues his conversation with Sarah Musick, Cloud Solution Architect, Intel, about the shift from infrastructure to workloads. Please place in the Embracing Digital Transformation playlist.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../en/search.html?query=cloudnative"
+           itemprop="keywords">cloudnative</a>
+      
+        <a href="../../../en/search.html?query=cloudmigration"
+           itemprop="keywords">cloudmigration</a>
+      
+        <a href="../../../en/search.html?query=innovation"
+           itemprop="keywords">innovation</a>
+      
+        <a href="../../../en/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../en/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../en/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../en/guests/sarah-musick/index.html"
+           itemprop="name" target="_blank">Sarah Musick</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../en/search.html?query=cloudnative"><span>cloudnative</span></a>
-                
-                    <a href="../../../en/search.html?query=cloudmigration"><span>cloudmigration</span></a>
-                
-                    <a href="../../../en/search.html?query=innovation"><span>innovation</span></a>
-                
-                    <a href="../../../en/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../en/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../en/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../en/guests/sarah-musick/index.html" target="_blank">Sarah Musick</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>Sarah’s conversations with customers have shifted from talking about infrastructure to talking about workloads. One obvious reason for this has been the shift from the data center to commoditizing resources to consuming anything as a service. Another reason is the influence of app teams in architectural decisions. The applications are the lifeblood of organizations in a way that they were not even five years ago. The last reason is financial: budgets are now categorized by workloads as opposed generalized IT spend.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>Sarah’s conversations with customers have shifted from talking about infrastructure to talking about workloads. One obvious reason for this has been the shift from the data center to commoditizing resources to consuming anything as a service. Another reason is the influence of app teams in architectural decisions. The applications are the lifeblood of organizations in a way that they were not even five years ago. The last reason is financial: budgets are now categorized by workloads as opposed generalized IT spend.</p>
 <p>One challenge in this shift from infrastructure to workload is striking a balance between centralized and decentralized processes and workloads.  Some things, such as security governance, are handled by a centralized hub, and others are handled in local, smaller teams. Much of the decision-making is being pushed down into the teams that are creating new applications and services inside IT and also just for customers.</p>
 <p>COVID was an accelerant to promote change and move organizations to the cloud. Some IT organizations are letting their applications move to the cloud without constraints, and would rather clean up on the back end than slow down the innovation that is occurring. This “Black Swan” event is unprecedented and we are still seeing the fallout from the quick paradigm shift.</p>
 <p>The role of the CIO is back, but only if they start thinking about information and workloads again instead of running a data center.  Of course, it depends on the organization. Cloud-native organizations, or those that aspire to be cloud-native, are refactoring their applications in flight because they want to be super agile. The more they do that, the more it drives toward infrastructure and service of the application rather than accepting limits that existed in the data center before and working within those parameters.  Previously, in that situation, it triggered innovation from app teams because when you are dealing with a set of givens, sometimes necessity is the mother of invention, as opposed to the infinite possibilities in the cloud</p>
@@ -217,16 +274,65 @@
 <p>A successful multi-cloud strategy is having a primary and a secondary cloud. When many talk about multi-cloud, the motivation behind that is fear of vendor lock-in.  Where most of your data lives has a bearing on multi-cloud strategy, as does where workloads fit best.  </p>
 <p>To develop a strategy, Intel’s cloud solution architects will engage in discovery about what the organization wants to do and where the problems are. Intel often can remediate many of the issues with tools they have at their fingertips. The cloud solution architects will also contextualize offerings to make the process faster and more efficient. Part of their job is to be an educator, so everyone has the information they need to move forward. </p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Shifting from Infrastructure to Workloads",
+  "episodeNumber": "82",
+  "datePublished": "2022-03-31T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher, Chief Solution Architect, Intel, continues his conversation with Sarah Musick, Cloud Solution Architect, Intel, about the shift from infrastructure to workloads. Please place in the Embracing Digital Transformation playlist.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Shifting from Infrastructure to Workloads Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Shifting from Infrastructure to Workloads Audio",
+      "contentUrl": "https://share.transistor.fm/e/a37c2b5e"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Sarah Musick"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

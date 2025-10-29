@@ -160,51 +160,80 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#18 Collecte et préparation des données</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/ef0bf710"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Sarah Kalicin, Lead Data Scientist chez Intel et Darren Pulsipher, Architecte en chef des solutions du secteur public chez Intel, parlent du processus et des avantages de la collecte et de la préparation de données pour devenir une organisation axée sur les données. Il s&#39;agit de la deuxième étape du parcours vers une organisation axée sur les données.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #18 <span>Collecte et préparation des données</span>
+    </h1>
+    <time datetime="2020-08-31T00:00:00.000Z"
+          itemprop="datePublished">
+      2020-08-31T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="18"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Collecte et préparation des données">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Collecte et préparation des données Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Collecte et préparation des données">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/ef0bf710">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/ef0bf710"
+            title="Collecte et préparation des données Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Sarah Kalicin, Lead Data Scientist chez Intel et Darren Pulsipher, Architecte en chef des solutions du secteur public chez Intel, parlent du processus et des avantages de la collecte et de la préparation de données pour devenir une organisation axée sur les données. Il s&#39;agit de la deuxième étape du parcours vers une organisation axée sur les données.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../fr/search.html?query=artificialintelligence"
+           itemprop="keywords">artificialintelligence</a>
+      
+        <a href="../../../fr/search.html?query=analytics"
+           itemprop="keywords">analytics</a>
+      
+        <a href="../../../fr/search.html?query=machinelearning"
+           itemprop="keywords">machinelearning</a>
+      
+        <a href="../../../fr/search.html?query=deeplearning"
+           itemprop="keywords">deeplearning</a>
+      
+        <a href="../../../fr/search.html?query=continuousimprovement"
+           itemprop="keywords">continuousimprovement</a>
+      
+        <a href="../../../fr/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../fr/search.html?query=people"
+           itemprop="keywords">people</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../fr/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../fr/search.html?query=artificialintelligence"><span>artificialintelligence</span></a>
-                
-                    <a href="../../../fr/search.html?query=analytics"><span>analytics</span></a>
-                
-                    <a href="../../../fr/search.html?query=machinelearning"><span>machinelearning</span></a>
-                
-                    <a href="../../../fr/search.html?query=deeplearning"><span>deeplearning</span></a>
-                
-                    <a href="../../../fr/search.html?query=continuousimprovement"><span>continuousimprovement</span></a>
-                
-                    <a href="../../../fr/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../fr/search.html?query=people"><span>people</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../fr/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>Nous avons besoin de données! Nos données sont désorganisées!</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>Nous avons besoin de données! Nos données sont désorganisées!</h2>
 <p>La première chose à considérer dans cette partie du processus est le pipeline de données. Comment identifions-nous les données brutes dont nous avons besoin et comment les faisons-nous passer à travers le pipeline et les transformons-nous en informations exploitables ? Il y a cinq étapes clés dans le pipeline : déterminer la valeur commerciale des données, les ingérer, les préparer, les analyser et enfin, agir en fonction des informations obtenues.</p>
 <p>Jetons un coup d&#39;œil à la fabrication, par exemple. Pour déterminer quelles données offrent une valeur commerciale, vous devriez vous poser trois questions fondamentales: Quelle est la demande pour mon widget ? Quelle est l&#39;offre actuelle ? Quelles sont les pertes de rendement ? Ce sont des questions apparemment simples, mais ensuite vous devez réfléchir à des choses plus complexes, comme comment quantifier la demande, les capacités de fabrication, l&#39;offre et les pertes de rendement ? D&#39;où viennent les données ? Comment les intégrer ? Dans quelle mesure ces données sont-elles fiables et stables ? Il existe de nombreuses questions et variables, telles que le délai de livraison de la matière première, la demande prévue et les pertes de rendement inconnues, qui peuvent créer une grande complexité.</p>
 <p>Le pipeline simplifie la façon dont tous ces composants se rassemblent. Chaque type de données passe par les étapes clés du pipeline, mais chacun sera différent. Par exemple, l&#39;ingestion d&#39;un type de données différera de celle d&#39;un autre. L&#39;idée, cependant, est de rassembler toutes les données pour créer une image claire.</p>
@@ -216,16 +245,60 @@
 <p>Comment pouvons-nous accomplir cela? Fondamentalement, vous rassemblez toutes les données, les préparez et les reliez afin, par exemple, de quantifier l&#39;approvisionnement et les prédictions de pertes de rendement. Vous allez avoir besoin de pratiques de résolution de problèmes et d&#39;amélioration continue au fil du temps pour faire face aux conditions changeantes. C&#39;est là que la culture de l&#39;organisation entre en jeu. Résoudre un problème une fois sans engagement envers une amélioration continue peut faire manquer à une organisation la véritable valeur de l&#39;analyse à long terme.</p>
 <p>Nous assistons aujourd&#39;hui à un changement majeur vers des organisations dotées d&#39;une infrastructure axée sur les données. Les données ne se trouvent plus uniquement dans les centres de données, mais également dans le cloud et en périphérie. Avec le processus commercial en tête, conduisant à une amélioration continue, une compréhension des affaires et des données, et jusqu&#39;au déploiement, les organisations construites sur cette infrastructure peuvent voir un monde de différence.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Collecte et préparation des données",
+  "episodeNumber": "18",
+  "datePublished": "2020-08-31T00:00:00.000Z",
+  "description": "<p>Sarah Kalicin, Lead Data Scientist chez Intel et Darren Pulsipher, Architecte en chef des solutions du secteur public chez Intel, parlent du processus et des avantages de la collecte et de la préparation de données pour devenir une organisation axée sur les données. Il s&#39;agit de la deuxième étape du parcours vers une organisation axée sur les données.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Collecte et préparation des données Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Collecte et préparation des données Audio",
+      "contentUrl": "https://share.transistor.fm/e/ef0bf710"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Droit d'auteur &copy; 2025 Paidar Productions LLC</p>

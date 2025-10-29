@@ -160,55 +160,86 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#46 Sécurisation de votre Pipeline DevOps</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/3abb647c"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Dans la deuxième partie de cet épisode, Darren Pulsipher, architecte en chef des solutions chez Intel, donne des conseils pratiques pour sécuriser chaque étape du pipeline DevOps, y compris la protection du matériel et des piles logicielles avec une racine de confiance matérielle, le balayage de sécurité, les conteneurs/VM attestés et chiffrés, et plus encore.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #46 <span>Sécurisation de votre Pipeline DevOps</span>
+    </h1>
+    <time datetime="2021-04-08T00:00:00.000Z"
+          itemprop="datePublished">
+      2021-04-08T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="46"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Sécurisation de votre Pipeline DevOps">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Sécurisation de votre Pipeline DevOps Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Sécurisation de votre Pipeline DevOps">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/3abb647c">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/3abb647c"
+            title="Sécurisation de votre Pipeline DevOps Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Dans la deuxième partie de cet épisode, Darren Pulsipher, architecte en chef des solutions chez Intel, donne des conseils pratiques pour sécuriser chaque étape du pipeline DevOps, y compris la protection du matériel et des piles logicielles avec une racine de confiance matérielle, le balayage de sécurité, les conteneurs/VM attestés et chiffrés, et plus encore.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../fr/search.html?query=security"
+           itemprop="keywords">security</a>
+      
+        <a href="../../../fr/search.html?query=devops"
+           itemprop="keywords">devops</a>
+      
+        <a href="../../../fr/search.html?query=hardware_security"
+           itemprop="keywords">hardware_security</a>
+      
+        <a href="../../../fr/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../fr/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../fr/search.html?query=people"
+           itemprop="keywords">people</a>
+      
+        <a href="../../../fr/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../fr/search.html?query=policy"
+           itemprop="keywords">policy</a>
+      
+        <a href="../../../fr/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../fr/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../fr/search.html?query=security"><span>security</span></a>
-                
-                    <a href="../../../fr/search.html?query=devops"><span>devops</span></a>
-                
-                    <a href="../../../fr/search.html?query=hardware_security"><span>hardware_security</span></a>
-                
-                    <a href="../../../fr/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../fr/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../fr/search.html?query=people"><span>people</span></a>
-                
-                    <a href="../../../fr/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../fr/search.html?query=policy"><span>policy</span></a>
-                
-                    <a href="../../../fr/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../fr/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>Les vecteurs d&#39;attaque</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>Les vecteurs d&#39;attaque</h2>
 <p>De nombreuses attaques se produisent au niveau des individus. Certaines des attaques insidieuses les plus récentes se sont concentrées sur le hameçonnage et l&#39;ingénierie sociale sur des individus travaillant dans le domaine du DevOps. Nous devons mieux former les personnes à tous les niveaux. Dans un cas, c&#39;était un stagiaire ayant accès aux clés qui a cédé à un plan malveillant.</p>
 <p>Un autre vecteur est la technologie : les attaques traditionnelles de déni de service, les attaques par injection SQL ou les attaques de débordement de mémoire tampon. Les derniers incidents utilisent à la fois des personnes et de la technologie pour attaquer le processus. Ils sont insidieux car ils se produisent autour du processus de construction et peuvent être très difficiles à détecter. Ils peuvent également propager un code malveillant à travers vos clients. Pour instaurer la confiance des clients, les organisations doivent avoir une stratégie pour sécuriser le pipeline d&#39;approvisionnement.</p>
 <h2>Sécurité du pipeline</h2>
@@ -234,16 +265,60 @@
 <p>Une fois que vous avez établi vos équipes de sécurité du développement, assurez-vous d&#39;injecter les politiques et les outils dans tous vos produits et environnements. Une technologie géniale existe aujourd&#39;hui qui vous permet de gérer plusieurs environnements. Donc, lorsque une nouvelle application est lancée, elle est lancée dans un profil de sécurité avec vos propres images VM ou de conteneurs en tant qu&#39;images de base utilisées par les équipes de développement. En configurant la sécurité dans vos VM ou conteneurs dans vos images de base, vous obtenez une conformité de sécurité instantanée dans les différents environnements. Il est également possible de l&#39;intégrer avec les outils de sécurité, de sorte que si vous trouvez quelque chose d&#39;inhabituel dans l&#39;application, vous pouvez notifier les outils de sécurité. Ne cherchez pas à créer des outils de sécurité qui gèrent cent pour cent des cas, car vous ne les finirez jamais; visez plutôt quatre-vingts pour cent comme une base solide et laissez les développeurs d&#39;applications innover les vingt pour cent restants si nécessaire, en collaboration avec votre équipe de sécurité.</p>
 <p>Un dernier conseil important est d&#39;automatiser tout ce que vous pouvez, notamment dans le pipeline DevOps, afin de prévenir les injections malveillantes. Protégez votre pipeline ; protégez votre processus.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Sécurisation de votre Pipeline DevOps",
+  "episodeNumber": "46",
+  "datePublished": "2021-04-08T00:00:00.000Z",
+  "description": "<p>Dans la deuxième partie de cet épisode, Darren Pulsipher, architecte en chef des solutions chez Intel, donne des conseils pratiques pour sécuriser chaque étape du pipeline DevOps, y compris la protection du matériel et des piles logicielles avec une racine de confiance matérielle, le balayage de sécurité, les conteneurs/VM attestés et chiffrés, et plus encore.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Sécurisation de votre Pipeline DevOps Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Sécurisation de votre Pipeline DevOps Audio",
+      "contentUrl": "https://share.transistor.fm/e/3abb647c"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Droit d'auteur &copy; 2025 Paidar Productions LLC</p>

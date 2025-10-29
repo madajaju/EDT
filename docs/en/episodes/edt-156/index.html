@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;In the podcast episode, retired Rear Admiral Ron Fritzmeier joins host Darren Pulsipher to discuss the importance of data management in the context of generative artificial intelligence (AI). With a background in electrical engineering and extensive experience in the cyber and cybersecurity fields, Ron provides valuable insights into the evolving field of data management and its critical role in organizational success in the digital age.&lt;/p&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;In the podcast episode, retired Rear Admiral Ron Fritzmeier joins host Darren Pulsipher to discuss the importance of data management in the context of generative artificial intelligence (AI). With a background in electrical engineering and extensive experience in the cyber and cybersecurity fields, Ron provides valuable insights into the evolving field of data management and its critical role in organizational success in the digital age.&lt;/p&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;In the podcast episode, retired Rear Admiral Ron Fritzmeier joins host Darren Pulsipher to discuss the importance of data management in the context of generative artificial intelligence (AI). With a background in electrical engineering and extensive experience in the cyber and cybersecurity fields, Ron provides valuable insights into the evolving field of data management and its critical role in organizational success in the digital age.&lt;/p&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;In the podcast episode, retired Rear Admiral Ron Fritzmeier joins host Darren Pulsipher to discuss the importance of data management in the context of generative artificial intelligence (AI). With a background in electrical engineering and extensive experience in the cyber and cybersecurity fields, Ron provides valuable insights into the evolving field of data management and its critical role in organizational success in the digital age.&lt;/p&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -161,54 +187,86 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#156 Becoming a Data Ready Organization</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/60a9723c"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>In the podcast episode, retired Rear Admiral Ron Fritzmeier joins host Darren Pulsipher to discuss the importance of data management in the context of generative artificial intelligence (AI). With a background in electrical engineering and extensive experience in the cyber and cybersecurity fields, Ron provides valuable insights into the evolving field of data management and its critical role in organizational success in the digital age.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #156 <span>Becoming a Data Ready Organization</span>
+    </h1>
+    <time datetime="2023-09-05T00:00:00.000Z"
+          itemprop="datePublished">
+      2023-09-05T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="156"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Becoming a Data Ready Organization">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Becoming a Data Ready Organization Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Becoming a Data Ready Organization">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/60a9723c">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/60a9723c"
+            title="Becoming a Data Ready Organization Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>In the podcast episode, retired Rear Admiral Ron Fritzmeier joins host Darren Pulsipher to discuss the importance of data management in the context of generative artificial intelligence (AI). With a background in electrical engineering and extensive experience in the cyber and cybersecurity fields, Ron provides valuable insights into the evolving field of data management and its critical role in organizational success in the digital age.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=dataquality"
+           itemprop="keywords">dataquality</a>
+      
+        <a href="../../../en/search.html?query=artificialintelligence"
+           itemprop="keywords">artificialintelligence</a>
+      
+        <a href="../../../en/search.html?query=automation"
+           itemprop="keywords">automation</a>
+      
+        <a href="../../../en/search.html?query=dataanalytics"
+           itemprop="keywords">dataanalytics</a>
+      
+        <a href="../../../en/search.html?query=generativeai"
+           itemprop="keywords">generativeai</a>
+      
+        <a href="../../../en/search.html?query=continuouslearning"
+           itemprop="keywords">continuouslearning</a>
+      
+        <a href="../../../en/search.html?query=datamanagement"
+           itemprop="keywords">datamanagement</a>
+      
+        <a href="../../../en/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/ron-fritzemeier/index.html"
+           itemprop="name" target="_blank">Ron Fritzemeier</a>
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=dataquality"><span>dataquality</span></a>
-                
-                    <a href="../../../en/search.html?query=artificialintelligence"><span>artificialintelligence</span></a>
-                
-                    <a href="../../../en/search.html?query=automation"><span>automation</span></a>
-                
-                    <a href="../../../en/search.html?query=dataanalytics"><span>dataanalytics</span></a>
-                
-                    <a href="../../../en/search.html?query=generativeai"><span>generativeai</span></a>
-                
-                    <a href="../../../en/search.html?query=continuouslearning"><span>continuouslearning</span></a>
-                
-                    <a href="../../../en/search.html?query=datamanagement"><span>datamanagement</span></a>
-                
-                    <a href="../../../en/search.html?query=process"><span>process</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/ron-fritzemeier/index.html" target="_blank">Ron Fritzemeier</a>
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>Evolution of Data Management: From Manual to Automation</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>Evolution of Data Management: From Manual to Automation</h2>
 <p>Ron begins the conversation by highlighting the manual and labor-intensive process of data management in the early days of his career. In industries like nuclear weapons systems and space, data management required meticulous manual effort due to the high reliability and complexity of systems. However, as the world has become more data-driven and reliant on technology, organizations have recognized the need to transform data into more usable and effective ways.</p>
 <h2>Challenges in Data Management: Complexity and Quality</h2>
 <p>Ron shares a compelling example from his experience in the Navy, discussing the challenges of managing data for ships during maintenance and modernization cycles. The complexity of ship systems and the harsh maritime environment make thorough data analysis and planning crucial for successful maintenance and repairs. This highlights the importance of data quality and its impact on operational efficiency and decision-making.</p>
@@ -224,16 +282,65 @@
 <h2>Conclusion</h2>
 <p>In an increasingly data-driven world, becoming a data-ready organization is crucial for success. By understanding the evolution of data management, focusing on data quality and readiness, and embracing the possibilities of strategic data analytics, organizations can unlock the power of data to drive innovation, optimize operations, and make informed decisions. This podcast episode provides valuable insights and highlights the importance of data management and analytics in the digital age.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Becoming a Data Ready Organization",
+  "episodeNumber": "156",
+  "datePublished": "2023-09-05T00:00:00.000Z",
+  "description": "<p>In the podcast episode, retired Rear Admiral Ron Fritzmeier joins host Darren Pulsipher to discuss the importance of data management in the context of generative artificial intelligence (AI). With a background in electrical engineering and extensive experience in the cyber and cybersecurity fields, Ron provides valuable insights into the evolving field of data management and its critical role in organizational success in the digital age.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Becoming a Data Ready Organization Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Becoming a Data Ready Organization Audio",
+      "contentUrl": "https://share.transistor.fm/e/60a9723c"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Ron Fritzemeier"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

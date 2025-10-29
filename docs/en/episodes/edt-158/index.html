@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;In this podcast episode, Darren Pulsipher, chief solution architect of public sector at Intel, interviews Laura Torres Newey, a New York Times best-selling author and university professor, about the impact of generative AI in higher education. This episode delves into the challenges and opportunities presented by the integration of generative AI in the classroom, highlighting the need for critical thinking skills, the concerns of bias, and ensuring the preservation of unique voices.&lt;/p&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;In this podcast episode, Darren Pulsipher, chief solution architect of public sector at Intel, interviews Laura Torres Newey, a New York Times best-selling author and university professor, about the impact of generative AI in higher education. This episode delves into the challenges and opportunities presented by the integration of generative AI in the classroom, highlighting the need for critical thinking skills, the concerns of bias, and ensuring the preservation of unique voices.&lt;/p&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;In this podcast episode, Darren Pulsipher, chief solution architect of public sector at Intel, interviews Laura Torres Newey, a New York Times best-selling author and university professor, about the impact of generative AI in higher education. This episode delves into the challenges and opportunities presented by the integration of generative AI in the classroom, highlighting the need for critical thinking skills, the concerns of bias, and ensuring the preservation of unique voices.&lt;/p&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;In this podcast episode, Darren Pulsipher, chief solution architect of public sector at Intel, interviews Laura Torres Newey, a New York Times best-selling author and university professor, about the impact of generative AI in higher education. This episode delves into the challenges and opportunities presented by the integration of generative AI in the classroom, highlighting the need for critical thinking skills, the concerns of bias, and ensuring the preservation of unique voices.&lt;/p&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -161,54 +187,86 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#158 GenAI in Higher Education</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/cb47f20b"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>In this podcast episode, Darren Pulsipher, chief solution architect of public sector at Intel, interviews Laura Torres Newey, a New York Times best-selling author and university professor, about the impact of generative AI in higher education. This episode delves into the challenges and opportunities presented by the integration of generative AI in the classroom, highlighting the need for critical thinking skills, the concerns of bias, and ensuring the preservation of unique voices.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #158 <span>GenAI in Higher Education</span>
+    </h1>
+    <time datetime="2023-09-12T00:00:00.000Z"
+          itemprop="datePublished">
+      2023-09-12T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="158"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="GenAI in Higher Education">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="GenAI in Higher Education Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="GenAI in Higher Education">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/cb47f20b">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/cb47f20b"
+            title="GenAI in Higher Education Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>In this podcast episode, Darren Pulsipher, chief solution architect of public sector at Intel, interviews Laura Torres Newey, a New York Times best-selling author and university professor, about the impact of generative AI in higher education. This episode delves into the challenges and opportunities presented by the integration of generative AI in the classroom, highlighting the need for critical thinking skills, the concerns of bias, and ensuring the preservation of unique voices.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=generativeai"
+           itemprop="keywords">generativeai</a>
+      
+        <a href="../../../en/search.html?query=artificialintelligence"
+           itemprop="keywords">artificialintelligence</a>
+      
+        <a href="../../../en/search.html?query=education"
+           itemprop="keywords">education</a>
+      
+        <a href="../../../en/search.html?query=criticalthinking"
+           itemprop="keywords">criticalthinking</a>
+      
+        <a href="../../../en/search.html?query=bias"
+           itemprop="keywords">bias</a>
+      
+        <a href="../../../en/search.html?query=digitaltransformation"
+           itemprop="keywords">digitaltransformation</a>
+      
+        <a href="../../../en/search.html?query=people"
+           itemprop="keywords">people</a>
+      
+        <a href="../../../en/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/laura-newey/index.html"
+           itemprop="name" target="_blank">Laura Newey</a>
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=generativeai"><span>generativeai</span></a>
-                
-                    <a href="../../../en/search.html?query=artificialintelligence"><span>artificialintelligence</span></a>
-                
-                    <a href="../../../en/search.html?query=education"><span>education</span></a>
-                
-                    <a href="../../../en/search.html?query=criticalthinking"><span>criticalthinking</span></a>
-                
-                    <a href="../../../en/search.html?query=bias"><span>bias</span></a>
-                
-                    <a href="../../../en/search.html?query=digitaltransformation"><span>digitaltransformation</span></a>
-                
-                    <a href="../../../en/search.html?query=people"><span>people</span></a>
-                
-                    <a href="../../../en/search.html?query=process"><span>process</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/laura-newey/index.html" target="_blank">Laura Newey</a>
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h1>The Rise of Generative AI in Education</h1>
+  <div class="show-notes" itemprop="transcript">
+    <h1>The Rise of Generative AI in Education</h1>
 <p>In a recent episode of the podcast &quot;Embracing Digital Transformation,&quot; host Darren Pulsipher interviews Laura Torres Newey, a New York Times bestselling author and English professor, about the impact of generative AI in higher education. The discussion revolves around the integration of AI in the classroom, its effects on teaching methods, concerns about bias, and the preservation of unique voices. Laura shares her insights and experiences as an educator, offering valuable perspectives on navigating the evolving landscape of education in the era of artificial intelligence.</p>
 <h2>The Influence of Generative AI in Education</h2>
 <p>Generative AI has started to become a notable presence in education, from automated essay grading to providing writing assistance to students. While this technology offers convenience and efficiency, it raises concerns about the potential loss of unique voices. Laura emphasizes the importance of valuing and nurturing students&#39; individual perspectives and creativity in their writing. Instead of outright banning the use of generative AI, Laura believes in teaching students how to use these tools effectively and harness their potential without compromising their own voices.</p>
@@ -219,16 +277,65 @@
 <h2>Conclusion</h2>
 <p>The integration of generative AI in education presents both opportunities and challenges. While AI can enhance learning and assist students with their assignments, it is crucial for educators to prioritize critical thinking and address bias concerns to develop well-rounded and independent thinkers. Teachers should embrace AI technology, understanding its applications and teaching students how to navigate and utilize it effectively. By striking a balance between the efficiency of AI-generated content and the preservation of authentic and diverse voices, educators can prepare students for the digital future while ensuring the cultivation of their individuality and creativity.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "GenAI in Higher Education",
+  "episodeNumber": "158",
+  "datePublished": "2023-09-12T00:00:00.000Z",
+  "description": "<p>In this podcast episode, Darren Pulsipher, chief solution architect of public sector at Intel, interviews Laura Torres Newey, a New York Times best-selling author and university professor, about the impact of generative AI in higher education. This episode delves into the challenges and opportunities presented by the integration of generative AI in the classroom, highlighting the need for critical thinking skills, the concerns of bias, and ensuring the preservation of unique voices.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "GenAI in Higher Education Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "GenAI in Higher Education Audio",
+      "contentUrl": "https://share.transistor.fm/e/cb47f20b"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Laura Newey"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

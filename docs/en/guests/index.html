@@ -1,80 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Guests</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="Embracing Digital is a podcast about the digital transformation of the world.">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Guests — Interviews, News, and Community">
-    <meta property="og:description" content="Embracing Digital is a podcast about the digital transformation of the world.">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Guests — Interviews, News, and Community">
-    <meta name="twitter:description" content="Embracing Digital is a podcast about the digital transformation of the world.">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Guests",
+      "description": "Embracing Digital is a podcast about the digital transformation of the world.",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guests",
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -1352,6 +1379,20 @@ Review ack...</p>
         
         <div class="guest-card">
             <div class=guest-card-content">
+                <a href="./dan-salinas/index.html">
+                    <img src="./dan-salinas/thumbnail.jpeg" alt="Dan Salinas">
+                </a>
+                <h3>Dan Salinas</h3>
+                <p class="summary" style="text-align: left;font-size: 0.8rem"><i>Number of Appearances: 1</i></p>
+                <p class="summary" style="text-align: left">As the Chief Operating Officer at Lakeside Software, I lead global teams across Sales, Business Development, Customer Success, and Partnerships to advance the company’s market presence in the Digital Employee Experience (DEX) space. By driving cohesi...</p>
+                <div class="tags" style="text-align: left">
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="guest-card">
+            <div class=guest-card-content">
                 <a href="./dana-yanch/index.html">
                     <img src="./dana-yanch/thumbnail.png" alt="Dana Yanch">
                 </a>
@@ -1422,7 +1463,7 @@ DNATW - 180K Digital N...</p>
                     <img src="./darren-w-pulsipher/thumbnail.jpg" alt="Darren W Pulsipher">
                 </a>
                 <h3>Darren W Pulsipher</h3>
-                <p class="summary" style="text-align: left;font-size: 0.8rem"><i>Number of Appearances: 422</i></p>
+                <p class="summary" style="text-align: left;font-size: 0.8rem"><i>Number of Appearances: 428</i></p>
                 <p class="summary" style="text-align: left">Meet Darren, the Chief Solution Architect for Public Sector at Intel. With over a decade of experience in executive and management positions, Darren has established himself as a trusted advisor to government organizations at the Federal, State, and L...</p>
                 <div class="tags" style="text-align: left">
                     
@@ -1908,6 +1949,20 @@ Key Experience:
                 </a>
                 <h3>Eric Coulter</h3>
                 <p class="summary" style="text-align: left;font-size: 0.8rem"><i>Number of Appearances: 0</i></p>
+                <p class="summary" style="text-align: left">TBD...</p>
+                <div class="tags" style="text-align: left">
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="guest-card">
+            <div class=guest-card-content">
+                <a href="./eric-deloitte/index.html">
+                    <img src="./eric-deloitte/thumbail.jpg" alt="Eric Deloitte">
+                </a>
+                <h3>Eric Deloitte</h3>
+                <p class="summary" style="text-align: left;font-size: 0.8rem"><i>Number of Appearances: 1</i></p>
                 <p class="summary" style="text-align: left">TBD...</p>
                 <div class="tags" style="text-align: left">
                     
@@ -3062,6 +3117,36 @@ With over 30 years of experience in Information Technology, Jesse has an extensi
         
         <div class="guest-card">
             <div class=guest-card-content">
+                <a href="./josh-hill/index.html">
+                    <img src="./josh-hill/thumbail.jpg" alt="Josh Hill">
+                </a>
+                <h3>Josh Hill</h3>
+                <p class="summary" style="text-align: left;font-size: 0.8rem"><i>Number of Appearances: 1</i></p>
+                <p class="summary" style="text-align: left">TBD...</p>
+                <div class="tags" style="text-align: left">
+                    
+                        <a href="../../en/search.html?query=hiringtrends"><span>hiringtrends</span></a>
+                    
+                        <a href="../../en/search.html?query=recruitment"><span>recruitment</span></a>
+                    
+                        <a href="../../en/search.html?query=humanresources"><span>humanresources</span></a>
+                    
+                        <a href="../../en/search.html?query=aihiring"><span>aihiring</span></a>
+                    
+                        <a href="../../en/search.html?query=workasproduct"><span>workasproduct</span></a>
+                    
+                        <a href="../../en/search.html?query=candidateexperience"><span>candidateexperience</span></a>
+                    
+                        <a href="../../en/search.html?query=talentmatch"><span>talentmatch</span></a>
+                    
+                        <a href="../../en/search.html?query=workplaceculture"><span>workplaceculture</span></a>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="guest-card">
+            <div class=guest-card-content">
                 <a href="./keith-gray/index.html">
                     <img src="./keith-gray/thumbail.jpg" alt="Keith Gray">
                 </a>
@@ -3659,7 +3744,7 @@ As a brand and executive Pres...</p>
                     <img src="./lynn-comp/thumbnail.jpeg" alt="Lynn Comp">
                 </a>
                 <h3>Lynn Comp</h3>
-                <p class="summary" style="text-align: left;font-size: 0.8rem"><i>Number of Appearances: 1</i></p>
+                <p class="summary" style="text-align: left;font-size: 0.8rem"><i>Number of Appearances: 2</i></p>
                 <p class="summary" style="text-align: left">I am a global strategy, marketing, and product management executive with a passion for creating and delivering technology solutions to unlock new business value. During my time as the VP of Marketing, Server Business Unit at AMD, I led the sales enab...</p>
                 <div class="tags" style="text-align: left">
                     

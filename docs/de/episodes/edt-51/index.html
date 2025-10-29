@@ -159,49 +159,77 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#51 Praktische Anwendungsfälle für Optane Persistent Memory</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/442f5ddb"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher, Chief Solution Architect bei Intel, spricht mit Charles Fan, CEO von MemVerge, über Anwendungsfälle ihrer Software, die Intels Optane Persistent Memory auf innovative Weise nutzt und Engpässe zwischen Speicher und Datenspeicher beseitigt.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #51 <span>Praktische Anwendungsfälle für Optane Persistent Memory</span>
+    </h1>
+    <time datetime="2021-06-03T00:00:00.000Z"
+          itemprop="datePublished">
+      2021-06-03T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="51"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Praktische Anwendungsfälle für Optane Persistent Memory">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Praktische Anwendungsfälle für Optane Persistent Memory Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Praktische Anwendungsfälle für Optane Persistent Memory">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/442f5ddb">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/442f5ddb"
+            title="Praktische Anwendungsfälle für Optane Persistent Memory Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher, Chief Solution Architect bei Intel, spricht mit Charles Fan, CEO von MemVerge, über Anwendungsfälle ihrer Software, die Intels Optane Persistent Memory auf innovative Weise nutzt und Engpässe zwischen Speicher und Datenspeicher beseitigt.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../de/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../de/search.html?query=optane"
+           itemprop="keywords">optane</a>
+      
+        <a href="../../../de/search.html?query=dataanalytics"
+           itemprop="keywords">dataanalytics</a>
+      
+        <a href="../../../de/search.html?query=costreduction"
+           itemprop="keywords">costreduction</a>
+      
+        <a href="../../../de/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../de/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../de/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../de/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../de/search.html?query=optane"><span>optane</span></a>
-                
-                    <a href="../../../de/search.html?query=dataanalytics"><span>dataanalytics</span></a>
-                
-                    <a href="../../../de/search.html?query=costreduction"><span>costreduction</span></a>
-                
-                    <a href="../../../de/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../de/search.html?query=process"><span>process</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../de/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>MemVerge hat im September 2020 die erste Version ihrer Software ausgeliefert, und trotz der Pandemie, die die Aufklärung der Kunden über die neue Technologie verlangsamt hat, hat sich ein gutes Muster von Anwendungsfällen herausgebildet.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>MemVerge hat im September 2020 die erste Version ihrer Software ausgeliefert, und trotz der Pandemie, die die Aufklärung der Kunden über die neue Technologie verlangsamt hat, hat sich ein gutes Muster von Anwendungsfällen herausgebildet.</p>
 <h2>Kostensenkung für Cloud-Service-Anbieter</h2>
 <p>Die wichtigste Kennzahl für einen Cloud-Service-Anbieter ist, wie viele virtuelle Maschinen (VMs) sie ihren Kunden zur Verfügung stellen können und zu welchen Kosten. Die Größe des Arbeitsspeichers auf den Servern wird zum Engpass dafür, wie viele VMs pro Server zugewiesen werden können und begrenzt, wie niedrig ihr Preis pro VM sein kann.</p>
 <p>Die MemVerge-Software mit Optane liefert eine größere Menge an Speicher pro Server und ermöglicht die Zuweisung einer größeren Anzahl von virtuellen Maschinen (VMs), wodurch die Kosten pro VM gesenkt und die Wettbewerbsfähigkeit von Cloud-Service-Anbietern erhöht wird. Die Kosten pro VM könnten um das Dreifache günstiger sein.</p>
@@ -216,16 +244,60 @@
 <p>Die Genomik ist nur das erste Beispiel für viele Arbeitslasten, die von dieser Technologie profitieren könnten.</p>
 <p>Da MemVerge ein Startup ist, konzentrieren sie sich eng auf die drei Bereiche Cloud-Service-Anbieter, finanzielle Anwendungen mit großem Speicher, Genomik und verwandte Data-Science-Pipeline-Aufgaben. Aber all diese Anwendungsfälle beweisen die Kraft der Kombination aus Optane Persistent Memory und MemVerge Software.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Praktische Anwendungsfälle für Optane Persistent Memory",
+  "episodeNumber": "51",
+  "datePublished": "2021-06-03T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher, Chief Solution Architect bei Intel, spricht mit Charles Fan, CEO von MemVerge, über Anwendungsfälle ihrer Software, die Intels Optane Persistent Memory auf innovative Weise nutzt und Engpässe zwischen Speicher und Datenspeicher beseitigt.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Praktische Anwendungsfälle für Optane Persistent Memory Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Praktische Anwendungsfälle für Optane Persistent Memory Audio",
+      "contentUrl": "https://share.transistor.fm/e/442f5ddb"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Urheberrecht &copy; 2025 Paidar Productions LLC</p>

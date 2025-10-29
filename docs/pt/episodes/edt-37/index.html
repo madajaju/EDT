@@ -160,59 +160,92 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#37 2020 em revisão</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/2ed7f7f2"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher, Arquiteto-chefe de Soluções, Setor Público, na Intel, reflete sobre a interrupção, mudanças e ajustes que a pandemia da COVID-19 trouxe em 2020.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #37 <span>2020 em revisão</span>
+    </h1>
+    <time datetime="2021-02-10T00:00:00.000Z"
+          itemprop="datePublished">
+      2021-02-10T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="37"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="2020 em revisão">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="2020 em revisão Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="2020 em revisão">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/2ed7f7f2">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/2ed7f7f2"
+            title="2020 em revisão Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher, Arquiteto-chefe de Soluções, Setor Público, na Intel, reflete sobre a interrupção, mudanças e ajustes que a pandemia da COVID-19 trouxe em 2020.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../pt/search.html?query=datamanagement"
+           itemprop="keywords">datamanagement</a>
+      
+        <a href="../../../pt/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../pt/search.html?query=5g"
+           itemprop="keywords">5g</a>
+      
+        <a href="../../../pt/search.html?query=saas"
+           itemprop="keywords">saas</a>
+      
+        <a href="../../../pt/search.html?query=generativeai"
+           itemprop="keywords">generativeai</a>
+      
+        <a href="../../../pt/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../pt/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../pt/search.html?query=people"
+           itemprop="keywords">people</a>
+      
+        <a href="../../../pt/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../pt/search.html?query=policy"
+           itemprop="keywords">policy</a>
+      
+        <a href="../../../pt/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../pt/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../pt/search.html?query=datamanagement"><span>datamanagement</span></a>
-                
-                    <a href="../../../pt/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../pt/search.html?query=5g"><span>5g</span></a>
-                
-                    <a href="../../../pt/search.html?query=saas"><span>saas</span></a>
-                
-                    <a href="../../../pt/search.html?query=generativeai"><span>generativeai</span></a>
-                
-                    <a href="../../../pt/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../pt/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../pt/search.html?query=people"><span>people</span></a>
-                
-                    <a href="../../../pt/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../pt/search.html?query=policy"><span>policy</span></a>
-                
-                    <a href="../../../pt/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../pt/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>2020 - Expectativas</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>2020 - Expectativas</h2>
 <p>Antes do COVID, 2020 estava parecendo o ano para novos modelos de negócios, caminhando em direção a grandes transformações digitais. IA/AP e análises iriam desempenhar um papel fundamental no futuro. Utilizando essas ferramentas, iríamos começar a utilizar os dados de forma mais eficaz em nossas organizações. Seria o ano do 5G, com o 5G fazendo um grande impacto nas Olimpíadas.</p>
 <p>Também íamos presenciar um avanço significativo na indústria para as transformações da indústria 4.0, com a Internet das Coisas e a fabricação caminhando juntas em direção a essa transformação digital.</p>
 <h2>13 de março</h2>
@@ -250,16 +283,60 @@
 <p>Um dos maiores avanços deste ano é a nova roupa de negócios. A melhor forma de descrevê-la é como um &quot;mullet&quot; empresarial: traje de negócios na parte de cima, pijama ou shorts na parte de baixo. Eu uso calças de vez em quando, mas meus filhos devem estar cansados de me ver usando uma camisa social ou até mesmo um terno na parte de cima combinado com shorts.</p>
 <p>2020 foi um ano de mudanças, pessoais e profissionais, mas nos levou a um lugar em 2021 onde podemos avançar com as lições aprendidas e melhorias para um futuro melhor.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "2020 em revisão",
+  "episodeNumber": "37",
+  "datePublished": "2021-02-10T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher, Arquiteto-chefe de Soluções, Setor Público, na Intel, reflete sobre a interrupção, mudanças e ajustes que a pandemia da COVID-19 trouxe em 2020.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "2020 em revisão Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "2020 em revisão Audio",
+      "contentUrl": "https://share.transistor.fm/e/2ed7f7f2"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

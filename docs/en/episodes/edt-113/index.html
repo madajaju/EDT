@@ -1,83 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- … existing tags … -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Dynamic Page Title -->
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
     <title>Embracing Digital Transformation</title>
-
-    <!-- SEO -->
-    <link rel="canonical" href="https://embracingdigital.org/en/home/">
     <meta name="description" content="&lt;p&gt;In this episode, Darren discusses business process management and automation with Max Young, CEO of Capital BPM&lt;/p&gt;
 ">
-    <meta name="keywords" content="Embracing Digital, podcast, interviews, news, AI, cybersecurity, edge computing, data management, digital transformation">
-    <meta name="author" content="Dr. Darren W. Pulsipher">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta property="og:description" content="&lt;p&gt;In this episode, Darren discusses business process management and automation with Max Young, CEO of Capital BPM&lt;/p&gt;
-">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
-    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Embracing Digital Transformation — Interviews, News, and Community">
-    <meta name="twitter:description" content="&lt;p&gt;In this episode, Darren discusses business process management and automation with Max Young, CEO of Capital BPM&lt;/p&gt;
-">
-    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
-
-    <!-- Hreflang (alternates) -->
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
-    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
-    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
-    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
-    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
-    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
-    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
-    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="x-default">
-
-    <!-- Favicon & Styles -->
-    <link rel="icon" href="/images/favicon.ico">
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Open Graph & Twitter Cards -->
+    <!-- … your existing OG/Twitter tags … -->
+
+    <!-- Hreflang alternates -->
+    <!-- … existing hreflang links … -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P4XHVE79DL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
-            ]
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://embracingdigital.org/images/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    }
     </script>
+
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Embracing Digital Transformation",
+      "url": "https://embracingdigital.org/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://embracingdigital.org/en/search.html?query={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "",
+      "name": "Embracing Digital Transformation",
+      "description": "&lt;p&gt;In this episode, Darren discusses business process management and automation with Max Young, CEO of Capital BPM&lt;/p&gt;
+",
+      "inLanguage": "",
+      "isPartOf": {
+        "@type": "WebSite",
+        "url": "https://embracingdigital.org/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://embracingdigital.org//home/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
             "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
+            "item": ""
+          }
+        ]
+      }
+    }
     </script>
 </head>
 <body>
@@ -161,62 +187,98 @@
     </nav>
 </header>
 
-<section id="one-episode">
-    <h1 id="episode-title">#113 Operationalizing Business Process Management</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/a05071ff"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>In this episode, Darren discusses business process management and automation with Max Young, CEO of Capital BPM</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #113 <span>Operationalizing Business Process Management</span>
+    </h1>
+    <time datetime="2022-11-18T00:00:00.000Z"
+          itemprop="datePublished">
+      2022-11-18T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="113"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Operationalizing Business Process Management">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Operationalizing Business Process Management Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Operationalizing Business Process Management">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/a05071ff">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/a05071ff"
+            title="Operationalizing Business Process Management Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>In this episode, Darren discusses business process management and automation with Max Young, CEO of Capital BPM</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../en/search.html?query=businessprocessmanagement"
+           itemprop="keywords">businessprocessmanagement</a>
+      
+        <a href="../../../en/search.html?query=automation"
+           itemprop="keywords">automation</a>
+      
+        <a href="../../../en/search.html?query=processoptimization"
+           itemprop="keywords">processoptimization</a>
+      
+        <a href="../../../en/search.html?query=advancedcommunications"
+           itemprop="keywords">advancedcommunications</a>
+      
+        <a href="../../../en/search.html?query=digitaltransformation"
+           itemprop="keywords">digitaltransformation</a>
+      
+        <a href="../../../en/search.html?query=collaboration"
+           itemprop="keywords">collaboration</a>
+      
+        <a href="../../../en/search.html?query=continuousimprovement"
+           itemprop="keywords">continuousimprovement</a>
+      
+        <a href="../../../en/search.html?query=employeeengagement"
+           itemprop="keywords">employeeengagement</a>
+      
+        <a href="../../../en/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../en/search.html?query=generativeai"
+           itemprop="keywords">generativeai</a>
+      
+        <a href="../../../en/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../en/search.html?query=people"
+           itemprop="keywords">people</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../en/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+        <a href="../../../en/guests/max-young/index.html"
+           itemprop="name" target="_blank">Max Young</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../en/search.html?query=businessprocessmanagement"><span>businessprocessmanagement</span></a>
-                
-                    <a href="../../../en/search.html?query=automation"><span>automation</span></a>
-                
-                    <a href="../../../en/search.html?query=processoptimization"><span>processoptimization</span></a>
-                
-                    <a href="../../../en/search.html?query=advancedcommunications"><span>advancedcommunications</span></a>
-                
-                    <a href="../../../en/search.html?query=digitaltransformation"><span>digitaltransformation</span></a>
-                
-                    <a href="../../../en/search.html?query=collaboration"><span>collaboration</span></a>
-                
-                    <a href="../../../en/search.html?query=continuousimprovement"><span>continuousimprovement</span></a>
-                
-                    <a href="../../../en/search.html?query=employeeengagement"><span>employeeengagement</span></a>
-                
-                    <a href="../../../en/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../en/search.html?query=generativeai"><span>generativeai</span></a>
-                
-                    <a href="../../../en/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../en/search.html?query=people"><span>people</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../en/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-                <a href="../../../en/guests/max-young/index.html" target="_blank">Max Young</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>Max calls himself a “failed academic” because he left his Ph.D. in mathematics, specializing in topology, to study computer science. He earned an undergraduate and a master’s degree, specializing in AI. He then worked in business process management (BPM), starting at Lombardi, which was sold to IBM, and a few other vendors in the BPM space. Ten years ago, he took a plunge with friends and founded Capital BPM.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>Max calls himself a “failed academic” because he left his Ph.D. in mathematics, specializing in topology, to study computer science. He earned an undergraduate and a master’s degree, specializing in AI. He then worked in business process management (BPM), starting at Lombardi, which was sold to IBM, and a few other vendors in the BPM space. Ten years ago, he took a plunge with friends and founded Capital BPM.</p>
 <p>Max chose to focus on BPM for two reasons. First, he has always liked algorithms because it provides a systematic approach to solving complex problems. Algorithms give him a sense of security during crazy situations.</p>
 <p>Second, he likes what is called transformations in mathematics. For example, if you have an ugly shape with many corners that is hard to measure, you would transform it into, say, a rectangle and then apply all the theories around rectangle measurement, measure it, and translate the answer back to the original shape. In the same way, in BPM, you can take a problem to a domain where it can be easily solved. Rather than making an issue a micro problem with complicated nested F statements that are difficult to maintain, you can transform it into a flattened-out problem that you can see and attack in stages.</p>
 <p>This process is like zooming in on Google maps to see where you need concentrated focus and then zooming back out to see how that fits into the big picture. The heart of enterprise architecture is the ability to zoom in and out to ensure that line you’re drawing is still valid.</p>
@@ -229,16 +291,65 @@
 <p>The human element is still in this loop but using a BPM system like this makes it clear where processes can be automated, such as checking job history or running a criminal background check. The model also allows flexibility and experimentation. For example, suppose the subject matter expert says that they don’t want to run a job check and criminal record check simultaneously because the criminal record check is expensive, and the job check is cheap. In that case, it’s easy to change to move the job check first and require a decision before the criminal record check. As changes are made, you build consensus and a true story that becomes progressively truer the more you experiment.</p>
 <p>While the tool looks like a drawing tool, it is a modeling tool that lets you draw pictures and simulates them on the back end. So you can run this process and see all the different decision points and where they lead. The model will also tell you that you can’t deploy if you haven’t done something correctly.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Operationalizing Business Process Management",
+  "episodeNumber": "113",
+  "datePublished": "2022-11-18T00:00:00.000Z",
+  "description": "<p>In this episode, Darren discusses business process management and automation with Max Young, CEO of Capital BPM</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Operationalizing Business Process Management Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Operationalizing Business Process Management Audio",
+      "contentUrl": "https://share.transistor.fm/e/a05071ff"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Max Young"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

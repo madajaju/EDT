@@ -160,59 +160,92 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#58 Comprendiendo los problemas desde Edge hasta el centro de datos</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/51a240b0"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher, Arquitecto Principal de Soluciones en Intel, describe los problemas comunes en las arquitecturas desde el borde hasta el centro de datos que ha observado y discutido con clientes en el sector público. Presenta una arquitectura ideal para resolver estos problemas.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #58 <span>Comprendiendo los problemas desde Edge hasta el centro de datos</span>
+    </h1>
+    <time datetime="2021-07-22T00:00:00.000Z"
+          itemprop="datePublished">
+      2021-07-22T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="58"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Comprendiendo los problemas desde Edge hasta el centro de datos">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Comprendiendo los problemas desde Edge hasta el centro de datos Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Comprendiendo los problemas desde Edge hasta el centro de datos">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/51a240b0">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/51a240b0"
+            title="Comprendiendo los problemas desde Edge hasta el centro de datos Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher, Arquitecto Principal de Soluciones en Intel, describe los problemas comunes en las arquitecturas desde el borde hasta el centro de datos que ha observado y discutido con clientes en el sector público. Presenta una arquitectura ideal para resolver estos problemas.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../es/search.html?query=edgecomputing"
+           itemprop="keywords">edgecomputing</a>
+      
+        <a href="../../../es/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../es/search.html?query=security"
+           itemprop="keywords">security</a>
+      
+        <a href="../../../es/search.html?query=identitymanagement"
+           itemprop="keywords">identitymanagement</a>
+      
+        <a href="../../../es/search.html?query=generativeai"
+           itemprop="keywords">generativeai</a>
+      
+        <a href="../../../es/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../es/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../es/search.html?query=cybersecurity"
+           itemprop="keywords">cybersecurity</a>
+      
+        <a href="../../../es/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../es/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+        <a href="../../../es/search.html?query=policy"
+           itemprop="keywords">policy</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../es/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../es/search.html?query=edgecomputing"><span>edgecomputing</span></a>
-                
-                    <a href="../../../es/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../es/search.html?query=security"><span>security</span></a>
-                
-                    <a href="../../../es/search.html?query=identitymanagement"><span>identitymanagement</span></a>
-                
-                    <a href="../../../es/search.html?query=generativeai"><span>generativeai</span></a>
-                
-                    <a href="../../../es/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../es/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../es/search.html?query=cybersecurity"><span>cybersecurity</span></a>
-                
-                    <a href="../../../es/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../es/search.html?query=technology"><span>technology</span></a>
-                
-                    <a href="../../../es/search.html?query=policy"><span>policy</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../es/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>Integración de misión</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>Integración de misión</h2>
 <p>Hay muchas partes móviles al implementar capacidades en misiones, especialmente en el Departamento de Defensa, pero también en hospitales de Asuntos de Veteranos, Seguridad Nacional, la FDA y FEMA, por ejemplo, y regresando los datos de dispositivos periféricos a estaciones terrestres y centros de datos regionales y empresariales. Los datos deben ser utilizables y confiables para flujos analíticos importantes en los procesos de inteligencia artificial y llegar a manos de analistas para tomar decisiones basadas en los datos en bruto.</p>
 <h2>Controladores para Edge: Latencia, Ancho de banda, Seguridad, Conectividad</h2>
 <p>Parte del puzzle es que los dispositivos periféricos se han vuelto más sofisticados y están recopilando más datos de los que podríamos enviar a través de 5G. Las esperanzas de que 5G conquistara todos los datos y los hiciera disponibles de forma transparente en el centro de datos nunca se materializaron con los avances de los dispositivos IoT.</p>
@@ -236,16 +269,60 @@
 <p>Para tener una arquitectura exitosa de borde a la nube que sea repetible, todos estos diferentes elementos son necesarios. Hemos visto que algunas organizaciones construyen una arquitectura específica de borde a la nube y cuando despliegan una nueva capacidad en ese entorno, quedan atascadas. Por ejemplo, si codifican de manera fija los datos que residen en el borde porque siempre los procesarán en el borde, o en el centro de datos para una aplicación que siempre se procesa en el centro de datos, esto resulta en rigidez. También aumenta el tiempo necesario para implementar nuevas capacidades, quizás años en lugar de meses. Si tomamos los aprendizajes de despliegues de aplicaciones de borde a la nube una y otra vez y comenzamos a generalizar, rápidamente descubrimos que caen en una de las capas que hemos identificado.</p>
 <p>Para obtener más información, consulta este documento (incluye enlace) sobre la descripción general de alto nivel de esta arquitectura de borde a nube. No somos prescriptivos en cuanto a lo que encaja en esas cajas, pero lo importante es comprender los casos de uso que abarcan. Tenemos ideas sobre lo que hay en cada una de las capas, y estamos desarrollando los ecosistemas para adaptarnos a las necesidades únicas de tu organización dentro de las capas.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Comprendiendo los problemas desde Edge hasta el centro de datos",
+  "episodeNumber": "58",
+  "datePublished": "2021-07-22T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher, Arquitecto Principal de Soluciones en Intel, describe los problemas comunes en las arquitecturas desde el borde hasta el centro de datos que ha observado y discutido con clientes en el sector público. Presenta una arquitectura ideal para resolver estos problemas.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Comprendiendo los problemas desde Edge hasta el centro de datos Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Comprendiendo los problemas desde Edge hasta el centro de datos Audio",
+      "contentUrl": "https://share.transistor.fm/e/51a240b0"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; 2025 Paidar Productions LLC</p>

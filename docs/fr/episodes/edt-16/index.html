@@ -160,53 +160,83 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#16 Réduire la congestion d'ingestion avec Intel Optane DCPMM</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/7ca179aa"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Dans cet épisode, Darren parle de la diminution de la congestion d&#39;ingestion en utilisant la mémoire persistante Optane DC d&#39;Intel et de l&#39;expérience qu&#39;il a menée avec des résultats surprenants. Cela pourrait bien changer notre manière de penser à la programmation à l&#39;avenir.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #16 <span>Réduire la congestion d'ingestion avec Intel Optane DCPMM</span>
+    </h1>
+    <time datetime="2020-08-25T00:00:00.000Z"
+          itemprop="datePublished">
+      2020-08-25T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="16"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Réduire la congestion d'ingestion avec Intel Optane DCPMM">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Réduire la congestion d'ingestion avec Intel Optane DCPMM Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Réduire la congestion d'ingestion avec Intel Optane DCPMM">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/7ca179aa">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/7ca179aa"
+            title="Réduire la congestion d'ingestion avec Intel Optane DCPMM Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Dans cet épisode, Darren parle de la diminution de la congestion d&#39;ingestion en utilisant la mémoire persistante Optane DC d&#39;Intel et de l&#39;expérience qu&#39;il a menée avec des résultats surprenants. Cela pourrait bien changer notre manière de penser à la programmation à l&#39;avenir.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../fr/search.html?query=artificialintelligence"
+           itemprop="keywords">artificialintelligence</a>
+      
+        <a href="../../../fr/search.html?query=machinelearning"
+           itemprop="keywords">machinelearning</a>
+      
+        <a href="../../../fr/search.html?query=edgecomputing"
+           itemprop="keywords">edgecomputing</a>
+      
+        <a href="../../../fr/search.html?query=datamanagement"
+           itemprop="keywords">datamanagement</a>
+      
+        <a href="../../../fr/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../fr/search.html?query=zerotrust"
+           itemprop="keywords">zerotrust</a>
+      
+        <a href="../../../fr/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../fr/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../fr/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../fr/search.html?query=artificialintelligence"><span>artificialintelligence</span></a>
-                
-                    <a href="../../../fr/search.html?query=machinelearning"><span>machinelearning</span></a>
-                
-                    <a href="../../../fr/search.html?query=edgecomputing"><span>edgecomputing</span></a>
-                
-                    <a href="../../../fr/search.html?query=datamanagement"><span>datamanagement</span></a>
-                
-                    <a href="../../../fr/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../fr/search.html?query=zerotrust"><span>zerotrust</span></a>
-                
-                    <a href="../../../fr/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../fr/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../fr/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <h2>Détails de la pile de services</h2>
+  <div class="show-notes" itemprop="transcript">
+    <h2>Détails de la pile de services</h2>
 <p>Un client de l&#39;industrie automobile avait du mal à obtenir efficacement des informations de leurs voitures et de les transférer vers leur centre de données afin de pouvoir effectuer de l&#39;apprentissage automatique et des analyses. Des recherches ont été menées dans ce domaine, mais seulement pour un petit nombre de voitures, pas les centaines de millions de voitures du client. Lorsque j&#39;ai examiné l&#39;ensemble de leur pile de services et la façon dont tout arrivait au centre de données, l&#39;ingestion des données est devenue le problème clair: Comment puis-je ingérer autant de données, et comment le faire rapidement ?</p>
 <h2>Présentation générale de l&#39;architecture Kafka à haut niveau</h2>
 <p>Le client souhaitait utiliser Kafka pour leur ingestion. Kafka est un courtier qui peut bien se mettre à l&#39;échelle, et la clé est qu&#39;il peut gérer plusieurs producteurs, différents consommateurs et beaucoup de données. Utiliser plusieurs courtiers Kafka pour placer et transférer les données dans les endroits les plus appropriés offre une grande flexibilité.</p>
@@ -242,16 +272,60 @@
 <h2>Appel à l&#39;action</h2>
 <p>Le résultat final est que j&#39;ai pu utiliser Kafka avec la mémoire persistante Optane DC comme un système de fichiers ultra-rapide pour obtenir d&#39;importantes améliorations de débit à la fois pour les producteurs et les consommateurs. Un courtier unique peut gérer 15 fois plus de messages et de débit qu&#39;auparavant, réduisant ainsi le nombre de serveurs nécessaires pour gérer des architectures système larges et complexes. Il est temps d&#39;évaluer votre architecture actuelle et de voir si cela serait bénéfique pour votre organisation.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Réduire la congestion d'ingestion avec Intel Optane DCPMM",
+  "episodeNumber": "16",
+  "datePublished": "2020-08-25T00:00:00.000Z",
+  "description": "<p>Dans cet épisode, Darren parle de la diminution de la congestion d&#39;ingestion en utilisant la mémoire persistante Optane DC d&#39;Intel et de l&#39;expérience qu&#39;il a menée avec des résultats surprenants. Cela pourrait bien changer notre manière de penser à la programmation à l&#39;avenir.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Réduire la congestion d'ingestion avec Intel Optane DCPMM Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Réduire la congestion d'ingestion avec Intel Optane DCPMM Audio",
+      "contentUrl": "https://share.transistor.fm/e/7ca179aa"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Droit d'auteur &copy; 2025 Paidar Productions LLC</p>

@@ -159,51 +159,80 @@
         </ul>
     </nav>
 </header>
-<section id="one-episode">
-    <h1 id="episode-title">#17 Elastische Suche & Intel Optane DCPMM</h1>
-    <div class="episode-container">
-        <!-- YouTube Video Section -->
-        <div class="video-container">
-            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/url?autoplay=1" title="Episode Playback"></iframe>
-        </div>
 
-        <!-- Podcast Audio Section -->
-        <div class="podcast-container">
-            <iframe width="100%" height="180" frameborder="no" scrolling="no" seamless="" src="https://share.transistor.fm/e/77870513"></iframe>
-        </div>
-        <div class="show-summary">
-            <p><p>Darren Pulsipher zeigt, wie er die Leistung von Elasticsearch erhöhte, indem er den Intel Optane Persistent Memory im 100 Prozent App-Direct-Modus verwendete. Seine Tests zeigen eine beeindruckende Leistungssteigerung von 2x. Durch Verdoppelung der Durchsatzkapazität können Sie die Anzahl der Server in Ihrem Elasticsearch-Cluster erheblich verringern.</p>
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #17 <span>Elastische Suche & Intel Optane DCPMM</span>
+    </h1>
+    <time datetime="2020-08-31T00:00:00.000Z"
+          itemprop="datePublished">
+      2020-08-31T00:00:00.000Z
+    </time>
+    <meta itemprop="episodeNumber" content="17"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Elastische Suche & Intel Optane DCPMM">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/url">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/url?autoplay=1"
+            title="Elastische Suche & Intel Optane DCPMM Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Elastische Suche & Intel Optane DCPMM">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/77870513">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/77870513"
+            title="Elastische Suche & Intel Optane DCPMM Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Darren Pulsipher zeigt, wie er die Leistung von Elasticsearch erhöhte, indem er den Intel Optane Persistent Memory im 100 Prozent App-Direct-Modus verwendete. Seine Tests zeigen eine beeindruckende Leistungssteigerung von 2x. Durch Verdoppelung der Durchsatzkapazität können Sie die Anzahl der Server in Ihrem Elasticsearch-Cluster erheblich verringern.</p>
 </p>
+    <nav class="tags" aria-label="Tags">
+      
+        <a href="../../../de/search.html?query=intel"
+           itemprop="keywords">intel</a>
+      
+        <a href="../../../de/search.html?query=optane"
+           itemprop="keywords">optane</a>
+      
+        <a href="../../../de/search.html?query=moderncomputing"
+           itemprop="keywords">moderncomputing</a>
+      
+        <a href="../../../de/search.html?query=dataanalytics"
+           itemprop="keywords">dataanalytics</a>
+      
+        <a href="../../../de/search.html?query=multicloud"
+           itemprop="keywords">multicloud</a>
+      
+        <a href="../../../de/search.html?query=process"
+           itemprop="keywords">process</a>
+      
+        <a href="../../../de/search.html?query=technology"
+           itemprop="keywords">technology</a>
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../de/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
 
-            <!-- Tags Section -->
-            <div class="tags">
-                
-                    <a href="../../../de/search.html?query=intel"><span>intel</span></a>
-                
-                    <a href="../../../de/search.html?query=optane"><span>optane</span></a>
-                
-                    <a href="../../../de/search.html?query=moderncomputing"><span>moderncomputing</span></a>
-                
-                    <a href="../../../de/search.html?query=dataanalytics"><span>dataanalytics</span></a>
-                
-                    <a href="../../../de/search.html?query=multicloud"><span>multicloud</span></a>
-                
-                    <a href="../../../de/search.html?query=process"><span>process</span></a>
-                
-                    <a href="../../../de/search.html?query=technology"><span>technology</span></a>
-                
-            </div>
-
-            <!-- Guests Section -->
-            <div class="guests">
-                
-                <a href="../../../de/guests/darren-w-pulsipher/index.html" target="_blank">Darren W Pulsipher</a>
-            </div>
-        </div>
-
-        <!-- Show Notes Section -->
-        <div class="show-notes">
-            <p>Kürzlich habe ich einige Tests mit der neuen von Intel entwickelten Technologie namens Optane DC Persistent Memory (PMEM) in Verbindung mit Kafka durchgeführt. Durch die Nutzung von Optane auf unkonventionelle Weise, indem es als Dateisystem eingebunden wurde, konnte ich eine massive Verbesserung der Durchsatzleistung erzielen. Hören Sie sich hier meinen Podcast dazu an. (Können Sie hier einen Link einfügen?) Ich habe dasselbe mit Elasticsearch ausprobiert, um festzustellen, ob ich eine ähnliche Leistungssteigerung erzielen kann.</p>
+  <div class="show-notes" itemprop="transcript">
+    <p>Kürzlich habe ich einige Tests mit der neuen von Intel entwickelten Technologie namens Optane DC Persistent Memory (PMEM) in Verbindung mit Kafka durchgeführt. Durch die Nutzung von Optane auf unkonventionelle Weise, indem es als Dateisystem eingebunden wurde, konnte ich eine massive Verbesserung der Durchsatzleistung erzielen. Hören Sie sich hier meinen Podcast dazu an. (Können Sie hier einen Link einfügen?) Ich habe dasselbe mit Elasticsearch ausprobiert, um festzustellen, ob ich eine ähnliche Leistungssteigerung erzielen kann.</p>
 <p>Elasticsearch ist eine hochskalierbare Such- und Analyse-Engine, die es ermöglicht, Daten über mehrere Knoten zu verteilen, um die Lösung zu erweitern und umfangreichere Datenmengen zu unterstützen. Mit anderen Worten handelt es sich um einen verteilten Metadaten-Manager, der hauptsächlich zur Protokollanalyse verwendet wird. Elastic selbst ist ein großartiges Werkzeug, um Daten in JSON-Format zu normalisieren. Ich kann jede Art von Daten in Elastic einfügen und es kann sich über einen verteilten Cluster erstrecken. Es ist zwar kein Nachrichtenbus wie Kafka, indexiert aber stattdessen die ankommenden Daten. Da Elastic diese Daten auf Festplatten speichert, habe ich erkannt, dass ich PMEM auf die gleiche Weise nutzen könnte wie bei Kafka.</p>
 <h2>Intel Optane DC Persistent Memory</h2>
 <p>Intel Optane DC Persistent Memory wird im DDR4-Format geliefert, sodass es perfekt in den DDR4-Speichersteckplatz Ihres Servers passt. Die Module sind in 128, 256 und 512 Gigabyte erhältlich, sodass ich in einem Zwei-Sockel-System 6 Terabyte PMEM haben kann. Eine wichtige Funktion ist, dass die Hardware verschlüsselt ist und mit dieser Verschlüsselung an Ihre CPU gebunden ist, sodass sie sicher und äußerst zuverlässig ist. Sie wird bereits verwendet, um tiefgreifende Veränderungen in der Art und Weise herbeizuführen, wie sie in vielen Datenbanken, wie zum Beispiel in Oracles Exadata-Plattform sowie SAP HANA, eingesetzt wird.</p>
@@ -232,16 +261,60 @@
 <h2>Für weitere Informationen</h2>
 <p>Für detailliertere Informationen schauen Sie sich den Link im Podcast zu dem Dokument an, das wir als Antwort auf diese Testergebnisse erstellt haben. Sie können mich auch unter <a href="mailto:darren.w.pulsipher@intel.com">darren.w.pulsipher@intel.com</a> kontaktieren oder auf LinkedIn @darrenpulsipher.</p>
 
-        </div>
-    </div>
-    <div class="sponsor-container" >
-        <p> Thank you to our sponsors for supporting this episode!</p>
-        <p> Please help support future episodes by visiting our sponsors.</p>
-        <ol>
-        
-        </ol>
-    </div>
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
 </section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Elastische Suche & Intel Optane DCPMM",
+  "episodeNumber": "17",
+  "datePublished": "2020-08-31T00:00:00.000Z",
+  "description": "<p>Darren Pulsipher zeigt, wie er die Leistung von Elasticsearch erhöhte, indem er den Intel Optane Persistent Memory im 100 Prozent App-Direct-Modus verwendete. Seine Tests zeigen eine beeindruckende Leistungssteigerung von 2x. Durch Verdoppelung der Durchsatzkapazität können Sie die Anzahl der Server in Ihrem Elasticsearch-Cluster erheblich verringern.</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Elastische Suche & Intel Optane DCPMM Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Elastische Suche & Intel Optane DCPMM Audio",
+      "contentUrl": "https://share.transistor.fm/e/77870513"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
 <footer id="footer">
     <div class="footer-content">
         <p>Urheberrecht &copy; 2025 Paidar Productions LLC</p>
