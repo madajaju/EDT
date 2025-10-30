@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Dynamischer Seitentitel -->
+    <title>Small Language Models: The Public Gen AI Killer?</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/de/home/">
+    <meta name="description" content="&lt;p&gt;Künstliche Intelligenz (KI) ist kein Schlagwort – sie verändert, wie Unternehmen agieren. Begleiten Sie den Gastgeber Dr. Darren, einen erfahrenen Unternehmensarchitekten, zusammen mit Lynn Comp, einer Expertin für innovative Trends in der Rechenzentrumstechnologie, während sie die aktuelle Landschaft der KI erkunden und wie Organisationen sie nutzen können, um erfolgreich zu sein. In diesem Gespräch gehen sie auf die Komplexität von KI-Benchmarks, Anwendungsfällen und die Zukunft der KI-Unternehmensarchitektur ein.&lt;/p&gt;
+&lt;h2&gt;Wichtige Erkenntnisse:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;KI-Benchmarks verstehen&lt;/strong&gt;: Erkennen Sie, dass Metriken wie Tokens pro Sekunde nicht immer in Geschäftswert übersetzt werden; Handlungsfähigkeit ist wichtiger als Geschwindigkeit.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Klein anfangen&lt;/strong&gt;: Das Experimentieren mit kleinen, überschaubaren KI-Projekten kann bedeutende Einblicke liefern, ohne dass die bestehende Infrastruktur grundlegend verändert werden muss.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fokus auf Geschäftsbedürfnisse&lt;/strong&gt;: Passen Sie KI-Implementierungen an die spezifischen Anwendungsfälle Ihrer Branche an, um die operative Effizienz zu steigern und die Haftung zu reduzieren.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hybride Architekturen annehmen&lt;/strong&gt;: Nutzen Sie sowohl lokale als auch Cloud-Lösungen, um ein robustes KI-Rahmenwerk zu schaffen, das Risiken wie Ausfälle und Datenverletzungen mindert.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mitarbeiter weiterbilden&lt;/strong&gt;: Bereiten Sie Ihr Team auf die KI-gesteuerte Zukunft vor, indem Sie kritisches Denken und Datenkompetenz fördern.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Kapitel:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;00:00 Einführung und Aufhänger&lt;/li&gt;
+&lt;li&gt;02:30 KI-Benchmarks: Die Metriken verstehen&lt;/li&gt;
+&lt;li&gt;05:15 Anwendungsfälle für KI im Geschäftsleben&lt;/li&gt;
+&lt;li&gt;08:00 Die Bedeutung, klein anzufangen&lt;/li&gt;
+&lt;li&gt;10:45 Die Rolle hybrider Architekturen&lt;/li&gt;
+&lt;li&gt;14:30 Weiterbildung Ihrer Mitarbeiter für KI&lt;/li&gt;
+&lt;li&gt;17:00 Empfehlungen und nächste Schritte&lt;/li&gt;
+&lt;li&gt;19:00 Fazit und Handlungsaufruf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Begleiten Sie uns in dieser aufschlussreichen Episode, die Technologen und Führungskräfte dazu ermutigt, den Wandel anzunehmen und das Potenzial von KI in ihren Betrieben zu nutzen. Vergessen Sie nicht, unseren Kanal für weitere Einblicke zu abonnieren und diese Episode mit anderen zu teilen, die in der digitalen Ära erfolgreich sein möchten!&lt;/p&gt;
+">
+    <meta name="keywords" content="Digitale Transformation, Podcast, Interviews, Nachrichten, KI, Cybersicherheit, Edge Computing, Datenmanagement">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Small Language Models: The Public Gen AI Killer? — Interviews, Nachrichten und Community">
+    <meta property="og:description" content="&lt;p&gt;Künstliche Intelligenz (KI) ist kein Schlagwort – sie verändert, wie Unternehmen agieren. Begleiten Sie den Gastgeber Dr. Darren, einen erfahrenen Unternehmensarchitekten, zusammen mit Lynn Comp, einer Expertin für innovative Trends in der Rechenzentrumstechnologie, während sie die aktuelle Landschaft der KI erkunden und wie Organisationen sie nutzen können, um erfolgreich zu sein. In diesem Gespräch gehen sie auf die Komplexität von KI-Benchmarks, Anwendungsfällen und die Zukunft der KI-Unternehmensarchitektur ein.&lt;/p&gt;
+&lt;h2&gt;Wichtige Erkenntnisse:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;KI-Benchmarks verstehen&lt;/strong&gt;: Erkennen Sie, dass Metriken wie Tokens pro Sekunde nicht immer in Geschäftswert übersetzt werden; Handlungsfähigkeit ist wichtiger als Geschwindigkeit.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Klein anfangen&lt;/strong&gt;: Das Experimentieren mit kleinen, überschaubaren KI-Projekten kann bedeutende Einblicke liefern, ohne dass die bestehende Infrastruktur grundlegend verändert werden muss.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fokus auf Geschäftsbedürfnisse&lt;/strong&gt;: Passen Sie KI-Implementierungen an die spezifischen Anwendungsfälle Ihrer Branche an, um die operative Effizienz zu steigern und die Haftung zu reduzieren.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hybride Architekturen annehmen&lt;/strong&gt;: Nutzen Sie sowohl lokale als auch Cloud-Lösungen, um ein robustes KI-Rahmenwerk zu schaffen, das Risiken wie Ausfälle und Datenverletzungen mindert.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mitarbeiter weiterbilden&lt;/strong&gt;: Bereiten Sie Ihr Team auf die KI-gesteuerte Zukunft vor, indem Sie kritisches Denken und Datenkompetenz fördern.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Kapitel:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;00:00 Einführung und Aufhänger&lt;/li&gt;
+&lt;li&gt;02:30 KI-Benchmarks: Die Metriken verstehen&lt;/li&gt;
+&lt;li&gt;05:15 Anwendungsfälle für KI im Geschäftsleben&lt;/li&gt;
+&lt;li&gt;08:00 Die Bedeutung, klein anzufangen&lt;/li&gt;
+&lt;li&gt;10:45 Die Rolle hybrider Architekturen&lt;/li&gt;
+&lt;li&gt;14:30 Weiterbildung Ihrer Mitarbeiter für KI&lt;/li&gt;
+&lt;li&gt;17:00 Empfehlungen und nächste Schritte&lt;/li&gt;
+&lt;li&gt;19:00 Fazit und Handlungsaufruf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Begleiten Sie uns in dieser aufschlussreichen Episode, die Technologen und Führungskräfte dazu ermutigt, den Wandel anzunehmen und das Potenzial von KI in ihren Betrieben zu nutzen. Vergessen Sie nicht, unseren Kanal für weitere Einblicke zu abonnieren und diese Episode mit anderen zu teilen, die in der digitalen Ära erfolgreich sein möchten!&lt;/p&gt;
+">
+    <meta property="og:url" content="https://embracingdigital.org/de/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Small Language Models: The Public Gen AI Killer? — Interviews, Nachrichten und Community">
+    <meta name="twitter:description" content="&lt;p&gt;Künstliche Intelligenz (KI) ist kein Schlagwort – sie verändert, wie Unternehmen agieren. Begleiten Sie den Gastgeber Dr. Darren, einen erfahrenen Unternehmensarchitekten, zusammen mit Lynn Comp, einer Expertin für innovative Trends in der Rechenzentrumstechnologie, während sie die aktuelle Landschaft der KI erkunden und wie Organisationen sie nutzen können, um erfolgreich zu sein. In diesem Gespräch gehen sie auf die Komplexität von KI-Benchmarks, Anwendungsfällen und die Zukunft der KI-Unternehmensarchitektur ein.&lt;/p&gt;
+&lt;h2&gt;Wichtige Erkenntnisse:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;KI-Benchmarks verstehen&lt;/strong&gt;: Erkennen Sie, dass Metriken wie Tokens pro Sekunde nicht immer in Geschäftswert übersetzt werden; Handlungsfähigkeit ist wichtiger als Geschwindigkeit.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Klein anfangen&lt;/strong&gt;: Das Experimentieren mit kleinen, überschaubaren KI-Projekten kann bedeutende Einblicke liefern, ohne dass die bestehende Infrastruktur grundlegend verändert werden muss.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fokus auf Geschäftsbedürfnisse&lt;/strong&gt;: Passen Sie KI-Implementierungen an die spezifischen Anwendungsfälle Ihrer Branche an, um die operative Effizienz zu steigern und die Haftung zu reduzieren.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hybride Architekturen annehmen&lt;/strong&gt;: Nutzen Sie sowohl lokale als auch Cloud-Lösungen, um ein robustes KI-Rahmenwerk zu schaffen, das Risiken wie Ausfälle und Datenverletzungen mindert.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mitarbeiter weiterbilden&lt;/strong&gt;: Bereiten Sie Ihr Team auf die KI-gesteuerte Zukunft vor, indem Sie kritisches Denken und Datenkompetenz fördern.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Kapitel:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;00:00 Einführung und Aufhänger&lt;/li&gt;
+&lt;li&gt;02:30 KI-Benchmarks: Die Metriken verstehen&lt;/li&gt;
+&lt;li&gt;05:15 Anwendungsfälle für KI im Geschäftsleben&lt;/li&gt;
+&lt;li&gt;08:00 Die Bedeutung, klein anzufangen&lt;/li&gt;
+&lt;li&gt;10:45 Die Rolle hybrider Architekturen&lt;/li&gt;
+&lt;li&gt;14:30 Weiterbildung Ihrer Mitarbeiter für KI&lt;/li&gt;
+&lt;li&gt;17:00 Empfehlungen und nächste Schritte&lt;/li&gt;
+&lt;li&gt;19:00 Fazit und Handlungsaufruf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Begleiten Sie uns in dieser aufschlussreichen Episode, die Technologen und Führungskräfte dazu ermutigt, den Wandel anzunehmen und das Potenzial von KI in ihren Betrieben zu nutzen. Vergessen Sie nicht, unseren Kanal für weitere Einblicke zu abonnieren und diese Episode mit anderen zu teilen, die in der digitalen Ära erfolgreich sein möchten!&lt;/p&gt;
+">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (Alternativen) -->
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="x-default">
+
+    <!-- Favicon & Styles -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Digitale Transformation gestalten",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Digitale Transformation gestalten",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/de/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/de/home/" aria-label="Startseite — Digitale Transformation gestalten">
+            <img src="/images/logo.png" alt="Logo — Digitale Transformation gestalten" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Menü umschalten">☰</button>
+
+    <!-- Hauptnavigation -->
+    <nav id="primary-nav" aria-label="Hauptnavigation">
+        <ul>
+            <li><a href="/de/home/index.html" >Start</a></li>
+
+            <li class="dropdown">
+                <a href="/de/shows/index.html" aria-haspopup="true" aria-expanded="false">Sendungen</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/de/episodes/index.html" aria-label="Interviews — Digitale Transformation gestalten">
+                            Digitale Transformation gestalten
+                            <small class="nav-note">Interviews</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/briefs/index.html" aria-label="Nachrichten — Digital diese Woche">
+                            Digital diese Woche
+                            <small class="nav-note">Nachrichten</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/de/guests/index.html">Gäste</a></li>
+            <li><a href="/de/articles/index.html">Artikel</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/de/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">LinkedIn Gruppe</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Über uns -->
+            <li class="dropdown">
+                <a href="/de/about.html" aria-haspopup="true" aria-expanded="false">Über uns</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/about.html">Über die Sendung</a></li>
+                    <li role="none"><a role="menuitem" href="/de/host.html">Moderator: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/de/sponsors/index.html">Sponsoring & Kontakt</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/de/search.html">Suche</a></li>
+
+            <!-- Sprachen -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Sprachen</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #301 <span>Kleine Sprachmodelle: Der Killer der öffentlichen Gen AI?</span>
+    </h1>
+    <time datetime="Thu Oct 30 2025 05:19:08 GMT-0700 (Pacific Daylight Time)"
+          itemprop="datePublished">
+      Thu Oct 30 2025 05:19:08 GMT-0700 (Pacific Daylight Time)
+    </time>
+    <meta itemprop="episodeNumber" content="301"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Kleine Sprachmodelle: Der Killer der öffentlichen Gen AI?">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/y7t7hu56jj0">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/y7t7hu56jj0?autoplay=1"
+            title="Kleine Sprachmodelle: Der Killer der öffentlichen Gen AI? Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Kleine Sprachmodelle: Der Killer der öffentlichen Gen AI?">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/b8224c82">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/b8224c82"
+            title="Kleine Sprachmodelle: Der Killer der öffentlichen Gen AI? Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>Künstliche Intelligenz (KI) ist kein Schlagwort – sie verändert, wie Unternehmen agieren. Begleiten Sie den Gastgeber Dr. Darren, einen erfahrenen Unternehmensarchitekten, zusammen mit Lynn Comp, einer Expertin für innovative Trends in der Rechenzentrumstechnologie, während sie die aktuelle Landschaft der KI erkunden und wie Organisationen sie nutzen können, um erfolgreich zu sein. In diesem Gespräch gehen sie auf die Komplexität von KI-Benchmarks, Anwendungsfällen und die Zukunft der KI-Unternehmensarchitektur ein.</p>
+<h2>Wichtige Erkenntnisse:</h2>
+<ul>
+<li><strong>KI-Benchmarks verstehen</strong>: Erkennen Sie, dass Metriken wie Tokens pro Sekunde nicht immer in Geschäftswert übersetzt werden; Handlungsfähigkeit ist wichtiger als Geschwindigkeit.</li>
+<li><strong>Klein anfangen</strong>: Das Experimentieren mit kleinen, überschaubaren KI-Projekten kann bedeutende Einblicke liefern, ohne dass die bestehende Infrastruktur grundlegend verändert werden muss.</li>
+<li><strong>Fokus auf Geschäftsbedürfnisse</strong>: Passen Sie KI-Implementierungen an die spezifischen Anwendungsfälle Ihrer Branche an, um die operative Effizienz zu steigern und die Haftung zu reduzieren.</li>
+<li><strong>Hybride Architekturen annehmen</strong>: Nutzen Sie sowohl lokale als auch Cloud-Lösungen, um ein robustes KI-Rahmenwerk zu schaffen, das Risiken wie Ausfälle und Datenverletzungen mindert.</li>
+<li><strong>Mitarbeiter weiterbilden</strong>: Bereiten Sie Ihr Team auf die KI-gesteuerte Zukunft vor, indem Sie kritisches Denken und Datenkompetenz fördern.</li>
+</ul>
+<h2>Kapitel:</h2>
+<ul>
+<li>00:00 Einführung und Aufhänger</li>
+<li>02:30 KI-Benchmarks: Die Metriken verstehen</li>
+<li>05:15 Anwendungsfälle für KI im Geschäftsleben</li>
+<li>08:00 Die Bedeutung, klein anzufangen</li>
+<li>10:45 Die Rolle hybrider Architekturen</li>
+<li>14:30 Weiterbildung Ihrer Mitarbeiter für KI</li>
+<li>17:00 Empfehlungen und nächste Schritte</li>
+<li>19:00 Fazit und Handlungsaufruf</li>
+</ul>
+<p>Begleiten Sie uns in dieser aufschlussreichen Episode, die Technologen und Führungskräfte dazu ermutigt, den Wandel anzunehmen und das Potenzial von KI in ihren Betrieben zu nutzen. Vergessen Sie nicht, unseren Kanal für weitere Einblicke zu abonnieren und diese Episode mit anderen zu teilen, die in der digitalen Ära erfolgreich sein möchten!</p>
+</p>
+    <nav class="tags" aria-label="Tags">
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../de/guests/lynn-comp/index.html"
+           itemprop="name" target="_blank">Lynn Comp</a>
+      
+        <a href="../../../de/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
+
+  <div class="show-notes" itemprop="transcript">
+    <h2>Freischaltung der Zukunft der Geschäftseffizienz</h2>
+<p>KI hat sich rasch von einem Konzept zu einem leistungsstarken Werkzeug entwickelt, das die Funktionsweise von Unternehmen transformieren kann. In der sich schnell ändernden technologischen Landschaft von heute ist es entscheidend für Technologen und Geschäftsführer, die Rolle der KI zu verstehen, insbesondere in Form von kleinen Sprachmodellen. Durch die Nutzung dieser Innovationen können Organisationen ihre Daten effektiver nutzen, Entscheidungsfindung verbessern und Arbeitsabläufe optimieren.</p>
+<p>Darren, ein erfahrener Experte in der Unternehmensarchitektur, führt die Zuhörer durch diese Erkundung. Seine Erkenntnisse finden Resonanz bei denen, die versuchen, die raschen Fortschritte der KI zu verstehen und sie effektiv in ihren Betrieben umzusetzen.</p>
+<h2>Navigation durch die KI-Landschaft</h2>
+<p>Die Verbreitung von KI hat zu vielen Benchmarks geführt, wie etwa Tokens pro Sekunde, die Geschäftsführer oft verwirren. Während diese Metriken für Technikfachleute von entscheidender Bedeutung sind, werden sie nicht immer in greifbaren Geschäftswert übersetzt. Daher ist einer der ersten Schritte für Organisationen, zwischen Gaming-Metriken und solchen, die die realen Betriebsabläufe betreffen, zu unterscheiden.</p>
+<p>Viele Organisationen kämpfen damit, Leistungskennzahlen mit ihren spezifischen Geschäftsanforderungen zu verknüpfen. Beispielsweise können die Geschwindigkeiten von KI-Antworten erhebliche Auswirkungen haben. Höhere Geschwindigkeiten entsprechen einer besseren Servicequalität und verringern Reaktionszeiten, die die Kundenzufriedenheit beeinträchtigen könnten.</p>
+<p>Haupterkenntnisse:</p>
+<p>Verstehen Sie, wie sich KI-Metriken auf menschliche Interaktionen beziehen.</p>
+<p>Identifizieren Sie geschäftskritische Anwendungsfälle, bei denen schnelle Reaktionen die Geschäftsergebnisse verbessern.</p>
+<h2>Anwendungen in der realen Welt</h2>
+<p>Organisationen, die auf heterogene Computerinfrastrukturen setzen, können ihre bestehenden Infrastrukturen auf innovative Weise nutzen. Der Einsatz kleiner Sprachmodelle für Aufgaben wie Datenzusammenfassung oder Kundensupport kann effizienter und effektiver sein und dabei geringere Kosten als bisherige Methoden verursachen.</p>
+<p>Ein praktisches Beispiel umfasst die Verbesserung des Kundenservice durch KI-gesteuerte Chatbots, die in der Lage sind, Supportanrufe zusammenzufassen und zeitgerechte Antworten zu liefern. Dies beschleunigt nicht nur die Reaktionszeiten, sondern hilft dem Personal auch, sich auf komplexere Probleme zu konzentrieren.</p>
+<h2>Experimentieren mit Anwendungsfällen</h2>
+<p>Um mit der Implementierung von KI zu beginnen, sollten Organisationen klein anfangen. Das Testen verschiedener Anwendungsfälle ermöglicht es Unternehmen, Einblicke zu gewinnen, ohne bestehende Systeme vollständig zu überarbeiten. Der Fokus sollte auf Aufgaben liegen, die eine schnelle Datenverarbeitung oder Zusammenfassung erfordern - dies ermöglicht Teams, sofortige Vorteile zu sehen.</p>
+<p>Die Sicherung von Geschäftsdaten und deren Integration in traditionelle Systeme werden entscheidend sein, um einen Mehrwert zu erzielen. KI-Technologien sollten nicht in Silos funktionieren, sondern die bestehende Infrastruktur verbessern.</p>
+<p>Schlüsselstrategien:</p>
+<p>Beginnen Sie mit grundlegenden, risikoarmen Anwendungsfällen, um Vertrauen aufzubauen.</p>
+<p>Nutzen Sie vorhandene Datenarchitekturen, um die Erstellung von Silos zu vermeiden.</p>
+<h2>Mit Zuversicht voranschreiten</h2>
+<p>Das Verständnis für die Nachfrage nach innovativen KI-Lösungen kann Organisationen voranbringen. Geschäftsführer sollten nicht davor zurückschrecken, in KI zu investieren, auch wenn dies sorgfältige Experimente erfordert. Wenn die Unternehmensarchitektur sich verändert, sollten sich auch die Fähigkeiten der Teams verändern, um sicherzustellen, dass die Mitarbeiter in der Lage sind, diese Technologien effektiv einzusetzen.</p>
+<p>Einfache Maßnahmen wie die Bewertung aktueller Fähigkeiten und der Einsatz kleiner Sprachmodelle können zu erheblichen betrieblichen Vorteilen führen. Der Schritt zur Einführung von KI wird Unternehmen an die Spitze ihrer Branchen stellen.</p>
+<p>Es ist Zeit, diese aufregende Grenze zu erkunden. Tauchen Sie tiefer in die transformative Wirkung der KI ein, indem Sie die vollständige Diskussion in unserer neuesten Episode verfolgen. Erschließen Sie heute neue Möglichkeiten für Ihre Organisation!</p>
+
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
+</section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Kleine Sprachmodelle: Der Killer der öffentlichen Gen AI?",
+  "episodeNumber": "301",
+  "datePublished": "Thu Oct 30 2025 05:19:08 GMT-0700 (Pacific Daylight Time)",
+  "description": "<p>Künstliche Intelligenz (KI) ist kein Schlagwort – sie verändert, wie Unternehmen agieren. Begleiten Sie den Gastgeber Dr. Darren, einen erfahrenen Unternehmensarchitekten, zusammen mit Lynn Comp, einer Expertin für innovative Trends in der Rechenzentrumstechnologie, während sie die aktuelle Landschaft der KI erkunden und wie Organisationen sie nutzen können, um erfolgreich zu sein. In diesem Gespräch gehen sie auf die Komplexität von KI-Benchmarks, Anwendungsfällen und die Zukunft der KI-Unternehmensarchitektur ein.</p>
+<h2>Wichtige Erkenntnisse:</h2>
+<ul>
+<li><strong>KI-Benchmarks verstehen</strong>: Erkennen Sie, dass Metriken wie Tokens pro Sekunde nicht immer in Geschäftswert übersetzt werden; Handlungsfähigkeit ist wichtiger als Geschwindigkeit.</li>
+<li><strong>Klein anfangen</strong>: Das Experimentieren mit kleinen, überschaubaren KI-Projekten kann bedeutende Einblicke liefern, ohne dass die bestehende Infrastruktur grundlegend verändert werden muss.</li>
+<li><strong>Fokus auf Geschäftsbedürfnisse</strong>: Passen Sie KI-Implementierungen an die spezifischen Anwendungsfälle Ihrer Branche an, um die operative Effizienz zu steigern und die Haftung zu reduzieren.</li>
+<li><strong>Hybride Architekturen annehmen</strong>: Nutzen Sie sowohl lokale als auch Cloud-Lösungen, um ein robustes KI-Rahmenwerk zu schaffen, das Risiken wie Ausfälle und Datenverletzungen mindert.</li>
+<li><strong>Mitarbeiter weiterbilden</strong>: Bereiten Sie Ihr Team auf die KI-gesteuerte Zukunft vor, indem Sie kritisches Denken und Datenkompetenz fördern.</li>
+</ul>
+<h2>Kapitel:</h2>
+<ul>
+<li>00:00 Einführung und Aufhänger</li>
+<li>02:30 KI-Benchmarks: Die Metriken verstehen</li>
+<li>05:15 Anwendungsfälle für KI im Geschäftsleben</li>
+<li>08:00 Die Bedeutung, klein anzufangen</li>
+<li>10:45 Die Rolle hybrider Architekturen</li>
+<li>14:30 Weiterbildung Ihrer Mitarbeiter für KI</li>
+<li>17:00 Empfehlungen und nächste Schritte</li>
+<li>19:00 Fazit und Handlungsaufruf</li>
+</ul>
+<p>Begleiten Sie uns in dieser aufschlussreichen Episode, die Technologen und Führungskräfte dazu ermutigt, den Wandel anzunehmen und das Potenzial von KI in ihren Betrieben zu nutzen. Vergessen Sie nicht, unseren Kanal für weitere Einblicke zu abonnieren und diese Episode mit anderen zu teilen, die in der digitalen Ära erfolgreich sein möchten!</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Kleine Sprachmodelle: Der Killer der öffentlichen Gen AI? Video",
+      "embedUrl": "https://www.youtube.com/embed/y7t7hu56jj0"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Kleine Sprachmodelle: Der Killer der öffentlichen Gen AI? Audio",
+      "contentUrl": "https://share.transistor.fm/e/b8224c82"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Lynn Comp"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
+<footer id="footer">
+    <div class="footer-content">
+        <p>Urheberrecht &copy; 2025 Paidar Productions LLC</p>
+        <p>Alle Rechte vorbehalten</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

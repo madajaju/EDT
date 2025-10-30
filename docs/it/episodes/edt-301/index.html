@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Titolo pagina dinamico -->
+    <title>Small Language Models: The Public Gen AI Killer?</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://embracingdigital.org/it/home/">
+    <meta name="description" content="&lt;p&gt;L&amp;#39;Intelligenza Artificiale (IA) non è solo una parola d&amp;#39;ordine: sta ridisegnando il modo in cui le aziende operano. Unisciti all&amp;#39;host Dr. Darren, un architetto d&amp;#39;impresa esperto, insieme a Lynn Comp, un esperto in tendenze innovative della tecnologia dei Data Center, mentre si immergono nel panorama attuale dell&amp;#39;IA e in come le organizzazioni possono sfruttarla per prosperare. In questa conversazione, affrontano le complessità dei benchmark dell&amp;#39;IA, dei casi d&amp;#39;uso e del futuro dell&amp;#39;architettura enterprise dell&amp;#39;IA.&lt;/p&gt;
+&lt;h2&gt;Principali Insegnamenti:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Comprendere i Benchmark dell&amp;#39;IA&lt;/strong&gt;: Riconoscere che metriche come i token al secondo non si traducono sempre in valore commerciale; l&amp;#39;azione è più importante della velocità.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Iniziare in Piccolo&lt;/strong&gt;: Sperimentare con progetti di IA piccoli e gestibili può fornire informazioni significative senza dover ristrutturare l&amp;#39;infrastruttura esistente.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Concentrarsi sulle Esigenze Aziendali&lt;/strong&gt;: Personalizzare le implementazioni dell&amp;#39;IA ai casi d&amp;#39;uso specifici del tuo settore per migliorare l&amp;#39;efficienza operativa e ridurre la responsabilità.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Abbracciare Architetture Ibride&lt;/strong&gt;: Sfruttare sia soluzioni on-premise che cloud per creare un framework IA robusto che mitiga i rischi come interruzioni e violazioni dei dati.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aggiornare le Competenze della Tua Forza Lavoro&lt;/strong&gt;: Preparare il tuo team per un futuro guidato dall&amp;#39;IA promuovendo il pensiero critico e la competenza sui dati.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Capitoli:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;00:00 Introduzione e Hook&lt;/li&gt;
+&lt;li&gt;02:30 Benchmark dell&amp;#39;IA: Comprendere le Metriche&lt;/li&gt;
+&lt;li&gt;05:15 Casi d&amp;#39;Uso dell&amp;#39;IA nel Mondo degli Affari&lt;/li&gt;
+&lt;li&gt;08:00 L&amp;#39;Importanza di Iniziare in Piccolo&lt;/li&gt;
+&lt;li&gt;10:45 Il Ruolo delle Architetture Ibride&lt;/li&gt;
+&lt;li&gt;14:30 Aggiornare le Competenze della Tua Forza Lavoro per l&amp;#39;IA&lt;/li&gt;
+&lt;li&gt;17:00 Raccomandazioni e Prossimi Passi&lt;/li&gt;
+&lt;li&gt;19:00 Conclusione e Invito all&amp;#39;Azione&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Unisciti a noi in questo episodio illuminante che incoraggia i tecnologi e i leader aziendali ad abbracciare il cambiamento e a sfruttare il potenziale dell&amp;#39;IA nelle loro operazioni. Non dimenticare di iscriverti per ulteriori approfondimenti e condividere questo episodio con altri che cercano di prosperare nell&amp;#39;era digitale!&lt;/p&gt;
+">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Small Language Models: The Public Gen AI Killer? — Interviste, Notizie e Community">
+    <meta property="og:description" content="&lt;p&gt;L&amp;#39;Intelligenza Artificiale (IA) non è solo una parola d&amp;#39;ordine: sta ridisegnando il modo in cui le aziende operano. Unisciti all&amp;#39;host Dr. Darren, un architetto d&amp;#39;impresa esperto, insieme a Lynn Comp, un esperto in tendenze innovative della tecnologia dei Data Center, mentre si immergono nel panorama attuale dell&amp;#39;IA e in come le organizzazioni possono sfruttarla per prosperare. In questa conversazione, affrontano le complessità dei benchmark dell&amp;#39;IA, dei casi d&amp;#39;uso e del futuro dell&amp;#39;architettura enterprise dell&amp;#39;IA.&lt;/p&gt;
+&lt;h2&gt;Principali Insegnamenti:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Comprendere i Benchmark dell&amp;#39;IA&lt;/strong&gt;: Riconoscere che metriche come i token al secondo non si traducono sempre in valore commerciale; l&amp;#39;azione è più importante della velocità.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Iniziare in Piccolo&lt;/strong&gt;: Sperimentare con progetti di IA piccoli e gestibili può fornire informazioni significative senza dover ristrutturare l&amp;#39;infrastruttura esistente.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Concentrarsi sulle Esigenze Aziendali&lt;/strong&gt;: Personalizzare le implementazioni dell&amp;#39;IA ai casi d&amp;#39;uso specifici del tuo settore per migliorare l&amp;#39;efficienza operativa e ridurre la responsabilità.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Abbracciare Architetture Ibride&lt;/strong&gt;: Sfruttare sia soluzioni on-premise che cloud per creare un framework IA robusto che mitiga i rischi come interruzioni e violazioni dei dati.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aggiornare le Competenze della Tua Forza Lavoro&lt;/strong&gt;: Preparare il tuo team per un futuro guidato dall&amp;#39;IA promuovendo il pensiero critico e la competenza sui dati.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Capitoli:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;00:00 Introduzione e Hook&lt;/li&gt;
+&lt;li&gt;02:30 Benchmark dell&amp;#39;IA: Comprendere le Metriche&lt;/li&gt;
+&lt;li&gt;05:15 Casi d&amp;#39;Uso dell&amp;#39;IA nel Mondo degli Affari&lt;/li&gt;
+&lt;li&gt;08:00 L&amp;#39;Importanza di Iniziare in Piccolo&lt;/li&gt;
+&lt;li&gt;10:45 Il Ruolo delle Architetture Ibride&lt;/li&gt;
+&lt;li&gt;14:30 Aggiornare le Competenze della Tua Forza Lavoro per l&amp;#39;IA&lt;/li&gt;
+&lt;li&gt;17:00 Raccomandazioni e Prossimi Passi&lt;/li&gt;
+&lt;li&gt;19:00 Conclusione e Invito all&amp;#39;Azione&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Unisciti a noi in questo episodio illuminante che incoraggia i tecnologi e i leader aziendali ad abbracciare il cambiamento e a sfruttare il potenziale dell&amp;#39;IA nelle loro operazioni. Non dimenticare di iscriverti per ulteriori approfondimenti e condividere questo episodio con altri che cercano di prosperare nell&amp;#39;era digitale!&lt;/p&gt;
+">
+    <meta property="og:url" content="https://embracingdigital.org/it/home/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Small Language Models: The Public Gen AI Killer? — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="&lt;p&gt;L&amp;#39;Intelligenza Artificiale (IA) non è solo una parola d&amp;#39;ordine: sta ridisegnando il modo in cui le aziende operano. Unisciti all&amp;#39;host Dr. Darren, un architetto d&amp;#39;impresa esperto, insieme a Lynn Comp, un esperto in tendenze innovative della tecnologia dei Data Center, mentre si immergono nel panorama attuale dell&amp;#39;IA e in come le organizzazioni possono sfruttarla per prosperare. In questa conversazione, affrontano le complessità dei benchmark dell&amp;#39;IA, dei casi d&amp;#39;uso e del futuro dell&amp;#39;architettura enterprise dell&amp;#39;IA.&lt;/p&gt;
+&lt;h2&gt;Principali Insegnamenti:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Comprendere i Benchmark dell&amp;#39;IA&lt;/strong&gt;: Riconoscere che metriche come i token al secondo non si traducono sempre in valore commerciale; l&amp;#39;azione è più importante della velocità.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Iniziare in Piccolo&lt;/strong&gt;: Sperimentare con progetti di IA piccoli e gestibili può fornire informazioni significative senza dover ristrutturare l&amp;#39;infrastruttura esistente.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Concentrarsi sulle Esigenze Aziendali&lt;/strong&gt;: Personalizzare le implementazioni dell&amp;#39;IA ai casi d&amp;#39;uso specifici del tuo settore per migliorare l&amp;#39;efficienza operativa e ridurre la responsabilità.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Abbracciare Architetture Ibride&lt;/strong&gt;: Sfruttare sia soluzioni on-premise che cloud per creare un framework IA robusto che mitiga i rischi come interruzioni e violazioni dei dati.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aggiornare le Competenze della Tua Forza Lavoro&lt;/strong&gt;: Preparare il tuo team per un futuro guidato dall&amp;#39;IA promuovendo il pensiero critico e la competenza sui dati.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Capitoli:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;00:00 Introduzione e Hook&lt;/li&gt;
+&lt;li&gt;02:30 Benchmark dell&amp;#39;IA: Comprendere le Metriche&lt;/li&gt;
+&lt;li&gt;05:15 Casi d&amp;#39;Uso dell&amp;#39;IA nel Mondo degli Affari&lt;/li&gt;
+&lt;li&gt;08:00 L&amp;#39;Importanza di Iniziare in Piccolo&lt;/li&gt;
+&lt;li&gt;10:45 Il Ruolo delle Architetture Ibride&lt;/li&gt;
+&lt;li&gt;14:30 Aggiornare le Competenze della Tua Forza Lavoro per l&amp;#39;IA&lt;/li&gt;
+&lt;li&gt;17:00 Raccomandazioni e Prossimi Passi&lt;/li&gt;
+&lt;li&gt;19:00 Conclusione e Invito all&amp;#39;Azione&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Unisciti a noi in questo episodio illuminante che incoraggia i tecnologi e i leader aziendali ad abbracciare il cambiamento e a sfruttare il potenziale dell&amp;#39;IA nelle loro operazioni. Non dimenticare di iscriverti per ulteriori approfondimenti e condividere questo episodio con altri che cercano di prosperare nell&amp;#39;era digitale!&lt;/p&gt;
+">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
+
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
+        <ul>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
+            <li class="dropdown">
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section id="one-episode"
+         itemscope itemtype="https://schema.org/PodcastEpisode">
+  <meta itemprop="mainEntityOfPage" content=""/>
+  <header>
+    <h1 id="episode-title" itemprop="name">
+      #301 <span>Piccoli modelli linguistici: il killer dell'IA pubblica?</span>
+    </h1>
+    <time datetime="Thu Oct 30 2025 05:19:08 GMT-0700 (Pacific Daylight Time)"
+          itemprop="datePublished">
+      Thu Oct 30 2025 05:19:08 GMT-0700 (Pacific Daylight Time)
+    </time>
+    <meta itemprop="episodeNumber" content="301"/>
+  </header>
+
+  <!-- VideoObject -->
+  <div class="video-container" itemprop="associatedMedia"
+       itemscope itemtype="https://schema.org/VideoObject">
+    <meta itemprop="name" content="Piccoli modelli linguistici: il killer dell'IA pubblica?">
+    <meta itemprop="embedUrl"
+          content="https://www.youtube.com/embed/y7t7hu56jj0">
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/y7t7hu56jj0?autoplay=1"
+            title="Piccoli modelli linguistici: il killer dell'IA pubblica? Video"></iframe>
+  </div>
+
+  <!-- AudioObject -->
+  <aside class="podcast-container" itemprop="associatedMedia"
+         itemscope itemtype="https://schema.org/AudioObject">
+    <meta itemprop="name" content="Piccoli modelli linguistici: il killer dell'IA pubblica?">
+    <meta itemprop="contentUrl"
+          content="https://share.transistor.fm/e/b8224c82">
+    <iframe width="100%" height="180" frameborder="0" scrolling="no"
+            src="https://share.transistor.fm/e/b8224c82"
+            title="Piccoli modelli linguistici: il killer dell'IA pubblica? Audio"></iframe>
+  </aside>
+
+  <div class="show-summary" itemprop="description">
+    <p><p>L&#39;Intelligenza Artificiale (IA) non è solo una parola d&#39;ordine: sta ridisegnando il modo in cui le aziende operano. Unisciti all&#39;host Dr. Darren, un architetto d&#39;impresa esperto, insieme a Lynn Comp, un esperto in tendenze innovative della tecnologia dei Data Center, mentre si immergono nel panorama attuale dell&#39;IA e in come le organizzazioni possono sfruttarla per prosperare. In questa conversazione, affrontano le complessità dei benchmark dell&#39;IA, dei casi d&#39;uso e del futuro dell&#39;architettura enterprise dell&#39;IA.</p>
+<h2>Principali Insegnamenti:</h2>
+<ul>
+<li><strong>Comprendere i Benchmark dell&#39;IA</strong>: Riconoscere che metriche come i token al secondo non si traducono sempre in valore commerciale; l&#39;azione è più importante della velocità.</li>
+<li><strong>Iniziare in Piccolo</strong>: Sperimentare con progetti di IA piccoli e gestibili può fornire informazioni significative senza dover ristrutturare l&#39;infrastruttura esistente.</li>
+<li><strong>Concentrarsi sulle Esigenze Aziendali</strong>: Personalizzare le implementazioni dell&#39;IA ai casi d&#39;uso specifici del tuo settore per migliorare l&#39;efficienza operativa e ridurre la responsabilità.</li>
+<li><strong>Abbracciare Architetture Ibride</strong>: Sfruttare sia soluzioni on-premise che cloud per creare un framework IA robusto che mitiga i rischi come interruzioni e violazioni dei dati.</li>
+<li><strong>Aggiornare le Competenze della Tua Forza Lavoro</strong>: Preparare il tuo team per un futuro guidato dall&#39;IA promuovendo il pensiero critico e la competenza sui dati.</li>
+</ul>
+<h2>Capitoli:</h2>
+<ul>
+<li>00:00 Introduzione e Hook</li>
+<li>02:30 Benchmark dell&#39;IA: Comprendere le Metriche</li>
+<li>05:15 Casi d&#39;Uso dell&#39;IA nel Mondo degli Affari</li>
+<li>08:00 L&#39;Importanza di Iniziare in Piccolo</li>
+<li>10:45 Il Ruolo delle Architetture Ibride</li>
+<li>14:30 Aggiornare le Competenze della Tua Forza Lavoro per l&#39;IA</li>
+<li>17:00 Raccomandazioni e Prossimi Passi</li>
+<li>19:00 Conclusione e Invito all&#39;Azione</li>
+</ul>
+<p>Unisciti a noi in questo episodio illuminante che incoraggia i tecnologi e i leader aziendali ad abbracciare il cambiamento e a sfruttare il potenziale dell&#39;IA nelle loro operazioni. Non dimenticare di iscriverti per ulteriori approfondimenti e condividere questo episodio con altri che cercano di prosperare nell&#39;era digitale!</p>
+</p>
+    <nav class="tags" aria-label="Tags">
+      
+    </nav>
+    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
+      
+        <a href="../../../it/guests/lynn-comp/index.html"
+           itemprop="name" target="_blank">Lynn Comp</a>
+      
+        <a href="../../../it/guests/darren-w-pulsipher/index.html"
+           itemprop="name" target="_blank">Darren W Pulsipher</a>
+      
+    </div>
+  </div>
+
+  <div class="show-notes" itemprop="transcript">
+    <h2>Sbloccare il Futuro dell&#39;Efficienza Aziendale</h2>
+<p>L&#39;IA si è rapidamente evoluta da un concetto a un potente strumento che può ridisegnare il modo in cui le imprese funzionano. Nel panorama tecnologico in rapido cambiamento di oggi, comprendere il ruolo dell&#39;IA, in particolare nella forma di piccoli modelli linguistici, è fondamentale per i tecnologi e i leader aziendali. Sfruttando queste innovazioni, le organizzazioni possono utilizzare i loro dati in modo più efficace, migliorare il processo decisionale e ottimizzare i flussi di lavoro.</p>
+<p>Darren, un esperto esperto in architettura aziendale, guida gli ascoltatori attraverso questa esplorazione. Le sue intuizioni risuonano con coloro che cercano di comprendere i rapidi progressi dell&#39;IA e di implementarli efficacemente all&#39;interno delle loro operazioni.</p>
+<h2>Navigando nel Paesaggio dell&#39;IA</h2>
+<p>La proliferazione dell&#39;IA ha portato a molti benchmark, come i token al secondo, che spesso disorientano i leader aziendali. Sebbene queste metriche siano fondamentali per i professionisti della tecnologia, non sempre si traducono in un valore tangibile per l&#39;azienda. Pertanto, uno dei primi passi per le organizzazioni è distinguere tra le metriche di gioco e quelle che influenzano le operazioni nel mondo reale.</p>
+<p>Molte organizzazioni faticano a collegare i benchmark di performance alle loro specifiche esigenze aziendali. Ad esempio, la velocità delle risposte dell&#39;IA può avere implicazioni significative. Velocità più elevate equivalgono a una migliore qualità del servizio, riducendo i tempi di risposta che potrebbero influenzare la soddisfazione del cliente.</p>
+<p>Punti chiave:</p>
+<p>Comprendere come le metriche dell&#39;IA si riferiscono alle interazioni umane.</p>
+<p>Identificare casi d&#39;uso critici per la missione dove risposte rapide migliorano i risultati aziendali.</p>
+<h2>Applicazioni nel Mondo Reale</h2>
+<p>Le organizzazioni che vantano una computazione eterogenea possono utilizzare le loro infrastrutture esistenti in modi innovativi. L&#39;utilizzo di piccoli modelli linguistici per compiti come la sintesi dei dati o il supporto ai clienti può aumentare l&#39;efficienza e l&#39;efficacia a un costo inferiore rispetto ai metodi precedenti.</p>
+<p>Un esempio pratico include il miglioramento del servizio clienti attraverso chatbot guidati dall&#39;IA in grado di riassumere le chiamate di supporto e fornire risposte tempestive. Questo non solo accelera i tempi di risposta, ma aiuta anche il personale a concentrarsi su problemi più complessi.</p>
+<h2>Sperimentando con Casi d&#39;Uso</h2>
+<p>Per iniziare l&#39;implementazione dell&#39;IA, le organizzazioni dovrebbero partire da piccolo. Testare vari casi d&#39;uso permette alle aziende di raccogliere informazioni senza dover revisionare completamente i sistemi esistenti. L&#39;attenzione dovrebbe essere concentrata su compiti che richiedono un&#39;elaborazione o un riassunto dei dati veloce - permettendo ai team di vedere benefici immediati.</p>
+<p>Garantire la sicurezza dei dati aziendali e assicurare la loro integrazione nei sistemi tradizionali sarà fondamentale per ottenere valore. Le tecnologie IA non dovrebbero funzionare in silos, ma piuttosto migliorare l&#39;infrastruttura esistente.</p>
+<p>Strategie chiave:</p>
+<p>Inizia con casi d&#39;uso di base a basso rischio per costruire fiducia.</p>
+<ul>
+<li>Utilizza le architetture dei dati esistenti per evitare di creare silos.</li>
+</ul>
+<h2>Andare Avanti con Fiducia</h2>
+<p>Comprendere la domanda di soluzioni innovative di intelligenza artificiale può far avanzare le organizzazioni. I leader aziendali non dovrebbero evitare di investire in AI, anche se ciò comporta un&#39;attenta sperimentazione. Man mano che l&#39;architettura aziendale si trasforma, anche le competenze del team dovrebbero evolvere, garantendo che i dipendenti siano attrezzati per utilizzare efficacemente queste tecnologie.</p>
+<p>Semplici azioni come valutare le capacità attuali e impiegare piccoli modelli di linguaggio possono portare a significativi vantaggi operativi. Prendere le misure per abbracciare l&#39;IA posizionerà le aziende all&#39;avanguardia dei loro settori.</p>
+<p>È ora di esplorare questa appassionante frontiera. Approfondisci l&#39;impatto trasformativo dell&#39;IA ascoltando la discussione completa nel nostro ultimo episodio. Sblocca nuove possibilità per la tua organizzazione oggi!</p>
+
+  </div>
+
+  <div class="sponsor-container">
+    <p>Thank you to our sponsors for supporting this episode!</p>
+    <ol>
+      
+    </ol>
+  </div>
+</section>
+
+<!-- PodcastEpisode JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": ""
+  },
+  "name": "Piccoli modelli linguistici: il killer dell'IA pubblica?",
+  "episodeNumber": "301",
+  "datePublished": "Thu Oct 30 2025 05:19:08 GMT-0700 (Pacific Daylight Time)",
+  "description": "<p>L&#39;Intelligenza Artificiale (IA) non è solo una parola d&#39;ordine: sta ridisegnando il modo in cui le aziende operano. Unisciti all&#39;host Dr. Darren, un architetto d&#39;impresa esperto, insieme a Lynn Comp, un esperto in tendenze innovative della tecnologia dei Data Center, mentre si immergono nel panorama attuale dell&#39;IA e in come le organizzazioni possono sfruttarla per prosperare. In questa conversazione, affrontano le complessità dei benchmark dell&#39;IA, dei casi d&#39;uso e del futuro dell&#39;architettura enterprise dell&#39;IA.</p>
+<h2>Principali Insegnamenti:</h2>
+<ul>
+<li><strong>Comprendere i Benchmark dell&#39;IA</strong>: Riconoscere che metriche come i token al secondo non si traducono sempre in valore commerciale; l&#39;azione è più importante della velocità.</li>
+<li><strong>Iniziare in Piccolo</strong>: Sperimentare con progetti di IA piccoli e gestibili può fornire informazioni significative senza dover ristrutturare l&#39;infrastruttura esistente.</li>
+<li><strong>Concentrarsi sulle Esigenze Aziendali</strong>: Personalizzare le implementazioni dell&#39;IA ai casi d&#39;uso specifici del tuo settore per migliorare l&#39;efficienza operativa e ridurre la responsabilità.</li>
+<li><strong>Abbracciare Architetture Ibride</strong>: Sfruttare sia soluzioni on-premise che cloud per creare un framework IA robusto che mitiga i rischi come interruzioni e violazioni dei dati.</li>
+<li><strong>Aggiornare le Competenze della Tua Forza Lavoro</strong>: Preparare il tuo team per un futuro guidato dall&#39;IA promuovendo il pensiero critico e la competenza sui dati.</li>
+</ul>
+<h2>Capitoli:</h2>
+<ul>
+<li>00:00 Introduzione e Hook</li>
+<li>02:30 Benchmark dell&#39;IA: Comprendere le Metriche</li>
+<li>05:15 Casi d&#39;Uso dell&#39;IA nel Mondo degli Affari</li>
+<li>08:00 L&#39;Importanza di Iniziare in Piccolo</li>
+<li>10:45 Il Ruolo delle Architetture Ibride</li>
+<li>14:30 Aggiornare le Competenze della Tua Forza Lavoro per l&#39;IA</li>
+<li>17:00 Raccomandazioni e Prossimi Passi</li>
+<li>19:00 Conclusione e Invito all&#39;Azione</li>
+</ul>
+<p>Unisciti a noi in questo episodio illuminante che incoraggia i tecnologi e i leader aziendali ad abbracciare il cambiamento e a sfruttare il potenziale dell&#39;IA nelle loro operazioni. Non dimenticare di iscriverti per ulteriori approfondimenti e condividere questo episodio con altri che cercano di prosperare nell&#39;era digitale!</p>
+",
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Piccoli modelli linguistici: il killer dell'IA pubblica? Video",
+      "embedUrl": "https://www.youtube.com/embed/y7t7hu56jj0"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Piccoli modelli linguistici: il killer dell'IA pubblica? Audio",
+      "contentUrl": "https://share.transistor.fm/e/b8224c82"
+    }
+  ],
+  "actor": [
+    
+    {
+      "@type": "Person",
+      "name": "Lynn Comp"
+    }
+    
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher"
+    }
+    
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Embracing Digital Transformation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png"
+    }
+  }
+}
+</script>
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; 2025 Paidar Productions LLC</p>
+        <p>Diritti riservati</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
