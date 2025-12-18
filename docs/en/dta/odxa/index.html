@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>ODXA – Open Digital Transformation Architecture | Embracing Digital</title>
+  <meta name="description" content="ODXA is a five-domain decision architecture for digital transformation: strategic, organizational, process, digital, and physical.">
+  <link rel="canonical" href="https://embracingdigital.org/en/dta/odxa/">
+  <link rel="preload" href="https://embracingdigital.org/css/styles.css" as="style">
+  <link rel="stylesheet" href="https://embracingdigital.org/css/styles.css">
+  <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
+    <style>
+        .gear-layout-container {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gear-layer-grid {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            height: 100%;
+            width: 100%;
+        }
+        .gear-layer-box {
+            display: flex;
+            flex-direction: column; /* Changed from row to column */
+            align-items: center;
+            gap: 8px;
+            padding: 4px 8px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            min-height: 5em;
+            border-radius: 8pt;
+        }
+
+        .gear-layer-title {
+            color: white;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            flex-shrink: 0; /* Changed to 0 so it doesn't disappear */
+            flex-grow: 0;
+            text-align: center;
+            align-self: center; /* Center the title horizontally */
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        .gear-layer-children {
+            height: 100%;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/en/home/" aria-label="Embracing Digital Transformation home">
+            <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Mobile toggle -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle menu">☰</button>
+
+    <!-- Primary Nav -->
+    <nav id="primary-nav" aria-label="Primary">
+        <ul>
+            <li><a href="/en/home/index.html" >Home</a></li>
+
+            <li class="dropdown">
+                <a href="/en/shows/index.html" aria-haspopup="true" aria-expanded="false">Shows</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/episodes/index.html" aria-label="Interviews — Embracing Digital Transformation">
+                            Embracing Digital Transformation
+                            <small class="nav-note">Interviews</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/index.html" aria-label="News — Embracing Digital This Week">
+                            Embracing Digital This Week
+                            <small class="nav-note">News</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li><a href="/en/guests/index.html">Guests</a></li>
+            <li><a href="/en/articles/index.html">Articles</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/en/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">LinkedIn Group</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- About -->
+            <li class="dropdown">
+                <a href="/en/about.html" aria-haspopup="true" aria-expanded="false">About</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/about.html">About the Show</a></li>
+                    <li role="none"><a role="menuitem" href="/en/host.html">Host: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/en/sponsors/index.html">Sponsorship & Contact</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/search.html">Search</a></li>
+
+            <!-- Languages -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Languages</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
+  <h1>Open Digital Transformation Architecture (ODXA)</h1>
+  <h2>A descriptive architecture for sustainable digital transformation</h2>
+</section>
+<section class="gear-layout-container" aria-label="ODXA Five Domains">
+    <div class="gear-layer-grid depth-0" style="
+               display:grid;
+               grid-template-rows:repeat(1, 1fr);
+               grid-template-columns:repeat(1, 1fr);
+               gap:4px;
+               height: 100%;
+             ">
+
+        <div class="gear-layer-cell depth-1" data-layer-id="GEAR" data-layer-name="GEAR" style="
+           grid-row:1 / span 1;
+           grid-column:1 / span 1;
+         ">
+            <div class="gear-layer-box" style="background:#ffffff;">
+                <div class="gear-layer-children">
+                    <div class="gear-layer-grid depth-2" style="
+           display:grid;
+           grid-template-rows:repeat(3, 1fr);
+           grid-template-columns:repeat(2, 1fr);
+           gap:4px;
+         ">
+
+                        <div title="Strategic Domain
+The Strategic Domain focuses on aligning an organization's direction, priorities, capabilities, and risk posture with its core mission and vision."
+                             class="gear-layer-cell depth-3" data-layer-id="Strategic Domain"
+                             data-layer-name="Strategic Domain" style="
+           grid-row:1 / span 1;
+           grid-column:1 / span 2;
+         ">
+                            <div class="gear-layer-box" style="background:#003366;">
+                                <div class="gear-layer-title" style="font-size: 18.2356px; line-height: 1.2;">
+                                    Strategic Domain
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div title="Physical Domain
+Physical Domain contains all of the devices, locations, and connectivity in the system." class="gear-layer-cell depth-3"
+                             data-layer-id="Physical Domain" data-layer-name="Physical Domain" style="
+           grid-row:3 / span 1;
+           grid-column:1 / span 1;
+         ">
+                            <div class="gear-layer-box" style="background:#708090;">
+                                <div class="gear-layer-title" style="font-size: 18.2356px; line-height: 1.2;">
+                                    Physical Domain
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div title="Digital Domain
+Software stack of the system, including the middleware, software and applications." class="gear-layer-cell depth-3"
+                             data-layer-id="Digital Domain" data-layer-name="Digital Domain" style="
+           grid-row:3 / span 1;
+           grid-column:2 / span 1;
+         ">
+                            <div class="gear-layer-box" style="background:#6a0dad;">
+                                <div class="gear-layer-title" style="font-size: 18.2356px; line-height: 1.2;">
+                                    Digital Domain
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div title="Process Domain
+Processes of the system including supporting, strategic and operational processes." class="gear-layer-cell depth-3"
+                             data-layer-id="Process Domain" data-layer-name="Process Domain" style="
+           grid-row:2 / span 1;
+           grid-column:2 / span 1;
+         ">
+                            <div class="gear-layer-box" style="background:#ff6f00;">
+                                <div class="gear-layer-title" style="font-size: 18.2356px; line-height: 1.2;">
+                                    Process Domain
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div title="Organizational Domain
+People centric organizational structure of the system." class="gear-layer-cell depth-3"
+                             data-layer-id="Organizational Domain" data-layer-name="Organizational Domain" style="
+           grid-row:2 / span 1;
+           grid-column:1 / span 1;
+         ">
+                            <div class="gear-layer-box" style="background:#228B22;">
+                                <div class="gear-layer-title" style="font-size: 18.2356px; line-height: 1.2;">
+                                    Organizational Domain
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="gear-pin-overlay"></div>
+</section>
+<section class="brief-container" aria-label="ODXA overview">
+  <h2>What is ODXA?</h2>
+  <p>
+    ODXA is a domain-based architecture that helps organizations reason about transformation decisions across interacting concerns.
+    It provides a stable way to identify responsibilities, reveal tradeoffs, and connect decisions to outcomes.
+  </p>
+
+  <h2>The five domains</h2>
+  <ul>
+    <li><strong>Strategic</strong> — intent, outcomes, investment, risk, and tradeoffs</li>
+    <li><strong>Organizational</strong> — decision ownership, accountability, structure, and incentives</li>
+    <li><strong>Process</strong> — value flow, execution, governance mechanisms, and measurable performance</li>
+    <li><strong>Digital</strong> — platforms, data, applications, integration, and operational capabilities</li>
+    <li><strong>Physical</strong> — infrastructure, networks, devices, resilience, and real-world constraints</li>
+  </ul>
+
+  <h2>How to use ODXA</h2>
+  <p>
+    Start with the domain most impacted by your initiative, then trace dependencies into other domains.
+    Use the domain pages as reference hubs and the episode pages for deep guidance and examples.
+  </p>
+</section>
+
+<section class="grid-container" aria-label="ODXA domain navigation">
+  <div class="grid-box"><h3><a href="/en/dta/odxa/strategic/index.html">Strategic Domain</a></h3><p>Intent, outcomes, tradeoffs, and architectural direction.</p></div>
+  <div class="grid-box"><h3><a href="/en/dta/odxa/organizational/index.html">Organizational Domain</a></h3><p>Ownership, accountability, structure, and culture.</p></div>
+  <div class="grid-box"><h3><a href="/en/dta/odxa/process/index.html">Process Domain</a></h3><p>Value flow, execution systems, governance, and metrics.</p></div>
+  <div class="grid-box"><h3><a href="/en/dta/odxa/digital/index.html">Digital Domain</a></h3><p>Platforms, data, applications, integration, and operations.</p></div>
+  <div class="grid-box"><h3><a href="/en/dta/odxa/physical/index.html">Physical Domain</a></h3><p>Networks, infrastructure, devices, and constraints.</p></div>
+</section>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
+
+</html>

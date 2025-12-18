@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <title>Organizational Domain | ODXA | Embracing Digital</title>
+    <meta name="description"
+          content="The Organizational Domain of ODXA defines decision ownership, accountability, structure, and incentives for transformation.">
+    <link rel="canonical" href="https://embracingdigital.org/en/dta/odxa/organizational/">
+    <link rel="preload" href="https://embracingdigital.org/css/styles.css" as="style">
+    <link rel="stylesheet" href="https://embracingdigital.org/css/styles.css">
+    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
+    <style>
+        .gear-layout-container {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gear-layer-grid {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            height: 100%;
+            width: 100%;
+        }
+
+        .gear-layer-box {
+            display: flex;
+            flex-direction: column; /* Changed from row to column */
+            align-items: center;
+            gap: 8px;
+            padding: 4px 8px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            min-height: 5em;
+            border-radius: 8pt;
+        }
+
+        .gear-layer-title {
+            color: white;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            flex-shrink: 0; /* Changed to 0 so it doesn't disappear */
+            flex-grow: 0;
+            text-align: center;
+            align-self: center; /* Center the title horizontally */
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        .gear-layer-children {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+
+</head>
+<body>
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/en/home/" aria-label="Embracing Digital Transformation home">
+            <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Mobile toggle -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle menu">☰</button>
+
+    <!-- Primary Nav -->
+    <nav id="primary-nav" aria-label="Primary">
+        <ul>
+            <li><a href="/en/home/index.html">Home</a></li>
+
+            <li class="dropdown">
+                <a href="/en/shows/index.html" aria-haspopup="true" aria-expanded="false">Shows</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/episodes/index.html"
+                           aria-label="Interviews — Embracing Digital Transformation">
+                            Embracing Digital Transformation
+                            <small class="nav-note">Interviews</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/index.html" aria-label="News — Embracing Digital This Week">
+                            Embracing Digital This Week
+                            <small class="nav-note">News</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li><a href="/en/guests/index.html">Guests</a></li>
+            <li><a href="/en/articles/index.html">Articles</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/en/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank"
+                                       rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem"
+                                       href="https://www.linkedin.com/company/embracing-digital-transformation"
+                                       target="_blank" rel="noopener">LinkedIn Group</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- About -->
+            <li class="dropdown">
+                <a href="/en/about.html" aria-haspopup="true" aria-expanded="false">About</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/about.html">About the Show</a></li>
+                    <li role="none"><a role="menuitem" href="/en/host.html">Host: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/en/sponsors/index.html">Sponsorship & Contact</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/en/search.html">Search</a></li>
+
+            <!-- Languages -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Languages</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
+    <h1>Organizational Domain</h1>
+    <h2>Ownership, accountability, structure, and incentives</h2>
+</section>
+
+<section class="gear-layout-container">
+
+    <div class="gear-layer-grid depth-0" style="
+           display:grid;
+           grid-template-rows:repeat(1, 1fr);
+           grid-template-columns:repeat(1, 1fr);
+           gap:4px;
+         ">
+
+        <div title="Organizational Domain
+People centric organizational structure of the system." class="gear-layer-cell depth-1" data-layer-id="Organizational Domain" data-layer-name="Organizational Domain" style="
+           grid-row:1 / span 1;
+           grid-column:1 / span 1;
+         ">
+            <div class="gear-layer-box" style="background:#228B22;">
+                <div class="gear-layer-title" style="font-size: 18.2356px; line-height: 1.2;">
+                    Organizational Domain
+                </div>
+
+                <div class="gear-layer-children">
+
+                    <div class="gear-layer-grid depth-2" style="
+           display:grid;
+           grid-template-rows:repeat(4, 1fr);
+           grid-template-columns:repeat(4, 1fr);
+           gap:4px;
+         ">
+
+                        <div title="Stakeholders
+All stakeholders involved in decision-making and system requirements." class="gear-layer-cell depth-3" data-layer-id="Organizational Domain-Stakeholders" data-layer-name="Stakeholders" style="
+           grid-row:1 / span 1;
+           grid-column:1 / span 4;
+         ">
+                            <div class="gear-layer-box" style="background:#4ea24e;">
+                                <div class="gear-layer-title" style="font-size: 18.2356px; line-height: 1.2;">
+                                    Stakeholders
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div title="Personas
+Different personas representing user groups interacting with the system." class="gear-layer-cell depth-3" data-layer-id="Organizational Domain-Personas" data-layer-name="Personas" style="
+           grid-row:2 / span 1;
+           grid-column:1 / span 3;
+         ">
+                            <div class="gear-layer-box" style="background:#4ea24e;">
+                                <div class="gear-layer-title" style="font-size: 18.2356px; line-height: 1.2;">
+                                    Personas
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div title="Communication Channels
+Channels of communication between system users, stakeholders, and decision-makers." class="gear-layer-cell depth-3" data-layer-id="Organizational Domain-Communication Channels" data-layer-name="Communication Channels" style="
+           grid-row:2 / span 2;
+           grid-column:4 / span 1;
+         ">
+                            <div class="gear-layer-box" style="background:#4ea24e;">
+                                <div class="gear-layer-title" style="font-size: 18.2356px; line-height: 1.2;">
+                                    Communication Channels
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div title="Roles &amp; Responsibilities
+Defines specific tasks and duties assigned to different entities." class="gear-layer-cell depth-3" data-layer-id="Organizational Domain-Roles &amp; Responsibilities" data-layer-name="Roles &amp; Responsibilities" style="
+           grid-row:3 / span 1;
+           grid-column:1 / span 1;
+         ">
+                            <div class="gear-layer-box" style="background:#4ea24e;">
+                                <div class="gear-layer-title" style="font-size: 18.2356px; line-height: 1.2;">
+                                    Roles &amp; Responsibilities
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div title="Skills &amp; Competencies
+Profiles skills and abilities required for system operations." class="gear-layer-cell depth-3" data-layer-id="Organizational Domain-Skills &amp; Competencies" data-layer-name="Skills &amp; Competencies" style="
+           grid-row:3 / span 1;
+           grid-column:2 / span 1;
+         ">
+                            <div class="gear-layer-box" style="background:#4ea24e;">
+                                <div class="gear-layer-title" style="font-size: 18.2356px; line-height: 1.2;">
+                                    Skills &amp; Competencies
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div title="Structure
+Maps the hierarchical structure of the organization supporting the system." class="gear-layer-cell depth-3" data-layer-id="Organizational Domain-Structure" data-layer-name="Structure" style="
+           grid-row:3 / span 1;
+           grid-column:3 / span 1;
+         ">
+                            <div class="gear-layer-box" style="background:#4ea24e;">
+                                <div class="gear-layer-title" style="font-size: 18.2356px; line-height: 1.2;">
+                                    Structure
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div title="Culture &amp; Values
+Refers to the organizational culture, values, and principles guiding how operations are conducted." class="gear-layer-cell depth-3" data-layer-id="Organizational Domain-Culture &amp; Values" data-layer-name="Culture &amp; Values" style="
+           grid-row:4 / span 1;
+           grid-column:1 / span 4;
+         ">
+                            <div class="gear-layer-box" style="background:#4ea24e;">
+                                <div class="gear-layer-title" style="font-size: 18.2356px; line-height: 1.2;">
+                                    Culture &amp; Values
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="gear-pin-overlay"></div>
+</section>
+<section class="brief-container" aria-label="Organizational domain definition">
+    <h2>Domain definition</h2>
+    <p>The Organizational Domain focuses on the people-centric structure of the system. It defines how individuals are organized, the cultures that guide their behavior, and the specific skills and responsibilities required to sustain transformation and service delivery.</p>
+
+    <h2>Key decisions</h2>
+    <ul>
+        <li>What organizational structures best support our value streams?</li>
+        <li>Which roles and responsibilities are required for accountability?</li>
+        <li>How do we identify and bridge critical skill and competency gaps?</li>
+        <li>What cultural values must be fostered to support innovation?</li>
+    </ul>
+
+    <h2>Common anti-patterns</h2>
+    <ul>
+        <li>Siloed Operations (departments working in isolation)</li>
+        <li>The "Frozen Middle" (resistance to change within mid-level management)</li>
+        <li>Role Ambiguity (lack of clear ownership and accountability)</li>
+    </ul>
+
+    <h2>Cross-domain dependencies</h2>
+    <ul>
+        <li><a href="/en/dta/odxa/strategic/index.html">Strategic Domain</a></li>
+        <li><a href="/en/dta/odxa/process/index.html">Process Domain</a></li>
+        <li><a href="/en/dta/odxa/digital/index.html">Digital Domain</a></li>
+    </ul>
+</section>
+
+<section id="latest-interviews" aria-label="Episodes in this domain">
+    <h2>Episodes in this domain</h2>
+    <p>This list will populate as DTA episodes are published and tagged to this domain.</p>
+    <div class="interviews-container">
+        <!-- placeholder cards; generator will populate -->
+        <div class="interview">
+            <h3>Coming soon</h3>
+            <p>Domain episodes will appear here automatically.</p>
+            <a class="listen-now" href="/en/dta/episodes/index.html">Browse all DTA episodes</a>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function () {
+        var y = document.getElementById('y');
+        if (y) {
+            y.textContent = new Date().getFullYear();
+        }
+    })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    submenu?.querySelector('a')?.focus();
+                }
+                if (e.key === 'Escape') {
+                    li.classList.remove('open');
+                    link.setAttribute('aria-expanded', 'false');
+                    link.focus();
+                }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded', 'false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
+
+</html>
