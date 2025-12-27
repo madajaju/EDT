@@ -38,7 +38,7 @@
 
     <!-- Favicon & Styles -->
     <link rel="icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
@@ -49,94 +49,67 @@
         gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Schema.org: Organization + WebSite -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "logo": "https://embracingdigital.org/images/logo.png",
-            "sameAs": [
-                "https://www.youtube.com/@embracingdigital",
-                "https://www.linkedin.com/company/embracingdigital"
+            "@graph": [
+                {
+                    "@type": "WebPage",
+                    "@id": "https://embracingdigital.org/en/digital-transformation/#webpage",
+                    "url": "https://embracingdigital.org/en/digital-transformation/",
+                    "name": "Digital Transformation Framework",
+                    "description": "Overview of the Embracing Digital transformation framework, built on the Six Pillars and ODXA domains.",
+                    "isPartOf": { "@id": "https://embracingdigital.org/#website" }
+                },
+                {
+                    "@type": "DefinedTermSet",
+                    "@id": "https://embracingdigital.org/en/digital-transformation/#six-pillars",
+                    "name": "Six Pillars of Digital Transformation",
+                    "description": "A capability-based framework for structuring transformation across AI, Edge Computing, Cybersecurity, Data Management, Ubiquitous Computing, and Advanced Communications."
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "Artificial Intelligence",
+                    "inDefinedTermSet": "https://embracingdigital.org/en/digital-transformation/#six-pillars",
+                    "url": "https://embracingdigital.org/en/digital-transformation/ai/",
+                    "description": "Enables systems to learn, reason, and assist decision-making through data-driven models embedded across digital and operational workflows."
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "Data Management",
+                    "inDefinedTermSet": "https://embracingdigital.org/en/digital-transformation/#six-pillars",
+                    "url": "https://embracingdigital.org/en/digital-transformation/data/",
+                    "description": "Governs how data is collected, integrated, secured, and used to drive insights and decisions across the enterprise."
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "Cybersecurity",
+                    "inDefinedTermSet": "https://embracingdigital.org/en/digital-transformation/#six-pillars",
+                    "url": "https://embracingdigital.org/en/digital-transformation/cybersecurity/",
+                    "description": "Protects systems, data, and missions through Zero Trust principles, resilience, and continuous risk management across all domains."
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "Ubiquitous Computing",
+                    "inDefinedTermSet": "https://embracingdigital.org/en/digital-transformation/#six-pillars",
+                    "url": "https://embracingdigital.org/en/digital-transformation/computing/",
+                    "description": "Consistent, portable compute capabilities across cloud, emerging platforms, and execution environments, enabling workloads to run wherever they are most effective."
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "Edge Computing",
+                    "inDefinedTermSet": "https://embracingdigital.org/en/digital-transformation/#six-pillars",
+                    "url": "https://embracingdigital.org/en/digital-transformation/edge/",
+                    "description": "Enables data processing and decision-making closer to where data is generated to support low-latency, resilient, and mission-critical operations."
+                },
+                {
+                    "@type": "DefinedTerm",
+                    "name": "Advanced Communications",
+                    "inDefinedTermSet": "https://embracingdigital.org/en/digital-transformation/#six-pillars",
+                    "url": "https://embracingdigital.org/en/digital-transformation/communications/",
+                    "description": "Provides secure, resilient connectivity enabling data, systems, and people to operate as an integrated whole."
+                }
             ]
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "Embracing Digital Transformation",
-            "url": "https://embracingdigital.org/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://embracingdigital.org/en/search.html?query={query}",
-                "query-input": "required name=query"
-            }
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Digital Transformation",
-            "description": "Digital transformation explained through the Six Pillars of capability and the ODXA domains of structure, showing how they converge to produce complete solutions.",
-            "url": "https://embracingdigital.org/en/digital-transformation/",
-            "isPartOf": {
-                "@type": "WebSite",
-                "name": "Embracing Digital",
-                "url": "https://embracingdigital.org/"
-            }
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Digital Transformation",
-            "description": "Digital transformation explained through the Six Pillars of capability and the ODXA domains of structure, showing how they converge to produce complete solutions.",
-            "url": "https://embracingdigital.org/en/digital-transformation/",
-            "isPartOf": {
-                "@type": "WebSite",
-                "name": "Embracing Digital",
-                "url": "https://embracingdigital.org/"
-            },
-            "mainEntity": {
-                "@type": "ItemList",
-                "itemListElement": [
-                    {
-                        "@type": "DefinedTerm",
-                        "name": "Ubiquitous Computing",
-                        "description": "Provides consistent, portable compute capabilities across cloud, emerging platforms, and execution environments, enabling workloads to run wherever they are most effective."
-                    },
-                    {
-                        "@type": "DefinedTerm",
-                        "name": "Edge Computing",
-                        "description": "Enables data processing and decision-making closer to where data is generated to support low-latency, resilient, and mission-critical operations."
-                    },
-                    {
-                        "@type": "DefinedTerm",
-                        "name": "Artificial Intelligence",
-                        "description": "Enables systems to learn, reason, and assist decision-making through data-driven models embedded across digital and operational workflows."
-                    },
-                    {
-                        "@type": "DefinedTerm",
-                        "name": "Cybersecurity",
-                        "description": "Protects systems, data, and missions through Zero Trust principles, resilience, and continuous risk management across all domains."
-                    },
-                    {
-                        "@type": "DefinedTerm",
-                        "name": "Data Management",
-                        "description": "Governs how data is collected, integrated, secured, and used to drive insights and decisions across the enterprise."
-                    },
-                    {
-                        "@type": "DefinedTerm",
-                        "name": "Advanced Communications",
-                        "description": "Provides secure, resilient connectivity enabling data, systems, and people to operate as an integrated whole."
-                    }
-                ]
-            }
         }
     </script>
 </head>
@@ -222,21 +195,38 @@
 </header>
 
 <main id="content">
-    <section id="hero">
-        <h1>Digital Transformation</h1>
-        <h2>Capabilities delivered through structure</h2>
+    <main id="content">
 
-        <p style="max-width: 980px; margin: 0 auto;">
-            Digital transformation isn’t a single initiative, tool, or technology. It’s an integrated capability upgrade across the entire organization.
-            At <strong>Embracing Digital</strong>, we explain transformation using two complementary concepts:
-            the <strong>ODXA domains</strong> (the foundational structure of transformation decisions) and the <strong>Six Pillars</strong> (the capabilities that sit on top of those domains).
-        </p>
+        <!-- HERO -->
+        <section class="hero about-hero">
+            <h1>Digital Transformation Framework</h1>
+            <p class="hero-subtitle">
+                A practical architecture for navigating uncertainty using the Six Pillars of Digital Transformation and the
+                Open Digital Transformation Architecture (ODXA).
+            </p>
+        </section>
 
-        <p style="max-width: 980px; margin: 0.75rem auto 0;">
-            <strong>Rule of thumb:</strong> Domains are universal and foundational. Pillars are capability lenses built on top of domains.
-            A real solution integrates <em>all</em> pillars to some degree—because no capability stands alone.
-        </p>
-    </section>
+        <!-- ODXA EXPLAINER -->
+        <section class="transformation-container about-mission">
+            <div class="center-text">
+                <h2>ODXA: The Architectural Backbone</h2>
+                <p>
+                    The <strong>Open Digital Transformation Architecture (ODXA)</strong> is a vendor-neutral architecture that
+                    organizes transformation across five domains:
+                    <strong>Strategic, Organizational, Process, Digital, and Physical</strong>. Instead of chasing isolated
+                    projects, ODXA helps you align capabilities, technology, and mission outcomes in a coherent roadmap.
+                </p>
+                <p>
+                    The Six Pillars of Digital Transformation sit on top of these domains. Each pillar represents a capability
+                    you can invest in, govern, and measure—from AI and data to edge, cybersecurity, computing, and communications.
+                </p>
+                <p>
+                    On this page, you can explore how each pillar contributes to the overall architecture and where to start based
+                    on your current maturity.
+                </p>
+                <a href="/en/dta/odxa/" class="primary-cta" style="margin-top:1.5rem;">Explore the ODXA Standard →</a>
+            </div>
+        </section>
     <section class="transformation-container">
         <div style="text-align: center; margin-bottom: 3rem;">
         <svg viewBox="0 0 600 520" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
@@ -531,45 +521,105 @@
             </div>
         </div>
     </section>
+        <section class="transformation-container about-provide">
+            <h2 class="section-title">The Six Pillars at a Glance</h2>
 
-    <section class="transformation-container" style="background-color: #f9fafb; padding: 2rem; border-radius: 8px;">
-        <h2 style="text-align: center; border-bottom: none;">Explore the Six Pillars</h2>
-        <p style="text-align: center; margin-bottom: 2rem; color: #666;">Capability lenses that focus your digital evolution.</p>
+            <div class="grid-container">
+                <!-- AI -->
+                <div class="grid-box about-box">
+                    <h3>Artificial Intelligence</h3>
+                    <p>
+                        Enables systems to learn, reason, and assist decision-making through data-driven models embedded across
+                        digital and operational workflows.
+                    </p>
+                    <a href="./ai/" class="primary-cta" aria-label="Explore the Artificial Intelligence pillar">Explore AI →</a>
+                </div>
 
-        <div class="grid-container">
-            <div class="grid-box">
-                <h3>Ubiquitous Computing</h3>
-                <p><strong>Ubiquitous Computing</strong> provides consistent, portable compute capabilities across cloud, emerging platforms, and execution environments. It focuses on architectural portability and scalability, ensuring workloads—including DevOps, Quantum, and Web3—can evolve without forcing a redesign at every technology shift.</p>
-                <a class="listen-now" href="/en/digital-transformation/computing/">Explore Computing</a>
-            </div>
-            <div class="grid-box">
-                <h3>Edge Computing</h3>
-                <p><strong>Edge Computing</strong> enables data processing and decision-making closer to where data is generated. By placing compute and analytics near sensors and operational systems, it supports low-latency, resilient, and mission-critical operations where centralized cloud reliance is limited.</p>
-                <a class="listen-now" href="/en/digital-transformation/edge/">Explore Edge</a>
-            </div>
-            <div class="grid-box">
-                <h3>Artificial Intelligence</h3>
-                <p><strong>Artificial Intelligence</strong> enables systems to learn, reason, and assist decision-making through data-driven models. AI is not a standalone capability; it is embedded across digital and operational workflows to augment human decision-making and automate complex processes.</p>
-                <a class="listen-now" href="/en/digital-transformation/ai/">Explore AI</a>
-            </div>
-            <div class="grid-box">
-                <h3>Cybersecurity</h3>
-                <p><strong>Cybersecurity</strong> protects systems, data, and missions through Zero Trust principles, resilience, and continuous risk management. It moves beyond point solutions to emphasize architectural security, identity, and access control across all domains.</p>
-                <a class="listen-now" href="/en/digital-transformation/cybersecurity/">Explore Cybersecurity</a>
-            </div>
-            <div class="grid-box">
-                <h3>Data Management</h3>
-                <p><strong>Data Management</strong> governs how data is collected, integrated, secured, and used as a strategic asset. It ensures quality, accessibility, and interoperability throughout the data lifecycle, enabling the trust and compliance necessary for AI and analytics.</p>
-                <a class="listen-now" href="/en/digital-transformation/data/">Explore Data</a>
-            </div>
-            <div class="grid-box">
-                <h3>Advanced Communications</h3>
-                <p><strong>Advanced Communications</strong> provides the secure, resilient connectivity that allows data, systems, and people to operate as an integrated whole. It underpins transformation by enabling distributed architectures to function even in constrained or contested conditions.</p>
-                <a class="listen-now" href="/en/digital-transformation/communications/">Explore Communications</a>
-            </div>
-        </div>
-    </section>
+                <!-- Data -->
+                <div class="grid-box about-box">
+                    <h3>Data Management</h3>
+                    <p>
+                        Governs how data is collected, integrated, secured, and used to drive insights and decisions across the
+                        enterprise.
+                    </p>
+                    <a href="./data/" class="primary-cta" aria-label="Explore the Data Management pillar">Explore Data →</a>
+                </div>
 
+                <!-- Cyber -->
+                <div class="grid-box about-box">
+                    <h3>Cybersecurity</h3>
+                    <p>
+                        Protects systems, data, and missions through Zero Trust principles, resilience, and continuous risk
+                        management across all domains.
+                    </p>
+                    <a href="./cybersecurity/" class="primary-cta" aria-label="Explore the Cybersecurity pillar">Explore Cybersecurity →</a>
+                </div>
+
+                <!-- Ubiquitous Computing -->
+                <div class="grid-box about-box">
+                    <h3>Ubiquitous Computing</h3>
+                    <p>
+                        Provides consistent, portable compute capabilities across cloud, on-prem, and emerging platforms, allowing
+                        workloads to run wherever they are most effective.
+                    </p>
+                    <a href="./computing/" class="primary-cta" aria-label="Explore the Ubiquitous Computing pillar">Explore Ubiquitous Computing →</a>
+                </div>
+
+                <!-- Edge -->
+                <div class="grid-box about-box">
+                    <h3>Edge Computing</h3>
+                    <p>
+                        Brings processing and decision-making closer to where data is generated to support low-latency, resilient,
+                        and mission-critical operations in constrained environments.
+                    </p>
+                    <a href="./edge/" class="primary-cta" aria-label="Explore the Edge Computing pillar">Explore Edge →</a>
+                </div>
+
+                <!-- Communications -->
+                <div class="grid-box about-box">
+                    <h3>Advanced Communications</h3>
+                    <p>
+                        Delivers secure, resilient connectivity so data, systems, and people can operate as an integrated whole,
+                        even across clouds and contested networks.
+                    </p>
+                    <a href="./communications/" class="primary-cta" aria-label="Explore the Advanced Communications pillar">Explore Communications →</a>
+                </div>
+            </div>
+        </section>
+        <section class="transformation-container about-values" style="background:#f8fafc;">
+            <h2 class="section-title">How to Use This Framework</h2>
+            <ul class="principles">
+                <li><strong>Start with mission outcomes.</strong> Identify the problems you must solve in the next 12–24 months.</li>
+                <li><strong>Map them to pillars.</strong> Determine whether AI, data, edge, cybersecurity, computing, or communications
+                    is the primary enabler—or which combination.</li>
+                <li><strong>Trace into ODXA domains.</strong> For each pillar, ask what must change in the Strategic, Organizational,
+                    Process, Digital, and Physical domains.</li>
+                <li><strong>Sequence your investments.</strong> Focus first on foundations like data, cybersecurity, and computing that
+                    unlock higher-level capabilities such as AI and edge.</li>
+                <li><strong>Iterate with feedback.</strong> Use telemetry, metrics, and human feedback to continuously refine your
+                    architecture over time.</li>
+            </ul>
+        </section>
+        <section class="transformation-container about-serve">
+            <h2 class="section-title">Next Steps on Your Transformation Journey</h2>
+            <p class="center-text narrow">
+                Use the Six Pillars as a common language between business leaders, architects, and operators. From here you can dive into
+                pillar pages, listen to interviews, or explore ODXA in depth.
+            </p>
+
+            <div class="grid-container">
+                <div class="grid-box" style="text-align:center;">
+                    <h3>Learn from Practitioners</h3>
+                    <p>Explore interviews with leaders who are using these pillars in real-world transformation programs.</p>
+                    <a href="/en/episodes/index.html" class="primary-cta">Watch & Listen →</a>
+                </div>
+                <div class="grid-box" style="text-align:center;">
+                    <h3>See ODXA in Action</h3>
+                    <p>Go deeper into the Open Digital Transformation Architecture and how it structures complex modernization work.</p>
+                    <a href="/en/dta/odxa/" class="primary-cta">Explore ODXA →</a>
+                </div>
+            </div>
+        </section>
     <section class="transformation-container">
         <h2>Quick Mapping: Pillars Across ODXA Domains</h2>
         <p>

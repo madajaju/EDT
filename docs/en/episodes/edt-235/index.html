@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- … existing tags … -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -9,204 +8,198 @@
     <meta name="robots" content="index, follow">
 
     <!-- Dynamic Title / Meta -->
-    <title>GenAI + RAG + Apple Mac = Private GenAI</title>
-    <meta name="description" content="&lt;p&gt;In this conversation, Matthew Pulsipher discusses the intricacies of setting up a private generative AI system, emphasizing the importance of understanding its components, including models, servers, and front-end applications. He elaborates on the significance of context in AI responses and introduces the concept of Retrieval-Augmented Generation (RAG) to enhance AI performance. The discussion also covers tuning embedding models, the role of quantization in AI efficiency, and the potential for running private AI systems on Macs, highlighting cost-effective hosting solutions for businesses.&lt;/p&gt;
-&lt;h2&gt;Takeaways&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Setting up a private generative AI requires understanding various components.&lt;/li&gt;
-&lt;li&gt;Data leakage is not a concern with private generative AI models.&lt;/li&gt;
-&lt;li&gt;Context is crucial for generating relevant AI responses.&lt;/li&gt;
-&lt;li&gt;Retrieval-Augmented Generation (RAG) enhances AI&amp;#39;s ability to provide context.&lt;/li&gt;
-&lt;li&gt;Tuning the embedding model can significantly improve AI results.&lt;/li&gt;
-&lt;li&gt;Quantization reduces model size but may impact accuracy.&lt;/li&gt;
-&lt;li&gt;Macs are uniquely positioned to run private generative AI efficiently.&lt;/li&gt;
-&lt;li&gt;Cost-effective hosting solutions for private AI can save businesses money.&lt;/li&gt;
-&lt;li&gt;A technology is advancing towards mobile devices and local processing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Chapters&lt;/h2&gt;
-00:00 Introduction to Matthew&amp;#39;s Superpowers and Backstory
-07:50 Enhancing Context with Retrieval-Augmented Generation (RAG)
-18:25 Understanding Quantization in AI Models
-23:31 Running Private Generative AI on Macs
-29:20 Cost-Effective Hosting Solutions for Private AI
-">
-    <meta name="keywords" content="">
-    <link rel="canonical" href="">
+    <title>GenAI + RAG + Apple Mac = Private GenAI | Embracing Digital Transformation</title>
+    <meta name="description" content="In this conversation, Matthew Pulsipher discusses the intricacies of setting up a private generative AI system, emphasizing the importance of understanding its components, including models, servers, and front-end applications. He elaborates on the significance of context in AI responses and introduc">
+    
+    
+    <link rel="canonical" href="https://www.embracingdigital.org/en/episodes/edt-235/index.html">
+    
 
-    <!-- Preconnect & Preload -->
+    <!-- Hreflang alternates (optional: pass `langs` into the template) -->
+    
+
+    <!-- Preconnect & CSS -->
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="/css/styles.css" as="style">
     <link rel="stylesheet" href="/css/styles.css">
 
-    <!-- Open Graph & Twitter Cards -->
-    <!-- … your existing OG/Twitter tags … -->
-
-    <!-- Hreflang alternates -->
-    <!-- … existing hreflang links … -->
-
     <!-- Favicon -->
     <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GenAI + RAG + Apple Mac = Private GenAI | Embracing Digital Transformation">
+    <meta property="og:description" content="In this conversation, Matthew Pulsipher discusses the intricacies of setting up a private generative AI system, emphasizing the importance of understanding its components, including models, servers, and front-end applications. He elaborates on the significance of context in AI responses and introduc">
+    <meta property="og:url" content="https://www.embracingdigital.org/en/episodes/edt-235/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GenAI + RAG + Apple Mac = Private GenAI | Embracing Digital Transformation">
+    <meta name="twitter:description" content="In this conversation, Matthew Pulsipher discusses the intricacies of setting up a private generative AI system, emphasizing the importance of understanding its components, including models, servers, and front-end applications. He elaborates on the significance of context in AI responses and introduc">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){ dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'G-P4XHVE79DL');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
     </script>
 
-    <!-- Structured Data -->
+    <!-- Schema.org -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Embracing Digital Transformation",
-      "url": "https://embracingdigital.org/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://embracingdigital.org/images/logo.png",
-        "width": 512,
-        "height": 512
-      },
-      "sameAs": [
-        "https://www.youtube.com/@embracingdigital",
-        "https://www.linkedin.com/company/embracingdigital"
-      ]
-    }
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
     </script>
-
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Embracing Digital Transformation",
-      "url": "https://embracingdigital.org/",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://embracingdigital.org/en/search.html?query={query}",
-        "query-input": "required name=query"
-      }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "url": "",
-      "name": "GenAI + RAG + Apple Mac = Private GenAI",
-      "description": "&lt;p&gt;In this conversation, Matthew Pulsipher discusses the intricacies of setting up a private generative AI system, emphasizing the importance of understanding its components, including models, servers, and front-end applications. He elaborates on the significance of context in AI responses and introduces the concept of Retrieval-Augmented Generation (RAG) to enhance AI performance. The discussion also covers tuning embedding models, the role of quantization in AI efficiency, and the potential for running private AI systems on Macs, highlighting cost-effective hosting solutions for businesses.&lt;/p&gt;
-&lt;h2&gt;Takeaways&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Setting up a private generative AI requires understanding various components.&lt;/li&gt;
-&lt;li&gt;Data leakage is not a concern with private generative AI models.&lt;/li&gt;
-&lt;li&gt;Context is crucial for generating relevant AI responses.&lt;/li&gt;
-&lt;li&gt;Retrieval-Augmented Generation (RAG) enhances AI&amp;#39;s ability to provide context.&lt;/li&gt;
-&lt;li&gt;Tuning the embedding model can significantly improve AI results.&lt;/li&gt;
-&lt;li&gt;Quantization reduces model size but may impact accuracy.&lt;/li&gt;
-&lt;li&gt;Macs are uniquely positioned to run private generative AI efficiently.&lt;/li&gt;
-&lt;li&gt;Cost-effective hosting solutions for private AI can save businesses money.&lt;/li&gt;
-&lt;li&gt;A technology is advancing towards mobile devices and local processing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Chapters&lt;/h2&gt;
-00:00 Introduction to Matthew&amp;#39;s Superpowers and Backstory
-07:50 Enhancing Context with Retrieval-Augmented Generation (RAG)
-18:25 Understanding Quantization in AI Models
-23:31 Running Private Generative AI on Macs
-29:20 Cost-Effective Hosting Solutions for Private AI
-",
-      "inLanguage": "",
-      "isPartOf": {
-        "@type": "WebSite",
-        "url": "https://embracingdigital.org/"
-      },
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://embracingdigital.org//home/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "GenAI + RAG + Apple Mac = Private GenAI",
-            "item": ""
-          }
-        ]
-      }
-    }
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
     </script>
 </head>
-<body>
 
-<header role="banner">
-    <!-- Logo -->
-    <div class="logo-container">
-        <a href="/en/home/" aria-label="Embracing Digital Transformation home">
-            <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
-        </a>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="//home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">
+            <span class="brand-title">Embracing Digital</span>
+          </span>
+            </a>
+        </div>
     </div>
 
-    <!-- Mobile toggle -->
-    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle menu">☰</button>
-
-    <!-- Primary Nav -->
     <nav id="primary-nav" aria-label="Primary">
         <ul>
-            <li><a href="/en/home/index.html" >Home</a></li>
+            <li>
+                <a href="//home/index.html" >Home</a>
+            </li>
 
+            <!-- Guidance (ordered by your weekly arc) -->
             <li class="dropdown">
-                <a href="/en/shows/index.html" aria-haspopup="true" aria-expanded="false">Shows</a>
+                <!-- Keep URL as /shows/ to avoid breaking links; label it Guidance -->
+                <a href="//shows/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
                 <ul class="dropdown-menu" role="menu">
                     <li role="none">
-                        <a role="menuitem" href="/en/episodes/index.html" aria-label="Interviews — Embracing Digital Transformation">
-                            Embracing Digital Transformation
-                            <small class="nav-note">Interviews</small>
-                        </a>
-                    </li>
-                    <li role="none">
-                        <a role="menuitem" href="/en/briefs/index.html" aria-label="News — Embracing Digital This Week">
+                        <a role="menuitem" href="//briefs/index.html">
                             Embracing Digital This Week
-                            <small class="nav-note">News</small>
+                            <small class="nav-note">What changed (Mon)</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="//dta/index.html">
+                            Digital Transformation Architect
+                            <small class="nav-note">How to think (Tue)</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="//episodes/index.html">
+                            Embracing Digital Transformation
+                            <small class="nav-note">How others did it (Wed)</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="//deepdive/index.html">
+                            Digital Deep Dive
+                            <small class="nav-note">What to do next (Thu · part of EDTW)</small>
                         </a>
                     </li>
                 </ul>
             </li>
 
+            <li><a href="//guests/index.html" >Guests</a></li>
 
-            <li><a href="/en/guests/index.html">Guests</a></li>
-            <li><a href="/en/articles/index.html">Articles</a></li>
-
-            <!-- Community -->
             <li class="dropdown">
-                <a href="/en/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <a href="//community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
                 <ul class="dropdown-menu" role="menu">
-                    <li role="none"><a role="menuitem" href="/en/newsletter.html">Newsletter</a></li>
-                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
-                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">LinkedIn Group</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="//community.html">
+                            The Community
+                            <small class="nav-note">Join the conversation</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="//newsletter.html">
+                            Newsletter
+                            <small class="nav-note">Weekly recap &amp; links</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem"
+                           href="https://www.patreon.com/embracingdigital"
+                           target="_blank"
+                           rel="noopener">
+                            Membership (Patreon)
+                            <small class="nav-note">Private briefings &amp; deeper access</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem"
+                           href="https://www.linkedin.com/company/embracing-digital-transformation"
+                           target="_blank"
+                           rel="noopener">
+                            LinkedIn
+                            <small class="nav-note">Public updates</small>
+                        </a>
+                    </li>
                 </ul>
             </li>
+
+            <li><a href="//sponsors/index.html" >Sponsors</a></li>
+
+            <li class="dropdown">
+                <a href="//about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="//about.html">About the Show</a></li>
+                    <li role="none"><a role="menuitem" href="//host.html">Host: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="//sponsors/index.html">Sponsorship &amp; Contact</a></li>
+                </ul>
+            </li>
+
+            <li><a href="//search.html" >Search</a></li>
 
             <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
 
-            <!-- About -->
-            <li class="dropdown">
-                <a href="/en/about.html" aria-haspopup="true" aria-expanded="false">About</a>
-                <ul class="dropdown-menu" role="menu">
-                    <li role="none"><a role="menuitem" href="/en/about.html">About the Show</a></li>
-                    <li role="none"><a role="menuitem" href="/en/host.html">Host: Dr. Darren Pulsipher</a></li>
-                    <li role="none"><a role="menuitem" href="/en/sponsors/index.html">Sponsorship & Contact</a></li>
-                </ul>
-            </li>
-
-            <li><a href="/en/search.html">Search</a></li>
-
-            <!-- Languages -->
             <li class="dropdown">
                 <a href="#" aria-haspopup="true" aria-expanded="false">Languages</a>
                 <ul class="dropdown-menu" role="menu">
@@ -224,109 +217,145 @@
 </header>
 
 
-<section id="one-episode"
-         itemscope itemtype="https://schema.org/PodcastEpisode">
-  <meta itemprop="mainEntityOfPage" content=""/>
-  <header>
-    <h1 id="episode-title" itemprop="name">
-      #235 <span>GenAI + RAG + Apple Mac = Private GenAI</span>
-    </h1>
-    <time datetime="2025-01-09T15:36:40.469Z"
-          itemprop="datePublished">
-      2025-01-09T15:36:40.469Z
-    </time>
-    <meta itemprop="episodeNumber" content="235"/>
-  </header>
 
-  <!-- VideoObject -->
-  <div class="video-container" itemprop="associatedMedia"
-       itemscope itemtype="https://schema.org/VideoObject">
-    <meta itemprop="name" content="GenAI + RAG + Apple Mac = Private GenAI">
-    <meta itemprop="embedUrl"
-          content="https://www.youtube.com/embed/AEQzEETlyS4">
-    <iframe width="auto" height="auto"
-            src="https://www.youtube.com/embed/AEQzEETlyS4?autoplay=1"
-            title="GenAI + RAG + Apple Mac = Private GenAI Video"></iframe>
-  </div>
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- AudioObject -->
-  <aside class="podcast-container" itemprop="associatedMedia"
-         itemscope itemtype="https://schema.org/AudioObject">
-    <meta itemprop="name" content="GenAI + RAG + Apple Mac = Private GenAI">
-    <meta itemprop="contentUrl"
-          content="https://share.transistor.fm/e/96996be6">
-    <iframe width="100%" height="180" frameborder="0" scrolling="no"
-            src="https://share.transistor.fm/e/96996be6"
-            title="GenAI + RAG + Apple Mac = Private GenAI Audio"></iframe>
-  </aside>
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../en/home/index.html">Home</a></li>
+        <li><a href="../../../en/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 235: GenAI + RAG + Apple Mac = Private GenAI</li>
+    </ol>
+</nav>
 
-  <div class="show-summary" itemprop="description">
-    <p><p>In this conversation, Matthew Pulsipher discusses the intricacies of setting up a private generative AI system, emphasizing the importance of understanding its components, including models, servers, and front-end applications. He elaborates on the significance of context in AI responses and introduces the concept of Retrieval-Augmented Generation (RAG) to enhance AI performance. The discussion also covers tuning embedding models, the role of quantization in AI efficiency, and the potential for running private AI systems on Macs, highlighting cost-effective hosting solutions for businesses.</p>
-<h2>Takeaways</h2>
-<ul>
-<li>Setting up a private generative AI requires understanding various components.</li>
-<li>Data leakage is not a concern with private generative AI models.</li>
-<li>Context is crucial for generating relevant AI responses.</li>
-<li>Retrieval-Augmented Generation (RAG) enhances AI&#39;s ability to provide context.</li>
-<li>Tuning the embedding model can significantly improve AI results.</li>
-<li>Quantization reduces model size but may impact accuracy.</li>
-<li>Macs are uniquely positioned to run private generative AI efficiently.</li>
-<li>Cost-effective hosting solutions for private AI can save businesses money.</li>
-<li>A technology is advancing towards mobile devices and local processing.</li>
-</ul>
-<h2>Chapters</h2>
-00:00 Introduction to Matthew&#39;s Superpowers and Backstory
-07:50 Enhancing Context with Retrieval-Augmented Generation (RAG)
-18:25 Understanding Quantization in AI Models
-23:31 Running Private Generative AI on Macs
-29:20 Cost-Effective Hosting Solutions for Private AI
-</p>
-    <nav class="tags" aria-label="Tags">
-      
-        <a href="../../../en/search.html?query=datamanagement"
-           itemprop="keywords">datamanagement</a>
-      
-        <a href="../../../en/search.html?query=dataprivacy"
-           itemprop="keywords">dataprivacy</a>
-      
-        <a href="../../../en/search.html?query=contextualai"
-           itemprop="keywords">contextualai</a>
-      
-        <a href="../../../en/search.html?query=embeddingmodels"
-           itemprop="keywords">embeddingmodels</a>
-      
-        <a href="../../../en/search.html?query=security"
-           itemprop="keywords">security</a>
-      
-        <a href="../../../en/search.html?query=generativeai"
-           itemprop="keywords">generativeai</a>
-      
-        <a href="../../../en/search.html?query=zerotrust"
-           itemprop="keywords">zerotrust</a>
-      
-        <a href="../../../en/search.html?query=cybersecurity"
-           itemprop="keywords">cybersecurity</a>
-      
-        <a href="../../../en/search.html?query=process"
-           itemprop="keywords">process</a>
-      
-        <a href="../../../en/search.html?query=policy"
-           itemprop="keywords">policy</a>
-      
-    </nav>
-    <div class="guests" itemprop="actor" itemscope itemtype="https://schema.org/Person">
-      
-        <a href="../../../en/guests/matthew-pulsipher/index.html"
-           itemprop="name" target="_blank">Matthew Pulsipher</a>
-      
-        <a href="../../../en/guests/darren-w-pulsipher/index.html"
-           itemprop="name" target="_blank">Darren W Pulsipher</a>
-      
-    </div>
-  </div>
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
 
-  <div class="show-notes" itemprop="transcript">
-    <p>Private generative AI is becoming essential for organizations seeking to leverage artificial intelligence while maintaining control over their data. As businesses become increasingly aware of the potential dangers associated with cloud-based AI models—particularly regarding data privacy—developing a private generative AI solution can provide a robust alternative. This blog post will empower you with a deep understanding of the components necessary for establishing a private generative AI system, the importance of context, and the benefits of embedding models locally.</p>
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/en/episodes/edt-235/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/en/episodes/edt-235/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 235</span>
+                <span class="episode-title">GenAI + RAG + Apple Mac = Private GenAI</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2025-01-09" itemprop="datePublished">2025-01-09T15:36:40.469Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+
+            <meta itemprop="episodeNumber" content="235"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+            <section class="video-container" aria-label="Watch the episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
+                <meta itemprop="name" content="GenAI + RAG + Apple Mac = Private GenAI Video">
+                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/AEQzEETlyS4">
+                <iframe
+                        width="auto"
+                        height="auto"
+                        src="https://www.youtube.com/embed/AEQzEETlyS4"
+                        title="GenAI + RAG + Apple Mac = Private GenAI Video"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                ></iframe>
+            </section>
+        
+
+        
+            <section class="podcast-container" aria-label="Listen to this episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
+                <meta itemprop="name" content="GenAI + RAG + Apple Mac = Private GenAI Audio">
+                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/96996be6">
+                <iframe
+                        width="100%"
+                        height="180"
+                        frameborder="0"
+                        scrolling="no"
+                        src="https://share.transistor.fm/e/96996be6"
+                        title="GenAI + RAG + Apple Mac = Private GenAI Audio"
+                        loading="lazy"
+                ></iframe>
+
+                <p class="listen-note">
+                    Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                </p>
+            </section>
+        
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>In this conversation, Matthew Pulsipher discusses the intricacies of setting up a private generative AI system, emphasizing the importance of understanding its components, including models, servers, and front-end applications. He elaborates on the significance of context in AI responses and introduc</p>
+
+
+            
+                <nav class="tags" aria-label="Tags">
+                    
+                        <a href="../../../en/search.html?query=datamanagement"
+                           itemprop="keywords">datamanagement</a>
+                    
+                        <a href="../../../en/search.html?query=dataprivacy"
+                           itemprop="keywords">dataprivacy</a>
+                    
+                        <a href="../../../en/search.html?query=contextualai"
+                           itemprop="keywords">contextualai</a>
+                    
+                        <a href="../../../en/search.html?query=embeddingmodels"
+                           itemprop="keywords">embeddingmodels</a>
+                    
+                        <a href="../../../en/search.html?query=security"
+                           itemprop="keywords">security</a>
+                    
+                        <a href="../../../en/search.html?query=generativeai"
+                           itemprop="keywords">generativeai</a>
+                    
+                        <a href="../../../en/search.html?query=zerotrust"
+                           itemprop="keywords">zerotrust</a>
+                    
+                        <a href="../../../en/search.html?query=cybersecurity"
+                           itemprop="keywords">cybersecurity</a>
+                    
+                        <a href="../../../en/search.html?query=process"
+                           itemprop="keywords">process</a>
+                    
+                        <a href="../../../en/search.html?query=policy"
+                           itemprop="keywords">policy</a>
+                    
+                </nav>
+            
+
+            
+                <div class="guests" aria-label="Guests">
+                    
+                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/matthew-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Matthew Pulsipher</span>
+              </a>
+            </span>
+                    
+                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                    
+                </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Private generative AI is becoming essential for organizations seeking to leverage artificial intelligence while maintaining control over their data. As businesses become increasingly aware of the potential dangers associated with cloud-based AI models—particularly regarding data privacy—developing a private generative AI solution can provide a robust alternative. This blog post will empower you with a deep understanding of the components necessary for establishing a private generative AI system, the importance of context, and the benefits of embedding models locally.</p>
 <h2>Building Blocks of Private Generative AI</h2>
 <p>Setting up a private generative AI system involves several key components: the language model (LLM), a server to run it on, and a frontend application to facilitate user interactions. Popular open-source models, such as Llama or Mistral, serve as the AI foundation, allowing confidential queries without sending sensitive data over the internet. Organizations can safeguard their proprietary information by maintaining control over the server and data.</p>
 <p>When constructing a generative AI system, one must consider retrieval-augmented generation (RAG), which integrates context into the AI&#39;s responses. RAG utilizes an embedding model, a technique that maps high-dimensional data into a lower-dimensional space, to intelligently retrieve relevant snippets of data to enhance responses based on the. This ensures that the generative model is capable and specifically tailored to the context in which it operates.</p>
@@ -344,48 +373,64 @@
 <p>Consider your organization&#39;s unique requirements and explore how you can leverage private generative AI systems in your operations. Engage with internal teams to identify ways contextual insights can improve decision-making processes, and evaluate options for assembling the necessary system components. With the appropriate structure and tools in place, your organization will be well-positioned to harness artificial intelligence&#39;s full potential while mitigating data security risks.</p>
 <p>Whether you&#39;re understanding the necessity of context, maximizing your private setup, or recognizing the available technological advancements, now is the perfect time to leap into the future of AI. Embrace the innovation; your data and productivity will thank you!</p>
 
-  </div>
+        </section>
 
-  <div class="sponsor-container">
-    <p>Thank you to our sponsors for supporting this episode!</p>
-    <ol>
-      
-    </ol>
-  </div>
-</section>
+        
 
-<!-- PodcastEpisode JSON-LD -->
-<script type="application/ld+json">
-{
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/en/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/en/episodes/index.html",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/en/episodes/edt-235/index.html#episode",
+  "url": "https://www.embracingdigital.org/en/episodes/edt-235/index.html",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": ""
+    "@id": "https://www.embracingdigital.org/en/episodes/edt-235/index.html"
   },
   "name": "GenAI + RAG + Apple Mac = Private GenAI",
-  "episodeNumber": "235",
-  "datePublished": "2025-01-09T15:36:40.469Z",
-  "description": "<p>In this conversation, Matthew Pulsipher discusses the intricacies of setting up a private generative AI system, emphasizing the importance of understanding its components, including models, servers, and front-end applications. He elaborates on the significance of context in AI responses and introduces the concept of Retrieval-Augmented Generation (RAG) to enhance AI performance. The discussion also covers tuning embedding models, the role of quantization in AI efficiency, and the potential for running private AI systems on Macs, highlighting cost-effective hosting solutions for businesses.</p>
-<h2>Takeaways</h2>
-<ul>
-<li>Setting up a private generative AI requires understanding various components.</li>
-<li>Data leakage is not a concern with private generative AI models.</li>
-<li>Context is crucial for generating relevant AI responses.</li>
-<li>Retrieval-Augmented Generation (RAG) enhances AI&#39;s ability to provide context.</li>
-<li>Tuning the embedding model can significantly improve AI results.</li>
-<li>Quantization reduces model size but may impact accuracy.</li>
-<li>Macs are uniquely positioned to run private generative AI efficiently.</li>
-<li>Cost-effective hosting solutions for private AI can save businesses money.</li>
-<li>A technology is advancing towards mobile devices and local processing.</li>
-</ul>
-<h2>Chapters</h2>
-00:00 Introduction to Matthew&#39;s Superpowers and Backstory
-07:50 Enhancing Context with Retrieval-Augmented Generation (RAG)
-18:25 Understanding Quantization in AI Models
-23:31 Running Private Generative AI on Macs
-29:20 Cost-Effective Hosting Solutions for Private AI
-",
+  "episodeNumber": 235,
+  "datePublished": "2025-01-09",
+  "inLanguage": "en",
+  "description": "In this conversation, Matthew Pulsipher discusses the intricacies of setting up a private generative AI system, emphasizing the importance of understanding its components, including models, servers, and front-end applications. He elaborates on the significance of context in AI responses and introduc",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/en/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/en/episodes/edt-235/thumbnail.jpg"
+  },
   "associatedMedia": [
     {
       "@type": "VideoObject",
@@ -399,28 +444,19 @@
     }
   ],
   "actor": [
-    
     {
       "@type": "Person",
-      "name": "Matthew Pulsipher"
-    }
-    
+      "name": "Matthew Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../en/guests/matthew-pulsipher/index.html"
+    },
     {
       "@type": "Person",
-      "name": "Darren W Pulsipher"
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
     }
-    
-  ],
-  "publisher": {
-    "@type": "Organization",
-    "name": "Embracing Digital Transformation",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://embracingdigital.org/images/logo.png"
-    }
-  }
-}
-</script>
+  ]
+}</script>
+
 <footer id="footer">
     <div class="footer-content">
         <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>

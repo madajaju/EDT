@@ -10,7 +10,7 @@ body {
 /* 🌍 Navigation Bar */
 header {
     position: sticky;
-    z-index: 1000;
+    z-index: 9000;
     top: 0;
     background: #497BA3;
     padding: 0px 0;
@@ -77,7 +77,7 @@ nav ul li a {
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
-    z-index: 10; /* Ensures it overlays other content */
+    z-index: 9999; /* Ensures it overlays other content */
     min-width: 150px;
 }
 
@@ -186,7 +186,7 @@ nav a {
     background: linear-gradient(180deg, #497BA3, #193B73);
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 20px;
 }
 
 #hero h1 {
@@ -685,15 +685,15 @@ body.dark-mode {
 .transformation-container {
     max-width: 1200px;
     margin: 2rem auto;
-    background: #fff;
-    color: #333;
+    background: #497ba3;
+    color: #ffffff;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 .transformation-container h2 {
-    color: #193B73;
+    color: #ffffff;
     border-bottom: 2px solid #497BA3;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -776,19 +776,34 @@ body.dark-mode {
     color: white;
 }
 
+#one-episode,
+section:has(.show-summary) {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Improve Typography and readability */
 .show-notes {
-    margin-top: 20px;
+    text-align: left; /* Ensure it is not centered */
     line-height: 1.6;
+    color: #333;
+    background: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1200px; /* Optional: narrower text is easier to read than ultra-wide lines */
+    margin: 40px 0; /* Space it out from summary */
 }
 
 .show-notes h2 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    color: #333;
+    margin-top: 2em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.3em;
 }
 
 .show-notes p {
-    margin-bottom: 10px;
+    margin-bottom: 1.5em;
 }
 
 /* Mobile Adjustments */
@@ -1102,4 +1117,1154 @@ body.dark-mode {
     margin: 0;
     border-left: 4px solid #D4AF37;
     padding-left: 20px;
+}
+
+/************************************************************
+  HOST PROFILE PAGE STYLES
+*************************************************************/
+
+/* ---------------- HERO ---------------- */
+.host-hero {
+    text-align: center;
+    padding: 4rem 1rem 2rem;
+    background: #f5f9ff;
+    color: white;
+}
+
+.host-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+    color: white;
+}
+
+.host-hero .her0d213fo-subtitle {
+    font-size: 1.15rem;
+    max-width: 760px;
+    margin: 0 auto;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* ---------------- MAIN LAYOUT ---------------- */
+.host-main {
+    padding: 3rem 1.5rem;
+}
+
+.host-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+/* ---------------- PHOTO + CTA ---------------- */
+.host-photo {
+    flex: 0 0 280px;
+    text-align: center;
+}
+
+.host-photo img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border: 4px solid #fff;
+}
+
+.host-photo-actions {
+    margin-top: 1.5rem;
+}
+
+.primary-cta {
+    display: inline-block;
+    background: #003366;
+    color: #fff;
+    padding: 0.8rem 1.3rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.primary-cta:hover {
+    background: #00214c;
+}
+
+
+/* ---------------- BIO ---------------- */
+.host-bio {
+    flex: 1;
+    min-width: 300px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #1a1a1a;
+}
+
+
+/* ---------------- QUOTE ---------------- */
+.host-quote {
+    margin: 0 0 1.5rem;
+    padding: 1.2rem 1.5rem;
+    border-left: 4px solid #193B73;
+    background: #eef4fb;
+    border-radius: 6px;
+}
+
+.host-quote blockquote {
+    margin: 0;
+    font-style: italic;
+    color: #193B73;
+    font-weight: 500;
+}
+
+
+/* ---------------- PILLARS SECTION ---------------- */
+.host-pillars {
+    padding: 3rem 1.5rem;
+    background-color: #f8fafc;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #0d213f;
+}
+
+/* grid container inherited – we just reinforce spacing */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.grid-box {
+    flex: 0 0 300px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-top-width: 4px;
+    border-top-style: solid;
+}
+
+.grid-box h3 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-size: 1.25rem;
+    color: #0d213f;
+    font-weight: 600;
+}
+
+.grid-box p {
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* brand-aligned pillar border accents */
+.intel-pillar { border-top-color: #003366; }
+.vanderbilt-pillar { border-top-color: #D4AF37; }
+.opengroup-pillar { border-top-color: #497BA3; }
+
+
+/* ---------------- RESPONSIVE ADJUSTMENTS ---------------- */
+@media (max-width: 768px) {
+
+    .host-hero h1 {
+        font-size: 2rem;
+        color: white;
+    }
+
+    .host-layout {
+        gap: 30px;
+    }
+
+    .primary-cta {
+        width: 100%;
+        text-align: center;
+    }
+
+    .grid-box {
+        flex: 1 1 calc(100% - 20px);
+    }
+}
+
+/************************************************************
+  ABOUT PAGE STYLES
+*************************************************************/
+
+/* ---------- HERO ---------- */
+
+.about-hero {
+    text-align: center;
+    padding: 4rem 1rem 2.5rem;
+    background: #f5f9ff;
+}
+
+.about-hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+    color: #0d213f;
+}
+
+.about-hero .hero-subtitle {
+    font-size: 1.15rem;
+    max-width: 760px;
+    margin: 0 auto;
+    color: #324d72;
+    line-height: 1.6;
+}
+
+/* ---------- GENERIC LAYOUT HELPERS ---------- */
+
+.center-text {
+    text-align: center;
+}
+
+.center-text.narrow,
+.center-text.narrow p {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Slightly tighter for mission/intro blocks */
+.about-mission .center-text,
+.about-serve .center-text {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ---------- MISSION / PROVIDE / VALUES / SERVE ---------- */
+
+.about-mission {
+    padding: 3rem 1.5rem 2.5rem;
+}
+
+.about-provide {
+    padding: 3rem 1.5rem;
+}
+
+.about-values {
+    padding: 3rem 1.5rem;
+}
+
+.about-serve {
+    padding: 3rem 1.5rem 4rem;
+}
+
+/* Reuse global section title, but ensure spacing */
+.about-mission h2,
+.about-provide .section-title,
+.about-values .section-title,
+.about-serve .section-title {
+    text-align: center;
+    margin-bottom: 1.75rem;
+}
+
+/* Refine about “What We Provide” cards */
+.about-box {
+    border-top: 4px solid #193B73;
+}
+
+/* You can differentiate by nth-child if you want subtle color variation */
+.about-provide .grid-box:nth-child(2) { border-top-color: #497BA3; }
+.about-provide .grid-box:nth-child(3) { border-top-color: #D4AF37; }
+.about-provide .grid-box:nth-child(4) { border-top-color: #6a0dad; }
+
+/* ---------- PRINCIPLES LIST ---------- */
+
+.principles {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.principles li {
+    position: relative;
+    margin-bottom: 0.75rem;
+    padding-left: 1.6rem;
+    line-height: 1.6;
+    color: #1f2933;
+}
+
+.principles li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #193B73;
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+
+/* ---------- CARDS FOR “WHO WE SERVE” ---------- */
+
+.about-serve .grid-container {
+    margin-top: 1.5rem;
+}
+
+.about-serve .grid-box {
+    text-align: center;
+    border-top: 4px solid #497BA3;
+}
+
+/* ---------- RESPONSIVE TWEAKS ---------- */
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-hero .hero-subtitle {
+        font-size: 1.05rem;
+    }
+
+    .about-mission,
+    .about-provide,
+    .about-values,
+    .about-serve {
+        padding-inline: 1rem;
+    }
+
+    .principles {
+        padding-inline: 0.5rem;
+    }
+}
+
+.pillar-related {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.pillar-related ul.related-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.pillar-related ul.related-links li a {
+    color: #193B73;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.25s ease;
+}
+
+.pillar-related ul.related-links li a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.breadcrumbs {
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+    color: #334155;
+}
+
+.breadcrumbs ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs a {
+    color: #193B73;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs li::after {
+    content: "/";
+    margin-left: 0.5rem;
+    color: #94a3b8;
+}
+
+.breadcrumbs li:last-child::after {
+    content: "";
+}
+
+/* --- HERO AREA --- */
+.hero {
+    padding: 1rem 2rem 2rem;
+    text-align: center;
+}
+
+.hero-subtitle {
+    max-width: 850px;
+    margin: 0.5rem auto 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #475569;
+    line-height: 1.6;
+}
+
+
+/* --- GRID LAYOUT --- */
+.grid-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    margin-top: 2rem;
+}
+
+.grid-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 32px rgba(0,0,0,0.12);
+}
+
+.section-title {
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #1E293B;
+}
+
+/* --- CTA BUTTONS --- */
+.primary-cta {
+    display: inline-block;
+    padding: 0.65rem 1.4rem;
+    border-radius: 8px;
+    background: #193B73;
+    color: white !important;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1.2rem;
+    transition: opacity 0.2s ease, background 0.2s ease;
+}
+
+.primary-cta:hover {
+    opacity: 0.9;
+    background: #0F274C;
+}
+
+/* --- FAQ INDENTATION & SPACING --- */
+.faq-section {
+    margin-top: 3rem;
+}
+
+.faq-section h3 {
+    margin-bottom: 0.75rem;
+}
+
+.faq-section details {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    border-left: 4px solid #193B73;
+}
+
+
+.breadcrumbs ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs a {
+    color: #193B73;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs li::after {
+    content: "/";
+    margin-left: 0.5rem;
+    color: #94a3b8;
+}
+
+.breadcrumbs li:last-child::after {
+    content: "";
+}
+
+/* --- ODXA DOMAIN TAG BADGES (optional use) --- */
+.domain-badge {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    margin: 0.25rem 0.3rem 0 0;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    background: #E2E8F0;
+    color: #1E293B;
+    font-weight: 600;
+}
+
+.domain-badge.digital { background: #c6e1ff; }
+.domain-badge.physical { background: #ffe4c4; }
+.domain-badge.process { background: #e9d5ff; }
+.domain-badge.organizational { background: #d1f7c4; }
+.domain-badge.strategic { background: #fbcfe8; }
+
+/* --- UL spacing for maturity & dependencies --- */
+.metadata-list {
+    margin-top: 0.75rem;
+    padding-left: 1.1rem;
+}
+
+.metadata-list li {
+    margin-bottom: 0.25rem;
+}
+
+.gear-layout-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gear-layer-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.gear-layer-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-height: 5em;
+    border-radius: 8pt;
+}
+
+.gear-layer-title {
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 1;
+    flex-grow: 1;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.gear-layer-children {
+    height: 100%;
+    width: 100%;
+}
+
+.week-arc { max-width: 920px; margin: 0 auto 1.25rem; }
+
+.week-grid{
+    display:grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+@media (max-width: 1024px){
+    .week-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px){
+    .week-grid{ grid-template-columns: 1fr; }
+}
+
+.week-card {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    text-align: left;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    overflow: hidden;
+    padding: 0;
+    cursor: pointer;
+    height: 100%; /* Ensure all cards in a row are same height */
+    transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+}
+
+/* 1. Day at the very top */
+.week-day {
+    display: block;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: #193B73;
+    margin-bottom: 2px;
+}
+
+.week-card-top {
+    padding: 12px;
+    background: #f8fafc; /* Subtle background for the header area */
+    border-bottom: 1px solid #eee;
+}
+
+/* 2. Consistent Image Size */
+.week-image {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Forces all images to the same proportions */
+    object-fit: cover;    /* Prevents stretching */
+    display: block;
+    background: #eee;     /* Placeholder color if image is missing */
+}
+
+/* 3. Standardized Text Location */
+.week-card-body {
+    padding: 16px;
+    flex-grow: 1;         /* Pushes content to fill space */
+    display: flex;
+    flex-direction: column;
+}
+
+.week-title {
+    font-weight: 800;
+    margin-bottom: 8px;
+    min-height: 2.8em;    /* Reserve space for 2 lines of title so text starts at same spot */
+    line-height: 1.2;
+}
+
+.week-summary {
+    opacity: 0.85;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    /* Limit summary to 3 lines for clean alignment */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.week-card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.10);
+}
+
+.week-card.is-selected{
+    border-color: rgba(73,123,163,.75);
+    box-shadow: 0 10px 22px rgba(73,123,163,.22);
+}
+
+.week-card:disabled{
+    opacity:.55;
+    cursor:not-allowed;
+    transform:none;
+    box-shadow:none;
+}
+
+.week-card-top{
+    padding:12px 12px 8px;
+}
+
+.week-badge{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:10px;
+}
+
+.week-day{ font-weight:800; }
+.week-intent{ opacity:.85; font-size:.9rem; }
+.week-show{ margin-top:6px; font-weight:700; }
+
+.week-image{
+    width:100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display:block;
+}
+
+.week-card-body{ padding:12px; }
+.week-title{ font-weight:800; margin-bottom:4px; }
+.week-date{ opacity:.75; font-size:.9rem; margin-bottom:8px; }
+.week-summary{ opacity:.95; }
+
+.week-details{
+    margin-top: 16px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:16px;
+    padding: 14px;
+}
+.week-details-content{
+    background:#fff;
+    color: #444444;
+}
+
+.week-details-inner{
+    display:grid;
+    grid-template-columns: 280px 1fr;
+    gap: 16px;
+    align-items:start;
+}
+
+@media (max-width: 768px){
+    .week-details-inner{ grid-template-columns: 1fr; }
+}
+
+.week-details-image{
+    width:100%;
+    border-radius:12px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display:block;
+}
+
+.week-details-title{ margin:0 0 6px; }
+.week-details-meta{ opacity:.75; margin-bottom: 10px; }
+.week-details-links{ display:flex; gap:10px; flex-wrap:wrap; margin-top: 10px; }
+.week-details-guests{ margin-top: 10px; }
+
+/* ===========================
+   Editorial Brief page styles
+   (for brief.ejs “Editorial Brief” layout)
+   =========================== */
+
+.brief-editorial {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* HERO */
+.brief-hero {
+    padding: 24px 0 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.brief-hero h1 {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 2rem;
+    color: #0d213f;
+}
+
+.brief-date {
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .brief-hero h1 {
+        font-size: 1.6rem;
+    }
+}
+
+.brief-subtitle {
+    margin: 10px 0 14px;
+    font-size: 1.05rem;
+    opacity: 0.9;
+}
+
+.brief-glance {
+    margin: 14px 0 14px;
+}
+
+.brief-glance p {
+    margin: 0 0 10px;
+}
+
+.brief-glance .architect-take {
+    border-left: 3px solid rgba(0,0,0,0.12);
+    padding-left: 12px;
+    margin-top: 10px;
+    opacity: 0.95;
+}
+
+/* CTAs */
+.brief-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 12px 0 10px;
+}
+
+/* Pillar chips (anchors or tags) */
+.pillar-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.pillar-chips a {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(0,0,0,0.15);
+    text-decoration: none;
+    font-size: 0.95rem;
+    opacity: 0.95;
+}
+
+.pillar-chips a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* SECTION HEADERS */
+.brief-top-stories,
+.brief-pillars,
+.brief-handoff {
+    padding: 18px 0 0;
+}
+
+.brief-top-stories h2,
+.brief-pillars h2,
+.brief-handoff h2 {
+    margin: 0 0 12px;
+}
+
+/* TOP STORIES (editorial picks) */
+.top-story {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 14px;
+    padding: 14px 0;
+    border-top: 1px solid rgba(0,0,0,0.10);
+}
+
+.top-story:first-of-type {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.top-story img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.top-story-content h3 {
+    margin: 0 0 6px;
+    line-height: 1.25;
+}
+
+.top-story-content p {
+    margin: 0 0 10px;
+    opacity: 0.95;
+}
+
+.story-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.story-links a {
+    text-decoration: none;
+}
+
+.story-links a:hover {
+    text-decoration: underline;
+}
+
+.story-pillar {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* FULL COVERAGE BY PILLAR */
+.pillar-section {
+    padding: 14px 0 6px;
+    border-top: 1px solid rgba(0,0,0,0.10);
+}
+
+.pillar-section:first-of-type {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.pillar-section h3 {
+    margin: 0 0 10px;
+}
+
+.pillar-article {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 14px;
+    padding: 12px 0;
+}
+
+.pillar-article + .pillar-article {
+    border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.pillar-article img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.pillar-article-content h4 {
+    margin: 0 0 6px;
+    line-height: 1.25;
+}
+
+.pillar-article-content p {
+    margin: 0 0 10px;
+    opacity: 0.95;
+    max-width: 85ch;
+}
+
+/* HANDOFF CTA */
+.brief-handoff {
+    margin-top: 8px;
+    padding-bottom: 18px;
+    border-top: 1px solid rgba(0,0,0,0.10);
+}
+
+.brief-handoff p {
+    max-width: 78ch;
+    opacity: 0.95;
+}
+
+/* RESPONSIVE */
+@media (max-width: 740px) {
+    .top-story,
+    .pillar-article {
+        grid-template-columns: 1fr;
+    }
+
+    .top-story img,
+    .pillar-article img {
+        border-radius: 14px;
+    }
+}
+/* Breadcrumbs */
+.breadcrumbs {
+    font-size: 0.9rem;
+    margin: 0 0 1rem;
+    color: rgba(0,0,0,0.6);
+}
+
+.breadcrumbs ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.breadcrumbs li::after {
+    content: "›";
+    margin-left: 0.35rem;
+    opacity: 0.6;
+}
+
+.breadcrumbs li:last-child::after {
+    content: "";
+}
+
+/* Slight polish on hero */
+.brief-hero {
+    padding: 1.5rem 0 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.brief-hero h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.15;
+}
+
+.brief-date {
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.brief-glance {
+    margin-top: 1rem;
+    max-width: 60rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Chips */
+.pillar-chips {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.pillar-chips a {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+/* Make stories feel like cards if not already */
+.top-story,
+.pillar-article {
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 3fr);
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.top-story img,
+.pillar-article img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .top-story,
+    .pillar-article {
+        grid-template-columns: 1fr;
+    }
+
+    .brief-hero h1 {
+        font-size: 1.6rem;
+    }
+}
+
+.brief-editorial {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* HERO layout */
+.brief-hero {
+    padding: 22px 0 10px;
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 1.75rem;
+    align-items: flex-start;
+}
+
+.brief-hero-main h1 {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 2rem;
+}
+
+.brief-date {
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.brief-glance {
+    margin-top: 1rem;
+    max-width: 60rem;
+    line-height: 1.6;
+}
+
+.brief-ctas {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Chips */
+.pillar-chips {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.pillar-chips a {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    border: 1px solid rgba(0,0,0,0.12);
+    text-decoration: none;
+}
+
+/* Media column */
+.brief-hero-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.video-embed {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 */
+    overflow: hidden;
+    border-radius: 10px;
+    background: #000;
+}
+
+.video-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.media-audio iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Mobile: stack hero, keep media full width */
+@media (max-width: 900px) {
+    .brief-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .brief-hero-side {
+        order: 3; /* Title + summary first, then media, then chips */
+    }
+
+    .brief-hero-main h1 {
+        font-size: 1.6rem;
+    }
 }
