@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Data Management | Digital Transformation Pillar</title>
+    <meta name="description"
+          content="Data Management as a pillar of digital transformation—governing how data is collected, integrated, secured, and used to drive enterprise insights.">
+    <meta name="keywords"
+          content="digital transformation, data management, data governance, data interoperability, ODXA, six pillars, analytics, data strategy">
+    <link rel="canonical" href="https://embracingdigital.org/en/digital-transformation/pillars/data/">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <meta name="keywords"
+          content="digital transformation, data management, data governance, data interoperability, ODXA, six pillars, analytics, data strategy">
+    <link rel="canonical" href="https://embracingdigital.org/en/digital-transformation/pillars/data/">
+
+    <!-- Hreflang alternates -->
+    <link rel="alternate" href="https://embracingdigital.org/en/digital-transformation/pillars/data/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/de/digital-transformation/pillars/data/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/digital-transformation/pillars/data/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/digital-transformation/pillars/data/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/ja/digital-transformation/pillars/data/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/pt/digital-transformation/pillars/data/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/digital-transformation/pillars/data/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/en/digital-transformation/pillars/data/" hreflang="x-default">
+
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://embracingdigital.org/#organization",
+                    "name": "Embracing Digital Transformation",
+                    // ... existing code ...
+                    "mainEntity": {
+                        "@type": "DefinedTerm",
+                        "name": "Data Management",
+                        "description": "Governing how data is collected, integrated, secured, and used to drive insights and decisions across the enterprise.",
+                        "inDefinedTermSet": {
+                            "@type": "DefinedTermSet",
+                            "name": "Six Pillars of Digital Transformation"
+                        }
+                    },
+                    "hasPart": [
+                        {
+                            "@type": "FAQPage",
+                            "mainEntity": [
+                                {
+                                    "@type": "Question",
+                                    "name": "What is the difference between data management and analytics?",
+                                    "acceptedAnswer": {
+                                        "@type": "Answer",
+                                        "text": "Analytics is how you ask questions; data management is how you govern the collection, quality, and security of data so those questions can be answered reliably."
+                                    }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "Do we need a single enterprise data lake to succeed?",
+                                    "acceptedAnswer": {
+                                        "@type": "Answer",
+                                        "text": "No. Modern architectures favor a governed data mesh, where domains own their data products but follow shared standards for quality and interoperability."
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    </script>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main navigation -->
+        <ul class="nav-main">
+            <li><a href="/en/home/index.html">Home</a></li>
+
+            <!-- Guidance -->
+            <li class="dropdown">
+                <a href="/en/shows/index.html" aria-haspopup="true" aria-expanded="false">
+                    Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/deepdive/index.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn -->
+            <li class="dropdown">
+                <a href="/en/digital-transformation/index.html" aria-haspopup="true" aria-expanded="false">
+                    Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/en/community.html" aria-haspopup="true" aria-expanded="false">
+                    Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About -->
+            <li class="dropdown">
+                <a href="/en/about.html" aria-haspopup="true" aria-expanded="false">
+                    About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">
+                            Shop
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li><a href="/en/search.html">Search</a></li>
+        </ul>
+
+        <!-- Languages (far right) -->
+        <ul class="nav-right">
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main id="content">
+    <!-- 1. Hero Section -->
+    <section id="hero">
+        <h1>Data Management</h1>
+        <h2>Six Pillars of Digital Transformation</h2>
+        <p class="pillar-hero-highlight">
+            Governs how data is collected, integrated, secured, and used to drive insights and decisions across the enterprise.
+        </p>
+        <div class="pillar-hero-bullets">
+            <ul>
+                <li>Treats data as a strategic enterprise asset rather than a secondary "byproduct."</li>
+                <li>Breaks down silos to enable interoperability and cross-mission visibility.</li>
+                <li>Essential for Data Architects, CDOs, and Business Intelligence Leaders.</li>
+            </ul>
+        </div>
+        <div style="max-width: 980px; margin: 1.5rem auto 0;">
+            <a class="listen-now" href="/en/digital-transformation/">Back to Framework</a>
+            <a class="listen-now" href="/en/digital-transformation/odxa/" style="background: #497BA3;">Explore ODXA</a>
+        </div>
+    </section>
+
+    <!-- 2. Framework Context Header -->
+    <section class="transformation-container" style="padding: 30px; margin-bottom: 2rem;">
+        <div class="pillar-header-container">
+            <!-- Column 1: Mini-Temple (Data Highlighted) -->
+            <div style="flex: 0 0 300px; text-align: center;">
+
+                <svg viewBox="0 0 600 520" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                     style="width: 100%; height: auto; max-width: 400px; display: block; margin: 0 auto;">
+                    <style>
+                        text {
+                            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+                            pointer-events: none;
+                        }
+
+                        .clickable {
+                            cursor: pointer;
+                            transition: all 0.3s ease;
+                        }
+
+                        /* Highlighting effect */
+                        .clickable:hover rect,
+                        .clickable:hover polygon {
+                            stroke: #ffcc00 !important;
+                            stroke-width: 1px;
+                            filter: drop-shadow(0 0 8px rgba(255, 204, 0, 0.6));
+                        }
+
+                        /* Optional: Add a subtle yellow tint to the fill on hover */
+                        .clickable:hover {
+                            filter: sepia(0.5) saturate(2) hue-rotate(-10deg) brightness(1.1);
+                        }
+                    </style>
+
+                    <defs>
+                        <filter id="softshadow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
+                        </filter>
+                        <linearGradient id="highlightedPillarGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#C5A028"/>
+                            <stop offset="50%" stop-color="#D4AF37"/>
+                            <stop offset="100%" stop-color="#C5A028"/>
+                        </linearGradient>
+                        <linearGradient id="ghostPillarGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#e2e8f0"/>
+                            <stop offset="50%" stop-color="#f8fafc"/>
+                            <stop offset="100%" stop-color="#e2e8f0"/>
+                        </linearGradient>
+                        <linearGradient id="pillarGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#bdc3c7"/>
+                            <stop offset="50%" stop-color="#ecf0f1"/>
+                            <stop offset="100%" stop-color="#bdc3c7"/>
+                        </linearGradient>
+
+                        <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#7f8c8d"/>
+                            <stop offset="50%" stop-color="#bdc3c7"/>
+                            <stop offset="100%" stop-color="#7f8c8d"/>
+                        </linearGradient>
+                        <linearGradient id="beamGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#d4c38d"/>
+                            <stop offset="50%" stop-color="#b9a46a"/>
+                            <stop offset="100%" stop-color="#9a8752"/>
+                        </linearGradient>
+                        <linearGradient id="pedimentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#34495e"/>
+                            <stop offset="100%" stop-color="#1a252f"/>
+                        </linearGradient>
+                        <linearGradient id="stepGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="rgba(255,255,255,0.25)"/>
+                            <stop offset="100%" stop-color="rgba(0,0,0,0.1)"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Pediment (Triangle) -->
+                    <g class="clickable">
+                        <title>
+                            Mission outcomes delivered through integrated digital capabilities
+                        </title>
+                        <polygon points="50,112 300,12 550,112" filter="url(#softshadow)" fill="url(#pedimentGradient)"
+                                 stroke="#34495e"
+                                 stroke-width="2"/>
+                        <text x="300" y="75" font-size="20" fill="white" text-anchor="middle">
+                            <tspan x="300" dy="0">Mission Solutions</tspan>
+                            <tspan x="300" dy="24">&amp; Capabilities</tspan>
+                        </text>
+                    </g>
+
+                    <!-- Beam (Entablature) -->
+                    <g class="clickable">
+                        <title>
+                            Architectural integration aligns tradeoffs, design decisions, and cross-pillar dependencies
+                        </title>
+                        <rect x="50" y="112" width="500" height="48" filter="url(#softshadow)" fill="url(#beamGradient)"
+                              stroke="#2c3e50" stroke-width="2" class="clickable"/>
+                        <text x="300" y="133" font-size="16" fill="black" text-anchor="middle">
+                            <tspan x="300" dy="0">Architectural Integration</tspan>
+                            <tspan x="300" dy="16" font-size="11" font-style="italic" font-weight="normal">Tradeoffs •
+                                Alignment •
+                                Design Decisions
+                            </tspan>
+                        </text>
+                    </g>
+
+                    <!-- Six Pillars with Links -->
+                    <g font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" text-anchor="middle">
+                        <!-- Pillar 1: Ubiquitous Computing -->
+                        <g class="clickable">
+                            <title>
+                                Cloud, DevOps, emerging compute, and decentralized platforms enabling portable execution
+                                everywhere
+                            </title>
+                            <a href="/en/digital-transformation/pillars/computing/" class="clickable">
+                                <g>
+                                    <rect x="70" y="160" width="40" height="200" fill="url(#pillarGradient)"
+                                          stroke="#bdc3c7"/>
+                                    <rect x="65" y="160" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <rect x="68" y="168" width="44" height="6" fill="url(#ringGradient)"/>
+                                    <rect x="65" y="352" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <text x="90" y="265" transform="rotate(-90, 90, 260)">
+                                        <tspan x="90" dy="-6">Ubiquitous</tspan>
+                                        <tspan x="90" dy="12">Computing</tspan>
+                                    </text>
+                                </g>
+                            </a>
+                        </g>
+
+                        <!-- Pillar 2: Edge Computing -->
+                        <g class="clickable">
+                            <title>
+                                Edge Computing enables data processing and decision-making closer to where data is
+                                generated to support
+                                low-latency, resilient, and mission-critical operations.
+                            </title>
+
+                            <a href="/en/digital-transformation/pillars/edge/" class="clickable">
+                                <g>
+                                    <rect x="155" y="160" width="40" height="200" fill="url(#pillarGradient)"
+                                          stroke="#bdc3c7"/>
+                                    <rect x="150" y="160" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <rect x="153" y="168" width="44" height="6" fill="url(#ringGradient)"/>
+                                    <rect x="150" y="352" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <text x="175" y="265" transform="rotate(-90, 175, 260)">
+                                        <tspan x="175" dy="-6">Edge</tspan>
+                                        <tspan x="175" dy="12">Computing</tspan>
+                                    </text>
+                                </g>
+                            </a>
+                        </g>
+
+                        <!-- Pillar 3: Artificial Intelligence -->
+                        <g class="clickable">
+                            <title>
+                                Artificial Intelligence enables systems to learn, reason, and assist decision-making
+                                through data-driven
+                                models embedded across digital and operational workflows.
+                            </title>
+                            <a href="/en/digital-transformation/pillars/ai/" class="clickable">
+                                <g>
+                                    <rect x="240" y="160" width="40" height="200" fill="url(#pillarGradient)"
+                                          stroke="#bdc3c7"/>
+                                    <rect x="235" y="160" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <rect x="238" y="168" width="44" height="6" fill="url(#ringGradient)"/>
+                                    <rect x="235" y="352" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <text x="260" y="265" transform="rotate(-90, 260, 260)">
+                                        <tspan x="260" dy="-6">Artificial</tspan>
+                                        <tspan x="260" dy="12">Intelligence</tspan>
+                                    </text>
+                                </g>
+                            </a>
+                        </g>
+
+                        <!-- Pillar 4: Cybersecurity -->
+                        <g class="clickable">
+                            <title>
+                                Cybersecurity protects systems, data, and missions through Zero Trust principles,
+                                resilience, and
+                                continuous risk management across all domains.
+                            </title>
+                            <a href="/en/digital-transformation/pillars/cybersecurity/" class="clickable">
+                                <g>
+                                    <rect x="325" y="160" width="40" height="200" fill="url(#pillarGradient)"
+                                          stroke="#bdc3c7"/>
+                                    <rect x="320" y="160" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <rect x="323" y="168" width="44" height="6" fill="url(#ringGradient)"/>
+                                    <rect x="320" y="352" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <text x="345" y="265" transform="rotate(-90, 345, 260)">
+                                        <tspan x="345" dy="-6">Cyber</tspan>
+                                        <tspan x="345" dy="12">Security</tspan>
+                                    </text>
+                                </g>
+                            </a>
+                        </g>
+
+                        <!-- Pillar 5: Data Management -->
+                        <g class="clickable">
+                            <title>
+                                Data Management governs how data is collected, integrated, secured, and used to drive
+                                insights and
+                                decisions across the enterprise.
+                            </title>
+                            <a href="/en/digital-transformation/pillars/data/" class="clickable">
+                                <g>
+                                    <rect x="410" y="160" width="40" height="200" fill="url(#highlightedPillarGradient)"
+                                          stroke="#bdc3c7"/>
+                                    <rect x="405" y="160" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <rect x="408" y="168" width="44" height="6" fill="url(#ringGradient)"/>
+                                    <rect x="405" y="352" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <text x="430" y="265" fill="white" transform="rotate(-90, 430, 260)">
+                                        <tspan x="430" dy="-6">Data</tspan>
+                                        <tspan x="430" dy="12">Management</tspan>
+                                    </text>
+                                </g>
+                            </a>
+                        </g>
+                        <!-- Pillar 6: Advanced Comms -->
+                        <g class="clickable">
+                            <title>
+                                Advanced Communications provides secure, resilient connectivity enabling data, systems,
+                                and people to
+                                operate as an integrated whole.
+                            </title>
+                            <a href="/en/digital-transformation/comms/" class="clickable">
+                                <g>
+                                    <rect x="495" y="160" width="40" height="200" fill="url(#pillarGradient)"
+                                          stroke="#bdc3c7"/>
+                                    <rect x="490" y="160" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <rect x="493" y="168" width="44" height="6" fill="url(#ringGradient)"/>
+                                    <rect x="490" y="352" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <text x="515" y="265" transform="rotate(-90, 515, 260)">
+                                        <tspan x="515" dy="-6">Advanced</tspan>
+                                        <tspan x="515" dy="12">Comms</tspan>
+                                    </text>
+                                </g>
+                            </a>
+                        </g>
+                    </g>
+
+                    <!-- Foundation (Domains) with Links -->
+                    <g font-family="Arial, sans-serif" font-size="14" text-anchor="middle">
+                        <a href="/en/digital-transformation/odxa/strategic/" class="clickable">
+                            <g>
+                                <rect x="40" y="360" width="520" height="20" fill="#f8fafc"/>
+                                <rect x="40" y="360" width="520" height="20" fill="url(#stepGradient)"/>
+                                <text x="300" y="375" fill="black">Strategic Domain</text>
+                            </g>
+                        </a>
+
+                        <a href="/en/digital-transformation/odxa/organizational/" class="clickable">
+                            <g>
+                                <rect x="30" y="380" width="540" height="20" fill="#e5e7eb"/>
+                                <rect x="30" y="380" width="540" height="20" fill="url(#stepGradient)"/>
+                                <text x="300" y="395" fill="black">Organizational Domain</text>
+                            </g>
+                        </a>
+
+                        <a href="/en/digital-transformation/odxa/process/" class="clickable">
+                            <g>
+                                <rect x="20" y="400" width="560" height="20" fill="#d1d5db"/>
+                                <rect x="20" y="400" width="560" height="20" fill="url(#stepGradient)"/>
+                                <text x="300" y="415" fill="black">Process Domain</text>
+                            </g>
+                        </a>
+
+                        <a href="/en/digital-transformation/odxa/digital/" class="clickable">
+                            <g>
+                                <rect x="10" y="420" width="580" height="20" fill="#c7ced6"/>
+                                <rect x="10" y="420" width="580" height="20" fill="url(#stepGradient)"/>
+                                <text x="300" y="435" fill="black">Digital Domain</text>
+                            </g>
+                        </a>
+
+                        <a href="/en/digital-transformation/odxa/physical/" class="clickable">
+                            <g>
+                                <rect x="0" y="440" width="600" height="20" fill="#9aa3af"/>
+                                <rect x="0" y="440" width="600" height="20" fill="url(#stepGradient)"/>
+                                <text x="300" y="455" fill="black">Physical Domain</text>
+                            </g>
+                        </a>
+                    </g>
+                </svg>
+            </div>
+            <!-- Column 2: Short Definition -->
+            <div class="pillar-header-definition">
+                <h3 style="color: #193B73; margin-top: 0; margin-bottom: 10px; font-size: 1.4rem;">Core Capability</h3>
+                <p class="authoritative-definition">
+                    Treating data as a strategic enterprise asset by ensuring its quality, accessibility, interoperability, and governance throughout its entire lifecycle.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Definitions -->
+    <section id="Definition" class="transformation-container">
+        <h2>Definition</h2>
+        <p><strong>Short Definition:</strong> Data Management governs how data is collected, integrated, secured, and used to drive insights and decisions across the enterprise.</p>
+        <p><strong>Long Definition:</strong> The Data Management pillar focuses on treating data as a strategic asset by ensuring quality, accessibility, interoperability, and governance throughout its lifecycle. Effective data management enables analytics, AI, and operational visibility while maintaining trust and compliance. Within ODXA, data strategy aligns data use with mission outcomes, organizational models define stewardship, processes manage data lifecycle and quality, digital platforms deliver storage and analytics capabilities, and physical systems generate and transport data.</p>
+    </section>
+
+    <!-- 4. Is / Is Not -->
+    <section id="Scope" class="transformation-container">
+        <div class="grid-container">
+            <div class="grid-box" style="border-top: 4px solid #497BA3;">
+                <h3>This Pillar Is</h3>
+                <ul>
+                    <li><strong>Strategic Stewardship:</strong> Defining clear ownership and value for every data stream.</li>
+                    <li><strong>Interoperability:</strong> Ensuring data can flow between different systems and pillars without manual translation.</li>
+                    <li><strong>Lifecycle Governance:</strong> Managing data from creation to archival/deletion.</li>
+                </ul>
+            </div>
+            <div class="grid-box" style="border-top: 4px solid #e76f51;">
+                <h3>This Pillar Is Not</h3>
+                <ul>
+                    <li><strong>Just a Database:</strong> It's about the governance and use of the content, not just the storage technology.</li>
+                    <li><strong>Data Hoarding:</strong> Collecting vast amounts of "dark data" without a clear mission outcome.</li>
+                    <li><strong>Manual Cleanup:</strong> Successful data management automates quality rather than relying on one-off fixes.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="GraphicRep" class="transformation-container" style="text-align: center;">
+        <div class="highlight-box" style="display: inline-block; padding: 10px 20px; margin-bottom: 2rem;">
+            <em>“Data Management provides the Governance Plane that turns distributed data into high-velocity Data Products without requiring centralization.”</em>
+        </div>
+
+        <svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" style="max-width: 1000px; height: auto; margin: 0 auto; display: block; background: #fdfdfd; border-radius: 8px;">
+            <defs>
+                <marker id="arrow-gold" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,6 L9,3 z" fill="#D4AF37" />
+                </marker>
+            </defs>
+
+            <!-- Top Tier: Distributed Mission Consumption (Data Products) -->
+            <!-- Four distinct products to show many-to-many relationship -->
+            <g transform="translate(40, 20)">
+                <rect x="0" y="0" width="120" height="60" rx="8" fill="#f8fafc" stroke="#497BA3" stroke-width="1"/>
+                <text x="60" y="25" text-anchor="middle" font-family="Arial" font-size="11" fill="#193B73" font-weight="bold">AI MODELS</text>
+                <text x="60" y="40" text-anchor="middle" font-family="Arial" font-size="9" fill="#64748b">Inference</text>
+            </g>
+
+            <g transform="translate(225, 20)">
+                <rect x="0" y="0" width="120" height="60" rx="8" fill="#f8fafc" stroke="#497BA3" stroke-width="1"/>
+                <text x="60" y="25" text-anchor="middle" font-family="Arial" font-size="11" fill="#193B73" font-weight="bold">DASHBOARDS</text>
+                <text x="60" y="40" text-anchor="middle" font-family="Arial" font-size="9" fill="#64748b">Exec Views</text>
+            </g>
+
+            <g transform="translate(410, 20)">
+                <rect x="0" y="0" width="120" height="60" rx="8" fill="#f8fafc" stroke="#497BA3" stroke-width="1"/>
+                <text x="60" y="25" text-anchor="middle" font-family="Arial" font-size="11" fill="#193B73" font-weight="bold">REPORTS</text>
+                <text x="60" y="40" text-anchor="middle" font-family="Arial" font-size="9" fill="#64748b">Compliance</text>
+            </g>
+
+            <g transform="translate(595, 20)">
+                <rect x="0" y="0" width="120" height="60" rx="8" fill="#f8fafc" stroke="#497BA3" stroke-width="1"/>
+                <text x="60" y="25" text-anchor="middle" font-family="Arial" font-size="11" fill="#193B73" font-weight="bold">DIGITAL APIs</text>
+                <text x="60" y="40" text-anchor="middle" font-family="Arial" font-size="9" fill="#64748b">System Interop</text>
+            </g>
+
+            <!-- Middle Tier: The Governance Control Plane -->
+            <rect x="80" y="150" width="640" height="100" rx="20" fill="#497BA3" fill-opacity="0.05" stroke="#D4AF37" stroke-width="3" stroke-dasharray="10,5"/>
+            <text x="400" y="185" text-anchor="middle" font-family="Arial" font-size="20" fill="#193B73" font-weight="bold">GOVERNANCE CONTROL PLANE</text>
+            <text x="400" y="210" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b" font-style="italic">Stewardship • Quality • Policy • Metadata • Interoperability</text>
+            <text x="400" y="230" text-anchor="middle" font-family="Arial" font-size="11" fill="#64748b">The "Universal Connector" for Enterprise Data</text>
+
+            <!-- Bottom Tier: Distributed Data Sources -->
+            <rect x="100" y="320" width="140" height="70" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+            <text x="170" y="350" text-anchor="middle" font-family="Arial" font-size="12" fill="#193B73" font-weight="bold">CLOUD DATA</text>
+            <text x="170" y="370" text-anchor="middle" font-family="Arial" font-size="10" fill="#64748b">Multi-cloud Repos</text>
+
+            <rect x="330" y="320" width="140" height="70" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+            <text x="400" y="350" text-anchor="middle" font-family="Arial" font-size="12" fill="#193B73" font-weight="bold">EDGE DATA</text>
+            <text x="400" y="370" text-anchor="middle" font-family="Arial" font-size="10" fill="#64748b">Tactical Sensors</text>
+
+            <rect x="560" y="320" width="140" height="70" rx="8" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+            <text x="630" y="350" text-anchor="middle" font-family="Arial" font-size="12" fill="#193B73" font-weight="bold">ON-PREM DATA</text>
+            <text x="630" y="370" text-anchor="middle" font-family="Arial" font-size="10" fill="#64748b">Legacy Systems</text>
+
+            <!-- Mesh Logic -->
+            <!-- Input Paths (Bottom to Plane) -->
+            <path d="M170,320 L170,250" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,2"/>
+            <path d="M400,320 L400,250" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,2"/>
+            <path d="M630,320 L630,250" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,2"/>
+
+            <!-- Output Paths (Plane to distributed Consumers - Multi-directional) -->
+            <path d="M100,150 L100,80" fill="none" stroke="#D4AF37" stroke-width="2" marker-end="url(#arrow-gold)"/>
+            <path d="M285,150 L285,80" fill="none" stroke="#D4AF37" stroke-width="2" marker-end="url(#arrow-gold)"/>
+            <path d="M470,150 L470,80" fill="none" stroke="#D4AF37" stroke-width="2" marker-end="url(#arrow-gold)"/>
+            <path d="M655,150 L655,80" fill="none" stroke="#D4AF37" stroke-width="2" marker-end="url(#arrow-gold)"/>
+
+            <!-- Label -->
+            <text x="400" y="410" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b" font-weight="bold">DISTRIBUTED DATA MESH • MANY-TO-MANY VALUE FLOW</text>
+        </svg>
+
+        <p style="margin-top: 2rem; color: #64748b; font-style: italic; max-width: 750px; margin-left: auto; margin-right: auto;">
+            In the ODXA framework, Data Management provides the <strong>Governance Control Plane</strong> that connects distributed sources to distributed consumers. This architecture proves that data value is derived from its <strong>refinement and access</strong>, not its location.
+        </p>
+    </section>
+    <!-- 5. ODXA Domain Mapping -->
+    <section id="DomainsMap" class="transformation-container" style="background-color: #f8fafc;">
+        <h2 style="text-align: center; margin-bottom: 2rem;">How Data Management Maps Across ODXA</h2>
+        <div class="pillar-domain-grid">
+
+            <!-- Strategic Domain -->
+            <div class="grid-box pillar-domain-strat">
+                <h3 style="color: #003366;">Strategic Domain</h3>
+                <ul>
+                    <li>Align data collection and retention policies with specific Mission Outcomes.</li>
+                    <li>Define "Data Sovereignty"—where data must physically and legally reside.</li>
+                    <li>Establish the "Value of Data" to prioritize protection and integration investments.</li>
+                    <li>Set enterprise-wide standards for interoperability and metadata.</li>
+                </ul>
+            </div>
+
+            <!-- Organizational Domain -->
+            <div class="grid-box pillar-domain-org">
+                <h3 style="color: #228B22;">Organizational Domain</h3>
+                <ul>
+                    <li>Define clear "Data Owners" and "Data Stewards" across the business units.</li>
+                    <li>Establish a "Data-Literate" workforce capable of using self-service analytics.</li>
+                    <li>Identify and bridge the gap between "Data Scientists" and "Domain Experts."</li>
+                    <li>Create a culture of transparency where data is shared by default (within security guardrails).</li>
+                </ul>
+            </div>
+
+            <!-- Process Domain -->
+            <div class="grid-box pillar-domain-proc">
+                <h3 style="color: #ff6f00;">Process Domain</h3>
+                <ul>
+                    <li>Implement "DataOps"—automating the flow of data from source to insight.</li>
+                    <li>Standardize Data Quality (DQ) checks at every stage of the pipeline.</li>
+                    <li>Establish repeatable Master Data Management (MDM) processes.</li>
+                    <li>Automate data discovery and cataloging to reduce manual search time.</li>
+                </ul>
+            </div>
+
+            <!-- Physical Domain -->
+            <div id="PhysicalDomainMap" class="grid-box pillar-domain-phys">
+                <h3 style="color: #708090;">Physical Domain</h3>
+                <ul>
+                    <li><strong>Sensor Integration:</strong> Manage the hardware interfaces that generate raw operational data.</li>
+                    <li><strong>Storage Footprint:</strong> Optimize the physical distribution of data across cloud, on-prem, and edge.</li>
+                    <li><strong>Physical Transport:</strong> Manage bandwidth and "Data Gravity" constraints for massive datasets.</li>
+                    <li><strong>Hardware Integrity:</strong> Protect the physical drives and cables that store and carry enterprise data.</li>
+                </ul>
+            </div>
+
+            <!-- Digital Domain -->
+            <div class="grid-box pillar-domain-digi">
+                <h3 style="color: #6a0dad;">Digital Domain</h3>
+                <ul>
+                    <li>Deploy unified "Data Fabrics" or "Data Meshes" to abstract source complexity.</li>
+                    <li>Utilize API-driven data products for consistent application consumption.</li>
+                    <li>Implement automated metadata tagging and classification tools.</li>
+                    <li>Leverage high-performance analytics engines and distributed databases.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6 & 7. Use Cases and Failure Modes -->
+    <section id="CommonUseCases" class="transformation-container">
+        <div class="grid-container">
+            <div>
+                <h2>Common Use Cases</h2>
+                <ul>
+                    <li><strong>Enterprise Visibility:</strong> Creating a "Single Source of Truth" for executive decision-making.</li>
+                    <li><strong>AI Enablement:</strong> Feeding high-quality, tagged datasets into AI/ML training models.</li>
+                    <li><strong>Predictive Analytics:</strong> Using historical data products to forecast mission trends and risks.</li>
+                    <li><strong>Compliance Automation:</strong> Automatically ensuring data residency and privacy (GDPR/CCPA) across all layers.</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Common Failure Modes</h2>
+                <ul style="color: #c53030;">
+                    <li><strong>The "Data Swamp":</strong> Collecting everything but governing nothing, making data unusable.</li>
+                    <li><strong>Technical Silos:</strong> Different departments using incompatible data formats and proprietary schemas.</li>
+                    <li><strong>Privacy Paralyis:</strong> Fear of data misuse preventing high-value data sharing and innovation.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. System-of-Systems -->
+    <section id="SystemOfSystems" class="transformation-container">
+        <h2>System-of-Systems Context</h2>
+        <div class="grid-container" style="gap: 25px;">
+            <div class="grid-box" style="border-left: 4px solid #D4AF37;">
+                <h4>Enabling AI</h4>
+                <p>Acts as the "fuel" for AI—providing the clean, high-velocity data required for training foundation models and grounding RAG architectures.</p>
+            </div>
+            <div class="grid-box" style="border-left: 4px solid #D4AF37;">
+                <h4>Enabling Edge Computing</h4>
+                <p>Defines how much data is processed at the edge vs. the core, managing <strong>"Data Gravity"</strong> to optimize latency and bandwidth.</p>
+            </div>
+            <div class="grid-box" style="border-left: 4px solid #497BA3;">
+                <h4>Dependency on Cybersecurity</h4>
+                <p>Relies on persistent encryption and <strong>Classification-based Access Control</strong> to ensure data is only visible to verified identities.</p>
+            </div>
+            <div class="grid-box" style="border-left: 4px solid #497BA3;">
+                <h4>Dependency on Ubiquitous Computing</h4>
+                <p>Requires a scalable compute fabric to handle "Massive Data Processing" tasks like ETL, indexing, and complex querying.</p>
+            </div>
+        </div>
+        <div class="highlight-box" style="margin-top: 2rem;">
+            <h3>When to Start Here</h3>
+            <p>Prioritize Data Management if your leaders are getting <strong>"Conflicting Answers"</strong> to basic questions, or if your AI projects are stalled because data is trapped in disconnected legacy silos.</p>
+        </div>
+    </section>
+
+    <!-- 10. FAQs -->
+    <section id="FAQ" class="transformation-container">
+        <h2>Frequently Asked Questions</h2>
+        <details style="margin-bottom: 1rem; padding: 15px; background: #f8fafc; border-radius: 8px; border: 1px solid #edf2f7;">
+            <summary style="font-weight: bold; cursor: pointer; color: #193B73;">Is Data Governance the same as Data Management?</summary>
+            <p style="margin-top: 10px;">Governance is the *Strategic* and *Organizational* part of the pillar (the rules and ownership). Management includes the *Process* and *Digital* execution of those rules (the pipelines and tools).</p>
+        </details>
+        <details style="margin-bottom: 1rem; padding: 15px; background: #f8fafc; border-radius: 8px; border: 1px solid #edf2f7;">
+            <summary style="font-weight: bold; cursor: pointer; color: #193B73;">What is a "Data Product"?</summary>
+            <p style="margin-top: 10px;">A data product is a high-quality, ready-to-use dataset that is treated like a software product—it has an owner, a clear purpose, and an API for consumption.</p>
+        </details>
+        <details style="margin-bottom: 1rem; padding: 15px; background: #f8fafc; border-radius: 8px; border: 1px solid #edf2f7;">
+            <summary style="font-weight: bold; cursor: pointer; color: #193B73;">Does Data Management require a Data Lake?</summary>
+            <p style="margin-top: 10px;">Not necessarily. Modern architectures favor **Data Meshes** or **Data Fabrics**, which allow data to remain where it's most effective (Edge, Cloud, or On-Prem) while providing a unified virtual view.</p>
+        </details>
+    </section>
+
+    <!-- 11. Calls to Action -->
+    <section class="transformation-container">
+        <div class="grid-container" style="grid-template-columns: 1fr 1fr; gap: 20px;">
+
+            <!-- Box 1: Explore the Six Pillars -->
+            <div class="grid-box">
+                <h3 style="color: #193B73; margin-top: 0;">The Six Pillars</h3>
+                <ul class="clean-list" style="line-height: 1.8; font-size: 0.95rem;">
+                    <li><a href="/en/digital-transformation/pillars/computing/" style="text-decoration: none; color: #497BA3;">Ubiquitous Computing</a></li>
+                    <li><a href="/en/digital-transformation/pillars/edge/" style="text-decoration: none; color: #497BA3;">Edge Computing</a></li>
+                    <li><a href="/en/digital-transformation/pillars/ai/" style="text-decoration: none; color: #497BA3;">Artificial Intelligence</a></li>
+                    <li><a href="/en/digital-transformation/pillars/cybersecurity/" style="text-decoration: none; color: #497BA3;">Cybersecurity</a></li>
+                    <li><a href="/en/digital-transformation/pillars/data/" style="text-decoration: none; color: #497BA3;">Data Management</a></li>
+                    <li><a href="/en/digital-transformation/pillars/communications/" style="text-decoration: none; color: #193B73; font-weight: bold;">Advanced Communications</a></li>
+                </ul>
+                <a href="/en/digital-transformation/index.html" class="listen-now" style="margin-top: 1rem; text-align: center;">Framework Overview</a>
+            </div>
+
+            <!-- Box 2: Explore the ODXA Domains -->
+            <div class="grid-box">
+                <h3 style="color: #193B73; margin-top: 0;">The ODXA Domains</h3>
+                <ul class="clean-list" style="line-height: 1.8; font-size: 0.95rem;">
+                    <li><a href="/en/digital-transformation/odxa/strategic/" style="text-decoration: none; color: #003366;">Strategic Domain</a></li>
+                    <li><a href="/en/digital-transformation/odxa/organizational/" style="text-decoration: none; color: #228B22;">Organizational Domain</a></li>
+                    <li><a href="/en/digital-transformation/odxa/process/" style="text-decoration: none; color: #ff6f00;">Process Domain</a></li>
+                    <li><a href="/en/digital-transformation/odxa/digital/" style="text-decoration: none; color: #6a0dad;">Digital Domain</a></li>
+                    <li><a href="/en/digital-transformation/odxa/physical/" style="text-decoration: none; color: #708090;">Physical Domain</a></li>
+                </ul>
+                <a href="/en/digital-transformation/odxa/index.html" class="listen-now" style="margin-top: 1rem; background: #497BA3; text-align: center;">Learn ODXA Structure</a>
+            </div>
+
+            <!-- Box 3: Engage & Deep Dive (Full Width Row 2) -->
+            <div class="grid-box">
+                <h3 style="color: #193B73; margin-top: 0;">Continue Your Journey</h3>
+                <p style="color: #64748b; max-width: 600px; margin: 0 auto 1.5rem;">Browse all DTA episodes organized by domain and pillar to see architectural guidance in practice.</p>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="/en/lectures/index.html" class="listen-now" style="background: #193B73; min-width: 200px;">View All Episodes</a>
+                    <a href="/en/search.html" class="listen-now" style="background: #497BA3; min-width: 200px;">Search the Canon</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>

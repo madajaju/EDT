@@ -48,74 +48,145 @@
 <body>
 
 
-<header role="banner">
-    <!-- Logo -->
-    <div class="logo-container">
-        <a href="/en/home/" aria-label="Embracing Digital Transformation home">
-            <img src="../images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
-        </a>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+            </a>
+        </div>
     </div>
 
-    <!-- Mobile toggle -->
-    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle menu">☰</button>
-
-    <!-- Primary Nav -->
     <nav id="primary-nav" aria-label="Primary">
-        <ul>
+        <!-- Main navigation -->
+        <ul class="nav-main">
             <li><a href="/en/home/index.html">Home</a></li>
 
+            <!-- Guidance -->
             <li class="dropdown">
-                <a href="/en/shows/index.html" aria-haspopup="true" aria-expanded="false">Shows</a>
+                <a href="/en/shows/index.html" aria-haspopup="true" aria-expanded="false">
+                    Guidance
+                </a>
                 <ul class="dropdown-menu" role="menu">
                     <li role="none">
-                        <a role="menuitem" href="/en/episodes/index.html"
-                           aria-label="Interviews — Embracing Digital Transformation">
-                            Embracing Digital Transformation
-                            <small class="nav-note">Interviews</small>
+                        <a role="menuitem" href="/en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
                         </a>
                     </li>
                     <li role="none">
-                        <a role="menuitem" href="/en/briefs/index.html" aria-label="News — Embracing Digital This Week">
-                            Embracing Digital This Week
-                            <small class="nav-note">News</small>
+                        <a role="menuitem" href="/en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/deepdive/index.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
                         </a>
                     </li>
                 </ul>
             </li>
 
-
-            <li><a href="/en/guests/index.html">Guests</a></li>
-            <li><a href="/en/articles/index.html">Articles</a></li>
+            <!-- Learn -->
+            <li class="dropdown">
+                <a href="/en/digital-transformation/index.html" aria-haspopup="true" aria-expanded="false">
+                    Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
             <!-- Community -->
             <li class="dropdown">
-                <a href="/en/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <a href="/en/community.html" aria-haspopup="true" aria-expanded="false">
+                    Community
+                </a>
                 <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/community.html">Community</a></li>
                     <li role="none"><a role="menuitem" href="/en/newsletter.html">Newsletter</a></li>
-                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank"
-                                       rel="noopener">Patreon</a></li>
-                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/groups/embracingdigital"
-                                       target="_blank" rel="noopener">LinkedIn Group</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
                 </ul>
             </li>
-
-            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
 
             <!-- About -->
             <li class="dropdown">
-                <a href="/en/about.html" aria-haspopup="true" aria-expanded="false">About</a>
+                <a href="/en/about.html" aria-haspopup="true" aria-expanded="false">
+                    About
+                </a>
                 <ul class="dropdown-menu" role="menu">
-                    <li role="none"><a role="menuitem" href="/en/about.html">About the Show</a></li>
-                    <li role="none"><a role="menuitem" href="/en/host.html">Host: Dr. Darren Pulsipher</a></li>
-                    <li role="none"><a role="menuitem" href="/en/sponsors/index.html">Sponsorship & Contact</a></li>
+                    <li role="none"><a role="menuitem" href="/en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">
+                            Shop
+                        </a>
+                    </li>
                 </ul>
             </li>
 
+            <!-- Search -->
             <li><a href="/en/search.html">Search</a></li>
+        </ul>
 
-            <!-- Languages -->
+        <!-- Languages (far right) -->
+        <ul class="nav-right">
             <li class="dropdown">
-                <a href="#" aria-haspopup="true" aria-expanded="false">Languages</a>
+                <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </a>
                 <ul class="dropdown-menu" role="menu">
                     <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
                     <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>

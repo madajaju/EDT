@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
 
     <!-- Robots -->
     <meta name="robots" content="index, follow">
@@ -21,11 +22,11 @@
     <!-- Preconnect & CSS -->
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="/css/styles.css" as="style">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- Favicon -->
-    <link rel="icon" href="/images/favicon.ico" sizes="32x32" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
@@ -79,31 +80,30 @@
 </head>
 
 <body>
-<a class="skip-link" href="#content">Skip to content</a>
-
 <header class="site-header" role="banner">
     <div class="header-inner">
         <!-- Brand -->
         <div class="brand">
-            <a class="brand-link" href="//home/index.html" aria-label="Embracing Digital home">
+            <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
                 <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
                 <span class="brand-text">
-            <span class="brand-title">Embracing Digital</span>
-          </span>
             </a>
         </div>
     </div>
 
     <nav id="primary-nav" aria-label="Primary">
-        <ul>
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
             <li>
-                <a href="//home/index.html" aria-current=&#34;page&#34;>Home</a>
+                <a href="en/home/index.html"
+                aria-current=&#34;page&#34;>
+                Home
+                </a>
             </li>
 
-            <!-- Guidance (ordered by your weekly arc) -->
+            <!-- Guidance (Shows / weekly arc) -->
             <li class="dropdown">
-                <!-- Keep URL as /shows/ to avoid breaking links; label it Guidance -->
-                <a href="//shows/index.html"
+                <a href="en/shows/index.html"
                    aria-haspopup="true"
                    aria-expanded="false"
                 >
@@ -111,105 +111,141 @@
                 </a>
                 <ul class="dropdown-menu" role="menu">
                     <li role="none">
-                        <a role="menuitem" href="//briefs/index.html">
-                            Embracing Digital This Week
-                            <small class="nav-note">What changed (Mon)</small>
+                        <a role="menuitem" href="en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
                         </a>
                     </li>
                     <li role="none">
-                        <a role="menuitem" href="//dta/index.html">
-                            Digital Transformation Architect
-                            <small class="nav-note">How to think (Tue)</small>
+                        <a role="menuitem" href="en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
                         </a>
                     </li>
                     <li role="none">
-                        <a role="menuitem" href="//episodes/index.html">
-                            Embracing Digital Transformation
-                            <small class="nav-note">How others did it (Wed)</small>
-                        </a>
-                    </li>
-                    <li role="none">
-                        <a role="menuitem" href="//deepdive/index.html">
-                            Digital Deep Dive
-                            <small class="nav-note">What to do next (Thu · part of EDTW)</small>
+                        <a role="menuitem" href="en/deepdive/index.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
                         </a>
                     </li>
                 </ul>
             </li>
 
-            <li><a href="//guests/index.html" >Guests</a></li>
-
+            <!-- Learn (Documentation / learning library) -->
             <li class="dropdown">
-                <a href="//community.html"
+                <a href="en/digital-transformation/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="en/community.html"
                    aria-haspopup="true"
                    aria-expanded="false"
                 >
                 Community
                 </a>
                 <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="en/newsletter.html">Newsletter</a></li>
                     <li role="none">
-                        <a role="menuitem" href="//community.html">
-                            The Community
-                            <small class="nav-note">Join the conversation</small>
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
                         </a>
                     </li>
                     <li role="none">
-                        <a role="menuitem" href="//newsletter.html">
-                            Newsletter
-                            <small class="nav-note">Weekly recap &amp; links</small>
-                        </a>
-                    </li>
-                    <li role="none">
-                        <a role="menuitem"
-                           href="https://www.patreon.com/embracingdigital"
-                           target="_blank"
-                           rel="noopener">
-                            Membership (Patreon)
-                            <small class="nav-note">Private briefings &amp; deeper access</small>
-                        </a>
-                    </li>
-                    <li role="none">
-                        <a role="menuitem"
-                           href="https://www.linkedin.com/company/embracing-digital-transformation"
-                           target="_blank"
-                           rel="noopener">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
                             LinkedIn
-                            <small class="nav-note">Public updates</small>
                         </a>
                     </li>
                 </ul>
             </li>
 
-            <li><a href="//sponsors/index.html" >Sponsors</a></li>
-
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
             <li class="dropdown">
-                <a href="//about.html"
+                <a href="en/about.html"
                    aria-haspopup="true"
                    aria-expanded="false"
                 >
                 About
                 </a>
                 <ul class="dropdown-menu" role="menu">
-                    <li role="none"><a role="menuitem" href="//about.html">About the Show</a></li>
-                    <li role="none"><a role="menuitem" href="//host.html">Host: Dr. Darren Pulsipher</a></li>
-                    <li role="none"><a role="menuitem" href="//sponsors/index.html">Sponsorship &amp; Contact</a></li>
+                    <li role="none"><a role="menuitem" href="en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
                 </ul>
             </li>
 
-            <li><a href="//search.html" >Search</a></li>
+            <!-- Search -->
+            <li>
+                <a href="en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
 
-            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
-
+        <!-- Right side (Languages) -->
+        <ul class="nav-right">
             <li class="dropdown">
-                <a href="#" aria-haspopup="true" aria-expanded="false">Languages</a>
+                <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </a>
                 <ul class="dropdown-menu" role="menu">
-                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
-                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
-                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
-                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
-                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
-                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
-                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                    <li role="none"><a role="menuitem" href="ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="ja/home/index.html">日本語</a></li>
                 </ul>
             </li>
         </ul>
@@ -220,12 +256,44 @@
 
     
 
+    <!-- CONCEPT INTRO (matches new menu semantics) -->
+    <section class="transformation-container">
+        <h1 class="section-title">Digital Transformation, Explained Weekly</h1>
+
+        <p class="hero-subtitle">
+            Use <strong>Digital Transformation</strong> as the conceptual hub (documentation, articles, and architecture),
+            and <strong>Guidance</strong> as the weekly arc (what changed → how to think → how others did it → what to do next).
+        </p>
+
+        <div class="grid-container">
+            <article class="grid-box">
+                <h3>Documentation</h3>
+                <p>Frameworks, standards, and reference material—built for architects and leaders who need clarity and structure.</p>
+                <a class="listen-now" href="/en/digital-transformation/docs/index.html">Browse Docs</a>
+            </article>
+
+            <article class="grid-box">
+                <h3>Articles</h3>
+                <p>Analysis and thought leadership that connects the dots across strategy, operations, digital, and physical domains.</p>
+                <a class="listen-now" href="/en/digital-transformation/articles/index.html">Read Articles</a>
+            </article>
+
+            <article class="grid-box">
+                <h3>Architecture (DTA)</h3>
+                <p>Digital Transformation Architect lectures and patterns—how to think and how to architect the transformation.</p>
+                <a class="listen-now" href="/en/dta/index.html">Start Learning</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- WEEKLY GUIDANCE -->
     <section class="transformation-container">
         <h2 class="section-title">Embracing Digital's Weekly Guidance</h2>
 
         <p class="hero-subtitle">
             Weekly guidance for leaders navigating digital transformation.
         </p>
+
         <div class="week-grid" role="tablist" aria-label="Weekly guidance">
             
             <button
@@ -246,10 +314,12 @@
                 </div>
 
                 
-                    <img class="week-image" src="../briefs/edw-145/thumbnail.png" alt="2025-12-15">
+                    <img class="week-image" src="../briefs/edw-146/deepdive.png" alt="2025-12-22 | AI Division: Freedom vs. Control in a New Era | Embracing Digital This Week">
                     <div class="week-card-body">
-                        <div class="week-title"><a href="">2025-12-15</a></div>
-                        <div class="week-summary">Digital Transformation for the week of December 14, 2025 including news from Artificial Intelligence, Cybersecurity, Data Management, and Embracing Digital Transformation.In the wake of President Trump&#39;s executive…</div>
+                        <div class="week-title">
+                            <a href="../briefs/edw-146/index.html">2025-12-22 | "AI Division: Freedom vs. Control in a New Era" | Embracing Digital This Week</a>
+                        </div>
+                        <div class="week-summary">Digital Transformation for the week of December 22, 2025 including news from Artificial Intelligence, Cybersecurity, Ubiquitous Computing, and Embracing Digital Transformation.Artificial intelligence is not only…</div>
                     </div>
                 
             </button>
@@ -272,9 +342,11 @@
                 </div>
 
                 
-                    <img class="week-image" src="../dta/episodes/dta-0/undefined" alt="">
+                    <img class="week-image" src="../dta/episodes/dta-0/undefined" alt="Digital Transformation Architect">
                     <div class="week-card-body">
-                        <div class="week-title"><a href=""></a></div>
+                        <div class="week-title">
+                            <a href="../dta/episodes/dta-0/index.html">Digital Transformation Architect</a>
+                        </div>
                         <div class="week-summary"></div>
                     </div>
                 
@@ -300,7 +372,9 @@
                 
                     <img class="week-image" src="../episodes/edt-313/thumbnail.png" alt="Navigating the Intersection of AI and Cybersecurity">
                     <div class="week-card-body">
-                        <div class="week-title"><a href="">Navigating the Intersection of AI and Cybersecurity</a></div>
+                        <div class="week-title">
+                            <a href="../episodes/edt-313/index.html">Navigating the Intersection of AI and Cybersecurity</a>
+                        </div>
                         <div class="week-summary">Welcome to a fascinating conversation that dives deep into the complex relationship between AI and cybersecurity. In this episode, host Dr. Darren speaks with Walter Haydon, an AI cybersecurity expert who sheds light on…</div>
                     </div>
                 
@@ -324,10 +398,12 @@
                 </div>
 
                 
-                    <img class="week-image" src="../briefs/edw-0/deepdive.png" alt="">
+                    <img class="week-image" src="../briefs/edw-146/deepdive.png" alt="2025-12-22 | AI Division: Freedom vs. Control in a New Era | Embracing Digital This Week">
                     <div class="week-card-body">
-                        <div class="week-title"><a href=""></a></div>
-                        <div class="week-summary"></div>
+                        <div class="week-title">
+                            <a href="../briefs/edw-146/index.html">2025-12-22 | "AI Division: Freedom vs. Control in a New Era" | Embracing Digital This Week</a>
+                        </div>
+                        <div class="week-summary">Digital Transformation for the week of December 22, 2025 including news from Artificial Intelligence, Cybersecurity, Ubiquitous Computing, and Embracing Digital Transformation.Artificial intelligence is not only…</div>
                     </div>
                 
             </button>
@@ -343,9 +419,7 @@
                 <div class="week-details-content">
                     <h3 id="wd-title" class="week-details-title">Select a day</h3>
                     <div id="wd-meta" class="week-details-meta"></div>
-
                     <p id="wd-summary" class="week-details-summary"></p>
-
                     <div id="wd-links" class="week-details-links"></div>
 
                     <div id="wd-guests-wrap" class="week-details-guests" style="display:none;">
@@ -355,7 +429,7 @@
             </div>
         </div>
 
-        <script type="application/json" id="week-data">[{"key":"mon","dayLabel":"Mon","intent":"What changed","show":"Embracing Digital This Week","data":{"title":"2025-12-15","summary":"<p>Digital Transformation for the week of December 14, 2025 including news from Artificial Intelligence, Cybersecurity, Data Management, and Embracing Digital Transformation.In the wake of President Trump&#39;s executive order streamlining federal AI regulations, businesses are urged to adapt quickly to maintain their competitive edge in an evolving digital landscape where emotional intelligence and robust cybersecurity measures are increasingly crucial. As organizations prioritize AI-driven decision-making, the integration of cohesive data management strategies will play a pivotal role in ensuring innovation and resilience amidst growing threats of misinformation and sophisticated cyber attacks.</p>\n","image":"../briefs/edw-145/thumbnail.png","read":"../briefs/edw-145/index.html","guestsText":""}},{"key":"tue","dayLabel":"Tue","intent":"How to think","show":"Digital Transformation Architect","data":{"title":"","date":"","summary":"","url":"","image":"../dta/episodes/dta-0/undefined","watch":"","listen":"","read":"../dta/episodes/dta-0/index.html","guestsText":""}},{"key":"wed","dayLabel":"Wed","intent":"How others did it","show":"Embracing Digital Transformation","data":{"title":"Navigating the Intersection of AI and Cybersecurity","summary":"<p>Welcome to a fascinating conversation that dives deep into the complex relationship between AI and cybersecurity. In this episode, host Dr. Darren speaks with Walter Haydon, an AI cybersecurity expert who sheds light on how modern threats evolve and the unique challenges organizations face in securing their AI systems.</p>\n<h2>Key Takeaways:</h2>\n<ul>\n<li>Cyber threats are evolving rapidly, with AI being leveraged by both malicious actors and cybersecurity professionals.</li>\n<li>Espionage and data theft remain pressing issues, particularly from state actors like the Chinese government, who exploit advanced technologies for intelligence gathering.</li>\n<li>Organizations need to adopt a more probabilistic approach to risk management in the face of non-deterministic AI behavior.</li>\n<li>Implementing clear policies, conducting asset inventories, and performing comprehensive risk assessments are essential steps for organizations deploying AI.</li>\n<li>Understanding the provenance of AI models and verifying their security is critical to mitigate risks when using either public or private AI solutions.</li>\n<li>Regular integrity checks on AI outputs can help maintain the reliability and security of AI systems.</li>\n</ul>\n<h2>Chapters:</h2>\n<ul>\n<li>00:00 - Introduction </li>\n<li>01:30 - Walter Haydon&#39;s Haydon&#39;snd </li>\n<li>05:00 - Evolution of Cybersecurity Threats</li>\n<li>10:15 - AI&#39;s Cybersecurity</li>\n<li>15:50 - Espionage vs Cyber Attacks</li>\n<li>20:00 - Approaching AI Implementation Securely</li>\n<li>25:30 - Risk Management Strategies </li>\n<li>30:00 - Tools for Securing AI Systems</li>\n<li>35:00 - The Future of AI and Cybersecurity </li>\n<li>40:00 - Closing Thoughts and Resources</li>\n</ul>\n<p>Engage with us to learn how these insights can apply to your own practices! Don’t forget to check out the episode on your favorite podcast platform and connect with us through social media!</p>\n","image":"../episodes/edt-313/thumbnail.png","watch":"https://youtu.be/vhSl1TZh4_8","listen":"https://share.transistor.fm/s/3f316033","read":"../episodes/edt-313/index.html","guestsText":""}},{"key":"thu","dayLabel":"Thu","intent":"What to do next","show":"Digital Deep Dive","data":{"title":"","date":"","summary":"","url":"","image":"../briefs/edw-0/deepdive.png","watch":"","listen":"","read":"../briefs/edw-0/index.html","guestsText":""}}]</script>
+        <script type="application/json" id="week-data">[{"key":"mon","dayLabel":"Mon","intent":"What changed","show":"Embracing Digital This Week","data":{"title":"2025-12-22 | \"AI Division: Freedom vs. Control in a New Era\" | Embracing Digital This Week","summary":"<p>Digital Transformation for the week of December 22, 2025 including news from Artificial Intelligence, Cybersecurity, Ubiquitous Computing, and Embracing Digital Transformation.Artificial intelligence is not only transforming industries but also creating ideological divisions about freedom and control, making it a crucial topic for leaders to address. As the landscape evolves, staying informed about AI&#39;s implications in fields from healthcare to cybersecurity becomes essential for fostering collaboration and ensuring ethical progress in our digital age.</p>\n","image":"../briefs/edw-146/deepdive.png","watch":"https://youtu.be/EBLVFZwPUqA","listen":"https://share.transistor.fm/s/61d54f42","read":"../briefs/edw-146/index.html","guestsText":""}},{"key":"tue","dayLabel":"Tue","intent":"How to think","show":"Digital Transformation Architect","data":{"title":"","date":"","summary":"","url":"","image":"../dta/episodes/dta-0/undefined","watch":"","listen":"","read":"../dta/episodes/dta-0/index.html","guestsText":""}},{"key":"wed","dayLabel":"Wed","intent":"How others did it","show":"Embracing Digital Transformation","data":{"title":"Navigating the Intersection of AI and Cybersecurity","summary":"<p>Welcome to a fascinating conversation that dives deep into the complex relationship between AI and cybersecurity. In this episode, host Dr. Darren speaks with Walter Haydon, an AI cybersecurity expert who sheds light on how modern threats evolve and the unique challenges organizations face in securing their AI systems.</p>\n<h2>Key Takeaways:</h2>\n<ul>\n<li>Cyber threats are evolving rapidly, with AI being leveraged by both malicious actors and cybersecurity professionals.</li>\n<li>Espionage and data theft remain pressing issues, particularly from state actors like the Chinese government, who exploit advanced technologies for intelligence gathering.</li>\n<li>Organizations need to adopt a more probabilistic approach to risk management in the face of non-deterministic AI behavior.</li>\n<li>Implementing clear policies, conducting asset inventories, and performing comprehensive risk assessments are essential steps for organizations deploying AI.</li>\n<li>Understanding the provenance of AI models and verifying their security is critical to mitigate risks when using either public or private AI solutions.</li>\n<li>Regular integrity checks on AI outputs can help maintain the reliability and security of AI systems.</li>\n</ul>\n<h2>Chapters:</h2>\n<ul>\n<li>00:00 - Introduction </li>\n<li>01:30 - Walter Haydon&#39;s Haydon&#39;snd </li>\n<li>05:00 - Evolution of Cybersecurity Threats</li>\n<li>10:15 - AI&#39;s Cybersecurity</li>\n<li>15:50 - Espionage vs Cyber Attacks</li>\n<li>20:00 - Approaching AI Implementation Securely</li>\n<li>25:30 - Risk Management Strategies </li>\n<li>30:00 - Tools for Securing AI Systems</li>\n<li>35:00 - The Future of AI and Cybersecurity </li>\n<li>40:00 - Closing Thoughts and Resources</li>\n</ul>\n<p>Engage with us to learn how these insights can apply to your own practices! Don’t forget to check out the episode on your favorite podcast platform and connect with us through social media!</p>\n","image":"../episodes/edt-313/thumbnail.png","watch":"https://youtu.be/vhSl1TZh4_8","listen":"https://share.transistor.fm/s/3f316033","read":"../episodes/edt-313/index.html","guestsText":""}},{"key":"thu","dayLabel":"Thu","intent":"What to do next","show":"Digital Deep Dive","data":{"title":"2025-12-22 | \"AI Division: Freedom vs. Control in a New Era\" | Embracing Digital This Week","summary":"<p>Digital Transformation for the week of December 22, 2025 including news from Artificial Intelligence, Cybersecurity, Ubiquitous Computing, and Embracing Digital Transformation.Artificial intelligence is not only transforming industries but also creating ideological divisions about freedom and control, making it a crucial topic for leaders to address. As the landscape evolves, staying informed about AI&#39;s implications in fields from healthcare to cybersecurity becomes essential for fostering collaboration and ensuring ethical progress in our digital age.</p>\n","image":"../briefs/edw-146/deepdive.png","watch":"https://youtu.be/EBLVFZwPUqA","listen":"https://share.transistor.fm/s/61d54f42","read":"../briefs/edw-146/index.html","guestsText":""}}]</script>
 
         <script>
             (function(){
@@ -399,17 +473,16 @@
                         return;
                     }
 
-                    titleEl.textContent = d.title || '';
+                    titleEl.textContent = d.title || item.show || '';
                     metaEl.textContent = [item.show, item.dayLabel, d.date].filter(Boolean).join(' • ');
                     summaryEl.innerHTML = d.summary || '';
                     imgEl.src = d.image || '/images/logo.png';
-                    imgEl.alt = d.title || '';
+                    imgEl.alt = d.title || item.show || '';
 
                     const links = [];
-                    if (d.slug)   links.push('<a class="listen-now" href="' + d.url + '">Open</a>');
+                    if (d.read)  links.push('<a class="listen-now" href="' + d.read + '">Read</a>');
                     if (d.watch) links.push('<a class="listen-now" href="' + d.watch + '" target="_blank" rel="noopener">Watch</a>');
                     if (d.listen)links.push('<a class="listen-now" href="' + d.listen + '" target="_blank" rel="noopener">Listen</a>');
-                    if (d.read)  links.push('<a class="listen-now" href="' + d.read + '">Read</a>');
                     linksEl.innerHTML = links.join(' ');
 
                     if (d.guestsText) {
@@ -420,14 +493,12 @@
                     }
                 }
 
-                // Auto-select current day (Mon–Thu). Otherwise select Monday.
                 function autoIndex(){
                     const dow = new Date().getDay(); // 0=Sun ... 6=Sat
-                    if (dow >= 1 && dow <= 4) return dow - 1; // Mon->0, Tue->1, Wed->2, Thu->3
+                    if (dow >= 1 && dow <= 4) return dow - 1; // Mon->0..Thu->3
                     return 0;
                 }
 
-                // Click handlers
                 cards.forEach((card) => {
                     card.addEventListener('click', () => {
                         const idx = Number(card.getAttribute('data-idx'));
@@ -435,7 +506,6 @@
                     });
                 });
 
-                // Initial selection (skip disabled slot if needed)
                 let idx = autoIndex();
                 if (cards[idx] && cards[idx].disabled) {
                     const firstEnabled = cards.findIndex(c => !c.disabled);
@@ -450,31 +520,31 @@
     <section class="transformation-container" style="background:#f8fafc; color:#000000;">
         <h2 class="section-title" style="color:#000000;">Explore the Transformation Ecosystem</h2>
 
-            <div class="grid-container">
-                <article class="grid-box">
-                    <h3>Weekly Briefings</h3>
-                    <p>Cut through the noise with curated insights across our six pillars. Understand what changed this week and exactly why it matters to your strategy.</p>
-                    <a class="listen-now" href="/en/briefs/index.html">Read Briefings</a>
-                </article>
+        <div class="grid-container">
+            <article class="grid-box">
+                <h3>Weekly Briefings</h3>
+                <p>Cut through the noise with curated insights across our six pillars. Understand what changed this week and exactly why it matters to your strategy.</p>
+                <a class="listen-now" href="/en/briefs/index.html">Read Briefings</a>
+            </article>
 
-                <article class="grid-box">
-                    <h3>The DTA Framework</h3>
-                    <p>Move beyond theory with the Digital Transformation Architect (DTA) lectures. Master the ODXA domains using proven patterns and playbooks.</p>
-                    <a class="listen-now" href="/en/dta/index.html">Start Learning</a>
-                </article>
+            <article class="grid-box">
+                <h3>The DTA Framework</h3>
+                <p>Move beyond theory with the Digital Transformation Architect (DTA) lectures. Master the ODXA domains using proven patterns and playbooks.</p>
+                <a class="listen-now" href="/en/dta/index.html">Start Learning</a>
+            </article>
 
-                <article class="grid-box">
-                    <h3>Executive Interviews</h3>
-                    <p>Learn from those leading the charge. Real-world case studies and conversations with industry experts executing transformation at scale.</p>
-                    <a class="listen-now" href="/en/episodes/index.html">Watch Interviews</a>
-                </article>
+            <article class="grid-box">
+                <h3>Executive Interviews</h3>
+                <p>Learn from those leading the charge. Real-world case studies and conversations with industry experts executing transformation at scale.</p>
+                <a class="listen-now" href="/en/episodes/index.html">Watch Interviews</a>
+            </article>
 
-                <article class="grid-box">
-                    <h3>Digital Deep Dives</h3>
-                    <p>Turn strategy into action. Practical, technical deep dives designed to provide clear guidance on "what to do next" for your architecture.</p>
-                    <a class="listen-now" href="/en/deepdive/index.html">Dive Deeper</a>
-                </article>
-            </div>
+            <article class="grid-box">
+                <h3>Digital Deep Dives</h3>
+                <p>Turn strategy into action. Practical, technical deep dives designed to provide clear guidance on "what to do next" for your architecture.</p>
+                <a class="listen-now" href="/en/deepdive/index.html">Dive Deeper</a>
+            </article>
+        </div>
     </section>
 
     <!-- COMMUNITY / CONVERSION -->
@@ -496,7 +566,7 @@
 
             <article class="grid-box" style="text-align:center;">
                 <h3>Insider Membership</h3>
-                <p>Unlock deeper access. Support the show and get early access to briefings, private Q&A sessions, and exclusive architectural deep dives via Patreon.</p>
+                <p>Unlock deeper access. Support the show and get early access to briefings, private Q&amp;A sessions, and exclusive architectural deep dives via Patreon.</p>
                 <a class="listen-now" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Become a Member</a>
             </article>
         </div>
@@ -509,37 +579,47 @@
           "@type":"WebPage",
           "name":"Embracing Digital Home",
           "url":"https://embracingdigital.org/en/home/",
-    "about":[
-      "Digital transformation",
-      "AI",
-      "Cybersecurity",
-      "Edge computing",
-      "Data management",
-      "Communications"
-    ],
-    "mainEntity":{
-      "@type":"ItemList",
-      "itemListOrder":"https://schema.org/ItemListOrderAscending",
-      "itemListElement":[
+      "about":[
+        "Digital transformation",
+        "Artificial intelligence",
+        "Cybersecurity",
+        "Edge computing",
+        "Data management",
+        "Advanced communications"
+      ],
+      "mainEntity":{
+        "@type":"ItemList",
+        "itemListOrder":"https://schema.org/ItemListOrderAscending",
+        "itemListElement":[
         
         {
           "@type":"ListItem",
           "position": 1,
-          "url": "https://embracingdigital.orgfunction (...args) {
-            return stateNetHandler.processEvent(this, obj, prop, args);
-        }",
-          "name": "2025-12-15"
-        },
-        
+            "url": "https://embracingdigital.org/../briefs/edw-146/index.html",
+            "name": "2025-12-22 | \"AI Division: Freedom vs. Control in a New Era\" | Embracing Digital This Week"
+          },
+          
         {
           "@type":"ListItem",
           "position": 2,
-          "url": "https://embracingdigital.orgfunction (...args) {
-            return stateNetHandler.processEvent(this, obj, prop, args);
-        }",
-          "name": "Navigating the Intersection of AI and Cybersecurity"
-        }
-        
+            "url": "https://embracingdigital.org/../dta/episodes/dta-0/index.html",
+            "name": "Digital Transformation Architect"
+          },
+          
+        {
+          "@type":"ListItem",
+          "position": 3,
+            "url": "https://embracingdigital.org/../episodes/edt-313/index.html",
+            "name": "Navigating the Intersection of AI and Cybersecurity"
+          },
+          
+        {
+          "@type":"ListItem",
+          "position": 4,
+            "url": "https://embracingdigital.org/../briefs/edw-146/index.html",
+            "name": "2025-12-22 | \"AI Division: Freedom vs. Control in a New Era\" | Embracing Digital This Week"
+          }
+          
         ]
       }
     }

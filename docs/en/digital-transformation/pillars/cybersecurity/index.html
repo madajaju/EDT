@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Cybersecurity | Digital Transformation Pillar</title>
+    <meta name="description"
+          content="Cybersecurity as a pillar of digital transformation—protecting systems and missions through Zero Trust principles, resilience, and continuous risk management.">
+    <meta name="keywords"
+          content="digital transformation, cybersecurity, zero trust, resilience, risk management, ODXA, architectural security, identity management">
+    <link rel="canonical" href="https://embracingdigital.org/en/digital-transformation/pillars/cybersecurity/">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="keywords"
+          content="digital transformation, cybersecurity, zero trust, resilience, risk management, ODXA, architectural security, identity management">
+    <link rel="canonical" href="https://embracingdigital.org/en/digital-transformation/pillars/cybersecurity/">
+
+    <!-- Hreflang alternates -->
+    <link rel="alternate" href="https://embracingdigital.org/en/digital-transformation/pillars/cybersecurity/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/de/digital-transformation/pillars/cybersecurity/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/digital-transformation/pillars/cybersecurity/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/digital-transformation/pillars/cybersecurity/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/ja/digital-transformation/pillars/cybersecurity/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/pt/digital-transformation/pillars/cybersecurity/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/digital-transformation/pillars/cybersecurity/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/en/digital-transformation/pillars/cybersecurity/" hreflang="x-default">
+
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://embracingdigital.org/#organization",
+                    "name": "Embracing Digital Transformation",
+                    // ... existing code ...
+                    "mainEntity": {
+                        "@type": "DefinedTerm",
+                        "name": "Cybersecurity",
+                        "description": "Protecting systems, data, and missions through Zero Trust principles, resilience, and continuous risk management across all domains.",
+                        "inDefinedTermSet": {
+                            "@type": "DefinedTermSet",
+                            "name": "Six Pillars of Digital Transformation"
+                        }
+                    },
+                    "hasPart": [
+                        {
+                            "@type": "FAQPage",
+                            "mainEntity": [
+                                {
+                                    "@type": "Question",
+                                    "name": "How is modern cybersecurity different from traditional perimeter security?",
+                                    "acceptedAnswer": {
+                                        "@type": "Answer",
+                                        "text": "Modern cybersecurity assumes the network is always contested and moves protection closer to identities, data, and workloads using Zero Trust principles."
+                                    }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "Do we have to implement Zero Trust everywhere at once?",
+                                    "acceptedAnswer": {
+                                        "@type": "Answer",
+                                        "text": "No. Organizations adopt Zero Trust in phases, starting with high-value systems. The key is to define a roadmap and improve identity controls over time."
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    </script>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main navigation -->
+        <ul class="nav-main">
+            <li><a href="/en/home/index.html">Home</a></li>
+
+            <!-- Guidance -->
+            <li class="dropdown">
+                <a href="/en/shows/index.html" aria-haspopup="true" aria-expanded="false">
+                    Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/deepdive/index.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn -->
+            <li class="dropdown">
+                <a href="/en/digital-transformation/index.html" aria-haspopup="true" aria-expanded="false">
+                    Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/en/community.html" aria-haspopup="true" aria-expanded="false">
+                    Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About -->
+            <li class="dropdown">
+                <a href="/en/about.html" aria-haspopup="true" aria-expanded="false">
+                    About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">
+                            Shop
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li><a href="/en/search.html">Search</a></li>
+        </ul>
+
+        <!-- Languages (far right) -->
+        <ul class="nav-right">
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main id="content">
+    <!-- 1. Hero Section -->
+    <section id="hero">
+        <h1>Cybersecurity</h1>
+        <h2>Six Pillars of Digital Transformation</h2>
+        <p class="pillar-hero-highlight">
+            Protects systems, data, and missions through Zero Trust principles, resilience, and continuous risk management across all domains.
+        </p>
+        <div class="pillar-hero-bullets">
+            <ul>
+                <li>Moves security from a "perimeter wall" to a pervasive architectural layer.</li>
+                <li>Ensures mission continuity even during active threat environments.</li>
+                <li>Essential for CISOs, Risk Officers, and Mission Architects.</li>
+            </ul>
+        </div>
+        <div style="max-width: 980px; margin: 1.5rem auto 0;">
+            <a class="listen-now" href="/en/digital-transformation/">Back to Framework</a>
+            <a class="listen-now" href="/en/digital-transformation/odxa/" style="background: #497BA3;">Explore ODXA</a>
+        </div>
+    </section>
+
+    <!-- 2. Framework Context Header -->
+    <section class="transformation-container" style="padding: 30px; margin-bottom: 2rem;">
+        <div class="pillar-header-container">
+            <!-- Column 1: Mini-Temple (Cyber Highlighted) -->
+            <div style="flex: 0 0 300px; text-align: center;">
+
+                <svg viewBox="0 0 600 520" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                     style="width: 100%; height: auto; max-width: 400px; display: block; margin: 0 auto;">
+                    <style>
+                        text {
+                            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+                            pointer-events: none;
+                        }
+
+                        .clickable {
+                            cursor: pointer;
+                            transition: all 0.3s ease;
+                        }
+
+                        /* Highlighting effect */
+                        .clickable:hover rect,
+                        .clickable:hover polygon {
+                            stroke: #ffcc00 !important;
+                            stroke-width: 1px;
+                            filter: drop-shadow(0 0 8px rgba(255, 204, 0, 0.6));
+                        }
+
+                        /* Optional: Add a subtle yellow tint to the fill on hover */
+                        .clickable:hover {
+                            filter: sepia(0.5) saturate(2) hue-rotate(-10deg) brightness(1.1);
+                        }
+                    </style>
+
+                    <defs>
+                        <filter id="softshadow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
+                        </filter>
+                        <linearGradient id="highlightedPillarGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#C5A028"/>
+                            <stop offset="50%" stop-color="#D4AF37"/>
+                            <stop offset="100%" stop-color="#C5A028"/>
+                        </linearGradient>
+                        <linearGradient id="ghostPillarGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#e2e8f0"/>
+                            <stop offset="50%" stop-color="#f8fafc"/>
+                            <stop offset="100%" stop-color="#e2e8f0"/>
+                        </linearGradient>
+                        <linearGradient id="pillarGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#bdc3c7"/>
+                            <stop offset="50%" stop-color="#ecf0f1"/>
+                            <stop offset="100%" stop-color="#bdc3c7"/>
+                        </linearGradient>
+
+                        <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#7f8c8d"/>
+                            <stop offset="50%" stop-color="#bdc3c7"/>
+                            <stop offset="100%" stop-color="#7f8c8d"/>
+                        </linearGradient>
+                        <linearGradient id="beamGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#d4c38d"/>
+                            <stop offset="50%" stop-color="#b9a46a"/>
+                            <stop offset="100%" stop-color="#9a8752"/>
+                        </linearGradient>
+                        <linearGradient id="pedimentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#34495e"/>
+                            <stop offset="100%" stop-color="#1a252f"/>
+                        </linearGradient>
+                        <linearGradient id="stepGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="rgba(255,255,255,0.25)"/>
+                            <stop offset="100%" stop-color="rgba(0,0,0,0.1)"/>
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Pediment (Triangle) -->
+                    <g class="clickable">
+                        <title>
+                            Mission outcomes delivered through integrated digital capabilities
+                        </title>
+                        <polygon points="50,112 300,12 550,112" filter="url(#softshadow)" fill="url(#pedimentGradient)"
+                                 stroke="#34495e"
+                                 stroke-width="2"/>
+                        <text x="300" y="75" font-size="20" fill="white" text-anchor="middle">
+                            <tspan x="300" dy="0">Mission Solutions</tspan>
+                            <tspan x="300" dy="24">&amp; Capabilities</tspan>
+                        </text>
+                    </g>
+
+                    <!-- Beam (Entablature) -->
+                    <g class="clickable">
+                        <title>
+                            Architectural integration aligns tradeoffs, design decisions, and cross-pillar dependencies
+                        </title>
+                        <rect x="50" y="112" width="500" height="48" filter="url(#softshadow)" fill="url(#beamGradient)"
+                              stroke="#2c3e50" stroke-width="2" class="clickable"/>
+                        <text x="300" y="133" font-size="16" fill="black" text-anchor="middle">
+                            <tspan x="300" dy="0">Architectural Integration</tspan>
+                            <tspan x="300" dy="16" font-size="11" font-style="italic" font-weight="normal">Tradeoffs •
+                                Alignment •
+                                Design Decisions
+                            </tspan>
+                        </text>
+                    </g>
+
+                    <!-- Six Pillars with Links -->
+                    <g font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" text-anchor="middle">
+                        <!-- Pillar 1: Ubiquitous Computing -->
+                        <g class="clickable">
+                            <title>
+                                Cloud, DevOps, emerging compute, and decentralized platforms enabling portable execution
+                                everywhere
+                            </title>
+                            <a href="/en/digital-transformation/pillars/computing/" class="clickable">
+                                <g>
+                                    <rect x="70" y="160" width="40" height="200" fill="url(#pillarGradient)"
+                                          stroke="#bdc3c7"/>
+                                    <rect x="65" y="160" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <rect x="68" y="168" width="44" height="6" fill="url(#ringGradient)"/>
+                                    <rect x="65" y="352" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <text x="90" y="265" transform="rotate(-90, 90, 260)">
+                                        <tspan x="90" dy="-6">Ubiquitous</tspan>
+                                        <tspan x="90" dy="12">Computing</tspan>
+                                    </text>
+                                </g>
+                            </a>
+                        </g>
+
+                        <!-- Pillar 2: Edge Computing -->
+                        <g class="clickable">
+                            <title>
+                                Edge Computing enables data processing and decision-making closer to where data is
+                                generated to support
+                                low-latency, resilient, and mission-critical operations.
+                            </title>
+
+                            <a href="/en/digital-transformation/pillars/edge/" class="clickable">
+                                <g>
+                                    <rect x="155" y="160" width="40" height="200" fill="url(#pillarGradient)"
+                                          stroke="#bdc3c7"/>
+                                    <rect x="150" y="160" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <rect x="153" y="168" width="44" height="6" fill="url(#ringGradient)"/>
+                                    <rect x="150" y="352" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <text x="175" y="265" transform="rotate(-90, 175, 260)">
+                                        <tspan x="175" dy="-6">Edge</tspan>
+                                        <tspan x="175" dy="12">Computing</tspan>
+                                    </text>
+                                </g>
+                            </a>
+                        </g>
+
+                        <!-- Pillar 3: Artificial Intelligence -->
+                        <g class="clickable">
+                            <title>
+                                Artificial Intelligence enables systems to learn, reason, and assist decision-making
+                                through data-driven
+                                models embedded across digital and operational workflows.
+                            </title>
+                            <a href="/en/digital-transformation/pillars/ai/" class="clickable">
+                                <g>
+                                    <rect x="240" y="160" width="40" height="200" fill="url(#pillarGradient)"
+                                          stroke="#bdc3c7"/>
+                                    <rect x="235" y="160" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <rect x="238" y="168" width="44" height="6" fill="url(#ringGradient)"/>
+                                    <rect x="235" y="352" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <text x="260" y="265" transform="rotate(-90, 260, 260)">
+                                        <tspan x="260" dy="-6">Artificial</tspan>
+                                        <tspan x="260" dy="12">Intelligence</tspan>
+                                    </text>
+                                </g>
+                            </a>
+                        </g>
+
+                        <!-- Pillar 4: Cybersecurity -->
+                        <g class="clickable">
+                            <title>
+                                Cybersecurity protects systems, data, and missions through Zero Trust principles,
+                                resilience, and
+                                continuous risk management across all domains.
+                            </title>
+                            <a href="/en/digital-transformation/pillars/cybersecurity/" class="clickable">
+                                <g>
+                                    <rect x="325" y="160" width="40" height="200" fill="url(#highlightedPillarGradient)"
+                                          stroke="#bdc3c7"/>
+                                    <rect x="320" y="160" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <rect x="323" y="168" width="44" height="6" fill="url(#ringGradient)"/>
+                                    <rect x="320" y="352" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <text x="345" y="265" fill="white" transform="rotate(-90, 345, 260)">
+                                        <tspan x="345" dy="-6">Cyber</tspan>
+                                        <tspan x="345" dy="12">Security</tspan>
+                                    </text>
+                                </g>
+                            </a>
+                        </g>
+
+                        <!-- Pillar 5: Data Management -->
+                        <g class="clickable">
+                            <title>
+                                Data Management governs how data is collected, integrated, secured, and used to drive
+                                insights and
+                                decisions across the enterprise.
+                            </title>
+                            <a href="/en/digital-transformation/pillars/data/" class="clickable">
+                                <g>
+                                    <rect x="410" y="160" width="40" height="200" fill="url(#pillarGradient)"
+                                          stroke="#bdc3c7"/>
+                                    <rect x="405" y="160" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <rect x="408" y="168" width="44" height="6" fill="url(#ringGradient)"/>
+                                    <rect x="405" y="352" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <text x="430" y="265" transform="rotate(-90, 430, 260)">
+                                        <tspan x="430" dy="-6">Data</tspan>
+                                        <tspan x="430" dy="12">Management</tspan>
+                                    </text>
+                                </g>
+                            </a>
+                        </g>
+                        <!-- Pillar 6: Advanced Comms -->
+                        <g class="clickable">
+                            <title>
+                                Advanced Communications provides secure, resilient connectivity enabling data, systems,
+                                and people to
+                                operate as an integrated whole.
+                            </title>
+                            <a href="/en/digital-transformation/comms/" class="clickable">
+                                <g>
+                                    <rect x="495" y="160" width="40" height="200" fill="url(#pillarGradient)"
+                                          stroke="#bdc3c7"/>
+                                    <rect x="490" y="160" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <rect x="493" y="168" width="44" height="6" fill="url(#ringGradient)"/>
+                                    <rect x="490" y="352" width="50" height="8" fill="url(#ringGradient)"/>
+                                    <text x="515" y="265" transform="rotate(-90, 515, 260)">
+                                        <tspan x="515" dy="-6">Advanced</tspan>
+                                        <tspan x="515" dy="12">Comms</tspan>
+                                    </text>
+                                </g>
+                            </a>
+                        </g>
+                    </g>
+
+                    <!-- Foundation (Domains) with Links -->
+                    <g font-family="Arial, sans-serif" font-size="14" text-anchor="middle">
+                        <a href="/en/digital-transformation/odxa/strategic/" class="clickable">
+                            <g>
+                                <rect x="40" y="360" width="520" height="20" fill="#f8fafc"/>
+                                <rect x="40" y="360" width="520" height="20" fill="url(#stepGradient)"/>
+                                <text x="300" y="375" fill="black">Strategic Domain</text>
+                            </g>
+                        </a>
+
+                        <a href="/en/digital-transformation/odxa/organizational/" class="clickable">
+                            <g>
+                                <rect x="30" y="380" width="540" height="20" fill="#e5e7eb"/>
+                                <rect x="30" y="380" width="540" height="20" fill="url(#stepGradient)"/>
+                                <text x="300" y="395" fill="black">Organizational Domain</text>
+                            </g>
+                        </a>
+
+                        <a href="/en/digital-transformation/odxa/process/" class="clickable">
+                            <g>
+                                <rect x="20" y="400" width="560" height="20" fill="#d1d5db"/>
+                                <rect x="20" y="400" width="560" height="20" fill="url(#stepGradient)"/>
+                                <text x="300" y="415" fill="black">Process Domain</text>
+                            </g>
+                        </a>
+
+                        <a href="/en/digital-transformation/odxa/digital/" class="clickable">
+                            <g>
+                                <rect x="10" y="420" width="580" height="20" fill="#c7ced6"/>
+                                <rect x="10" y="420" width="580" height="20" fill="url(#stepGradient)"/>
+                                <text x="300" y="435" fill="black">Digital Domain</text>
+                            </g>
+                        </a>
+
+                        <a href="/en/digital-transformation/odxa/physical/" class="clickable">
+                            <g>
+                                <rect x="0" y="440" width="600" height="20" fill="#9aa3af"/>
+                                <rect x="0" y="440" width="600" height="20" fill="url(#stepGradient)"/>
+                                <text x="300" y="455" fill="black">Physical Domain</text>
+                            </g>
+                        </a>
+                    </g>
+                </svg>
+            </div>
+            <!-- Column 2: Short Definition -->
+            <div class="pillar-header-definition">
+                <h3 style="color: #193B73; margin-top: 0; margin-bottom: 10px; font-size: 1.4rem;">Core Capability</h3>
+                <p class="authoritative-definition">
+                    Protecting systems, data, and missions through Zero Trust principles, resilience, and continuous risk management across all five ODXA domains.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Definitions -->
+    <section id="Definition" class="transformation-container">
+        <h2>Definition</h2>
+        <p><strong>Short Definition:</strong> Cybersecurity protects systems, data, and missions through Zero Trust principles, resilience, and continuous risk management across all domains.</p>
+        <p><strong>Long Definition:</strong> Cybersecurity ensures that digital transformation efforts remain secure, trustworthy, and resilient in the face of evolving threats. This pillar emphasizes architectural security, identity, access control, monitoring, and incident response rather than point solutions. Within ODXA, cybersecurity is foundational and pervasive—strategy establishes risk posture, organizational structures define accountability, processes enforce controls and response, digital platforms embed security services, and physical systems protect infrastructure and operational assets.</p>
+    </section>
+
+    <!-- 4. Is / Is Not -->
+    <section id="Scope" class="transformation-container">
+        <div class="grid-container">
+            <div class="grid-box" style="border-top: 4px solid #497BA3;">
+                <h3>This Pillar Is</h3>
+                <ul>
+                    <li><strong>Zero Trust:</strong> Never trust, always verify, regardless of network location.</li>
+                    <li><strong>Mission Resilience:</strong> The ability to operate through an attack, not just prevent it.</li>
+                    <li><strong>Continuous Management:</strong> Moving from "compliance audits" to real-time risk visibility.</li>
+                </ul>
+            </div>
+            <div class="grid-box" style="border-top: 4px solid #e76f51;">
+                <h3>This Pillar Is Not</h3>
+                <ul>
+                    <li><strong>A Bolt-on Tool:</strong> Security cannot be successfully added at the end of a project.</li>
+                    <li><strong>Just "IT's Problem":</strong> Security is a shared organizational responsibility.</li>
+                    <li><strong>Perfect Prevention:</strong> It is about managing risk, not achieving 0% probability.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="GraphicRep" class="transformation-container" style="text-align: center;">
+        <div class="highlight-box" style="display: inline-block; padding: 10px 20px; margin-bottom: 2rem;">
+            <em>“Cybersecurity is the pervasive architectural layer that protects every decision, system, and mission outcome.”</em>
+        </div>
+
+        <svg viewBox="0 0 800 350" xmlns="http://www.w3.org/2000/svg" style="max-width: 1000px; height: auto; margin: 0 auto; display: block; background: #fdfdfd; border-radius: 8px;">
+
+            <!-- The Pervasive Fabric (Blue Background Block) -->
+            <rect x="50" y="40" width="700" height="220" rx="20" fill="#497BA3" fill-opacity="0.05" stroke="#497BA3" stroke-width="2" stroke-dasharray="10,5"/>
+
+            <!-- The Protective Gold Border (The Shield) -->
+            <rect x="60" y="50" width="680" height="200" rx="15" fill="none" stroke="#D4AF37" stroke-width="4"/>
+
+            <!-- Assets being protected (Cards) -->
+            <!-- Card 1 -->
+            <rect x="100" y="90" width="160" height="120" rx="10" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+            <text x="180" y="145" text-anchor="middle" font-family="Arial" font-size="14" fill="#193B73" font-weight="bold">MISSION</text>
+            <text x="180" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">SYSTEMS</text>
+
+            <!-- Card 2 -->
+            <rect x="320" y="90" width="160" height="120" rx="10" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+            <text x="400" y="145" text-anchor="middle" font-family="Arial" font-size="14" fill="#193B73" font-weight="bold">ENTERPRISE</text>
+            <text x="400" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">DATA</text>
+
+            <!-- Card 3 -->
+            <rect x="540" y="90" width="160" height="120" rx="10" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+            <text x="620" y="145" text-anchor="middle" font-family="Arial" font-size="14" fill="#193B73" font-weight="bold">DISTRIBUTED</text>
+            <text x="620" y="165" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">WORKLOADS</text>
+
+            <!-- Zero Trust Verification Nodes (The "Lock" points) -->
+            <circle cx="180" cy="50" r="25" fill="white" stroke="#D4AF37" stroke-width="3"/>
+            <text x="180" y="54" text-anchor="middle" font-family="Arial" font-size="10" fill="#193B73" font-weight="bold">IDENTITY</text>
+
+            <circle cx="400" cy="50" r="25" fill="white" stroke="#D4AF37" stroke-width="3"/>
+            <text x="400" y="54" text-anchor="middle" font-family="Arial" font-size="10" fill="#193B73" font-weight="bold">VERIFY</text>
+
+            <circle cx="620" cy="50" r="25" fill="white" stroke="#D4AF37" stroke-width="3"/>
+            <text x="620" y="54" text-anchor="middle" font-family="Arial" font-size="10" fill="#193B73" font-weight="bold">RESILIENT</text>
+
+            <!-- Core Label -->
+            <text x="400" y="290" text-anchor="middle" font-family="Arial" font-size="22" fill="#193B73" font-weight="bold">PERVASIVE ZERO TRUST FABRIC</text>
+            <text x="400" y="315" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b" font-style="italic">Continuous Risk Management • Adaptive Defense • Architectural Security</text>
+        </svg>
+
+        <p style="margin-top: 2rem; color: #64748b; font-style: italic; max-width: 750px; margin-left: auto; margin-right: auto;">
+            In the ODXA framework, Cybersecurity is the <strong>Perimeterless Shield</strong>. It ensures that regardless of the <strong>Physical Domain</strong> constraints or the <strong>Digital Domain</strong> platforms, the mission remains resilient against evolving threats.
+        </p>
+    </section>
+    <!-- 5. ODXA Domain Mapping -->
+    <section id="DomainsMap" class="transformation-container" style="background-color: #f8fafc;">
+        <h2 style="text-align: center; margin-bottom: 2rem;">How Cybersecurity Maps Across ODXA</h2>
+        <div class="pillar-domain-grid">
+
+            <!-- Strategic Domain -->
+            <div class="grid-box pillar-domain-strat">
+                <h3 style="color: #003366;">Strategic Domain</h3>
+                <ul>
+                    <li>Establish the organizational Risk Tolerance and Mission Assurance priorities.</li>
+                    <li>Align security investment with the value of the assets and missions being protected.</li>
+                    <li>Set policy for "Security-by-Design" mandates in all transformation initiatives.</li>
+                    <li>Define the legal and jurisdictional requirements for data protection and disclosure.</li>
+                </ul>
+            </div>
+
+            <!-- Organizational Domain -->
+            <div class="grid-box pillar-domain-org">
+                <h3 style="color: #228B22;">Organizational Domain</h3>
+                <ul>
+                    <li>Define clear lines of accountability for security from the Boardroom to the Field.</li>
+                    <li>Foster a "Security-First" culture where safety is prioritized over convenience.</li>
+                    <li>Upskill the workforce on basic hygiene and threat awareness (Social Engineering).</li>
+                    <li>Empower the CISO to influence architectural decisions across business units.</li>
+                </ul>
+            </div>
+
+            <!-- Process Domain -->
+            <div class="grid-box pillar-domain-proc">
+                <h3 style="color: #ff6f00;">Process Domain</h3>
+                <ul>
+                    <li>Implement automated incident response playbooks to reduce "Time to Detect."</li>
+                    <li>Integrate DevSecOps—embedding security scanning into the CI/CD pipeline.</li>
+                    <li>Standardize continuous monitoring and vulnerability management processes.</li>
+                    <li>Establish formal "Disaster Recovery" and "Business Continuity" drills.</li>
+                </ul>
+            </div>
+
+            <!-- Physical Domain -->
+            <div id="PhysicalDomainMap" class="grid-box pillar-domain-phys">
+                <h3 style="color: #708090;">Physical Domain</h3>
+                <ul>
+                    <li><strong>Supply Chain Integrity:</strong> Ensure hardware provenance and prevent physical backdoors.</li>
+                    <li><strong>Hardened Infrastructure:</strong> Protect physical sites (cabling, server rooms, sensor nodes).</li>
+                    <li><strong>Hardware Root of Trust:</strong> Utilize TPM and Secure Boot at the silicon level.</li>
+                    <li><strong>Physical Access Control:</strong> Biometric and credentialed entry to critical digital assets.</li>
+                </ul>
+            </div>
+
+            <!-- Digital Domain -->
+            <div class="grid-box pillar-domain-digi">
+                <h3 style="color: #6a0dad;">Digital Domain</h3>
+                <ul>
+                    <li>Deploy Unified IAM (Identity & Access Management) for consistent Zero Trust signals.</li>
+                    <li>Implement end-to-end encryption for data-at-rest and data-in-transit.</li>
+                    <li>Utilize Service Mesh architectures to secure machine-to-machine communication.</li>
+                    <li>Leverage AI-driven SIEM/SOAR for automated anomaly detection.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6 & 7. Use Cases and Failure Modes -->
+    <section id="CommonUseCases" class="transformation-container">
+        <div class="grid-container">
+            <div>
+                <h2>Common Use Cases</h2>
+                <ul>
+                    <li><strong>Zero Trust Transformation:</strong> Moving from a VPN-based perimeter to identity-based access.</li>
+                    <li><strong>DevSecOps Integration:</strong> Stopping insecure code from reaching production automatically.</li>
+                    <li><strong>Ransomware Resilience:</strong> Establishing air-gapped backups and rapid recovery processes.</li>
+                    <li><strong>Secure Cloud Migration:</strong> Ensuring security policies persist across hybrid-cloud environments.</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Common Failure Modes</h2>
+                <ul style="color: #c53030;">
+                    <li><strong>Compliance Trap:</strong> Thinking that being "Compliant" (Audit ready) means you are "Secure."</li>
+                    <li><strong>Siloed Security:</strong> Having a security team that is disconnected from the dev and ops teams.</li>
+                    <li><strong>Tool Overload:</strong> Buying 50 point solutions that don't talk to each other, creating "Signal Fatigue."</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. System-of-Systems -->
+    <section id="SystemOfSystems" class="transformation-container">
+        <h2>System-of-Systems Context</h2>
+        <div class="grid-container" style="gap: 25px;">
+            <div class="grid-box" style="border-left: 4px solid #D4AF37;">
+                <h4>Enabling Ubiquitous Computing</h4>
+                <p>Allows workloads to move safely between cloud and on-prem by making security "Identity-bound" rather than "Location-bound."</p>
+            </div>
+            <div class="grid-box" style="border-left: 4px solid #D4AF37;">
+                <h4>Enabling Advanced Comms</h4>
+                <p>Provides the encryption and integrity checks that allow data to flow over unencrypted or contested network paths.</p>
+            </div>
+            <div class="grid-box" style="border-left: 4px solid #497BA3;">
+                <h4>Dependency on Data Management</h4>
+                <p>Requires precise <strong>Data Tagging</strong> and classification to know which security controls to apply to which assets.</p>
+            </div>
+            <div class="grid-box" style="border-left: 4px solid #497BA3;">
+                <h4>Dependency on AI</h4>
+                <p>Relies on <strong>Artificial Intelligence</strong> to process the millions of security logs generated daily to find the "needle in the haystack" threat.</p>
+            </div>
+        </div>
+        <div class="highlight-box" style="margin-top: 2rem;">
+            <h3>When to Start Here</h3>
+            <p>Start with Cybersecurity if you are suffering from <strong>"Audit Exhaustion"</strong> or if security concerns are currently the primary reason your organization is afraid to innovate or move to the cloud.</p>
+        </div>
+    </section>
+
+    <!-- 10. FAQs -->
+    <section id="FAQ" class="transformation-container">
+        <h2>Frequently Asked Questions</h2>
+        <details style="margin-bottom: 1rem; padding: 15px; background: #f8fafc; border-radius: 8px; border: 1px solid #edf2f7;">
+            <summary style="font-weight: bold; cursor: pointer; color: #193B73;">Is Zero Trust just for the Cloud?</summary>
+            <p style="margin-top: 10px;">No. Zero Trust is an architectural philosophy that applies to On-Premises, Edge, and Cloud. It assumes the network is compromised and verifies every request regardless of origin.</p>
+        </details>
+        <details style="margin-bottom: 1rem; padding: 15px; background: #f8fafc; border-radius: 8px; border: 1px solid #edf2f7;">
+            <summary style="font-weight: bold; cursor: pointer; color: #193B73;">How does security impact developer velocity?</summary>
+            <p style="margin-top: 10px;">Through the <strong>Process Domain</strong> (DevSecOps). By automating security checks, you actually *increase* velocity because you find and fix issues in minutes rather than weeks.</p>
+        </details>
+        <details style="margin-bottom: 1rem; padding: 15px; background: #f8fafc; border-radius: 8px; border: 1px solid #edf2f7;">
+            <summary style="font-weight: bold; cursor: pointer; color: #193B73;">What is the biggest risk to Cybersecurity?</summary>
+            <p style="margin-top: 10px;">The <strong>Organizational Domain</strong> (People). Most breaches occur through social engineering or misconfigurations, not high-tech zero-day exploits. Culture is your primary defense.</p>
+        </details>
+    </section>
+
+    <!-- 11. Calls to Action -->
+    <section class="transformation-container">
+    <div class="grid-container" style="grid-template-columns: 1fr 1fr; gap: 20px;">
+
+        <!-- Box 1: Explore the Six Pillars -->
+        <div class="grid-box">
+            <h3 style="color: #193B73; margin-top: 0;">The Six Pillars</h3>
+            <ul class="clean-list" style="line-height: 1.8; font-size: 0.95rem;">
+                <li><a href="/en/digital-transformation/pillars/computing/" style="text-decoration: none; color: #497BA3;">Ubiquitous Computing</a></li>
+                <li><a href="/en/digital-transformation/pillars/edge/" style="text-decoration: none; color: #497BA3;">Edge Computing</a></li>
+                <li><a href="/en/digital-transformation/pillars/ai/" style="text-decoration: none; color: #497BA3;">Artificial Intelligence</a></li>
+                <li><a href="/en/digital-transformation/pillars/cybersecurity/" style="text-decoration: none; color: #497BA3;">Cybersecurity</a></li>
+                <li><a href="/en/digital-transformation/pillars/data/" style="text-decoration: none; color: #497BA3;">Data Management</a></li>
+                <li><a href="/en/digital-transformation/pillars/communications/" style="text-decoration: none; color: #193B73; font-weight: bold;">Advanced Communications</a></li>
+            </ul>
+            <a href="/en/digital-transformation/index.html" class="listen-now" style="margin-top: 1rem; text-align: center;">Framework Overview</a>
+        </div>
+
+        <!-- Box 2: Explore the ODXA Domains -->
+        <div class="grid-box">
+            <h3 style="color: #193B73; margin-top: 0;">The ODXA Domains</h3>
+            <ul class="clean-list" style="line-height: 1.8; font-size: 0.95rem;">
+                <li><a href="/en/digital-transformation/odxa/strategic/" style="text-decoration: none; color: #003366;">Strategic Domain</a></li>
+                <li><a href="/en/digital-transformation/odxa/organizational/" style="text-decoration: none; color: #228B22;">Organizational Domain</a></li>
+                <li><a href="/en/digital-transformation/odxa/process/" style="text-decoration: none; color: #ff6f00;">Process Domain</a></li>
+                <li><a href="/en/digital-transformation/odxa/digital/" style="text-decoration: none; color: #6a0dad;">Digital Domain</a></li>
+                <li><a href="/en/digital-transformation/odxa/physical/" style="text-decoration: none; color: #708090;">Physical Domain</a></li>
+            </ul>
+            <a href="/en/digital-transformation/odxa/index.html" class="listen-now" style="margin-top: 1rem; background: #497BA3; text-align: center;">Learn ODXA Structure</a>
+        </div>
+
+        <!-- Box 3: Engage & Deep Dive (Full Width Row 2) -->
+        <div class="grid-box">
+            <h3 style="color: #193B73; margin-top: 0;">Continue Your Journey</h3>
+            <p style="color: #64748b; max-width: 600px; margin: 0 auto 1.5rem;">Browse all DTA episodes organized by domain and pillar to see architectural guidance in practice.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="/en/lectures/index.html" class="listen-now" style="background: #193B73; min-width: 200px;">View All Episodes</a>
+                <a href="/en/search.html" class="listen-now" style="background: #497BA3; min-width: 200px;">Search the Canon</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>
