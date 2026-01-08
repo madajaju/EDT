@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Título de página dinâmico -->
+    <title>Por que a Transformação Digital Continua Falhando | Digital Transformation Architect</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/pt/lectures/dta-1/index.html">
+    <meta name="description" content="Dr. Darren Pulsipher discute os aspectos críticos da arquitetura de transformação digital, enfatizando a necessidade de uma mudança organizacional sustentada em vez de mera adoção de tecnologia. Ele destaca a alta taxa de falhas das iniciativas de IA generativa e compartilha experiências pessoais de">
+    <meta name="keywords" content="Transformação digital, podcast, entrevistas, notícias, IA, cibersegurança, edge computing, gestão de dados">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Por que a Transformação Digital Continua Falhando | Digital Transformation Architect — Entrevistas, Notícias e Comunidade">
+    <meta property="og:description" content="Dr. Darren Pulsipher discute os aspectos críticos da arquitetura de transformação digital, enfatizando a necessidade de uma mudança organizacional sustentada em vez de mera adoção de tecnologia. Ele destaca a alta taxa de falhas das iniciativas de IA generativa e compartilha experiências pessoais de">
+    <meta property="og:url" content="https://www.embracingdigital.org/pt/lectures/dta-1/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Por que a Transformação Digital Continua Falhando | Digital Transformation Architect — Entrevistas, Notícias e Comunidade">
+    <meta name="twitter:description" content="Dr. Darren Pulsipher discute os aspectos críticos da arquitetura de transformação digital, enfatizando a necessidade de uma mudança organizacional sustentada em vez de mera adoção de tecnologia. Ele destaca a alta taxa de falhas das iniciativas de IA generativa e compartilha experiências pessoais de">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (alternativas) -->
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="x-default">
+
+    <!-- Favicon & Estilos -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abraçando a Transformação Digital",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abraçando a Transformação Digital",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/pt/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logotipo -->
+    <div class="logo-container">
+        <a href="/pt/home/" aria-label="Início — Abraçando a Transformação Digital">
+            <img src="/images/logo.png" alt="Logotipo — Abraçando a Transformação Digital" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Alternância para mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Alternar menu">☰</button>
+
+    <!-- Navegação principal -->
+    <nav id="primary-nav" aria-label="Principal">
+        <ul>
+            <li><a href="/pt/home/index.html" >Início</a></li>
+
+            <li class="dropdown">
+                <a href="/pt/shows/index.html" aria-haspopup="true" aria-expanded="false">Programas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/episodes/index.html" aria-label="Entrevistas — Abraçando a Transformação Digital">
+                            Abraçando a Transformação Digital
+                            <small class="nav-note">Entrevistas</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/index.html" aria-label="Notícias — Digital esta semana">
+                            Digital esta semana
+                            <small class="nav-note">Notícias</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/pt/guests/index.html">Convidados</a></li>
+            <li><a href="/pt/articles/index.html">Artigos</a></li>
+
+            <!-- Comunidade -->
+            <li class="dropdown">
+                <a href="/pt/community.html" aria-haspopup="true" aria-expanded="false">Comunidade</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Grupo no LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Loja</a></li>
+
+            <!-- Sobre -->
+            <li class="dropdown">
+                <a href="/pt/about.html" aria-haspopup="true" aria-expanded="false">Sobre</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/about.html">Sobre o programa</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/host.html">Apresentador: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/sponsors/index.html">Patrocínio & Contato</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/pt/search.html">Pesquisar</a></li>
+
+            <!-- Idiomas -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Idiomas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../pt/home/index.html">Home</a></li>
+        <li><a href="../../../pt/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 1: Why Digital Transformation Keeps Failing</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/pt/lectures/dta-1/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/pt/lectures/dta-1/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 1</span>
+                <span class="episode-title">Why Digital Transformation Keeps Failing</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-01-07" itemprop="datePublished">2026-01-07</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+
+            <meta itemprop="episodeNumber" content="1"/>
+            <meta itemprop="inLanguage" content="pt"/>
+        </header>
+
+        
+            <section class="video-container" aria-label="Watch the episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
+                <meta itemprop="name" content="Por que a Transformação Digital Continua Falhando Video">
+                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/o_HqigHbV1M">
+                <iframe
+                        width="auto"
+                        height="auto"
+                        src="https://www.youtube.com/embed/o_HqigHbV1M"
+                        title="Por que a Transformação Digital Continua Falhando Video"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                ></iframe>
+            </section>
+        
+
+        
+            <section class="podcast-container" aria-label="Listen to this episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
+                <meta itemprop="name" content="Por que a Transformação Digital Continua Falhando Audio">
+                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/55a6f16b">
+                <iframe
+                        width="100%"
+                        height="180"
+                        frameborder="0"
+                        scrolling="no"
+                        src="https://share.transistor.fm/e/55a6f16b"
+                        title="Por que a Transformação Digital Continua Falhando Audio"
+                        loading="lazy"
+                ></iframe>
+
+                <p class="listen-note">
+                    Explore more in the <a href="../../../pt/episodes/index.html">episode archive</a>.
+                </p>
+            </section>
+        
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Dr. Darren Pulsipher discute os aspectos críticos da arquitetura de transformação digital, enfatizando a necessidade de uma mudança organizacional sustentada em vez de mera adoção de tecnologia. Ele destaca a alta taxa de falhas das iniciativas de IA generativa e compartilha experiências pessoais de transformações digitais malsucedidas, ressaltando a importância de alinhar pessoas, processos, políticas e tecnologia. A conversa também aborda o ritmo acelerado da mudança tecnológica e os desafios que as organizações enfrentam para se adaptar a essas mudanças, particularmente com o surgimento da IA generativa.</p>
+<p>Principais pontos</p>
+<p>A transformação digital não é uma adoção tecnológica única.
+Uma transformação digital bem-sucedida requer mudança organizacional sustentada.
+Uma abordagem centrada na tecnologia muitas vezes leva ao fracasso.
+Mudanças eficazes envolvem alinhar pessoas, processos, políticas e tecnologia.
+Abordagens holísticas e sistêmicas são essenciais para uma transformação digital bem-sucedida.
+Iniciativas de IA generativa costumam ser isoladas e carecem de integração empresarial.
+As organizações estão gastando quantias enormes em tecnologia com pouco retorno sobre investimento.
+A mudança cultural é crucial para o sucesso da transformação digital.
+Desalinhamentos entre estratégia e execução podem desviar as iniciativas.
+A agilidade em pequenas empresas permite que elas superem organizações maiores.</p>
+<p>Capítulos</p>
+<p>00:00 Introdução à Arquitetura de Transformação Digital
+01:00 Compreendendo a Transformação Digital e Seus Desafios
+03:49 A Importância da Mudança Holística nas Organizações
+06:54 Lições de Transformações Digitais Mal-sucedidas
+10:11 O Papel da IA Generativa na Transformação Digital
+14:03 Navegando por Mudanças Rápidas em Tecnologia e Organizações</p>
+
+
+            
+
+            
+                <div class="guests" aria-label="Guests">
+                    
+                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../pt/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                    
+                </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>Por Que a Transformação Digital Continua Fracassando: Compreendendo Desafios Organizacionais Persistentes</h1>
+<p>A transformação digital tem sido uma prioridade estratégica para organizações durante décadas. Cada nova onda de tecnologia—sistemas de planejamento de recursos empresariais, plataformas em nuvem, análise de dados, automação de processos e inteligência artificial—chegou com a promessa de mudar fundamentalmente como as organizações operam e entregam valor.</p>
+<p>No entanto, apesar de investimentos sustentados e progressos tecnológicos contínuos, os resultados da transformação permanecem inconsistentes, efêmeros ou localizados. Muitas organizações podem apontar para projetos ou pilotos bem-sucedidos, mas muito menos conseguem demonstrar uma mudança em nível empresarial que perdure além da implementação inicial.</p>
+<p>Essa lacuna persistente entre ambição e resultado levanta uma questão fundamental: <strong>por que a transformação digital continua falhando?</strong></p>
+<p>A resposta não está apenas na execução deficiente, na falta de financiamento ou na tecnologia imatura. A recorrência do fracasso em setores e gerações tecnológicas aponta para condições estruturais mais profundas—governança desalinhada, tomada de decisões fragmentada e inércia organizacional—que as organizações repetidamente falham em abordar. No cerne dessas condições está o desalinhamento persistente em quatro dimensões: como as pessoas trabalham, como os processos fluem, quais políticas moldam decisões e incentivos, e como a tecnologia é introduzida e evolui.</p>
+<hr>
+<h2>A Transformação Digital Não É Uma Atualização Tecnológica</h2>
+<p>Uma razão pela qual o fracasso da transformação é tão difícil de diagnosticar é que o termo “transformação digital” é frequentemente utilizado de maneira imprecisa. Em muitas organizações, torna-se um termo genérico para modernização: substituir sistemas legados, adotar novas plataformas ou acelerar a entrega por meio de novas ferramentas e metodologias.</p>
+<p>No entanto, modernização não é transformação.</p>
+<p>A transformação digital refere-se a <strong>mudança organizacional sustentada</strong>—a reestruturação de como uma organização opera, não meramente as tecnologias que ela implanta. Ela reformula como as decisões são tomadas, como o trabalho é coordenado entre funções, como os incentivos reforçam os objetivos estratégicos e como os resultados são governados ao longo do tempo. No seu cerne, a transformação requer alinhamento entre <strong>pessoas, processos, políticas e tecnologia</strong> de modo que cada um reforce os outros em vez de puxar em direções diferentes.</p>
+<p>A tecnologia possibilita a transformação, mas não é a transformação em si. Quando os resultados se desvanecem após a conclusão de um programa ou a implantação de uma plataforma, a organização modernizou componentes de seu ambiente sem alterar as condições estruturais que moldam o comportamento. A distinção é importante porque recontextualiza tanto o sucesso quanto o fracasso: <strong>mudança duradoura</strong>, não marcos de entrega, é a medida definidora da transformação.</p>
+<hr>
+<h2>O Problema da Persistência: Por Que os Fracassos na Transformação Reocorrem</h2>
+<p>Os fracassos da transformação digital não são incidentes isolados. Eles recorrem entre indústrias—desde saúde e serviços financeiros até manufatura e governo—e em ambos os setores público e privado.</p>
+<p>As organizações modernizam sistemas centrais, reorganizam equipes em torno de novos modelos operacionais e lançam iniciativas em toda a empresa, apenas para repetir esforços similares alguns anos depois, utilizando diferentes fornecedores, estruturas ou metodologias. Programas individuais podem entregar melhorias mensuráveis dentro de limites definidos. Pilotos frequentemente têm sucesso em ambientes controlados. No entanto, a organização como um todo falha em mudar como opera em grande escala.</p>
+<p>Em domínios emergentes, como a IA generativa, esse padrão é especialmente visível. Muitas organizações podem apontar para provas de conceito impressionantes ou implantações experimentais, mas pesquisas independentes descobriram que a grande maioria das iniciativas ainda falha em alcançar uma adoção sustentável em toda a empresa. As ferramentas funcionam de forma isolada; a organização luta para absorvê-las.</p>
+<p>A significância desse padrão não reside na escala de um único fracasso, mas em sua <strong>repetibilidade</strong>. Quando resultados semelhantes surgem sob diferentes equipes de liderança, prioridades estratégicas e pilhas de tecnologia, explicações baseadas na qualidade da execução ou nas ferramentas tornam-se cada vez mais implausíveis. A persistência é um sinal. Indica que o fracasso é <strong>estrutural em vez de incidental</strong>, enraizado em como pessoas, processos, políticas e tecnologias são coordenados—ou falham em ser coordenados—em toda a empresa.</p>
+<hr>
+<h2>Padrões de Fracasso Reconhecíveis Através de Esforços de Transformação</h2>
+<p>Em iniciativas de transformação, os mesmos padrões aparecem com notável consistência.</p>
+<p>As organizações articulam uma intenção estratégica ambiciosa, mas a execução se desenrola através de estruturas organizacionais que nunca foram projetadas para apoiar essa intenção. A governança permanece fragmentada entre silos funcionais, cada um otimizando localmente em vez de coletivamente. As equipes têm sucesso dentro de seus próprios domínios enquanto a coerência em nível empresarial se erosiona.</p>
+<p>Mesmo quando os resultados iniciais parecem positivos, eles frequentemente se deterioram com o tempo. Novos sistemas são introduzidos sem mudanças correspondentes nos direitos de decisão ou nas estruturas de responsabilização. Processos de negócios são digitalizados enquanto incentivos continuam a recompensar comportamentos legados. Pessoas, processos, políticas e tecnologia evoluem em cronogramas independentes, sem um mecanismo arquitetônico que mantenha todos alinhados.</p>
+<p>Uma história familiar ilustra essa dinâmica. Uma organização substitui um sistema legado frágil e improvisado por uma plataforma moderna. Tecnicamente, a implantação ocorre conforme o planejado. Mas os usuários na linha de frente não estão profundamente envolvidos, o treinamento é mínimo, os processos existentes são simplesmente “mapeados” na nova ferramenta, e nenhuma política é atualizada para refletir novas capacidades ou limites. No dia do lançamento, o sistema falha sob condições do mundo real; os usuários retornam ao antigo modo de trabalhar, e a liderança é forçada a retroceder. Apenas quando a organização revisita a mudança sob a lente de <strong>pessoas, processos, políticas e tecnologia</strong>—em vez de apenas tecnologia—é que a transformação começa a se consolidar.</p>
+<p>A transformação se torna algo que as organizações fazem periodicamente através de iniciativas, em vez de algo que são por meio de capacidade e cultura sustentadas. Esses padrões aparecem em programas bem financiados e bem liderados com patrocínio executivo, assim como em esforços subfinanciados. Sua persistência é precisamente o que os torna tão prejudiciais.</p>
+<hr>
+<h2>Por Que a Tecnologia Sozinha Não Resolve o Desalinhamento Estrutural</h2>
+<p>Se melhores ferramentas produzissem resultados organizacionais melhores de forma confiável, décadas de melhoria exponencial em poder computacional, conectividade e análise teriam resolvido o desafio da transformação. Em vez disso, a aceleração tecnológica frequentemente <strong>amplificou</strong> o desalinhamento existente.</p>
+<p>A entrega mais rápida permite que as organizações se movam mais rapidamente, mas não necessariamente na mesma direção. Plataformas modernas e práticas ágeis permitem mudanças rápidas nas extremidades—dentro de equipes e unidades de negócios—enquanto o núcleo organizacional permanece inalterado em suas estruturas de governança, modelos de incentivo e autoridade de tomada de decisão.</p>
+<p>A IA generativa fornece um exemplo contemporâneo. Muitas organizações estão saturadas de pequenas provas de conceito e “projetos científicos” que demonstram o que os modelos podem fazer de forma isolada—na estação de trabalho de um desenvolvedor ou dentro de um único departamento. Mas quando essas mesmas ideias são empurradas para a produção, colidem com processos, políticas e estruturas de risco existentes. O que funcionou bem em um laboratório ou piloto falha ao encontrar cargas de trabalho reais, restrições regulatórias e dependências entre equipes.</p>
+<p>Tratar a transformação como uma sequência de ciclos de adoção tecnológica ofusca a questão subjacente. A tecnologia pode acelerar a mudança, mas não pode substituir o <strong>alinhamento estrutural entre estratégia, execução e governança</strong>. Sem uma abordagem arquitetônica integrada que alinhe explicitamente pessoas, processos, políticas e tecnologia, os esforços de modernização tendem a produzir ganhos localizados ou efêmeros em vez de transformação sustentada.</p>
+<hr>
+<h2>Por Que o Fracasso Persistente Importa Mais do Que Nunca</h2>
+<p>As consequências do fracasso persistente na transformação estão se intensificando. À medida que os ciclos de adoção tecnológica se comprimem de anos para meses e os ecossistemas organizacionais se tornam mais interconectados, o custo do desalinhamento se acumula mais rapidamente.</p>
+<p>As organizações não estão apenas falhando em transformar uma vez; elas estão <strong>falhando mais rápido</strong>. Cada ciclo aumenta a dívida técnica, a complexidade organizacional e o ceticismo dos stakeholders, tornando os esforços subsequentes mais difíceis e mais caros.</p>
+<p>Ao mesmo tempo, a dinâmica da força de trabalho está mudando. Muitas grandes organizações não presumem mais que líderes ou praticantes-chave permanecerão nas mesmas funções durante toda a duração de uma transformação de vários anos. O progresso cultural e as melhorias de processo podem se erosionar à medida que as pessoas se vão, levando consigo o conhecimento tácito, enquanto novos contratados retornam a padrões familiares.</p>
+<p>Enquanto isso, concorrentes menores e mais ágeis—que não estão sobrecarregados por décadas de sistemas e políticas acumuladas—podem adotar novas capacidades rapidamente e projetar suas estruturas a partir do início em torno delas. Eles não precisam desfazer o desalinhamento legado antes de poderem avançar.</p>
+<p>Reconhecer a natureza estrutural do fracasso da transformação é um pré-requisito para abordá-lo de forma eficaz. Antes de discutir soluções, respostas arquitetônicas ou estruturas de capacidade, as organizações devem reconhecer que a transformação é fundamentalmente um <strong>desafio organizacional e de governança</strong>. A ausência de uma estrutura arquitetônica coerente que mantenha pessoas, processos, políticas e tecnologia alinhados não é uma preocupação secundária—é um fator de risco primário que molda cada resultado de transformação.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/pt/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/pt/episodes/index.html",
+  "inLanguage": "pt",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/pt/lectures/dta-1/index.html#episode",
+  "url": "https://www.embracingdigital.org/pt/lectures/dta-1/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/pt/lectures/dta-1/index.html"
+  },
+  "name": "Por que a Transformação Digital Continua Falhando",
+  "episodeNumber": 1,
+  "datePublished": "2026-01-07",
+  "inLanguage": "pt",
+  "description": "Dr. Darren Pulsipher discute os aspectos críticos da arquitetura de transformação digital, enfatizando a necessidade de uma mudança organizacional sustentada em vez de mera adoção de tecnologia. Ele destaca a alta taxa de falhas das iniciativas de IA generativa e compartilha experiências pessoais de",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/pt/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/pt/episodes/dta-1/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Por que a Transformação Digital Continua Falhando Video",
+      "embedUrl": "https://www.youtube.com/embed/o_HqigHbV1M"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Por que a Transformação Digital Continua Falhando Audio",
+      "contentUrl": "https://share.transistor.fm/e/55a6f16b"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../pt/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; 2025 Paidar Productions LLC</p>
+        <p>Todos os direitos reservados</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

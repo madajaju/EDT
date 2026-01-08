@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Dynamic Page Title -->
+    <title>لماذا تستمر التحولات الرقمية في الفشل | Digital Transformation Architect</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/ar/lectures/dta-1/index.html">
+    <meta name="description" content="يتحدث الدكتور دارين بولسيفر عن الجوانب الحرجة لهندسة التحول الرقمي، مؤكدًا على الحاجة إلى تغيير تنظيمي مستدام بدلاً من مجرد اعتماد التكنولوجيا. يسلط الضوء على معدل الفشل العالي لمبادرات الذكاء الاصطناعي التوليدي ويشارك تجارب شخصية عن التحولات الرقمية الفاشلة، مشددًا على أهمية التوافق بين الأفراد وال">
+    <meta name="keywords" content="التحول الرقمي, بودكاست, مقابلات, أخبار, ذكاء اصطناعي, أمن سيبراني, الحوسبة الطرفية, إدارة البيانات">
+    <meta name="author" content="د. دارين دبليو. بالسيفر">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="لماذا تستمر التحولات الرقمية في الفشل | Digital Transformation Architect — مقابلات وأخبار ومجتمع">
+    <meta property="og:description" content="يتحدث الدكتور دارين بولسيفر عن الجوانب الحرجة لهندسة التحول الرقمي، مؤكدًا على الحاجة إلى تغيير تنظيمي مستدام بدلاً من مجرد اعتماد التكنولوجيا. يسلط الضوء على معدل الفشل العالي لمبادرات الذكاء الاصطناعي التوليدي ويشارك تجارب شخصية عن التحولات الرقمية الفاشلة، مشددًا على أهمية التوافق بين الأفراد وال">
+    <meta property="og:url" content="https://www.embracingdigital.org/ar/lectures/dta-1/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="لماذا تستمر التحولات الرقمية في الفشل | Digital Transformation Architect — مقابلات وأخبار ومجتمع">
+    <meta name="twitter:description" content="يتحدث الدكتور دارين بولسيفر عن الجوانب الحرجة لهندسة التحول الرقمي، مؤكدًا على الحاجة إلى تغيير تنظيمي مستدام بدلاً من مجرد اعتماد التكنولوجيا. يسلط الضوء على معدل الفشل العالي لمبادرات الذكاء الاصطناعي التوليدي ويشارك تجارب شخصية عن التحولات الرقمية الفاشلة، مشددًا على أهمية التوافق بين الأفراد وال">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (alternates) -->
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="x-default">
+
+    <!-- Favicon & Styles -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "التحول الرقمي",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "التحول الرقمي",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/ar/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body dir="rtl">
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/ar/home/" aria-label="التحول الرقمي — الصفحة الرئيسية">
+            <img src="/images/logo.png" alt="شعار التحول الرقمي" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Mobile toggle -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="تبديل القائمة">☰</button>
+
+    <!-- Primary Nav -->
+    <nav id="primary-nav" aria-label="رئيسي">
+        <ul>
+            <li><a href="/ar/home/index.html" >الرئيسية</a></li>
+
+            <li class="dropdown">
+                <a href="/ar/shows/index.html" aria-haspopup="true" aria-expanded="false">البرامج</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/ar/episodes/index.html" aria-label="مقابلات — التحول الرقمي">
+                            التحول الرقمي
+                            <small class="nav-note">مقابلات</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/ar/briefs/index.html" aria-label="الأخبار — الرقمي هذا الأسبوع">
+                            الرقمي هذا الأسبوع
+                            <small class="nav-note">أخبار</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/ar/guests/index.html">الضيوف</a></li>
+            <li><a href="/ar/articles/index.html">المقالات</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/ar/community.html" aria-haspopup="true" aria-expanded="false">المجتمع</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/newsletter.html">النشرة البريدية</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">باتريون</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">مجموعة لينكدإن</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">المتجر</a></li>
+
+            <!-- About -->
+            <li class="dropdown">
+                <a href="/ar/about.html" aria-haspopup="true" aria-expanded="false">من نحن</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/about.html">حول البرنامج</a></li>
+                    <li role="none"><a role="menuitem" href="/ar/host.html">المُقدِّم: د. دارين بالسيفر</a></li>
+                    <li role="none"><a role="menuitem" href="/ar/sponsors/index.html">الرعاية والتواصل</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ar/search.html">بحث</a></li>
+
+            <!-- Languages -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">اللغات</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../ar/home/index.html">Home</a></li>
+        <li><a href="../../../ar/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 1: Why Digital Transformation Keeps Failing</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/ar/lectures/dta-1/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/ar/lectures/dta-1/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 1</span>
+                <span class="episode-title">Why Digital Transformation Keeps Failing</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-01-07" itemprop="datePublished">2026-01-07</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+
+            <meta itemprop="episodeNumber" content="1"/>
+            <meta itemprop="inLanguage" content="ar"/>
+        </header>
+
+        
+            <section class="video-container" aria-label="Watch the episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
+                <meta itemprop="name" content="لماذا تستمر التحولات الرقمية في الفشل Video">
+                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/o_HqigHbV1M">
+                <iframe
+                        width="auto"
+                        height="auto"
+                        src="https://www.youtube.com/embed/o_HqigHbV1M"
+                        title="لماذا تستمر التحولات الرقمية في الفشل Video"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                ></iframe>
+            </section>
+        
+
+        
+            <section class="podcast-container" aria-label="Listen to this episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
+                <meta itemprop="name" content="لماذا تستمر التحولات الرقمية في الفشل Audio">
+                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/55a6f16b">
+                <iframe
+                        width="100%"
+                        height="180"
+                        frameborder="0"
+                        scrolling="no"
+                        src="https://share.transistor.fm/e/55a6f16b"
+                        title="لماذا تستمر التحولات الرقمية في الفشل Audio"
+                        loading="lazy"
+                ></iframe>
+
+                <p class="listen-note">
+                    Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                </p>
+            </section>
+        
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>يتحدث الدكتور دارين بولسيفر عن الجوانب الحرجة لهندسة التحول الرقمي، مؤكدًا على الحاجة إلى تغيير تنظيمي مستدام بدلاً من مجرد اعتماد التكنولوجيا. يسلط الضوء على معدل الفشل العالي لمبادرات الذكاء الاصطناعي التوليدي ويشارك تجارب شخصية عن التحولات الرقمية الفاشلة، مشددًا على أهمية التوافق بين الأفراد والعمليات والسياسات والتكنولوجيا. كما تتناول المحادثة سرعة التغير التكنولوجي والتحديات التي تواجهها المؤسسات في التكيف مع هذه التحولات، خصوصًا مع تزايد استخدام الذكاء الاصطناعي التوليدي.</p>
+<p>نقاط رئيسية</p>
+<p>التحول الرقمي ليس مجرد اعتماد تكنولوجيا لمرة واحدة.
+يتطلب التحول الرقمي الناجح تغييرًا تنظيميًا مستدامًا.
+عادةً ما يؤدي النهج الذي يركز على التكنولوجيا إلى الفشل.
+يتضمن التغيير الفعال توافق الأفراد والعمليات والسياسات والتكنولوجيا.
+تعتبر النهجات الشاملة والنظامية أساسية لنجاح التحول الرقمي.
+تكون مبادرات الذكاء الاصطناعي التوليدي غالبًا معزولة وتفتقر إلى التكامل المؤسسي.
+تقوم المؤسسات بإنفاق مبالغ ضخمة على التكنولوجيا مع عائد استثمار محدود.
+التغيير الثقافي ضروري لنجاح التحول الرقمي.
+يمكن أن يؤدي عدم التوافق بين الاستراتيجية والتنفيذ إلى إحباط المبادرات.
+تتيح المرونة في الشركات الصغيرة لها التفوق على المؤسسات الكبرى.</p>
+<p>فصول</p>
+<p>00:00 مقدمة في هندسة التحول الرقمي
+01:00 فهم التحول الرقمي وتحدياته
+03:49 أهمية التغيير الشامل في المؤسسات
+06:54 دروس من تحولات رقمية فاشلة
+10:11 دور الذكاء الاصطناعي التوليدي في التحول الرقمي
+14:03 التنقل عبر التغيرات السريعة في التكنولوجيا والمؤسسات</p>
+
+
+            
+
+            
+                <div class="guests" aria-label="Guests">
+                    
+                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                    
+                </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>لماذا تستمر فشل التحول الرقمي: فهم التحديات التنظيمية المستمرة</h1>
+<p>لقد كان التحول الرقمي أولوية استراتيجية للمنظمات لعقود. لقد جاءت كل موجة تكنولوجية متعاقبة - نظم تخطيط الموارد المؤسسية، الأسطح السحابية، تحليلات البيانات، أتمتة العمليات، والذكاء الاصطناعي - مع وعد بتحويل كيفية عمل المنظمات وتقديم القيمة.</p>
+<p>ومع ذلك، على الرغم من الاستثمارات المستمرة والتقدم التكنولوجي المتواصل، تظل نتائج التحول غير متسقة وقصيرة الأمد أو محلية بشكل ضيق. يمكن للعديد من المنظمات الإشارة إلى مشاريع ناجحة أو تجارب رائدة، لكن عددًا أقل بكثير يمكنه إثبات تغيير على مستوى المؤسسة يدوم بعد التنفيذ الأولي.</p>
+<p>تثير هذه الفجوة المستمرة بين الطموح والنتيجة سؤالًا أساسيًا: <strong>لماذا يستمر فشل التحول الرقمي؟</strong></p>
+<p>لا تكمن الإجابة في تنفيذ ضعيف أو عدم كفاية التمويل أو تكنولوجيا غير ناضجة وحدها. إن تكرار الفشل عبر القطاعات وأجيال التكنولوجيا يشير إلى ظروف هيكلية أعمق - حوكمة غير متسقة، صنع قرار مجزأ، وجمود تنظيمي - تفشل المنظمات مرارًا وتكرارًا في معالجتها. في جوهر هذه الظروف هو التناقض المستمر عبر أربعة أبعاد: كيف يعمل الناس، كيف تتدفق العمليات، أي السياسات تشكل القرارات والحوافز، وكيف يتم تقديم وتطوير التكنولوجيا.</p>
+<hr>
+<h2>التحول الرقمي ليس مجرد تحديث تكنولوجي</h2>
+<p>أحد أسباب صعوبة تشخيص فشل التحول هو أن مصطلح &quot;التحول الرقمي&quot; يُستخدم بشكل غير دقيق. في العديد من المنظمات، يصبح بمثابة اختصار للتحديث: استبدال النظم القديمة، اعتماد منصات جديدة، أو تسريع التسليم من خلال أدوات ومنهجيات جديدة.</p>
+<p>ومع ذلك، فإن التحديث ليس هو التحول.</p>
+<p>يشير التحول الرقمي إلى <strong>تغيير تنظيمي مستمر</strong> - إعادة هيكلة كيفية عمل منظمة، وليس فقط التكنولوجيا التي تستخدمها. يعيد تشكيل كيفية اتخاذ القرارات، وكيف يتم تنسيق العمل عبر الوظائف، وكيف تعزز الحوافز الأهداف الاستراتيجية، وكيف يتم حوكمة النتائج على مر الزمن. في جوهره، يتطلب التحول التنسيق عبر <strong>الأشخاص، العملية، السياسة، والتكنولوجيا</strong> بحيث يعزز كل منها الآخر بدلاً من أن يتجهوا في اتجاهات مختلفة.</p>
+<p>تسهل التكنولوجيا التحول، لكنها ليست التحول بحد ذاته. عندما تتلاشى النتائج بعد انتهاء برنامج أو نشر منصة، تكون المنظمة قد قامت بتحديث مكونات بيئتها دون تغيير الظروف الهيكلية التي تشكل السلوك. هذه التفرقة مهمة لأنها تعيد تشكيل كل من النجاح والفشل: <strong>التغيير المستدام</strong>، وليس معالم التسليم، هو المقياس المحدد للتحول.</p>
+<hr>
+<h2>مشكلة الاستمرار: لماذا تتكرر فشل التحولات؟</h2>
+<p>لا تُعتبر فشل التحولات الرقمية حوادث منعزلة. إنها تتكرر عبر الصناعات - من الرعاية الصحية والخدمات المالية إلى التصنيع والحكومة - وعبر كلا القطاعين العام والخاص.</p>
+<p>تقوم المنظمات بتحديث النظم الأساسية، وإعادة تنظيم الفرق حول نماذج تشغيل جديدة، وإطلاق مبادرات شاملة على مستوى المؤسسة، فقط لتكرار جهود مماثلة بعد بضع سنوات باستخدام بائعين أو أطر أو منهجيات مختلفة. قد تقدم البرامج الفردية تحسينات قابلة للقياس ضمن حدود محددة. غالبًا ما تنجح التجارب في البيئات المسيطر عليها. ومع ذلك، تفشل المنظمة ككل في تغيير كيفية عملها على نطاق واسع.</p>
+<p>في مجالات ناشئة مثل الذكاء الاصطناعي التوليدي، يكون هذا النمط مرئيًا بشكل خاص. يمكن للعديد من المنظمات الإشارة إلى أدلة مفهومة أو نشرات تجريبية مثيرة للإعجاب، لكن الأبحاث المستقلة وجدت أن الغالبية العظمى من المبادرات لا تزال تفشل في الوصول إلى تبني مستدام على مستوى المؤسسة. تعمل الأدوات في عزل؛ تكافح المنظمة لامتصاصها.</p>
+<p>تكمن أهمية هذا النمط ليس في حجم أي فشل منفرد، ولكن في <strong>إمكانية تكراره</strong>. عندما تظهر نتائج مماثلة تحت فرق قيادة مختلفة، وأولويات استراتيجية، وتجميع تكنولوجي مختلف، تصبح التفسيرات المعتمدة على جودة التنفيذ أو الأدوات أقل مصداقية. الاستمرار هو إشارة. إنه يدل على أن الفشل <strong>هيكلي بدلاً من كونه عرضيًا</strong>، متجذر في كيفية تنسيق الأشخاص والعمليات والسياسات والتقنيات - أو الفشل في التنسيق - عبر المؤسسة.</p>
+<hr>
+<h2>أنماط الفشل المعروفة عبر جهود التحول</h2>
+<p>عبر المبادرات التحولية، تظهر نفس الأنماط بتناسق ملحوظ.</p>
+<p>تعبر المنظمات عن نية استراتيجية طموحة، لكن التنفيذ يتكشف من خلال الهياكل التنظيمية التي لم تُصمم أبدًا لدعم تلك النية. تظل الحوكمة مجزأة عبر صوامع وظيفية، كل واحدة تُحسن محليًا بدلاً من جماعيًا. تنجح الفرق ضمن مجالاتها الخاصة بينما تتآكل التماسك على مستوى المؤسسة.</p>
+<p>حتى عندما تبدو النتائج المبكرة إيجابية، غالبًا ما تتدهور مع مرور الوقت. تُدخل أنظمة جديدة دون تغييرات مقابلة في حقوق اتخاذ القرار أو هياكل المساءلة. تُرقمن العمليات التجارية بينما تستمر الحوافز في مكافأة السلوكيات القديمة. يتطور الأشخاص، العملية، السياسة، والتكنولوجيا ضمن جداول زمنية مستقلة، دون آلية معمارية للحفاظ على توافقهم.</p>
+<p>توضح قصة مألوفة هذه الديناميكية. تستبدل منظمة نظامًا قديمًا هزيلًا تم تجميعه بنظام حديث. من الناحية الفنية، تسير العمليات حسب الخطة. لكن المستخدمين في الميدان لا يشاركون بشكل عميق، والتدريب محدود، وتُعرض العمليات الحالية ببساطة على الأداة الجديدة، ولا تُحدث سياسات لتعكس القدرات أو الإطار الجديد. في يوم الإطلاق، يفشل النظام تحت ظروف العالم الحقيقي؛ يعود المستخدمون إلى الطريقة القديمة للعمل، ويضطر القادة إلى التراجع. فقط عندما تعيد المنظمة النظر في التغيير من خلال عدسة <strong>الأشخاص، العملية، السياسة، والتكنولوجيا</strong> - بدلاً من التكنولوجيا وحدها - يبدأ التحول في الاستقرار.</p>
+<p>يصبح التحول شيئًا تقوم به المنظمات بشكل دوري من خلال المبادرات بدلاً من كونه شيئًا تكونه من خلال القدرة المستدامة والثقافة. تظهر هذه الأنماط في البرامج الممولة جيدًا والموجهة جيدًا مع رعاية تنفيذية بنفس القدر مثل الجهود غير الممولة. إن استمراريتها هي بالضبط ما يجعلها مؤذية للغاية.</p>
+<hr>
+<h2>لماذا لا تحل التكنولوجيا وحدها عدم التوافق الهيكلي؟</h2>
+<p>إذا كانت الأدوات الأفضل تنتج نتائج تنظيمية أفضل بشكل موثوق، لكان من الممكن أن تحل عقود من التحسن الأسي في قوة الحوسبة، وربط الشبكات، وتحليلات البيانات التحدي التحويلي. بدلاً من ذلك، غالبًا ما زادت التسارع التكنولوجي من <strong>عدم التوافق</strong> القائم.</p>
+<p>يسمح التسليم الأسرع للمنظمات بالتحرك بسرعة أكبر، لكن ليس بالضرورة في نفس الاتجاه. تتيح المنصات الحديثة والممارسات الرشيقة تغييرات سريعة في الأطراف — ضمن الفرق والوحدات التجارية — بينما تظل النواة التنظيمية غير متغيرة في هياكل حوكمتها، نماذج حوافزها، وسلطة صنع القرار.</p>
+<p>يوفر الذكاء الاصطناعي التوليدي مثالًا معاصرًا. العديد من المنظمات غارقة في أدلة صغيرة على المفاهيم و&quot;مشاريع علمية&quot; تعرض ما يمكن أن تفعله النماذج في عزلة - على محطة عمل المطور أو ضمن قسم واحد. لكن عندما تُدفع تلك الأفكار نحو الإنتاج، تصطدم مع العمليات والسياسات وهياكل المخاطر القائمة. ما يعمل بسلاسة في مختبر أو تجربة يتعثر عند مواجهة أحمال العمل الحقيقية، والقيود التنظيمية، والاعتماد بين الفرق.</p>
+<p>تعامل التحول باعتباره سلسلة من دورات اعتماد التكنولوجيا يُغفل المشكلة الأساسية. يمكن أن تسرع التكنولوجيا التغيير، لكنها لا تستطيع أن تحل محل <strong>التوافق الهيكلي بين الاستراتيجية والتنفيذ والحوكمة</strong>. دون نهج معماري متكامل ينسق بشكل صريح الأشخاص والعمليات والسياسات والتكنولوجيا، تميل جهود التحديث إلى إنتاج مكاسب محلية أو قصيرة الأمد بدلاً من تحول مستدام.</p>
+<hr>
+<h2>لماذا تعتبر الفشل المستمر أكثر أهمية من أي وقت مضى؟</h2>
+<p>تتزايد عواقب الفشل المستمر في التحول. مع ضغط دورات اعتماد التكنولوجيا من سنوات إلى أشهر وزيادة الترابط بين الأنظمة التنظيمية، تتراكم تكلفة عدم التوافق بسرعة أكبر.</p>
+<p>لم تعد المنظمات تفشل في التحول مرة واحدة فقط؛ بل <strong>تفشل بشكل أسرع</strong>. تزيد كل دورة من الديون الفنية، وتعقد التنظيم، وشكوك الأطراف المعنية، مما يجعل الجهود التالية أكثر صعوبة وتكلفة.</p>
+<p>في الوقت نفسه، تتغير ديناميكيات القوى العاملة. لم تعد العديد من المنظمات الكبيرة تفترض أن القادة الرئيسيين أو الممارسين سيظلون في نفس الأدوار طوال مدة التحول المتعددة السنوات. يمكن أن يتآكل التقدم الثقافي وتحسينات العمليات مع انتقال الأشخاص، آخذين معهم المعرفة الضمنية بينما يعود الموظفون الجدد إلى الأنماط المألوفة.</p>
+<p>في غضون ذلك، يمكن أن تتبنى شركات أصغر وأكثر رشاقة - غير المثقلة بالأنظمة والسياسات المتراكمة لعقود - قدرات جديدة بسرعة وتصميم هياكلها حولها من البداية. لا تحتاج إلى فك عدم التوافق القديم قبل أن تتمكن من التحرك.</p>
+<p>إن إدراك الطبيعة الهيكلية لفشل التحول هو شرط أساسي لمواجهته بفعالية. قبل مناقشة الحلول، أو الاستجابات المعمارية، أو أطر القدرات، يجب على المنظمات الاعتراف بأن التحول هو في الأساس <strong>تحدٍ تنظيمي وحوكمي</strong>. إن غياب إطار معماري متماسك يحافظ على توافق الأشخاص والعمليات والسياسات والتكنولوجيا ليس مجرد اعتبار ثانوي - بل هو عامل خطر أساسي يشكل كل نتيجة للتحول.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/ar/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/ar/episodes/index.html",
+  "inLanguage": "ar",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/ar/lectures/dta-1/index.html#episode",
+  "url": "https://www.embracingdigital.org/ar/lectures/dta-1/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/ar/lectures/dta-1/index.html"
+  },
+  "name": "لماذا تستمر التحولات الرقمية في الفشل",
+  "episodeNumber": 1,
+  "datePublished": "2026-01-07",
+  "inLanguage": "ar",
+  "description": "يتحدث الدكتور دارين بولسيفر عن الجوانب الحرجة لهندسة التحول الرقمي، مؤكدًا على الحاجة إلى تغيير تنظيمي مستدام بدلاً من مجرد اعتماد التكنولوجيا. يسلط الضوء على معدل الفشل العالي لمبادرات الذكاء الاصطناعي التوليدي ويشارك تجارب شخصية عن التحولات الرقمية الفاشلة، مشددًا على أهمية التوافق بين الأفراد وال",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/ar/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/ar/episodes/dta-1/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "لماذا تستمر التحولات الرقمية في الفشل Video",
+      "embedUrl": "https://www.youtube.com/embed/o_HqigHbV1M"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "لماذا تستمر التحولات الرقمية في الفشل Audio",
+      "contentUrl": "https://share.transistor.fm/e/55a6f16b"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../ar/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>حقوق الطبع والنشر &2025 شركة بيدار للإنتاج ذ.م.م</p>
+        <p&gt;جميع الحقوق محفوظة&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Why Digital Transformation Keeps Failing | Digital Transformation Architect</title>
+    <meta name="description" content="Dr. Darren Pulsipher discusses the critical aspects of digital transformation architecture, emphasizing the need for sustained organizational change rather than mere technology adoption. He highlights the high failure rate of generative AI initiatives and shares personal experiences of failed digita">
+    
+    
+    <link rel="canonical" href="https://www.embracingdigital.org/en/lectures/dta-1/index.html">
+    
+
+    <!-- Hreflang alternates (optional: pass `langs` into the template) -->
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Why Digital Transformation Keeps Failing | Digital Transformation Architect">
+    <meta property="og:description" content="Dr. Darren Pulsipher discusses the critical aspects of digital transformation architecture, emphasizing the need for sustained organizational change rather than mere technology adoption. He highlights the high failure rate of generative AI initiatives and shares personal experiences of failed digita">
+    <meta property="og:url" content="https://www.embracingdigital.org/en/lectures/dta-1/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Why Digital Transformation Keeps Failing | Digital Transformation Architect">
+    <meta name="twitter:description" content="Dr. Darren Pulsipher discusses the critical aspects of digital transformation architecture, emphasizing the need for sustained organizational change rather than mere technology adoption. He highlights the high failure rate of generative AI initiatives and shares personal experiences of failed digita">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="en/home/index.html"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="en/shows/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="en/digital-transformation/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+        <!-- Right side (Languages) -->
+        <ul class="nav-right">
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../en/home/index.html">Home</a></li>
+        <li><a href="../../../en/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 1: Why Digital Transformation Keeps Failing</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/en/lectures/dta-1/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/en/lectures/dta-1/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 1</span>
+                <span class="episode-title">Why Digital Transformation Keeps Failing</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-01-07" itemprop="datePublished">2026-01-07</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+
+            <meta itemprop="episodeNumber" content="1"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+            <section class="video-container" aria-label="Watch the episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
+                <meta itemprop="name" content="Why Digital Transformation Keeps Failing Video">
+                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/o_HqigHbV1M">
+                <iframe
+                        width="auto"
+                        height="auto"
+                        src="https://www.youtube.com/embed/o_HqigHbV1M"
+                        title="Why Digital Transformation Keeps Failing Video"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                ></iframe>
+            </section>
+        
+
+        
+            <section class="podcast-container" aria-label="Listen to this episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
+                <meta itemprop="name" content="Why Digital Transformation Keeps Failing Audio">
+                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/55a6f16b">
+                <iframe
+                        width="100%"
+                        height="180"
+                        frameborder="0"
+                        scrolling="no"
+                        src="https://share.transistor.fm/e/55a6f16b"
+                        title="Why Digital Transformation Keeps Failing Audio"
+                        loading="lazy"
+                ></iframe>
+
+                <p class="listen-note">
+                    Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                </p>
+            </section>
+        
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Dr. Darren Pulsipher discusses the critical aspects of digital transformation architecture, emphasizing the need for sustained organizational change rather than mere technology adoption. He highlights the high failure rate of generative AI initiatives and shares personal experiences of failed digital transformations, stressing the importance of aligning people, processes, policies, and technology. The conversation also touches on the rapid pace of technological change and the challenges organizations face in adapting to these shifts, particularly with the rise of generative AI.</p>
+<p>Takeaways</p>
+<p>Digital transformation is not a one-time technology adoption.
+Successful digital transformation requires sustained organizational change.
+A technology-first approach often leads to failure.
+Effective change involves aligning people, process, policy, and technology.
+Holistic and systemic approaches are essential for successful digital transformation.
+Generative AI initiatives are often isolated and lack enterprise integration.
+Organizations are spending vast amounts on technology with little ROI.
+Cultural change is crucial for the success of digital transformation.
+Misalignment between strategy and execution can derail initiatives.
+Agility in small companies allows them to outpace larger organizations.</p>
+<p>Chapters</p>
+<p>00:00 Introduction to Digital Transformation Architecture
+01:00 Understanding Digital Transformation and Its Challenges
+03:49 The Importance of Holistic Change in Organizations
+06:54 Lessons from Failed Digital Transformations
+10:11 The Role of Generative AI in Digital Transformation
+14:03 Navigating Rapid Changes in Technology and Organizations</p>
+
+
+            
+
+            
+                <div class="guests" aria-label="Guests">
+                    
+                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                    
+                </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>Why Digital Transformation Keeps Failing: Understanding Persistent Organizational Challenges</h1>
+<p>Digital transformation has been a strategic priority for organizations for decades. Each new wave of technology—enterprise resource planning systems, cloud platforms, data analytics, process automation, and artificial intelligence—has come with the promise of fundamentally changing how organizations operate and deliver value.</p>
+<p>Yet, despite sustained investment and ongoing technological advancements, the outcomes of these transformations remain inconsistent, short-lived, or narrowly focused. Many organizations can highlight successful projects or pilots, but far fewer can show enterprise-level changes that last beyond the initial implementation.</p>
+<p>This enduring gap between aspirations and outcomes raises a critical question: <strong>why does digital transformation keep failing?</strong></p>
+<p>The answer does not merely lie in poor execution, insufficient funding, or immature technology. The recurring failures across sectors and generations of technology highlight deeper structural issues—misaligned governance, fragmented decision-making, and organizational inertia—that organizations repeatedly fail to address. At the heart of these issues is a persistent misalignment across four dimensions: how people work, how processes flow, which policies guide decisions and incentives, and how technology is introduced and evolved.</p>
+<hr>
+<h2>Digital Transformation Is Not a Technology Upgrade</h2>
+<p>One reason transformation failure is so challenging to diagnose is that the term &quot;digital transformation&quot; is often used inaccurately. In many organizations, it becomes a catch-all for modernization: replacing legacy systems, adopting new platforms, or speeding up delivery through new tools and methodologies.</p>
+<p>However, modernization is not synonymous with transformation.</p>
+<p>Digital transformation refers to <strong>sustained organizational change</strong>—the restructuring of how an organization operates, not just the technologies it deploys. It reshapes decision-making processes, coordination of work across functions, reinforcement of strategic objectives through incentives, and governance of outcomes over time. At its core, transformation requires alignment across <strong>people, process, policy, and technology</strong> so that each aspect reinforces the others rather than pulling in different directions.</p>
+<p>Technology enables transformation, but it is not transformation itself. When outcomes fade after a program concludes or a platform is deployed, the organization has modernized components of its environment without changing the structural conditions that shape behavior. This distinction is important because it reframes both success and failure: <strong>durable change</strong>, not delivery milestones, is the defining measure of transformation.</p>
+<hr>
+<h2>The Persistence Problem: Why Transformation Failures Recur</h2>
+<p>Digital transformation failures are not isolated incidents. They occur across industries—from healthcare and financial services to manufacturing and government—and across both public and private sectors.</p>
+<p>Organizations modernize core systems, reorganize teams around new operating models, and launch enterprise-wide initiatives, only to repeat similar efforts a few years later with different vendors, frameworks, or methodologies. Individual programs might deliver measurable improvements within specific boundaries. Pilots often succeed in controlled environments. Yet the organization as a whole fails to change its operations at scale.</p>
+<p>In emerging fields like generative AI, this pattern is particularly evident. Many organizations can cite impressive proofs of concept or experimental deployments, but independent research shows that most initiatives still fail to achieve sustainable, enterprise-wide adoption. The tools work in isolation; the organization struggles to integrate them effectively.</p>
+<p>The significance of this pattern lies not in the scale of any single failure but in its <strong>repeatability</strong>. When similar outcomes arise under different leadership teams, strategic priorities, and technology setups, explanations based solely on execution quality or tooling become increasingly implausible. Persistence is a signal, indicating that failure is <strong>structural rather than incidental</strong>, rooted in how people, processes, policies, and technologies are coordinated—or fail to be coordinated—across the enterprise.</p>
+<hr>
+<h2>Recognizable Failure Patterns Across Transformation Efforts</h2>
+<p>Across transformation initiatives, the same patterns manifest with remarkable consistency.</p>
+<p>Organizations set ambitious strategic goals, yet execution occurs through structures that were never designed to support that intent. Governance remains fragmented across functional silos, each optimizing locally rather than collectively. Teams may succeed within their own domains while enterprise-level coherence diminishes.</p>
+<p>Even when initial outcomes seem positive, they often deteriorate over time. New systems are launched without concurrent changes to decision rights or accountability structures. Business processes are digitized while incentives continue to reward established behaviors. People, processes, policies, and technologies evolve on their own timelines, without a cohesive mechanism to keep them aligned.</p>
+<p>A familiar scenario illustrates this dynamic: an organization replaces a fragile legacy system with a modern platform. Technically, the deployment is successful. But frontline users are not adequately involved, training is minimal, existing processes are merely &quot;mapped&quot; onto the new tool, and no policies are updated to reflect new capabilities or constraints. On launch day, the system falters under real-world conditions; users revert to old ways of working, and leadership is compelled to revert to the previous system. Only when the organization reassesses the change through the lens of <strong>people, process, policy, and technology</strong>—rather than focusing solely on technology—does the transformation begin to take hold.</p>
+<p>Transformation becomes something organizations do periodically through initiatives rather than an inherent aspect of their sustained capability and culture. These patterns emerge in well-funded, well-led programs with executive sponsorship just as readily as in under-resourced projects. Their persistence is precisely what makes them so damaging.</p>
+<hr>
+<h2>Why Technology Alone Does Not Resolve Structural Misalignment</h2>
+<p>If better tools reliably produced better organizational outcomes, decades of exponential advancements in computing power, connectivity, and analytics would have solved the transformation challenge. Instead, technological acceleration has frequently <strong>amplified</strong> existing misalignments.</p>
+<p>Faster delivery allows organizations to act more quickly but not necessarily in a unified direction. Modern platforms and agile practices enable rapid changes at the edges—within teams and business units—while the organizational core remains stagnant in its governance structures, incentive models, and decision-making authority.</p>
+<p>Generative AI serves as a contemporary example. Many organizations find themselves inundated with small proofs of concept and “science projects” that showcase what models can achieve in isolation—on a developer&#39;s workstation or within a single department. However, when those same ideas are pushed towards production, they collide with established processes, policies, and risk frameworks. What operates smoothly in a lab or pilot often falters when faced with real workloads, regulatory constraints, and inter-team dependencies.</p>
+<p>Treating transformation as a sequence of technology adoption cycles obscures the underlying issues. Technology can expedite change, but it cannot replace <strong>structural alignment between strategy, execution, and governance</strong>. Without an integrated architectural approach that explicitly aligns people, process, policy, and technology, modernization efforts are likely to yield localized or fleeting gains rather than sustained transformation.</p>
+<hr>
+<h2>Why Persistent Failure Matters More Than Ever</h2>
+<p>The consequences of ongoing transformation failure are growing. As technology adoption cycles shrink from years to months and organizational ecosystems become more interconnected, the costs of misalignment increase rapidly.</p>
+<p>Organizations are not simply failing to transform once; they are <strong>failing faster</strong>. Each cycle contributes to technical debt, organizational complexity, and stakeholder skepticism, making subsequent efforts more challenging and expensive.</p>
+<p>At the same time, workforce dynamics are shifting. Many large organizations can no longer presume that key leaders or practitioners will remain in the same roles throughout the duration of a multi-year transformation. Cultural advances and process improvements can erode as individuals leave, taking tacit knowledge with them, while newer hires revert to familiar patterns.</p>
+<p>Meanwhile, smaller, more agile competitors—free from the burden of decades of outdated systems and policies—can swiftly adopt new capabilities and design their structures around them from the outset. They do not need to address legacy misalignments before moving forward.</p>
+<p>Recognizing the structural nature of transformation failure is essential for effectively addressing it. Before discussing solutions, architectural responses, or capability frameworks, organizations must understand that transformation is fundamentally an <strong>organizational and governance challenge</strong>. The absence of a coherent architectural framework that aligns people, process, policy, and technology is not a secondary concern—it&#39;s a primary risk factor that shapes every transformation outcome.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/en/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/en/episodes/index.html",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/en/lectures/dta-1/index.html#episode",
+  "url": "https://www.embracingdigital.org/en/lectures/dta-1/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/en/lectures/dta-1/index.html"
+  },
+  "name": "Why Digital Transformation Keeps Failing",
+  "episodeNumber": 1,
+  "datePublished": "2026-01-07",
+  "inLanguage": "en",
+  "description": "Dr. Darren Pulsipher discusses the critical aspects of digital transformation architecture, emphasizing the need for sustained organizational change rather than mere technology adoption. He highlights the high failure rate of generative AI initiatives and shares personal experiences of failed digita",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/en/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/en/episodes/dta-1/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Why Digital Transformation Keeps Failing Video",
+      "embedUrl": "https://www.youtube.com/embed/o_HqigHbV1M"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Why Digital Transformation Keeps Failing Audio",
+      "contentUrl": "https://share.transistor.fm/e/55a6f16b"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
