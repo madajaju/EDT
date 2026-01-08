@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Why Digital Transformation Fails and Why O-DXA Exists | Digital Transformation Architect</title>
+    <meta name="description" content="Weekly briefings, frameworks, interviews, and architectural analysis to help leaders navigate digital transformation.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/en/digital-transformation/whitepapers/2026-01-why-digital-transformation-fails-and-why-odxa-exists">
+    
+
+    <!-- Hreflang alternates (optional: pass `langs` into the template) -->
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Why Digital Transformation Fails and Why O-DXA Exists | Digital Transformation Architect">
+    <meta property="og:description" content="Weekly briefings, frameworks, interviews, and architectural analysis to help leaders navigate digital transformation.">
+    <meta property="og:url" content="https://embracingdigital.org/en/digital-transformation/whitepapers/2026-01-why-digital-transformation-fails-and-why-odxa-exists">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Why Digital Transformation Fails and Why O-DXA Exists | Digital Transformation Architect">
+    <meta name="twitter:description" content="Weekly briefings, frameworks, interviews, and architectural analysis to help leaders navigate digital transformation.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="en/home/index.html"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="en/shows/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="en/digital-transformation/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+        <!-- Right side (Languages) -->
+        <ul class="nav-right">
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<style>
+    /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+    /* Uncomment the following line when using as a custom stylesheet */
+    /* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+    html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+    a{background:none}
+    a:focus{outline:thin dotted}
+    a:active,a:hover{outline:0}
+    h1{font-size:2em;margin:.67em 0}
+    b,strong{font-weight:bold}
+    abbr{font-size:.9em}
+    abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+    dfn{font-style:italic}
+    hr{height:0}
+    mark{background:#ff0;color:#000}
+    code,kbd,pre,samp{font-family:monospace;font-size:1em}
+    pre{white-space:pre-wrap}
+    small{font-size:80%}
+    sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+    sup{top:-.5em}
+    sub{bottom:-.25em}
+    img{border:0}
+    svg:not(:root){overflow:hidden}
+    figure{margin:0}
+    audio,video{display:inline-block}
+    audio:not([controls]){display:none;height:0}
+    fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+    legend{border:0;padding:0}
+    button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+    button,input{line-height:normal}
+    button,select{text-transform:none}
+    button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+    button[disabled],html input[disabled]{cursor:default}
+    input[type=checkbox],input[type=radio]{padding:0}
+    button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+    textarea{overflow:auto;vertical-align:top}
+    table{border-collapse:collapse;border-spacing:0}
+    *,::before,::after{box-sizing:border-box}
+    html,body{font-size:100%}
+    body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+    a:hover{cursor:pointer}
+    img,object,embed{max-width:100%;height:auto}
+    object,embed{height:100%}
+    img{-ms-interpolation-mode:bicubic}
+    .left{float:left!important}
+    .right{float:right!important}
+    .text-left{text-align:left!important}
+    .text-right{text-align:right!important}
+    .text-center{text-align:center!important}
+    .text-justify{text-align:justify!important}
+    .hide{display:none}
+    img,object,svg{display:inline-block;vertical-align:middle}
+    textarea{height:auto;min-height:50px}
+    select{width:100%}
+    .subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+    div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+    a{color:#2156a5;text-decoration:underline;line-height:inherit}
+    a:hover,a:focus{color:#1d4b8f}
+    a img{border:0}
+    p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+    p aside{font-size:.875em;line-height:1.35;font-style:italic}
+    h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#123456;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+    h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+    h1{font-size:2.125em}
+    h2{font-size:1.6875em}
+    h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+    h4,h5{font-size:1.125em}
+    h6{font-size:1em}
+    hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+    em,i{font-style:italic;line-height:inherit}
+    strong,b{font-weight:bold;line-height:inherit}
+    small{font-size:60%;line-height:inherit}
+    code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+    ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+    ul,ol{margin-left:1.5em}
+    ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+    ul.circle{list-style-type:circle}
+    ul.disc{list-style-type:disc}
+    ul.square{list-style-type:square}
+    ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
+    ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+    dl dt{margin-bottom:.3125em;font-weight:bold}
+    dl dd{margin-bottom:1.25em}
+    blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+    blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+    @media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+        h1{font-size:2.75em}
+        h2{font-size:2.3125em}
+        h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+        h4{font-size:1.4375em}}
+    table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+    table thead,table tfoot{background:#f7f8f7}
+    table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+    table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+    table tr.even,table tr.alt{background:#f8f8f7}
+    table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+    h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+    h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+    .center{margin-left:auto;margin-right:auto}
+    .stretch{width:100%}
+    .clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+    .clearfix::after,.float-group::after{clear:both}
+    :not(pre).nobreak{word-wrap:normal}
+    :not(pre).nowrap{white-space:nowrap}
+    :not(pre).pre-wrap{white-space:pre-wrap}
+    :not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+    pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+    pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+    pre>code{display:block}
+    pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+    em em{font-style:normal}
+    strong strong{font-weight:400}
+    .keyseq{color:rgba(51,51,51,.8)}
+    kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+    .keyseq kbd:first-child{margin-left:0}
+    .keyseq kbd:last-child{margin-right:0}
+    .menuseq,.menuref{color:#000}
+    .menuseq b:not(.caret),.menuref{font-weight:inherit}
+    .menuseq{word-spacing:-.02em}
+    .menuseq b.caret{font-size:1.25em;line-height:.8}
+    .menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+    b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+    b.button::before{content:"[";padding:0 3px 0 2px}
+    b.button::after{content:"]";padding:0 2px 0 3px}
+    p a>code:hover{color:rgba(0,0,0,.9)}
+    #header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+    #header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+    #header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+    #content{margin-top:1.25em}
+    #content::before{content:none}
+    #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+    #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+    #header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
+    #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+    #header .details span:first-child{margin-left:-.125em}
+    #header .details span.email a{color:rgba(0,0,0,.85)}
+    #header .details br{display:none}
+    #header #revnumber{text-transform:capitalize}
+    #content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+    #toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+    #toc>ul{margin-left:.125em}
+    #toc ul.sectlevel0>li>a{font-style:italic}
+    #toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+    #toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+    #toc li{line-height:1.3334;margin-top:.3334em}
+    #toc a{text-decoration:none}
+    #toc a:active{text-decoration:underline}
+    #toctitle{color:#7a2518;font-size:1.2em}
+    @media screen and (min-width:768px){#toctitle{font-size:1.375em}
+        body.toc2{padding-left:15em;padding-right:0}
+        body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+        #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+        #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+        #toc.toc2>ul{font-size:.9em;margin-bottom:0}
+        #toc.toc2 ul ul{margin-left:0;padding-left:1em}
+        #toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+        body.toc2.toc-right{padding-left:0;padding-right:15em}
+        body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+    @media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+        #toc.toc2{width:20em}
+        #toc.toc2 #toctitle{font-size:1.375em}
+        #toc.toc2>ul{font-size:.95em}
+        #toc.toc2 ul ul{padding-left:1.25em}
+        body.toc2.toc-right{padding-left:0;padding-right:20em}}
+    #content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+    #content #toc>:first-child{margin-top:0}
+    #content #toc>:last-child{margin-bottom:0}
+    #footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+    #footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+    #content{margin-bottom:.625em}
+    .sect1{padding-bottom:.625em}
+    @media screen and (min-width:768px){#content{margin-bottom:1.25em}
+        .sect1{padding-bottom:1.25em}}
+    .sect1:last-child{padding-bottom:0}
+    .sect1+.sect1{border-top:1px solid #e7e7e9}
+    #content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+    #content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{font-size:.85em;display:block;padding-top:.1em}
+    #content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+    #content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#123456;text-decoration:none}
+    #content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+    details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+    details{margin-left:1.25rem}
+    details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+    details>summary::-webkit-details-marker{display:none}
+    details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+    details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+    details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+    .admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+    table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+    .paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+    .admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+    .admonitionblock>table td.icon{text-align:center;width:80px}
+    .admonitionblock>table td.icon img{max-width:none}
+    .admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+    .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+    .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+    .exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+    .sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+    .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+    .exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+    .exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+    .literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+    @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+    @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+    .literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+    .literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+    .listingblock>.content{position:relative}
+    .listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+    .listingblock:hover code[data-lang]::before{display:block}
+    .listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+    .listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+    .listingblock pre.highlightjs{padding:0}
+    .listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+    .listingblock pre.prettyprint{border-width:0}
+    .prettyprint{background:#f7f7f8}
+    pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+    pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+    pre.prettyprint li code[data-lang]::before{opacity:1}
+    pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+    table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+    table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+    table.linenotable td.code{padding-left:.75em}
+    table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+    pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+    .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+    .quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+    .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+    .quoteblock blockquote{margin:0;padding:0;border:0}
+    .quoteblock blockquote::before{float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+    .quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+    .quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+    .verseblock{margin:0 1em 1.25em}
+    .verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+    .verseblock pre strong{font-weight:400}
+    .verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+    .quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+    .quoteblock .attribution br,.verseblock .attribution br{display:none}
+    .quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+    .quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+    .quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+    .quoteblock.abstract{margin:0 1em 1.25em;display:block}
+    .quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+    .quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+    .quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+    .quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+    .quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+    p.tableblock:last-child{margin-bottom:0}
+    td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+    td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+    table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+    table.grid-all>*>tr>*{border-width:1px}
+    table.grid-cols>*>tr>*{border-width:0 1px}
+    table.grid-rows>*>tr>*{border-width:1px 0}
+    table.frame-all{border-width:1px}
+    table.frame-ends{border-width:1px 0}
+    table.frame-sides{border-width:0 1px}
+    table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+    table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+    table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+    table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+    table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+    th.halign-left,td.halign-left{text-align:left}
+    th.halign-right,td.halign-right{text-align:right}
+    th.halign-center,td.halign-center{text-align:center}
+    th.valign-top,td.valign-top{vertical-align:top}
+    th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+    th.valign-middle,td.valign-middle{vertical-align:middle}
+    table thead th,table tfoot th{font-weight:bold}
+    tbody tr th{background:#f7f8f7}
+    tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+    p.tableblock>code:only-child{background:none;padding:0}
+    p.tableblock{font-size:1em}
+    ol{margin-left:1.75em}
+    ul li ol{margin-left:1.5em}
+    dl dd{margin-left:1.125em}
+    dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+    li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+    ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+    ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+    ul.unstyled,ol.unstyled{margin-left:0}
+    li>p:empty:only-child::before{content:"";display:inline-block}
+    ul.checklist>li>p:first-child{margin-left:-1em}
+    ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+    ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+    ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+    ul.inline>li{margin-left:1.25em}
+    .unstyled dl dt{font-weight:400;font-style:normal}
+    ol.arabic{list-style-type:decimal}
+    ol.decimal{list-style-type:decimal-leading-zero}
+    ol.loweralpha{list-style-type:lower-alpha}
+    ol.upperalpha{list-style-type:upper-alpha}
+    ol.lowerroman{list-style-type:lower-roman}
+    ol.upperroman{list-style-type:upper-roman}
+    ol.lowergreek{list-style-type:lower-greek}
+    .hdlist>table,.colist>table{border:0;background:none}
+    .hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+    td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+    td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+    td.hdlist2{word-wrap:anywhere}
+    .literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+    .colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+    .colist td:not([class]):first-child img{max-width:none}
+    .colist td:not([class]):last-child{padding:.25em 0}
+    .thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+    .imageblock.left{margin:.25em .625em 1.25em 0}
+    .imageblock.right{margin:.25em 0 1.25em .625em}
+    .imageblock>.title{margin-bottom:0}
+    .imageblock.thumb,.imageblock.th{border-width:6px}
+    .imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+    .image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+    .image.left{margin-right:.625em}
+    .image.right{margin-left:.625em}
+    a.image{text-decoration:none;display:inline-block}
+    a.image object{pointer-events:none}
+    sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+    sup.footnote a,sup.footnoteref a{text-decoration:none}
+    sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
+    #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+    #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+    #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+    #footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+    #footnotes .footnote:last-of-type{margin-bottom:0}
+    #content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+    div.unbreakable{page-break-inside:avoid}
+    .big{font-size:larger}
+    .small{font-size:smaller}
+    .underline{text-decoration:underline}
+    .overline{text-decoration:overline}
+    .line-through{text-decoration:line-through}
+    .aqua{color:#00bfbf}
+    .aqua-background{background:#00fafa}
+    .black{color:#000}
+    .black-background{background:#000}
+    .blue{color:#0000bf}
+    .blue-background{background:#0000fa}
+    .fuchsia{color:#bf00bf}
+    .fuchsia-background{background:#fa00fa}
+    .gray{color:#606060}
+    .gray-background{background:#7d7d7d}
+    .green{color:#006000}
+    .green-background{background:#007d00}
+    .lime{color:#00bf00}
+    .lime-background{background:#00fa00}
+    .maroon{color:#600000}
+    .maroon-background{background:#7d0000}
+    .navy{color:#000060}
+    .navy-background{background:#00007d}
+    .olive{color:#606000}
+    .olive-background{background:#7d7d00}
+    .purple{color:#600060}
+    .purple-background{background:#7d007d}
+    .red{color:#bf0000}
+    .red-background{background:#fa0000}
+    .silver{color:#909090}
+    .silver-background{background:#bcbcbc}
+    .teal{color:#006060}
+    .teal-background{background:#007d7d}
+    .white{color:#bfbfbf}
+    .white-background{background:#fafafa}
+    .yellow{color:#bfbf00}
+    .yellow-background{background:#fafa00}
+    span.icon>.fa{cursor:default}
+    a span.icon>.fa{cursor:inherit}
+    .admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+    .admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+    .admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+    .admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+    .admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+    .admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+    .conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+    .conum[data-value] *{color:#fff!important}
+    .conum[data-value]+b{display:none}
+    .conum[data-value]::after{content:attr(data-value)}
+    pre .conum[data-value]{position:relative;top:-.125em}
+    b.conum *{color:inherit!important}
+    .conum:not([data-value]):empty{display:none}
+    dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+    h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+    p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+    p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
+    p{margin-bottom:1.25rem}
+    .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+    .exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+    .print-only{display:none!important}
+    @page{margin:1.25cm .75cm}
+    @media print{*{box-shadow:none!important;text-shadow:none!important}
+        html{font-size:80%}
+        a{color:inherit!important;text-decoration:underline!important}
+        a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+        a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+        abbr[title]{border-bottom:1px dotted}
+        abbr[title]::after{content:" (" attr(title) ")"}
+        pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+        thead{display:table-header-group}
+        svg{max-width:100%}
+        p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+        h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+        #header,#content,#footnotes,#footer{max-width:none}
+        #toc,.sidebarblock,.exampleblock>.content{background:none!important}
+        #toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+        body.book #header{text-align:center}
+        body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+        body.book #header .details{border:0!important;display:block;padding:0!important}
+        body.book #header .details span:first-child{margin-left:0!important}
+        body.book #header .details br{display:block}
+        body.book #header .details br+span::before{content:none!important}
+        body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+        body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+        .listingblock code[data-lang]::before{display:block}
+        #footer{padding:0 .9375em}
+        .hide-on-print{display:none!important}
+        .print-only{display:block!important}
+        .hide-for-print{display:none!important}
+        .show-for-print{display:inherit!important}}
+    @media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+        .sect1{padding:0!important}
+        .sect1+.sect1{border:0}
+        #footer{background:none}
+        #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+    @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+        <div id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/en/digital-transformation/whitepapers/2026-01-why-digital-transformation-fails-and-why-odxa-exists">
+                    <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/en/digital-transformation/whitepapers/2026-01-why-digital-transformation-fails-and-why-odxa-exists"/>
+                
+
+            <h1 id="episode-title" itemprop="name" style="color:#fff;">
+                <span class="episode-title">Why Digital Transformation Fails and Why O-DXA Exists</span>
+            </h1>
+
+            <p class="episode-meta" style="color:#fff;">
+                
+                    <time datetime="2026-01-10" itemprop="datePublished">2026-01-10</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+           by <span class="host-name">Dr. Darren Pulsipher</span>
+                    <p class="episode-actions">
+        <a class="download-pdf"
+           href="https://embracingdigital.org/en/digital-transformation/whitepapers/2026-01-why-digital-transformation-fails-and-why-odxa-exists/whitepaper.pdf"
+           itemprop="encoding"
+           itemscope
+           itemtype="https://schema.org/MediaObject" style="color:#fff;">
+            <meta itemprop="encodingFormat" content="application/pdf">
+            Download PDF
+        </a>
+    </p>
+        </span>
+            </p>
+            <meta itemprop="inLanguage" content="en"/>
+        </div>
+
+        <section class="show-notes" aria-label="Show notes">
+            <div id="preamble">
+<div class="sectionbody">
+<div class="quoteblock abstract">
+<blockquote>
+<div class="paragraph">
+<p>Digital transformation initiatives continue to struggle despite unprecedented investment in cloud, data, AI, and cybersecurity. This white paper examines the root causes of these failures and explains why a shared architectural approach—embodied in the Open Digital Transformation Architecture (O-DXA)—is now essential.</p>
+</div>
+</blockquote>
+</div>
+<h2 id="_key_claims" class="discrete">Key Claims</h2>
+<div class="paragraph">
+<p>This paper advances five core claims, which are examined and supported in the sections that follow.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Digital transformation failures are primarily structural and architectural in nature, rather than the result of insufficient technology or tooling. They arise from how organizations are structured and governed, not from a lack of modern tools.</p>
+</li>
+<li>
+<p>Technology modernization efforts that are not accompanied by alignment across people, process, policy, and technology produce transient or purely local outcomes. Modern platforms amplify existing structural misalignments instead of resolving them.</p>
+</li>
+<li>
+<p>Existing digital transformation frameworks lack mechanisms to sustain coherence between strategy, execution, and governance over time. They often improve planning and adoption but do not enforce long-term alignment.</p>
+</li>
+<li>
+<p>Architecture must function as an active governing system rather than static documentation. It must constrain and guide decisions across people, process, policy, and technology if transformation outcomes are to persist.</p>
+</li>
+<li>
+<p>O-DXA exists to address these systemic gaps by integrating strategy, execution, and governance into a unified architectural model. That model provides the coordination needed to bring people, process, policy, and technology into durable alignment across the enterprise.</p>
+<h2 id="_terminology_and_definitions" class="discrete">Terminology and Definitions</h2>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>This section defines key terms as they are used throughout this paper. These definitions are provided to ensure consistent interpretation and to avoid semantic drift across sections.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Digital Transformation</dt>
+<dd>
+<p>A sustained organizational change that integrates strategy, structure, process, and technology to deliver long-term outcomes.</p>
+</dd>
+<dt class="hdlist1">Architecture</dt>
+<dd>
+<p>The governing structure that aligns intent, design, and execution across an enterprise.</p>
+</dd>
+<dt class="hdlist1">Execution</dt>
+<dd>
+<p>The operational realization of strategy through people, processes, and systems.</p>
+</dd>
+<dt class="hdlist1">Governance</dt>
+<dd>
+<p>The mechanisms by which decisions are made, enforced, and evolved across organizational boundaries.</p>
+</dd>
+<dt class="hdlist1">O-DXA</dt>
+<dd>
+<p>The Open Digital Transformation Architecture, a structural framework for aligning transformation intent with execution.</p>
+</dd>
+<dt class="hdlist1">Alignment Dimensions</dt>
+<dd>
+<p>When this paper refers to alignment, it is specifically concerned with how four dimensions fit together: people (roles, skills, behaviours), process (ways of working and workflows), policy (rules, incentives, decision rights), and technology (platforms, data, and tools). Digital transformation fails when these four dimensions evolve independently rather than under a shared architectural model.</p>
+</dd>
+<dt class="hdlist1">Fragmentation</dt>
+<dd>
+<p>The condition of misalignment between strategy, organization, and technical domains <span class="citation">[<a href="#odxa2024standard">1</a>]</span>.</p>
+</dd>
+<dt class="hdlist1">Hidden Tax</dt>
+<dd>
+<p>The cumulative cost of fragmentation, manifesting as delay, rework, risk, and operational complexity.</p>
+</dd>
+<dt class="hdlist1">Islands of Excellence</dt>
+<dd>
+<p>Isolated successful initiatives or departments that lack the architectural "connective tissue" to scale enterprise-wide.</p>
+</dd>
+<dt class="hdlist1">Pilot Paradox</dt>
+<dd>
+<p>The phenomenon where high local innovation success (pilots) results in zero systemic impact due to fragmentation.</p>
+</dd>
+<dt class="hdlist1">Architectural Gap</dt>
+<dd>
+<p>(Also <strong>Fracture Point</strong>) The specific point of failure where a lack of shared standards or taxonomy prevents scaling.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction">1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This paper examines why digital transformation initiatives consistently fail to deliver sustained organizational outcomes, despite significant advances in digital technologies and delivery practices. It argues that these failures are systemic rather than technical and that resolving them requires an integrated architectural model, not another isolated implementation framework.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_myth_of_technology_led_transformation">2. The Myth of Technology-Led Transformation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section establishes the foundational problem addressed by the paper and explains why it persists across organizations, industries, and technology generations. It frames the issue as systemic rather than episodic and sets the stage for deeper analysis in subsequent sections.</p>
+</div>
+<div class="paragraph">
+<p>Organizations often mistake the adoption of modern technologies—cloud, AI, agile methods, and Zero Trust—for transformation itself. These technologies enable change, but they do not create it without corresponding shifts in how people work, how processes flow, and how policies govern decisions. When people, process, policy, and technology move on different trajectories, technology-led efforts produce short-lived or localized improvements rather than sustained transformation.</p>
+</div>
+<div id="fig-technology-myths" class="imageblock text-center">
+<div class="content">
+<img src="/en/digital-transformation/whitepapers/2026-01-why-digital-transformation-fails-and-why-odxa-exists/images/technology-myths.svg" alt="technology myths" width="880" height="606">
+</div>
+<div class="title">Figure 1. Architectural Gap in Technology-Led Initiatives</div>
+</div>
+<div class="paragraph">
+<p>Organizations often mistake the adoption of modern technologies—cloud, AI, agile methods, and Zero Trust—for transformation itself. These technologies enable change, but they do not create it without corresponding shifts in governance, process, and organizational capability.</p>
+</div>
+<div class="ulist NOTE">
+<div class="title">Section Key Insights</div>
+<ul class="NOTE">
+<li>
+<p><strong>The Tooling Trap:</strong> Adopting modern technology (Cloud, AI, Agile) is often mistaken for achieving organizational transformation.</p>
+</li>
+<li>
+<p><strong>Local vs. Systemic Success:</strong> Initiatives frequently succeed within a single department but fail to create enterprise-wide momentum.</p>
+</li>
+<li>
+<p><strong>Capability Gap:</strong> True transformation is a change in <strong>capability</strong> and <strong>culture</strong>, not just a change in the tech stack.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Organizations continue to pursue transformation through technology adoption because technology is tangible, fundable, and measurable. However, this approach consistently underestimates the organizational, architectural, and cultural change required to translate tools into outcomes.</p>
+</div>
+<div class="paragraph">
+<p>Despite unprecedented investment in cloud, AI, cybersecurity, and agile delivery, many organizations struggle to translate technology adoption into sustained outcomes. More technology does not automatically result in transformation.</p>
+</div>
+<div class="paragraph">
+<p>These patterns show up repeatedly across today’s most popular “modernization” moves. Each can accelerate local progress, but none can create enterprise coherence by itself. The sections below unpack four common examples.</p>
+</div>
+<div class="sect2">
+<h3 id="_cloud_is_not_transformation">2.1. Cloud Is Not Transformation</h3>
+<div class="paragraph">
+<p>Many organizations treat <strong>cloud migration</strong> as the finish line of digital transformation. In practice, moving legacy technical debt from an on-premise data center to a cloud provider—often described as "lift and shift"—primarily changes the billing model without improving agility <span class="citation">[<a href="#pulsipher2023gear">2</a>]</span>. Without re-architecting applications and refactoring processes to exploit elasticity, automation, and operational telemetry, the cloud simply becomes a more expensive place to do things the old way.</p>
+</div>
+<div class="paragraph">
+<p>The persistence of this myth stems from the visibility of migration milestones, which create the illusion of progress while leaving underlying execution models unchanged. What is missing is coordinated change across governance, process, and accountability—so cloud capabilities translate into enterprise outcomes.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ai_is_not_intelligence">2.2. AI Is Not Intelligence</h3>
+<div class="paragraph">
+<p>The current surge in Generative AI has created a <strong>pilot paradox</strong>, where organizations deploy LLMs for isolated tasks—such as email drafting or code completion—yet see little improvement in overall decision quality <span class="citation">[<a href="#accenture2023scaling">3</a>]</span>. These efforts often optimize individual productivity while leaving organizational intelligence fragmented and uncoordinated <span class="citation">[<a href="#capgemini2024ai">4</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>Artificial intelligence only becomes <strong>organizational intelligence</strong> when it is embedded into decision-making workflows, governed appropriately, and grounded in the organization’s unique data, context, and objectives <span class="citation">[<a href="#pulsipher2023digitaltwins">5</a>]</span>. Without cross-domain coordination, AI remains a collection of tools rather than a systemic capability.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_agile_is_not_adaptability">2.3. Agile Is Not Adaptability</h3>
+<div class="paragraph">
+<p>Implementing Scrum ceremonies, stand-ups, or Jira boards does not inherently make an organization adaptable. In many environments, Agile devolves into "Water-Agile-Fall," where development teams operate in two-week sprints while budgeting, governance, and strategy remain rigid and annualized. The result is faster delivery of misaligned outcomes.</p>
+</div>
+<div class="paragraph">
+<p>True adaptability requires the ability to pivot strategy based on operational feedback, market signals, or mission data—not merely the ability to write tickets more efficiently <span class="citation">[<a href="#opengroup2022togaf">6</a>]</span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_zero_trust_is_not_maturity">2.4. Zero Trust Is Not Maturity</h3>
+<div class="paragraph">
+<p>Zero Trust is frequently marketed as a product that can be purchased rather than an architectural philosophy that must be adopted <span class="citation">[<a href="#pulsipher2024zerotrust5g">7</a>]</span>. While tools such as Zero Trust Network Access (ZTNA) are important enablers, they represent only one component of a broader trust architecture.</p>
+</div>
+<div class="paragraph">
+<p>Real security maturity emerges from continuous verification of identity, device, workload, and data across a fragmented enterprise landscape <span class="citation">[<a href="#pulsipher2024gearsecurity">8</a>]</span>. Zero Trust is not a destination reached through installation; it is a state of perpetual governance and architectural alignment.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="paragraph">
+<p>Technology initiatives succeed locally but often fail systemically because they lack a unifying architecture. When transformation is treated as a sequence of disconnected technology purchases, organizations create "islands of excellence" that cannot communicate, integrate, or scale <span class="citation">[<a href="#ross2006architecture">9</a>]</span>.</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>The figure below contrasts a fast local optimization loop with the missing coordination needed to scale that success across the enterprise.</p>
+</div>
+<div class="paragraph">
+<p>Technology initiatives frequently succeed within individual teams or departments, yet fail to generate enterprise-wide momentum without shared architectural coordination.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_fragmentation_the_hidden_tax_on_transformation">3. Fragmentation: The Hidden Tax on Transformation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Fragmentation is the silent killer of digital ROI. It occurs when parts of an enterprise operate as independent silos, creating a "hidden tax" <span class="citation">[<a href="#bakertilly2024hiddentax">10</a>]</span> of inefficiency, data duplication, and security gaps <span class="citation">[<a href="#pulsipher2023gear">2</a>]</span>. When we treat transformation as a series of disconnected technology purchases, we do not solve fragmentation; we simply digitize it.</p>
+</div>
+<div class="paragraph">
+<p>Put differently: fragmentation is the condition; the “hidden tax” is what it costs in delay, rework, and risk. That cost accumulates at the boundaries between teams, systems, and decision-making loops.</p>
+</div>
+<div id="fig-fragmentation-hidden-tax" class="imageblock text-center">
+<div class="content">
+<img src="/en/digital-transformation/whitepapers/2026-01-why-digital-transformation-fails-and-why-odxa-exists/images/fragmentation-hidden-tax.svg" alt="fragmentation hidden tax" width="1016" height="874">
+</div>
+<div class="title">Figure 2. Fragmentation as the Hidden Tax on Transformation</div>
+</div>
+<div class="paragraph">
+<p>To achieve systemic change, we must address the five primary domains of fragmentation defined by the <strong>O-DXA</strong> standard <span class="citation">[<a href="#odxa2024standard">1</a>]</span>.</p>
+</div>
+<div class="sect2">
+<h3 id="_strategic_domain_fragmentation">3.1. Strategic Domain Fragmentation</h3>
+<div class="paragraph">
+<p>Strategic fragmentation is the gap between executive vision and tactical execution. When leadership defines a "Digital First" strategy but budgeting remains tied to legacy project-based funding, the organization cannot pivot <span class="citation">[<a href="#mckinsey2022failure">11</a>]</span>. Within the <strong>Strategic Domain</strong>, this ensures that high-level goals never translate into actionable architectural requirements, leaving teams to guess at priorities.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_organizational_domain_fragmentation">3.2. Organizational Domain Fragmentation</h3>
+<div class="paragraph">
+<p>Even with a clear strategy, departments often move at different speeds. This creates "Islands of Excellence" <span class="citation">[<a href="#krasuska2021islands">12</a>]</span> where a data science team might be ready for production-scale AI, but the legal and compliance teams within the <strong>Organizational Domain</strong> lack the framework to support it <span class="citation">[<a href="#capgemini2024ai">4</a>]</span>. The result is a "Pilot Paradox" where innovation is trapped within departmental boundaries.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_process_domain_fragmentation">3.3. Process Domain Fragmentation</h3>
+<div class="paragraph">
+<p>Fragmentation in the <strong>Process Domain</strong> occurs when workflows "break" at the boundaries between teams. Without a unified process architecture, a single mission-critical request may cross multiple systems of record, requiring "swivel-chair" integration—where humans manually transfer data between disconnected applications <span class="citation">[<a href="#struto2024swivelchair">13</a>]</span>. This friction eliminates the speed gains promised by modern automation <span class="citation">[<a href="#pulsipher2024gearprocess">14</a>]</span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_digital_domain_fragmentation">3.4. Digital Domain Fragmentation</h3>
+<div class="paragraph">
+<p>This is the most visible form of fragmentation: the proliferation of disconnected software stacks. Within the <strong>Digital Domain</strong>, disparate cloud providers and incompatible data formats make it impossible to achieve a "single pane of glass" view of the enterprise <span class="citation">[<a href="#pulsipher2023gear">2</a>]</span>. Security becomes a bolted-on afterthought rather than an integrated design principle <span class="citation">[<a href="#pulsipher2024gearsecurity">8</a>]</span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_physical_domain_fragmentation">3.5. Physical Domain Fragmentation</h3>
+<div class="paragraph">
+<p>In the era of Edge computing and IoT, the gap between the digital world and physical assets is widening. Without a way to synchronize digital twins within the <strong>Physical Domain</strong> to their digital counterparts, real-world data remains trapped and unactionable <span class="citation">[<a href="#pulsipher2023digitaltwins">5</a>]</span>. This prevents organizations from closing the loop between digital insights and real-world operations.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+ Fragmentation is not a leadership failure—it is a structural one. While the <strong>Government Enterprise Architecture Reference</strong> (GEAR) research framework initially identified these fracture points, the model has evolved into a global industry standard: the <strong>Open Digital Transformation Architecture</strong> (O-DXA). O-DXA provides the prescriptive blueprints required to unify these five domains into a single, cohesive foundation for execution.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_limits_of_existing_transformation_frameworks">4. The Limits of Existing Transformation Frameworks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Most digital transformation frameworks focus on adoption, planning, or delivery practices, but under-specify the mechanisms required to sustain coherence over time. They improve how projects are initiated and managed, yet leave the deeper questions of architectural governance unresolved.</p>
+</div>
+<div class="paragraph">
+<p>Frameworks that emphasize process introduce valuable discipline, but often treat governance and policy as external constraints rather than first-class design elements. Others focus on organizational change and leadership while assuming that technology and architecture will "follow." In both cases, strategy, execution, and governance can drift apart as conditions change.</p>
+</div>
+<div class="paragraph">
+<p>Without explicit architectural mechanisms that bind people, process, policy, and technology into a coherent decision system, frameworks tend to devolve into localized practices or checklists. This explains why organizations can be fully "compliant" with a framework and still experience the same recurring patterns of fragmentation and pilot-only success.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_architecture_as_a_the_missing_layer">5. Architecture as a the Missing Layer</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Architecture is the mechanism for restoring coordination at those boundaries. It turns “local optimization” into shared decision rules, so teams can move fast without breaking coherence.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Architecture is not documentation.
+It is how organizations make coherent decisions at scale.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Too often, "Enterprise Architecture" is viewed as a library of static diagrams. True architecture is a dynamic coordination discipline providing the "connective tissue" that bridges the five domains. It ensures that a decision made in the <strong>Strategic Domain</strong> has a predictable and beneficial impact on the <strong>Physical Domain</strong> <span class="citation">[<a href="#ross2006architecture">9</a>]</span>.</p>
+</div>
+<div class="sect2">
+<h3 id="_architecture_beyond_documentation">5.1. Architecture Beyond Documentation</h3>
+<div class="paragraph">
+<p>If architecture is relegated to PDF documents, it becomes another form of digital fragmentation. In the <strong>O-DXA</strong> standard, architecture acts as a common taxonomy that defines the "rules of the road," allowing autonomous teams to move fast without breaking systemic coherence <span class="citation">[<a href="#opengroup2022togaf">6</a>]</span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_architecture_as_decision_alignment">5.2. Architecture as Decision Alignment</h3>
+<div class="paragraph">
+<p>Architecture provides the context required to evaluate trade-offs across domains. For example, when an engineering team chooses a new database in the <strong>Digital Domain</strong>, architecture ensures that the choice aligns with the organization&#8217;s Zero Trust security posture and its long-term goals in the <strong>Strategic Domain</strong> <span class="citation">[<a href="#pulsipher2024gearsecurity">8</a>]</span>. Without this alignment, organizations default to "swivel-chair" decision-making, where local speed creates global debt <span class="citation">[<a href="#struto2024swivelchair">13</a>]</span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_architecture_at_scale">5.3. Architecture at Scale</h3>
+<div class="paragraph">
+<p>Scaling a pilot project is a coordination problem <span class="citation">[<a href="#accenture2023scaling">3</a>]</span>. By applying the <strong>O-DXA</strong> Domains, organizations can move away from "Islands of Excellence" and toward a "Digital Core" where every new capability—from the <strong>Digital Domain</strong> to the <strong>Physical Domain</strong>—plugs into a pre-existing, governed infrastructure <span class="citation">[<a href="#pulsipher2023gear">2</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>O-DXA operationalizes this coordination discipline by breaking the enterprise into five explicit areas of architectural responsibility. These domains provide a shared map for decisions that must stay aligned as change scales.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_five_domains_of_digital_transformation_o_dxa">6. The Five Domains of Digital Transformation (O-DXA)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>Open Digital Transformation Architecture (O-DXA)</strong> framework is not a collection of new technologies or management techniques; rather, it is a multi-dimensional lens for capturing the current state of an enterprise and the hidden interactions between its parts. By mapping an organization’s existing capabilities to five interdependent domains, O-DXA allows architects to visualize the flow of value and identify the precise "fracture points" where transformation stalls <span class="citation">[<a href="#pulsipher2023gear">2</a>]</span>. It serves as a diagnostic map that exposes how a decision in one domain ripples through the others, creating either systemic agility or architectural debt.</p>
+</div>
+<div id="fig-odxa-domains" class="imageblock text-center">
+<div class="content">
+<img src="/en/digital-transformation/whitepapers/2026-01-why-digital-transformation-fails-and-why-odxa-exists/images/odxa-domains.svg" alt="odxa domains" width="492" height="341">
+</div>
+<div class="title">Figure 3. O-DXA Domains as Architectural Responsibilities</div>
+</div>
+<div class="paragraph">
+<p>In practical terms, the O-DXA Domains answer five coordination questions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Strategic Domain:</strong> Why are we doing this (intent, policy, outcomes)?</p>
+</li>
+<li>
+<p><strong>Organizational Domain:</strong> Who owns decisions and accountability?</p>
+</li>
+<li>
+<p><strong>Process Domain:</strong> How does work flow and how do feedback loops operate?</p>
+</li>
+<li>
+<p><strong>Digital Domain:</strong> What platforms, data, and integration patterns enable execution?</p>
+</li>
+<li>
+<p><strong>Physical Domain:</strong> Where does execution meet real-world constraints (assets, edge, OT)?</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_strategic_domain">6.1. Strategic Domain</h3>
+<div class="paragraph">
+<p>The <strong>Strategic Domain</strong> captures the existing intent, mission alignment, and policy framework of the enterprise. It is the observational layer where an organization’s "Why" is documented and measured against actual outcomes. Rather than defining a new strategy, O-DXA uses this domain to evaluate whether current policy and investment priorities are systemically aligned with mission success <span class="citation">[<a href="#ross2006architecture">9</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>The scope of this domain involves mapping the interactions between executive leadership, board-level governance, and capital planning. It identifies how "Success Criteria" are currently defined and communicated. By capturing the state of the <strong>Strategic Domain</strong>, organizations can identify the "Vision Gap"—instances where strategic mandates are being ignored or misinterpreted by technical teams at the execution layer <span class="citation">[<a href="#mckinsey2022failure">11</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>The primary benefit of capturing the <strong>Strategic Domain</strong> is the revelation of hidden "Decision Rights." It makes visible the informal guardrails that currently dictate how procurement and engineering teams operate. When this state is clearly documented, leadership can see where strategic ambiguity is causing local teams to seek unnecessary permission for micro-decisions, thereby slowing the entire enterprise <span class="citation">[<a href="#odxa2024standard">1</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>In practice, this domain is used to audit resource conflicts. For example, by capturing the current state of data sovereignty policies, an architect can predict how a proposed AI initiative in the <strong>Digital Domain</strong> will interact with existing compliance mandates, allowing for the proactive resolution of conflicts before they become blockers.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_organizational_domain">6.2. Organizational Domain</h3>
+<div class="paragraph">
+<p>The <strong>Organizational Domain</strong> documents the current state of the human element, including existing reporting structures, cultural norms, and accountability models. It observes the "Operating System" of the enterprise, identifying how authority is actually distributed versus how it appears on an organizational chart <span class="citation">[<a href="#krasuska2021islands">12</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>The scope of this domain includes mapping current change management practices, talent distribution, and cross-functional governance. It is here that O-DXA identifies the "Islands of Excellence"—capturing where innovation is happening in isolation and identifying the cultural or structural barriers that prevent those successes from scaling <span class="citation">[<a href="#mckinsey2022failure">11</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>Capturing the <strong>Organizational Domain</strong> makes the current level of systemic agility visible. It identifies where rigid hierarchies are currently stifling the capability-based interactions required for digital speed. This observational data allows architects to show leadership exactly how current accountability gaps are contributing to the "Pilot Paradox" <span class="citation">[<a href="#ross2006architecture">9</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>In daily operations, this domain is used to trace the path of a successful pilot. By capturing how a departmental AI success currently interacts with HR, Legal, and Operations, O-DXA makes it clear why that pilot cannot scale, providing the data needed to adjust the organizational "connective tissue."</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_process_domain">6.3. Process Domain</h3>
+<div class="paragraph">
+<p>The <strong>Process Domain</strong> captures the current state of execution, including existing workflows, funding cycles, and control loops. It documents the "Metabolism" of the organization—the actual speed at which value is currently delivered and feedback is ingested <span class="citation">[<a href="#pulsipher2024gearprocess">14</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>The scope of this domain covers the observation of the mission delivery lifecycle, from initial procurement requests to operational monitoring. It is the layer where O-DXA identifies the "swivel-chair" integrations currently in place—manual handoffs and data re-entry points that act as a "Hidden Tax" on the organization’s productivity <span class="citation">[<a href="#struto2024swivelchair">13</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>The primary benefit of documenting the <strong>Process Domain</strong> is the creation of a baseline for predictable performance. By capturing the current "Control Loops" (or lack thereof), architects can demonstrate the actual ROI of digital investments. This visibility reveals where funding cycles are currently misaligned with the speed of technical execution <span class="citation">[<a href="#odxa2024standard">1</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>This domain is used to visualize the friction in financial cycles. For example, by mapping the current state of annual budget approvals against the two-week sprint cycles of a development team, O-DXA highlights the structural mismatch that prevents true adaptability.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_digital_domain">6.4. Digital Domain</h3>
+<div class="paragraph">
+<p>The <strong>Digital Domain</strong> captures the current landscape of platforms, data, applications, and integration. It observes the "Nervous System" of the enterprise, documenting the actual flow of information across disparate software stacks and cloud environments <span class="citation">[<a href="#pulsipher2023gear">2</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>The scope of this domain involves inventorying current infrastructure, data management platforms, and cybersecurity frameworks. It identifies the "Single Pane of Glass" gaps where information is currently siloed or inaccessible. Capturing this domain reveals the existing technical debt and security vulnerabilities that are currently preventing the enterprise from scaling <span class="citation">[<a href="#pulsipher2024gearsecurity">8</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>The benefit of capturing the <strong>Digital Domain</strong> is the identification of interoperability barriers. By documenting the current state of data formats and API availability, O-DXA shows exactly why new applications cannot leverage existing datasets, exposing the duplication of effort that currently drains resources <span class="citation">[<a href="#odxa2024standard">1</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>In practice, this domain is used to audit "Security as Design." For instance, by capturing the current state of 5G or Edge deployments, architects can evaluate how closely they align with Zero Trust principles, identifying where security is being "bolted on" as an afterthought <span class="citation">[<a href="#pulsipher2024zerotrust5g">7</a>]</span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_physical_domain">6.5. Physical Domain</h3>
+<div class="paragraph">
+<p>The <strong>Physical Domain</strong> captures the current state of infrastructure, Edge devices, Operational Technology (OT), and real-world environmental constraints. It provides the "Grounding" for the architecture, documenting how digital models currently interact with physical assets <span class="citation">[<a href="#pulsipher2023digitaltwins">5</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>The scope of this domain extends to the mapping of power, cooling, and connectivity constraints at the furthest Edge. It identifies where physical data is currently being lost or where digital insights are failing to trigger physical actions. Without capturing this state, transformation remains a theoretical exercise disconnected from field operations <span class="citation">[<a href="#pulsipher2023gear">2</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>The primary benefit of capturing the <strong>Physical Domain</strong> is situational awareness. By documenting how physical assets are (or are not) connected to the <strong>Digital Domain</strong>, architects can identify the gaps in "Digital Twin" fidelity. This reveals where predictive maintenance and remote operations are currently impossible due to physical-to-digital fragmentation <span class="citation">[<a href="#pulsipher2023digitaltwins">5</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>Physical Domain</strong> is used to identify "closed-loop" failures. For example, by capturing the current state of sensor arrays in a manufacturing plant, O-DXA can show why an AI insight in the <strong>Digital Domain</strong> is currently unable to adjust a physical process, highlighting the need for better architectural integration.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_why_domains_alone_are_not_enough">7. Why Domains Alone Are Not Enough</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Mapping an organization into the five O-DXA domains is a critical diagnostic step, but it is not a complete solution. While the domains define <strong>where</strong> decisions must be coordinated and <strong>what</strong> current interactions look like, they do not define <strong>how</strong> execution occurs. This gap explains why many architectural efforts stall; they identify the "fracture points" but lack the specific instruments required to repair them.</p>
+</div>
+<div class="paragraph">
+<p>Think of the domains as the coordination map: they show where alignment must hold. To actually execute across that map, enterprises need cross-cutting capabilities that provide the repeatable patterns, tooling, and standards for delivery.</p>
+</div>
+<div class="paragraph">
+<p>If the Domains represent the <strong>horizontal layers</strong> of the enterprise, they require <strong>vertical capabilities</strong> to drive change across them. Without these specialized capabilities, the domains remain passive categories rather than active drivers of transformation. For example, identifying a gap in the <strong>Process Domain</strong> is useful, but without a mature <strong>Data Management</strong> pillar, there is no way to automate the workflows that bridge that gap.</p>
+</div>
+<div class="paragraph">
+<p>The limitation of a "domains-only" approach is that it risks becoming another form of high-level documentation. True transformation requires the intersection of these architectural responsibilities with specific technical "views" or "pillars." These pillars—such as AI, Cybersecurity, and Edge Computing—provide the specialized expertise and tooling needed to execute a strategy across the entire stack <span class="citation">[<a href="#pulsipher2023gear">2</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>This intersection is where O-DXA becomes prescriptive. By overlaying the <strong>Six Pillars of Digital Transformation</strong> <span class="citation">[<a href="#odxa2024standard">1</a>]</span> onto the five domains, an organization can move from capturing its current state to engineering its future state. The pillars act as the execution engine, providing the repeatable patterns and technical standards that unify the enterprise from the <strong>Strategic Domain</strong> all the way down to the <strong>Physical Domain</strong>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introducing_the_six_pillars_of_execution">8. Introducing the Six Pillars of Execution</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <strong>Six Pillars of Digital Transformation</strong> represent the core technical and operational capabilities required to execute strategy across all five O-DXA domains. Unlike traditional technology "stacks," these pillars are cross-cutting; they do not live in a single department but act as enterprise-wide standards that ensure consistency and interoperability. When a pillar is mature, it provides a repeatable pattern that can be leveraged by any "Island of Excellence" to move into production-scale intelligence <span class="citation">[<a href="#pulsipher2023gear">2</a>]</span>.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The Six Pillars are not initiatives.
+They are enterprise capabilities.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="Sixpillars" class="imageblock text-center">
+<div class="content">
+<img src="/en/digital-transformation/whitepapers/2026-01-why-digital-transformation-fails-and-why-odxa-exists/images/pillars.svg" alt="pillars">
+</div>
+<div class="title">Figure 4. Six Pillars of Digital Transformation</div>
+</div>
+<div class="sect2">
+<h3 id="_artificial_intelligence">8.1. Artificial Intelligence</h3>
+<div class="paragraph">
+<p>The <strong>Artificial Intelligence</strong> pillar provides the models, reasoning, and automation required to enhance organizational decision-making. To avoid the "Pilot Paradox," this pillar focuses on grounding AI in specific organizational context and ensuring that models in the <strong>Digital Domain</strong> can trigger reliable, autonomous actions in the <strong>Physical Domain</strong> <span class="citation">[<a href="#accenture2023scaling">3</a>, <a href="#pulsipher2023digitaltwins">5</a>]</span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_data_management">8.2. Data Management</h3>
+<div class="paragraph">
+<p>The <strong>Data Management</strong> pillar acts as the foundation for the entire digital core. It defines how data is ingested, curated, governed, and tagged across a heterogeneous infrastructure. Its primary goal is to eliminate the "swivel-chair" integration found in the <strong>Process Domain</strong> by creating a distributed information management layer that spans from Edge to Cloud <span class="citation">[<a href="#pulsipher2024gearprocess">14</a>]</span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cybersecurity">8.3. Cybersecurity</h3>
+<div class="paragraph">
+<p>The <strong>Cybersecurity</strong> pillar implements the Zero Trust philosophy as a design principle rather than a bolted-on product. It ensures that identity, device, and workload verification are continuous and automated across all domains. This pillar provides the governance required to maintain confidentiality and integrity in highly fragmented, dynamic environments <span class="citation">[<a href="#pulsipher2024gearsecurity">8</a>, <a href="#pulsipher2024zerotrust5g">7</a>]</span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_edge_computing">8.4. Edge Computing</h3>
+<div class="paragraph">
+<p>The <strong>Edge Computing</strong> pillar addresses the unique constraints of the <strong>Physical Domain</strong>, bringing compute and analytics closer to where data is generated. It provides the architectural patterns for deploying and managing services in environments with limited power, cooling, or connectivity, enabling real-time situational awareness <span class="citation">[<a href="#pulsipher2023gear">2</a>]</span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_advanced_communications">8.5. Advanced Communications</h3>
+<div class="paragraph">
+<p>The <strong>Advanced Communications</strong> pillar provides the "Nervous System" connectivity required for high-speed, low-latency data movement. Whether through 5G, Wi-Fi 6, or satellite links, this pillar ensures that the <strong>Digital Domain</strong> remains synchronized with the <strong>Physical Domain</strong>, allowing for the "closed-loop" operations required by modern industrial and mission-critical applications <span class="citation">[<a href="#pulsipher2024zerotrust5g">7</a>]</span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ubiquitous_computing">8.6. Ubiquitous Computing</h3>
+<div class="paragraph">
+<p>The <strong>Ubiquitous Computing</strong> pillar ensures that the right compute resources (CPU, GPU, FPGA) are available at the right location at the right time. It abstracts the underlying hardware complexity, allowing developers to deploy applications across a hybrid-multi-cloud ecosystem without needing to understand the specific physical hardware at the Edge <span class="citation">[<a href="#pulsipher2022sentientagent">15</a>]</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_why_o_dxa_exists">9. Why O-DXA Exists</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The existence of the <strong>Open Digital Transformation Architecture (O-DXA)</strong> is a response to the systemic failure of technology-led initiatives. As enterprises grow in complexity, the "Hidden Tax" of fragmentation becomes too heavy for traditional management structures to bear. O-DXA exists to provide the shared language and structural alignment required to transform a collection of disconnected "Islands of Excellence" into a coherent, high-performing enterprise <span class="citation">[<a href="#pulsipher2023gear">2</a>, <a href="#krasuska2021islands">12</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>At its core, O-DXA integrates strategy, execution, and governance into a unified architectural model. That model connects high-level intent to day-to-day decisions about people, process, policy, and technology, so that transformation outcomes can persist rather than erode over time.</p>
+</div>
+<div id="fig-domains-pillars-context" class="imageblock text-center">
+<div class="content">
+<img src="/en/digital-transformation/whitepapers/2026-01-why-digital-transformation-fails-and-why-odxa-exists/images/domains-pillars-context.svg" alt="domains pillars context" width="923" height="403">
+</div>
+<div class="title">Figure 5. Domains and Pillars in Context</div>
+</div>
+<div class="sect2">
+<h3 id="_the_need_for_a_shared_reference_architecture">9.1. The Need for a Shared Reference Architecture</h3>
+<div class="paragraph">
+<p>In most organizations, different departments (Finance, Engineering, Operations) use different reference models, different taxonomies, and different success metrics. This lack of a shared map is what creates "Fracture Points" <span class="citation">[<a href="#bakertilly2024hiddentax">10</a>]</span>. O-DXA provides a vendor-neutral, cross-domain reference architecture that allows all actors—from the Boardroom to the Edge—to understand how their specific decisions impact the rest of the organization. It is the "common ground" required for multi-cloud and hybrid-workforce coordination <span class="citation">[<a href="#odxa2024standard">1</a>]</span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_what_o_dxa_is_and_is_not">9.2. What O-DXA Is (and Is Not)</h3>
+<div class="paragraph">
+<p>It is critical to understand that O-DXA is <strong>not</strong> a new software product, a management methodology, or a replacement for existing standards like TOGAF. Instead, it is a diagnostic and alignment framework. While TOGAF provides the "how-to" of architectural practice <span class="citation">[<a href="#opengroup2022togaf">6</a>]</span>, O-DXA provides the "what-is" of enterprise state. It is a map of interactions, not a library of blueprints. It does not dictate which technology to buy; it dictates the architectural responsibilities that any technology must fulfill to scale <span class="citation">[<a href="#ross2006architecture">9</a>]</span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_o_dxa_as_an_enabler_of_coherence">9.3. O-DXA as an Enabler of Coherence</h3>
+<div class="paragraph">
+<p>The ultimate goal of O-DXA is <strong>coherence</strong>—the state where every part of the enterprise is working in harmony toward the same mission outcomes. By overlaying the <strong>Six Pillars of Execution</strong> onto the five <strong>Domains</strong>, O-DXA allows an organization to see its transformation "in 3D." It enables leadership to trace a strategic objective in the <strong>Strategic Domain</strong>, through a funding model in the <strong>Process Domain</strong>, down to a specific secure deployment in the <strong>Digital and Physical Domains</strong> <span class="citation">[<a href="#pulsipher2024gearsecurity">8</a>]</span>. O-DXA is the mechanism that restores the link between digital ambition and real-world results.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_implications">10. Implications</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Digital transformation cannot be managed as a loose collection of initiatives. It must be governed as an architectural system whose purpose is to keep people, process, policy, and technology in alignment with mission outcomes.</p>
+</div>
+<div class="paragraph">
+<p>From this analysis, several implications follow:</p>
+</div>
+<div class="paragraph">
+<p><strong>Strategic Implication (IMP-01):</strong>
+Digital transformation must be governed as an architectural system rather than a collection of disconnected projects. Strategy must explicitly account for the architectural structures that sustain coherence over time.</p>
+</div>
+<div class="paragraph">
+<p><strong>Organizational Implication (IMP-02):</strong>
+Leadership structures and decision rights must align with transformation intent. Without clear ownership of cross-domain decisions, local optimizations will continue to undermine enterprise outcomes.</p>
+</div>
+<div class="paragraph">
+<p><strong>Architectural Implication (IMP-03):</strong>
+Architecture must function as an active governing discipline, not static documentation. It should define and enforce the decision rules that shape how people, process, policy, and technology evolve together.</p>
+</div>
+<div class="paragraph">
+<p><strong>Policy Implication (IMP-04):</strong>
+Standards and frameworks should emphasize coherence, execution alignment, and governance. Policies must be designed to sustain alignment across domains rather than preserving siloed control.</p>
+</div>
+<div class="sect2">
+<h3 id="_restoring_coherence_to_transformation">10.1. Restoring Coherence to Transformation</h3>
+<div class="paragraph">
+<p>The failure of digital transformation is rarely a failure of technology; it is a failure of coordination. As we have seen, the "Hidden Tax" of fragmentation and the "Pilot Paradox" of isolated AI successes are symptoms of an enterprise that lacks a shared architectural map. To move beyond the era of "Islands of Excellence," organizations must transition from buying disconnected tools to building a unified foundation for execution <span class="citation">[<a href="#ross2006architecture">9</a>]</span>.</p>
+</div>
+<div class="paragraph">
+<p>The <strong>Open Digital Transformation Architecture (O-DXA)</strong> provides that foundation. By capturing the current state of our <strong>Strategic, Organizational, Process, Digital, and Physical Domains</strong>, we can finally see the enterprise as a single, interdependent system. When we overlay the <strong>Six Pillars of Execution</strong> onto this map, we move from being reactive observers of technology to being proactive engineers of organizational outcomes <span class="citation">[<a href="#odxa2024standard">1</a>]</span>.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Transformation is not a destination reached through a purchase order; it is a state of coherence reached through architecture.</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_join_the_journey_toward_coherence">10.2. Join the Journey toward Coherence</h3>
+<div class="paragraph">
+<p>The move toward O-DXA is more than a technical upgrade; it is a commitment to systemic agility. We invite architects, leaders, and technologists to move beyond the silos of their specific domains and contribute to the development of a shared "Digital Core."</p>
+</div>
+<div class="paragraph">
+<p>The path forward requires us to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Audit the Gaps:</strong> Identify where "swivel-chair" integrations are currently draining your ROI <span class="citation">[<a href="#struto2024swivelchair">13</a>]</span>.</p>
+</li>
+<li>
+<p><strong>Connect the Islands:</strong> Move beyond departmental pilots and demand that every new capability be architected for enterprise-wide scale.</p>
+</li>
+<li>
+<p><strong>Adopt the Standard:</strong> Leverage the O-DXA framework to provide the "connective tissue" your organization needs to turn digital ambition into real-world results <span class="citation">[<a href="#odxa2024standard">1</a>]</span>.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The goal is not to adopt a standard for the sake of compliance. It is to restore the link between strategy and execution, ensuring that every technological investment serves the mission.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="page-break-after: always;"></div>
+<hr>
+<h2 id="_about_the_author" class="discrete">About the Author</h2>
+<div class="paragraph">
+<p>Dr. Darren W. Pulsipher is the Chief Enterprise Architect for the Public Sector at Intel and Chair of The Open Group’s Open Digital Transformation Forum. His work focuses on architectural coherence across strategy, execution, and emerging technologies.</p>
+</div>
+<h2 id="_about_this_series" class="discrete">About This Series</h2>
+<div class="paragraph">
+<p>This whitepaper is part of a foundational series examining the structural conditions required for sustained digital transformation. Subsequent papers and derivative articles explore domain-specific, organizational, and operational implications of the O-DXA framework.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a id="odxa2024standard"></a>[1] Embracing Digital Transformation, “Digital Transformation: The O-DXA Framework.” 2024, [Online]. Available: <a href="https://embracingdigital.org/en/digital-transformation/index.html" class="bare">https://embracingdigital.org/en/digital-transformation/index.html</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="pulsipher2023gear"></a>[2] D. W. Pulsipher, “Government Enterprise Architecture Reference (GEAR): Logical and Physical Representation,” Intel Corporation, 2023. [Online]. Available: <a href="https://cdrdv2-public.intel.com/790385/GEAR%20Logical%20and%20Physicalv2.pdf" class="bare">https://cdrdv2-public.intel.com/790385/GEAR%20Logical%20and%20Physicalv2.pdf</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="accenture2023scaling"></a>[3] G. Lanthier and others, “The Front-runners’ Guide to Scaling AI,” <em>Accenture Strategy</em>, 2023, [Online]. Available: <a href="https://www.accenture.com/us-en/insights/data-ai/front-runners-guide-scaling-ai" class="bare">https://www.accenture.com/us-en/insights/data-ai/front-runners-guide-scaling-ai</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="capgemini2024ai"></a>[4] C. R. Institute, “Harnessing the Value of Generative AI: 2nd edition,” Capgemini, 2024. [Online]. Available: <a href="https://www.capgemini.com/insights/research-library/generative-ai-in-organizations-2024/" class="bare">https://www.capgemini.com/insights/research-library/generative-ai-in-organizations-2024/</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="pulsipher2023digitaltwins"></a>[5] D. W. Pulsipher, “Digital Twins Help Connect the Digital and Real Worlds,” Intel Corporation, 2023. [Online]. Available: <a href="https://www.intel.com/content/www/us/en/developer/tools/scenescape/overview.html" class="bare">https://www.intel.com/content/www/us/en/developer/tools/scenescape/overview.html</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="opengroup2022togaf"></a>[6] The Open Group, <em>The TOGAF Standard, 10th Edition</em>. Van Haren Publishing, 2022.</p>
+</div>
+<div class="paragraph">
+<p><a id="pulsipher2024zerotrust5g"></a>[7] D. W. Pulsipher and others, “Zero Trust in 5G: Integration and Advancement in solution architecture,” <em>Embracing Digital Transformation</em>, 2024, [Online]. Available: <a href="https://cdrdv2-public.intel.com/813586/episode181-en.pdf" class="bare">https://cdrdv2-public.intel.com/813586/episode181-en.pdf</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="pulsipher2024gearsecurity"></a>[8] D. W. Pulsipher and A. Scott, “Security Aspect of Government Enterprise Architecture Reference (GEAR) Logical View,” Intel Corporation, 2024. [Online]. Available: <a href="https://cdrdv2-public.intel.com/854309/GEAR%20Security%20Aspect%20White%20Paper.pdf" class="bare">https://cdrdv2-public.intel.com/854309/GEAR%20Security%20Aspect%20White%20Paper.pdf</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="ross2006architecture"></a>[9] J. W. Ross, P. Weill, and D. Robertson, <em>Enterprise Architecture as Strategy: Creating a Foundation for Business Execution</em>. Harvard Business Review Press, 2006.</p>
+</div>
+<div class="paragraph">
+<p><a id="bakertilly2024hiddentax"></a>[10] B. Tilly, “From Siloed to Seamless: Building a Connected Digital Ecosystem.” 2024, [Online]. Available: <a href="https://www.bakertilly.com/insights/from-siloed-to-seamless-building-a-connected-digital-ecosystem" class="bare">https://www.bakertilly.com/insights/from-siloed-to-seamless-building-a-connected-digital-ecosystem</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="mckinsey2022failure"></a>[11] P. Forth, P. Romano, and others, “Flipping the Odds of Digital Transformation Success,” <em>McKinsey &amp; Company</em>, 2022, [Online]. Available: <a href="https://www.mckinsey.com/capabilities/bcg-x/our-insights/flipping-the-odds-of-digital-transformation-success" class="bare">https://www.mckinsey.com/capabilities/bcg-x/our-insights/flipping-the-odds-of-digital-transformation-success</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="krasuska2021islands"></a>[12] M. Krasuska and others, “Driving digital health transformation in hospitals: a formative study,” <em>BMC Health Services Research</em>, 2021, [Online]. Available: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8685936/" class="bare">https://pmc.ncbi.nlm.nih.gov/articles/PMC8685936/</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="struto2024swivelchair"></a>[13] Struto, “Swivel Chair Integration: Why Switching Between Apps is Killing Your Team’s Productivity.” 2024, [Online]. Available: <a href="https://www.struto.io/blog/swivel-chair-integration-why-switching-between-apps-is-killing-your-teams-productivity" class="bare">https://www.struto.io/blog/swivel-chair-integration-why-switching-between-apps-is-killing-your-teams-productivity</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="pulsipher2024gearprocess"></a>[14] D. W. Pulsipher, A. Scott, D. Richard, and R. Lisa, “GEAR: Process Architecture,” Intel Corporation, 2024. [Online]. Available: <a href="https://cdrdv2-public.intel.com/828453/GEAR%20Process%20Highlevel.pdf" class="bare">https://cdrdv2-public.intel.com/828453/GEAR%20Process%20Highlevel.pdf</a>.</p>
+</div>
+<div class="paragraph">
+<p><a id="pulsipher2022sentientagent"></a>[15] D. W. Pulsipher, “Sentient Agent Bundle Resource Architecture,” Intel Corporation, 2022. [Online]. Available: <a href="https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2022-12/sentient-agent-resource-bundle-white-paper.pdf" class="bare">https://www.intel.com/content/dam/www/central-libraries/us/en/documents/2022-12/sentient-agent-resource-bundle-white-paper.pdf</a>.</p>
+</div>
+</div>
+</div>
+        </section>
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "url": "https://embracingdigital.org/en/digital-transformation/whitepapers/2026-01-why-digital-transformation-fails-and-why-odxa-exists",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/en/digital-transformation/whitepapers/2026-01-why-digital-transformation-fails-and-why-odxa-exists"
+  },
+  "name": "Why Digital Transformation Fails and Why O-DXA Exists",
+  "episodeNumber": "",
+  "datePublished": "2026-01-10",
+  "inLanguage": "en",
+  "description": "Digital transformation efforts fail not because of technology gaps, but because organizations lack a unifying architectural approach to align strategy, people, process, and systems. This paper explains why the Open Digital Transformation Architecture (O-DXA), together with a clear understanding of d",
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  }
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
