@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Título de página dinámico -->
+    <title>Estructurando tu Transformación Digital | Digital Transformation Architect</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/es/lectures/dta-2/index.html">
+    <meta name="description" content="La transformación digital no falla por la tecnología; falla porque la arquitectura no apoya el cambio. En este episodio de Digital Transformation Architect (DTA), el Dr. Darren Pulsipher explica cómo la arquitectura empresarial es la base estructural de una transformación digital exitosa. Con demasi">
+    <meta name="keywords" content="Transformación Digital, pódcast, entrevistas, noticias, IA, ciberseguridad, edge computing, gestión de datos">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Estructurando tu Transformación Digital | Digital Transformation Architect — Entrevistas, Noticias y Comunidad">
+    <meta property="og:description" content="La transformación digital no falla por la tecnología; falla porque la arquitectura no apoya el cambio. En este episodio de Digital Transformation Architect (DTA), el Dr. Darren Pulsipher explica cómo la arquitectura empresarial es la base estructural de una transformación digital exitosa. Con demasi">
+    <meta property="og:url" content="https://www.embracingdigital.org/es/lectures/dta-2/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Estructurando tu Transformación Digital | Digital Transformation Architect — Entrevistas, Noticias y Comunidad">
+    <meta name="twitter:description" content="La transformación digital no falla por la tecnología; falla porque la arquitectura no apoya el cambio. En este episodio de Digital Transformation Architect (DTA), el Dr. Darren Pulsipher explica cómo la arquitectura empresarial es la base estructural de una transformación digital exitosa. Con demasi">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (alternativas) -->
+    <link rel="alternate" href="https://embracingdigital.org/es/home/" hreflang="es">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/es/home/" hreflang="x-default">
+
+    <!-- Favicon y estilos -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analítica -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abrazando la Transformación Digital",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abrazando la Transformación Digital",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/es/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/es/home/" aria-label="Inicio — Abrazando la Transformación Digital">
+            <img src="/images/logo.png" alt="Logo — Abrazando la Transformación Digital" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Botón móvil -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Alternar menú">☰</button>
+
+    <!-- Navegación principal -->
+    <nav id="primary-nav" aria-label="Principal">
+        <ul>
+            <li><a href="/es/home/index.html" >Inicio</a></li>
+
+            <li class="dropdown">
+                <a href="/es/shows/index.html" aria-haspopup="true" aria-expanded="false">Programas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/es/episodes/index.html" aria-label="Entrevistas — Abrazando la Transformación Digital">
+                            Abrazando la Transformación Digital
+                            <small class="nav-note">Entrevistas</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/es/briefs/index.html" aria-label="Noticias — Digital esta semana">
+                            Digital esta semana
+                            <small class="nav-note">Noticias</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/es/guests/index.html">Invitados</a></li>
+            <li><a href="/es/articles/index.html">Artículos</a></li>
+
+            <!-- Comunidad -->
+            <li class="dropdown">
+                <a href="/es/community.html" aria-haspopup="true" aria-expanded="false">Comunidad</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/es/newsletter.html">Boletín</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Grupo de LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Tienda</a></li>
+
+            <!-- Acerca de -->
+            <li class="dropdown">
+                <a href="/es/about.html" aria-haspopup="true" aria-expanded="false">Acerca de</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/es/about.html">Sobre el programa</a></li>
+                    <li role="none"><a role="menuitem" href="/es/host.html">Anfitrión: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/es/sponsors/index.html">Patrocinios y contacto</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/es/search.html">Buscar</a></li>
+
+            <!-- Idiomas -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Idiomas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../es/home/index.html">Home</a></li>
+        <li><a href="../../../es/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 2: Structuring your Digital Transformation</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/es/lectures/dta-2/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/es/lectures/dta-2/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 2</span>
+                <span class="episode-title">Structuring your Digital Transformation</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time itemprop="datePublished">&#34;2026-01-13T04:21:33.592Z&#34;</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+
+            <meta itemprop="episodeNumber" content="2"/>
+            <meta itemprop="inLanguage" content="es"/>
+        </header>
+
+        
+            <section class="video-container" aria-label="Watch the episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
+                <meta itemprop="name" content="Estructurando tu Transformación Digital Video">
+                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/w1wAN0JSXco">
+                <iframe
+                        width="auto"
+                        height="auto"
+                        src="https://www.youtube.com/embed/w1wAN0JSXco"
+                        title="Estructurando tu Transformación Digital Video"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                ></iframe>
+            </section>
+        
+
+        
+            <section class="podcast-container" aria-label="Listen to this episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
+                <meta itemprop="name" content="Estructurando tu Transformación Digital Audio">
+                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/4fe6db3b">
+                <iframe
+                        width="100%"
+                        height="180"
+                        frameborder="0"
+                        scrolling="no"
+                        src="https://share.transistor.fm/e/4fe6db3b"
+                        title="Estructurando tu Transformación Digital Audio"
+                        loading="lazy"
+                ></iframe>
+
+                <p class="listen-note">
+                    Explore more in the <a href="../../../es/episodes/index.html">episode archive</a>.
+                </p>
+            </section>
+        
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>La transformación digital no falla por la tecnología; falla porque la arquitectura no apoya el cambio.</p>
+<p>En este episodio de Digital Transformation Architect (DTA), el Dr. Darren Pulsipher explica cómo la arquitectura empresarial es la base estructural de una transformación digital exitosa. Con demasiada frecuencia, las organizaciones se centran en herramientas, plataformas y pilotos mientras ignoran las decisiones arquitectónicas más profundas que determinan si el cambio puede escalar y persistir.</p>
+<p>Esta conferencia replantea la arquitectura como un sistema vivo, uno que alinea estrategia, organización, procesos y capacidades digitales a lo largo del tiempo. Aprenderás por qué muchos esfuerzos de transformación se estancan después del éxito inicial, cómo el desajuste socava silente el progreso y qué deben hacer los líderes de manera diferente para diseñar sistemas que puedan adaptarse continuamente.</p>
+<p>Si tu organización está invirtiendo fuertemente en iniciativas digitales pero tiene dificultades para lograr un impacto sostenido, este episodio explica por qué y cómo la arquitectura puede convertirse en un habilitador en lugar de un obstáculo.</p>
+<p>Capítulos
+00:00 Introducción: Por qué importa la arquitectura
+Por qué el éxito de la transformación digital depende de más que tecnología o herramientas.</p>
+<p>02:10 La ilusión del éxito en la transformación
+Por qué los pilotos y los logros aislados no se traducen en un cambio a nivel empresarial.</p>
+<p>05:45 La arquitectura como la base del cambio
+Cómo la arquitectura empresarial moldeará el comportamiento, las decisiones y los resultados.</p>
+<p>09:30 Desajuste: El asesino silencioso de la transformación
+Dónde la estrategia, la organización y los sistemas se separan, y por qué importa.</p>
+<p>14:20 De proyectos a transformación persistente
+La diferencia entre entregar proyectos y habilitar una evolución continua.</p>
+<p>18:10 La arquitectura como un sistema vivo
+Por qué la arquitectura debe adaptarse con el tiempo, no congelarse en la implementación.</p>
+<p>22:30 Diseñando para la adaptabilidad y la escala
+Cómo arquitectar para el cambio sin crear fragilidad.</p>
+<p>27:10 Conclusiones clave para los líderes de transformación
+Qué deben hacer los líderes de manera diferente para lograr una transformación digital sostenida.</p>
+
+
+            
+
+            
+                <div class="guests" aria-label="Guests">
+                    
+                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../es/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                    
+                </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>Causas Estructurales vs. Técnicas del Fracaso en la Transformación Digital</h1>
+<p><strong>Dr. Darren W. Pulsipher</strong><br>Serie: <em>Por qué la Transformación Digital Falla — y por qué existe O-DXA</em></p>
+<p>La transformación digital ha estado en las agendas de los ejecutivos durante más de dos décadas.<br>A lo largo de ese tiempo, las organizaciones han pasado por generaciones sucesivas de tecnología:<br>ERP en las instalaciones, arquitecturas orientadas a servicios, plataformas en la nube, automatización, analítica, IA.</p>
+<p>Con cada ola, las herramientas mejoran.<br>Sin embargo, los resultados de la transformación se ven extrañamente familiares.</p>
+<ul>
+<li>Los proyectos entran en funcionamiento.  </li>
+<li>Los pilotos tienen éxito.  </li>
+<li>Los paneles de control se iluminan.</li>
+</ul>
+<p>Y luego—tres a cinco años después—la organización se encuentra lanzando una nueva iniciativa de “transformación” para abordar muchos de los mismos problemas que se suponía que la anterior iba a resolver.</p>
+<p>Esta no es una historia aislada.<br>Es un patrón.</p>
+<p>La Conferencia 1 de esta serie enmarcó ese patrón como <em>persistente y sistémico</em>:<br>un fracaso que recurre a través de sectores, tecnologías y cambios de liderazgo.<br>En esta entrega, vamos un paso más allá:<br>examinamos <em>por qué</em> las explicaciones centradas en la tecnología no son suficientes,<br>y por qué las causas principales del fracaso son <em>estructurales y arquitectónicas</em>, no técnicas.</p>
+<p>Nuestro objetivo es distinguir las causas <strong>estructurales</strong> de los síntomas <strong>técnicos</strong>,<br>y mostrar cómo la desalineación entre estrategia, ejecución y gobernanza mantiene estancados los resultados de la transformación digital—sin importar qué herramientas compres.</p>
+<hr>
+<h2>Cuando Mejores Herramientas No Solucionan el Patrón</h2>
+<p>Cuando los esfuerzos de transformación se estancan, el post-mortem a menudo suena familiar:</p>
+<ul>
+<li>“Elegimos la plataforma incorrecta.”  </li>
+<li>“El proveedor no cumplió.”  </li>
+<li>“La metodología no fue un buen ajuste para nuestra cultura.”  </li>
+<li>“El equipo no tenía las habilidades adecuadas.”</li>
+</ul>
+<p>Estas no son quejas ficticias.<br>Describen problemas reales que pueden descarrilar un proyecto.</p>
+<p>El problema no es que estas explicaciones sean falsas.<br>El problema es que, tomadas solas, son <em>demasiado pequeñas</em> para explicar el patrón.</p>
+<p>Considera cómo se repiten los fracasos de la transformación digital:</p>
+<ul>
+<li>A través de <strong>diferentes generaciones de tecnología</strong><br>(ERP monolítico a SOA a microservicios a nube a IA).  </li>
+<li>Con <strong>diferentes proveedores y socios</strong><br>(cambiando de proveedores, firmas consultoras o plataformas en cada nueva ola).  </li>
+<li>Bajo <strong>diferentes equipos de liderazgo</strong><br>(los CIO, directores digitales o patrocinadores de programas vienen y van).</li>
+</ul>
+<p>Si la causa raíz fuera “la plataforma incorrecta” o “el socio equivocado”,<br>esperarías que los resultados se vieran diferentes una vez corregidas esas elecciones.<br>En cambio, las organizaciones a menudo experimentan:</p>
+<ul>
+<li>Los mismos retrasos en la toma de decisiones.  </li>
+<li>La misma dificultad para escalar más allá de los pilotos.  </li>
+<li>La misma tensión entre la optimización local y los resultados empresariales.</li>
+</ul>
+<p>En otras palabras:<br><strong>el patrón observable no es específico de los proveedores y no es específico de las herramientas.</strong></p>
+<p>Las explicaciones técnicas—errores de configuración, herramientas inmaduras, cobertura de pruebas deficiente, prácticas de DevOps débiles—son reales.<br>Pueden hundir un solo proyecto.</p>
+<p>Pero no pueden, por sí solas, explicar por qué fracasos materialmente similares se presentan a través de<br>múltiples generaciones de tecnología, en múltiples organizaciones, a lo largo de décadas.</p>
+<p>Cuando diferentes herramientas producen los mismos resultados estructurales, <em>la estructura es lo que necesitas investigar</em>.</p>
+<hr>
+<h2>Por qué los Post-Mortem Técnicos Siguen Perdiendo el Punto</h2>
+<p>Los post-mortem técnicos son atractivos porque se sienten concretos:</p>
+<ul>
+<li>Puedes señalar un sistema mal configurado.  </li>
+<li>Puedes rastrear una caída a una elección de diseño particular.  </li>
+<li>Puedes atribuir sobrecostos a una complejidad subestimada.</li>
+</ul>
+<p>Estas narrativas son importantes para el aprendizaje y la mejora.<br>Pero tienen dos puntos ciegos incorporados.</p>
+<h3>1. Se Centran en Condiciones Locales</h3>
+<p>Los análisis técnicos se centran en el entorno <em>local</em> de un proyecto o sistema:</p>
+<ul>
+<li>La pila específica, infraestructura o arquitectura.  </li>
+<li>El equipo específico y sus prácticas.  </li>
+<li>El ciclo de vida y restricciones de entrega específicos.</li>
+</ul>
+<p>Rara vez preguntan:<br><strong>¿Qué sobre el sistema circundante hizo que este resultado fuera probable?</strong></p>
+<p>Por ejemplo:</p>
+<ul>
+<li>¿Por qué los derechos de decisión se ubicaron donde estaban?  </li>
+<li>¿Por qué las aprobaciones de financiamiento se estructuraron de la manera en que lo hicieron?  </li>
+<li>¿Por qué los foros de gobernanza refuerzan comportamientos en silos en lugar de resultados interfuncionales?</li>
+</ul>
+<p>Sin estas preguntas, cada fallo se trata como una anomalía localizada<br>en lugar de como evidencia de un patrón estructural compartido.</p>
+<h3>2. Se Reinician con Cada Nueva Ola de Tecnología</h3>
+<p>Los post-mortem técnicos a menudo están “bloqueados en versión” a una pila particular:</p>
+<ul>
+<li>“Aprendimos que no debemos diseñar monolitos de esa manera.”  </li>
+<li>“No cometeremos ese error con nuestra próxima migración a la nube.”  </li>
+<li>“Nuestro próximo proyecto de IA incluirá MLOps desde el principio.”</li>
+</ul>
+<p>Pero luego llega una nueva ola.<br>Nuevos patrones, nuevas palabras de moda, nuevas restricciones.</p>
+<p>La organización “reinicia” su aprendizaje en torno a la nueva pila,<br>mientras conserva muchas de las mismas restricciones <strong>estructurales</strong>:</p>
+<ul>
+<li>La misma gobernanza fragmentada.  </li>
+<li>Los mismos modelos de financiamiento en silos.  </li>
+<li>Los mismos incentivos desalineados.</li>
+</ul>
+<p>La tecnología cambia.<br>La estructura no.<br>Y así, el resultado— a nivel empresarial—permanece igual.</p>
+<hr>
+<h2>Lo que “Estructura” Realmente Significa en la Transformación Digital</h2>
+<p>Para entender las causas estructurales del fracaso,<br>necesitamos ser precisos sobre lo que <em>estructura</em> significa en este contexto.</p>
+<p>La estructura no es una metáfora.<br>Es el conjunto de disposiciones duraderas que configuran cómo se realiza realmente el trabajo.</p>
+<p>Como mínimo, esa estructura incluye:</p>
+<ul>
+<li><p><strong>Derechos de decisión</strong><br>¿Quién puede decidir qué, a qué nivel y en qué marco de tiempo? Por ejemplo:  </p>
+<ul>
+<li>¿Puede un equipo interfuncional cambiar un proceso crítico, o debe escalarlo a un comité directivo?  </li>
+<li>¿Quién posee decisiones que abarcan múltiples unidades de negocio?</li>
+</ul>
+</li>
+<li><p><strong>Modelos de financiamiento</strong><br>¿Cómo se proponen, aprueban y renuevan las inversiones?<br>¿Los presupuestos:  </p>
+<ul>
+<li>Siguen proyectos, departamentos, plataformas o flujos de valor?  </li>
+<li>Soportan ajustes continuos, o solo programas grandes y episódicos?</li>
+</ul>
+</li>
+<li><p><strong>Foros de gobernanza</strong><br>¿Dónde se resuelven las cuestiones transversales?  </p>
+<ul>
+<li>¿Existen mecanismos para equilibrar la autonomía local con la coherencia empresarial?  </li>
+<li>¿Los órganos de riesgo y cumplimiento se integran con la entrega digital, o existen como puertas de acceso seriales?</li>
+</ul>
+</li>
+<li><p><strong>Flujos de valor y trabajo</strong><br>¿Cómo se mueve el trabajo a través de las fronteras?  </p>
+<ul>
+<li>¿Los procesos están diseñados en torno a los recorridos del cliente y los resultados de la misión,<br>o en torno a organigramas?  </li>
+<li>¿Dónde los traspasos crean fricción o modos de fallo?</li>
+</ul>
+</li>
+</ul>
+<p>Estos elementos de la estructura operan tanto <strong>por encima</strong> como <strong>alrededor</strong> de cualquier pila de tecnología particular.<br>Forman:</p>
+<ul>
+<li>Qué proyectos se financian.  </li>
+<li>Qué compensaciones son aceptables.  </li>
+<li>Qué tan rápido la intención estratégica puede fluir hacia decisiones ejecutables.</li>
+</ul>
+<p>Cuando decimos que el fracaso de la transformación es <em>estructural</em>, queremos decir:</p>
+<blockquote>
+<p>Los arreglos de derechos de decisión, financiamiento, gobernanza y flujos de valor<br>sistemáticamente alejan la ejecución de la estrategia declarada—incluso cuando los proyectos individuales son técnicamente exitosos.</p>
+</blockquote>
+<hr>
+<h2>Desalineación Estructural: Estrategia, Ejecución, Gobernanza</h2>
+<p>Una forma de ver las causas estructurales más claramente es observar cómo<br><strong>la estrategia, ejecución y gobernanza</strong> se distancian entre sí.</p>
+<ul>
+<li><p><strong>Estrategia</strong> — las declaraciones de intención y dirección:  </p>
+<ul>
+<li>“Seremos una organización impulsada por datos.”  </li>
+<li>“Entregaremos servicios digitales integrales y sin fisuras.”  </li>
+<li>“Empoderaremos a los equipos cercanos a la misión.”</li>
+</ul>
+</li>
+<li><p><strong>Ejecución</strong> — el trabajo real:  </p>
+<ul>
+<li>Programas, proyectos y productos.  </li>
+<li>Procesos y flujos de trabajo diarios.  </li>
+<li>Cómo se dota y mide a los equipos.</li>
+</ul>
+</li>
+<li><p><strong>Gobernanza</strong> — las reglas y mecanismos de supervisión:  </p>
+<ul>
+<li>Políticas de riesgo y cumplimiento.  </li>
+<li>Procesos de presupuesto y cartera.  </li>
+<li>Estándares y puertas de aprobación.</li>
+</ul>
+</li>
+</ul>
+<p>Cuando los esfuerzos de transformación flaquean, a menudo se ven patrones como:</p>
+<ul>
+<li><p>La estrategia promete servicios transversales y centrados en el usuario.<br>La ejecución sigue organizada en torno a proyectos departamentales.<br>La gobernanza revisa propuestas departamento por departamento.  </p>
+</li>
+<li><p>La estrategia exige equipos empoderados y ágiles.<br>Los equipos de ejecución adoptan terminología ágil.<br>La gobernanza aún requiere ciclos de aprobación de varios meses para cambios básicos.  </p>
+</li>
+<li><p>La estrategia enfatiza decisiones impulsadas por datos.<br>Los equipos de ejecución construyen paneles de analítica.<br>Los procesos de gobernanza aún dependen de informes estáticos y aprobaciones manuales.</p>
+</li>
+</ul>
+<p>En cada caso:</p>
+<ul>
+<li>La tecnología puede ser moderna.  </li>
+<li>Las prácticas de entrega pueden estar actualizadas.</li>
+</ul>
+<p>Pero la <em>relación estructural</em> entre estrategia, ejecución y gobernanza está desalineada.<br>Y esa desalineación es lo que finalmente bloquea la transformación sostenida.</p>
+<p>Cuando las estructuras están desalineadas:</p>
+<ul>
+<li>Los equipos de ejecución pueden ser eficientes y capaces—mientras optimizan para las cosas equivocadas.  </li>
+<li>Los foros de gobernanza pueden ser diligentes—mientras refuerzan los silos y ralentizan el cambio sistémico.  </li>
+<li>Los documentos de estrategia pueden ser convincentes—mientras tienen poco efecto en el comportamiento diario.</li>
+</ul>
+<p>El resultado es familiar:</p>
+<ul>
+<li>Victorias locales.  </li>
+<li>Estancamiento empresarial.  </li>
+<li>Otro programa de transformación unos años más tarde.</li>
+</ul>
+<hr>
+<h2>Cómo la Desalineación Se Amplifica con Nuevas Tecnologías</h2>
+<p>Aquí emerge una realidad contraintuitiva:</p>
+<blockquote>
+<p>Cuando existe desalineación estructural, <strong>mejor tecnología puede agravar el problema.</strong></p>
+</blockquote>
+<p>¿Por qué? </p>
+<p>Porque las herramientas modernas:</p>
+<ul>
+<li>Reducen el costo de la experimentación.  </li>
+<li>Aumentan la velocidad de la toma de decisiones locales.  </li>
+<li>Facilitan que equipos o departamentos individuales avancen por su cuenta.</li>
+</ul>
+<p>Si la estructura circundante no está alineada:</p>
+<ul>
+<li>Los equipos se mueven rápidamente en <strong>direcciones diferentes</strong>.  </li>
+<li>Las optimizaciones locales se multiplican.  </li>
+<li>Aumentan los desafíos de integración y gobernanza.</li>
+</ul>
+<p>En lugar de una transformación sincronizada, obtienes:</p>
+<ul>
+<li>Múltiples “plataformas estratégicas” con capacidades superpuestas.  </li>
+<li>Implementaciones inconsistentes de políticas similares (por ejemplo, seguridad, protección de datos).  </li>
+<li>Soluciones paralelas para el mismo problema, ninguna de las cuales escala a nivel empresarial.</li>
+</ul>
+<p>La tecnología no es “mala.”<br>Simplemente está amplificando la estructura que encuentra.</p>
+<p>Si los derechos de decisión, los modelos de financiamiento y los mecanismos de gobernanza están fragmentados,<br>las herramientas digitales modernas acelerarán la fragmentación.</p>
+<hr>
+<h2>Arquitectura como Disciplina Estructural, No Documentación</h2>
+<p>Aquí es donde <strong>la arquitectura</strong> entra en la historia—no como un conjunto de diagramas,<br>sino como una disciplina estructural.</p>
+<p>En muchas organizaciones, la arquitectura se percibe como:</p>
+<ul>
+<li>El equipo que mantiene modelos de referencia y repositorios de estándares.  </li>
+<li>El grupo que asiste a revisiones de diseño y dice “no” tarde en el proceso.  </li>
+<li>Una función de documentación que se queda atrás del cambio en el mundo real.</li>
+</ul>
+<p>En un marco estructural, eso no es suficiente.</p>
+<p>La arquitectura, entendida estructuralmente, trata sobre:</p>
+<ul>
+<li><p><strong>Codificar la intención estratégica en restricciones y patrones operativos</strong><br>para que las decisiones locales sumen resultados empresariales.  </p>
+</li>
+<li><p><strong>Dar forma a los caminos de decisión</strong><br>para que cuando aparezca una nueva iniciativa, fluya a través de principios consistentes, no negociaciones ad hoc.  </p>
+</li>
+<li><p><strong>Conectar estrategia, ejecución y gobernanza</strong> al:  </p>
+<ul>
+<li>Informar sobre cómo se estructuran las carteras.  </li>
+<li>Influir en cómo los modelos de financiamiento refuerzan la coherencia.  </li>
+<li>Proporcionar principios compartidos que los organismos de gobernanza pueden aplicar.</li>
+</ul>
+</li>
+</ul>
+<p>En otras palabras:<br>la arquitectura no es principalmente el artefacto; es el <em>sistema gubernamental</em> que<br>alinea personas, procesos, políticas y tecnología a lo largo del tiempo.</p>
+<p>Sin esta capa arquitectónica operando como una disciplina estructural:</p>
+<ul>
+<li>La transformación se ejecuta como una secuencia de proyectos desconectados.  </li>
+<li>Cada proyecto debe negociar la alineación por su cuenta.  </li>
+<li>Los órganos de gobernanza carecen de un marco compartido para tomar decisiones inter-silos.</li>
+</ul>
+<p>Los resultados se ven como “fracaso técnico,” pero el problema más profundo es:</p>
+<ul>
+<li><strong>No existe un mecanismo estructural para mantener la ejecución atada a la estrategia a medida que cambian las condiciones.</strong></li>
+</ul>
+<hr>
+<h2>Por qué Tratar los Problemas Estructurales como Problemas Técnicos Falla</h2>
+<p>Cuando las organizaciones diagnostican erróneamente problemas estructurales como técnicos,<br>tienden a responder de maneras predecibles:</p>
+<ul>
+<li>Lanzar una reestructuración mayor para “solucionar” la entrega lenta.  </li>
+<li>Cambiar un ecosistema de proveedores por otro para “simplificar” el panorama.  </li>
+<li>Introducir una nueva metodología o modelo operativo como la solución mágica.</li>
+</ul>
+<p>Estas respuestas pueden ser valiosas en un sentido limitado.<br>Pueden mejorar aspectos específicos del entorno.</p>
+<p>Pero si las estructuras subyacentes de derechos de decisión, financiamiento y gobernanza permanecen sin cambios:</p>
+<ul>
+<li>La nueva plataforma hereda los mismos cuellos de botella de aprobación y los mismos incentivos desalineados.  </li>
+<li>El nuevo proveedor se encuentra con los mismos conflictos inter-silos que el anterior.  </li>
+<li>La nueva metodología se adapta para encajar en los viejos ritmos de gobernanza y presupuestación.</li>
+</ul>
+<p>La organización invierte fuertemente en cambio—y luego descubre que<br>su <strong>trayectoria</strong> es en gran parte la misma.</p>
+<p>Dos costos específicos de diagnóstico erróneo destacan:</p>
+<ol>
+<li><p><strong>Complejidad Acumulada</strong><br>Cada ciclo suma:  </p>
+<ul>
+<li>Nuevas plataformas e integraciones.  </li>
+<li>Procesos de gobernanza adicionales.  </li>
+<li>Más capacidades superpuestas.<br>La complejidad crece.<br>La alineación estructural no.</li>
+</ul>
+</li>
+<li><p><strong>Reducción de la Capacidad para un Cambio Estructural Real</strong><br>Después de unos pocos ciclos, los interesados se vuelven escépticos:  </p>
+<ul>
+<li>“Ya hemos realizado tres programas de transformación.”  </li>
+<li>“Probamos ágil/nube/analítica; no solucionó el problema.”<br>El apetito por un cambio estructural más profundo disminuye,<br>incluso cuando la necesidad de ello aumenta.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2>Hacia una Respuesta Arquitectónica Integrada (Previo)</h2>
+<p>Esta conferencia y su contraparte en el blog se han centrado deliberadamente en:</p>
+<ul>
+<li>Mostrar que <strong>el fracaso persistente indica causas sistémicas</strong> más allá de herramientas y proyectos individuales.  </li>
+<li>Argumentar que <strong>la desalineación estructural entre estrategia, ejecución y gobernanza</strong> es un motor principal de esos fracasos.  </li>
+<li>Re-posicionar <strong>la arquitectura</strong> como una disciplina estructural capaz de abordar esa desalineación—no como un ejercicio de documentación posterior a los hechos.</li>
+</ul>
+<p>Aún no hemos descrito un marco de solución específico o un modelo operativo.<br>Eso vendrá más adelante en la serie.</p>
+<p>Antes de introducir cualquier enfoque particular, necesitamos una comprensión clara y compartida de:</p>
+<ul>
+<li>Cómo se manifiesta la desalineación a través de personas, procesos, políticas y tecnología.  </li>
+<li>Cómo la fragmentación de gobernanza y los patrones de derechos de decisión crean modos de fallo predecibles.  </li>
+<li>Lo que significaría para la arquitectura funcionar como un genuino sistema de gobernanza.</li>
+</ul>
+<p>La próxima entrega profundizará en esos patrones estructurales:<br>mapeando cómo los fracasos recurrentes surgen de la forma en que las organizaciones están actualmente arquitectadas,<br>y qué tipo de modelo arquitectónico integrado se requiere para mantener<br>la transformación digital alineada a lo largo del tiempo.</p>
+<p>Por ahora, la conclusión clave es sencilla:</p>
+<blockquote>
+<p>Si los fracasos recurrentes de transformación parecen los mismos a través de herramientas, proveedores y olas tecnológicas, el problema no es principalmente técnico.<br>Es estructural—y la arquitectura, tratada como una disciplina estructural, es donde debe comenzar el trabajo.</p>
+</blockquote>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/es/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/es/episodes/index.html",
+  "inLanguage": "es",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/es/lectures/dta-2/index.html#episode",
+  "url": "https://www.embracingdigital.org/es/lectures/dta-2/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/es/lectures/dta-2/index.html"
+  },
+  "name": "Estructurando tu Transformación Digital",
+  "episodeNumber": 2,
+  "inLanguage": "es",
+  "description": "La transformación digital no falla por la tecnología; falla porque la arquitectura no apoya el cambio. En este episodio de Digital Transformation Architect (DTA), el Dr. Darren Pulsipher explica cómo la arquitectura empresarial es la base estructural de una transformación digital exitosa. Con demasi",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/es/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/es/episodes/dta-2/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Estructurando tu Transformación Digital Video",
+      "embedUrl": "https://www.youtube.com/embed/w1wAN0JSXco"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Estructurando tu Transformación Digital Audio",
+      "contentUrl": "https://share.transistor.fm/e/4fe6db3b"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../es/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; 2025 Paidar Productions LLC</p>
+        <p>Todos los derechos reservados</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

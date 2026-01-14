@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Dynamic Page Title -->
+    <title>هيكلة تحولك الرقمي | Digital Transformation Architect</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/ar/lectures/dta-2/index.html">
+    <meta name="description" content="لا تفشل التحويلات الرقمية بسبب التكنولوجيا - بل تفشل لأن البنية التحتية لا تدعم التغيير. في هذه الحلقة من مهندس التحول الرقمي (DTA)، يشرح الدكتور دارين بولسيفر كيف أن هندسة المؤسسات هي الأساس الهيكلي لنجاح التحول الرقمي. كثيرًا ما تركز المؤسسات على الأدوات، والمنصات، والمشاريع التجريبية بينما تتجاهل">
+    <meta name="keywords" content="التحول الرقمي, بودكاست, مقابلات, أخبار, ذكاء اصطناعي, أمن سيبراني, الحوسبة الطرفية, إدارة البيانات">
+    <meta name="author" content="د. دارين دبليو. بالسيفر">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="هيكلة تحولك الرقمي | Digital Transformation Architect — مقابلات وأخبار ومجتمع">
+    <meta property="og:description" content="لا تفشل التحويلات الرقمية بسبب التكنولوجيا - بل تفشل لأن البنية التحتية لا تدعم التغيير. في هذه الحلقة من مهندس التحول الرقمي (DTA)، يشرح الدكتور دارين بولسيفر كيف أن هندسة المؤسسات هي الأساس الهيكلي لنجاح التحول الرقمي. كثيرًا ما تركز المؤسسات على الأدوات، والمنصات، والمشاريع التجريبية بينما تتجاهل">
+    <meta property="og:url" content="https://www.embracingdigital.org/ar/lectures/dta-2/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="هيكلة تحولك الرقمي | Digital Transformation Architect — مقابلات وأخبار ومجتمع">
+    <meta name="twitter:description" content="لا تفشل التحويلات الرقمية بسبب التكنولوجيا - بل تفشل لأن البنية التحتية لا تدعم التغيير. في هذه الحلقة من مهندس التحول الرقمي (DTA)، يشرح الدكتور دارين بولسيفر كيف أن هندسة المؤسسات هي الأساس الهيكلي لنجاح التحول الرقمي. كثيرًا ما تركز المؤسسات على الأدوات، والمنصات، والمشاريع التجريبية بينما تتجاهل">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (alternates) -->
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="x-default">
+
+    <!-- Favicon & Styles -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "التحول الرقمي",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "التحول الرقمي",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/ar/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body dir="rtl">
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/ar/home/" aria-label="التحول الرقمي — الصفحة الرئيسية">
+            <img src="/images/logo.png" alt="شعار التحول الرقمي" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Mobile toggle -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="تبديل القائمة">☰</button>
+
+    <!-- Primary Nav -->
+    <nav id="primary-nav" aria-label="رئيسي">
+        <ul>
+            <li><a href="/ar/home/index.html" >الرئيسية</a></li>
+
+            <li class="dropdown">
+                <a href="/ar/shows/index.html" aria-haspopup="true" aria-expanded="false">البرامج</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/ar/episodes/index.html" aria-label="مقابلات — التحول الرقمي">
+                            التحول الرقمي
+                            <small class="nav-note">مقابلات</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/ar/briefs/index.html" aria-label="الأخبار — الرقمي هذا الأسبوع">
+                            الرقمي هذا الأسبوع
+                            <small class="nav-note">أخبار</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/ar/guests/index.html">الضيوف</a></li>
+            <li><a href="/ar/articles/index.html">المقالات</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/ar/community.html" aria-haspopup="true" aria-expanded="false">المجتمع</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/newsletter.html">النشرة البريدية</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">باتريون</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">مجموعة لينكدإن</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">المتجر</a></li>
+
+            <!-- About -->
+            <li class="dropdown">
+                <a href="/ar/about.html" aria-haspopup="true" aria-expanded="false">من نحن</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/about.html">حول البرنامج</a></li>
+                    <li role="none"><a role="menuitem" href="/ar/host.html">المُقدِّم: د. دارين بالسيفر</a></li>
+                    <li role="none"><a role="menuitem" href="/ar/sponsors/index.html">الرعاية والتواصل</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ar/search.html">بحث</a></li>
+
+            <!-- Languages -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">اللغات</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../ar/home/index.html">Home</a></li>
+        <li><a href="../../../ar/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 2: Structuring your Digital Transformation</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/ar/lectures/dta-2/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/ar/lectures/dta-2/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 2</span>
+                <span class="episode-title">Structuring your Digital Transformation</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time itemprop="datePublished">&#34;2026-01-13T04:21:33.592Z&#34;</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+
+            <meta itemprop="episodeNumber" content="2"/>
+            <meta itemprop="inLanguage" content="ar"/>
+        </header>
+
+        
+            <section class="video-container" aria-label="Watch the episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
+                <meta itemprop="name" content="هيكلة تحولك الرقمي Video">
+                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/w1wAN0JSXco">
+                <iframe
+                        width="auto"
+                        height="auto"
+                        src="https://www.youtube.com/embed/w1wAN0JSXco"
+                        title="هيكلة تحولك الرقمي Video"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                ></iframe>
+            </section>
+        
+
+        
+            <section class="podcast-container" aria-label="Listen to this episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
+                <meta itemprop="name" content="هيكلة تحولك الرقمي Audio">
+                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/4fe6db3b">
+                <iframe
+                        width="100%"
+                        height="180"
+                        frameborder="0"
+                        scrolling="no"
+                        src="https://share.transistor.fm/e/4fe6db3b"
+                        title="هيكلة تحولك الرقمي Audio"
+                        loading="lazy"
+                ></iframe>
+
+                <p class="listen-note">
+                    Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                </p>
+            </section>
+        
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>لا تفشل التحويلات الرقمية بسبب التكنولوجيا - بل تفشل لأن البنية التحتية لا تدعم التغيير.</p>
+<p>في هذه الحلقة من مهندس التحول الرقمي (DTA)، يشرح الدكتور دارين بولسيفر كيف أن هندسة المؤسسات هي الأساس الهيكلي لنجاح التحول الرقمي. كثيرًا ما تركز المؤسسات على الأدوات، والمنصات، والمشاريع التجريبية بينما تتجاهل القرارات الهيكلية الأكثر عمقًا التي تحدد ما إذا كان بإمكان التغيير أن يتوسع ويستمر.</p>
+<p>تعيد هذه المحاضرة تأطير الهندسة على أنها نظام حي - نظام يتماشى مع الاستراتيجية، والتنظيم، والعمليات، والقدرات الرقمية على مر الزمن. ستتعلم لماذا تتوقف الكثير من جهود التحول بعد النجاح المبكر، وكيف أن عدم التنسيق يقوض التقدم بصمت، وماذا يتعين على القادة القيام به بشكل مختلف لتصميم أنظمة يمكنها التكيف باستمرار.</p>
+<p>إذا كانت مؤسستك تستثمر بشكل كبير في المبادرات الرقمية لكنها تكافح لتحقيق تأثير مستدام، تشرح هذه الحلقة لماذا - وكيف يمكن أن تصبح الهندسة ممكنة بدلاً من أن تكون قيدًا.</p>
+<p>الفصول
+00:00 المقدمة: لماذا تهم الهندسة
+لماذا يعتمد نجاح التحول الرقمي على أكثر من التكنولوجيا أو الأدوات.</p>
+<p>02:10 وهم نجاح التحول
+لماذا لا تترجم المشاريع التجريبية والنجاحات المعزولة إلى تغيير يشمل المؤسسة بأكملها.</p>
+<p>05:45 الهندسة كأساس للتغيير
+كيف تشكل هندسة المؤسسات السلوك، والقرارات، والنتائج.</p>
+<p>09:30 عدم التنسيق: قاتل التحول الصامت
+أين تتباعد الاستراتيجية، والتنظيم، والأنظمة - ولماذا يهم ذلك.</p>
+<p>14:20 من المشاريع إلى التحول المستمر
+الفرق بين تسليم المشاريع وتمكين التطور المستمر.</p>
+<p>18:10 الهندسة كنظام حي
+لماذا يجب أن تتكيف الهندسة مع مرور الوقت، وليس أن تتجمد عند التنفيذ.</p>
+<p>22:30 التصميم من أجل القابلية للتكيف والنمو
+كيف تصمم من أجل التغيير دون خلق هشاشة.</p>
+<p>27:10 النقاط الأساسية لقادة التحول
+ماذا ينبغي على القادة القيام به بشكل مختلف لتحقيق تحول رقمي مستدام.</p>
+
+
+            
+
+            
+                <div class="guests" aria-label="Guests">
+                    
+                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                    
+                </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>الأسباب الهيكلية مقابل الأسباب التقنية لفشل التحول الرقمي</h1>
+<p><strong>الدكتور دارين و. بولسيفر</strong><br>السلسلة: <em>لماذا يفشل التحول الرقمي — ولماذا توجد O-DXA</em></p>
+<p>لقد كان التحول الرقمي على أجندات التنفيذيين لأكثر من عقدين من الزمن. على مر ذلك الوقت، مرت المؤسسات عبر أجيال متعاقبة من التكنولوجيا: نظام تخطيط موارد المؤسسات في الموقع، والهندسة المعمارية الموجهة نحو الخدمات، ومنصات السحابة، والأتمتة، والبيانات التحليلية، والذكاء الاصطناعي.</p>
+<p>مع كل موجة، تتحسن الأدوات. ومع ذلك، تبدو نتائج التحول غريبة بشكل مألوف.</p>
+<ul>
+<li>يتم تنفيذ المشاريع.  </li>
+<li>تنجح التجارب الأولية.  </li>
+<li>تضيء لوحات التحكم.</li>
+</ul>
+<p>ثم — بعد ثلاث إلى خمس سنوات — تجد المؤسسة نفسها تبدأ مبادرة &quot;تحول&quot; جديدة لمعالجة العديد من القضايا نفسها التي كان من المفترض أن يحلها التحول السابق.</p>
+<p>هذه ليست قصة منعزلة. إنها نمط.</p>
+<p>حدد المحاضرة الأولى في هذه السلسلة ذلك النمط على أنه <em>مستمر ونظامي</em>: الفشل الذي يتكرر في القطاعات والتقنيات وتغييرات القيادة. في هذا الجزء، نتقدم خطوة إلى الأمام: ندرس <em>لماذا</em> تكون الشروحات التي تركز على التكنولوجيا غير كافية، ولماذا الأسباب الرئيسية لفشل التحول هي <em>هيكلية ومعمارية</em>، وليس تقنية.</p>
+<p>هدفنا هو تمييز <strong>الأسباب الهيكلية</strong> عن <strong>الأعراض التقنية</strong>، وإظهار كيف أن عدم التوافق بين الاستراتيجية والتنفيذ والحوكمة يحافظ على نتائج التحول الرقمي عالقة — بغض النظر عن الأدوات التي تشتريها.</p>
+<hr>
+<h2>عندما لا تصلح الأدوات الأفضل المشكلة</h2>
+<p>عندما تتوقف جهود التحول، غالبًا ما يبدو تقرير ما بعد الوفاة مألوفًا:</p>
+<ul>
+<li>&quot;اخترنا المنصة الخطأ.&quot;  </li>
+<li>&quot;لم يكن الأداء كما تم التوقع.&quot;  </li>
+<li>&quot;لم تكن المنهجية مناسبة لثقافتنا.&quot;  </li>
+<li>&quot;لم يكن لدى الفريق المهارات المناسبة.&quot;</li>
+</ul>
+<p>هذه ليست شكاوى خيالية. بل تصف مشاكل حقيقية يمكن أن تؤدي إلى تعطيل مشروع.</p>
+<p>المشكلة ليست أن هذه الشروحات خاطئة. المشكلة هي أنه، بمفردها، تكون <em>صغيرة جدًا</em> لشرح النمط.</p>
+<p>فكر في كيفية تكرار فشل التحول الرقمي:</p>
+<ul>
+<li>عبر <strong>أجيال التكنولوجيا المختلفة</strong><br>(من ERP الأحادي إلى SOA إلى الميكروسيرفيس إلى السحابة إلى الذكاء الاصطناعي). </li>
+<li>مع <strong>بائعين وشركاء مختلفين</strong><br>(تغيير المزودين، أو استشاريين، أو منصات في كل موجة جديدة). </li>
+<li>تحت <strong>فرق قيادة مختلفة</strong><br>(يأتي ويذهب مدراء تكنولوجيا المعلومات، ومدراء الرقمنة، أو رعاة البرامج).</li>
+</ul>
+<p>إذا كانت السبب الجذري هو &quot;المنصة الخطأ&quot; أو &quot;الشريك الخطأ&quot;، كنت ستتوقع أن تبدو النتائج مختلفة بمجرد تصحيح هذه الخيارات. بدلاً من ذلك، تواجه المؤسسات غالبًا:</p>
+<ul>
+<li>نفس التأخيرات في اتخاذ القرار. </li>
+<li>نفس الصعوبة في التوسع ما بعد التجارب الأولية. </li>
+<li>نفس التوتر بين تحسين الأداء المحلي ونتائج المؤسسة.</li>
+</ul>
+<p>بعبارة أخرى: <strong>النمط المرئي ليس محددًا لبائع معين وليس محددًا لأداة معينة.</strong></p>
+<p>التفسيرات التقنية — أخطاء التكوين، أدوات غير ناضجة، تغطية اختبار ضعيفة، ممارسات DevOps ضعيفة — حقيقية. يمكن أن تغرق مشروعًا واحدًا.</p>
+<p>لكنها لا يمكن أن تفسر بمفردها لماذا تظهر فشل مشابهة بشكل مادي عبر أجيال متعددة من التكنولوجيا، في مؤسسات متعددة، على مدى عقود. </p>
+<p>عندما تنتج أدوات مختلفة نفس النتائج الهيكلية، <em>فإن الهيكل هو ما تحتاج إلى التحقيق به</em>.</p>
+<hr>
+<h2>لماذا تغفل تقارير ما بعد الوفاة التقنية عن النقطة الأساسية</h2>
+<p>تعتبر تقارير ما بعد الوفاة التقنية جذابة لأنها تبدو ملموسة:</p>
+<ul>
+<li>يمكنك الإشارة إلى نظام غير مُكَوَّن جيدًا.</li>
+<li>يمكنك تتبع انقطاع إلى خيار تصميم معين.</li>
+<li>يمكنك اعتبار التكاليف الزائدة نتيجة تعقيد مُقَدَّر بشكل خاطئ.</li>
+</ul>
+<p>هذه السرديات مهمة للتعلم والتحسين. لكن لديهم نقطتين عميقتين.</p>
+<h3>1. تركز على الظروف المحلية</h3>
+<p>تركز التحليلات التقنية على البيئة <em>المحلية</em> لمشروع أو نظام:</p>
+<ul>
+<li>التكدس المحدد، البنية التحتية، أو الهندسة المعمارية.</li>
+<li>الفريق المحدد وممارساته.</li>
+<li>دورة التسليم والقيود المحددة.</li>
+</ul>
+<p>نادراً ما تسأل:<br><strong>ما الذي يجعل هذا النتيجة مرجحة ضمن النظام المحيط؟</strong></p>
+<p>على سبيل المثال:</p>
+<ul>
+<li>لماذا كانت حقوق اتخاذ القرار موجودة كما هي؟ </li>
+<li>لماذا كانت الموافقات على التمويل مُهيكلة بهذه الطريقة؟ </li>
+<li>لماذا كانت المنتديات الحوكمية تعزز سلوكيات معزولة بدلاً من نتائج عابرة للمكاسب الوظيفية؟</li>
+</ul>
+<p>بدون هذه الأسئلة، يتم التعامل مع كل فشل على أنه شذوذ محلي بدلاً من كونه دليلا على نمط هيكلي مشترك.</p>
+<h3>2. يتم إعادة تعيينها مع كل موجة تكنولوجيا جديدة</h3>
+<p>غالبًا ما تكون تقارير ما بعد الوفاة الفنية &quot;مُؤَسَّسَة&quot; على تكدس معين:</p>
+<ul>
+<li>&quot;لقد تعلمنا ألا نصمم الأحادي بهذه الطريقة.&quot;</li>
+<li>&quot;لن نرتكب هذا الخطأ مرة أخرى مع ترحيلنا إلى السحابة القادم.&quot; </li>
+<li>&quot;سيشمل مشروع الذكاء الاصطناعي التالي MLOps من البداية.&quot;</li>
+</ul>
+<p>لكن بعد ذلك تأتي موجة جديدة. أنماط جديدة، كلمات رنانة جديدة، قيود جديدة.</p>
+<p>تعيد المؤسسة &quot;تعلمها&quot; حول التكدس الجديد، بينما تحمل إلى الأمام العديد من نفس القيود <strong>الهيكلية</strong>:</p>
+<ul>
+<li>نفس الحوكمة المجزأة. </li>
+<li>نفس نماذج التمويل المعزولة. </li>
+<li>نفس الحوافز غير المتوافقة.</li>
+</ul>
+<p>تتغير التكنولوجيا. الهيكل لا يتغير. وبالتالي تظل النتيجة — على مستوى المؤسسة — كما هي.</p>
+<hr>
+<h2>ماذا تعني &quot;الهيكل&quot; حقًا في التحول الرقمي</h2>
+<p>لفهم الأسباب الهيكلية للفشل، نحتاج إلى أن نكون دقيقين في ما تعنيه <em>الهيكل</em> في هذا السياق.</p>
+<p>الهيكل ليس مجرد استعارة. إنه مجموعة الترتيبات الدائمة التي تشكل كيفية تنفيذ العمل فعليًا.</p>
+<p>على الأقل، تشمل هذه الهيكلة:</p>
+<ul>
+<li><p><strong>حقوق اتخاذ القرار</strong><br>من يمكنه أن يقرر ماذا، على أي مستوى، وفي أي إطار زمني؟ على سبيل المثال:</p>
+<ul>
+<li>هل يمكن لفريق متعدد الوظائف تغيير عملية حاسمة، أم يتوجب عليه تصعيد الأمر إلى لجنة توجيهية؟</li>
+<li>من يمتلك القرارات التي تمتد عبر وحدات الأعمال المتعددة؟</li>
+</ul>
+</li>
+<li><p><strong>نماذج التمويل</strong><br>كيف تقترح الاستثمارات وتوافق عليها وتجدد؟<br>هل الميزانيات:</p>
+<ul>
+<li>تتبع المشاريع أو الأقسام أو المنصات أو تدفقات القيمة؟</li>
+<li>تدعم الضبط المستمر، أم فقط البرامج الكبيرة والمتقطعة؟</li>
+</ul>
+</li>
+<li><p><strong>المنتديات الحوكمية</strong><br>أين تتم معالجة القضايا العابرة للمسؤوليات؟</p>
+<ul>
+<li>هل توجد آليات لتحقيق توازن بين الاستقلالية المحلية والاتساق المؤسسي؟</li>
+<li>هل تتكامل هيئات إدارة المخاطر والامتثال مع تسليمات رقمية، أم توجد كأبواب متسلسلة؟</li>
+</ul>
+</li>
+<li><p><strong>تدفقات القيمة والعمل</strong><br>كيف ينتقل العمل عبر الحدود؟</p>
+<ul>
+<li>هل تم تصميم العمليات حول رحلات العملاء ونتائج المهام، أم حول الهياكل التنظيمية؟</li>
+<li>أين تخلق التسليمات احتكاكاً أو أوضاع فشل؟</li>
+</ul>
+</li>
+</ul>
+<p>تعمل هذه العناصر الهيكلية <strong>فوق</strong> و<strong>حول</strong> أي تكدس تكنولوجيا معين. إنها تشكل:</p>
+<ul>
+<li>أي المشاريع يتم تمويلها.</li>
+<li>أي الموازنات مقبولة.</li>
+<li>كم بسرعة يمكن أن تتدفق النية الاستراتيجية إلى قرارات قابلة للتنفيذ.</li>
+</ul>
+<p>عندما نقول إن فشل التحول هو <em>هيكلي</em>، نعني:</p>
+<blockquote>
+<p>إن ترتيبات حقوق اتخاذ القرار، والتمويل، والحوكمة، وتدفقات القيمة تسحب التنفيذ بشكل منهجي بعيدًا عن الاستراتيجية المعلنة — حتى عندما تكون المشاريع الفردية ناجحة من الناحية التقنية.</p>
+</blockquote>
+<hr>
+<h2>عدم توافق الهيكل: الاستراتيجية، التنفيذ، الحوكمة</h2>
+<p>إحدى الطرق لرؤية الأسباب الهيكلية بشكل أوضح هي أن ننظر كيف <strong>تبتعد الاستراتيجية، والتنفيذ، والحوكمة</strong> عن بعضها البعض.</p>
+<ul>
+<li><p><strong>الاستراتيجية</strong> — البيانات عن النية والاتجاه: </p>
+<ul>
+<li>&quot;سنكون منظمة قائمة على البيانات.&quot; </li>
+<li>&quot;سنقدم خدمات رقمية سلسة من البداية للنهاية.&quot; </li>
+<li>&quot;سنمكن الفرق القريبة من المهمة.&quot;</li>
+</ul>
+</li>
+<li><p><strong>التنفيذ</strong> — العمل الفعلي: </p>
+<ul>
+<li>البرامج، والمشاريع، والمنتجات. </li>
+<li>العمليات اليومية و تدفقات العمل. </li>
+<li>كيف يتم تعيين الفرق وقياسها.</li>
+</ul>
+</li>
+<li><p><strong>الحوكمة</strong> — القواعد وآليات الإشراف: </p>
+<ul>
+<li>سياسات المخاطر والامتثال. </li>
+<li>عمليات الميزانية والمحفظة. </li>
+<li>المعايير وأبواب الموافقة.</li>
+</ul>
+</li>
+</ul>
+<p>عندما تتعثر جهود التحول، غالبًا ما ترى أنماطًا مثل:</p>
+<ul>
+<li><p>تقوم الاستراتيجية بوعد بتقديم خدمات عبر الوظائف، ومركز المستخدم.<br>بينما لا يزال التنفيذ منظمًا حول المشاريع المحلية.<br>تراجع الحوكمة الاقتراحات قسمًا بقسم.</p>
+</li>
+<li><p>تدعو الاستراتيجية لتشكيل فرق مرنة وممكنة.<br>تتبنى فرق التنفيذ مصطلحات مرنة.<br>لا تزال الحوكمة تتطلب دورات موافقة تستغرق شهورًا للقرارات الأساسية.</p>
+</li>
+<li><p>تؤكد الاستراتيجية على القرارات المستندة إلى البيانات.<br>تبني فرق التنفيذ لوحات تحكم تحليلية.<br>لا تزال عمليات الحوكمة تعتمد على التقارير الثابتة والتوقيعات اليدوية.</p>
+</li>
+</ul>
+<p>في كل حالة:</p>
+<ul>
+<li>قد تكون التكنولوجيا حديثة.</li>
+<li>قد تكون ممارسات التسليم محدثة.</li>
+</ul>
+<p>لكن <em>العلاقة الهيكلية</em> بين الاستراتيجية، والتنفيذ، والحوكمة غير متوافقة. وهذه الإخفاقات هي ما يعوق التحول المستدام في النهاية.</p>
+<p>عندما تكون الهياكل غير متوافقة:</p>
+<ul>
+<li>يمكن أن تكون فرق التنفيذ فعّالة وقادرة — بينما تحسن من أجل الأشياء الخاطئة.</li>
+<li>يمكن أن تكون المنتديات الحوكمية دقيقة — بينما تعزز الصوامع وتبطئ التغيير الناجم بشكل منهجي.</li>
+<li>يمكن أن تكون الوثائق الاستراتيجية مقنعة — بينما يكون لها تأثير ضئيل على سلوكيات اليومية.</li>
+</ul>
+<p>النتيجة مألوفة:</p>
+<ul>
+<li>انتصارات محلية.</li>
+<li>ركود مؤسسي.</li>
+<li>برنامج آخر للتحول بعد بضع سنوات.</li>
+</ul>
+<hr>
+<h2>كيف يعزز عدم التوافق نفسه مع التكنولوجيا الجديدة</h2>
+<p>تظهر هنا حقيقة غير بديهية:</p>
+<blockquote>
+<p>عندما يوجد عدم توافق هيكلي، <strong>يمكن أن تجعل التكنولوجيا الأفضل المشكلة أسوأ.</strong></p>
+</blockquote>
+<p>لماذا؟</p>
+<p>لأن الأدوات الحديثة:</p>
+<ul>
+<li>تخفض تكاليف التجريب.</li>
+<li>تزيد من سرعة اتخاذ القرار محليًا.</li>
+<li>تسهل على الفرق أو الأقسام الفردية التقدم بمفردها.</li>
+</ul>
+<p>إذا كانت الهياكل المحيطة غير متوافقة:</p>
+<ul>
+<li>تتحرك الفرق بسرعة في <strong>اتجاهات مختلفة</strong>.</li>
+<li>تتضاعف التحسينات المحلية.</li>
+<li>تزداد التحديات في التكامل والحوكمة.</li>
+</ul>
+<p>بدلاً من تحول متناغم، تصبح:</p>
+<ul>
+<li>منصات &quot;استراتيجية متعددة&quot; ذات قدرات متداخلة.</li>
+<li>تنفيذات غير متسقة لسياسات مشابهة (مثل: الأمان، حماية البيانات).</li>
+<li>حلول متوازية لنفس المشكلة، وليس منها ما يتوسع على مستوى المؤسسة.</li>
+</ul>
+<p>التكنولوجيا ليست &quot;سيئة&quot;.<br>بل ببساطة تعزز الهيكل الذي تجد نفسها فيه.</p>
+<p>إذا كانت حقوق اتخاذ القرار، ونماذج التمويل، وآليات الحوكمة مجزأة، ستسرع الأدوات الرقمية الحديثة من تفتيت الهياكل.</p>
+<hr>
+<h2>العمارة كإنضباط هيكلي، وليس مجرد توثيق</h2>
+<p>هنا تدخل <strong>العمارة</strong> في القصة — ليس كمجموعة من المخططات، ولكن كإنضباط هيكلي.</p>
+<p>في العديد من المؤسسات، يتم اعتبار العمارة كـ:</p>
+<ul>
+<li>الفريق الذي يحتفظ بنماذج مرجعية ومستودعات المعايير.</li>
+<li>المجموعة التي تحضر مراجعات التصاميم وتقول &quot;لا&quot; في مراحل متأخرة من العملية.</li>
+<li>وظيفة توثيق تتخلف عن التغيير في العالم الحقيقي.</li>
+</ul>
+<p>في سياق هيكلي، هذا ليس كافيًا.</p>
+<p>العمارة، المفهومة من منظور هيكلي، تتعلق بـ:</p>
+<ul>
+<li><p><strong>ترميز النية الاستراتيجية إلى قيود وأنماط تشغيلية</strong><br>بحيث تُجمع القرار المحلي نحو نتائج مؤسسية.</p>
+</li>
+<li><p><strong>تشكيل مسارات اتخاذ القرار</strong><br>بحيث عندما تظهر مبادرة جديدة، تتدفق عبر مبادئ متسقة، وليس تفاوضات عشوائية.</p>
+</li>
+<li><p><strong>جسر الاستراتيجية والتنفيذ والحوكمة</strong> من خلال:</p>
+<ul>
+<li>إبلاغ كيفية بناء المحفظات.</li>
+<li>التأثير على كيفية تعزيز نماذج التمويل للتماسك.</li>
+<li>توفير مبادئ مشتركة يمكن أن تطبقها هيئات الحوكمة.</li>
+</ul>
+</li>
+</ul>
+<p>بعبارة أخرى:<br>العمارة ليست في المقام الأول الشيء المصنوع؛ إنها <em>النظام الحاكم</em> الذي يتوافق مع الأشخاص والعمليات والسياسات والتقنية بمرور الزمن.</p>
+<p>بدون هذه الطبقة المعمارية التي تعمل كإنضباط هيكلي:</p>
+<ul>
+<li>يُنفذ التحول كأزمة من المشاريع غير المتصلة.</li>
+<li>يجب أن تتفاوض كل مشروع على توافقها بمفردها.</li>
+<li>تفتقر هيئات الحوكمة إلى إطار مشترك لاتخاذ قرارات عابرة للصوامع.</li>
+</ul>
+<p>تبدو النتائج وكأنها &quot;فشل تقني&quot;، لكن القضية الأعمق هي:</p>
+<ul>
+<li><strong>لا توجد آلية هيكلية تحافظ على ربط التنفيذ بالاستراتيجية مع تغير الظروف.</strong></li>
+</ul>
+<hr>
+<h2>لماذا فشل معالجة المشاكل الهيكلية كمشاكل تقنية</h2>
+<p>عندما تسيء المؤسسات تشخيص القضايا الهيكلية على أنها تقنية، تميل إلى الاستجابة بطرق متوقعة:</p>
+<ul>
+<li>بدء إعادة بناء ضخمة لـ &quot;إصلاح&quot; التسليم البطيء.</li>
+<li>استبدال نظام بائع واحد بآخر لـ &quot;تبسيط&quot; المشهد.</li>
+<li>إدخال منهجية جديدة أو نموذج تشغيل كورقة فضية.</li>
+</ul>
+<p>يمكن أن تكون هذه الاستجابات ذات قيمة بمعنى محدود. قد تحسن بعض جوانب البيئة.</p>
+<p>لكن إذا ظلت الهياكل الأساسية لحقوق اتخاذ القرار، والتمويل، والحوكمة دون تغيير:</p>
+<ul>
+<li>يرث النظام الجديد نفس زجاجات الموافقة والسلوكيات غير المتوافقة.</li>
+<li>يواجه البائع الجديد نفس النزاعات العابرة للصوامع مثل سابقه.</li>
+<li>يتم تعديل المنهجية الجديدة لملاءمة الإيقاعات القديمة للحوكمة والميزانية.</li>
+</ul>
+<p>تستثمر المؤسسة بكثافة من أجل التغيير — ثم تكتشف أن <strong>مسارها</strong> هو بشكل كبير نفس المسار.</p>
+<p>يبرز اثنان من التكاليف المحددة للخطأ في التشخيص:</p>
+<ol>
+<li><p><strong>التعقيد المتراكم</strong><br>يضيف كل دورة:</p>
+<ul>
+<li>منصات وتكاملات جديدة. </li>
+<li>عمليات حوكمة إضافية. </li>
+<li>مزيد من القدرات المتداخلة.<br>ينمو التعقيد. 
+لا يتوافق الهيكل.</li>
+</ul>
+</li>
+<li><p><strong>قدرة منخفضة على حدوث تغيير هيكلي حقيقي</strong><br>بعد بعض الدورات، يصبح المعنيون مشكوكين:</p>
+<ul>
+<li>&quot;لقد قمنا بالفعل بثلاث برامج للتحول.&quot; </li>
+<li>&quot;جربنا المرونة / السحابة / البيانات التحليلية؛ لم تحل المشكلة.&quot;<br>يقل مستوى الحافز للتغيير الهيكلي الأكثر عمقًا، حتى في الوقت الذي تزداد فيه الحاجة لذلك.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2>نحو استجابة معمارية متكاملة (معاينة)</h2>
+<p>ركزت هذه المحاضرة ونسختها على المدونة عمدًا على:</p>
+<ul>
+<li>إظهار أن <strong>الفشل المستمر يشير إلى أسباب نظامية</strong> تتجاوز الأدوات والمشاريع الفردية. </li>
+<li>الجدال بأن <strong>عدم التوافق الهيكلي بين الاستراتيجية والتنفيذ والحكومة</strong> هو محرك رئيسي لهذه الإخفاقات. </li>
+<li>إعادة وضع <strong>العمارة</strong> كإنضباط هيكلي قادر على معالجة ذلك عدم التوافق - وليس كنشاط توثيق بعد الحدث.</li>
+</ul>
+<p>لم نحدد بعد إطار حل محدد أو نموذج تشغيل. ذلك سيأتي لاحقًا في السلسلة.</p>
+<p>قبل تقديم أي نهج معين، نحتاج إلى فهم واضح ومشترك لما يلي:</p>
+<ul>
+<li>كيف يظهر عدم التوافق عبر الأشخاص والعمليات والسياسات والتقنية.</li>
+<li>كيف تخلق التشرذم الحوكي وأنماط حقوق اتخاذ القرار أوضاع فشل متوقعة.</li>
+<li>ماذا يعني أن تعمل العمارة كنظام حوكمي حقيقي.</li>
+</ul>
+<p>سيتناول الجزء التالي من السلسلة هذه الأنماط الهيكلية بشكل أعمق:<br>إعداد خريطة لكيفية نشوء إخفاقات متكررة من الطريقة التي تم معماريتها بها المؤسسات حاليًا، وما هو نوع النموذج المعماري المتكامل المطلوب للحفاظ على توافق التحول الرقمي مع مرور الوقت.</p>
+<p>في الوقت الحالي، الرسالة الأساسية بسيطة:</p>
+<blockquote>
+<p>إذا كانت إخفاقات التحول المتكررة تبدو متشابهة عبر الأدوات والبائعين وموجات التكنولوجيا، فإن المشكلة ليست تقنية بشكل أساسي.<br>إنها هيكلية — والعمارة، كما تُعالج كإنضباط هيكلي، هي حيث يجب أن تبدأ العمل.</p>
+</blockquote>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/ar/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/ar/episodes/index.html",
+  "inLanguage": "ar",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/ar/lectures/dta-2/index.html#episode",
+  "url": "https://www.embracingdigital.org/ar/lectures/dta-2/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/ar/lectures/dta-2/index.html"
+  },
+  "name": "هيكلة تحولك الرقمي",
+  "episodeNumber": 2,
+  "inLanguage": "ar",
+  "description": "لا تفشل التحويلات الرقمية بسبب التكنولوجيا - بل تفشل لأن البنية التحتية لا تدعم التغيير. في هذه الحلقة من مهندس التحول الرقمي (DTA)، يشرح الدكتور دارين بولسيفر كيف أن هندسة المؤسسات هي الأساس الهيكلي لنجاح التحول الرقمي. كثيرًا ما تركز المؤسسات على الأدوات، والمنصات، والمشاريع التجريبية بينما تتجاهل",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/ar/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/ar/episodes/dta-2/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "هيكلة تحولك الرقمي Video",
+      "embedUrl": "https://www.youtube.com/embed/w1wAN0JSXco"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "هيكلة تحولك الرقمي Audio",
+      "contentUrl": "https://share.transistor.fm/e/4fe6db3b"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../ar/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>حقوق الطبع والنشر &2025 شركة بيدار للإنتاج ذ.م.م</p>
+        <p&gt;جميع الحقوق محفوظة&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

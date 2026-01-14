@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Dynamic Page Title -->
+    <title>デジタルトランスフォーメーションの構築 | Digital Transformation Architect</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/ja/lectures/dta-2/index.html">
+    <meta name="description" content="デジタルトランスフォーメーションは技術のせいで失敗するのではなく、アーキテクチャが変化を支持しないために失敗します。 このデジタルトランスフォーメーションアーキテクト（DTA）のエピソードでは、ダレン・パルシファー博士がエンタープライズアーキテクチャが成功するデジタルトランスフォーメーションの構造的基盤であることを説明します。組織はしばしば、ツール、プラットフォーム、パイロットに焦点を当て、変化がスケールし持続するかどうかを決定する深いアーキテクチャ的決定を無視します。 この講義では、アーキテクチャを生きたシステムとして再定義します。つまり、戦略、組織、プロセス、デジタル能力を時間と共に整合さ">
+    <meta name="keywords" content="デジタルトランスフォーメーション, ポッドキャスト, インタビュー, ニュース, AI, サイバーセキュリティ, エッジコンピューティング, データ管理">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="デジタルトランスフォーメーションの構築 | Digital Transformation Architect — インタビュー、ニュース、コミュニティ">
+    <meta property="og:description" content="デジタルトランスフォーメーションは技術のせいで失敗するのではなく、アーキテクチャが変化を支持しないために失敗します。 このデジタルトランスフォーメーションアーキテクト（DTA）のエピソードでは、ダレン・パルシファー博士がエンタープライズアーキテクチャが成功するデジタルトランスフォーメーションの構造的基盤であることを説明します。組織はしばしば、ツール、プラットフォーム、パイロットに焦点を当て、変化がスケールし持続するかどうかを決定する深いアーキテクチャ的決定を無視します。 この講義では、アーキテクチャを生きたシステムとして再定義します。つまり、戦略、組織、プロセス、デジタル能力を時間と共に整合さ">
+    <meta property="og:url" content="https://www.embracingdigital.org/ja/lectures/dta-2/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="デジタルトランスフォーメーションの構築 | Digital Transformation Architect — インタビュー、ニュース、コミュニティ">
+    <meta name="twitter:description" content="デジタルトランスフォーメーションは技術のせいで失敗するのではなく、アーキテクチャが変化を支持しないために失敗します。 このデジタルトランスフォーメーションアーキテクト（DTA）のエピソードでは、ダレン・パルシファー博士がエンタープライズアーキテクチャが成功するデジタルトランスフォーメーションの構造的基盤であることを説明します。組織はしばしば、ツール、プラットフォーム、パイロットに焦点を当て、変化がスケールし持続するかどうかを決定する深いアーキテクチャ的決定を無視します。 この講義では、アーキテクチャを生きたシステムとして再定義します。つまり、戦略、組織、プロセス、デジタル能力を時間と共に整合さ">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (alternates) -->
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="x-default">
+
+    <!-- Favicon & Styles -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "デジタルトランスフォーメーションを受け入れる",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "デジタルトランスフォーメーションを受け入れる",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/ja/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/ja/home/" aria-label="デジタルトランスフォーメーションを受け入れる ホーム">
+            <img src="/images/logo.png" alt="デジタルトランスフォーメーションを受け入れる ロゴ" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Mobile toggle -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="メニューを切り替える">☰</button>
+
+    <!-- Primary Nav -->
+    <nav id="primary-nav" aria-label="メインナビゲーション">
+        <ul>
+            <li><a href="/ja/home/index.html" >ホーム</a></li>
+
+            <li class="dropdown">
+                <a href="/ja/shows/index.html" aria-haspopup="true" aria-expanded="false">番組</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/ja/episodes/index.html" aria-label="インタビュー — デジタルトランスフォーメーションを受け入れる">
+                            デジタルトランスフォーメーションを受け入れる
+                            <small class="nav-note">インタビュー</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/ja/briefs/index.html" aria-label="ニュース — 今週のデジタルを受け入れる">
+                            今週のデジタルを受け入れる
+                            <small class="nav-note">ニュース</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/guests/index.html">ゲスト</a></li>
+            <li><a href="/ja/articles/index.html">記事</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/ja/community.html" aria-haspopup="true" aria-expanded="false">コミュニティ</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ja/newsletter.html">ニュースレター</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">LinkedIn グループ</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">ショップ</a></li>
+
+            <!-- About -->
+            <li class="dropdown">
+                <a href="/ja/about.html" aria-haspopup="true" aria-expanded="false">概要</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ja/about.html">番組について</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/host.html">ホスト：Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/sponsors/index.html">スポンサーシップ & お問い合わせ</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/search.html">検索</a></li>
+
+            <!-- Languages -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">言語</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../ja/home/index.html">Home</a></li>
+        <li><a href="../../../ja/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 2: Structuring your Digital Transformation</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/ja/lectures/dta-2/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/ja/lectures/dta-2/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 2</span>
+                <span class="episode-title">Structuring your Digital Transformation</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time itemprop="datePublished">&#34;2026-01-13T04:21:33.592Z&#34;</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+
+            <meta itemprop="episodeNumber" content="2"/>
+            <meta itemprop="inLanguage" content="ja"/>
+        </header>
+
+        
+            <section class="video-container" aria-label="Watch the episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
+                <meta itemprop="name" content="デジタルトランスフォーメーションの構築 Video">
+                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/w1wAN0JSXco">
+                <iframe
+                        width="auto"
+                        height="auto"
+                        src="https://www.youtube.com/embed/w1wAN0JSXco"
+                        title="デジタルトランスフォーメーションの構築 Video"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                ></iframe>
+            </section>
+        
+
+        
+            <section class="podcast-container" aria-label="Listen to this episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
+                <meta itemprop="name" content="デジタルトランスフォーメーションの構築 Audio">
+                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/4fe6db3b">
+                <iframe
+                        width="100%"
+                        height="180"
+                        frameborder="0"
+                        scrolling="no"
+                        src="https://share.transistor.fm/e/4fe6db3b"
+                        title="デジタルトランスフォーメーションの構築 Audio"
+                        loading="lazy"
+                ></iframe>
+
+                <p class="listen-note">
+                    Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                </p>
+            </section>
+        
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>デジタルトランスフォーメーションは技術のせいで失敗するのではなく、アーキテクチャが変化を支持しないために失敗します。</p>
+<p>このデジタルトランスフォーメーションアーキテクト（DTA）のエピソードでは、ダレン・パルシファー博士がエンタープライズアーキテクチャが成功するデジタルトランスフォーメーションの構造的基盤であることを説明します。組織はしばしば、ツール、プラットフォーム、パイロットに焦点を当て、変化がスケールし持続するかどうかを決定する深いアーキテクチャ的決定を無視します。</p>
+<p>この講義では、アーキテクチャを生きたシステムとして再定義します。つまり、戦略、組織、プロセス、デジタル能力を時間と共に整合させるものです。多くのトランスフォーメーション努力が早期の成功の後に停滞する理由、ミスマッチが進捗を静かに損なう理由、そしてリーダーが継続的に適応できるシステムを設計するために何を異なって行うべきかを学ぶことができます。</p>
+<p>あなたの組織がデジタルイニシアティブに多大な投資をしているが、持続的な影響を達成するのに苦労している場合、このエピソードはその理由と、アーキテクチャが制約ではなく促進要因になる方法を説明します。</p>
+<p>章立て
+00:00 イントロダクション：なぜアーキテクチャが重要なのか
+デジタルトランスフォーメーションの成功が技術やツール以上のものである理由。</p>
+<p>02:10 トランスフォーメーション成功の幻想
+なぜパイロットや孤立した勝利が企業全体の変化に変わらないのか。</p>
+<p>05:45 変化の基盤としてのアーキテクチャ
+エンタープライズアーキテクチャが行動、決定、結果をどのように形成するか。</p>
+<p>09:30 ミスマッチ：静かなトランスフォーメーションキラー
+戦略、組織、システムがどのように乖離し、なぜそれが重要であるか。</p>
+<p>14:20 プロジェクトから持続的なトランスフォーメーションへ
+プロジェクトを提供することと持続的な進化を促進することの違い。</p>
+<p>18:10 生きたシステムとしてのアーキテクチャ
+なぜアーキテクチャは実装時に凍結するのではなく、時間と共に適応しなければならないのか。</p>
+<p>22:30 適応性とスケールのための設計
+脆弱性を生み出すことなく、変化のためにアーキテクトする方法。</p>
+<p>27:10 トランスフォーメーションリーダーへの重要なポイント
+持続的なデジタルトランスフォーメーションを達成するためにリーダーが異なるべきこと。</p>
+
+
+            
+
+            
+                <div class="guests" aria-label="Guests">
+                    
+                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                    
+                </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>デジタル変革失敗の構造的および技術的要因<br><strong>ダレン・W・パルシファー博士</strong><br>シリーズ: <em>デジタル変革が失敗する理由 — O-DXAが存在する理由</em></p>
+<p>デジタル変革は、20年以上にわたって経営陣の議題の一部でした。<br>その間、組織は技術の世代を次々と経てきました：<br>オンプレミスERP、サービス指向アーキテクチャ、クラウドプラットフォーム、自動化、分析、AI。</p>
+<p>各波が来るたびに、ツールは進化し、より良くなります。<br>それでも、変革の結果は妙に見覚えがあります。</p>
+<ul>
+<li>プロジェクトは稼働します。  </li>
+<li>パイロットが成功します。  </li>
+<li>ダッシュボードが点灯します。</li>
+</ul>
+<p>そして——3年から5年後、組織は前回の変革イニシアティブが解決すべきだった多くの同じ問題に対処するために、新たな「変革」イニシアティブを立ち上げます。</p>
+<p>これは孤立した話ではありません。<br>それはパターンです。</p>
+<p>このシリーズの第1回は、そのパターンを<em>持続的で体系的</em>なものとして整理しました：<br>セクター、技術、リーダーシップの変化を超えて繰り返される失敗。<br>今回のセッションでは、一歩進んで、<em>なぜ</em>技術中心の説明では不十分なのか、<br>失敗の主な原因が<em>構造的でアーキテクチャ的</em>であり、技術的ではないのかを検討します。</p>
+<p>私たちの目標は、<strong>構造的</strong>な原因を<strong>技術的</strong>な症状から区別し、<br>戦略、実行、ガバナンスの間の不整合が、<br>どのようにしてデジタル変革の成果を停滞させるのかを示すことです——どんなツールを購入してもです。</p>
+<hr>
+<h2>より良いツールがパターンを解決しない理由</h2>
+<p>変革の取り組みが停滞すると、事後検証はしばしばお馴染みのものになります：</p>
+<ul>
+<li>「間違ったプラットフォームを選んでしまった。」  </li>
+<li>「ベンダーが期待に応えられなかった。」  </li>
+<li>「その方法論は私たちの文化には合わなかった。」  </li>
+<li>「チームに必要なスキルがなかった。」</li>
+</ul>
+<p>これらは架空の苦情ではありません。<br>実際の問題を描写しており、プロジェクトを台無しにする可能性があります。</p>
+<p>問題は、これらの説明が誤りであることではありません。<br>問題は、それ単独では<em>あまりにも小さすぎる</em>ことです。</p>
+<p>デジタル変革の失敗が再発する様子を考えてみてください：</p>
+<ul>
+<li><strong>異なる技術世代</strong>を超えて (モノリシックERPからSOA、マイクロサービス、クラウド、AIまで)。  </li>
+<li><strong>異なるベンダーとパートナー</strong>と共に (新しい波のたびにプロバイダー、コンサルティング企業、またはプラットフォームを交換)。  </li>
+<li><strong>異なるリーダーシップチーム</strong>のもとで (CIO、チーフデジタルオフィサー、またはプログラムスポンサーが交代する)。</li>
+</ul>
+<p>もし根本的な原因が「間違ったプラットフォーム」や「間違ったパートナー」であれば、<br>それらの選択が修正されると結果が異なるはずです。<br>代わりに、組織はしばしば経験します：</p>
+<ul>
+<li>意思決定の遅延が同じ。  </li>
+<li>パイロットを超えてスケールするのが同じく困難。  </li>
+<li>ローカルの最適化とエンタープライズの成果の間に同じ緊張。</li>
+</ul>
+<p>言い換えれば：<br><strong>観察可能なパターンは、ベンダー特有でもツール特有でもありません。</strong></p>
+<p>技術的な説明——設定ミス、未成熟なツール、テストカバレッジの不足、弱いDevOpsプラクティス——はリアルです。<br>それは1つのプロジェクトを沈めることができます。</p>
+<p>しかし、それだけでは、なぜ類似の失敗が異なる世代の技術、<br>複数の組織で、数十年にわたって現れるのかを説明できません。</p>
+<p>異なるツールが同じ構造的成果を生み出すとき、<em>構造こそを調査する必要があります</em>。</p>
+<hr>
+<h2>技術的な事後検証がポイントを見失う理由</h2>
+<p>技術的な事後検証は、具体的に感じるため魅力的です：</p>
+<ul>
+<li>誤設定されたシステムを指摘できます。  </li>
+<li>特定の設計選択による障害を追跡できます。  </li>
+<li>見積もりが不十分な複雑さによるオーバーランを帰属させることができます。</li>
+</ul>
+<p>これらの物語は、学びと改善にとって重要です。<br>しかし、それには2つの根本的な盲点があります。</p>
+<h3>1. ローカル条件に焦点を当てる</h3>
+<p>技術的な分析は、プロジェクトやシステムの<em>ローカル</em>環境に焦点を当てます：</p>
+<ul>
+<li>特定のスタック、インフラ、またはアーキテクチャ。  </li>
+<li>特定のチームとそのプラクティス。  </li>
+<li>特定のデリバリーライフサイクルと制約。</li>
+</ul>
+<p>彼らはめったに尋ねません：<br><strong>周囲のシステムの何がこの結果を可能にしたのか？</strong></p>
+<p>例えば：</p>
+<ul>
+<li>なぜ決定権はそこで留まっていたのか？  </li>
+<li>なぜ資金承認がそのように構造化されていたのか？  </li>
+<li>なぜガバナンスフォーラムが機能横断的な成果を強化するのではなく、サイロ行動を強化したのか？</li>
+</ul>
+<p>これらの質問がなければ、各失敗は局所的な異常として扱われ、<br>共有された構造的パターンの証拠とは見なされません。</p>
+<h3>2. 各新しい技術波でリセットされる</h3>
+<p>技術的な事後検証は、多くの場合、特定のスタックに「バージョンロック」されます：</p>
+<ul>
+<li>「私たちはその方法でモノリシックを設計しないことを学びました。」  </li>
+<li>「次のクラウド移行では二度とその過ちを犯さないつもりです。」  </li>
+<li>「次のAIプロジェクトでは、最初からMLOpsを取り入れるつもりです。」</li>
+</ul>
+<p>しかし新しい波が襲いかかります。<br>新しいパターン、新しいバズワード、新しい制約が登場します。</p>
+<p>組織は新しいスタックの周りで「学びをリセット」し、<br>同じ<strong>構造的</strong>制約の多くを引き継ぎます：</p>
+<ul>
+<li>同じ断片化されたガバナンス。  </li>
+<li>同じサイロ化された資金モデル。  </li>
+<li>同じ不整合なインセンティブ。</li>
+</ul>
+<p>技術は変わります。<br>構造は変わりません。<br>ですから、結果——エンタープライズレベルでは——は変わらないのです。</p>
+<hr>
+<h2>デジタル変革における「構造」の本当の意味</h2>
+<p>失敗の構造的原因を理解するためには、<br>この文脈での<em>構造</em>の意味を明確にする必要があります。</p>
+<p>構造は隠喩ではありません。<br>それは、実際に仕事がどのように行われるかを形成する持続的な配置の集合です。</p>
+<p>最低限、その構造には以下が含まれます：</p>
+<ul>
+<li><p><strong>決定権</strong><br>誰が、何を、どのレベルで、どのタイムスケールで決定できるのか？ 例として：</p>
+<ul>
+<li>クロスファンクショナルチームは重要なプロセスを変更できますか？それともステアリングコミッティにエスカレーションする必要がありますか？  </li>
+<li>複数のビジネスユニットにまたがる決定を誰が所有していますか？</li>
+</ul>
+</li>
+<li><p><strong>資金モデル</strong><br>投資はどのように提案、承認、更新されるのか？<br>予算は：</p>
+<ul>
+<li>プロジェクト、部門、プラットフォーム、またはバリューストリームに従っていますか？  </li>
+<li>継続的な調整をサポートしますか、それとも大規模でエピソディックなプログラムのみですか？</li>
+</ul>
+</li>
+<li><p><strong>ガバナンスフォーラム</strong><br>クロスカッティングな問題はどこで解決されるのか？  </p>
+<ul>
+<li>ローカルな自律性とエンタープライズの一貫性をバランスさせるメカニズムはありますか？  </li>
+<li>リスクおよびコンプライアンス機関はデジタル配信と統合されていますか、それとも連続的なゲートとして存在していますか？</li>
+</ul>
+</li>
+<li><p><strong>バリューおよびワークフロー</strong><br>仕事はどのように境界を越えて進むのか？  </p>
+<ul>
+<li>プロセスは顧客の旅やミッション成果周辺に設計されていますか、それとも組織図に基づいていますか？  </li>
+<li>ハンドオフのどこで摩擦や失敗のモードが生じますか？</li>
+</ul>
+</li>
+</ul>
+<p>これらの構造の要素は、特定の技術スタック<strong>の上</strong>および<strong>周り</strong>で機能します。<br>それらは以下を形成します：</p>
+<ul>
+<li>どのプロジェクトが資金調達されるか。  </li>
+<li>どのトレードオフが許可されるか。  </li>
+<li>戦略的意図が実行可能な決定にどれだけ迅速に流れ込むか。</li>
+</ul>
+<p>私たちが変革の失敗が<em>構造的</em>であると述べるとき、<br>私たちが意味するのは：</p>
+<blockquote>
+<p>決定権、資金、ガバナンス、バリューの流れの配置が、<br>宣言された戦略から実行を系統的に引き離すことです——たとえ個々のプロジェクトが技術的には成功しても。</p>
+</blockquote>
+<hr>
+<h2>構造的不整合：戦略、実行、ガバナンス</h2>
+<p>構造的な原因をより明確に見る方法の一つは、<br><strong>戦略、実行、ガバナンス</strong>がどのように乖離するかを見ることです。</p>
+<ul>
+<li><p><strong>戦略</strong> — 意図と方向の声明：</p>
+<ul>
+<li>「私たちはデータ駆動型の組織になります。」  </li>
+<li>「私たちはシームレスなエンドツーエンドのデジタルサービスを提供します。」  </li>
+<li>「私たちはミッションに近いチームに権限を与えます。」</li>
+</ul>
+</li>
+<li><p><strong>実行</strong> — 実際の作業：</p>
+<ul>
+<li>プログラム、プロジェクト、製品。  </li>
+<li>日々のプロセスやワークフロー。  </li>
+<li>チームの人員配置や評価の方法。</li>
+</ul>
+</li>
+<li><p><strong>ガバナンス</strong> — ルールと監視メカニズム：</p>
+<ul>
+<li>リスクとコンプライアンスのポリシー。  </li>
+<li>予算編成およびポートフォリオのプロセス。  </li>
+<li>標準および承認ゲート。</li>
+</ul>
+</li>
+</ul>
+<p>変革の取り組みがつまずくとき、以下のようなパターンがしばしば見られます：</p>
+<ul>
+<li><p>戦略は機能横断的でユーザー中心のサービスを約束します。<br>実行はまだ部門プロジェクトの周りに組織されています。<br>ガバナンスは提案を部門ごとにレビューします。  </p>
+</li>
+<li><p>戦略は権限を持つアジャイルチームを求めます。<br>実行チームはアジャイルの用語を採用します。<br>ガバナンスは基本的な変更のために依然として数か月にわたる承認サイクルを要求します。  </p>
+</li>
+<li><p>戦略はデータ駆動の意思決定を強調します。<br>実行チームは分析ダッシュボードを構築します。<br>ガバナンスプロセスは依然として静的なレポートと手動での承認に依存しています。</p>
+</li>
+</ul>
+<p>各場合において：</p>
+<ul>
+<li>技術は最新です。  </li>
+<li>デリバリープラクティスは最新です。</li>
+</ul>
+<p>しかし、戦略、実行、ガバナンスの間の<em>構造的関係</em>は不整合です。<br>そして、その不整合が持続的な変革を最終的に妨げます。</p>
+<p>構造が不整合であるとき：</p>
+<ul>
+<li>実行チームは効率的で能力がある場合でも——間違ったものを最適化しています。  </li>
+<li>ガバナンスフォーラムは注意深い場合でも——サイロを強化し、体系的な変更を遅らせます。  </li>
+<li>戦略文書は魅力的ですが——日々の行動にあまり影響を与えません。</li>
+</ul>
+<p>結果はお馴染みです：</p>
+<ul>
+<li>ローカルの勝利。  </li>
+<li>エンタープライズの停滞。  </li>
+<li>数年後の別の変革プログラム。</li>
+</ul>
+<hr>
+<h2>不整合が新技術で増幅される方法</h2>
+<p>ここで逆説的な現実が浮かび上がります：</p>
+<blockquote>
+<p>構造的不整合が存在する場合、<strong>より良い技術が問題を悪化させることがあります。</strong></p>
+</blockquote>
+<p>なぜですか？</p>
+<p>なぜなら現代のツールは：</p>
+<ul>
+<li>実験のコストを下げます。  </li>
+<li>ローカルな意思決定の速度を上げます。  </li>
+<li>個々のチームや部門が独自に前進するのを容易にします。</li>
+</ul>
+<p>周囲の構造が整合していない場合：</p>
+<ul>
+<li>チームは<strong>異なる方向</strong>に素早く動きます。  </li>
+<li>ローカルな最適化が増えます。  </li>
+<li>統合とガバナンスの課題が増加します。</li>
+</ul>
+<p>同期した変革の代わりに得られるのは：</p>
+<ul>
+<li>重複する能力を持つ複数の「戦略的プラットフォーム」。  </li>
+<li>同様のポリシー（例：セキュリティ、データ保護）の不一致な実装。  </li>
+<li>同じ問題に対する並行ソリューション、それぞれがエンタープライズ全体でスケールしません。</li>
+</ul>
+<p>技術は「悪くない」です。<br>ただ、見つけた構造を増幅しているだけです。</p>
+<p>もし決定権、資金モデル、ガバナンスメカニズムが断片化している場合、<br>現代のデジタルツールは断片化を加速します。</p>
+<hr>
+<h2>アーキテクチャを構造的なディシプリンとして捉える</h2>
+<p>ここで<strong>アーキテクチャ</strong>が物語に登場します——それは図のセットとしてではなく、<br>構造的なディシプリンとしてです。</p>
+<p>多くの組織では、アーキテクチャは以下のように認識されています：</p>
+<ul>
+<li>リファレンスモデルや標準のリポジトリを維持するチーム。  </li>
+<li>設計レビューに参加し、プロセスの後半で「いいえ」と言うグループ。  </li>
+<li>実世界の変化に遅れをとるドキュメンテーション機能。</li>
+</ul>
+<p>構造的な枠組みでは、それだけでは不十分です。</p>
+<p>構造として理解されたアーキテクチャは、<br>以下についてです：</p>
+<ul>
+<li><p><strong>戦略的意図を運用上の制約とパターンにエンコードする</strong><br>地域の決定がエンタープライズの成果に積み重なるように。</p>
+</li>
+<li><p><strong>決定経路を形成する</strong><br>新しいイニシアティブが現れたとき、一貫した原則に従って流れるようにすることです。  </p>
+</li>
+<li><p><strong>戦略、実行、ガバナンスを橋渡しする</strong>方法として：</p>
+<ul>
+<li>ポートフォリオがどのように構成されるかを情報提供する。  </li>
+<li>資金モデルが一貫性を強化する方法に影響を与える。  </li>
+<li>ガバナンス機関が適用できる共有原則を提供する。</li>
+</ul>
+</li>
+</ul>
+<p>言い換えれば：
+アーキテクチャは主に成果物ではなく、<em>統治システム</em>です。<br>時間の経過とともに人、プロセス、ポリシー、技術を整合させるものです。</p>
+<p>この構造的なディシプリンとしてのアーキテクチャの層が機能しないとき：</p>
+<ul>
+<li>変革は切り離されたプロジェクトの連続として実行されます。  </li>
+<li>各プロジェクトは自ら整合性を交渉しなければなりません。  </li>
+<li>ガバナンス機関はサイロを越えた決定を行うための共有フレームを欠いています。</li>
+</ul>
+<p>結果は「技術的失敗」のように見えますが、より深い問題は：</p>
+<ul>
+<li><strong>条件が変わる中で実行を戦略と結びつけるための構造的メカニズムが存在しないことです。</strong></li>
+</ul>
+<hr>
+<h2>構造的問題を技術的問題として扱うことが失敗する理由</h2>
+<p>組織が構造的問題を技術的問題と誤診断するとき、<br>彼らは予測可能な方法で対応する傾向があります：</p>
+<ul>
+<li>遅い配信を「修正」するために、大規模な再プラットフォームを立ち上げる。  </li>
+<li>景観を「単純化する」ために、一つのベンダーエコシステムを別のものに入れ替える。  </li>
+<li>銀の弾丸として新しい方法論や運用モデルを導入します。</li>
+</ul>
+<p>これらの応答は限られた意味で貴重です。<br>特定の環境の側面を改善するかもしれません。</p>
+<p>しかし、決定権、資金、ガバナンスの根本的な構造が変わらなければ：</p>
+<ul>
+<li>新しいプラットフォームは同じ承認ボトルネックと不整合なインセンティブを引き継ぎます。  </li>
+<li>新しいベンダーは前のものと同じサイロ間の対立に遭遇します。  </li>
+<li>新しい方法論は古いガバナンスと予算のリズムに適合させられます。</li>
+</ul>
+<p>組織は変化に多大な投資をし——その後、<br>その<strong>軌道</strong>はほぼ同じであることに気づきます。</p>
+<p>誤診断の特定のコストが際立ちます：</p>
+<ol>
+<li><p><strong>蓄積された複雑さ</strong><br>各サイクルは以下を追加します：</p>
+<ul>
+<li>新しいプラットフォームと統合。  </li>
+<li>追加のガバナンスプロセス。  </li>
+<li>より重複した能力。<br>複雑さは増します。<br>構造的整合性は改善されません。</li>
+</ul>
+</li>
+<li><p><strong>本当の構造的変化の能力の減少</strong><br>数回のサイクルの後、利害関係者は懐疑的になります：</p>
+<ul>
+<li>「私たちはすでに三つの変革プログラムを実施しました。」  </li>
+<li>「アジャイル/クラウド/分析を試したが、問題は解決しなかった。」<br>より深い構造的変化への欲求は低下し、<br>必要性が高まるにつれて増加します。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2>統合されたアーキテクチャ対応に向けて（プレビュー）</h2>
+<p>この講義とそのブログ版は意図的に以下に焦点を当てています：</p>
+<ul>
+<li><strong>持続的な失敗が個別のツールやプロジェクトを超えた系統的な原因を示すこと。</strong>  </li>
+<li><strong>戦略、実行、およびガバナンスの間の構造的不整合が、これらの失敗の主要な推進要因であることを主張すること。</strong>  </li>
+<li>この不整合に対処できる構造的なディシプリンとしての<strong>アーキテクチャ</strong>の再定位——事後的な文書作成の運動としてではなく。</li>
+</ul>
+<p>私たちはまだ特定の解決策の枠組みや運用モデルを説明していません。<br>それはシリーズの後半で取り上げます。</p>
+<p>特定のアプローチを紹介する前に、私たちは以下の明確で共有された理解を持つ必要があります：</p>
+<ul>
+<li>不整合が人、プロセス、ポリシー、技術にどのように現れるのか。  </li>
+<li>ガバナンスの断片化と決定権のパターンが予測可能な失敗モードをどのように生むか。  </li>
+<li>アーキテクチャが本当の統治システムとして機能することの意味。</li>
+</ul>
+<p>次のインストールでは、これらの構造的パターンに深く入り込んで、<br>繰り返される失敗が現在の組織のアーキテクチャからどう生じているのかをマッピングし、<br>デジタル変革を時間をかけて整合化するための統合されたアーキテクチャモデルが必要です。</p>
+<p>今のところ、重要なポイントは明確です：</p>
+<blockquote>
+<p>繰り返される変革の失敗がツール、ベンダー、技術の波を超えて同じに見える場合、<br>問題は主に技術的ではありません。<br>それは構造的であり、構造的なディシプリンとして扱われるアーキテクチャで作業を始める必要があります。</p>
+</blockquote>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/ja/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/ja/episodes/index.html",
+  "inLanguage": "ja",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/ja/lectures/dta-2/index.html#episode",
+  "url": "https://www.embracingdigital.org/ja/lectures/dta-2/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/ja/lectures/dta-2/index.html"
+  },
+  "name": "デジタルトランスフォーメーションの構築",
+  "episodeNumber": 2,
+  "inLanguage": "ja",
+  "description": "デジタルトランスフォーメーションは技術のせいで失敗するのではなく、アーキテクチャが変化を支持しないために失敗します。 このデジタルトランスフォーメーションアーキテクト（DTA）のエピソードでは、ダレン・パルシファー博士がエンタープライズアーキテクチャが成功するデジタルトランスフォーメーションの構造的基盤であることを説明します。組織はしばしば、ツール、プラットフォーム、パイロットに焦点を当て、変化がスケールし持続するかどうかを決定する深いアーキテクチャ的決定を無視します。 この講義では、アーキテクチャを生きたシステムとして再定義します。つまり、戦略、組織、プロセス、デジタル能力を時間と共に整合さ",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/ja/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/ja/episodes/dta-2/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "デジタルトランスフォーメーションの構築 Video",
+      "embedUrl": "https://www.youtube.com/embed/w1wAN0JSXco"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "デジタルトランスフォーメーションの構築 Audio",
+      "contentUrl": "https://share.transistor.fm/e/4fe6db3b"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../ja/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>著作権 &copy; 2025 Paidar Productions LLC</p>
+        <p>全著作権所有</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
