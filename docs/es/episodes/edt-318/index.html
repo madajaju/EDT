@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Título de página dinámico -->
+    <title>IA, ETL y Precisión en Datos No Estructurados | Embracing Digital Transformation</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/es/episodes/edt-318/index.html">
+    <meta name="description" content="El Dr. Darren charla con Mehul Shah, fundador y CEO de Aaron AI, para explorar cómo la inteligencia artificial está abordando el desafío de los datos no estructurados. Descubre cómo las tecnologías están evolucionando para permitir a las empresas extraer información valiosa de grandes conjuntos de d">
+    <meta name="keywords" content="Transformación Digital, pódcast, entrevistas, noticias, IA, ciberseguridad, edge computing, gestión de datos">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="IA, ETL y Precisión en Datos No Estructurados | Embracing Digital Transformation — Entrevistas, Noticias y Comunidad">
+    <meta property="og:description" content="El Dr. Darren charla con Mehul Shah, fundador y CEO de Aaron AI, para explorar cómo la inteligencia artificial está abordando el desafío de los datos no estructurados. Descubre cómo las tecnologías están evolucionando para permitir a las empresas extraer información valiosa de grandes conjuntos de d">
+    <meta property="og:url" content="https://www.embracingdigital.org/es/episodes/edt-318/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IA, ETL y Precisión en Datos No Estructurados | Embracing Digital Transformation — Entrevistas, Noticias y Comunidad">
+    <meta name="twitter:description" content="El Dr. Darren charla con Mehul Shah, fundador y CEO de Aaron AI, para explorar cómo la inteligencia artificial está abordando el desafío de los datos no estructurados. Descubre cómo las tecnologías están evolucionando para permitir a las empresas extraer información valiosa de grandes conjuntos de d">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (alternativas) -->
+    <link rel="alternate" href="https://embracingdigital.org/es/home/" hreflang="es">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/es/home/" hreflang="x-default">
+
+    <!-- Favicon y estilos -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analítica -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abrazando la Transformación Digital",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abrazando la Transformación Digital",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/es/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/es/home/" aria-label="Inicio — Abrazando la Transformación Digital">
+            <img src="/images/logo.png" alt="Logo — Abrazando la Transformación Digital" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Botón móvil -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Alternar menú">☰</button>
+
+    <!-- Navegación principal -->
+    <nav id="primary-nav" aria-label="Principal">
+        <ul>
+            <li><a href="/es/home/index.html" >Inicio</a></li>
+
+            <li class="dropdown">
+                <a href="/es/shows/index.html" aria-haspopup="true" aria-expanded="false">Programas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/es/episodes/index.html" aria-label="Entrevistas — Abrazando la Transformación Digital">
+                            Abrazando la Transformación Digital
+                            <small class="nav-note">Entrevistas</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/es/briefs/index.html" aria-label="Noticias — Digital esta semana">
+                            Digital esta semana
+                            <small class="nav-note">Noticias</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/es/guests/index.html">Invitados</a></li>
+            <li><a href="/es/articles/index.html">Artículos</a></li>
+
+            <!-- Comunidad -->
+            <li class="dropdown">
+                <a href="/es/community.html" aria-haspopup="true" aria-expanded="false">Comunidad</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/es/newsletter.html">Boletín</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Grupo de LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Tienda</a></li>
+
+            <!-- Acerca de -->
+            <li class="dropdown">
+                <a href="/es/about.html" aria-haspopup="true" aria-expanded="false">Acerca de</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/es/about.html">Sobre el programa</a></li>
+                    <li role="none"><a role="menuitem" href="/es/host.html">Anfitrión: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/es/sponsors/index.html">Patrocinios y contacto</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/es/search.html">Buscar</a></li>
+
+            <!-- Idiomas -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Idiomas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../es/home/index.html">Home</a></li>
+        <li><a href="../../../es/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 318: AI, ETL, and Accuracy in Unstructured Data</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/es/episodes/edt-318/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/es/episodes/edt-318/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 318</span>
+                <span class="episode-title">AI, ETL, and Accuracy in Unstructured Data</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-01-19" itemprop="datePublished">2026-01-19T14:51:20.669Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+
+            <meta itemprop="episodeNumber" content="318"/>
+            <meta itemprop="inLanguage" content="es"/>
+        </header>
+
+        
+            <section class="video-container" aria-label="Watch the episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
+                <meta itemprop="name" content="IA, ETL y Precisión en Datos No Estructurados Video">
+                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/N_DM1BN1YLM">
+                <iframe
+                        width="auto"
+                        height="auto"
+                        src="https://www.youtube.com/embed/N_DM1BN1YLM"
+                        title="IA, ETL y Precisión en Datos No Estructurados Video"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                ></iframe>
+            </section>
+        
+
+        
+            <section class="podcast-container" aria-label="Listen to this episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
+                <meta itemprop="name" content="IA, ETL y Precisión en Datos No Estructurados Audio">
+                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/759443cc">
+                <iframe
+                        width="100%"
+                        height="180"
+                        frameborder="0"
+                        scrolling="no"
+                        src="https://share.transistor.fm/e/759443cc"
+                        title="IA, ETL y Precisión en Datos No Estructurados Audio"
+                        loading="lazy"
+                ></iframe>
+
+                <p class="listen-note">
+                    Explore more in the <a href="../../../es/episodes/index.html">episode archive</a>.
+                </p>
+            </section>
+        
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>El Dr. Darren charla con Mehul Shah, fundador y CEO de Aaron AI, para explorar cómo la inteligencia artificial está abordando el desafío de los datos no estructurados. Descubre cómo las tecnologías están evolucionando para permitir a las empresas extraer información valiosa de grandes conjuntos de datos y el papel crucial de la precisión en este entorno en rápida transformación.</p>
+<h2>Conclusiones Clave</h2>
+<ul>
+<li>IA y Datos No Estructurados: La integración de tecnologías de IA como el procesamiento del lenguaje natural (NLP) y la visión por computadora está revolucionando la forma en que las empresas manejan grandes cantidades de datos no estructurados, permitiendo una extracción y análisis de datos más eficientes.</li>
+<li>Importancia de la Precisión: Niveles de alta precisión (97-98%) son vitales para los trabajadores del conocimiento, ayudándoles a sentirse confiados y seguros en sus decisiones.</li>
+<li>Estrategia de Dividir y Vencer: Técnicas como dividir y vencer permiten a las empresas manejar conjuntos de datos grandes de manera efectiva, empoderando a los equipos para sentirse más capaces en el procesamiento de datos.</li>
+<li><strong>Colaboración Humano-IA</strong>: La IA está diseñada para aumentar las capacidades humanas, no para reemplazarlas, lo que lleva a flujos de trabajo mejorados y a la reducción de tareas tediosas.</li>
+<li><strong>Enfoque de Consenso</strong>: Aprovechar múltiples modelos de IA puede mejorar la precisión al encontrar consenso en los resultados de extracción de datos, reduciendo significativamente la incertidumbre.</li>
+</ul>
+<h2>Capítulos</h2>
+<ul>
+<li>00:00 - Introducción a IA y Transformación de Datos</li>
+<li>03:10 - Antecedentes y Trayectoria de Mehul Shah</li>
+<li>06:50 - Comprendiendo los Datos No Estructurados</li>
+<li>12:20 - El Papel de la Precisión en IA</li>
+<li>18:00 - Metodología de Dividir y Vencer</li>
+<li>25:30 - Colaborando con IA para una Mayor Productividad</li>
+<li>32:00 - Interacción con Aaron AI</li>
+<li>35:40 - Comentarios Finales y Futuro de IA</li>
+</ul>
+<p>¡Únete a nosotros para esta discusión esclarecedora y obtén información valiosa sobre cómo la transformación digital impulsada por IA puede impactar en el enfoque de tu organización hacia los datos!</p>
+
+
+            
+
+            
+                <div class="guests" aria-label="Guests">
+                    
+                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../es/guests/mehul-shah/index.html" itemprop="url">
+                <span itemprop="name">Mehul Shah</span>
+              </a>
+            </span>
+                    
+                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../es/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                    
+                </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>¿Por qué es importante entender los datos no estructurados ahora?</h2>
+<p>En el mundo actual impulsado por los datos, la capacidad de utilizar datos no estructurados de manera efectiva es más crítica que nunca. El Dr. Darren, arquitecto empresarial principal y educador, explora este vasto panorama junto a Mehul Shah, fundador y CEO de Aaron AI. Su conversación revela cómo los avances en inteligencia artificial y los procesos de datos personalizados pueden transformar la información no estructurada en valiosos conocimientos, que son indispensables tanto para líderes empresariales como para tecnólogos.</p>
+<p>Esta discusión es esencial, especialmente en un momento en que las organizaciones luchan con una abundancia de datos no aprovechados. Al comprender cómo aprovechar la inteligencia artificial para la extracción y análisis de datos no estructurados, las empresas pueden desbloquear nuevas oportunidades de crecimiento y aumentar la eficiencia, lo que les permite sentirse capaces de transformar desafíos en ventajas.</p>
+<h2>El desafío de los datos no estructurados</h2>
+<h2>Entendiendo el ámbito de los datos no estructurados.</h2>
+<p>Las organizaciones hoy en día tienen montañas de datos no estructurados—documentos, correos electrónicos, presentaciones y más—muchos de los cuales no se utilizan porque su procesamiento es complejo. Mehul enfatiza cómo, a pesar de poseer petabytes de información, muchas empresas carecen de las herramientas y la experiencia para extraer información valiosa. A menudo, estos datos permanecen inactivos, lo que resulta en recursos desperdiciados y oportunidades perdidas.</p>
+<p>Con los avances en la tecnología de la inteligencia artificial, existe la posibilidad de cambiar esta narrativa. La capacidad de analizar estos inmensos conjuntos de datos y extraer información pertinente nunca ha sido tan accesible. Esto significa que las empresas ahora pueden aprovechar la IA para transformar lo que antes parecía insuperable en análisis manejables que impulsan las decisiones.</p>
+<h2>El papel de la IA en el procesamiento de datos.</h2>
+<p>Las tecnologías de inteligencia artificial están evolucionando rápidamente, lo que permite a las organizaciones abordar estos desafíos de datos históricos procesando varios tipos de datos no estructurados, como texto, imágenes y audio, a través de sistemas de extracción impulsados por inteligencia artificial, lo que amplía su aplicabilidad y efectividad.</p>
+<p>Aquí hay <strong>puntos clave</strong> sobre el papel de la IA en el procesamiento de datos no estructurados:</p>
+<ul>
+<li><p><strong>Mejora de la Precisión:</strong> Se pueden alcanzar altos niveles de precisión (97-98%) con las técnicas adecuadas de extracción de datos, acercando a las organizaciones a operaciones y toma de decisiones más eficientes.</p>
+</li>
+<li><p><strong>Ahorros en Eficiencia:</strong> Al utilizar inteligencia artificial, las empresas pueden reducir significativamente el tiempo necesario para filtrar grandes cantidades de datos, lo que permite a los equipos centrarse en actividades de alto valor.</p>
+</li>
+<li><p><strong>Acceso Mejorado a la Información:</strong> Con herramientas que permiten consultas en lenguaje natural sobre datos estructurados y no estructurados, los tomadores de decisiones pueden obtener información rápidamente, fomentando un entorno empresarial más ágil.</p>
+</li>
+</ul>
+<h2>&quot;Abrazando la Transformación de Datos&quot;</h2>
+<h2>Estrategias para el Éxito</h2>
+<p>La adopción de estas tecnologías requiere un cambio en el enfoque y una concientización sobre los desafíos potenciales, como la privacidad de los datos, la complejidad de la integración y la necesidad de un ajuste continuo de los modelos. Las empresas deben centrarse en estrategias de &#39;dividir y conquistar&#39; al tratar con grandes conjuntos de datos para mitigar estos problemas de manera efectiva.</p>
+<p>Para implementar una transformación de datos exitosa, considera las siguientes estrategias:</p>
+<p>Para implementar una transformación de datos exitosa, considere las siguientes estrategias: establezca KPIs claros para las tasas de precisión, la velocidad de procesamiento y el impacto de las decisiones para medir el ROI y asegurar que las inversiones en IA ofrezcan un valor comercial medible.</p>
+<ul>
+<li><p><strong>Invertir en Capacitación:</strong> Proveer a los equipos con el conocimiento necesario para interactuar de manera efectiva con las tecnologías de inteligencia artificial, asegurando que aprovechen las herramientas al máximo de su potencial.</p>
+</li>
+<li><p><strong>Utilizar Sistemas de IA Colaborativos:</strong> Implementar sistemas que permitan a múltiples modelos de IA analizar los mismos datos. Esto puede mejorar la fiabilidad de los resultados al buscar consenso entre diferentes modelos.</p>
+</li>
+</ul>
+<h2>Construyendo una Cultura de Uso de Datos</h2>
+<p>Desarrollar una cultura que utilice activamente los datos no estructurados puede llevar a un crecimiento empresarial notable. Como sugiere Mehul, esto implica crear sistemas que apoyen a los trabajadores del conocimiento en sus tareas diarias, automatizando procesos repetitivos y permitiendo que los humanos se concentren en la toma de decisiones estratégicas.</p>
+<h2>The translation of &quot;Take Action Today&quot; in Spanish is &quot;Toma Acción Hoy.&quot;</h2>
+<p>Para aprovechar el potencial de sus datos no estructurados, es hora de innovar. Al adoptar tecnologías como la inteligencia artificial para la extracción y análisis de datos, su organización puede desbloquear conocimientos previamente ocultos que impulsan la eficiencia y el crecimiento. ¿Le gustaría profundizar más? Aprenda cómo transformar su estrategia de datos hoy y explore las ofertas de Aaron AI para ver cómo pueden catalizar la transformación de su negocio.</p>
+<p>Aprovechemos la era digital para convertir sus datos no estructurados en oportunidades estructuradas para el crecimiento, la eficiencia y el éxito.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/es/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/es/episodes/index.html",
+  "inLanguage": "es",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/es/episodes/edt-318/index.html#episode",
+  "url": "https://www.embracingdigital.org/es/episodes/edt-318/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/es/episodes/edt-318/index.html"
+  },
+  "name": "IA, ETL y Precisión en Datos No Estructurados",
+  "episodeNumber": 318,
+  "datePublished": "2026-01-19",
+  "inLanguage": "es",
+  "description": "El Dr. Darren charla con Mehul Shah, fundador y CEO de Aaron AI, para explorar cómo la inteligencia artificial está abordando el desafío de los datos no estructurados. Descubre cómo las tecnologías están evolucionando para permitir a las empresas extraer información valiosa de grandes conjuntos de d",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/es/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/es/episodes/edt-318/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "IA, ETL y Precisión en Datos No Estructurados Video",
+      "embedUrl": "https://www.youtube.com/embed/N_DM1BN1YLM"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "IA, ETL y Precisión en Datos No Estructurados Audio",
+      "contentUrl": "https://share.transistor.fm/e/759443cc"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Mehul Shah",
+      "url": "https://www.embracingdigital.org/../../../es/guests/mehul-shah/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../es/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; 2025 Paidar Productions LLC</p>
+        <p>Todos los derechos reservados</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
