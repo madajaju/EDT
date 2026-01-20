@@ -614,6 +614,7 @@ body.dark-mode {
 /* Tags Section */
 .tags {
     margin-bottom: 15px;
+    flex-wrap: wrap;
 }
 
 .tags span {
@@ -958,6 +959,23 @@ section:has(.show-summary) {
 
 .guest-info .topics {
     margin-bottom: 10px;
+}
+
+/* Container for the tags */
+.guest-card .tags {
+    display: flex;          /* or inline-flex if you prefer */
+    flex-wrap: wrap;        /* allow wrapping to multiple lines */
+    gap: 0.25rem 0.5rem;    /* optional spacing between tags */
+    margin-top: 0.5rem;     /* optional */
+}
+
+/* The individual tag links */
+.guest-card .tags a {
+    display: inline-flex;        /* keeps span + text together */
+    align-items: center;
+    max-width: 100%;             /* don't overflow the card */
+    white-space: normal;         /* allow text to wrap if needed */
+    text-decoration: none;       /* style as you like */
 }
 
 .guest-info .topics span {
