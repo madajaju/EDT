@@ -1,0 +1,136 @@
+<svg viewBox="0 0 600 500" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     style="width: 100%; height: auto; max-width: 1200px; max-height: 1000px; display: block; margin: 0 auto;">
+    <style>
+        text { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; pointer-events: none;
+        }
+        .clickable { cursor: pointer; transition: all 0.3s ease; }
+
+        /* Highlighting effect */
+        .clickable:hover rect,
+        .clickable:hover polygon {
+        stroke: #ffcc00 !important;
+        stroke-width: 1px;
+        filter: drop-shadow(0 0 8px rgba(255, 204, 0, 0.6));
+        }
+
+        .clickable:hover {
+        filter: sepia(0.5) saturate(2) hue-rotate(-10deg) brightness(1.1);
+        }
+    </style>
+
+    <defs>
+        <filter id="softshadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.25"/>
+        </filter>
+
+        <linearGradient id="pillarGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#bdc3c7"/>
+            <stop offset="50%" stop-color="#ecf0f1"/>
+            <stop offset="100%" stop-color="#bdc3c7"/>
+        </linearGradient>
+
+        <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#7f8c8d"/>
+            <stop offset="50%" stop-color="#bdc3c7"/>
+            <stop offset="100%" stop-color="#7f8c8d"/>
+        </linearGradient>
+        <linearGradient id="beamGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#d4c38d"/>
+            <stop offset="50%" stop-color="#b9a46a"/>
+            <stop offset="100%" stop-color="#9a8752"/>
+        </linearGradient>
+        <linearGradient id="pedimentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#34495e"/>
+            <stop offset="100%" stop-color="#1a252f"/>
+        </linearGradient>
+        <linearGradient id="stepGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="rgba(255,255,255,0.25)"/>
+            <stop offset="100%" stop-color="rgba(0,0,0,0.1)"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Pediment (Triangle) - Mission Solutions & Capabilities -->
+    <g class="clickable">
+        <title>Mission Solutions &amp; Capabilities: The ultimate goal of the transformation</title>
+        <polygon points="50,112 300,12 550,112" filter="url(#softshadow)" fill="url(#pedimentGradient)" stroke="#34495e"
+                 stroke-width="2"/>
+        <text x="300" y="72" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+            <tspan x="300" dy="0">Mission Solutions</tspan>
+            <tspan x="300" dy="24">&amp; Capabilities</tspan>
+        </text>
+    </g>
+
+    <!-- Beam - Architectural FORGE -->
+    <a href="/en/digital-transformation/forge/index.html">
+        <g class="clickable">
+            <title>Architectural FORGE: The active methodology connecting mission to execution</title>
+            <rect x="50" y="112" width="500" height="48" filter="url(#softshadow)" fill="url(#beamGradient)"
+                  stroke="#2c3e50" stroke-width="2"/>
+            <text x="300" y="142" font-size="18" font-weight="bold" fill="black" text-anchor="middle">
+                Architectural FORGE
+            </text>
+        </g>
+    </a>
+
+    <!-- Pillars - Execution Pillars -->
+    <a href="/en/digital-transformation/pillars/index.html">
+        <g class="clickable">
+            <title>Execution Pillars: The technical disciplines that deliver the mission</title>
+            <!-- Background Group for Hover Effect on whole section -->
+            <rect x="65" y="160" width="470" height="200" fill="transparent"/>
+            
+            <!-- Individual Pillars (Generic) -->
+            <g fill="url(#pillarGradient)" stroke="#bdc3c7">
+                <rect x="70" y="160" width="40" height="200"/>
+                <rect x="155" y="160" width="40" height="200"/>
+                <rect x="240" y="160" width="40" height="200"/>
+                <rect x="325" y="160" width="40" height="200"/>
+                <rect x="410" y="160" width="40" height="200"/>
+                <rect x="495" y="160" width="40" height="200"/>
+            </g>
+            
+            <!-- Decoration Rings -->
+            <g fill="url(#ringGradient)">
+                <rect x="65" y="160" width="50" height="8"/><rect x="68" y="168" width="44" height="6"/><rect x="65" y="352" width="50" height="8"/>
+                <rect x="150" y="160" width="50" height="8"/><rect x="153" y="168" width="44" height="6"/><rect x="150" y="352" width="50" height="8"/>
+                <rect x="235" y="160" width="50" height="8"/><rect x="238" y="168" width="44" height="6"/><rect x="235" y="352" width="50" height="8"/>
+                <rect x="320" y="160" width="50" height="8"/><rect x="323" y="168" width="44" height="6"/><rect x="320" y="352" width="50" height="8"/>
+                <rect x="405" y="160" width="50" height="8"/><rect x="408" y="168" width="44" height="6"/><rect x="405" y="352" width="50" height="8"/>
+                <rect x="490" y="160" width="50" height="8"/><rect x="493" y="168" width="44" height="6"/><rect x="490" y="352" width="50" height="8"/>
+            </g>
+    
+            <text x="300" y="265" font-size="24" font-weight="bold" fill="#2c3e50" text-anchor="middle" opacity="0.8">
+                Execution Pillars
+            </text>
+        </g>
+    </a>
+
+    <!-- Foundation - O-DXA Domains -->
+    <a href="/en/digital-transformation/odxa/index.html">
+        <g class="clickable">
+            <title>O-DXA Domains: The foundational structural layers of the enterprise</title>
+            <g transform="translate(0, 4)">
+                <rect x="40" y="360" width="520" height="20" fill="#f8fafc" stroke="#d1d5db"/><rect x="40" y="360" width="520" height="20" fill="url(#stepGradient)"/>
+                <rect x="30" y="380" width="540" height="20" fill="#e5e7eb" stroke="#d1d5db"/><rect x="30" y="380" width="540" height="20" fill="url(#stepGradient)"/>
+                <rect x="20" y="400" width="560" height="20" fill="#d1d5db" stroke="#d1d5db"/><rect x="20" y="400" width="560" height="20" fill="url(#stepGradient)"/>
+                <rect x="10" y="420" width="580" height="20" fill="#c7ced6" stroke="#d1d5db"/><rect x="10" y="420" width="580" height="20" fill="url(#stepGradient)"/>
+                <rect x="0" y="440" width="600" height="20" fill="#9aa3af" stroke="#d1d5db"/><rect x="0" y="440" width="600" height="20" fill="url(#stepGradient)"/>
+                
+                <text x="300" y="415" font-size="18" font-weight="bold" fill="black" text-anchor="middle">
+                    O-DXA Domains
+                </text>
+            </g>
+        </g>
+    </a>
+
+    <!-- Base - Transformation Dimensions -->
+    <a href="/en/digital-transformation/dimensions/index.html">
+        <g class="clickable">
+            <title>Transformation Dimensions: People, Process, Policy, and Technology</title>
+            <rect x="0" y="468" width="600" height="30" rx="10" ry="10" fill="#4b5563" filter="url(#softshadow)"/>
+            <text x="300" y="488" font-size="16" font-weight="bold" fill="white" text-anchor="middle" style="pointer-events: auto;">
+                Transformation Dimensions
+            </text>
+        </g>
+    </a>
+</svg>
