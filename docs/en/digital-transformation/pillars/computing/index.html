@@ -610,7 +610,7 @@
         </div>
     </section>
 
-    <section id="GraphicRep" class="transformation-container" style="text-align: center;">
+    <section id="GraphicRep" class="transformation-container alt-bg" style="text-align: center;">
         <div class="highlight-box" style="display: inline-block; padding: 10px 20px; margin-bottom: 2rem;">
             <em>“Ubiquitous Computing provides the consistent layer that decouples workloads from hardware
                 constraints.”</em>
@@ -660,99 +660,137 @@
         </p>
     </section>
 
-    <section id="DomainsMap" class="transformation-container">
-        <h2 style="text-align: center; margin-bottom: 2rem;">How This Pillar Maps Across ODXA Domains</h2>
-        <div class="pillar-domain-grid">
+<section class="transformation-container" id="gear-integration">
+    <h2>GEAR Integration & Architect's Map</h2>
+    <p>Ubiquitous Computing provides the consistent execution substrate that decouples workloads from hardware constraints within the GEAR system.</p>
 
-            <!-- Strategic Domain (#003366) -->
-            <div class="grid-box pillar-domain-strat">
-                <h3 style="margin-top: 0; color: #003366;">Strategic Domain</h3>
-                <ul style="margin-bottom: 0;">
-                    <li>Align compute placement (cloud vs. on-prem) with specific mission outcomes and risk tolerance.
-                    </li>
-                    <li>Establish architectural portability standards to prevent long-term vendor and platform
-                        lock-in.
-                    </li>
-                    <li>Define the value-to-cost ratio for emerging compute paradigms like Quantum or Web3.</li>
-                    <li>Set policy for data sovereignty and jurisdictional execution requirements.</li>
-                </ul>
-            </div>
-
-            <!-- Organizational Domain (#228B22) -->
-            <div class="grid-box pillar-domain-org">
-                <h3 style="margin-top: 0; color: #228B22;">Organizational Domain</h3>
-                <ul style="margin-bottom: 0;">
-                    <li>Transition from "Server Admins" to "Platform Engineers" who manage environments as code.</li>
-                    <li>Define clear ownership of the compute fabric across business units and IT.</li>
-                    <li>Establish cross-functional teams for FinOps to manage distributed cloud/edge costs.</li>
-                    <li>Identify and bridge skill gaps for modern containerization and orchestration.</li>
-                </ul>
-            </div>
-
-            <!-- Process Domain (#ff6f00) -->
-            <div class="grid-box pillar-domain-proc">
-                <h3 style="margin-top: 0; color: #ff6f00;">Process Domain</h3>
-                <ul style="margin-bottom: 0;">
-                    <li>Standardize CI/CD pipelines to support multi-target deployment (Cloud, Edge, On-Prem).</li>
-                    <li>Automate the scaling and patching of execution environments to reduce operational toil.</li>
-                    <li>Integrate automated security testing into the delivery lifecycle (DevSecOps).</li>
-                    <li>Implement standard observability processes to track workload performance across the fabric.</li>
-                </ul>
-            </div>
-
-
-            <!-- Physical Domain (#708090) -->
-            <div id="PhysicalDomainMap" class="grid-box pillar-domain-phys">
-                <h3 style="color: #708090;">Physical Domain</h3>
-                <ul style="margin-bottom: 0;">
-                    <li><strong>Hardware Abstraction:</strong> Manage the complexity of running identical workloads across diverse CPU and GPU architectures (e.g., x86, ARM, RISC-V).</li>
-                    <li><strong>Accelerator Lifecycle:</strong> Manage the provisioning and rotation of specialized hardware like TPUs and Quantum-as-a-service interfaces.</li>
-                    <li><strong>Geographic Presence:</strong> Optimize the physical placement of compute clusters to meet data residency and jurisdictional laws.</li>
-                    <li><strong>Resilience & Redundancy:</strong> Ensure physical site diversity to prevent localized hardware failures from disrupting the global compute fabric.</li>
-                </ul>
-            </div>
-
-            <!-- Digital Domain (#6a0dad) -->
-            <div class="grid-box pillar-domain-digi">
-                <h3 style="margin-top: 0; color: #6a0dad;">Digital Domain</h3>
-                <ul style="margin-bottom: 0;">
-                    <li>Deploy software-defined orchestration (e.g., Kubernetes) to manage containerized workloads.</li>
-                    <li>Implement consistent identity and access management (IAM) across all execution layers.</li>
-                    <li>Develop service mesh capabilities for secure communication between distributed apps.</li>
-                    <li>Leverage APIs to abstract the underlying infrastructure from the application developers.</li>
-                </ul>
-            </div>
-
+    <!-- FORGE Section -->
+    <div class="grid-box" style="margin-top: 2rem;">
+        <h3>FORGE Methodology in Ubiquitous Computing</h3>
+        <p>Architects use FORGE to move from vendor-locked infrastructure to a portable architectural capability.</p>
+        <div style="overflow-x:auto; margin-top: 1rem;">
+            <table style="width:100%; border-collapse: collapse;">
+                <thead>
+                    <tr style="background: #f8fafc; border-bottom: 2px solid #497BA3;">
+                        <th style="padding: 12px; text-align: left;">Stage</th>
+                        <th style="padding: 12px; text-align: left;">Architect's Focus</th>
+                        <th style="padding: 12px; text-align: left;">Key Artifacts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 12px;"><strong>Find</strong></td>
+                        <td style="padding: 12px;">Identify compute silos, shadow platforms, and vendor-locked legacy stacks.</td>
+                        <td style="padding: 12px;">Compute Asset Inventory, Cloud Usage Map</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 12px;"><strong>Observe</strong></td>
+                        <td style="padding: 12px;">Analyze workload portability, scaling patterns, and environment-specific API dependencies.</td>
+                        <td style="padding: 12px;">Portability Audit Report</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 12px;"><strong>Reconcile</strong></td>
+                        <td style="padding: 12px;">Unify disparate compute models into a consistent abstraction layer (e.g., Kubernetes).</td>
+                        <td style="padding: 12px;">Platform Engineering Blueprint</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 12px;"><strong>Ground</strong></td>
+                        <td style="padding: 12px;">Root the compute fabric in existing data centers and cloud landing zones.</td>
+                        <td style="padding: 12px;">Hybrid Cloud Landing Zone Spec</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 12px;"><strong>Enhance</strong></td>
+                        <td style="padding: 12px;">Augment capability via automated DevOps pipelines, FinOps, and decentralized models.</td>
+                        <td style="padding: 12px;">Infrastructure-as-Code Repo</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </section>
+    </div>
 
-    <section id="CommonUseCases" class="transformation-container">
-        <h2>Use Cases and Failure Modes</h2>
-        <div class="pillar-domain-grid">
-            <div class="grid-box">
-                <h3>Common Use Cases</h3>
-                <ul>
-                    <li><strong>Hybrid Cloud Bursting:</strong> Dynamically shifting processing power from on-premises data centers to public cloud providers during peak demand.</li>
-                    <li><strong>Unified Modernization:</strong> Establishing a single architectural substrate for both legacy VM-based apps and modern containers.</li>
-                    <li><strong>Global Edge Sync:</strong> Deploying consistent inference models from a central cloud to thousands of localized compute nodes.</li>
-                    <li><strong>Decentralized Web3:</strong> Ensuring secure, distributed node execution across heterogeneous infrastructure.</li>
-                </ul>
-            </div>
-            <div class="grid-box">
-                <h3>Common Failure Modes</h3>
-                <ul style="color: #c53030;">
-                    <li><strong>Environment Silos:</strong> Developing for Cloud A in a way that makes moving to Cloud B
-                        impossible.
-                    </li>
-                    <li><strong>Manual Ops:</strong> Scaling compute without scaling the automated processes (Process
-                        Domain) to manage it.
-                    </li>
-                    <li><strong>Tool-First Thinking:</strong> Leading with vendors instead of architectural portability.
-                    </li>
-                </ul>
-            </div>
+    <!-- Dimensions Section -->
+    <div class="grid-box" style="margin-top: 2rem;">
+        <h3>Computing Dimensions Map</h3>
+        <p>How the Four Dimensions are leveraged to create a ubiquitous compute fabric.</p>
+        <div style="overflow-x:auto; margin-top: 1rem;">
+            <table style="width:100%; border-collapse: collapse;">
+                <thead>
+                    <tr style="background: #f8fafc; border-bottom: 2px solid #497BA3;">
+                        <th style="padding: 12px; text-align: left;">Dimension</th>
+                        <th style="padding: 12px; text-align: left;">Computing Play</th>
+                        <th style="padding: 12px; text-align: left;">Example Check</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 12px;"><strong>People</strong></td>
+                        <td style="padding: 12px;">Transition from "Admin" to "Engineer" mindsets via platform self-service.</td>
+                        <td style="padding: 12px;">Can developers provision environments without manual tickets?</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 12px;"><strong>Process</strong></td>
+                        <td style="padding: 12px;">Automated CI/CD pipelines and standardized environment lifecycle management.</td>
+                        <td style="padding: 12px;">Is our patching process automated across Cloud and Edge?</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 12px;"><strong>Policy</strong></td>
+                        <td style="padding: 12px;">Compliance-as-Code and jurisdictional data sovereignty rules.</td>
+                        <td style="padding: 12px;">Are placement rules enforced automatically based on data type?</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 12px;"><strong>Technology</strong></td>
+                        <td style="padding: 12px;">Containerization, virtualization, and software-defined orchestration.</td>
+                        <td style="padding: 12px;">Does our runtime support architectural portability across vendors?</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </section>
+    </div>
+
+    <!-- Domains Section -->
+    <div class="grid-box" style="margin-top: 2rem;">
+        <h3>Computing-Domain Intersection</h3>
+        <p>Architect's checklist for aligning Ubiquitous Computing across O-DXA domains.</p>
+        <div style="overflow-x:auto; margin-top: 1rem;">
+            <table style="width:100%; border-collapse: collapse;">
+                <thead>
+                    <tr style="background: #f8fafc; border-bottom: 2px solid #497BA3;">
+                        <th style="padding: 12px; text-align: left;">Domain</th>
+                        <th style="padding: 12px; text-align: left;">Computing Requirement</th>
+                        <th style="padding: 12px; text-align: left;">Verification Point</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 12px;"><strong>Strategic</strong></td>
+                        <td style="padding: 12px;">Establish portability standards to prevent platform lock-in.</td>
+                        <td style="padding: 12px;">Verify alignment with long-term cost and risk goals.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 12px;"><strong>Organizational</strong></td>
+                        <td style="padding: 12px;">Build cross-functional FinOps teams to manage distributed costs.</td>
+                        <td style="padding: 12px;">Check for skill readiness in modern orchestration tools.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 12px;"><strong>Process</strong></td>
+                        <td style="padding: 12px;">Automate scaling and patching of execution environments.</td>
+                        <td style="padding: 12px;">Verify CI/CD multi-target deployment capability.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 12px;"><strong>Digital</strong></td>
+                        <td style="padding: 12px;">Implement consistent IAM and Service Mesh across all layers.</td>
+                        <td style="padding: 12px;">Check for API-driven infrastructure abstraction.</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #eee;">
+                        <td style="padding: 12px;"><strong>Physical</strong></td>
+                        <td style="padding: 12px;">Manage diverse CPU/GPU architectures (x86, ARM, RISC-V).</td>
+                        <td style="padding: 12px;">Verify physical site diversity for fabric resilience.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
 
     <section id="SystemOfSystems" class="transformation-container">
         <h2>System-of-Systems Context</h2>
@@ -848,6 +886,91 @@
 </section>
 
 
+
+<section class="transformation-container about-serve">
+            <h2 class="section-title">Next Steps on Your Transformation Journey</h2>
+            <p class="center-text narrow">
+                Use the Six Pillars as a common language between business leaders, architects, and operators. From here you can dive into
+                pillar pages, listen to interviews, or explore ODXA in depth.
+            </p>
+
+            <div class="pillar-domain-grid">
+                <!-- Box 1: The Six Pillars -->
+                <div class="grid-box">
+                    <h3 style="margin-top: 0; text-align: left;"><a href="/en/digital-transformation/pillars/index.html" style="text-decoration: none; color: #193B73;">The Six Pillars</a></h3>
+                    <p style="color: #334155; font-size: 0.9rem; margin-bottom: 0.5rem; text-align: left;">
+                        Explore the foundational technical capabilities that enable digital transformation, from AI to advanced communications.
+                    </p>
+                    <ul class="clean-list" style="line-height: 1.8; font-size: 0.95rem; text-align: left; color: #193B73;">
+                        <li><a href="/en/digital-transformation/pillars/computing/" style="text-decoration: none; color: inherit;">Ubiquitous Computing</a></li>
+                        <li><a href="/en/digital-transformation/pillars/edge/" style="text-decoration: none; color: inherit;">Edge Computing</a></li>
+                        <li><a href="/en/digital-transformation/pillars/ai/" style="text-decoration: none; color: inherit;">Artificial Intelligence</a></li>
+                        <li><a href="/en/digital-transformation/pillars/cybersecurity/" style="text-decoration: none; color: inherit;">Cybersecurity</a></li>
+                        <li><a href="/en/digital-transformation/pillars/data/" style="text-decoration: none; color: inherit;">Data Management</a></li>
+                        <li><a href="/en/digital-transformation/pillars/communications/" style="text-decoration: none; color: inherit;">Advanced Communications</a></li>
+                    </ul>
+                    <a href="/en/digital-transformation/index.html" class="listen-now" style="margin-top: 1rem; background: #497BA3; text-align: center; display: block;">Execution Pillars Overview</a>
+                </div>
+
+                <!-- Box 2: Explore the ODXA Domains -->
+                <div class="grid-box">
+                    <h3 style="margin-top: 0; text-align: left;"><a href="/en/digital-transformation/odxa/index.html" style="text-decoration: none; color: #193B73;">The ODXA Domains</a></h3>
+                    <p style="color: #334155; font-size: 0.9rem; margin-bottom: 0.5rem; text-align: left;">
+                        Navigate the structural layers of the enterprise to align strategy, people, processes, and technology.
+                    </p>
+                    <ul class="clean-list" style="line-height: 1.8; font-size: 0.95rem; text-align: left; color: #193B73;">
+                        <li><a href="/en/digital-transformation/odxa/strategic/" style="text-decoration: none; color: inherit;">Strategic Domain</a></li>
+                        <li><a href="/en/digital-transformation/odxa/organizational/" style="text-decoration: none; color: inherit;">Organizational Domain</a></li>
+                        <li><a href="/en/digital-transformation/odxa/process/" style="text-decoration: none; color: inherit;">Process Domain</a></li>
+                        <li><a href="/en/digital-transformation/odxa/digital/" style="text-decoration: none; color: inherit;">Digital Domain</a></li>
+                        <li><a href="/en/digital-transformation/odxa/physical/" style="text-decoration: none; color: inherit;">Physical Domain</a></li>
+                    </ul>
+                    <a href="/en/digital-transformation/odxa/index.html" class="listen-now" style="margin-top: 1rem; background: #497BA3; text-align: center; display: block;">Map Domain Structure</a>
+                </div>
+
+                <!-- Box 3: Transformation Dimensions -->
+                <div class="grid-box">
+                    <h3 style="margin-top: 0; text-align: left;"><a href="/en/digital-transformation/dimensions/index.html" style="text-decoration: none; color: #193B73;">Transformation Dimensions</a></h3>
+                    <p style="color: #334155; font-size: 0.9rem; margin-bottom: 0.5rem; text-align: left;">
+                        Understand how to balance the critical dimensions of People, Process, Policy, and Technology in every initiative.
+                    </p>
+                    <ul class="clean-list" style="line-height: 1.8; font-size: 0.95rem; text-align: left; color: #193B73;">
+                        <li><a href="/en/digital-transformation/dimensions/people" style="text-decoration: none; color: inherit;">People</a></li>
+                        <li><a href="/en/digital-transformation/dimensions/process" style="text-decoration: none; color: inherit;">Process</a></li>
+                        <li><a href="/en/digital-transformation/dimensions/process/policy" style="text-decoration: none; color: inherit;">Policy</a></li>
+                        <li><a href="/en/digital-transformation/dimensions/digital/technology" style="text-decoration: none; color: inherit;">Technology</a></li>
+                    </ul>
+                    <a href="/en/digital-transformation/dimensions/index.html" class="listen-now" style="margin-top: 1rem; background: #497BA3; text-align: center; display: block;">Understand Dimensions</a>
+                </div>
+
+                <!-- Box 4: FORGE -->
+                <div class="grid-box">
+                    <h3 style="margin-top: 0; text-align: left;"><a href="/en/digital-transformation/forge/index.html" style="text-decoration: none; color: #193B73;">FORGE Methodology</a></h3>
+                    <p style="color: #334155; font-size: 0.9rem; margin-bottom: 0.5rem; text-align: left;">
+                        Apply our active methodology to Find, Observe, Reconcile, Ground, and Enhance your transformation efforts.
+                    </p>
+                    <ul class="clean-list" style="line-height: 1.8; font-size: 0.95rem; text-align: left; color: #193B73;">
+                        <li><a href="/en/digital-transformation/forge/find" style="text-decoration: none; color: inherit;">Find</a></li>
+                        <li><a href="/en/digital-transformation/forge/observe" style="text-decoration: none; color: inherit;">Observe</a></li>
+                        <li><a href="/en/digital-transformation/forge/reconcile" style="text-decoration: none; color: inherit;">Reconcile</a></li>
+                        <li><a href="/en/digital-transformation/forge/ground" style="text-decoration: none; color: inherit;">Ground</a></li>
+                        <li><a href="/en/digital-transformation/forge/enhance" style="text-decoration: none; color: inherit;">Enhance</a></li>
+                    </ul>
+                    <a href="/en/digital-transformation/forge/index.html" class="listen-now" style="margin-top: 1rem; background: #497BA3; text-align: center; display: block; ">Apply the Practice</a>
+                </div>
+            </div>
+
+            <div class="grid-box" style="margin-top: 2rem; padding: 2rem;  border-radius: 8px;">
+                <h3 style="color: #193B73; margin-top: 0; text-align: left;">Continue Your Journey</h3>
+                <p style="color: #334155; margin-bottom: 1.5rem; text-align: left;">Browse all DTA episodes organized by aspect to see architectural guidance in practice.</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                    <a href="/en/lectures/index.html" class="listen-now" style="background: #193B73; text-align: center;">Listen to Lectures</a>
+                    <a href="/en/episodes/index.html" class="listen-now" style="background: #193B73; text-align: center;">Interviews with Experts</a>
+                    <a href="/en/briefs/index.html" class="listen-now" style="background: #193B73; text-align: center;">Latest News</a>
+                    <a href="/en/search.html" class="listen-now" style="background: #497BA3; text-align: center;">Search the Canon</a>
+                </div>
+            </div>
+        </section>
 </main>
 
 <footer id="footer">
@@ -859,3 +982,5 @@
 
 </body>
 </html>
+
+

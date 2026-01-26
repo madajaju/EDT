@@ -1,10 +1,19 @@
 /* 🌍 General Styles */
+:root {
+    --primary-color: #497BA3;
+    --secondary-color: #D4AF37;
+    --dark-blue: #193B73;
+    --dark-slate: #2c3e50;
+    --alt-bg-color: #f1f5f9; /* Light shade of blue-gray */
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
 }
 
 /* 🌍 Navigation Bar */
@@ -12,12 +21,13 @@ header {
     position: sticky;
     z-index: 9000;
     top: 0;
-    background: #497BA3;
+    background: #4978a3;
     padding: 10px 0; /* Added padding for better mobile spacing */
     text-align: center;
     display: flex; /* Ensure header can contain logo and nav */
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 /* Style the logo container */
 .logo-container {
@@ -31,6 +41,15 @@ header {
     width: 75px; /* Adjust icon size */
     height: auto; /* Adjust icon size (same as width for proportion) */
     display: block;
+}
+
+.brand-text {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 
@@ -1097,7 +1116,7 @@ section:has(.show-summary) {
     margin: 1rem auto;
     font-size: 1.25rem;
     font-weight: bold;
-    color: #D4AF37;
+    color: #8b6508;
 }
 
 .pillar-hero-bullets {
@@ -1153,7 +1172,7 @@ section:has(.show-summary) {
     line-height: 1.6;
     color: #ffffffff;
     margin: 0;
-    border-left: 4px solid #D4AF37;
+    border-left: 4px solid #8b6508;
     padding-left: 20px;
 }
 
@@ -1306,7 +1325,7 @@ section:has(.show-summary) {
 
 /* brand-aligned pillar border accents */
 .intel-pillar { border-top-color: #003366; }
-.vanderbilt-pillar { border-top-color: #D4AF37; }
+.vanderbilt-pillar { border-top-color: #8b6508; }
 .opengroup-pillar { border-top-color: #497BA3; }
 
 .brand {
@@ -1418,7 +1437,7 @@ section:has(.show-summary) {
 
 /* You can differentiate by nth-child if you want subtle color variation */
 .about-provide .grid-box:nth-child(2) { border-top-color: #497BA3; }
-.about-provide .grid-box:nth-child(3) { border-top-color: #D4AF37; }
+.about-provide .grid-box:nth-child(3) { border-top-color: #B8860B; }
 .about-provide .grid-box:nth-child(4) { border-top-color: #6a0dad; }
 
 /* ---------- PRINCIPLES LIST ---------- */

@@ -1,0 +1,82 @@
+@startuml
+skinparam theme plain
+skinparam shadowing false
+skinparam componentStyle uml2
+
+package "GEAR: The Transformation Operating System (TOS)" {
+
+  ' The Result: The Simplified Temple Structure
+  package "Transformation Temple" as Temple #AliceBlue {
+    
+    ' Top: Mission & Capabilities
+    component "Mission" as Mission #DarkSlateBlue
+    
+    ' Middle: Generic Pillars
+    package "Execution Pillars" as Pillars #AntiqueWhite {
+      [ ] as P1
+      [ ] as P2
+      [ ] as P3
+      [ ] as P4
+      [ ] as P5
+      [ ] as P6
+    }
+    
+    ' Base: O-DXA Domains
+    package "O-DXA Foundation" as Domains #LightGray {
+      [Strategic]
+      [Organizational]
+      [Process]
+      [Digital]
+      [Physical]
+    }
+    
+    Mission -down- Pillars
+    Pillars -down- Domains
+  }
+
+  ' The Method: FORGE as an Active Process (The Gear)
+  package "FORGE Practice" as Engine #LightGreen {
+    component "Find" as F <<Process>>
+    component "Observe" as O <<Process>>
+    component "Reconcile" as R <<Process>>
+    component "Ground" as G <<Process>>
+    component "Enhance" as E <<Process>>
+    
+    F -right-> O
+    O -down-> R
+    R -left-> G
+    G -up-> E
+    E -right-> F
+    
+    note bottom of R : "Realization Engine"
+  }
+
+  ' The Environment: The Dimensions as Unstructured Terrain (Rocks & Sand)
+  package "Operating Terrain (Transformation Dimensions)" as Ground #GhostWhite {
+    () "People" as rock1
+    () "Process" as rock2
+    () "Policy" as rock3
+    () "Technology" as rock4
+    () "Culture" as sand1
+    () "Incentives" as sand2
+    () "Legacy" as sand3
+    
+    rock1 -[hidden]down- sand1
+    rock2 -[hidden]right- rock3
+    rock3 -[hidden]down- sand2
+    sand1 -[hidden]right- sand3
+  }
+
+}
+
+' Relationships: The System in Action
+Engine -up-> Temple : "Navigates & Builds"
+Ground -up-> Engine : "Operating Terrain"
+Domains -up-> Pillars : "Supports"
+Pillars -up-> Mission : "Realizes"
+
+legend bottom
+  GEAR: Using the **FORGE Methodology** to build the **Transformation Temple** 
+  on the terrain of the **Transformation Dimensions**.
+end legend
+@enduml

@@ -1,5 +1,5 @@
-<svg viewBox="0 0 600 520" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
-     style="width: 100%; height: auto; max-width: 1200px; max-height: 1040px; display: block; margin: 0 auto;">
+<svg viewBox="0 0 600 535" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     style="width: 100%; height: auto; max-width: 1200px; max-height: 1070px; display: block; margin: 0 auto;">
     <style>
         text { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; pointer-events: none;
         }
@@ -54,6 +54,9 @@
             <stop offset="0%" stop-color="rgba(255,255,255,0.25)"/>
             <stop offset="100%" stop-color="rgba(0,0,0,0.1)"/>
         </linearGradient>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" opacity="0.5"/>
+        </marker>
     </defs>
 
     <!-- Pediment (Triangle) -->
@@ -63,29 +66,52 @@
         </title>
         <polygon points="50,112 300,12 550,112" filter="url(#softshadow)" fill="url(#pedimentGradient)" stroke="#34495e"
                  stroke-width="2"/>
-        <text x="300" y="75" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+        <text x="300" y="72" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
             <tspan x="300" dy="0">Mission Solutions</tspan>
             <tspan x="300" dy="24">&amp; Capabilities</tspan>
         </text>
     </g>
 
-    <!-- Beam (Entablature) -->
-    <g class="clickable">
+    <!-- Beam (Architectural FORGE) -->
+    <g>
         <title>
-            Architectural integration aligns tradeoffs, design decisions, and cross-pillar dependencies
+            Architectural FORGE: The active process that connects and aligns all transformation pillars
         </title>
-        <rect x="50" y="112" width="500" height="48" filter="url(#softshadow)" fill="url(#beamGradient)"
-              stroke="#2c3e50" stroke-width="2" class="clickable"/>
-        <text x="300" y="133" font-size="16" font-weight="bold" fill="black" text-anchor="middle">
-            <tspan x="300" dy="0">Architectural Integration</tspan>
-            <tspan x="300" dy="16" font-size="11" font-style="italic" font-weight="normal">Tradeoffs • Alignment •
-                Design Decisions
-            </tspan>
+        <rect x="50" y="112" width="500" height="52" filter="url(#softshadow)" fill="url(#beamGradient)"
+              stroke="#2c3e50" stroke-width="2"/>
+        <text x="300" y="131" font-size="16" font-weight="bold" fill="black" text-anchor="middle">
+            Architectural FORGE
         </text>
+        <g font-size="13" font-weight="bold" fill="#2c3e50" text-anchor="middle" class="clickable">
+            <a href="/en/digital-transformation/forge/find/index.html">
+                <text x="120" y="151" fill="#2c3e50" style="pointer-events: auto;">Find</text>
+                <title>Find: Identify gaps, silos, and opportunities across domains</title>
+            </a>
+            <text x="175" y="151" font-weight="normal" fill="#2c3e50" opacity="0.5">•</text>
+            <a href="/en/digital-transformation/forge/observe/index.html">
+                <text x="220" y="151" fill="#2c3e50" style="pointer-events: auto;">Observe</text>
+                <title>Observe: Gather data and validate current state reality</title>
+            </a>
+            <text x="265" y="151" font-weight="normal" fill="#2c3e50" opacity="0.5">•</text>
+            <a href="/en/digital-transformation/forge/reconcile/index.html">
+                <text x="315" y="151" fill="#2c3e50" style="pointer-events: auto;">Reconcile</text>
+                <title>Reconcile: Align strategic intent with operational execution</title>
+            </a>
+            <text x="365" y="151" font-weight="normal" fill="#2c3e50" opacity="0.5">•</text>
+            <a href="/en/digital-transformation/forge/ground/index.html">
+                <text x="410" y="151" fill="#2c3e50" style="pointer-events: auto;">Ground</text>
+                <title>Ground: Root transformation in physical and digital reality</title>
+            </a>
+            <text x="455" y="151" font-weight="normal" fill="#2c3e50" opacity="0.5">•</text>
+            <a href="/en/digital-transformation/forge/enhance/index.html">
+                <text x="500" y="151" fill="#2c3e50" style="pointer-events: auto;">Enhance</text>
+                <title>Enhance: Scale and optimize capabilities for the future</title>
+            </a>
+        </g>
     </g>
 
     <!-- Six Pillars with Links -->
-    <g font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50" text-anchor="middle">
+    <g font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50" text-anchor="middle" transform="translate(0, 4)">
         <!-- Pillar 1: Ubiquitous Computing -->
         <g class="clickable">
             <title>
@@ -207,7 +233,7 @@
     </g>
 
     <!-- Foundation (Domains) with Links -->
-    <g font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">
+    <g font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" transform="translate(0, 4)">
         <a href="/en/digital-transformation/odxa/strategic/" class="clickable">
             <g>
                 <rect x="40" y="360" width="520" height="20" fill="#f8fafc"/>
@@ -245,6 +271,38 @@
                 <rect x="0" y="440" width="600" height="20" fill="#9aa3af"/>
                 <rect x="0" y="440" width="600" height="20" fill="url(#stepGradient)"/>
                 <text x="300" y="455" fill="black">Physical Domain</text>
+            </g>
+        </a>
+    </g>
+
+    <!-- Transformation Dimensions -->
+    <g font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" transform="translate(0, 4)">
+        <a href="/en/digital-transformation/dimensions/people/index.html">
+            <g class="clickable">
+                <rect x="0" y="465" width="144" height="40" rx="10" ry="10" fill="#4b5563" filter="url(#softshadow)"/>
+                <text x="72" y="490" fill="white" style="pointer-events: auto;">People</text>
+                <title>People: Roles, Skills, and Cultural readiness</title>
+            </g>
+        </a>
+        <a href="/en/digital-transformation/dimensions/process/index.html">
+            <g class="clickable">
+                <rect x="152" y="465" width="144" height="40" rx="10" ry="10" fill="#4b5563" filter="url(#softshadow)"/>
+                <text x="224" y="490" fill="white" style="pointer-events: auto;">Process</text>
+                <title>Process: Workflows and Organizational metabolism</title>
+            </g>
+        </a>
+        <a href="/en/digital-transformation/dimensions/policy/index.html">
+            <g class="clickable">
+                <rect x="304" y="465" width="144" height="40" rx="10" ry="10" fill="#4b5563" filter="url(#softshadow)"/>
+                <text x="376" y="490" fill="white" style="pointer-events: auto;">Policy</text>
+                <title>Policy: Rules, Governance, and Constraints</title>
+            </g>
+        </a>
+        <a href="/en/digital-transformation/dimensions/technology/index.html">
+            <g class="clickable">
+                <rect x="456" y="465" width="144" height="40" rx="10" ry="10" fill="#4b5563" filter="url(#softshadow)"/>
+                <text x="528" y="490" fill="white" style="pointer-events: auto;">Technology</text>
+                <title>Technology: Digital platforms and Data models</title>
             </g>
         </a>
     </g>
