@@ -157,6 +157,10 @@
     </nav>
 </header>
 
+<script>
+    window.contentData = {"briefs":[],"episodes":[],"lectures":[],"deepdives":[]};
+</script>
+
 <main id="content">
 
     
@@ -465,15 +469,88 @@
                 return 0;
             }
 
-            let idx = autoIndex();
-            if (cards[idx] && cards[idx].disabled) {
-                const firstEnabled = cards.findIndex(c => !c.disabled);
-                idx = firstEnabled >= 0 ? firstEnabled : 0;
-            }
-            setSelected(idx);
-        }
+                let idx = autoIndex();
+                if (cards[idx] && cards[idx].disabled) {
+                    const firstEnabled = cards.findIndex(c => !c.disabled);
+                    idx = firstEnabled >= 0 ? firstEnabled : 0;
+                }
+                setSelected(idx);
+            })();
+        </script>
+    </section>
 
-        document.addEventListener('DOMContentLoaded', populateContent);
+    <!-- EXPLORE -->
+    <section class="transformation-container" style="background:#f8fafc; color:#000000;">
+        <h2 class="section-title" style="color:#000000;">Explore the Transformation Ecosystem</h2>
+
+        <div class="pillar-domain-grid">
+            <article class="grid-box">
+                <h3>Weekly Briefings</h3>
+                <p>Cut through the noise with curated insights across our six pillars. Understand what changed this week and exactly why it matters to your strategy.</p>
+                <a class="listen-now" href="/de/briefs/index.html">Read Briefings</a>
+            </article>
+
+            <article class="grid-box">
+                <h3>The DTA Framework</h3>
+                <p>Move beyond theory with the Digital Transformation Architect (DTA) lectures. Master the ODXA domains using proven patterns and playbooks.</p>
+                <a class="listen-now" href="/de/dta/index.html">Start Learning</a>
+            </article>
+
+            <article class="grid-box">
+                <h3>Executive Interviews</h3>
+                <p>Learn from those leading the charge. Real-world case studies and conversations with industry experts executing transformation at scale.</p>
+                <a class="listen-now" href="/de/episodes/index.html">Watch Interviews</a>
+            </article>
+
+            <article class="grid-box">
+                <h3>Digital Deep Dives</h3>
+                <p>Turn strategy into action. Practical, technical deep dives designed to provide clear guidance on "what to do next" for your architecture.</p>
+                <a class="listen-now" href="/de/deepdive/index.html">Dive Deeper</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- COMMUNITY / CONVERSION -->
+    <section class="transformation-container">
+        <h2 class="section-title">Engage & Support</h2>
+
+        <div class="grid-container">
+            <article class="grid-box" style="text-align:center;">
+                <h3>The Weekly Recap</h3>
+                <p>Never miss a signal. Join thousands of digital leaders who receive our weekly recap of briefings, interviews, and guidance directly in their inbox.</p>
+                <a class="listen-now" href="/de/newsletter.html">Stay Informed</a>
+            </article>
+
+            <article class="grid-box" style="text-align:center;">
+                <h3>Collaborative Community</h3>
+                <p>Transformation doesn’t happen in a vacuum. Connect with a global network of practitioners to share insights, ask questions, and solve complex challenges together.</p>
+                <a class="listen-now" href="/de/community.html">Join the Discussion</a>
+            </article>
+
+            <article class="grid-box" style="text-align:center;">
+                <h3>Insider Membership</h3>
+                <p>Unlock deeper access. Support the show and get early access to briefings, private Q&amp;A sessions, and exclusive architectural deep dives via Patreon.</p>
+                <a class="listen-now" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Become a Member</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Structured data: ItemList of featured content -->
+    <script type="application/ld+json">
+        {
+          "@context":"https://schema.org",
+          "@type":"WebPage",
+          "name":"Embracing Digital Home",
+          "url":"https://embracingdigital.org/de/home/",
+      "about":[
+        "Digital transformation",
+        "Artificial intelligence",
+        "Cybersecurity",
+        "Edge computing",
+        "Data management",
+        "Advanced communications"
+      ],
+    }
     </script>
 
     <!-- The rest of your static content below remains as is (Explore, Community, Structured Data) -->
