@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>FORGE first steps: Find and Observe. | Digital Transformation Architect</title>
+    <meta name="description" content="This article emphasizes the critical first steps in digital transformation: establishing a comprehensive and objective understanding of the enterprise landscape through the FORGE methodology’s Find and Observe stages. By broadly identifying key stakeholders, hidden assets like Shadow IT, and mapping">
+    
+    
+    <link rel="canonical" href="https://www.embracingdigital.org/en/lectures/dta-6/index.html">
+    
+
+    <!-- Hreflang alternates (optional: pass `langs` into the template) -->
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FORGE first steps: Find and Observe. | Digital Transformation Architect">
+    <meta property="og:description" content="This article emphasizes the critical first steps in digital transformation: establishing a comprehensive and objective understanding of the enterprise landscape through the FORGE methodology’s Find and Observe stages. By broadly identifying key stakeholders, hidden assets like Shadow IT, and mapping">
+    <meta property="og:url" content="https://www.embracingdigital.org/en/lectures/dta-6/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FORGE first steps: Find and Observe. | Digital Transformation Architect">
+    <meta name="twitter:description" content="This article emphasizes the critical first steps in digital transformation: establishing a comprehensive and objective understanding of the enterprise landscape through the FORGE methodology’s Find and Observe stages. By broadly identifying key stakeholders, hidden assets like Shadow IT, and mapping">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="en/home/index.html"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="en/shows/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="en/digital-transformation/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+        <!-- Right side (Languages) -->
+        <ul class="nav-right">
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../en/home/index.html">Home</a></li>
+        <li><a href="../../../en/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 6: FORGE first steps: Find and Observe.</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/en/lectures/dta-6/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/en/lectures/dta-6/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 6</span>
+                <span class="episode-title">FORGE first steps: Find and Observe.</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-02-11" itemprop="datePublished">2026-02-11</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+
+            <meta itemprop="episodeNumber" content="6"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+            <section class="video-container" aria-label="Watch the episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
+                <meta itemprop="name" content="FORGE first steps: Find and Observe. Video">
+                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/F7kTgqJJASY">
+                <iframe
+                        width="auto"
+                        height="auto"
+                        src="https://www.youtube.com/embed/F7kTgqJJASY"
+                        title="FORGE first steps: Find and Observe. Video"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                ></iframe>
+            </section>
+        
+
+        
+            <section class="podcast-container" aria-label="Listen to this episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
+                <meta itemprop="name" content="FORGE first steps: Find and Observe. Audio">
+                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/d9e113ec">
+                <iframe
+                        width="100%"
+                        height="180"
+                        frameborder="0"
+                        scrolling="no"
+                        src="https://share.transistor.fm/e/d9e113ec"
+                        title="FORGE first steps: Find and Observe. Audio"
+                        loading="lazy"
+                ></iframe>
+
+                <p class="listen-note">
+                    Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                </p>
+            </section>
+        
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>This article emphasizes the critical first steps in digital transformation: establishing a comprehensive and objective understanding of the enterprise landscape through the FORGE methodology’s Find and Observe stages. By broadly identifying key stakeholders, hidden assets like Shadow IT, and mapping interdependencies, organizations can build a holistic baseline that informs strategic decisions, supports iterative exploration, and drives effective, sustainable transformation.</p>
+
+
+            
+
+            
+                <div class="guests" aria-label="Guests">
+                    
+                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                    
+                </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>This lecture explores the essential first steps in successful digital transformation: identifying and understanding the enterprise landscape. It highlights the importance of establishing a clear baseline by discovering key components, stakeholders, and hidden assets—including informal systems like Shadow IT—and mapping their interdependencies. By adopting a structured approach focused on listening, observing, and documenting without premature analysis, organizations can uncover critical insights that drive effective decision-making and strategic planning. The methodology empowers enterprise architects to facilitate organizational growth and adaptability, laying a foundation for lasting transformation success.</p>
+<h2>The Core Problem of Digital Transformation</h2>
+<p>Organizations undertaking digital transformation often struggle to capture an accurate and holistic view of their enterprise landscape. Traditional reporting and documentation methods may hide critical assets, stakeholder relationships, and interdependencies, leading to missed opportunities and inefficiencies. To address this, a structured approach focused on establishing a clear baseline of reality is essential for successful transformation initiatives.</p>
+<p>The transformation journey fundamentally begins with gaining comprehensive awareness of hidden assets, key stakeholders, and complex interdependencies within the enterprise. It is also important to identify informal structures such as &quot;Shadow IT,&quot; analyze behavioral patterns, and understand the intricate network of relationships that form the enterprise’s operational &quot;Nervous System.&quot;</p>
+<h2>Key Insights</h2>
+<h3>The &quot;Find&quot; Stage: Establishing a Baseline</h3>
+<p>The &quot;Find&quot; stage concentrates on discovering the organization&#39;s crucial components and engaging stakeholders across all levels. Rather than limiting conversations to top executives, it is valuable to include a diverse set of around 8 to 10 key stakeholders to capture a well-rounded perspective.</p>
+<p>During this stage, observations should be logged carefully without diving into deep analysis or critique. Encouraging stakeholders to share mission statements, existing documentation, and perspectives on assets helps build a foundational map of the enterprise landscape. Using tools like AI-assisted voice-to-text can facilitate thorough and efficient documentation.</p>
+<p>Spotting elements of informal technology usage—commonly referred to as &quot;Shadow IT&quot;—is vital, as these can indicate hidden capabilities or unmet needs. The goal is to document concerns and insights without prematurely diagnosing problems, preserving openness and clarity.</p>
+<h3>The &quot;Observe&quot; Stage: Mapping Interdependencies</h3>
+<p>Once core elements and stakeholders are identified, the focus shifts to examining how these components interrelate. This involves mapping interdependencies to uncover how systems, processes, and people connect and influence each other.</p>
+<p>Beyond static organizational charts, this stage emphasizes observing usage patterns and behaviors that provide deeper operational insights. Informally noting where systems are located, how software is utilized, and the role various tools play helps build a dynamic picture.</p>
+<p>Maintaining a high-level perspective is essential here to avoid getting bogged down in details, ensuring that the analysis remains clear and actionable. Mapping these interdependencies often reveals pain points and bottlenecks, highlighting areas needing attention or further exploration in subsequent phases.</p>
+<h2>Why This Matters</h2>
+<p>Establishing an accurate and detailed understanding of the enterprise landscape through these stages is crucial for directing effective digital transformation. This foundational knowledge allows organizations to evaluate their current state realistically, prioritize improvements, and set measurable goals for return on investment.</p>
+<p>Enterprise architects act as &quot;Enterprise Interpreters,&quot; facilitating the emergence of insights that enable organizational growth and adaptability. By adopting this methodology, leaders gain a comprehensive view that supports informed decision-making and strategic planning, balancing immediate operational needs with long-term transformation ambitions.</p>
+<h2>Listen and Go Deeper</h2>
+<p>For those interested in exploring these concepts further, there are additional resources available including a detailed whitepaper, an in-depth lecture, and a dedicated website focused on this methodology. These materials provide valuable guidance for digital transformation practitioners, enterprise architects, and organizational leaders seeking to deepen their understanding.</p>
+<h2>Further Exploration</h2>
+<p>Additional resources and materials are available for those looking to expand their knowledge on bridging strategy, architecture, and transformation practices.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/en/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/en/episodes/index.html",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/en/lectures/dta-6/index.html#episode",
+  "url": "https://www.embracingdigital.org/en/lectures/dta-6/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/en/lectures/dta-6/index.html"
+  },
+  "name": "FORGE first steps: Find and Observe.",
+  "episodeNumber": 6,
+  "datePublished": "2026-02-11",
+  "inLanguage": "en",
+  "description": "This article emphasizes the critical first steps in digital transformation: establishing a comprehensive and objective understanding of the enterprise landscape through the FORGE methodology's Find and Observe stages. By broadly identifying key stakeholders, hidden assets like Shadow IT, and mapping",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/en/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/en/episodes/dta-6/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "FORGE first steps: Find and Observe. Video",
+      "embedUrl": "https://www.youtube.com/embed/F7kTgqJJASY"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "FORGE first steps: Find and Observe. Audio",
+      "contentUrl": "https://share.transistor.fm/e/d9e113ec"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
