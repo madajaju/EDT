@@ -1,0 +1,3090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>O-DXA Viewer</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --fg: #0f172a;
+            --muted: #64748b;
+            --line: #e5e7eb;
+            --accent: #4f46e5;
+            --brand: #456789;
+            --brand-contrast: #ffcc88;
+
+            --sidebar-w: 280px;
+            --radius: 10px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+
+            /* 2-row grid: header, content. Content is 2 columns: left tools, right viewer */
+            display: grid;
+            grid-template-rows: auto 1fr;
+            grid-template-columns: var(--sidebar-w) 1fr;
+            min-height: 100dvh;
+            overflow: hidden; /* no body scrollbars */
+            gap: 0;
+        }
+
+        header {
+            grid-column: 1 / -1;
+            padding: 10px 12px;
+            background: var(--brand);
+            color: #fff;
+            border-bottom: 1px solid rgba(255, 255, 255, .15);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        /* Left: toolbar */
+        aside {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            border-right: 1px solid var(--line);
+            overflow: hidden; /* its internals can scroll if needed */
+        }
+
+        .tools-header {
+            padding: 10px 12px;
+            font-weight: 600;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .tools-body {
+            padding: 12px;
+            overflow: auto;
+            display: grid;
+            gap: 10px;
+            align-content: start;
+        }
+
+        .tools-footer {
+            padding: 10px 12px;
+            border-top: 1px solid var(--line);
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .overlay-pin.selected > circle {
+            stroke: #ffff00;
+            stroke-width: 3px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 10px;
+            border-radius: 8px;
+            border: 1px solid var(--line);
+            background: #fff;
+            cursor: pointer;
+            font: inherit;
+        }
+
+        .btn.primary {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+        }
+
+        .btn:hover {
+            filter: brightness(0.98);
+        }
+
+        .btn:disabled {
+            opacity: .5;
+            cursor: not-allowed;
+        }
+
+        .btn-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .btn-wide {
+            width: 100%;
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 8px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background: #fafafa;
+            font-size: 12px;
+            color: var(--muted);
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .dropzone {
+            border: 2px dashed var(--line);
+            border-radius: var(--radius);
+            padding: 12px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--muted);
+            background: #fcfcfd;
+        }
+
+        .dropzone.dragover {
+            border-color: var(--accent);
+            background: #f5f7ff;
+            color: var(--fg);
+        }
+
+        .help {
+            font-size: 12px;
+            color: var(--muted);
+            background: #f8fafc;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 10px;
+        }
+
+        .help h4 {
+            margin: 0 0 6px;
+            font-size: 12px;
+            color: #111827;
+        }
+
+        /* Right: main viewer column as a 3-row grid */
+        .main {
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+            min-width: 0; /* allow child to shrink */
+            min-height: 0;
+        }
+
+        #navigation-ribbon {
+            padding: 8px 12px;
+            background: var(--brand);
+            color: var(--brand-contrast);
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+            flex-wrap: wrap;
+            border-bottom: 1px solid rgba(255, 255, 255, .15);
+        }
+
+        #navigation-ribbon nav {
+            display: inline-flex;
+            gap: .5rem;
+            align-items: center;
+        }
+
+        #navigation-ribbon button {
+            background: transparent;
+            border: 0;
+            color: var(--brand-contrast);
+            font: inherit;
+            cursor: pointer;
+            padding: 2px 4px;
+            border-radius: 6px;
+        }
+
+        #navigation-ribbon button:hover,
+        #navigation-ribbon button:focus-visible {
+            outline: 2px solid rgba(255, 255, 255, .5);
+            outline-offset: 2px;
+        }
+
+        #navigation-ribbon .sep {
+            opacity: .7;
+        }
+
+        #description-panel {
+            padding: 8px 12px;
+            background: #f5f5f5;
+            font-size: 1.05rem;
+            min-height: 2em;
+            max-height: 5.5rem; /* clamp height */
+            overflow: auto; /* only this area can scroll if long */
+            border-bottom: 1px solid var(--line);
+        }
+
+        .viewer {
+            min-height: 0;
+            min-width: 0;
+            position: relative;
+        }
+
+        #graph2d {
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* SVG scales instead */
+        }
+
+        #graph2d svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+            user-select: none;
+        }
+
+        .layer-group {
+            cursor: pointer;
+        }
+
+        .layer-group:hover {
+            filter: brightness(0.98);
+        }
+
+        .layer-group:focus {
+            outline: none;
+        }
+
+        .legend-row {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            margin: .25rem 0;
+        }
+
+        .legend-swatch {
+            width: 14px;
+            height: 14px;
+            border-radius: 3px;
+            border: 1px solid var(--line);
+        }
+
+        .badge {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            font-size: 10px;
+            padding: 2px 5px;
+            border-radius: 999px;
+            background: #111827;
+            color: #fff;
+            opacity: .9;
+            pointer-events: none;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>O-DXA Viewer</h1>
+</header>
+
+<!-- Left: Tools -->
+<aside>
+    <div class="tools-header">Tools</div>
+    <div class="tools-body">
+        <!-- Add Customer (file input + dropzone) -->
+        <input id="file-input" type="file" accept="application/json" hidden/>
+        <button id="btn-add" class="btn primary btn-wide">Add customer file</button>
+
+        <div id="dropzone" class="dropzone" aria-label="Customer JSON dropzone">
+            Drag &amp; drop customer JSON here
+        </div>
+
+        <div class="pill" id="customer-pill" title="No customer loaded">
+            <span>Customer:</span><span id="customer-name">none</span>
+        </div>
+
+        <div class="btn-row">
+            <button id="btn-remove" class="btn" disabled>Remove customer</button>
+            <button id="btn-clear" class="btn">Clear</button>
+        </div>
+
+        <div class="btn-row">
+            <button id="btn-reset" class="btn">Reset view</button>
+            <button id="btn-export" class="btn">Export PNG</button>
+        </div>
+
+        <div class="help">
+            <h4>Tips</h4>
+            <ul style="margin:0 0 0 1rem; padding:0; list-style: disc;">
+                <li>Click a box to select; double-click to zoom in.</li>
+                <li>Add a customer JSON; we’ll overlay it next.</li>
+            </ul>
+        </div>
+        <div id="legend" class="help" style="display:none">
+            <h4>Overlay legend</h4>
+            <div id="legend-items"></div>
+        </div>
+
+    </div>
+    <div class="tools-footer">v1.0 • No page scrollbars</div>
+</aside>
+
+<!-- Right: Viewer -->
+<div class="main">
+    <div id="navigation-ribbon" aria-label="Breadcrumb">
+        <nav id="breadcrumb"></nav>
+    </div>
+
+    <div id="description-panel">
+        Click on a layer to see its description here. Double-click a layer to zoom into it.
+    </div>
+
+    <div id="graph2d" class="viewer"></div>
+</div>
+
+<!-- Import odxa.js as module and expose to window for the non-module code -->
+<script type="module">
+
+    const strategic_domain = {
+        "name": "Strategic Domain",
+        "description": "The Strategic Domain layer focuses on aligning the organization's direction, priorities, capabilities, and risk posture to achieve its mission and vision.",
+        "orientation": "front",
+        "position": {
+            "row": 1,
+            "col": 1,
+            "colspan": 2
+        },
+        "color": "#00667f",
+        "layers": {
+
+            "Mission & Vision": {
+                "name": "Mission & Vision",
+                "description": "Defines the organization's aspirational long-term goals and core purpose.",
+                "position": {
+                    "row": 1,
+                    "col": 1,
+                    "colspan": 3
+                },
+                "layers": {
+                    "Vision Statement": {
+                        "name": "Vision Statement",
+                        "description": "A clear and compelling declaration of the organization’s long-term aspirations and the broad societal or community outcomes it seeks to achieve.",
+                        "position": {
+                            "row": 1,
+                            "col": 3,
+                            "rowspan": "2",
+                        }
+                    },
+                    "Leadership Aspirations": {
+                        "name": "Leadership Aspirations",
+                        "description": "Captures the strategic priorities, values, and transformational ambitions expressed by organizational leadership and key internal or external stakeholders, reflecting the organization's intentional direction.",
+                        "position": {
+                            "row": 2,
+                            "col": 2
+                        }
+                    },
+                    "Legistlative Authority": {
+                        "name": "Legislative Authority",
+                        "description": "Documents the legal authority and mandate of the organization, including its governing bodies, executive branch, and legislative branch, as well as its regulatory authority and policies.",
+                        "position": {
+                            "row": 1,
+                            "col": 1,
+                            "colspan": 2
+                        }
+                    },
+                    "Mission Statement": {
+                        "name": "Mission Statement",
+                        "description": "Defines the organization’s core purpose, including whom it serves, what it does, and why it matters within its public mandate.",
+                        "position": {
+                            "row": 3,
+                            "col": 1,
+                            "colspan": 2
+                        }
+                    },
+
+                    "Community and Constituent Input": {
+                        "name": "Community and Constituent Input",
+                        "description": "Reflects the needs, expectations, and feedback from the communities and constituents served by the organization. This input ensures the mission and vision remain relevant, responsive, and people-centered.",
+                        "position": {
+                            "row": 2,
+                            "col": 1
+                        }
+                    },
+                    "Narrative of Action": {
+                        "name": "Narrative of Action",
+                        "description": "Explains how the vision and mission adapt over time to address evolving societal needs, emerging trends, and environmental shifts, maintaining ongoing relevance and strategic focus.",
+                        "position": {
+                            "row": 3,
+                            "col": 3,
+                            colspan: 1
+                        }
+                    },
+                }
+            },
+            "Strategy & Priorities": {
+                "name": "Strategy & Priorities",
+                "description": "Identifies the medium- to long-term outcomes and key focus areas necessary to achieve the vision.",
+                "position": {
+                    "row": 2,
+                    "col": 1,
+                    "rowspan": 3
+                },
+                "layers": {
+                    "Strategic Objectives": {
+                        "name": "Strategic Objectives",
+                        "description": "Broad outcomes derived from the mission, often multi-year and cross-cutting. These provide a thematic anchor for programs and policies, such as 'advance digital equity' or 'modernize infrastructure.'",
+                        "position": {
+                            "row": 1,
+                            "col": 1
+                        }
+                    },
+                    "Organizational Priorities": {
+                        "name": "Organizational Priorities",
+                        "description": "Focused, often time-bound initiatives or targets set by leadership or policy (e.g., 'achieve 80% digital service adoption by 2027'). They reflect what’s urgent, funded, or politically salient.",
+                        "position": {
+                            "row": 1,
+                            "col": 2
+                        }
+                    },
+                    "Performance Indicators (KPIs)": {
+                        "name": "Performance Indicators (KPIs)",
+                        "description": "Measurable indicators tied to each goal and priority. These allow organizations to track progress, assess impact, and recalibrate initiatives as needed.",
+                        "position": {
+                            "row": 2,
+                            "col": 1
+                        }
+                    },
+                    "Alignment Map": {
+                        "name": "Alignment Map",
+                        "description": "Illustrates how goals align across departments or programs, promoting coordinated efforts.",
+                        "position": {
+                            "row": 2,
+                            "col": 2
+                        }
+                    }
+                }
+            },
+            "Value Streams & Capabilities": {
+                "name": "Value Streams & Capabilities",
+                "description": "Outlines the key value flows and enabling capabilities required to deliver on the strategy and mission.",
+                "position": {
+                    "row": 2,
+                    "col": 3,
+                    "rowspan": 3
+                },
+                "layers": {
+                    "Constituent Service Journeys": {
+                        "name": "Constituent Service Journeys",
+                        "description": "Narrative and visual maps depicting how individuals or groups engage with the organization—from initial contact and onboarding through service delivery and follow-up. These journeys highlight pain points, experience gaps, and areas for innovation.",
+                        "position": {
+                            "row": 1,
+                            "col": 1
+                        }
+                    },
+                    "Cross-Agency Coordination": {
+                        "name": "Cross-Agency Coordination",
+                        "description": "Identification of touchpoints where multiple departments or partner organizations contribute to delivering a single value stream, underscoring the need for integrated platforms, data sharing, and common standards.",
+                        "position": {
+                            "row": 1,
+                            "col": 2
+                        }
+                    },
+                    "Outcome Measures": {
+                        "name": "Outcome Measures",
+                        "description": "Success criteria defined from the constituent’s perspective—such as reduced wait times, equitable access, or simplified application processes—that ensure transformation remains focused on public value and citizen-centric results.",
+                        "position": {
+                            "row": 2,
+                            "col": 1
+                        }
+                    },
+                    "Enterprise Capabilities Map": {
+                        "name": "Enterprise Capabilities Map",
+                        "description": "A structured representation of core and enabling capabilities that support value streams, linking organizational strengths and resources to constituent outcomes.",
+                        "position": {
+                            "row": 2,
+                            "col": 2
+                        }
+                    },
+                    "Capability Maturity Assessment": {
+                        "name": "Capability Maturity Assessment",
+                        "description": "Evaluation of current-state versus future-state capability levels to identify gaps, prioritize capability development, and guide investment decisions.",
+                        "position": {
+                            "row": 3,
+                            "col": 1
+                        }
+                    },
+                    "Value Stream Maps": {
+                        "name": "Value Stream Maps",
+                        "description": "High-level flow diagrams illustrating how capabilities, processes, and partners collaborate to deliver value to constituents, serving as a blueprint for transformation initiatives.",
+                        "position": {
+                            "row": 3,
+                            "col": 2
+                        }
+                    }
+                }
+            },
+            "Policy & Compliance": {
+                "name": "Policy & Compliance",
+                "description": "Documents the legal, regulatory, and policy frameworks guiding the organization’s operations and architecture.",
+                "position": {
+                    "row": 3,
+                    "col": 2,
+                    "rowspan": 1
+                },
+                "layers": {
+                    "Mandates and Statutes": {
+                        "name": "Mandates and Statutes",
+                        "description": "Foundational legal texts, executive orders, and statutory requirements that establish non-negotiable obligations the organization must meet. These serve as the baseline for compliance and architecture constraints.",
+                        "position": {
+                            "row": 1,
+                            "col": 1
+                        }
+                    },
+                    "Strategic Policy Themes": {
+                        "name": "Strategic Policy Themes",
+                        "description": "Broad government initiatives and thematic priorities—such as AI ethics, sustainability, privacy, or digital inclusion—that shape innovation space and strategic direction across departments and programs.",
+                        "position": {
+                            "row": 1,
+                            "col": 2
+                        }
+                    },
+                    "Compliance Frameworks": {
+                        "name": "Compliance Frameworks",
+                        "description": "Operational standards and requirements derived from policy, including data privacy, security, accessibility, and retention policies, which must be embedded in system architectures, processes, and controls.",
+                        "position": {
+                            "row": 2,
+                            "col": 1
+                        }
+                    },
+                    "Guiding Policies": {
+                        "name": "Guiding Policies",
+                        "description": "Strategic-level policies that provide overarching principles and objectives, directing organizational actions and investments in alignment with government priorities.",
+                        "position": {
+                            "row": 2,
+                            "col": 2
+                        }
+                    },
+                    "Regulatory Context": {
+                        "name": "Regulatory Context",
+                        "description": "High-level compliance obligations and enforcement mechanisms that govern organizational adherence to laws, regulations, and standards.",
+                        "position": {
+                            "row": 3,
+                            "col": 1
+                        }
+                    },
+                    "Strategic Directives": {
+                        "name": "Strategic Directives",
+                        "description": "Top-down mandates, reform initiatives, or legislative reforms issued by leadership or government bodies that drive change and transformation within the organization.",
+                        "position": {
+                            "row": 3,
+                            "col": 2
+                        }
+                    }
+                }
+            },
+            "Risk & Resilience": {
+                "name": "Risk & Resilience",
+                "description": "Addresses the organization's ability to anticipate, mitigate, and recover from risks while maintaining operational continuity.",
+                "position": {
+                    "row": 2,
+                    "col": 2
+                },
+                "layers": {
+                    "Risk Identification & Prioritization": {
+                        "name": "Risk Identification & Prioritization",
+                        "description": "Systematic identification, analysis, and ranking of mission-critical risks—including cyber threats, operational vulnerabilities, and external disruptions—maintained in strategic risk registries.",
+                        "position": {
+                            "row": 1,
+                            "col": 1
+                        }
+                    },
+                    "Resilience Capabilities": {
+                        "name": "Resilience Capabilities",
+                        "description": "Investments and initiatives that build organizational continuity, such as disaster recovery plans, workforce adaptability programs, and flexible infrastructure designs, ensuring sustained service delivery under stress.",
+                        "position": {
+                            "row": 1,
+                            "col": 2
+                        }
+                    },
+                    "Adaptive Governance": {
+                        "name": "Adaptive Governance",
+                        "description": "Structures and processes that enable rapid decision-making, iterative policy and architectural adjustments, flexible resource allocation, and empowered leadership during crises or fast-changing environments.",
+                        "position": {
+                            "row": 2,
+                            "col": 1
+                        }
+                    },
+                    "Strategic Risk Assessment": {
+                        "name": "Strategic Risk Assessment",
+                        "description": "Comprehensive evaluation of risks impacting the achievement of mission and strategic goals, including emerging threats and systemic vulnerabilities.",
+                        "position": {
+                            "row": 2,
+                            "col": 2
+                        }
+                    },
+                    "Resilience Posture": {
+                        "name": "Resilience Posture",
+                        "description": "The organization’s overall capacity for continuity, adaptability, and recovery is assessed through defined metrics and maturity models.",
+                        "position": {
+                            "row": 3,
+                            "col": 1
+                        }
+                    },
+                    "Contingency Plans": {
+                        "name": "Contingency Plans",
+                        "description": "High-level frameworks and actionable playbooks outlining response strategies, recovery actions, and communication protocols to manage crises and restore operations.",
+                        "position": {
+                            "row": 3,
+                            "col": 2
+                        }
+                    }
+                }
+            },
+            "Roadmap": {
+                "name": "Roadmap",
+                "description": "Defines the key milestones, dependencies, and timelines for achieving strategic objectives and transformation initiatives.",
+                "position": {
+                    "row": 4,
+                    "col": 2
+                },
+                "layers": {
+                    "Current-State Assessments": {
+                        "name": "Current-State Assessments",
+                        "description": "In-depth diagnostics of existing capabilities, systems, processes, and workforce readiness, providing a comprehensive baseline to identify strengths, gaps, and key challenges.",
+                        "position": {
+                            "row": 1,
+                            "col": 1
+                        }
+                    },
+                    "Transformation Roadmaps": {
+                        "name": "Transformation Roadmaps",
+                        "description": "Sequenced plans that outline how the organization will transition across people, processes, technology, and policy dimensions, linking initiatives and investments to strategic goals.",
+                        "position": {
+                            "row": 1,
+                            "col": 2
+                        }
+                    },
+                    "Strategic Foresight Activities": {
+                        "name": "Strategic Foresight Activities",
+                        "description": "Ongoing activities such as scenario planning, horizon scanning, and trend monitoring that prepare the organization for multiple plausible futures, enabling flexible and forward-looking decision-making.",
+                        "position": {
+                            "row": 2,
+                            "col": 1
+                        }
+                    },
+                    "Current-State Description": {
+                        "name": "Current-State Description",
+                        "description": "Clear articulation of the present operating environment, including capabilities, pain points, and organizational context.",
+                        "position": {
+                            "row": 2,
+                            "col": 2
+                        }
+                    },
+                    "Future-State Vision": {
+                        "name": "Future-State Vision",
+                        "description": "Definition of the target operating model, describing desired capabilities, organizational structure, technology platforms, and policy environment.",
+                        "position": {
+                            "row": 3,
+                            "col": 1
+                        }
+                    },
+                    "Transformation Initiatives": {
+                        "name": "Transformation Initiatives",
+                        "description": "Specific programs, projects, and investments aligned with strategic objectives, prioritized to drive incremental and breakthrough change.",
+                        "position": {
+                            "row": 3,
+                            "col": 2
+                        }
+                    },
+                    "Time Horizons": {
+                        "name": "Time Horizons",
+                        "description": "Planning phases that segment transformation efforts into short-term (1 year), medium-term (3 years), and long-term (5+ years) outlooks, providing clarity on sequencing and pacing.",
+                        "position": {
+                            "row": 4,
+                            "col": 1
+                        }
+                    }
+                }
+            }
+        }
+    };
+    const physical_domain = {
+        "name": "Physical Domain",
+        "description": "Physical Domain contains all of the devices, locations, and connectivity in the system.",
+        "orientation": "right",
+        "position": {
+            "row": 3,
+            "col": 1
+        },
+        "color": "#a3a2a2",
+        "assets": {
+            "GEAR1": {
+                "name": "GEAR Architecture document",
+                "url": "https://www.intel.com/content/www/us/en/content-details/790385/government-conceptual-enterprise-architecture-gear.html?wapkw=Government%20Enterprise%20Architecture",
+                "description": "Overview of the GEAR architecture and its uses."
+            },
+            "GEAR2": {
+                "name": "GEAR Security Architecture document",
+                "url": "https://www.intel.com/content/www/us/en/content-details/790385/government-conceptual-enterprise-architecture-gear.html?wapkw=Government%20Enterprise%20Architecture",
+                "description": "The Security Aspect of the Government Enterprise Architecture Reference (GEAR) Logical View integrates protection mechanisms such as encryption, intrusion detection, and threat mitigation across all layers of the architecture. It ensures that all parts of the enterprise are safeguarded against evolving threats by embedding security measures into the Organizational, Process, and Physical Layers. This approach enables a resilient, policy driven environment capable of addressing diverse threats across every architecture layer"
+            },
+            "GEARVideo": {
+                "name": "Video: Government Enterprise Architecture Basics: A Simple Explanation",
+                "url": "https://www.youtube.com/watch?v=Ou9FHodTamk",
+                "description": "In this episode, we delve into the world of leveraging enterprise architecture in government settings, specifically focusing on the benefits and strategies involved. From understanding the fundamentals of enterprise architecture frameworks to embracing digital transformation, we explore how organizations can drive value and efficiency through proper architectural planning. Join us as we discuss the significance of architecture in government operations and the role it plays in achieving organizational goals. If you are interested in learning more about enterprise architecture and its impact on government entities, this insightful discussion is for you."
+            }
+        },
+        "layers": {
+            "Machines": {
+                "name": "Machines",
+                "description": "Machines include non digital and digital machines that interact with the physical world.",
+                "position": {
+                    "row": 1,
+                    "col": 1,
+                    "rowspan": 2
+                },
+                "layers": {
+                    "Manual Input Devices": {
+                        "name": "Manual Input Machines",
+                        "description": "Machines operated by humans to provide direct input to the system.\n\nPush buttons\n\nSelector switches\n\nFoot pedals\n\nEmergency stop switches\n\nHandwheels and levers with feedback",
+                        "position": {
+                            "row": 1,
+                            "col": 1,
+                            "colspan": 3
+                        }
+                    },
+                    "Sensors": {
+                        "name": "Sensors",
+                        "description": "Machines that measure physical parameters from the process. Temperature sensors (RTDs, thermocouples)\n\nPressure transducers\n\nFlow meters\n\nLevel sensors (ultrasonic, float)\n\nProximity and position sensors (inductive, optical)\n\nSpeed/rotation sensors (encoders, tachometers)\n\nChemical/gas sensors (pH, CO₂, VOCs)",
+                        "position": {
+                            "row": 1,
+                            "col": 4,
+                            "colspan": 3
+                        }
+                    },
+                    "Composite Machines": {
+                        "name": "Composite Machines",
+                        "description": "Assemblies that combine sensors, actuators, controllers, and logic into an integrated device.\n\nRobotic arms (with encoders, motors, force sensors)\n\nCNC machines\n\nAutonomous guided vehicles (AGVs)\n\nSmart conveyor modules\n\nPackaging machines with embedded control\n\nPick-and-place machines",
+                        "position": {
+                            "row": 2,
+                            "col": 1,
+                            "colspan": 6
+                        }
+                    },
+                    "Motion Acuators": {
+                        "name": "Motion Acuators",
+                        "description": "Machines that cause linear or rotary movement in mechanical systems.\n\nElectric motors (AC, DC, servo, stepper)\n\nPneumatic or hydraulic cylinders\n\nLinear actuators\n\nRotary actuators\n\nDrives and motor controllers",
+                        "position": {
+                            "row": 3,
+                            "col": 1,
+                            "colspan": 2
+                        }
+                    },
+                    "Flow Acuators": {
+                        "name": "Flow Acuators",
+                        "description": "Machines that regulate flow of liquids, gases, or materials in the process.\n\nSolenoid valves\n\nControl valves (pneumatic, electric)\n\nDosing pumps\n\nDampers and gates\n\nHeaters (used to control thermal flow)",
+                        "position": {
+                            "row": 3,
+                            "col": 3,
+                            "colspan": 2
+                        }
+                    },
+                    "Signal and Power Switching": {
+                        "name": "Signal and Power Switching",
+                        "description": "Machines that switch electrical signals or power to machines.\n\nRelays\n\nContactors\n\nSolid-state switches\n\nCircuit breakers (with signaling)\n\nInterposing relays",
+                        "position": {
+                            "row": 3,
+                            "col": 5,
+                            "colspan": 2
+                        }
+                    }
+                }
+            },
+            "Devices": {
+                "name": "Devices",
+                "description": "Devices represent all physical devices involved in the system's operation, such as sensors and hardware endpoints.",
+                "position": {
+                    "row": 1,
+                    "col": 2
+                },
+                "layers": {
+                    "Dynamic Edge Devices": {
+                        "name": "Dynamic Edge Devices",
+                        "description": "Dynamic Edge Devices are adaptive, location-dependent devices connecting users to systems.",
+                        "position": {
+                            "row": 1,
+                            "col": 1
+                        }
+                    },
+                    "Operations Devices": {
+                        "name": "Operations Devices",
+                        "description": "Devices used for operational workflows, ensuring smooth day-to-day system functioning.",
+                        "position": {
+                            "row": 1,
+                            "col": 2
+                        }
+                    },
+                    "Enterprise Devices": {
+                        "name": "Enterprise Devices",
+                        "description": "Enterprise-level devices supporting organizational goals, such as servers and high-performance hardware.",
+                        "position": {
+                            "row": 1,
+                            "col": 3
+                        }
+                    },
+                    "Multi-Hybrid Cloud": {
+                        "name": "Multi-Hybrid Cloud",
+                        "description": "Multi-Hybrid Cloud systems represent cloud environments supporting connectivity and scaling across devices.",
+                        "position": {
+                            "row": 1,
+                            "col": 4
+                        }
+                    }
+                }
+            },
+            "Communications": {
+                "name": "Communications",
+                "description": "Communication represents the physical network and protocols connecting devices within locations.",
+                "position": {
+                    "row": 2,
+                    "col": 2
+                }
+            },
+            "Locations": {
+                name: "Locations",
+                "description": "Locations define geographic and logical places in the system where resources are located.",
+                "position": {
+                    "row": 3,
+                    "col": 1,
+                    "colspan": 2
+                },
+                "layers": {
+                    "Dynamic Locations": {
+                        name: "Dynamic Locations",
+                        "description": "Dynamic Locations are movable and adaptive spaces, such as temporary work areas or mobile units.",
+                        "position": {
+                            "row": 1,
+                            "col": 1
+                        }
+                    },
+                    "Operations Locations": {
+                        name: "Operations Locations",
+                        "description": "Locations used for managing and monitoring operational tasks in the system.",
+                        "position": {
+                            "row": 1,
+                            "col": 2
+                        }
+                    },
+                    "Hybrid Offices": {
+                        name: "Hybrid Offices",
+                        "description": "Merged work and home environments supporting hybrid work practices.",
+                        "position": {
+                            "row": 1,
+                            "col": 3
+                        }
+                    },
+                    "Datacenters": {
+                        name: "Datacenters",
+                        "description": "Dedicated locations that store and manage system-critical data and applications.",
+                        "position": {
+                            "row": 1,
+                            "col": 4
+                        }
+                    },
+                    "Outsourced Locations": {
+                        name: "Outsourced Locations",
+                        "description": "Third-party-managed spaces where some system operations are handled.",
+                        "position": {
+                            "row": 1,
+                            "col": 5
+                        }
+                    }
+                }
+            }
+        }
+    };
+    const digital_domain = {
+        "name": "Digital Domain",
+        "description": "Software stack of the system, including the middleware, software and applications.",
+        "orientation": "front",
+        "color": "#79447b",
+        "position": {
+            "row": 3,
+            "col": 2
+        },
+        "assets": {
+            "GEAR4": {
+                "name": "GEAR Architecture document",
+                "url": "https://www.intel.com/content/www/us/en/content-details/790385/government-conceptual-enterprise-architecture-gear.html?wapkw=Government%20Enterprise%20Architecture",
+                "description": "Overview of the GEAR architecture and its uses."
+            },
+            "GEARVideo": {
+                "name": "Video: Government Enterprise Architecture Basics: A Simple Explanation",
+                "url": "https://www.youtube.com/watch?v=Ou9FHodTamk",
+                "description": "In this episode, we delve into the world of leveraging enterprise architecture in government settings, specifically focusing on the benefits and strategies involved. From understanding the fundamentals of enterprise architecture frameworks to embracing digital transformation, we explore how organizations can drive value and efficiency through proper architectural planning. Join us as we discuss the significance of architecture in government operations and the role it plays in achieving organizational goals. If you are interested in learning more about enterprise architecture and its impact on government entities, this insightful discussion is for you."
+            }
+        },
+        "layers": {
+            "Application Layer": {
+                name: "Application Layer",
+                "description": "Handles user-facing applications, ensuring interaction between system and users.",
+                "position": {
+                    "row": 1,
+                    "col": 2,
+                    "colspan": 2
+                },
+                "layers": {
+                    "Experience & Channels": {
+                        name: "Experience & Channels",
+                        "description": "Delivers user-facing interfaces and consistent multi-channel experiences.",
+                        "position": {
+                            "row": 1,
+                            "col": 1
+                        },
+                        "layers": {
+                            "Digital Channel Applications": {
+                                name: "Digital Channel Applications",
+                                "description": "Web, mobile, desktop, and kiosk applications for service delivery.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 1
+                                }
+                            },
+                            "Experience Delivery & Personalization": {
+                                name: "Experience Delivery & Personalization",
+                                "description": "Ensures consistent UX, accessibility, and personalization across channels.",
+                                "position": {
+                                    "row": 2,
+                                    "col": 1
+                                }
+                            }
+                        }
+                    },
+                    "Business & Domain Applications": {
+                        name: "Business & Domain Applications",
+                        "description": "Provides mission and line-of-business capabilities through domain applications.",
+                        "position": {
+                            "row": 1,
+                            "col": 2
+                        },
+                        "layers": {
+                            "Line-of-Business Applications": {
+                                name: "Line-of-Business Applications",
+                                "description": "Domain-specific systems that execute core missions and programs.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 1
+                                }
+                            },
+                            "Case & Program Management": {
+                                name: "Case & Program Management",
+                                "description": "Manages eligibility, cases, and end-to-end program delivery.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 2
+                                }
+                            },
+                            "Enterprise Resource Applications": {
+                                name: "Enterprise Resource Applications",
+                                "description": "Finance, HR, and procurement systems for internal operations.",
+                                "position": {
+                                    "row": 2,
+                                    "col": 1
+                                }
+                            },
+                            "Constituent Engagement Applications": {
+                                name: "Constituent Engagement Applications",
+                                "description": "CRM and engagement platforms for outreach and service interactions.",
+                                "position": {
+                                    "row": 2,
+                                    "col": 2
+                                }
+                            },
+                            "User Services Composition": {
+                                name: "User Services Composition",
+                                "description": "How application services are composed and packaged for users.",
+                                "position": {
+                                    "row": 3,
+                                    "col": 1,
+                                    "colspan": 2
+                                },
+                                "layers": {
+                                    "Application (AI Model)": {
+                                        name: "Application (AI Model)",
+                                        "description": "Applications centered on an AI model as the primary capability.",
+                                        "position": {
+                                            "row": 1,
+                                            "col": 1
+                                        }
+                                    },
+                                    "Application (Complex Service)": {
+                                        name: "Application (Complex Service)",
+                                        "description": "Applications composed from a complex service aggregation.",
+                                        "position": {
+                                            "row": 1,
+                                            "col": 2
+                                        }
+                                    },
+                                    "Complex Service": {
+                                        name: "Complex Service",
+                                        "description": "Services composed of multiple simple services.",
+                                        "position": {
+                                            "row": 2,
+                                            "col": 1,
+                                            "colspan": 2
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Workflow & Automation": {
+                        name: "Workflow & Automation",
+                        "description": "Coordinates process execution and automation across services.",
+                        "position": {
+                            "row": 1,
+                            "col": 3
+                        },
+                        "layers": {
+                            "Application/Workflow Layer Workloads": {
+                                name: "Application/Workflow Layer Workloads",
+                                "description": "Workload types that feed automation and orchestration engines.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 1
+                                },
+                                "layers": {
+                                    "Event-driven Workloads": {
+                                        name: "Event-driven Workloads",
+                                        "description": "Automation triggered by events and streaming signals.",
+                                        "position": {
+                                            "row": 1,
+                                            "col": 1
+                                        }
+                                    },
+                                    "Procedural Workloads": {
+                                        name: "Procedural Workloads",
+                                        "description": "Step-based processes driving automation flows.",
+                                        "position": {
+                                            "row": 1,
+                                            "col": 2
+                                        }
+                                    },
+                                    "GUI/UI Driven Workloads": {
+                                        name: "GUI/UI Driven Workloads",
+                                        "description": "UI-driven tasks feeding robotic process automation.",
+                                        "position": {
+                                            "row": 2,
+                                            "col": 1,
+                                            "colspan": 2
+                                        }
+                                    }
+                                }
+                            },
+                            "Workflow Services": {
+                                name: "Workflow Services",
+                                "description": "Orchestrates workflows across applications and APIs.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 2
+                                },
+                                "layers": {
+                                    "Service/Application Definitions": {
+                                        name: "Service/Application Definitions",
+                                        "description": "Contracts and dependencies used by workflows.",
+                                        "position": {
+                                            "row": 1,
+                                            "col": 1
+                                        }
+                                    },
+                                    "Workflow Orchestrator": {
+                                        name: "Workflow Orchestrator",
+                                        "description": "Coordinates execution, routing, and error handling.",
+                                        "position": {
+                                            "row": 2,
+                                            "col": 1
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Data, Analytics & AI": {
+                        name: "Data, Analytics & AI",
+                        "description": "Enables analytics and intelligent automation for decisions.",
+                        "position": {
+                            "row": 2,
+                            "col": 1
+                        },
+                        "layers": {
+                            "Analytics Services": {
+                                name: "Analytics Services",
+                                "description": "Reporting and analytics capabilities for decision support.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 1
+                                }
+                            },
+                            "AI/ML Services": {
+                                name: "AI/ML Services",
+                                "description": "Machine learning services that augment workflows.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 2
+                                }
+                            }
+                        }
+                    },
+                    "Integration & API Services": {
+                        name: "Integration & API Services",
+                        "description": "Defines API products, contracts, and developer access.",
+                        "position": {
+                            "row": 2,
+                            "col": 2
+                        },
+                        "layers": {
+                            "API Product Management": {
+                                name: "API Product Management",
+                                "description": "Defines API products, lifecycle, and versioning.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 1
+                                }
+                            },
+                            "Developer Portal & Documentation": {
+                                name: "Developer Portal & Documentation",
+                                "description": "Onboarding, reference materials, and usage guidance.",
+                                "position": {
+                                    "row": 2,
+                                    "col": 1
+                                }
+                            },
+                            "SDKs & Client Libraries": {
+                                name: "SDKs & Client Libraries",
+                                "description": "Reusable client libraries for supported platforms.",
+                                "position": {
+                                    "row": 3,
+                                    "col": 1
+                                }
+                            }
+                        }
+                    },
+                    "Engineering & Platform Enablement": {
+                        name: "Engineering & Platform Enablement",
+                        "description": "Provides tooling, CI/CD, and environments for delivery.",
+                        "position": {
+                            "row": 2,
+                            "col": 3
+                        },
+                        "layers": {
+                            "Developer Services": {
+                                name: "Developer Services",
+                                "description": "Tooling and standards that accelerate delivery.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 1
+                                },
+                                "layers": {
+                                    "Automation Frameworks": {
+                                        name: "Automation Frameworks",
+                                        "description": "Test, build, and deployment automation tooling.",
+                                        "position": {
+                                            "row": 1,
+                                            "col": 1
+                                        }
+                                    },
+                                    "CICD Pipeline": {
+                                        name: "CICD Pipeline",
+                                        "description": "Continuous integration and delivery stages.",
+                                        "position": {
+                                            "row": 1,
+                                            "col": 2
+                                        }
+                                    },
+                                    "Environments": {
+                                        name: "Environments",
+                                        "description": "Standardized dev, test, staging, and prod runtimes.",
+                                        "position": {
+                                            "row": 2,
+                                            "col": 1,
+                                            "colspan": 2
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Distributed Information Management Layer": {
+                "description": "Oversees the efficient distribution and access of system data across modules.",
+                name: "Distributed Information Management Layer",
+                "position": {
+                    "row": 2,
+                    "col": 2,
+                    "colspan": 1
+                },
+                "layers": {
+                    "Data Definition Framework": {
+                        name: "Data Definition Framework",
+                        "description": "Defines shared schemas, standards, and data exchange patterns.",
+                        "position": {
+                            "row": 1,
+                            "col": 1,
+                            "rowspan": 2
+                        },
+                        "layers": {
+                            "Blueprint Management": {
+                                name: "Blueprint Management",
+                                "description": "Maintains canonical models and blueprint standards.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 1
+                                }
+                            },
+                            "Data Flow": {
+                                name: "Data Flow",
+                                "description": "Defines data movement patterns and exchange paths.",
+                                "position": {
+                                    "row": 2,
+                                    "col": 1
+                                }
+                            },
+                            "Data Adaptor Framework": {
+                                name: "Data Adaptor Framework",
+                                "description": "Provides adapters to map and translate data formats.",
+                                "position": {
+                                    "row": 3,
+                                    "col": 1
+                                }
+                            }
+                        }
+                    },
+                    "Data Management Layer": {
+                        name: "Data Management Layer",
+                        "description": "Controls data lifecycle, quality, and governance.",
+                        "position": {
+                            "row": 1,
+                            "col": 2
+                        },
+                        "layers": {
+                            "Data Orchestrator": {
+                                name: "Data Orchestrator",
+                                "description": "Coordinates data pipelines and processing stages.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 1
+                                }
+                            },
+                            "Metadata Management": {
+                                name: "Metadata Management",
+                                "description": "Manages metadata, lineage, and cataloging.",
+                                "position": {
+                                    "row": 2,
+                                    "col": 1
+                                }
+                            },
+                            "Data Controller": {
+                                name: "Data Controller",
+                                "description": "Enforces data access, quality, and retention controls.",
+                                "position": {
+                                    "row": 3,
+                                    "col": 1
+                                }
+                            },
+                            "Governance Engine": {
+                                name: "Governance Engine",
+                                "description": "Applies governance policies and compliance rules.",
+                                "position": {
+                                    "row": 4,
+                                    "col": 1
+                                }
+                            }
+                        }
+                    },
+                    "Common Data Services": {
+                        name: "Common Data Services",
+                        "description": "Shared data services for ingestion, processing, and delivery.",
+                        "position": {
+                            "row": 2,
+                            "col": 2
+                        },
+                        "layers": {
+                            "Ingest": {
+                                name: "Ingest",
+                                "description": "Collects data from internal and external sources.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 1
+                                }
+                            },
+                            "Transform": {
+                                name: "Transform",
+                                "description": "Cleanses, enriches, and normalizes data.",
+                                "position": {
+                                    "row": 2,
+                                    "col": 1
+                                }
+                            },
+                            "Store": {
+                                name: "Store",
+                                "description": "Persists data in managed storage services.",
+                                "position": {
+                                    "row": 3,
+                                    "col": 1
+                                }
+                            },
+                            "Egress": {
+                                name: "Egress",
+                                "description": "Publishes and delivers data to consumers.",
+                                "position": {
+                                    "row": 4,
+                                    "col": 1
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Service Management Layer": {
+                name: "Service Management Layer",
+                "description": "Monitors and controls services for smooth operation and functionality.",
+                "position": {
+                    "row": 2,
+                    "col": 3
+                },
+                "layers": {
+                    "Service Repository": {
+                        name: "Service Repository",
+                        "position": {
+                            "row": 2,
+                            "col": 1
+                        }
+                    },
+                    "Environment Manager": {
+                        name: "Environment Manager",
+                        "position": {
+                            "row": 1,
+                            "col": 2
+                        }
+                    },
+                    "Service Orchestration": {
+                        name: "Service Orchestration",
+                        "position": {
+                            "row": 1,
+                            "col": 3
+                        }
+                    },
+                    "Common Data Services": {
+                        name: "Common Data Services",
+                        "position": {
+                            "row": 2,
+                            "col": 2,
+                            "colspan": 2
+                        }
+                    }
+                }
+            },
+            "Software Defined Infrastructure": {
+                "description": "Focuses on abstract control over underlying hardware through software.",
+                name: "Software Defined Infrastructure",
+                "position": {
+                    "row": 3,
+                    "col": 2,
+                    "colspan": 2
+                },
+                "layers": {
+                    "Orchestration": {
+                        name: "Orchestration",
+                        "position": {
+                            "row": 1,
+                            "col": 1,
+                            "colspan": 5
+                        }
+                    },
+                    "Compute": {
+                        name: "Compute",
+                        "position": {
+                            "row": 2,
+                            "col": 1,
+                            "colspan": 1
+                        }
+                    },
+                    "Storage": {
+                        name: "Storage",
+                        "position": {
+                            "row": 2,
+                            "col": 2,
+                            "colspan": 1
+                        }
+                    },
+                    "Network": {
+                        name: "Network",
+                        "position": {
+                            "row": 2,
+                            "col": 3,
+                            "colspan": 1
+                        }
+                    },
+                    "Accelerators": {
+                        name: "Accelerators",
+                        "position": {
+                            "row": 2,
+                            "col": 4,
+                            "colspan": 1
+                        }
+                    },
+                    "Security": {
+                        name: "Security",
+                        "position": {
+                            "row": 2,
+                            "col": 5,
+                            "colspan": 1
+                        }
+                    }
+                }
+            },
+            "Physical Layer": {
+                name: "Physical Layer",
+                "description": "Acts as the logical representation of the lower physical layer.",
+                "position": {
+                    "row": 4,
+                    "col": 2,
+                    "colspan": 2
+                },
+                "layers": {
+                    "Edge Devices": {
+                        name: "Edge Devices",
+                        "position": {
+                            "row": 1,
+                            "col": 1
+                        }
+                    },
+                    "OT Devices": {
+                        name: "OT Devices",
+                        "position": {
+                            "row": 1,
+                            "col": 2,
+                            "colspan": 1
+                        }
+                    },
+                    "Mobile Devices": {
+                        name: "Mobile Devices",
+                        "position": {
+                            "row": 1,
+                            "col": 3,
+                            "colspan": 1
+                        }
+                    },
+                    "Labtops and Desktops": {
+                        name: "Labtops and Desktops",
+                        "position": {
+                            "row": 1,
+                            "col": 4,
+                            "colspan": 1
+                        }
+                    },
+                    "Datacenter Devices": {
+                        name: "Datacenter Devices",
+                        "position": {
+                            "row": 2,
+                            "col": 1,
+                            "colspan": 1
+                        }
+                    },
+                    "Private Cloud": {
+                        name: "Private Cloud",
+                        "position": {
+                            "row": 2,
+                            "col": 2,
+                            "colspan": 1
+                        }
+                    },
+                    "Public Cloud": {
+                        name: "Public Cloud",
+                        "position": {
+                            "row": 2,
+                            "col": 3,
+                            "colspan": 1
+                        }
+                    }
+                }
+            },
+            "Identity Aspect": {
+                "description": "Manages all identity-related elements like authentication and user properties.",
+                name: "Identity Aspect",
+                "position": {
+                    "row": 1,
+                    "col": 1,
+                    "rowspan": 4
+                },
+                "layers": {
+                    "Access": {
+                        name: "Access",
+                        "position": {
+                            "row": 1,
+                            "col": 1
+                        }
+                    },
+                    "Authorization": {
+                        name: "Authorization",
+                        "position": {
+                            "row": 2,
+                            "col": 1
+                        }
+                    },
+                    "Authentication": {
+                        name: "Authentication",
+                        "position": {
+                            "row": 3,
+                            "col": 1
+                        }
+                    },
+                    "Key Management": {
+                        name: "Key Management",
+                        "position": {
+                            "row": 4,
+                            "col": 1
+                        }
+                    }
+                }
+            },
+            "Security Aspect": {
+                "name": "Security Aspect",
+                "description": "Manages all identity-related elements like authentication and user properties.",
+                "position": {
+                    "row": 1,
+                    "col": 4,
+                    "rowspan": 4
+                },
+                "assets": {
+                    "GEAR3": {
+                        "name": "GEAR Security Architecture document",
+                        "url": "https://www.intel.com/content/www/us/en/content-details/790385/government-conceptual-enterprise-architecture-gear.html?wapkw=Government%20Enterprise%20Architecture",
+                        "description": "The Security Aspect of the Government Enterprise Architecture Reference (GEAR) Logical View integrates protection mechanisms such as encryption, intrusion detection, and threat mitigation across all layers of the architecture. It ensures that all parts of the enterprise are safeguarded against evolving threats by embedding security measures into the Organizational, Process, and Physical Layers. This approach enables a resilient, policy driven environment capable of addressing diverse threats across every architecture layer"
+                    }
+                },
+                "layers": {
+                    "Architecture & Trust Foundations": {
+                        name: "Architecture & Trust Foundations",
+                        "description": "Establishes principles of security by design and zero-trust architecture, defining core building blocks like product assurance, secure boot, attestation, and trusted execution environments.",
+                        "position": {
+                            "row": 4,
+                            "col": 1,
+                            "colspan": 3
+                        },
+                        "layers": {
+                            "Product Security Assurance & Secure Supply Chain": {
+                                name: "Product Security Assurance & Secure Supply Chain",
+                                "description": "Ensures hardware and firmware integrity through proactive issue remediation and secure supply chain practices.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 1
+                                }
+                            },
+                            "Zero Trust Architecture": {
+                                name: "Zero Trust Architecture",
+                                "description": "Assumes all computing operates in a hostile environment, enforcing strict identity-based authentication and authorization.",
+                                "position": {
+                                    "row": 2,
+                                    "col": 1
+                                }
+                            },
+                            "Root of Trust": {
+                                name: "Root of Trust",
+                                "description": "Incorporates hardware-based security technologies to establish a foundation of trust within the execution environment.",
+                                "position": {
+                                    "row": 3,
+                                    "col": 1
+                                }
+                            },
+                            "Secure Boot & Attestation": {
+                                name: "Secure Boot & Attestation",
+                                "description": "Ensures systems start and operate only with verified and authorized code, preventing execution of malicious or tampered code.",
+                                "position": {
+                                    "row": 4,
+                                    "col": 1
+                                }
+                            }
+                        },
+                        "Trusted Execution Environments (TEE) / Confidential Computing": {
+                            name: "Trusted Execution Environments (TEE) / Confidential Computing",
+                            "description": "Protects data in use in shared environments, ensuring only authorized users have access and preventing tampering, viewing, or theft.",
+                            "position": {
+                                "row": 5,
+                                "col": 1
+                            }
+                        }
+                    },
+                    "Infrastructure & Host Security": {
+                        name: "Infrastructure & Host Security",
+                        "description": "Enforces hardening and protective measures across servers, containers, and edge devices, including runtime protections, host-based firewalls, and endpoint detection and response.",
+                        "position": {
+                            "row": 2,
+                            "col": 1
+                        },
+                        "layers": {
+                            "System Hardening": {
+                                name: "System Hardening",
+                                "description": "Reduces the attack surface by configuring and securing software components to minimize vulnerabilities.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 1
+                                }
+                            },
+                            "Runtime Protection": {
+                                name: "Runtime Protection",
+                                "description": "Maintains secure execution environments for applications, containers, and virtual machines during runtime.",
+                                "position": {
+                                    "row": 2,
+                                    "col": 1
+                                }
+                            },
+                            "Host-based Firewalls & EDR": {
+                                name: "Host-based Firewalls & EDR",
+                                "description": "Safeguards individual systems and endpoints by filtering network traffic and detecting potential threats.",
+                                "position": {
+                                    "row": 3,
+                                    "col": 1
+                                }
+                            },
+                            "Edge Security": {
+                                name: "Edge Security",
+                                "description": "Ensures devices and systems operating at the network's edge are protected against physical and cyber threats.",
+                                "position": {
+                                    "row": 4,
+                                    "col": 1
+                                }
+                            }
+                        }
+                    },
+                    "Network & Communications Security": {
+                        name: "Network & Communications Security",
+                        "description": "Protects the confidentiality and integrity of data in motion, leveraging technologies like microsegmentation, SDN-based controls, and pervasive encryption.",
+                        "position": {
+                            "row": 3,
+                            "col": 1,
+                            "colspan": 2
+                        },
+                        "layers": {
+                            "East-West & North-South Encryption": {
+                                name: "East-West & North-South Encryption",
+                                "description": "Secures traffic entering, exiting, and moving laterally within a network to maintain data confidentiality and integrity.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 1
+                                }
+                            },
+                            "Microsegmentation": {
+                                name: "Microsegmentation",
+                                "description": "Divides networks into granular, isolated segments with tailored security policies to prevent lateral movement of threats.",
+                                "position": {
+                                    "row": 2,
+                                    "col": 1
+                                }
+                            },
+                            "SDN Security": {
+                                name: "SDN Security",
+                                "description": "Applies dynamic security policies and monitors traffic flows in real time using a centralized controller.",
+                                "position": {
+                                    "row": 3,
+                                    "col": 1
+                                }
+                            },
+                            "DDoS Protection": {
+                                name: "DDoS Protection",
+                                "description": "Protects against large-scale attacks that aim to overwhelm network resources and disrupt service availability.",
+                                "position": {
+                                    "row": 4,
+                                    "col": 1
+                                }
+                            }
+                        }
+                    },
+                    "Data & Application Security": {
+                        name: "Data & Application Security",
+                        "description": "Embeds security into the application lifecycle and data handling practices, including encryption across all data states, robust secrets management, and secure development practices.",
+                        "position": {
+                            "row": 2,
+                            "col": 2
+                        },
+                        "layers": {
+                            "Encryption": {
+                                name: "Encryption",
+                                "description": "Protects data in storage and on the network using strong encryption algorithms.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 1
+                                }
+                            },
+                            "Secure Software Supply Chain": {
+                                name: "Secure Software Supply Chain",
+                                "description": "Ensures the integrity and trustworthiness of all components within the software stack.",
+                                "position": {
+                                    "row": 2,
+                                    "col": 1
+                                }
+                            },
+                            "DevSecOps & CI/CD Security": {
+                                name: "DevSecOps & CI/CD Security",
+                                "description": "Integrates security into the CI/CD pipeline, ensuring secure coding practices and automated vulnerability scanning.",
+                                "position": {
+                                    "row": 3,
+                                    "col": 1
+                                }
+                            }
+                        }
+                    },
+                    "Threat Detection & Response": {
+                        name: "Threat Detection & Response",
+                        "description": "Provides real-time monitoring and analysis of system behavior to combat evolving threats, including tools like EDR/XDR, user and entity behavior analytics, and deception technologies.",
+                        "position": {
+                            "row": 2,
+                            "col": 3,
+                            "rowspan": 2
+                        },
+                        "layers": {
+                            "EDR/XDR": {
+                                name: "EDR/XDR",
+                                "description": "Monitors endpoints for suspicious behavior and aggregates data across multiple domains for centralized threat correlation.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 1
+                                }
+                            },
+                            "Threat Intelligence & Analytics": {
+                                name: "Threat Intelligence & Analytics",
+                                "description": "Integrates real-time threat intelligence feeds and machine learning-based analytics to detect anomalies and emerging threats.",
+                                "position": {
+                                    "row": 2,
+                                    "col": 1
+                                }
+                            },
+                            "UEBA & Insider Threat Detection": {
+                                name: "UEBA & Insider Threat Detection",
+                                "description": "Profiles users and entities to detect deviations from established behavior and uncover insider threats.",
+                                "position": {
+                                    "row": 3,
+                                    "col": 1
+                                }
+                            },
+                            "Deception Technologies": {
+                                name: "Deception Technologies",
+                                "description": "Uses deception tools to lure adversaries into controlled traps, triggering immediate investigation or automated containment.",
+                                "position": {
+                                    "row": 4,
+                                    "col": 1
+                                }
+                            }
+                        }
+                    },
+                    "Resilience, Remediation & Compliance": {
+                        name: "Resilience, Remediation & Compliance",
+                        "description": "Ensures systems can recover from compromise while meeting regulatory and operational mandates, covering automated recovery playbooks, audit logging, security chaos engineering, and SBOMs.",
+                        "position": {
+                            "row": 1,
+                            "col": 1,
+                            "colspan": 3
+                        },
+                        "layers": {
+                            "Remediation & Recovery Playbooks": {
+                                name: "Remediation & Recovery Playbooks",
+                                "description": "Predefined, tested incident response and recovery playbooks embedded into orchestration layers.",
+                                "position": {
+                                    "row": 1,
+                                    "col": 1
+                                }
+                            },
+                            "Security Chaos Engineering": {
+                                name: "Security Chaos Engineering",
+                                "description": "Deliberately injects faults, attacks, or misconfigurations into systems to test their resilience.",
+                                "position": {
+                                    "row": 2,
+                                    "col": 1
+                                }
+                            },
+                            "Audit Logging & Compliance": {
+                                name: "Audit Logging & Compliance",
+                                "description": "Captures security-relevant events across the stack, ensuring integrity for forensic analysis, compliance audits, and incident reviews.",
+                                "position": {
+                                    "row": 3,
+                                    "col": 1
+                                }
+                            },
+                            "Supply Chain Security & SBOM": {
+                                name: "Supply Chain Security & SBOM",
+                                "description": "Generates and maintains a complete and traceable Software Bill of Materials for every build artifact.",
+                                "position": {
+                                    "row": 4,
+                                    "col": 1
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    };
+    const process_domain = {
+        "name": "Process Domain",
+        "description": "Processes of the system including supporting, strategic and operational processes.",
+        "orientation": "back",
+        "color": "#e59034",
+        "position": {
+            "row": 2,
+            "col": 2
+        },
+        "layers": {
+            "Governance": {
+                name: "Governance",
+                "description": "Defines rules, policies, and mechanisms established at a higher level.",
+                "position": {
+                    "row": 1,
+                    "col": 1,
+                    "colspan": 2
+                },
+                "layers": {
+                    "Policy Development": {
+                        name: "Policy Development",
+                        "description": "Formulating policies and regulations. Including ESG.",
+                        "position": {
+                            "row": 1,
+                            "col": 1
+                        }
+                    },
+                    "Legislative Compliance": {
+                        name: "Legislative Compliance",
+                        "description": "Ensuring adherence to laws and regulations.",
+                        "position": {
+                            "row": 1,
+                            "col": 2
+                        }
+                    },
+                    "Ethics and Integrity": {
+                        name: "Ethics and Integrity",
+                        "description": "Maintaining ethical standards and preventing corruption.",
+                        "position": {
+                            "row": 1,
+                            "col": 3
+                        }
+                    },
+                    "Audit and Oversight": {
+                        name: "Audit and Oversight",
+                        "description": "Internal and external audits, reviews, and evaluations.",
+                        "position": {
+                            "row": 2,
+                            "col": 1
+                        }
+                    },
+                    "Transparency and Accountability": {
+                        name: "Transparency and Accountability",
+                        "description": "Public reporting, disclosure, and citizen engagement.",
+                        "position": {
+                            "row": 2,
+                            "col": 2
+                        }
+                    },
+                    "Data Governance": {
+                        name: "Data Governance",
+                        "description": "Governance of data through out the system.",
+                        "position": {
+                            "row": 2,
+                            "col": 3
+                        }
+                    },
+                    "Legal Services": {
+                        name: "Legal Services",
+                        "description": "Managing legal issues and compliance",
+                        "position": {
+                            "row": 3,
+                            "col": 1
+                        }
+                    }
+                }
+            },
+            "Innovation Management": {
+                name: "Innovation Management",
+                "description": "Focuses on exploring innovative improvements to system capabilities.",
+                "position": {
+                    "row": 2,
+                    "col": 1
+                },
+                "layers": {
+                    "Ideation Processes": {
+                        name: "Ideation Processes",
+                        "description": "",
+                        "position": {
+                            "row": 1,
+                            "col": 1
+                        }
+                    },
+                    "Research and Development": {
+                        name: "Research and Development",
+                        "description": "Developing new technologies and methodologies.",
+                        "position": {
+                            "row": 1,
+                            "col": 2
+                        }
+                    },
+                    "Develop Digital Services Process": {
+                        name: "Develop Digital Services Process",
+                        "description": "Implementing digital government services. DevSecOps, scaling and deployment.",
+                        "position": {
+                            "row": 1,
+                            "col": 3
+                        }
+                    },
+                    "Process Improvement": {
+                        name: "Process Improvement",
+                        "description": "Enhancing efficiency and effectiveness of government processes.",
+                        "position": {
+                            "row": 2,
+                            "col": 1
+                        }
+                    },
+                    "Partnerships Processes": {
+                        name: "Partnerships Processes",
+                        "description": "Collaborating with private sector for innovation. Including private sector, inter-agencies, and governments.",
+                        "position": {
+                            "row": 2,
+                            "col": 2
+                        }
+                    },
+                    "Citizen Engagement": {
+                        name: "Citizen Engagement",
+                        "description": "Leveraging new technologies to engage and serve citizens better with built-in feedback loops.",
+                        "position": {
+                            "row": 2,
+                            "col": 3
+                        }
+                    },
+                    "PR and Marketing": {
+                        name: "PR and Marketing",
+                        "description": "Social Media, Websites, Publicity",
+                        "position": {
+                            "row": 3,
+                            "col": 1
+                        }
+                    },
+                    "Revenue Acceleration": {
+                        name: "Revenue Acceleration",
+                        "description": "",
+                        "position": {
+                            "row": 3,
+                            "col": 2
+                        }
+                    }
+                }
+            },
+            "Operational and Delivery": {
+                name: "Operational and Delivery",
+                "description": "Covers routine activities and day-to-day procedures within the organization.",
+                "position": {
+                    "row": 2,
+                    "col": 2
+                },
+                "layers": {
+                    "Service Delivery": {
+                        name: "Service Delivery",
+                        "description": "Providing public services to citizens and businesses efficiently and effectively.",
+                        "position": {
+                            "row": 1,
+                            "col": 1
+                        }
+                    },
+                    "Monitoring Processes": {
+                        name: "Monitoring Processes",
+                        "description": "Tracking and reviewing various operational and service metrics for better performance.",
+                        "position": {
+                            "row": 1,
+                            "col": 2
+                        }
+                    },
+                    "Service Maintenance": {
+                        name: "Service Maintenance",
+                        "description": "Ensuring consistent maintenance and functionality of public services.",
+                        "position": {
+                            "row": 1,
+                            "col": 3
+                        }
+                    },
+                    "Operational Technology Management": {
+                        name: "Operational Technology Management",
+                        "description": "Managing and maintaining technology systems that support operations and services.",
+                        "position": {
+                            "row": 2,
+                            "col": 1
+                        }
+                    },
+                    "Manufacturing Processes": {
+                        name: "Manufacturing Processes",
+                        "description": "Overseeing production processes to ensure quality and efficiency in service-related goods.",
+                        "position": {
+                            "row": 2,
+                            "col": 2
+                        }
+                    },
+                    "Business Continuity Disaster Recovery": {
+                        name: "Business Continuity Disaster Recovery",
+                        "description": "Developing and maintaining plans to ensure critical business functions during emergencies.",
+                        "position": {
+                            "row": 2,
+                            "col": 3
+                        }
+                    },
+                    "Data Operations Management": {
+                        name: "Data Operations Management",
+                        "description": "Managing the storage, processing, and usage of data to ensure its availability and reliability.",
+                        "position": {
+                            "row": 3,
+                            "col": 1
+                        }
+                    }
+                }
+            },
+            "Risk Management": {
+                name: "Risk Management",
+                "description": "Manages identification, analysis, and mitigation of risks in various operations.",
+                "position": {
+                    "row": 3,
+                    "col": 1,
+                    "colspan": 2
+                },
+                "layers": {
+                    "Risk Identification": {
+                        name: "Risk Identification",
+                        "description": "Identifying potential risks to operations and services.",
+                        "position": {
+                            "row": 1,
+                            "col": 1
+                        }
+                    },
+                    "Risk Analysis": {
+                        name: "Risk Analysis",
+                        "description": "Assessing the impact and likelihood of risks.",
+                        "position": {
+                            "row": 1,
+                            "col": 2
+                        }
+                    },
+                    "Mitigation Planning": {
+                        name: "Mitigation Planning",
+                        "description": "Developing strategies to mitigate identified risks.",
+                        "position": {
+                            "row": 1,
+                            "col": 3
+                        }
+                    },
+                    "Emergency Preparedness": {
+                        name: "Emergency Preparedness",
+                        "description": "Planning and preparation for emergencies and disasters.",
+                        "position": {
+                            "row": 2,
+                            "col": 1
+                        }
+                    },
+                    "Compliance Management": {
+                        name: "Compliance Management",
+                        "description": "Ensuring ongoing adherence to risk-related regulations.",
+                        "position": {
+                            "row": 2,
+                            "col": 2
+                        }
+                    },
+                    "Cybersecurity": {
+                        name: "Cybersecurity",
+                        "description": "",
+                        "position": {
+                            "row": 2,
+                            "col": 3
+                        }
+                    }
+                }
+            },
+            "Support": {
+                "description": "Includes supporting actions like troubleshooting and external/internal assistance.",
+                name: "Support",
+                "position": {
+                    "row": 4,
+                    "col": 1,
+                    "colspan": 2
+                },
+                "layers": {
+                    "Human Resources": {
+                        name: "Human Resources",
+                        "description": "Recruiting, hiring, training employees, and managing employee relations to build a productive workforce.",
+                        "position": {
+                            "row": 1,
+                            "col": 1
+                        }
+                    },
+                    "Information Technology (IT)": {
+                        name: "Information Technology (IT)",
+                        "description": "Managing IT infrastructure, systems, and services to support organizational goals.",
+                        "position": {
+                            "row": 1,
+                            "col": 2
+                        }
+                    },
+                    "Infrastructure Management": {
+                        name: "Infrastructure Management",
+                        "description": "Monitoring, maintaining, and developing public infrastructure for efficient operations.",
+                        "position": {
+                            "row": 1,
+                            "col": 3
+                        }
+                    },
+                    "Network Communications Processes": {
+                        name: "Network Communications Processes",
+                        "description": "Managing systems and processes for seamless and secure network communications.",
+                        "position": {
+                            "row": 2,
+                            "col": 1
+                        }
+                    },
+                    "Facilities Management": {
+                        name: "Facilities Management",
+                        "description": "Overseeing the maintenance, functionality, and safety of physical facilities and buildings.",
+                        "position": {
+                            "row": 2,
+                            "col": 2
+                        }
+                    },
+                    "Financial Management": {
+                        name: "Financial Management",
+                        "description": "Handling budgeting, financial reporting, and ensuring compliance with financial regulations.",
+                        "position": {
+                            "row": 2,
+                            "col": 3
+                        }
+                    },
+                    "Procurement and Supply Chain": {
+                        name: "Procurement and Supply Chain",
+                        "description": "Acquiring goods and services necessary to support operations and manage supply chains effectively.",
+                        "position": {
+                            "row": 3,
+                            "col": 1
+                        }
+                    }
+                }
+            }
+        }
+    };
+    const organizational_domain = {
+        "name": "Organizational Domain",
+        "description": "People centric organizational structure of the system.",
+        "orientation": "left",
+        "color": "#009959",
+        "position": {
+            "row": 2,
+            "col": 1
+        },
+        "assets": {
+            "GEAR1": {
+                "name": "GEAR Architecture document",
+                "url": "https://www.intel.com/content/www/us/en/content-details/790385/government-conceptual-enterprise-architecture-gear.html?wapkw=Government%20Enterprise%20Architecture",
+                "description": "Overview of the GEAR architecture and its uses."
+            },
+            "GEARVideo": {
+                "name": "Video: Government Enterprise Architecture Basics: A Simple Explanation",
+                "url": "https://www.youtube.com/watch?v=Ou9FHodTamk",
+                "description": "In this episode, we delve into the world of leveraging enterprise architecture in government settings, specifically focusing on the benefits and strategies involved. From understanding the fundamentals of enterprise architecture frameworks to embracing digital transformation, we explore how organizations can drive value and efficiency through proper architectural planning. Join us as we discuss the significance of architecture in government operations and the role it plays in achieving organizational goals. If you are interested in learning more about enterprise architecture and its impact on government entities, this insightful discussion is for you."
+            }
+        },
+        "layers": {
+            "Stakeholders": {
+                "name": "Stakeholders",
+                "description": "All stakeholders involved in decision-making and system requirements.",
+                "position": {
+                    "row": 1,
+                    "col": 1,
+                    "colspan": 4
+                }
+            },
+            "Personas": {
+                "name": "Personas",
+                "description": "Different personas representing user groups interacting with the system.",
+                "position": {
+                    "row": 2,
+                    "col": 1,
+                    "colspan": 3
+                }
+            },
+            "Communication Channels": {
+                "name": "Communication Channels",
+                "description": "Channels of communication between system users, stakeholders, and decision-makers.",
+                "position": {
+                    "row": 2,
+                    "col": 4,
+                    "rowspan": 2
+                }
+            },
+            "Roles & Responsibilities": {
+                "name": "Roles & Responsibilities",
+                "description": "Defines specific tasks and duties assigned to different entities.",
+                "position": {
+                    "row": 3,
+                    "col": 1
+                }
+            },
+            "Skills & Competencies": {
+                "name": "Skills & Competencies",
+                "description": "Profiles skills and abilities required for system operations.",
+                "position": {
+                    "row": 3,
+                    "col": 2
+                }
+            },
+            "Structure": {
+                "name": "Structure",
+                "description": "Maps the hierarchical structure of the organization supporting the system.",
+                "position": {
+                    "row": 3,
+                    "col": 3
+                }
+            },
+            "Culture & Values": {
+                "name": "Culture & Values",
+                "description": "Refers to the organizational culture, values, and principles guiding how operations are conducted.",
+                "position": {
+                    "row": 4,
+                    "col": 1,
+                    "colspan": 4
+                }
+            }
+        }
+    };
+    const odxa = {
+        layers: {
+            'Strategic Domain': strategic_domain,
+            'Physical Domain': physical_domain,
+            'Digital Domain': digital_domain,
+            'Process Domain': process_domain,
+            'Organizational Domain': organizational_domain
+        },
+        name: "O-DXA",
+        id: "O-DXA"
+    };
+
+    window.odxa = odxa;
+
+    function getFontColor(hex) {
+        if (!hex || !hex.startsWith('#') || (hex.length !== 7 && hex.length !== 4)) return '#000000';
+        if (hex.length === 4) hex = '#' + hex[1] + hex[1] + hex[2] + hex[2] + hex[3] + hex[3];
+        const r = parseInt(hex.substr(1, 2), 16),
+            g = parseInt(hex.substr(3, 2), 16),
+            b = parseInt(hex.substr(5, 2), 16);
+        const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+        return brightness < 200 ? '#ffffff' : '#000000';
+    }
+
+    function tint(hex, amount = 0.1) {
+        try {
+            if (hex.length === 4) hex = '#' + hex[1] + hex[1] + hex[2] + hex[2] + hex[3] + hex[3];
+            const r = parseInt(hex.slice(1, 3), 16),
+                g = parseInt(hex.slice(3, 5), 16),
+                b = parseInt(hex.slice(5, 7), 16);
+            const t = (c) => Math.max(0, Math.min(255, Math.round(c + (255 - c) * amount)));
+            return '#' + t(r).toString(16).padStart(2, '0') + t(g).toString(16).padStart(2, '0') + t(b).toString(16).padStart(2, '0');
+        } catch {
+            return hex;
+        }
+    }
+
+    // Darken a hex color by fraction (0..1)
+    function shade(hex, amount = 0.2) {
+        try {
+            if (!hex) return hex;
+            if (hex.length === 4) hex = '#' + hex[1] + hex[1] + hex[2] + hex[2] + hex[3] + hex[3];
+            const r = parseInt(hex.slice(1, 3), 16),
+                g = parseInt(hex.slice(3, 5), 16),
+                b = parseInt(hex.slice(5, 7), 16);
+            const s = (c) => Math.max(0, Math.min(255, Math.round(c * (1 - amount))));
+            return '#' + s(r).toString(16).padStart(2, '0') + s(g).toString(16).padStart(2, '0') + s(b).toString(16).padStart(2, '0');
+        } catch {
+            return hex;
+        }
+    }
+
+    // Brighter 2.5D radial gradient for the pin bubble
+    function ensurePinGradient(svgEl, gradId, baseColor) {
+        let defs = svgEl.querySelector('defs');
+        if (!defs) {
+            defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+            svgEl.prepend(defs);
+        }
+        let grad = svgEl.querySelector('#' + CSS.escape(gradId));
+        if (grad) return 'url(#' + gradId + ')';
+
+        const center = tint(baseColor, 0.65); // much lighter center for contrast
+        const mid = tint(baseColor, 0.20); // near the original
+        const edge = shade(baseColor, 0.40); // darker rim
+
+        grad = document.createElementNS('http://www.w3.org/2000/svg', 'radialGradient');
+        grad.setAttribute('id', gradId);
+        grad.setAttribute('cx', '35%');
+        grad.setAttribute('cy', '30%');
+        grad.setAttribute('r', '80%');
+
+        const s0 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+        s0.setAttribute('offset', '0%');
+        s0.setAttribute('stop-color', center);
+
+        const s1 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+        s1.setAttribute('offset', '60%');
+        s1.setAttribute('stop-color', mid);
+
+        const s2 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+        s2.setAttribute('offset', '100%');
+        s2.setAttribute('stop-color', edge);
+
+        grad.appendChild(s0);
+        grad.appendChild(s1);
+        grad.appendChild(s2);
+        defs.appendChild(grad);
+        return 'url(#' + gradId + ')';
+    }
+
+
+    // state
+    let customerData = null;
+    let phaseTheme = null;
+
+    // build the theme for pins
+    function buildPhaseTheme(data) {
+        const phases = data?.phases || {};
+        const names = Object.keys(phases);
+        const decorated = names.map(n => ({
+            name: n,
+            order: phases[n]?.order ?? Infinity
+        }));
+        decorated.sort((a, b) => (a.order - b.order) || a.name.localeCompare(b.name));
+        const order = decorated.map(d => d.name);
+        const palette = ['#ff0000', '#ff00ff', '#88aa44', '#aa8844', '#4488aa', '#0000ff'];
+        const styles = {};
+        order.forEach((name, i) => {
+            const custom = phases[name]?.color;
+            styles[name] = {stroke: custom || palette[i % palette.length]};
+        });
+        return {order, styles};
+    }
+
+    // build the map path → { phaseName→{count,engagements[]} }
+    function buildOverlayIndex(data, opts = {}) {
+        const idx = new Map();
+        if (!data?.phases) return idx;
+        const root = String(opts.rootName || 'O-DXA').trim(), rootLC = root.toLowerCase();
+        const normalize = raw => {
+            const parts = String(raw).split(/\s*-\s*/).map(s => s.trim()).filter(Boolean);
+            if (!parts.length) return root;
+            if (parts[0].toLowerCase() !== rootLC) parts.unshift(root);
+            return parts.join(' - ');
+        };
+        for (const [pname, phase] of Object.entries(data.phases)) {
+            for (const sup of Object.values(phase.suppliers || {})) {
+                for (const eng of sup.engagements || []) {
+                    for (const raw of eng.layers || []) {
+                        const path = normalize(raw);
+                        if (!idx.has(path)) idx.set(path, {});
+                        const bucket = idx.get(path);
+                        if (!bucket[pname]) bucket[pname] = {count: 0, engagements: []};
+                        bucket[pname].count++;
+                        bucket[pname].engagements.push({
+                            supplier: sup.name, name: eng.name, description: eng.description
+                        });
+                    }
+                }
+            }
+        }
+        return idx;
+    }
+
+    // draw one pin
+    function drawPin(svgEl, parentG, {phaseName, color, cx, cy, count = 1}) {
+        const r = 15, tipH = 8, stroke = shade(color, 0.5),
+            fill = ensurePinGradient(svgEl, `grad-${parentG.id}-${phaseName}`, color);
+        const g = document.createElementNS(svgEl.namespaceURI, 'g');
+        g.setAttribute('class', 'overlay-pin');
+        g.setAttribute('filter', 'url(#pinGlowShadow)');
+
+        // circle
+        const c = document.createElementNS(svgEl.namespaceURI, 'circle');
+        c.setAttribute('cx', cx);
+        c.setAttribute('cy', cy);
+        c.setAttribute('r', r);
+        c.setAttribute('fill', fill);
+        c.setAttribute('stroke', stroke);
+        c.setAttribute('stroke-width', '1.5');
+        g.appendChild(c);
+        // pointer
+        const p = document.createElementNS(svgEl.namespaceURI, 'path');
+        const b = 5;
+        const left = `${cx - b},${cy + r - 2}`, mid = `${cx},${cy + r + 2}`, right = `${cx + b},${cy + r - 2}`,
+            tip = `${cx},${cy + r + tipH}`;
+        p.setAttribute('d', `M ${left} L ${mid} L ${right} L ${tip} Z`);
+        p.setAttribute('fill', shade(color, 0.45));
+        p.setAttribute('stroke', stroke);
+        p.setAttribute('stroke-width', '1');
+        g.appendChild(p);
+        // count text
+        if (count > 1) {
+            const t = document.createElementNS(svgEl.namespaceURI, 'text');
+            t.setAttribute('x', cx);
+            t.setAttribute('y', cy + 5);
+            t.setAttribute('text-anchor', 'middle');
+            t.setAttribute('font-size', '14');
+            t.setAttribute('font-weight', '700');
+            t.setAttribute('fill', "#000");
+            t.textContent = count;
+            g.appendChild(t);
+        }
+        parentG.appendChild(g);
+        g.style.cursor = 'pointer';
+        g.addEventListener('click', ev => {
+            ev.stopPropagation();
+            // 1) clear prior selection
+            svgEl.querySelectorAll('.overlay-pin.selected')
+                .forEach(el => el.classList.remove('selected'));
+
+            // 2) mark this pin
+            g.classList.add('selected');
+
+            // 3) read & show its <title> text
+            const tip = g.querySelector('title')?.textContent || '';
+            const desc = document.getElementById('description-panel');
+            if (desc) desc.textContent = tip;
+        });
+        return g;
+    }
+
+    // position all pins on one layer-group
+    function addPinsForNode(svgEl, group, phases) {
+        const rect = group.querySelector('rect');
+        if (!rect || !phaseTheme) return;
+        group.querySelectorAll('.overlay-pin').forEach(n => n.remove());
+        const x = +rect.getAttribute('x'), y = +rect.getAttribute('y'), w = +rect.getAttribute('width');
+        const margin = 6, pinW = 30, gap = 6, rowH = 24;
+        const xLeft = x + margin, xRight = x + w - margin;
+        let row = 0, xCur = xLeft;
+        phaseTheme.order.forEach(name => {
+            const bucket = phases[name];
+            const cnt = bucket?.count || 0;
+            if (!cnt) return;
+            if (xCur + pinW > xRight) {
+                row++;
+                xCur = xLeft;
+            }
+            const cx = xCur + pinW / 2, cy = y + 14 + row * rowH;
+            const color = phaseTheme.styles[name].stroke;
+            const pin = drawPin(svgEl, group, {phaseName: name, color, cx, cy, count: cnt});
+            // tooltip
+            const title = document.createElementNS(svgEl.namespaceURI, 'title');
+            const lines = [`${name}: ${cnt} engagement${cnt > 1 ? 's' : ''}`];
+            bucket.engagements.slice(0, 6).forEach(e => lines.push(` • ${e.name}`));
+            if (bucket.engagements.length > 6) lines.push(' …');
+            title.textContent = lines.join('\n');
+            pin.prepend(title);
+            xCur += pinW + gap;
+        });
+    }
+
+    // main entrypoint: call after you render your SVG into the DOM
+    function applyOverlay(svgEl, data, model, root, depth) {
+        if (!data || !model) return;
+        if (!phaseTheme) phaseTheme = buildPhaseTheme(data);
+        const raw = buildOverlayIndex(data);
+        if (!raw.size) return;
+        svgEl.querySelectorAll('.overlay-pin').forEach(n => n.remove());
+        const visible = new Map();
+        raw.forEach((phases, path) => {
+            const node = model.byPath.get(path);
+            // find visible ancestor …
+            let vis = node;
+            while (vis && vis._depth > root._depth + depth) vis = vis._parent;
+            if (!vis) return;
+            const key = vis._path;
+            if (!visible.has(key)) visible.set(key, {});
+            const agg = visible.get(key);
+            Object.entries(phases).forEach(([pn, b]) => {
+                if (!agg[pn]) agg[pn] = {count: 0, engagements: []};
+                agg[pn].count += b.count;
+                agg[pn].engagements.push(...b.engagements);
+            });
+        });
+        visible.forEach((phases, path) => {
+            const node = model.byPath.get(path);
+            const g = svgEl.getElementById(node._id);
+            if (g) addPinsForNode(svgEl, g, phases);
+        });
+        // Update the legend.
+        const legend = document.getElementById('legend');
+        const items = document.getElementById('legend-items');
+        if (legend && items) {
+            items.innerHTML = '';                    // clear prior
+            phaseTheme.order.forEach(name => {
+                const swatch = document.createElement('span');
+                swatch.className = 'legend-swatch';
+                swatch.style.background = phaseTheme.styles[name].stroke;
+
+                const label = document.createElement('span');
+                label.textContent = name;
+
+                const row = document.createElement('div');
+                row.className = 'legend-row';
+                row.append(swatch, label);
+
+                items.appendChild(row);
+            });
+            legend.style.display = phaseTheme.order.length ? 'block' : 'none';
+        }
+    }
+
+    // clear all pins & legend
+    function clearOverlay(svgEl) {
+        svgEl.querySelectorAll('.overlay-pin').forEach(n => n.remove());
+        const legend = document.getElementById('legend');
+        if (legend) legend.style.display = 'none';
+    }
+
+    function setCustomerData(data) {
+        customerData = data;
+        phaseTheme = null;
+    }
+
+    function getCustomerData() {
+        return customerData;
+    }
+
+    // ===== Utilities =====
+    const isObj = (v) => v && typeof v === 'object' && !Array.isArray(v);
+    const text = (v) => (v == null ? '' : String(v));
+
+
+    function wrapText(str, maxWidth, fontSize) {
+        const words = String(str).split(/\s+/);
+        const lines = [];
+        if (!words.length) return lines;
+        let current = words[0];
+        const charW = fontSize * 0.6;
+        for (let i = 1; i < words.length; i++) {
+            const test = current + ' ' + words[i];
+            if (test.length * charW > maxWidth) {
+                lines.push(current);
+                current = words[i];
+            } else {
+                current = test;
+            }
+        }
+        lines.push(current);
+        return lines;
+    }
+
+
+    function escapeHtml(s) {
+        return String(s)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/\"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
+    // ===== Data find =====
+    function _findLayer(odxa, layerName) {
+        if (!odxa || !layerName) return null;
+        if (odxa.name === layerName) {
+            odxa.parent = [];
+            return odxa;
+        }
+        if (odxa.layers) {
+            for (const layer of Object.values(odxa.layers)) {
+                const item = _findLayer(layer, layerName);
+                if (item) {
+                    if (!item.parent) item.parent = [];
+                    item.parent.push(odxa);
+                    return item;
+                }
+            }
+        }
+        return null;
+    }
+
+    // ===== Core renderer =====
+    function generateSVG(layer, vbWidth = 2400, vbHeight = 1400, depth = 2) {
+        let svgContent =
+            `<svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 ${vbWidth} ${vbHeight}"
+          preserveAspectRatio="xMidYMid meet"
+          role="img" aria-label="O-DXA layered diagram">`;
+
+        svgContent += `
+    <defs>
+        <filter id="pinGlowShadow">
+            <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#000" flood-opacity="0.3"/>
+            <!-- then your Gaussian blur/feMerge steps for glow -->
+            <!-- blur the source graphic -->
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+            <!-- make the blur a bright color -->
+            <feFlood flood-color="#ffffff" flood-opacity="0.6" result="color"/>
+            <feComposite in="color" in2="blur" operator="in" result="glow"/>
+            <!-- put the glow behind the original -->
+            <feMerge>
+              <feMergeNode in="glow"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+  `;
+        svgContent += `<rect width="${vbWidth}" height="${vbHeight}" fill="#ffffff"/>`;
+
+        const boxPadding = 12;
+        const totalHeight = vbHeight;
+
+        const drawLayer = (parentLayer, x, y, availW, availH, maxDepth, currDepth = 0, path = []) => {
+            const color = parentLayer.color || '#dbeafe';
+            const baseFontSize = Math.max(12, totalHeight / 32);
+            const children = parentLayer.layers || [];
+            const childCount = children.length;
+
+            let labelH = Math.min(Math.max(baseFontSize * (childCount ? 1.4 : 2.0), 22), availH);
+            let fontSize = Math.max(10, Math.min(baseFontSize, labelH - 6));
+
+            const myPath = [...path, parentLayer.name || ''].filter(Boolean);
+            const pathStr = myPath.join(' - ');
+
+            // my node is already normalized
+            const myPathStr = parentLayer._path;
+
+            let s = `<g class="layer-group" tabindex="0"
+      id="${escapeHtml(parentLayer._id)}"
+      data-layer-name="${escapeHtml(parentLayer.name)}"
+      data-layer-id="${escapeHtml(parentLayer.id || '')}"
+      data-path="${escapeHtml(myPathStr)}"
+      data-depth="${parentLayer._depth}">`;
+
+            s += `<title>${escapeHtml(parentLayer.description || '')}</title>`;
+            s += `<rect x="${x}" y="${y}" width="${availW}" height="${availH}"
+                fill-original="${color}" fill="${color}"
+                stroke="#333" stroke-width="2" rx="10" ry="10"/>`;
+
+            const labelMaxWidth = Math.max(16, availW - boxPadding * 2);
+            let lines = wrapText(parentLayer.name || '', labelMaxWidth, fontSize);
+            while (lines.length * fontSize * 1.2 > labelH && fontSize > 9) {
+                fontSize -= 1;
+                lines = wrapText(parentLayer.name || '', labelMaxWidth, fontSize);
+            }
+            let textY = y + fontSize + 4;
+            const fontColor = getFontColor(color);
+            lines.forEach(line => {
+                s += `<text x="${x + availW / 2}" y="${textY}" fill="${fontColor}" font-size="${fontSize}" text-anchor="middle">${escapeHtml(line)}</text>`;
+                textY += fontSize * 1.2;
+            });
+
+            if (currDepth < maxDepth && childCount) {
+                const list = Array.isArray(children) ? children : Object.values(children);
+
+                let maxRow = 1, maxCol = 1, anyPosition = false;
+                for (const child of list) {
+                    if (child) {
+                        const p = child?.position || {};
+                        if (p.row || p.col || p.rowspan || p.colspan) anyPosition = true;
+                        maxRow = Math.max(maxRow, (p.row || 1) + ((p.rowspan || 1) - 1));
+                        maxCol = Math.max(maxCol, (p.col || 1) + ((p.colspan || 1) - 1));
+                    }
+                }
+                if (!anyPosition) {
+                    const cols = Math.ceil(Math.sqrt(list.length));
+                    const rows = Math.ceil(list.length / cols);
+                    maxRow = rows;
+                    maxCol = cols;
+                    list.forEach((child, i) => {
+                        if (child) {
+                            child.position = child.position || {};
+                            child.position.row = Math.floor(i / cols) + 1;
+                            child.position.col = (i % cols) + 1;
+                            child.position.rowspan = child.position.rowspan || 1;
+                            child.position.colspan = child.position.colspan || 1;
+                        }
+                    });
+                }
+
+                const gridTop = y + labelH;
+                const cellW = (availW - boxPadding * (maxCol + 1)) / maxCol;
+                const cellH = (availH - labelH - boxPadding * (maxRow + 1)) / maxRow;
+
+                const newColor = tint(color, 0.3);
+
+                for (const child of list) {
+                    if (child) {
+                        const p = child.position || {};
+                        const col = p.col || 1, row = p.row || 1;
+                        const colspan = p.colspan || 1, rowspan = p.rowspan || 1;
+                        const childX = x + boxPadding + (col - 1) * (cellW + boxPadding);
+                        const childY = gridTop + boxPadding + (row - 1) * (cellH + boxPadding);
+                        const childW = cellW * colspan + boxPadding * (colspan - 1);
+                        const childH = cellH * rowspan + boxPadding * (rowspan - 1);
+
+                        child.name = child.name || '(unnamed)';
+                        child.color = child.color || newColor;
+
+                        s += drawLayer(child, childX, childY, childW, childH, maxDepth, currDepth + 1);
+                    }
+                }
+            }
+
+            s += `</g>`;
+            return s;
+        };
+
+        svgContent += drawLayer(layer, 40, 40, vbWidth - 80, vbHeight - 80, depth, 0, []);
+        svgContent += `</svg>`;
+        return svgContent;
+    }
+
+    function visibleAncestorForPath(pathStr, model, currentRoot, currentDepth) {
+        const target = model.byPath.get(pathStr);
+        if (!target) return null;
+
+        let node = target;
+        // walk up until inside current root & within depth budget
+        while (node) {
+            if (isDescendant(node, currentRoot)) {
+                const depthFromRoot = node._depth - currentRoot._depth + 1; // 1 = root itself
+                if (depthFromRoot <= currentDepth + 1) return node;
+            }
+            node = node._parent;
+        }
+        return null;
+    }
+
+
+    // Keep DOM ids readable & stable
+    function pathToId(pathStr) {
+        return 'node-' + String(pathStr)
+            .toLowerCase()
+            .replace(/\s*-\s*/g, '__')
+            .replace(/[^a-z0-9_]+/g, '_')
+            .replace(/^_+|_+$/g, '');
+    }
+
+    // True if `node` is inside `root` subtree
+    function isDescendant(node, root) {
+        let p = node;
+        while (p) {
+            if (p === root) return true;
+            p = p._parent || null;
+        }
+        return false;
+    }
+
+    // Returns { root, byPath: Map<string,node>, byId: Map<string,node> }
+    function normalizeModel(rawRoot) {
+        const byPath = new Map();
+        const byId = new Map();
+
+        function toArrayLayers(layers) {
+            if (!layers) return [];
+            if (Array.isArray(layers)) return layers;
+            // object -> array (keys become names if missing)
+            return Object.keys(layers).map(k => {
+                const v = layers[k] || {};
+                if (typeof v === 'object') {
+                    return {name: v.name || k, ...v};
+                }
+                // primitive fallback
+                return {name: k, value: v};
+            });
+        }
+
+        function walk(node, parent, pathParts, depth) {
+            // ensure base props
+            node.name = node.name || '(unnamed)';
+            node.layers = toArrayLayers(node.layers);
+
+            node._parent = parent || null;
+            node._depth = depth;
+            node._pathParts = [...pathParts, node.name];
+            node._path = node._pathParts.join(' - ');
+            node._id = pathToId(node._path);
+
+            byPath.set(node._path, node);
+            byId.set(node._id, node);
+
+            // recurse
+            node.layers.forEach(child => walk(child, node, node._pathParts, depth + 1));
+            return node;
+        }
+
+        const root = walk(rawRoot, null, [], 1);
+        return {root, byPath, byId};
+    }
+
+    // ---- Phase styles (unchanged; tweak as you like)
+    const PHASE_STYLES = {
+        "Current": {stroke: "#ffff00", dash: ""},       // amber, solid
+        "Future": {stroke: "#ff00ff", dash: "6 4"}     // green, dashed
+    };
+
+    // Global, rebuilt whenever a customer file is loaded
+    let PHASE_THEME = null; // { order: string[], styles: Record<phase,{stroke:string}> }
+
+
+    // Find the nearest *rendered* group for a full path by walking up its ancestors
+    function getNearestVisibleGroup(svgEl, fullPath) {
+        if (!svgEl || !fullPath) return null;
+        const parts = fullPath.split(" - ").map(s => s.trim()).filter(Boolean);
+        // Try full -> parent -> grandparent -> ...
+        for (let end = parts.length; end >= 1; end--) {
+            const candidate = parts.slice(0, end).join(" - ");
+            const g = svgEl.querySelector(`g.layer-group[data-path="${CSS.escape(candidate)}"]`);
+            if (g) return {group: g, visiblePath: candidate};
+        }
+        // If nothing, it means the path is outside the current root; ignore.
+        return null;
+    }
+
+    // Draw a 2.5D map-pin at (cx, cy). Shows number only if count > 1.
+    // Returns the <g> created.
+    // Apply overlay, bubbling to the nearest visible node for each referenced path
+    // Apply overlay: aggregate to nearest visible ancestor, then drop pins (no outlines/badges)
+    // ===== App wiring =====
+    const container = document.getElementById('graph2d');
+    const breadcrumbEl = document.getElementById('breadcrumb');
+    const descEl = document.getElementById('description-panel');
+
+    // Toolbar controls
+    const fileInput = document.getElementById('file-input');
+    const btnAdd = document.getElementById('btn-add');
+    const dropzone = document.getElementById('dropzone');
+    const btnRemove = document.getElementById('btn-remove');
+    const btnClear = document.getElementById('btn-clear');
+    const btnDepthDec = document.getElementById('btn-depth-dec');
+    const btnDepthInc = document.getElementById('btn-depth-inc');
+    const btnReset = document.getElementById('btn-reset');
+    const btnExport = document.getElementById('btn-export');
+    const custNameEl = document.getElementById('customer-name');
+
+    let rootLayer = null;   // current zoom root
+    let currentDepth = 2;     // how many levels to show (controls wired)
+    let customerOverlay = null; // holds parsed customer JSON
+
+    function render() {
+        if (!rootLayer) return;
+        const svgMarkup = generateSVG(rootLayer, 2400, 1400, currentDepth);
+        container.innerHTML = svgMarkup;
+
+        const svgEl = container.querySelector('svg');
+        if (getCustomerData()) {
+            applyOverlay(svgEl, getCustomerData(), MODEL, rootLayer, currentDepth);
+        } else {
+            clearOverlay(svgEl);
+        }
+
+
+        // wire clicks for selection and double clicks for zoom
+        container.querySelectorAll('.layer-group').forEach(g => {
+            g.addEventListener('click', (ev) => {
+                ev.stopPropagation();
+                const rect = g.querySelector('rect');
+                const textEl = g.querySelector('text');
+                const id = g.getAttribute('data-layer-name');
+                if (rect && textEl && id) _selectLayer(container, id, rect, textEl);
+
+                const layerName = id;
+                const selectedLayer = _findLayer(window.odxa, layerName);
+                if (selectedLayer && selectedLayer.description) {
+                    descEl.innerHTML = selectedLayer.description;
+                }
+            });
+
+            g.addEventListener('dblclick', (ev) => {
+                ev.stopPropagation();
+                const layerName = g.getAttribute('data-layer-name');
+                if (!layerName) return;
+                // Use the path on the clicked group to get the model node exactly
+                const path = g.getAttribute('data-path');
+                const layer = MODEL?.byPath.get(path);
+
+                if (layer) {
+                    rootLayer = layer;
+                    buildBreadcrumb(layer);
+                    render();
+                }
+            });
+        });
+    }
+
+    function _selectLayer(container, id, rect, textEl) {
+        container.querySelectorAll('rect[fill-original]').forEach(r => {
+            const orig = r.getAttribute('fill-original');
+            r.setAttribute('fill', orig);
+            const t = r.parentElement.querySelector('text');
+            if (t) t.setAttribute('fill', getFontColor(orig));
+        });
+        rect.setAttribute('fill', '#ffff00');
+        if (textEl) textEl.setAttribute('fill', '#000000');
+    }
+
+    function buildBreadcrumb(layer) {
+        // Build array from root -> ... -> current
+        const chain = [];
+        let ptr = layer;
+        while (ptr) {
+            chain.unshift(ptr);
+            ptr = (ptr.parent && ptr.parent[0]) || null;
+        }
+
+        breadcrumbEl.innerHTML = '';
+        chain.forEach((node, idx) => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.textContent = node.name || 'O-DXA';
+            btn.setAttribute('aria-current', idx === chain.length - 1 ? 'page' : 'false');
+            btn.addEventListener('click', () => {
+                const target = _findLayer(window.odxa, node.name);
+                if (target) {
+                    rootLayer = target;
+                    render();
+                    buildBreadcrumb(target);
+                }
+            });
+            breadcrumbEl.appendChild(btn);
+            if (idx < chain.length - 1) {
+                const sep = document.createElement('span');
+                sep.className = 'sep';
+                sep.textContent = '›';
+                breadcrumbEl.appendChild(sep);
+            }
+        });
+
+        // Ensure top “O-DXA
+        if (!chain.length || chain[0].name !== 'O-DXA') {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.textContent = 'O-DXA';
+            btn.addEventListener('click', () => {
+                rootLayer = window.odxa;
+                render();
+                buildBreadcrumb(window.odxa);
+            });
+            breadcrumbEl.prepend(btn, Object.assign(document.createElement('span'), {
+                className: 'sep',
+                textContent: '›'
+            }));
+        }
+    }
+
+    // ===== Toolbar wiring =====
+    btnAdd.addEventListener('click', () => fileInput.click());
+    fileInput.addEventListener('change', async (e) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+        if (file) await loadCustomerFile(file);
+    });
+
+    // Drag & drop
+    ;['dragenter', 'dragover'].forEach(evt =>
+        dropzone.addEventListener(evt, (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            dropzone.classList.add('dragover');
+        })
+    );
+    ;['dragleave', 'drop'].forEach(evt =>
+        dropzone.addEventListener(evt, (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            dropzone.classList.remove('dragover');
+        })
+    );
+    dropzone.addEventListener('drop', async (e) => {
+        const file = e.dataTransfer?.files?.[0];
+        if (file) await loadCustomerFile(file);
+    });
+
+    async function loadCustomerFile(file) {
+        try {
+            const txt = await file.text();
+            const data = JSON.parse(txt);
+
+            setCustomerData(data);
+            custNameEl.textContent = data.name;
+            btnRemove.disabled = false;
+            render();
+        } catch (err) {
+            alert('Failed to parse JSON: ' + (err?.message || err));
+        }
+    }
+
+    btnRemove.addEventListener('click', () => {
+        setCustomerData(null);
+        custNameEl.textContent = 'none';
+        btnRemove.disabled = true;
+        render();
+    });
+
+    btnClear.addEventListener('click', () => {
+        // clear selection + description
+        descEl.textContent = 'Cleared.';
+        // re-render to reset yellow highlight
+        render();
+    });
+
+
+    btnReset.addEventListener('click', () => {
+        rootLayer = window.odxa;
+        buildBreadcrumb(rootLayer);
+        render();
+    });
+
+    btnExport.addEventListener('click', () => {
+        const svg = container.querySelector('svg');
+        if (!svg) return;
+        const xml = new XMLSerializer().serializeToString(svg);
+        const svgBlob = new Blob([xml], {type: 'image/svg+xml;charset=utf-8'});
+        // Draw to canvas -> PNG
+        const url = URL.createObjectURL(svgBlob);
+        const img = new Image();
+        img.onload = () => {
+            const canvas = document.createElement('canvas');
+            // Choose export resolution (2x the viewBox for a crisp image)
+            const vb = svg.viewBox.baseVal;
+            canvas.width = vb.width * 2;
+            canvas.height = vb.height * 2;
+            const ctx = canvas.getContext('2d');
+            ctx.imageSmoothingEnabled = true;
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+            URL.revokeObjectURL(url);
+            canvas.toBlob((blob) => {
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = 'gear-view.png';
+                a.click();
+                URL.revokeObjectURL(a.href);
+            }, 'image/png');
+        };
+        img.src = url;
+    });
+
+    // ===== Boot: load and normalize once =====
+    let MODEL = null;
+
+    (function bootWhenReady() {
+        if (window.odxa) {
+            MODEL = normalizeModel(window.odxa);
+            rootLayer = MODEL.root;
+            buildBreadcrumb(rootLayer);
+            render();
+        } else {
+            setTimeout(bootWhenReady, 20);
+        }
+    })();
+
+</script>
+</body>
+</html>
