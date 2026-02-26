@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Disaster Recovery for Executives: Why Cloud &amp; SaaS Are NOT Enough | Embracing Digital Transformation</title>
+    <meta name="description" content="Disaster recovery is a crucial yet often overlooked aspect of business continuity. Join Dr. Darren as he converses with Tom May, CEO of Different Dev, about why cloud solutions and Software as a Service (SaaS) aren’t enough for comprehensive disaster recovery. Discover actionable insights that can h">
+    
+    
+    <link rel="canonical" href="https://www.embracingdigital.org/en/episodes/edt-330/index.html">
+    
+
+    <!-- Hreflang alternates (optional: pass `langs` into the template) -->
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Disaster Recovery for Executives: Why Cloud &amp; SaaS Are NOT Enough | Embracing Digital Transformation">
+    <meta property="og:description" content="Disaster recovery is a crucial yet often overlooked aspect of business continuity. Join Dr. Darren as he converses with Tom May, CEO of Different Dev, about why cloud solutions and Software as a Service (SaaS) aren’t enough for comprehensive disaster recovery. Discover actionable insights that can h">
+    <meta property="og:url" content="https://www.embracingdigital.org/en/episodes/edt-330/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Disaster Recovery for Executives: Why Cloud &amp; SaaS Are NOT Enough | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Disaster recovery is a crucial yet often overlooked aspect of business continuity. Join Dr. Darren as he converses with Tom May, CEO of Different Dev, about why cloud solutions and Software as a Service (SaaS) aren’t enough for comprehensive disaster recovery. Discover actionable insights that can h">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="en/home/index.html"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="en/shows/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="en/digital-transformation/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+        <!-- Right side (Languages) -->
+        <ul class="nav-right">
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../en/home/index.html">Home</a></li>
+        <li><a href="../../../en/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 330: Disaster Recovery for Executives: Why Cloud &amp; SaaS Are NOT Enough</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/en/episodes/edt-330/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/en/episodes/edt-330/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 330</span>
+                <span class="episode-title">Disaster Recovery for Executives: Why Cloud &amp; SaaS Are NOT Enough</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-03-03" itemprop="datePublished">3/3/2026</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+
+            <meta itemprop="episodeNumber" content="330"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+            <section class="video-container" aria-label="Watch the episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
+                <meta itemprop="name" content="Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough Video">
+                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/p3NUgJUmHCY">
+                <iframe
+                        width="auto"
+                        height="auto"
+                        src="https://www.youtube.com/embed/p3NUgJUmHCY"
+                        title="Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough Video"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                ></iframe>
+            </section>
+        
+
+        
+            <section class="podcast-container" aria-label="Listen to this episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
+                <meta itemprop="name" content="Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough Audio">
+                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e">
+                <iframe
+                        width="100%"
+                        height="180"
+                        frameborder="0"
+                        scrolling="no"
+                        src="https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
+                        title="Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough Audio"
+                        loading="lazy"
+                ></iframe>
+
+                <p class="listen-note">
+                    Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                </p>
+            </section>
+        
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Disaster recovery is a crucial yet often overlooked aspect of business continuity. Join Dr. Darren as he converses with Tom May, CEO of Different Dev, about why cloud solutions and Software as a Service (SaaS) aren’t enough for comprehensive disaster recovery. Discover actionable insights that can help safeguard your business against unexpected calamities.</p>
+<h2>Key Takeaways:</h2>
+<ul>
+<li>Understanding that effective disaster recovery requires ongoing effort, not a “one and done” approach.</li>
+<li>Prioritize critical business systems based on how quickly they need to be operational after a disaster.</li>
+<li>The importance of having a Business Impact Analysis (BIA) to determine the cost of downtime for various systems.</li>
+<li>Why relying solely on cloud providers can give a false sense of security; it&#39;s essential to have independent backups.</li>
+<li>Implement a phased approach for disaster recovery planning, starting with a minimal viable product and evolving from there.</li>
+<li>Foster a culture of documentation within your organization to mitigate the risks associated with key personnel turnover.</li>
+</ul>
+<h2>Chapters:</h2>
+<ul>
+<li>(00:00) Introduction</li>
+<li>(02:15) The Importance of Disaster Recovery</li>
+<li>(05:45) Tom May&#39;s Origin Story</li>
+<li>(10:30) The Executive Perspective: Key Considerations</li>
+<li>(15:10) The Need for Business Impact Analysis</li>
+<li>(20:00) Understanding Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO)</li>
+<li>(25:30) The Role of Cloud and Compliance Challenges</li>
+<li>(30:45) Ransomware Awareness and Prevention</li>
+<li>(35:00) Finding the Right Balance in Disaster Planning</li>
+<li>(40:15) Conclusion and Resources</li>
+</ul>
+<p>For deeper understanding and tailored advice, reach out to Tom May at <a href="http://differentdev.com">differentdev.com</a> and start planning your catastrophe mitigation strategy today!</p>
+
+
+            
+
+            
+                <div class="guests" aria-label="Guests">
+                    
+                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/tom-may/index.html" itemprop="url">
+                <span itemprop="name">Tom May</span>
+              </a>
+            </span>
+                    
+                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                    
+                </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>Preparing for the Unexpected: Insights from Disaster Recovery Experts</h2>
+<p>In today’s fast-paced digital landscape, business leaders must prioritize disaster recovery. With numerous unexpected events, such as natural disasters, system failures, and cyber threats, a robust disaster recovery (DR) strategy is essential. Dr. Darren, a leading voice in the field, is joined by Tom May, an expert in disaster recovery and CEO of Different Dev, to share pressing insights and strategies for creating effective disaster recovery plans that truly safeguard organizations.</p>
+<p>Tom’s unique perspective on disaster recovery stems from his rich experience in IT and the recognition that businesses often overlook critical aspects until it&#39;s too late. His knowledge serves as a wake-up call for executives at all levels, underscoring the importance of being prepared in the digital age.</p>
+<h2>Understanding the Basics of Disaster Recovery</h2>
+<h3>What is Disaster Recovery?</h3>
+<p>At its core, disaster recovery is the practice of preparing for potential disastrous events that can disrupt business operations. This includes developing systems and processes. The goal is to minimize downtime and data loss, ensuring business continuity. </p>
+<p>For many organizations, a common misconception is that cloud solutions or Software as a Service (SaaS) alone provide adequate disaster recovery. However, Tom highlights how reliance on these tools can foster a false sense of security. While they provide certain back-end solutions, they do not replace a comprehensive disaster recovery strategy tailored to a business&#39;s specific needs.</p>
+<h3>Key Components of a Strong Disaster Recovery Plan</h3>
+<p>A well-rounded disaster recovery plan includes:</p>
+<ul>
+<li><p><strong>Risk Assessment</strong>: Understand and evaluate the potential threats to your organization’s information and system integrity.</p>
+</li>
+<li><p><strong>Business Impact Analysis</strong>: Identify critical operations and prioritize which systems need to be restored first.</p>
+</li>
+<li><p><strong>Recovery Time Objectives (RTO)</strong> and <strong>Recovery Point Objectives (RPO)</strong>: Establish clear metrics for how quickly systems must be restored and how much data can be affordably lost.</p>
+</li>
+<li><p><strong>Continuous Testing and Updating</strong>: Regularly test your disaster recovery plan and update it as new systems and technologies are implemented.</p>
+</li>
+</ul>
+<h4>Key Takeaways:</h4>
+<ul>
+<li><p>Disaster recovery is essential for business continuity amidst unexpected disruptions.</p>
+</li>
+<li><p>Relying solely on cloud solutions can lead to gaps in preparedness.</p>
+</li>
+<li><p>Regular testing of your disaster recovery plans is crucial.</p>
+</li>
+</ul>
+<h2>The Executive’s Role in Robust Disaster Recovery</h2>
+<h3>Prioritizing Disaster Recovery in Business Strategy</h3>
+<p>For executives, understanding the necessity of a structured disaster recovery plan is vital. Many organizations mistakenly believe they are protected, which can lead to unexpected vulnerabilities. As Tom emphasized, discerning the nuances of what a business actually needs depends on a clear assessment of risk versus cost.</p>
+<p>Executives should also ensure that disaster recovery budgeting is treated as a long-term investment rather than a one-time cost. It&#39;s crucial to foster a culture that acknowledges potential threats and the importance of preventive action as an integral part of the organizational strategy.</p>
+<h3>Building a Culture of Preparedness</h3>
+<p>Creating a disaster recovery plan is just the beginning. Organizations must cultivate a culture where all employees—including IT and security teams—understand the significance of their roles in ensuring business continuity. Regular training and simulations help reinforce this culture and prepare the workforce for real crises.</p>
+<h4>Actionable Steps for Executives:</h4>
+<ul>
+<li><p>Invest in professional training for disaster recovery and crisis management.</p>
+</li>
+<li><p>Engage with experts to assess your current disaster recovery plans.</p>
+</li>
+<li><p>Regularly review and update recovery strategies based on technological advancements.</p>
+</li>
+</ul>
+<h2>Why You Can’t Afford to Wait: Take Action Now</h2>
+<p>The reality of digital transformation is that it requires constant vigilance. Organizations cannot afford to wait until a disaster strikes to develop their disaster recovery plans. Instead, they need to proactively ensure they have the right systems in place to mitigate risks. If you found insights from this discussion valuable, now is the time to assess your organization&#39;s disaster recovery strategy.</p>
+<p>Explore how your organization can enhance its disaster recovery capabilities by consulting experts like Tom May or leveraging resources to build a tailored strategy. Don&#39;t leave your future to chance; take action today to secure your organization&#39;s tomorrow.</p>
+<p>By taking these steps, you not only safeguard your business but also foster a resilient operational environment that thrives even in the face of adversity. </p>
+<hr>
+<p>If you want to dive deeper into the concepts shared in this blog and hear from Tom May, be sure to check out the full podcast episode where these insights were discussed in greater depth. For more valuable resources and community support related to digital transformation, visit <a href="http://www.wheresthelemonade.org">Embracing Digital</a>. Stay informed, and let&#39;s keep the conversation going!</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/en/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/en/episodes/index.html",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/en/episodes/edt-330/index.html#episode",
+  "url": "https://www.embracingdigital.org/en/episodes/edt-330/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/en/episodes/edt-330/index.html"
+  },
+  "name": "Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough",
+  "episodeNumber": 330,
+  "datePublished": "2026-03-03",
+  "inLanguage": "en",
+  "description": "Disaster recovery is a crucial yet often overlooked aspect of business continuity. Join Dr. Darren as he converses with Tom May, CEO of Different Dev, about why cloud solutions and Software as a Service (SaaS) aren't enough for comprehensive disaster recovery. Discover actionable insights that can h",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/en/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/en/episodes/edt-330/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough Video",
+      "embedUrl": "https://www.youtube.com/embed/p3NUgJUmHCY"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough Audio",
+      "contentUrl": "https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Tom May",
+      "url": "https://www.embracingdigital.org/../../../en/guests/tom-may/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
