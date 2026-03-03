@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Título de página dinâmico -->
+    <title>O Domínio de Estratégia do ODXA: Uma Introdução | Digital Transformation Architect</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/pt/lectures/dta-9/index.html">
+    <meta name="description" content="Resumo">
+    <meta name="keywords" content="Transformação digital, podcast, entrevistas, notícias, IA, cibersegurança, edge computing, gestão de dados">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="O Domínio de Estratégia do ODXA: Uma Introdução | Digital Transformation Architect — Entrevistas, Notícias e Comunidade">
+    <meta property="og:description" content="Resumo">
+    <meta property="og:url" content="https://www.embracingdigital.org/pt/lectures/dta-9/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="O Domínio de Estratégia do ODXA: Uma Introdução | Digital Transformation Architect — Entrevistas, Notícias e Comunidade">
+    <meta name="twitter:description" content="Resumo">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (alternativas) -->
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="x-default">
+
+    <!-- Favicon & Estilos -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abraçando a Transformação Digital",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abraçando a Transformação Digital",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/pt/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logotipo -->
+    <div class="logo-container">
+        <a href="/pt/home/" aria-label="Início — Abraçando a Transformação Digital">
+            <img src="/images/logo.png" alt="Logotipo — Abraçando a Transformação Digital" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Alternância para mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Alternar menu">☰</button>
+
+    <!-- Navegação principal -->
+    <nav id="primary-nav" aria-label="Principal">
+        <ul>
+            <li><a href="/pt/home/index.html" >Início</a></li>
+
+            <li class="dropdown">
+                <a href="/pt/shows/index.html" aria-haspopup="true" aria-expanded="false">Programas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/episodes/index.html" aria-label="Entrevistas — Abraçando a Transformação Digital">
+                            Abraçando a Transformação Digital
+                            <small class="nav-note">Entrevistas</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/index.html" aria-label="Notícias — Digital esta semana">
+                            Digital esta semana
+                            <small class="nav-note">Notícias</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/pt/guests/index.html">Convidados</a></li>
+            <li><a href="/pt/articles/index.html">Artigos</a></li>
+
+            <!-- Comunidade -->
+            <li class="dropdown">
+                <a href="/pt/community.html" aria-haspopup="true" aria-expanded="false">Comunidade</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Grupo no LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Loja</a></li>
+
+            <!-- Sobre -->
+            <li class="dropdown">
+                <a href="/pt/about.html" aria-haspopup="true" aria-expanded="false">Sobre</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/about.html">Sobre o programa</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/host.html">Apresentador: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/sponsors/index.html">Patrocínio & Contato</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/pt/search.html">Pesquisar</a></li>
+
+            <!-- Idiomas -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Idiomas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../pt/home/index.html">Home</a></li>
+        <li><a href="../../../pt/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 9: The Strategy Domain of ODXA: An Introduction</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/pt/lectures/dta-9/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/pt/lectures/dta-9/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 9</span>
+                <span class="episode-title">The Strategy Domain of ODXA: An Introduction</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-03-04" itemprop="datePublished">2026-03-04</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+
+            <meta itemprop="episodeNumber" content="9"/>
+            <meta itemprop="inLanguage" content="pt"/>
+        </header>
+
+        
+            <section class="video-container" aria-label="Watch the episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
+                <meta itemprop="name" content="O Domínio de Estratégia do ODXA: Uma Introdução Video">
+                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/scEmWVPnjg4">
+                <iframe
+                        width="auto"
+                        height="auto"
+                        src="https://www.youtube.com/embed/scEmWVPnjg4"
+                        title="O Domínio de Estratégia do ODXA: Uma Introdução Video"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                ></iframe>
+            </section>
+        
+
+        
+            <section class="podcast-container" aria-label="Listen to this episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
+                <meta itemprop="name" content="O Domínio de Estratégia do ODXA: Uma Introdução Audio">
+                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/caf9b4ed">
+                <iframe
+                        width="100%"
+                        height="180"
+                        frameborder="0"
+                        scrolling="no"
+                        src="https://share.transistor.fm/e/caf9b4ed"
+                        title="O Domínio de Estratégia do ODXA: Uma Introdução Audio"
+                        loading="lazy"
+                ></iframe>
+
+                <p class="listen-note">
+                    Explore more in the <a href="../../../pt/episodes/index.html">episode archive</a>.
+                </p>
+            </section>
+        
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Resumo</p>
+
+
+            
+
+            
+                <div class="guests" aria-label="Guests">
+                    
+                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../pt/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                    
+                </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>O Domínio Estratégico: Seis Camadas que Transformam a Intenção em Execução</h1>
+<p><strong>Data:</strong> 2026-03-03<br><strong>Autor:</strong> Dr. Darren Pulsipher<br><strong>Palavras-chave:</strong> transformação digital, domínio estratégico, arquitetura empresarial, governança, execução  </p>
+<h2>Por Que o Domínio Estratégico é Importante</h2>
+<p>Os esforços de transformação digital raramente falham devido à falta de tecnologia. Eles falham porque a intenção estratégica não é traduzida em decisões executáveis em toda a empresa.</p>
+<p>O Domínio Estratégico aborda esse problema atuando como centro de controle para direção, restrições e resultados. Em vez de fluxos de planejamento desconectados, ele cria uma arquitetura compartilhada para a tomada de decisões em preocupações organizacionais, processuais, digitais e físicas.</p>
+<p>No início do trabalho de transformação, a prioridade é capturar a realidade estratégica como ela existe hoje. Isso significa documentar os sinais de missão atuais, restrições políticas, postura de risco, padrões de roadmap e modelo de entrega de valor antes de tentar o redesenho.</p>
+<h2>As Seis Camadas de Primeiro Nível</h2>
+<p>O Domínio Estratégico é organizado em seis camadas de primeiro nível:</p>
+<ol>
+<li><strong>Missão e Visão</strong></li>
+<li><strong>Política e Conformidade</strong></li>
+<li><strong>Risco e Resiliência</strong></li>
+<li><strong>Roadmap</strong></li>
+<li><strong>Estratégia e Prioridades</strong></li>
+<li><strong>Fluxos de Valor e Capacidades</strong></li>
+</ol>
+<p>Cada camada desempenha um papel distinto:</p>
+<ul>
+<li><strong>Missão e Visão</strong> definem o propósito e a direção de longo prazo.</li>
+<li><strong>Política e Conformidade</strong> definem as diretrizes legais e regulatórias.</li>
+<li><strong>Risco e Resiliência</strong> definem o que é sustentável em meio à incerteza.</li>
+<li><strong>Roadmap</strong> define o caminho de transição do estado atual para o estado futuro.</li>
+<li><strong>Estratégia e Prioridades</strong> definem foco, compensações e resultados esperados.</li>
+<li><strong>Fluxos de Valor e Capacidades</strong> definem como a empresa realmente cria valor.</li>
+</ul>
+<p>O ponto importante é que essas camadas não devem ser gerenciadas como documentos separados. Elas devem ser tratadas como um sistema coordenado.</p>
+<h2>Comece Amplo Antes de Ir Profundo</h2>
+<p>Um erro frequente é pular rapidamente para reescrever declarações de missão ou projetar a arquitetura do estado futuro em detalhes. A abordagem mais forte é começar amplo:</p>
+<ol>
+<li>Capturar o que já existe.</li>
+<li>Identificar elementos estratégicos ausentes.</li>
+<li>Mapear dependências entre camadas.</li>
+<li>Então reconciliar e redesenhar.</li>
+</ol>
+<p>Por exemplo, a maioria das organizações já possui uma linguagem de missão e visão, mesmo que informal. Capturá-la cedo ajuda a expor se as restrições estratégicas estão claras ou vagas. O mesmo princípio se aplica a artefatos de política, risco e roadmap. A descoberta antecipada revela onde o alinhamento é forte e onde começa a deriva da execução.</p>
+<p>Essa primeira passagem ampla evita a otimização local e torna visíveis as compensações em nível empresarial antes que compromissos significativos sejam feitos.</p>
+<h2>Como as Camadas Trabalham Juntas</h2>
+<p>As camadas criam valor por meio de suas relações:</p>
+<ul>
+<li>Missão e Visão devem orientar Estratégia e Prioridades.</li>
+<li>Política e Conformidade devem restringir a estratégia desde o início, não no final.</li>
+<li>Risco e Resiliência devem moldar a sequenciação do roadmap e o tempo de investimento.</li>
+<li>Estratégia e Prioridades devem determinar quais fluxos de valor e capacidades são aprimorados.</li>
+<li>Os resultados dos fluxos de valor devem retroalimentar as atualizações estratégicas.</li>
+</ul>
+<p>Sem esse fluxo, as equipes podem entregar atividades enquanto perdem resultados.</p>
+<p>Um exemplo prático: em ambientes regulados, como saúde ou serviços financeiros, a conformidade não pode ser tratada como uma etapa tardia. A privacidade de dados, a auditabilidade e as obrigações de segurança devem ser consideradas no momento do design, pois influenciam diretamente a arquitetura, a sequenciação do roadmap e as escolhas de capacidade.</p>
+<h2>Por Que Roadmaps e Fluxos de Valor Importam</h2>
+<p>Um roadmap não é apenas uma linha do tempo tecnológica. Ele deve representar:</p>
+<ul>
+<li>a realidade do estado atual,</li>
+<li>a intenção do estado futuro e</li>
+<li>iniciativas de transformação que conectem os dois.</li>
+</ul>
+<p>Da mesma forma, fluxos de valor não são diagramas abstratos. Eles são os caminhos operacionais onde a estratégia se torna valor mensurável para clientes, constituintes ou partes interessadas.</p>
+<p>Quando os roadmaps estão desconectados dos fluxos de valor e capacidades, as iniciativas muitas vezes consomem recursos financeiros sem melhorar resultados significativos.</p>
+<h2>Padrões Comuns de Quebra</h2>
+<p>Vários padrões minam consistentemente a execução:</p>
+<ul>
+<li>Visão sem restrições de decisão</li>
+<li>Conformidade tratada como uma reflexão tardia</li>
+<li>Risco revisado após os compromissos serem feitos</li>
+<li>Roadmaps desconectados das necessidades de capacidade</li>
+<li>Métricas focadas em atividade em vez de resultados</li>
+</ul>
+<p>Cada padrão tem um impacto previsível:</p>
+<ul>
+<li>As equipes interpretam a estratégia de maneira diferente.</li>
+<li>O retrabalho aumenta à medida que restrições tardias aparecem.</li>
+<li>A exposição ao risco aumenta devido à correção tardia.</li>
+<li>O esforço do portfólio cresce enquanto o valor estagna.</li>
+<li>A liderança vê relatórios de progresso sem melhoria nos resultados.</li>
+</ul>
+<p>Esses modos de falha podem ser reduzidos por meio da imposição de rastreabilidade entre camadas antes que os compromissos de financiamento e entrega sejam finalizados.</p>
+<h2>Um Check-list Operacional Prático</h2>
+<p>Para operacionalizar o Domínio Estratégico:</p>
+<ol>
+<li>Documente o estado atual de todas as seis camadas, mesmo que incompleto.</li>
+<li>Identifique lacunas na clareza da missão, diretrizes políticas e postura de risco.</li>
+<li>Verifique se os itens do roadmap estão mapeados para prioridades estratégicas e alterações de capacidade.</li>
+<li>Confirme que os fluxos de valor estão ligados a resultados mensuráveis e KPIs.</li>
+<li>Realize revisões recorrentes entre camadas com propriedade de decisão explícita.</li>
+</ol>
+<p>Isso torna a estratégia mais fácil de governar, mais fácil de executar e mais fácil de adaptar.</p>
+<h2>Conclusão Prática</h2>
+<p>O Domínio Estratégico não é um artefato de planejamento estático. É um sistema de controle para a mudança empresarial.</p>
+<p>Comece com as seis camadas, mantenha a avaliação inicial ampla e exija rastreabilidade desde a missão até a entrega de valor. Quando a estratégia é tratada como arquitetura, as organizações tomam decisões melhores mais cedo e executam com maior consistência e resiliência.</p>
+<h2>Saiba mais</h2>
+<p>Confira um white paper detalhando o Domínio Estratégico sobre como usá-lo para transformação digital. <a href="https://embracingdigital.org/en/digital-transformation/whitepapers/WP-03/">Leia o white paper</a></p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/pt/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/pt/episodes/index.html",
+  "inLanguage": "pt",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/pt/lectures/dta-9/index.html#episode",
+  "url": "https://www.embracingdigital.org/pt/lectures/dta-9/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/pt/lectures/dta-9/index.html"
+  },
+  "name": "O Domínio de Estratégia do ODXA: Uma Introdução",
+  "episodeNumber": 9,
+  "datePublished": "2026-03-04",
+  "inLanguage": "pt",
+  "description": "Resumo",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/pt/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/pt/episodes/dta-9/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "O Domínio de Estratégia do ODXA: Uma Introdução Video",
+      "embedUrl": "https://www.youtube.com/embed/scEmWVPnjg4"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "O Domínio de Estratégia do ODXA: Uma Introdução Audio",
+      "contentUrl": "https://share.transistor.fm/e/caf9b4ed"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../pt/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; 2025 Paidar Productions LLC</p>
+        <p>Todos os direitos reservados</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
