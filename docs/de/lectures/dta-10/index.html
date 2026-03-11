@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Dynamischer Seitentitel -->
+    <title>Die Lücke kartieren: Warum Ambitionen ohne Architektur scheitern | Digital Transformation Architect</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/de/lectures/dta-10/index.html">
+    <meta name="description" content="Zusammenfassung">
+    <meta name="keywords" content="Digitale Transformation, Podcast, Interviews, Nachrichten, KI, Cybersicherheit, Edge Computing, Datenmanagement">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Die Lücke kartieren: Warum Ambitionen ohne Architektur scheitern | Digital Transformation Architect — Interviews, Nachrichten und Community">
+    <meta property="og:description" content="Zusammenfassung">
+    <meta property="og:url" content="https://www.embracingdigital.org/de/lectures/dta-10/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Die Lücke kartieren: Warum Ambitionen ohne Architektur scheitern | Digital Transformation Architect — Interviews, Nachrichten und Community">
+    <meta name="twitter:description" content="Zusammenfassung">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (Alternativen) -->
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="x-default">
+
+    <!-- Favicon & Styles -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Digitale Transformation gestalten",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Digitale Transformation gestalten",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/de/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/de/home/" aria-label="Startseite — Digitale Transformation gestalten">
+            <img src="/images/logo.png" alt="Logo — Digitale Transformation gestalten" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Menü umschalten">☰</button>
+
+    <!-- Hauptnavigation -->
+    <nav id="primary-nav" aria-label="Hauptnavigation">
+        <ul>
+            <li><a href="/de/home/index.html" >Start</a></li>
+
+            <li class="dropdown">
+                <a href="/de/shows/index.html" aria-haspopup="true" aria-expanded="false">Sendungen</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/de/episodes/index.html" aria-label="Interviews — Digitale Transformation gestalten">
+                            Digitale Transformation gestalten
+                            <small class="nav-note">Interviews</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/briefs/index.html" aria-label="Nachrichten — Digital diese Woche">
+                            Digital diese Woche
+                            <small class="nav-note">Nachrichten</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/de/guests/index.html">Gäste</a></li>
+            <li><a href="/de/articles/index.html">Artikel</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/de/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">LinkedIn Gruppe</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Über uns -->
+            <li class="dropdown">
+                <a href="/de/about.html" aria-haspopup="true" aria-expanded="false">Über uns</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/about.html">Über die Sendung</a></li>
+                    <li role="none"><a role="menuitem" href="/de/host.html">Moderator: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/de/sponsors/index.html">Sponsoring & Kontakt</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/de/search.html">Suche</a></li>
+
+            <!-- Sprachen -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Sprachen</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../de/home/index.html">Home</a></li>
+        <li><a href="../../../de/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 10: Mapping the Gap Why Aspirations Fail Without Architecture</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/de/lectures/dta-10/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/de/lectures/dta-10/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 10</span>
+                <span class="episode-title">Mapping the Gap Why Aspirations Fail Without Architecture</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-03-11" itemprop="datePublished">2026-03-11</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+
+            <meta itemprop="episodeNumber" content="10"/>
+            <meta itemprop="inLanguage" content="de"/>
+        </header>
+
+        
+            <section class="video-container" aria-label="Watch the episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
+                <meta itemprop="name" content="Die Lücke kartieren: Warum Ambitionen ohne Architektur scheitern Video">
+                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/zX7B9ifRYeQ">
+                <iframe
+                        width="auto"
+                        height="auto"
+                        src="https://www.youtube.com/embed/zX7B9ifRYeQ"
+                        title="Die Lücke kartieren: Warum Ambitionen ohne Architektur scheitern Video"
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                ></iframe>
+            </section>
+        
+
+        
+            <section class="podcast-container" aria-label="Listen to this episode"
+                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
+                <meta itemprop="name" content="Die Lücke kartieren: Warum Ambitionen ohne Architektur scheitern Audio">
+                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/18eee75f">
+                <iframe
+                        width="100%"
+                        height="180"
+                        frameborder="0"
+                        scrolling="no"
+                        src="https://share.transistor.fm/e/18eee75f"
+                        title="Die Lücke kartieren: Warum Ambitionen ohne Architektur scheitern Audio"
+                        loading="lazy"
+                ></iframe>
+
+                <p class="listen-note">
+                    Explore more in the <a href="../../../de/episodes/index.html">episode archive</a>.
+                </p>
+            </section>
+        
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Zusammenfassung</p>
+
+
+            
+
+            
+                <div class="guests" aria-label="Guests">
+                    
+                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../de/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                    
+                </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>Die Lücke abbilden: Warum Aspirationen ohne Architektur scheitern</h1>
+<h2>Die Trennung zwischen Strategie und Umsetzung überbrücken</h2>
+<p>Im Bereich der digitalen Transformation tritt eine häufige Herausforderung auf: die Kluft zwischen Aspirationen und den Realitäten der Umsetzung. Viele Organisationen streben nach ehrgeizigen Zielen, haben jedoch Schwierigkeiten, ihre strategische Vision mit praktischen Implementierungen in Einklang zu bringen. In diesem Vortrag untersucht Dr. Darren, wie ein strukturiertes architektonisches Rahmenwerk diese Lücken beleuchten und erfolgreiche Transformationen erleichtern kann.</p>
+<h2>Verständnis der aspirationalen Lücke</h2>
+<p>Organisationen stehen häufig vor einem allumfassenden Problem: Hochgesteckte Aspirationen stehen oft im Widerspruch zu den Realitäten der Umsetzung. Dr. Darren betont, dass die Misserfolge, die in vielen Transformationsbemühungen sichtbar sind, nicht auf einen Mangel an Ambition zurückzuführen sind, sondern vielmehr aus einer Unfähigkeit resultieren, strategische Ziele in umsetzbare Rahmenbedingungen zu übertragen. Ein architektonischer Ansatz dient als entscheidende Verbindung, die diese Absichten auf realistische Umsetzungspläne abbildet.</p>
+<p>Ein grundlegendes Verständnis des strategischen Bereichs, der aus sechs miteinander verbundenen Schichten besteht, ist unerlässlich. An der Spitze stehen Mission und Vision, die politischen Richtlinien und Compliance leiten, während die unteren Schichten sich auf strategische Initiativen und operative Fähigkeiten konzentrieren. Das Erkennen, wie diese Schichten miteinander verbunden sind, ermöglicht es Organisationen, Transformationsherausforderungen effektiv zu navigieren und ihre Aspirationen zu verwirklichen.</p>
+<h2>Die Rolle architektonischer Modelle</h2>
+<p>Architektonische Modelle müssen nicht nur Aspirationen, sondern auch die in den Dynamiken von Organisationen angelegten Einschränkungen und Abhängigkeiten erfassen. Diese Ausrichtung ist entscheidend, um die Kluft zwischen Aspiration und Umsetzung zu überbrücken. Dr. Darren hebt hervor, dass Strategien, die isoliert präsentiert werden – wie in hochrangigen Briefings –, oft keinen klaren Umsetzungsweg bieten, wodurch ein solides architektonisches Rahmenwerk umso wichtiger wird.</p>
+<p>Ein Feedback-Mechanismus, der Strategie und Umsetzung verbindet, stellt sicher, dass Aspirationen in umsetzbare Pläne weiterentwickelt werden. Dieser iterative Ansatz verwandelt Strategien von abstrakten Zielen in strukturierte Umsetzungsleitfäden und gibt Organisationen die Agilität, sich an veränderte Realitäten anzupassen und darauf zu reagieren.</p>
+<h2>Implementierung des GEAR-Rahmenwerks</h2>
+<p>Das GEAR-Rahmenwerk bietet einen Weg für Organisationen, ihre Architektur in Einklang mit strategischen Aspirationen zu operationalisieren. Dieser Ansatz umfasst fünf Schritte: Identifizieren von Lücken, Beobachten des aktuellen Zustands, Versöhnen von Aspirationen mit der Realität, Verankern von Absichten in praktischen Begriffen und Erhöhen der Fähigkeiten durch fortlaufende Ausrichtung.</p>
+<p>Durch die Anwendung dieses Rahmenwerks können Organisationen einen kohärenten Umsetzungsplan erstellen, der die gängigen Fallstricke der Fehlanpassung anspricht. Vage Aspirationen – wie &quot;Digital sein&quot; – fehlen zum Beispiel die Spezifität, die für eine effektive Umsetzung erforderlich ist. Hier kann das GEAR-Rahmenwerk klarstellen, was „digital sein“ bedeutet, indem es mit gut definierten Wertströmen und Prozessen verknüpft wird.</p>
+<h2>Warum das wichtig ist</h2>
+<p>Die Implikationen von Dr. Darrens Einsichten sind bedeutend für Unternehmensarchitekten und Führungskräfte der digitalen Transformation. Indem sie die Lücken zwischen Aspirationen und Umsetzung durch strukturierte architektonische Rahmenwerke anerkennen und angehen, können Organisationen ihre Fähigkeit zur effektiven Umsetzung verbessern. Die Ausrichtung von Strategien auf operative Fähigkeiten minimiert das Risiko von Umsetzungsfehlern und fördert eine kohärentere Transformationsreise.</p>
+<p>Im Wesentlichen ist das Zusammenspiel zwischen Aspirationen, Umsetzung und Architektur ein kontinuierlicher Zyklus. Organisationen müssen architektonisches Denken in ihre strategische Planung integrieren, um sicherzustellen, dass Aspirationen geerdet und umsetzbar bleiben.</p>
+<h2>Hören und Vertiefen</h2>
+<p>Um tiefer in diese Konzepte einzutauchen und reale Fallbeispiele für erfolgreiche Ausrichtungsstrategien zu erkunden, hören Sie sich die vollständige Vorlesungsfolge an: <a href="https://embracingdigital.org/en/lectures/dta-10/index.html">Die Lücke abbilden: Warum Aspirationen ohne Architektur scheitern</a>. Diese Sitzung ist Teil der fortlaufenden Serie zur digitalen Transformationsarchitektur, die darauf abzielt, Führungskräfte mit Erkenntnissen auszustatten, um die Komplexitäten organisatorischer Veränderungen zu navigieren.</p>
+<h3>Weiteres Hören:</h3>
+<ul>
+<li><a href="https://embracingdigital.org/en/lectures/index.html">Serie zur digitalen Transformationsarchitektur</a></li>
+<li><a href="https://embracingdigital.org/en/digital-transformation/whitepapers/WP-03/">Der strategische Bereich: Mission in architektonische Absicht übersetzen</a></li>
+</ul>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/de/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/de/episodes/index.html",
+  "inLanguage": "de",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/de/lectures/dta-10/index.html#episode",
+  "url": "https://www.embracingdigital.org/de/lectures/dta-10/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/de/lectures/dta-10/index.html"
+  },
+  "name": "Die Lücke kartieren: Warum Ambitionen ohne Architektur scheitern",
+  "episodeNumber": 10,
+  "datePublished": "2026-03-11",
+  "inLanguage": "de",
+  "description": "Zusammenfassung",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/de/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/de/episodes/dta-10/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Die Lücke kartieren: Warum Ambitionen ohne Architektur scheitern Video",
+      "embedUrl": "https://www.youtube.com/embed/zX7B9ifRYeQ"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Die Lücke kartieren: Warum Ambitionen ohne Architektur scheitern Audio",
+      "contentUrl": "https://share.transistor.fm/e/18eee75f"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../de/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Urheberrecht &copy; 2025 Paidar Productions LLC</p>
+        <p>Alle Rechte vorbehalten</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
