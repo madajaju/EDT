@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -193,92 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="316"/>
             <meta itemprop="inLanguage" content="ja"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="スケールでのデジタルトランスフォーメーションを推進するAIエージェント Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/aTr79waqrQU">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/aTr79waqrQU"
-                        title="スケールでのデジタルトランスフォーメーションを推進するAIエージェント Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="スケールでのデジタルトランスフォーメーションを推進するAIエージェント Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/dbd9651a">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/dbd9651a"
-                        title="スケールでのデジタルトランスフォーメーションを推進するAIエージェント Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-10T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="スケールでのデジタルトランスフォーメーションを推進するAIエージェント Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/aTr79waqrQU">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/aTr79waqrQU"
+                            title="スケールでのデジタルトランスフォーメーションを推進するAIエージェント Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="スケールでのデジタルトランスフォーメーションを推進するAIエージェント Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/9ed624dd">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/9ed624dd"
+                            title="スケールでのデジタルトランスフォーメーションを推進するAIエージェント Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-11T03:33:15.740Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>退屈なオフィスタスクが知能を持つAIエージェントのおかげで数秒で完了する世界を想像してください。ホストのダレン博士がIBMのAI専門家スザン・リビングストンと対談します。彼らは、AIが面倒なプロセスを自動化し、企業に大きなコスト削減をもたらすことで、職場の生産性をどのように革命的に変えているかを探ります。</p>
-<h2>主要なポイント：</h2>
-<ul>
-<li><strong>AIによる効率化</strong>：AIエージェントが従業員の移動、調達、法的プロセスなどのタスクをどのように合理化し、組織に貴重な時間とリソースを節約できるかを学びます。</li>
-<li><strong>コスト削減</strong>：IBMが旧式の方法をAIを用いてスマートなプロセスに変えることで約45億ドルを節約した事例を発見します。</li>
-<li><strong>信頼と採用</strong>：AIシステムへの信頼を構築する重要性と、これらの技術を既存の構造に統合する際の企業が直面する課題を理解します。</li>
-<li><strong>ユーザーエンゲージメントへの焦点</strong>：AIを展開し、ニーズに先回りして対応し、ユーザーとシームレスに関わることで企業が顧客体験をどう向上できるかを見ます。</li>
-<li><strong>プロセスの再設計</strong>：単にデジタル化するのではなく、自動化のために既存のワークフローを最適化する必要性を探ります。</li>
-</ul>
-<h2>章：</h2>
-<ul>
-<li>00:00 - AIと生産性の紹介</li>
-<li>02:15 - AIと自動化におけるスザンの背景</li>
-<li>06:50 - IBMにおける知能エージェントの進化</li>
-<li>12:05 - ビジネスにおけるAIの主要な使用事例</li>
-<li>16:40 - 信頼と採用の課題を克服する</li>
-<li>22:25 - パイロットから完全実装への道</li>
-<li>27:00 - AIを活用した顧客との関わり</li>
-<li>32:50 - IBMのAIソリューションを始める方法</li>
-</ul>
-<p>このエピソードに飛び込んで、仕事の未来と人工知能を受け入れることがあなたの組織内で変革をもたらす方法を発見してください。</p>
+            <p>退屈なオフィスタスクが知能を持つAIエージェントのおかげで数秒で完了する世界を想像してください。ホストのダレン博士がIBMのAI専門家スザン・リビングストンと対談します。彼らは、AIが面倒なプロセスを自動化し、企業に大きなコスト削減をもたらすことで、職場の生産性をどのように革命的に変えているかを探ります。 主要なポイント： AIによる効率化 ：AIエージェントが従業員の移動、調達、法的プロセスなどのタスクをどのように合理化し、組織に貴重な時間とリソースを節約できるかを学びます。 コスト削減 ：IBMが旧式の方法をAIを用いてスマートなプロセスに変えることで約45億ドルを節約した事例を発見します</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/suzanne-livingston/index.html" itemprop="url">
                 <span itemprop="name">Suzanne Livingston</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -397,7 +416,7 @@
     {
       "@type": "AudioObject",
       "name": "スケールでのデジタルトランスフォーメーションを推進するAIエージェント Audio",
-      "contentUrl": "https://share.transistor.fm/e/dbd9651a"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/9ed624dd"
     }
   ],
   "actor": [

@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -193,92 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="318"/>
             <meta itemprop="inLanguage" content="it"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="IA, ETL e Accuratezza nei Dati Non Strutturati Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/N_DM1BN1YLM">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/N_DM1BN1YLM"
-                        title="IA, ETL e Accuratezza nei Dati Non Strutturati Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="IA, ETL e Accuratezza nei Dati Non Strutturati Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/759443cc">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/759443cc"
-                        title="IA, ETL e Accuratezza nei Dati Non Strutturati Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-19T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="IA, ETL e Accuratezza nei Dati Non Strutturati Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/N_DM1BN1YLM">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/N_DM1BN1YLM"
+                            title="IA, ETL e Accuratezza nei Dati Non Strutturati Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="IA, ETL e Accuratezza nei Dati Non Strutturati Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/8eed4ef2">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/8eed4ef2"
+                            title="IA, ETL e Accuratezza nei Dati Non Strutturati Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-19T14:51:20.669Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Il Dr. Darren conversa con Mehul Shah, fondatore e CEO di Aaron AI, per esplorare come l&#39;intelligenza artificiale stia affrontando la sfida dei dati non strutturati. Scopri come le tecnologie si stanno evolvendo per consentire alle aziende di estrarre preziose informazioni da enormi dataset e il ruolo cruciale dell&#39;accuratezza in questo panorama in rapido cambiamento.</p>
-<h2>Punti Chiave</h2>
-<ul>
-<li>IA e Dati Non Strutturati: L&#39;integrazione di tecnologie IA come l&#39;elaborazione del linguaggio naturale (NLP) e la visione artificiale sta rivoluzionando il modo in cui le aziende gestiscono enormi quantità di dati non strutturati, consentendo un&#39;estrazione e un&#39;analisi dei dati più efficienti.</li>
-<li>Importanza dell&#39;Accuratezza: Livelli elevati di accuratezza (97-98%) sono vitali per i lavoratori della conoscenza, aiutandoli a sentirsi sicuri e rassicurati nelle loro decisioni.</li>
-<li>Strategia Divide et Impera: Tecniche come il divide et impera consentono alle aziende di gestire efficacemente grandi dataset, dando potere ai team per sentirsi più capaci nel processamento dei dati.</li>
-<li><strong>Collaborazione Uomo-IA</strong>: L&#39;IA è progettata per potenziare le capacità umane, non per sostituirle, portando a flussi di lavoro migliorati e riducendo le attività noiose.</li>
-<li><strong>Approccio al Consenso</strong>: Sfruttare più modelli IA può migliorare l&#39;accuratezza trovando consenso nei risultati di estrazione dei dati, riducendo significativamente l&#39;incertezza.</li>
-</ul>
-<h2>Capitoli</h2>
-<ul>
-<li>00:00 - Introduzione all&#39;IA e alla Trasformazione dei Dati</li>
-<li>03:10 - Background e Percorso di Mehul Shah</li>
-<li>06:50 - Comprendere i Dati Non Strutturati</li>
-<li>12:20 - Il Ruolo dell&#39;Accuratezza nell&#39;IA</li>
-<li>18:00 - Metodologia Divide et Impera</li>
-<li>25:30 - Collaborare con l&#39;IA per Maggiore Produttività</li>
-<li>32:00 - Interagire con Aaron AI</li>
-<li>35:40 - Osservazioni Finali e Futuro dell&#39;IA</li>
-</ul>
-<p>Unisciti a noi per questa illuminante discussione e ottieni preziose intuizioni su come la trasformazione digitale alimentata dall&#39;IA può influenzare l&#39;approccio della tua organizzazione ai dati!</p>
+            <p>Il Dr. Darren conversa con Mehul Shah, fondatore e CEO di Aaron AI, per esplorare come l&#39;intelligenza artificiale stia affrontando la sfida dei dati non strutturati. Scopri come le tecnologie si stanno evolvendo per consentire alle aziende di estrarre preziose informazioni da enormi dataset e il</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/mehul-shah/index.html" itemprop="url">
                 <span itemprop="name">Mehul Shah</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -386,7 +405,7 @@
     {
       "@type": "AudioObject",
       "name": "IA, ETL e Accuratezza nei Dati Non Strutturati Audio",
-      "contentUrl": "https://share.transistor.fm/e/759443cc"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/8eed4ef2"
     }
   ],
   "actor": [

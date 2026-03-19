@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -186,88 +187,123 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-01-29" itemprop="datePublished">2026-01-29T02:31:08.737Z</time>
+                    <time datetime="2026-02-03" itemprop="datePublished">2/3/2026</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="322"/>
             <meta itemprop="inLanguage" content="ja"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="海上輸送におけるサイバーセキュリティの航行 Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/0wlfR5qjO7E">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/0wlfR5qjO7E"
-                        title="海上輸送におけるサイバーセキュリティの航行 Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
+        <div id="episode-media" data-release-date="2026-02-03T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="海上輸送におけるサイバーセキュリティの航行 Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/0wlfR5qjO7E">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/0wlfR5qjO7E"
+                            title="海上輸送におけるサイバーセキュリティの航行 Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="海上輸送におけるサイバーセキュリティの航行 Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/9bdc2763-ddd1-4d83-b4e5-280ed1a2ce54">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/9bdc2763-ddd1-4d83-b4e5-280ed1a2ce54"
+                            title="海上輸送におけるサイバーセキュリティの航行 Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2/3/2026<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>技術とセキュリティの融合が海運業界をどのように変革しているかを発見し、輸送システムの安全と効率を確保するための重要なプラクティスを強調します。ダレン博士は、再度ゲストに招くベッツィ・フリーマンと彼女の同僚ブロック・ハシモトを招き、海運におけるサイバーセキュリティについて議論します。</p>
-<h2>主なポイント：</h2>
-<ul>
-<li>サイバーセキュリティは本質的にビジネスリスクであり、その海運業務への統合は不可欠です。</li>
-<li>海運業界は、従来の孤立したシステムから、ITと運用技術を含むより相互接続されたアプローチへの移行を目の当たりにしています。</li>
-<li>コンプライアンス基準を理解することは、小規模な海運企業にとって運営を保護し、規制に準拠するために重要です。</li>
-<li>国際海事機関は、グローバル規模でのより良いサイバーセキュリティプラクティスの推進において重要な役割を果たしています。</li>
-<li>教育と業界の専門家からの継続的なサポートは、海運企業がサイバーセキュリティのベストプラクティスを効果的に採用するために不可欠です。</li>
-</ul>
-<h2>章：</h2>
-<ul>
-<li>00:00 - 輸送におけるサイバーセキュリティの紹介</li>
-<li>02:30 - ベッツィ・フリーマンの起源ストーリー</li>
-<li>06:45 - ブロック・ハシモトの海運での旅</li>
-<li>12:00 - 海運におけるサイバーセキュリティの進化</li>
-<li>18:15 - ITと運用技術の融合</li>
-<li>24:30 - 規制遵守とその重要性</li>
-<li>30:00 - 国際基準と海事セキュリティ</li>
-<li>36:00 - サイバーセキュリティプラクティス採用の課題</li>
-<li>42:15 - トライデントシールドアライアンスとその使命</li>
-<li>49:00 - 終わりの考えと次のステップ</li>
-</ul>
-<p>この啓発的なエピソードに参加し、海運のサイバーセキュリティとそれが輸送の未来にとっていかに重要であるかを深く掘り下げましょう。仲間の読者と共有し、対話することを忘れず、詳細な理解のためにポッドキャスト全体を聴いてください！</p>
+            <p>技術とセキュリティの融合が海運業界をどのように変革しているかを発見し、輸送システムの安全と効率を確保するための重要なプラクティスを強調します。ダレン博士は、再度ゲストに招くベッツィ・フリーマンと彼女の同僚ブロック・ハシモトを招き、海運におけるサイバーセキュリティについて議論します。 主なポイント： サイバーセキュリティは本質的にビジネスリスクであり、その海運業務への統合は不可欠です。 海運業界は、従来の孤立したシステムから、ITと運用技術を含むより相互接続されたアプローチへの移行を目の当たりにしています。 コンプライアンス基準を理解することは、小規模な海運企業にとって運営を保護し、規制に準拠す</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/betsy-freeman/index.html" itemprop="url">
                 <span itemprop="name">Betsy Freeman</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/brock-hashimoto/index.html" itemprop="url">
                 <span itemprop="name">Brock Hashimoto</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -344,7 +380,7 @@
   },
   "name": "海上輸送におけるサイバーセキュリティの航行",
   "episodeNumber": 322,
-  "datePublished": "2026-01-29",
+  "datePublished": "2026-02-03",
   "inLanguage": "ja",
   "description": "技術とセキュリティの融合が海運業界をどのように変革しているかを発見し、輸送システムの安全と効率を確保するための重要なプラクティスを強調します。ダレン博士は、再度ゲストに招くベッツィ・フリーマンと彼女の同僚ブロック・ハシモトを招き、海運におけるサイバーセキュリティについて議論します。 主なポイント： サイバーセキュリティは本質的にビジネスリスクであり、その海運業務への統合は不可欠です。 海運業界は、従来の孤立したシステムから、ITと運用技術を含むより相互接続されたアプローチへの移行を目の当たりにしています。 コンプライアンス基準を理解することは、小規模な海運企業にとって運営を保護し、規制に準拠す",
   "partOfSeries": {
@@ -367,6 +403,11 @@
       "@type": "VideoObject",
       "name": "海上輸送におけるサイバーセキュリティの航行 Video",
       "embedUrl": "https://www.youtube.com/embed/0wlfR5qjO7E"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "海上輸送におけるサイバーセキュリティの航行 Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/9bdc2763-ddd1-4d83-b4e5-280ed1a2ce54"
     }
   ],
   "actor": [

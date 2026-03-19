@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -185,84 +186,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-01-22" itemprop="datePublished">2026-01-22T16:51:34.914Z</time>
+                    <time datetime="2026-01-22" itemprop="datePublished">2026-01-22T00:00:00.000Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="319"/>
             <meta itemprop="inLanguage" content="ar"/>
         </header>
 
         
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="من الطب عن بُعد إلى الذكاء الاصطناعي: عصر جديد في الطب Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/bc1f1c26">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/bc1f1c26"
-                        title="من الطب عن بُعد إلى الذكاء الاصطناعي: عصر جديد في الطب Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-21T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="من الطب عن بُعد إلى الذكاء الاصطناعي: عصر جديد في الطب Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/APU7WBS0b5I">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/APU7WBS0b5I"
+                            title="من الطب عن بُعد إلى الذكاء الاصطناعي: عصر جديد في الطب Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="من الطب عن بُعد إلى الذكاء الاصطناعي: عصر جديد في الطب Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/09380121">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/09380121"
+                            title="من الطب عن بُعد إلى الذكاء الاصطناعي: عصر جديد في الطب Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-22T00:00:00.000Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>مستقبل الرعاية الصحية هنا، وهو أكثر شخصية من أي وقت مضى. انضم إلى الدكتور دارين، مضيفك وكبير مهندسي المؤسسات، بينما يتحدث مع الدكتورة أمي بهات، المديرة التنفيذية للابتكار في الكلية الأمريكية لأمراض القلب. معًا، يناقشون دمج الذكاء الاصطناعي في الطب، كاشفين كيف تعيد هذه التقنية تشكيل رعاية المرضى وتعزيز كفاءة الأطباء.</p>
-<h2>النقاط الأساسية:</h2>
-<ul>
-<li>ميل الرعاية الصحية الأول: تؤكد الدكتورة بهات على أهمية إعادة الرعاية إلى منازل المرضى، وإعادة تعريف تجربة الرعاية الصحية، ودعوة المجتمع للمشاركة في تشكيل هذا التحول.</li>
-<li>الذكاء الاصطناعي كأداة: بدلاً من استبدال الأطباء، يدعم الذكاء الاصطناعي خبراتهم، موفرًا رؤى تمكّن من اتخاذ القرار وتعزز دورهم الحيوي في رعاية المرضى.</li>
-<li><strong>الرعاية القائمة على القيم</strong>: هناك تحول متزايد نحو الرعاية الصحية القائمة على القيم، مكافأة النتائج بدلاً من الخدمات، وتهدف إلى مرضى أصحاء ورعاية أفضل.</li>
-<li><strong>الصحة الوقائية</strong>: التدخل المبكر أمر حاسم، واستخدام التكنولوجيا يمكن أن يساعد في تحديد المخاطر قبل أن تتصاعد إلى حالات خطيرة.</li>
-<li>معرفة المجتمع: تعاون الأطباء في إنشاء نماذج الذكاء الاصطناعي يضمن أن تكون التكنولوجيا متجذرة في التجربة الواقعية، مما يعزز الثقة والحماس للابتكارات المستقبلية.</li>
-</ul>
-<h2>الفصول:</h2>
-<ul>
-<li>00:00 - مقدمة للدكتورة أمي بهات</li>
-<li>05:30 - تطور الطب عن بُعد</li>
-<li>10:15 - الذكاء الاصطناعي في دعم القرار السريري</li>
-<li>15:00 - الرعاية القائمة على القيمة مقابل الرعاية مقابل الأجر</li>
-<li>20:45 - أهمية الرعاية الوقائية</li>
-<li>25:30 - التطلع نحو مستقبل الرعاية الصحية</li>
-<li>30:00 - مشاركة المجتمع في تطوير الذكاء الاصطناعي</li>
-<li>35:00 - الخاتمة والدعوة للعمل</li>
-</ul>
-<p>إذا كنت محترفًا في الرعاية الصحية أو باحثًا مهتمًا بالابتكار في الرعاية الصحية، فلا تفوت هذه المحادثة الرائعة. اشترك في البودكاست لمزيد من المناقشات الخبيرة حول التحول الرقمي في الرعاية الصحية وما بعدها.</p>
+            <p>مستقبل الرعاية الصحية هنا، وهو أكثر شخصية من أي وقت مضى. انضم إلى الدكتور دارين، مضيفك وكبير مهندسي المؤسسات، بينما يتحدث مع الدكتورة أمي بهات، المديرة التنفيذية للابتكار في الكلية الأمريكية لأمراض القلب. معًا، يناقشون دمج الذكاء الاصطناعي في الطب، كاشفين كيف تعيد هذه التقنية تشكيل رعاية المرضى وتعز</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/ami-bhatt/index.html" itemprop="url">
                 <span itemprop="name">Ami Bhatt</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -356,9 +390,14 @@
   },
   "associatedMedia": [
     {
+      "@type": "VideoObject",
+      "name": "من الطب عن بُعد إلى الذكاء الاصطناعي: عصر جديد في الطب Video",
+      "embedUrl": "https://www.youtube.com/embed/APU7WBS0b5I"
+    },
+    {
       "@type": "AudioObject",
       "name": "من الطب عن بُعد إلى الذكاء الاصطناعي: عصر جديد في الطب Audio",
-      "contentUrl": "https://share.transistor.fm/e/bc1f1c26"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/09380121"
     }
   ],
   "actor": [

@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -193,92 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="316"/>
             <meta itemprop="inLanguage" content="it"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Agenti AI che guidano la trasformazione digitale su larga scala Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/aTr79waqrQU">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/aTr79waqrQU"
-                        title="Agenti AI che guidano la trasformazione digitale su larga scala Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Agenti AI che guidano la trasformazione digitale su larga scala Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/dbd9651a">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/dbd9651a"
-                        title="Agenti AI che guidano la trasformazione digitale su larga scala Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-10T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Agenti AI che guidano la trasformazione digitale su larga scala Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/aTr79waqrQU">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/aTr79waqrQU"
+                            title="Agenti AI che guidano la trasformazione digitale su larga scala Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Agenti AI che guidano la trasformazione digitale su larga scala Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/9ed624dd">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/9ed624dd"
+                            title="Agenti AI che guidano la trasformazione digitale su larga scala Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-11T03:33:15.740Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Immagina un mondo in cui compiti d&#39;ufficio noiosi vengono completati in pochi secondi, grazie a intelligenti agenti AI. L&#39;ospite Dr. Darren conversa con Suzanne Livingston, un&#39;esperta di AI di punta presso IBM. Insieme esplorano come l&#39;AI stia rivoluzionando la produttività sul posto di lavoro automatizzando processi onerosi e offrendo significativi risparmi sui costi.</p>
-<h2>Punti Chiave:</h2>
-<ul>
-<li><strong>Efficienza Abilitata dall’AI</strong>: Scopri come gli agenti AI possano semplificare compiti come trasferimenti di dipendenti, approvvigionamento e processi legali, risparmiando tempo e risorse preziose per le organizzazioni.</li>
-<li><strong>Risparmi sui Costi</strong>: Scopri come IBM ha risparmiato circa 4,5 miliardi di dollari trasformando metodi obsoleti in processi intelligenti grazie all&#39;AI.</li>
-<li><strong>Fiducia e Adozione</strong>: Comprendi l&#39;importanza di costruire fiducia nei sistemi AI e le sfide che le organizzazioni affrontano nell&#39;integrare queste tecnologie nelle loro strutture esistenti.</li>
-<li><strong>Focus sul Coinvolgimento degli Utenti</strong>: Scopri come le aziende possano migliorare l&#39;esperienza del cliente implementando AI che affronta proattivamente le esigenze e coinvolge gli utenti in modo fluido.</li>
-<li><strong>Reingegnerizzazione dei Processi</strong>: Esplora la necessità di rivalutare i flussi di lavoro esistenti per ottimizzarli per l&#39;automazione anziché semplicemente digitalizzarli.</li>
-</ul>
-<h2>Capitoli:</h2>
-<ul>
-<li>00:00 - Introduzione all&#39;AI e alla Produttività</li>
-<li>02:15 - Background di Suzanne nell&#39;AI e nell&#39;Automazione</li>
-<li>06:50 - L&#39;Evoluzione degli Agenti Intelligenti in IBM</li>
-<li>12:05 - Principali Casi d&#39;Uso per l&#39;AI nel Business</li>
-<li>16:40 - Superare le Sfide di Fiducia e Adozione</li>
-<li>22:25 - Il Percorso dal Progetto Pilota all&#39;Implementazione Completa</li>
-<li>27:00 - Coinvolgere i Clienti Utilizzando l&#39;AI</li>
-<li>32:50 - Come Iniziare con le Soluzioni AI di IBM</li>
-</ul>
-<p>Scopri in questo episodio il futuro del lavoro e come abbracciare l&#39;intelligenza artificiale possa portare a cambiamenti trasformativi all&#39;interno della tua organizzazione.</p>
+            <p>Immagina un mondo in cui compiti d&#39;ufficio noiosi vengono completati in pochi secondi, grazie a intelligenti agenti AI. L&#39;ospite Dr. Darren conversa con Suzanne Livingston, un&#39;esperta di AI di punta presso IBM. Insieme esplorano come l&#39;AI stia rivoluzionando la produttività sul posto</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/suzanne-livingston/index.html" itemprop="url">
                 <span itemprop="name">Suzanne Livingston</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -396,7 +415,7 @@
     {
       "@type": "AudioObject",
       "name": "Agenti AI che guidano la trasformazione digitale su larga scala Audio",
-      "contentUrl": "https://share.transistor.fm/e/dbd9651a"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/9ed624dd"
     }
   ],
   "actor": [

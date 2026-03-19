@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -186,84 +187,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-01-22" itemprop="datePublished">2026-01-22T16:51:34.914Z</time>
+                    <time datetime="2026-01-22" itemprop="datePublished">2026-01-22T00:00:00.000Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="319"/>
             <meta itemprop="inLanguage" content="it"/>
         </header>
 
         
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Dalla Telemedicina all'IA: Una Nuova Era nella Medicina Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/bc1f1c26">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/bc1f1c26"
-                        title="Dalla Telemedicina all'IA: Una Nuova Era nella Medicina Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-21T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Dalla Telemedicina all'IA: Una Nuova Era nella Medicina Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/APU7WBS0b5I">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/APU7WBS0b5I"
+                            title="Dalla Telemedicina all'IA: Una Nuova Era nella Medicina Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Dalla Telemedicina all'IA: Una Nuova Era nella Medicina Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/09380121">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/09380121"
+                            title="Dalla Telemedicina all'IA: Una Nuova Era nella Medicina Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-22T00:00:00.000Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Il futuro della sanità è qui e è più personale che mai. Unisciti al Dr. Darren, il tuo ospite e architetto principale dell&#39;impresa, mentre conversa con il Dr. Ami Bhatt, Chief Innovation Officer del American College of Cardiology. Insieme, discutono dell&#39;integrazione dell&#39;IA nella medicina, svelando come questa tecnologia stia rimodellando l&#39;assistenza ai pazienti e migliorando l&#39;efficienza dei medici.</p>
-<h2>Punti Chiave:</h2>
-<ul>
-<li>Primo Miglio della Sanità: Il Dr. Bhatt sottolinea l&#39;importanza di riportare l&#39;assistenza nelle case dei pazienti, ridefinendo l&#39;esperienza sanitaria e invitando il coinvolgimento della comunità a plasmare questo cambiamento.</li>
-<li>IA come Strumento: Invece di sostituire i medici, l&#39;IA supporta e potenzia la loro expertise, fornendo intuizioni che favoriscono il processo decisionale e rafforzano il loro ruolo vitale nell&#39;assistenza ai pazienti.</li>
-<li><strong>Assistenza Basata sul Valore</strong>: C&#39;è un crescente spostamento verso la sanità basata sul valore, premiando i risultati piuttosto che i servizi, puntando a pazienti più sani e a una migliore assistenza.</li>
-<li><strong>Salute Preventiva</strong>: L&#39;intervento precoce è cruciale e sfruttare la tecnologia può aiutare a identificare i rischi prima che si trasformino in condizioni gravi.</li>
-<li>Conoscenza della Comunità: La collaborazione tra i medici nella creazione di modelli di IA garantisce che la tecnologia sia radicata nell&#39;esperienza reale, favorendo fiducia ed entusiasmo per le future innovazioni.</li>
-</ul>
-<h2>Capitoli:</h2>
-<ul>
-<li>00:00 - Introduzione al Dr. Ami Bhatt</li>
-<li>05:30 - L&#39;Evoluzione della Telemedicina</li>
-<li>10:15 - IA nel Supporto Decisionale Clinico</li>
-<li>15:00 - Assistenza Basata sul Valore vs. Assistenza a Fee-for-Service</li>
-<li>20:45 - L&#39;Importanza dell&#39;Assistenza Preventiva</li>
-<li>25:30 - Guardando al Futuro della Sanità</li>
-<li>30:00 - Coinvolgimento della Comunità nello Sviluppo dell&#39;IA</li>
-<li>35:00 - Conclusione e Invito all&#39;Azione</li>
-</ul>
-<p>Se sei un professionista della sanità o un ricercatore interessato all&#39;innovazione sanitaria, non perdere questa conversazione perspicace. Iscriviti al podcast per ulteriori discussioni esperte sulla trasformazione digitale nella sanità e oltre.</p>
+            <p>Il futuro della sanità è qui e è più personale che mai. Unisciti al Dr. Darren, il tuo ospite e architetto principale dell&#39;impresa, mentre conversa con il Dr. Ami Bhatt, Chief Innovation Officer del American College of Cardiology. Insieme, discutono dell&#39;integrazione dell&#39;IA nella medici</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/ami-bhatt/index.html" itemprop="url">
                 <span itemprop="name">Ami Bhatt</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -354,9 +388,14 @@
   },
   "associatedMedia": [
     {
+      "@type": "VideoObject",
+      "name": "Dalla Telemedicina all'IA: Una Nuova Era nella Medicina Video",
+      "embedUrl": "https://www.youtube.com/embed/APU7WBS0b5I"
+    },
+    {
       "@type": "AudioObject",
       "name": "Dalla Telemedicina all'IA: Una Nuova Era nella Medicina Audio",
-      "contentUrl": "https://share.transistor.fm/e/bc1f1c26"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/09380121"
     }
   ],
   "actor": [

@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -185,80 +186,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-01-27" itemprop="datePublished">2026-01-27T18:09:40.793Z</time>
+                    <time datetime="2026-01-27" itemprop="datePublished">2026-01-27T18:36:49.041Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="321"/>
             <meta itemprop="inLanguage" content="de"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Digitale persönliche Sicherheit: Schlüssel zur Cybersicherheit in Unternehmen Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/kE-_4z6OBkc">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/kE-_4z6OBkc"
-                        title="Digitale persönliche Sicherheit: Schlüssel zur Cybersicherheit in Unternehmen Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
+        <div id="episode-media" data-release-date="2026-01-27T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Digitale persönliche Sicherheit: Schlüssel zur Cybersicherheit in Unternehmen Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/kE-_4z6OBkc">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/kE-_4z6OBkc"
+                            title="Digitale persönliche Sicherheit: Schlüssel zur Cybersicherheit in Unternehmen Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Digitale persönliche Sicherheit: Schlüssel zur Cybersicherheit in Unternehmen Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/a3f1b9e8-b8d8-4268-a05d-4578f848edd5.mp3">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/a3f1b9e8-b8d8-4268-a05d-4578f848edd5.mp3"
+                            title="Digitale persönliche Sicherheit: Schlüssel zur Cybersicherheit in Unternehmen Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../de/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-27T18:36:49.041Z<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Schließen Sie sich Dr. Darren und Cybersicherheitsexperte Robert Siciliano an, um praktische Einblicke in die persönliche und unternehmerische Cybersicherheit zu erhalten. Diese Episode hebt wesentliche Schritte hervor, die Einzelpersonen und Organisationen unternehmen können, um sensible Informationen in unserer zunehmend virtuellen Welt zu schützen.</p>
-<h2>Wichtige Erkenntnisse:</h2>
-<ul>
-<li><strong>Nehmen Sie Passwortmanager an</strong>: Nutzen Sie Passwortmanager und aktivieren Sie die Multi-Faktor-Authentifizierung, um Ihre Online-Sicherheit zu erhöhen.</li>
-<li><strong>Vorteile der Kredit-Sperre</strong>: Setzen Sie eine Kredit-Sperre ein, um die Kontrolle darüber zu behalten, wer auf Ihre Finanzinformationen zugreifen kann, und um Identitätsdiebstahl zu verhindern.
-Stellen Sie sicher, dass all Ihre Geräte, einschließlich Smartphones und Computer, passwortgeschützt und regelmäßig aktualisiert sind, um sich effektiv gegen Cyber-Bedrohungen zu schützen.
-Bleiben Sie über die sich entwickelnde Landschaft der Cyberkriminalität informiert, einschließlich Risiken wie Deepfakes und Sprachklonierung, um Ihnen und Ihrer Familie ein größeres Vertrauen und eine bessere Vorbereitung zu geben.
-Führen Sie offene Diskussionen über Cybersicherheit am Arbeitsplatz, um die Mitarbeiter zu motivieren und in den Schutz einzubeziehen.</li>
-</ul>
-<h2>Kapitel:</h2>
-<ul>
-<li>00:00 - Einführung und Überblick</li>
-<li>02:30 - Warum Einzelpersonen in der Cybersicherheit entscheidend sind</li>
-<li>05:15 - Wesentliches Password-Management</li>
-<li>08:45 - Kredit-Sperre als Sicherheitswerkzeug</li>
-<li>12:00 - Best Practices für Gerätesicherheit</li>
-<li>15:30 - Verständnis neuer Cyber-Bedrohungen</li>
-<li>20:00 - Die Bedeutung interaktiven Trainings</li>
-<li>25:00 - Fazit und Ressourcen</li>
-</ul>
-<p>Hören Sie sich diese aufschlussreiche Episode an, um Ihr Bewusstsein für Cybersicherheit zu stärken und umsetzbare Schritte zu einem sichereren digitalen Erlebnis zu unternehmen!</p>
+            <p>Schließen Sie sich Dr. Darren und Cybersicherheitsexperte Robert Siciliano an, um praktische Einblicke in die persönliche und unternehmerische Cybersicherheit zu erhalten. Diese Episode hebt wesentliche Schritte hervor, die Einzelpersonen und Organisationen unternehmen können, um sensible Informatio</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/robert-siciliano/index.html" itemprop="url">
                 <span itemprop="name">Robert Siciliano</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -381,6 +419,11 @@ Führen Sie offene Diskussionen über Cybersicherheit am Arbeitsplatz, um die Mi
       "@type": "VideoObject",
       "name": "Digitale persönliche Sicherheit: Schlüssel zur Cybersicherheit in Unternehmen Video",
       "embedUrl": "https://www.youtube.com/embed/kE-_4z6OBkc"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Digitale persönliche Sicherheit: Schlüssel zur Cybersicherheit in Unternehmen Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/a3f1b9e8-b8d8-4268-a05d-4578f848edd5.mp3"
     }
   ],
   "actor": [

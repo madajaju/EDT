@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -192,92 +193,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="329"/>
             <meta itemprop="inLanguage" content="de"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Veränderung durch Geschichten gestalten Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/AuITAWfpQMs">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/AuITAWfpQMs"
-                        title="Veränderung durch Geschichten gestalten Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Veränderung durch Geschichten gestalten Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/ebef7e79-de9f-4310-8722-7e195ebeaf64">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/ebef7e79-de9f-4310-8722-7e195ebeaf64"
-                        title="Veränderung durch Geschichten gestalten Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-02-26T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Veränderung durch Geschichten gestalten Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/AuITAWfpQMs">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/AuITAWfpQMs"
+                            title="Veränderung durch Geschichten gestalten Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../de/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Veränderung durch Geschichten gestalten Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/ebef7e79-de9f-4310-8722-7e195ebeaf64">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/ebef7e79-de9f-4310-8722-7e195ebeaf64"
+                            title="Veränderung durch Geschichten gestalten Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../de/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2/26/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Begleite Dr. Darren und seine Gästin Gabrielle Dolan, während sie die wichtige Rolle des Geschichtenerzählens bei der Führung digitaler Veränderungen mit der Meistererzählerin und Kollegin im Podcast, Gabrielle Dolan, erkunden. Entdecke, wie persönliche Erzählungen Widerstände abbauen und Empathie im Angesicht organisatorischer Transformation fördern können.</p>
-<h2>Wichtige Erkenntnisse:</h2>
-<ul>
-<li><strong>Die Kraft der Geschichten</strong>: Geschichtenerzählen kann Abwehrhaltungen senken und Identifikation während Diskussionen über digitale Transformation fördern.</li>
-<li><strong>Empathie und Verbindung</strong>: Das Teilen persönlicher Erfahrungen schafft emotionale Verbindungen und hilft Teams, Veränderungen gemeinsam zu bewältigen.</li>
-<li><strong>Echtheit in der Botschaft</strong>: Authentische Geschichten laden zum Vertrauen ein und helfen, komplexe Veränderungen zu kommunizieren, ohne manipulativ zu wirken.</li>
-<li><strong>Klarheit ist entscheidend</strong>: Strebe nach Geschichten, die kurz (60-90 Sekunden) und fokussiert auf Klarheit sind; vermeide Übererklärungen.</li>
-<li><strong>Identifizierung von Motivatoren</strong>: Verstehe sowohl positive als auch negative Ängste rund um Veränderungen, um deine Geschichten effektiv zu gestalten.</li>
-<li><strong>Widerstandskraft durch Teilen</strong>: Verwende persönliche Geschichten von Durchhaltevermögen, um Teams durch die Herausforderungen der Transformation zu motivieren.</li>
-</ul>
-<h2>Kapitel:</h2>
-<ul>
-<li>00:00 - Einführung in die Episode</li>
-<li>02:10 - Gabrielles Hintergrundgeschichte und ihr Weg zum Geschichtenerzählen</li>
-<li>09:25 - Die Bedeutung des Geschichtenerzählens in der digitalen Transformation</li>
-<li>15:40 - Umgang mit Widerstand gegen Veränderungen</li>
-<li>22:30 - Effektive Veränderungsgeschichten gestalten</li>
-<li>30:10 - Die Rolle der Authentizität im Geschichtenerzählen</li>
-<li>36:55 - Abschließende Bemerkungen und wo man Gabrielle finden kann</li>
-</ul>
-<p>Engagiere dich tiefer mit dem Gespräch, indem du diese Episode streamst und Gabrielles Einblicke in die Kunst des Geschichtenerzählens erkundest. Vergiss nicht, deine Gedanken und Geschichten mit uns in den Kommentaren zu teilen!</p>
+            <p>Begleite Dr. Darren und seine Gästin Gabrielle Dolan, während sie die wichtige Rolle des Geschichtenerzählens bei der Führung digitaler Veränderungen mit der Meistererzählerin und Kollegin im Podcast, Gabrielle Dolan, erkunden. Entdecke, wie persönliche Erzählungen Widerstände abbauen und Empathie i</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/gabrielle-dolan/index.html" itemprop="url">
                 <span itemprop="name">Gabrielle Dolan</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -401,7 +420,7 @@
     {
       "@type": "AudioObject",
       "name": "Veränderung durch Geschichten gestalten Audio",
-      "contentUrl": "https://share.transistor.fm/e/ebef7e79-de9f-4310-8722-7e195ebeaf64"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/ebef7e79-de9f-4310-8722-7e195ebeaf64"
     }
   ],
   "actor": [

@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -193,92 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="335"/>
             <meta itemprop="inLanguage" content="fr"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Augmenter votre aisance en IA : étapes vers l'augmentation par l'IA Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/f0qLAD_IAbQ">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/f0qLAD_IAbQ"
-                        title="Augmenter votre aisance en IA : étapes vers l'augmentation par l'IA Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Augmenter votre aisance en IA : étapes vers l'augmentation par l'IA Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/79b2d4d9-6912-466b-a202-207b9acd91a3">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/79b2d4d9-6912-466b-a202-207b9acd91a3"
-                        title="Augmenter votre aisance en IA : étapes vers l'augmentation par l'IA Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-18T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Augmenter votre aisance en IA : étapes vers l'augmentation par l'IA Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/f0qLAD_IAbQ">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/f0qLAD_IAbQ"
+                            title="Augmenter votre aisance en IA : étapes vers l'augmentation par l'IA Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../fr/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Augmenter votre aisance en IA : étapes vers l'augmentation par l'IA Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/79b2d4d9-6912-466b-a202-207b9acd91a3">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/79b2d4d9-6912-466b-a202-207b9acd91a3"
+                            title="Augmenter votre aisance en IA : étapes vers l'augmentation par l'IA Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../fr/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-19<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Bienvenue dans un épisode perspicace de <em>Embracing Digital Transformation</em>, où l&#39;hôte Dr. Darren discute de l&#39;avenir de la politique et de la stratégie en matière d&#39;IA avec l&#39;invité de retour Jon Hamm. Avec l&#39;IA transformant les industries à un rythme sans précédent, Jon partage son expertise sur la manière dont les dirigeants peuvent naviguer avec succès dans ce changement, passant d&#39;une simple politique à une mise en œuvre efficace de la stratégie IA.</p>
-<h2>Points Clés :</h2>
-<ul>
-<li><strong>Compréhension de la Stratégie IA</strong> : Apprenez à passer d&#39;une politique de base à une stratégie globale qui favorise l&#39;innovation et l&#39;efficacité.</li>
-<li><strong>L&#39;Importance de la Culture Numérique</strong> : Une connaissance efficace de la façon de susciter l&#39;IA peut améliorer la performance individuelle et organisationnelle, faisant de l&#39;IA un outil précieux plutôt qu&#39;une menace.</li>
-<li><strong>Gestion du Changement</strong> : Encouragez une culture d&#39;expérimentation de l&#39;IA pour améliorer l&#39;engagement et la productivité des employés plutôt que d&#39;instaurer la peur de la technologie.</li>
-<li><strong>Gouvernance contre Utilité</strong> : Élaborer des cadres de gouvernance efficaces qui autonomisent les employés tout en maintenant la sécurité des données et la conformité.</li>
-<li><strong>Pratiques de Gestion des Données</strong> : Assurez-vous que des données précises et fiables soutiennent les initiatives d&#39;IA, car de mauvaises données entraînent de mauvais résultats.</li>
-</ul>
-<h2>Chapitres :</h2>
-<ul>
-<li>00:00 - Accueil et Introduction  </li>
-<li>01:30 - Transition de la Politique IA à la Stratégie  </li>
-<li>05:00 - L&#39;Importance de la Culture Numérique  </li>
-<li>08:45 - Encourager la Gestion du Changement dans les Organisations  </li>
-<li>15:20 - Cadres de Gouvernance pour l&#39;Utilisation de l&#39;IA  </li>
-<li>20:15 - Le Rôle d&#39;une Gestion Efficace des Données  </li>
-<li>25:00 - Discussion sur les Histoires de Réussite de l&#39;IA  </li>
-<li>30:00 - Pensées de Clôture et Perspectives Futures</li>
-</ul>
-<p>Explorez l&#39;avenir de l&#39;IA dans votre organisation et rejoignez-nous pour cette conversation éclairante qui promet de redéfinir votre vision de la transformation numérique !</p>
+            <p>Bienvenue dans un épisode perspicace de Embracing Digital Transformation , où l&#39;hôte Dr. Darren discute de l&#39;avenir de la politique et de la stratégie en matière d&#39;IA avec l&#39;invité de retour Jon Hamm. Avec l&#39;IA transformant les industries à un rythme sans précédent, Jon partage s</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../fr/guests/john-byron-hanby-iv/index.html" itemprop="url">
                 <span itemprop="name">John Byron Hanby IV</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../fr/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -406,7 +425,7 @@
     {
       "@type": "AudioObject",
       "name": "Augmenter votre aisance en IA : étapes vers l'augmentation par l'IA Audio",
-      "contentUrl": "https://share.transistor.fm/e/79b2d4d9-6912-466b-a202-207b9acd91a3"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/79b2d4d9-6912-466b-a202-207b9acd91a3"
     }
   ],
   "actor": [

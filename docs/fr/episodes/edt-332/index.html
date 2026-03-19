@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -193,92 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="332"/>
             <meta itemprop="inLanguage" content="fr"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="L'IA peut-elle renforcer la démocratie ? L'avenir des services publics. Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/v9wi9gVd-hA">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/v9wi9gVd-hA"
-                        title="L'IA peut-elle renforcer la démocratie ? L'avenir des services publics. Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="L'IA peut-elle renforcer la démocratie ? L'avenir des services publics. Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/b2f527ab-14a6-4720-ad0f-750033e667c8">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/b2f527ab-14a6-4720-ad0f-750033e667c8"
-                        title="L'IA peut-elle renforcer la démocratie ? L'avenir des services publics. Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-09T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="L'IA peut-elle renforcer la démocratie ? L'avenir des services publics. Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/v9wi9gVd-hA">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/v9wi9gVd-hA"
+                            title="L'IA peut-elle renforcer la démocratie ? L'avenir des services publics. Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../fr/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="L'IA peut-elle renforcer la démocratie ? L'avenir des services publics. Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/b2f527ab-14a6-4720-ad0f-750033e667c8">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/b2f527ab-14a6-4720-ad0f-750033e667c8"
+                            title="L'IA peut-elle renforcer la démocratie ? L'avenir des services publics. Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../fr/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-10<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>La transformation numérique peut-elle vraiment améliorer la démocratie ? Rejoignez Dr. Darren, architecte d&#39;entreprise en chef et éducateur passionné, alors qu&#39;il discute de l&#39;intersection cruciale entre la technologie, la politique publique et l&#39;engagement citoyen avec Katherine Friday, partenaire mondiale chez EY. Dans cet épisode, ils explorent le besoin urgent pour les gouvernements d&#39;adopter l&#39;IA tout en maintenant la transparence et la confiance du public.</p>
-<h2>Points clés :</h2>
-<ul>
-<li><strong>L&#39;importance de l&#39;IA dans le gouvernement :</strong> L&#39;IA peut améliorer considérablement l&#39;efficacité et l&#39;expérience citoyenne, mais elle doit être déployée avec prudence en gardant à l&#39;esprit la confiance du public.</li>
-<li><strong>La transparence est essentielle :</strong> Les gouvernements doivent communiquer ouvertement sur la façon dont l&#39;IA est utilisée et fournir des voies claires pour que les citoyens puissent contester les décisions prises par des systèmes automatisés.</li>
-<li><strong>Commencer petit :</strong> La mise en œuvre réussie de l&#39;IA peut commencer par des initiatives à faible risque qui s&#39;attaquent à des points de douleur spécifiques dans les services publics.</li>
-<li><strong>Formation continue du personnel :</strong> Les employés du secteur public ont besoin de formation continue pour s&#39;adapter aux nouvelles technologies et maintenir une gouvernance efficace.</li>
-<li><strong>Renforcer la confiance des citoyens :</strong> Les gouvernements qui reconnaissent leurs défis et partagent à la fois succès et échecs avec le public favoriseront une relation plus confiante avec les citoyens.</li>
-</ul>
-<h2>Chapitres :</h2>
-<ul>
-<li>00:00 Introduction à l&#39;épisode</li>
-<li>01:30 Rencontre avec Catherine Friday</li>
-<li>05:00 Le besoin de transparence dans l&#39;IA</li>
-<li>10:00 Défis uniques dans la technologie gouvernementale</li>
-<li>15:00 Stratégies pour une mise en œuvre efficace de l&#39;IA</li>
-<li>20:00 Le rôle de la formation continue du personnel</li>
-<li>25:00 Les implications philosophiques de l&#39;IA dans la gouvernance</li>
-<li>30:00 Conclusion et réflexions finales</li>
-</ul>
-<p>Si vous êtes motivé à comprendre comment l&#39;IA peut transformer les services publics et renforcer la démocratie, ne manquez pas cette conversation enrichissante ! Pour plus de ressources et de discussions plus approfondies, visitez <a href="http://www.embracingdigital.org">Embracing Digital Transformation</a>. N&#39;hésitez pas à vous abonner et à partager cet épisode pour diffuser les connaissances !</p>
+            <p>La transformation numérique peut-elle vraiment améliorer la démocratie ? Rejoignez Dr. Darren, architecte d&#39;entreprise en chef et éducateur passionné, alors qu&#39;il discute de l&#39;intersection cruciale entre la technologie, la politique publique et l&#39;engagement citoyen avec Katherine Fri</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../fr/guests/catherine-friday/index.html" itemprop="url">
                 <span itemprop="name">Catherine Friday</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../fr/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -385,7 +404,7 @@
     {
       "@type": "AudioObject",
       "name": "L'IA peut-elle renforcer la démocratie ? L'avenir des services publics. Audio",
-      "contentUrl": "https://share.transistor.fm/e/b2f527ab-14a6-4720-ad0f-750033e667c8"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/b2f527ab-14a6-4720-ad0f-750033e667c8"
     }
   ],
   "actor": [

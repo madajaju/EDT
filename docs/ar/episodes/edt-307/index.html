@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -192,91 +193,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="307"/>
             <meta itemprop="inLanguage" content="ar"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="فجوة الأداء: كيف تسارع الذكاء الاصطناعي عدم المساواة في مكان العمل Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/rfTb8veTJ-0">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/rfTb8veTJ-0"
-                        title="فجوة الأداء: كيف تسارع الذكاء الاصطناعي عدم المساواة في مكان العمل Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="فجوة الأداء: كيف تسارع الذكاء الاصطناعي عدم المساواة في مكان العمل Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/ec4f20d1">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/ec4f20d1"
-                        title="فجوة الأداء: كيف تسارع الذكاء الاصطناعي عدم المساواة في مكان العمل Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-12T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="فجوة الأداء: كيف تسارع الذكاء الاصطناعي عدم المساواة في مكان العمل Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/rfTb8veTJ-0">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/rfTb8veTJ-0"
+                            title="فجوة الأداء: كيف تسارع الذكاء الاصطناعي عدم المساواة في مكان العمل Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="فجوة الأداء: كيف تسارع الذكاء الاصطناعي عدم المساواة في مكان العمل Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/ec4f20d1">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/ec4f20d1"
+                            title="فجوة الأداء: كيف تسارع الذكاء الاصطناعي عدم المساواة في مكان العمل Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-12T21:21:17.547Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>هل أنت مستعد لتحدي تصوراتك حول دور الذكاء الاصطناعي في مكان العمل اليوم؟ انضم إلى الدكتور دارين، مضيفك وكبير مهندسي المؤسسات، حيث يشارك في محادثة مثيرة للتفكير مع مات كيسبي، المؤسس ورئيس قسم الذكاء الاصطناعي في AICoaches.com. ستوفر خبرتهما في هذا المجال فهماً أعمق لتعقيدات فجوات الأداء التي تفاقمت بسبب الذكاء الاصطناعي، وكيف يمكن للموظفين عاليي الأداء أن يزدهروا بينما يكافح الآخرون للحصول على الاهتمام.</p>
-<h2>النقاط الرئيسية</h2>
-<p>ستعمل هذه الأفكار العملية على تمكينك من التنقل في مكان العمل المدفوع بالذكاء الاصطناعي بثقة ومرونة.</p>
-<ul>
-<li><strong>الدور المزدوج للذكاء الاصطناعي</strong>: فهم كيفية تضخيم الذكاء الاصطناعي لفجوات الأداء بين الموظفين عاليي الأداء والمنخفضين.</li>
-<li><strong>المرونة في التعلم</strong>: تطوير عقليه للتكيف بسرعة في مواجهة الاضطرابات التكنولوجية وتعزيز بيئة التعلم المستمر.</li>
-<li><strong>أهمية التعاطف</strong>: اكتشف كيفية استغلال قوة التعاطف للتنقل في تغييرات مكان العمل والتواصل بشكل أكثر فعالية مع فريقك، مع نصائح وأفكار عملية يمكنك تنفيذها على الفور وبدء تطبيق هذه الأفكار في مسيرتك المهنية.</li>
-<li><strong>مهارات التفكير النقدي</strong>: اتقن فن التفكير النقدي لتحليل النتائج المختلفة، خاصة في بيئة رقمية تتطور بسرعة.</li>
-<li><strong>احتضان التغيير</strong>: استخدم الذكاء الاصطناعي كأداة للابتكار بدلاً من كونه تهديدًا، مما يعزز نهجًا متفائلاً تجاه التقنيات الجديدة.</li>
-</ul>
-<h2>الفصول:</h2>
-<ul>
-<li>[00:00] الترحيب والمقدمة</li>
-<li>[02:15] قصص المنشأ: من محل الأسماك والبطاطس إلى قائد الذكاء الاصطناعي</li>
-<li>[10:45] فجوة الأداء وتأثير الذكاء الاصطناعي</li>
-<li>[18:30] التنقل في التغيير: المرونة وقابلية التكيف</li>
-<li>[26:50] تطبيق مفارقة جيفونز: المزيد من الحاجة للبشر في السياقات المدفوعة بالذكاء الاصطناعي</li>
-<li>[35:00] المهارات الأساسية للمستقبل: إطار عمل ACE ICC</li>
-</ul>
-<p>اتخذ الخطوة الأولى في تحويل فهمك للذكاء الاصطناعي في مكان العمل - استمتع بالحلقة التنويرية اليوم!</p>
+            <p>هل أنت مستعد لتحدي تصوراتك حول دور الذكاء الاصطناعي في مكان العمل اليوم؟ انضم إلى الدكتور دارين، مضيفك وكبير مهندسي المؤسسات، حيث يشارك في محادثة مثيرة للتفكير مع مات كيسبي، المؤسس ورئيس قسم الذكاء الاصطناعي في AICoaches.com. ستوفر خبرتهما في هذا المجال فهماً أعمق لتعقيدات فجوات الأداء التي تفاقمت ب</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/matt-kesby/index.html" itemprop="url">
                 <span itemprop="name">Matt Kesby</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -386,7 +406,7 @@
     {
       "@type": "AudioObject",
       "name": "فجوة الأداء: كيف تسارع الذكاء الاصطناعي عدم المساواة في مكان العمل Audio",
-      "contentUrl": "https://share.transistor.fm/e/ec4f20d1"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/ec4f20d1"
     }
   ],
   "actor": [

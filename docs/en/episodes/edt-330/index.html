@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -287,95 +288,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="330"/>
             <meta itemprop="inLanguage" content="en"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/p3NUgJUmHCY">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/p3NUgJUmHCY"
-                        title="Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
-                        title="Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-03T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/p3NUgJUmHCY">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/p3NUgJUmHCY"
+                            title="Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
+                            title="Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 3/3/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Disaster recovery is a crucial yet often overlooked aspect of business continuity. Join Dr. Darren as he converses with Tom May, CEO of Different Dev, about why cloud solutions and Software as a Service (SaaS) aren’t enough for comprehensive disaster recovery. Discover actionable insights that can help safeguard your business against unexpected calamities.</p>
-<h2>Key Takeaways:</h2>
-<ul>
-<li>Understanding that effective disaster recovery requires ongoing effort, not a “one and done” approach.</li>
-<li>Prioritize critical business systems based on how quickly they need to be operational after a disaster.</li>
-<li>The importance of having a Business Impact Analysis (BIA) to determine the cost of downtime for various systems.</li>
-<li>Why relying solely on cloud providers can give a false sense of security; it&#39;s essential to have independent backups.</li>
-<li>Implement a phased approach for disaster recovery planning, starting with a minimal viable product and evolving from there.</li>
-<li>Foster a culture of documentation within your organization to mitigate the risks associated with key personnel turnover.</li>
-</ul>
-<h2>Chapters:</h2>
-<ul>
-<li>(00:00) Introduction</li>
-<li>(02:15) The Importance of Disaster Recovery</li>
-<li>(05:45) Tom May&#39;s Origin Story</li>
-<li>(10:30) The Executive Perspective: Key Considerations</li>
-<li>(15:10) The Need for Business Impact Analysis</li>
-<li>(20:00) Understanding Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO)</li>
-<li>(25:30) The Role of Cloud and Compliance Challenges</li>
-<li>(30:45) Ransomware Awareness and Prevention</li>
-<li>(35:00) Finding the Right Balance in Disaster Planning</li>
-<li>(40:15) Conclusion and Resources</li>
-</ul>
-<p>For deeper understanding and tailored advice, reach out to Tom May at <a href="http://differentdev.com">differentdev.com</a> and start planning your catastrophe mitigation strategy today!</p>
+            <p>Disaster recovery is a crucial yet often overlooked aspect of business continuity. Join Dr. Darren as he converses with Tom May, CEO of Different Dev, about why cloud solutions and Software as a Service (SaaS) aren’t enough for comprehensive disaster recovery. Discover actionable insights that can h</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../en/guests/tom-may/index.html" itemprop="url">
                 <span itemprop="name">Tom May</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -497,7 +513,7 @@
     {
       "@type": "AudioObject",
       "name": "Disaster Recovery for Executives: Why Cloud & SaaS Are NOT Enough Audio",
-      "contentUrl": "https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
     }
   ],
   "actor": [

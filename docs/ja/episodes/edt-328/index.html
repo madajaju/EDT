@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -193,78 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="328"/>
             <meta itemprop="inLanguage" content="ja"/>
         </header>
 
         
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="学びの変革：AIの役割 Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/c1539d4a-900f-4338-adf3-63e1d04685df">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/c1539d4a-900f-4338-adf3-63e1d04685df"
-                        title="学びの変革：AIの役割 Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-02-24T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="学びの変革：AIの役割 Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/k8KD5F9GO5A">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/k8KD5F9GO5A"
+                            title="学びの変革：AIの役割 Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="学びの変革：AIの役割 Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/c1539d4a-900f-4338-adf3-63e1d04685df">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/c1539d4a-900f-4338-adf3-63e1d04685df"
+                            title="学びの変革：AIの役割 Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2/24/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>ダレン博士と再登場のカルメ・タグリアーニ博士が、技術と学習の交差点を探求します。AIを取り入れることで、教育のパラダイムがどのように再形成され、急速に進化する現代の世界において学生の批判的思考がどのように強化されるかを発見してください。</p>
-<h2>主なポイント：</h2>
-<ul>
-<li>教育におけるAIの破壊的潜在能力を理解することは、効果的な学習戦略を作成するために不可欠です。</li>
-<li>暗記よりも批判的思考と応用を重視することで、学生が教材に深く関与できるようになります。</li>
-<li>教授法における実世界の応用の重要性は、学生の理解力と記憶力を大きく高めることができます。</li>
-<li>AIツールを活用することで、教育者は創造性と革新性を育むカスタマイズされた学習体験を開発することができます。</li>
-<li>教育的厳格さは、理論的な知識と実践的な知識のバランスを取るべきであり、学生を現実世界の課題に備えさせる必要があります。</li>
-</ul>
-<h2>章：</h2>
-<ul>
-<li>00:00 - はじめに</li>
-<li>02:30 - デジタル変革の受け入れ</li>
-<li>05:00 - 学習におけるAIの役割</li>
-<li>08:15 - 批判的思考の重要性</li>
-<li>11:45 - 教育実践の変革</li>
-<li>15:30 - 従来の教育における課題</li>
-<li>18:00 - 魅力的な学習環境の創造</li>
-<li>21:15 - 展望：AIとともに進化する教育の未来</li>
-<li>24:00 - 終わりの言葉と最終的な所感</li>
-</ul>
-<p>この啓発的なエピソードに飛び込み、AIを活用して教育体験を向上させる方法を発見してください！この会話に価値を見出した場合は、ポッドキャストプラットフォームで5つ星の評価を付け、ネットワークでシェアしてください。</p>
+            <p>ダレン博士と再登場のカルメ・タグリアーニ博士が、技術と学習の交差点を探求します。AIを取り入れることで、教育のパラダイムがどのように再形成され、急速に進化する現代の世界において学生の批判的思考がどのように強化されるかを発見してください。 主なポイント： 教育におけるAIの破壊的潜在能力を理解することは、効果的な学習戦略を作成するために不可欠です。 暗記よりも批判的思考と応用を重視することで、学生が教材に深く関与できるようになります。 教授法における実世界の応用の重要性は、学生の理解力と記憶力を大きく高めることができます。 AIツールを活用することで、教育者は創造性と革新性を育むカスタマイズされ</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/carm-taglienti/index.html" itemprop="url">
                 <span itemprop="name">Carm Taglienti</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -373,9 +406,14 @@
   },
   "associatedMedia": [
     {
+      "@type": "VideoObject",
+      "name": "学びの変革：AIの役割 Video",
+      "embedUrl": "https://www.youtube.com/embed/k8KD5F9GO5A"
+    },
+    {
       "@type": "AudioObject",
       "name": "学びの変革：AIの役割 Audio",
-      "contentUrl": "https://share.transistor.fm/e/c1539d4a-900f-4338-adf3-63e1d04685df"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/c1539d4a-900f-4338-adf3-63e1d04685df"
     }
   ],
   "actor": [

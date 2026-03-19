@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -186,84 +187,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-01-22" itemprop="datePublished">2026-01-22T16:51:34.914Z</time>
+                    <time datetime="2026-01-22" itemprop="datePublished">2026-01-22T00:00:00.000Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="319"/>
             <meta itemprop="inLanguage" content="fr"/>
         </header>
 
         
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="De la télémédecine à l'IA : Une nouvelle ère en médecine Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/bc1f1c26">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/bc1f1c26"
-                        title="De la télémédecine à l'IA : Une nouvelle ère en médecine Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-21T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="De la télémédecine à l'IA : Une nouvelle ère en médecine Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/APU7WBS0b5I">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/APU7WBS0b5I"
+                            title="De la télémédecine à l'IA : Une nouvelle ère en médecine Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../fr/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="De la télémédecine à l'IA : Une nouvelle ère en médecine Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/09380121">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/09380121"
+                            title="De la télémédecine à l'IA : Une nouvelle ère en médecine Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../fr/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-22T00:00:00.000Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>L&#39;avenir des soins de santé est là, et il est plus personnel que jamais. Rejoignez le Dr Darren, votre hôte et architecte en chef de l&#39;entreprise, alors qu&#39;il discute avec le Dr Ami Bhatt, directeur de l&#39;innovation au Collège américain de cardiologie. Ensemble, ils abordent l&#39;intégration de l&#39;IA dans la médecine, révélant comment cette technologie redéfinit les soins aux patients et améliore l&#39;efficacité des cliniciens.</p>
-<h2>Points Clés :</h2>
-<ul>
-<li>Premier Mile des Soins de Santé : Le Dr Bhatt souligne l&#39;importance de ramener les soins chez les patients, redéfinissant l&#39;expérience des soins de santé et invitant à l&#39;implication de la communauté pour façonner ce changement.</li>
-<li>L&#39;IA comme Outil : Plutôt que de remplacer les cliniciens, l&#39;IA soutient et enrichit leur expertise, fournissant des informations qui renforcent la prise de décision et confirment leur rôle essentiel dans les soins aux patients.</li>
-<li><strong>Soins Basés sur la Valeur</strong> : Il y a un changement croissant vers des soins de santé basés sur la valeur, récompensant les résultats plutôt que les services, visant des patients en meilleure santé et des soins de meilleure qualité.</li>
-<li><strong>Santé Préventive</strong> : L&#39;intervention précoce est cruciale, et tirer parti de la technologie peut aider à identifier les risques avant qu&#39;ils ne se transforment en conditions graves.</li>
-<li>Connaissance de la Communauté : La collaboration entre cliniciens pour créer des modèles d&#39;IA garantit que la technologie soit ancrée dans l&#39;expérience réelle, favorisant la confiance et l&#39;enthousiasme pour les innovations futures.</li>
-</ul>
-<h2>Chapitres :</h2>
-<ul>
-<li>00:00 - Introduction au Dr Ami Bhatt</li>
-<li>05:30 - L&#39;Évolution de la Télémédecine</li>
-<li>10:15 - L&#39;IA dans le Support à la Décision Clinique</li>
-<li>15:00 - Soins Basés sur la Valeur vs. Soins Rémunérés à l&#39;Acte</li>
-<li>20:45 - L&#39;Importance des Soins Préventifs</li>
-<li>25:30 - Regarder vers l&#39;Avenir des Soins de Santé</li>
-<li>30:00 - Implication de la Communauté dans le Développement de l&#39;IA</li>
-<li>35:00 - Conclusion et Appel à l&#39;Action</li>
-</ul>
-<p>Si vous êtes un professionnel de la santé ou un chercheur intéressé par l&#39;innovation dans le secteur de la santé, ne manquez pas cette conversation instructive. Abonnez-vous au podcast pour d&#39;autres discussions d&#39;experts sur la transformation numérique dans le domaine de la santé et au-delà.</p>
+            <p>L&#39;avenir des soins de santé est là, et il est plus personnel que jamais. Rejoignez le Dr Darren, votre hôte et architecte en chef de l&#39;entreprise, alors qu&#39;il discute avec le Dr Ami Bhatt, directeur de l&#39;innovation au Collège américain de cardiologie. Ensemble, ils abordent l&#39;int</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../fr/guests/ami-bhatt/index.html" itemprop="url">
                 <span itemprop="name">Ami Bhatt</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../fr/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -354,9 +388,14 @@
   },
   "associatedMedia": [
     {
+      "@type": "VideoObject",
+      "name": "De la télémédecine à l'IA : Une nouvelle ère en médecine Video",
+      "embedUrl": "https://www.youtube.com/embed/APU7WBS0b5I"
+    },
+    {
       "@type": "AudioObject",
       "name": "De la télémédecine à l'IA : Une nouvelle ère en médecine Audio",
-      "contentUrl": "https://share.transistor.fm/e/bc1f1c26"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/09380121"
     }
   ],
   "actor": [

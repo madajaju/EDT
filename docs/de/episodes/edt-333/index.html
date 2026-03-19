@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -192,91 +193,106 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="333"/>
             <meta itemprop="inLanguage" content="de"/>
         </header>
 
         
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="KI Game Jam 2026: KI-unterstützte Spieleentwicklung Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/4fd2face-8215-4c8e-b99b-0815c68ca8e2">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
-                        title="KI Game Jam 2026: KI-unterstützte Spieleentwicklung Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-11T07:00:00.000Z">
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../de/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="KI Game Jam 2026: KI-unterstützte Spieleentwicklung Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/4fd2face-8215-4c8e-b99b-0815c68ca8e2">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
+                            title="KI Game Jam 2026: KI-unterstützte Spieleentwicklung Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../de/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-12<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Dr. Darren wird von seinen drei Söhnen – Matthew, Jacob und David Pulsipher – während ihres fesselnden Ausflugs in einen 30-stündigen Game Jam begleitet. Gemeinsam tauchen sie in innovative Anwendungen von generativer KI ein und enthüllen Einblicke, die sie aus ihren einzigartigen Erfahrungen und den Herausforderungen während des intensiven Hackathons gewonnen haben.</p>
-<h2>Wichtige Erkenntnisse:</h2>
-<ul>
-<li><strong>KI als Collaborator</strong>: Generative KI sollte als Werkzeug zur Erweiterung menschlicher Kreativität angesehen werden, das hilft, Ideen zum Leben zu erwecken, anstatt menschliche Innovation zu ersetzen.</li>
-<li><strong>Klare Kommunikation</strong>: Effektive Anweisungen an KI-Werkzeuge sind entscheidend; je spezifischer du in deinen Eingaben bist, desto besser sind die Ergebnisse.</li>
-<li><strong>Iterative Entwicklung</strong>: Kontinuierliches Testen und Verbessern von Spielelementen ist grundlegend, um ein angenehmes Benutzererlebnis zu maßschneidern.</li>
-<li><strong>Vielfältige Strategien</strong>: Verschiedene Ansätze zur Nutzung von KI führten zu unterschiedlichen Spielergebnissen, was die Bedeutung individueller Perspektiven und Expertise hervorhebt.</li>
-<li><strong>Stärken verstehen</strong>: Richte deine Projektziele an den inhärenten Stärken von KI-Modellen aus, wie Datenverarbeitung und Mustererkennung, um ihr Potenzial zu maximieren.</li>
-<li><strong>Fehler akzeptieren</strong>: Zu lernen, sich anzupassen und unerwartete Ideen von KI zu integrieren, kann zu einzigartigen und unterhaltsamen Spielmechaniken führen.</li>
-</ul>
-<h2>Kapitel:</h2>
-<ul>
-<li>00:00 Willkommen und Einführung in den Game Jam 2026</li>
-<li>05:32 Die Idee hinter dem Game Jam</li>
-<li>10:15 Regeln und Vorschriften erklärt</li>
-<li>15:45 Werkzeuge und Abonnements, die von jedem Teilnehmer genutzt werden</li>
-<li>25:20 Einzigartige Ansätze zur Spieleentwicklung</li>
-<li>30:45 Herausforderungen während der Entwicklung</li>
-<li>35:10 Einblicke in die Nutzung von generativer KI</li>
-<li>40:25 Potenzial für zukünftige Game Jams</li>
-<li>45:10 Fazit und Abschlussgedanken</li>
-</ul>
-<p>Begleite uns in dieser aufschlussreichen Episode und entdecke, wie eine einfache Idee zu tiefgreifenden Erkenntnissen in der sich ständig weiterentwickelnden Welt von Technologie und Kreativität führen kann!</p>
+            <p>Dr. Darren wird von seinen drei Söhnen – Matthew, Jacob und David Pulsipher – während ihres fesselnden Ausflugs in einen 30-stündigen Game Jam begleitet. Gemeinsam tauchen sie in innovative Anwendungen von generativer KI ein und enthüllen Einblicke, die sie aus ihren einzigartigen Erfahrungen und de</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/matthew-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Matthew Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/jacob-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Jacob Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/david-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">David Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -369,7 +385,7 @@
     {
       "@type": "AudioObject",
       "name": "KI Game Jam 2026: KI-unterstützte Spieleentwicklung Audio",
-      "contentUrl": "https://share.transistor.fm/e/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
     }
   ],
   "actor": [

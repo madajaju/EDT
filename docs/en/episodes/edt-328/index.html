@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -287,78 +288,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="328"/>
             <meta itemprop="inLanguage" content="en"/>
         </header>
 
         
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Transforming Learning: The Role of AI Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/c1539d4a-900f-4338-adf3-63e1d04685df">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/c1539d4a-900f-4338-adf3-63e1d04685df"
-                        title="Transforming Learning: The Role of AI Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-02-24T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Transforming Learning: The Role of AI Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/k8KD5F9GO5A">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/k8KD5F9GO5A"
+                            title="Transforming Learning: The Role of AI Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Transforming Learning: The Role of AI Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/c1539d4a-900f-4338-adf3-63e1d04685df">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/c1539d4a-900f-4338-adf3-63e1d04685df"
+                            title="Transforming Learning: The Role of AI Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2/24/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Dr. Darren and returning guest Dr. Carme Tagliani as they navigate the intersection of technology and learning. Discover how embracing AI can reshape educational paradigms and enhance critical thinking among students in today&#39;s rapidly evolving world.</p>
-<h2>Key Takeaways:</h2>
-<ul>
-<li>Understanding AI&#39;s disruptive potential in education is essential for crafting effective learning strategies.</li>
-<li>Emphasizing critical thinking and application over rote memorization empowers students to engage deeply with the material.</li>
-<li>The importance of real-world applications in teaching techniques can significantly enhance student comprehension and retention.</li>
-<li>Leveraging AI tools can aid educators in developing tailored learning experiences that foster creativity and innovation.</li>
-<li>Educational rigor should balance theoretical and practical knowledge to prepare students for real-world challenges.</li>
-</ul>
-<h2>Chapters:</h2>
-<ul>
-<li>00:00 - Introduction</li>
-<li>02:30 - Embracing Digital Transformation</li>
-<li>05:00 - The Role of AI in Learning</li>
-<li>08:15 - The Importance of Critical Thinking </li>
-<li>11:45 - Transforming Educational Practices </li>
-<li>15:30 - Challenges in Conventional Education </li>
-<li>18:00 - Creating Engaging Learning Environments </li>
-<li>21:15 - Looking Ahead: The Future of Education with AI </li>
-<li>24:00 - Closing Thoughts and Final Remarks</li>
-</ul>
-<p>Dive into this enlightening episode and discover how to leverage AI to enhance educational experiences! If you found value in this conversation, please give us a five-star rating on your podcast platform and share it with your network.</p>
+            <p>Dr. Darren and returning guest Dr. Carme Tagliani as they navigate the intersection of technology and learning. Discover how embracing AI can reshape educational paradigms and enhance critical thinking among students in today&#39;s rapidly evolving world. Key Takeaways: Understanding AI&#39;s disrup</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../en/guests/carm-taglienti/index.html" itemprop="url">
                 <span itemprop="name">Carm Taglienti</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -469,9 +502,14 @@
   },
   "associatedMedia": [
     {
+      "@type": "VideoObject",
+      "name": "Transforming Learning: The Role of AI Video",
+      "embedUrl": "https://www.youtube.com/embed/k8KD5F9GO5A"
+    },
+    {
       "@type": "AudioObject",
       "name": "Transforming Learning: The Role of AI Audio",
-      "contentUrl": "https://share.transistor.fm/e/c1539d4a-900f-4338-adf3-63e1d04685df"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/c1539d4a-900f-4338-adf3-63e1d04685df"
     }
   ],
   "actor": [

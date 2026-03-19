@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -287,91 +288,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="307"/>
             <meta itemprop="inLanguage" content="en"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="The Performance Gap: How AI Accelerates Workplace Inequality Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/rfTb8veTJ-0">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/rfTb8veTJ-0"
-                        title="The Performance Gap: How AI Accelerates Workplace Inequality Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="The Performance Gap: How AI Accelerates Workplace Inequality Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/ec4f20d1">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/ec4f20d1"
-                        title="The Performance Gap: How AI Accelerates Workplace Inequality Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-12T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="The Performance Gap: How AI Accelerates Workplace Inequality Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/rfTb8veTJ-0">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/rfTb8veTJ-0"
+                            title="The Performance Gap: How AI Accelerates Workplace Inequality Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="The Performance Gap: How AI Accelerates Workplace Inequality Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/ec4f20d1">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/ec4f20d1"
+                            title="The Performance Gap: How AI Accelerates Workplace Inequality Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-12T21:21:17.547Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Are you ready to challenge your perceptions about the role of AI in today&#39;s workplace? Join Dr. Darren, your host and Chief Enterprise Architect, as he engages in a thought-provoking conversation with Matt Kesby, Founder and Chief AI Officer at AICoaches.com. Their expertise in the field will provide you with a deeper understanding of the complexities of performance gaps exacerbated by AI, and how high performers can thrive while low performers struggle for attention.</p>
-<h2>Key Takeaways</h2>
-<p>These practical insights will empower you to navigate the AI-driven workplace with confidence and agility.</p>
-<ul>
-<li><strong>AI&#39;s Dual Role</strong>: Understand how AI can amplify workplace performance disparities between high and low performers.</li>
-<li><strong>Agility in Learning</strong>: Develop the mindset to adapt quickly in the face of technological disruptions and foster an environment of continuous learning.</li>
-<li>Empathy Matters: Discover how to harness the power of empathy to navigate changes in the workplace and communicate more effectively with your team, with practical tips and advice you can implement immediately and start applying these insights to your professional journey.</li>
-<li><strong>Critical Thinking Skills</strong>: Master the art of critical thinking to analyze various outcomes, especially in a rapidly evolving digital landscape.</li>
-<li><strong>Embrace the Change</strong>: Leverage AI as a tool for innovation rather than a threat, fostering an optimistic approach to new technologies.</li>
-</ul>
-<h2>Chapters:</h2>
-<ul>
-<li>[00:00] Welcome &amp; Introduction</li>
-<li>[02:15] Origin Stories: From Fish and Chip Shop to AI Leader</li>
-<li>[10:45] The Performance Gap and AI&#39;s Impact</li>
-<li>[18:30] Navigating Change: Agility and Adaptability</li>
-<li>[26:50] Jevons Paradox Applied: More Need for Humans in AI-Driven Contexts</li>
-<li>[35:00] Key Skills for the Future: The ACE ICC Framework</li>
-</ul>
-<p>Take the first step in transforming your understanding of AI in the workplace—dive into this enlightening episode today!</p>
+            <p>Are you ready to challenge your perceptions about the role of AI in today&#39;s workplace? Join Dr. Darren, your host and Chief Enterprise Architect, as he engages in a thought-provoking conversation with Matt Kesby, Founder and Chief AI Officer at AICoaches.com. Their expertise in the field will pr</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../en/guests/matt-kesby/index.html" itemprop="url">
                 <span itemprop="name">Matt Kesby</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -481,7 +501,7 @@
     {
       "@type": "AudioObject",
       "name": "The Performance Gap: How AI Accelerates Workplace Inequality Audio",
-      "contentUrl": "https://share.transistor.fm/e/ec4f20d1"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/ec4f20d1"
     }
   ],
   "actor": [

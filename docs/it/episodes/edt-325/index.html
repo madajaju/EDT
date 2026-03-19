@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -186,98 +187,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-02-05" itemprop="datePublished">2026-02-05T08:52:21.398Z</time>
+                    <time datetime="2026-02-12" itemprop="datePublished">2026-02-12T08:52:21.398Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="325"/>
             <meta itemprop="inLanguage" content="it"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Trasformare l'expertise tribale in ROI guidato dall'IA Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/mRKe5jHmzwI">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/mRKe5jHmzwI"
-                        title="Trasformare l'expertise tribale in ROI guidato dall'IA Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Trasformare l'expertise tribale in ROI guidato dall'IA Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/34324f69-3c2f-40d1-b8bc-40d25259cfdb">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
-                        title="Trasformare l'expertise tribale in ROI guidato dall'IA Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-02-12T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Trasformare l'expertise tribale in ROI guidato dall'IA Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/mRKe5jHmzwI">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/mRKe5jHmzwI"
+                            title="Trasformare l'expertise tribale in ROI guidato dall'IA Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Trasformare l'expertise tribale in ROI guidato dall'IA Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/34324f69-3c2f-40d1-b8bc-40d25259cfdb">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
+                            title="Trasformare l'expertise tribale in ROI guidato dall'IA Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-02-12T08:52:21.398Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Benvenuti a una discussione trasformativa su come sbloccare il pieno potenziale dell&#39;IA! Unisciti al Dr. Darren, il tuo ospite coinvolgente, mentre parla con Sebastian Jindal, CEO di Fountain City, riguardo alla rottura del collo di bottiglia della conoscenza che spesso ostacola le organizzazioni. Scopri come catturare l&#39;expertise tribale può portare a un ROI significativo attraverso soluzioni guidate dall&#39;IA.</p>
-<h2>Punti Chiave:</h2>
-<ul>
-<li><strong>Comprendere il Collo di Bottiglia della Conoscenza</strong>: Molte organizzazioni si affidano a un singolo individuo per informazioni cruciali, creando colli di bottiglia che soffocano il progresso.</li>
-<li><strong>Strategia Dati Efficace</strong>: Stabilire un approccio strutturato per raccogliere e documentare la conoscenza tacita dei dipendenti, migliorando l&#39;accessibilità e l&#39;usabilità.</li>
-<li><strong>Ruolo dell&#39;IA nella Reingegnerizzazione dei Processi</strong>: Sottolineare la gestione del cambiamento per garantire un&#39;integrazione efficace dell&#39;IA piuttosto che adottare l&#39;IA solo per seguire le tendenze.</li>
-<li><strong>Misurazione del Successo</strong>: Implementare un approccio metodico in cui i progetti possono essere misurati, iterati e ottimizzati per un miglioramento continuo.</li>
-<li><strong>Decision-Making Augmentato</strong>: L&#39;IA può assistere nel prendere decisioni qualitative che gli esseri umani possono verificare, invece di automatizzare completamente ogni processo senza supervisione.</li>
-</ul>
-<h2>Capitoli:</h2>
-<ul>
-<li>00:00 - Introduzione all&#39;Argomento</li>
-<li>03:45 - Comprendere il Collo di Bottiglia della Conoscenza</li>
-<li>08:30 - Documentare la Conoscenza Tacita</li>
-<li>14:15 - L&#39;Importanza della Gestione del Cambiamento</li>
-<li>20:00 - Approcci Strategici all&#39;Implementazione dell&#39;IA</li>
-<li>27:45 - Il Futuro dell&#39;IA nello Sviluppo Software</li>
-<li>34:00 - Pensieri di Chiusura e Risorse</li>
-</ul>
-<p>Sintonizzati per intuizioni impattanti che possono aiutare la tua organizzazione ad abbracciare con fiducia il percorso di trasformazione digitale!</p>
+            <p>Benvenuti a una discussione trasformativa su come sbloccare il pieno potenziale dell&#39;IA! Unisciti al Dr. Darren, il tuo ospite coinvolgente, mentre parla con Sebastian Jindal, CEO di Fountain City, riguardo alla rottura del collo di bottiglia della conoscenza che spesso ostacola le organizzazion</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/sebastian-chedal/index.html" itemprop="url">
                 <span itemprop="name">Sebastian Chedal</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -359,7 +379,7 @@
   },
   "name": "Trasformare l'expertise tribale in ROI guidato dall'IA",
   "episodeNumber": 325,
-  "datePublished": "2026-02-05",
+  "datePublished": "2026-02-12",
   "inLanguage": "it",
   "description": "Benvenuti a una discussione trasformativa su come sbloccare il pieno potenziale dell&#39;IA! Unisciti al Dr. Darren, il tuo ospite coinvolgente, mentre parla con Sebastian Jindal, CEO di Fountain City, riguardo alla rottura del collo di bottiglia della conoscenza che spesso ostacola le organizzazion",
   "partOfSeries": {
@@ -386,7 +406,7 @@
     {
       "@type": "AudioObject",
       "name": "Trasformare l'expertise tribale in ROI guidato dall'IA Audio",
-      "contentUrl": "https://share.transistor.fm/e/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
     }
   ],
   "actor": [

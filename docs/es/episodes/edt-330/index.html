@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -193,95 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="330"/>
             <meta itemprop="inLanguage" content="es"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Recuperación de Desastres para Ejecutivos: Por Qué la Nube y SaaS No Son Suficientes Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/p3NUgJUmHCY">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/p3NUgJUmHCY"
-                        title="Recuperación de Desastres para Ejecutivos: Por Qué la Nube y SaaS No Son Suficientes Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Recuperación de Desastres para Ejecutivos: Por Qué la Nube y SaaS No Son Suficientes Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
-                        title="Recuperación de Desastres para Ejecutivos: Por Qué la Nube y SaaS No Son Suficientes Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-03T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Recuperación de Desastres para Ejecutivos: Por Qué la Nube y SaaS No Son Suficientes Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/p3NUgJUmHCY">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/p3NUgJUmHCY"
+                            title="Recuperación de Desastres para Ejecutivos: Por Qué la Nube y SaaS No Son Suficientes Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../es/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Recuperación de Desastres para Ejecutivos: Por Qué la Nube y SaaS No Son Suficientes Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
+                            title="Recuperación de Desastres para Ejecutivos: Por Qué la Nube y SaaS No Son Suficientes Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../es/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 3/3/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>La recuperación de desastres es un aspecto crucial pero a menudo pasado por alto de la continuidad del negocio. Únete al Dr. Darren mientras conversa con Tom May, CEO de Different Dev, sobre por qué las soluciones en la nube y el Software como Servicio (SaaS) no son suficientes para una recuperación de desastres integral. Descubre información práctica que puede ayudar a salvaguardar tu negocio contra calamidades inesperadas.</p>
-<h2>Puntos Clave:</h2>
-<ul>
-<li>Entender que una recuperación de desastres efectiva requiere un esfuerzo continuo, no un enfoque de &quot;una vez y listo&quot;.</li>
-<li>Priorizar los sistemas críticos del negocio según la rapidez con la que necesitan estar operativos después de un desastre.</li>
-<li>La importancia de tener un Análisis de Impacto en el Negocio (BIA) para determinar el costo del tiempo de inactividad de varios sistemas.</li>
-<li>Por qué confiar únicamente en los proveedores de la nube puede dar una falsa sensación de seguridad; es esencial tener copias de seguridad independientes.</li>
-<li>Implementar un enfoque por fases para la planificación de la recuperación de desastres, comenzando con un producto mínimo viable y evolucionando a partir de ahí.</li>
-<li>Fomentar una cultura de documentación dentro de tu organización para mitigar los riesgos asociados con la rotación de personal clave.</li>
-</ul>
-<h2>Capítulos:</h2>
-<ul>
-<li>(00:00) Introducción</li>
-<li>(02:15) La Importancia de la Recuperación de Desastres</li>
-<li>(05:45) La Historia de Origen de Tom May</li>
-<li>(10:30) La Perspectiva Ejecutiva: Consideraciones Clave</li>
-<li>(15:10) La Necesidad de un Análisis de Impacto en el Negocio</li>
-<li>(20:00) Entendiendo los Objetivos de Tiempo de Recuperación (RTO) y los Objetivos de Punto de Recuperación (RPO)</li>
-<li>(25:30) El Papel de la Nube y los Desafíos de Cumplimiento</li>
-<li>(30:45) Conciencia y Prevención del Ransomware</li>
-<li>(35:00) Encontrando el Equilibrio Adecuado en la Planificación de Desastres</li>
-<li>(40:15) Conclusión y Recursos</li>
-</ul>
-<p>Para una comprensión más profunda y consejos personalizados, contacta a Tom May en <a href="http://differentdev.com">differentdev.com</a> y comienza a planificar tu estrategia de mitigación de catástrofes hoy mismo.</p>
+            <p>La recuperación de desastres es un aspecto crucial pero a menudo pasado por alto de la continuidad del negocio. Únete al Dr. Darren mientras conversa con Tom May, CEO de Different Dev, sobre por qué las soluciones en la nube y el Software como Servicio (SaaS) no son suficientes para una recuperación</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../es/guests/tom-may/index.html" itemprop="url">
                 <span itemprop="name">Tom May</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../es/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -395,7 +411,7 @@
     {
       "@type": "AudioObject",
       "name": "Recuperación de Desastres para Ejecutivos: Por Qué la Nube y SaaS No Son Suficientes Audio",
-      "contentUrl": "https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
     }
   ],
   "actor": [

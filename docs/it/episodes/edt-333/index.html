@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -193,91 +194,106 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="333"/>
             <meta itemprop="inLanguage" content="it"/>
         </header>
 
         
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="AI Game Jam 2026: Sviluppo di Giochi Aumentato dall'IA Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/4fd2face-8215-4c8e-b99b-0815c68ca8e2">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
-                        title="AI Game Jam 2026: Sviluppo di Giochi Aumentato dall'IA Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-11T07:00:00.000Z">
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="AI Game Jam 2026: Sviluppo di Giochi Aumentato dall'IA Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/4fd2face-8215-4c8e-b99b-0815c68ca8e2">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
+                            title="AI Game Jam 2026: Sviluppo di Giochi Aumentato dall'IA Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-12<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Il Dott. Darren è accompagnato dai suoi tre figli—Matthew, Jacob e David Pulsipher—durante la loro affascinante incursione in un Game Jam di 30 ore. Insieme, si immergono in usi innovativi dell&#39;IA generativa, rivelando intuizioni guadagnate dalle loro esperienze uniche e dalle sfide affrontate durante l&#39;intensa hackathon.</p>
-<h2>Punti Chiave:</h2>
-<ul>
-<li><strong>L&#39;IA come Collaboratore</strong>: L&#39;IA generativa dovrebbe essere vista come uno strumento per aumentare la creatività umana, assistendo nella realizzazione delle idee piuttosto che sostituire l&#39;innovazione umana.</li>
-<li><strong>Comunicazione Chiara</strong>: Istruzioni efficaci agli strumenti di IA sono cruciali; più si è specifici nei propri input, migliori saranno i risultati.</li>
-<li><strong>Sviluppo Iterativo</strong>: Il continuo testing e il miglioramento degli elementi del gioco sono fondamentali per adattare un&#39;esperienza utente piacevole.</li>
-<li><strong>Strategie Varie</strong>: Approcci diversi all&#39;utilizzo dell&#39;IA hanno portato a risultati di gioco variegati, evidenziando l&#39;importanza delle prospettive e delle competenze individuali.</li>
-<li><strong>Comprendere i Punti di Forza</strong>: Allinea gli obiettivi del tuo progetto con i punti di forza intrinseci dei modelli di IA, come l&#39;elaborazione dei dati e il riconoscimento dei modelli, per massimizzare il loro potenziale.</li>
-<li><strong>Accogliere gli Errori</strong>: Imparare ad adattarsi e incorporare idee inaspettate dall&#39;IA può portare a meccaniche di gioco uniche e divertenti.</li>
-</ul>
-<h2>Capitoli:</h2>
-<ul>
-<li>00:00 Benvenuto e Introduzione al Game Jam 2026</li>
-<li>05:32 L&#39;Idea Dietro il Game Jam</li>
-<li>10:15 Regole e Regolamenti Spiegati</li>
-<li>15:45 Strumenti e Abbonamenti Utilizzati da Ogni Partecipante</li>
-<li>25:20 Approcci Unici allo Sviluppo del Gioco</li>
-<li>30:45 Sfide Affrontate Durante lo Sviluppo</li>
-<li>35:10 Intuizioni sull&#39;Utilizzo dell&#39;IA Generativa</li>
-<li>40:25 Potenziale per Futuri Game Jam</li>
-<li>45:10 Conclusione e Riflessioni Finali</li>
-</ul>
-<p>Unisciti a noi per questo episodio illuminante e scopri come una semplice idea possa portare a intuizioni profonde nel mondo in continua evoluzione della tecnologia e della creatività!</p>
+            <p>Il Dott. Darren è accompagnato dai suoi tre figli—Matthew, Jacob e David Pulsipher—durante la loro affascinante incursione in un Game Jam di 30 ore. Insieme, si immergono in usi innovativi dell&#39;IA generativa, rivelando intuizioni guadagnate dalle loro esperienze uniche e dalle sfide affrontate d</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/matthew-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Matthew Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/jacob-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Jacob Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/david-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">David Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -368,7 +384,7 @@
     {
       "@type": "AudioObject",
       "name": "AI Game Jam 2026: Sviluppo di Giochi Aumentato dall'IA Audio",
-      "contentUrl": "https://share.transistor.fm/e/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
     }
   ],
   "actor": [

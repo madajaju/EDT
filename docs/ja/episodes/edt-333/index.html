@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -193,91 +194,106 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="333"/>
             <meta itemprop="inLanguage" content="ja"/>
         </header>
 
         
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="AIゲームジャム2026：AI強化ゲーム開発 Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/4fd2face-8215-4c8e-b99b-0815c68ca8e2">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
-                        title="AIゲームジャム2026：AI強化ゲーム開発 Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-11T07:00:00.000Z">
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="AIゲームジャム2026：AI強化ゲーム開発 Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/4fd2face-8215-4c8e-b99b-0815c68ca8e2">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
+                            title="AIゲームジャム2026：AI強化ゲーム開発 Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-12<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>ダレン博士は、3人の息子—マシュー、ジェイコブ、デビッド・パルシファー—と共に、魅力的な30時間のゲームジャムに参加します。彼らは、生成AIの革新的な使用法を掘り下げ、激しいハッカソンを通じて得られた独自の経験と直面した課題についての洞察を明らかにします。</p>
-<h2>重要なポイント:</h2>
-<ul>
-<li><strong>AIを協力者として</strong>: 生成AIは、人間の創造性を補完するツールと見なされるべきであり、人間の革新を置き換えるのではなく、アイデアを実現する手助けをします。</li>
-<li><strong>明確なコミュニケーション</strong>: AIツールへの効果的な指示は極めて重要です。プロンプトが具体的であればあるほど、結果が良くなります。</li>
-<li><strong>反復開発</strong>: ゲーム要素の継続的なテストと改善は、楽しめるユーザー体験を調整するために不可欠です。</li>
-<li><strong>多様な戦略</strong>: AIを利用する異なるアプローチが多様なゲーム結果を生み出し、個々の視点と専門知識の重要性を際立たせました。</li>
-<li><strong>強みの理解</strong>: プロジェクトの目標を、データ処理やパターン認識などのAIモデルの内在的な強みと一致させることで、その潜在能力を最大限に引き出します。</li>
-<li><strong>間違いを受け入れる</strong>: AIからの予期しないアイデアを適応し、取り入れることを学ぶことで、独特で面白いゲームメカニクスを生み出すことができます。</li>
-</ul>
-<h2>チャプター:</h2>
-<ul>
-<li>00:00 ウェルカムとゲームジャム2026の紹介</li>
-<li>05:32 ゲームジャムのアイデア</li>
-<li>10:15 規則と規制の説明</li>
-<li>15:45 各参加者が使用したツールとサブスクリプション</li>
-<li>25:20 ゲーム開発へのユニークなアプローチ</li>
-<li>30:45 開発中に直面した課題</li>
-<li>35:10 生成AIの使用に関する洞察</li>
-<li>40:25 将来のゲームジャムの可能性</li>
-<li>45:10 結論と締めの考え</li>
-</ul>
-<p>この啓発的なエピソードに参加し、シンプルなアイデアがテクノロジーと創造性の常に進化する世界において深い洞察につながる方法を発見してください！</p>
+            <p>ダレン博士は、3人の息子—マシュー、ジェイコブ、デビッド・パルシファー—と共に、魅力的な30時間のゲームジャムに参加します。彼らは、生成AIの革新的な使用法を掘り下げ、激しいハッカソンを通じて得られた独自の経験と直面した課題についての洞察を明らかにします。 重要なポイント: AIを協力者として : 生成AIは、人間の創造性を補完するツールと見なされるべきであり、人間の革新を置き換えるのではなく、アイデアを実現する手助けをします。 明確なコミュニケーション : AIツールへの効果的な指示は極めて重要です。プロンプトが具体的であればあるほど、結果が良くなります。 反復開発 : ゲーム要素の継続的な</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/matthew-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Matthew Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/jacob-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Jacob Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/david-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">David Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -369,7 +385,7 @@
     {
       "@type": "AudioObject",
       "name": "AIゲームジャム2026：AI強化ゲーム開発 Audio",
-      "contentUrl": "https://share.transistor.fm/e/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
     }
   ],
   "actor": [

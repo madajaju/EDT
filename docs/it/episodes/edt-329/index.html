@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -193,92 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="329"/>
             <meta itemprop="inLanguage" content="it"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Trasformare il Cambiamento Attraverso le Storie Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/AuITAWfpQMs">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/AuITAWfpQMs"
-                        title="Trasformare il Cambiamento Attraverso le Storie Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Trasformare il Cambiamento Attraverso le Storie Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/ebef7e79-de9f-4310-8722-7e195ebeaf64">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/ebef7e79-de9f-4310-8722-7e195ebeaf64"
-                        title="Trasformare il Cambiamento Attraverso le Storie Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-02-26T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Trasformare il Cambiamento Attraverso le Storie Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/AuITAWfpQMs">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/AuITAWfpQMs"
+                            title="Trasformare il Cambiamento Attraverso le Storie Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Trasformare il Cambiamento Attraverso le Storie Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/ebef7e79-de9f-4310-8722-7e195ebeaf64">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/ebef7e79-de9f-4310-8722-7e195ebeaf64"
+                            title="Trasformare il Cambiamento Attraverso le Storie Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2/26/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Unisciti al Dr. Darren e alla sua ospite Gabrielle Dolan per esplorare il ruolo vitale della narrazione nella guida al cambiamento digitale con la maestra raccontastorie e podcaster, Gabrielle Dolan. Scopri come le narrazioni personali possono abbattere le resistenze e promuovere l&#39;empatia di fronte alla trasformazione organizzativa.</p>
-<h2>Punti Chiave:</h2>
-<ul>
-<li><strong>Il Potere delle Storie</strong>: Raccontare storie può abbassare le difese e favorire la relazione durante le discussioni sulla trasformazione digitale.</li>
-<li><strong>Empatia e Connessione</strong>: Condividere esperienze personali crea connessioni emotive e aiuta i team a navigare insieme il cambiamento.</li>
-<li><strong>Creazione di Messaggi Autentici</strong>: Storie genuine invitano alla fiducia e aiutano a comunicare cambiamenti complessi senza risultare manipolativi.</li>
-<li><strong>La Concisione È Fondamentale</strong>: Punta a storie brevi (60-90 secondi) e concentrate sulla chiarezza; evita di spiegare eccessivamente.</li>
-<li><strong>Identificare i Motivatori</strong>: Comprendere sia le paure positive che quelle negative legate al cambiamento per adattare efficacemente le tue storie all&#39;impatto.</li>
-<li><strong>Resilienza Attraverso la Condivisione</strong>: Usa storie personali di perseveranza per motivare i team attraverso le sfide della trasformazione.</li>
-</ul>
-<h2>Capitoli:</h2>
-<ul>
-<li>00:00 - Introduzione all&#39;Episodio</li>
-<li>02:10 - Storia e Percorso di Gabrielle nella Narrazione</li>
-<li>09:25 - L&#39;Importanza della Narrazione nella Trasformazione Digitale</li>
-<li>15:40 - Comprendere la Resistenza al Cambiamento</li>
-<li>22:30 - Creare Storie di Cambiamento Efficaci</li>
-<li>30:10 - Il Ruolo dell&#39;Autenticità nella Narrazione</li>
-<li>36:55 - Osservazioni Finali e Dove Trovare Gabrielle</li>
-</ul>
-<p>Immergiti più a fondo nella conversazione ascoltando questo episodio ed esplorando le intuizioni di Gabrielle sull&#39;arte della narrazione. Non dimenticare di condividere i tuoi pensieri e le tue storie con noi nei commenti!</p>
+            <p>Unisciti al Dr. Darren e alla sua ospite Gabrielle Dolan per esplorare il ruolo vitale della narrazione nella guida al cambiamento digitale con la maestra raccontastorie e podcaster, Gabrielle Dolan. Scopri come le narrazioni personali possono abbattere le resistenze e promuovere l&#39;empatia di fr</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/gabrielle-dolan/index.html" itemprop="url">
                 <span itemprop="name">Gabrielle Dolan</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -402,7 +421,7 @@
     {
       "@type": "AudioObject",
       "name": "Trasformare il Cambiamento Attraverso le Storie Audio",
-      "contentUrl": "https://share.transistor.fm/e/ebef7e79-de9f-4310-8722-7e195ebeaf64"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/ebef7e79-de9f-4310-8722-7e195ebeaf64"
     }
   ],
   "actor": [

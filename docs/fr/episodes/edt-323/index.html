@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -186,79 +187,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-02-03" itemprop="datePublished">2026-02-03T10:31:13.985Z</time>
+                    <time datetime="2026-02-05" itemprop="datePublished">2026-02-05T10:53:00.814Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="323"/>
             <meta itemprop="inLanguage" content="fr"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Cybersécurité des États-nations, le parcours d'Eric ONeill Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Q2RswQL--GA">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/Q2RswQL--GA"
-                        title="Cybersécurité des États-nations, le parcours d'Eric ONeill Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
+        <div id="episode-media" data-release-date="2026-02-05T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Cybersécurité des États-nations, le parcours d'Eric ONeill Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Q2RswQL--GA">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/Q2RswQL--GA"
+                            title="Cybersécurité des États-nations, le parcours d'Eric ONeill Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Cybersécurité des États-nations, le parcours d'Eric ONeill Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/f68ac0cc-ed9b-4f99-a53f-f752aede917a">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/f68ac0cc-ed9b-4f99-a53f-f752aede917a"
+                            title="Cybersécurité des États-nations, le parcours d'Eric ONeill Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../fr/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-02-05T10:53:00.814Z<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Dans un monde de plus en plus menacé par les attaques informatiques, l&#39;ancien agent de contre-espionnage du FBI Eric O&#39;Neill dévoile les stratégies et les dangers potentiels de la cybersécurité dans cet épisode révélateur avec l&#39;hôte Dr. Darren. Eric partage son parcours extraordinaire à capturer l&#39;un des espions les plus notoires d&#39;Amérique et explore les implications des menaces cybernétiques des États-nations, fournissant des conseils pratiques sur la manière dont les individus et les organisations peuvent renforcer leurs défenses.</p>
-<h2>Principaux enseignements :</h2>
-<ul>
-<li><strong>Comprendre les menaces cybernétiques</strong> : Les attaques informatiques des États-nations représentent la menace la plus significative pour les infrastructures critiques des États-Unis, y compris les systèmes d&#39;électricité, d&#39;eau et de gaz.</li>
-<li><strong>Un appel à l&#39;action</strong> : Les individus et les organisations doivent mettre en œuvre des pratiques de base en matière de cybersécurité, comme l&#39;authentification à deux facteurs et des évaluations régulières.</li>
-<li><strong>La méthodologie &#39;Paid&#39;</strong> : Utilisez le cadre Préparer, Évaluer, Enquêter et Décider pour améliorer la cybersécurité personnelle et organisationnelle.</li>
-<li><strong>Lutter contre les ransomwares</strong> : Comprenez les tactiques derrière l&#39;ingénierie sociale et les attaques par ransomware pour mieux vous défendre contre elles.</li>
-<li><strong>Ressources locales</strong> : Connaître les bonnes autorités locales à contacter en cas d&#39;incident cybernétique peut être crucial pour une intervention rapide.</li>
-</ul>
-<h2>Chapitres :</h2>
-<ul>
-<li>00:00 Introduction : Rencontre avec Eric O&#39;Neill</li>
-<li>05:20 Parcours d&#39;Eric et travail sous couverture</li>
-<li>15:00 Le paysage des menaces cybernétiques</li>
-<li>25:30 L&#39;importance de la cybersécurité dans les infrastructures critiques</li>
-<li>35:45 Présentation de la méthodologie &#39;Paid&#39;</li>
-<li>45:15 Comment évaluer et atténuer les risques cybernétiques</li>
-<li>55:30 Réflexions finales et où trouver Eric O&#39;Neill</li>
-</ul>
-<p>Plongez dans les complexités de la cybersécurité et apprenez comment devenir votre propre chasseur d&#39;espions en écoutant maintenant !</p>
+            <p>Dans un monde de plus en plus menacé par les attaques informatiques, l&#39;ancien agent de contre-espionnage du FBI Eric O&#39;Neill dévoile les stratégies et les dangers potentiels de la cybersécurité dans cet épisode révélateur avec l&#39;hôte Dr. Darren. Eric partage son parcours extraordinaire à</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../fr/guests/eric-oneill/index.html" itemprop="url">
                 <span itemprop="name">Eric ONeill</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../fr/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -343,7 +382,7 @@
   },
   "name": "Cybersécurité des États-nations, le parcours d'Eric ONeill",
   "episodeNumber": 323,
-  "datePublished": "2026-02-03",
+  "datePublished": "2026-02-05",
   "inLanguage": "fr",
   "description": "Dans un monde de plus en plus menacé par les attaques informatiques, l&#39;ancien agent de contre-espionnage du FBI Eric O&#39;Neill dévoile les stratégies et les dangers potentiels de la cybersécurité dans cet épisode révélateur avec l&#39;hôte Dr. Darren. Eric partage son parcours extraordinaire à",
   "partOfSeries": {
@@ -366,6 +405,11 @@
       "@type": "VideoObject",
       "name": "Cybersécurité des États-nations, le parcours d'Eric ONeill Video",
       "embedUrl": "https://www.youtube.com/embed/Q2RswQL--GA"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Cybersécurité des États-nations, le parcours d'Eric ONeill Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/f68ac0cc-ed9b-4f99-a53f-f752aede917a"
     }
   ],
   "actor": [

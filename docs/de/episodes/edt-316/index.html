@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -192,92 +193,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="316"/>
             <meta itemprop="inLanguage" content="de"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="KI-Agenten treiben die digitale Transformation im großen Maßstab voran. Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/aTr79waqrQU">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/aTr79waqrQU"
-                        title="KI-Agenten treiben die digitale Transformation im großen Maßstab voran. Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="KI-Agenten treiben die digitale Transformation im großen Maßstab voran. Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/dbd9651a">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/dbd9651a"
-                        title="KI-Agenten treiben die digitale Transformation im großen Maßstab voran. Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-10T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="KI-Agenten treiben die digitale Transformation im großen Maßstab voran. Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/aTr79waqrQU">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/aTr79waqrQU"
+                            title="KI-Agenten treiben die digitale Transformation im großen Maßstab voran. Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../de/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="KI-Agenten treiben die digitale Transformation im großen Maßstab voran. Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/9ed624dd">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/9ed624dd"
+                            title="KI-Agenten treiben die digitale Transformation im großen Maßstab voran. Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../de/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-11T03:33:15.740Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Stellen Sie sich eine Welt vor, in der lästige Büroaufgaben in Sekundenschnelle erledigt werden, dank intelligenter KI-Agenten. Gastgeber Dr. Darren spricht mit Suzanne Livingston, einer führenden KI-Expertin bei IBM. Sie erkunden, wie KI die Produktivität am Arbeitsplatz revolutioniert, indem sie umständliche Prozesse automatisiert und erhebliche Kosteneinsparungen erzielt.</p>
-<h2>Wichtige Erkenntnisse:</h2>
-<ul>
-<li><strong>KI-gestützte Effizienz</strong>: Erfahren Sie, wie KI-Agenten Aufgaben wie Mitarbeiterübertragungen, Beschaffung und rechtliche Prozesse rationalisieren können, wodurch Organisationen wertvolle Zeit und Ressourcen sparen.</li>
-<li><strong>Kosteneinsparungen</strong>: Entdecken Sie, wie IBM durch die Transformation veralteter Methoden in intelligente Prozesse mit KI etwa 4,5 Milliarden Dollar gespart hat.</li>
-<li><strong>Vertrauen und Adoption</strong>: Verstehen Sie die Bedeutung des Vertrauensaufbaus in KI-Systeme und die Herausforderungen, mit denen Organisationen konfrontiert sind, wenn sie diese Technologien in ihre bestehenden Strukturen integrieren.</li>
-<li><strong>Fokus auf Nutzerengagement</strong>: Sehen Sie, wie Unternehmen die Kundenerfahrung verbessern können, indem sie KI einsetzen, die proaktiv Bedürfnisse anspricht und sich nahtlos mit den Nutzern verbindet.</li>
-<li><strong>Prozessneuordnung</strong>: Erkunden Sie die Notwendigkeit, bestehende Arbeitsabläufe neu zu bewerten, um sie für die Automatisierung zu optimieren, anstatt sie einfach zu digitalisieren.</li>
-</ul>
-<h2>Kapitel:</h2>
-<ul>
-<li>00:00 - Einführung in KI und Produktivität</li>
-<li>02:15 - Suzannes Hintergrund in KI und Automatisierung</li>
-<li>06:50 - Die Entwicklung intelligenter Agenten bei IBM</li>
-<li>12:05 - Wichtige Anwendungsfälle für KI im Geschäft</li>
-<li>16:40 - Überwindung von Vertrauens- und Adoptionsherausforderungen</li>
-<li>22:25 - Der Weg vom Pilotprojekt zur vollständigen Implementierung</li>
-<li>27:00 - Interaktion mit Kunden unter Verwendung von KI</li>
-<li>32:50 - So starten Sie mit IBMs KI-Lösungen</li>
-</ul>
-<p>Tauchen Sie in diese Episode ein, um die Zukunft der Arbeit zu entdecken und wie die Akzeptanz von künstlicher Intelligenz zu transformierenden Veränderungen in Ihrer Organisation führen kann.</p>
+            <p>Stellen Sie sich eine Welt vor, in der lästige Büroaufgaben in Sekundenschnelle erledigt werden, dank intelligenter KI-Agenten. Gastgeber Dr. Darren spricht mit Suzanne Livingston, einer führenden KI-Expertin bei IBM. Sie erkunden, wie KI die Produktivität am Arbeitsplatz revolutioniert, indem sie u</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/suzanne-livingston/index.html" itemprop="url">
                 <span itemprop="name">Suzanne Livingston</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -395,7 +414,7 @@
     {
       "@type": "AudioObject",
       "name": "KI-Agenten treiben die digitale Transformation im großen Maßstab voran. Audio",
-      "contentUrl": "https://share.transistor.fm/e/dbd9651a"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/9ed624dd"
     }
   ],
   "actor": [

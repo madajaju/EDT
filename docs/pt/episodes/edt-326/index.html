@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -193,93 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="326"/>
             <meta itemprop="inLanguage" content="pt"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="A Ascensão da Força de Trabalho Fracionária Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/T6slMUvE8y8">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/T6slMUvE8y8"
-                        title="A Ascensão da Força de Trabalho Fracionária Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="A Ascensão da Força de Trabalho Fracionária Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/1cd506d6-a385-4963-9ad3-a11b875b5e84">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/1cd506d6-a385-4963-9ad3-a11b875b5e84"
-                        title="A Ascensão da Força de Trabalho Fracionária Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-02-17T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="A Ascensão da Força de Trabalho Fracionária Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/T6slMUvE8y8">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/T6slMUvE8y8"
+                            title="A Ascensão da Força de Trabalho Fracionária Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../pt/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="A Ascensão da Força de Trabalho Fracionária Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/1cd506d6-a385-4963-9ad3-a11b875b5e84">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/1cd506d6-a385-4963-9ad3-a11b875b5e84"
+                            title="A Ascensão da Força de Trabalho Fracionária Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../pt/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2/17/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Estamos voltando para a pré-revolução industrial, a Força de Trabalho Fracionária! Neste episódio de Abrindo Caminho à Transformação Digital, o Dr. Darren é acompanhado por Elizabeth Eiss, uma especialista em economia gig e defensora dos trabalhadores fracionários. Juntos, eles examinam o crescimento do trabalho fracionário e suas implicações para o cenário empresarial atual, destacando os benefícios e desafios que acompanham essa mudança.</p>
-<h2>Principais Conclusões:</h2>
-<ul>
-<li><strong>Entendendo o Trabalho Fracionário</strong>: Aprenda a diferença entre papéis fracionários e de tempo integral e como as empresas estão mudando seus modelos operacionais.</li>
-<li><strong>Carreiras em Portfólio</strong>: Descubra por que múltiplas fontes de renda estão se tornando a norma, especialmente para as gerações mais jovens que entram no mercado de trabalho.</li>
-<li><strong>Networking como uma Super Habilidade</strong>: Um networking eficaz pode levar a oportunidades que ajudam você a fazer a transição para o trabalho fracionário suavemente.</li>
-<li><strong>Construindo Confiança e Protegendo a Propriedade Intelectual</strong>: Descubra estratégias para proteger sua propriedade intelectual ao trabalhar com freelancers.</li>
-<li><strong>O Futuro Está Aqui</strong>: Entenda como a tecnologia e a economia gig estão reformulando a força de trabalho tradicional.</li>
-</ul>
-<h2>Capítulos:</h2>
-<ul>
-<li>00:00 Introdução ao Trabalho Fracionário</li>
-<li>02:15 A História de Origem de Elizabeth</li>
-<li>05:30 A Mudança do Trabalho de Tempo Integral para o Trabalho Fracionário</li>
-<li>11:00 Adaptando-se à Mudança e Construindo Resiliência</li>
-<li>16:45 O Papel do Networking</li>
-<li>21:10 Riscos e Preocupações no Trabalho Fracionário</li>
-<li>27:30 Melhores Práticas para Contratar Freelancers</li>
-<li>32:00 Tendências Futuras e Considerações Finais</li>
-<li>35:15 Como Conectar-se com Elizabeth Eiss</li>
-</ul>
-<p>Junte-se a nós nesta jornada esclarecedora enquanto exploramos o cenário em evolução do trabalho e descobrimos como você pode se adaptar e prosperar nesta nova economia!</p>
+            <p>Estamos voltando para a pré-revolução industrial, a Força de Trabalho Fracionária! Neste episódio de Abrindo Caminho à Transformação Digital, o Dr. Darren é acompanhado por Elizabeth Eiss, uma especialista em economia gig e defensora dos trabalhadores fracionários. Juntos, eles examinam o cresciment</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../pt/guests/elizabeth-eiss/index.html" itemprop="url">
                 <span itemprop="name">Elizabeth Eiss</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../pt/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -392,7 +410,7 @@
     {
       "@type": "AudioObject",
       "name": "A Ascensão da Força de Trabalho Fracionária Audio",
-      "contentUrl": "https://share.transistor.fm/e/1cd506d6-a385-4963-9ad3-a11b875b5e84"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/1cd506d6-a385-4963-9ad3-a11b875b5e84"
     }
   ],
   "actor": [

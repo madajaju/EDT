@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -192,78 +193,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="328"/>
             <meta itemprop="inLanguage" content="ar"/>
         </header>
 
         
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="تحويل التعلم: دور الذكاء الاصطناعي Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/c1539d4a-900f-4338-adf3-63e1d04685df">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/c1539d4a-900f-4338-adf3-63e1d04685df"
-                        title="تحويل التعلم: دور الذكاء الاصطناعي Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-02-24T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="تحويل التعلم: دور الذكاء الاصطناعي Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/k8KD5F9GO5A">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/k8KD5F9GO5A"
+                            title="تحويل التعلم: دور الذكاء الاصطناعي Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="تحويل التعلم: دور الذكاء الاصطناعي Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/c1539d4a-900f-4338-adf3-63e1d04685df">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/c1539d4a-900f-4338-adf3-63e1d04685df"
+                            title="تحويل التعلم: دور الذكاء الاصطناعي Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2/24/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>الدكتور دارين والضيف العائد الدكتور كارمي تاغلياني أثناء استكشافهم تقاطع التكنولوجيا والتعليم. اكتشف كيف يمكن أن يعيد تبني الذكاء الاصطناعي تشكيل نماذج التعليم وتعزيز التفكير النقدي بين الطلاب في عالم اليوم الذي يتطور بسرعة.</p>
-<h2>النقاط الرئيسية:</h2>
-<ul>
-<li>من الضروري فهم الإمكانيات التخريبية للذكاء الاصطناعي في التعليم من أجل صياغة استراتيجيات تعلم فعالة.</li>
-<li>التركيز على التفكير النقدي والتطبيق بدلاً من الحفظ الآلي يمكّن الطلاب من التفاعل بعمق مع المادة.</li>
-<li>أهمية التطبيقات الواقعية في تقنيات التعليم يمكن أن تعزز بشكل كبير من فهم الطلاب واحتفاظهم بالمعلومات.</li>
-<li>يمكن أن تساعد أدوات الذكاء الاصطناعي المعلمين في تطوير تجارب تعلم مخصصة تعزز الإبداع والابتكار.</li>
-<li>يجب أن يوازن التعليم الجاد بين المعرفة النظرية والعملية لإعداد الطلاب لمواجهة تحديات العالم الحقيقي.</li>
-</ul>
-<h2>الفصول:</h2>
-<ul>
-<li>00:00 - المقدمة</li>
-<li>02:30 - تبني التحول الرقمي</li>
-<li>05:00 - دور الذكاء الاصطناعي في التعلم</li>
-<li>08:15 - أهمية التفكير النقدي</li>
-<li>11:45 - تحويل ممارسات التعليم</li>
-<li>15:30 - التحديات في التعليم التقليدي</li>
-<li>18:00 - إنشاء بيئات تعليمية جاذبة</li>
-<li>21:15 - النظر إلى الأمام: مستقبل التعليم مع الذكاء الاصطناعي</li>
-<li>24:00 - الأفكار الختامية والملاحظات النهائية</li>
-</ul>
-<p>اخترق هذا الحلقة التنويرية واكتشف كيفية الاستفادة من الذكاء الاصطناعي لتعزيز التجارب التعليمية! إذا وجدت قيمة في هذه المحادثة، يرجى منحنا تقييم خمس نجوم على منصة البودكاست الخاصة بك ومشاركتها مع شبكتك.</p>
+            <p>الدكتور دارين والضيف العائد الدكتور كارمي تاغلياني أثناء استكشافهم تقاطع التكنولوجيا والتعليم. اكتشف كيف يمكن أن يعيد تبني الذكاء الاصطناعي تشكيل نماذج التعليم وتعزيز التفكير النقدي بين الطلاب في عالم اليوم الذي يتطور بسرعة. النقاط الرئيسية: من الضروري فهم الإمكانيات التخريبية للذكاء الاصطناعي في ال</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/carm-taglienti/index.html" itemprop="url">
                 <span itemprop="name">Carm Taglienti</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -372,9 +405,14 @@
   },
   "associatedMedia": [
     {
+      "@type": "VideoObject",
+      "name": "تحويل التعلم: دور الذكاء الاصطناعي Video",
+      "embedUrl": "https://www.youtube.com/embed/k8KD5F9GO5A"
+    },
+    {
       "@type": "AudioObject",
       "name": "تحويل التعلم: دور الذكاء الاصطناعي Audio",
-      "contentUrl": "https://share.transistor.fm/e/c1539d4a-900f-4338-adf3-63e1d04685df"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/c1539d4a-900f-4338-adf3-63e1d04685df"
     }
   ],
   "actor": [

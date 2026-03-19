@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -186,98 +187,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-02-05" itemprop="datePublished">2026-02-05T08:52:21.398Z</time>
+                    <time datetime="2026-02-12" itemprop="datePublished">2026-02-12T08:52:21.398Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="325"/>
             <meta itemprop="inLanguage" content="ja"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="部族の専門知識をAI駆動のROIに変換する Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/mRKe5jHmzwI">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/mRKe5jHmzwI"
-                        title="部族の専門知識をAI駆動のROIに変換する Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="部族の専門知識をAI駆動のROIに変換する Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/34324f69-3c2f-40d1-b8bc-40d25259cfdb">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
-                        title="部族の専門知識をAI駆動のROIに変換する Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-02-12T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="部族の専門知識をAI駆動のROIに変換する Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/mRKe5jHmzwI">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/mRKe5jHmzwI"
+                            title="部族の専門知識をAI駆動のROIに変換する Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="部族の専門知識をAI駆動のROIに変換する Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/34324f69-3c2f-40d1-b8bc-40d25259cfdb">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
+                            title="部族の専門知識をAI駆動のROIに変換する Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-02-12T08:52:21.398Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>AIの可能性を引き出すための変革的な議論へようこそ！魅力的なホスト、ダレン博士と共に、ファウンテンシティのCEOセバスティアン・ジンダルが、しばしば組織を妨げる知識のボトルネックを打破する方法について語ります。部族的な専門知識を捉えることで、AI主導のソリューションを通じて重要なROIを得る方法を発見してください。</p>
-<h2>主なポイント:</h2>
-<ul>
-<li><strong>知識のボトルネックを理解する</strong>: 多くの組織は重要な知識を一人の個人に依存しており、これが進捗を妨げるボトルネックを生んでいます。</li>
-<li><strong>効果的なデータ戦略</strong>: 従業員から暗黙知を収集し文書化するための構造化されたアプローチを確立し、アクセスのしやすさと使いやすさを向上させることが重要です。</li>
-<li><strong>プロセス再構築におけるAIの役割</strong>: トレンドのためだけにAIを採用するのではなく、効果的なAI統合を確保するために変更管理を強調します。</li>
-<li><strong>成功の測定</strong>: プロジェクトを測定、反復、最適化して継続的な改善を図る体系的なアプローチを実施します。</li>
-<li><strong>強化された意思決定</strong>: AIは、人間が検証できる質的な意思決定を支援でき、監視なしに全てのプロセスを自動化するのではありません。</li>
-</ul>
-<h2>章:</h2>
-<ul>
-<li>00:00 - トピック紹介</li>
-<li>03:45 - 知識のボトルネックを理解する</li>
-<li>08:30 - 暗黙知の文書化</li>
-<li>14:15 - 変更管理の重要性</li>
-<li>20:00 - AI導入の戦略的アプローチ</li>
-<li>27:45 - ソフトウェア開発におけるAIの未来</li>
-<li>34:00 - まとめとリソース</li>
-</ul>
-<p>デジタルトランスフォーメーションの旅を自信を持って受け入れるための影響力のある洞察をお楽しみください！</p>
+            <p>AIの可能性を引き出すための変革的な議論へようこそ！魅力的なホスト、ダレン博士と共に、ファウンテンシティのCEOセバスティアン・ジンダルが、しばしば組織を妨げる知識のボトルネックを打破する方法について語ります。部族的な専門知識を捉えることで、AI主導のソリューションを通じて重要なROIを得る方法を発見してください。 主なポイント: 知識のボトルネックを理解する : 多くの組織は重要な知識を一人の個人に依存しており、これが進捗を妨げるボトルネックを生んでいます。 効果的なデータ戦略 : 従業員から暗黙知を収集し文書化するための構造化されたアプローチを確立し、アクセスのしやすさと使いやすさを向上さ</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/sebastian-chedal/index.html" itemprop="url">
                 <span itemprop="name">Sebastian Chedal</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -355,7 +375,7 @@
   },
   "name": "部族の専門知識をAI駆動のROIに変換する",
   "episodeNumber": 325,
-  "datePublished": "2026-02-05",
+  "datePublished": "2026-02-12",
   "inLanguage": "ja",
   "description": "AIの可能性を引き出すための変革的な議論へようこそ！魅力的なホスト、ダレン博士と共に、ファウンテンシティのCEOセバスティアン・ジンダルが、しばしば組織を妨げる知識のボトルネックを打破する方法について語ります。部族的な専門知識を捉えることで、AI主導のソリューションを通じて重要なROIを得る方法を発見してください。 主なポイント: 知識のボトルネックを理解する : 多くの組織は重要な知識を一人の個人に依存しており、これが進捗を妨げるボトルネックを生んでいます。 効果的なデータ戦略 : 従業員から暗黙知を収集し文書化するための構造化されたアプローチを確立し、アクセスのしやすさと使いやすさを向上さ",
   "partOfSeries": {
@@ -382,7 +402,7 @@
     {
       "@type": "AudioObject",
       "name": "部族の専門知識をAI駆動のROIに変換する Audio",
-      "contentUrl": "https://share.transistor.fm/e/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
     }
   ],
   "actor": [

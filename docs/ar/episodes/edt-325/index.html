@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -185,98 +186,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-02-05" itemprop="datePublished">2026-02-05T08:52:21.398Z</time>
+                    <time datetime="2026-02-12" itemprop="datePublished">2026-02-12T08:52:21.398Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="325"/>
             <meta itemprop="inLanguage" content="ar"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="تحويل الخبرة القبلية إلى عائد استثمار مدفوع بالذكاء الاصطناعي Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/mRKe5jHmzwI">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/mRKe5jHmzwI"
-                        title="تحويل الخبرة القبلية إلى عائد استثمار مدفوع بالذكاء الاصطناعي Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="تحويل الخبرة القبلية إلى عائد استثمار مدفوع بالذكاء الاصطناعي Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/34324f69-3c2f-40d1-b8bc-40d25259cfdb">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
-                        title="تحويل الخبرة القبلية إلى عائد استثمار مدفوع بالذكاء الاصطناعي Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-02-12T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="تحويل الخبرة القبلية إلى عائد استثمار مدفوع بالذكاء الاصطناعي Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/mRKe5jHmzwI">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/mRKe5jHmzwI"
+                            title="تحويل الخبرة القبلية إلى عائد استثمار مدفوع بالذكاء الاصطناعي Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="تحويل الخبرة القبلية إلى عائد استثمار مدفوع بالذكاء الاصطناعي Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/34324f69-3c2f-40d1-b8bc-40d25259cfdb">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
+                            title="تحويل الخبرة القبلية إلى عائد استثمار مدفوع بالذكاء الاصطناعي Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-02-12T08:52:21.398Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>مرحبًا بكم في مناقشة تحويلية حول فتح الإمكانات الكاملة للذكاء الاصطناعي! انضم إلى الدكتور دارين، مضيفك الجذاب، أثناء حديثه مع سيبستيان جيندال، الرئيس التنفيذي لشركة فاونتن سيتي، حول كسر عنق الزجاجة المعرفي الذي غالبًا ما يعيق المنظمات. اكتشف كيف يمكن أن يؤدي توثيق الخبرات القبلية إلى عائد استثمار كبير من خلال حلول مدفوعة بالذكاء الاصطناعي.</p>
-<h2>النقاط الرئيسية:</h2>
-<ul>
-<li><strong>فهم عنق الزجاجة المعرفي</strong>: تعتمد العديد من المنظمات على فرد واحد للحصول على المعرفة الأساسية، مما يخلق عنق زجاجة يعيق التقدم.</li>
-<li><strong>استراتيجية بيانات فعالة</strong>: إقامة نهج منظم لجمع وتوثيق المعرفة الضمنية من الموظفين، مما يعزز سهولة الوصول والاستخدام.</li>
-<li><strong>دور الذكاء الاصطناعي في إعادة هندسة العمليات</strong>: التأكيد على إدارة التغيير لضمان تكامل فعال للذكاء الاصطناعي بدلاً من اعتماد الذكاء الاصطناعي لمجرد مواكبة الاتجاهات.</li>
-<li><strong>قياس النجاح</strong>: تنفيذ نهج منهجي حيث يمكن قياس المشاريع وتكرارها وتحسينها من أجل التحسين المستمر.</li>
-<li><strong>اتخاذ قرارات معززة</strong>: يمكن أن يساعد الذكاء الاصطناعي في اتخاذ قرارات نوعية يمكن للبشر التحقق منها، بدلاً من أتمتة كل عملية دون إشراف.</li>
-</ul>
-<h2>الفصول:</h2>
-<ul>
-<li>00:00 - مقدمة حول الموضوع</li>
-<li>03:45 - فهم عنق الزجاجة المعرفي</li>
-<li>08:30 - توثيق المعرفة الضمنية</li>
-<li>14:15 - أهمية إدارة التغيير</li>
-<li>20:00 - استراتيجيات فعالة لتنفيذ الذكاء الاصطناعي</li>
-<li>27:45 - مستقبل الذكاء الاصطناعي في تطوير البرمجيات</li>
-<li>34:00 - الخواطر النهائية والموارد</li>
-</ul>
-<p>استمع إلى رؤى مؤثرة يمكن أن تساعد منظمتك في تبني رحلة التحول الرقمي بثقة!</p>
+            <p>مرحبًا بكم في مناقشة تحويلية حول فتح الإمكانات الكاملة للذكاء الاصطناعي! انضم إلى الدكتور دارين، مضيفك الجذاب، أثناء حديثه مع سيبستيان جيندال، الرئيس التنفيذي لشركة فاونتن سيتي، حول كسر عنق الزجاجة المعرفي الذي غالبًا ما يعيق المنظمات. اكتشف كيف يمكن أن يؤدي توثيق الخبرات القبلية إلى عائد استثمار كب</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/sebastian-chedal/index.html" itemprop="url">
                 <span itemprop="name">Sebastian Chedal</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -364,7 +384,7 @@
   },
   "name": "تحويل الخبرة القبلية إلى عائد استثمار مدفوع بالذكاء الاصطناعي",
   "episodeNumber": 325,
-  "datePublished": "2026-02-05",
+  "datePublished": "2026-02-12",
   "inLanguage": "ar",
   "description": "مرحبًا بكم في مناقشة تحويلية حول فتح الإمكانات الكاملة للذكاء الاصطناعي! انضم إلى الدكتور دارين، مضيفك الجذاب، أثناء حديثه مع سيبستيان جيندال، الرئيس التنفيذي لشركة فاونتن سيتي، حول كسر عنق الزجاجة المعرفي الذي غالبًا ما يعيق المنظمات. اكتشف كيف يمكن أن يؤدي توثيق الخبرات القبلية إلى عائد استثمار كب",
   "partOfSeries": {
@@ -391,7 +411,7 @@
     {
       "@type": "AudioObject",
       "name": "تحويل الخبرة القبلية إلى عائد استثمار مدفوع بالذكاء الاصطناعي Audio",
-      "contentUrl": "https://share.transistor.fm/e/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
     }
   ],
   "actor": [

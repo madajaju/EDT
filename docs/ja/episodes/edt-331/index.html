@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -193,83 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="331"/>
             <meta itemprop="inLanguage" content="ja"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="意思決定をマスターして組織の成長を最大化しよう Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/wEyPCrj1mjY">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/wEyPCrj1mjY"
-                        title="意思決定をマスターして組織の成長を最大化しよう Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="意思決定をマスターして組織の成長を最大化しよう Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/4abe77f2-a341-44e2-acf9-9a3ddf49f945">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/4abe77f2-a341-44e2-acf9-9a3ddf49f945"
-                        title="意思決定をマスターして組織の成長を最大化しよう Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-05T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="意思決定をマスターして組織の成長を最大化しよう Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/wEyPCrj1mjY">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/wEyPCrj1mjY"
+                            title="意思決定をマスターして組織の成長を最大化しよう Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="意思決定をマスターして組織の成長を最大化しよう Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/4abe77f2-a341-44e2-acf9-9a3ddf49f945">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/4abe77f2-a341-44e2-acf9-9a3ddf49f945"
+                            title="意思決定をマスターして組織の成長を最大化しよう Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 3/5/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>成長を促す鍵は、特に困難な時代において効果的な意思決定を行うことにあります。ダレン博士が、高成長戦略の専門家であるレベッカ・ホムケスを迎え、組織が麻痺を克服し、AIを活用し、意思決定プロセスを洗練させて今日の環境で成功を収める方法を探ります。</p>
-<h2>キーテイクアウト：</h2>
-<ul>
-<li>高パフォーマンスのチームは意思決定能力を優先し、不確実性を克服するために戦略を適応させる。</li>
-<li>組織プロセスに洞察を継続的に埋め込むことで、学習文化を受け入れる。</li>
-<li>アジャイル性は、戦略的目標に沿った迅速な良い意思決定によって定義される。</li>
-<li>成長を最適化し摩擦を減らすために、ビジネスにおける重要な学習ループを特定する。</li>
-<li>単なる予測能力から持続可能な成功のための学習速度の向上に焦点を移す。</li>
-</ul>
-<h2>章：</h2>
-<p>00:00 - イントロダクション<br>02:15 - 組織の麻痺を克服する<br>10:30 - 意思決定と結果の予測<br>19:45 - 成長のための学習ループを特定する<br>28:00 - 意思決定におけるアジリティ<br>35:15 - 学習する組織の構築<br>42:00 - 結論とリソース  </p>
-<p>変革と成長を促進する戦略については、全エピソードをお聞きください！ 同様の課題に取り組んでいる同僚と共有し、レビューを残すことを忘れずに！</p>
+            <p>成長を促す鍵は、特に困難な時代において効果的な意思決定を行うことにあります。ダレン博士が、高成長戦略の専門家であるレベッカ・ホムケスを迎え、組織が麻痺を克服し、AIを活用し、意思決定プロセスを洗練させて今日の環境で成功を収める方法を探ります。 キーテイクアウト： 高パフォーマンスのチームは意思決定能力を優先し、不確実性を克服するために戦略を適応させる。 組織プロセスに洞察を継続的に埋め込むことで、学習文化を受け入れる。 アジャイル性は、戦略的目標に沿った迅速な良い意思決定によって定義される。 成長を最適化し摩擦を減らすために、ビジネスにおける重要な学習ループを特定する。 単なる予測能力から持続</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/rebecca-homkes/index.html" itemprop="url">
                 <span itemprop="name">Rebecca Homkes</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -377,7 +405,7 @@
     {
       "@type": "AudioObject",
       "name": "意思決定をマスターして組織の成長を最大化しよう Audio",
-      "contentUrl": "https://share.transistor.fm/e/4abe77f2-a341-44e2-acf9-9a3ddf49f945"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/4abe77f2-a341-44e2-acf9-9a3ddf49f945"
     }
   ],
   "actor": [

@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -280,61 +281,97 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-01-26" itemprop="datePublished">2026-01-26T16:36:12.913Z</time>
+                    <time datetime="2026-01-26" itemprop="datePublished">2026-01-26T18:45:21.387Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="320"/>
             <meta itemprop="inLanguage" content="en"/>
         </header>
 
         
 
-        
+        <div id="episode-media" data-release-date="2026-01-26T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="From Personal Protection to Cybersecurity: A Journey Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Igik7FUGvI0">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/Igik7FUGvI0"
+                            title="From Personal Protection to Cybersecurity: A Journey Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-26T18:45:21.387Z<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Welcome to a thought-provoking exploration of cybersecurity that intertwines personal experiences with expert insights. Doctor Darren, your engaging host, is joined by Robert Siciliano, a security analyst and author renowned for his perspective on the critical link between individual cybersecurity and corporate safety. Together, they navigate the evolving landscape of security measures in our increasingly digital world.</p>
-<h2>Key Takeaways:</h2>
-<ul>
-<li>Personal Security is Paramount: Recognizing that your personal protection is essential can empower you to take control of your safety and contribute to collective security.</li>
-<li><strong>The Human Firewall</strong>: Humans can be the most vigorous defense against cyber threats when trained to recognize their importance in security protocols.</li>
-<li>Trust and Risk: Your natural trust can sometimes lead to overlooking dangers; education helps you stay alert and confident in managing risks.</li>
-<li><strong>Evolving Threats</strong>: Cybersecurity attacks often exploit emotional states, making awareness during holiday seasons critical.</li>
-<li>Proactive vs. Reactive Measures: Don’t wait for a crisis to improve security; proactive measures like updating passwords regularly, enabling two-factor authentication, and staying informed about current threats can prevent personal and organizational breaches.</li>
-</ul>
-<h2>Chapters:</h2>
-<ul>
-<li>00:00 - Introduction to Cybersecurity</li>
-<li>03:10 - Robert&#39;s Origin Story</li>
-<li>12:45 - The Shift from Personal Protection to Cybersecurity</li>
-<li>22:30 - Understanding Trust in Security</li>
-</ul>
-<p>Embark on this essential conversation about security and the steps you can take to safeguard not just yourself but your organization, whether you&#39;re an individual user or part of a larger enterprise. Remember to tune in next time for further insights into the impact of personal digital security on corporate safety!</p>
+            <p>Welcome to a thought-provoking exploration of cybersecurity that intertwines personal experiences with expert insights. Doctor Darren, your engaging host, is joined by Robert Siciliano, a security analyst and author renowned for his perspective on the critical link between individual cybersecurity a</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../en/guests/robert-siciliano/index.html" itemprop="url">
                 <span itemprop="name">Robert Siciliano</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -353,6 +390,36 @@
 </li>
 </ul>
 <h3>The Individual-Corporate Link</h3>
+<p>Robert points out that most significant breaches originate from individual actions, particularly social engineering attacks. By fostering awareness of personal security, organizations can empower individuals to be key defenders, boosting their confidence in their role.</p>
+<p>Key takeaways include:</p>
+<ul>
+<li><p><strong>Educational Programs</strong>: Employees must receive comprehensive training that relates to everyday experiences, focusing on the human side of cybersecurity.</p>
+</li>
+<li><p><strong>Building a Culture of Security</strong>: Engaging team members in frank discussions about personal security encourages them to share insights and experiences, thereby enriching the organization’s understanding of potential threats.</p>
+</li>
+</ul>
+<h2>Engaging Humans: The Strategic Firewall Concept</h2>
+<h3>The Human Element in Cybersecurity</h3>
+<p>In today’s threat landscape, technology alone cannot provide adequate security, so Robert emphasizes the &#39;Strategic Human Firewall&#39;-the vital role of human employees in strengthening digital defenses, making the concept more memorable and impactful.</p>
+<ul>
+<li><p><strong>Empathy-driven Training</strong>: Addressing emotional responses to security not only makes individuals more receptive to learning but also encourages them to embrace security programs as responsible measures rather than burdens.</p>
+</li>
+<li><p><strong>Proactive Mindset</strong>: Instilling a proactive approach towards security leads individuals to actively engage in safeguarding personal and corporate data rather than waiting for incidents to escalate.</p>
+</li>
+</ul>
+<h3>Encourage Action Steps</h3>
+<p>To effectively build this firewall, organizations can:</p>
+<ul>
+<li><p>Invest in regular, engaging security training tailored to employee experiences.</p>
+</li>
+<li><p>Foster open channels for discussing security concerns without attaching stigma or fear.</p>
+</li>
+<li><p>Recognize that security training should adapt to the evolving nature of threats, just like the methods attackers use do.</p>
+</li>
+</ul>
+<h2>Your Next Steps to Amplify Cybersecurity Awareness</h2>
+<p>Fostering a strong connection between personal and corporate cybersecurity underscores the importance of individual responsibility in adequate security, motivating readers to take proactive steps.</p>
+<p>Take action today by diving deeper into cybersecurity discussions and consider joining the <em>Embracing Digital Transformation</em> community. Get inspired by Robert’s insights to enhance your personal security practices, thereby strengthening your organization. For more content on the intersection of technology, security, and individual empowerment, tune into the latest episode and share these discussions within your network!</p>
 
         </section>
 
@@ -412,7 +479,13 @@
     "@type": "ImageObject",
     "url": "https://www.embracingdigital.org/en/episodes/edt-320/thumbnail.png"
   },
-  "associatedMedia": [],
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "From Personal Protection to Cybersecurity: A Journey Video",
+      "embedUrl": "https://www.youtube.com/embed/Igik7FUGvI0"
+    }
+  ],
   "actor": [
     {
       "@type": "Person",

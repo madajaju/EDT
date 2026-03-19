@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -186,99 +187,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-01-20" itemprop="datePublished">2026-01-20T15:04:35.531Z</time>
+                    <time datetime="2026-01-19" itemprop="datePublished">2026-01-19T01:04:35.531Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="317"/>
             <meta itemprop="inLanguage" content="it"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="IA, Dati e il Futuro delle Infrastrutture Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/0rW2kQrVCTQ">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/0rW2kQrVCTQ"
-                        title="IA, Dati e il Futuro delle Infrastrutture Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="IA, Dati e il Futuro delle Infrastrutture Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/17df924c">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/17df924c"
-                        title="IA, Dati e il Futuro delle Infrastrutture Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-18T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="IA, Dati e il Futuro delle Infrastrutture Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/0rW2kQrVCTQ">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/0rW2kQrVCTQ"
+                            title="IA, Dati e il Futuro delle Infrastrutture Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="IA, Dati e il Futuro delle Infrastrutture Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/17df924c">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/17df924c"
+                            title="IA, Dati e il Futuro delle Infrastrutture Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-19T01:04:35.531Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Hai mai pensato a come l&#39;IA stia rimodellando il panorama digitale? Unisciti al Dr. Darren, il tuo ospite, mentre si immerge in una discussione avvincente con Iran Kerzner, il CEO e fondatore di Lightbits Labs. Esplorano le intersezioni critiche tra dati, IA e infrastrutture, e come le imprese possono navigare in questo paesaggio trasformativo per ottenere un vantaggio competitivo.</p>
-<h2>Punti Chiave:</h2>
-<ul>
-<li><strong>Comprendere l&#39;Impatto dell&#39;IA</strong>: L&#39;IA sta rimodellando i carichi di lavoro in vari settori, soprattutto nel commercio elettronico, nella finanza e nei servizi cloud.</li>
-<li><strong>Cambiamento nella Gestione dei Dati</strong>: I carichi di lavoro stanno passando da ambienti VMware tradizionali a sistemi basati su Kubernetes mentre abbracciano un approccio cloud-native.</li>
-<li><strong>Il Dilemma delle GPU</strong>: Mentre le GPU sono ottimizzate per grandi set di dati, i sistemi di inferenza di domani potrebbero spostarsi verso hardware più specializzato per migliorare l&#39;efficienza.</li>
-<li><strong>Infrastruttura Software-Defined</strong>: I futuri data center devono passare a infrastrutture più flessibili e adattabili per tenere il passo con i carichi di lavoro in evoluzione.</li>
-<li><strong>Maggiore Collaborazione</strong>: È imperativo collaborare tra calcolo, archiviazione e rete per sviluppare soluzioni agili ed efficienti.</li>
-</ul>
-<h2>Capitoli:</h2>
-<ul>
-<li>00:00 Introduzione all&#39;IA e Trasformazione dei Dati</li>
-<li>02:05 Storia di Iran Kerzner</li>
-<li>05:55 Il Ruolo dell&#39;IA nei Carichi di Lavoro Aziendali</li>
-<li>10:30 Transizione ai Sistemi Basati su Kubernetes</li>
-<li>15:45 Comprendere GPU vs. CPU nell&#39;Inferenza</li>
-<li>22:00 Futuro dell&#39;Infrastruttura dei Data Center</li>
-<li>30:15 Soluzioni di Archiviazione Software Defined</li>
-<li>35:00 Conclusione e Invito all&#39;Azione</li>
-</ul>
-<p>Esplora questa conversazione rivelatrice per scoprire come puoi sfruttare l&#39;IA e le strategie di dati per guidare il successo della tua organizzazione. Assicurati di condividere, commentare e farci sapere il tuo parere!</p>
+            <p>Hai mai pensato a come l&#39;IA stia rimodellando il panorama digitale? Unisciti al Dr. Darren, il tuo ospite, mentre si immerge in una discussione avvincente con Iran Kerzner, il CEO e fondatore di Lightbits Labs. Esplorano le intersezioni critiche tra dati, IA e infrastrutture, e come le imprese p</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/eran-kirzner/index.html" itemprop="url">
                 <span itemprop="name">Eran Kirzner</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -370,7 +389,7 @@
   },
   "name": "IA, Dati e il Futuro delle Infrastrutture",
   "episodeNumber": 317,
-  "datePublished": "2026-01-20",
+  "datePublished": "2026-01-19",
   "inLanguage": "it",
   "description": "Hai mai pensato a come l&#39;IA stia rimodellando il panorama digitale? Unisciti al Dr. Darren, il tuo ospite, mentre si immerge in una discussione avvincente con Iran Kerzner, il CEO e fondatore di Lightbits Labs. Esplorano le intersezioni critiche tra dati, IA e infrastrutture, e come le imprese p",
   "partOfSeries": {
@@ -397,7 +416,7 @@
     {
       "@type": "AudioObject",
       "name": "IA, Dati e il Futuro delle Infrastrutture Audio",
-      "contentUrl": "https://share.transistor.fm/e/17df924c"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/17df924c"
     }
   ],
   "actor": [

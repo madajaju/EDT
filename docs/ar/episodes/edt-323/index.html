@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -185,79 +186,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-02-03" itemprop="datePublished">2026-02-03T10:31:13.985Z</time>
+                    <time datetime="2026-02-05" itemprop="datePublished">2026-02-05T10:53:00.814Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="323"/>
             <meta itemprop="inLanguage" content="ar"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="أمن الفضاء السيبراني للدولة الأمة، رحلة إريك أونيل Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Q2RswQL--GA">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/Q2RswQL--GA"
-                        title="أمن الفضاء السيبراني للدولة الأمة، رحلة إريك أونيل Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
+        <div id="episode-media" data-release-date="2026-02-05T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="أمن الفضاء السيبراني للدولة الأمة، رحلة إريك أونيل Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Q2RswQL--GA">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/Q2RswQL--GA"
+                            title="أمن الفضاء السيبراني للدولة الأمة، رحلة إريك أونيل Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="أمن الفضاء السيبراني للدولة الأمة، رحلة إريك أونيل Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/f68ac0cc-ed9b-4f99-a53f-f752aede917a">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/f68ac0cc-ed9b-4f99-a53f-f752aede917a"
+                            title="أمن الفضاء السيبراني للدولة الأمة، رحلة إريك أونيل Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-02-05T10:53:00.814Z<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>في عالم مهدد بشكل متزايد بهجمات إلكترونية، يكشف العميل السابق في مكتب التحقيقات الفيدرالي إريك أونيل استراتيجيات المخاطر المحتملة في الأمن السيبراني في هذه الحلقة المشرقة مع المضيف الدكتور دارين. يشارك إريك رحلته الاستثنائية في القبض على أحد أشهر الجواسيس في أمريكا ويستكشف تداعيات تهديدات الدول القومية في الفضاء السيبراني، مقدماً نصائح قابلة للتنفيذ حول كيفية تعزيز الأفراد والمنظمات للدفاعات الخاصة بهم.</p>
-<h2>النقاط الرئيسية:</h2>
-<ul>
-<li><strong>فهم التهديدات السيبرانية</strong>: تعتبر هجمات الدول القومية السيبرانية أكبر تهديد للبنية التحتية الحيوية للولايات المتحدة، بما في ذلك أنظمة الطاقة والمياه والغاز.</li>
-<li><strong>دعوة إلى العمل</strong>: يجب على الأفراد والمنظمات تنفيذ ممارسات أساسية في الأمن السيبراني مثل المصادقة الثنائية والتقييمات المنتظمة.</li>
-<li><strong>منهجية &quot;المعد&quot;</strong>: استخدم إطار العمل الذي يتضمن التحضير والتقييم والتحقيق واتخاذ القرار لتعزيز الأمن السيبراني الشخصي والتنظيمي.</li>
-<li><strong>مكافحة ransomware</strong>: فهم التكتيكات وراء الهندسة الاجتماعية وهجمات ransomware للدفاع بشكل أفضل ضدها.</li>
-<li><strong>الموارد المحلية</strong>: معرفة السلطات المحلية المناسبة للتواصل في حالة وقوع حادث سيبراني يمكن أن تكون حاسمة للتدخل في الوقت المناسب.</li>
-</ul>
-<h2>الفصول:</h2>
-<ul>
-<li>00:00 مقدمة: التعرف على إريك أونيل</li>
-<li>05:20 خلفية إريك وعمله السري</li>
-<li>15:00 مشهد التهديدات السيبرانية</li>
-<li>25:30 أهمية الأمن السيبراني في البنية التحتية الحيوية</li>
-<li>35:45 تقديم منهجية &quot;المعد&quot;</li>
-<li>45:15 كيفية تقييم وتقليل المخاطر السيبرانية</li>
-<li>55:30 أفكار ختامية وأين يمكن العثور على إريك أونيل</li>
-</ul>
-<p>اغمر نفسك في تعقيدات الأمن السيبراني وتعلم كيف يمكنك أن تصبح صائد جواسيس بنفسك من خلال الاستماع الآن!</p>
+            <p>في عالم مهدد بشكل متزايد بهجمات إلكترونية، يكشف العميل السابق في مكتب التحقيقات الفيدرالي إريك أونيل استراتيجيات المخاطر المحتملة في الأمن السيبراني في هذه الحلقة المشرقة مع المضيف الدكتور دارين. يشارك إريك رحلته الاستثنائية في القبض على أحد أشهر الجواسيس في أمريكا ويستكشف تداعيات تهديدات الدول القو</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/eric-oneill/index.html" itemprop="url">
                 <span itemprop="name">Eric ONeill</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -346,7 +385,7 @@
   },
   "name": "أمن الفضاء السيبراني للدولة الأمة، رحلة إريك أونيل",
   "episodeNumber": 323,
-  "datePublished": "2026-02-03",
+  "datePublished": "2026-02-05",
   "inLanguage": "ar",
   "description": "في عالم مهدد بشكل متزايد بهجمات إلكترونية، يكشف العميل السابق في مكتب التحقيقات الفيدرالي إريك أونيل استراتيجيات المخاطر المحتملة في الأمن السيبراني في هذه الحلقة المشرقة مع المضيف الدكتور دارين. يشارك إريك رحلته الاستثنائية في القبض على أحد أشهر الجواسيس في أمريكا ويستكشف تداعيات تهديدات الدول القو",
   "partOfSeries": {
@@ -369,6 +408,11 @@
       "@type": "VideoObject",
       "name": "أمن الفضاء السيبراني للدولة الأمة، رحلة إريك أونيل Video",
       "embedUrl": "https://www.youtube.com/embed/Q2RswQL--GA"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "أمن الفضاء السيبراني للدولة الأمة، رحلة إريك أونيل Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/f68ac0cc-ed9b-4f99-a53f-f752aede917a"
     }
   ],
   "actor": [

@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
 
     <!-- Dynamic Title / Meta -->
     <title>AI Workflow Automation Augmenting Marketing Teams | Embracing Digital Transformation</title>
-    <meta name="description" content="The future of marketing is here, and AI workflow automation is at the forefront of this digital transformation. In this episode of Embracing Digital Transformation, Dr. Darren sits down with Pete Gosling, founder of Gosling Media and Design Tech, to discuss how AI is augmenting marketing teams-such ">
+    <meta name="description" content="The future of marketing is here, and AI workflow automation is at the forefront of this digital transformation. In this episode of Embracing Digital Transformation, Dr. Darren sits down with Pete Gosling, founder of Gosling Media and Design Tech, to discuss how AI is augmenting marketing teams-such">
     
     
     <link rel="canonical" href="https://www.embracingdigital.org/en/episodes/edt-327/index.html">
@@ -31,14 +32,14 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="AI Workflow Automation Augmenting Marketing Teams | Embracing Digital Transformation">
-    <meta property="og:description" content="The future of marketing is here, and AI workflow automation is at the forefront of this digital transformation. In this episode of Embracing Digital Transformation, Dr. Darren sits down with Pete Gosling, founder of Gosling Media and Design Tech, to discuss how AI is augmenting marketing teams-such ">
+    <meta property="og:description" content="The future of marketing is here, and AI workflow automation is at the forefront of this digital transformation. In this episode of Embracing Digital Transformation, Dr. Darren sits down with Pete Gosling, founder of Gosling Media and Design Tech, to discuss how AI is augmenting marketing teams-such">
     <meta property="og:url" content="https://www.embracingdigital.org/en/episodes/edt-327/index.html">
     <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AI Workflow Automation Augmenting Marketing Teams | Embracing Digital Transformation">
-    <meta name="twitter:description" content="The future of marketing is here, and AI workflow automation is at the forefront of this digital transformation. In this episode of Embracing Digital Transformation, Dr. Darren sits down with Pete Gosling, founder of Gosling Media and Design Tech, to discuss how AI is augmenting marketing teams-such ">
+    <meta name="twitter:description" content="The future of marketing is here, and AI workflow automation is at the forefront of this digital transformation. In this episode of Embracing Digital Transformation, Dr. Darren sits down with Pete Gosling, founder of Gosling Media and Design Tech, to discuss how AI is augmenting marketing teams-such">
     <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
 
     <!-- Analytics -->
@@ -287,57 +288,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="327"/>
             <meta itemprop="inLanguage" content="en"/>
         </header>
 
         
 
-        
+        <div id="episode-media" data-release-date="2026-02-19T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="AI Workflow Automation Augmenting Marketing Teams Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/MS4DEPtpweY">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/MS4DEPtpweY"
+                            title="AI Workflow Automation Augmenting Marketing Teams Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="AI Workflow Automation Augmenting Marketing Teams Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/ef1cad72-4d74-4a84-bdce-9987408b96e3">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/ef1cad72-4d74-4a84-bdce-9987408b96e3"
+                            title="AI Workflow Automation Augmenting Marketing Teams Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2/19/2026<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>The future of marketing is here, and AI workflow automation is at the forefront of this digital transformation. In this episode of Embracing Digital Transformation, Dr. Darren sits down with Pete Gosling, founder of Gosling Media and Design Tech, to discuss how AI is augmenting marketing teams-such as content creators, data analysts, and campaign managers- and the essential skills needed in this evolving landscape.</p>
-<h2>Key Takeaways:</h2>
-<ul>
-<li>Adaptability is Key: Showing flexibility in skillset can help marketing professionals feel valued and confident in their ability to stay relevant in a changing landscape, which is essential for their growth and motivation.</li>
-<li>Understanding AI Tools: Encouraging organizations to focus on integrating AI into workflows can help teams feel empowered and curious about new possibilities, fostering a proactive mindset towards innovation.</li>
-<li><strong>Importance of Delegation</strong>: Effective delegation, whether to AI or team members, is crucial for enhancing productivity and workflow management.</li>
-<li><strong>Content Atomization</strong>: Transforming a single piece of content into multiple marketing assets can maximize resource efficiency.</li>
-<li>Build to Learn: Implementing AI in small, controlled projects can help teams feel supported and confident in experimenting, which is key to refining processes and gaining buy-in for larger initiatives.</li>
-<li><strong>Leverage Institutional Knowledge</strong>: Retaining experienced team members ensures that the strategic implementation of AI can be effective and informed by practical insights.</li>
-</ul>
-<h2>Chapters:</h2>
-<ul>
-<li>00:00 - Introduction to AI Workflow Automation</li>
-<li>01:45 - Pete&#39;s Background in Animation and Marketing</li>
-<li>08:30 - The Difference of AI Disruption Compared to Past Changes</li>
-<li>15:00 - Skills Needed for the Future Job Market</li>
-<li>24:15 - The Challenges of Delegation in AI and Marketing</li>
-<li>32:10 - The Role of Content Atomization</li>
-</ul>
-<p>Join Dr. Darren and Pete Gosling for an insightful conversation with practical advice to help marketing teams navigate the AI revolution effectively. Don&#39;t miss out on the opportunity to enhance your understanding and application of AI in the workplace!</p>
+            <p>The future of marketing is here, and AI workflow automation is at the forefront of this digital transformation. In this episode of Embracing Digital Transformation, Dr. Darren sits down with Pete Gosling, founder of Gosling Media and Design Tech, to discuss how AI is augmenting marketing teams-such </p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../en/guests/pete-gosling/index.html" itemprop="url">
                 <span itemprop="name">Pete Gosling</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -445,7 +499,18 @@
     "@type": "ImageObject",
     "url": "https://www.embracingdigital.org/en/episodes/edt-327/thumbnail.png"
   },
-  "associatedMedia": [],
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "AI Workflow Automation Augmenting Marketing Teams Video",
+      "embedUrl": "https://www.youtube.com/embed/MS4DEPtpweY"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "AI Workflow Automation Augmenting Marketing Teams Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/ef1cad72-4d74-4a84-bdce-9987408b96e3"
+    }
+  ],
   "actor": [
     {
       "@type": "Person",

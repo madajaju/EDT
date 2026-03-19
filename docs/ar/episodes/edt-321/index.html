@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -185,80 +186,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-01-27" itemprop="datePublished">2026-01-27T18:09:40.793Z</time>
+                    <time datetime="2026-01-27" itemprop="datePublished">2026-01-27T18:36:49.041Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="321"/>
             <meta itemprop="inLanguage" content="ar"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="الأمان الرقمي الشخصي: المفتاح للأمن السيبراني في الشركات Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/kE-_4z6OBkc">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/kE-_4z6OBkc"
-                        title="الأمان الرقمي الشخصي: المفتاح للأمن السيبراني في الشركات Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
+        <div id="episode-media" data-release-date="2026-01-27T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="الأمان الرقمي الشخصي: المفتاح للأمن السيبراني في الشركات Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/kE-_4z6OBkc">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/kE-_4z6OBkc"
+                            title="الأمان الرقمي الشخصي: المفتاح للأمن السيبراني في الشركات Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="الأمان الرقمي الشخصي: المفتاح للأمن السيبراني في الشركات Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/a3f1b9e8-b8d8-4268-a05d-4578f848edd5.mp3">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/a3f1b9e8-b8d8-4268-a05d-4578f848edd5.mp3"
+                            title="الأمان الرقمي الشخصي: المفتاح للأمن السيبراني في الشركات Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-27T18:36:49.041Z<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>انضم إلى الدكتور دارين وخبير الأمن السيبراني روبرت سيكيليانو للحصول على رؤى عملية حول الأمن السيبراني الشخصي والخاص بالشركات. تبرز هذه الحلقة الخطوات الأساسية التي يمكن أن يتخذها الأفراد والمنظمات لحماية المعلومات الحساسة في عالمنا الافتراضي المتزايد.</p>
-<h2>النقاط الرئيسية:</h2>
-<ul>
-<li><strong>استخدام مديري كلمات المرور</strong>: استخدم مديري كلمات المرور وقم بتمكين المصادقة الثنائية لتعزيز أمانك عبر الإنترنت.</li>
-<li><strong>فوائد تجميد الائتمان</strong>: نفذ تجميد الائتمان للحفاظ على السيطرة على من يمكنه الوصول إلى معلوماتك المالية ومنع سرقة الهوية.
-تأكد من أن جميع أجهزتك، بما في ذلك الهواتف الذكية وأجهزة الكمبيوتر، محمية بكلمات مرور ومحدثة بانتظام لتمكينك من الدفاع ضد التهديدات السيبرانية بشكل فعال.
-ابق على اطلاع على المشهد المتطور للجريمة السيبرانية، بما في ذلك المخاطر مثل التزييف العميق واستنساخ الصوت، لمساعدتك وعائلتك على الشعور بثقة أكبر واستعداد أفضل.
-شجع النقاشات المفتوحة حول الأمن السيبراني في مكان العمل لمساعدة الموظفين على الشعور بالمشاركة وتحفيزهم للبقاء محميين.</li>
-</ul>
-<h2>الفصول:</h2>
-<ul>
-<li>00:00 - مقدمة ونظرة عامة</li>
-<li>02:30 - لماذا يعتبر الأفراد محوراً في الأمن السيبراني</li>
-<li>05:15 - أساسيات إدارة كلمات المرور</li>
-<li>08:45 - تجميد الائتمان كأداة أمان</li>
-<li>12:00 - أفضل ممارسات أمان الأجهزة</li>
-<li>15:30 - فهم التهديدات السيبرانية الجديدة</li>
-<li>20:00 - أهمية التدريب التفاعلي</li>
-<li>25:00 - الخاتمة والموارد</li>
-</ul>
-<p>استمع إلى هذه الحلقة المضيئة لتعزيز وعيك بالأمن السيبراني واتخاذ خطوات قابلة للتنفيذ نحو تجربة رقمية أكثر أمانًا!</p>
+            <p>انضم إلى الدكتور دارين وخبير الأمن السيبراني روبرت سيكيليانو للحصول على رؤى عملية حول الأمن السيبراني الشخصي والخاص بالشركات. تبرز هذه الحلقة الخطوات الأساسية التي يمكن أن يتخذها الأفراد والمنظمات لحماية المعلومات الحساسة في عالمنا الافتراضي المتزايد. النقاط الرئيسية: استخدام مديري كلمات المرور : اس</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/robert-siciliano/index.html" itemprop="url">
                 <span itemprop="name">Robert Siciliano</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -381,6 +419,11 @@
       "@type": "VideoObject",
       "name": "الأمان الرقمي الشخصي: المفتاح للأمن السيبراني في الشركات Video",
       "embedUrl": "https://www.youtube.com/embed/kE-_4z6OBkc"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "الأمان الرقمي الشخصي: المفتاح للأمن السيبراني في الشركات Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/a3f1b9e8-b8d8-4268-a05d-4578f848edd5.mp3"
     }
   ],
   "actor": [

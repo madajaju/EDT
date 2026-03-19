@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -193,92 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="316"/>
             <meta itemprop="inLanguage" content="fr"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Les agents d'IA propulsant la transformation numérique à grande échelle Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/aTr79waqrQU">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/aTr79waqrQU"
-                        title="Les agents d'IA propulsant la transformation numérique à grande échelle Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Les agents d'IA propulsant la transformation numérique à grande échelle Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/dbd9651a">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/dbd9651a"
-                        title="Les agents d'IA propulsant la transformation numérique à grande échelle Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-10T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Les agents d'IA propulsant la transformation numérique à grande échelle Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/aTr79waqrQU">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/aTr79waqrQU"
+                            title="Les agents d'IA propulsant la transformation numérique à grande échelle Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../fr/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Les agents d'IA propulsant la transformation numérique à grande échelle Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/9ed624dd">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/9ed624dd"
+                            title="Les agents d'IA propulsant la transformation numérique à grande échelle Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../fr/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-11T03:33:15.740Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Imagine un monde où les tâches de bureau ennuyeuses sont réalisées en quelques secondes, grâce à des agents IA intelligents. L&#39;hôte Dr. Darren discute avec Suzanne Livingston, une experte en IA de premier plan chez IBM. Ils explorent comment l&#39;IA révolutionne la productivité au travail en automatisant des processus fastidieux et en offrant des économies de coûts significatives.</p>
-<h2>Points clés :</h2>
-<ul>
-<li><strong>Efficacité activée par l&#39;IA</strong> : Découvrez comment les agents IA peuvent rationaliser des tâches telles que les transferts d&#39;employés, les achats et les processus juridiques, permettant aux organisations de gagner un temps et des ressources précieux.</li>
-<li><strong>Économies de coûts</strong> : Découvrez comment IBM a économisé environ 4,5 milliards de dollars en transformant des méthodes obsolètes en processus intelligents grâce à l&#39;IA.</li>
-<li><strong>Confiance et adoption</strong> : Comprenez l&#39;importance de construire la confiance dans les systèmes IA et les défis auxquels les organisations sont confrontées lors de l&#39;intégration de ces technologies dans leurs structures existantes.</li>
-<li><strong>Accent sur l&#39;engagement des utilisateurs</strong> : Voyez comment les entreprises peuvent améliorer l&#39;expérience client en déployant une IA qui répond proactivement aux besoins et engage les utilisateurs de manière fluide.</li>
-<li><strong>Réingénierie des processus</strong> : Explorez la nécessité de réévaluer les flux de travail existants pour les optimiser pour l&#39;automatisation plutôt que de simplement les numériser.</li>
-</ul>
-<h2>Chapitres :</h2>
-<ul>
-<li>00:00 - Introduction à l&#39;IA et à la productivité</li>
-<li>02:15 - Le parcours de Suzanne dans l&#39;IA et l&#39;automatisation</li>
-<li>06:50 - L&#39;évolution des agents intelligents chez IBM</li>
-<li>12:05 - Cas d&#39;utilisation clés de l&#39;IA dans les affaires</li>
-<li>16:40 - Surmonter les défis de confiance et d&#39;adoption</li>
-<li>22:25 - Le chemin du pilote à la mise en œuvre complète</li>
-<li>27:00 - S&#39;engager avec les clients grâce à l&#39;IA</li>
-<li>32:50 - Comment commencer avec les solutions IA d&#39;IBM</li>
-</ul>
-<p>Plongez dans cet épisode pour découvrir l&#39;avenir du travail et comment l&#39;adoption de l&#39;intelligence artificielle peut entraîner des changements transformateurs au sein de votre organisation.</p>
+            <p>Imagine un monde où les tâches de bureau ennuyeuses sont réalisées en quelques secondes, grâce à des agents IA intelligents. L&#39;hôte Dr. Darren discute avec Suzanne Livingston, une experte en IA de premier plan chez IBM. Ils explorent comment l&#39;IA révolutionne la productivité au travail en au</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../fr/guests/suzanne-livingston/index.html" itemprop="url">
                 <span itemprop="name">Suzanne Livingston</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../fr/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -397,7 +416,7 @@
     {
       "@type": "AudioObject",
       "name": "Les agents d'IA propulsant la transformation numérique à grande échelle Audio",
-      "contentUrl": "https://share.transistor.fm/e/dbd9651a"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/9ed624dd"
     }
   ],
   "actor": [

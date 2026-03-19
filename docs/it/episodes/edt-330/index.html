@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -193,95 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="330"/>
             <meta itemprop="inLanguage" content="it"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Ripristino dopo un disastro per Executive: Perché il Cloud e il SaaS non sono sufficienti Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/p3NUgJUmHCY">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/p3NUgJUmHCY"
-                        title="Ripristino dopo un disastro per Executive: Perché il Cloud e il SaaS non sono sufficienti Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Ripristino dopo un disastro per Executive: Perché il Cloud e il SaaS non sono sufficienti Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
-                        title="Ripristino dopo un disastro per Executive: Perché il Cloud e il SaaS non sono sufficienti Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-03T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Ripristino dopo un disastro per Executive: Perché il Cloud e il SaaS non sono sufficienti Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/p3NUgJUmHCY">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/p3NUgJUmHCY"
+                            title="Ripristino dopo un disastro per Executive: Perché il Cloud e il SaaS non sono sufficienti Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Ripristino dopo un disastro per Executive: Perché il Cloud e il SaaS non sono sufficienti Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
+                            title="Ripristino dopo un disastro per Executive: Perché il Cloud e il SaaS non sono sufficienti Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 3/3/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Il recupero da disastri è un aspetto cruciale ma spesso trascurato della continuità aziendale. Unisciti al Dott. Darren mentre parla con Tom May, CEO di Different Dev, riguardo al motivo per cui le soluzioni cloud e il Software come Servizio (SaaS) non sono sufficienti per un recupero completo da disastri. Scopri informazioni pratiche che possono aiutare a proteggere la tua azienda contro calamità inaspettate.</p>
-<h2>Punti Chiave:</h2>
-<ul>
-<li>Comprendere che un efficace recupero da disastri richiede un impegno continuo, non un approccio “una tantum”.</li>
-<li>Dare priorità ai sistemi aziendali critici in base alla rapidità con cui devono essere operativi dopo un disastro.</li>
-<li>L&#39;importanza di avere un&#39;analisi dell&#39;impatto aziendale (BIA) per determinare il costo dei tempi di inattività per diversi sistemi.</li>
-<li>Perché fare affidamento esclusivamente sui fornitori di cloud può dare una falsa sensazione di sicurezza; è essenziale avere backup indipendenti.</li>
-<li>Implementare un approccio graduale per la pianificazione del recupero da disastri, partendo da un prodotto minimo viabile e sviluppando da lì.</li>
-<li>Promuovere una cultura della documentazione all&#39;interno della tua organizzazione per mitigare i rischi associati al turnover del personale chiave.</li>
-</ul>
-<h2>Capitoli:</h2>
-<ul>
-<li>(00:00) Introduzione</li>
-<li>(02:15) L&#39;importanza del recupero da disastri</li>
-<li>(05:45) La storia di origine di Tom May</li>
-<li>(10:30) La prospettiva esecutiva: considerazioni chiave</li>
-<li>(15:10) La necessità di un&#39;analisi dell&#39;impatto aziendale</li>
-<li>(20:00) Comprendere gli Obiettivi di Tempi di Recupero (RTO) e gli Obiettivi di Punti di Recupero (RPO)</li>
-<li>(25:30) Il ruolo del cloud e le sfide di conformità</li>
-<li>(30:45) Consapevolezza e prevenzione del ransomware</li>
-<li>(35:00) Trovare il giusto equilibrio nella pianificazione dei disastri</li>
-<li>(40:15) Conclusione e risorse</li>
-</ul>
-<p>Per una comprensione più approfondita e consulenze personalizzate, contatta Tom May su <a href="http://differentdev.com">differentdev.com</a> e inizia a pianificare la tua strategia di mitigazione delle catastrofi oggi stesso!</p>
+            <p>Il recupero da disastri è un aspetto cruciale ma spesso trascurato della continuità aziendale. Unisciti al Dott. Darren mentre parla con Tom May, CEO di Different Dev, riguardo al motivo per cui le soluzioni cloud e il Software come Servizio (SaaS) non sono sufficienti per un recupero completo da di</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/tom-may/index.html" itemprop="url">
                 <span itemprop="name">Tom May</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -395,7 +411,7 @@
     {
       "@type": "AudioObject",
       "name": "Ripristino dopo un disastro per Executive: Perché il Cloud e il SaaS non sono sufficienti Audio",
-      "contentUrl": "https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
     }
   ],
   "actor": [

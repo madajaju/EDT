@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -186,79 +187,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-02-03" itemprop="datePublished">2026-02-03T10:31:13.985Z</time>
+                    <time datetime="2026-02-05" itemprop="datePublished">2026-02-05T10:53:00.814Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="323"/>
             <meta itemprop="inLanguage" content="ja"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="国家のサイバーセキュリティ、エリック・オニールの旅 Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Q2RswQL--GA">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/Q2RswQL--GA"
-                        title="国家のサイバーセキュリティ、エリック・オニールの旅 Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
+        <div id="episode-media" data-release-date="2026-02-05T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="国家のサイバーセキュリティ、エリック・オニールの旅 Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Q2RswQL--GA">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/Q2RswQL--GA"
+                            title="国家のサイバーセキュリティ、エリック・オニールの旅 Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="国家のサイバーセキュリティ、エリック・オニールの旅 Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/f68ac0cc-ed9b-4f99-a53f-f752aede917a">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/f68ac0cc-ed9b-4f99-a53f-f752aede917a"
+                            title="国家のサイバーセキュリティ、エリック・オニールの旅 Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-02-05T10:53:00.814Z<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>サイバー攻撃の脅威が高まる世界で、元FBIの対諜報部員エリック・オニールが、ホストのダレン博士と共にサイバーセキュリティにおける戦略と潜在的な危険性を明らかにします。エリックは、アメリカで最も悪名高いスパイの一人を捕まえた際の驚異的な旅を共有し、国家レベルのサイバー脅威の影響について掘り下げながら、個人や組織が防御を強化するための実用的なアドバイスを提供します。</p>
-<h2>主なポイント:</h2>
-<ul>
-<li><strong>サイバー脅威の理解</strong>: 国家によるサイバー攻撃は、電力、水道、ガスシステムなど、アメリカの重要なインフラに対する最も重大な脅威です。</li>
-<li><strong>行動への呼びかけ</strong>: 個人や組織は、二要素認証や定期的な評価などの基本的なサイバーセキュリティの実践を導入する必要があります。</li>
-<li><strong>「Paid」メソドロジー</strong>: 準備、評価、調査、決定のフレームワークを活用して、個人と組織のサイバーセキュリティを強化します。</li>
-<li><strong>ランサムウェア対策</strong>: ソーシャルエンジニアリングやランサムウェア攻撃の背後にある戦術を理解し、より良い防御を図ります。</li>
-<li><strong>地域のリソース</strong>: サイバー事件が発生した場合に連絡すべき適切な地元の権限を知っておくことは、迅速な介入にとって重要です。</li>
-</ul>
-<h2>章立て:</h2>
-<ul>
-<li>00:00 イントロダクション: エリック・オニールに会う</li>
-<li>05:20 エリックの背景と潜入業務</li>
-<li>15:00 サイバー脅威の状況</li>
-<li>25:30 重要インフラにおけるサイバーセキュリティの重要性</li>
-<li>35:45 「Paid」メソドロジーの紹介</li>
-<li>45:15 サイバーリスクの評価と軽減方法</li>
-<li>55:30 エリック・オニールに関する締めの考えと情報源</li>
-</ul>
-<p>サイバーセキュリティの複雑さに深く入っていき、今すぐ聴いて、自分自身のスパイハンターになれる方法を学びましょう！</p>
+            <p>サイバー攻撃の脅威が高まる世界で、元FBIの対諜報部員エリック・オニールが、ホストのダレン博士と共にサイバーセキュリティにおける戦略と潜在的な危険性を明らかにします。エリックは、アメリカで最も悪名高いスパイの一人を捕まえた際の驚異的な旅を共有し、国家レベルのサイバー脅威の影響について掘り下げながら、個人や組織が防御を強化するための実用的なアドバイスを提供します。 主なポイント: サイバー脅威の理解 : 国家によるサイバー攻撃は、電力、水道、ガスシステムなど、アメリカの重要なインフラに対する最も重大な脅威です。 行動への呼びかけ : 個人や組織は、二要素認証や定期的な評価などの基本的なサイバーセ</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/eric-oneill/index.html" itemprop="url">
                 <span itemprop="name">Eric ONeill</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -345,7 +384,7 @@
   },
   "name": "国家のサイバーセキュリティ、エリック・オニールの旅",
   "episodeNumber": 323,
-  "datePublished": "2026-02-03",
+  "datePublished": "2026-02-05",
   "inLanguage": "ja",
   "description": "サイバー攻撃の脅威が高まる世界で、元FBIの対諜報部員エリック・オニールが、ホストのダレン博士と共にサイバーセキュリティにおける戦略と潜在的な危険性を明らかにします。エリックは、アメリカで最も悪名高いスパイの一人を捕まえた際の驚異的な旅を共有し、国家レベルのサイバー脅威の影響について掘り下げながら、個人や組織が防御を強化するための実用的なアドバイスを提供します。 主なポイント: サイバー脅威の理解 : 国家によるサイバー攻撃は、電力、水道、ガスシステムなど、アメリカの重要なインフラに対する最も重大な脅威です。 行動への呼びかけ : 個人や組織は、二要素認証や定期的な評価などの基本的なサイバーセ",
   "partOfSeries": {
@@ -368,6 +407,11 @@
       "@type": "VideoObject",
       "name": "国家のサイバーセキュリティ、エリック・オニールの旅 Video",
       "embedUrl": "https://www.youtube.com/embed/Q2RswQL--GA"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "国家のサイバーセキュリティ、エリック・オニールの旅 Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/f68ac0cc-ed9b-4f99-a53f-f752aede917a"
     }
   ],
   "actor": [

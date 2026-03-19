@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -186,98 +187,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-02-05" itemprop="datePublished">2026-02-05T08:52:21.398Z</time>
+                    <time datetime="2026-02-12" itemprop="datePublished">2026-02-12T08:52:21.398Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="325"/>
             <meta itemprop="inLanguage" content="es"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Convertir la experiencia tribal en retorno de inversión impulsado por inteligencia artificial. Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/mRKe5jHmzwI">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/mRKe5jHmzwI"
-                        title="Convertir la experiencia tribal en retorno de inversión impulsado por inteligencia artificial. Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Convertir la experiencia tribal en retorno de inversión impulsado por inteligencia artificial. Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/34324f69-3c2f-40d1-b8bc-40d25259cfdb">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
-                        title="Convertir la experiencia tribal en retorno de inversión impulsado por inteligencia artificial. Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-02-12T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Convertir la experiencia tribal en retorno de inversión impulsado por inteligencia artificial. Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/mRKe5jHmzwI">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/mRKe5jHmzwI"
+                            title="Convertir la experiencia tribal en retorno de inversión impulsado por inteligencia artificial. Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../es/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Convertir la experiencia tribal en retorno de inversión impulsado por inteligencia artificial. Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/34324f69-3c2f-40d1-b8bc-40d25259cfdb">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
+                            title="Convertir la experiencia tribal en retorno de inversión impulsado por inteligencia artificial. Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../es/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-02-12T08:52:21.398Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>¡Bienvenido a una discusión transformadora sobre cómo desbloquear todo el potencial de la IA! Únete al Dr. Darren, tu anfitrión atractivo, mientras habla con Sebastian Jindal, CEO de Fountain City, sobre cómo romper el cuello de botella del conocimiento que a menudo obstaculiza a las organizaciones. Descubre cómo capturar la experiencia tribal puede llevar a un ROI significativo a través de soluciones impulsadas por IA.</p>
-<h2>Puntos Clave:</h2>
-<ul>
-<li><strong>Entendiendo el Cuello de Botella del Conocimiento</strong>: Muchas organizaciones confían en una sola persona para conocimientos cruciales, creando cuellos de botella que sofocan el progreso.</li>
-<li><strong>Estrategia de Datos Efectiva</strong>: Establece un enfoque estructurado para recopilar y documentar el conocimiento tácito de los empleados, mejorando la accesibilidad y la usabilidad.</li>
-<li><strong>El Papel de la IA en la Reingeniería de Procesos</strong>: Enfatiza la gestión del cambio para garantizar una integración efectiva de la IA en lugar de adoptar la IA solo por seguir tendencias.</li>
-<li><strong>Medición del Éxito</strong>: Implementa un enfoque metódico donde los proyectos puedan ser medidos, iterados y optimizados para la mejora continua.</li>
-<li><strong>Toma de Decisiones Aumentada</strong>: La IA puede ayudar con la toma de decisiones cualitativas que los humanos puedan verificar, en lugar de automatizar completamente cada proceso sin supervisión.</li>
-</ul>
-<h2>Capítulos:</h2>
-<ul>
-<li>00:00 - Introducción al Tema</li>
-<li>03:45 - Entendiendo el Cuello de Botella del Conocimiento</li>
-<li>08:30 - Documentando el Conocimiento Tácito</li>
-<li>14:15 - La Importancia de la Gestión del Cambio</li>
-<li>20:00 - Enfoques Estratégicos para la Implementación de la IA</li>
-<li>27:45 - El Futuro de la IA en el Desarrollo de Software</li>
-<li>34:00 - Reflexiones Finales y Recursos</li>
-</ul>
-<p>¡Sintoniza para obtener ideas impactantes que pueden ayudar a tu organización a abrazar con confianza el viaje de transformación digital!</p>
+            <p>¡Bienvenido a una discusión transformadora sobre cómo desbloquear todo el potencial de la IA! Únete al Dr. Darren, tu anfitrión atractivo, mientras habla con Sebastian Jindal, CEO de Fountain City, sobre cómo romper el cuello de botella del conocimiento que a menudo obstaculiza a las organizaciones.</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../es/guests/sebastian-chedal/index.html" itemprop="url">
                 <span itemprop="name">Sebastian Chedal</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../es/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -357,7 +377,7 @@
   },
   "name": "Convertir la experiencia tribal en retorno de inversión impulsado por inteligencia artificial.",
   "episodeNumber": 325,
-  "datePublished": "2026-02-05",
+  "datePublished": "2026-02-12",
   "inLanguage": "es",
   "description": "¡Bienvenido a una discusión transformadora sobre cómo desbloquear todo el potencial de la IA! Únete al Dr. Darren, tu anfitrión atractivo, mientras habla con Sebastian Jindal, CEO de Fountain City, sobre cómo romper el cuello de botella del conocimiento que a menudo obstaculiza a las organizaciones.",
   "partOfSeries": {
@@ -384,7 +404,7 @@
     {
       "@type": "AudioObject",
       "name": "Convertir la experiencia tribal en retorno de inversión impulsado por inteligencia artificial. Audio",
-      "contentUrl": "https://share.transistor.fm/e/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
     }
   ],
   "actor": [

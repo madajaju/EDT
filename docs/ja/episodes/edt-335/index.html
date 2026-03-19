@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -193,92 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="335"/>
             <meta itemprop="inLanguage" content="ja"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="AI流暢性を高めるステップからAI拡張へ Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/f0qLAD_IAbQ">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/f0qLAD_IAbQ"
-                        title="AI流暢性を高めるステップからAI拡張へ Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="AI流暢性を高めるステップからAI拡張へ Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/79b2d4d9-6912-466b-a202-207b9acd91a3">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/79b2d4d9-6912-466b-a202-207b9acd91a3"
-                        title="AI流暢性を高めるステップからAI拡張へ Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-18T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="AI流暢性を高めるステップからAI拡張へ Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/f0qLAD_IAbQ">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/f0qLAD_IAbQ"
+                            title="AI流暢性を高めるステップからAI拡張へ Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="AI流暢性を高めるステップからAI拡張へ Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/79b2d4d9-6912-466b-a202-207b9acd91a3">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/79b2d4d9-6912-466b-a202-207b9acd91a3"
+                            title="AI流暢性を高めるステップからAI拡張へ Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-19<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>デジタルトランスフォーメーションを受け入れるという洞察に満ちたエピソードへようこそ。ホストのダレン博士が、再登場のゲストであるジョン・ハムと共に、AIポリシーと戦略の未来について議論します。AIが産業を前例のない速度で変革している中で、ジョンはリーダーがこの変化を成功裏に乗り越えるための専門知識を共有し、単なるポリシーから効果的なAI戦略の実施へと移行する方法を探ります。</p>
-<h2>主なポイント:</h2>
-<ul>
-<li><strong>AI戦略の理解</strong>: 基本的なAIポリシーから、革新と効率を促進する包括的な戦略への移行方法を学ぶ。</li>
-<li><strong>AIリテラシーの重要性</strong>: 効果的なAIのプロンプトに関する知識は、個人および組織のパフォーマンスを向上させ、AIが脅威ではなく貴重なツールとなる。</li>
-<li><strong>チェンジマネジメント</strong>: 従業員のエンゲージメントや生産性を高めるために、技術に対する恐怖を植え付けるのではなく、AIの実験文化を奨励する。</li>
-<li><strong>ガバナンスと有用性</strong>: 従業員を力づけながらもデータのセキュリティとコンプライアンスを維持する効果的なガバナンスフレームワークを構築する。</li>
-<li><strong>データ管理の実践</strong>: 正確で信頼できるデータがAIの取り組みの基盤となるようにし、悪いデータは悪い結果につながる。</li>
-</ul>
-<h2>チャプター:</h2>
-<ul>
-<li>00:00 - ウェルカムとイントロダクション  </li>
-<li>01:30 - AIポリシーから戦略への移行  </li>
-<li>05:00 - AIリテラシーの重要性  </li>
-<li>08:45 - 組織におけるチェンジマネジメントの奨励  </li>
-<li>15:20 - AI利用のためのガバナンスフレームワーク  </li>
-<li>20:15 - 効果的なデータ管理の役割  </li>
-<li>25:00 - AI成功事例についての議論  </li>
-<li>30:00 - 終わりの考えと今後の洞察</li>
-</ul>
-<p>組織におけるAIの未来を探求し、デジタルトランスフォーメーションに対する見方を変えることを約束するこの啓発的な対話にご参加ください！</p>
+            <p>デジタルトランスフォーメーションを受け入れるという洞察に満ちたエピソードへようこそ。ホストのダレン博士が、再登場のゲストであるジョン・ハムと共に、AIポリシーと戦略の未来について議論します。AIが産業を前例のない速度で変革している中で、ジョンはリーダーがこの変化を成功裏に乗り越えるための専門知識を共有し、単なるポリシーから効果的なAI戦略の実施へと移行する方法を探ります。 主なポイント: AI戦略の理解 : 基本的なAIポリシーから、革新と効率を促進する包括的な戦略への移行方法を学ぶ。 AIリテラシーの重要性 : 効果的なAIのプロンプトに関する知識は、個人および組織のパフォーマンスを向上させ</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/john-byron-hanby-iv/index.html" itemprop="url">
                 <span itemprop="name">John Byron Hanby IV</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -391,7 +410,7 @@
     {
       "@type": "AudioObject",
       "name": "AI流暢性を高めるステップからAI拡張へ Audio",
-      "contentUrl": "https://share.transistor.fm/e/79b2d4d9-6912-466b-a202-207b9acd91a3"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/79b2d4d9-6912-466b-a202-207b9acd91a3"
     }
   ],
   "actor": [

@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -287,92 +288,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="318"/>
             <meta itemprop="inLanguage" content="en"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="AI, ETL, and Accuracy in Unstructured Data Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/N_DM1BN1YLM">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/N_DM1BN1YLM"
-                        title="AI, ETL, and Accuracy in Unstructured Data Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="AI, ETL, and Accuracy in Unstructured Data Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/759443cc">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/759443cc"
-                        title="AI, ETL, and Accuracy in Unstructured Data Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-19T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="AI, ETL, and Accuracy in Unstructured Data Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/N_DM1BN1YLM">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/N_DM1BN1YLM"
+                            title="AI, ETL, and Accuracy in Unstructured Data Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="AI, ETL, and Accuracy in Unstructured Data Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/8eed4ef2">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/8eed4ef2"
+                            title="AI, ETL, and Accuracy in Unstructured Data Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-19T14:51:20.669Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Dr. Darren chats with Mehul Shah, founder and CEO of Aaron AI, to explore how artificial intelligence is tackling the challenge of unstructured data. Discover how technologies are evolving to enable businesses to extract valuable insights from massive datasets and the crucial role of accuracy in this rapidly changing landscape.</p>
-<h2>Key Takeaways</h2>
-<ul>
-<li>AI and Unstructured Data: The integration of AI technologies such as natural language processing (NLP) and computer vision is revolutionizing how companies handle vast amounts of unstructured data, allowing for more efficient data extraction and analysis.</li>
-<li>Importance of Accuracy: High accuracy levels (97-98%) are vital for knowledge workers, helping them feel confident and assured in their decisions.</li>
-<li>Divide and Conquer Strategy: Techniques like divide and conquer enable enterprises to manage large datasets effectively, empowering teams to feel more capable in data processing.</li>
-<li><strong>Human-AI Collaboration</strong>: AI is designed to augment human capabilities, not replace them, leading to improved workflows and reduced tedious tasks.</li>
-<li><strong>Consensus Approach</strong>: Leveraging multiple AI models can enhance accuracy by finding consensus in data extraction results, significantly reducing uncertainty.</li>
-</ul>
-<h2>Chapters</h2>
-<ul>
-<li>00:00 - Introduction to AI and Data Transformation</li>
-<li>03:10 - Mehul Shah&#39;s Background and Journey</li>
-<li>06:50 - Understanding Unstructured Data</li>
-<li>12:20 - The Role of Accuracy in AI</li>
-<li>18:00 - Divide and Conquer Methodology</li>
-<li>25:30 - Collaborating with AI for Enhanced Productivity</li>
-<li>32:00 - Engaging with Aaron AI</li>
-<li>35:40 - Closing Remarks and Future of AI</li>
-</ul>
-<p>Join us for this enlightening discussion and gain valuable insights into how digital transformation powered by AI can impact your organization’s approach to data!</p>
+            <p>Dr. Darren chats with Mehul Shah, founder and CEO of Aaron AI, to explore how artificial intelligence is tackling the challenge of unstructured data. Discover how technologies are evolving to enable businesses to extract valuable insights from massive datasets and the crucial role of accuracy in thi</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../en/guests/mehul-shah/index.html" itemprop="url">
                 <span itemprop="name">Mehul Shah</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -479,7 +498,7 @@
     {
       "@type": "AudioObject",
       "name": "AI, ETL, and Accuracy in Unstructured Data Audio",
-      "contentUrl": "https://share.transistor.fm/e/759443cc"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/8eed4ef2"
     }
   ],
   "actor": [

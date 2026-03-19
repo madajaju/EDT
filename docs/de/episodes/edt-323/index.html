@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -185,79 +186,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-02-03" itemprop="datePublished">2026-02-03T10:31:13.985Z</time>
+                    <time datetime="2026-02-05" itemprop="datePublished">2026-02-05T10:53:00.814Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="323"/>
             <meta itemprop="inLanguage" content="de"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Nationsstaat Cybersicherheit, Eric O'Neills Reise Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Q2RswQL--GA">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/Q2RswQL--GA"
-                        title="Nationsstaat Cybersicherheit, Eric O'Neills Reise Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
+        <div id="episode-media" data-release-date="2026-02-05T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Nationsstaat Cybersicherheit, Eric O'Neills Reise Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Q2RswQL--GA">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/Q2RswQL--GA"
+                            title="Nationsstaat Cybersicherheit, Eric O'Neills Reise Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Nationsstaat Cybersicherheit, Eric O'Neills Reise Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/f68ac0cc-ed9b-4f99-a53f-f752aede917a">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/f68ac0cc-ed9b-4f99-a53f-f752aede917a"
+                            title="Nationsstaat Cybersicherheit, Eric O'Neills Reise Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../de/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-02-05T10:53:00.814Z<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>In einer Welt, die zunehmend von Cyberangriffen bedroht wird, enthüllt der ehemalige FBI-Counterintelligence-Agent Eric O&#39;Neill die Strategien und potenziellen Gefahren in der Cybersicherheit in dieser aufschlussreichen Episode mit Gastgeber Dr. Darren. Eric teilt seine außergewöhnliche Reise, einen der bekanntesten Spione Amerikas zu fangen, und geht auf die Implikationen von Cyberbedrohungen durch Nationen ein, wobei er umsetzbare Ratschläge gibt, wie Einzelpersonen und Organisationen ihre Verteidigung stärken können.</p>
-<h2>Wichtige Erkenntnisse:</h2>
-<ul>
-<li><strong>Verstehen von Cyberbedrohungen</strong>: Cyberangriffe von Nationen stellen die bedeutendste Bedrohung für die kritische Infrastruktur der USA dar, einschließlich Strom-, Wasser- und Gassystemen.</li>
-<li><strong>Ein Aufruf zum Handeln</strong>: Einzelpersonen und Organisationen müssen grundlegende Cybersecurity-Praktiken wie Zwei-Faktor-Authentifizierung und regelmäßige Bewertungen implementieren.</li>
-<li><strong>Die &#39;Paid&#39;-Methodologie</strong>: Verwenden Sie das Prepare, Assess, Investigate und Decide-Rahmenwerk, um die persönliche und organisatorische Cybersicherheit zu verbessern.</li>
-<li><strong>Ransomware bekämpfen</strong>: Verstehen Sie die Taktiken hinter Social Engineering und Ransomware-Angriffen, um sich besser dagegen zu verteidigen.</li>
-<li><strong>Lokale Ressourcen</strong>: Zu wissen, welche lokalen Behörden bei einem Cybervorfall zu kontaktieren sind, kann entscheidend für eine rechtzeitige Intervention sein.</li>
-</ul>
-<h2>Kapitel:</h2>
-<ul>
-<li>00:00 Einführung: Treffen Sie Eric O&#39;Neill</li>
-<li>05:20 Erics Hintergrund und Undercover-Arbeit</li>
-<li>15:00 Die Landschaft der Cyberbedrohungen</li>
-<li>25:30 Die Bedeutung von Cybersicherheit in kritischer Infrastruktur</li>
-<li>35:45 Einführung in die &#39;Paid&#39;-Methodologie</li>
-<li>45:15 Wie man Cyberrisiken bewertet und mindert</li>
-<li>55:30 Schlussgedanken und wo man Eric O&#39;Neill finden kann</li>
-</ul>
-<p>Tauchen Sie tief in die Komplexität der Cybersicherheit ein und erfahren Sie, wie Sie selbst zu Ihrem eigenen Spionjäger werden können, indem Sie jetzt hören!</p>
+            <p>In einer Welt, die zunehmend von Cyberangriffen bedroht wird, enthüllt der ehemalige FBI-Counterintelligence-Agent Eric O&#39;Neill die Strategien und potenziellen Gefahren in der Cybersicherheit in dieser aufschlussreichen Episode mit Gastgeber Dr. Darren. Eric teilt seine außergewöhnliche Reise, e</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/eric-oneill/index.html" itemprop="url">
                 <span itemprop="name">Eric ONeill</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -349,7 +388,7 @@
   },
   "name": "Nationsstaat Cybersicherheit, Eric O'Neills Reise",
   "episodeNumber": 323,
-  "datePublished": "2026-02-03",
+  "datePublished": "2026-02-05",
   "inLanguage": "de",
   "description": "In einer Welt, die zunehmend von Cyberangriffen bedroht wird, enthüllt der ehemalige FBI-Counterintelligence-Agent Eric O&#39;Neill die Strategien und potenziellen Gefahren in der Cybersicherheit in dieser aufschlussreichen Episode mit Gastgeber Dr. Darren. Eric teilt seine außergewöhnliche Reise, e",
   "partOfSeries": {
@@ -372,6 +411,11 @@
       "@type": "VideoObject",
       "name": "Nationsstaat Cybersicherheit, Eric O'Neills Reise Video",
       "embedUrl": "https://www.youtube.com/embed/Q2RswQL--GA"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Nationsstaat Cybersicherheit, Eric O'Neills Reise Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/f68ac0cc-ed9b-4f99-a53f-f752aede917a"
     }
   ],
   "actor": [

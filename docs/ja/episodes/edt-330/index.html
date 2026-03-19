@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -193,95 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="330"/>
             <meta itemprop="inLanguage" content="ja"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="エグゼクティブのための災害復旧: クラウドとSaaSだけでは不十分な理由 Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/p3NUgJUmHCY">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/p3NUgJUmHCY"
-                        title="エグゼクティブのための災害復旧: クラウドとSaaSだけでは不十分な理由 Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="エグゼクティブのための災害復旧: クラウドとSaaSだけでは不十分な理由 Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
-                        title="エグゼクティブのための災害復旧: クラウドとSaaSだけでは不十分な理由 Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-03T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="エグゼクティブのための災害復旧: クラウドとSaaSだけでは不十分な理由 Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/p3NUgJUmHCY">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/p3NUgJUmHCY"
+                            title="エグゼクティブのための災害復旧: クラウドとSaaSだけでは不十分な理由 Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="エグゼクティブのための災害復旧: クラウドとSaaSだけでは不十分な理由 Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
+                            title="エグゼクティブのための災害復旧: クラウドとSaaSだけでは不十分な理由 Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 3/3/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>ディザスターリカバリーは、ビジネス継続性の重要な側面でありながら、しばしば見落とされがちです。ドクター・ダレンと、Different DevのCEOであるトム・メイとの会話に参加してください。クラウドソリューションとサービスとしてのソフトウェア（SaaS）が、包括的なディザスターリカバリーには不十分である理由について議論します。予期しない災害からビジネスを守るための実用的な洞察を見つけてください。</p>
-<h2>主なポイント:</h2>
-<ul>
-<li>効果的なディザスターリカバリーには継続的な努力が必要であり、「一度きり」のアプローチではないことを理解する。</li>
-<li>災害後に迅速に稼働する必要のある重要なビジネスシステムを優先する。</li>
-<li>各システムのダウンタイムのコストを特定するためにビジネス影響分析（BIA）を実施する重要性。</li>
-<li>クラウドプロバイダーのみに依存することが偽の安全感をもたらす理由; 独立したバックアップの重要性。</li>
-<li>最小限の実用的な製品から始めて、そこから進化させる段階的なアプローチをディザスターリカバリープランに実装する。</li>
-<li>キーパーソンの離職に伴うリスクを軽減するために、組織内に文書化の文化を育む。</li>
-</ul>
-<h2>チャプター:</h2>
-<ul>
-<li>(00:00) はじめに</li>
-<li>(02:15) ディザスターリカバリーの重要性</li>
-<li>(05:45) トム・メイの起源ストーリー</li>
-<li>(10:30) 経営陣の視点: 重要な考慮事項</li>
-<li>(15:10) ビジネス影響分析の必要性</li>
-<li>(20:00) 回復時間目標（RTO）と回復ポイント目標（RPO）を理解する</li>
-<li>(25:30) クラウドの役割とコンプライアンスの課題</li>
-<li>(30:45) ランサムウェアの認識と予防</li>
-<li>(35:00) ディザスター計画における適切なバランスを見つける</li>
-<li>(40:15) 結論とリソース</li>
-</ul>
-<p>より深い理解と特化したアドバイスを得るために、トム・メイに <a href="http://differentdev.com">differentdev.com</a> で連絡を取り、今日からあなたの災害軽減戦略を計画しましょう！</p>
+            <p>ディザスターリカバリーは、ビジネス継続性の重要な側面でありながら、しばしば見落とされがちです。ドクター・ダレンと、Different DevのCEOであるトム・メイとの会話に参加してください。クラウドソリューションとサービスとしてのソフトウェア（SaaS）が、包括的なディザスターリカバリーには不十分である理由について議論します。予期しない災害からビジネスを守るための実用的な洞察を見つけてください。 主なポイント: 効果的なディザスターリカバリーには継続的な努力が必要であり、「一度きり」のアプローチではないことを理解する。 災害後に迅速に稼働する必要のある重要なビジネスシステムを優先する。 各シ</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/tom-may/index.html" itemprop="url">
                 <span itemprop="name">Tom May</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -394,7 +410,7 @@
     {
       "@type": "AudioObject",
       "name": "エグゼクティブのための災害復旧: クラウドとSaaSだけでは不十分な理由 Audio",
-      "contentUrl": "https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
     }
   ],
   "actor": [

@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -186,80 +187,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-01-27" itemprop="datePublished">2026-01-27T18:09:40.793Z</time>
+                    <time datetime="2026-01-27" itemprop="datePublished">2026-01-27T18:36:49.041Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="321"/>
             <meta itemprop="inLanguage" content="pt"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Segurança Pessoal Digital: A Chave para a Cibersegurança Corporativa Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/kE-_4z6OBkc">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/kE-_4z6OBkc"
-                        title="Segurança Pessoal Digital: A Chave para a Cibersegurança Corporativa Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
+        <div id="episode-media" data-release-date="2026-01-27T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Segurança Pessoal Digital: A Chave para a Cibersegurança Corporativa Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/kE-_4z6OBkc">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/kE-_4z6OBkc"
+                            title="Segurança Pessoal Digital: A Chave para a Cibersegurança Corporativa Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Segurança Pessoal Digital: A Chave para a Cibersegurança Corporativa Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/a3f1b9e8-b8d8-4268-a05d-4578f848edd5.mp3">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/a3f1b9e8-b8d8-4268-a05d-4578f848edd5.mp3"
+                            title="Segurança Pessoal Digital: A Chave para a Cibersegurança Corporativa Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../pt/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-27T18:36:49.041Z<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Junte-se ao Dr. Darren e ao especialista em cibersegurança Robert Siciliano para obter insights práticos sobre cibersegurança pessoal e corporativa. Este episódio destaca etapas essenciais que indivíduos e organizações podem seguir para proteger informações sensíveis em nosso mundo cada vez mais virtual.</p>
-<h2>Principais Conclusões:</h2>
-<ul>
-<li><strong>Adote Gerenciadores de Senhas</strong>: Utilize gerenciadores de senhas e ative a autenticação de múltiplos fatores para aumentar sua segurança online.</li>
-<li><strong>Benefícios do Congelamento de Crédito</strong>: Implemente um congelamento de crédito para manter o controle sobre quem pode acessar suas informações financeiras e prevenir o roubo de identidade.
-Garanta que todos os seus dispositivos, incluindo smartphones e computadores, estejam protegidos por senha e atualizados regularmente para capacitá-lo a se defender efetivamente contra ameaças cibernéticas.
-Mantenha-se informado sobre o panorama em evolução do cibercrime, incluindo riscos como deepfakes e clonagem de voz, para ajudar você e sua família a se sentirem mais confiantes e preparados.
-Promova discussões abertas sobre cibersegurança no local de trabalho para ajudar os funcionários a se sentirem envolvidos e motivados a permanecer protegidos.</li>
-</ul>
-<h2>Capítulos:</h2>
-<ul>
-<li>00:00 - Introdução e Visão Geral</li>
-<li>02:30 - Por que os Indivíduos são Fundamentais na Cibersegurança</li>
-<li>05:15 - Essenciais do Gerenciamento de Senhas</li>
-<li>08:45 - Congelamento de Crédito como uma Ferramenta de Segurança</li>
-<li>12:00 - Melhores Práticas de Segurança em Dispositivos</li>
-<li>15:30 - Entendendo Novas Ameaças Cibernéticas</li>
-<li>20:00 - A Importância do Treinamento Interativo</li>
-<li>25:00 - Conclusão e Recursos</li>
-</ul>
-<p>Ouça este episódio iluminador para fortalecer sua conscientização sobre cibersegurança e tomar medidas práticas em direção a uma experiência digital mais segura!</p>
+            <p>Junte-se ao Dr. Darren e ao especialista em cibersegurança Robert Siciliano para obter insights práticos sobre cibersegurança pessoal e corporativa. Este episódio destaca etapas essenciais que indivíduos e organizações podem seguir para proteger informações sensíveis em nosso mundo cada vez mais vir</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../pt/guests/robert-siciliano/index.html" itemprop="url">
                 <span itemprop="name">Robert Siciliano</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../pt/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -382,6 +420,11 @@ Promova discussões abertas sobre cibersegurança no local de trabalho para ajud
       "@type": "VideoObject",
       "name": "Segurança Pessoal Digital: A Chave para a Cibersegurança Corporativa Video",
       "embedUrl": "https://www.youtube.com/embed/kE-_4z6OBkc"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Segurança Pessoal Digital: A Chave para a Cibersegurança Corporativa Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/a3f1b9e8-b8d8-4268-a05d-4578f848edd5.mp3"
     }
   ],
   "actor": [

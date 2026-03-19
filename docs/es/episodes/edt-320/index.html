@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -186,61 +187,97 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-01-26" itemprop="datePublished">2026-01-26T16:36:12.913Z</time>
+                    <time datetime="2026-01-26" itemprop="datePublished">2026-01-26T18:45:21.387Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="320"/>
             <meta itemprop="inLanguage" content="es"/>
         </header>
 
         
 
-        
+        <div id="episode-media" data-release-date="2026-01-26T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="De la Protección Personal a la Ciberseguridad: Un Viaje Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Igik7FUGvI0">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/Igik7FUGvI0"
+                            title="De la Protección Personal a la Ciberseguridad: Un Viaje Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-26T18:45:21.387Z<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Bienvenido a una exploración provocadora sobre ciberseguridad que entrelaza experiencias personales con conocimientos de expertos. El Dr. Darren, tu anfitrión cautivador, se une a Robert Siciliano, un analista de seguridad y autor reconocido por su perspectiva sobre el vínculo crítico entre la ciberseguridad individual y la seguridad corporativa. Juntos, navegan por el paisaje en evolución de las medidas de seguridad en nuestro mundo cada vez más digital.</p>
-<h2>Puntos Clave:</h2>
-<ul>
-<li>La Seguridad Personal es Fundamental: Reconocer que tu protección personal es esencial puede empoderarte para tomar control de tu seguridad y contribuir a la seguridad colectiva.</li>
-<li><strong>El Cortafuegos Humano</strong>: Los humanos pueden ser la defensa más vigorosa contra las amenazas cibernéticas cuando están capacitados para reconocer su importancia en los protocolos de seguridad.</li>
-<li>Confianza y Riesgo: Tu confianza natural puede a veces llevarte a pasar por alto peligros; la educación te ayuda a mantenerte alerta y confiado en la gestión de riesgos.</li>
-<li><strong>Amenazas en Evolución</strong>: Los ataques de ciberseguridad a menudo explotan estados emocionales, haciendo que la conciencia durante las temporadas festivas sea crítica.</li>
-<li>Medidas Proactivas vs. Reactivas: No esperes a una crisis para mejorar la seguridad; las medidas proactivas como actualizar contraseñas regularmente, habilitar la autenticación de dos factores y mantenerse informado sobre las amenazas actuales pueden prevenir violaciones personales y organizacionales.</li>
-</ul>
-<h2>Capítulos:</h2>
-<ul>
-<li>00:00 - Introducción a la Ciberseguridad</li>
-<li>03:10 - La Historia de Origen de Robert</li>
-<li>12:45 - El Cambio de la Protección Personal a la Ciberseguridad</li>
-<li>22:30 - Entendiendo la Confianza en la Seguridad</li>
-</ul>
-<p>Embárcate en esta conversación esencial sobre la seguridad y los pasos que puedes tomar para salvaguardar no solo a ti mismo, sino también a tu organización, ya seas un usuario individual o parte de una empresa más grande. ¡Recuerda sintonizar la próxima vez para obtener más información sobre el impacto de la seguridad digital personal en la seguridad corporativa!</p>
+            <p>Bienvenido a una exploración provocadora sobre ciberseguridad que entrelaza experiencias personales con conocimientos de expertos. El Dr. Darren, tu anfitrión cautivador, se une a Robert Siciliano, un analista de seguridad y autor reconocido por su perspectiva sobre el vínculo crítico entre la ciber</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../es/guests/robert-siciliano/index.html" itemprop="url">
                 <span itemprop="name">Robert Siciliano</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../es/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -267,6 +304,23 @@
 <li><p><strong>Construyendo una Cultura de Seguridad</strong>: Involucrar a los miembros del equipo en discusiones sinceras sobre la seguridad personal les anima a compartir información y experiencias, enriqueciendo así la comprensión de la organización sobre las posibles amenazas.</p>
 </li>
 </ul>
+<h2>&quot;Comprometiendo a los humanos: El concepto de cortafuegos estratégico.&quot;</h2>
+<h2>El Elemento Humano en la Ciberseguridad</h2>
+<p>En el panorama de amenazas actual, la tecnología por sí sola no puede proporcionar una seguridad adecuada, por lo que Robert enfatiza el &#39;Cortafuegos Humano Estratégico&#39;: el papel vital de los empleados humanos en el fortalecimiento de las defensas digitales, haciendo que el concepto sea más memorable e impactante.</p>
+<ul>
+<li><p><strong>Formación basada en la empatía</strong>: Abordar las respuestas emocionales a la seguridad no solo hace que las personas sean más receptivas al aprendizaje, sino que también les anima a adoptar los programas de seguridad como medidas responsables en lugar de cargas.</p>
+</li>
+<li><p><strong>Mentalidad Proactiva</strong>: Fomentar un enfoque proactivo hacia la seguridad lleva a las personas a participar activamente en la protección de datos personales y corporativos, en lugar de esperar a que los incidentes se intensifiquen.</p>
+</li>
+</ul>
+<h2>The translation of &quot;Encourage Action Steps&quot; to Spanish is &quot;Fomentar Pasos a la Acción.&quot;</h2>
+<p>Para construir eficazmente este firewall, las organizaciones pueden:</p>
+<p>Invierta en capacitación de seguridad regular y atractiva, adaptada a las experiencias de los empleados.</p>
+<p>Fomentar canales abiertos para discutir preocupaciones de seguridad sin asociarlas con estigmas o miedo.</p>
+<p>Reconocer que la capacitación en seguridad debe adaptarse a la naturaleza en evolución de las amenazas, al igual que lo hacen los métodos que utilizan los atacantes.</p>
+<h2>Tus próximos pasos para amplificar la concienciación sobre ciberseguridad.</h2>
+<p>Fomentar una fuerte conexión entre la ciberseguridad personal y la corporativa subraya la importancia de la responsabilidad individual en la adecuada seguridad, motivando a los lectores a tomar medidas proactivas.</p>
+<p>Toma acción hoy sumergiéndote más en las discusiones sobre ciberseguridad y considera unirte a la comunidad <em>Embracing Digital Transformation</em>. Inspírate en las ideas de Robert para mejorar tus prácticas de seguridad personal, fortaleciendo así a tu organización. Para obtener más contenido sobre la intersección de la tecnología, la seguridad y el empoderamiento individual, escucha el último episodio y comparte estas discusiones dentro de tu red.</p>
 
         </section>
 
@@ -326,7 +380,13 @@
     "@type": "ImageObject",
     "url": "https://www.embracingdigital.org/es/episodes/edt-320/thumbnail.png"
   },
-  "associatedMedia": [],
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "De la Protección Personal a la Ciberseguridad: Un Viaje Video",
+      "embedUrl": "https://www.youtube.com/embed/Igik7FUGvI0"
+    }
+  ],
   "actor": [
     {
       "@type": "Person",

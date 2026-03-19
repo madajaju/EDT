@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -186,84 +187,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-01-22" itemprop="datePublished">2026-01-22T16:51:34.914Z</time>
+                    <time datetime="2026-01-22" itemprop="datePublished">2026-01-22T00:00:00.000Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="319"/>
             <meta itemprop="inLanguage" content="ja"/>
         </header>
 
         
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="遠隔医療からAIへ：医療の新時代 Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/bc1f1c26">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/bc1f1c26"
-                        title="遠隔医療からAIへ：医療の新時代 Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-21T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="遠隔医療からAIへ：医療の新時代 Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/APU7WBS0b5I">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/APU7WBS0b5I"
+                            title="遠隔医療からAIへ：医療の新時代 Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="遠隔医療からAIへ：医療の新時代 Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/09380121">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/09380121"
+                            title="遠隔医療からAIへ：医療の新時代 Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-22T00:00:00.000Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>ヘルスケアの未来はここにあり、これまで以上に個人的なものになっています。ホストであり、最高エンタープライズアーキテクトのダレン博士と、アメリカ心臓病学会の最高イノベーション責任者アミ・バット博士との対談に参加してください。彼らは、医療におけるAIの統合について議論し、この技術がどのように患者ケアを再形成し、臨床医の効率を向上させているかを明らかにします。</p>
-<h2>主なポイント:</h2>
-<ul>
-<li>ヘルスケアの第一マイル: バット博士は、ケアを患者の自宅に戻すことの重要性を強調し、ヘルスケア体験を再定義し、この変化を形作るためのコミュニティの関与を招待します。</li>
-<li>ツールとしてのAI: AIは臨床医を置き換えるのではなく、彼らの専門知識を支援し強化し、意思決定を促進する洞察を提供し、患者ケアにおける彼らの重要な役割を強化します。</li>
-<li><strong>バリュー・ベースのケア</strong>: サービスではなく成果を報酬とするバリュー・ベースのヘルスケアへの移行が進んでおり、より健康な患者とより良いケアを目指しています。</li>
-<li><strong>予防的健康</strong>: 早期介入が重要であり、技術を活用することで深刻な状態に悪化する前にリスクを特定するのに役立ちます。</li>
-<li>コミュニティの知識: 臨床医がAIモデルを共同で作成することで、技術が実際の経験に基づいていることが確保され、信頼と未来の革新への期待を育みます。</li>
-</ul>
-<h2>章:</h2>
-<ul>
-<li>00:00 - アミ・バット博士の紹介</li>
-<li>05:30 - テレメディスンの進化</li>
-<li>10:15 - 臨床判断支援におけるAI</li>
-<li>15:00 - バリュー・ベースとフィー・フォー・サービスのケア</li>
-<li>20:45 - 予防ケアの重要性</li>
-<li>25:30 - ヘルスケアの未来を見据える</li>
-<li>30:00 - AI開発におけるコミュニティの関与</li>
-<li>35:00 - 結論と行動への呼びかけ</li>
-</ul>
-<p>もしあなたがヘルスケアの専門家や研究者で、ヘルスケアの革新に関心があるなら、この洞察に満ちた対話をお見逃しなく。デジタル変革に関するさらなる専門家の議論をポッドキャストに登録してお楽しみください。</p>
+            <p>ヘルスケアの未来はここにあり、これまで以上に個人的なものになっています。ホストであり、最高エンタープライズアーキテクトのダレン博士と、アメリカ心臓病学会の最高イノベーション責任者アミ・バット博士との対談に参加してください。彼らは、医療におけるAIの統合について議論し、この技術がどのように患者ケアを再形成し、臨床医の効率を向上させているかを明らかにします。 主なポイント: ヘルスケアの第一マイル: バット博士は、ケアを患者の自宅に戻すことの重要性を強調し、ヘルスケア体験を再定義し、この変化を形作るためのコミュニティの関与を招待します。 ツールとしてのAI: AIは臨床医を置き換えるのではなく、彼</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/ami-bhatt/index.html" itemprop="url">
                 <span itemprop="name">Ami Bhatt</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -354,9 +388,14 @@
   },
   "associatedMedia": [
     {
+      "@type": "VideoObject",
+      "name": "遠隔医療からAIへ：医療の新時代 Video",
+      "embedUrl": "https://www.youtube.com/embed/APU7WBS0b5I"
+    },
+    {
       "@type": "AudioObject",
       "name": "遠隔医療からAIへ：医療の新時代 Audio",
-      "contentUrl": "https://share.transistor.fm/e/bc1f1c26"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/09380121"
     }
   ],
   "actor": [

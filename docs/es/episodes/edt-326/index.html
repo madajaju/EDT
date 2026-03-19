@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -193,93 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="326"/>
             <meta itemprop="inLanguage" content="es"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="El Auge de la Fuerza Laboral Fraccionada Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/T6slMUvE8y8">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/T6slMUvE8y8"
-                        title="El Auge de la Fuerza Laboral Fraccionada Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="El Auge de la Fuerza Laboral Fraccionada Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/1cd506d6-a385-4963-9ad3-a11b875b5e84">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/1cd506d6-a385-4963-9ad3-a11b875b5e84"
-                        title="El Auge de la Fuerza Laboral Fraccionada Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-02-17T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="El Auge de la Fuerza Laboral Fraccionada Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/T6slMUvE8y8">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/T6slMUvE8y8"
+                            title="El Auge de la Fuerza Laboral Fraccionada Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../es/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="El Auge de la Fuerza Laboral Fraccionada Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/1cd506d6-a385-4963-9ad3-a11b875b5e84">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/1cd506d6-a385-4963-9ad3-a11b875b5e84"
+                            title="El Auge de la Fuerza Laboral Fraccionada Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../es/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2/17/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>¿Estamos volviendo a la época anterior a la revolución industrial, ¡la Fuerza Laboral Fraccionada! En este episodio de Adoptando la Transformación Digital, el Dr. Darren está acompañado por Elizabeth Eiss, una experta en la economía del trabajo temporal y defensora de los trabajadores fraccionarios. Juntos, examinan el aumento del trabajo fraccionado y sus implicaciones para el panorama empresarial actual, destacando los beneficios y desafíos que acompañan este cambio.</p>
-<h2>Principales Conclusiones:</h2>
-<ul>
-<li><strong>Comprendiendo el Trabajo Fraccionado</strong>: Aprende la diferencia entre roles fraccionados y de tiempo completo y cómo las empresas están cambiando sus modelos operativos.</li>
-<li><strong>Carreras de Portafolio</strong>: Descubre por qué las múltiples fuentes de ingresos se están convirtiendo en la norma, especialmente para las generaciones más jóvenes que ingresan al mercado laboral.</li>
-<li><strong>Networking como una Súper Habilidad</strong>: Un networking efectivo puede llevar a oportunidades que te ayuden a transitar hacia el trabajo fraccionado sin problemas.</li>
-<li><strong>Construyendo Confianza y Protegiendo la Propiedad Intelectual</strong>: Descubre estrategias para proteger tu propiedad intelectual al trabajar con freelancers.</li>
-<li><strong>El Futuro Está Aquí</strong>: Comprende cómo la tecnología y la economía de trabajos temporales están remodelando la fuerza laboral tradicional.</li>
-</ul>
-<h2>Capítulos:</h2>
-<ul>
-<li>00:00 Introducción al Trabajo Fraccionado</li>
-<li>02:15 La Historia de Origen de Elizabeth</li>
-<li>05:30 El Cambio de Trabajo a Tiempo Completo a Trabajo Fraccionado</li>
-<li>11:00 Adaptándose al Cambio y Construyendo Resiliencia</li>
-<li>16:45 El Papel del Networking</li>
-<li>21:10 Riesgos y Preocupaciones en el Trabajo Fraccionado</li>
-<li>27:30 Mejores Prácticas para Contratar Freelancers</li>
-<li>32:00 Tendencias Futuras y Reflexiones Finales</li>
-<li>35:15 Cómo Conectar con Elizabeth Eiss</li>
-</ul>
-<p>¡Únete a nosotros en este viaje esclarecedor mientras exploramos el panorama laboral en evolución y descubrimos cómo puedes adaptarte para prosperar en esta nueva economía!</p>
+            <p>¿Estamos volviendo a la época anterior a la revolución industrial, ¡la Fuerza Laboral Fraccionada! En este episodio de Adoptando la Transformación Digital, el Dr. Darren está acompañado por Elizabeth Eiss, una experta en la economía del trabajo temporal y defensora de los trabajadores fraccionarios.</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../es/guests/elizabeth-eiss/index.html" itemprop="url">
                 <span itemprop="name">Elizabeth Eiss</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../es/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -390,7 +408,7 @@
     {
       "@type": "AudioObject",
       "name": "El Auge de la Fuerza Laboral Fraccionada Audio",
-      "contentUrl": "https://share.transistor.fm/e/1cd506d6-a385-4963-9ad3-a11b875b5e84"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/1cd506d6-a385-4963-9ad3-a11b875b5e84"
     }
   ],
   "actor": [

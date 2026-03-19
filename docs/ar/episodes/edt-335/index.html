@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -192,92 +193,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="335"/>
             <meta itemprop="inLanguage" content="ar"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="زيادة طلاقتك في الذكاء الاصطناعي: خطوات لتعزيز الذكاء الاصطناعي Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/f0qLAD_IAbQ">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/f0qLAD_IAbQ"
-                        title="زيادة طلاقتك في الذكاء الاصطناعي: خطوات لتعزيز الذكاء الاصطناعي Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="زيادة طلاقتك في الذكاء الاصطناعي: خطوات لتعزيز الذكاء الاصطناعي Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/79b2d4d9-6912-466b-a202-207b9acd91a3">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/79b2d4d9-6912-466b-a202-207b9acd91a3"
-                        title="زيادة طلاقتك في الذكاء الاصطناعي: خطوات لتعزيز الذكاء الاصطناعي Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-18T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="زيادة طلاقتك في الذكاء الاصطناعي: خطوات لتعزيز الذكاء الاصطناعي Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/f0qLAD_IAbQ">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/f0qLAD_IAbQ"
+                            title="زيادة طلاقتك في الذكاء الاصطناعي: خطوات لتعزيز الذكاء الاصطناعي Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="زيادة طلاقتك في الذكاء الاصطناعي: خطوات لتعزيز الذكاء الاصطناعي Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/79b2d4d9-6912-466b-a202-207b9acd91a3">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/79b2d4d9-6912-466b-a202-207b9acd91a3"
+                            title="زيادة طلاقتك في الذكاء الاصطناعي: خطوات لتعزيز الذكاء الاصطناعي Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-19<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>مرحبًا بكم في حلقة مليئة بالبصيرة من <em>احتضان التحول الرقمي</em>، حيث يناقش المضيف الدكتور دارين مستقبل سياسة واستراتيجية الذكاء الاصطناعي مع الضيف العائد جون هام. مع تحول الذكاء الاصطناعي للصناعات بسرعة غير مسبوقة، يشارك جون خبرته حول كيفية تمكن القادة من التنقل بنجاح في هذا التحول، من السياسة البسيطة إلى تنفيذ استراتيجية فعالة للذكاء الاصطناعي.</p>
-<h2>النقاط الرئيسية:</h2>
-<ul>
-<li><strong>فهم استراتيجية الذكاء الاصطناعي</strong>: تعرف على كيفية الانتقال من سياسة ذكاء اصطناعي بسيطة إلى استراتيجية شاملة تعزز الابتكار والكفاءة.</li>
-<li><strong>أهمية المعرفة بالذكاء الاصطناعي</strong>: يمكن أن يرفع معرفة التوجيه الفعّال للذكاء الاصطناعي من أداء الأفراد والمنظمات، مما يجعل الذكاء الاصطناعي أداة لا تقدر بثمن بدلاً من تهديد.</li>
-<li><strong>إدارة التغيير</strong>: شجع ثقافة تجربة الذكاء الاصطناعي لتعزيز مشاركة الموظفين وإنتاجيتهم بدلاً من زرع الخوف من التكنولوجيا.</li>
-<li><strong>الحوكمة مقابل الجدوى</strong>: صمم أطر حوكمة فعّالة تمكّن الموظفين مع الحفاظ على أمان البيانات والامتثال.</li>
-<li><strong>ممارسات إدارة البيانات</strong>: تأكد من أن البيانات الدقيقة والموثوقة تدعم مبادرات الذكاء الاصطناعي، حيث تؤدي البيانات السيئة إلى نتائج سيئة.</li>
-</ul>
-<h2>الفصول:</h2>
-<ul>
-<li>00:00 - الترحيب والمقدمة  </li>
-<li>01:30 - الانتقال من سياسة الذكاء الاصطناعي إلى الاستراتيجية  </li>
-<li>05:00 - أهمية معرفة الذكاء الاصطناعي  </li>
-<li>08:45 - تشجيع إدارة التغيير في المنظمات  </li>
-<li>15:20 - أطر الحوكمة لاستخدام الذكاء الاصطناعي  </li>
-<li>20:15 - دور إدارة البيانات الفعّالة  </li>
-<li>25:00 - مناقشة حول قصص نجاح الذكاء الاصطناعي  </li>
-<li>30:00 - الأفكار الختامية ورؤى مستقبلية</li>
-</ul>
-<p>استكشف مستقبل الذكاء الاصطناعي في مؤسستك وانضم إلينا في هذه المحادثة الملهمة التي تعد بإعادة تشكيل الطريقة التي تنظر بها إلى التحول الرقمي!</p>
+            <p>مرحبًا بكم في حلقة مليئة بالبصيرة من احتضان التحول الرقمي ، حيث يناقش المضيف الدكتور دارين مستقبل سياسة واستراتيجية الذكاء الاصطناعي مع الضيف العائد جون هام. مع تحول الذكاء الاصطناعي للصناعات بسرعة غير مسبوقة، يشارك جون خبرته حول كيفية تمكن القادة من التنقل بنجاح في هذا التحول، من السياسة البسيطة إل</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/john-byron-hanby-iv/index.html" itemprop="url">
                 <span itemprop="name">John Byron Hanby IV</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -405,7 +424,7 @@
     {
       "@type": "AudioObject",
       "name": "زيادة طلاقتك في الذكاء الاصطناعي: خطوات لتعزيز الذكاء الاصطناعي Audio",
-      "contentUrl": "https://share.transistor.fm/e/79b2d4d9-6912-466b-a202-207b9acd91a3"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/79b2d4d9-6912-466b-a202-207b9acd91a3"
     }
   ],
   "actor": [

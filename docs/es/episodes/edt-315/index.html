@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -193,92 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="315"/>
             <meta itemprop="inLanguage" content="es"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Creando humanos aumentados por IA Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/bMqgx27YH34">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/bMqgx27YH34"
-                        title="Creando humanos aumentados por IA Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Creando humanos aumentados por IA Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/90c92595">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/90c92595"
-                        title="Creando humanos aumentados por IA Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-08T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Creando humanos aumentados por IA Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/bMqgx27YH34">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/bMqgx27YH34"
+                            title="Creando humanos aumentados por IA Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../es/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Creando humanos aumentados por IA Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/0e770f0f">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/0e770f0f"
+                            title="Creando humanos aumentados por IA Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../es/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-08T17:26:11.690Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>En un mundo cada vez más moldeado por la inteligencia artificial, Joe Lally, un facilitador de talleres experimentado y autor, se une al presentador Dr. Darren para discutir el papel crucial que desempeña la IA en la transformación digital. Desde fomentar la creatividad hasta abordar los miedos en el lugar de trabajo, Joe arroja luz sobre cómo las empresas pueden navegar en este paisaje en evolución mientras mejoran la conexión humana.</p>
-<h2>Puntos Clave:</h2>
-<ul>
-<li><strong>Entendiendo la IA</strong>: Sentar una base de conocimiento sobre las herramientas de IA es crucial para empoderar al personal y mejorar las capacidades de resolución de problemas.</li>
-<li><strong>Enfoque de Problemas Primero</strong>: Prioriza resolver problemas específicos y reales antes de implementar soluciones de IA para evitar complicaciones innecesarias.</li>
-<li><strong>La Educación es Clave</strong>: Familiariza a los empleados con la terminología de la IA e involúcralos en el proceso de integración para aliviar miedos y fomentar la colaboración.</li>
-<li><strong>Prototipar Soluciones</strong>: Utiliza prototipos de baja fidelidad para visualizar flujos de trabajo e identificar puntos críticos; la retroalimentación rápida puede conducir a aplicaciones de IA viables.</li>
-<li><strong>Aceptar el Cambio</strong>: Fomenta un cambio de mentalidad entre los empleados, enfatizando oportunidades para nuevos roles laborales en lugar de ver a la IA como una amenaza.</li>
-</ul>
-<h2>Capítulos:</h2>
-<ul>
-<li>00:00 - Introducción a la IA y la Transformación Digital</li>
-<li>02:15 - Superpoder y Antecedentes de Joe Lally</li>
-<li>05:10 - Importancia de la Adopción de IA en el Mundo Actual</li>
-<li>12:30 - Conexión Humana vs. Desapego de la IA</li>
-<li>17:20 - Navegando los Riesgos del Outsourcing de Pensamiento de IA</li>
-<li>23:45 - Educación y Encontrar a las Personas Donde Están</li>
-<li>30:00 - Prototipando Soluciones de IA en el Lugar de Trabajo</li>
-<li>35:20 - Escalando la IA a Través de las Organizaciones</li>
-</ul>
-<p>Únete a la conversación y explora cómo la IA puede empoderar en lugar de socavar la creatividad y conexión humana en el lugar de trabajo. ¡No olvides consultar el libro de Joe, <em>Preguntas para Aprender</em>, y visitar JoeLally.com para más información sobre cómo abrazar la IA en tu organización!</p>
+            <p>En un mundo cada vez más moldeado por la inteligencia artificial, Joe Lally, un facilitador de talleres experimentado y autor, se une al presentador Dr. Darren para discutir el papel crucial que desempeña la IA en la transformación digital. Desde fomentar la creatividad hasta abordar los miedos en e</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../es/guests/joe-lalley/index.html" itemprop="url">
                 <span itemprop="name">Joe Lalley</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../es/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -396,7 +415,7 @@
     {
       "@type": "AudioObject",
       "name": "Creando humanos aumentados por IA Audio",
-      "contentUrl": "https://share.transistor.fm/e/90c92595"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/0e770f0f"
     }
   ],
   "actor": [

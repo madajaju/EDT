@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -192,92 +193,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="318"/>
             <meta itemprop="inLanguage" content="ar"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="الذكاء الاصطناعي، استخراج البيانات، والدقة في البيانات غير المنظمة Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/N_DM1BN1YLM">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/N_DM1BN1YLM"
-                        title="الذكاء الاصطناعي، استخراج البيانات، والدقة في البيانات غير المنظمة Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="الذكاء الاصطناعي، استخراج البيانات، والدقة في البيانات غير المنظمة Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/759443cc">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/759443cc"
-                        title="الذكاء الاصطناعي، استخراج البيانات، والدقة في البيانات غير المنظمة Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-19T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="الذكاء الاصطناعي، استخراج البيانات، والدقة في البيانات غير المنظمة Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/N_DM1BN1YLM">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/N_DM1BN1YLM"
+                            title="الذكاء الاصطناعي، استخراج البيانات، والدقة في البيانات غير المنظمة Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="الذكاء الاصطناعي، استخراج البيانات، والدقة في البيانات غير المنظمة Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/8eed4ef2">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/8eed4ef2"
+                            title="الذكاء الاصطناعي، استخراج البيانات، والدقة في البيانات غير المنظمة Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-19T14:51:20.669Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>يجري الدكتور دارين محادثة مع مهول شاه، مؤسس ورئيس تنفيذي لشركة آرون AI، لاستكشاف كيفية معالجة الذكاء الصناعي لتحدي البيانات غير المهيكلة. اكتشف كيف تتطور التقنيات لتمكين الشركات من استخراج رؤى قيمة من مجموعات بيانات ضخمة والدور الحاسم للدقة في هذا المشهد المتغير بسرعة.</p>
-<h2>النقاط الرئيسية</h2>
-<ul>
-<li>الذكاء الصناعي والبيانات غير المهيكلة: إن دمج تقنيات الذكاء الصناعي مثل معالجة اللغة الطبيعية (NLP) ورؤية الكمبيوتر يغير كيفية تعامل الشركات مع كميات ضخمة من البيانات غير المهيكلة، مما يسمح باستخراج وتحليل البيانات بشكل أكثر كفاءة.</li>
-<li>أهمية الدقة: مستويات الدقة العالية (97-98%) حيوية للعاملين في مجال المعرفة، حيث تساعدهم على الشعور بالثقة والاطمئنان في قراراتهم.</li>
-<li>استراتيجية التقسيم والتغلب: تقنيات مثل التقسيم والتغلب تمكّن الشركات من إدارة مجموعات البيانات الكبيرة بفعالية، مما يمكّن الفرق من الشعور بقدرتها أكبر في معالجة البيانات.</li>
-<li><strong>التعاون بين الإنسان والذكاء الصناعي</strong>: تم تصميم الذكاء الصناعي لتعزيز القدرات البشرية، وليس لاستبدالها، مما يؤدي إلى تحسين سير العمل وتقليل المهام المملة.</li>
-<li><strong>نهج التوافق</strong>: يمكن أن يؤدي استخدام نماذج ذكاء صناعي متعددة إلى تعزيز الدقة من خلال إيجاد توافق في نتائج استخراج البيانات، مما يقلل بشكل كبير من عدم اليقين.</li>
-</ul>
-<h2>الفصول</h2>
-<ul>
-<li>00:00 - مقدمة حول الذكاء الصناعي وتحويل البيانات</li>
-<li>03:10 - خلفية مهول شاه ورحلته</li>
-<li>06:50 - فهم البيانات غير المهيكلة</li>
-<li>12:20 - دور الدقة في الذكاء الصناعي</li>
-<li>18:00 - منهجية التقسيم والتغلب</li>
-<li>25:30 - التعاون مع الذكاء الصناعي لزيادة الإنتاجية</li>
-<li>32:00 - الانخراط مع آرون AI</li>
-<li>35:40 - ملاحظات ختامية ومستقبل الذكاء الصناعي</li>
-</ul>
-<p>انضم إلينا في هذه المناقشة التنويرية واحصل على رؤى قيمة حول كيفية تأثير التحول الرقمي المدعوم بالذكاء الصناعي على نهج مؤسستك تجاه البيانات!</p>
+            <p>يجري الدكتور دارين محادثة مع مهول شاه، مؤسس ورئيس تنفيذي لشركة آرون AI، لاستكشاف كيفية معالجة الذكاء الصناعي لتحدي البيانات غير المهيكلة. اكتشف كيف تتطور التقنيات لتمكين الشركات من استخراج رؤى قيمة من مجموعات بيانات ضخمة والدور الحاسم للدقة في هذا المشهد المتغير بسرعة. النقاط الرئيسية الذكاء الصناعي</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/mehul-shah/index.html" itemprop="url">
                 <span itemprop="name">Mehul Shah</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -384,7 +403,7 @@
     {
       "@type": "AudioObject",
       "name": "الذكاء الاصطناعي، استخراج البيانات، والدقة في البيانات غير المنظمة Audio",
-      "contentUrl": "https://share.transistor.fm/e/759443cc"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/8eed4ef2"
     }
   ],
   "actor": [

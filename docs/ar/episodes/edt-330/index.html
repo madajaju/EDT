@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -192,95 +193,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="330"/>
             <meta itemprop="inLanguage" content="ar"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="استعادة الكوارث للمديرين التنفيذيين: لماذا السحابة وSaaS ليست كافية Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/p3NUgJUmHCY">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/p3NUgJUmHCY"
-                        title="استعادة الكوارث للمديرين التنفيذيين: لماذا السحابة وSaaS ليست كافية Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="استعادة الكوارث للمديرين التنفيذيين: لماذا السحابة وSaaS ليست كافية Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
-                        title="استعادة الكوارث للمديرين التنفيذيين: لماذا السحابة وSaaS ليست كافية Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-03T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="استعادة الكوارث للمديرين التنفيذيين: لماذا السحابة وSaaS ليست كافية Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/p3NUgJUmHCY">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/p3NUgJUmHCY"
+                            title="استعادة الكوارث للمديرين التنفيذيين: لماذا السحابة وSaaS ليست كافية Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="استعادة الكوارث للمديرين التنفيذيين: لماذا السحابة وSaaS ليست كافية Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
+                            title="استعادة الكوارث للمديرين التنفيذيين: لماذا السحابة وSaaS ليست كافية Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 3/3/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>تعافي الكوارث هو جانب حاسم وغالبًا ما يُغفل من استمرارية الأعمال. انضم إلى الدكتور دارين وهو يتحدث مع توم ماي، الرئيس التنفيذي لشركة ديفيرنت ديف، حول سبب عدم كفاية الحلول السحابية وبرامج الخدمة كخدمة (SaaS) لتكامل تعافي الكوارث. اكتشف رؤى قابلة للتطبيق يمكن أن تساعد في حماية عملك من الكوارث غير المتوقعة.</p>
-<h2>النقاط الرئيسية:</h2>
-<ul>
-<li>فهم أن التعافي الفعال من الكوارث يتطلب جهود مستمرة، وليس نهج &quot;لمرة واحدة&quot;.</li>
-<li>تحديد أولويات الأنظمة التجارية الحرجة بناءً على مدى سرعة الحاجة إلى تشغيلها بعد الكارثة.</li>
-<li>أهمية وجود تحليل تأثير الأعمال (BIA) لتحديد تكلفة انقطاع الخدمة للأنظمة المختلفة.</li>
-<li>لماذا الاعتماد فقط على مزودي الخدمات السحابية يمكن أن يمنح إحساسًا زائفًا بالأمان؛ من الضروري وجود نسخ احتياطية مستقلة.</li>
-<li>تنفيذ نهج مرحلي لتخطيط التعافي من الكوارث، بدءًا من منتج قابل للتطبيق الأدنى والتطور من هناك.</li>
-<li>تعزيز ثقافة التوثيق داخل مؤسستك للتخفيف من المخاطر المرتبطة بتغيير الأفراد الرئيسيين.</li>
-</ul>
-<h2>الفصول:</h2>
-<ul>
-<li>(00:00) المقدمة</li>
-<li>(02:15) أهمية التعافي من الكوارث</li>
-<li>(05:45) قصة أصل توم ماي</li>
-<li>(10:30) وجهة نظر تنفيذي: النقاط الرئيسية</li>
-<li>(15:10) الحاجة إلى تحليل تأثير الأعمال</li>
-<li>(20:00) فهم أهداف زمن التعافي (RTO) وأهداف نقطة التعافي (RPO)</li>
-<li>(25:30) دور السحابة وتحديات الامتثال</li>
-<li>(30:45) الوعي بالبرامج الضارة والوقاية منها</li>
-<li>(35:00) إيجاد التوازن الصحيح في تخطيط الكوارث</li>
-<li>(40:15) الخاتمة والموارد</li>
-</ul>
-<p>للحصول على فهم أعمق ونصائح مخصصة، تواصل مع توم ماي على <a href="http://differentdev.com">differentdev.com</a> وابدأ في التخطيط لاستراتيجية التخفيف من الكوارث الخاصة بك اليوم!</p>
+            <p>تعافي الكوارث هو جانب حاسم وغالبًا ما يُغفل من استمرارية الأعمال. انضم إلى الدكتور دارين وهو يتحدث مع توم ماي، الرئيس التنفيذي لشركة ديفيرنت ديف، حول سبب عدم كفاية الحلول السحابية وبرامج الخدمة كخدمة (SaaS) لتكامل تعافي الكوارث. اكتشف رؤى قابلة للتطبيق يمكن أن تساعد في حماية عملك من الكوارث غير المت</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/tom-may/index.html" itemprop="url">
                 <span itemprop="name">Tom May</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -398,7 +414,7 @@
     {
       "@type": "AudioObject",
       "name": "استعادة الكوارث للمديرين التنفيذيين: لماذا السحابة وSaaS ليست كافية Audio",
-      "contentUrl": "https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
     }
   ],
   "actor": [

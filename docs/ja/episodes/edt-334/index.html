@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -193,92 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="334"/>
             <meta itemprop="inLanguage" content="ja"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="公共DNIの不都合な真実: あなたのデータは高需要です Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/NMhZ9HS-RfU">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/NMhZ9HS-RfU"
-                        title="公共DNIの不都合な真実: あなたのデータは高需要です Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="公共DNIの不都合な真実: あなたのデータは高需要です Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/38e08ceb-e7bc-4d0c-98be-b74ed06f547c">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/38e08ceb-e7bc-4d0c-98be-b74ed06f547c"
-                        title="公共DNIの不都合な真実: あなたのデータは高需要です Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-16T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="公共DNIの不都合な真実: あなたのデータは高需要です Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/NMhZ9HS-RfU">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/NMhZ9HS-RfU"
+                            title="公共DNIの不都合な真実: あなたのデータは高需要です Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="公共DNIの不都合な真実: あなたのデータは高需要です Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/38e08ceb-e7bc-4d0c-98be-b74ed06f547c">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/38e08ceb-e7bc-4d0c-98be-b74ed06f547c"
+                            title="公共DNIの不都合な真実: あなたのデータは高需要です Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-17<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>プライバシーとデータセキュリティはもはや任意ではなく、不可欠です。この「デジタルトランスフォーメーションを受け入れる」エピソードでは、ホストのダレン博士がエターナルテクノロジーズのCEOショーン・バイロン・ハンビーIVと対談し、AI、プライバシー、そしてデータに対する圧倒的な需要の交差点を探ります。ハンビーは映画製作者からテクノロジー起業家への独自の旅について語り、今日のデジタル環境における生成的AIの急速な進化とデータ露出のリスクに光を当てます。</p>
-<h2>重要なポイント:</h2>
-<ul>
-<li><strong>データプライバシーは重要</strong>: 大規模なAIモデル開発者がより多くのデータを求める中で、データの安全性とプライバシーを確保することが最重要です。</li>
-<li><strong>教育が鍵</strong>: 組織はAIリテラシーを優先し、従業員の効率を向上させ、生成的AIツールの可能性を最大限に活用する必要があります。</li>
-<li><strong>オープンソース vs. プライベートAI</strong>: 公共のAIモデルは非常に能力が高いですが、プライベートAIソリューションは適切なトレーニングを受けることで特定のビジネスニーズに合わせて調整できます。</li>
-<li><strong>プロンプティングが重要</strong>: AIの実装の効果は、ユーザーがテクノロジーにニーズをどれだけうまく伝えられるかに依存することがよくあります。</li>
-<li><strong>リスクとリワードのバランス</strong>: AIを使用することの潜在的な利点と機密データを露出するリスクのバランスを取ることは、現代の企業にとって重要な議論です。</li>
-<li><strong>コミュニティが重要</strong>: デジタルトランスフォーメーションについて他者と関わることで理解が深まり、革新的な解決策が促進されます。</li>
-</ul>
-<h2>チャプター:</h2>
-<ul>
-<li><strong>00:00</strong> - ダレン博士とショーン・バイロン・ハンビーの紹介</li>
-<li><strong>03:15</strong> - 映画製作からAI起業へ移行したショーンの旅</li>
-<li><strong>10:20</strong> - AI主導の世界におけるプライバシーの重要性</li>
-<li><strong>18:45</strong> - AI導入率とユーザーの疑念</li>
-<li><strong>25:10</strong> - 公共の生成的AIとプライベートAI: 知っておくべきこと</li>
-<li><strong>32:00</strong> - 職場におけるトレーニングとAIリテラシーの重要性</li>
-<li><strong>38:20</strong> - 結論とエターナルテクノロジーズについてのさらなる情報</li>
-</ul>
-<p>フルコンバセーションを聞いて、データを守りながらデジタルトランスフォーメーションをどのように受け入れるかを発見してください！</p>
+            <p>プライバシーとデータセキュリティはもはや任意ではなく、不可欠です。この「デジタルトランスフォーメーションを受け入れる」エピソードでは、ホストのダレン博士がエターナルテクノロジーズのCEOショーン・バイロン・ハンビーIVと対談し、AI、プライバシー、そしてデータに対する圧倒的な需要の交差点を探ります。ハンビーは映画製作者からテクノロジー起業家への独自の旅について語り、今日のデジタル環境における生成的AIの急速な進化とデータ露出のリスクに光を当てます。 重要なポイント: データプライバシーは重要 : 大規模なAIモデル開発者がより多くのデータを求める中で、データの安全性とプライバシーを確保すること</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/john-byron-hanby-iv/index.html" itemprop="url">
                 <span itemprop="name">John Byron Hanby IV</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -388,7 +407,7 @@
     {
       "@type": "AudioObject",
       "name": "公共DNIの不都合な真実: あなたのデータは高需要です Audio",
-      "contentUrl": "https://share.transistor.fm/e/38e08ceb-e7bc-4d0c-98be-b74ed06f547c"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/38e08ceb-e7bc-4d0c-98be-b74ed06f547c"
     }
   ],
   "actor": [

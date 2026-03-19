@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -192,95 +193,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="336"/>
             <meta itemprop="inLanguage" content="ar"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="مستقبل الدفاع السيبراني: الذكاء الاصطناعي، السلوك، والتحكم في الوصول Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/9RdflPzSTPk">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/9RdflPzSTPk"
-                        title="مستقبل الدفاع السيبراني: الذكاء الاصطناعي، السلوك، والتحكم في الوصول Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="مستقبل الدفاع السيبراني: الذكاء الاصطناعي، السلوك، والتحكم في الوصول Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d"
-                        title="مستقبل الدفاع السيبراني: الذكاء الاصطناعي، السلوك، والتحكم في الوصول Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-23T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="مستقبل الدفاع السيبراني: الذكاء الاصطناعي، السلوك، والتحكم في الوصول Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/9RdflPzSTPk">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/9RdflPzSTPk"
+                            title="مستقبل الدفاع السيبراني: الذكاء الاصطناعي، السلوك، والتحكم في الوصول Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="مستقبل الدفاع السيبراني: الذكاء الاصطناعي، السلوك، والتحكم في الوصول Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d"
+                            title="مستقبل الدفاع السيبراني: الذكاء الاصطناعي، السلوك، والتحكم في الوصول Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-24<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <h1>الذكاء الاصطناعي والأمن السيبراني: حماية منظمتك ضد التهديدات المتطورة</h1>
-<p>مع تقدمنا في عصرنا الرقمي، تزداد التهديدات للأمن السيبراني تعقيدًا وتطورًا. انضم إلى الدكتور دارين، المعماري الرئيسي ذو الخبرة، بينما يتحدث مع أميت باتيل، نائب الرئيس الأول لحلول الاستشارات، حول القضية الملحة لاستخدام الذكاء الاصطناعي في تعزيز الهجمات السيبرانية واستراتيجيات الدفاع الحيوية ضدها.</p>
-<h2>أهم النقاط:</h2>
-<ul>
-<li><strong>ضعف العنصر البشرى</strong>: تستغل معظم الهجمات السيبرانية الأخطاء البشرية، مما يجعل التدريب السلوكي أمرًا ضروريًا.</li>
-<li><strong>التدريب الديناميكي</strong>: إن التدريب التقليدي للأمن السيبراني السنوي أصبح عتيقًا؛ الجلسات القصيرة المستمرة تخلق احتفاظًا أفضل بالمعلومات.</li>
-<li><strong>حوكمة الوصول</strong>: يمكن تنفيذ مبدأ الحد الأدنى من الامتيازات لتقليل خطر الاختراقات الداخلية.</li>
-<li><strong>المصادقة متعددة العوامل (MFA)</strong>: تعتبر المصادقة متعددة العوامل طبقة أمان أساسية، خاصة في سيناريوهات العمل عن بعد.</li>
-<li><strong>الاحتكاك الذكي</strong>: يجب أن تهدف بروتوكولات الأمان إلى أن تكون سلسة، مما يقلل من اضطراب سير العمل للموظفين مع حماية الأصول.</li>
-</ul>
-<h2>الفصول:</h2>
-<ul>
-<li>00:00 - مقدمة عن الحلقة</li>
-<li>02:15 - أهمية العنصر البشري في الأمن السيبراني</li>
-<li>08:40 - قصة أصل أميت باتيل</li>
-<li>13:00 - دور الذكاء الاصطناعي في الهجمات السيبرانية</li>
-<li>18:35 - استراتيجيات التعليم السلوكي</li>
-<li>25:10 - تعزيز الوعي السيبراني من خلال التدريب السياقي</li>
-<li>32:50 - بناء بنية تحتية للدفاع السيبراني</li>
-<li>40:00 - دور إدارة الهوية والوصول</li>
-<li>48:15 - حلول ذكية لرصد التهديدات</li>
-<li>53:30 - الخاتمة ومعلومات عن الشركة</li>
-</ul>
-<p>استمع للحصول على رؤى تجهزك للدفاع بشكل استباقي ضد التهديدات السيبرانية الوشيكة التي تؤثر على المنظمات اليوم. لمزيد من المناقشات والموارد المتعمقة، تأكد من زيارة موقعنا على الإنترنت <a href="http://www.wheresthelemonade.org">احتضان التحول الرقمي</a>.</p>
+            <p>الذكاء الاصطناعي والأمن السيبراني: حماية منظمتك ضد التهديدات المتطورة مع تقدمنا في عصرنا الرقمي، تزداد التهديدات للأمن السيبراني تعقيدًا وتطورًا. انضم إلى الدكتور دارين، المعماري الرئيسي ذو الخبرة، بينما يتحدث مع أميت باتيل، نائب الرئيس الأول لحلول الاستشارات، حول القضية الملحة لاستخدام الذكاء الاصط</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/amit-patel/index.html" itemprop="url">
                 <span itemprop="name">Amit Patel</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -391,7 +407,7 @@
     {
       "@type": "AudioObject",
       "name": "مستقبل الدفاع السيبراني: الذكاء الاصطناعي، السلوك، والتحكم في الوصول Audio",
-      "contentUrl": "https://share.transistor.fm/e/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d"
     }
   ],
   "actor": [

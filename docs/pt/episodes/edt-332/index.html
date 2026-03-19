@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -193,92 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="332"/>
             <meta itemprop="inLanguage" content="pt"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="A IA pode fortalecer a democracia? O futuro dos serviços governamentais. Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/v9wi9gVd-hA">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/v9wi9gVd-hA"
-                        title="A IA pode fortalecer a democracia? O futuro dos serviços governamentais. Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="A IA pode fortalecer a democracia? O futuro dos serviços governamentais. Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/b2f527ab-14a6-4720-ad0f-750033e667c8">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/b2f527ab-14a6-4720-ad0f-750033e667c8"
-                        title="A IA pode fortalecer a democracia? O futuro dos serviços governamentais. Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-09T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="A IA pode fortalecer a democracia? O futuro dos serviços governamentais. Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/v9wi9gVd-hA">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/v9wi9gVd-hA"
+                            title="A IA pode fortalecer a democracia? O futuro dos serviços governamentais. Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../pt/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="A IA pode fortalecer a democracia? O futuro dos serviços governamentais. Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/b2f527ab-14a6-4720-ad0f-750033e667c8">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/b2f527ab-14a6-4720-ad0f-750033e667c8"
+                            title="A IA pode fortalecer a democracia? O futuro dos serviços governamentais. Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../pt/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-10<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>A transformação digital pode realmente aprimorar a democracia? Junte-se ao Dr. Darren, Arquiteto-Chefe de Empresas e educador apaixonado, enquanto ele discute a interseção crítica entre tecnologia, política pública e engajamento dos cidadãos com Katherine Friday, Sócia-Gerente Global da EY. Neste episódio, eles exploram a necessidade urgente de os governos adotarem a IA enquanto mantêm a transparência e a confiança pública.</p>
-<h2>Principais Aprendizados:</h2>
-<ul>
-<li><strong>A Importância da IA no Governo:</strong> A IA pode melhorar enormemente a eficiência e a experiência do cidadão, mas deve ser implementada cuidadosamente, mantendo em mente a confiança pública.</li>
-<li><strong>Transparência é Fundamental:</strong> Os governos devem comunicar abertamente como a IA é utilizada e fornecer caminhos claros para os cidadãos contestarem decisões tomadas por sistemas automatizados.</li>
-<li><strong>Começar Pequeno:</strong> A implementação bem-sucedida de IA pode começar com iniciativas de baixo risco que abordem pontos problemáticos específicos nos serviços governamentais.</li>
-<li><strong>Capacitação da Força de Trabalho:</strong> Os funcionários do setor público precisam de treinamento contínuo para se adaptar às novas tecnologias e manter uma governança eficaz.</li>
-<li><strong>Construindo a Confiança dos Cidadãos:</strong> Os governos que reconhecem seus desafios e compartilham tanto sucessos quanto falhas com o público promoverão uma relação mais confiável com os cidadãos.</li>
-</ul>
-<h2>Capítulos:</h2>
-<ul>
-<li>00:00 Introdução ao episódio</li>
-<li>01:30 Conhecendo Catherine Friday</li>
-<li>05:00 A necessidade de transparência na IA</li>
-<li>10:00 Desafios únicos na tecnologia governamental</li>
-<li>15:00 Estratégias para uma implementação eficaz da IA</li>
-<li>20:00 O papel da capacitação da força de trabalho</li>
-<li>25:00 As implicações filosóficas da IA na governança</li>
-<li>30:00 Conclusão e considerações finais</li>
-</ul>
-<p>Se você está motivado a entender como a IA pode remodelar os serviços públicos e fortalecer a democracia, não perca esta conversa perspicaz! Para mais recursos e discussões mais profundas, visite <a href="http://www.embracingdigital.org">Abraçando a Transformação Digital</a>. Sinta-se à vontade para se inscrever e compartilhar este episódio para espalhar o conhecimento!</p>
+            <p>A transformação digital pode realmente aprimorar a democracia? Junte-se ao Dr. Darren, Arquiteto-Chefe de Empresas e educador apaixonado, enquanto ele discute a interseção crítica entre tecnologia, política pública e engajamento dos cidadãos com Katherine Friday, Sócia-Gerente Global da EY. Neste ep</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../pt/guests/catherine-friday/index.html" itemprop="url">
                 <span itemprop="name">Catherine Friday</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../pt/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -387,7 +406,7 @@
     {
       "@type": "AudioObject",
       "name": "A IA pode fortalecer a democracia? O futuro dos serviços governamentais. Audio",
-      "contentUrl": "https://share.transistor.fm/e/b2f527ab-14a6-4720-ad0f-750033e667c8"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/b2f527ab-14a6-4720-ad0f-750033e667c8"
     }
   ],
   "actor": [

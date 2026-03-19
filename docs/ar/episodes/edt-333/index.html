@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -192,91 +193,106 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="333"/>
             <meta itemprop="inLanguage" content="ar"/>
         </header>
 
         
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="هاكاثون الألعاب 2026: تطوير الألعاب المعزز بالذكاء الاصطناعي Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/4fd2face-8215-4c8e-b99b-0815c68ca8e2">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
-                        title="هاكاثون الألعاب 2026: تطوير الألعاب المعزز بالذكاء الاصطناعي Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-11T07:00:00.000Z">
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="هاكاثون الألعاب 2026: تطوير الألعاب المعزز بالذكاء الاصطناعي Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/4fd2face-8215-4c8e-b99b-0815c68ca8e2">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
+                            title="هاكاثون الألعاب 2026: تطوير الألعاب المعزز بالذكاء الاصطناعي Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-12<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>انضم الدكتور دارين إلى أبنائه الثلاثة - ماثيو، يعقوب، وداود بولسيفر - خلال مغامرتهم الجذابة في ماراثون الألعاب الذي استمر 30 ساعة. معًا، يغوصون في الاستخدامات المبتكرة للذكاء الاصطناعي التوليدي، كشفت insights المكتسبة من تجاربهم الفريدة والتحديات التي واجهوها خلال هاكاثون المكثف.</p>
-<h2>النقاط الرئيسية:</h2>
-<ul>
-<li><strong>الذكاء الاصطناعي كمتعاون</strong>: يجب أن يُنظر إلى الذكاء الاصطناعي التوليدي كأداة لتعزيز الإبداع البشري، حيث يساعد في تحقيق الأفكار بدلاً من استبدال الابتكار البشري.</li>
-<li><strong>التواصل الواضح</strong>: التعليم الفعال لأدوات الذكاء الاصطناعي أمر حاسم؛ كلما كنت أكثر تحديدًا في مطالباتك، كانت النتائج أفضل.</li>
-<li><strong>التطوير التكراري</strong>: الاختبار المستمر وتحسين عناصر اللعبة ضروريان لتخصيص تجربة مستخدم ممتعة.</li>
-<li><strong>استراتيجيات متنوعة</strong>: أدت أساليب مختلفة لاستخدام الذكاء الاصطناعي إلى نتائج ألعاب متباينة، مما يبرز أهمية وجهات النظر الفردية والخبرة.</li>
-<li><strong>فهم نقاط القوة</strong>: قم بمحاذاة أهداف مشروعك مع نقاط القوة الفطرية لنماذج الذكاء الاصطناعي، مثل معالجة البيانات والتعرف على الأنماط، لتعظيم إمكاناتها.</li>
-<li><strong>تقبل الأخطاء</strong>: يمكن أن يؤدي التعلم للتكيف ودمج الأفكار غير المتوقعة من الذكاء الاصطناعي إلى آليات ألعاب فريدة ومسلية.</li>
-</ul>
-<h2>الفصول:</h2>
-<ul>
-<li>00:00 الترحيب وتقديم ماراثون الألعاب 2026</li>
-<li>05:32 الفكرة وراء ماراثون الألعاب</li>
-<li>10:15 شرح قواعد وأنظمة</li>
-<li>15:45 الأدوات والاشتراكات المستخدمة من قبل كل مشارك</li>
-<li>25:20 أساليب فريدة في تطوير الألعاب</li>
-<li>30:45 التحديات التي تم مواجهتها أثناء التطوير</li>
-<li>35:10 رؤى حول استخدام الذكاء الاصطناعي التوليدي</li>
-<li>40:25 الإمكانيات لماراثونات الألعاب المستقبلية</li>
-<li>45:10 الخاتمة والأفكار الختامية</li>
-</ul>
-<p>انضم إلينا في هذه الحلقة الملهمة واكتشف كيف يمكن لفكرة بسيطة أن تقود إلى رؤى عميقة في العالم المتطور باستمرار للتكنولوجيا والإبداع!</p>
+            <p>انضم الدكتور دارين إلى أبنائه الثلاثة - ماثيو، يعقوب، وداود بولسيفر - خلال مغامرتهم الجذابة في ماراثون الألعاب الذي استمر 30 ساعة. معًا، يغوصون في الاستخدامات المبتكرة للذكاء الاصطناعي التوليدي، كشفت insights المكتسبة من تجاربهم الفريدة والتحديات التي واجهوها خلال هاكاثون المكثف. النقاط الرئيسية: ال</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/matthew-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Matthew Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/jacob-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Jacob Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/david-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">David Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -369,7 +385,7 @@
     {
       "@type": "AudioObject",
       "name": "هاكاثون الألعاب 2026: تطوير الألعاب المعزز بالذكاء الاصطناعي Audio",
-      "contentUrl": "https://share.transistor.fm/e/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/4fd2face-8215-4c8e-b99b-0815c68ca8e2"
     }
   ],
   "actor": [

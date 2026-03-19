@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -193,95 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="336"/>
             <meta itemprop="inLanguage" content="ja"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="サイバー防御の未来：AI、行動、アクセス制御 Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/9RdflPzSTPk">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/9RdflPzSTPk"
-                        title="サイバー防御の未来：AI、行動、アクセス制御 Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="サイバー防御の未来：AI、行動、アクセス制御 Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d"
-                        title="サイバー防御の未来：AI、行動、アクセス制御 Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-23T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="サイバー防御の未来：AI、行動、アクセス制御 Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/9RdflPzSTPk">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/9RdflPzSTPk"
+                            title="サイバー防御の未来：AI、行動、アクセス制御 Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="サイバー防御の未来：AI、行動、アクセス制御 Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d"
+                            title="サイバー防御の未来：AI、行動、アクセス制御 Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-24<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <h1>AIとサイバーセキュリティ：進化する脅威から組織を守る</h1>
-<p>私たちがデジタル時代に深く突入するにつれて、サイバーセキュリティへの脅威はますます複雑で洗練されてきています。経験豊富なチーフエンタープライズアーキテクトであるダレン博士が、コンサルティングソリューションのシニアVPアミット・パテルと共に、AIがサイバー攻撃を加速させるという差し迫った問題と、それに対抗するための重要な戦略について語ります。</p>
-<h2>主なポイント：</h2>
-<ul>
-<li><strong>人的要素の脆弱性</strong>: 大多数のサイバー攻撃は人的ミスを悪用するため、行動訓練が不可欠です。</li>
-<li><strong>動的トレーニング</strong>: 従来の年次サイバーセキュリティトレーニングは時代遅れであり、継続的なマイクロセッションがより良い保持を生み出します。</li>
-<li><strong>アクセスガバナンス</strong>: 最小権限の原則を実施することで、内部漏洩のリスクを軽減できます。</li>
-<li><strong>多要素認証（MFA）</strong>: MFAは、特にリモートワークのシナリオにおいて必須のセキュリティレイヤーです。</li>
-<li><strong>スマートな摩擦</strong>: セキュリティプロトコルはシームレスであることを目指し、従業員の業務フローへの混乱を最小限に抑えつつ資産を保護すべきです。</li>
-</ul>
-<h2>チャプター：</h2>
-<ul>
-<li>00:00 - エピソードの紹介</li>
-<li>02:15 - サイバーセキュリティにおける人の重要性</li>
-<li>08:40 - アミット・パテルの起源ストーリー</li>
-<li>13:00 - サイバー攻撃におけるAIの役割</li>
-<li>18:35 - 行動教育戦略</li>
-<li>25:10 - コンテクストトレーニングによるサイバー意識の向上</li>
-<li>32:50 - サイバー防御インフラの構築</li>
-<li>40:00 - アイデンティティとアクセス管理の役割</li>
-<li>48:15 - 脅威検出のためのスマートなソリューション</li>
-<li>53:30 - まとめと会社情報</li>
-</ul>
-<p>現在、組織に影響を与える迫り来るサイバー脅威に対抗するための洞察を得るためにお聞きください。より詳しい議論やリソースについては、私たちのウェブサイト<a href="http://www.wheresthelemonade.org">デジタルトランスフォーメーションの受け入れ</a>をご覧ください。</p>
+            <p>AIとサイバーセキュリティ：進化する脅威から組織を守る 私たちがデジタル時代に深く突入するにつれて、サイバーセキュリティへの脅威はますます複雑で洗練されてきています。経験豊富なチーフエンタープライズアーキテクトであるダレン博士が、コンサルティングソリューションのシニアVPアミット・パテルと共に、AIがサイバー攻撃を加速させるという差し迫った問題と、それに対抗するための重要な戦略について語ります。 主なポイント： 人的要素の脆弱性 : 大多数のサイバー攻撃は人的ミスを悪用するため、行動訓練が不可欠です。 動的トレーニング : 従来の年次サイバーセキュリティトレーニングは時代遅れであり、継続的なマ</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/amit-patel/index.html" itemprop="url">
                 <span itemprop="name">Amit Patel</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -390,7 +406,7 @@
     {
       "@type": "AudioObject",
       "name": "サイバー防御の未来：AI、行動、アクセス制御 Audio",
-      "contentUrl": "https://share.transistor.fm/e/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d"
     }
   ],
   "actor": [

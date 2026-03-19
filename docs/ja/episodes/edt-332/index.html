@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -193,92 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="332"/>
             <meta itemprop="inLanguage" content="ja"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="AIは民主主義を強化できるか？政府サービスの未来 Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/v9wi9gVd-hA">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/v9wi9gVd-hA"
-                        title="AIは民主主義を強化できるか？政府サービスの未来 Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="AIは民主主義を強化できるか？政府サービスの未来 Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/b2f527ab-14a6-4720-ad0f-750033e667c8">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/b2f527ab-14a6-4720-ad0f-750033e667c8"
-                        title="AIは民主主義を強化できるか？政府サービスの未来 Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-09T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="AIは民主主義を強化できるか？政府サービスの未来 Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/v9wi9gVd-hA">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/v9wi9gVd-hA"
+                            title="AIは民主主義を強化できるか？政府サービスの未来 Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="AIは民主主義を強化できるか？政府サービスの未来 Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/b2f527ab-14a6-4720-ad0f-750033e667c8">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/b2f527ab-14a6-4720-ad0f-750033e667c8"
+                            title="AIは民主主義を強化できるか？政府サービスの未来 Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-10<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>デジタル変革は本当に民主主義を向上させることができるのか？企業アーキテクトのチーフであり情熱的な教育者であるダレン博士が、EYのグローバルマネージングパートナーであるキャサリン・フライデイとの対話を通じて、テクノロジー、公共政策、市民の関与の重要な交差点について語ります。このエピソードでは、政府がAIを受け入れる必要性と同時に透明性と市民の信頼を維持することの重要性を探ります。</p>
-<h2>主なポイント:</h2>
-<ul>
-<li><strong>政府におけるAIの重要性:</strong> AIは効率性と市民の体験を大幅に改善できますが、公共の信頼を考慮して慎重に導入する必要があります。</li>
-<li><strong>透明性が鍵:</strong> 政府はAIがどのように利用されているかについてオープンにコミュニケーションを取り、市民が自動化システムによる決定に対して異議を申し立てるための明確な道筋を提供する必要があります。</li>
-<li><strong>小さく始める:</strong> 成功したAIの導入は、政府サービスの特定の課題に対処する低リスクのイニシアティブから始めることができます。</li>
-<li><strong>労働力のスキル向上:</strong> 公共部門の従業員は、新しいテクノロジーに適応し、効果的なガバナンスを維持するために継続的なトレーニングが必要です。</li>
-<li><strong>市民の信頼を築く:</strong> 課題を認め、成功と失敗の両方を市民と共有する政府は、市民との信頼関係を育むことができます。</li>
-</ul>
-<h2>章:</h2>
-<ul>
-<li>00:00 エピソードの紹介</li>
-<li>01:30 キャサリン・フライデイの紹介</li>
-<li>05:00 AIにおける透明性の必要性</li>
-<li>10:00 政府テクノロジーにおけるユニークな課題</li>
-<li>15:00 効果的なAI実装のための戦略</li>
-<li>20:00 労働力のスキル向上の役割</li>
-<li>25:00 ガバナンスにおけるAIの哲学的影響</li>
-<li>30:00 結論と最終的な考察</li>
-</ul>
-<p>AIが公共サービスを再構築し、民主主義を強化する方法を理解したい方は、この洞察に満ちた対話をお見逃しなく！さらなるリソースや深い議論については、<a href="http://www.embracingdigital.org">デジタル変革を受け入れる</a>をご覧ください。このエピソードを購読したり共有したりして、知識を広めてください！</p>
+            <p>デジタル変革は本当に民主主義を向上させることができるのか？企業アーキテクトのチーフであり情熱的な教育者であるダレン博士が、EYのグローバルマネージングパートナーであるキャサリン・フライデイとの対話を通じて、テクノロジー、公共政策、市民の関与の重要な交差点について語ります。このエピソードでは、政府がAIを受け入れる必要性と同時に透明性と市民の信頼を維持することの重要性を探ります。 主なポイント: 政府におけるAIの重要性: AIは効率性と市民の体験を大幅に改善できますが、公共の信頼を考慮して慎重に導入する必要があります。 透明性が鍵: 政府はAIがどのように利用されているかについてオープンにコミ</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/catherine-friday/index.html" itemprop="url">
                 <span itemprop="name">Catherine Friday</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -385,7 +404,7 @@
     {
       "@type": "AudioObject",
       "name": "AIは民主主義を強化できるか？政府サービスの未来 Audio",
-      "contentUrl": "https://share.transistor.fm/e/b2f527ab-14a6-4720-ad0f-750033e667c8"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/b2f527ab-14a6-4720-ad0f-750033e667c8"
     }
   ],
   "actor": [

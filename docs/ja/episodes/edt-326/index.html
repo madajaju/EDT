@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -193,93 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="326"/>
             <meta itemprop="inLanguage" content="ja"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="部分的労働力の台頭 Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/T6slMUvE8y8">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/T6slMUvE8y8"
-                        title="部分的労働力の台頭 Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="部分的労働力の台頭 Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/1cd506d6-a385-4963-9ad3-a11b875b5e84">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/1cd506d6-a385-4963-9ad3-a11b875b5e84"
-                        title="部分的労働力の台頭 Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-02-17T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="部分的労働力の台頭 Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/T6slMUvE8y8">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/T6slMUvE8y8"
+                            title="部分的労働力の台頭 Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="部分的労働力の台頭 Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/1cd506d6-a385-4963-9ad3-a11b875b5e84">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/1cd506d6-a385-4963-9ad3-a11b875b5e84"
+                            title="部分的労働力の台頭 Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2/17/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>私たちは産業革命以前に戻るのか、フラクショナルワークフォース！デジタルトランスフォーメーションを受け入れるこのエピソードでは、ダレン博士とフリーランス経済の専門家でありフラクショナルワーカーの宣教師であるエリザベス・アイスが参加しています。彼らは、フラクショナルワークの台頭と、それが今日のビジネス環境に与える影響を調査し、このシフトに伴う利点と課題を強調します。</p>
-<h2>主なポイント：</h2>
-<ul>
-<li><strong>フラクショナルワークの理解</strong>: フラクショナル役割とフルタイム役割の違い、そして企業がどのように運用モデルを変化させているかを学びます。</li>
-<li><strong>ポートフォリオキャリア</strong>: 特に若い世代が労働力に参入する際、複数の収入源が標準になりつつある理由を探ります。</li>
-<li><strong>ネットワーキングというスーパースキル</strong>: 効果的なネットワーキングは、フラクショナルワークへのスムーズな移行を助ける機会を生むことができます。</li>
-<li><strong>信頼構築と知的財産の保護</strong>: フリーランサーと仕事をする際に知的財産を保護するための戦略を発見します。</li>
-<li><strong>未来はここにある</strong>: テクノロジーとギグエコノミーが伝統的な労働力をどのように再構築しているかを理解します。</li>
-</ul>
-<h2>チャプター：</h2>
-<ul>
-<li>00:00 フラクショナルワークの紹介</li>
-<li>02:15 エリザベスのオリジンストーリー</li>
-<li>05:30 フルタイムからフラクショナルワークへの移行</li>
-<li>11:00 変化に適応し、レジリエンスを構築する</li>
-<li>16:45 ネットワーキングの役割</li>
-<li>21:10 フラクショナルワークにおけるリスクと懸念</li>
-<li>27:30 フリーランサーを雇うためのベストプラクティス</li>
-<li>32:00 未来のトレンドと最終的な考え</li>
-<li>35:15 エリザベス・アイスとのつながり方</li>
-</ul>
-<p>この変化する労働環境を探求し、この新しい経済で繁栄するためにどのように適応できるかを見つける、啓発的な旅に参加してください！</p>
+            <p>私たちは産業革命以前に戻るのか、フラクショナルワークフォース！デジタルトランスフォーメーションを受け入れるこのエピソードでは、ダレン博士とフリーランス経済の専門家でありフラクショナルワーカーの宣教師であるエリザベス・アイスが参加しています。彼らは、フラクショナルワークの台頭と、それが今日のビジネス環境に与える影響を調査し、このシフトに伴う利点と課題を強調します。 主なポイント： フラクショナルワークの理解 : フラクショナル役割とフルタイム役割の違い、そして企業がどのように運用モデルを変化させているかを学びます。 ポートフォリオキャリア : 特に若い世代が労働力に参入する際、複数の収入源が標準</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/elizabeth-eiss/index.html" itemprop="url">
                 <span itemprop="name">Elizabeth Eiss</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -393,7 +411,7 @@
     {
       "@type": "AudioObject",
       "name": "部分的労働力の台頭 Audio",
-      "contentUrl": "https://share.transistor.fm/e/1cd506d6-a385-4963-9ad3-a11b875b5e84"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/1cd506d6-a385-4963-9ad3-a11b875b5e84"
     }
   ],
   "actor": [

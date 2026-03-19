@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -193,95 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="336"/>
             <meta itemprop="inLanguage" content="it"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Il Futuro della Difesa Cibernetica: AI, Comportamento e Controllo degli Accessi Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/9RdflPzSTPk">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/9RdflPzSTPk"
-                        title="Il Futuro della Difesa Cibernetica: AI, Comportamento e Controllo degli Accessi Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Il Futuro della Difesa Cibernetica: AI, Comportamento e Controllo degli Accessi Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d"
-                        title="Il Futuro della Difesa Cibernetica: AI, Comportamento e Controllo degli Accessi Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-23T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Il Futuro della Difesa Cibernetica: AI, Comportamento e Controllo degli Accessi Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/9RdflPzSTPk">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/9RdflPzSTPk"
+                            title="Il Futuro della Difesa Cibernetica: AI, Comportamento e Controllo degli Accessi Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Il Futuro della Difesa Cibernetica: AI, Comportamento e Controllo degli Accessi Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d"
+                            title="Il Futuro della Difesa Cibernetica: AI, Comportamento e Controllo degli Accessi Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-24<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <h1>AI e Cybersecurity: Proteggere la Tua Organizzazione Contro Minacce in Evoluzione</h1>
-<p>Mentre ci immergiamo sempre più profondamente nella nostra era digitale, le minacce alla nostra cybersecurity diventano sempre più complesse e sofisticate. Unisciti al Dr. Darren, un esperto chief enterprise architect, mentre parla con Amit Patel, VP Senior di Consulting Solutions, riguardo al problema urgente dell&#39;AI che potenzia gli attacchi informatici e alle strategie fondamentali per difendersi da essi.</p>
-<h2>Punti Chiave:</h2>
-<ul>
-<li><strong>Vulnerabilità dell&#39;Elemento Umano</strong>: La maggior parte degli attacchi informatici sfrutta errori umani, rendendo essenziale la formazione comportamentale.</li>
-<li><strong>Formazione Dinamica</strong>: La formazione tradizionale annuale sulla cybersecurity è obsoleta; sessioni micro continuative creano una migliore retention.</li>
-<li><strong>Governance degli Accessi</strong>: L&#39;implementazione del principio del minimo privilegio può ridurre il rischio di violazioni interne.</li>
-<li><strong>Autenticazione a Più Fattori (MFA)</strong>: La MFA è uno strato di sicurezza imprescindibile, specialmente per scenari di lavoro remoto.</li>
-<li><strong>Friction Intelligente</strong>: I protocolli di sicurezza dovrebbero mirare a essere senza soluzione di continuità, minimizzando le interruzioni nei flussi di lavoro del personale mentre si proteggono le risorse.</li>
-</ul>
-<h2>Capitoli:</h2>
-<ul>
-<li>00:00 - Introduzione all&#39;Episodio</li>
-<li>02:15 - L&#39;Importanza delle Persone nella Cybersecurity</li>
-<li>08:40 - La Storia di Origine di Amit Patel</li>
-<li>13:00 - Il Ruolo dell&#39;AI negli Attacchi Informatici</li>
-<li>18:35 - Strategie di Educazione Comportamentale</li>
-<li>25:10 - Migliorare la Consapevolezza Cyber con Formazione Contestualizzata</li>
-<li>32:50 - Costruire un&#39;Infrastruttura di Difesa Cyber</li>
-<li>40:00 - Il Ruolo della Gestione dell&#39;Identità e degli Accessi</li>
-<li>48:15 - Soluzioni Intelligenti per la Rilevazione delle Minacce</li>
-<li>53:30 - Conclusione e Informazioni sull&#39;Azienda</li>
-</ul>
-<p>Ascolta per ottenere intuizioni che ti equipaggiano a difenderti proattivamente contro le minacce informatiche imminenti che colpiscono le organizzazioni di oggi. Per discussioni più approfondite e risorse, assicurati di visitare il nostro sito web su <a href="http://www.wheresthelemonade.org">Abbracciare la Trasformazione Digitale</a>.</p>
+            <p>AI e Cybersecurity: Proteggere la Tua Organizzazione Contro Minacce in Evoluzione Mentre ci immergiamo sempre più profondamente nella nostra era digitale, le minacce alla nostra cybersecurity diventano sempre più complesse e sofisticate. Unisciti al Dr. Darren, un esperto chief enterprise architect,</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/amit-patel/index.html" itemprop="url">
                 <span itemprop="name">Amit Patel</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -390,7 +406,7 @@
     {
       "@type": "AudioObject",
       "name": "Il Futuro della Difesa Cibernetica: AI, Comportamento e Controllo degli Accessi Audio",
-      "contentUrl": "https://share.transistor.fm/e/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/ddd1a35f-a6f8-4ecf-a4ed-1f149bc4821d"
     }
   ],
   "actor": [

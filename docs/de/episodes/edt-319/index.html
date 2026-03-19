@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -185,84 +186,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-01-22" itemprop="datePublished">2026-01-22T16:51:34.914Z</time>
+                    <time datetime="2026-01-22" itemprop="datePublished">2026-01-22T00:00:00.000Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="319"/>
             <meta itemprop="inLanguage" content="de"/>
         </header>
 
         
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Von Telemedizin zu KI: Eine neue Ära in der Medizin Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/bc1f1c26">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/bc1f1c26"
-                        title="Von Telemedizin zu KI: Eine neue Ära in der Medizin Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-21T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Von Telemedizin zu KI: Eine neue Ära in der Medizin Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/APU7WBS0b5I">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/APU7WBS0b5I"
+                            title="Von Telemedizin zu KI: Eine neue Ära in der Medizin Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../de/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Von Telemedizin zu KI: Eine neue Ära in der Medizin Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/09380121">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/09380121"
+                            title="Von Telemedizin zu KI: Eine neue Ära in der Medizin Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../de/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-22T00:00:00.000Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Die Zukunft der Gesundheitsversorgung ist hier, und sie ist persönlicher als je zuvor. Begleiten Sie Dr. Darren, Ihren Gastgeber und leitenden Unternehmensarchitekten, während er mit Dr. Ami Bhatt, Chief Innovation Officer des American College of Cardiology, spricht. Gemeinsam diskutieren sie die Integration von KI in die Medizin und enthüllen, wie diese Technologie die Patientenversorgung neu gestaltet und die Effizienz der Kliniker verbessert.</p>
-<h2>Wichtige Erkenntnisse:</h2>
-<ul>
-<li>Erste Meile der Gesundheitsversorgung: Dr. Bhatt betont die Bedeutung, die Versorgung zurück in die Häuser der Patienten zu bringen, die Erfahrung im Gesundheitswesen neu zu definieren und die Gemeinschaft einzuladen, an dieser Veränderung teilzuhaben.</li>
-<li>KI als Werkzeug: Anstatt Kliniker zu ersetzen, unterstützt die KI deren Fachwissen und verbessert es, indem sie Einsichten liefert, die Entscheidungsfindungen stärken und deren wesentliche Rolle in der Patientenversorgung festigen.</li>
-<li><strong>Wertorientierte Versorgung</strong>: Es gibt einen wachsenden Trend hin zu wertorientierter Gesundheitsversorgung, der Ergebnisse anstelle von Dienstleistungen belohnt und darauf abzielt, gesündere Patienten und bessere Versorgung zu erreichen.</li>
-<li><strong>Präventive Gesundheit</strong>: Frühe Intervention ist entscheidend, und die Nutzung von Technologie kann helfen, Risiken zu identifizieren, bevor sie sich zu schweren Erkrankungen entwickeln.</li>
-<li>Gemeinschaftswissen: Die Zusammenarbeit von Klinikern bei der Erstellung von KI-Modellen stellt sicher, dass Technologie auf realen Erfahrungen basiert, Vertrauen und Begeisterung für zukünftige Innovationen fördert.</li>
-</ul>
-<h2>Kapitel:</h2>
-<ul>
-<li>00:00 - Einführung in Dr. Ami Bhatt</li>
-<li>05:30 - Die Entwicklung der Telemedizin</li>
-<li>10:15 - KI in der klinischen Entscheidungsunterstützung</li>
-<li>15:00 - Wertorientierte vs. Leistungsorientierte Versorgung</li>
-<li>20:45 - Die Bedeutung der Präventivversorgung</li>
-<li>25:30 - Blick in die Zukunft der Gesundheitsversorgung</li>
-<li>30:00 - Gemeinschaftliche Beteiligung an der KI-Entwicklung</li>
-<li>35:00 - Fazit und Handlungsaufruf</li>
-</ul>
-<p>Wenn Sie ein Gesundheitsfachmann oder Forscher sind, der an Innovationen im Gesundheitswesen interessiert ist, verpassen Sie nicht dieses aufschlussreiche Gespräch. Abonnieren Sie den Podcast für weitere Expertendiskussionen über digitale Transformation im Gesundheitswesen und darüber hinaus.</p>
+            <p>Die Zukunft der Gesundheitsversorgung ist hier, und sie ist persönlicher als je zuvor. Begleiten Sie Dr. Darren, Ihren Gastgeber und leitenden Unternehmensarchitekten, während er mit Dr. Ami Bhatt, Chief Innovation Officer des American College of Cardiology, spricht. Gemeinsam diskutieren sie die In</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/ami-bhatt/index.html" itemprop="url">
                 <span itemprop="name">Ami Bhatt</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -358,9 +392,14 @@
   },
   "associatedMedia": [
     {
+      "@type": "VideoObject",
+      "name": "Von Telemedizin zu KI: Eine neue Ära in der Medizin Video",
+      "embedUrl": "https://www.youtube.com/embed/APU7WBS0b5I"
+    },
+    {
       "@type": "AudioObject",
       "name": "Von Telemedizin zu KI: Eine neue Ära in der Medizin Audio",
-      "contentUrl": "https://share.transistor.fm/e/bc1f1c26"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/09380121"
     }
   ],
   "actor": [

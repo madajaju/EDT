@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -193,95 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="330"/>
             <meta itemprop="inLanguage" content="fr"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Récupération après sinistre pour les dirigeants : Pourquoi le Cloud et le SaaS ne suffisent pas Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/p3NUgJUmHCY">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/p3NUgJUmHCY"
-                        title="Récupération après sinistre pour les dirigeants : Pourquoi le Cloud et le SaaS ne suffisent pas Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Récupération après sinistre pour les dirigeants : Pourquoi le Cloud et le SaaS ne suffisent pas Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
-                        title="Récupération après sinistre pour les dirigeants : Pourquoi le Cloud et le SaaS ne suffisent pas Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-03T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Récupération après sinistre pour les dirigeants : Pourquoi le Cloud et le SaaS ne suffisent pas Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/p3NUgJUmHCY">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/p3NUgJUmHCY"
+                            title="Récupération après sinistre pour les dirigeants : Pourquoi le Cloud et le SaaS ne suffisent pas Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../fr/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Récupération après sinistre pour les dirigeants : Pourquoi le Cloud et le SaaS ne suffisent pas Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
+                            title="Récupération après sinistre pour les dirigeants : Pourquoi le Cloud et le SaaS ne suffisent pas Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../fr/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 3/3/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>La récupération après sinistre est un aspect crucial mais souvent négligé de la continuité des affaires. Rejoignez le Dr. Darren alors qu&#39;il discute avec Tom May, PDG de Different Dev, des raisons pour lesquelles les solutions cloud et le logiciel en tant que service (SaaS) ne suffisent pas pour une récupération après sinistre complète. Découvrez des insights exploitables qui peuvent aider à protéger votre entreprise contre des calamités inattendues.</p>
-<h2>Points clés :</h2>
-<ul>
-<li>Comprendre que la récupération après sinistre efficace nécessite un effort continu, et non une approche &quot;une fois pour toutes&quot;.</li>
-<li>Prioriser les systèmes critiques de l&#39;entreprise en fonction de la rapidité avec laquelle ils doivent être opérationnels après un sinistre.</li>
-<li>L&#39;importance d&#39;avoir une analyse d&#39;impact sur les affaires (BIA) pour déterminer le coût des temps d&#39;arrêt pour divers systèmes.</li>
-<li>Pourquoi compter uniquement sur les fournisseurs cloud peut donner un faux sentiment de sécurité ; il est essentiel d&#39;avoir des sauvegardes indépendantes.</li>
-<li>Mettre en œuvre une approche par étapes pour la planification de la récupération après sinistre, en commençant par un produit minimal viable et en évoluant à partir de là.</li>
-<li>Favoriser une culture de documentation au sein de votre organisation pour atténuer les risques associés au turnover du personnel clé.</li>
-</ul>
-<h2>Chapitres :</h2>
-<ul>
-<li>(00:00) Introduction</li>
-<li>(02:15) L&#39;importance de la récupération après sinistre</li>
-<li>(05:45) L&#39;histoire d&#39;origine de Tom May</li>
-<li>(10:30) La perspective exécutive : considérations clés</li>
-<li>(15:10) La nécessité d&#39;une analyse d&#39;impact sur les affaires</li>
-<li>(20:00) Comprendre les objectifs de temps de récupération (RTO) et les objectifs de point de récupération (RPO)</li>
-<li>(25:30) Le rôle du cloud et les défis de conformité</li>
-<li>(30:45) Sensibilisation et prévention contre les ransomwares</li>
-<li>(35:00) Trouver le bon équilibre dans la planification des sinistres</li>
-<li>(40:15) Conclusion et ressources</li>
-</ul>
-<p>Pour une compréhension plus approfondie et des conseils personnalisés, contactez Tom May sur <a href="http://differentdev.com">differentdev.com</a> et commencez à planifier votre stratégie d&#39;atténuation des catastrophes dès aujourd&#39;hui !</p>
+            <p>La récupération après sinistre est un aspect crucial mais souvent négligé de la continuité des affaires. Rejoignez le Dr. Darren alors qu&#39;il discute avec Tom May, PDG de Different Dev, des raisons pour lesquelles les solutions cloud et le logiciel en tant que service (SaaS) ne suffisent pas pour</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../fr/guests/tom-may/index.html" itemprop="url">
                 <span itemprop="name">Tom May</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../fr/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -399,7 +415,7 @@
     {
       "@type": "AudioObject",
       "name": "Récupération après sinistre pour les dirigeants : Pourquoi le Cloud et le SaaS ne suffisent pas Audio",
-      "contentUrl": "https://share.transistor.fm/e/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/2b98923b-f99e-4eda-83b6-8f3b5ce6266e"
     }
   ],
   "actor": [

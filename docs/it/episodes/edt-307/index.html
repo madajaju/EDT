@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -193,91 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="307"/>
             <meta itemprop="inLanguage" content="it"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Il Divario di Prestazione: Come l'IA Accelera l'Disuguaglianza sul Posto di Lavoro Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/rfTb8veTJ-0">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/rfTb8veTJ-0"
-                        title="Il Divario di Prestazione: Come l'IA Accelera l'Disuguaglianza sul Posto di Lavoro Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Il Divario di Prestazione: Come l'IA Accelera l'Disuguaglianza sul Posto di Lavoro Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/ec4f20d1">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/ec4f20d1"
-                        title="Il Divario di Prestazione: Come l'IA Accelera l'Disuguaglianza sul Posto di Lavoro Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-12T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Il Divario di Prestazione: Come l'IA Accelera l'Disuguaglianza sul Posto di Lavoro Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/rfTb8veTJ-0">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/rfTb8veTJ-0"
+                            title="Il Divario di Prestazione: Come l'IA Accelera l'Disuguaglianza sul Posto di Lavoro Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Il Divario di Prestazione: Come l'IA Accelera l'Disuguaglianza sul Posto di Lavoro Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/ec4f20d1">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/ec4f20d1"
+                            title="Il Divario di Prestazione: Come l'IA Accelera l'Disuguaglianza sul Posto di Lavoro Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-12T21:21:17.547Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Sei pronto a mettere in discussione le tue percezioni sul ruolo dell&#39;IA nel posto di lavoro di oggi? Unisciti al Dr. Darren, il tuo ospite e Chief Enterprise Architect, mentre intraprende una conversazione stimolante con Matt Kesby, Fondatore e Chief AI Officer di AICoaches.com. La loro esperienza nel campo ti fornirà una comprensione più profonda delle complessità dei divari di prestazioni esasperati dall&#39;IA e di come i performer di alto livello possano prosperare mentre i performer di basso livello lottano per attirare attenzione.</p>
-<h2>Punti Chiave</h2>
-<p>Questi spunti pratici ti daranno la possibilità di navigare nel posto di lavoro guidato dall&#39;IA con fiducia e agilità.</p>
-<ul>
-<li><strong>Il Doppio Ruolo dell&#39;IA</strong>: Comprendi come l&#39;IA possa amplificare le disparità di prestazioni tra i performer di alto e basso livello.</li>
-<li><strong>Agilità nell&#39;Apprendimento</strong>: Sviluppa la mentalità per adattarti rapidamente di fronte alle interruzioni tecnologiche e promuovi un ambiente di apprendimento continuo.</li>
-<li>L&#39;Empatia Conta: Scopri come sfruttare il potere dell&#39;empatia per navigare i cambiamenti nel posto di lavoro e comunicare in modo più efficace con il tuo team, con suggerimenti pratici e consigli che puoi implementare immediatamente e iniziare ad applicare questi spunti nel tuo percorso professionale.</li>
-<li><strong>Competenze di Pensiero Critico</strong>: Padroneggia l&#39;arte del pensiero critico per analizzare vari risultati, soprattutto in un panorama digitale in rapida evoluzione.</li>
-<li><strong>Abbraccia il Cambiamento</strong>: Sfrutta l&#39;IA come strumento per l&#39;innovazione piuttosto che come minaccia, favorendo un approccio ottimista verso le nuove tecnologie.</li>
-</ul>
-<h2>Capitoli:</h2>
-<ul>
-<li>[00:00] Benvenuto &amp; Introduzione</li>
-<li>[02:15] Storie di Origine: Da Fish and Chip Shop a Leader nell&#39;IA</li>
-<li>[10:45] Il Divario di Prestazioni e l&#39;Impatto dell&#39;IA</li>
-<li>[18:30] Navigare nel Cambiamento: Agilità e Adattabilità</li>
-<li>[26:50] Paradosso di Jevons Applicato: Maggiore Necessità di Umani in Contesti Guidati dall&#39;IA</li>
-<li>[35:00] Competenze Chiave per il Futuro: Il Framework ACE ICC</li>
-</ul>
-<p>Fai il primo passo per trasformare la tua comprensione dell&#39;IA nel posto di lavoro: immergiti in questo episodio illuminante oggi stesso!</p>
+            <p>Sei pronto a mettere in discussione le tue percezioni sul ruolo dell&#39;IA nel posto di lavoro di oggi? Unisciti al Dr. Darren, il tuo ospite e Chief Enterprise Architect, mentre intraprende una conversazione stimolante con Matt Kesby, Fondatore e Chief AI Officer di AICoaches.com. La loro esperien</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/matt-kesby/index.html" itemprop="url">
                 <span itemprop="name">Matt Kesby</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -387,7 +407,7 @@
     {
       "@type": "AudioObject",
       "name": "Il Divario di Prestazione: Come l'IA Accelera l'Disuguaglianza sul Posto di Lavoro Audio",
-      "contentUrl": "https://share.transistor.fm/e/ec4f20d1"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/ec4f20d1"
     }
   ],
   "actor": [

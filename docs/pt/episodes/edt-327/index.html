@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -193,57 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="327"/>
             <meta itemprop="inLanguage" content="pt"/>
         </header>
 
         
 
-        
+        <div id="episode-media" data-release-date="2026-02-19T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Automação de Fluxos de Trabalho com IA Aumentando Equipas de Marketing Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/MS4DEPtpweY">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/MS4DEPtpweY"
+                            title="Automação de Fluxos de Trabalho com IA Aumentando Equipas de Marketing Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Automação de Fluxos de Trabalho com IA Aumentando Equipas de Marketing Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/ef1cad72-4d74-4a84-bdce-9987408b96e3">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/ef1cad72-4d74-4a84-bdce-9987408b96e3"
+                            title="Automação de Fluxos de Trabalho com IA Aumentando Equipas de Marketing Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../pt/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2/19/2026<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>O futuro do marketing está aqui, e a automação de fluxo de trabalho com IA está na vanguarda dessa transformação digital. Neste episódio de Abraçando a Transformação Digital, o Dr. Darren se senta com Pete Gosling, fundador da Gosling Media e Design Tech, para discutir como a IA está ampliando as equipes de marketing – como criadores de conteúdo, analistas de dados e gerenciadores de campanha – e as habilidades essenciais necessárias neste panorama em evolução.</p>
-<h2>Principais Conclusões:</h2>
-<ul>
-<li>Adaptabilidade é Fundamental: Mostrar flexibilidade nas habilidades pode ajudar os profissionais de marketing a se sentirem valorizados e confiantes em sua capacidade de se manter relevantes em um cenário em mudança, o que é essencial para seu crescimento e motivação.</li>
-<li>Compreensão das Ferramentas de IA: Incentivar as organizações a focarem na integração da IA nos fluxos de trabalho pode ajudar as equipes a se sentirem empoderadas e curiosas sobre novas possibilidades, fomentando uma mentalidade proativa em relação à inovação.</li>
-<li><strong>Importância da Delegação</strong>: A delegação eficaz, seja para a IA ou para os membros da equipe, é crucial para melhorar a produtividade e a gestão do fluxo de trabalho.</li>
-<li><strong>Atomização de Conteúdo</strong>: Transformar uma única peça de conteúdo em vários ativos de marketing pode maximizar a eficiência dos recursos.</li>
-<li>Construir para Aprender: Implementar a IA em projetos pequenos e controlados pode ajudar as equipes a se sentirem apoiadas e confiantes para experimentar, o que é fundamental para refinar processos e ganhar adesão para iniciativas maiores.</li>
-<li><strong>Aproveitar o Conhecimento Institucional</strong>: Manter membros experientes na equipe garante que a implementação estratégica da IA possa ser eficaz e informada por insights práticos.</li>
-</ul>
-<h2>Capítulos:</h2>
-<ul>
-<li>00:00 - Introdução à Automação de Fluxo de Trabalho com IA</li>
-<li>01:45 - Histórico de Pete em Animação e Marketing</li>
-<li>08:30 - A Diferença da Disrupção da IA em Comparação com Mudanças Passadas</li>
-<li>15:00 - Habilidades Necessárias para o Futuro do Mercado de Trabalho</li>
-<li>24:15 - Os Desafios da Delegação em IA e Marketing</li>
-<li>32:10 - O Papel da Atomização de Conteúdo</li>
-</ul>
-<p>Junte-se ao Dr. Darren e Pete Gosling para uma conversa perspicaz com conselhos práticos para ajudar as equipes de marketing a navegar efetivamente na revolução da IA. Não perca a oportunidade de aprimorar sua compreensão e aplicação da IA no local de trabalho!</p>
+            <p>O futuro do marketing está aqui, e a automação de fluxo de trabalho com IA está na vanguarda dessa transformação digital. Neste episódio de Abraçando a Transformação Digital, o Dr. Darren se senta com Pete Gosling, fundador da Gosling Media e Design Tech, para discutir como a IA está ampliando as eq</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../pt/guests/pete-gosling/index.html" itemprop="url">
                 <span itemprop="name">Pete Gosling</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../pt/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -351,7 +405,18 @@
     "@type": "ImageObject",
     "url": "https://www.embracingdigital.org/pt/episodes/edt-327/thumbnail.png"
   },
-  "associatedMedia": [],
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Automação de Fluxos de Trabalho com IA Aumentando Equipas de Marketing Video",
+      "embedUrl": "https://www.youtube.com/embed/MS4DEPtpweY"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Automação de Fluxos de Trabalho com IA Aumentando Equipas de Marketing Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/ef1cad72-4d74-4a84-bdce-9987408b96e3"
+    }
+  ],
   "actor": [
     {
       "@type": "Person",

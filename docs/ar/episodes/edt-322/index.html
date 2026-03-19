@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -185,88 +186,123 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-01-29" itemprop="datePublished">2026-01-29T02:31:08.737Z</time>
+                    <time datetime="2026-02-03" itemprop="datePublished">2/3/2026</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="322"/>
             <meta itemprop="inLanguage" content="ar"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="التنقل في الأمن السيبراني في النقل البحري Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/0wlfR5qjO7E">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/0wlfR5qjO7E"
-                        title="التنقل في الأمن السيبراني في النقل البحري Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
+        <div id="episode-media" data-release-date="2026-02-03T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="التنقل في الأمن السيبراني في النقل البحري Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/0wlfR5qjO7E">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/0wlfR5qjO7E"
+                            title="التنقل في الأمن السيبراني في النقل البحري Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="التنقل في الأمن السيبراني في النقل البحري Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/9bdc2763-ddd1-4d83-b4e5-280ed1a2ce54">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/9bdc2763-ddd1-4d83-b4e5-280ed1a2ce54"
+                            title="التنقل في الأمن السيبراني في النقل البحري Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2/3/2026<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>اكتشف كيف أن التقارب بين التكنولوجيا والأمن يحدث تحولاً في صناعة النقل البحري، مسلطًا الضوء على الممارسات الأساسية التي تضمن سلامة وكفاءة أنظمة النقل. يدعو الدكتور دارين الضيف العائد بيتسي فريمان وزميلها بروك هاشيموتو لمناقشة الأمن السيبراني في الشحن.</p>
-<h2>النقاط الرئيسية:</h2>
-<ul>
-<li>الأمن السيبراني هو في جوهره مخاطرة تجارية؛ فإن دمجه في العمليات البحرية أمر أساسي.</li>
-<li>تشهد صناعة النقل البحري تحولًا من الأنظمة التقليدية والعزلة إلى نهج أكثر تواصلًا يتضمن تكنولوجيا المعلومات والتكنولوجيا التشغيلية.</li>
-<li>فهم معايير الامتثال أمر بالغ الأهمية للأعمال البحرية الصغيرة لحماية عملياتها وضمان التوافق مع اللوائح.</li>
-<li>تلعب المنظمة البحرية الدولية دورًا محوريًا في الدفع نحو تحسين ممارسات الأمن السيبراني على مستوى عالمي.</li>
-<li>التعليم والدعم المستمر من خبراء الصناعة أمر حيوي لتمكين الأعمال البحرية من اعتماد أفضل ممارسات الأمن السيبراني بشكل فعال.</li>
-</ul>
-<h2>الفصول:</h2>
-<ul>
-<li>00:00 - مقدمة في الأمن السيبراني في النقل</li>
-<li>02:30 - قصة بداية بيتسي فريمان</li>
-<li>06:45 - رحلة بروك هاشيموتو في المجال البحري</li>
-<li>12:00 - تطور الأمن السيبراني البحري</li>
-<li>18:15 - تقارب تكنولوجيا المعلومات والتكنولوجيا التشغيلية</li>
-<li>24:30 - الامتثال التنظيمي وأهميته</li>
-<li>30:00 - المعايير الدولية وأمن الملاحة البحرية</li>
-<li>36:00 - التحديات في اعتماد ممارسات الأمن السيبراني</li>
-<li>42:15 - تحالف درع الثلاثي ومهمته</li>
-<li>49:00 - أفكار ختامية وخطوات قادمة</li>
-</ul>
-<p>انضم إلينا في هذه الحلقة المضيئة بينما نتعمق في الأمن السيبراني البحري وكيف أنه بالغ الأهمية لمستقبل النقل. لا تنسى أن تشارك وتتفاعل مع بقية القراء واستمع إلى البودكاست الكامل لفهم أعمق!</p>
+            <p>اكتشف كيف أن التقارب بين التكنولوجيا والأمن يحدث تحولاً في صناعة النقل البحري، مسلطًا الضوء على الممارسات الأساسية التي تضمن سلامة وكفاءة أنظمة النقل. يدعو الدكتور دارين الضيف العائد بيتسي فريمان وزميلها بروك هاشيموتو لمناقشة الأمن السيبراني في الشحن. النقاط الرئيسية: الأمن السيبراني هو في جوهره مخا</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/betsy-freeman/index.html" itemprop="url">
                 <span itemprop="name">Betsy Freeman</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/brock-hashimoto/index.html" itemprop="url">
                 <span itemprop="name">Brock Hashimoto</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -342,7 +378,7 @@
   },
   "name": "التنقل في الأمن السيبراني في النقل البحري",
   "episodeNumber": 322,
-  "datePublished": "2026-01-29",
+  "datePublished": "2026-02-03",
   "inLanguage": "ar",
   "description": "اكتشف كيف أن التقارب بين التكنولوجيا والأمن يحدث تحولاً في صناعة النقل البحري، مسلطًا الضوء على الممارسات الأساسية التي تضمن سلامة وكفاءة أنظمة النقل. يدعو الدكتور دارين الضيف العائد بيتسي فريمان وزميلها بروك هاشيموتو لمناقشة الأمن السيبراني في الشحن. النقاط الرئيسية: الأمن السيبراني هو في جوهره مخا",
   "partOfSeries": {
@@ -365,6 +401,11 @@
       "@type": "VideoObject",
       "name": "التنقل في الأمن السيبراني في النقل البحري Video",
       "embedUrl": "https://www.youtube.com/embed/0wlfR5qjO7E"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "التنقل في الأمن السيبراني في النقل البحري Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/9bdc2763-ddd1-4d83-b4e5-280ed1a2ce54"
     }
   ],
   "actor": [

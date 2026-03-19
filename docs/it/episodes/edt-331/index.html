@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -193,83 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="331"/>
             <meta itemprop="inLanguage" content="it"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Massimizza la crescita della tua organizzazione padroneggiando il processo decisionale. Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/wEyPCrj1mjY">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/wEyPCrj1mjY"
-                        title="Massimizza la crescita della tua organizzazione padroneggiando il processo decisionale. Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Massimizza la crescita della tua organizzazione padroneggiando il processo decisionale. Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/4abe77f2-a341-44e2-acf9-9a3ddf49f945">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/4abe77f2-a341-44e2-acf9-9a3ddf49f945"
-                        title="Massimizza la crescita della tua organizzazione padroneggiando il processo decisionale. Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-03-05T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Massimizza la crescita della tua organizzazione padroneggiando il processo decisionale. Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/wEyPCrj1mjY">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/wEyPCrj1mjY"
+                            title="Massimizza la crescita della tua organizzazione padroneggiando il processo decisionale. Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Massimizza la crescita della tua organizzazione padroneggiando il processo decisionale. Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/4abe77f2-a341-44e2-acf9-9a3ddf49f945">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/4abe77f2-a341-44e2-acf9-9a3ddf49f945"
+                            title="Massimizza la crescita della tua organizzazione padroneggiando il processo decisionale. Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 3/5/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Sbloccare la crescita dipende dal prendere decisioni efficaci, specialmente in tempi turbolenti. Unisciti al Dr. Darren mentre accoglie Rebecca Homkes, un&#39;esperta in strategie di alta crescita, per esplorare come le organizzazioni possano superare la paralisi, sfruttare l&#39;IA e perfezionare i propri processi decisionali per prosperare nel panorama attuale.</p>
-<h2>Punti Chiave:</h2>
-<ul>
-<li>I team ad alte prestazioni danno priorità alle capacità decisionali, adattando le strategie per superare l&#39;incertezza.</li>
-<li>Abbraccia una cultura di apprendimento integrando continuamente intuizioni nei processi organizzativi.</li>
-<li>L&#39;agilità si definisce come la capacità di prendere buone decisioni rapidamente, allineate agli obiettivi strategici.</li>
-<li>Identifica i principali cicli di apprendimento nella tua azienda per ottimizzare la crescita e ridurre le frictioni.</li>
-<li>Shiftare l&#39;attenzione da semplici capacità predittive a migliorare la velocità di apprendimento per un successo sostenibile.</li>
-</ul>
-<h2>Capitoli:</h2>
-<p>00:00 - Introduzione<br>02:15 - Superare la Paralisi Organizzativa<br>10:30 - Decisione Vs. Predizione dei Risultati<br>19:45 - Identificazione dei Cicli di Apprendimento per la Crescita<br>28:00 - Agilità nella Decisione<br>35:15 - Costruire un&#39;Organizzazione di Apprendimento<br>42:00 - Conclusione e Risorse  </p>
-<p>Per strategie che catalizzano la trasformazione e la crescita, ascolta l&#39;episodio completo! Non dimenticare di lasciare una recensione e condividere con colleghi che affrontano sfide simili.</p>
+            <p>Sbloccare la crescita dipende dal prendere decisioni efficaci, specialmente in tempi turbolenti. Unisciti al Dr. Darren mentre accoglie Rebecca Homkes, un&#39;esperta in strategie di alta crescita, per esplorare come le organizzazioni possano superare la paralisi, sfruttare l&#39;IA e perfezionare i</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/rebecca-homkes/index.html" itemprop="url">
                 <span itemprop="name">Rebecca Homkes</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -376,7 +404,7 @@
     {
       "@type": "AudioObject",
       "name": "Massimizza la crescita della tua organizzazione padroneggiando il processo decisionale. Audio",
-      "contentUrl": "https://share.transistor.fm/e/4abe77f2-a341-44e2-acf9-9a3ddf49f945"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/4abe77f2-a341-44e2-acf9-9a3ddf49f945"
     }
   ],
   "actor": [

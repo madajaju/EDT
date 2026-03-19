@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -185,98 +186,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-02-05" itemprop="datePublished">2026-02-05T08:52:21.398Z</time>
+                    <time datetime="2026-02-12" itemprop="datePublished">2026-02-12T08:52:21.398Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="325"/>
             <meta itemprop="inLanguage" content="de"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Stammeswissen in KI-gesteuerten ROI umwandeln Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/mRKe5jHmzwI">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/mRKe5jHmzwI"
-                        title="Stammeswissen in KI-gesteuerten ROI umwandeln Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Stammeswissen in KI-gesteuerten ROI umwandeln Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/34324f69-3c2f-40d1-b8bc-40d25259cfdb">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
-                        title="Stammeswissen in KI-gesteuerten ROI umwandeln Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-02-12T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Stammeswissen in KI-gesteuerten ROI umwandeln Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/mRKe5jHmzwI">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/mRKe5jHmzwI"
+                            title="Stammeswissen in KI-gesteuerten ROI umwandeln Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../de/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Stammeswissen in KI-gesteuerten ROI umwandeln Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/34324f69-3c2f-40d1-b8bc-40d25259cfdb">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
+                            title="Stammeswissen in KI-gesteuerten ROI umwandeln Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../de/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-02-12T08:52:21.398Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Willkommen zu einer transformierenden Diskussion über die Entfaltung des vollen Potenzials von KI! Begleiten Sie Dr. Darren, Ihren engagierten Gastgeber, während er mit Sebastian Jindal, CEO von Fountain City, über die Überwindung des Wissensengpasses spricht, der häufig Organisationen behindert. Entdecken Sie, wie die Erfassung von tribalem Fachwissen zu signifikanten ROI durch KI-gesteuerte Lösungen führen kann.</p>
-<h2>Wichtige Erkenntnisse:</h2>
-<ul>
-<li><strong>Verstehen des Wissensengpasses</strong>: Viele Organisationen sind auf eine einzige Person für entscheidendes Wissen angewiesen, was Engpässe schafft, die den Fortschritt hemmen.</li>
-<li><strong>Effektive Datenstrategie</strong>: Etablieren Sie einen strukturierten Ansatz zur Erfassung und Dokumentation von stillschweigendem Wissen der Mitarbeiter, um die Zugänglichkeit und Nutzbarkeit zu verbessern.</li>
-<li><strong>Die Rolle der KI bei der Prozessneugestaltung</strong>: Betonung des Änderungsmanagements, um eine effektive KI-Integration sicherzustellen, anstatt KI nur aus Trendgründen zu übernehmen.</li>
-<li><strong>Erfolgsmessung</strong>: Implementierung eines methodischen Ansatzes, bei dem Projekte gemessen, iteriert und optimiert werden können, um kontinuierliche Verbesserung zu gewährleisten.</li>
-<li><strong>Erweiterte Entscheidungen</strong>: KI kann bei qualitativen Entscheidungen unterstützen, die von Menschen überprüft werden können, anstatt jeden Prozess vollständig ohne Aufsicht zu automatisieren.</li>
-</ul>
-<h2>Kapitel:</h2>
-<ul>
-<li>00:00 - Einführung in das Thema</li>
-<li>03:45 - Verstehen des Wissensengpasses</li>
-<li>08:30 - Dokumentation von stillschweigendem Wissen</li>
-<li>14:15 - Die Bedeutung des Änderungsmanagements</li>
-<li>20:00 - Strategische Ansätze zur Implementierung von KI</li>
-<li>27:45 - Die Zukunft der KI in der Softwareentwicklung</li>
-<li>34:00 - Schlussgedanken und Ressourcen</li>
-</ul>
-<p>Schalten Sie ein für wertvolle Einblicke, die Ihrer Organisation helfen können, den digitalen Transformationsprozess selbstbewusst zu gestalten!</p>
+            <p>Willkommen zu einer transformierenden Diskussion über die Entfaltung des vollen Potenzials von KI! Begleiten Sie Dr. Darren, Ihren engagierten Gastgeber, während er mit Sebastian Jindal, CEO von Fountain City, über die Überwindung des Wissensengpasses spricht, der häufig Organisationen behindert. En</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/sebastian-chedal/index.html" itemprop="url">
                 <span itemprop="name">Sebastian Chedal</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../de/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -368,7 +388,7 @@
   },
   "name": "Stammeswissen in KI-gesteuerten ROI umwandeln",
   "episodeNumber": 325,
-  "datePublished": "2026-02-05",
+  "datePublished": "2026-02-12",
   "inLanguage": "de",
   "description": "Willkommen zu einer transformierenden Diskussion über die Entfaltung des vollen Potenzials von KI! Begleiten Sie Dr. Darren, Ihren engagierten Gastgeber, während er mit Sebastian Jindal, CEO von Fountain City, über die Überwindung des Wissensengpasses spricht, der häufig Organisationen behindert. En",
   "partOfSeries": {
@@ -395,7 +415,7 @@
     {
       "@type": "AudioObject",
       "name": "Stammeswissen in KI-gesteuerten ROI umwandeln Audio",
-      "contentUrl": "https://share.transistor.fm/e/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/34324f69-3c2f-40d1-b8bc-40d25259cfdb"
     }
   ],
   "actor": [

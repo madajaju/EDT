@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -186,79 +187,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-02-03" itemprop="datePublished">2026-02-03T10:31:13.985Z</time>
+                    <time datetime="2026-02-05" itemprop="datePublished">2026-02-05T10:53:00.814Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="323"/>
             <meta itemprop="inLanguage" content="it"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Cibernetica degli Stati nazione, il viaggio di Eric ONeill Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Q2RswQL--GA">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/Q2RswQL--GA"
-                        title="Cibernetica degli Stati nazione, il viaggio di Eric ONeill Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
+        <div id="episode-media" data-release-date="2026-02-05T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Cibernetica degli Stati nazione, il viaggio di Eric ONeill Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Q2RswQL--GA">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/Q2RswQL--GA"
+                            title="Cibernetica degli Stati nazione, il viaggio di Eric ONeill Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Cibernetica degli Stati nazione, il viaggio di Eric ONeill Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/f68ac0cc-ed9b-4f99-a53f-f752aede917a">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/f68ac0cc-ed9b-4f99-a53f-f752aede917a"
+                            title="Cibernetica degli Stati nazione, il viaggio di Eric ONeill Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-02-05T10:53:00.814Z<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>In un mondo sempre più minacciato dagli attacchi informatici, l&#39;ex operatore di controspionaggio dell&#39;FBI Eric O&#39;Neill rivela le strategie e i potenziali pericoli della sicurezza informatica in questo episodio rivelatore con l&#39;ospite Dr. Darren. Eric condivide il suo straordinario viaggio per catturare uno dei più noti spioni d&#39;America e approfondisce le implicazioni delle minacce informatiche degli stati nazione, fornendo consigli pratici su come individui e organizzazioni possono rafforzare le loro difese.</p>
-<h2>Punti Chiave:</h2>
-<ul>
-<li><strong>Comprendere le Minacce Informatiche</strong>: Gli attacchi informatici degli stati nazione rappresentano la minaccia più significativa per le infrastrutture critiche statunitensi, inclusi i sistemi di energia, acqua e gas.</li>
-<li><strong>Un Appello all&#39;Azione</strong>: Individui e organizzazioni devono implementare pratiche fondamentali di sicurezza informatica come l&#39;autenticazione a due fattori e valutazioni regolari.</li>
-<li><strong>La Metodologia &#39;Paid&#39;</strong>: Utilizzare il framework Preparare, Valutare, Indagare e Decidere per migliorare la sicurezza informatica personale e organizzativa.</li>
-<li><strong>Combattere il Ransomware</strong>: Comprendere le tattiche dietro l&#39;ingegneria sociale e gli attacchi ransomware per difendersi meglio.</li>
-<li><strong>Risorse Locali</strong>: Conoscere le autorità locali giuste da contattare in caso di incidente informatico può essere cruciale per un intervento tempestivo.</li>
-</ul>
-<h2>Capitoli:</h2>
-<ul>
-<li>00:00 Introduzione: Incontra Eric O&#39;Neill</li>
-<li>05:20 Il Background di Eric e il Lavoro Sotto Copertura</li>
-<li>15:00 Il Panorama delle Minacce Informatiche</li>
-<li>25:30 L&#39;Importanza della Sicurezza Informatica nelle Infrastrutture Critiche</li>
-<li>35:45 Introduzione alla Metodologia &#39;Paid&#39;</li>
-<li>45:15 Come Valutare e Ridurre i Rischi Informatici</li>
-<li>55:30 Considerazioni Finali e Dove Trovare Eric O&#39;Neill</li>
-</ul>
-<p>Scopri a fondo le complessità della sicurezza informatica e impara come puoi diventare il tuo cacciatore di spie ascoltando ora!</p>
+            <p>In un mondo sempre più minacciato dagli attacchi informatici, l&#39;ex operatore di controspionaggio dell&#39;FBI Eric O&#39;Neill rivela le strategie e i potenziali pericoli della sicurezza informatica in questo episodio rivelatore con l&#39;ospite Dr. Darren. Eric condivide il suo straordinario vi</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/eric-oneill/index.html" itemprop="url">
                 <span itemprop="name">Eric ONeill</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../it/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -345,7 +384,7 @@
   },
   "name": "Cibernetica degli Stati nazione, il viaggio di Eric ONeill",
   "episodeNumber": 323,
-  "datePublished": "2026-02-03",
+  "datePublished": "2026-02-05",
   "inLanguage": "it",
   "description": "In un mondo sempre più minacciato dagli attacchi informatici, l&#39;ex operatore di controspionaggio dell&#39;FBI Eric O&#39;Neill rivela le strategie e i potenziali pericoli della sicurezza informatica in questo episodio rivelatore con l&#39;ospite Dr. Darren. Eric condivide il suo straordinario vi",
   "partOfSeries": {
@@ -368,6 +407,11 @@
       "@type": "VideoObject",
       "name": "Cibernetica degli Stati nazione, il viaggio di Eric ONeill Video",
       "embedUrl": "https://www.youtube.com/embed/Q2RswQL--GA"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Cibernetica degli Stati nazione, il viaggio di Eric ONeill Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/f68ac0cc-ed9b-4f99-a53f-f752aede917a"
     }
   ],
   "actor": [

@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -193,78 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="328"/>
             <meta itemprop="inLanguage" content="pt"/>
         </header>
 
         
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Transformando a Aprendizagem: O Papel da IA Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/c1539d4a-900f-4338-adf3-63e1d04685df">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/c1539d4a-900f-4338-adf3-63e1d04685df"
-                        title="Transformando a Aprendizagem: O Papel da IA Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-02-24T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Transformando a Aprendizagem: O Papel da IA Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/k8KD5F9GO5A">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/k8KD5F9GO5A"
+                            title="Transformando a Aprendizagem: O Papel da IA Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../pt/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Transformando a Aprendizagem: O Papel da IA Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/c1539d4a-900f-4338-adf3-63e1d04685df">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/c1539d4a-900f-4338-adf3-63e1d04685df"
+                            title="Transformando a Aprendizagem: O Papel da IA Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../pt/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2/24/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>Dr. Darren e a convidada de volta Dr. Carme Tagliani enquanto navegam na interseção de tecnologia e aprendizagem. Descubra como a adoção da IA pode reformular paradigmas educacionais e melhorar o pensamento crítico entre os alunos no mundo em rápida evolução de hoje.</p>
-<h2>Principais Aprendizados:</h2>
-<ul>
-<li>Compreender o potencial disruptivo da IA na educação é essencial para criar estratégias de aprendizagem eficazes.</li>
-<li>Enfatizar o pensamento crítico e a aplicação em vez da memorização mecânica capacita os alunos a se envolverem profundamente com o material.</li>
-<li>A importância das aplicações do mundo real nas técnicas de ensino pode melhorar significativamente a compreensão e a retenção dos alunos.</li>
-<li>A utilização de ferramentas de IA pode ajudar educadores a desenvolver experiências de aprendizagem personalizadas que fomentem a criatividade e a inovação.</li>
-<li>A rigor educacional deve equilibrar conhecimento teórico e prático para preparar os alunos para desafios do mundo real.</li>
-</ul>
-<h2>Capítulos:</h2>
-<ul>
-<li>00:00 - Introdução</li>
-<li>02:30 - Abraçando a Transformação Digital</li>
-<li>05:00 - O Papel da IA na Aprendizagem</li>
-<li>08:15 - A Importância do Pensamento Crítico</li>
-<li>11:45 - Transformando Práticas Educacionais</li>
-<li>15:30 - Desafios na Educação Convencional</li>
-<li>18:00 - Criando Ambientes de Aprendizagem Atrativos</li>
-<li>21:15 - Olhando para o Futuro: O Futuro da Educação com IA</li>
-<li>24:00 - Reflexões Finais e Considerações Finais</li>
-</ul>
-<p>Mergulhe neste episódio iluminador e descubra como aproveitar a IA para aprimorar experiências educacionais! Se você achou valor nesta conversa, por favor, nos dê uma classificação de cinco estrelas na sua plataforma de podcast e compartilhe com sua rede.</p>
+            <p>Dr. Darren e a convidada de volta Dr. Carme Tagliani enquanto navegam na interseção de tecnologia e aprendizagem. Descubra como a adoção da IA pode reformular paradigmas educacionais e melhorar o pensamento crítico entre os alunos no mundo em rápida evolução de hoje. Principais Aprendizados: Compree</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../pt/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../pt/guests/carm-taglienti/index.html" itemprop="url">
                 <span itemprop="name">Carm Taglienti</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -375,9 +408,14 @@
   },
   "associatedMedia": [
     {
+      "@type": "VideoObject",
+      "name": "Transformando a Aprendizagem: O Papel da IA Video",
+      "embedUrl": "https://www.youtube.com/embed/k8KD5F9GO5A"
+    },
+    {
       "@type": "AudioObject",
       "name": "Transformando a Aprendizagem: O Papel da IA Audio",
-      "contentUrl": "https://share.transistor.fm/e/c1539d4a-900f-4338-adf3-63e1d04685df"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/c1539d4a-900f-4338-adf3-63e1d04685df"
     }
   ],
   "actor": [

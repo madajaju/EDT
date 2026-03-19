@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -185,99 +186,117 @@
 
             <p class="episode-meta">
                 
-                    <time datetime="2026-01-20" itemprop="datePublished">2026-01-20T15:04:35.531Z</time>
+                    <time datetime="2026-01-19" itemprop="datePublished">2026-01-19T01:04:35.531Z</time>
                 
                 <span itemprop="author" itemscope itemtype="https://schema.org/Person">
           <meta itemprop="name" content="Dr. Darren Pulsipher">
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="317"/>
             <meta itemprop="inLanguage" content="ar"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="الذكاء الاصطناعي، البيانات، ومستقبل البنية التحتية Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/0rW2kQrVCTQ">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/0rW2kQrVCTQ"
-                        title="الذكاء الاصطناعي، البيانات، ومستقبل البنية التحتية Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="الذكاء الاصطناعي، البيانات، ومستقبل البنية التحتية Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/17df924c">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/17df924c"
-                        title="الذكاء الاصطناعي، البيانات، ومستقبل البنية التحتية Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-18T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="الذكاء الاصطناعي، البيانات، ومستقبل البنية التحتية Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/0rW2kQrVCTQ">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/0rW2kQrVCTQ"
+                            title="الذكاء الاصطناعي، البيانات، ومستقبل البنية التحتية Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="الذكاء الاصطناعي، البيانات، ومستقبل البنية التحتية Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/17df924c">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/17df924c"
+                            title="الذكاء الاصطناعي، البيانات، ومستقبل البنية التحتية Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-19T01:04:35.531Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>هل تساءلت يومًا كيف تعيد الذكاء الاصطناعي تشكيل المشهد الرقمي؟ انضم إلى الدكتور دارين، مضيفك، حيث يقوم بالغوص في مناقشة مثيرة مع إيرين كيرزنر، الرئيس التنفيذي ومؤسس Lightbits Labs. ي探شتون التقاطعات الحرجة للبيانات والذكاء الاصطناعي والبنية التحتية، وكيف يمكن للشركات التنقل في هذا المشهد التحويلي للحصول على ميزة تنافسية.</p>
-<h2>النقاط الرئيسية:</h2>
-<ul>
-<li><strong>فهم تأثير الذكاء الاصطناعي</strong>: يعيد الذكاء الاصطناعي تشكيل عبء العمل في قطاعات مختلفة، خاصة في التجارة الإلكترونية والمالية وخدمات السحابة.</li>
-<li><strong>التحول في إدارة البيانات</strong>: تنتقل عبء العمل من بيئات VMware التقليدية إلى أنظمة قائمة على Kubernetes مع اعتمادها على نهج سحابي أصلي.</li>
-<li><strong>مشكلة وحدة معالجة الرسومات (GPU)</strong>: بينما يتم تحسين وحدات معالجة الرسومات لمجموعات البيانات الكبيرة، قد تتجه أنظمة الاستدلال في المستقبل نحو أجهزة متخصصة أكثر لتحسين الكفاءة.</li>
-<li><strong>البنية التحتية المعرفة بالبرامج</strong>: يجب أن تنتقل مراكز البيانات المستقبلية نحو بنى تحتية أكثر مرونة وتكيفًا لمواكبة عبء العمل المتطور.</li>
-<li><strong>زيادة التعاون</strong>: يعد التعاون بين الحوسبة والتخزين والشبكات أمرًا ضروريًا في تطوير حلول مرنة وفعالة.</li>
-</ul>
-<h2>الفصول:</h2>
-<ul>
-<li>00:00 مقدمة حول الذكاء الاصطناعي وتحول البيانات</li>
-<li>02:05 قصة أصل إيرين كيرزنر</li>
-<li>05:55 دور الذكاء الاصطناعي في عبء العمل التجاري</li>
-<li>10:30 الانتقال إلى أنظمة قائمة على Kubernetes</li>
-<li>15:45 فهم GPU مقابل CPU في الاستدلال</li>
-<li>22:00 مستقبل بنية مركز البيانات</li>
-<li>30:15 حلول التخزين المعرفة بالبرامج</li>
-<li>35:00 الخاتمة والدعوة إلى العمل</li>
-</ul>
-<p>استكشف هذه المحادثة المذهلة لاكتشاف كيفية الاستفادة من استراتيجيات الذكاء الاصطناعي والبيانات لدفع نجاح منظمتك. تأكد من المشاركة والتعليق وإخبارنا بأفكارك!</p>
+            <p>هل تساءلت يومًا كيف تعيد الذكاء الاصطناعي تشكيل المشهد الرقمي؟ انضم إلى الدكتور دارين، مضيفك، حيث يقوم بالغوص في مناقشة مثيرة مع إيرين كيرزنر، الرئيس التنفيذي ومؤسس Lightbits Labs. ي探شتون التقاطعات الحرجة للبيانات والذكاء الاصطناعي والبنية التحتية، وكيف يمكن للشركات التنقل في هذا المشهد التحويلي للح</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/eran-kirzner/index.html" itemprop="url">
                 <span itemprop="name">Eran Kirzner</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -369,7 +388,7 @@
   },
   "name": "الذكاء الاصطناعي، البيانات، ومستقبل البنية التحتية",
   "episodeNumber": 317,
-  "datePublished": "2026-01-20",
+  "datePublished": "2026-01-19",
   "inLanguage": "ar",
   "description": "هل تساءلت يومًا كيف تعيد الذكاء الاصطناعي تشكيل المشهد الرقمي؟ انضم إلى الدكتور دارين، مضيفك، حيث يقوم بالغوص في مناقشة مثيرة مع إيرين كيرزنر، الرئيس التنفيذي ومؤسس Lightbits Labs. ي探شتون التقاطعات الحرجة للبيانات والذكاء الاصطناعي والبنية التحتية، وكيف يمكن للشركات التنقل في هذا المشهد التحويلي للح",
   "partOfSeries": {
@@ -396,7 +415,7 @@
     {
       "@type": "AudioObject",
       "name": "الذكاء الاصطناعي، البيانات، ومستقبل البنية التحتية Audio",
-      "contentUrl": "https://share.transistor.fm/e/17df924c"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/17df924c"
     }
   ],
   "actor": [

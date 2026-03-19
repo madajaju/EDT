@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -287,92 +288,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="315"/>
             <meta itemprop="inLanguage" content="en"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Creating AI Augmented Humans Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/bMqgx27YH34">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/bMqgx27YH34"
-                        title="Creating AI Augmented Humans Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Creating AI Augmented Humans Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/90c92595">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/90c92595"
-                        title="Creating AI Augmented Humans Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-01-08T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Creating AI Augmented Humans Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/bMqgx27YH34">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/bMqgx27YH34"
+                            title="Creating AI Augmented Humans Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Creating AI Augmented Humans Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/0e770f0f">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/0e770f0f"
+                            title="Creating AI Augmented Humans Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-01-08T17:26:11.690Z<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>In a world increasingly shaped by artificial intelligence, Joe Lally, a seasoned workshop facilitator and author, joins host Dr. Darren to discuss the pivotal role AI plays in digital transformation. From fostering creativity to addressing workplace fears, Joe sheds light on how businesses can navigate this evolving landscape while enhancing human connection.</p>
-<h2>Key Takeaways:</h2>
-<ul>
-<li><strong>Understanding AI</strong>: Laying a foundation of knowledge about AI tools is crucial for empowering staff and enhancing problem-solving capabilities.</li>
-<li><strong>Problem First Approach</strong>: Prioritize solving specific, real problems before implementing AI solutions to avoid unnecessary complications.</li>
-<li><strong>Education is Key</strong>: Familiarize employees with AI terminology and involve them in the integration process to alleviate fears and foster collaboration.</li>
-<li><strong>Prototype Solutions</strong>: Utilize low-fidelity prototypes to visualize workflows and identify pain points; rapid feedback can lead to viable AI applications.</li>
-<li><strong>Embrace Change</strong>: Encourage a mindset shift among employees, emphasizing opportunities for new job roles rather than viewing AI as a threat.</li>
-</ul>
-<h2>Chapters:</h2>
-<ul>
-<li>00:00 - Introduction to AI and Digital Transformation</li>
-<li>02:15 - Joe Lally&#39;s Superpower and Background</li>
-<li>05:10 - Importance of AI Adoption in Today&#39;s World</li>
-<li>12:30 - Human Connection vs. AI Detachment</li>
-<li>17:20 - Navigating Risks of AI Outsourcing Thought</li>
-<li>23:45 - Education and Meeting People Where They Are</li>
-<li>30:00 - Prototyping AI Solutions in the Workplace</li>
-<li>35:20 - Scaling AI Across Organizations</li>
-</ul>
-<p>Join the conversation and explore how AI can empower rather than undermine human creativity and connection in the workplace. Don&#39;t forget to check out Joe&#39;s book, <em>Questions to Learn</em>, and visit JoeLally.com for more insights on embracing AI in your organization!</p>
+            <p>In a world increasingly shaped by artificial intelligence, Joe Lally, a seasoned workshop facilitator and author, joins host Dr. Darren to discuss the pivotal role AI plays in digital transformation. From fostering creativity to addressing workplace fears, Joe sheds light on how businesses can navig</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../en/guests/joe-lalley/index.html" itemprop="url">
                 <span itemprop="name">Joe Lalley</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -490,7 +509,7 @@
     {
       "@type": "AudioObject",
       "name": "Creating AI Augmented Humans Audio",
-      "contentUrl": "https://share.transistor.fm/e/90c92595"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/0e770f0f"
     }
   ],
   "actor": [

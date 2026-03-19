@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -193,92 +194,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="329"/>
             <meta itemprop="inLanguage" content="ja"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="物語を通じた変革 Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/AuITAWfpQMs">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/AuITAWfpQMs"
-                        title="物語を通じた変革 Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="物語を通じた変革 Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/ebef7e79-de9f-4310-8722-7e195ebeaf64">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/ebef7e79-de9f-4310-8722-7e195ebeaf64"
-                        title="物語を通じた変革 Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="2026-02-26T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="物語を通じた変革 Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/AuITAWfpQMs">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/AuITAWfpQMs"
+                            title="物語を通じた変革 Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="物語を通じた変革 Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/ebef7e79-de9f-4310-8722-7e195ebeaf64">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/ebef7e79-de9f-4310-8722-7e195ebeaf64"
+                            title="物語を通じた変革 Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2/26/2026<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>ダレン博士とゲストのガブリエル・ドーランが、マスターストーリーテラーでポッドキャスターのガブリエル・ドーランと共に、デジタル変革を導く上でのストーリーテリングの重要な役割について探求します。個人的な物語がどのように抵抗を打破し、組織の変革に直面して共感を育むことができるかを発見しましょう。</p>
-<h2>主なポイント：</h2>
-<ul>
-<li><strong>ストーリーの力</strong>：ストーリーテリングは、デジタル変革の議論中に防御を低下させ、関連性を育むことができます。</li>
-<li><strong>共感とつながり</strong>：個人的な体験を共有することで感情的なつながりが生まれ、チームが一緒に変化を乗り越える手助けとなります。</li>
-<li><strong>本物のメッセージを作成する</strong>：真摯なストーリーは信頼を招き、複雑な変化を操作的に感じさせることなく伝えるのに役立ちます。</li>
-<li><strong>簡潔さが鍵</strong>：物語は短く（60〜90秒）明確さに焦点を当てることを目指し、過剰な説明を避けましょう。</li>
-<li><strong>動機の特定</strong>：変化に関するポジティブな恐れとネガティブな恐れの両方を理解し、効果的にストーリーを調整して影響を与えましょう。</li>
-<li><strong>共有によるレジリエンス</strong>：たゆまぬ個人的なストーリーを用いて、変革の課題を乗り越えるためにチームを奮い立たせましょう。</li>
-</ul>
-<h2>章立て：</h2>
-<ul>
-<li>00:00 - エピソードの紹介</li>
-<li>02:10 - ガブリエルのバックグラウンドストーリーとストーリーテリングへの旅</li>
-<li>09:25 - デジタル変革におけるストーリーテリングの重要性</li>
-<li>15:40 - 変化に対する抵抗を理解する</li>
-<li>22:30 - 効果的な変化のストーリーを作成する</li>
-<li>30:10 - ストーリーテリングにおける本物性の役割</li>
-<li>36:55 - 終わりの言葉とガブリエルの情報</li>
-</ul>
-<p>このエピソードをストリーミングして、ガブリエルのストーリーテリングのアートに関するインサイトを深掘りしてください。コメントであなたの考えやストーリーを共有することを忘れないでください！</p>
+            <p>ダレン博士とゲストのガブリエル・ドーランが、マスターストーリーテラーでポッドキャスターのガブリエル・ドーランと共に、デジタル変革を導く上でのストーリーテリングの重要な役割について探求します。個人的な物語がどのように抵抗を打破し、組織の変革に直面して共感を育むことができるかを発見しましょう。 主なポイント： ストーリーの力 ：ストーリーテリングは、デジタル変革の議論中に防御を低下させ、関連性を育むことができます。 共感とつながり ：個人的な体験を共有することで感情的なつながりが生まれ、チームが一緒に変化を乗り越える手助けとなります。 本物のメッセージを作成する ：真摯なストーリーは信頼を招き、複</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/gabrielle-dolan/index.html" itemprop="url">
                 <span itemprop="name">Gabrielle Dolan</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -402,7 +421,7 @@
     {
       "@type": "AudioObject",
       "name": "物語を通じた変革 Audio",
-      "contentUrl": "https://share.transistor.fm/e/ebef7e79-de9f-4310-8722-7e195ebeaf64"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/ebef7e79-de9f-4310-8722-7e195ebeaf64"
     }
   ],
   "actor": [

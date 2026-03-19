@@ -1,3 +1,4 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -192,57 +193,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="327"/>
             <meta itemprop="inLanguage" content="ar"/>
         </header>
 
         
 
-        
+        <div id="episode-media" data-release-date="2026-02-19T08:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="أتمتة سير العمل بالذكاء الاصطناعي لتعزيز فرق التسويق Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/MS4DEPtpweY">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/MS4DEPtpweY"
+                            title="أتمتة سير العمل بالذكاء الاصطناعي لتعزيز فرق التسويق Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="أتمتة سير العمل بالذكاء الاصطناعي لتعزيز فرق التسويق Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/ef1cad72-4d74-4a84-bdce-9987408b96e3">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/ef1cad72-4d74-4a84-bdce-9987408b96e3"
+                            title="أتمتة سير العمل بالذكاء الاصطناعي لتعزيز فرق التسويق Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2/19/2026<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>مستقبل التسويق هنا، وأتمتة سير العمل باستخدام الذكاء الاصطناعي تقود هذه التحول الرقمي. في هذه الحلقة من &quot;احتضان التحول الرقمي&quot;، يجتمع الدكتور دارين مع بيت جوسلينغ، مؤسس شركة جوسلينغ ميديا والتصميم التقني، لمناقشة كيف يقوم الذكاء الاصطناعي بدعم فرق التسويق - مثل منشئي المحتوى، ومحللي البيانات، ومديري الحملات - والمهارات الأساسية المطلوبة في هذا المشهد المتطور.</p>
-<h2>النقاط الرئيسية:</h2>
-<ul>
-<li><strong>القدرة على التكيف هي المفتاح</strong>: إظهار المرونة في مجموعة المهارات يمكن أن يساعد محترفي التسويق على الشعور بالتقدير والثقة في قدرتهم على البقاء متوافقين في مشهد متغير، وهو أمر ضروري لنموهم وتحفيزهم.</li>
-<li><strong>فهم أدوات الذكاء الاصطناعي</strong>: تشجيع المنظمات على التركيز على دمج الذكاء الاصطناعي في سير العمل يمكن أن يساعد الفرق على الشعور بالقوة والفضول حيال الإمكانيات الجديدة، مما يعزز عقلية نشطة تجاه الابتكار.</li>
-<li><strong>أهمية التفويض</strong>: التفويض الفعال، سواء للذكاء الاصطناعي أو لأعضاء الفريق، يعد أمرًا حيويًا لتعزيز الإنتاجية وإدارة سير العمل.</li>
-<li><strong>تحطيم المحتوى</strong>: تحويل قطعة واحدة من المحتوى إلى عدة أصول تسويقية يمكن أن يزيد من كفاءة الموارد.</li>
-<li><strong>البناء من أجل التعلم</strong>: تطبيق الذكاء الاصطناعي في مشاريع صغيرة ومحكومة يمكن أن يساعد الفرق على الشعور بالدعم والثقة في التجريب، وهو أمر رئيسي لتطوير العمليات وكسب الموافقة للمبادرات الأكبر.</li>
-<li><strong>الاستفادة من المعرفة المؤسسية</strong>: الاحتفاظ بأعضاء الفريق ذوي الخبرة يضمن أن تطبيق الاستراتيجيات الفاعلة للذكاء الاصطناعي يمكن أن يكون فعالًا ومستنيرًا برؤى عملية.</li>
-</ul>
-<h2>الفصول:</h2>
-<ul>
-<li>00:00 - مقدمة حول أتمتة سير العمل باستخدام الذكاء الاصطناعي</li>
-<li>01:45 - خلفية بيت في الرسوم المتحركة والتسويق</li>
-<li>08:30 - الفرق بين اضطرابات الذكاء الاصطناعي والتغيرات الماضية</li>
-<li>15:00 - المهارات المطلوبة لسوق العمل في المستقبل</li>
-<li>24:15 - تحديات التفويض في الذكاء الاصطناعي والتسويق</li>
-<li>32:10 - دور تحطيم المحتوى</li>
-</ul>
-<p>انضم إلى الدكتور دارين وبيت جوسلينغ في محادثة مثيرة مع نصائح عملية لمساعدة فرق التسويق على التنقل بفاعلية في ثورة الذكاء الاصطناعي. لا تفوت الفرصة لتعزيز فهمك وتطبيقك للذكاء الاصطناعي في مكان العمل!</p>
+            <p>مستقبل التسويق هنا، وأتمتة سير العمل باستخدام الذكاء الاصطناعي تقود هذه التحول الرقمي. في هذه الحلقة من &quot;احتضان التحول الرقمي&quot;، يجتمع الدكتور دارين مع بيت جوسلينغ، مؤسس شركة جوسلينغ ميديا والتصميم التقني، لمناقشة كيف يقوم الذكاء الاصطناعي بدعم فرق التسويق - مثل منشئي المحتوى، ومحللي البيان</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/pete-gosling/index.html" itemprop="url">
                 <span itemprop="name">Pete Gosling</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -350,7 +404,18 @@
     "@type": "ImageObject",
     "url": "https://www.embracingdigital.org/ar/episodes/edt-327/thumbnail.png"
   },
-  "associatedMedia": [],
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "أتمتة سير العمل بالذكاء الاصطناعي لتعزيز فرق التسويق Video",
+      "embedUrl": "https://www.youtube.com/embed/MS4DEPtpweY"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "أتمتة سير العمل بالذكاء الاصطناعي لتعزيز فرق التسويق Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/ef1cad72-4d74-4a84-bdce-9987408b96e3"
+    }
+  ],
   "actor": [
     {
       "@type": "Person",
