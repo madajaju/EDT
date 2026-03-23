@@ -1,0 +1,478 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Dynamic Page Title -->
+    <title>金融サービスにおけるベンダーセキュリティの習得：12年の旅 | Embracing Digital Transformation</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/ja/episodes/edt-337/index.html">
+    <meta name="description" content="この金融サービスにおけるベンダーリスクに関するディスカッションをご覧ください。ここでは、テクノロジー、サイバーセキュリティ、AIが交差しています。デジタルトランスフォーメーションの経験豊富な専門家であるダレン博士と、ペネア信用組合のCIOであるゲイレン・カウンセルマンが特別ゲストとして参加します。彼らは、ベンダーとの関係を管理し、進化するデジタル環境においてセキュリティを維持するための貴重な洞察を共有します。 主なポイント: サイバーセキュリティにおけるプライバシーとセキュリティの違いを理解する、特に金融セクターにおいて。 すべてのベンダーに対して厳格なリスク評価を実施することの重要性を学ぶ。">
+    <meta name="keywords" content="デジタルトランスフォーメーション, ポッドキャスト, インタビュー, ニュース, AI, サイバーセキュリティ, エッジコンピューティング, データ管理">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="金融サービスにおけるベンダーセキュリティの習得：12年の旅 | Embracing Digital Transformation — インタビュー、ニュース、コミュニティ">
+    <meta property="og:description" content="この金融サービスにおけるベンダーリスクに関するディスカッションをご覧ください。ここでは、テクノロジー、サイバーセキュリティ、AIが交差しています。デジタルトランスフォーメーションの経験豊富な専門家であるダレン博士と、ペネア信用組合のCIOであるゲイレン・カウンセルマンが特別ゲストとして参加します。彼らは、ベンダーとの関係を管理し、進化するデジタル環境においてセキュリティを維持するための貴重な洞察を共有します。 主なポイント: サイバーセキュリティにおけるプライバシーとセキュリティの違いを理解する、特に金融セクターにおいて。 すべてのベンダーに対して厳格なリスク評価を実施することの重要性を学ぶ。">
+    <meta property="og:url" content="https://www.embracingdigital.org/ja/episodes/edt-337/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="金融サービスにおけるベンダーセキュリティの習得：12年の旅 | Embracing Digital Transformation — インタビュー、ニュース、コミュニティ">
+    <meta name="twitter:description" content="この金融サービスにおけるベンダーリスクに関するディスカッションをご覧ください。ここでは、テクノロジー、サイバーセキュリティ、AIが交差しています。デジタルトランスフォーメーションの経験豊富な専門家であるダレン博士と、ペネア信用組合のCIOであるゲイレン・カウンセルマンが特別ゲストとして参加します。彼らは、ベンダーとの関係を管理し、進化するデジタル環境においてセキュリティを維持するための貴重な洞察を共有します。 主なポイント: サイバーセキュリティにおけるプライバシーとセキュリティの違いを理解する、特に金融セクターにおいて。 すべてのベンダーに対して厳格なリスク評価を実施することの重要性を学ぶ。">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (alternates) -->
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="x-default">
+
+    <!-- Favicon & Styles -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "デジタルトランスフォーメーションを受け入れる",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "デジタルトランスフォーメーションを受け入れる",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/ja/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/ja/home/" aria-label="デジタルトランスフォーメーションを受け入れる ホーム">
+            <img src="/images/logo.png" alt="デジタルトランスフォーメーションを受け入れる ロゴ" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Mobile toggle -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="メニューを切り替える">☰</button>
+
+    <!-- Primary Nav -->
+    <nav id="primary-nav" aria-label="メインナビゲーション">
+        <ul>
+            <li><a href="/ja/home/index.html" >ホーム</a></li>
+
+            <li class="dropdown">
+                <a href="/ja/shows/index.html" aria-haspopup="true" aria-expanded="false">番組</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/ja/episodes/index.html" aria-label="インタビュー — デジタルトランスフォーメーションを受け入れる">
+                            デジタルトランスフォーメーションを受け入れる
+                            <small class="nav-note">インタビュー</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/ja/briefs/index.html" aria-label="ニュース — 今週のデジタルを受け入れる">
+                            今週のデジタルを受け入れる
+                            <small class="nav-note">ニュース</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/guests/index.html">ゲスト</a></li>
+            <li><a href="/ja/articles/index.html">記事</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/ja/community.html" aria-haspopup="true" aria-expanded="false">コミュニティ</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ja/newsletter.html">ニュースレター</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">LinkedIn グループ</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">ショップ</a></li>
+
+            <!-- About -->
+            <li class="dropdown">
+                <a href="/ja/about.html" aria-haspopup="true" aria-expanded="false">概要</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ja/about.html">番組について</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/host.html">ホスト：Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/sponsors/index.html">スポンサーシップ & お問い合わせ</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/search.html">検索</a></li>
+
+            <!-- Languages -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">言語</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../ja/home/index.html">Home</a></li>
+        <li><a href="../../../ja/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 337: Mastering Vendor Security in Financial Services: A 12-Year Journey</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/ja/episodes/edt-337/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/ja/episodes/edt-337/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 337</span>
+                <span class="episode-title">Mastering Vendor Security in Financial Services: A 12-Year Journey</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-03-26" itemprop="datePublished">2026-03-26</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="337"/>
+            <meta itemprop="inLanguage" content="ja"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-03-25T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="金融サービスにおけるベンダーセキュリティの習得：12年の旅 Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/j5uFGbnK_dU">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/j5uFGbnK_dU"
+                            title="金融サービスにおけるベンダーセキュリティの習得：12年の旅 Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="金融サービスにおけるベンダーセキュリティの習得：12年の旅 Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/f8d70e0d-0235-4890-bbd5-db300d212104">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/f8d70e0d-0235-4890-bbd5-db300d212104"
+                            title="金融サービスにおけるベンダーセキュリティの習得：12年の旅 Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-26<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>この金融サービスにおけるベンダーリスクに関するディスカッションをご覧ください。ここでは、テクノロジー、サイバーセキュリティ、AIが交差しています。デジタルトランスフォーメーションの経験豊富な専門家であるダレン博士と、ペネア信用組合のCIOであるゲイレン・カウンセルマンが特別ゲストとして参加します。彼らは、ベンダーとの関係を管理し、進化するデジタル環境においてセキュリティを維持するための貴重な洞察を共有します。 主なポイント: サイバーセキュリティにおけるプライバシーとセキュリティの違いを理解する、特に金融セクターにおいて。 すべてのベンダーに対して厳格なリスク評価を実施することの重要性を学ぶ。</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../ja/guests/galen-counselman/index.html" itemprop="url">
+                <span itemprop="name">Galen Counselman</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>デジタル変革の風景</h2>
+<p>今日の急速に進化するデジタル世界では、金融サービスにおけるベンダーリスクの管理方法を理解することが不可欠です。デジタル変革の権威であるダレンは、ペネア信用組合のCIOであるゲイレン・カウンセルマンを招き、堅牢なサイバーセキュリティ対策を維持しながらベンダー関係をナビゲートする複雑さを解明します。この会話は単にテクノロジー愛好家向けではなく、技術統合とリスク管理を強化しようとするビジネスリーダーにとっての洞察に満ちた旅となるでしょう。</p>
+<p>ベンダー管理は、組織がクライアントにシームレスなデジタル体験を提供するために複数のパートナーを巧みに扱う中で、ますます重要性を増しています。ガレンは、医療と金融サービスの二重の役割における自らの経験について語り、異なる規制や環境がベンダーエコシステムやサイバーセキュリティへのアプローチにどのように影響を与えるかを強調しています。</p>
+<h2>「ベンダーのダイナミクスを理解する」</h2>
+<h2>ベンダー統合の課題</h2>
+<p>金融セクターでは、複数のベンダーを統合することが課題となっています。ガレンは、「オンラインバンキングプラットフォームをシームレスに機能させるために、ペネアは25以上の異なるベンダーと連携しています。」と指摘しています。各ベンダーはそれぞれ専門的な能力を持っていますが、統合やデータセキュリティに関してはさまざまな複雑さをもたらします。</p>
+<p>多くのベンダーに依存することは、コミュニケーションの欠如や統合に関する問題が発生した場合にトラブルを引き起こす可能性があります。ガレンは、複数のベンダーやプラットフォームを含む基盤があっても、ユーザー体験をシームレスに保つことの重要性を強調しています。「顧客が別のベンダーのサービスに切り替える必要がある機能を使用している場合、それは統合されていると感じられなければなりません。まるで一つのアプリケーションのように」と彼女は述べています。</p>
+<p><strong>主なポイント：</strong></p>
+<p>ベンダー関係を理解し、管理することは、成功するデジタル体験にとって不可欠です。</p>
+<p>コミュニケーションと統合は、シームレスなユーザー体験を確保するために重要です。</p>
+<p>定期的なベンダー評価は、潜在的な統合やセキュリティの問題を早期に特定するのに役立ちます。</p>
+<h2>サイバーセキュリティの強調</h2>
+<p>金融分野は、主にプライバシーではなくセキュリティに焦点を当てている医療とは異なるサイバーセキュリティの要求があります。ガレーンは、彼女の医療の役割において、監査は患者情報のプライバシーを確保することに重点を置いていたが、銀行に見られる厳格なセキュリティ評価が欠けていたことを強調しています。クレジットユニオンのような規制された環境への移行は、顧客の金融データを管理する際に、頻繁な監査やリスク評価の要件が伴い、責任をもたらします。</p>
+<p>ガレンは、データ侵害と財務損失との直接的な相関関係を考えると、金融機関はより多くの外部の脅威に直面していると強調しています。「医療業界では、患者データは重要ですが、金融犯罪からの支払いの即時性が、より大きな標的にしています。」これは、金融サービスエコシステムに特化した包括的なセキュリティ対策の必要性を強調しています。</p>
+<p><strong>主なポイント：</strong></p>
+<p>金融サービスにおけるサイバーセキュリティは、資産に対する即時の脅威から保護することに関するものです。</p>
+<p>定期的な監査とリスク評価は、潜在的な脆弱性を緩和するのに役立ちます。</p>
+<p>組織内でリスクを最小限に抑えるためには、セキュリティ意識の文化が広く普及する必要があります。</p>
+<h2>リスク管理戦略の策定</h2>
+<h2>ベンダーリスク評価に対する戦略的アプローチ</h2>
+<p>リスクを軽減するためには、ベンダーをオンボーディングする前に整備されている必要がある徹底した評価フレームワークが必要です。ペネアの信用組合では、GalenがNCUAの基準に従った厳格なリスク評価を実施している様子を共有しています。各候補ベンダーは、データを安全に処理し、規制に準拠する能力に基づいて評価されます。</p>
+<p>「すべてのベンダーが適切な選択であるわけではありません」とガレンは強調します。「私たちは、彼らが私たちのリスク許容度に合致し、セキュリティ基準を満たすことを確認する必要があります。」このチェックリストは、潜在的な侵害やデータの不具合が、業務に影響を与える前に防ぐ役割を果たします。</p>
+<p><strong>主なポイント：</strong></p>
+<p>明確に定義されたリスク許容度の声明がベンダー管理の意思決定を導きます。</p>
+<p>リスク評価は、コンプライアンスおよびセキュリティ機能に基づいてベンダーの適合性を判断するのに役立ちます。</p>
+<p>リスク管理文化を根付かせることで、すべてのチームにおいてセキュリティプロトコルの遵守が確保されます。</p>
+<h2>ベンダーリスク戦略の強化</h2>
+<p>ベンダーリスクの効果的な管理には、潜在的な脅威を特定し、統合を調和させ、規制への適合を確保するための多層的なアプローチが必要です。まずは、現在のベンダー状況を見直し、包括的なセキュリティプロトコルを採用し、チームとベンダー間のオープンなコミュニケーションを促進することから始めましょう。</p>
+<p>これらの戦略に関するより深い洞察や実際の応用については、Galen Counselman の LinkedIn プロフィールを通じて連絡するか、<a href="https://www.penair.org">ペナイアクレジットユニオンのウェブサイト</a> でさらにリソースを探ってください。</p>
+<p>ベンダー戦略を確実に整えることは、組織が金融環境の複雑さを乗り越えつつ、継続的なデジタル変革を受け入れる中で、その成功に大きな影響を与えます。</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/ja/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/ja/episodes/index.html",
+  "inLanguage": "ja",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/ja/episodes/edt-337/index.html#episode",
+  "url": "https://www.embracingdigital.org/ja/episodes/edt-337/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/ja/episodes/edt-337/index.html"
+  },
+  "name": "金融サービスにおけるベンダーセキュリティの習得：12年の旅",
+  "episodeNumber": 337,
+  "datePublished": "2026-03-26",
+  "inLanguage": "ja",
+  "description": "この金融サービスにおけるベンダーリスクに関するディスカッションをご覧ください。ここでは、テクノロジー、サイバーセキュリティ、AIが交差しています。デジタルトランスフォーメーションの経験豊富な専門家であるダレン博士と、ペネア信用組合のCIOであるゲイレン・カウンセルマンが特別ゲストとして参加します。彼らは、ベンダーとの関係を管理し、進化するデジタル環境においてセキュリティを維持するための貴重な洞察を共有します。 主なポイント: サイバーセキュリティにおけるプライバシーとセキュリティの違いを理解する、特に金融セクターにおいて。 すべてのベンダーに対して厳格なリスク評価を実施することの重要性を学ぶ。",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/ja/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/ja/episodes/edt-337/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "金融サービスにおけるベンダーセキュリティの習得：12年の旅 Video",
+      "embedUrl": "https://www.youtube.com/embed/j5uFGbnK_dU"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "金融サービスにおけるベンダーセキュリティの習得：12年の旅 Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/f8d70e0d-0235-4890-bbd5-db300d212104"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Galen Counselman",
+      "url": "https://www.embracingdigital.org/../../../ja/guests/galen-counselman/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../ja/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>著作権 &copy; 2025 Paidar Productions LLC</p>
+        <p>全著作権所有</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
