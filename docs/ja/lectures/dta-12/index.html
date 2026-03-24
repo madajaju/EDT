@@ -1,0 +1,462 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Dynamic Page Title -->
+    <title>FORGEing戦略：組織を戦略ドメインにマッピングする | Digital Transformation Architect</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/ja/lectures/dta-12/index.html">
+    <meta name="description" content="組織がFORGEメソッド論（Find, Observe, Reconcile, Ground, and Enhance）を使って戦略と実行をどのように調整できるかを探ってみましょう。 この議論は、デジタルトランスフォーメーションにおける重大な課題を浮き彫りにします。それは、戦略的意図と実際の運用現実との間のギャップです。ソリューションやテクノロジーに飛び込むのではなく、FORGEは広範囲を優先するアプローチを強調しています—詳細に入る前に完全な戦略的景観を把握することです。これにより、変革の努力が組織の真の使命、ビジョン、優先事項に基づいていることが保証され、リーダーは自分の戦略的理解が重要で">
+    <meta name="keywords" content="デジタルトランスフォーメーション, ポッドキャスト, インタビュー, ニュース, AI, サイバーセキュリティ, エッジコンピューティング, データ管理">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FORGEing戦略：組織を戦略ドメインにマッピングする | Digital Transformation Architect — インタビュー、ニュース、コミュニティ">
+    <meta property="og:description" content="組織がFORGEメソッド論（Find, Observe, Reconcile, Ground, and Enhance）を使って戦略と実行をどのように調整できるかを探ってみましょう。 この議論は、デジタルトランスフォーメーションにおける重大な課題を浮き彫りにします。それは、戦略的意図と実際の運用現実との間のギャップです。ソリューションやテクノロジーに飛び込むのではなく、FORGEは広範囲を優先するアプローチを強調しています—詳細に入る前に完全な戦略的景観を把握することです。これにより、変革の努力が組織の真の使命、ビジョン、優先事項に基づいていることが保証され、リーダーは自分の戦略的理解が重要で">
+    <meta property="og:url" content="https://www.embracingdigital.org/ja/lectures/dta-12/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FORGEing戦略：組織を戦略ドメインにマッピングする | Digital Transformation Architect — インタビュー、ニュース、コミュニティ">
+    <meta name="twitter:description" content="組織がFORGEメソッド論（Find, Observe, Reconcile, Ground, and Enhance）を使って戦略と実行をどのように調整できるかを探ってみましょう。 この議論は、デジタルトランスフォーメーションにおける重大な課題を浮き彫りにします。それは、戦略的意図と実際の運用現実との間のギャップです。ソリューションやテクノロジーに飛び込むのではなく、FORGEは広範囲を優先するアプローチを強調しています—詳細に入る前に完全な戦略的景観を把握することです。これにより、変革の努力が組織の真の使命、ビジョン、優先事項に基づいていることが保証され、リーダーは自分の戦略的理解が重要で">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (alternates) -->
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="x-default">
+
+    <!-- Favicon & Styles -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "デジタルトランスフォーメーションを受け入れる",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "デジタルトランスフォーメーションを受け入れる",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/ja/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/ja/home/" aria-label="デジタルトランスフォーメーションを受け入れる ホーム">
+            <img src="/images/logo.png" alt="デジタルトランスフォーメーションを受け入れる ロゴ" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Mobile toggle -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="メニューを切り替える">☰</button>
+
+    <!-- Primary Nav -->
+    <nav id="primary-nav" aria-label="メインナビゲーション">
+        <ul>
+            <li><a href="/ja/home/index.html" >ホーム</a></li>
+
+            <li class="dropdown">
+                <a href="/ja/shows/index.html" aria-haspopup="true" aria-expanded="false">番組</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/ja/episodes/index.html" aria-label="インタビュー — デジタルトランスフォーメーションを受け入れる">
+                            デジタルトランスフォーメーションを受け入れる
+                            <small class="nav-note">インタビュー</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/ja/briefs/index.html" aria-label="ニュース — 今週のデジタルを受け入れる">
+                            今週のデジタルを受け入れる
+                            <small class="nav-note">ニュース</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/guests/index.html">ゲスト</a></li>
+            <li><a href="/ja/articles/index.html">記事</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/ja/community.html" aria-haspopup="true" aria-expanded="false">コミュニティ</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ja/newsletter.html">ニュースレター</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">LinkedIn グループ</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">ショップ</a></li>
+
+            <!-- About -->
+            <li class="dropdown">
+                <a href="/ja/about.html" aria-haspopup="true" aria-expanded="false">概要</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ja/about.html">番組について</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/host.html">ホスト：Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/sponsors/index.html">スポンサーシップ & お問い合わせ</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/search.html">検索</a></li>
+
+            <!-- Languages -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">言語</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../ja/home/index.html">Home</a></li>
+        <li><a href="../../../ja/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 12: FORGEing Strategy: Mapping the Organization to the Strategic Domain</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/ja/lectures/dta-12/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/ja/lectures/dta-12/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 12</span>
+                <span class="episode-title">FORGEing Strategy: Mapping the Organization to the Strategic Domain</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-03-25" itemprop="datePublished">2026-03-25</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="12"/>
+            <meta itemprop="inLanguage" content="ja"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-03-24T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="FORGEing戦略：組織を戦略ドメインにマッピングする Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/fNl3ILOPSC8">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/fNl3ILOPSC8"
+                            title="FORGEing戦略：組織を戦略ドメインにマッピングする Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="FORGEing戦略：組織を戦略ドメインにマッピングする Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/9d57b681">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/9d57b681"
+                            title="FORGEing戦略：組織を戦略ドメインにマッピングする Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-03-25<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>組織がFORGEメソッド論（Find, Observe, Reconcile, Ground, and Enhance）を使って戦略と実行をどのように調整できるかを探ってみましょう。</p>
+<p>この議論は、デジタルトランスフォーメーションにおける重大な課題を浮き彫りにします。それは、戦略的意図と実際の運用現実との間のギャップです。ソリューションやテクノロジーに飛び込むのではなく、FORGEは広範囲を優先するアプローチを強調しています—詳細に入る前に完全な戦略的景観を把握することです。これにより、変革の努力が組織の真の使命、ビジョン、優先事項に基づいていることが保証され、リーダーは自分の戦略的理解が重要で評価されていると感じることができます。</p>
+<p>聴衆は、戦略的成果物の中に隠れた不整合を特定し、表明された目標と実際の行動との間のギャップを明らかにし、実行をしばしば妨げる矛盾を調和させる方法を学びます。現在の能力と制約に基づいて戦略を基盤にすることで、リーダーは企業全体の意思決定を導く安定した指針を確立でき、FORGEメソッド論はさまざまな規模や業界の組織に適応可能です。</p>
+<p>最終的に、このエピソードは戦略的領域を組織の「北極星」として位置づけ、高レベルの意図と現実世界の成果を結びつける一貫した追跡可能な変革を可能にします。</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>デジタルトランスフォーメーションは、慎重な戦略の整合性を必要とする複雑な旅です。この「デジタルトランスフォーメーションアーキテクト」のエピソードでは、FORGEメソッド論（Find、Observe、Reconcile、Ground、Enhance の構成要素）を使用して、組織要素を戦略的ドメインに効果的にマッピングする方法を探ります。</p>
+<h2>コアの問題の理解</h2>
+<p>今日の組織は、戦略的意図と運用実態を整合させるのに苦労することがよくあります。この不整合は、戦略の断片化や非効率的なデジタルトランスフォーメーションの取り組みにつながります。FORGEメソッド論は、リーダーが現在の状態をマッピングし、明確な前進方向を示すための安定したガイドラインを作成するための重要なツールとして機能します。</p>
+<p>幅優先アプローチを強調することで、講義は重要な原則を浮き彫りにします：組織は特定の詳細に入り込む前に、全体的な戦略的景観を理解する必要があります。この初期段階では、リーダーは使命声明や戦略的ロードマップなどの既存要素を変更することなくキャプチャでき、基盤となるマッピングが組織の意図を正確に反映することを保証します。</p>
+<h2>講義からの主なインサイト</h2>
+<h3>FORGEによる戦略マッピング</h3>
+<p>講義は、戦略的ドメインをナビゲートするためにFORGEメソッド論を使用する重要性を示すことから始まります。広い視点から始めることで、組織は通常の深さ優先戦略がもたらす落とし穴を避けることができます。幅優先の必要性を強調し、講義は組織全体から様々な戦略的アーティファクト—ビジョンステートメントや戦略的目標を包括的にキャプチャすることを推奨します。</p>
+<p>特にC-suiteの経営者はこのプロセスにおいて非常に貴重です。彼らの洞察は文書化され、公式な物語と組織を導く基本的な原則の包括的な理解を提供する必要があります。マッピングが進むにつれて、重要な戦略的ガイドラインを確立し、一貫した変革イニシアチブの土台を整えます。</p>
+<h3>戦略的幅を見つけ、観察する</h3>
+<p>次のセグメントでは、「Find」と「Observe」の段階に焦点が移り、組織の真の行動的景観を理解することを目指します。この段階は単なる文書収集ではなく、組織を定義する価値観や文化のより微妙な観察を含みます。</p>
+<p>リーダーは、戦略的優先事項の間にある不一致を特定することが奨励されます。これらのギャップを認識することにより、組織は戦略的業務内での明確さを促進できます。例えば、ビジョンが具体的な目標を生み出さない場合は、将来の議論のためにそれがフラグされます。このような明確さを確立することは、次のドメインを効果的にマッピングするための基本です。</p>
+<h3>安定性のための調整とグラウンディング</h3>
+<p>講義は、戦略的マッピングを安定させるための「Reconcile」と「Ground」の段階の重要性についての議論で締めくくられます。ここで、組織は文書化された方針と広範なミッションとの間に存在する矛盾に対処する必要があります。グラウンディングは、即断的な新しいシステムや技術の導入を避け、組織の現在の強みと弱点の現実的な評価を含みます。</p>
+<p>既存の資産に焦点を当てつつギャップに対処することで、リーダーは戦略的ドメインのマップを強化し、ビジョンステートメントやコンプライアンスフレームワークなどの重要な要素を反復的に洗練します。このアプローチは、戦略的ドメインを組織の「北極星」として位置づけ、あらゆる改善が全体の意図に沿ったものであることを保証します。</p>
+<h2>これが重要な理由</h2>
+<p>組織がデジタルトランスフォーメーションを追求する中で、FORGEメソッド論を効果的に適用することは、戦略的整合性のための堅牢なフレームワークを確立します。深さの前に幅を持って組織の景観をマッピングすることで、リーダーは運用と目的の全体像を考慮した実行可能な変革計画を作成できます。この実践は、戦略が断片化するリスクを軽減し、一貫した実行の文化を育みます。</p>
+<h2>聴いて、さらに深く掘り下げる</h2>
+<p>この講義で議論された主要な原則を完全に探求し、FORGEを自組織に効果的に適用する方法を学ぶには、私たちのポッドキャストプラットフォームで完全なエピソードを聴いてください。デジタルトランスフォーメーション戦略に関するさらなるインサイトは、私たちのウェブサイト「Embracing Digital Thought」を訪れてください。</p>
+<p>さらに聴く:  </p>
+<ul>
+<li><a href="https://embracingdigital.org/en/lectures/dta-12/index.html">FORGEing Strategy Episode</a></li>
+</ul>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/ja/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/ja/episodes/index.html",
+  "inLanguage": "ja",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/ja/lectures/dta-12/index.html#episode",
+  "url": "https://www.embracingdigital.org/ja/lectures/dta-12/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/ja/lectures/dta-12/index.html"
+  },
+  "name": "FORGEing戦略：組織を戦略ドメインにマッピングする",
+  "episodeNumber": 12,
+  "datePublished": "2026-03-25",
+  "inLanguage": "ja",
+  "description": "組織がFORGEメソッド論（Find, Observe, Reconcile, Ground, and Enhance）を使って戦略と実行をどのように調整できるかを探ってみましょう。 この議論は、デジタルトランスフォーメーションにおける重大な課題を浮き彫りにします。それは、戦略的意図と実際の運用現実との間のギャップです。ソリューションやテクノロジーに飛び込むのではなく、FORGEは広範囲を優先するアプローチを強調しています—詳細に入る前に完全な戦略的景観を把握することです。これにより、変革の努力が組織の真の使命、ビジョン、優先事項に基づいていることが保証され、リーダーは自分の戦略的理解が重要で",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/ja/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/ja/episodes/dta-12/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "FORGEing戦略：組織を戦略ドメインにマッピングする Video",
+      "embedUrl": "https://www.youtube.com/embed/fNl3ILOPSC8"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "FORGEing戦略：組織を戦略ドメインにマッピングする Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/9d57b681"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../ja/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>著作権 &copy; 2025 Paidar Productions LLC</p>
+        <p>全著作権所有</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
