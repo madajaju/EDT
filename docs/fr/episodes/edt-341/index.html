@@ -1,0 +1,526 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Titre de page dynamique -->
+    <title>Les menaces cybernétiques cachées dans les imprimantes et les dispositifs IoT | Embracing Digital Transformation</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/fr/episodes/edt-341/index.html">
+    <meta name="description" content="Les imprimantes ne sont pas des outils de bureau inoffensifs - elles constituent l&amp;#39;une des menaces de cybersécurité les plus négligées de votre réseau. Le Dr Darren accueille l&amp;#39;expert en sécurité IoT Jim LaRoe pour exposer comment ces dispositifs &amp;quot;bénins&amp;quot; détiennent discrètement de">
+    <meta name="keywords" content="Transformation numérique, podcast, interviews, actualités, IA, cybersécurité, edge computing, gestion des données">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Les menaces cybernétiques cachées dans les imprimantes et les dispositifs IoT | Embracing Digital Transformation — Interviews, Actualités et Communauté">
+    <meta property="og:description" content="Les imprimantes ne sont pas des outils de bureau inoffensifs - elles constituent l&amp;#39;une des menaces de cybersécurité les plus négligées de votre réseau. Le Dr Darren accueille l&amp;#39;expert en sécurité IoT Jim LaRoe pour exposer comment ces dispositifs &amp;quot;bénins&amp;quot; détiennent discrètement de">
+    <meta property="og:url" content="https://www.embracingdigital.org/fr/episodes/edt-341/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Les menaces cybernétiques cachées dans les imprimantes et les dispositifs IoT | Embracing Digital Transformation — Interviews, Actualités et Communauté">
+    <meta name="twitter:description" content="Les imprimantes ne sont pas des outils de bureau inoffensifs - elles constituent l&amp;#39;une des menaces de cybersécurité les plus négligées de votre réseau. Le Dr Darren accueille l&amp;#39;expert en sécurité IoT Jim LaRoe pour exposer comment ces dispositifs &amp;quot;bénins&amp;quot; détiennent discrètement de">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (alternatives) -->
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="x-default">
+
+    <!-- Favicon & Styles -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Adopter la Transformation Numérique",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Adopter la Transformation Numérique",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/fr/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/fr/home/" aria-label="Accueil — Adopter la Transformation Numérique">
+            <img src="/images/logo.png" alt="Logo — Adopter la Transformation Numérique" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Bascule mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Basculer le menu">☰</button>
+
+    <!-- Navigation principale -->
+    <nav id="primary-nav" aria-label="Principale">
+        <ul>
+            <li><a href="/fr/home/index.html" >Accueil</a></li>
+
+            <li class="dropdown">
+                <a href="/fr/shows/index.html" aria-haspopup="true" aria-expanded="false">Émissions</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/episodes/index.html" aria-label="Interviews — Adopter la Transformation Numérique">
+                            Adopter la Transformation Numérique
+                            <small class="nav-note">Interviews</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/index.html" aria-label="Actualités — Le numérique cette semaine">
+                            Le numérique cette semaine
+                            <small class="nav-note">Actualités</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/fr/guests/index.html">Invités</a></li>
+            <li><a href="/fr/articles/index.html">Articles</a></li>
+
+            <!-- Communauté -->
+            <li class="dropdown">
+                <a href="/fr/community.html" aria-haspopup="true" aria-expanded="false">Communauté</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Groupe LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Boutique</a></li>
+
+            <!-- À propos -->
+            <li class="dropdown">
+                <a href="/fr/about.html" aria-haspopup="true" aria-expanded="false">À propos</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/about.html">À propos de l’émission</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/host.html">Animateur : Dr Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/sponsors/index.html">Sponsoring & Contact</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/fr/search.html">Recherche</a></li>
+
+            <!-- Langues -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Langues</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../fr/home/index.html">Home</a></li>
+        <li><a href="../../../fr/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 341: The Hidden Cyber Threats in Printers and IoT Devices</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/fr/episodes/edt-341/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/fr/episodes/edt-341/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 341</span>
+                <span class="episode-title">The Hidden Cyber Threats in Printers and IoT Devices</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-04-09" itemprop="datePublished">4/9/2026</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="341"/>
+            <meta itemprop="inLanguage" content="fr"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-04-09T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Les menaces cybernétiques cachées dans les imprimantes et les dispositifs IoT Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/trw2C3vB1hM">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/trw2C3vB1hM"
+                            title="Les menaces cybernétiques cachées dans les imprimantes et les dispositifs IoT Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Les menaces cybernétiques cachées dans les imprimantes et les dispositifs IoT Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/44b2fc96-6eb6-4531-a547-261200355829">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/44b2fc96-6eb6-4531-a547-261200355829"
+                            title="Les menaces cybernétiques cachées dans les imprimantes et les dispositifs IoT Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../fr/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 4/9/2026<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Les imprimantes ne sont pas des outils de bureau inoffensifs - elles constituent l&#39;une des menaces de cybersécurité les plus négligées de votre réseau. Le Dr Darren accueille l&#39;expert en sécurité IoT Jim LaRoe pour exposer comment ces dispositifs &quot;bénins&quot; détiennent discrètement des identifiants administratifs, stockent des données sensibles et ouvrent des portes aux attaquants. Ce qui semble banal pourrait être votre plus grande vulnérabilité.</p>
+<p>Points clés
+Les imprimantes représentent environ 20 % des points d&#39;extrémité des entreprises, mais la plupart restent non protégées.
+Beaucoup d&#39;appareils stockent des identifiants de niveau administrateur, facilitant ainsi les attaques latérales.
+Les mots de passe par défaut et les pratiques de type &quot;configurer et oublier&quot; créent une exposition massive au risque.
+Les imprimantes agissent comme des serveurs à part entière (email, FTP, web), et non comme de simples périphériques.
+Les lacunes en matière de sécurité sont souvent organisationnelles et culturelles, pas seulement techniques.
+Une protection efficace nécessite un engagement, un budget et des normes appliquées.</p>
+<p>Chapitres
+00:00 La réalité choquante des vulnérabilités des imprimantes
+00:56 Rencontrez Jim LaRoe : ingénieur devenu leader en cybersécurité
+04:02 Pourquoi les imprimantes n&#39;ont jamais disparu - et pourquoi cela importe
+06:37 Le paysage des menaces à 360° des points d&#39;extrémité des imprimantes
+10:16 Des hacks d&#39;imprimantes dans le monde réel et l&#39;exposition Shodan
+13:38 Les imprimantes comme le &quot;Mont Everest&quot; de la complexité IoT
+17:23 Comment les attaquants volent des identifiants aux imprimantes
+20:20 Pourquoi les organisations ignorent les risques de sécurité des imprimantes
+23:03 Le coût caché des certificats et de la gestion des identités
+24:49 Une approche évolutive pour sécuriser les parcs d&#39;imprimantes
+29:07 Éduquer les dirigeants et sensibiliser l&#39;organisation</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../fr/guests/jim-laroe/index.html" itemprop="url">
+                <span itemprop="name">Jim LaRoe</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../fr/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>Pourquoi votre imprimante « inoffensive » représente une menace pour la cybersécurité</h2>
+<p>Les imprimantes deviennent discrètement l&#39;un des risques de cybersécurité les plus dangereux pour les entreprises modernes. Ce qui ressemble à un simple appareil de bureau est en réalité un puissant point d&#39;accès IoT—souvent non géré, non surveillé et largement vulnérable aux attaques.</p>
+<p>Le Dr Darren s&#39;assoit avec l&#39;expert en cybersécurité Jim LaRoe pour explorer une réalité surprenante : les imprimantes ne sont pas seulement des périphériques, ce sont de véritables systèmes réseau. Pour les technologists et les leaders d&#39;entreprise, comprendre ce point aveugle pourrait faire la différence entre la résilience et une violation coûteuse.</p>
+<h2>La réalité négligée de la sécurité des imprimantes</h2>
+<h2>Les imprimantes ne sont pas des dispositifs passifs.</h2>
+<p>La plupart des organisations considèrent encore les imprimantes comme du matériel de base, mais elles fonctionnent plutôt comme des serveurs. Elles stockent des données, exécutent des services et communiquent à travers des réseaux.</p>
+<p>Un imprimante moderne inclut souvent un serveur web, un serveur de messagerie, des services FTP et un disque dur. Pourtant, malgré cette complexité, elles sont rarement régies par les mêmes normes de sécurité que d&#39;autres points de terminaison.</p>
+<p>Ce décalage crée un écart dangereux. Alors que les ordinateurs portables et les serveurs sont étroitement contrôlés, les imprimantes restent exposées, souvent situées dans des espaces publics ou semi-publics.</p>
+<h2>Key Takeaways in French is: &quot;Points clés à retenir&quot;</h2>
+<p>Les imprimantes peuvent représenter <strong>20 % des points de terminaison d&#39;entreprise</strong>.</p>
+<ul>
+<li>Beaucoup fonctionnent avec <strong>des configurations par défaut et des contrôles de sécurité faibles</strong>.</li>
+</ul>
+<p>Ils sont souvent exclus des <strong>stratégies de sécurité des points de terminaison</strong>.</p>
+<h2>Une surface d&#39;attaque à 360 degrés</h2>
+<h2>Comment les imprimantes deviennent des points d&#39;entrée pour les cyberattaques</h2>
+<p>Contrairement aux points de terminaison traditionnels, les imprimantes présentent une <strong>surface d&#39;attaque multidirectionnelle</strong>. Les menaces peuvent provenir de réseaux externes, d&#39;utilisateurs internes ou même d&#39;un accès physique.</p>
+<p>Les attaquants peuvent exploiter des ports ouverts, un firmware obsolète ou un accès USB non sécurisé. Une fois compromis, une imprimante peut servir de point de pivot pour infiltrer le réseau plus vaste.</p>
+<p>Encore plus préoccupant, les imprimantes stockent fréquemment des <strong>identifiants au niveau administrateur</strong> pour communiquer avec d&#39;autres systèmes. Cela en fait une mine d&#39;or pour les attaquants cherchant à se déplacer latéralement.</p>
+<h2>The translation of &quot;Key Risks&quot; in French is &quot;Risques clés.&quot;</h2>
+<p>The translation of &quot;* Credential harvesting from stored admin access&quot; to French is: * Collecte de données d&#39;identification à partir de l&#39;accès administrateur enregistré.</p>
+<ul>
+<li>Attaques de l&#39;homme du milieu via les voies de communication des imprimantes</li>
+</ul>
+<p>The translation of &quot;* Data theft from stored or processed documents&quot; to French is: * Vol de données à partir de documents stockés ou traités.</p>
+<ul>
+<li>Contrôle à distance non autorisé des appareils connectés en réseau</li>
+</ul>
+<h2>Le problème culturel derrière le fossé de sécurité</h2>
+<h2>Pourquoi les organisations ignorent-elles les risques liés aux imprimantes ?</h2>
+<p>Le problème n&#39;est pas seulement technique, il est également organisationnel. Les imprimantes sont généralement acquises et gérées en dehors des équipes informatiques ou de sécurité.</p>
+<p>Ils tombent dans des silos opérationnels comme les achats ou les infrastructures, où l&#39;accent est mis sur la disponibilité et le coût, et non sur la cybersécurité. Cela conduit à une mentalité de « mettre en place et oublier » qui persiste dans toutes les industries.</p>
+<p>De plus, les pratiques héritées — comme la réinitialisation des appareils aux paramètres d&#39;usine lors de la maintenance — annulent toute sécurisation qui aurait pu être appliquée.</p>
+<h2>The translation of &quot;What Needs to Change&quot; in French is &quot;Ce qui doit changer.&quot;</h2>
+<ul>
+<li><p>Assigner une <strong>responsabilité claire</strong> pour le risque de sécurité des imprimantes.</p>
+</li>
+<li><p>Allouer <strong>budget et responsabilité</strong> pour la gestion</p>
+</li>
+</ul>
+<p>The translation of &quot;Enforce standards and auditing practices&quot; to French is: *Faire respecter les <strong>normes et les pratiques d&#39;audit</strong>.</p>
+<h2>Sécuriser les environnements d&#39;impression et d&#39;IoT à grande échelle.</h2>
+<h2>De point aveugle à point de contrôle stratégique</h2>
+<p>La sécurité des imprimantes nécessite un passage de solutions réactives à une gestion proactive. Les organisations doivent considérer les imprimantes comme une infrastructure critique au sein de leur stratégie de cybersécurité.</p>
+<p>Cela inclut la gestion des stocks, l&#39;application des mots de passe, la gestion du cycle de vie des certificats et la surveillance continue. L&#39;automatisation joue un rôle clé dans la gestion de flottes diverses à travers les fabricants et les types d&#39;appareils.</p>
+<p>Une approche évolutive réduit la charge opérationnelle tout en améliorant la posture de sécurité, transformant une vulnérabilité longtemps ignorée en un actif contrôlé.</p>
+<h2>The translation of &quot;Practical Steps&quot; in French is &quot;Étapes Pratiques.&quot;</h2>
+<p>Réalisez un <strong>inventaire complet de tous les points d&#39;impression</strong>.</p>
+<ul>
+<li><p>Remplacez les identifiants par défaut et appliquez des politiques de mot de passe.</p>
+</li>
+<li><p>Implémenter l&#39;<strong>authentification par certificats</strong></p>
+</li>
+<li><p>Surveiller et mettre à jour le firmware en continu.</p>
+</li>
+</ul>
+<p>Intégrer les imprimantes dans une <strong>architecture de confiance zéro</strong>.</p>
+<h2>Prenez la prochaine étape pour sécuriser votre environnement.</h2>
+<p>Si les imprimantes et les dispositifs IoT ne font pas partie de votre stratégie de cybersécurité, vous laissez une lacune critique largement ouverte. Commencez par évaluer votre environnement actuel, identifier les points de terminaison non gérés et les soumettre à une gouvernance. Pour une analyse plus approfondie des risques et des solutions dans le monde réel, explorez l&#39;intégralité de la conversation et commencez à renforcer la posture de sécurité de votre organisation dès aujourd&#39;hui.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/fr/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/fr/episodes/index.html",
+  "inLanguage": "fr",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/fr/episodes/edt-341/index.html#episode",
+  "url": "https://www.embracingdigital.org/fr/episodes/edt-341/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/fr/episodes/edt-341/index.html"
+  },
+  "name": "Les menaces cybernétiques cachées dans les imprimantes et les dispositifs IoT",
+  "episodeNumber": 341,
+  "datePublished": "2026-04-09",
+  "inLanguage": "fr",
+  "description": "Les imprimantes ne sont pas des outils de bureau inoffensifs - elles constituent l&#39;une des menaces de cybersécurité les plus négligées de votre réseau. Le Dr Darren accueille l&#39;expert en sécurité IoT Jim LaRoe pour exposer comment ces dispositifs &quot;bénins&quot; détiennent discrètement de",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/fr/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/fr/episodes/edt-341/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Les menaces cybernétiques cachées dans les imprimantes et les dispositifs IoT Video",
+      "embedUrl": "https://www.youtube.com/embed/trw2C3vB1hM"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Les menaces cybernétiques cachées dans les imprimantes et les dispositifs IoT Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/44b2fc96-6eb6-4531-a547-261200355829"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Jim LaRoe",
+      "url": "https://www.embracingdigital.org/../../../fr/guests/jim-laroe/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../fr/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Droit d'auteur &copy; 2025 Paidar Productions LLC</p>
+        <p>Tous droits réservés</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

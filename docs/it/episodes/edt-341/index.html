@@ -1,0 +1,532 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Titolo pagina dinamico -->
+    <title>Le Minacce Cibernetiche Nascoste nelle Stampanti e nei Dispositivi IoT | Embracing Digital Transformation</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/it/episodes/edt-341/index.html">
+    <meta name="description" content="Le stampanti non sono strumenti innocui da ufficio: sono una delle minacce alla cybersicurezza più trascurate nella tua rete. Il Dr. Darren accoglie l&amp;#39;esperto di sicurezza IoT Jim LaRoe per rivelare come questi dispositivi “benigni” mantengano silenziosamente le credenziali di amministrazione, m">
+    <meta name="keywords" content="Trasformazione digitale, podcast, interviste, notizie, IA, cybersicurezza, edge computing, gestione dei dati">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Le Minacce Cibernetiche Nascoste nelle Stampanti e nei Dispositivi IoT | Embracing Digital Transformation — Interviste, Notizie e Community">
+    <meta property="og:description" content="Le stampanti non sono strumenti innocui da ufficio: sono una delle minacce alla cybersicurezza più trascurate nella tua rete. Il Dr. Darren accoglie l&amp;#39;esperto di sicurezza IoT Jim LaRoe per rivelare come questi dispositivi “benigni” mantengano silenziosamente le credenziali di amministrazione, m">
+    <meta property="og:url" content="https://www.embracingdigital.org/it/episodes/edt-341/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Le Minacce Cibernetiche Nascoste nelle Stampanti e nei Dispositivi IoT | Embracing Digital Transformation — Interviste, Notizie e Community">
+    <meta name="twitter:description" content="Le stampanti non sono strumenti innocui da ufficio: sono una delle minacce alla cybersicurezza più trascurate nella tua rete. Il Dr. Darren accoglie l&amp;#39;esperto di sicurezza IoT Jim LaRoe per rivelare come questi dispositivi “benigni” mantengano silenziosamente le credenziali di amministrazione, m">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (alternative) -->
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="x-default">
+
+    <!-- Favicon & Stili -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abbracciare la Trasformazione Digitale",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/it/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/it/home/" aria-label="Home — Abbracciare la Trasformazione Digitale">
+            <img src="/images/logo.png" alt="Logo — Abbracciare la Trasformazione Digitale" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Toggle mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Apri/chiudi menu">☰</button>
+
+    <!-- Navigazione principale -->
+    <nav id="primary-nav" aria-label="Principale">
+        <ul>
+            <li><a href="/it/home/index.html" >Home</a></li>
+
+            <li class="dropdown">
+                <a href="/it/shows/index.html" aria-haspopup="true" aria-expanded="false">Programmi</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/index.html" aria-label="Interviste — Abbracciare la Trasformazione Digitale">
+                            Abbracciare la Trasformazione Digitale
+                            <small class="nav-note">Interviste</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/index.html" aria-label="Notizie — Digitale questa settimana">
+                            Digitale questa settimana
+                            <small class="nav-note">Notizie</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/it/guests/index.html">Ospiti</a></li>
+            <li><a href="/it/articles/index.html">Articoli</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Gruppo LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Informazioni -->
+            <li class="dropdown">
+                <a href="/it/about.html" aria-haspopup="true" aria-expanded="false">Informazioni</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">Informazioni sul programma</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Conduttore: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/index.html">Sponsorizzazioni e contatti</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/it/search.html">Cerca</a></li>
+
+            <!-- Lingue -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Lingue</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../it/home/index.html">Home</a></li>
+        <li><a href="../../../it/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 341: The Hidden Cyber Threats in Printers and IoT Devices</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/it/episodes/edt-341/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/it/episodes/edt-341/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 341</span>
+                <span class="episode-title">The Hidden Cyber Threats in Printers and IoT Devices</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-04-09" itemprop="datePublished">4/9/2026</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="341"/>
+            <meta itemprop="inLanguage" content="it"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-04-09T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Le Minacce Cibernetiche Nascoste nelle Stampanti e nei Dispositivi IoT Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/trw2C3vB1hM">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/trw2C3vB1hM"
+                            title="Le Minacce Cibernetiche Nascoste nelle Stampanti e nei Dispositivi IoT Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Le Minacce Cibernetiche Nascoste nelle Stampanti e nei Dispositivi IoT Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/44b2fc96-6eb6-4531-a547-261200355829">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/44b2fc96-6eb6-4531-a547-261200355829"
+                            title="Le Minacce Cibernetiche Nascoste nelle Stampanti e nei Dispositivi IoT Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../it/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 4/9/2026<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Le stampanti non sono strumenti innocui da ufficio: sono una delle minacce alla cybersicurezza più trascurate nella tua rete. Il Dr. Darren accoglie l&#39;esperto di sicurezza IoT Jim LaRoe per rivelare come questi dispositivi “benigni” mantengano silenziosamente le credenziali di amministrazione, memorizzino dati sensibili e aprano porte agli aggressori. Ciò che sembra comune potrebbe essere la tua più grande vulnerabilità.</p>
+<p>Punti Chiave
+Le stampanti costituiscono circa il 20% dei punti finali aziendali, eppure la maggior parte rimane non protetta
+Molti dispositivi memorizzano credenziali a livello di amministratore, rendendo gli attacchi laterali facili
+Le password predefinite e le pratiche di “impostalo e dimenticalo” creano un&#39;enorme esposizione al rischio
+Le stampanti agiscono come server a tutti gli effetti (email, FTP, web), non come semplici periferiche
+Le lacune di sicurezza sono spesso organizzative e culturali, non solo tecniche
+Una protezione efficace richiede proprietari, budget e standard applicati
+Capitoli
+00:00 La realtà scioccante delle vulnerabilità delle stampanti
+00:56 Incontra Jim LaRoe: ingegnere diventato leader nella cybersicurezza
+04:02 Perché le stampanti non sono mai scomparse—e perché è importante
+06:37 Il panorama delle minacce a 360° dei punti finali delle stampanti
+10:16 Hackeraggi reali delle stampanti e esposizione a Shodan
+13:38 Le stampanti come il “Monte Everest” della complessità IoT
+17:23 Come gli aggressori rubano credenziali dalle stampanti
+20:20 Perché le organizzazioni ignorano i rischi di sicurezza delle stampanti
+23:03 Il costo nascosto dei certificati e della gestione dell&#39;identità
+24:49 Un approccio scalabile per la sicurezza delle flotte di stampanti
+29:07 Educare i leader e costruire consapevolezza organizzativa</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../it/guests/jim-laroe/index.html" itemprop="url">
+                <span itemprop="name">Jim LaRoe</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../it/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>Perché la tua stampante &quot;inoffensiva&quot; è una minaccia per la cybersecurity</h2>
+<p>Le stampanti stanno diventando silenziosamente uno dei rischi per la cybersecurity più pericolosi nelle moderne imprese. Quello che sembra un semplice dispositivo da ufficio è in realtà un potente endpoint IoT—spesso non gestito, non monitorato e facilmente vulnerabile agli attacchi.</p>
+<p>Il Dr. Darren si siede con l&#39;esperto di cybersecurity Jim LaRoe per analizzare una realtà sorprendente: le stampanti non sono solo periferiche, ma sono sistemi di rete a tutti gli effetti. Per i tecnologi e i leader aziendali, comprendere questo punto cieco potrebbe fare la differenza tra resilienza e una violazione costosa.</p>
+<h2>La realtà trascurata della sicurezza delle stampanti</h2>
+<h2>Le stampanti non sono dispositivi passivi.</h2>
+<p>La maggior parte delle organizzazioni continua a trattare le stampanti come hardware di base, ma in realtà funzionano più come server. Memorizzano dati, eseguono servizi e comunicano attraverso le reti.</p>
+<p>Una stampante moderna spesso include un server web, un server di posta elettronica, servizi FTP e un hard disk. Eppure, nonostante questa complessità, rare volte sono soggette agli stessi standard di sicurezza degli altri endpoint.</p>
+<p>Questa disconnessione crea un divario pericoloso. Mentre i laptop e i server sono strettamente controllati, le stampanti rimangono esposte, spesso posizionate in spazi pubblici o semi-pubblici.</p>
+<h2>Key Takeaways in Italian is: &quot;Punti Chiave&quot; or &quot;Principali Considerazioni&quot;.</h2>
+<p>I stampanti possono rappresentare il <strong>20% dei punti finali aziendali</strong>.</p>
+<ul>
+<li><p>Molti operano con <strong>configurazioni predefinite e controlli di sicurezza deboli</strong>.</p>
+</li>
+<li><p>Sono spesso esclusi dalle <strong>strategie di sicurezza degli endpoint</strong>.</p>
+</li>
+</ul>
+<h2>Una superficie di attacco a 360 gradi</h2>
+<h2>Come le stampanti diventano punti di accesso per attacchi informatici</h2>
+<p>A differenza degli endpoint tradizionali, le stampanti presentano una <strong>superficie di attacco multidirezionale</strong>. Le minacce possono provenire da reti esterne, utenti interni o anche da accessi fisici.</p>
+<p>Gli attaccanti possono sfruttare porte aperte, firmware obsoleto o accesso USB non protetto. Una volta compromessa, una stampante può fungere da punto di pivot per infiltrarsi nella rete più ampia.</p>
+<p>Ancor più preoccupante, le stampanti memorizzano frequentemente <strong>credenziali a livello di amministratore</strong> per comunicare con altri sistemi. Questo le rende un tesoro per gli attaccanti in cerca di movimento laterale.</p>
+<h2>The translation of &quot;Key Risks&quot; in Italian is &quot;Rischi Chiave.&quot;</h2>
+<ul>
+<li>Raccolta di credenziali da accesso amministrativo memorizzato</li>
+</ul>
+<p>Attacchi man-in-the-middle tramite percorsi di comunicazione delle stampanti.</p>
+<ul>
+<li><p>Furto di dati da documenti archiviati o elaborati</p>
+</li>
+<li><p>Controllo remoto non autorizzato di dispositivi connessi alla rete</p>
+</li>
+</ul>
+<h2>Il problema culturale dietro il divario di sicurezza</h2>
+<h2>&quot;Perché le organizzazioni ignorano i rischi delle stampanti&quot;</h2>
+<p>Il problema non è solo tecnico, ma anche organizzativo. Le stampanti vengono solitamente acquisite e gestite al di fuori dei team IT o di sicurezza.</p>
+<p>Cadono in silos operativi come l&#39;approvvigionamento o le strutture, dove l&#39;attenzione è rivolta all&#39;uptime e ai costi, non alla cybersecurity. Questo porta a una mentalità di &quot;imposta e dimentica&quot; che persiste in diversi settori.</p>
+<p>Inoltre, le pratiche obsolete—come il ripristino dei dispositivi ai dati di fabbrica durante la manutenzione—annullano qualsiasi rinforzo della sicurezza che potrebbe essere stato applicato.</p>
+<h2>The translation of &quot;What Needs to Change&quot; in Italian is &quot;Cosa Deve Cambiare.&quot;</h2>
+<p>Assegna <strong>una chiara responsabilità</strong> per il rischio di sicurezza della stampante.</p>
+<ul>
+<li><p>Allocare <strong>il budget e la responsabilità</strong> per la gestione</p>
+</li>
+<li><p>Applicare <strong>standard e pratiche di audit</strong></p>
+</li>
+</ul>
+<h2>&quot;Proteggere Stampanti e Ambienti IoT su Grande Scala&quot;</h2>
+<h2>Da Punto Cieco a Punto di Controllo Strategico</h2>
+<p>Affrontare la sicurezza delle stampanti richiede un cambiamento da soluzioni reattive a una gestione proattiva. Le organizzazioni devono considerare le stampanti come infrastrutture critiche all&#39;interno della loro strategia di cybersicurezza.</p>
+<p>Questo include la gestione dell&#39;inventario, l&#39;applicazione delle password, la gestione del ciclo di vita dei certificati e il monitoraggio continuo. L&#39;automazione gioca un ruolo chiave nella gestione di flotte diverse tra produttori e tipi di dispositivi.</p>
+<p>Un approccio scalabile riduce il onere operativo migliorando al contempo la postura di sicurezza, trasformando una vulnerabilità a lungo ignorata in un&#39;asset controllabile.</p>
+<h2>&quot;Practical Steps&quot; can be translated to Italian as &quot;Passi Pratici&quot;.</h2>
+<ul>
+<li><p>Esegui un <strong>inventario completo di tutti i punti di accesso delle stampanti</strong>.</p>
+</li>
+<li><p>Sostituire le credenziali predefinite e imporre politiche di password</p>
+</li>
+<li><p>Implementare <strong>l&#39;autenticazione basata su certificato</strong></p>
+</li>
+<li><p>Monitorare e aggiornare continuamente il firmware</p>
+</li>
+<li><p>Integrare le stampanti nell&#39;<strong>architettura zero-trust</strong>.</p>
+</li>
+</ul>
+<h2>Fai il prossimo passo per garantire il tuo ambiente.</h2>
+<p>Se le stampanti e i dispositivi IoT non fanno parte della tua strategia di cybersecurity, stai lasciando un gap critico aperto. Inizia valutando il tuo ambiente attuale, identificando gli endpoint non gestiti e portandoli sotto governance. Per un’analisi più approfondita dei rischi e delle soluzioni reali, esplora la conversazione completa e inizia a rafforzare oggi stesso la postura di sicurezza della tua organizzazione.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/it/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/it/episodes/index.html",
+  "inLanguage": "it",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/it/episodes/edt-341/index.html#episode",
+  "url": "https://www.embracingdigital.org/it/episodes/edt-341/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/it/episodes/edt-341/index.html"
+  },
+  "name": "Le Minacce Cibernetiche Nascoste nelle Stampanti e nei Dispositivi IoT",
+  "episodeNumber": 341,
+  "datePublished": "2026-04-09",
+  "inLanguage": "it",
+  "description": "Le stampanti non sono strumenti innocui da ufficio: sono una delle minacce alla cybersicurezza più trascurate nella tua rete. Il Dr. Darren accoglie l&#39;esperto di sicurezza IoT Jim LaRoe per rivelare come questi dispositivi “benigni” mantengano silenziosamente le credenziali di amministrazione, m",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/it/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/it/episodes/edt-341/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Le Minacce Cibernetiche Nascoste nelle Stampanti e nei Dispositivi IoT Video",
+      "embedUrl": "https://www.youtube.com/embed/trw2C3vB1hM"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Le Minacce Cibernetiche Nascoste nelle Stampanti e nei Dispositivi IoT Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/44b2fc96-6eb6-4531-a547-261200355829"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Jim LaRoe",
+      "url": "https://www.embracingdigital.org/../../../it/guests/jim-laroe/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../it/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; 2025 Paidar Productions LLC</p>
+        <p>Diritti riservati</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
