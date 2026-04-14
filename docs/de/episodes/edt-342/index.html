@@ -1,0 +1,496 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Dynamischer Seitentitel -->
+    <title>KI für Städte: Öffentlichkeitskommunikation und Beteiligung der Bürger neu gestalten | Embracing Digital Transformation</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/de/episodes/edt-342/index.html">
+    <meta name="description" content="Willkommen zu einer transformierenden Diskussion über öffentliche Kommunikation und Bürgerengagement! In dieser Episode von &amp;quot;Digitalen Wandel annehmen&amp;quot; setzt sich Dr. Darren, Ihr Gastgeber, mit Casey Elliott, CEO von Peny App, zusammen. Gemeinsam erkunden sie, wie innovative KI-Lösungen di">
+    <meta name="keywords" content="Digitale Transformation, Podcast, Interviews, Nachrichten, KI, Cybersicherheit, Edge Computing, Datenmanagement">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KI für Städte: Öffentlichkeitskommunikation und Beteiligung der Bürger neu gestalten | Embracing Digital Transformation — Interviews, Nachrichten und Community">
+    <meta property="og:description" content="Willkommen zu einer transformierenden Diskussion über öffentliche Kommunikation und Bürgerengagement! In dieser Episode von &amp;quot;Digitalen Wandel annehmen&amp;quot; setzt sich Dr. Darren, Ihr Gastgeber, mit Casey Elliott, CEO von Peny App, zusammen. Gemeinsam erkunden sie, wie innovative KI-Lösungen di">
+    <meta property="og:url" content="https://www.embracingdigital.org/de/episodes/edt-342/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KI für Städte: Öffentlichkeitskommunikation und Beteiligung der Bürger neu gestalten | Embracing Digital Transformation — Interviews, Nachrichten und Community">
+    <meta name="twitter:description" content="Willkommen zu einer transformierenden Diskussion über öffentliche Kommunikation und Bürgerengagement! In dieser Episode von &amp;quot;Digitalen Wandel annehmen&amp;quot; setzt sich Dr. Darren, Ihr Gastgeber, mit Casey Elliott, CEO von Peny App, zusammen. Gemeinsam erkunden sie, wie innovative KI-Lösungen di">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (Alternativen) -->
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="x-default">
+
+    <!-- Favicon & Styles -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Digitale Transformation gestalten",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Digitale Transformation gestalten",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/de/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/de/home/" aria-label="Startseite — Digitale Transformation gestalten">
+            <img src="/images/logo.png" alt="Logo — Digitale Transformation gestalten" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Menü umschalten">☰</button>
+
+    <!-- Hauptnavigation -->
+    <nav id="primary-nav" aria-label="Hauptnavigation">
+        <ul>
+            <li><a href="/de/home/index.html" >Start</a></li>
+
+            <li class="dropdown">
+                <a href="/de/shows/index.html" aria-haspopup="true" aria-expanded="false">Sendungen</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/de/episodes/index.html" aria-label="Interviews — Digitale Transformation gestalten">
+                            Digitale Transformation gestalten
+                            <small class="nav-note">Interviews</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/briefs/index.html" aria-label="Nachrichten — Digital diese Woche">
+                            Digital diese Woche
+                            <small class="nav-note">Nachrichten</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/de/guests/index.html">Gäste</a></li>
+            <li><a href="/de/articles/index.html">Artikel</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/de/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">LinkedIn Gruppe</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Über uns -->
+            <li class="dropdown">
+                <a href="/de/about.html" aria-haspopup="true" aria-expanded="false">Über uns</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/about.html">Über die Sendung</a></li>
+                    <li role="none"><a role="menuitem" href="/de/host.html">Moderator: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/de/sponsors/index.html">Sponsoring & Kontakt</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/de/search.html">Suche</a></li>
+
+            <!-- Sprachen -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Sprachen</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../de/home/index.html">Home</a></li>
+        <li><a href="../../../de/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 342: AI for Cities: Reinventing Public Communication and Resident Engagement</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/de/episodes/edt-342/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/de/episodes/edt-342/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 342</span>
+                <span class="episode-title">AI for Cities: Reinventing Public Communication and Resident Engagement</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-04-14" itemprop="datePublished">2026-04-14</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="342"/>
+            <meta itemprop="inLanguage" content="de"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-04-13T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="KI für Städte: Öffentlichkeitskommunikation und Beteiligung der Bürger neu gestalten Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/QEYMgz6Gvo0">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/QEYMgz6Gvo0"
+                            title="KI für Städte: Öffentlichkeitskommunikation und Beteiligung der Bürger neu gestalten Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="KI für Städte: Öffentlichkeitskommunikation und Beteiligung der Bürger neu gestalten Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/5995146d-cd5a-460e-b44e-8b4633f41168">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/5995146d-cd5a-460e-b44e-8b4633f41168"
+                            title="KI für Städte: Öffentlichkeitskommunikation und Beteiligung der Bürger neu gestalten Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../de/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-04-14<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Willkommen zu einer transformierenden Diskussion über öffentliche Kommunikation und Bürgerengagement! In dieser Episode von &quot;Digitalen Wandel annehmen&quot; setzt sich Dr. Darren, Ihr Gastgeber, mit Casey Elliott, CEO von Peny App, zusammen. Gemeinsam erkunden sie, wie innovative KI-Lösungen di</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../de/guests/casey-elliott/index.html" itemprop="url">
+                <span itemprop="name">Casey Elliott</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../de/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>Eine neue Ära der bürgerschaftlichen Interaktion</h2>
+<p>In der heutigen schnelllebigen Welt, wie können Städte ihre Bewohner effektiver einbinden? Hier kommt Casey Elliott ins Spiel, ein Unternehmer und CEO der Peny App, der die öffentliche Kommunikation durch innovative Technologie neu definiert. Mit einem reichen Hintergrund in Theater und Wirtschaft hat Casey eine Lösung entwickelt, die es Städten ermöglicht, wichtige Informationen direkt an die Bürger zu übermitteln und so eine stärkere Verbindung und Einbindung zu fördern.</p>
+<p>Das Verständnis der Komplexität der kommunalen Kommunikation und ihrer Herausforderungen ist sowohl für Technologen als auch für Unternehmensführer von entscheidender Bedeutung. Während wir uns in einer zunehmend digitalen Landschaft bewegen, kann die Diskussion über Lösungen, die Technologien wie KI nutzen, Licht auf aktuelle Probleme werfen, die unsere Gemeinschaften betreffen.</p>
+<h2>The translation of &quot;Addressing the Communication Challenges&quot; to German is: &quot;Die Kommunikationsherausforderungen angehen.&quot;</h2>
+<h2>The translation of &quot;The Problem with Current Civic Communication&quot; to German is &quot;Das Problem der gegenwärtigen Bürgerkommunikation.&quot;</h2>
+<p>Städte kämpfen oft mit einem Wirrwarr an Kommunikationskanälen, die unterschiedliche Informationen und Aktualisierungen bieten, was zu Verwirrung bei den Bewohnern führt. Soziale Medien, offizielle Websites und verschiedene lokale Ressourcen tragen alle zum Chaos bei. Laut Casey entsteht das „Fragmentierungsproblem“, wenn mehrere Plattformen dieselben Informationen in unterschiedlichen Formaten verbreiten, wodurch es den Bewohnern verwehrt bleibt, ein konsolidiertes Verständnis über die Abläufe in der Stadt zu erhalten.</p>
+<ul>
+<li>Mangel an einer einheitlichen Informationsquelle.</li>
+</ul>
+<p>Die Informationen sind über zahlreiche Kanäle verteilt.</p>
+<p>Die Bewohner haben Schwierigkeiten, wichtige Neuigkeiten zu finden.</p>
+<p>Die Peny App zielt darauf ab, diese Probleme zu lösen, indem sie bürgerliche Informationen in einer einzigen intuitiven Plattform bündelt, die es den Einwohnern ermöglicht, die benötigten Updates einfach zu finden, ohne durch mehrere Kanäle navigieren zu müssen.</p>
+<h2>Die Rolle von KI bei der Vereinfachung von Interaktionen</h2>
+<p>Durch die Nutzung von KI zur Erstellung einer zentralen Inhaltsdatenbank macht die Peny App bürgerliche Informationen leichter zugänglich und inspiriert Stadtbeamte dazu, sich mit den Bedürfnissen der Einwohner auseinanderzusetzen.</p>
+<ul>
+<li><p>KI-Chat-Schichten für sofortige Antworten.</p>
+</li>
+<li><p>Verringerter Bedarf an direkter menschlicher Beteiligung, was die Stadtmitarbeiter für wichtigere Aufgaben freisetzt.</p>
+</li>
+</ul>
+<p>Effiziente Aktualisierung von Informationen in Echtzeit.</p>
+<p>Während die KI weiterhin voranschreitet, wird das Potenzial zur Verbesserung der kommunalen Kommunikation grenzenlos. Mit dem Ziel, eine benutzerfreundliche Erfahrung zu bieten, strebt die Peny App an, die Interaktionen der Bewohner so weit wie möglich zu optimieren.</p>
+<h2>Transformative Vorteile für Städte und Einwohner</h2>
+<h2>Ein optimierter Ansatz für bürgerschaftliches Engagement</h2>
+<p>Mit der Integration der Peny-App in kommunale Systeme sollten Städte den Implementierungsprozess sowie die erforderlichen Ressourcen und Infrastrukturen berücksichtigen. Das Verständnis dieser Schritte kann Stadtplanern helfen zu bewerten, wie reibungslos die Peny-App übernommen werden kann, um die Kommunikationsstrategien zu verbessern. Von Notfallbenachrichtigungen bis hin zu Stadtneuigkeiten werden die Bewohner schnellen Zugang zu wichtigen Informationen haben, die auf ihre Interessen abgestimmt sind.</p>
+<ul>
+<li><p>Angepasste Benachrichtigungen basierend auf Vorlieben und Interessen.</p>
+</li>
+<li><p>Einfacherer Zugang zu offiziellen Dokumenten und Ressourcen.</p>
+</li>
+<li><p>Verstärkte Einbindung der Gemeinschaft, da die App eine engagierte Bevölkerung fördert.</p>
+</li>
+</ul>
+<p>Die Peny App ist nicht nur ein Werkzeug; sie schafft Vertrauen und Stolz in die lokale Verwaltung und fördert das Vertrauen und die Transparenz unter den Bewohnern.</p>
+<h2>The translation of &quot;Increasing Community Connection&quot; to German is &quot;Steigerung der Gemeinschaftsverbindungen.&quot;</h2>
+<p>Die Fähigkeit der Plattform, die Gemeinschaftsbeteiligung zu erhöhen, kann Stadtführer motivieren und Optimismus über partizipative Demokratie und gemeinsamen Fortschritt fördern.</p>
+<ul>
+<li><p>Anwohner haben direkten Einfluss auf Entwicklungsentscheidungen.</p>
+</li>
+<li><p>Erhöhte Zugänglichkeit zu städtischen Veranstaltungen und Programmen.</p>
+</li>
+</ul>
+<p>Ein Übergang zu einem gemeinschaftszentrierten Kommunikationsmodell.</p>
+<p>Während Städte in die Zukunft blicken, können Lösungen wie Peny tiefere Verbindungen zwischen den Bewohnern fördern und sie mit den Informationen ausstatten, die sie benötigen, um aktiv an der Gestaltung ihrer Gemeinschaften teilzunehmen.</p>
+<h2>The translation of &quot;Making Civic Communication Better&quot; to German is &quot;Die Verbesserung der Bürgerkommunikation.&quot;</h2>
+<p>Wenn Sie daran interessiert sind, wie KI das bürgerliche Engagement neu gestalten und die öffentliche Kommunikation verbessern kann, ist es wichtig, Datenschutz und Sicherheit zu beachten. Die Erkundung der Schutzmaßnahmen von Peny App kann dazu beitragen, das Vertrauen der Gemeinschaft zu gewährleisten. Erfahren Sie, wie Peny helfen kann, eine effektive und sichere Kommunikation innerhalb Ihrer Gemeinschaft und darüber hinaus zu ermöglichen. Um mehr zu erfahren und die Funktionen zu erkunden, besuchen Sie die Peny App.</p>
+<p>Während Gemeinden zunehmend die Komplexität der Technologie navigieren, kann die Annahme dieser Innovationen zu einer besser informierten, engagierten und ermächtigten Bevölkerung führen. Es ist an der Zeit, die Rolle der Technologie als Katalysator für Veränderungen im öffentlichen Dienst und das Engagement der Gemeinschaft anzuerkennen.</p>
+<p>Of course! Please provide the text you&#39;d like to have translated into German.</p>
+<p>Engagieren Sie sich mit uns! Wie glauben Sie, kann Technologie das bürgerschaftliche Engagement in Ihrer Gemeinde verbessern? Teilen Sie Ihre Gedanken in den Kommentaren!</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/de/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/de/episodes/index.html",
+  "inLanguage": "de",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/de/episodes/edt-342/index.html#episode",
+  "url": "https://www.embracingdigital.org/de/episodes/edt-342/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/de/episodes/edt-342/index.html"
+  },
+  "name": "KI für Städte: Öffentlichkeitskommunikation und Beteiligung der Bürger neu gestalten",
+  "episodeNumber": 342,
+  "datePublished": "2026-04-14",
+  "inLanguage": "de",
+  "description": "Willkommen zu einer transformierenden Diskussion über öffentliche Kommunikation und Bürgerengagement! In dieser Episode von &quot;Digitalen Wandel annehmen&quot; setzt sich Dr. Darren, Ihr Gastgeber, mit Casey Elliott, CEO von Peny App, zusammen. Gemeinsam erkunden sie, wie innovative KI-Lösungen di",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/de/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/de/episodes/edt-342/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "KI für Städte: Öffentlichkeitskommunikation und Beteiligung der Bürger neu gestalten Video",
+      "embedUrl": "https://www.youtube.com/embed/QEYMgz6Gvo0"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "KI für Städte: Öffentlichkeitskommunikation und Beteiligung der Bürger neu gestalten Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/5995146d-cd5a-460e-b44e-8b4633f41168"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Casey Elliott",
+      "url": "https://www.embracingdigital.org/../../../de/guests/casey-elliott/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../de/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Urheberrecht &copy; 2025 Paidar Productions LLC</p>
+        <p>Alle Rechte vorbehalten</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
