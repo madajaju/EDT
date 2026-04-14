@@ -1,0 +1,580 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Revolutionizing Corporate Training with AI and Userization | Embracing Digital Transformation</title>
+    <meta name="description" content="Revolutionizing corporate training is no small feat, but with Khadim Batti, CEO of Whatfix, at the helm, the conversation delves into how AI and user-ization can reshape corporate learning landscapes. Host Dr. Darren explores innovative training solutions that empower employees and enhance productiv">
+    
+    
+    <link rel="canonical" href="https://www.embracingdigital.org/en/episodes/edt-343/index.html">
+    
+
+    <!-- Hreflang alternates (optional: pass `langs` into the template) -->
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Revolutionizing Corporate Training with AI and Userization | Embracing Digital Transformation">
+    <meta property="og:description" content="Revolutionizing corporate training is no small feat, but with Khadim Batti, CEO of Whatfix, at the helm, the conversation delves into how AI and user-ization can reshape corporate learning landscapes. Host Dr. Darren explores innovative training solutions that empower employees and enhance productiv">
+    <meta property="og:url" content="https://www.embracingdigital.org/en/episodes/edt-343/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Revolutionizing Corporate Training with AI and Userization | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Revolutionizing corporate training is no small feat, but with Khadim Batti, CEO of Whatfix, at the helm, the conversation delves into how AI and user-ization can reshape corporate learning landscapes. Host Dr. Darren explores innovative training solutions that empower employees and enhance productiv">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="en/home/index.html"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="en/shows/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="en/digital-transformation/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+        <!-- Right side (Languages) -->
+        <ul class="nav-right">
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../en/home/index.html">Home</a></li>
+        <li><a href="../../../en/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 343: Revolutionizing Corporate Training with AI and Userization</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/en/episodes/edt-343/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/en/episodes/edt-343/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 343</span>
+                <span class="episode-title">Revolutionizing Corporate Training with AI and Userization</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-04-16" itemprop="datePublished">4/16/2026</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="343"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-04-16T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Revolutionizing Corporate Training with AI and Userization Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/FNb782628YM">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/FNb782628YM"
+                            title="Revolutionizing Corporate Training with AI and Userization Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Revolutionizing Corporate Training with AI and Userization Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/747f0b54-a45a-4852-9472-5338729a2cc6">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/747f0b54-a45a-4852-9472-5338729a2cc6"
+                            title="Revolutionizing Corporate Training with AI and Userization Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 4/16/2026<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Revolutionizing corporate training is no small feat, but with Khadim Batti, CEO of Whatfix, at the helm, the conversation delves into how AI and user-ization can reshape corporate learning landscapes. Host Dr. Darren explores innovative training solutions that empower employees and enhance productiv</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/khadim-batti/index.html" itemprop="url">
+                <span itemprop="name">Khadim Batti</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>Transforming Learning and Development Through Technology</h2>
+<p>Is your organization keeping up with the rapid advancements in artificial intelligence? The conversation around deploying generative AI to enhance corporate training has gained significant momentum, and for good reason. With the rapid integration of technology into day-to-day operations, ensuring employees receive adequate training on emerging tools is more critical than ever. This reflects insights from Dr. Darren and his guest, Khadim Batti, CEO of Whatfix, who delve into how AI is redefining corporate training.</p>
+<p>In today’s fast-paced digital landscape, it&#39;s not just about adopting new technologies but ensuring they are effectively utilized. How can we better train our workforce to adapt? This is the core discussion that resonates with technologists and business leaders alike, making it an essential topic in the world of digital transformation. For example, AI-driven platforms can target skill gaps and personalize learning paths to meet organizational needs.</p>
+<h2>Understanding the AI Training Gap</h2>
+<h3>The Challenge of Effective Adoption</h3>
+<p>Organizations have made remarkable strides in adopting new technologies, yet many employees struggle to utilize these tools effectively. Research indicates that some enterprises may lose millions annually due to employees&#39; inadequate use of tools. With the transition from on-premise systems to cloud and SaaS solutions, the complexity of daily work has increased exponentially.</p>
+<p>It&#39;s not uncommon for employees to interact with numerous software applications daily, which can lead to overwhelming training demands. Despite this, minimal guidance is often provided. This gap poses significant challenges for organizations aiming to remain competitive while striving for an AI-driven transformation.</p>
+<h3>Key Considerations for Training</h3>
+<ul>
+<li><p><strong>Simulated Environments</strong>: Create realistic training settings that mimic actual work processes. This reduces the transition stress when moving from training to real-world scenarios.</p>
+</li>
+<li><p><strong>Learning in the Flow of Work</strong>: Incorporate training seamlessly into daily tasks, similar to GPS navigation, offering real-time assistance while driving. This allows continuous learning without disrupting productivity.</p>
+</li>
+</ul>
+<h2>Revolutionizing Training with AI-Powered Solutions</h2>
+<h3>Innovative Approaches to Corporate Learning</h3>
+<p>Whatfix presents a game-changing solution with its digital adoption platform, which offers comprehensive tools for both simulated and real-time training. Its product allows organizations to not only train employees but also to measure their performance continuously. Tracking metrics like user engagement, task completion rates, and skill improvements can demonstrate the ROI of AI-powered training investments. </p>
+<p>The emphasis is on proactive nudges during everyday tasks to help employees use complex systems. This method empowers workers by providing immediate feedback and support, helping to enhance their skillset progressively.</p>
+<h3>Benefits of AI in Training</h3>
+<ul>
+<li><p><strong>Continuous Improvement</strong>: Analytics capture user behavior, identifying bottlenecks that can be addressed to streamline processes.</p>
+</li>
+<li><p><strong>Augmenting Human Capability</strong>: AI doesn&#39;t replace jobs; it enhances human productivity by handling mundane tasks, allowing employees to focus on more critical aspects of their roles.</p>
+</li>
+</ul>
+<p>AI&#39;s capacity to improve corporate training is undeniable, but leaping ahead requires careful planning. Organizations should consider the following: While AI offers significant benefits, challenges such as data privacy, integration complexity, and potential bias must be managed to ensure successful deployment. </p>
+<p>AI’s capacity for improving corporate training is undeniable, but leaping requires careful planning. Organizations should consider the following:</p>
+<ul>
+<li><p><strong>Tailor Training Programs</strong>: Develop customized training paths according to individual learner needs, ensuring everyone benefits from AI.</p>
+</li>
+<li><p><strong>Embrace Feedback Loops</strong>: Establish mechanisms for collecting feedback that help refine training and operations ongoingly.</p>
+</li>
+</ul>
+<p>As AI transforms how we train our workforce, the key takeaway is that technology should adapt to individuals rather than forcing individuals to adapt to technology. Our tools should serve our unique needs, fostering a collaborative environment where everyone feels supported in their growth. </p>
+<p>Now is the time to harness AI&#39;s capabilities for a robust, user-friendly training environment that prepares your organization for the future.</p>
+<p>If you&#39;re intrigued by these insights and want to explore how your organization can leverage AI for corporate training, dive deeper into this conversation. Learn more by listening to the full episode of <em>Embracing Digital Transformation</em> and discover how effective training can lead to successful digital adoption. </p>
+<p>Feel free to share your thoughts in the comments below: How is your organization currently adapting to these training challenges? Let&#39;s build a community committed to thriving amidst digital transformation!</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/en/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/en/episodes/index.html",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/en/episodes/edt-343/index.html#episode",
+  "url": "https://www.embracingdigital.org/en/episodes/edt-343/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/en/episodes/edt-343/index.html"
+  },
+  "name": "Revolutionizing Corporate Training with AI and Userization",
+  "episodeNumber": 343,
+  "datePublished": "2026-04-16",
+  "inLanguage": "en",
+  "description": "Revolutionizing corporate training is no small feat, but with Khadim Batti, CEO of Whatfix, at the helm, the conversation delves into how AI and user-ization can reshape corporate learning landscapes. Host Dr. Darren explores innovative training solutions that empower employees and enhance productiv",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/en/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/en/episodes/edt-343/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Revolutionizing Corporate Training with AI and Userization Video",
+      "embedUrl": "https://www.youtube.com/embed/FNb782628YM"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Revolutionizing Corporate Training with AI and Userization Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/747f0b54-a45a-4852-9472-5338729a2cc6"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Khadim Batti",
+      "url": "https://www.embracingdigital.org/../../../en/guests/khadim-batti/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
