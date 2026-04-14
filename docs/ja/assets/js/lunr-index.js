@@ -30638,7 +30638,7 @@ const lobjects = {
     },
     {
       "title": "Untitled",
-      "summary": "Biography\n            未定",
+      "summary": "Biography\n            カディム・バッティのキャリアは、彼の深い技術と革新への情熱の証です。ムンバイ大学で電気工学を学び、バンガロールの国際情報技術研究所で情報技術の大学院の学位を取得したカディムの学問的な基盤は、彼の将来の活動の土台を築きました。彼の技術的な専門知識と技術への好奇心は、彼のキャリアパスを形成し、エンジニアリングの役割から起業家の冒険へと導きました。",
       "id": 321,
       "image": "guests\\khadim-batti/https://embracingdigital.org/images/logo.png",
       "type": "Guest",
