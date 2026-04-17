@@ -1,0 +1,583 @@
+import {inputs as episode} from "../../../../../IdeaProjects/guth/api/interface/brief/create";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>AI as a Superpower in Finance and M&amp;A | Embracing Digital Transformation</title>
+    <meta name="description" content="As the financial landscape rapidly evolves, understanding how to leverage AI can help CFOs and M&amp;amp;A specialists address common challenges, turning obstacles into opportunities. Join Dr. Darren, your host of Embracing Digital Transformation, and Dr. Michael Hofer, an M&amp;amp;A expert and seasoned fi">
+    
+    
+    <link rel="canonical" href="https://www.embracingdigital.org/en/episodes/edt-345/index.html">
+    
+
+    <!-- Hreflang alternates (optional: pass `langs` into the template) -->
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AI as a Superpower in Finance and M&amp;A | Embracing Digital Transformation">
+    <meta property="og:description" content="As the financial landscape rapidly evolves, understanding how to leverage AI can help CFOs and M&amp;amp;A specialists address common challenges, turning obstacles into opportunities. Join Dr. Darren, your host of Embracing Digital Transformation, and Dr. Michael Hofer, an M&amp;amp;A expert and seasoned fi">
+    <meta property="og:url" content="https://www.embracingdigital.org/en/episodes/edt-345/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI as a Superpower in Finance and M&amp;A | Embracing Digital Transformation">
+    <meta name="twitter:description" content="As the financial landscape rapidly evolves, understanding how to leverage AI can help CFOs and M&amp;amp;A specialists address common challenges, turning obstacles into opportunities. Join Dr. Darren, your host of Embracing Digital Transformation, and Dr. Michael Hofer, an M&amp;amp;A expert and seasoned fi">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="en/home/index.html"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="en/shows/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="en/digital-transformation/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+        <!-- Right side (Languages) -->
+        <ul class="nav-right">
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../en/home/index.html">Home</a></li>
+        <li><a href="../../../en/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 345: AI as a Superpower in Finance and M&amp;A</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/en/episodes/edt-345/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/en/episodes/edt-345/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 345</span>
+                <span class="episode-title">AI as a Superpower in Finance and M&amp;A</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-04-23" itemprop="datePublished">2026-04-23</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="345"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-04-22T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="AI as a Superpower in Finance and M&A Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Cizq8U5vhO0">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/Cizq8U5vhO0"
+                            title="AI as a Superpower in Finance and M&A Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="AI as a Superpower in Finance and M&A Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/77ea53d3-f849-41ab-be65-b2858daeecb7">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/77ea53d3-f849-41ab-be65-b2858daeecb7"
+                            title="AI as a Superpower in Finance and M&A Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-04-23<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>As the financial landscape rapidly evolves, understanding how to leverage AI can help CFOs and M&amp;A specialists address common challenges, turning obstacles into opportunities. Join Dr. Darren, your host of Embracing Digital Transformation, and Dr. Michael Hofer, an M&amp;A expert and seasoned fi</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/michael-hofer/index.html" itemprop="url">
+                <span itemprop="name">Michael Hofer</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>Unlocking the Future of Finance with AI</h2>
+<p>Have you ever wondered how technology intersects with financial strategies to change the business landscape? The conversation around artificial intelligence (AI) has evolved rapidly, capturing the hearts and minds of technologists and business leaders alike. In this post, we dive into meaningful insights shared by Dr. Michael Hofer, an esteemed M&amp;A specialist, and Dr. Darren, a chief enterprise architect. Their discussion serves as a beacon for understanding how AI can enhance the effectiveness of mergers and acquisitions (M&amp;A).</p>
+<p>As businesses strive for efficiency, ensuring that technology like AI is integrated into their strategies is crucial. However, many organizations face barriers like high costs, integration challenges, or resistance to change. Understanding how to overcome these hurdles is essential for effective AI adoption in the complex world of M&amp;A. Let&#39;s unpack.</p>
+<h2>AI: The New Superpower in Mergers and Acquisitions</h2>
+<h3>Transforming Due Diligence</h3>
+<p>Gone are the days when reviewing hundreds of documents meant endless sampling and hoping for the best. AI helps streamline the due diligence process, enabling a more thorough evaluation of potential acquisitions. Michael highlights how AI can quickly analyze all documents, identifying red flags and exceptions that warrant human scrutiny. This demonstrates AI&#39;s vital role in making the process more effective, inspiring confidence in its adoption. </p>
+<p>The shift from a sampling approach to a comprehensive review allows financial analysts to dedicate their time to interpreting data and gaining deeper insights. Businesses can now focus on understanding the core reasons behind their M&amp;A activities without being overwhelmed by paperwork. </p>
+<h4>Key Insights:</h4>
+<ul>
+<li><p><strong>Speed &amp; Efficiency:</strong> AI expedites the document review process by analyzing all available data rather than relying on selective samples.</p>
+</li>
+<li><p><strong>Enhanced Analysis:</strong> With AI handling the mundane, human analysts can concentrate on deepening their understanding of the business, leading to informed decisions.</p>
+</li>
+</ul>
+<h3>Financial Forecasting Revolutionized</h3>
+<h3>From Reactive to Proactive</h3>
+<p>AI&#39;s impact goes beyond M&amp;A into everyday financial forecasting, transforming how finance teams operate. Instead of adhering to a strict quarterly cadence, organizations can lean towards real-time assessments, informed by daily data updates. This shift allows finance professionals to feel more in control and prepared to respond swiftly to market changes, emphasizing AI&#39;s strategic value.</p>
+<p>As Michael explains, the transition allows for various scenario analyses that were previously reserved for financial planning presentations. With AI, multiple forecasts can be generated quickly, seamlessly assessing both best-case and worst-case scenarios. </p>
+<h4>Key Takeaways:</h4>
+<ul>
+<li><p><strong>Agility in Operations:</strong> Quick data updates foster a rolling forecast approach that allows businesses to respond rapidly to market fluctuations.</p>
+</li>
+<li><p><strong>Depth of Insight:</strong> AI enables complex scenario planning that promotes better-informed strategic decisions.</p>
+</li>
+</ul>
+<h2>Preparing for Change: Business and Job Evolution</h2>
+<h3>The Human-AI Partnership</h3>
+<p>As AI assumes more routine responsibilities in finance, it&#39;s essential to recognize the new roles and skills required. The discussion highlights a future where finance professionals transition from mundane tasks to critical thinking, analytical strategizing, and relationship management. This shift can inspire a sense of opportunity for growth and development within the industry. </p>
+<p>Organizations that ignore AI integration may face challenges in retaining talent, as today&#39;s workforce seeks environments where they can leverage technology to enhance productivity. Companies that harness AI effectively can expect to attract and keep employees eager to contribute to more meaningful work.</p>
+<h4>Key Insights:</h4>
+<ul>
+<li><p><strong>Evolving Roles:</strong> As mundane tasks fade, professionals can refocus on strategic initiatives requiring human insight and ingenuity.</p>
+</li>
+<li><p><strong>Attracting Talent:</strong> A commitment to integrating AI not only improves efficiency but also enhances job satisfaction, making businesses more attractive to skilled individuals.</p>
+</li>
+</ul>
+<p>In this transformational era, it&#39;s clear that AI is reshaping the financial landscape, especially in areas like mergers and acquisitions. To thrive, technologists and business leaders must embrace these changes, leveraging AI to create more strategic and impactful roles within their organizations. </p>
+<p>Are you ready to explore how AI can revolutionize your approach to M&amp;A? </p>
+<h3>Take the Next Step</h3>
+<p>Dive deeper into this transformative journey by exploring more insights from Dr. Michael Hofer. Discover strategies to harness the power of AI in your financial practices. Connect with us, share your thoughts, and engage with the community of changemakers by following our resources. Your future in finance could be just beginning.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/en/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/en/episodes/index.html",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/en/episodes/edt-345/index.html#episode",
+  "url": "https://www.embracingdigital.org/en/episodes/edt-345/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/en/episodes/edt-345/index.html"
+  },
+  "name": "AI as a Superpower in Finance and M&A",
+  "episodeNumber": 345,
+  "datePublished": "2026-04-23",
+  "inLanguage": "en",
+  "description": "As the financial landscape rapidly evolves, understanding how to leverage AI can help CFOs and M&amp;A specialists address common challenges, turning obstacles into opportunities. Join Dr. Darren, your host of Embracing Digital Transformation, and Dr. Michael Hofer, an M&amp;A expert and seasoned fi",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/en/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/en/episodes/edt-345/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "AI as a Superpower in Finance and M&A Video",
+      "embedUrl": "https://www.youtube.com/embed/Cizq8U5vhO0"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "AI as a Superpower in Finance and M&A Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/77ea53d3-f849-41ab-be65-b2858daeecb7"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Michael Hofer",
+      "url": "https://www.embracingdigital.org/../../../en/guests/michael-hofer/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
