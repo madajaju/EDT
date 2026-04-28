@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Embracing Digital This Week | 2026-04-27 | DevOps resurgence in AI and Cybersecurity</title>
+    <meta name="description" content="This Week at a Glance This week highlights significant advancements in Digital Transformation, focusing on Ubiquitous Computing, Cybersecurity, and Artificial Intelligence. The launch of a new DevOps agent by Amazon Web Services aims to streamline CI/CD processes, essential for developers navigating">
+    
+    
+    <link rel="canonical" href="https://www.embracingdigital.org/en/briefs/edw-164/">
+    
+
+    <!-- Hreflang alternates (optional: pass `langs` into the template) -->
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Embracing Digital This Week | 2026-04-27 | DevOps resurgence in AI and Cybersecurity">
+    <meta property="og:description" content="This Week at a Glance This week highlights significant advancements in Digital Transformation, focusing on Ubiquitous Computing, Cybersecurity, and Artificial Intelligence. The launch of a new DevOps agent by Amazon Web Services aims to streamline CI/CD processes, essential for developers navigating">
+    <meta property="og:url" content="https://www.embracingdigital.org/en/briefs/edw-164/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Embracing Digital This Week | 2026-04-27 | DevOps resurgence in AI and Cybersecurity">
+    <meta name="twitter:description" content="This Week at a Glance This week highlights significant advancements in Digital Transformation, focusing on Ubiquitous Computing, Cybersecurity, and Artificial Intelligence. The launch of a new DevOps agent by Amazon Web Services aims to streamline CI/CD processes, essential for developers navigating">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="en/home/index.html"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="en/shows/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/deepdive/index.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="en/digital-transformation/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+        <!-- Right side (Languages) -->
+        <ul class="nav-right">
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main id="content" class="brief-editorial">
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+            <li><a href="en/home/index.html">Home</a></li>
+            <li><a href="en/briefs/index.html">Embracing Digital This Week</a></li>
+            <li aria-current="page">2026-04-27 | DevOps resurgence in AI and Cybersecurity</li>
+        </ol>
+    </nav>
+
+    <!-- HERO -->
+    <section class="brief-hero">
+        <div class="brief-hero-main">
+        <h1>
+            Embracing Digital This Week
+            <span class="brief-date">— 2026-04-27 | DevOps resurgence in AI and Cybersecurity</span>
+        </h1>
+
+        <!-- At a glance / summary -->
+        <div class="brief-glance">
+            
+                <section class="week-at-a-glance" aria-labelledby="week-glance-title">
+  <h2 id="week-glance-title">This Week at a Glance</h2>
+  <p>This week highlights significant advancements in Digital Transformation, focusing on Ubiquitous Computing, Cybersecurity, and Artificial Intelligence.</p>
+  <p>The launch of a new DevOps agent by Amazon Web Services aims to streamline CI/CD processes, essential for developers navigating the evolving cloud technology landscape. Concurrently, Microsoft’s AI enhancements in Azure DevOps are optimizing engineering resources, crucial for improving productivity in an increasingly automated environment.</p>
+  
+</section>
+            
+        </div>
+
+        <!-- CTAs -->
+        <div class="brief-ctas">
+            
+                <a class="listen-now" href="https://youtu.be/j_KeURPOCHA" target="_blank" rel="noopener">
+                    Watch Now
+                </a>
+            
+            
+                <a class="listen-now" href="https://share.transistor.fm/s/f2efeb50" target="_blank" rel="noopener">
+                    Listen Now
+                </a>
+            
+            <a class="listen-now" href="en/newsletter.html">Subscribe</a>
+            <a class="listen-now" href="en/community.html">Join Community</a>
+        </div>
+            <!-- Chips: prefer explicit tags, otherwise pillar anchors -->
+            
+                <nav class="pillar-chips" aria-label="Jump to coverage by pillar">
+                    
+                        <a href="#ubiquitous-computing">Ubiquitous Computing</a>
+                    
+                        <a href="#cybersecurity">Cybersecurity</a>
+                    
+                        <a href="#artificial-intelligence">Artificial Intelligence</a>
+                    
+                        <a href="#embracing-digital-transformation">Embracing Digital Transformation</a>
+                    
+                </nav>
+            
+        </div>
+        <div class="brief-hero-side" aria-label="Episode media">
+        
+            <div class="media-item media-video" aria-label="Episode media">
+                
+                        <div class="video-embed">
+                            
+
+                            <iframe width="560" height="315" 
+                                    src="https://www.youtube.com/embed/j_KeURPOCHA"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                
+
+                
+                    <div class="media-item media-audio">
+                        <div class="audio-embed">
+                            
+                            <iframe
+                                    width="100%"
+                                    height="180"
+                                    frameborder="0"
+                                    scrolling="no"
+                                    src="https://share.transistor.fm/e/f2efeb50"
+                                    title="Embracing Digital This Week audio"
+                                    loading="lazy"
+                            ></iframe>
+
+                        </div>
+                        <!-- brief.listen_embed can be the HTML Transistor.fm gives you -->
+                        
+                    </div>
+                
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- TOP STORIES -->
+    
+        <section class="brief-top-stories">
+            <h2>Top Stories This Week</h2>
+
+            
+            <article class="top-story">
+                
+                    <img src="images/ubiquitous-computing.jpg"
+                         alt="Amazon Web Services has announced the general availability of its new DevOps age…"
+                         loading="lazy">
+                
+
+                <div class="top-story-content">
+                    
+                        <h3>Amazon Web Services has announced the general availability of its new DevOps age…</h3>
+                    
+
+                    
+                        <p>Amazon Web Services has announced the general availability of its new DevOps agent. This tool aims to streamline CI/CD operations for developers. With enhanced integrations and monitoring features, it simplifies deployment workflows significantly. This advancement aligns with industry trends focusing on maximizing engineering efficiency and productivity. As businesses lean on cloud-native technologies, staying updated in DevOps practices is essential for remaining competitive in the market.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://www.infoq.com/news/2026/04/aws-devops-agent-ga/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+
+                    
+                </div>
+            </article>
+            
+            <article class="top-story">
+                
+                    <img src="images/cybersecurity.jpg"
+                         alt="AI technology is influential in shaping the future of cybersecurity. Dario Amode…"
+                         loading="lazy">
+                
+
+                <div class="top-story-content">
+                    
+                        <h3>AI technology is influential in shaping the future of cybersecurity. Dario Amode…</h3>
+                    
+
+                    
+                        <p>AI technology is influential in shaping the future of cybersecurity. Dario Amodei, CEO of Anthropic, warns of potential alignments with hacking exploits in the AI landscape. As AI models like Claude Mythos evolve, they improve defenses but also raise new challenges. Businesses must adapt their security approaches to these advancements. The implications for safeguarding sensitive information are significant. Understanding AI's evolving role is crucial for businesses navigating digital transformation.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://fortune.com/2026/04/23/anthropic-mythos-leak-dario-amodei-ceo-cybersecurity-hackers-exploits-ai/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://theconversation.com/ai-has-crossed-a-threshold-what-claude-mythos-means-for-the-future-of-cybersecurity-281308" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+
+                    
+                </div>
+            </article>
+            
+            <article class="top-story">
+                
+                    <img src="images/artificial-intelligence.jpg"
+                         alt="The Cannes AI Film Festival has raised eyebrows about the future of filmmaking. …"
+                         loading="lazy">
+                
+
+                <div class="top-story-content">
+                    
+                        <h3>The Cannes AI Film Festival has raised eyebrows about the future of filmmaking. …</h3>
+                    
+
+                    
+                        <p>The Cannes AI Film Festival has raised eyebrows about the future of filmmaking. Questions arise as UK departments battle over the energy demands of AI-driven data centers. As technology evolves, the film industry must navigate the challenges posed by AI, including environmental concerns. Technology leaders must ensure a balance between innovation and sustainability. The convergence of creativity and responsibility will define the industry's next chapter.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://www.theguardian.com/technology/2026/apr/26/cannes-ai-film-festival-raises-eyebrows-questions-future" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.theguardian.com/technology/2026/apr/26/uk-departments-at-odds-over-energy-demands-of-ai-datacentres" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+
+                    
+                </div>
+            </article>
+            
+            <article class="top-story">
+                
+                    <img src="images/embracing-digital transformation.jpg"
+                         alt="In the latest episode of *Embracing Digital Transformation*, Dr. Darren chats wi…"
+                         loading="lazy">
+                
+
+                <div class="top-story-content">
+                    
+                        <h3>In the latest episode of *Embracing Digital Transformation*, Dr. Darren chats wi…</h3>
+                    
+
+                    
+                        <p>In the latest episode of *Embracing Digital Transformation*, Dr. Darren chats with Richard Brew about the vital role of mentorship in project management. They discuss how mentorship can bridge the gap between experienced professionals and newcomers, enhancing skill development and project outcomes. Listeners will learn how to cultivate a strong mentorship culture within organizations, the impact of AI in project management, and practical steps for effective mentoring. Tune in for valuable insights that could transform your workplace!</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="http://www.embracingdigital.org/en/episodes/edt-346" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="http://www.embracingdigital.org/en/episodes/edt-345" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+
+                    
+                </div>
+            </article>
+            
+        </section>
+    
+
+    <!-- FULL COVERAGE BY PILLAR -->
+    <section class="brief-pillars">
+        <h2>Full Coverage by Pillar</h2>
+
+        
+        <section class="pillar-section" id="ubiquitous-computing">
+            <h3>Ubiquitous Computing</h3>
+
+            
+            <article class="pillar-article">
+        <div class="pillar-article-image">
+            
+                <img src="images/ubiquitous-computing.jpg"
+                     alt="Amazon Web Services has announced the general availability of its new DevOps age…"
+                     loading="lazy">
+            
+        </div>
+
+        <div class="pillar-article-content">
+                    
+                        <h4>Amazon Web Services has announced the general availability of its new DevOps age…</h4>
+                    
+
+                    
+                        <p>Amazon Web Services has announced the general availability of its new DevOps agent. This tool aims to streamline CI/CD operations for developers. With enhanced integrations and monitoring features, it simplifies deployment workflows significantly. This advancement aligns with industry trends focusing on maximizing engineering efficiency and productivity. As businesses lean on cloud-native technologies, staying updated in DevOps practices is essential for remaining competitive in the market.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://www.infoq.com/news/2026/04/aws-devops-agent-ga/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+            <article class="pillar-article">
+        <div class="pillar-article-image">
+            
+                <img src="images/ubiquitous-computing.jpg"
+                     alt="A critical flaw in Microsoft's GitHub could jeopardize CI/CD pipelines. Tenable …"
+                     loading="lazy">
+            
+        </div>
+
+        <div class="pillar-article-content">
+                    
+                        <h4>A critical flaw in Microsoft's GitHub could jeopardize CI/CD pipelines. Tenable …</h4>
+                    
+
+                    
+                        <p>A critical flaw in Microsoft's GitHub could jeopardize CI/CD pipelines. Tenable has highlighted the potential risks associated with this vulnerability. As organizations adopt automation in development, security becomes paramount. This incident emphasizes the need for rigorous security practices within DevOps. Companies must prioritize safeguarding their development environments to avoid costly breaches. Understanding these risks is crucial for maintaining trust and integrity in software delivery.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://devops.com/critical-microsoft-github-flaw-highlights-dangers-to-ci-cd-pipelines-tenable/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+            <article class="pillar-article">
+        <div class="pillar-article-image">
+            
+                <img src="images/ubiquitous-computing.jpg"
+                     alt="Microsoft is leveraging AI in Azure DevOps to reclaim valuable engineering time.…"
+                     loading="lazy">
+            
+        </div>
+
+        <div class="pillar-article-content">
+                    
+                        <h4>Microsoft is leveraging AI in Azure DevOps to reclaim valuable engineering time.…</h4>
+                    
+
+                    
+                        <p>Microsoft is leveraging AI in Azure DevOps to reclaim valuable engineering time. By automating repetitive tasks, this initiative maximizes developer productivity. The push for AI solutions demonstrates a significant shift in how companies can optimize their development processes. As organizations seek to enhance their operational efficiency, exploring such innovative technologies becomes essential. Adapting to these advancements can drive digital transformation, ultimately benefiting business outcomes.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://www.microsoft.com/insidetrack/blog/reclaiming-engineering-time-with-ai-in-azure-devops-at-microsoft/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+        </section>
+        
+        <section class="pillar-section" id="cybersecurity">
+            <h3>Cybersecurity</h3>
+
+            
+            <article class="pillar-article">
+        <div class="pillar-article-image">
+            
+                <img src="images/cybersecurity.jpg"
+                     alt="AI technology is influential in shaping the future of cybersecurity. Dario Amode…"
+                     loading="lazy">
+            
+        </div>
+
+        <div class="pillar-article-content">
+                    
+                        <h4>AI technology is influential in shaping the future of cybersecurity. Dario Amode…</h4>
+                    
+
+                    
+                        <p>AI technology is influential in shaping the future of cybersecurity. Dario Amodei, CEO of Anthropic, warns of potential alignments with hacking exploits in the AI landscape. As AI models like Claude Mythos evolve, they improve defenses but also raise new challenges. Businesses must adapt their security approaches to these advancements. The implications for safeguarding sensitive information are significant. Understanding AI's evolving role is crucial for businesses navigating digital transformation.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://fortune.com/2026/04/23/anthropic-mythos-leak-dario-amodei-ceo-cybersecurity-hackers-exploits-ai/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://theconversation.com/ai-has-crossed-a-threshold-what-claude-mythos-means-for-the-future-of-cybersecurity-281308" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+            <article class="pillar-article">
+        <div class="pillar-article-image">
+            
+                <img src="images/cybersecurity.jpg"
+                     alt="The National Institute of Standards and Technology is launching an Operational T…"
+                     loading="lazy">
+            
+        </div>
+
+        <div class="pillar-article-content">
+                    
+                        <h4>The National Institute of Standards and Technology is launching an Operational T…</h4>
+                    
+
+                    
+                        <p>The National Institute of Standards and Technology is launching an Operational Technology Visibility Project. This initiative aims to improve threat detection and response across various sectors. By enhancing visibility into complex system operations, organizations can better mitigate risks. As cyber threats grow in sophistication, proactive measures are essential for defending infrastructure. This project highlights the importance of adopting advanced monitoring technologies in today’s digital landscape.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://federalnewsnetwork.com/cybersecurity/2026/04/nist-cyber-center-to-launch-ot-visibility-project/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+            <article class="pillar-article">
+        <div class="pillar-article-image">
+            
+                <img src="images/cybersecurity.jpg"
+                     alt="The EU is strengthening its defenses against cyber threats with a new cybersecur…"
+                     loading="lazy">
+            
+        </div>
+
+        <div class="pillar-article-content">
+                    
+                        <h4>The EU is strengthening its defenses against cyber threats with a new cybersecur…</h4>
+                    
+
+                    
+                        <p>The EU is strengthening its defenses against cyber threats with a new cybersecurity tool. This initiative aims to enhance cooperation among member states and improve resilience against attacks. Meanwhile, nearly half of cybersecurity professionals express a desire to leave their jobs due to burnout and stress. Addressing workforce challenges is vital as countries invest in cybersecurity skills. The intersection of technology and workforce health is crucial for national security and business sustainability.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://dig.watch/updates/eu-tool-strengthens-cybersecurity-capability" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.zdnet.com/article/nearly-half-of-cybersecurity-pros-want-to-quit-heres-why/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+        </section>
+        
+        <section class="pillar-section" id="artificial-intelligence">
+            <h3>Artificial Intelligence</h3>
+
+            
+            <article class="pillar-article">
+        <div class="pillar-article-image">
+            
+                <img src="images/artificial-intelligence.jpg"
+                     alt="The Cannes AI Film Festival has raised eyebrows about the future of filmmaking. …"
+                     loading="lazy">
+            
+        </div>
+
+        <div class="pillar-article-content">
+                    
+                        <h4>The Cannes AI Film Festival has raised eyebrows about the future of filmmaking. …</h4>
+                    
+
+                    
+                        <p>The Cannes AI Film Festival has raised eyebrows about the future of filmmaking. Questions arise as UK departments battle over the energy demands of AI-driven data centers. As technology evolves, the film industry must navigate the challenges posed by AI, including environmental concerns. Technology leaders must ensure a balance between innovation and sustainability. The convergence of creativity and responsibility will define the industry's next chapter.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://www.theguardian.com/technology/2026/apr/26/cannes-ai-film-festival-raises-eyebrows-questions-future" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.theguardian.com/technology/2026/apr/26/uk-departments-at-odds-over-energy-demands-of-ai-datacentres" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+            <article class="pillar-article">
+        <div class="pillar-article-image">
+            
+                <img src="images/artificial-intelligence.jpg"
+                     alt="Artificial intelligence is steadily becoming integral to American lawmaking, inf…"
+                     loading="lazy">
+            
+        </div>
+
+        <div class="pillar-article-content">
+                    
+                        <h4>Artificial intelligence is steadily becoming integral to American lawmaking, inf…</h4>
+                    
+
+                    
+                        <p>Artificial intelligence is steadily becoming integral to American lawmaking, influencing policy and governance. This trend raises crucial discussions about ethics and accountability in legislative processes. As the capabilities of AI advance, lawmakers must consider the implications for democracy and representation. Leaders in technology and governance must collaborate to ensure AI enhances, rather than undermines, public trust and the decision-making process.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://www.economist.com/united-states/2026/04/23/artificial-intelligence-is-creeping-into-american-lawmaking" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+            <article class="pillar-article">
+        <div class="pillar-article-image">
+            
+                <img src="images/artificial-intelligence.jpg"
+                     alt="Meta plans to reduce its workforce by 10% to reallocate resources toward AI inve…"
+                     loading="lazy">
+            
+        </div>
+
+        <div class="pillar-article-content">
+                    
+                        <h4>Meta plans to reduce its workforce by 10% to reallocate resources toward AI inve…</h4>
+                    
+
+                    
+                        <p>Meta plans to reduce its workforce by 10% to reallocate resources toward AI investments. Concurrently, AI is transforming healthcare systems across the European Union, highlighting varying levels of readiness. Businesses must adapt to these shifts while ensuring that human capital is aligned with technological advancements. The health sector's adaptability will be crucial in determining the efficacy and equity of AI solutions across different regions.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://www.france24.com/en/technology/20260424/meta-to-cut-workforce-by-ten-per-cent-as-artificial-intelligence-spending-surges" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://unric.org/en/artificial-intelligence-is-reshaping-health-systems-state-of-readiness-across-the-european-union/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+        </section>
+        
+        <section class="pillar-section" id="embracing-digital-transformation">
+            <h3>Embracing Digital Transformation</h3>
+
+            
+            <article class="pillar-article">
+        <div class="pillar-article-image">
+            
+                <img src="images/embracing-digital transformation.jpg"
+                     alt="In the latest episode of *Embracing Digital Transformation*, Dr. Darren chats wi…"
+                     loading="lazy">
+            
+        </div>
+
+        <div class="pillar-article-content">
+                    
+                        <h4>In the latest episode of *Embracing Digital Transformation*, Dr. Darren chats wi…</h4>
+                    
+
+                    
+                        <p>In the latest episode of *Embracing Digital Transformation*, Dr. Darren chats with Richard Brew about the vital role of mentorship in project management. They discuss how mentorship can bridge the gap between experienced professionals and newcomers, enhancing skill development and project outcomes. Listeners will learn how to cultivate a strong mentorship culture within organizations, the impact of AI in project management, and practical steps for effective mentoring. Tune in for valuable insights that could transform your workplace!</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="http://www.embracingdigital.org/en/episodes/edt-346" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="http://www.embracingdigital.org/en/episodes/edt-345" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+            <article class="pillar-article">
+        <div class="pillar-article-image">
+            
+                <img src="images/embracing-digital transformation.jpg"
+                     alt="Join Dr. Darren and M&A expert Dr. Michael Hofer on the latest episode of *Embra…"
+                     loading="lazy">
+            
+        </div>
+
+        <div class="pillar-article-content">
+                    
+                        <h4>Join Dr. Darren and M&A expert Dr. Michael Hofer on the latest episode of *Embra…</h4>
+                    
+
+                    
+                        <p>Join Dr. Darren and M&A expert Dr. Michael Hofer on the latest episode of *Embracing Digital Transformation*, where they explore how AI is reshaping the finance landscape. Discover how AI simplifies decision-making, enhances due diligence, and identifies M&A opportunities effectively. This episode provides insights for CFOs looking to transition into strategic roles and navigate the evolving market through AI adoption. Tune in to learn how to harness the power of AI for your business growth!</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://embracingdigitaltransformation.com/episode2" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+        </section>
+        
+    </section>
+</main>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
