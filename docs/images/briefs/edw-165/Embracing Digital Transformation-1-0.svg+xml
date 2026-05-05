@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="6in"
+     height="9in"
+     viewBox="0 0 1800 2700"
+     version="1.1">
+  <title>Becoming AI-Augmented Front Cover — Refined</title>
+  <desc>Refined front cover with added depth, layered emergence, and stronger focal hierarchy.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18002F"/>
+      <stop offset="52%" stop-color="#3E006D"/>
+      <stop offset="100%" stop-color="#7D32E8"/>
+    </linearGradient>
+
+    <radialGradient id="haloMain" cx="50%" cy="58%" r="52%">
+      <stop offset="0%" stop-color="#E7CBFF" stop-opacity="0.42"/>
+      <stop offset="40%" stop-color="#C68DFF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#2B004D" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="haloCore" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#FFF4DD" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#FFDFA6" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FFDFA6" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="hexStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2E5FF"/>
+      <stop offset="58%" stop-color="#CFA9FF"/>
+      <stop offset="100%" stop-color="#FFD8A0"/>
+    </linearGradient>
+
+    <linearGradient id="hexStrokeSoft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DABEFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FFC980" stop-opacity="0.35"/>
+    </linearGradient>
+
+    <radialGradient id="innerFill" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#FFF4DE" stop-opacity="0.92"/>
+      <stop offset="60%" stop-color="#D6B3FF" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#4B0082" stop-opacity="0.08"/>
+    </radialGradient>
+
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="tightGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadowGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#0B0018" flood-opacity="0.34"/>
+    </filter>
+
+    <style>
+      .series {
+        font-family: Montserrat, Arial, sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        fill: #dfe9f8;
+        opacity: 0.95;
+      }
+      .title {
+        font-family: Montserrat, Arial, sans-serif;
+        font-size: 156px;
+        font-weight: 800;
+        letter-spacing: 0.4px;
+        fill: #ffffff;
+      }
+      .subtitle {
+        font-family: Montserrat, Arial, sans-serif;
+        font-size: 52px;
+        font-weight: 500;
+        letter-spacing: 0.35px;
+        fill: #e9f0fa;
+      }
+      .author {
+        font-family: Montserrat, Arial, sans-serif;
+        font-size: 62px;
+        font-weight: 500;
+        fill: #d6e0ef;
+      }
+      .mesh {
+        stroke: #D7BEFF;
+        stroke-opacity: 0.2;
+        stroke-width: 2;
+      }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1800" height="2700" fill="url(#bg)"/>
+  <ellipse cx="900" cy="1710" rx="620" ry="610" fill="url(#haloMain)"/>
+
+  <!-- subtle field lines to imply emergence / structure -->
+  <g opacity="0.55">
+    <path d="M520 1510 C680 1370, 1120 1370, 1280 1510" class="mesh" fill="none"/>
+    <path d="M560 1660 C710 1540, 1090 1540, 1240 1660" class="mesh" fill="none"/>
+    <path d="M610 1810 C740 1715, 1060 1715, 1190 1810" class="mesh" fill="none"/>
+  </g>
+
+  <text x="900" y="250" text-anchor="middle" class="series">THE AI-AUGMENTED SERIES</text>
+
+  <text x="900" y="640" text-anchor="middle" class="title">
+    <tspan x="900" dy="0">Becoming</tspan>
+    <tspan x="900" dy="170">AI-Augmented</tspan>
+  </text>
+
+  <text x="900" y="1038" text-anchor="middle" class="subtitle">
+    <tspan x="900" dy="0">Multiply Your Expertise in the Age of AI</tspan>
+  </text>
+
+  <g transform="translate(0 250)" filter="url(#shadowGlow)">
+    <!-- outer emergence layers -->
+    <polygon points="900,940 1323.5,1185 1323.5,1675 900,1920 476.5,1675 476.5,1185"
+             fill="none"
+             stroke="url(#hexStrokeSoft)"
+             stroke-width="8"
+             stroke-linejoin="round"
+             opacity="0.55"/>
+
+    <polygon points="900,985 1285.5,1208 1285.5,1652 900,1875 514.5,1652 514.5,1208"
+             fill="none"
+             stroke="url(#hexStrokeSoft)"
+             stroke-width="10"
+             stroke-linejoin="round"
+             opacity="0.68"/>
+
+    <!-- main structure -->
+    <g filter="url(#softGlow)">
+      <polygon points="900,1035 1263.7,1245 1263.7,1665 900,1875 536.3,1665 536.3,1245"
+               fill="none"
+               stroke="url(#hexStroke)"
+               stroke-width="18"
+               stroke-linejoin="round"
+               opacity="0.96"/>
+
+      <polygon points="900,1182 1128.7,1314 1128.7,1578 900,1710 671.3,1578 671.3,1314"
+               fill="url(#innerFill)"
+               stroke="url(#hexStroke)"
+               stroke-width="12"
+               stroke-linejoin="round"
+               opacity="0.98"/>
+
+      <!-- subtle inner connectors -->
+      <line x1="900" y1="1182" x2="900" y2="1710" stroke="#E9D7FF" stroke-opacity="0.3" stroke-width="2"/>
+      <line x1="671.3" y1="1314" x2="1128.7" y2="1578" stroke="#E9D7FF" stroke-opacity="0.18" stroke-width="2"/>
+      <line x1="1128.7" y1="1314" x2="671.3" y2="1578" stroke="#E9D7FF" stroke-opacity="0.18" stroke-width="2"/>
+    </g>
+
+    <!-- core ignition -->
+    <g filter="url(#tightGlow)">
+      <ellipse cx="900" cy="1448" rx="158" ry="158" fill="url(#haloCore)" opacity="0.88"/>
+      <polygon points="900,1328 1007.4,1390 1007.4,1514 900,1576 792.6,1514 792.6,1390"
+               fill="#FFF2D4"
+               stroke="#FFE2A6"
+               stroke-width="6"
+               stroke-linejoin="round"
+               opacity="0.96"/>
+      <polygon points="900,1372 969.3,1412 969.3,1492 900,1532 830.7,1492 830.7,1412"
+               fill="#FFFFFF"
+               fill-opacity="0.6"
+               stroke="#FFF3D1"
+               stroke-opacity="0.8"
+               stroke-width="2.5"
+               stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <text x="900" y="2520" text-anchor="middle" class="author">Dr. Darren Pulsipher</text>
+</svg>
