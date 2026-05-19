@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Where Execution Breaks Down | Digital Transformation Architect</title>
+    <meta name="description" content="Execution breaks down when the Process Domain and Digital Domain drift apart, leaving technology to quietly reshape how work actually happens. This episode explores common failure points in process-to-technology mappings, including workflow, decision rights, evidence, data dependencies, exceptions, ">
+    
+    
+    <link rel="canonical" href="https://www.embracingdigital.org/en/lectures/dta-18/index.html">
+    
+
+    <!-- Hreflang alternates (optional: pass `langs` into the template) -->
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Where Execution Breaks Down | Digital Transformation Architect">
+    <meta property="og:description" content="Execution breaks down when the Process Domain and Digital Domain drift apart, leaving technology to quietly reshape how work actually happens. This episode explores common failure points in process-to-technology mappings, including workflow, decision rights, evidence, data dependencies, exceptions, ">
+    <meta property="og:url" content="https://www.embracingdigital.org/en/lectures/dta-18/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Where Execution Breaks Down | Digital Transformation Architect">
+    <meta name="twitter:description" content="Execution breaks down when the Process Domain and Digital Domain drift apart, leaving technology to quietly reshape how work actually happens. This episode explores common failure points in process-to-technology mappings, including workflow, decision rights, evidence, data dependencies, exceptions, ">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="en/home/index.html"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="en/shows/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="en/digital-transformation/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+        <!-- Right side (Languages) -->
+        <ul class="nav-right">
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../en/home/index.html">Home</a></li>
+        <li><a href="../../../en/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 18: Where Execution Breaks Down</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/en/lectures/dta-18/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/en/lectures/dta-18/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 18</span>
+                <span class="episode-title">Where Execution Breaks Down</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-05-20" itemprop="datePublished">2026-05-20</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="18"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-05-19T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Where Execution Breaks Down Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/wHjBUxmgjKo">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/wHjBUxmgjKo"
+                            title="Where Execution Breaks Down Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Where Execution Breaks Down Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/69041430">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/69041430"
+                            title="Where Execution Breaks Down Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-05-20<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Execution breaks down when the Process Domain and Digital Domain drift apart, leaving technology to quietly reshape how work actually happens. This episode explores common failure points in process-to-technology mappings, including workflow, decision rights, evidence, data dependencies, exceptions, and feedback. It also explains how Governance and Risk Management make those mappings explicit, controlled, and resilient.</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>Where Execution Breaks Down</h1>
+<p><strong>Date:</strong> 2026-05-08<br><strong>Keywords:</strong> digital transformation, execution, governance, failure points, integration, Process Domain, Digital Domain, process-to-technology mapping  </p>
+<p>Digital transformation rarely breaks down solely because a tool is defective or a team is unwilling to change. More often, execution falters when the organization loses control over the relationship between how work is supposed to flow and how digital systems actually manage that work.</p>
+<p>That relationship exists at the boundary between the <strong>Process Domain</strong> and the <strong>Digital Domain</strong> in O-DXA. The Process Domain defines the intended flow of work: workflows, governance, operating practices, risk controls, support paths, decisions, evidence, and feedback loops. The Digital Domain implements and constrains that work through platforms, software, data, automation, integrations, analytics, and interfaces.</p>
+<p>Execution depends on the mapping between the two. When the process states one thing and the technology enables another, the organization inevitably executes according to the technology. This may be useful when the system accurately represents the process. However, it becomes risky when system configuration quietly overrides process architecture.</p>
+<p>A process is not transformed simply because it has been digitized. Technology can accelerate a strong process, expose a weak process, or hard-code a broken one. The architect&#39;s concern is whether the Digital Domain preserves the intent, controls, handoffs, evidence, and feedback loops of the Process Domain.</p>
+<hr>
+<h2>The Boundary Where Execution Fails</h2>
+<p>Execution breakdowns often manifest as operational friction. Teams frequently enter the same information in multiple places. Data arrives late, incomplete, or inconsistent. Approvals stagnate because no one is sure who has authority. Exceptions are processed through emails or spreadsheets because the system only supports the standard path. Leaders struggle to pinpoint where work is delayed due to a lack of useful metrics on process health.</p>
+<p>These symptoms can easily be misclassified as technology problems. While they sometimes are, in the context of transformation work, they often indicate an incomplete or unmanaged process-to-technology mapping.</p>
+<p>The Process Domain may define a workflow with specific owners, handoffs, decision rights, control points, and evidence requirements. Conversely, the Digital Domain might implement a different workflow with different states, queues, permissions, notifications, data fields, and routing logic. The gap between the two is where execution starts to drift.</p>
+<p>This drift matters because digital systems are not passive containers for processes; they shape behavior. They dictate what can be submitted, routed, approved, rejected, escalated, measured, automated, and audited. When the system representation is inaccurate, the operating model changes, even if no one has formally approved that change.</p>
+<p>The outcome is a familiar transformation pattern: the process appears reasonable on paper, the system seems to function during testing, but actual execution relies on informal workarounds. People compensate for missing data, unclear authority, inaccessible evidence, or unsupported exception paths. The organization may still get work done, but the process is no longer governed, observable, or resilient.</p>
+<hr>
+<h2>Where the Mapping Breaks</h2>
+<p>Process-to-technology mappings become fragile when crucial aspects of the process are left implicit. A workflow diagram alone is insufficient. Architects must inspect how the workflow is represented, automated, measured, and constrained within the digital environment.</p>
+<p>One common failure point is <strong>workflow mismatch</strong>. The documented process has steps, owners, handoffs, and states, but the system utilizes different queues, status values, routing rules, or completion conditions. Teams are then faced with a choice: work around the system or allow it to dictate behavior that the process never intended.</p>
+<p>Another failure point is <strong>decision-right mismatch</strong>. The process may clarify who can approve, reject, escalate, override, or accept risk. The system may only specify who has permission to click a button. This distinction is crucial: permission to execute an action does not equate to authority to make the decision behind that action.</p>
+<p><strong>Evidence mismatch</strong> creates another form of drift. Governance may require proof of a review occurring, a control being checked, or an exception being justified. If the system fails to capture that evidence at the appropriate point in the flow, accountability becomes retrospective and manual. The organization reconstructs occurrences after the fact instead of preserving evidence as work progresses.</p>
+<p><strong>Data dependency mismatch</strong> is especially damaging in digital transformation because automation, analytics, and integration rely heavily on data quality. A process may assume that the required data are current, complete, unique, and owned. However, the digital implementation may depend on data that is duplicated, delayed, manually corrected, or governed by another system. When this occurs, automation becomes fragile and operations revert to reconciliation.</p>
+<p><strong>Exception-path mismatch</strong> is another frequent source of execution failure. Real work encompasses exceptions: missing information, unusual approvals, policy conflicts, urgent cases, service interruptions, and edge conditions. If the technology only supports the ideal path, exceptions go unnoticed. Risk accumulates outside the system while leaders continue to believe the process remains under control.</p>
+<p>Finally, <strong>feedback mismatch</strong> inhibits learning. A process might require performance monitoring, but the implementation may not yield metrics that uncover delays, rework, control failures, data defects, or exception volumes. Without feedback, the organization cannot detect degradation in execution until the failure becomes visible through complaints, missed commitments, audit findings, or operational strain.</p>
+<hr>
+<h2>Governance Makes the Mapping Explicit</h2>
+<p>Governance serves as the layer in the Process Domain that prevents technology from transforming into an accidental process designer. It outlines rules, policies, oversight mechanisms, decision frameworks, ownership, evidence requirements, standards, and change control. At the boundary between process and technology, governance makes the mapping explicit.</p>
+<p>Effective governance poses practical questions:</p>
+<ul>
+<li>Which process steps are automated, assisted, manual, or outside the system?</li>
+<li>Which roles own each workflow state, approval, escalation, and exception?</li>
+<li>What data must be captured as evidence while work is moving?</li>
+<li>Which policies must the system enforce, and which require human judgment?</li>
+<li>What technology changes necessitate review because they alter process behavior?</li>
+</ul>
+<p>These questions hold weight because configuration decisions often morph into operating-model decisions. A routing rule can shift accountability. A required field can alter what work is accepted. A permission setting can change perceived authority. A dashboard definition can modify leaders&#39; understanding of underlying happenings. An integration rule can redefine what the organization regards as a source of truth.</p>
+<p>In the absence of governance, technology teams may make reasonable localized decisions that foster enterprise-level process drift. The issue isn’t malice; it’s a lack of ownership over the process-to-technology mapping.</p>
+<p>With governance, workflow configuration, data definitions, approval rules, evidence capture, automation logic, and system changes remain traceable to process intent. Governance does not inherently slow execution. When executed effectively, it cultivates an environment conducive to faster execution as teams comprehend which decisions are delegated, standardized, require review, and must include evidence that travels with the work.</p>
+<hr>
+<h2>Risk Management Tests the Mapping</h2>
+<p>Risk Management is the Process Domain layer that investigates where the mapping can fail and what transpires when it does. It identifies, analyzes, and mitigates strategic and operational risks before they culminate in production failures.</p>
+<p>At the juncture of the Process Domain and Digital Domain, risk management should probe the assumptions embedded within technology. What occurs if a required data field is incorrect, late, missing, or inconsistent? Where might automation incorrectly accelerate decisions beyond human processes? Which manual workarounds bypass controls? Which exception paths elude governance? What are the implications of integration failures or digital system unavailability?</p>
+<p>These are not late-stage compliance inquiries but rather design questions. Risk should inform workflow controls, validation points, access rules, logging, monitoring, escalation paths, continuity plans, and exception handling before the organization relies on the implementation.</p>
+<p>When risk management is introduced too late, it can only approve, block, or document exceptions. This engenders tension without enhancing the architecture of execution. In contrast, when risk management is embedded earlier, it aids in crafting resilient mappings between process intent and digital behavior.</p>
+<p>This focus is particularly vital when transformation integrates greater automation or analytics. The more the Digital Domain transports work across systems, the more failures can propagate through data dependencies, interfaces, controls, and automated decisions. Risk Management maintains visibility and control over those dependencies.</p>
+<hr>
+<h2>Inspect the Relationship, Not Just the System</h2>
+<p>When execution falters, it’s tempting to inquire whether the system operates correctly. While this question is necessary, it&#39;s insufficient. A system can function as configured while still misrepresenting the process accurately. Conversely, a process can be documented but still be ambiguous enough to prevent consistent implementation.</p>
+<p>A more critical inquiry is whether the relationship between process and technology is governed, testable, and observable.</p>
+<p>Architects should examine whether system states align with process states, whether roles and decision rights are encoded or supported, whether evidence is captured in real-time, whether data dependencies are governed, whether validations and escalations are embedded, whether exception paths are visible, and whether feedback reveals process health.</p>
+<p>This inspection alters the diagnosis. Duplicate entries may not signal a user discipline issue; they might uncover an unresolved data ownership matter. Approval delays may not stem from staffing problems; they could highlight a decision-right mismatch. Manual reconciliation may not be a temporary workaround; it may expose a fragile integration. A gap in the dashboard may not indicate a reporting issue; it could signify that the process was never configured for feedback.</p>
+<p>Digital transformation thrives when technology embodies the process architecture instead of replacing it with accidental system behavior. This requires more than implementation discipline—it necessitates explicit governance over the mapping and integrated risk management to test where the mapping may fail.</p>
+<hr>
+<h2>Key Takeaways</h2>
+<p>Execution falters when the Process Domain and Digital Domain drift apart. The Process Domain defines how work should move, while the Digital Domain carries, automates, stores, and constrains that work. Transformation hinges on maintaining the relationship between them explicit and controlled.</p>
+<p>The most significant takeaways are:</p>
+<ul>
+<li>A digitized process is not automatically a transformed process.</li>
+<li>Technology can become the operating model when process-to-technology mappings are unclear.</li>
+<li>Common failure points include workflow mismatch, decision-right mismatch, evidence mismatch, data dependency mismatch, exception-path mismatch, and feedback mismatch.</li>
+<li>Governance clarifies process-to-technology mappings, ensuring they are explicit, owned, auditable, and change-controlled.</li>
+<li>Risk Management tests those mappings, exposing potential failure modes and defining controls for resilient execution.</li>
+<li>Architects must assess how operational procedures are depicted, automated, measured, and constrained in technology.</li>
+</ul>
+<p>Transformation fails when process intent and digital implementation drift apart. It becomes executable when the organization can verify that its systems accurately carry the process, its governance oversees the mapping, and its risk controls maintain robust mapping under actual operating conditions.</p>
+<hr>
+<h2>Listen and Go Deeper</h2>
+<p>For the companion audio in the Digital Transformation Architecture series, listen to <strong>Where Execution Breaks Down</strong> at <a href="https://embracingdigital.org/en/lectures/dta-18/index.html">embracingdigital.org</a>.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/en/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/en/episodes/index.html",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/en/lectures/dta-18/index.html#episode",
+  "url": "https://www.embracingdigital.org/en/lectures/dta-18/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/en/lectures/dta-18/index.html"
+  },
+  "name": "Where Execution Breaks Down",
+  "episodeNumber": 18,
+  "datePublished": "2026-05-20",
+  "inLanguage": "en",
+  "description": "Execution breaks down when the Process Domain and Digital Domain drift apart, leaving technology to quietly reshape how work actually happens. This episode explores common failure points in process-to-technology mappings, including workflow, decision rights, evidence, data dependencies, exceptions,",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/en/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/en/episodes/dta-18/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Where Execution Breaks Down Video",
+      "embedUrl": "https://www.youtube.com/embed/wHjBUxmgjKo"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Where Execution Breaks Down Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/69041430"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
