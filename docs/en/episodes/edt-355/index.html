@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>From Mars to Data Centers: AI that Prevents Cloud Outages. | Embracing Digital Transformation</title>
+    <meta name="description" content="Cloud outages don’t have to be a mystery—or a recurring fire drill. Host Dr. Darren interviews Dr. Helen Gu, professor at North Carolina State University and founder/CEO of InsightFinder, about how AI for cloud operations can detect, predict, and automatically fix outages before users feel the impac">
+    
+    
+    <link rel="canonical" href="https://www.embracingdigital.org/en/episodes/edt-355/index.html">
+    
+
+    <!-- Hreflang alternates (optional: pass `langs` into the template) -->
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="From Mars to Data Centers: AI that Prevents Cloud Outages. | Embracing Digital Transformation">
+    <meta property="og:description" content="Cloud outages don’t have to be a mystery—or a recurring fire drill. Host Dr. Darren interviews Dr. Helen Gu, professor at North Carolina State University and founder/CEO of InsightFinder, about how AI for cloud operations can detect, predict, and automatically fix outages before users feel the impac">
+    <meta property="og:url" content="https://www.embracingdigital.org/en/episodes/edt-355/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="From Mars to Data Centers: AI that Prevents Cloud Outages. | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Cloud outages don’t have to be a mystery—or a recurring fire drill. Host Dr. Darren interviews Dr. Helen Gu, professor at North Carolina State University and founder/CEO of InsightFinder, about how AI for cloud operations can detect, predict, and automatically fix outages before users feel the impac">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="en/home/index.html"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="en/shows/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="en/digital-transformation/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+        <!-- Right side (Languages) -->
+        <ul class="nav-right">
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../en/home/index.html">Home</a></li>
+        <li><a href="../../../en/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 355: From Mars to Data Centers: AI that Prevents Cloud Outages.</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/en/episodes/edt-355/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/en/episodes/edt-355/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 355</span>
+                <span class="episode-title">From Mars to Data Centers: AI that Prevents Cloud Outages.</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-05-28" itemprop="datePublished">2026-05-28</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="355"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-05-27T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="From Mars to Data Centers: AI that Prevents Cloud Outages. Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/v9-jpeY4xEI">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/v9-jpeY4xEI"
+                            title="From Mars to Data Centers: AI that Prevents Cloud Outages. Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="From Mars to Data Centers: AI that Prevents Cloud Outages. Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/f641ba50-fae0-429f-b12f-83fe6e4c63b8">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/f641ba50-fae0-429f-b12f-83fe6e4c63b8"
+                            title="From Mars to Data Centers: AI that Prevents Cloud Outages. Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-05-28<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Cloud outages don’t have to be a mystery—or a recurring fire drill. Host Dr. Darren interviews Dr. Helen Gu, professor at North Carolina State University and founder/CEO of InsightFinder, about how AI for cloud operations can detect, predict, and automatically fix outages before users feel the impact.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li>AI can move beyond simple alerting to <strong>predictive outage prevention</strong>, spotting early warning signs before they become incidents.</li>
+<li><strong>Unsupervised machine learning</strong> helps discover hidden patterns in noisy machine data without requiring large sets of labeled examples.</li>
+<li>Real-world cloud environments are complex, with thousands of parameters, dynamic workloads, and interacting microservices that make manual troubleshooting difficult.</li>
+<li>A <strong>closed-loop feedback system</strong> lets teams review AI predictions, correct mistakes, and continuously improve model accuracy.</li>
+<li>InsightFinder’s <strong>composite AI</strong> approach combines predictive AI, causal inference, behavior learning, and small language models for more reliable operations.</li>
+<li>The same data-driven approach can support <strong>cloud monitoring, edge environments, critical infrastructure, and other machine-generated data streams</strong>.</li>
+</ul>
+<h2>Chapters</h2>
+<ul>
+<li>00:00 Introduction to AI that prevents cloud outages</li>
+<li>01:05 Helen Gu’s origin story in NASA-funded Mars research</li>
+<li>04:10 From video streaming on Mars to machine learning for reliability</li>
+<li>07:00 Why machine data is harder than it looks</li>
+<li>09:20 Unsurvised learning vs. supervised learning</li>
+<li>12:10 From research to Google Cloud anomaly detection</li>
+<li>14:40 Detection, prediction, and automatic remediation</li>
+<li>17:10 Why cloud systems are so complex</li>
+<li>19:45 The future of AI agents, models, and infrastructure monitoring</li>
+<li>23:10 Hallucinations, false positives, and feedback loops</li>
+<li>26:00 Composite AI and online learning in production</li>
+<li>29:10 Adapting AI models to different environments</li>
+<li>32:05 Fast deployment and time to value</li>
+</ul>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/helen-gu/index.html" itemprop="url">
+                <span itemprop="name">Helen Gu</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>AI for Cloud Outage Prevention: How Predictive Analytics and Self-Healing Systems Are Changing IT</h1>
+<h2>Why outage prevention is the next AI frontier</h2>
+<p>What if your infrastructure could spot a cloud outage before users ever noticed it? That’s the promise behind AI-powered outage prevention, and it’s moving fast from research labs into real-world production environments.</p>
+<p>Doctor Helen Gu, professor at North Carolina State University and founder of Insight Finder, has spent decades building AI systems that detect, predict, and automatically fix failures. Her work shows why predictive analytics, anomaly detection, and self-healing systems matter for technologists and business leaders alike: downtime is expensive, and prevention is far better than repair.</p>
+<h2>From Mars streaming to modern cloud reliability</h2>
+<h3>How AI started solving hard systems problems</h3>
+<p>Helen’s path into AI began long before today’s generative AI boom. Her early research, funded by NASA, focused on making Mars-to-Earth video streaming reliable by using neural networks to predict resource usage from video content.</p>
+<p>That same idea evolved into a broader mission: using machine learning to keep complex distributed systems stable. Instead of analyzing only text, image, or video, her team focused on machine logs, telemetry, and application data—the messy signals that often reveal trouble before an outage happens.</p>
+<h3>Why human operators can’t catch everything</h3>
+<p>Modern cloud environments are too dynamic for manual monitoring alone. A single server can run dozens of applications, each producing hundreds of metrics that fluctuate constantly. When those signals combine across microservices, APIs, and containers, the root cause of a failure can be hard to isolate.</p>
+<p>That’s where AI helps. It can detect hidden patterns, identify resource depletion early, and narrow down which component is causing the issue before the problem spreads.</p>
+<h4>Key takeaways</h4>
+<ul>
+<li><p>Cloud systems are too complex for threshold-only monitoring.</p>
+</li>
+<li><p>Early warning signals often appear in logs and telemetry.</p>
+</li>
+<li><p>AI can localize failures faster than manual troubleshooting.</p>
+</li>
+</ul>
+<h2>Why unsupervised learning and feedback loops matter</h2>
+<h3>Learning from patterns without hand-labeled data</h3>
+<p>One of the biggest challenges in system reliability is that there is rarely enough labeled training data for every possible failure. Helen’s team moved toward unsupervised learning, which means the model learns patterns without being told in advance what is “normal” or “bad.”</p>
+<p>For business leaders, that matters because outages rarely look identical. AI models trained only on fixed rules can miss subtle issues, while unsupervised and online learning systems adapt as the environment changes.</p>
+<h3>Closing the loop with human feedback</h3>
+<p>Helen also emphasized that AI should not be trusted blindly. Her approach combines multiple techniques—predictive AI, causal inference, behavior learning, and small language models—into a composite system that improves over time.</p>
+<p>Just as important, users can review outputs and label predictions as good or bad. That feedback creates a closed loop, helping the model become more accurate without requiring constant manual rework.</p>
+<h4>Key takeaways</h4>
+<ul>
+<li><p>Unsupervised learning is ideal when labels are scarce.</p>
+</li>
+<li><p>AI should support operators, not replace judgment.</p>
+</li>
+<li><p>Feedback loops improve accuracy over time.</p>
+</li>
+</ul>
+<h2>The future: self-healing systems across cloud, edge, and AI agents</h2>
+<h3>From detection to automatic correction</h3>
+<p>The next stage isn’t just spotting an outage. It’s rerouting traffic, scaling resources, adjusting parameters, and correcting problems automatically before users feel the impact.</p>
+<p>Helen sees this becoming even more important as systems expand beyond traditional cloud into edge environments, AI agents, and mixed infrastructure. The monitoring challenge now spans models, data, hardware, and human interactions—all at once.</p>
+<h3>Why this matters for critical infrastructure</h3>
+<p>These techniques are especially valuable where failure has real-world consequences: defense systems, power plants, water treatment, and industrial operations. In those settings, predictive prevention is not just efficient—it’s essential.</p>
+<p>Helen’s work is a reminder that AI becomes most powerful when it is practical, measurable, and designed for high-stakes environments.</p>
+<h2>Listen, learn, and share</h2>
+<p>If you care about cloud reliability, AI operations, or the future of self-healing systems, listen to the full episode and explore more from Embracing Digital Transformation. Share this post with your team, leave a comment with your biggest outage-prevention challenge, and join the community at <strong>EmbracingDigital.org</strong> for more insights.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/en/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/en/episodes/index.html",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/en/episodes/edt-355/index.html#episode",
+  "url": "https://www.embracingdigital.org/en/episodes/edt-355/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/en/episodes/edt-355/index.html"
+  },
+  "name": "From Mars to Data Centers: AI that Prevents Cloud Outages.",
+  "episodeNumber": 355,
+  "datePublished": "2026-05-28",
+  "inLanguage": "en",
+  "description": "Cloud outages don't have to be a mystery—or a recurring fire drill. Host Dr. Darren interviews Dr. Helen Gu, professor at North Carolina State University and founder/CEO of InsightFinder, about how AI for cloud operations can detect, predict, and automatically fix outages before users feel the impac",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/en/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/en/episodes/edt-355/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "From Mars to Data Centers: AI that Prevents Cloud Outages. Video",
+      "embedUrl": "https://www.youtube.com/embed/v9-jpeY4xEI"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "From Mars to Data Centers: AI that Prevents Cloud Outages. Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/f641ba50-fae0-429f-b12f-83fe6e4c63b8"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Helen Gu",
+      "url": "https://www.embracingdigital.org/../../../en/guests/helen-gu/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
