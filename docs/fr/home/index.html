@@ -365,10 +365,10 @@
         // Picks latest content ≤ today for the given type
         function getLatestReleased(contentArray) {
             const today = new Date();
-            if (!Array.isArray(contentArray)) return null;
+            if (!Array.isArray(contentArray)) return [];
             const filtered = contentArray.filter(c => new Date(c.releaseDate) <= today);
-            if (!filtered.length) return null;
-            filtered.sort((a,b) => new Date(b.releaseDate) - new Date(a.releaseDate));
+            if (!filtered.length) return [];
+            filtered.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
             return filtered;
         }
 
@@ -390,12 +390,16 @@
             // Build normalized data per slot
             const slotItems = slotConfig.map((slot) => {
                 const contentList = window.contentData[slot.type];
-                let raw = getLatestReleased(contentList);
-                raw = raw[slot.index];
+                const released = getLatestReleased(contentList);
+                const raw = (released && released[slot.index]) ? released[slot.index] : null;
                 return {
                     ...slot,
                     raw,
-                    data: normalize(raw),
+                    data: raw ? normalize(raw) : {
+                        title: 'Coming soon',
+                        shortSummary: 'No published item available for this slot yet.',
+                        image: '/images/logo.png'
+                    },
                     disabled: !raw
                 };
             });
@@ -417,8 +421,10 @@
                     card.querySelector('.week-title a').href = item.data.read;
                     card.querySelector('.week-summary').textContent = item.data.shortSummary;
                 } else {
-                    card.querySelector('.week-title').textContent = 'Coming soon';
-                    card.querySelector('.week-summary').textContent = 'No published item available for this slot yet.';
+                    card.querySelector('.week-image').src = item.data.image;
+                    card.querySelector('.week-image').alt = item.data.title || item.name;
+                    card.querySelector('.week-title').textContent = item.data.title || 'Coming soon';
+                    card.querySelector('.week-summary').textContent = item.data.shortSummary || 'No published item available for this slot yet.';
                 }
             });
 
