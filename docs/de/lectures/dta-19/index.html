@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Dynamischer Seitentitel -->
+    <title>Brückenschlag zwischen der Strategie- und der Prozessdomäne mit Value Streams | Digital Transformation Architect</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/de/lectures/dta-19/index.html">
+    <meta name="description" content="Zusammenfassung">
+    <meta name="keywords" content="Digitale Transformation, Podcast, Interviews, Nachrichten, KI, Cybersicherheit, Edge Computing, Datenmanagement">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Brückenschlag zwischen der Strategie- und der Prozessdomäne mit Value Streams | Digital Transformation Architect — Interviews, Nachrichten und Community">
+    <meta property="og:description" content="Zusammenfassung">
+    <meta property="og:url" content="https://www.embracingdigital.org/de/lectures/dta-19/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brückenschlag zwischen der Strategie- und der Prozessdomäne mit Value Streams | Digital Transformation Architect — Interviews, Nachrichten und Community">
+    <meta name="twitter:description" content="Zusammenfassung">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (Alternativen) -->
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="x-default">
+
+    <!-- Favicon & Styles -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Digitale Transformation gestalten",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Digitale Transformation gestalten",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/de/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/de/home/" aria-label="Startseite — Digitale Transformation gestalten">
+            <img src="/images/logo.png" alt="Logo — Digitale Transformation gestalten" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Menü umschalten">☰</button>
+
+    <!-- Hauptnavigation -->
+    <nav id="primary-nav" aria-label="Hauptnavigation">
+        <ul>
+            <li><a href="/de/home/index.html" >Start</a></li>
+
+            <li class="dropdown">
+                <a href="/de/shows/index.html" aria-haspopup="true" aria-expanded="false">Sendungen</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/de/episodes/index.html" aria-label="Interviews — Digitale Transformation gestalten">
+                            Digitale Transformation gestalten
+                            <small class="nav-note">Interviews</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/briefs/index.html" aria-label="Nachrichten — Digital diese Woche">
+                            Digital diese Woche
+                            <small class="nav-note">Nachrichten</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/de/guests/index.html">Gäste</a></li>
+            <li><a href="/de/articles/index.html">Artikel</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/de/community.html" aria-haspopup="true" aria-expanded="false">Community</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">LinkedIn Gruppe</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+
+            <!-- Über uns -->
+            <li class="dropdown">
+                <a href="/de/about.html" aria-haspopup="true" aria-expanded="false">Über uns</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/about.html">Über die Sendung</a></li>
+                    <li role="none"><a role="menuitem" href="/de/host.html">Moderator: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/de/sponsors/index.html">Sponsoring & Kontakt</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/de/search.html">Suche</a></li>
+
+            <!-- Sprachen -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Sprachen</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../de/home/index.html">Home</a></li>
+        <li><a href="../../../de/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 19: Bridging the Strategy and Process Domain Gap with Value Streams</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/de/lectures/dta-19/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/de/lectures/dta-19/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 19</span>
+                <span class="episode-title">Bridging the Strategy and Process Domain Gap with Value Streams</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-05-27" itemprop="datePublished">2026-05-27</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="19"/>
+            <meta itemprop="inLanguage" content="de"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-05-26T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Brückenschlag zwischen der Strategie- und der Prozessdomäne mit Value Streams Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/lQwvP5BOPpU">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/lQwvP5BOPpU"
+                            title="Brückenschlag zwischen der Strategie- und der Prozessdomäne mit Value Streams Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Brückenschlag zwischen der Strategie- und der Prozessdomäne mit Value Streams Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/f8fa5b00">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/f8fa5b00"
+                            title="Brückenschlag zwischen der Strategie- und der Prozessdomäne mit Value Streams Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../de/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-05-27<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Zusammenfassung</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../de/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <hr>
+<h2>title: Architektonische Gestaltung von Wertströmen</h2>
+<p>Wertströme sind nicht nur ein Begriff aus dem Betriebsgeschehen oder ein Slogan für Veränderungsprogramme. In dieser Vorlesung werden sie als ein <em>architektonisches Element</em> präsentiert, das strategische Absicht mit operativer Ausführung verbindet. Das macht sie zentral für die digitale Transformation, denn Transformation scheitert, wenn Strategie und Prozess auseinanderdriften. Die zentrale Botschaft der Vorlesung ist einfach: Wenn Organisationen bessere Ergebnisse erzielen wollen, benötigen sie Wertströme, die die tatsächliche Wertschöpfung für die Kunden widerspiegeln und nicht nur eine Auflistung von Aktivitäten oder ein übergeordnetes Ziel.</p>
+<p>Das ist wichtig, denn viele Organisationen können Teile eines Prozesses effizient aussehen lassen, während sie dennoch nichts Bedeutungsvolles liefern. Die Vorlesung warnt vor dieser Falle. Ein Wertstrom muss an den Kundenbedürfnissen und den Geschäftszielen ausgerichtet sein und ausreichend sichtbar sein, um Governance, Verantwortlichkeit und Verbesserung zu unterstützen. Mit anderen Worten: Architektur ist das, was das Versprechen der Transformation mit der Ausführung verbindet.</p>
+<h2>Einführung in Wertströme</h2>
+<p>Die Vorlesung beginnt damit, Wertströme als die Brücke zwischen dem strategischen Bereich und dem Prozessbereich zu definieren. Die Strategie beantwortet die Frage, welcher Wert benötigt wird; die Ausführung beantwortet, wie dieser Wert geschaffen wird. Wertströme liegen zwischen diesen beiden Fragen und machen die Beziehung explizit.</p>
+<p>Diese Unterscheidung ist wichtig. Wenn ein Transformationsvorhaben nur über die Kundennachfrage oder die Geschäftsziel spricht, aber nie diese Ziele auf die Prozesse abbildet, die sie realisieren, dann bleibt der Organisation die Absicht, aber nicht die Lieferung. Die Vorlesung argumentiert, dass jeder Wertstrom den tatsächlichen Fluss von Wert zum Kunden oder zum Geschäft widerspiegeln sollte. Wenn er das nicht tut, sollte die Organisation in Frage stellen, ob die Prozesse aus den richtigen Gründen existieren.</p>
+<p>Hier wird architektonisches Denken nützlich. Wertströme sind nicht nur beschreibend. Sie helfen Führungskräften zu sehen, wie strategische Ziele in Prozessarbeit übersetzt werden, und sie geben Unternehmensarchitekten und Transformationsführern eine Möglichkeit, zu prüfen, ob das aktuelle Betriebsmodell die beabsichtigten Ergebnisse wirklich unterstützt.</p>
+<h2>Architektonische Prinzipien für Wertströme</h2>
+<p>Ein zentrales Thema der Vorlesung ist, dass Wertströme nur dann nützlich werden, wenn sie als Teil der Architektur und nicht als Etikett für bestehende Arbeit behandelt werden. Ein Slogan ist nicht genug. Die Vorlesung betont, dass der Wertstrom mit dem Prozessbereich abgebildet werden sollte, damit die Führungskräfte sehen können, was tatsächlich Wert schafft, was es unterstützt und was möglicherweise Aufwand verursacht, ohne sinnvoll zu sein.</p>
+<p>Diese architektonische Abbildung verbessert die Sichtbarkeit und Verantwortung. Wenn Prozesse mit Wertströmen verbunden sind, wird es einfacher zu sehen, wo Entscheidungsrechte liegen, wo Governance angewendet werden sollte und wo Kontrollen oder Unterstützungsfunktionen erforderlich sind. Die Vorlesung präsentiert Governance als Leitplanken und Risiko als eingebaute Kontrollen, während die operative Ausführung der Ort bleibt, an dem tatsächlich Wert geschaffen wird. Unterstützungsfunktionen und Innovationsprozesse müssen ebenfalls in den Wertstrom integriert werden, damit sie nicht zu verwaisten Aktivitätsschichten werden.</p>
+<p>Der praktische Nutzen ist Klarheit. Wenn ein Prozess einen Wertstrom nicht unterstützt, dann könnte er ein Kandidat für eine Neukonzeption oder Entfernung sein. Wenn Unterstützungsarbeit außerhalb des Wertstroms verborgen ist, kann sie ad hoc und schwer zu managen werden. Architektur ist in diesem Sinne keine Abstraktion um ihrer selbst willen; sie ist ein Weg, um die Ausführung verständlich, steuerbar und ausgerichtet zu machen.</p>
+<h2>Verschwendung, Schattenprozesse und Drift vermeiden</h2>
+<p>Die Vorlesung ist besonders stark im Umgang mit dem Problem der Verschwendung. Architektonisches Design hilft, Ineffizienzen, Doppelarbeit und unnötige Übergaben zu identifizieren. Es deckt auch Schattenprozesse auf – Arbeiten, die in der Praxis existieren, aber nicht dokumentiert oder gesteuert werden. Diese verborgenen Schichten entstehen oft aus implizitem Wissen oder informellen Vereinbarungen, und sie verursachen Probleme, weil sie schwer zu erkennen, schwer zu steuern und schwer zu verbessern sind.</p>
+<p>Dieses Sichtbarkeitsproblem ist ein wiederkehrender Punkt. Wenn Wertströme nicht gründlich abgebildet werden, können Organisationen die sichtbaren Teile eines Prozesses optimieren und dabei die verborgene Arbeit übersehen, die Kosten und Verzögerung wirklich antreibt. Das Ergebnis kann ein Prozess sein, der auf dem Papier effizient aussieht, aber nicht effektiv wert liefert. Die Vorlesung kehrt immer wieder zur Notwendigkeit sowohl von Effizienz als auch von Effektivität zurück, nicht zu einem ohne das andere.</p>
+<p>Hier unterstützen architektonische Praktiken auch eine bessere Governance und Ausführung. Indem die Führungskräfte den Fluss End-to-End verstehen, können sie erkennen, wo Übergabeverzögerungen Nacharbeiten verursachen, wo Doppelarbeit in die Prozessstruktur eingebaut ist und wo gemeinsame Prozesse über mehrere Wertströme hinweg wiederverwendet werden könnten. Das Ziel ist nicht nur Vereinfachung. Es geht darum, Verschwendung zu beseitigen und gleichzeitig die Fähigkeiten zu bewahren, die tatsächlich zur Wertschöpfung beitragen.</p>
+<h2>Kontinuierliche Verbesserung als Transformationsdisziplin</h2>
+<p>Die Vorlesung macht deutlich, dass die Gestaltung von Wertströmen keine einmalige Übung ist. Kontinuierliche Verbesserung ist entscheidend für die nachhaltige Transformation. Die Strategie entwickelt sich weiter. Prozesse entwickeln sich weiter. Die Kundenerwartungen entwickeln sich weiter. Wenn der Wertstrom nicht erneut überprüft wird, wird die Ausrichtung wieder abdriften.</p>
+<p>Feedback-Schleifen sind daher unerlässlich. Wenn die Ausführung Lücken aufdeckt, sollten diese Lücken zurück in die Sicht auf den Wertstrom fließen und, wenn notwendig, in die strategische Verfeinerung. Dies schließt den Kreis zwischen dem strategischen Bereich und dem Prozessbereich. Ohne diesen Kreis verliert die Organisation ihre Ausrichtung und verpasst die Gelegenheit, entweder die Arbeit oder die Absicht anzupassen.</p>
+<p>Die Vorlesung weist auch darauf hin, dass gut strukturierte Prozesse die Wiederverwendbarkeit über mehrere Wertströme hinweg unterstützen können. Das ist wichtig, denn Wiederverwendung erhöht die Effizienz und hilft, die Belastung der Organisation zu reduzieren. Kontinuierliche Verbesserung geht nicht nur darum, Probleme zu beheben; es geht auch darum, zu lernen, wie man die Wertschöpfung so strukturiert, dass sie über die Zeit anpassungsfähig bleibt.</p>
+<h2>Warum das wichtig ist</h2>
+<p>Für Führungskräfte der digitalen Transformation bedeutet die Implikation einfach: Architektur muss auf Wertströme angewendet werden, wenn die Organisation eine zuverlässige Ausführung wünscht. Es reicht nicht aus, eine Transformationsambition zu definieren und anzunehmen, dass das Betriebsmodell folgen wird. Wertströme machen die Verbindung zwischen Ambition und Lieferung explizit, und diese Klarheit verbessert Governance, Verantwortung und die Qualität von Entscheidungen.</p>
+<p>Für Unternehmensarchitekten bietet die Vorlesung eine praktische Perspektive. Sie ermutigt Architekten, über isolierte Prozessschritte hinauszuschauen und zu fragen, ob der gesamte Fluss von Wert sichtbar, gesteuert und verbessert wird. Das bedeutet, die Arbeit abzubilden, die Abhängigkeiten zu verstehen und sicherzustellen, dass die Prozesse an echtem Wert und nicht an organisatorischen Gewohnheiten angebunden sind.</p>
+<p>Am wichtigsten ist, dass die Vorlesung betont, dass nachhaltige Transformation von kontinuierlicher Ausrichtung abhängig ist. Wertströme sollten um Kundenbedürfnisse und Geschäftsziele herum gestaltet werden und dann überwacht und verbessert werden, wenn sich die Bedingungen ändern. Wenn das geschieht, unterstützt die Architektur die Ausführung, anstatt von ihr getrennt zu sein.</p>
+<h2>Weiterführendes Hören</h2>
+<p>Um die vollständige Vorlesung zu hören, hören Sie <em>Architektonische Gestaltung von Wertströmen</em> in der Reihe <em>Digital Transformation Architecture</em>:</p>
+<p><a href="https://embracingdigital.org/en/lectures/dta-19">https://embracingdigital.org/en/lectures/dta-19</a></p>
+<p>Sie können auch mit der nächsten Vorlesung in der Reihe fortfahren, um zu sehen, wie sich diese Ausrichtung weiter in den digitalen Bereich erstreckt.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/de/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/de/episodes/index.html",
+  "inLanguage": "de",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/de/lectures/dta-19/index.html#episode",
+  "url": "https://www.embracingdigital.org/de/lectures/dta-19/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/de/lectures/dta-19/index.html"
+  },
+  "name": "Brückenschlag zwischen der Strategie- und der Prozessdomäne mit Value Streams",
+  "episodeNumber": 19,
+  "datePublished": "2026-05-27",
+  "inLanguage": "de",
+  "description": "Zusammenfassung",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/de/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/de/episodes/dta-19/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Brückenschlag zwischen der Strategie- und der Prozessdomäne mit Value Streams Video",
+      "embedUrl": "https://www.youtube.com/embed/lQwvP5BOPpU"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Brückenschlag zwischen der Strategie- und der Prozessdomäne mit Value Streams Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/f8fa5b00"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../de/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Urheberrecht &copy; 2025 Paidar Productions LLC</p>
+        <p>Alle Rechte vorbehalten</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
