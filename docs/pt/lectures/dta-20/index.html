@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Título de página dinâmico -->
+    <title>Práticas FORGE no Domínio de Processos | Digital Transformation Architect</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/pt/lectures/dta-20/index.html">
+    <meta name="description" content="A maioria das organizações não fracassa na transformação digital porque lhe faltam ideias. Elas fracassam porque as ideias não sobrevivem ao contato com o trabalho do dia a dia. Uma nova capacidade é anunciada, um piloto começa, o diagrama parece promissor e, então, a realidade entra no caminho: as ">
+    <meta name="keywords" content="Transformação digital, podcast, entrevistas, notícias, IA, cibersegurança, edge computing, gestão de dados">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Práticas FORGE no Domínio de Processos | Digital Transformation Architect — Entrevistas, Notícias e Comunidade">
+    <meta property="og:description" content="A maioria das organizações não fracassa na transformação digital porque lhe faltam ideias. Elas fracassam porque as ideias não sobrevivem ao contato com o trabalho do dia a dia. Uma nova capacidade é anunciada, um piloto começa, o diagrama parece promissor e, então, a realidade entra no caminho: as ">
+    <meta property="og:url" content="https://www.embracingdigital.org/pt/lectures/dta-20/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Práticas FORGE no Domínio de Processos | Digital Transformation Architect — Entrevistas, Notícias e Comunidade">
+    <meta name="twitter:description" content="A maioria das organizações não fracassa na transformação digital porque lhe faltam ideias. Elas fracassam porque as ideias não sobrevivem ao contato com o trabalho do dia a dia. Uma nova capacidade é anunciada, um piloto começa, o diagrama parece promissor e, então, a realidade entra no caminho: as ">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (alternativas) -->
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="x-default">
+
+    <!-- Favicon & Estilos -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Abraçando a Transformação Digital",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracing-digital-transformation"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Abraçando a Transformação Digital",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/pt/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logotipo -->
+    <div class="logo-container">
+        <a href="/pt/home/" aria-label="Início — Abraçando a Transformação Digital">
+            <img src="/images/logo.png" alt="Logotipo — Abraçando a Transformação Digital" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Alternância para mobile -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Alternar menu">☰</button>
+
+    <!-- Navegação principal -->
+    <nav id="primary-nav" aria-label="Principal">
+        <ul>
+            <li><a href="/pt/home/index.html" >Início</a></li>
+
+            <li class="dropdown">
+                <a href="/pt/shows/index.html" aria-haspopup="true" aria-expanded="false">Programas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/episodes/index.html" aria-label="Entrevistas — Abraçando a Transformação Digital">
+                            Abraçando a Transformação Digital
+                            <small class="nav-note">Entrevistas</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/index.html" aria-label="Notícias — Digital esta semana">
+                            Digital esta semana
+                            <small class="nav-note">Notícias</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/pt/guests/index.html">Convidados</a></li>
+            <li><a href="/pt/articles/index.html">Artigos</a></li>
+
+            <!-- Comunidade -->
+            <li class="dropdown">
+                <a href="/pt/community.html" aria-haspopup="true" aria-expanded="false">Comunidade</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/newsletter.html">Newsletter</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">Grupo no LinkedIn</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Loja</a></li>
+
+            <!-- Sobre -->
+            <li class="dropdown">
+                <a href="/pt/about.html" aria-haspopup="true" aria-expanded="false">Sobre</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/about.html">Sobre o programa</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/host.html">Apresentador: Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/sponsors/index.html">Patrocínio & Contato</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/pt/search.html">Pesquisar</a></li>
+
+            <!-- Idiomas -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">Idiomas</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/es/home/index.html">Español</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../pt/home/index.html">Home</a></li>
+        <li><a href="../../../pt/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 20: FORGE Practices in the Process Domain</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/pt/lectures/dta-20/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/pt/lectures/dta-20/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 20</span>
+                <span class="episode-title">FORGE Practices in the Process Domain</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-06-03" itemprop="datePublished">2026-06-03</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="20"/>
+            <meta itemprop="inLanguage" content="pt"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-06-02T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Práticas FORGE no Domínio de Processos Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/QU7ncER_Ehg">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/QU7ncER_Ehg"
+                            title="Práticas FORGE no Domínio de Processos Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Práticas FORGE no Domínio de Processos Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/bcd532d5">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/bcd532d5"
+                            title="Práticas FORGE no Domínio de Processos Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../pt/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-06-03<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>A maioria das organizações não fracassa na transformação digital porque lhe faltam ideias. Elas fracassam porque as ideias não sobrevivem ao contato com o trabalho do dia a dia. Uma nova capacidade é anunciada, um piloto começa, o diagrama parece promissor e, então, a realidade entra no caminho: as transições de responsabilidade não são claras, as aprovações são inconsistentes, a responsabilidade é difusa e o trabalho que mais importa ainda é feito por hábito, e não por projeto. Essa lacuna entre intenção e execução é o problema que as práticas FORGE pretendem resolver.</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../pt/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>PRÁTICAS FORGE para Transformação Orientada por Processos</h1>
+<p><em>Entendendo como a arquitetura de processos, governança e execução trabalham juntas para tornar a transformação digital durável.</em></p>
+<p>Esta palestra foca em uma ideia simples, mas exigente: as organizações não se transformam apenas escrevendo melhores diagramas. Elas se transformam quando sua <em>arquitetura de processos</em> reflete a realidade operacional, quando a <em>governança</em> está conectada ao trabalho real e quando a <em>execução</em> é disciplinada o suficiente para levar a mudança da intenção à prática constante. Neste episódio, as Práticas FORGE fornecem a sequência para realizar esse trabalho em uma transformação orientada por processos.</p>
+<p>No centro da palestra está um aviso prático: o que está documentado e o que é operacionalmente real muitas vezes divergem. Essa lacuna pode criar governança cerimonial, transferências ocultas, processos órfãos e atividades piloto sem fim que nunca se tornam capacidades duráveis. O FORGE é apresentado como uma forma de expor essas lacunas, reconciliá-las e melhorar a capacidade da organização de entregar fluxos de valor de forma consistente.</p>
+<h2>Recapitulando o problema central</h2>
+<p>A palestra começa com um desafio de transformação familiar: muitas organizações acreditam entender seus processos, mas o que está documentado muitas vezes difere do que realmente acontece. Um processo pode parecer completo no papel e ainda falhar na prática porque os verdadeiros donos, tomadores de decisão, controles e caminhos de comunicação nunca foram capturados.</p>
+<p>Isso é importante porque a transformação orientada por processos depende de mais do que definições. Ela requer uma compreensão clara de como inovação, operações, suporte, governança e risco interagem. Se essas camadas não estiverem conectadas, a organização pode parecer estar sendo governada enquanto na verdade depende de hábitos informais, comportamentos legados ou soluções de contorno não documentadas. Em outras palavras, o sistema pode funcionar, mas a governança é cerimonial em vez de efetiva.</p>
+<p>A palestra também destaca um modo comum de falha: inovação sem operações. Quando novas capacidades são testadas repetidamente, mas nunca transicionadas para a produção, a organização fica presa em um purgatório de piloto. O remédio não é mais experimentação por si só. É uma conexão disciplinada entre a intenção estratégica, o design de processos, a governança e a transferência operacional.</p>
+<h2>FORGE como uma sequência prática para arquitetura de processos</h2>
+<p>O FORGE é apresentado como uma prática em cinco etapas: <em>Encontrar, Observar, Reconciliação, Fundamentar e Aumentar</em>. É usado como um motor para mapear o domínio de processos e alinhá-lo com os domínios estratégico e digital. A ênfase da palestra não está em um método abstrato, mas em uma sequência que ajuda as equipes a entender o que existe, o que funciona, o que conflita e o que deve ser melhorado.</p>
+<p>A primeira etapa, <em>Encontrar</em>, pede às equipes que capturem a realidade operacional. Isso significa identificar os sistemas reais em uso, os donos e tomadores de decisão, os pontos de controle e os processos ocultos que surgiram ao longo do tempo. A segunda etapa, <em>Observar</em>, traça um pedaço real de trabalho desde a intenção estratégica através da governança, operações, risco e suporte, de modo que atrasos, retrabalho e aprovações fantasmas se tornem visíveis.</p>
+<p>O que torna essa sequência valiosa é que ela começa ampla e depois se aprofunda iterativamente. A palestra adverte explicitamente contra ir fundo demais muito cedo. Se uma organização tenta analisar cada detalhe antes de entender os principais relacionamentos, corre o risco de paralisia por análise e pode nunca acompanhar o ritmo da mudança. Portanto, o FORGE promove a adaptabilidade no design e na execução de processos, enquanto mantém o trabalho fundamentado no que pode realmente ser observado.</p>
+<h2>Agilidade com execução disciplinada</h2>
+<p>Um tema central na palestra é que agilidade não é a ausência de estrutura. Na verdade, a agilidade só se torna útil quando é emparelhada com execução disciplinada. A palestra enquadra esse equilíbrio como essencial para a transformação: as organizações devem ser capazes de se ajustar, mas também precisam de estrutura suficiente para garantir que as mudanças possam ser levadas à produção e sustentadas ao longo do tempo.</p>
+<p>É aqui que <em>Reconciliação</em> entra. A reconciliação resolve contradições estruturais, como um processo que não está em conformidade com a governança ou uma regra que não corresponde mais à realidade operacional. Quando tais desajustes são ignorados, eles criam deriva, confusão e trabalho órfão. Quando são abordados, a organização pode alinhar governança e execução de forma mais eficaz.</p>
+<p>O ponto da palestra é especialmente relevante para líderes de transformação digital: agilidade não deve significar improvisação sem responsabilidade. Deve significar a capacidade de fazer as mudanças necessárias sem perder o controle da arquitetura do processo. É por isso que a fala retorna repetidamente a transferências, direitos de decisão e à relação entre mudança de processo e governança. A organização se torna mais capaz quando pode se mover rapidamente sem perder rastreabilidade ou disciplina.</p>
+<h2>Feedback, iteração e o papel do fundamentar</h2>
+<p>O loop FORGE é intencionalmente iterativo. A primeira passagem é em alto nível, mas cada passagem deve melhorar a compreensão da organização sobre onde o valor é criado, onde existe fricção e quais processos vale a pena reter. Essa abordagem iterativa é central para o tratamento de feedback da palestra. Em vez de tratar a transformação como um redesenho de uma única vez, ela a trata como uma sequência de ciclos de aprendizado.</p>
+<p><em>Fundamentar</em> é a etapa que torna isso possível. Fundamentar significa identificar quais fortalezas já existem, documentá-las e usá-las como base para mudanças futuras. A palestra enfatiza que a primeira passagem não se trata de corrigir tudo. Trata-se de descobrir o que está realmente acontecendo, incluindo práticas informais, mas estáveis, que podem já apoiar a entrega de forma eficaz.</p>
+<p>Uma vez que essas fortalezas estejam visíveis, <em>Aumentar</em> adiciona melhorias direcionadas. O aumento pode envolver a ampliação de um processo, esclarecimento da responsabilidade, melhoria do treinamento, racionalização da fricção ou aumento da observabilidade. A chave é que a melhoria não deve ser arbitrária. Deve remover trabalho desnecessário, tornar os resultados mais claros e ajudar o processo a sobreviver em escala. Dessa forma, feedback e iteração tornam-se parte de um ritmo de execução prático, em vez de um exercício de gestão separado.</p>
+<h2>Por que isso importa para os líderes de transformação</h2>
+<p>A mensagem mais profunda da palestra é que a transformação durável é um problema arquitetônico tanto quanto estratégico. Se o domínio de processos não for compreendido, as organizações não conseguem conectar de forma confiável a intenção estratégica ao resultado operacional. Se a governança estiver apenas parcialmente incorporada, a mudança se torna frágil. Se a responsabilidade não for apoiada com treinamento e direitos de decisão claros, a execução se torna um exercício de culpa em vez de um esforço de construção de capacidade.</p>
+<p>É também aqui que a palestra conecta o FORGE com o O-DXA de maneira cuidadosa e limitada: os princípios se alinham no apoio a transformações sustentadas. O ponto não é introduzir um novo método, mas mostrar que o trabalho de processo deve ser integrado à estrutura de transformação mais ampla. Quando o FORGE está incorporado à cultura organizacional, a eficiência da execução melhora porque as equipes não estão reinventando o caminho toda vez que fazem uma mudança.</p>
+<p>Para os praticantes, a mensagem é direta. Não trate a arquitetura de processos como uma documentação estática. Trata-a como uma visão viva de como o trabalho é governado, executado, observado e melhorado. É aí que a transformação digital se torna repetível em vez de episódica.</p>
+<h2>Mais audições</h2>
+<p>Para ouvir a discussão completa, ouça o episódio aqui: <strong>Palestra 4: Práticas FORGE para Transformação Orientada por Processos</strong>.<br>URL do episódio: <a href="https://embracingdigital.org/en/lectures/dta-20">https://embracingdigital.org/en/lectures/dta-20</a></p>
+<p>Para mais episódios na série, visite a página do <em>Arquiteto de Transformação Digital</em> e continue com a próxima palestra na sequência: <a href="https://embracingdigital.org/en/lectures">https://embracingdigital.org/en/lectures</a></p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/pt/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/pt/episodes/index.html",
+  "inLanguage": "pt",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/pt/lectures/dta-20/index.html#episode",
+  "url": "https://www.embracingdigital.org/pt/lectures/dta-20/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/pt/lectures/dta-20/index.html"
+  },
+  "name": "Práticas FORGE no Domínio de Processos",
+  "episodeNumber": 20,
+  "datePublished": "2026-06-03",
+  "inLanguage": "pt",
+  "description": "A maioria das organizações não fracassa na transformação digital porque lhe faltam ideias. Elas fracassam porque as ideias não sobrevivem ao contato com o trabalho do dia a dia. Uma nova capacidade é anunciada, um piloto começa, o diagrama parece promissor e, então, a realidade entra no caminho: as",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/pt/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/pt/episodes/dta-20/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Práticas FORGE no Domínio de Processos Video",
+      "embedUrl": "https://www.youtube.com/embed/QU7ncER_Ehg"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Práticas FORGE no Domínio de Processos Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/bcd532d5"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../pt/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; 2025 Paidar Productions LLC</p>
+        <p>Todos os direitos reservados</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Dynamic Page Title -->
+    <title>プロセス領域におけるFORGEの実践 | Digital Transformation Architect</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/ja/lectures/dta-20/index.html">
+    <meta name="description" content="ほとんどの組織がデジタルトランスフォーメーションに失敗するのは、アイデアが足りないからではありません。失敗するのは、そのアイデアが日々の業務との接触に耐えられないからです。新しい機能が発表され、パイロットが始まり、図式は有望に見えます。しかしその後、現実が立ちはだかります。引き継ぎは不明確で、承認は一貫性がなく、責任の所在は曖昧で、最も重要な業務は依然として設計されたやり方ではなく慣習によって行われています。この意図と実行の間のギャップこそが、FORGEの実践が解決しようとしている問題です。">
+    <meta name="keywords" content="デジタルトランスフォーメーション, ポッドキャスト, インタビュー, ニュース, AI, サイバーセキュリティ, エッジコンピューティング, データ管理">
+    <meta name="author" content="Dr. Darren W. Pulsipher">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="プロセス領域におけるFORGEの実践 | Digital Transformation Architect — インタビュー、ニュース、コミュニティ">
+    <meta property="og:description" content="ほとんどの組織がデジタルトランスフォーメーションに失敗するのは、アイデアが足りないからではありません。失敗するのは、そのアイデアが日々の業務との接触に耐えられないからです。新しい機能が発表され、パイロットが始まり、図式は有望に見えます。しかしその後、現実が立ちはだかります。引き継ぎは不明確で、承認は一貫性がなく、責任の所在は曖昧で、最も重要な業務は依然として設計されたやり方ではなく慣習によって行われています。この意図と実行の間のギャップこそが、FORGEの実践が解決しようとしている問題です。">
+    <meta property="og:url" content="https://www.embracingdigital.org/ja/lectures/dta-20/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="プロセス領域におけるFORGEの実践 | Digital Transformation Architect — インタビュー、ニュース、コミュニティ">
+    <meta name="twitter:description" content="ほとんどの組織がデジタルトランスフォーメーションに失敗するのは、アイデアが足りないからではありません。失敗するのは、そのアイデアが日々の業務との接触に耐えられないからです。新しい機能が発表され、パイロットが始まり、図式は有望に見えます。しかしその後、現実が立ちはだかります。引き継ぎは不明確で、承認は一貫性がなく、責任の所在は曖昧で、最も重要な業務は依然として設計されたやり方ではなく慣習によって行われています。この意図と実行の間のギャップこそが、FORGEの実践が解決しようとしている問題です。">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (alternates) -->
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="x-default">
+
+    <!-- Favicon & Styles -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "デジタルトランスフォーメーションを受け入れる",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "デジタルトランスフォーメーションを受け入れる",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/ja/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/ja/home/" aria-label="デジタルトランスフォーメーションを受け入れる ホーム">
+            <img src="/images/logo.png" alt="デジタルトランスフォーメーションを受け入れる ロゴ" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Mobile toggle -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="メニューを切り替える">☰</button>
+
+    <!-- Primary Nav -->
+    <nav id="primary-nav" aria-label="メインナビゲーション">
+        <ul>
+            <li><a href="/ja/home/index.html" >ホーム</a></li>
+
+            <li class="dropdown">
+                <a href="/ja/shows/index.html" aria-haspopup="true" aria-expanded="false">番組</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/ja/episodes/index.html" aria-label="インタビュー — デジタルトランスフォーメーションを受け入れる">
+                            デジタルトランスフォーメーションを受け入れる
+                            <small class="nav-note">インタビュー</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/ja/briefs/index.html" aria-label="ニュース — 今週のデジタルを受け入れる">
+                            今週のデジタルを受け入れる
+                            <small class="nav-note">ニュース</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/guests/index.html">ゲスト</a></li>
+            <li><a href="/ja/articles/index.html">記事</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/ja/community.html" aria-haspopup="true" aria-expanded="false">コミュニティ</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ja/newsletter.html">ニュースレター</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">Patreon</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">LinkedIn グループ</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">ショップ</a></li>
+
+            <!-- About -->
+            <li class="dropdown">
+                <a href="/ja/about.html" aria-haspopup="true" aria-expanded="false">概要</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ja/about.html">番組について</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/host.html">ホスト：Dr. Darren Pulsipher</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/sponsors/index.html">スポンサーシップ & お問い合わせ</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ja/search.html">検索</a></li>
+
+            <!-- Languages -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">言語</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../ja/home/index.html">Home</a></li>
+        <li><a href="../../../ja/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 20: FORGE Practices in the Process Domain</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/ja/lectures/dta-20/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/ja/lectures/dta-20/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 20</span>
+                <span class="episode-title">FORGE Practices in the Process Domain</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-06-03" itemprop="datePublished">2026-06-03</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="20"/>
+            <meta itemprop="inLanguage" content="ja"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-06-02T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="プロセス領域におけるFORGEの実践 Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/QU7ncER_Ehg">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/QU7ncER_Ehg"
+                            title="プロセス領域におけるFORGEの実践 Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="プロセス領域におけるFORGEの実践 Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/bcd532d5">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/bcd532d5"
+                            title="プロセス領域におけるFORGEの実践 Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ja/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-06-03<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>ほとんどの組織がデジタルトランスフォーメーションに失敗するのは、アイデアが足りないからではありません。失敗するのは、そのアイデアが日々の業務との接触に耐えられないからです。新しい機能が発表され、パイロットが始まり、図式は有望に見えます。しかしその後、現実が立ちはだかります。引き継ぎは不明確で、承認は一貫性がなく、責任の所在は曖昧で、最も重要な業務は依然として設計されたやり方ではなく慣習によって行われています。この意図と実行の間のギャップこそが、FORGEの実践が解決しようとしている問題です。</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../ja/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>FORGE プラクティス: プロセス主導の変革に向けて</h1>
+<p><em>プロセスアーキテクチャ、ガバナンス、実行がどのように相互に作用し、デジタルトランスフォーメーションを持続可能にするかを理解する。</em></p>
+<p>この講義では、シンプルだが要求の厳しいアイデアに焦点を当てています：組織は、より良い図を描くだけで変革するわけではありません。彼らは、<em>プロセスアーキテクチャ</em>が業務の現実を反映し、<em>ガバナンス</em>が実際の作業と関連し、<em>実行</em>が意図から安定した慣行へと変化をもたらすのに十分に規律があるときに変革します。このエピソードでは、FORGE プラクティスがプロセス主導の変革に向けた作業を行うための手順を提供します。</p>
+<p>講義の中心には、実際的な警告があります：文書化されたものと、業務における実際のものはしばしば乖離します。このギャップは、儀式的なガバナンス、隠れた引き継ぎ、孤立したプロセス、および持続可能な能力にならない無限の試行を生む可能性があります。FORGEは、これらのギャップを露呈し、それを調整し、組織が一貫して価値の流れを提供する能力を向上させる方法として提示されます。</p>
+<h2>核心的な問題の再確認</h2>
+<p>講義は、一般的な変革の課題から始まります：多くの組織は自分たちのプロセスを理解していると信じていますが、文書化されたものは実際に起こることとは異なることが多いのです。プロセスは書類上では完全に見えても、実際には所有者、意思決定者、管理ポイント、そして時間の経過とともに生じた隠れたプロセスが取り込まれていないために失敗することがあります。</p>
+<p>これは重要です。というのも、プロセス主導の変革は定義以上のものに依存しているからです。革新、運用、サポート、ガバナンス、リスクがどのように相互作用するかを明確に理解する必要があります。これらの層が繋がっていない場合、組織はガバナンスされているように見える一方で、実際には非公式な習慣、過去の行動、または文書化されていない回避策に依存している可能性があります。言い換えれば、システムは機能するかもしれませんが、ガバナンスは儀式的であり、効果的ではありません。</p>
+<p>講義では、一般的な失敗モードも強調されています：運用なしの革新です。新しい能力が繰り返しテストされるが、実際の生産に移行されないと、組織はパイロット地獄に閉じ込められます。その解決策は、自己目的のためのさらなる実験ではなく、戦略的な意図、プロセス設計、ガバナンス、運用の引き継ぎの間に規律をもったつながりを持つことです。</p>
+<h2>プロセスアーキテクチャのための実践的な手順としてのFORGE</h2>
+<p>FORGEは、<em>見つける、観察する、調整する、基盤を作る、強化する</em>という5つのステップとして紹介されます。これは、プロセスドメインをマッピングし、戦略的およびデジタルドメインと整合させるためのエンジンとして使用されます。講義の強調は、抽象的な方法論ではなく、チームが何が存在するか、何が機能するか、何が対立しているか、何を改善すべきかを理解するのに役立つ手順にあります。</p>
+<p>最初のステップである<em>見つける</em>では、チームは業務の現実を捉えるよう求められます。これは、実際に使用されているシステム、所有者や意思決定者、管理ポイント、そして時間の経過とともに出現した隠れたプロセスを特定することを意味します。2番目のステップである<em>観察する</em>では、戦略的意図からガバナンス、運営、リスク、サポートを通じて実際の作業の流れを追跡し、遅延、再作業、およびゴースト承認を可視化します。</p>
+<p>このシーケンスの価値は、広範から始まり、その後反復的に深まっていくところにあります。講義では、早急に深く掘り下げることに対して明示的に警告しています。組織が主要な関係を理解する前にすべての詳細を分析しようとすると、分析麻痺を引き起こし、変化のペースについて行けなくなるリスクがあります。そのため、FORGEはプロセス設計と実行の柔軟性を促進しながら、実際に観察可能なものに基づいて作業を行うことを徹底しています。</p>
+<h2>規律ある実行によるアジリティ</h2>
+<p>講義の主要なテーマは、アジリティは構造の不在ではないということです。実際、アジリティは、規律ある実行と組み合わせて初めて有用になります。このバランスを変革にとって必要不可欠なものとして位置付けています：組織は調整する能力を持たなければならないが、変更を本番環境に持ち込み、時間をかけて持続させるための十分な構造も必要です。</p>
+<p>ここで<em>調整する</em>が関係してきます。調整は、ガバナンスに準拠しないプロセスや、もはや業務の現実に合わないルールといった構造的矛盾を解消します。このような不一致を無視すると、ドリフト、混乱、そして孤立した作業が生まれます。これらに対処することで、組織はガバナンスと実行をより効果的に整列させることができます。</p>
+<p>この講義のポイントは、デジタルトランスフォーメーションのリーダーに特に関連しています：アジリティは責任なしの即興であってはなりません。プロセスアーキテクチャのコントロールを失うことなく必要な変更を行う能力を意味するべきです。そのため、講義は引き継ぎ、意思決定権、およびプロセス変更とガバナンスの関係に繰り返し戻ります。組織は追跡可能性や規律を失うことなく迅速に移動できると、より高い能力を持つようになります。</p>
+<h2>フィードバック、反復、および基盤作りの役割</h2>
+<p>FORGEループは意図的に反復的です。最初のパスは高レベルですが、各パスは価値が創出される場所、摩擦が存在する場所、保持する価値のあるプロセスについての組織の理解を改善します。この反復的なアプローチは、講義におけるフィードバックの扱いの中心です。変革を単なる一時的な再設計と見なすのではなく、一連の学習サイクルと見なします。</p>
+<p><em>基盤作り</em>は、これを可能にするステップです。基盤作りとは、既存の強みを特定し、文書化し、さらなる変化の基盤として利用することを意味します。講義では、最初のパスはすべてを修正することではないと強調されています。実際に何が起きているかを発見し、配信をうまくサポートする可能性のある非公式だが安定した実践を含めることが重要です。</p>
+<p>これらの強みが可視化されたら、<em>強化</em>で目的に合った改善が加えられます。強化には、プロセスの拡張、責任の明確化、トレーニングの改善、摩擦の合理化、または可視性の向上が含まれる可能性があります。重要なのは、強化が恣意的であってはならず、不要な労力を排除し、成果を明確にし、プロセスがスケールに耐えられるようにすることです。このようにして、フィードバックと反復は、別の管理上の演習ではなく、実践的な実行リズムの一部となります。</p>
+<h2>なぜこれは変革リーダーにとって重要なのか</h2>
+<p>講義の深いメッセージは、持続的な変革は戦略的な問題だけでなく、アーキテクチャの問題でもあるということです。プロセスドメインが理解されていなければ、組織は戦略的意図を運用結果に確実に結びつけることができません。ガバナンスが部分的にしか埋め込まれていない場合、変革は脆弱になります。責任がトレーニングや明確な意思決定権で支えられていなければ、実行は責任追及の場となり、能力構築の努力ではなくなります。</p>
+<p>また、この講義では、FORGEとO-DXAを慎重かつ限定的にリンクさせています：原則は持続的な変革を支持することにおいて一致しています。新しい方法を紹介するのではなく、プロセス作業は広範な変革構造に統合されるべきであることを示すことが目的です。FORGEが組織文化に埋め込まれると、実行効率は向上し、チームは変更を加えるたびに新しい道を再発明する必要がなくなります。</p>
+<p>実務者にとってのポイントは明瞭です。プロセスアーキテクチャを静的な文書として扱わず、業務がどのようにガバナンス、実行、観察、改善されているかの生きたビジョンとして扱うべきです。これが、デジタルトランスフォーメーションを一時的なものではなく、再現可能なものにする鍵です。</p>
+<h2>さらなる視聴</h2>
+<p>完全な議論を聞くには、こちらのエピソードをお聞きください：<strong>講義4: プロセス主導の変革のためのFORGEプラクティス</strong>。<br>エピソードURL: <a href="https://embracingdigital.org/en/lectures/dta-20">https://embracingdigital.org/en/lectures/dta-20</a></p>
+<p>シリーズのその他のエピソードは、<em>デジタルトランスフォーメーションアーキテクト</em>ページをご覧いただき、次の講義にお進みください：<a href="https://embracingdigital.org/en/lectures">https://embracingdigital.org/en/lectures</a></p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/ja/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/ja/episodes/index.html",
+  "inLanguage": "ja",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/ja/lectures/dta-20/index.html#episode",
+  "url": "https://www.embracingdigital.org/ja/lectures/dta-20/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/ja/lectures/dta-20/index.html"
+  },
+  "name": "プロセス領域におけるFORGEの実践",
+  "episodeNumber": 20,
+  "datePublished": "2026-06-03",
+  "inLanguage": "ja",
+  "description": "ほとんどの組織がデジタルトランスフォーメーションに失敗するのは、アイデアが足りないからではありません。失敗するのは、そのアイデアが日々の業務との接触に耐えられないからです。新しい機能が発表され、パイロットが始まり、図式は有望に見えます。しかしその後、現実が立ちはだかります。引き継ぎは不明確で、承認は一貫性がなく、責任の所在は曖昧で、最も重要な業務は依然として設計されたやり方ではなく慣習によって行われています。この意図と実行の間のギャップこそが、FORGEの実践が解決しようとしている問題です。",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/ja/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/ja/episodes/dta-20/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "プロセス領域におけるFORGEの実践 Video",
+      "embedUrl": "https://www.youtube.com/embed/QU7ncER_Ehg"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "プロセス領域におけるFORGEの実践 Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/bcd532d5"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../ja/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>著作権 &copy; 2025 Paidar Productions LLC</p>
+        <p>全著作権所有</p>
+    </div>
+</footer>
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
