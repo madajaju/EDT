@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Dynamic Page Title -->
+    <title>مقدمة إلى طبقات المجال الرقمي | Digital Transformation Architect</title>
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://www.embracingdigital.org/ar/lectures/dta-21/index.html">
+    <meta name="description" content="ملخص">
+    <meta name="keywords" content="التحول الرقمي, بودكاست, مقابلات, أخبار, ذكاء اصطناعي, أمن سيبراني, الحوسبة الطرفية, إدارة البيانات">
+    <meta name="author" content="د. دارين دبليو. بالسيفر">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="مقدمة إلى طبقات المجال الرقمي | Digital Transformation Architect — مقابلات وأخبار ومجتمع">
+    <meta property="og:description" content="ملخص">
+    <meta property="og:url" content="https://www.embracingdigital.org/ar/lectures/dta-21/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="مقدمة إلى طبقات المجال الرقمي | Digital Transformation Architect — مقابلات وأخبار ومجتمع">
+    <meta name="twitter:description" content="ملخص">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Hreflang (alternates) -->
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="ar">
+    <link rel="alternate" href="https://embracingdigital.org/de/home/" hreflang="de">
+    <link rel="alternate" href="https://embracingdigital.org/fr/home/" hreflang="fr">
+    <link rel="alternate" href="https://embracingdigital.org/it/home/" hreflang="it">
+    <link rel="alternate" href="https://embracingdigital.org/ja/home/" hreflang="ja">
+    <link rel="alternate" href="https://embracingdigital.org/pt/home/" hreflang="pt">
+    <link rel="alternate" href="https://embracingdigital.org/en/home/" hreflang="en">
+    <link rel="alternate" href="https://embracingdigital.org/ar/home/" hreflang="x-default">
+
+    <!-- Favicon & Styles -->
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org: Organization + WebSite -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "التحول الرقمي",
+            "url": "https://embracingdigital.org/",
+            "logo": "https://embracingdigital.org/images/logo.png",
+            "sameAs": [
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "التحول الرقمي",
+            "url": "https://embracingdigital.org/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://embracingdigital.org/ar/search.html?query={query}",
+                "query-input": "required name=query"
+            }
+        }
+    </script>
+</head>
+<body dir="rtl">
+
+<header role="banner">
+    <!-- Logo -->
+    <div class="logo-container">
+        <a href="/ar/home/" aria-label="التحول الرقمي — الصفحة الرئيسية">
+            <img src="/images/logo.png" alt="شعار التحول الرقمي" class="site-icon">
+        </a>
+    </div>
+
+    <!-- Mobile toggle -->
+    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="تبديل القائمة">☰</button>
+
+    <!-- Primary Nav -->
+    <nav id="primary-nav" aria-label="رئيسي">
+        <ul>
+            <li><a href="/ar/home/index.html" >الرئيسية</a></li>
+
+            <li class="dropdown">
+                <a href="/ar/shows/index.html" aria-haspopup="true" aria-expanded="false">البرامج</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/ar/episodes/index.html" aria-label="مقابلات — التحول الرقمي">
+                            التحول الرقمي
+                            <small class="nav-note">مقابلات</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/ar/briefs/index.html" aria-label="الأخبار — الرقمي هذا الأسبوع">
+                            الرقمي هذا الأسبوع
+                            <small class="nav-note">أخبار</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="/ar/guests/index.html">الضيوف</a></li>
+            <li><a href="/ar/articles/index.html">المقالات</a></li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/ar/community.html" aria-haspopup="true" aria-expanded="false">المجتمع</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/newsletter.html">النشرة البريدية</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">باتريون</a></li>
+                    <li role="none"><a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">مجموعة لينكدإن</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">المتجر</a></li>
+
+            <!-- About -->
+            <li class="dropdown">
+                <a href="/ar/about.html" aria-haspopup="true" aria-expanded="false">من نحن</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/about.html">حول البرنامج</a></li>
+                    <li role="none"><a role="menuitem" href="/ar/host.html">المُقدِّم: د. دارين بالسيفر</a></li>
+                    <li role="none"><a role="menuitem" href="/ar/sponsors/index.html">الرعاية والتواصل</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/ar/search.html">بحث</a></li>
+
+            <!-- Languages -->
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">اللغات</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="/de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="/en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="/it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="/ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../ar/home/index.html">Home</a></li>
+        <li><a href="../../../ar/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 21: Introducing the Layers of the Digital Domain</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://www.embracingdigital.org/ar/lectures/dta-21/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://www.embracingdigital.org/ar/lectures/dta-21/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 21</span>
+                <span class="episode-title">Introducing the Layers of the Digital Domain</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-06-10" itemprop="datePublished">2026-06-10</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="21"/>
+            <meta itemprop="inLanguage" content="ar"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-06-09T07:00:00.000Z">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="مقدمة إلى طبقات المجال الرقمي Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/kJua8LuqZns">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/kJua8LuqZns"
+                            title="مقدمة إلى طبقات المجال الرقمي Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="مقدمة إلى طبقات المجال الرقمي Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/0ed59271">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/0ed59271"
+                            title="مقدمة إلى طبقات المجال الرقمي Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../ar/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-06-10<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>ملخص</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../ar/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <pre><code class="language-md"># تقديم طبقات النطاق الرقمي
+
+غالبًا ما يتم مناقشة النطاق الرقمي كما لو كان ببساطة المكان الذي يتم فيه بناء البرمجيات، والربط بين الأنظمة، وتحرك البيانات. يجادل هذا المحاضرة من أجل رؤية مختلفة: ينتمي النطاق الرقمي *داخل* نموذج الهندسة المعمارية. يجب أن يُفهم كنطاق معماري متعدد الطبقات، وليس كمجموعة عشوائية من مهام التنفيذ. هذه التفرقة مهمة لأن التحديث يفشل عندما يتم التعامل مع النطاق الرقمي كعمل توصيل فقط.
+
+إذا كانت هندسة الاستراتيجية والعملية والتنظيم مصممة بعناية ولكن يتم ترك النطاق الرقمي كمساحة تنفيذ تكنولوجيا معلومات غير متميزة، تصبح التحول الشامل هشًا. القرارات حول الأنظمة الرقمية ليست مجرد تفاصيل تنفيذ. إنها تشكل الاعتمادات والترابط والمسؤولية والقدرة على التغيير على المدى الطويل. الرسالة الأساسية للمحاضرة بسيطة: الأنظمة الرقمية تنتمي داخل نموذج الهندسة المعمارية، وبنية ذلك النموذج تحدد ما إذا كان التحديث يصبح متماسكًا أو ينهار إلى تفتت.
+
+## لماذا يجب تقديم النطاق الرقمي من منظور معماري
+
+تبدأ المحاضرة بإطار النطاق الرقمي كأحد أهم أجزاء نموذج التحول الأوسع لأنه المكان الذي توجد فيه البرمجيات والاندماجات والبيانات. هناك حيث يركز العديد من الممارسين بشكل حدسي عند التفكير في التحول الرقمي. ولكن المحاضرة تؤكد أن هذا النطاق لا يمكن اختزاله إلى بيئة تنفيذ.
+
+بدلاً من ذلك، يجب تقديم النطاق الرقمي من خلال طبقاته. توفر هذه الرؤية الطبقية للقادة والمعماريين وسيلة لرؤية كيفية تكوين القدرات الرقمية، وكيف تعتمد المكونات على بعضها البعض، وكيف يمكن إدارة النطاق. بدون تلك البنية، يصبح من السهل الخلط بين القرارات المعمارية وأنشطة التنفيذ. النتيجة هي نظام قد يبدو نشطًا، لكنه غير متماسك معماريًا.
+
+تقوم المحاضرة أيضًا بتمييز حدي مهم: المعمارية تعرف وتمثل النطاق، بينما يحمل التنفيذ تلك القرارات إلى الأنظمة العاملة. وهذا يعني أن فرق التنفيذ والدعم التشغيلي ضرورية، لكنها ليست هي نفسها تعريف المعمارية للنطاق. توضيح هذه الحدود هو أحد الموضوعات المركزية في المحاضرة.
+
+## طبقات النطاق الرقمي
+
+يتم تقديم النطاق الرقمي كطبقة من الطبقات ذات الصلة. في القاعدة، توجد *طبقة المواصفات الفيزيائية*، وهي التمثيل المنطقي للعالم الفيزيائي داخل المجال الرقمي. تحدد كيفية تمثيل الأصول الفيزيائية حتى يمكن التحكم بها وإدارتها من خلال الطبقات العليا.
+
+فوق ذلك، توجد *طبقة البنية التحتية المعرفة بالبرمجيات*. تسمح هذه الطبقة للبرمجيات بالتحكم في الأجهزة والموارد، سواء من خلال توفيرها أو تقسيمها أو أشكال أخرى من التحكم في البنية التحتية. تؤكد المحاضرة أن هذا أوسع من فكرة تكنولوجية واحدة. إنها الطبقة التي تمكن التحكم الرقمي في البيئة الفيزيائية الأساسية.
+
+تلي ذلك *طبقة إدارة الخدمات* و*طبقة إدارة المعلومات الموزعة*. تعمل هاتان الطبقتان معًا بشكل وثيق وتتفاعلان بشكل كبير مع البنية التحتية المعرفة بالبرمجيات. واحدة تساعد في وضع وإدارة الخدمات، بينما الأخرى تدير البيانات والعلاقات المعلوماتية التي تعتمد عليها تلك الخدمات. تصف المحاضرة هذه الطبقات كجزء من العلاقة المنسقة بين البيانات والتطبيقات والأجهزة.
+
+وفي الأعلى توجد *طبقة التطبيقات*، التي تعد أكبر وأكثر الطبقات وضوحًا للعديد من المنظمات. تقدم التطبيقات قيمة للمنظمة، لكن تقوم بذلك بالاعتماد على الخدمات والمعلومات أدناها. تشير المحاضرة إلى أن سلوك التطبيق ليس معزولًا؛ بل يتشكل بواسطة الطبقات السفلية ومن قبل مجالات العملية والتنظيم الأعم.
+
+هذا النموذج الطبقي ليس فقط وصفيًا. إنه يساعد على توضيح مكان الأشياء، كيف تتعلق ببعضها البعض، ونوع القرار الذي يجب اتخاذه في كل طبقة. لهذا السبب تعالج المحاضرة النطاق الرقمي كمعمارية بدلاً من كومة من الأدوات والأنظمة.
+
+## الهوية والأمان كجانب متداخل
+
+جزء رئيسي من المحاضرة هو معالجة الهوية والأمان كطبقات جوانب متداخلة. هذه ليست مجالات معزولة وليست محدودة بطبقة واحدة. إنها تشمل النطاق الرقمي.
+
+الهوية مهمة بشكل خاص لأنها أوسع من حسابات المستخدمين. تشير المحاضرة إلى أن الأجهزة لديها هوية، والبيانات لديها هوية، والتطبيقات والميكروسيرفيسز والخدمات جميعها لديها هوية أيضًا. وهذا يجعل الهوية محور اهتمام معماري من الدرجة الأولى، وليس ميزة جانبية. المحاضرة صريحة في أن الهوية يجب أن تُفصل مفهوميًا عن الأمان على الرغم من أن الاثنين مرتبطان ارتباطًا وثيقًا.
+
+كما يتم تحديد الأمان كجانب يمتد عبر الطبقات الرقمية. بدلاً من أن يكون محصورًا في مكون واحد أو فريق واحد، ينطبق الأمان عبر معمارية النطاق الرقمي. وهذا مهم للحوكمة لأنه يغير كيفية توزيع المسؤوليات وكيفية فرض الحدود المعمارية.
+
+من خلال فصل الهوية والأمان كطبقات جوانب، يتجنب النموذج التعامل معها كأفكار جانبية. إنه يجعلها مرئية باعتبارها قضايا معمارية تؤثر على كل طبقة من النطاق الرقمي.
+
+## كيف تشكل بعد التكنولوجيا الخيارات
+
+ترتبط المحاضرة أيضًا بالنطاق الرقمي بـ *بعد التكنولوجيا*. يقيد هذا البعد ويتيح ما يمكن القيام به في النطاق الرقمي. بعبارات عملية، يعني ذلك أن الهندسة المعمارية الرقمية ليست عائمة. فهي تعمل ضمن واقعي تكنولوجي يشكل الخيارات ويحد من أخرى.
+
+هنا يصبح المحاضرة مفيدة بشكل خاص للقادة. النقطة ليست في مطاردة الأداة الأحدث أو التعامل مع التحديث كتجربة شراء. النقطة هي فهم كيف تتناسب خيارات التكنولوجيا مع الهندسة المعمارية وكيف تدعم علاقات الطبقة التي تم إنشاؤها بالفعل.
+
+تقدم المحاضرة مثالًا على القيمة العملية لهذه الوضوح: عندما تستطيع المنظمات تسمية ورسم ما ينتمي إلى كل طبقة، يمكنها التعرف على التكرار والارتباك و&quot;برامج الرفوف&quot; بسهولة أكبر. إذا لم يكن بالإمكان ربط أداة بدور في النطاق الرقمي، يصبح من العادل أن نسأل عما إذا كانت تساهم فعليًا في التنفيذ. هذا سؤال حوكمة بقدر ما هو سؤال تقني.
+
+## لماذا توضح الطبقات تحسين التحديث
+
+أقوى رسالة تحديث في المحاضرة هي أن التحول هيكلية، وليس تجميلية. إذا ظلت بنية النطاق الرقمي كما هي، فإن التحديث يميل إلى البقاء سطحيًا. يتطلب التغيير الحقيقي رؤية في الهندسة المعمارية: ما يعتمد على ما، حيث تقع المسؤوليات، وأين يختبئ التكرار أو التفتت.
+
+لهذا السبب تحذر المحاضرة من التعامل مع التحديث كمشكلة توصيل فقط. التوصيل مهم، لكن التوصيل بدون وضوح معماري يميل إلى إعادة إنتاج نفس المشاكل بشكل جديد. بالمقابل، يساعد نموذج الطبقات على فصل القرارات المعمارية عن أنشطة التنفيذ والدعم التشغيلي. هذا الفصل يجعل التحديث أكثر ديمومة.
+
+كما تؤكد المحاضرة على أن الدعم التشغيلي يوفر تغذية راجعة إلى الهندسة المعمارية. بعبارة أخرى، فإن النطاق ليس ثابتًا. يمكن أن تُفيد السجلات والكفاءات والملاحظات التشغيلية تعديلات معمارية مستقبلية. وهذا يخلق حلقة تحسين مستمرة، لكن فقط إذا تم تعريف النطاق الرقمي بوضوح كافٍ لملاحظته وإدارته.
+
+بالنسبة للمعماريين المؤسسيين، وقادة التحول الرقمي، والممارسين، فإن الرسالة واضحة: المعمارية أولاً، التنفيذ ثانياً. إذا تم معالجة النطاق الرقمي كمعمارية، تصبح طبقاته مرئية وقابلة للإدارة. إذا تم التعامل معه كمساحة تنفيذية فضفاضة، تفقد جهود التحول تماسكها.
+
+## مزيد من الاستماع
+
+للاستماع إلى المحاضرة كاملة، قم بزيارة صفحة الحلقة:  
+https://embracingdigital.org/en/lectures/dta-21
+
+يمكنك أيضًا الإحالة إلى سلسلة *عمارة التحول الرقمي* الأوسع لمزيد من المحاضرات حول كيفية تشكيل الهندسة المعمارية للتغيير الرقمي:  
+https://embracingdigital.org/en/lectures
+</code></pre>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://www.embracingdigital.org/ar/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://www.embracingdigital.org/ar/episodes/index.html",
+  "inLanguage": "ar",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://www.embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://www.embracingdigital.org/ar/lectures/dta-21/index.html#episode",
+  "url": "https://www.embracingdigital.org/ar/lectures/dta-21/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.embracingdigital.org/ar/lectures/dta-21/index.html"
+  },
+  "name": "مقدمة إلى طبقات المجال الرقمي",
+  "episodeNumber": 21,
+  "datePublished": "2026-06-10",
+  "inLanguage": "ar",
+  "description": "ملخص",
+  "partOfSeries": {
+    "@id": "https://www.embracingdigital.org/ar/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.embracingdigital.org/ar/episodes/dta-21/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "مقدمة إلى طبقات المجال الرقمي Video",
+      "embedUrl": "https://www.youtube.com/embed/kJua8LuqZns"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "مقدمة إلى طبقات المجال الرقمي Audio",
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/0ed59271"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://www.embracingdigital.org/../../../ar/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>حقوق الطبع والنشر &2025 شركة بيدار للإنتاج ذ.م.م</p>
+        <p&gt;جميع الحقوق محفوظة&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    // Guard for pages without nav
+    const toggle = document.querySelector('.menu-toggle');
+    const nav    = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Mobile: toggle .menu-open on <body>
+        toggle?.addEventListener('click', () => {
+            const open = document.body.classList.toggle('menu-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
