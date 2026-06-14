@@ -86,7 +86,7 @@
         <div class="brand">
             <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
                 <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
-                <span class="brand-text">
+                <span class="brand-text">Embracing Digital</span>
             </a>
         </div>
     </div>
@@ -254,6 +254,7 @@
 
 
 
+
 <a class="skip-link" href="#main">Skip to content</a>
 
 <nav class="breadcrumbs" aria-label="Breadcrumb">
@@ -287,48 +288,86 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="240"/>
             <meta itemprop="inLanguage" content="en"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="Optimizing HPC Usage for Researchers Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/9lCF5BqKV2Q">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/9lCF5BqKV2Q"
-                        title="Optimizing HPC Usage for Researchers Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="Optimizing HPC Usage for Researchers Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/598031ca">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/598031ca"
-                        title="Optimizing HPC Usage for Researchers Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="Invalid Date">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Optimizing HPC Usage for Researchers Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/9lCF5BqKV2Q">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/9lCF5BqKV2Q"
+                            title="Optimizing HPC Usage for Researchers Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Optimizing HPC Usage for Researchers Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/598031ca">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/598031ca"
+                            title="Optimizing HPC Usage for Researchers Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on "2025-02-06T03:57:25.179Z"<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
@@ -336,42 +375,42 @@
 
 
             
-                <nav class="tags" aria-label="Tags">
-                    
-                        <a href="../../../en/search.html?query=highperformancecomputing"
-                           itemprop="keywords">highperformancecomputing</a>
-                    
-                        <a href="../../../en/search.html?query=hpcoptimization"
-                           itemprop="keywords">hpcoptimization</a>
-                    
-                        <a href="../../../en/search.html?query=artificialintelligence"
-                           itemprop="keywords">artificialintelligence</a>
-                    
-                        <a href="../../../en/search.html?query=itservices"
-                           itemprop="keywords">itservices</a>
-                    
-                        <a href="../../../en/search.html?query=collaboration"
-                           itemprop="keywords">collaboration</a>
-                    
-                        <a href="../../../en/search.html?query=process"
-                           itemprop="keywords">process</a>
-                    
-                        <a href="../../../en/search.html?query=people"
-                           itemprop="keywords">people</a>
-                    
-                </nav>
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../../en/search.html?query=highperformancecomputing"
+                   itemprop="keywords">highperformancecomputing</a>
+                
+                <a href="../../../en/search.html?query=hpcoptimization"
+                   itemprop="keywords">hpcoptimization</a>
+                
+                <a href="../../../en/search.html?query=artificialintelligence"
+                   itemprop="keywords">artificialintelligence</a>
+                
+                <a href="../../../en/search.html?query=itservices"
+                   itemprop="keywords">itservices</a>
+                
+                <a href="../../../en/search.html?query=collaboration"
+                   itemprop="keywords">collaboration</a>
+                
+                <a href="../../../en/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../../en/search.html?query=people"
+                   itemprop="keywords">people</a>
+                
+            </nav>
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -456,7 +495,7 @@
     {
       "@type": "AudioObject",
       "name": "Optimizing HPC Usage for Researchers Audio",
-      "contentUrl": "https://share.transistor.fm/e/598031ca"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/598031ca"
     }
   ],
   "actor": [
@@ -479,16 +518,8 @@
     // year
     (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
 
-    // Guard for pages without nav
-    const toggle = document.querySelector('.menu-toggle');
-    const nav    = document.querySelector('nav#primary-nav');
+    const nav = document.querySelector('nav#primary-nav');
     if (nav) {
-        // Mobile: toggle .menu-open on <body>
-        toggle?.addEventListener('click', () => {
-            const open = document.body.classList.toggle('menu-open');
-            toggle.setAttribute('aria-expanded', String(open));
-        });
-
         // Dropdowns: tap/click + keyboard
         document.querySelectorAll('li.dropdown > a').forEach(link => {
             const li = link.parentElement;

@@ -193,92 +193,110 @@
           Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
         </span>
             </p>
-
             <meta itemprop="episodeNumber" content="314"/>
             <meta itemprop="inLanguage" content="fr"/>
         </header>
 
         
-            <section class="video-container" aria-label="Watch the episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject">
-                <meta itemprop="name" content="L'IA transforme l'industrie de la traduction. Video">
-                <meta itemprop="embedUrl" content="https://www.youtube.com/embed/02qFK6pI3fw">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/02qFK6pI3fw"
-                        title="L'IA transforme l'industrie de la traduction. Video"
-                        loading="lazy"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen
-                ></iframe>
-            </section>
-        
 
-        
-            <section class="podcast-container" aria-label="Listen to this episode"
-                     itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject">
-                <meta itemprop="name" content="L'IA transforme l'industrie de la traduction. Audio">
-                <meta itemprop="contentUrl" content="https://share.transistor.fm/e/44dcb149">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="0"
-                        scrolling="no"
-                        src="https://share.transistor.fm/e/44dcb149"
-                        title="L'IA transforme l'industrie de la traduction. Audio"
-                        loading="lazy"
-                ></iframe>
+        <div id="episode-media" data-release-date="Invalid Date">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="L'IA transforme l'industrie de la traduction. Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/02qFK6pI3fw">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/02qFK6pI3fw"
+                            title="L'IA transforme l'industrie de la traduction. Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
 
-                <p class="listen-note">
-                    Explore more in the <a href="../../../fr/episodes/index.html">episode archive</a>.
-                </p>
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="L'IA transforme l'industrie de la traduction. Audio">
+                    <meta itemprop="contentUrl" content="https://art19.com/shows/embracing-digital-transformation/episodes/44dcb149">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://art19.com/shows/embracing-digital-transformation/episodes/44dcb149"
+                            title="L'IA transforme l'industrie de la traduction. Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../fr/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on "2026-01-06T14:05:31.500Z"<br>to see and listen to this amazing episode</h1>
             </section>
-        
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
-            <p>IA, traduction et localisation. Explorez l&#39;impact transformateur de l&#39;IA générative sur les applications d&#39;entreprise, avec Dr. Darren, votre hôte engageant, et Brian Murphy, PDG de Smartly. Découvrez comment les entreprises opérationnalisent rapidement les technologies d&#39;IA pour obtenir des avantages concurrentiels et rationaliser les processus tout en embrassant la transformation numérique en cours.</p>
-<h2>Points clés :</h2>
-<ul>
-<li>L&#39;adoption de l&#39;IA dans les entreprises s&#39;accélère, mais les organisations sont confrontées à des défis tels que la qualité des données, la complexité de l&#39;intégration et la gestion du changement qui doivent être abordés pour garantir le succès.</li>
-<li>La mémoire institutionnelle et la gouvernance sont essentielles pour garantir la qualité et la cohérence des applications d&#39;IA, aidant le public à se sentir rassuré sur une mise en œuvre responsable.</li>
-<li>Les entreprises commencent à tirer parti de l&#39;automatisation pour réduire les coûts et améliorer la rapidité des services, créant des opportunités de croissance et d&#39;avantage sur le marché.</li>
-<li>La personnalisation à travers du contenu localisé est clé pour améliorer les taux de conversion et renforcer l&#39;engagement des clients.</li>
-<li>Le parcours d&#39;intégration de l&#39;IA est complexe ; les entreprises doivent restructurer les équipes, développer des cadres de gouvernance clairs et adopter les meilleures pratiques pour surmonter les obstacles et tirer pleinement parti des bénéfices potentiels.</li>
-</ul>
-<h2>Chapitres :</h2>
-<ul>
-<li>00:00 - Introduction à la transformation numérique</li>
-<li>02:15 - Parcours de Brian Murphy</li>
-<li>05:30 - La rapidité du changement technologique</li>
-<li>10:40 - Défis dans l&#39;application de l&#39;IA</li>
-<li>15:00 - L&#39;essor des solutions IA pour les entreprises</li>
-<li>20:15 - Traduction, localisation et gouvernance</li>
-<li>25:00 - L&#39;importance de l&#39;expérience utilisateur</li>
-<li>30:45 - L&#39;avenir de l&#39;IA dans les affaires</li>
-</ul>
-<p>Rejoignez-nous pour explorer l&#39;intersection de l&#39;IA, de la technologie et des affaires et apprendre comment faire partie de ce passionnant parcours de transformation numérique !</p>
+            <p>IA, traduction et localisation. Explorez l&#39;impact transformateur de l&#39;IA générative sur les applications d&#39;entreprise, avec Dr. Darren, votre hôte engageant, et Brian Murphy, PDG de Smartly. Découvrez comment les entreprises opérationnalisent rapidement les technologies d&#39;IA pour obt</p>
 
 
             
 
             
-                <div class="guests" aria-label="Guests">
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../fr/guests/bryan-murphy/index.html" itemprop="url">
                 <span itemprop="name">Bryan Murphy</span>
               </a>
             </span>
-                    
-                        <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
               <a href="../../../fr/guests/darren-w-pulsipher/index.html" itemprop="url">
                 <span itemprop="name">Darren W Pulsipher</span>
               </a>
             </span>
-                    
-                </div>
+                
+            </div>
             
         </section>
 
@@ -380,7 +398,7 @@
     {
       "@type": "AudioObject",
       "name": "L'IA transforme l'industrie de la traduction. Audio",
-      "contentUrl": "https://share.transistor.fm/e/44dcb149"
+      "contentUrl": "https://art19.com/shows/embracing-digital-transformation/episodes/44dcb149"
     }
   ],
   "actor": [

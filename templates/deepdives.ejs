@@ -1,0 +1,141 @@
+<%
+// Ensure page + lang objects exist
+page = page || {};
+lang = lang || {};
+
+const siteBase = 'https://embracingdigital.org';
+const langId = lang.id || 'en';
+
+// Page-level SEO for Embracing Digital This Week (localized)
+const pageUrl = `${siteBase}/${langId}/briefs/`;
+const pageName = lang.newsTitle || 'Embracing Digital This Week Deep Dives';
+const siteName = lang.title || 'Embracing Digital Transformation';
+const summary = lang.deepDiveSummary || 'Beyond the news: Dr. Darren breaks down this week’s biggest tech stories and explains what they actually mean for your digital transformation journey.';
+page.id = 'briefs';
+page.title = `${pageName} | ${siteName}`;
+page.canonical = pageUrl;
+page.description = summary;
+
+// Hreflang URL overrides for this page (all languages you support)
+lang.urls = lang.urls || {};
+lang.urls.en = `${siteBase}/en/briefs/`;
+lang.urls.ar = `${siteBase}/ar/briefs/`;
+lang.urls.de = `${siteBase}/de/briefs/`;
+lang.urls.es = `${siteBase}/es/briefs/`;
+lang.urls.fr = `${siteBase}/fr/briefs/`;
+lang.urls.it = `${siteBase}/it/briefs/`;
+lang.urls.ja = `${siteBase}/ja/briefs/`;
+lang.urls.pt = `${siteBase}/pt/briefs/`;
+%>
+
+<%- include(`${baseDir}/${langId}/header.html`) %>
+
+<section id="all-episodes" class="transformation-container">
+    <h1><%= lang.deepDive || 'All Deep Dive Briefs' %></h1>
+
+    <p class="hero-subtitle" style="text-align: center; max-width: 900px; margin: 0 auto 2rem;">
+        <%- summary %>
+    </p>
+
+    <div class="episodes-grid">
+        <% for (let i in episodes) { const episode = episodes[i]; %>
+        <article class="episode-card">
+            <a href="<%= episode.slug.startsWith('http') ? episode.slug : (siteBase + '/' + langId + '/briefs/' + episode.slug.replace(/^\/+/, '')) %>" aria-label="<%- episode.title %>">
+                <img
+                        src="<%= episode.image.startsWith('http') ? episode.image : (siteBase + '/' +langId + '/briefs/' + episode.image.replace(/^\/+/,'')) %>"
+                        alt="<%= episode.title %>"
+                        loading="lazy"
+                >
+            </a>
+
+            <div class="episode-card-content">
+                <h3>#<%- episode.number %> <%= episode.title %></h3>
+
+                <p class="summary" style="text-align: left;">
+                    <%- episode.summary %>
+                </p>
+
+                <div class="tags" style="text-align: left;">
+                    <% let k = 0;
+                            for (let tname in episode.tags) {
+                    if (k < 8) { %>
+                        <a href="/<%= langId %>/search.html?query=<%= encodeURIComponent(tname) %>"><span><%= tname %></span></a>
+                    <%   }
+                        k++;
+                    } %>
+                </div>
+
+                <div class="episode-actions">
+                    <% if (episode.youtubeURL) { %>
+                        <a href="<%- episode.youtubeURL %>" class="listen-now">
+                            <%= lang.watchNow || 'Watch Now' %>
+                        </a>
+                    <% } %>
+                    <% if (episode.audioURL) { %>
+                        <a href="<%- episode.audioURL %>" class="listen-now">
+                            <%= lang.listenNow || 'Listen Now' %>
+                        </a>
+                    <% } %>
+                </div>
+            </div>
+        </article>
+        <% } %>
+    </div>
+</section>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "PodcastSeries",
+          "@id": "https://embracingdigital.org/#edtw",
+          "name": "<%- pageName %>",
+      "url": "<%- lang.urls[langId] %>",
+      "inLanguage": "<%- langId %>",
+      "description": "<%= summary %>",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Embracing Digital Transformation",
+        "url": "https://embracingdigital.org/"
+      },
+      "sameAs": [
+        "https://www.youtube.com/@embracingdigital",
+        "https://www.linkedin.com/company/embracingdigital"
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "<%- pageUrl %>#edtw-briefs",
+      "url": "<%- pageUrl %>",
+      "name": "<%- pageName %> — <%- (lang.deepDive || 'All Architectural Deep Dives') %>",
+      "description": "<%- summary %>",
+      "isPartOf": {
+        "@id": "https://embracingdigital.org/#website"
+      },
+      "about": [
+        { "@id": "https://embracingdigital.org/#edtw", "@type": "PodcastSeries" }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "<%- pageUrl %>#episode-list",
+      "name": "<%- pageName %> — News Briefs",
+      "itemListOrder": "http://schema.org/ItemListOrderDescending",
+      "numberOfItems": <%= Object.keys(episodes).length %>,
+      "itemListElement": [
+        <% let idx=0; for(let i in episodes) { let episode = episodes[i]; %>
+            {
+              "@type": "ListItem",
+              "position": <%= idx + 1 %>,
+          "url": "<%= episode.slug.startsWith('http') ? episode.slug : (siteBase + '/' + langId + '/briefs/' + episode.slug.replace(/^\/+/, '')) %>",
+          "name": "#<%= episode.number %> <%= episode.title %>"
+        }<%= idx < Object.keys(episodes).length - 1 ? ',' : '' %>
+        <% idx++; }; %>
+        ]
+      }
+    ]
+  }
+</script>
+
+<%- include(`${baseDir}/${langId}/footer.html`) %>
