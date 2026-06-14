@@ -96,7 +96,7 @@ their services, visit their website: &lt;a href=&#34;https://hellopebl.com/veloc
         <div class="brand">
             <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
                 <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
-                <span class="brand-text">
+                <span class="brand-text">Embracing Digital</span>
             </a>
         </div>
     </div>
@@ -261,6 +261,7 @@ their services, visit their website: &lt;a href=&#34;https://hellopebl.com/veloc
         </ul>
     </nav>
 </header>
+
 <section id="one-guest">
     <h1 id="episode-title">Pebl</h1>
     <div class="guest-container">
@@ -296,16 +297,8 @@ their services, visit their website: <a href="https://hellopebl.com/velocity-glo
     // year
     (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
 
-    // Guard for pages without nav
-    const toggle = document.querySelector('.menu-toggle');
-    const nav    = document.querySelector('nav#primary-nav');
+    const nav = document.querySelector('nav#primary-nav');
     if (nav) {
-        // Mobile: toggle .menu-open on <body>
-        toggle?.addEventListener('click', () => {
-            const open = document.body.classList.toggle('menu-open');
-            toggle.setAttribute('aria-expanded', String(open));
-        });
-
         // Dropdowns: tap/click + keyboard
         document.querySelectorAll('li.dropdown > a').forEach(link => {
             const li = link.parentElement;

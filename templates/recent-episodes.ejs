@@ -1,0 +1,17 @@
+<section id="latest-interviews">
+    <h2><%= lang.latestEpisodes %></h2>
+    <div class="interviews-container">
+        <!-- Interview 1 -->
+        <% episodes.forEach(lepisode => { %>
+        <div class="interview">
+            <a href="<%= relpath %>/<%= lang.id %>/episodes/edt-<%= lepisode.number %>/index.html">
+                <img src="<%= relpath %>/<%= lang.id %>/episodes/<%= lepisode.image %>" alt="Interview 1" class="interview-image">
+            </a>
+            <h3>#<%= lepisode.number %> <%= lepisode.title %></h3>
+            <p><%= lepisode.summary %></p>
+            <a href="<%= lepisode.youtubeURL %>" class="listen-now"><%= lang.watchNow %></a>
+            <a href="<%= lepisode.audioURL %>" class="listen-now"><%= lang.listenNow %></a>
+        </div>
+        <% });%>
+    </div>
+</section>

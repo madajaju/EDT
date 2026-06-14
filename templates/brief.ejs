@@ -1,0 +1,177 @@
+<%- include(`${baseDir}/${lang.id}/header.html`, {page: page, lang: lang}) %>
+
+<section id="one-brief" class="transformation-container">
+    <!-- Title hierarchy -->
+    <h1 id="episode-title"><%= brief.title %></h1>
+    <h2 style="margin-top: 0.5rem;">
+        <%= lang.newsTitle || "Embracing Digital This Week" %>
+    </h2>
+
+
+    <div class="brief-container">
+        <%- summary %>
+    </div>
+    <div class="brief-container episode-container">
+
+        <% if (youtubeID) { %>
+            <div class="video-container">
+                <iframe
+                        width="auto"
+                        height="auto"
+                        src="https://www.youtube.com/embed/<%= youtubeID %>"
+                        title="<%= brief.title %> — YouTube"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        <% } %>
+
+        <% if (audioID) { %>
+            <div class="podcast-container">
+                <iframe
+                        width="100%"
+                        height="180"
+                        frameborder="no"
+                        scrolling="no"
+                        seamless=""
+                        title="<%= brief.title %> — Audio"
+                        src="https://share.transistor.fm/e/<%- audioID %>">
+                </iframe>
+            </div>
+        <% } %>
+
+        <!-- Tags -->
+        <% if (brief.tags && Object.keys(brief.tags).length) { %>
+            <div class="tags" aria-label="Episode tags">
+                <% for (let tname in brief.tags) { %>
+                    <a href="<%- relpath %>/<%- lang.id %>/search.html?query=<%- encodeURIComponent(tname) %>">
+                        <span><%= tname %></span>
+                    </a>
+                <% } %>
+            </div>
+        <% } %>
+
+        <!-- Featured EDT Episode (recap / related) -->
+        <% if (edt) { %>
+            <section class="grid-container" aria-label="Related content">
+                <div class="main-brief grid-box">
+                    <h3><%= lang.title || "Embracing Digital Transformation" %></h3>
+
+                    <% if (edt.url) { %>
+                        <a href="<%= edt.url %>">
+                            <img src="<%= edt.imageURL %>" alt="<%= (edt.title || edt.name || 'Embracing Digital Transformation') %>" class="main-brief-image" loading="lazy">
+                        </a>
+                    <% } else { %>
+                        <img src="<%= edt.imageURL %>" alt="<%= (edt.title || edt.name || 'Embracing Digital Transformation') %>" class="main-brief-image" loading="lazy">
+                    <% } %>
+
+                    <h4 style="margin-top: 1rem;"><%= (edt.title?.replaceAll(/"/g,'') || edt.name || '') %></h4>
+                    <p><%= edt.text || '' %></p>
+
+                    <div class="episode-actions">
+                        <% if (edt.youtubeURL) { %>
+                            <a href="<%= edt.youtubeURL %>" class="listen-now"><%= lang.watchNow || "Watch Now" %></a>
+                        <% } %>
+                        <% if (edt.audioURL) { %>
+                            <a href="<%= edt.audioURL %>" class="listen-now"><%= lang.listenNow || "Listen Now" %></a>
+                        <% } %>
+                    </div>
+                </div>
+
+                <!-- Pillar article groups -->
+                <% for (let pname in pillars) {
+                    const pillar = pillars[pname];
+                %>
+                <div class="category grid-box">
+                    <h3><%= pillar.pillar %></h3>
+
+                    <div class="articles">
+                        <% for (let i in pillar.articles) {
+                            const article = pillar.articles[i];
+                            const headline = (article.headline?.replaceAll(/"/g,'') || pillar.name || "Article");
+                            const altText = headline;
+                        %>
+                        <div class="article">
+                            <% if (article.imageURL) { %>
+                                <img src="<%= article.imageURL %>" alt="<%= altText %>" loading="lazy">
+                            <% } %>
+
+                            <div class="article-content">
+                                <h4><%= headline %></h4>
+                                <p><%= article.text || '' %></p>
+
+                                <% if (article.urls && article.urls.length) { %>
+                                    <div>
+                                        <% for (let j in article.urls) {
+                                            const url = article.urls[j];
+                                        %>
+                                        <span><a href="<%= url %>" rel="noopener" target="_blank"><%= lang.readMore || "Read More" %></a><%= (j < article.urls.length - 1) ? ',' : '' %> </span>
+                                        <% } %>
+                                    </div>
+                                <% } %>
+                            </div>
+                        </div>
+                        <% } %>
+
+                        <div class="episode-actions">
+                            <% if (pillar.videoURL) { %>
+                                <a href="<%= pillar.videoURL %>" class="listen-now"><%= lang.watchNow || "Watch Now" %></a>
+                            <% } %>
+                            <% if (pillar.audioURL) { %>
+                                <a href="<%= pillar.audioURL %>" class="listen-now"><%= lang.listenNow || "Listen Now" %></a>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+                <% } %>
+            </section>
+        <% } %>
+
+    </div>
+</section>
+
+<!-- JSON-LD: PodcastEpisode -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "PodcastSeries",
+          "@id": "https://embracingdigital.org/#edtw",
+          "name": "<%- (lang.newsTitle || 'Embracing Digital This Week') %>",
+      "url": "https://embracingdigital.org/en/briefs/"
+    },
+    {
+      "@type": "PodcastEpisode",
+      "@id": "<%- (page && page.canonical ? page.canonical : '') %>#episode",
+      "name": "#<%- brief.number %> <%- brief.title %>",
+      "description": "<%- (page && page.description ? page.description : '') %>",
+      "url": "<%- (page && page.canonical ? page.canonical : '') %>",
+      "partOfSeries": { "@id": "https://embracingdigital.org/#edtw" },
+      "keywords": [
+    <% if (brief.tags) {
+        const keys = Object.keys(brief.tags);
+    for (let i=0;i<keys.length;i++) { %>
+        "<%- keys[i].replace(/"/g, '\\"') %>"<%= (i < keys.length - 1) ? ',' : '' %>
+        <% } } %>
+    ]
+    <% if (youtubeID) { %>,
+      "video": {
+        "@type": "VideoObject",
+        "embedUrl": "https://www.youtube.com/embed/<%- youtubeID %>",
+        "url": "https://www.youtube.com/watch?v=<%- youtubeID %>"
+      }
+    <% } %>
+      <% if (audioURL) { %>,
+      "associatedMedia": {
+        "@type": "AudioObject",
+        "contentUrl": "<%- audioURL %>"
+      }
+    <% } %>
+    }
+  ]
+}
+</script>
+
+<%- include(`${baseDir}/${lang.id}/footer.html`) %>

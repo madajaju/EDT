@@ -1,0 +1,15 @@
+<section id="hero">
+    <h1><%= lang.title %></h1>
+    <h2><%= lang.latestInterview %></h2>
+    <div class="featured-episode">
+        <a href="<%= relpath %>/<%= lang.id %>/episodes/edt-<%= episode.number %>/index.html">
+            <video autoplay loop muted playsinline width="100%" height="auto" poster="<%= episode.tile %>">
+                <source src="<%= episode.introVideo %>" type="video/mp4">
+            </video>
+        </a>
+        <h3><%= episode.title %></h3>
+        <p><%= episode.summary %></p>
+        <a href="<%= episode.youTubeURL %>" class="listen-now"><%= lang.watchNow %></a>
+        <a href="<%= episode.audioURL %>" class="listen-now"><%= lang.listenNow %></a>
+    </div>
+</section>

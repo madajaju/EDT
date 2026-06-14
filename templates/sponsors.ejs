@@ -1,0 +1,19 @@
+<%- include(`${baseDir}/${lang.id}/header.html`) %>
+<div id="all-guests">
+    <h1><%= lang.allSponsors %></h1>
+        <div class="guest-grid">
+            <% for(let i in sponsors) {
+                let sponsor = sponsors[i]; %>
+            <div class="guest-card">
+                <div class=guest-card-content">
+                    <a href="<%= sponsor.slug %>">
+                        <img src="<%= sponsor.image %>" alt="<%= sponsor.name %>">
+                    </a>
+                    <h3><%= sponsor.title %></h3>
+                    <p class="summary" style="text-align: left"><%- sponsor.summary %></p>
+                </div>
+            </div>
+            <% } %>
+        </div>
+</div>
+<%- include(`${baseDir}/${lang.id}/footer.html`) %>

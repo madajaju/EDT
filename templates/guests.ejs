@@ -1,0 +1,80 @@
+<%- include(`${baseDir}/${lang.id}/header.html`) %>
+
+<main id="all-guests" class="page-guests" role="main">
+    <header class="page-header">
+        <h1><%= lang.allGuests %></h1>
+    </header>
+
+    <section class="guest-grid" aria-label="<%= lang.allGuests %>">
+        <% for (let gi in guests) {
+            const guest = guests[gi];
+            const summary = (guest.summary || '').trim() || '—';
+            const tags = Array.isArray(guest.tags) ? guest.tags : [];
+            const num = (guest.numOfEpisodes ?? '').toString();
+        %>
+
+        <article class="guest-card">
+            <div class="guest-card-content">
+                <a href="<%= guest.slug %>" aria-label="<%= guest.title %>">
+                    <img
+                            src="<%= guest.image %>"
+                            alt="<%= guest.title %>"
+                            loading="lazy"
+                            decoding="async"
+                    >
+                </a>
+
+                <h2 class="guest-name"><%= guest.title %></h2>
+
+                <p class="summary guest-appearances">
+                    <i><%- lang.numOfAppear %> <%- num %></i>
+                </p>
+
+                <p class="summary guest-summary"><%- summary %></p>
+
+                <% if (tags.length) { %>
+                    <nav class="tags" aria-label="Guest tags">
+                        <% for (let ti = 0; ti < tags.length && ti < 8; ti++) { %>
+                            <a href="<%- relpath %>/<%- lang.id %>/search.html?query=<%- tags[ti] %>">
+                                <span><%= tags[ti] %></span>
+                            </a>
+                        <% } %>
+                    </nav>
+                <% } %>
+            </div>
+        </article>
+
+        <% } %>
+    </section>
+</main>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "@id": "<%= page?.canonical ? page.canonical : '' %>#guest-list",
+  "name": "<%= lang.allGuests %>",
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "numberOfItems": <%= Array.isArray(guests) ? guests.length : Object.keys(guests || {}).length %>,
+  "itemListElement": [
+    <%
+    // Support guests being either an Array or Object
+    const guestArr = Array.isArray(guests) ? guests : Object.values(guests || {});
+    guestArr.forEach((g, idx) => {
+        const url = (g.slug || '').startsWith('http')
+                ? g.slug
+                : (page?.canonical ? new URL(g.slug, page.canonical).toString() : g.slug);
+    %>
+    {
+      "@type": "ListItem",
+      "position": <%= idx + 1 %>,
+      "url": "<%= url %>",
+      "name": "<%= (g.title || g.name || '').replace(/"/g, '\\"') %>",
+      "image": "<%= (g.image || '').replace(/"/g, '\\"') %>"
+    }<%= idx < guestArr.length - 1 ? ',' : '' %>
+    <% }); %>
+    ]
+  }
+</script>
+
+<%- include(`${baseDir}/${lang.id}/footer.html`) %>

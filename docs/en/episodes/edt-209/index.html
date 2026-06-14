@@ -86,7 +86,7 @@
         <div class="brand">
             <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
                 <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
-                <span class="brand-text">
+                <span class="brand-text">Embracing Digital</span>
             </a>
         </div>
     </div>
@@ -251,6 +251,7 @@
         </ul>
     </nav>
 </header>
+
 
 
 
@@ -546,16 +547,8 @@
     // year
     (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
 
-    // Guard for pages without nav
-    const toggle = document.querySelector('.menu-toggle');
-    const nav    = document.querySelector('nav#primary-nav');
+    const nav = document.querySelector('nav#primary-nav');
     if (nav) {
-        // Mobile: toggle .menu-open on <body>
-        toggle?.addEventListener('click', () => {
-            const open = document.body.classList.toggle('menu-open');
-            toggle.setAttribute('aria-expanded', String(open));
-        });
-
         // Dropdowns: tap/click + keyboard
         document.querySelectorAll('li.dropdown > a').forEach(link => {
             const li = link.parentElement;

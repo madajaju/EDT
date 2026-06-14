@@ -1,0 +1,24 @@
+<%- include(`${baseDir}/${lang.id}/header.html`) %>
+<section id="one-guest">
+    <h1 id="episode-title"><%= sponsor.name %></h1>
+    <div class="guest-container">
+        <!-- Profile Header -->
+        <div class="sponsor-header">
+            <img src="<%= image %>" style="max-width: 90%;" alt="<%= sponsor.name %>">
+            <div class="guest-info">
+                <% if(linkedin) { %>
+                    <a href="https://www.linkedin.com/in/<%- linkedin %>" target="_blank" class="linkedIn-link">LinkedIn Profile</a>
+                <% } %>
+            </div>
+        </div>
+
+        <!-- Biography Section -->
+        <div class="biography episode-container">
+            We would like to thank <%= sponsor.name %> for sponsoring the show. Please help support us by visting their <a href="<%= sponsor.promotionURL %>" target="_blank" class="linkedIn-link">website <%- sponsor.promotionURL %></a>
+            <div>
+            <%- info %>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include(`${baseDir}/${lang.id}/footer.html`) %>

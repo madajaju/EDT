@@ -1,0 +1,308 @@
+<%- include(`${baseDir}/${lang.id}/header.html`, { page, lang, episode }) %>
+
+<%
+const safeText = (v) => (v == null ? "" : String(v));
+
+const stripHtml = (html) => safeText(html)
+        .replace(/<script[\s\S]*?<\/script>/gi, " ")
+        .replace(/<style[\s\S]*?<\/style>/gi, " ")
+        .replace(/<[^>]+>/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+
+const siteUrl = safeText(page?.siteUrl || "https://www.embracingdigital.org").replace(/\/$/, "");
+const canonical = safeText(page?.canonical || "");
+const abs = (u) => (/^https?:\/\//i.test(u) ? u : `${siteUrl}/${safeText(u).replace(/^\//, "")}`);
+
+const canonicalAbs = canonical ? abs(canonical) : "";
+
+const dateISO = safeText(episode?.dateISO || "");
+const dateDisplay = safeText(episode?.releaseDate || dateISO);
+
+// Prefer summaryText first if you have it, else strip HTML, limit length for meta/schema
+const rawSummaryText =
+        safeText(page?.description || summaryText || stripHtml(summary) || stripHtml(content));
+
+const descriptionText = rawSummaryText
+        .replace(/\u2019/g, "'") // normalize smart apostrophe for snippets
+        .replace(/\s+/g, " ")
+        .trim()
+        .slice(0, 300);
+
+// Guests -> [{name,url}]
+const guestObjs = episode?.guests
+        ? (Array.isArray(episode.guests) ? episode.guests : Object.values(episode.guests))
+        : [];
+
+const guestList = guestObjs
+        .filter(Boolean)
+        .map(g => {
+            const name = safeText(g.name || g).trim();
+            const slug = name.toLowerCase().replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-");
+            return {name, url: `${relpath}/${lang.id}/guests/${slug}/index.html`};
+        })
+        .filter(g => g.name);
+
+// Tags
+const tagNames = episode?.tags ? Object.keys(episode.tags) : [];
+
+// Media URLs
+const youtubeEmbed = youtubeID ? `https://www.youtube.com/embed/${safeText(youtubeID)}` : "";
+const transistorEmbed = audioID ? `https://art19.com/shows/embracing-digital-transformation/episodes/${safeText(audioID)}` : "";
+
+// Episode image
+const episodeImage = safeText(episode?.image || "");
+const episodeImageAbs = episodeImage
+        ? abs(`/${lang.id}/episodes/${episodeImage}`.replace(/\/{2,}/g, "/"))
+        : "";
+
+// Stable IDs
+const seriesId = abs(`/${lang.id}/episodes/index.html#series`);
+const episodeId = canonicalAbs ? `${canonicalAbs}#episode` : "";
+
+// Series schema
+const podcastSeries = {
+    "@context": "https://schema.org",
+    "@type": "PodcastSeries",
+    "@id": seriesId,
+    "name": "Embracing Digital Transformation",
+    "url": abs(`/${lang.id}/episodes/index.html`),
+    "inLanguage": safeText(lang?.id || "en"),
+    "description": "A podcast about the digital transformation of the world.",
+    "publisher": {
+        "@type": "Organization",
+        "@id": `${siteUrl}/#org`,
+        "name": "Embracing Digital Transformation",
+        "url": siteUrl,
+        "logo": {
+            "@type": "ImageObject",
+            "url": `${siteUrl}/images/logo.png`,
+            "width": 512,
+            "height": 512
+        }
+    }
+};
+
+// Episode schema
+const episodeJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "PodcastEpisode",
+    ...(episodeId ? {"@id": episodeId} : {}),
+    ...(canonicalAbs ? {"url": canonicalAbs} : {}),
+    ...(canonicalAbs ? {"mainEntityOfPage": {"@type": "WebPage", "@id": canonicalAbs}} : {}),
+    "name": safeText(title || episode?.title || ""),
+    "episodeNumber": Number(episode?.number) || safeText(episode?.number || ""),
+    ...(dateISO ? {"datePublished": dateISO} : {}),
+    "inLanguage": safeText(lang?.id || "en"),
+    "description": descriptionText,
+    "partOfSeries": {"@id": seriesId},
+    "author": {"@type": "Person", "name": "Dr. Darren Pulsipher"},
+    "creator": {"@type": "Person", "name": "Dr. Darren Pulsipher"},
+    ...(episodeImageAbs ? {"image": {"@type": "ImageObject", "url": episodeImageAbs}} : {}),
+    "associatedMedia": [
+        youtubeEmbed ? {
+            "@type": "VideoObject",
+            "name": `${safeText(title || episode?.title || "")} Video`,
+            "embedUrl": youtubeEmbed
+        } : null,
+        transistorEmbed ? {
+            "@type": "AudioObject",
+            "name": `${safeText(title || episode?.title || "")} Audio`,
+            "contentUrl": transistorEmbed
+        } : null
+    ].filter(Boolean),
+    ...(guestList.length ? {
+        "actor": guestList.map(g => ({
+            "@type": "Person",
+            "name": g.name,
+            "url": abs(g.url)
+        }))
+    } : {})
+};
+%>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="<%= `${relpath}/${lang.id}/home/index.html` %>">Home</a></li>
+        <li><a href="<%= `${relpath}/${lang.id}/episodes/index.html` %>">Episodes</a></li>
+        <li aria-current="page">Episode <%= episode.number %>: <%= episode.title %></li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            <% if (canonicalAbs) { %>
+                <link itemprop="url" href="<%= canonicalAbs %>">
+                <meta itemprop="mainEntityOfPage" content="<%= canonicalAbs %>"/>
+            <% } %>
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode <%= episode.number %></span>
+                <span class="episode-title"><%= episode.title %></span>
+            </h1>
+
+            <p class="episode-meta">
+                <% if (dateISO) { %>
+                    <time datetime="<%= dateISO %>" itemprop="datePublished"><%= dateDisplay %></time>
+                <% } else { %>
+                    <time itemprop="datePublished"><%= dateDisplay %></time>
+                <% } %>
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="<%= episode.number %>"/>
+            <meta itemprop="inLanguage" content="<%= lang.id %>"/>
+        </header>
+
+        <%
+        const currentDate = new Date();
+        currentDate.setHours(0,0,0,0);
+        const releaseDate = new Date(episode.releaseDate || dateISO);
+        releaseDate.setHours(0,0,0,0);
+        %>
+
+        <div id="episode-media" data-release-date="<%= releaseDate.toISOString() %>">
+            <% if (youtubeID) { %>
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="<%- safeText(title || episode?.title) %> Video">
+                    <meta itemprop="embedUrl" content="<%= youtubeEmbed %>">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="<%= youtubeEmbed %>"
+                            title="<%- safeText(title || episode?.title) %> Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            <% } %>
+
+            <% if (audioID) { %>
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="<%- safeText(title || episode?.title) %> Audio">
+                    <meta itemprop="contentUrl" content="<%= transistorEmbed %>">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="<%= transistorEmbed %>"
+                            title="<%- safeText(title || episode?.title) %> Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="<%= `${relpath}/${lang.id}/episodes/index.html` %>">episode archive</a>.
+                    </p>
+                </section>
+            <% } %>
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on <%- dateDisplay %><br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <%-  summary  %>
+
+            <%  if (tagNames.length) {  %>
+            <nav class="tags" aria-label="Tags">
+                <%  for (const tname of tagNames) {  %>
+                <a href="<%=  `${relpath}/${lang.id}/search.html?query=${encodeURIComponent(tname)}`  %>"
+                   itemprop="keywords"><%=  tname  %></a>
+                <%  }  %>
+            </nav>
+            <%  }  %>
+
+            <%  if (guestList.length) {  %>
+            <div class="guests" aria-label="Guests">
+                <%  for (const g of guestList) {  %>
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="<%=  g.url  %>" itemprop="url">
+                <span itemprop="name"><%=  g.name  %></span>
+              </a>
+            </span>
+                <%  }  %>
+            </div>
+            <%  }  %>
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <%-  content  %>
+        </section>
+
+        <%  if (episode.sponsors && episode.sponsors.length) {  %>
+        <section class="sponsor-container" aria-label="Sponsors">
+            <h2>Sponsors</h2>
+            <p>Thank you to our sponsors for supporting this episode!</p>
+            <ol>
+                <%  for (let i in episode.sponsors) {
+                        let sponsor = episode.sponsors[i];
+                        let imgPath = `${relpath}/${lang.id}/sponsors/${sponsor.name.replace(/\s+/g, '-').toLowerCase()}/${sponsor.image}`;
+                     %>
+                <li itemprop="sponsor" itemscope itemtype="https://schema.org/Organization">
+                    <a href="<%=  sponsor.promotionURL  %>" target="_blank" rel="noopener">
+                        <img
+                                src="<%=  imgPath  %>"
+                                alt="<%=  sponsor.name  %> logo"
+                                itemprop="logo"
+                                loading="lazy"
+                                decoding="async"
+                                style="max-width:150px;"
+                        >
+                    </a>
+                </li>
+                <%  }  %>
+            </ol>
+        </section>
+        <%  }  %>
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json"><%-  JSON.stringify(podcastSeries, null, 2)  %></script>
+<script type="application/ld+json"><%-  JSON.stringify(episodeJsonLd, null, 2)  %></script>
+
+<%- include(`${baseDir}/${lang.id}/footer.html`) %>

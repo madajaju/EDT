@@ -1,0 +1,222 @@
+<%- include(`${baseDir}/${lang.id}/header.html`) %>
+
+<%
+/**
+ * Episodes index template
+ * - Native lazy loading (loading="lazy", decoding="async")
+ * - Prevents layout shift via width/height on thumbnails
+ * - Works whether `episodes` is passed as an ARRAY (preferred) or OBJECT (legacy)
+ * - De-dupes by slug (and falls back to number+title)
+ * - Normalizes relpath to avoid "././" style URLs
+ */
+
+// Normalize relpath to avoid double dots / double slashes
+
+const siteUrl = "https://embracingdigital.org"
+const pageUrl = (page && (page.canonical || page.url)) ? (page.canonical || page.url) : `${langRoot}/episodes/index.html`;
+
+const base = (typeof relpath === "string" ? relpath : "").replace(/\/$/, "");
+const langRoot = `${base}/${lang.id}`.replace(/\/{2,}/g, "/");
+
+const safeText = (v) => (v == null ? "" : String(v));
+const slugify = (s) => safeText(s).toLowerCase().trim().replace(/\s+/g, "-");
+
+// Accept either array or object input
+const inputEpisodes = Array.isArray(episodes)
+        ? episodes
+        : (episodes && typeof episodes === "object" ? Object.values(episodes) : []);
+
+const seen = new Set();
+const normalized = inputEpisodes
+        .filter(Boolean)
+        .filter(ep => {
+            const key = ep.slug || `${safeText(ep.number)}:${safeText(ep.title)}`;
+            if (!key) return true;
+            if (seen.has(key)) return false;
+            seen.add(key);
+            return true;
+        });
+
+// Newest-first sort if number exists (your generator already sorts, but this is safe)
+normalized.sort((a, b) => Number(b.number) - Number(a.number));
+
+// Date display helper (avoid printing "Invalid Date")
+const displayDate = (ep) => {
+    if (ep.dateDisplay) return safeText(ep.dateDisplay);
+    const d = safeText(ep.date);
+    if (!d || d === "Invalid Date") return "";
+    return d;
+};
+
+// Thumbnail dimensions (adjust if your thumbs are a different ratio)
+const THUMB_W = 640;
+const THUMB_H = 360;
+%>
+
+<section id="all-episodes" aria-labelledby="all-episodes-title">
+    <h1 id="all-episodes-title"><%= lang.allEpisodes %></h1>
+
+    <div class="episodes-grid">
+        <% for (let i = 0; i < normalized.length; i++) {
+            const episode = normalized[i];
+            const title = safeText(episode.title);
+            const img = safeText(siteUrl + '/' + lang.id + '/episodes/' + episode.image);
+            const href = safeText(siteUrl + '/' + lang.id + '/episodes/' + episode.slug);
+            const dateTxt = displayDate(episode);
+
+            const guestNames = episode.guests ? Object.keys(episode.guests) : [];
+            const tags = episode.tags ? Object.keys(episode.tags) : [];
+        %>
+
+        <article class="episode-card" aria-label="<%= title %>">
+            <a href="<%= href %>" aria-label="<%= title %>">
+                <img
+                        src="<%= img %>"
+                        alt="<%= title %>"
+                        loading="<%= (i === 0 ? 'eager' : 'lazy') %>"
+                        decoding="async"
+                        fetchpriority="<%= (i === 0 ? 'high' : 'auto') %>"
+                        width="<%= THUMB_W %>"
+                        height="<%= THUMB_H %>"
+                >
+            </a>
+
+            <div class="episode-card-content">
+                <h3>
+                    #<%= safeText(episode.number) %> <%= title %>
+                </h3>
+
+                <% if (dateTxt) { %>
+                    <p class="episode-date"><%= dateTxt %></p>
+                <% } %>
+
+                <% if (guestNames.length) { %>
+                    <p class="guests" style="text-align:left">
+                        <%- guestNames.map(guestname => {
+                            const guestSlug = slugify(guestname);
+                            return `<a href="${langRoot}/guests/${guestSlug}/index.html">${guestname}</a>`;
+                        }).join(' ') %>
+                    </p>
+                <% } %>
+
+                <% if (episode.summary) { %>
+                    <p class="summary" style="text-align:left"><%- episode.summary %></p>
+                <% } %>
+
+                <% if (tags.length) { %>
+                    <nav class="tags" aria-label="Episode tags" style="text-align:left">
+                        <% for (let k = 0; k < Math.min(tags.length, 8); k++) {
+                            const tname = tags[k];
+                        %>
+                        <a href="<%= `${langRoot}/search.html?query=${encodeURIComponent(tname)}` %>"><span><%= tname %></span></a>
+                        <% } %>
+                    </nav>
+                <% } %>
+
+                <div class="episode-actions">
+                    <% if (episode.youtubeURL) { %>
+                        <a href="<%= episode.youtubeURL %>" class="listen-now" rel="noopener" target="_blank"><%= lang.watchNow %></a>
+                    <% } %>
+                    <% if (episode.audioURL) { %>
+                        <a href="<%= episode.audioURL %>" class="listen-now" rel="noopener" target="_blank"><%= lang.listenNow %></a>
+                    <% } %>
+                </div>
+            </div>
+        </article>
+
+        <% } %>
+    </div>
+</section>
+
+
+<%
+/**
+ * JSON-LD for Episodes Index (SEO + AI visibility)
+ * - ItemList of episodes (best for a listing page)
+ * - Optional PodcastSeries metadata (helps connect episodes to the show)
+ *
+ * Assumptions:
+ * - `page.canonical` is set (ideally absolute URL, but works relative)
+ * - `normalized` is your array of episode objects (as in the revised template)
+ * - Each episode has: slug, title, number, dateISO (preferred) or date (display), image
+ *
+ * IMPORTANT: If you can, pass `siteUrl` (absolute, e.g. https://embracingdigital.org)
+ * into context and use it to build absolute URLs below. Absolute URLs are best practice.
+ */
+
+
+const abs = (u) => {
+    // If already absolute, keep it
+    if (/^https?:\/\//i.test(u)) return u;
+    // If we have a siteUrl, join to absolute
+    if (siteUrl) return `${siteUrl.replace(/\/$/, "")}/${String(u).replace(/^\//, "")}`;
+    // Otherwise return relative (still valid JSON-LD, just less ideal)
+    return u;
+};
+
+const episodeItemList = normalized.slice(0, 200).map((ep, idx) => {
+    const epUrl = abs(`${langRoot}/${ep.slug}`.replace(/\/{2,}/g, "/"));
+    const imgUrl = ep.image ? abs(`${langRoot}/${ep.image}`.replace(/\/{2,}/g, "/")) : undefined;
+
+    // Prefer ISO date if you have it (your generator patch adds dateISO)
+    const dateISO = ep.dateISO && /^\d{4}-\d{2}-\d{2}$/.test(ep.dateISO) ? ep.dateISO : undefined;
+
+    const item = {
+        "@type": "PodcastEpisode",
+        "url": epUrl,
+        "name": `#${String(ep.number || "").trim()} ${String(ep.title || "").trim()}`.trim()
+    };
+    if (dateISO) item.datePublished = dateISO;
+    if (imgUrl) item.image = imgUrl;
+
+    return {
+        "@type": "ListItem",
+        "position": idx + 1,
+        "url": epUrl,
+        "item": item
+    };
+});
+
+const jsonLdGraph = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "CollectionPage",
+            "@id": abs(pageUrl),
+            "url": abs(pageUrl),
+            "name": (page && page.title) ? page.title : "All Episodes",
+            "description": (page && page.description) ? page.description : undefined,
+            "inLanguage": lang && lang.id ? lang.id : undefined,
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "Embracing Digital Transformation",
+                "url": siteUrl ? abs("/") : undefined
+            },
+            "mainEntity": {
+                "@type": "ItemList",
+                "name": (page && page.title) ? page.title : "All Episodes",
+                "itemListOrder": "https://schema.org/ItemListOrderDescending",
+                "numberOfItems": episodeItemList.length,
+                "itemListElement": episodeItemList
+            }
+        },
+
+        // Optional but helpful: define the show as a PodcastSeries
+        // (Better if you also put this on the homepage and episode pages.)
+        {
+            "@type": "PodcastSeries",
+            "@id": abs(`${langRoot}/index.html`),
+            "name": "Embracing Digital Transformation",
+            "description": "A podcast about the digital transformation of the world.",
+            "inLanguage": lang && lang.id ? lang.id : undefined,
+            "url": abs(`${langRoot}/index.html`)
+        }
+    ].filter(Boolean)
+};
+%>
+
+<script type="application/ld+json">
+<%- JSON.stringify(jsonLdGraph, null, 2) %>
+</script>
+
+<%- include(`${baseDir}/${lang.id}/footer.html`) %>

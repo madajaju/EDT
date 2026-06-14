@@ -22,43 +22,63 @@ header {
     z-index: 9000;
     top: 0;
     background: #4978a3;
-    padding: 10px 0; /* Added padding for better mobile spacing */
-    text-align: center;
-    display: flex; /* Ensure header can contain logo and nav */
+    padding: 0.45rem 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 0.5rem 1rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-/* Style the logo container */
-.logo-container {
-    float: left; /* Push logo to the left */
-    margin-left: 15px; /* Add spacing between logo and navigation */
-    margin-right: 15px; /* Add spacing between logo and navigation */
-    padding-top: 10px;
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    min-width: 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+.brand-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    min-width: 0;
 }
 
 .site-icon {
-    width: 75px; /* Adjust icon size */
-    height: auto; /* Adjust icon size (same as width for proportion) */
+    width: 46px;
+    height: auto;
     display: block;
+    flex: 0 0 auto;
 }
 
 .brand-text {
     color: #ffffff;
-    font-size: 1.25rem;
+    font-size: 0.95rem;
     font-weight: 700;
-    margin-left: 10px;
-    display: inline-block;
-    vertical-align: middle;
+    line-height: 1.1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
 nav {
-    padding: 20px 0;
     display: flex;
-    flex-grow: 1; /* Allow nav to take available space */
-    justify-content: center;
+    flex: 1 1 auto;
     align-items: center;
+    justify-content: flex-end;
+    gap: 0.45rem;
+    padding: 0;
+    min-width: 0;
 }
 /* Basic nav styles */
 nav ul {
@@ -66,16 +86,20 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25rem 0.35rem;
 }
 
 .nav-main {
-    margin: 0 auto; /* Centers the main links */
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
 .nav-right {
-    margin-left: auto; /* Pushes the language list to the far right */
-    padding-right: 20px;
+    margin-left: auto;
+    padding-right: 0;
+    flex: 0 0 auto;
 }
 
 nav ul li {
@@ -84,10 +108,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffff; /* Adjust based on your theme */
-    padding: 10px 5px;
-    display: block;
+    color: #ffff;
+    padding: 0.32rem 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
     line-height: 1;
+    white-space: nowrap;
+    font-size: 0.93rem;
 }
 
 /* Dropdown menu styling */
@@ -106,10 +134,10 @@ nav ul li a {
     display: none;
     position: absolute;
     background-color: #ffffff; /* Background of dropdown */
-        z-index: 9999; /* Ensures it overlays other content */
-        min-width: 150px;
-        left: 0; /* Default alignment for other dropdowns */
-    }
+    z-index: 9999; /* Ensures it overlays other content */
+    min-width: min(18rem, 90vw);
+    left: 0; /* Default alignment for other dropdowns */
+}
 
     /* Specific fix for Language dropdown on the far right */
     .nav-right .dropdown-menu {
@@ -118,81 +146,81 @@ nav ul li a {
     }
 
     .dropdown-menu li {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
     z-index: 9999; /* Ensures it overlays other content */
-    min-width: 150px;
+    min-width: 0;
 }
 
 .dropdown-menu li {
-    padding: 5px 15px;
+    padding: 0;
     text-align: left;
 }
 
 .dropdown-menu li a {
-    padding: 5px 10px;
+    padding: 0.5rem 0.7rem;
     color: #333;
-    white-space: nowrap;
+    white-space: normal;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
 }
 
 .dropdown-menu li a:hover {
     background-color: #f4f4f4; /* Highlight color for hover */
     color: #000;
 }
-nav ul li a:hover {
-    color: #f4a261;
+nav ul li a:hover,
+nav ul li a:focus-visible {
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+    outline: none;
 }
 
-/* 📱 Responsive Navigation Menu */
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 32px; /* Made slightly larger for thumbs */
-    cursor: pointer;
-    padding: 0 15px;
-    z-index: 9001;
+.nav-note {
+    display: block;
+    font-size: 0.78rem;
+    color: #64748b;
+    white-space: normal;
 }
 
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Show hamburger on mobile */
+    header {
+        padding: 0.45rem 0.65rem;
+    }
+
+    .site-icon {
+        width: 40px;
+    }
+
+    .brand-text {
+        font-size: 0.92rem;
     }
 
     nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
         width: 100%;
-        background: #497BA3;
-        flex-direction: column;
-        display: none; /* Hide by default on mobile */
-        padding: 0;
-    }
-
-    body.menu-open nav {
-        display: flex; /* Show when toggle is clicked */
+        flex-basis: 100%;
+        justify-content: flex-start;
+        padding-top: 0.35rem;
     }
 
     nav ul.nav-main,
     nav ul.nav-right {
-        flex-direction: column;
         width: 100%;
-        gap: 0;
+        gap: 0.3rem;
     }
 
     nav ul li {
-        width: 100%;
-        border-top: 1px solid rgba(255,255,255,0.1);
+        width: auto;
     }
 
     nav ul li a {
-        padding: 15px;
-        width: 100%;
-        box-sizing: border-box;
+        padding: 0.42rem 0.6rem;
+        font-size: 0.88rem;
     }
 
     /* Mobile Dropdowns */
@@ -201,8 +229,19 @@ nav ul li a:hover {
         width: 100%;
         box-shadow: none;
         background: #3a6282; /* Slightly darker to show hierarchy */
+        margin-top: 0.25rem;
+        border-radius: 0.5rem;
+    }
+
+    .dropdown-menu li a {
+        color: #ffffff;
+    }
+
+    .nav-note {
+        color: rgba(255, 255, 255, 0.75);
     }
 }
+
 /* Keep your existing :hover behavior on desktop,
    but also show submenu when JS adds .open */
 .dropdown.open > .dropdown-menu {
@@ -1403,10 +1442,24 @@ section:has(.show-summary) {
     margin: 0 auto;
 }
 
+.hero-section {
+    margin: 0 auto;
+    padding: 1rem 1.25rem 1.1rem;
+    max-width: 1200px;
+}
+
+.hero-section .section-title {
+    margin-bottom: 0.75rem;
+}
+
+.hero-subtitle {
+    margin: 0;
+}
+
 /* ---------- MISSION / PROVIDE / VALUES / SERVE ---------- */
 
 .about-mission {
-    padding: 3rem 1.5rem 2.5rem;
+    padding: 2rem 1.5rem 2.25rem;
 }
 
 .about-provide {
@@ -1419,6 +1472,16 @@ section:has(.show-summary) {
 
 .about-serve {
     padding: 3rem 1.5rem 4rem;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 0.85rem 0.9rem 0.95rem;
+    }
+
+    .about-mission {
+        padding: 1.5rem 1rem 2rem;
+    }
 }
 
 /* Reuse global section title, but ensure spacing */

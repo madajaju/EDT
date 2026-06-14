@@ -1,0 +1,188 @@
+<%- include(`${baseDir}/${lang.id}/header.html`) %>
+
+<%
+const safeText = (v) => (v == null ? "" : String(v));
+const stripHtml = (html) => safeText(html)
+        .replace(/<script[\s\S]*?<\/script>/gi, " ")
+        .replace(/<style[\s\S]*?<\/style>/gi, " ")
+        .replace(/<[^>]+>/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+
+const siteUrl = safeText(page?.siteUrl || "https://www.embracingdigital.org").replace(/\/$/, "");
+const abs = (u) => (/^https?:\/\//i.test(u) ? u : `${siteUrl}/${safeText(u).replace(/^\//, "")}`);
+
+const guestName = safeText(guest?.name);
+const bioText = stripHtml(bio);
+
+// LinkedIn normalization
+let linkedinUrl = "";
+if (linkedin) {
+    const li = String(linkedin).trim();
+    linkedinUrl = li.startsWith("http")
+            ? li
+            : `https://www.linkedin.com/in/${li.replace(/^\/+|in\//g, "")}`;
+}
+
+// Canonical (prefer directory URL pattern)
+const guestUrl = page?.canonical ? abs(page.canonical) : abs(`/${lang.id}/guests/${guest?.id || guestName.toLowerCase().replace(/\s+/g,'-')}/`);
+
+// Image URL absolute for JSON-LD
+const guestImageAbs = image ? abs(image) : "";
+
+// Normalize/dedupe tags (basic)
+const normTag = (t) => safeText(t).trim().toLowerCase().replace(/\s+/g, "_");
+const tagsNorm = Array.from(new Set((tags || []).map(normTag))).filter(Boolean);
+
+// ItemList of episodes (latest)
+const episodeItems = [];
+if (guest?.episodes) {
+    for (const ename in guest.episodes) {
+        const ep = guest.episodes[ename];
+        const epUrl = abs(`${relpath}/${lang.id}/episodes/edt-${ep.number}/`);
+        const epName = safeText(ep.title);
+        episodeItems.push({
+            "@type": "ListItem",
+            "position": episodeItems.length + 1,
+            "url": epUrl,
+            "item": {
+                "@type": "PodcastEpisode",
+                "name": epName,
+                "url": epUrl,
+                "episodeNumber": Number(ep.number) || safeText(ep.number || ""),
+                ...(ep.dateISO ? { "datePublished": ep.dateISO } : {})
+            }
+        });
+    }
+}
+
+// Person JSON-LD (AI visibility win)
+const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": guestName,
+    ...(guestImageAbs ? { "image": guestImageAbs } : {}),
+    "url": guestUrl,
+    "mainEntityOfPage": guestUrl,
+    ...(linkedinUrl ? { "sameAs": [linkedinUrl] } : {})
+};
+
+// Optional: itemlist schema for episodes
+const itemListJsonLd = episodeItems.length ? {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": `${guestName} — ${safeText(lang.latestEpisodes || "Latest Episodes")}`,
+    "itemListElement": episodeItems
+} : null;
+%>
+
+<section id="one-guest">
+    <header class="guest-header">
+        <h1 id="guest-title"><%= guestName %></h1>
+    </header>
+
+    <div class="guest-container">
+        <div class="profile-header">
+            <img
+                    src="<%= guest.thumbnail %>"
+                    alt="<%= guestName %>"
+                    width="320"
+                    height="320"
+                    loading="lazy"
+                    decoding="async"
+            >
+
+            <div class="guest-info">
+                <% if (linkedinUrl) { %>
+                    <a href="<%= linkedinUrl %>" target="_blank" rel="noopener" class="linkedIn-link">
+                        LinkedIn Profile
+                    </a>
+                <% } %>
+            </div>
+        </div>
+
+        <article class="biography episode-container" aria-label="Biography">
+            <h2>Biography</h2>
+            <%- bio %>
+        </article>
+
+        <% if (tagsNorm.length) { %>
+            <section class="tags" aria-label="Topics">
+                <h2>Topics</h2>
+
+                <% const visibleTags = tagsNorm.slice(0, 18); %>
+                <% for (const t of visibleTags) { const q = encodeURIComponent(t); %>
+                <a href="<%- relpath %>/<%- lang.id %>/search.html?query=<%= q %>"><span><%= t %></span></a>
+                <% } %>
+
+                <% if (tagsNorm.length > 18) { %>
+                    <details class="more-tags">
+                        <summary>Show all topics</summary>
+                        <div class="tags">
+                            <% for (const t of tagsNorm.slice(18)) { const q = encodeURIComponent(t); %>
+                            <a href="<%- relpath %>/<%- lang.id %>/search.html?query=<%= q %>"><span><%= t %></span></a>
+                            <% } %>
+                        </div>
+                    </details>
+                <% } %>
+            </section>
+        <% } %>
+
+        <section class="episodes-section" aria-label="Latest episodes">
+            <h2><%= lang.latestEpisodes %></h2>
+            <div class="episodes-grid">
+
+                <% for (let ename in guest.episodes) {
+                    const episode = guest.episodes[ename];
+                    const rawSummary = episode.assets?.[`${lang.id}/blog`]?.summary || episode.summary || '';
+                    const epSummary = stripHtml(rawSummary).slice(0, 220);
+                    const epUrl = `${relpath}/${lang.id}/episodes/edt-${episode.number}/`;
+                    const epImg = `${relpath}/${lang.id}/episodes/edt-${episode.number}/${episode.thumbnail}`;
+                %>
+
+                <article class="episode-card">
+                    <a href="<%- epUrl %>" aria-label="Episode <%= episode.number %>: <%= episode.title %>">
+                        <img
+                                src="<%- epImg %>"
+                                alt="Episode <%= episode.number %>: <%= episode.title %>"
+                                loading="lazy"
+                                decoding="async"
+                                width="640"
+                                height="360"
+                        >
+                    </a>
+
+                    <div class="episode-card-content">
+                        <h3>
+                            <a href="<%- epUrl %>"><%= episode.title %></a>
+                        </h3>
+
+                        <% if (epSummary) { %>
+                            <p class="summary"><%= epSummary %><%= stripHtml(rawSummary).length > 220 ? "…" : "" %></p>
+                        <% } %>
+
+                        <% if (episode.tags && Object.keys(episode.tags).length) { %>
+                            <nav class="tags" aria-label="Episode topics">
+                                <% for (let tname in episode.tags) {
+                                    const tq = encodeURIComponent(tname);
+                                %>
+                                <a href="<%- relpath %>/<%- lang.id %>/search.html?query=<%= tq %>"><span><%= tname %></span></a>
+                                <% } %>
+                            </nav>
+                        <% } %>
+                    </div>
+                </article>
+
+                <% } %>
+            </div>
+        </section>
+    </div>
+</section>
+
+<!-- Structured Data -->
+<script type="application/ld+json"><%- JSON.stringify(personJsonLd, null, 2) %></script>
+<% if (itemListJsonLd) { %>
+    <script type="application/ld+json"><%- JSON.stringify(itemListJsonLd, null, 2) %></script>
+<% } %>
+
+<%- include(`${baseDir}/${lang.id}/footer.html`) %>
