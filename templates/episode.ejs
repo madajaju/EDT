@@ -48,7 +48,8 @@ const tagNames = episode?.tags ? Object.keys(episode.tags) : [];
 
 // Media URLs
 const youtubeEmbed = youtubeID ? `https://www.youtube.com/embed/${safeText(youtubeID)}` : "";
-const transistorEmbed = audioID ? `https://art19.com/shows/embracing-digital-transformation/episodes/${safeText(audioID)}` : "";
+
+const transistorEmbed = audioID ? `https://share.transistor.fm/s/${safeText(audioID)}` : "";
 
 // Episode image
 const episodeImage = safeText(episode?.image || "");

@@ -6,7 +6,7 @@
     <base href="https://embracingdigital.org/" />
 
     <!-- Robots -->
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="<%= page?.noindex ? 'noindex, follow' : 'index, follow' %>">
 
     <!-- Dynamic Title / Meta -->
     <title><%= page?.title || 'Embracing Digital Transformation' %></title>
@@ -18,12 +18,13 @@
     <link rel="canonical" href="<%= page.canonical %>">
     <% } %>
 
-    <!-- Hreflang alternates (optional: pass `langs` into the template) -->
-    <% if (typeof langs !== 'undefined' && Array.isArray(langs)) { %>
-    <% langs.forEach(l => { %>
-    <link rel="alternate" hreflang="<%= l.code %>" href="https://embracingdigital.org/<%= l.code %>/home/">
+    <!-- Hreflang alternates -->
+    <% const hreflangUrls = (lang && lang.urls) || {}; %>
+    <% if (Object.keys(hreflangUrls).length) { %>
+    <% Object.entries(hreflangUrls).forEach(([code, href]) => { %>
+    <link rel="alternate" hreflang="<%= code %>" href="<%= href %>">
     <% }) %>
-    <link rel="alternate" hreflang="x-default" href="https://embracingdigital.org/en/home/">
+    <link rel="alternate" hreflang="x-default" href="<%= hreflangUrls.en || page?.canonical || 'https://embracingdigital.org/en/home/' %>">
     <% } %>
 
     <!-- Preconnect & CSS -->

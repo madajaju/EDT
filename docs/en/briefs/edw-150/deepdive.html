@@ -13,8 +13,30 @@
     <meta name="description" content="Embracing Digital Deep Dive is a multi-language deep dive on digital transformation, covering AI, cybersecurity, edge computing, data management, ubiquitous computing, and advanced communications.">
     
     
+    <link rel="canonical" href="https://embracingdigital.org/en/briefs/edw-150/deepdive.html">
+    
 
-    <!-- Hreflang alternates (optional: pass `langs` into the template) -->
+    <!-- Hreflang alternates -->
+    
+    
+    
+    <link rel="alternate" hreflang="en" href="https://embracingdigital.org/en/briefs/edw-150/deepdive.html">
+    
+    <link rel="alternate" hreflang="ar" href="https://embracingdigital.org/ar/briefs/edw-150/deepdive.html">
+    
+    <link rel="alternate" hreflang="de" href="https://embracingdigital.org/de/briefs/edw-150/deepdive.html">
+    
+    <link rel="alternate" hreflang="es" href="https://embracingdigital.org/es/briefs/edw-150/deepdive.html">
+    
+    <link rel="alternate" hreflang="fr" href="https://embracingdigital.org/fr/briefs/edw-150/deepdive.html">
+    
+    <link rel="alternate" hreflang="it" href="https://embracingdigital.org/it/briefs/edw-150/deepdive.html">
+    
+    <link rel="alternate" hreflang="ja" href="https://embracingdigital.org/ja/briefs/edw-150/deepdive.html">
+    
+    <link rel="alternate" hreflang="pt" href="https://embracingdigital.org/pt/briefs/edw-150/deepdive.html">
+    
+    <link rel="alternate" hreflang="x-default" href="https://embracingdigital.org/en/briefs/edw-150/deepdive.html">
     
 
     <!-- Preconnect & CSS -->
@@ -30,7 +52,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Embracing Digital Deep Dive | Digital Transformation Deep Dive">
     <meta property="og:description" content="Embracing Digital Deep Dive is a multi-language deep dive on digital transformation, covering AI, cybersecurity, edge computing, data management, ubiquitous computing, and advanced communications.">
-    <meta property="og:url" content="https://embracingdigital.org/en/home/">
+    <meta property="og:url" content="https://embracingdigital.org/en/briefs/edw-150/deepdive.html">
     <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
 
     <!-- Twitter -->
@@ -84,7 +106,7 @@
         <div class="brand">
             <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
                 <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
-                <span class="brand-text">
+                <span class="brand-text">Embracing Digital</span>
             </a>
         </div>
     </div>
@@ -121,7 +143,7 @@
                         </a>
                     </li>
                     <li role="none">
-                        <a role="menuitem" href="en/deepdive/index.html">
+                        <a role="menuitem" href="en/briefs/deepdives.html">
                             Architectural Deep Dives
                             <small class="nav-note">What to do next</small>
                         </a>
@@ -249,6 +271,7 @@
         </ul>
     </nav>
 </header>
+
 
 
 <main id="content" class="brief-editorial">
@@ -461,16 +484,8 @@
     // year
     (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
 
-    // Guard for pages without nav
-    const toggle = document.querySelector('.menu-toggle');
-    const nav    = document.querySelector('nav#primary-nav');
+    const nav = document.querySelector('nav#primary-nav');
     if (nav) {
-        // Mobile: toggle .menu-open on <body>
-        toggle?.addEventListener('click', () => {
-            const open = document.body.classList.toggle('menu-open');
-            toggle.setAttribute('aria-expanded', String(open));
-        });
-
         // Dropdowns: tap/click + keyboard
         document.querySelectorAll('li.dropdown > a').forEach(link => {
             const li = link.parentElement;
