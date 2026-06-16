@@ -1,177 +1,219 @@
-Published include(`${baseDir}/${lang.id}/header.html`, {page: page, lang: lang}) %>
+<%- include(`${baseDir}/${lang.id}/header.html`, { ...locals }) %>
 
-<section id="one-brief" class="transformation-container">
-    <!-- Title hierarchy -->
-    <h1 id="episode-title"><%= brief.title %></h1>
-    <h2 style="margin-top: 0.5rem;">
-        <%= lang.newsTitle || "Embracing Digital This Week" %>
-    </h2>
+<main id="content" class="brief-editorial">
 
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+            <li><a href="<%= lang.id %>/home/index.html">Home</a></li>
+            <li><a href="<%= lang.id %>/briefs/index.html">Embracing Digital This Week</a></li>
+            <li aria-current="page"><%= brief.date %></li>
+        </ol>
+    </nav>
 
-    <div class="brief-container">
-        <%- summary %>
-    </div>
-    <div class="brief-container episode-container">
+    <!-- HERO -->
+    <section class="brief-hero">
+        <div class="brief-hero-main">
+            <h1>
+                <%= lang.newsTitle %>
+                <span class="brief-date">— <%= brief.date %></span>
+            </h1>
 
-        <% if (youtubeID) { %>
-            <div class="video-container">
-                <iframe
-                        width="auto"
-                        height="auto"
-                        src="https://www.youtube.com/embed/<%= youtubeID %>"
-                        title="<%= brief.title %> — YouTube"
-                        loading="lazy"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                </iframe>
+            <!-- At a glance / summary -->
+            <div class="brief-glance">
+                <% if (summary) { %>
+                    <%- summary %>
+                <% } else { %>
+                    <p>
+                        <%= lang.convoSummary %>
+                    </p>
+                <% } %>
             </div>
-        <% } %>
 
-        <% if (audioID) { %>
-            <div class="podcast-container">
-                <iframe
-                        width="100%"
-                        height="180"
-                        frameborder="no"
-                        scrolling="no"
-                        seamless=""
-                        title="<%= brief.title %> — Audio"
-                        src="https://share.transistor.fm/e/<%- audioID %>">
-                </iframe>
-            </div>
-        <% } %>
-
-        <!-- Tags -->
-        <% if (brief.tags && Object.keys(brief.tags).length) { %>
-            <div class="tags" aria-label="Episode tags">
-                <% for (let tname in brief.tags) { %>
-                    <a href="<%- relpath %>/<%- lang.id %>/search.html?query=<%- encodeURIComponent(tname) %>">
-                        <span><%= tname %></span>
+            <!-- CTAs -->
+            <div class="brief-ctas">
+                <% if (brief.watch) { %>
+                    <a class="listen-now" href="<%= brief.watch %>" target="_blank" rel="noopener">
+                        <%- lang.watchNow %>
                     </a>
                 <% } %>
+                <% if (brief.listen) { %>
+                    <a class="listen-now" href="<%= brief.listen %>" target="_blank" rel="noopener">
+                        <%- lang.listenNow %>
+                    </a>
+                <% } %>
+                <a class="listen-now" href="<%= lang.id %>/newsletter.html"><%- lang.subscribe %></a>
+                <a class="listen-now" href="<%= lang.id %>/community.html"><%- lang.community %></a>
             </div>
-        <% } %>
+            <!-- Chips: prefer explicit tags, otherwise pillar anchors -->
+            <% if (brief.tags?.length) { %>
+                <nav class="pillar-chips" aria-label="Pillars covered this week">
+                    <% brief.tags.forEach(tag => { %>
+                        <a href="<%= lang.id %>/search.html?query=<%= encodeURIComponent(tag) %>"><%= tag %></a>
+                    <% }) %>
+                </nav>
+            <% } else if (pillars && Object.keys(pillars).length) { %>
+                <nav class="pillar-chips" aria-label="Jump to coverage by pillar">
+                    <% Object.keys(pillars).forEach(function (pillarName) { %>
+                        <a href="#<%= pillarName.toLowerCase().replace(/\s+/g,'-') %>"><%= pillarName %></a>
+                    <% }) %>
+                </nav>
+            <% } %>
+        </div>
+        <div class="brief-hero-side" aria-label="Episode media">
+            <% if (brief.watch || brief.listen) { %>
+                <div class="media-item media-video" aria-label="Episode media">
+                    <% if (brief.watch) { %>
+                        <div class="video-embed">
+                            <% let items = brief.watch.split('/'); %>
 
-        <!-- Featured EDT Episode (recap / related) -->
-        <% if (edt) { %>
-            <section class="grid-container" aria-label="Related content">
-                <div class="main-brief grid-box">
-                    <h3><%= lang.title || "Embracing Digital Transformation" %></h3>
-
-                    <% if (edt.url) { %>
-                        <a href="<%= edt.url %>">
-                            <img src="<%= edt.imageURL %>" alt="<%= (edt.title || edt.name || 'Embracing Digital Transformation') %>" class="main-brief-image" loading="lazy">
-                        </a>
-                    <% } else { %>
-                        <img src="<%= edt.imageURL %>" alt="<%= (edt.title || edt.name || 'Embracing Digital Transformation') %>" class="main-brief-image" loading="lazy">
-                    <% } %>
-
-                    <h4 style="margin-top: 1rem;"><%= (edt.title?.replaceAll(/"/g,'') || edt.name || '') %></h4>
-                    <p><%= edt.text || '' %></p>
-
-                    <div class="episode-actions">
-                        <% if (edt.youtubeURL) { %>
-                            <a href="<%= edt.youtubeURL %>" class="listen-now"><%= lang.watchNow || "Watch Now" %></a>
-                        <% } %>
-                        <% if (edt.audioURL) { %>
-                            <a href="<%= edt.audioURL %>" class="listen-now"><%= lang.listenNow || "Listen Now" %></a>
-                        <% } %>
-                    </div>
-                </div>
-
-                <!-- Pillar article groups -->
-                <% for (let pname in pillars) {
-                    const pillar = pillars[pname];
-                %>
-                <div class="category grid-box">
-                    <h3><%= pillar.pillar %></h3>
-
-                    <div class="articles">
-                        <% for (let i in pillar.articles) {
-                            const article = pillar.articles[i];
-                            const headline = (article.headline?.replaceAll(/"/g,'') || pillar.name || "Article");
-                            const altText = headline;
-                        %>
-                        <div class="article">
-                            <% if (article.imageURL) { %>
-                                <img src="<%= article.imageURL %>" alt="<%= altText %>" loading="lazy">
-                            <% } %>
-
-                            <div class="article-content">
-                                <h4><%= headline %></h4>
-                                <p><%= article.text || '' %></p>
-
-                                <% if (article.urls && article.urls.length) { %>
-                                    <div>
-                                        <% for (let j in article.urls) {
-                                            const url = article.urls[j];
-                                        %>
-                                        <span><a href="<%= url %>" rel="noopener" target="_blank"><%= lang.readMore || "Read More" %></a><%= (j < article.urls.length - 1) ? ',' : '' %> </span>
-                                        <% } %>
-                                    </div>
-                                <% } %>
-                            </div>
+                            <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/<%- items[items.length-1]%>"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
                         </div>
-                        <% } %>
-
-                        <div class="episode-actions">
-                            <% if (pillar.videoURL) { %>
-                                <a href="<%= pillar.videoURL %>" class="listen-now"><%= lang.watchNow || "Watch Now" %></a>
-                            <% } %>
-                            <% if (pillar.audioURL) { %>
-                                <a href="<%= pillar.audioURL %>" class="listen-now"><%= lang.listenNow || "Listen Now" %></a>
-                            <% } %>
-                        </div>
-                    </div>
                 </div>
                 <% } %>
-            </section>
+
+                <% if (brief.listen) { %>
+                    <div class="media-item media-audio">
+                        <div class="audio-embed">
+                            <% let items = brief.listen.split('/'); %>
+                            <iframe
+                                    width="100%"
+                                    height="180"
+                                    frameborder="0"
+                                    scrolling="no"
+                                    src="https://share.transistor.fm/e/<%- items[items.length-1]%>"
+                                    title="Embracing Digital This Week audio"
+                                    loading="lazy"
+                            ></iframe>
+
+                        </div>
+                        <!-- brief.listen_embed can be the HTML Transistor.fm gives you -->
+                        <%- brief.listen_embed %>
+                    </div>
+                <% } %>
+        </div>
         <% } %>
+        </div>
+    </section>
 
-    </div>
-</section>
+    <!-- TOP STORIES -->
+    <% if (topStories?.length) { %>
+        <section class="brief-top-stories">
+            <h2><%- lang.topStories %></h2>
 
-<!-- JSON-LD: PodcastEpisode -->
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "PodcastSeries",
-          "@id": "https://embracingdigital.org/#edtw",
-          "name": "<%- (lang.newsTitle || 'Embracing Digital This Week') %>",
-      "url": "https://embracingdigital.org/en/briefs/"
-    },
-    {
-      "@type": "PodcastEpisode",
-      "@id": "<%- (page && page.canonical ? page.canonical : '') %>#episode",
-      "name": "#<%- brief.number %> <%- brief.title %>",
-      "description": "<%- (page && page.description ? page.description : '') %>",
-      "url": "<%- (page && page.canonical ? page.canonical : '') %>",
-      "partOfSeries": { "@id": "https://embracingdigital.org/#edtw" },
-      "keywords": [
-    <% if (brief.tags) {
-        const keys = Object.keys(brief.tags);
-    for (let i=0;i<keys.length;i++) { %>
-        "<%- keys[i].replace(/"/g, '\\"') %>"<%= (i < keys.length - 1) ? ',' : '' %>
-        <% } } %>
-    ]
-    <% if (youtubeID) { %>,
-      "video": {
-        "@type": "VideoObject",
-        "embedUrl": "https://www.youtube.com/embed/<%- youtubeID %>",
-        "url": "https://www.youtube.com/watch?v=<%- youtubeID %>"
-      }
+            <% topStories.forEach(story => {
+                const hasTitle = story.title && story.title.trim().length;
+                let fallbackTitle = '';
+                if (!hasTitle && story.text) {
+                    // strip basic HTML tags if any and trim for fallback
+                    const plain = String(story.text).replace(/<[^>]+>/g, '').trim();
+                    fallbackTitle = plain.length > 80 ? plain.slice(0, 80) + '…' : plain;
+                }
+                const displayTitle = hasTitle ? story.title : fallbackTitle;
+            %>
+            <article class="top-story">
+                <% if (story.image) { %>
+                    <img src="<%= story.image %>"
+                         alt="<%- displayTitle || 'Story image' %>"
+                         loading="lazy">
+                <% } else { %>
+                    <img src="/images/logo.png"
+                         alt="Embracing Digital Transformation Placeholder"
+                         class="fallback-image"
+                         loading="lazy">
+                <% } %>
+
+                <div class="top-story-content">
+                    <% if (displayTitle) { %>
+                        <h3><%- displayTitle %></h3>
+                    <% } %>
+
+                    <% if (story.text) { %>
+                        <p><%- story.text %></p>
+                    <% } %>
+
+                    <% if (story.urls?.length) { %>
+                        <div class="story-links">
+                            <% story.urls.forEach(l => { %>
+                                <a href="<%= l.url %>" target="_blank" rel="noopener">
+                                    <%= l.label || lang.readMore %>
+                                </a>
+                            <% }) %>
+                        </div>
+                    <% } %>
+
+                    <% if (story.pillar) { %>
+                        <span class="story-pillar"><%= story.pillar %></span>
+                    <% } %>
+                </div>
+            </article>
+            <% }) %>
+        </section>
     <% } %>
-      <% if (audioURL) { %>,
-      "associatedMedia": {
-        "@type": "AudioObject",
-        "contentUrl": "<%- audioURL %>"
-      }
-    <% } %>
-    }
-  ]
-}
-</script>
 
-<%- include(`${baseDir}/${lang.id}/footer.html`) %>
+    <!-- FULL COVERAGE BY PILLAR -->
+    <section class="brief-pillars">
+        <h2><%- lang.fullCoverage %></h2>
+
+        <% for (let pillarName in pillars) {
+            const pillar = pillars[pillarName];
+            if (!pillar || !pillar.articles || !pillar.articles.length) continue;
+        %>
+        <section class="pillar-section" id="<%= pillarName.toLowerCase().replace(/\s+/g,'-') %>">
+            <h3><%= pillarName %></h3>
+
+            <% pillar.articles.forEach(article => {
+                const hasTitle = article.title && article.title.trim().length;
+                let fallbackTitle = '';
+                if (!hasTitle && article.text) {
+                    const plain = String(article.text).replace(/<[^>]+>/g, '').trim();
+                    fallbackTitle = plain.length > 80 ? plain.slice(0, 80) + '…' : plain;
+                }
+                const displayTitle = hasTitle ? article.title : fallbackTitle;
+            %>
+            <article class="pillar-article">
+                <div class="pillar-article-image">
+                    <% if (article.image) { %>
+                        <img src="<%= article.image %>"
+                             alt="<%- displayTitle || (pillarName + ' story image') %>"
+                             loading="lazy">
+                    <% } else { %>
+                        <img src="/images/logo.png"
+                             alt="Embracing Digital Transformation Placeholder"
+                             class="fallback-image"
+                             loading="lazy">
+                    <% } %>
+                </div>
+
+                <div class="pillar-article-content">
+                    <% if (displayTitle) { %>
+                        <h4><%- displayTitle %></h4>
+                    <% } %>
+
+                    <% if (article.text) { %>
+                        <p><%- article.text %></p>
+                    <% } %>
+
+                    <% if (article.urls?.length) { %>
+                        <div class="story-links">
+                            <% article.urls.forEach(l => { %>
+                                <a href="<%= l.url %>" target="_blank" rel="noopener">
+                                    <%= l.label ||  lang.readMore %>
+                                </a>
+                            <% }) %>
+                        </div>
+                    <% } %>
+                </div>
+            </article>
+            <% }) %>
+        </section>
+        <% } %>
+    </section>
+</main>
+
+<%- include(`${baseDir}/${lang.id}/footer.html`, { ...locals }) %>
