@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Why Application-Centric Thinking Fails | Digital Transformation Architect</title>
+    <meta name="description" content="Summary">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/en/lectures/dta-22/index.html">
+    
+
+    <!-- Hreflang alternates -->
+    
+    
+    
+    <link rel="alternate" hreflang="en" href="https://embracingdigital.org/en/lectures/dta-22/">
+    
+    <link rel="alternate" hreflang="ar" href="https://embracingdigital.org/ar/lectures/dta-22/">
+    
+    <link rel="alternate" hreflang="de" href="https://embracingdigital.org/de/lectures/dta-22/">
+    
+    <link rel="alternate" hreflang="es" href="https://embracingdigital.org/es/lectures/dta-22/">
+    
+    <link rel="alternate" hreflang="fr" href="https://embracingdigital.org/fr/lectures/dta-22/">
+    
+    <link rel="alternate" hreflang="it" href="https://embracingdigital.org/it/lectures/dta-22/">
+    
+    <link rel="alternate" hreflang="ja" href="https://embracingdigital.org/ja/lectures/dta-22/">
+    
+    <link rel="alternate" hreflang="pt" href="https://embracingdigital.org/pt/lectures/dta-22/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://embracingdigital.org/en/lectures/dta-22/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Why Application-Centric Thinking Fails | Digital Transformation Architect">
+    <meta property="og:description" content="Summary">
+    <meta property="og:url" content="https://embracingdigital.org/en/lectures/dta-22/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Why Application-Centric Thinking Fails | Digital Transformation Architect">
+    <meta name="twitter:description" content="Summary">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="en/home/index.html"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="en/shows/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="en/digital-transformation/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+        <!-- Right side (Languages) -->
+        <ul class="nav-right">
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../en/home/index.html">Home</a></li>
+        <li><a href="../../../en/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 22: Why Application-Centric Thinking Fails</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/en/lectures/dta-22/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/en/lectures/dta-22/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 22</span>
+                <span class="episode-title">Why Application-Centric Thinking Fails</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-06-17" itemprop="datePublished">2026-06-17</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="22"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="Tue Jun 16 2026 00:00:00 GMT-0700 (Pacific Daylight Time)">
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Why Application-Centric Thinking Fails Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/61fc2c33">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://share.transistor.fm/s/61fc2c33"
+                            title="Why Application-Centric Thinking Fails Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-06-17<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Summary</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>Why Application-Centric Thinking Fails</h1>
+<p>A lecture from the <em>Digital Transformation Architecture</em> series</p>
+<p>Digital transformation often starts with a practical instinct: improve one application, deliver one visible win, and expand from there. That feels manageable, especially for enterprise teams under pressure to show progress. But this lecture argues that the instinct is too narrow. When modernization is treated as a set of isolated application upgrades, the organization may improve a tool without changing the system that determines outcomes.</p>
+<p>That is the central problem with <em>application-centric thinking</em>. It focuses attention on the application layer while leaving the deeper architecture intact. The result can look like progress locally, yet still preserve fragmentation across platforms, data, operating structures, and governance. In other words, the software may change, but the digital transformation does not.</p>
+<h2>Why application-centric thinking is appealing but limited</h2>
+<p>Application-centric modernization is appealing because it is concrete. A team can fund a replacement, deploy a new application, and point to something tangible. In the lecture, that kind of move is described as practical, but not sufficient. A new application can create a local gain for one group, or even several groups, while the broader architecture remains unchanged.</p>
+<p>That is why the lecture repeatedly distinguishes between <em>replacing software</em> and <em>transforming architecture</em>. If the underlying digital architecture is not changing, the value of the upgrade stays local. The organization may get a shiny new system, but the foundational relationships that shape digital transformation outcomes remain the same.</p>
+<p>The lecture uses a simple image to make the point: adding paint to a rusted car. The surface may improve for a moment, but the structural problem is still there. In the same way, application-centric thinking can hide deeper weaknesses rather than resolve them. It gives the impression of progress without the systemic effect that digital transformation requires.</p>
+<h2>Why isolated application upgrades do not equal transformation</h2>
+<p>The most important warning in the lecture is that isolated upgrades can leave the larger system untouched. A team may deploy a new application, even an advanced one, and still retain the same fragmented data flows, the same service management dependencies, and the same software-defined infrastructure beneath it. In that case, the upgrade changes one node in the environment but not the architecture that governs how the enterprise behaves.</p>
+<p>That creates a classic trap: local improvement, enterprise stagnation. A system can become faster or more modern in one place while the wider operating environment remains brittle. The lecture notes that this can even create digital silos. Once those silos exist, they are difficult to unwind because the organization has made decisions without understanding how the pieces fit together.</p>
+<p>This is why the lecture emphasizes that digital modernization cannot be judged by counting applications. Counting upgrades or new deployments may feel like measurable progress, but it does not answer the real question: did the architecture become more coherent? If the answer is no, then the modernization effort may have added complexity rather than value.</p>
+<h2>Why platforms, data, and outcomes must be considered together</h2>
+<p>A major theme of the lecture is the relationship among platforms, data, and outcomes. These are not separate concerns. They work together inside a broader systemic architecture, and each one affects the others. A new application may appear successful on its own, but if the data relationships are fragmented or the platform context is misaligned, the outcome will be limited.</p>
+<p>The lecture is especially direct about data. Data flow is one of the most commonly overlooked parts of application-centric modernization. An application may be newer and faster, but if it consumes and produces data in ways that do not fit the data architecture, the organization can end up with incompatible schemas, redundant records, or another data silo. That is why the lecture says to look first at data, then at process, because the data informs the process domain.</p>
+<p>The point extends beyond data alone. Applications also depend on identity management, security, and the wider operating model. They must fit into the process domain and the organizational domain as well as the digital domain. Training, roles, responsibilities, and communication channels may all need to change when the application changes. That is why the lecture insists that a new application is never just a software event. It has architectural implications across the enterprise.</p>
+<h2>How systemic architecture changes the evaluation of modernization</h2>
+<p>The lecture’s evaluative shift is simple but powerful: modernization should be assessed by systemic effect, not by isolated technical wins. A good question is not “How many applications did we upgrade?” but “Did the enterprise become more coherent?” If modernization increases coupling, preserves fragmentation, or leaves outcomes unclear, then it has not delivered digital transformation.</p>
+<p>This is where <em>governance</em> and <em>execution</em> matter. New applications should be introduced through the organization’s established governance and support structures, not as detached experiments. The lecture also notes that modern deployments, including SaaS-based ones, can make the architecture more sensitive because data may move beyond older boundaries. That does not make modernization impossible, but it does mean the enterprise must think architecturally before it acts.</p>
+<p>The lecture also points to an important distinction: a quick win is not the same as a lasting win. If a local success cannot scale cleanly across the enterprise, or if it produces unreliable results when expanded, then the apparent gain may be misleading. Modernization that is not grounded in architecture can shrink ROI over time because it accumulates hidden complexity. By contrast, systemic thinking helps leaders judge whether an upgrade strengthens the architecture or merely decorates it.</p>
+<h2>What this means for digital transformation leaders</h2>
+<p>For enterprise architects and digital transformation leaders, the practical takeaway is not to avoid application change. It is to stop treating the application as the unit of transformation. The unit of analysis has to be the system: the relationships among platforms, data, outcomes, governance, execution, and operating structure.</p>
+<p>That perspective changes how leaders make decisions. It means asking whether a proposed application fits the architecture, whether it improves or weakens coherency, and whether it can be sustained across the organization without creating hidden fragmentation. It also means recognizing that digital transformation is not a collection of separate projects. It is a portfolio that must work in lockstep around a consistent systems architecture.</p>
+<p>The lecture closes with a clear message: application-centric thinking is insufficient for digital transformation. Replacing or modernizing applications does not automatically improve outcomes. The real issue is whether the architecture that connects those applications, platforms, and data is becoming more coherent. If it is not, then the organization may be changing software without transforming anything at all.</p>
+<h2>Further Listening</h2>
+<p>Listen to the full episode here: <a href="https://embracingdigital.org/en/lectures/dta-22">https://embracingdigital.org/en/lectures/dta-22</a></p>
+<p>For more from the series, see the <em>Digital Transformation Architecture</em> collection.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/en/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/en/episodes/index.html",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/en/lectures/dta-22/index.html#episode",
+  "url": "https://embracingdigital.org/en/lectures/dta-22/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/en/lectures/dta-22/index.html"
+  },
+  "name": "Why Application-Centric Thinking Fails",
+  "episodeNumber": 22,
+  "datePublished": "2026-06-17",
+  "inLanguage": "en",
+  "description": "Summary",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/en/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/en/episodes/dta-22/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "AudioObject",
+      "name": "Why Application-Centric Thinking Fails Audio",
+      "contentUrl": "https://share.transistor.fm/s/61fc2c33"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
