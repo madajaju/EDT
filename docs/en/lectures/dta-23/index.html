@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Platforms and Data as Strategic Assets | Digital Transformation Architect</title>
+    <meta name="description" content="In this episode, we explore why platforms and data must be treated as strategic enterprise assets, not just technical infrastructure. The discussion highlights how strong governance, clear architectural boundaries, and shared capabilities create reuse, consistency, scale, and resilience across the o">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/en/lectures/dta-23/index.html">
+    
+
+    <!-- Hreflang alternates -->
+    
+    
+    
+    <link rel="alternate" hreflang="en" href="https://embracingdigital.org/en/lectures/dta-23/">
+    
+    <link rel="alternate" hreflang="x-default" href="https://embracingdigital.org/en/lectures/dta-23/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Platforms and Data as Strategic Assets | Digital Transformation Architect">
+    <meta property="og:description" content="In this episode, we explore why platforms and data must be treated as strategic enterprise assets, not just technical infrastructure. The discussion highlights how strong governance, clear architectural boundaries, and shared capabilities create reuse, consistency, scale, and resilience across the o">
+    <meta property="og:url" content="https://embracingdigital.org/en/lectures/dta-23/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Platforms and Data as Strategic Assets | Digital Transformation Architect">
+    <meta name="twitter:description" content="In this episode, we explore why platforms and data must be treated as strategic enterprise assets, not just technical infrastructure. The discussion highlights how strong governance, clear architectural boundaries, and shared capabilities create reuse, consistency, scale, and resilience across the o">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="en/home/index.html"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="en/shows/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="en/digital-transformation/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+        <!-- Right side (Languages) -->
+        <ul class="nav-right">
+            <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="ar/home/index.html">العربية</a></li>
+                    <li role="none"><a role="menuitem" href="de/home/index.html">Deutsch</a></li>
+                    <li role="none"><a role="menuitem" href="en/home/index.html">English</a></li>
+                    <li role="none"><a role="menuitem" href="fr/home/index.html">Français</a></li>
+                    <li role="none"><a role="menuitem" href="it/home/index.html">Italiano</a></li>
+                    <li role="none"><a role="menuitem" href="pt/home/index.html">Português</a></li>
+                    <li role="none"><a role="menuitem" href="ja/home/index.html">日本語</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../en/home/index.html">Home</a></li>
+        <li><a href="../../../en/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 23: Platforms and Data as Strategic Assets</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/en/lectures/dta-23/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/en/lectures/dta-23/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 23</span>
+                <span class="episode-title">Platforms and Data as Strategic Assets</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-06-24" itemprop="datePublished">2026-06-24</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="23"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="Tue Jun 23 2026 00:00:00 GMT-0700 (Pacific Daylight Time)">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="Platforms and Data as Strategic Assets Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/fmp5UYA5T94">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/fmp5UYA5T94"
+                            title="Platforms and Data as Strategic Assets Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="Platforms and Data as Strategic Assets Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/630caa56">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://share.transistor.fm/s/630caa56"
+                            title="Platforms and Data as Strategic Assets Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-06-24<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>In this episode, we explore why platforms and data must be treated as strategic enterprise assets, not just technical infrastructure. The discussion highlights how strong governance, clear architectural boundaries, and shared capabilities create reuse, consistency, scale, and resilience across the organization.
+We also examine why fragmented platform sprawl creates duplication and complexity, why governed data is essential for trusted decision-making, and how AI depends on these foundations to deliver real value. Security is part of the architecture from the start, making this a practical conversation about building digital transformation on durable, enterprise-ready foundations.</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>Platforms and Data as Strategic Assets</h1>
+<p><em>Why digital transformation succeeds when governance, execution, and architecture treat platforms and data as shared enterprise capabilities.</em></p>
+<p>Platforms and data are often discussed as if they were simply technical building blocks beneath the “real” work of digital change. This lecture argues the opposite: in a mature enterprise view, they are strategic assets. When they are governed as shared capabilities rather than local conveniences, they create reuse, consistency, intelligence, and scale.</p>
+<p>That distinction matters because many transformation efforts still organize around applications first. In that model, each team optimizes for its own delivery needs, and the result is usually duplication, fragmentation, and rising technical debt. The lecture reframes the problem through architecture: platforms and data should be shaped for enterprise use, not just for one project or one function.</p>
+<h2>Why platforms and data are strategic</h2>
+<p>The core message is simple: platforms are not disposable technical layers. They are valuable when they are designed to support more than one use case, and when the enterprise treats them as something to steward rather than replace casually.</p>
+<p>The lecture warns against two common extremes. One is scattering the same capability across multiple platform instances, which creates overhead, licensing cost, and operational complexity. The other is trying to force everything into one platform “to rule them all,” which can create rigidity, tight coupling, and a much larger blast radius when something fails. Neither approach supports durable digital transformation.</p>
+<p>The architectural answer is not “more platform” or “less platform” in the abstract. It is clearer scope. Boundaries matter. When a platform stays within its purpose and is governed appropriately, it becomes more reliable and easier to reuse. That in turn helps execution, because new initiatives can build on existing foundations instead of repeatedly starting from scratch.</p>
+<h2>Platforms as reusable enterprise capabilities</h2>
+<p>A major theme in the lecture is that platforms should be shared architectural capabilities. They should outlive a single application and serve multiple domains where appropriate. That reuse is what turns a platform from a local convenience into an enterprise asset.</p>
+<p>The lecture gives a practical architectural warning: if a platform keeps trying to move up or down the stack and do everything, responsibilities blur. A service management layer, for example, should not drift into infrastructure provisioning just because it can. Staying within the correct boundary protects the architecture and keeps each layer focused on its job.</p>
+<p>This is where governance becomes essential. Governance is not presented as bureaucracy; it is the discipline that keeps a shared platform useful across the enterprise. Properly scoped platforms reduce fragmentation and support consistency, while also lowering the risk of single points of failure. In other words, shared platforms improve reuse, consistency, and scale precisely because they are governed as assets.</p>
+<p>The lecture also emphasizes that well-bounded platforms can be combined with different infrastructure environments underneath them. That flexibility is part of strategic value: the enterprise can adapt to changing conditions without rebuilding the whole stack every time.</p>
+<h2>Data as a governed enterprise capability</h2>
+<p>The same logic applies to data. Data is not just a byproduct of systems or a local store inside one function. It is an enterprise capability that must be governed architecturally.</p>
+<p>The lecture makes a strong point here: data only becomes truly valuable when it is trusted, shared, and usable across domains. If data stays trapped inside a single application or domain, its value is limited unless there is a legal or regulatory reason to keep it isolated. But when data is governed and made accessible across the enterprise, it supports more resilient architecture and better decision-making.</p>
+<p>That is why the lecture describes governed data as one of the organization’s “crown jewels.” The key is not simply collecting data, but defining how it is handled, controlled, and distributed. Governance belongs in the process domain and must be reflected in the digital architecture itself. Source systems can feed data in, but the architectural design should ensure that the data can move into governed use and then be shared appropriately across functions.</p>
+<p>This is also where the lecture links data to intelligence. Shared and governed data creates a more reliable foundation for analytics, and it prepares the enterprise for more advanced capabilities. Without that foundation, the value of digital execution is limited by inconsistent, inaccessible, or poorly controlled information.</p>
+<h2>Why AI depends on foundations</h2>
+<p>The lecture is clear that Artificial Intelligence depends on strong platform and data foundations. AI does not create enterprise value in a vacuum. It depends on the right tools accessing the right data at the right time, in the right context.</p>
+<p>That means AI readiness is not just about adopting new capabilities. It begins with the quality of the underlying architecture. If platforms are fragmented or data is not governed, then AI outputs become less trustworthy and less useful. If data is accessible but not controlled, then the enterprise creates risk instead of value.</p>
+<p>The lecture also notes that derived information matters. Outputs generated from data can themselves become sensitive, regulated, or strategically important. So the architectural discipline around platforms and data has to extend beyond source information to the information produced from it. This is a high-level reminder that AI value and AI responsibility both depend on the same foundations.</p>
+<p>In that sense, AI is not a separate conversation from architecture. It is one of the clearest reasons why platforms and data must be treated as strategic assets in the first place.</p>
+<h2>Why security belongs in the architecture</h2>
+<p>Cybersecurity is not an afterthought in this lecture. It belongs in the architecture from the start. The lecture treats security as cross-cutting: it spans applications, data, service layers, and infrastructure. That is why the design of platforms and data cannot be separated from the design of protection.</p>
+<p>The broader point is that security must be built into digital architecture early enough to shape the boundaries, responsibilities, and interactions of the system. If that does not happen, the enterprise ends up trying to bolt security onto a structure that was never designed for it.</p>
+<p>The lecture also connects identity to the architectural view. Identity is not only about user login; it applies across the layers that hold and move data, software, hardware, and services. That reinforces the central message: architecture is where governance, access, and resilience come together.</p>
+<h2>Why this matters</h2>
+<p>For enterprise architects and transformation leaders, the practical implication is straightforward. If platforms and data are treated as disposable technical layers, the organization will keep paying for duplication, fragility, and slow delivery. If they are treated as strategic assets, the enterprise gains a foundation that supports reuse, consistency, scale, AI readiness, and stronger security.</p>
+<p>This is why the lecture repeatedly returns to boundaries. Good architecture keeps responsibilities separate, but coordinated. It allows platforms to be shared without becoming monolithic, and it allows data to be governed without becoming trapped. That balance is what makes digital transformation durable.</p>
+<p>The deeper lesson is that execution improves when architecture is intentional. Shared foundations do not replace strategy; they make strategy executable.</p>
+<h2>Further Listening</h2>
+<p>Listen to the full episode here: <a href="https://embracingdigital.org/en/lectures/dta-23">https://embracingdigital.org/en/lectures/dta-23</a></p>
+<p>For more in the <em>Digital Transformation Architecture</em> series, see the series page linked from the episode metadata.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/en/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/en/episodes/index.html",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/en/lectures/dta-23/index.html#episode",
+  "url": "https://embracingdigital.org/en/lectures/dta-23/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/en/lectures/dta-23/index.html"
+  },
+  "name": "Platforms and Data as Strategic Assets",
+  "episodeNumber": 23,
+  "datePublished": "2026-06-24",
+  "inLanguage": "en",
+  "description": "In this episode, we explore why platforms and data must be treated as strategic enterprise assets, not just technical infrastructure. The discussion highlights how strong governance, clear architectural boundaries, and shared capabilities create reuse, consistency, scale, and resilience across the o",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/en/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/en/episodes/dta-23/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Platforms and Data as Strategic Assets Video",
+      "embedUrl": "https://www.youtube.com/embed/fmp5UYA5T94"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Platforms and Data as Strategic Assets Audio",
+      "contentUrl": "https://share.transistor.fm/s/630caa56"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
