@@ -2350,7 +2350,6 @@
         return 'url(#' + gradId + ')';
     }
 
-
     // state
     let customerData = null;
     let phaseTheme = null;
@@ -2564,7 +2563,6 @@
     const isObj = (v) => v && typeof v === 'object' && !Array.isArray(v);
     const text = (v) => (v == null ? '' : String(v));
 
-
     function wrapText(str, maxWidth, fontSize) {
         const words = String(str).split(/\s+/);
         const lines = [];
@@ -2583,7 +2581,6 @@
         lines.push(current);
         return lines;
     }
-
 
     function escapeHtml(s) {
         return String(s)
@@ -2762,7 +2759,6 @@
         return null;
     }
 
-
     // Keep DOM ids readable & stable
     function pathToId(pathStr) {
         return 'node-' + String(pathStr)
@@ -2833,7 +2829,6 @@
     // Global, rebuilt whenever a customer file is loaded
     let PHASE_THEME = null; // { order: string[], styles: Record<phase,{stroke:string}> }
 
-
     // Find the nearest *rendered* group for a full path by walking up its ancestors
     function getNearestVisibleGroup(svgEl, fullPath) {
         if (!svgEl || !fullPath) return null;
@@ -2884,7 +2879,6 @@
         } else {
             clearOverlay(svgEl);
         }
-
 
         // wire clicks for selection and double clicks for zoom
         container.querySelectorAll('.layer-group').forEach(g => {
@@ -3034,7 +3028,6 @@
         // re-render to reset yellow highlight
         render();
     });
-
 
     btnReset.addEventListener('click', () => {
         rootLayer = window.odxa;

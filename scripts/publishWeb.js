@@ -1246,10 +1246,7 @@ const _sponsorsPage = async (sponsors, output, source) => {
                 relpath: '../..',
                 sponsors: psponsors,
                 baseDir: source,
-                lang: {
-                    ...lang,
-                    urls: buildLangUrls(langs, (l) => `/${l.id}/sponsors/`)
-                },
+                lang,
                 langID: lang.id,
                 page: {
                     canonical: `${SITE_URL}/${lang.id}/sponsors/`,
@@ -1316,10 +1313,7 @@ const _guestsPage = async (guests, output, source) => {
                 relpath: '../..',
                 guests: pguests,
                 baseDir: source,
-                lang: {
-                    ...lang,
-                    urls: buildLangUrls(langs, (l) => `/${l.id}/guests/`)
-                },
+                lang,
                 langID: lang.id,
                 summary: "Embracing Digital is a podcast about the digital transformation of the world.",
                 page: {
@@ -1503,10 +1497,7 @@ const _briefsPage = (episodes, output, source) => {
                     title: 'Embracing Digital This Week | Digital Transformation News Briefs',
                     description: 'Embracing Digital This Week is a multi-language news brief on digital transformation, covering AI, cybersecurity, edge computing, data management, ubiquitous computing, and advanced communications.'
                 },
-                lang: {
-                    ...lang,
-                    urls: buildLangUrls(langs, (l) => `/${l.id}/briefs/`)
-                },
+                lang,
                 langID: lang.id,
                 ogImage: `../../assets/images/logo.png`
             },
@@ -1730,11 +1721,6 @@ Return ONLY valid JSON. No markdown. No commentary.
             // Canonical
             const canonical = `${siteUrl}/${lang.id}/briefs/edw-${episode.number}/`;
 
-            // hreflang URLs (FIXED)
-            lang.urls = {};
-            for (let k = 0; k < langs.length; k++) {
-                lang.urls[langs[k].id] = `${siteUrl}/${langs[k].id}/briefs/edw-${episode.number}/`;
-            }
 
             // Thumbnail handling
             const thumbnail = episode.thumbnail || "thumbnail.png";
@@ -1864,10 +1850,7 @@ const _deepDivesPage = (episodes, output, source) => {
                     title: 'Embracing Digital This Week | Architectural Deep Dives',
                     description: 'Embracing Digital This Week is a multi-language news brief on digital transformation, covering AI, cybersecurity, edge computing, data management, ubiquitous computing, and advanced communications.'
                 },
-                lang: {
-                    ...lang,
-                    urls: buildLangUrls(langs, (l) => `/${l.id}/briefs/deepdives.html`)
-                },
+                lang,
                 langID: lang.id,
                 ogImage: `../../assets/images/logo.png`
             },
