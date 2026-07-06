@@ -249,7 +249,6 @@
             display: block;
         }
 
-
         /* Center Quadrant Visualization */
         #quad {
             margin: 20px auto;
@@ -1545,7 +1544,6 @@
     // Initialize survey after survey state and helper functions are defined
     loadSurvey(survey);
 
-
     document.body.addEventListener('click', (e) => {
         if (e.target.id === 'survey-prev') {
             e.preventDefault();
@@ -1608,7 +1606,6 @@
                 // Assign normalized score to pillar
                 pillarScores[pid] = Math.round(normalizedScore); // Round to nearest integer
             }
-
 
             // Map survey results to sliders
             sliders.ai.value = pillarScores.ai;
@@ -1698,7 +1695,6 @@
 
         return { quadrant, archetype };
     }
-
 
     /* ======= Classification + Tags ======= */
     function getVals() {
@@ -2100,8 +2096,6 @@
         });
     }
 
-
-
     document.getElementById('download-pdf').addEventListener('click', async () => {
         // STEP 1: Gather survey results and analysis
         const v = getVals(); // Replace with your function to get values
@@ -2276,7 +2270,6 @@
 </body>
 </html>`;
 
-
         // STEP 4: Generate downloadable HTML file
         const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
         const link = document.createElement('a');
@@ -2289,7 +2282,6 @@
     function escapeHtml(s){
         return String(s).replace(/[&<>\"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
     }
-
 
     function generateRecommendations() {
         // Example logic: Provide recommendations for the two lowest scores
@@ -2346,9 +2338,4 @@
 </script>
 </body>
 </html>
-
-
-
-
-
 
