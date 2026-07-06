@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="AAOS six-stage model">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f9fbfe"/>
+      <stop offset="100%" stop-color="#eef3f8"/>
+    </linearGradient>
+
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f6f8fb"/>
+    </linearGradient>
+
+    <linearGradient id="goldFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8e7b7"/>
+      <stop offset="100%" stop-color="#e0ad4f"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#10213a" flood-opacity="0.13"/>
+    </filter>
+
+    <filter id="goldGlow" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#f6c453" flood-opacity="0.70"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="20" flood-color="#d39a22" flood-opacity="0.24"/>
+    </filter>
+
+    <style>
+      .segment {
+        cursor: pointer;
+        transition: fill 180ms ease, stroke 180ms ease, filter 180ms ease, opacity 180ms ease;
+      }
+
+      .segment polygon {
+        fill: #d8e0ea;
+        stroke: #aeb9c8;
+        stroke-width: 4.5;
+        stroke-linejoin: round;
+      }
+
+      .segment:hover polygon,
+      .segment:focus polygon,
+      .segment.is-active polygon {
+        fill: url(#goldFill);
+        stroke: #c48318;
+        filter: url(#goldGlow);
+      }
+
+      .segment:hover,
+      .segment:focus,
+      .segment.is-active {
+        opacity: 1;
+      }
+
+      .stage-label {
+        fill: #4b5563;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 0.75px;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        pointer-events: none;
+      }
+
+      .segment:hover .stage-label,
+      .segment:focus .stage-label,
+      .segment.is-active .stage-label {
+        fill: #1f2937;
+      }
+
+      .center-mark {
+        fill: #ffffff;
+        stroke: #d7dde7;
+        stroke-width: 4;
+        filter: url(#shadow);
+      }
+
+      .center-title {
+        fill: #12233d;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .ring-label {
+        fill: #334155;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-anchor: middle;
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <polygon points="606.4,157.0 850.8,298.0 753.0,354.4 606.4,269.8" fill="#dbe3ed" stroke="#b3bfcd" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="857.1,309.0 857.1,591.0 759.4,534.6 759.4,365.4" fill="#dbe3ed" stroke="#b3bfcd" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="850.8,602.0 606.4,743.0 606.4,630.2 753.0,545.6" fill="#dbe3ed" stroke="#b3bfcd" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="593.6,743.0 349.2,602.0 447.0,545.6 593.6,630.2" fill="#dbe3ed" stroke="#b3bfcd" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="342.9,591.0 342.9,309.0 440.6,365.4 440.6,534.6" fill="#dbe3ed" stroke="#b3bfcd" stroke-width="4.5" stroke-linejoin="round"/>
+    <polygon points="349.2,298.0 593.6,157.0 593.6,269.8 447.0,354.4" fill="#dbe3ed" stroke="#b3bfcd" stroke-width="4.5" stroke-linejoin="round"/>
+  </g>
+
+  <g class="segment" data-stage="diagnose" tabindex="0" role="button" aria-label="Diagnose stage">
+    <polygon points="606.4,157.0 850.8,298.0 753.0,354.4 606.4,269.8"/>
+    <text class="stage-label" x="706" y="266" transform="rotate(30 706 266)">DIAGNOSE</text>
+  </g>
+
+  <g class="segment" data-stage="activate" tabindex="0" role="button" aria-label="Activate stage">
+    <polygon points="857.1,309.0 857.1,591.0 759.4,534.6 759.4,365.4"/>
+    <text class="stage-label" x="812" y="450" transform="rotate(90 812 450)">ACTIVATE</text>
+  </g>
+
+  <g class="segment" data-stage="controls" tabindex="0" role="button" aria-label="Controls stage">
+    <polygon points="850.8,602.0 606.4,743.0 606.4,630.2 753.0,545.6"/>
+    <text class="stage-label" x="706" y="634" transform="rotate(-30 706 634)">CONTROLS</text>
+  </g>
+
+  <g class="segment" data-stage="execute" tabindex="0" role="button" aria-label="Execute stage">
+    <polygon points="593.6,743.0 349.2,602.0 447.0,545.6 593.6,630.2"/>
+    <text class="stage-label" x="494" y="634" transform="rotate(30 494 634)">EXECUTE</text>
+  </g>
+
+  <g class="segment" data-stage="measure" tabindex="0" role="button" aria-label="Measure stage">
+    <polygon points="342.9,591.0 342.9,309.0 440.6,365.4 440.6,534.6"/>
+    <text class="stage-label" x="388" y="450" transform="rotate(-90 388 450)">MEASURE</text>
+  </g>
+
+  <g class="segment" data-stage="scale" tabindex="0" role="button" aria-label="Scale stage">
+    <polygon points="349.2,298.0 593.6,157.0 593.6,269.8 447.0,354.4"/>
+    <text class="stage-label" x="494" y="266" transform="rotate(-30 494 266)">SCALE</text>
+  </g>
+
+  <polygon class="center-mark" points="600,285 743,367 743,533 600,615 457,533 457,367"/>
+  <text class="center-title" x="600" y="445">AAOS</text>
+
+  <script><![CDATA[
+    (function () {
+      const segments = Array.from(document.querySelectorAll('.segment'));
+      const stageNodes = new Map(segments.map((node) => [node.dataset.stage, node]));
+
+      function setActive(stage) {
+        segments.forEach((node) => node.classList.toggle('is-active', node.dataset.stage === stage));
+      }
+
+      function notifyParent(type, stage) {
+        try {
+          window.parent.postMessage({ source: 'aaos-svg', type, stage }, '*');
+        } catch (error) {
+          // No-op when embedded in a context that blocks messaging.
+        }
+      }
+
+      segments.forEach((node) => {
+        const stage = node.dataset.stage;
+        node.addEventListener('mouseenter', () => {
+          setActive(stage);
+          notifyParent('stage-hover', stage);
+        });
+        node.addEventListener('focus', () => {
+          setActive(stage);
+          notifyParent('stage-hover', stage);
+        });
+        node.addEventListener('click', () => {
+          setActive(stage);
+          notifyParent('stage-select', stage);
+        });
+        node.addEventListener('keydown', (event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            setActive(stage);
+            notifyParent('stage-select', stage);
+          }
+        });
+      });
+
+      window.addEventListener('message', (event) => {
+        const data = event.data || {};
+        if (data.source !== 'aaos-page' || data.type !== 'stage-set') return;
+        if (!stageNodes.has(data.stage)) return;
+        setActive(data.stage);
+      });
+
+      setActive('diagnose');
+    }());
+  ]]></script>
+</svg>
