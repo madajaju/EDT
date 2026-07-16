@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>FORGE Practices for Digital Architecture | Digital Transformation Architect</title>
+    <meta name="description" content="Digital architecture only matters when it changes execution. In the Digital Domain, that means architecture has to be practiced — not merely described — and FORGE is the discipline that makes that practice repeatable.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/en/lectures/dta-24/index.html">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FORGE Practices for Digital Architecture | Digital Transformation Architect">
+    <meta property="og:description" content="Digital architecture only matters when it changes execution. In the Digital Domain, that means architecture has to be practiced — not merely described — and FORGE is the discipline that makes that practice repeatable.">
+    <meta property="og:url" content="https://embracingdigital.org/en/lectures/dta-24/index.html">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FORGE Practices for Digital Architecture | Digital Transformation Architect">
+    <meta name="twitter:description" content="Digital architecture only matters when it changes execution. In the Digital Domain, that means architecture has to be practiced — not merely described — and FORGE is the discipline that makes that practice repeatable.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="en/home/index.html"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="en/shows/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="en/digital-transformation/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="../../../en/home/index.html">Home</a></li>
+        <li><a href="../../../en/episodes/index.html">Episodes</a></li>
+        <li aria-current="page">Episode 24: FORGE Practices for Digital Architecture</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/en/lectures/dta-24/index.html">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/en/lectures/dta-24/index.html"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 24</span>
+                <span class="episode-title">FORGE Practices for Digital Architecture</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-07-01" itemprop="datePublished">2026-07-01</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="24"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="Tue Jun 30 2026 00:00:00 GMT-0700 (Pacific Daylight Time)">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="FORGE Practices for Digital Architecture Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/0e9dq8E8S2g">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/0e9dq8E8S2g"
+                            title="FORGE Practices for Digital Architecture Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         hidden>
+                    <meta itemprop="name" content="FORGE Practices for Digital Architecture Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/deef9597">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://share.transistor.fm/s/deef9597"
+                            title="FORGE Practices for Digital Architecture Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="../../../en/episodes/index.html">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+                <h1>Coming Soon...<br>Come back on 2026-07-01<br>to see and listen to this amazing episode</h1>
+            </section>
+        </div>
+
+        <script>
+            (function () {
+                const mediaRoot = document.getElementById('episode-media');
+                if (!mediaRoot) return;
+
+                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
+                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
+
+                const video = mediaRoot.querySelector('.video-container');
+                const audio = mediaRoot.querySelector('.podcast-container');
+                const comingSoon = document.getElementById('coming-soon');
+
+                if (!releaseDate || isNaN(releaseDate.getTime())) {
+                    if (comingSoon) comingSoon.hidden = false;
+                    return;
+                }
+
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                releaseDate.setHours(0, 0, 0, 0);
+
+                const isReleased = releaseDate <= today;
+
+                if (video) video.hidden = !isReleased;
+                if (audio) audio.hidden = !isReleased;
+                if (comingSoon) comingSoon.hidden = isReleased;
+            })();
+        </script>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Digital architecture only matters when it changes execution. In the Digital Domain, that means architecture has to be practiced — not merely described — and FORGE is the discipline that makes that practice repeatable.</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <pre><code class="language-md">---
+title: &quot;FORGE Practices for Digital Architecture&quot;
+description: &quot;Why digital architecture has to be practiced as a repeatable discipline, how FORGE helps architects make better platform, software, and data decisions, and why execution quality is the real measure of architectural value.&quot;
+---
+
+Digital architecture is often described as if description itself were the achievement. It is not. A useful digital architecture is one that changes how decisions get made, how trade-offs are evaluated, and how execution behaves over time. In that sense, architecture is not a diagram or a catalog. It is a discipline of practice.
+
+That distinction matters in the Digital Domain. Most organizations can list their applications, platforms, and data assets. Fewer can use that knowledge to make repeatable decisions that improve outcomes. The difference is not cosmetic. It is the difference between commentary and practice.
+
+FORGE exists to close that gap. It gives architects a repeatable way to move through Find, Observe, Reconcile, Ground, and Enhance so the architecture is not just documented, but actively used. The point is not to freeze the environment or force every decision into the same shape. The point is to create a reliable way to judge what exists, what it depends on, and what should be built on next.
+
+## Practice is what makes architecture useful
+
+Architecture becomes valuable when it shapes execution. That means establishing boundaries, understanding relationships, and making decisions that help teams move with more clarity and less rework. When those boundaries are not explicit, change tends to spread unpredictably across applications, middleware, services, and data.
+
+The Digital Domain is where that discipline matters most. It is the layer where platform choices, software choices, and data choices become operational reality. If those choices are made in isolation, the organization often inherits unnecessary coupling, brittle integrations, and hidden dependencies. If they are made with architectural practice, the organization can reason about impact before the cost shows up downstream.
+
+This is why standards language alone is not enough. A standard can describe what good should look like. Practice determines whether the architecture actually supports better outcomes. An architecture that cannot guide decisions is not wrong, but it is incomplete.
+
+## FORGE turns description into repeatable judgment
+
+FORGE gives architects a structured way to work with the Digital Domain without turning the discipline into a checklist. Find establishes what exists. Observe shows how the pieces interact. Reconcile tests whether those relationships are bounded appropriately. Ground decides what the organization can safely rely on. Enhance builds on that foundation to improve execution over time.
+
+The value of that sequence is consistency. Repeatable architectural judgment does not mean every situation gets the same answer. It means the same questions get asked in a disciplined way: What is really here? What depends on what? Where is the coupling too tight? What should we trust for future work? What can be improved without introducing avoidable friction?
+
+That kind of judgment is especially important when platforms change, requirements shift, or new technologies arrive with strong claims and weak integration stories. A practiced architecture gives leaders and architects a way to evaluate those changes against the existing environment instead of treating each new request as an isolated event.
+
+## Grounding is a strategic decision
+
+Grounding is one of the most practical ideas in the whole method. If future work is built on something fragile, the organization is borrowing trouble. A layer or service that is convenient today may not be a sound place to anchor the next round of change.
+
+That is why good digital architecture pays attention to lower layers as much as visible application choices. Service management, software-defined infrastructure, distributed information management, identity, and security all shape what is safe to build on. When those layers are understood clearly, future decisions become easier to defend and less likely to trigger avoidable rework.
+
+This is also where many SaaS-heavy environments get misread. Even if an organization does not own the underlying infrastructure directly, it still needs to know enough about hosting, data location, backup handling, and control boundaries to make informed decisions. Outsourcing the service does not remove the architectural responsibility.
+
+## Platform, software, and data belong in the same conversation
+
+One of the recurring mistakes in digital programs is treating platform, software, and data as separate concerns. They are not. A platform decision changes what software can run well. A software decision changes how data moves and how governance works. A data decision changes what can be trusted, reused, and scaled.
+
+FORGE is useful because it forces those choices back into the same frame. A platform choice is not just a technology preference. It is a question about execution, resilience, and future flexibility. A software choice is not just about feature fit. It is about how well the system fits the surrounding architecture. A data governance choice is not just about control. It is about making sure information stays usable, visible, and connected to the processes that depend on it.
+
+That is also why lightweight governance matters. Governance should not bury teams in process. It should keep decisions aligned with the architecture so the organization can move faster with fewer surprises. Good governance clarifies the path instead of obstructing it.
+
+## Better architecture shows up as better execution
+
+The real test of digital architecture is not whether it sounds correct. It is whether it improves execution.
+
+When the architecture is practiced well, teams can see trade-offs earlier. They can tell when a new request duplicates an existing capability. They can identify when a process change is a better answer than another tool. They can choose between options with a clearer view of coupling, reuse, risk, and future growth.
+
+That reduces rework. It also reduces the false confidence that comes from making decisions in isolation. Organizations do this constantly: they approve new software without checking the surrounding stack, they move data without understanding the dependencies, or they add integrations without first understanding what the architecture can already support. FORGE makes those blind spots harder to ignore.
+
+In practical terms, that means better alignment between architecture and execution. It means fewer dead ends. It means the organization can change with more confidence because the next decision is grounded in what is already known rather than in assumption.
+
+## The point of the Digital Domain
+
+The Digital Domain exists to improve transformation outcomes. It is the part of the broader architecture picture that makes execution more reliable, more repeatable, and less dependent on individual memory or improvisation.
+
+That is the deeper value of FORGE. It does not replace judgment. It disciplines judgment. It gives architecture a repeatable practice that helps organizations understand what they have, how it works together, and what should carry the weight of future change.
+
+If architecture does not improve execution, it has not yet earned its place. If it does improve execution, then it has become a practical capability rather than a descriptive artifact.
+
+## Listen more
+
+Listen more: [Embracing Digital Transformations](https://embracingdigital.org/en/lectures/dta-24)
+</code></pre>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/en/episodes/index.html#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/en/episodes/index.html",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/en/lectures/dta-24/index.html#episode",
+  "url": "https://embracingdigital.org/en/lectures/dta-24/index.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/en/lectures/dta-24/index.html"
+  },
+  "name": "FORGE Practices for Digital Architecture",
+  "episodeNumber": 24,
+  "datePublished": "2026-07-01",
+  "inLanguage": "en",
+  "description": "Digital architecture only matters when it changes execution. In the Digital Domain, that means architecture has to be practiced — not merely described — and FORGE is the discipline that makes that practice repeatable.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/en/episodes/index.html#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/en/episodes/dta-24/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "FORGE Practices for Digital Architecture Video",
+      "embedUrl": "https://www.youtube.com/embed/0e9dq8E8S2g"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "FORGE Practices for Digital Architecture Audio",
+      "contentUrl": "https://share.transistor.fm/s/deef9597"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
