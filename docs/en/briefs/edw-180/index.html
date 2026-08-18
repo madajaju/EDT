@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Embracing Digital This Week | 2026-8-17 | AI Trust, Cyber Risk &amp; Cloud Resilience | Embracing Digital This Week</title>
+    <meta name="description" content="This Week at a Glance AI is advancing quickly, and so is the need to verify what is real. Anthropic’s Claude watermarking, alongside rising concerns about prompt injections, is pushing job seekers, courts, and employers to reassess trust, authorship, and verification in an era of synthetic text. Cyb">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/en/briefs/edw-180/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Embracing Digital This Week | 2026-8-17 | AI Trust, Cyber Risk &amp; Cloud Resilience | Embracing Digital This Week">
+    <meta property="og:description" content="This Week at a Glance AI is advancing quickly, and so is the need to verify what is real. Anthropic’s Claude watermarking, alongside rising concerns about prompt injections, is pushing job seekers, courts, and employers to reassess trust, authorship, and verification in an era of synthetic text. Cyb">
+    <meta property="og:url" content="https://embracingdigital.org/en/briefs/edw-180/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Embracing Digital This Week | 2026-8-17 | AI Trust, Cyber Risk &amp; Cloud Resilience | Embracing Digital This Week">
+    <meta name="twitter:description" content="This Week at a Glance AI is advancing quickly, and so is the need to verify what is real. Anthropic’s Claude watermarking, alongside rising concerns about prompt injections, is pushing job seekers, courts, and employers to reassess trust, authorship, and verification in an era of synthetic text. Cyb">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="en/home/index.html" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="en/home/index.html"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="en/shows/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/index.html">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/episodes/index.html">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="en/digital-transformation/index.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/index.html">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/pillars/index.html">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/odxa/index.html">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/whitepapers/index.html">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/digital-transformation/articles/index.html">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="en/lectures/index.html">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="en/sponsors/index.html">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<main id="content" class="brief-editorial">
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+            <li><a href="en/home/index.html">Home</a></li>
+            <li><a href="en/briefs/index.html">Embracing Digital This Week</a></li>
+            <li aria-current="page">2026-8-17 | AI Trust, Cyber Risk &amp; Cloud Resilience | Embracing Digital This Week</li>
+        </ol>
+    </nav>
+
+    <!-- HERO -->
+    <section class="brief-hero">
+        <div class="brief-hero-main">
+            <h1>
+                Embracing Digital This Week
+                <span class="brief-date">— 2026-8-17 | AI Trust, Cyber Risk &amp; Cloud Resilience | Embracing Digital This Week</span>
+            </h1>
+
+            <!-- At a glance / summary -->
+            <div class="brief-glance">
+                
+                    <section class="week-at-a-glance" aria-labelledby="week-glance-title">
+  <h2 id="week-glance-title">This Week at a Glance</h2>
+  <p>AI is advancing quickly, and so is the need to verify what is real. Anthropic’s Claude watermarking, alongside rising concerns about prompt injections, is pushing job seekers, courts, and employers to reassess trust, authorship, and verification in an era of synthetic text.</p>
+  <p>Cybersecurity, cloud, and workforce strategy are converging into one mandate: build resilient systems, train people to use AI effectively, and plan for disruption. In remote and infrastructure-challenged environments, digital transformation is not just innovation; it is operational necessity.</p>
+  <p class="architect-take"><strong>Architect’s Take:</strong> The week points to a practical shift from experimentation to verification and resilience.</p>
+</section>
+                
+            </div>
+
+            <!-- CTAs -->
+            <div class="brief-ctas">
+                
+                    <a class="listen-now" href="https://youtu.be/bJOiWf3zm_o" target="_blank" rel="noopener">
+                        Watch Now
+                    </a>
+                
+                
+                    <a class="listen-now" href="https://share.transistor.fm/s/158f4a11" target="_blank" rel="noopener">
+                        Listen Now
+                    </a>
+                
+                <a class="listen-now" href="en/newsletter.html"></a>
+                <a class="listen-now" href="en/community.html"></a>
+            </div>
+            <!-- Chips: prefer explicit tags, otherwise pillar anchors -->
+            
+                <nav class="pillar-chips" aria-label="Jump to coverage by pillar">
+                    
+                        <a href="#artificial-intelligence">Artificial Intelligence</a>
+                    
+                        <a href="#cybersecurity">Cybersecurity</a>
+                    
+                        <a href="#ubiquitous-computing">Ubiquitous Computing</a>
+                    
+                        <a href="#embracing-digital-transformation">Embracing Digital Transformation</a>
+                    
+                </nav>
+            
+        </div>
+        <div class="brief-hero-side" aria-label="Episode media">
+            
+                <div class="media-item media-video" aria-label="Episode media">
+                    
+                        <div class="video-embed">
+                            
+
+                            <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/bJOiWf3zm_o"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                </div>
+                
+
+                
+                    <div class="media-item media-audio">
+                        <div class="audio-embed">
+                            
+                            <iframe
+                                    width="100%"
+                                    height="180"
+                                    frameborder="0"
+                                    scrolling="no"
+                                    src="https://share.transistor.fm/e/158f4a11"
+                                    title="Embracing Digital This Week audio"
+                                    loading="lazy"
+                            ></iframe>
+
+                        </div>
+                        <!-- brief.listen_embed can be the HTML Transistor.fm gives you -->
+                        
+                    </div>
+                
+        </div>
+        
+        </div>
+    </section>
+
+    <!-- TOP STORIES -->
+    
+        <section class="brief-top-stories">
+            <h2></h2>
+
+            
+            <article class="top-story">
+                
+                    <img src="images/artificial-intelligence.jpg"
+                         alt="AI makers are adding new safeguards as text generation spreads faster than trust…"
+                         loading="lazy">
+                
+
+                <div class="top-story-content">
+                    
+                        <h3>AI makers are adding new safeguards as text generation spreads faster than trust…</h3>
+                    
+
+                    
+                        <p>AI makers are adding new safeguards as text generation spreads faster than trust. Anthropic has introduced watermarking for Claude’s text output, a step toward identifying machine-written content. That matters as colleges, employers, and courts face more AI-generated work, from job applications to legal filings. In places with tough physical realities, like Alaska’s remote networks, digital trust is even more critical. Better provenance could help businesses verify content and reduce fraud.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://www.anthropic.com/news/claude-text-watermark" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://gizmodo.com/dude-reportedly-hides-prompt-injections-in-legal-filing-just-in-case-judge-is-really-that-lazy-2000798935" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+
+                    
+                </div>
+            </article>
+            
+            <article class="top-story">
+                
+                    <img src="images/cybersecurity.jpg"
+                         alt="Cyber threats are tightening across public and private sectors. California will …"
+                         loading="lazy">
+                
+
+                <div class="top-story-content">
+                    
+                        <h3>Cyber threats are tightening across public and private sectors. California will …</h3>
+                    
+
+                    
+                        <p>Cyber threats are tightening across public and private sectors. California will give each state agency an AI cybersecurity officer, while CISA is urging schools to harden defenses as K-12 risks persist. At the same time, companies are being pushed to rethink outdated security habits and prepare for more aggressive attacks. In places where connectivity can already be fragile, resilience is now a core business skill.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://statescoop.com/each-california-agency-will-get-an-ai-cybersecurity-officer/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.k12dive.com/news/cisa-issues-k-12-cybersecurity-guidance-as-schools-risks-persist/827841/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.bgr.com/2233286/outdated-cybersecurity-tips-no-longer-safe/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+
+                    
+                </div>
+            </article>
+            
+            <article class="top-story">
+                
+                    <img src="images/ubiquitous-computing.jpg"
+                         alt="A PBS station is scrambling after a cloud provider vanished, putting 50 terabyte…"
+                         loading="lazy">
+                
+
+                <div class="top-story-content">
+                    
+                        <h3>A PBS station is scrambling after a cloud provider vanished, putting 50 terabyte…</h3>
+                    
+
+                    
+                        <p>A PBS station is scrambling after a cloud provider vanished, putting 50 terabytes of media at risk. The case echoes a broader blind spot for CFOs: vendor failure, not just cyberattack, can halt operations fast. As cloud use expands from finance to weather modeling, leaders must plan for exits, backups, and data portability. In places like Alaska, where glaciers can sever fiber and drones support avalanche work, resilience is not optional.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://arstechnica.com/information-technology/2026/08/pbs-station-fears-losing-50tb-of-data-after-being-ghosted-by-cloud-storage-provider/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.pymnts.com/news/b2b-payments/2026/the-cloud-risk-cfos-arent-measuring-what-happens-when-a-vendor-disappears/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.noaa.gov/news-release/noaas-use-of-cloud-infrastructure-grows-to-include-weather-prediction-models" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+
+                    
+                </div>
+            </article>
+            
+            <article class="top-story">
+                
+                    <img src="images/embracing-digital transformation.jpg"
+                         alt="On Embracing Digital Transformation, host Dr. Darren spotlights how AI is reshap…"
+                         loading="lazy">
+                
+
+                <div class="top-story-content">
+                    
+                        <h3>On Embracing Digital Transformation, host Dr. Darren spotlights how AI is reshap…</h3>
+                    
+
+                    
+                        <p>On Embracing Digital Transformation, host Dr. Darren spotlights how AI is reshaping enterprise work, from rapid “vibe coding” to capturing tribal knowledge inside organizations. In Alaska, where glaciers can cut fiber lines and remote operations depend on drones and careful planning, the challenge of digital change becomes even clearer. Guests Konstantin Klyagin, Erich Hugunin, and Italo Belandria explain that AI can speed prototyping, onboarding, and knowledge sharing, but production-ready systems still need architecture, testing, human judgment, and trust.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="http://www.embracingdigital.org/en/episodes/edt-376" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="http://www.embracingdigital.org/en/episodes/edt-375" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+
+                    
+                </div>
+            </article>
+            
+        </section>
+    
+
+    <!-- FULL COVERAGE BY PILLAR -->
+    <section class="brief-pillars">
+        <h2></h2>
+
+        
+        <section class="pillar-section" id="artificial-intelligence">
+            <h3>Artificial Intelligence</h3>
+
+            
+            <article class="pillar-article">
+                <div class="pillar-article-image">
+                    
+                        <img src="images/artificial-intelligence.jpg"
+                             alt="AI makers are adding new safeguards as text generation spreads faster than trust…"
+                             loading="lazy">
+                    
+                </div>
+
+                <div class="pillar-article-content">
+                    
+                        <h4>AI makers are adding new safeguards as text generation spreads faster than trust…</h4>
+                    
+
+                    
+                        <p>AI makers are adding new safeguards as text generation spreads faster than trust. Anthropic has introduced watermarking for Claude’s text output, a step toward identifying machine-written content. That matters as colleges, employers, and courts face more AI-generated work, from job applications to legal filings. In places with tough physical realities, like Alaska’s remote networks, digital trust is even more critical. Better provenance could help businesses verify content and reduce fraud.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://www.anthropic.com/news/claude-text-watermark" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://gizmodo.com/dude-reportedly-hides-prompt-injections-in-legal-filing-just-in-case-judge-is-really-that-lazy-2000798935" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+            <article class="pillar-article">
+                <div class="pillar-article-image">
+                    
+                        <img src="images/artificial-intelligence.jpg"
+                             alt="AI fluency is moving from optional to expected in the job market. New reporting …"
+                             loading="lazy">
+                    
+                </div>
+
+                <div class="pillar-article-content">
+                    
+                        <h4>AI fluency is moving from optional to expected in the job market. New reporting …</h4>
+                    
+
+                    
+                        <p>AI fluency is moving from optional to expected in the job market. New reporting shows college graduates are learning that employers want candidates who can use AI tools, not just talk about them. That shift is reshaping majors, training, and entry-level hiring. For leaders, the message is clear: workforce strategy now includes digital literacy, prompt discipline, and governance. Even in complex environments like Alaska’s glacier-cut infrastructure, people who can use AI well will drive transformation.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://www.axios.com/2026/08/15/college-major-ai-skills-job-search" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.bbc.com/news/articles/cp3rprx2wl4o" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+            <article class="pillar-article">
+                <div class="pillar-article-image">
+                    
+                        <img src="images/artificial-intelligence.jpg"
+                             alt="The next wave of AI risk is about verification, not just capability. Legal and p…"
+                             loading="lazy">
+                    
+                </div>
+
+                <div class="pillar-article-content">
+                    
+                        <h4>The next wave of AI risk is about verification, not just capability. Legal and p…</h4>
+                    
+
+                    
+                        <p>The next wave of AI risk is about verification, not just capability. Legal and public-sector teams are confronting prompt injections, synthetic text, and unclear authorship at the same time AI use expands across daily work. That creates pressure for stronger controls, human review, and clearer policy. For executives, this is a reminder that transformation is never abstract. Whether dealing with remote Alaska logistics or courtroom documents, digital systems need guardrails to stay reliable.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://www.gizmodo.com/dude-reportedly-hides-prompt-injections-in-legal-filing-just-in-case-judge-is-really-that-lazy-2000798935" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.anthropic.com/news/claude-text-watermark" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.bbc.com/news/articles/cp3rprx2wl4o" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+        </section>
+        
+        <section class="pillar-section" id="cybersecurity">
+            <h3>Cybersecurity</h3>
+
+            
+            <article class="pillar-article">
+                <div class="pillar-article-image">
+                    
+                        <img src="images/cybersecurity.jpg"
+                             alt="Cyber threats are tightening across public and private sectors. California will …"
+                             loading="lazy">
+                    
+                </div>
+
+                <div class="pillar-article-content">
+                    
+                        <h4>Cyber threats are tightening across public and private sectors. California will …</h4>
+                    
+
+                    
+                        <p>Cyber threats are tightening across public and private sectors. California will give each state agency an AI cybersecurity officer, while CISA is urging schools to harden defenses as K-12 risks persist. At the same time, companies are being pushed to rethink outdated security habits and prepare for more aggressive attacks. In places where connectivity can already be fragile, resilience is now a core business skill.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://statescoop.com/each-california-agency-will-get-an-ai-cybersecurity-officer/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.k12dive.com/news/cisa-issues-k-12-cybersecurity-guidance-as-schools-risks-persist/827841/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.bgr.com/2233286/outdated-cybersecurity-tips-no-longer-safe/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+            <article class="pillar-article">
+                <div class="pillar-article-image">
+                    
+                        <img src="images/cybersecurity.jpg"
+                             alt="Cisco firewall vulnerabilities are putting network teams on alert after issues d…"
+                             loading="lazy">
+                    
+                </div>
+
+                <div class="pillar-article-content">
+                    
+                        <h4>Cisco firewall vulnerabilities are putting network teams on alert after issues d…</h4>
+                    
+
+                    
+                        <p>Cisco firewall vulnerabilities are putting network teams on alert after issues disrupted VPN services and raised exposure concerns. The episode is a reminder that basic patching and asset visibility still matter, even as leaders chase AI and automation. For organizations operating across remote sites and harsh conditions, from snowy field offices to distributed schools, weak perimeter defenses can quickly become operational risk. Security hygiene remains the foundation of digital trust.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://www.cybersecuritydive.com/news/cisco-firewall-vulnerabilities-vpn-crash/827688/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.bgr.com/2233286/outdated-cybersecurity-tips-no-longer-safe/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+            <article class="pillar-article">
+                <div class="pillar-article-image">
+                    
+                        <img src="images/cybersecurity.jpg"
+                             alt="More private companies are exploring offensive cyber operations as gangs step up…"
+                             loading="lazy">
+                    
+                </div>
+
+                <div class="pillar-article-content">
+                    
+                        <h4>More private companies are exploring offensive cyber operations as gangs step up…</h4>
+                    
+
+                    
+                        <p>More private companies are exploring offensive cyber operations as gangs step up attacks and defenders look for stronger deterrence. That shift reflects how quickly the threat landscape is evolving, especially for governments and critical services that depend on always-on systems. The lesson is clear: digital transformation is no longer just about speed and innovation. It is about building secure, adaptable operations that can survive disruption and protect public trust.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://www.cybersecuritydive.com/news/us-private-companies-gangs-cyberattacks-offensive-operations/827805/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://statescoop.com/each-california-agency-will-get-an-ai-cybersecurity-officer/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+        </section>
+        
+        <section class="pillar-section" id="ubiquitous-computing">
+            <h3>Ubiquitous Computing</h3>
+
+            
+            <article class="pillar-article">
+                <div class="pillar-article-image">
+                    
+                        <img src="images/ubiquitous-computing.jpg"
+                             alt="A PBS station is scrambling after a cloud provider vanished, putting 50 terabyte…"
+                             loading="lazy">
+                    
+                </div>
+
+                <div class="pillar-article-content">
+                    
+                        <h4>A PBS station is scrambling after a cloud provider vanished, putting 50 terabyte…</h4>
+                    
+
+                    
+                        <p>A PBS station is scrambling after a cloud provider vanished, putting 50 terabytes of media at risk. The case echoes a broader blind spot for CFOs: vendor failure, not just cyberattack, can halt operations fast. As cloud use expands from finance to weather modeling, leaders must plan for exits, backups, and data portability. In places like Alaska, where glaciers can sever fiber and drones support avalanche work, resilience is not optional.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://arstechnica.com/information-technology/2026/08/pbs-station-fears-losing-50tb-of-data-after-being-ghosted-by-cloud-storage-provider/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.pymnts.com/news/b2b-payments/2026/the-cloud-risk-cfos-arent-measuring-what-happens-when-a-vendor-disappears/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.noaa.gov/news-release/noaas-use-of-cloud-infrastructure-grows-to-include-weather-prediction-models" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+            <article class="pillar-article">
+                <div class="pillar-article-image">
+                    
+                        <img src="images/ubiquitous-computing.jpg"
+                             alt="DISA has set a release date for its next cloud solicitation, signaling another m…"
+                             loading="lazy">
+                    
+                </div>
+
+                <div class="pillar-article-content">
+                    
+                        <h4>DISA has set a release date for its next cloud solicitation, signaling another m…</h4>
+                    
+
+                    
+                        <p>DISA has set a release date for its next cloud solicitation, signaling another major federal move toward modern infrastructure. The decision comes as agencies balance speed, security, and vendor dependence across critical systems. At the same time, cloud competition remains fierce between Amazon and Microsoft, with scale and reliability still driving enterprise choices. For digital leaders, the lesson is clear: modernization must include procurement discipline and contingency planning.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://www.nextgov.com/acquisition/2026/08/disa-sets-release-date-follow-cloud-solicitation/415370/?oref=ng-homepage-river" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.fool.com/investing/2026/08/16/amazon-vs-microsoft-which-cloud-computing-behemoth/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+            <article class="pillar-article">
+                <div class="pillar-article-image">
+                    
+                        <img src="images/ubiquitous-computing.jpg"
+                             alt="Cloud growth is speeding up across government and industry, but recent headlines…"
+                             loading="lazy">
+                    
+                </div>
+
+                <div class="pillar-article-content">
+                    
+                        <h4>Cloud growth is speeding up across government and industry, but recent headlines…</h4>
+                    
+
+                    
+                        <p>Cloud growth is speeding up across government and industry, but recent headlines show the downside of overreliance on a single provider. Whether it is public media, federal buyers, or weather agencies, the core issue is the same: data must stay reachable when vendors change or fail. Executives should pressure-test continuity plans now. In complex environments, from remote Alaska to urban data centers, resilience is becoming a business requirement, not a technical nice-to-have.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="https://arstechnica.com/information-technology/2026/08/pbs-station-fears-losing-50tb-of-data-after-being-ghosted-by-cloud-storage-provider/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.pymnts.com/news/b2b-payments/2026/the-cloud-risk-cfos-arent-measuring-what-happens-when-a-vendor-disappears/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.noaa.gov/news-release/noaas-use-of-cloud-infrastructure-grows-to-include-weather-prediction-models" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.nextgov.com/acquisition/2026/08/disa-sets-release-date-follow-cloud-solicitation/415370/?oref=ng-homepage-river" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="https://www.fool.com/investing/2026/08/16/amazon-vs-microsoft-which-cloud-computing-behemoth/" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+        </section>
+        
+        <section class="pillar-section" id="embracing-digital-transformation">
+            <h3>Embracing Digital Transformation</h3>
+
+            
+            <article class="pillar-article">
+                <div class="pillar-article-image">
+                    
+                        <img src="images/embracing-digital transformation.jpg"
+                             alt="On Embracing Digital Transformation, host Dr. Darren spotlights how AI is reshap…"
+                             loading="lazy">
+                    
+                </div>
+
+                <div class="pillar-article-content">
+                    
+                        <h4>On Embracing Digital Transformation, host Dr. Darren spotlights how AI is reshap…</h4>
+                    
+
+                    
+                        <p>On Embracing Digital Transformation, host Dr. Darren spotlights how AI is reshaping enterprise work, from rapid “vibe coding” to capturing tribal knowledge inside organizations. In Alaska, where glaciers can cut fiber lines and remote operations depend on drones and careful planning, the challenge of digital change becomes even clearer. Guests Konstantin Klyagin, Erich Hugunin, and Italo Belandria explain that AI can speed prototyping, onboarding, and knowledge sharing, but production-ready systems still need architecture, testing, human judgment, and trust.</p>
+                    
+
+                    
+                        <div class="story-links">
+                            
+                                <a href="http://www.embracingdigital.org/en/episodes/edt-376" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                                <a href="http://www.embracingdigital.org/en/episodes/edt-375" target="_blank" rel="noopener">
+                                    Read More
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+            </article>
+            
+        </section>
+        
+    </section>
+</main>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
