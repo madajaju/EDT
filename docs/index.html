@@ -2,57 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    
-    <meta name="robots" content="noindex, follow">
+    <meta name="robots" content="index, follow">
     <title>Embracing Digital Transformation</title>
+    
+    <!-- Direct HTML fallback redirect for AI bots and crawlers -->
+    <link rel="canonical" href="https://embracingdigital.org/en/home/index.html">
+    <meta http-equiv="refresh" content="0; url=https://embracingdigital.org/en/home/index.html">
 </head>
 <body>
 <script>
-    /*
-    var lang = navigator.language || navigator.userLanguage;
-    if (lang.indexOf('de') == 0)
-        window.location = './de/home/index.html';
-    else if(lang.indexOf('es') == 0)
-        window.location = './es/home/index.html';
-    else if(lang.indexOf('pt') == 0)
-        window.location = './es/home/index.html';
-    else if(lang.indexOf('fr') == 0)
-        window.location = './fr/home/index.html';
-    else if(lang.indexOf('ar') == 0)
-        window.location = './ar/home/index.html';
-    else if(lang.indexOf('ja') == 0)
-        window.location = './ja/home/index.html';
-    else if(lang.indexOf('it') == 0)
-        window.location = './it/home/index.html';
-    else
-
-     */
-        window.location = './en/home/index.html';
-
     document.addEventListener("DOMContentLoaded", () => {
         // Get the current URL
         const currentUrl = window.location.href;
 
-        // Match the old URL format
-        const oldUrlPattern = /episode-(EDT\d+)-(\w+)/i; // Matches episode ID (like EDT252) and language (like en)
+        // Match old URL formats (e.g., episode-EDT252-en)
+        const oldUrlPattern = /episode-(EDT\d+)-(\w+)/i; 
         const match = currentUrl.match(oldUrlPattern);
 
         if (match) {
-            // Extract the episode ID (e.g., "EDT252") and the language (e.g., "en")
-            const episodeId = match[1].toLowerCase(); // Lowercase for the episode ID
-            const language = match[2]; // Language remains as-is
+            const episodeId = match[1].toLowerCase(); // e.g., "edt252"
+            const language = match[2]; 
 
-            // Convert episode ID to new format - add a dash in "edt-252"
+            // Convert to new format: edt-252
             const newEpisodeId = episodeId.replace(/(\d+)/, "-$1");
 
-            // Generate the new URL
-            const newUrl = `http://www.embracingdigital.org/${language}/episodes/${newEpisodeId}/index.html`;
-
-            // Redirect the browser to the new URL
-            window.location.href = newUrl;
+            // Redirect to updated HTTPS episode path
+            window.location.href = `https://embracingdigital.org/${language}/episodes/${newEpisodeId}/index.html`;
+        } else {
+            // Default fallback redirect
+            window.location.href = './en/home/index.html';
         }
     });
 </script>
-
+<p>Redirecting to <a href="https://embracingdigital.org/en/home/index.html">Embracing Digital Transformation</a>...</p>
 </body>
 </html>
