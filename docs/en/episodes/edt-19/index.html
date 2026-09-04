@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Using Data as a Strategic Asset | Embracing Digital Transformation</title>
+    <meta name="description" content="In this episode, Darren Pulsipher, Intel Chief Solution Architect, Public Sector, explores how organizations can move from simply hoarding data to using it as a strategic asset.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/en/episodes/edt-19/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Using Data as a Strategic Asset | Embracing Digital Transformation">
+    <meta property="og:description" content="In this episode, Darren Pulsipher, Intel Chief Solution Architect, Public Sector, explores how organizations can move from simply hoarding data to using it as a strategic asset.">
+    <meta property="og:url" content="https://embracingdigital.org/en/episodes/edt-19/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Using Data as a Strategic Asset | Embracing Digital Transformation">
+    <meta name="twitter:description" content="In this episode, Darren Pulsipher, Intel Chief Solution Architect, Public Sector, explores how organizations can move from simply hoarding data to using it as a strategic asset.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/en/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/en/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/en/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/en/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/en/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/en/">Home</a></li>
+        <li><a href="/en/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 19: Using Data as a Strategic Asset</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/en/episodes/edt-19/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/en/episodes/edt-19/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 19</span>
+                <span class="episode-title">Using Data as a Strategic Asset</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2020-09-08" itemprop="datePublished">2020-09-08T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="19"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2020-09-08" data-publication-status="published">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="Using Data as a Strategic Asset Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/url">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/url"
+                            title="Using Data as a Strategic Asset Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         >
+                    <meta itemprop="name" content="Using Data as a Strategic Asset Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/f15f756b">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://transistor.fm/e/f15f756b"
+                            title="Using Data as a Strategic Asset Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="/en/episodes/">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>In this episode, Darren Pulsipher, Intel Chief Solution Architect, Public Sector, explores how organizations can move from simply hoarding data to using it as a strategic asset.</p>
+
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../../en/search.html?query=datamanagement"
+                   itemprop="keywords">datamanagement</a>
+                
+                <a href="../../../en/search.html?query=datacentric"
+                   itemprop="keywords">datacentric</a>
+                
+                <a href="../../../en/search.html?query=datagovernance"
+                   itemprop="keywords">datagovernance</a>
+                
+                <a href="../../../en/search.html?query=dataanalytics"
+                   itemprop="keywords">dataanalytics</a>
+                
+                <a href="../../../en/search.html?query=dataquality"
+                   itemprop="keywords">dataquality</a>
+                
+                <a href="../../../en/search.html?query=generativeai"
+                   itemprop="keywords">generativeai</a>
+                
+                <a href="../../../en/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../../en/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../../en/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../../en/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Just like some people hoard things in their homes, afraid to throw anything away, organizations can hoard data. For example, my email folder is 8 gigabytes. I know it</p>
+<p>does not need to be that big, but I save things in case I might need them. Now multiply that times the number of employees. At Intel, we’ve got a hundred thousand employees. Imagine how much data we’re storing, just in emails, when we do backups. Add in structured and unstructured databases, presentations, spreadsheets, etc…and it’s clear that just storing it all is not a great strategy.</p>
+<h2>Data Statistics</h2>
+<p>Let’s look at the statistics that show why this is a bad strategy. Approximately 80 percent of data scientists’ time is spent cleaning up data before they can use it. Less than 50% of structured data is being utilized at all, and less than 1% of unstructured data can be analyzed. So, all of this data is being hoarded, but organizations are not, for the most part, using it. Another issue is who has access to all of this stored data. It is alarming that 70% of employees have access to data that they probably shouldn’t. Just as a hoarder’s piles create fire hazards in the home, unorganized piles of data create security risks in an organization.</p>
+<h2>Data Explosion</h2>
+<p>What can we do about this problem? First, we need to understand why there is such an explosion of data. With IOT, everything is connected, and we have data processing happening in a multitude of places. The sheer volume of data that is being generated is incredible. This is exacerbated by regulatory issues; it’s hard to know what we can get rid of and what we can’t. We fill up our storage and then buy more. The technology is basically enabling our data hoarding. We need to look at what we can do differently.</p>
+<h2>Why We Hoard</h2>
+<p>Experts say that people hoard because they believe that an item will be useful or valuable in the future, has sentimental value, is unique and irreplaceable, or is too big a bargain to throw away. These same ideas apply to data hoarding. For example, why do I have one of the first presentations I ever gave? It’s stored on a drive and it is in the cloud. I look at it maybe once a year, but I don’t have any real reason beyond sentimental value to keep it. An organization is made up of individuals with these behaviors, and at all different levels of data hoarding, there is fear of getting rid of data.</p>
+<h2>Becoming Data Centric</h2>
+<p>What does it look like to become a data-centric company instead of a storage company? Here is a four-step process to becoming a data-centric organization.</p>
+<h2>Organizational Foundation</h2>
+<p>The first step is creating a data-centric organizational foundation. There are four key players with distinctive roles.</p>
+<p>Chief Data Officer: The chief data officer’s job is to set strategy and governance over the management of data and the generation of valuable business information. This role is different than that of a chief information officer, who focuses on infrastructure rather than the information itself. This is a difficult job, as the chief data officer is involved in cultural change. They try to keep people from hoarding data, and instead, use it to create real business value.</p>
+<p>Data Scientist: Data scientists develop models and blueprints by finding patterns in the data and using predictive analytics. The data scientists’ efforts can become simply a one-time science experiment, however, unless the information is operationalized.</p>
+<p>Data Engineer: This is where data engineers come in. They manage data pipelines and operationalize analysis. As new data comes in, new insight is generated without starting over each time.</p>
+<p>Data Steward: The data steward manages governance and access to data assets, making sure the right people have the right access at the right time.</p>
+<p>With an organization that includes these four roles, the next big question is whether to centralize or distribute operations.  For example, perhaps distributed matrix management is already working in your large organization, but a smaller organization may need more rigor and would benefit from a more centralized structure.</p>
+<h2>Data Collection and Preparation</h2>
+<p>An article from the Harvard Business Review effectively uses a sports analogy to describe two strategies to catalog data: defense and offense. In defense, the goal is to protect the data. In offense, the goal is to move forward to score as quickly as possible.</p>
+<h2>Data Defense and Offense</h2>
+<p>With a defensive strategy, the organization is primarily focused on data security, governance, and compliance. Protecting the data is key. The main data activity will center on extraction, standardization, storage management, and access management. Typically, this strategy will use a more centralized organization and will use a single source of truth.</p>
+<p>With an offensive strategy, the organization is primarily focused on moving quickly to improve its competitive position and be as profitable as possible. Data activities will focus on extraction, modeling, visualization, transformation, and enrichment.</p>
+<p>This strategy will require more flexibility, which means a more distributed organization with multiple versions of truth.</p>
+<p>Understanding how to use the data based on the strategy is important. Often, organizations will straddle the fence and it can get confusing. Although every organization needs to be able to play defense and offense, organizations must choose a strategy rather than trying to do both, just as professional-level football players don’t play both sides of the ball.</p>
+<h2>Analytics Insight</h2>
+<p>There is an organizational maturity curve to analytics and building insight from your data. The key is to understand where your organization currently resides and what the next steps are to move up the curve.</p>
+<p>In the descriptive analytics stage, you are just trying to figure out what is going on. In the diagnostic step, you are figuring out why something happened. In the predictive step, you can predict what will happen in the future based on historical data. This is where many organizations strive to be, but the first two steps must be accomplished first. Above predictive is prescriptive, where you can understand why something will happen and guide the organization according to expectations. At the top of the steps is analytic insight, or foresight, where you are making things happen, even progressing beyond prescription.</p>
+<p>One reason it is important to understand where your organization currently sits is because there are specific tools for each phase. For example, you don’t want to be stuck with an AI project that is using prescriptive, or even predictive, algorithms when your organization is still on the descriptive step.</p>
+<h2>Operationalize It</h2>
+<p>To achieve the goal of operationalization, or making a repeatable process, there are three key elements: a data-centric infrastructure, data pipelines, and business flow.</p>
+<p>The data-centric infrastructure allows you to know where all your data is and what’s in that data through various tools such as a metadata manager like elastic search or meta-data catalogs and repositories. Data pipelines have great tools to enable the process from ingestion to analysis to action. A defensive or offensive strategy will determine which tools you will use in your pipeline. The last element, business flow, is where business understanding of your data and processes will allow deployment of a continuous improvement process to ensure repeatable, valuable insights.</p>
+<h2>Call to Action</h2>
+<p>First, develop a data strategy. Get organized and figure out where all of your data is and catalog it. Decide on a defensive or offensive strategy, and then take your analysis insight steps one at a time, using the right tools. Most importantly, operationalize your insights to get the best business value.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/en/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/en/episodes/",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/en/episodes/edt-19/#episode",
+  "url": "https://embracingdigital.org/en/episodes/edt-19/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/en/episodes/edt-19/"
+  },
+  "name": "Using Data as a Strategic Asset",
+  "episodeNumber": 19,
+  "datePublished": "2020-09-08",
+  "inLanguage": "en",
+  "description": "In this episode, Darren Pulsipher, Intel Chief Solution Architect, Public Sector, explores how organizations can move from simply hoarding data to using it as a strategic asset.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/en/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/en/episodes/edt-19/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Using Data as a Strategic Asset Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Using Data as a Strategic Asset Audio",
+      "contentUrl": "https://share.transistor.fm/s/f15f756b"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/en/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/en/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Using Data as a Strategic Asset",
+      "item": "https://embracingdigital.org/en/episodes/edt-19/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

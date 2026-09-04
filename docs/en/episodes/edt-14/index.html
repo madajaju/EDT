@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Kickstarting Your Organizational Transformation to Become Data-Centric | Embracing Digital Transformation</title>
+    <meta name="description" content="Today’s episode is all about kick-starting your organization to become data centric and the value this can bring. Darren’s special guest is Sarah Kalicin, lead data scientist for data centers at Intel.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/en/episodes/edt-14/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kickstarting Your Organizational Transformation to Become Data-Centric | Embracing Digital Transformation">
+    <meta property="og:description" content="Today’s episode is all about kick-starting your organization to become data centric and the value this can bring. Darren’s special guest is Sarah Kalicin, lead data scientist for data centers at Intel.">
+    <meta property="og:url" content="https://embracingdigital.org/en/episodes/edt-14/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kickstarting Your Organizational Transformation to Become Data-Centric | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Today’s episode is all about kick-starting your organization to become data centric and the value this can bring. Darren’s special guest is Sarah Kalicin, lead data scientist for data centers at Intel.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/en/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/en/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/en/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/en/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/en/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/en/">Home</a></li>
+        <li><a href="/en/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 14: Kickstarting Your Organizational Transformation to Become Data-Centric</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/en/episodes/edt-14/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/en/episodes/edt-14/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 14</span>
+                <span class="episode-title">Kickstarting Your Organizational Transformation to Become Data-Centric</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2020-08-20" itemprop="datePublished">2020-08-20T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="14"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2020-08-20" data-publication-status="published">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="Kickstarting Your Organizational Transformation to Become Data-Centric Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/url">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/url"
+                            title="Kickstarting Your Organizational Transformation to Become Data-Centric Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         >
+                    <meta itemprop="name" content="Kickstarting Your Organizational Transformation to Become Data-Centric Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/c53aad7b">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://transistor.fm/e/c53aad7b"
+                            title="Kickstarting Your Organizational Transformation to Become Data-Centric Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="/en/episodes/">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Today’s episode is all about kick-starting your organization to become data centric and the value this can bring. Darren’s special guest is Sarah Kalicin, lead data scientist for data centers at Intel.</p>
+
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../../en/search.html?query=operationalization"
+                   itemprop="keywords">operationalization</a>
+                
+                <a href="../../../en/search.html?query=analytics"
+                   itemprop="keywords">analytics</a>
+                
+                <a href="../../../en/search.html?query=dataquality"
+                   itemprop="keywords">dataquality</a>
+                
+                <a href="../../../en/search.html?query=machinelearning"
+                   itemprop="keywords">machinelearning</a>
+                
+                <a href="../../../en/search.html?query=artificialintelligence"
+                   itemprop="keywords">artificialintelligence</a>
+                
+                <a href="../../../en/search.html?query=businessinsights"
+                   itemprop="keywords">businessinsights</a>
+                
+                <a href="../../../en/search.html?query=datacollection"
+                   itemprop="keywords">datacollection</a>
+                
+                <a href="../../../en/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../../en/search.html?query=people"
+                   itemprop="keywords">people</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/sarah-kalicin/index.html" itemprop="url">
+                <span itemprop="name">Sarah Kalicin</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>Operationalizing Analytics System</h2>
+<p>The first thing to understand about the process of operationalizing analytics is that it is complex. Some people think data is the new electricity and works in a similar system. Consider this example:  In a simple electrical system, there is a power source and some wires that go to a light bulb. As long as there is the power source and the wires are high integrity, you can turn off the light, and then six months later come back and flip the switch and know the light bulb will come back on.</p>
+<p>An analytical system does not work this way. There are many types of “short circuits” and variables that can cause failure, such as entropy. It’s important to have the right people on your teams who can work through and understand all the different types of faults that can occur or you will not get correct or useful insight.</p>
+<p>Your data must be formatted in a certain way for machine learning algorithms. The algorithm must understand what the data represents to look at the pattern appropriately.  Unless the data is carefully formatted, there is a garbage in/garbage out risk.  This is where your engineers, data scientists, and other supporting data architects are important.</p>
+<h2>Asking the Right Questions</h2>
+<p>Another part of the system is making sure you have the right business questions. An organization must supply foundational questions about what they are trying get from the data: What insights does our business need? How do we paint a better picture of what our landscape actually looks like? What data will allow us to do that?</p>
+<p>Many executives love the idea of doing analytics, AI, and big data, but don’t know how to get started. The first step is for executives to take ownership of what they want the data to do for the organization.  What business value is going to come from the data? What type of data do we already have? What data can we create that will paint a more complete picture of what is happening?  What does success look like? The focus should be first on the organizational foundation.</p>
+<h2>Data Collection, Preparation, and Insights</h2>
+<p>After those questions are answered, the next step is to outline what needs to be accomplished and start breaking it down into smaller parts. Organizations should be looking at their current data sources, determining their reliability, and identifying what is missing, followed by data collection and preparation.</p>
+<p>With the data in hand, it is time to create the story. This involves not only data scientists, but domain experts and business and marketing people. Input from these different groups will ensure the data will add value to the business rather than becoming just an academic exercise or a one-time experiment.  From the data, you ultimately want valuable, reliable insight that will help improve your business rather than simply data collection that is convenient but not actionable.</p>
+<p>Now that you’ve collected the data, analyzed it, and have some insight, how do you operationalize it?</p>
+<h2>Operational Analytics Example of Success</h2>
+<p>An example from manufacturing is a good way to show how the data successfully works through the pipeline. Start with the foundational business value of maximizing your product yield. What data sources could tell you if you have broken or disfigured products? Cameras at the end of assembly lines could create a deep learning model that detect or predict if a product is broken or disfigured. A data scientist could then train a model based on good product and bad product to improve yield.</p>
+<p>This type of operationalized data could be applied to several key areas that add value to an organization. Quality control, such as making sure raw material meets specifications is one example. Predictive maintenance of machinery and regulatory compliance, such as in a weight requirement for a food product, are other examples.</p>
+<p>By tapping into the data in real time about product, quality, or regulatory issues, you are not just creating a higher product yield, but minimizing costly human tasks, such as inspection at the end of an assembly line. These employees can be redirected to higher value tasks. You are also minimizing waste and creating a more consistent consumer experience. In addition, you are protecting the business by minimizing regulatory risks.</p>
+<p>This is a win-win scenario. The more the organization knows what they want to gain from data, what data to collect, and how to utilize it based on a business strategy, the more successful they will be.</p>
+<h2>More to Come</h2>
+<p>This is the first of six episodes that talk about the data-centric organization. We hope you will join us for those future podcasts.  Want more? Check out Sarah’s website,  </p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/en/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/en/episodes/",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/en/episodes/edt-14/#episode",
+  "url": "https://embracingdigital.org/en/episodes/edt-14/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/en/episodes/edt-14/"
+  },
+  "name": "Kickstarting Your Organizational Transformation to Become Data-Centric",
+  "episodeNumber": 14,
+  "datePublished": "2020-08-20",
+  "inLanguage": "en",
+  "description": "Today's episode is all about kick-starting your organization to become data centric and the value this can bring. Darren's special guest is Sarah Kalicin, lead data scientist for data centers at Intel.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/en/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/en/episodes/edt-14/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Kickstarting Your Organizational Transformation to Become Data-Centric Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Kickstarting Your Organizational Transformation to Become Data-Centric Audio",
+      "contentUrl": "https://share.transistor.fm/s/c53aad7b"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Sarah Kalicin",
+      "url": "https://embracingdigital.org/../../../en/guests/sarah-kalicin/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/en/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/en/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Kickstarting Your Organizational Transformation to Become Data-Centric",
+      "item": "https://embracingdigital.org/en/episodes/edt-14/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

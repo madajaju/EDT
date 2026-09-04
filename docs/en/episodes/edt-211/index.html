@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Back to the Basics of Data Management | Embracing Digital Transformation</title>
+    <meta name="description" content="In this episode, Darren interviews Bob Buda, CEO of Buda Consulting. They delve into the fundamentals of data management, which remains crucial even as technology rapidly evolves. The integration of AI and the transition to cloud-based systems are transforming data management practices. These advanc">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/en/episodes/edt-211/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Back to the Basics of Data Management | Embracing Digital Transformation">
+    <meta property="og:description" content="In this episode, Darren interviews Bob Buda, CEO of Buda Consulting. They delve into the fundamentals of data management, which remains crucial even as technology rapidly evolves. The integration of AI and the transition to cloud-based systems are transforming data management practices. These advanc">
+    <meta property="og:url" content="https://embracingdigital.org/en/episodes/edt-211/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Back to the Basics of Data Management | Embracing Digital Transformation">
+    <meta name="twitter:description" content="In this episode, Darren interviews Bob Buda, CEO of Buda Consulting. They delve into the fundamentals of data management, which remains crucial even as technology rapidly evolves. The integration of AI and the transition to cloud-based systems are transforming data management practices. These advanc">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/en/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/en/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/en/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/en/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/en/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/en/">Home</a></li>
+        <li><a href="/en/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 211: Back to the Basics of Data Management</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/en/episodes/edt-211/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/en/episodes/edt-211/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 211</span>
+                <span class="episode-title">Back to the Basics of Data Management</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2024-07-18" itemprop="datePublished">2024-07-18T07:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="211"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2024-07-18" data-publication-status="published">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="Back to the Basics of Data Management Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/I8PkCjjn590">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/I8PkCjjn590"
+                            title="Back to the Basics of Data Management Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         >
+                    <meta itemprop="name" content="Back to the Basics of Data Management Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/6db6acd8">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://transistor.fm/e/6db6acd8"
+                            title="Back to the Basics of Data Management Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="/en/episodes/">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>In this episode, Darren interviews Bob Buda, CEO of Buda Consulting. They delve into the fundamentals of data management, which remains crucial even as technology rapidly evolves. The integration of AI and the transition to cloud-based systems are transforming data management practices. These advanc</p>
+
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../../en/search.html?query=moderncomputing"
+                   itemprop="keywords">moderncomputing</a>
+                
+                <a href="../../../en/search.html?query=ai"
+                   itemprop="keywords">ai</a>
+                
+                <a href="../../../en/search.html?query=datasecurity"
+                   itemprop="keywords">datasecurity</a>
+                
+                <a href="../../../en/search.html?query=datagovernance"
+                   itemprop="keywords">datagovernance</a>
+                
+                <a href="../../../en/search.html?query=automation"
+                   itemprop="keywords">automation</a>
+                
+                <a href="../../../en/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../../en/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../../en/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../../en/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../../en/search.html?query=technology"
+                   itemprop="keywords">technology</a>
+                
+                <a href="../../../en/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/bob-buda/index.html" itemprop="url">
+                <span itemprop="name">Bob Buda</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>The rapidly evolving landscape in technology is making waves across numerous sectors, and one area that is seeing major transformations is data management. Chief among its re-shaping trends is the incorporation of artificial intelligence (AI) and the significant shift towards cloud-based systems.</p>
+<h2>AI&#39;s Growing Role in Data Quality Assurance</h2>
+<p>The increasing role of AI in ensuring data integrity before it enters a database is a significant trend that highlights a major shift in data validation processes. Traditionally, data validation relied solely on the database, but now we are witnessing a more holistic approach with the integration of AI. By leveraging AI capabilities, the system can perform comprehensive data validation checks that make use of the existing database context to authenticate incoming data. This means that the system is not only validating the data based on predetermined rules but also taking into account the specific context of the database, resulting in a more thorough validation process.</p>
+<p>The integration of AI adds a robust layer of quality control to the data validation process, ultimately ensuring the accuracy and legitimacy of the data ingested into our systems. With AI-powered data validation, organizations can have greater confidence in the integrity of their data, which is essential for making informed decisions and maintaining data quality. This marks a significant advancement in data management practices, as organizations can now benefit from a more sophisticated and reliable approach to data validation, ultimately leading to improved overall data quality and reliability.</p>
+<h2>The Onward March to Cloud-based Systems</h2>
+<p>The shift from on-premise data management systems to cloud-based storage is a significant trend shaping the modern business landscape. This transition represents a fundamental change in the way organizations handle their data and IT infrastructure. While the hybrid model currently persists in many businesses, the long-term trajectory unmistakably points towards cloud solutions as the preferred option for data storage and management. </p>
+<p>One of the key driving forces behind this mass migration is the unparalleled scalability and flexibility offered by cloud-based storage. Organizations can dynamically adjust their storage needs and use resources on-demand, without the constraints of physical hardware limitations. Additionally, cloud storage minimizes the need for extensive on-premise infrastructure, leading to cost efficiencies and freeing up resources for other strategic initiatives. As a result, the cloud is not just seen as a technological shift but also as a business transformation that enables agility, innovation, and competitive advantage. While the complete migration to the cloud may take time, the momentum is clearly in favor of cloud-based data management systems.</p>
+<h2>IaaS versus DBaaS</h2>
+<p>Cloud migration is a significant step for businesses, and it&#39;s important to understand the various models available. Two popular cloud migration models today are Infrastructure as a Service (IaaS) and Database as a Service (DBaaS). IaaS provides businesses with a high degree of control and flexibility as they maintain control over their data management. This includes the ability to customize infrastructure, manage applications, and have more control over security measures. On the other hand, DBaaS offloads the responsibility of database management to the cloud vendor, allowing businesses to free themselves from concerns about managing backups and ensuring adequate space usage.</p>
+<p>While DBaaS offers attractive advantages, it&#39;s essential not to overlook the inherent value of in-house data management services. Effective data management goes beyond backup maintenance; it involves designing schemas that guarantee data integrity, creating complex triggers, and implementing robust data security protocols. In-house data management allows businesses to have hands-on control over their crucial data-related operations, ensuring that they are tailored to specific business needs and compliance requirements. Ultimately, the choice between IaaS and DBaaS depends on the specific needs, resources, and strategic goals of a business. Both models offer distinct advantages, and understanding their differences is crucial for making an informed decision.</p>
+<h2>Data Security: Beyond Encryption</h2>
+<p>When we talk about data security, it&#39;s important to understand that it encompasses various aspects that go beyond simple encryption and physical security measures. One critical component of data security is database security, which should include logical security measures along with the more traditional methods. Logical security measures, such as access controls, play a vital role in safeguarding sensitive data. They ensure that only authorized individuals have access to specific data, reducing the risk of unauthorized breaches.</p>
+<p>In today&#39;s rapidly advancing technological landscape, it&#39;s crucial to emphasize the significance of human intervention and vigilance in ensuring comprehensive database security. While technology continues to evolve and improve, human oversight remains an essential element in safeguarding data. No matter how sophisticated our security systems become, the importance of human intervention and vigilance cannot be underestimated. Individuals responsible for data security must remain alert and responsive, actively monitoring and adapting security measures to address potential vulnerabilities. This human element, combined with technological advancements, forms the cornerstone of robust and effective database security.</p>
+<h2>Embracing the Shift</h2>
+<p>The rapid advancement in technology has undoubtedly transformed the landscape of data management, significantly impacting traditional roles in database administration. As AI and machine learning technologies continue to gain prominence, there is a notable shift towards automation and intelligent data processing. However, amidst this technological revolution, it is important to recognize the enduring significance of human involvement in data management. While AI facilitates data validation and cloud-based systems become increasingly prevalent, the human touch remains indispensable in ensuring the strategic and valuable aspects of data management.</p>
+<p>Looking ahead, the future of data management represents a seamless integration of AI-enabled processes, cloud-based architecture, and human expertise. This dynamic tapestry reflects the evolution of data management, where AI&#39;s assistance complements human decision-making, and cloud infrastructure provides scalability and flexibility. As these components converge, the tasks and responsibilities within the realm of data management will continue to undergo redefinition, heralding an era of innovation and transformation. It is indeed an exciting space to observe, as the synergy between technology and human involvement reshapes the foundations of data management.</p>
+<p>Find out more by checking out <a href="https://www.budaconsulting.com/embracingdigital">https://www.budaconsulting.com/embracingdigital</a></p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/en/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/en/episodes/",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/en/episodes/edt-211/#episode",
+  "url": "https://embracingdigital.org/en/episodes/edt-211/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/en/episodes/edt-211/"
+  },
+  "name": "Back to the Basics of Data Management",
+  "episodeNumber": 211,
+  "datePublished": "2024-07-18",
+  "inLanguage": "en",
+  "description": "In this episode, Darren interviews Bob Buda, CEO of Buda Consulting. They delve into the fundamentals of data management, which remains crucial even as technology rapidly evolves. The integration of AI and the transition to cloud-based systems are transforming data management practices. These advanc",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/en/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/en/episodes/edt-211/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Back to the Basics of Data Management Video",
+      "embedUrl": "https://www.youtube.com/embed/I8PkCjjn590"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Back to the Basics of Data Management Audio",
+      "contentUrl": "https://share.transistor.fm/s/6db6acd8"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Bob Buda",
+      "url": "https://embracingdigital.org/../../../en/guests/bob-buda/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/en/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/en/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Back to the Basics of Data Management",
+      "item": "https://embracingdigital.org/en/episodes/edt-211/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>How to Use AI for Fall Detection Without Breaking Privacy | Embracing Digital Transformation</title>
+    <meta name="description" content="A fall can change everything in a second — and that’s exactly why host Dr. Darren sits down with Mike Link to explore how AI fall detection is helping senior care teams respond faster without turning aging in place into surveillance. They dig into privacy, predictive health signals, and what the fut">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/en/episodes/edt-381/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="How to Use AI for Fall Detection Without Breaking Privacy | Embracing Digital Transformation">
+    <meta property="og:description" content="A fall can change everything in a second — and that’s exactly why host Dr. Darren sits down with Mike Link to explore how AI fall detection is helping senior care teams respond faster without turning aging in place into surveillance. They dig into privacy, predictive health signals, and what the fut">
+    <meta property="og:url" content="https://embracingdigital.org/en/episodes/edt-381/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Use AI for Fall Detection Without Breaking Privacy | Embracing Digital Transformation">
+    <meta name="twitter:description" content="A fall can change everything in a second — and that’s exactly why host Dr. Darren sits down with Mike Link to explore how AI fall detection is helping senior care teams respond faster without turning aging in place into surveillance. They dig into privacy, predictive health signals, and what the fut">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/en/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/en/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/en/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/en/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/en/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/en/">Home</a></li>
+        <li><a href="/en/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 381: How to Use AI for Fall Detection Without Breaking Privacy</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/en/episodes/edt-381/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/en/episodes/edt-381/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 381</span>
+                <span class="episode-title">How to Use AI for Fall Detection Without Breaking Privacy</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-09-01" itemprop="datePublished">2026-09-01</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="381"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-09-01" data-publication-status="published">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="How to Use AI for Fall Detection Without Breaking Privacy Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/INMuIgOblmY">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/INMuIgOblmY"
+                            title="How to Use AI for Fall Detection Without Breaking Privacy Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         >
+                    <meta itemprop="name" content="How to Use AI for Fall Detection Without Breaking Privacy Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/17e8f129">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://transistor.fm/e/17e8f129"
+                            title="How to Use AI for Fall Detection Without Breaking Privacy Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="/en/episodes/">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>A fall can change everything in a second — and that’s exactly why host Dr. Darren sits down with Mike Link to explore how AI fall detection is helping senior care teams respond faster without turning aging in place into surveillance. They dig into privacy, predictive health signals, and what the fut</p>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/mike-link/index.html" itemprop="url">
+                <span itemprop="name">Mike Link</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>AI Fall Detection in Senior Care: How to Protect Privacy While Improving Safety</h1>
+<h2>When a Fall Becomes a Crisis</h2>
+<p>A fall in senior care can turn into a medical emergency in seconds, but the real danger is often what happens after no one notices. AI fall detection is changing that by helping care teams respond faster, spot silent falls, and reduce the risk of serious injury.</p>
+<p>Mike Link, who works at the intersection of neuroscience, aging, and vision AI, shares a practical view of how this technology is being used in nursing homes and, increasingly, in private homes. For families and care leaders, the big question is no longer whether the tech exists — it’s whether it can improve safety without crossing the line into surveillance.</p>
+<h2>Why Fall Detection Needs to Be Proactive</h2>
+<h3>From Reactive Alerts to Early Intervention</h3>
+<p>Traditional fall prevention waits for something to go wrong. AI-powered monitoring shifts the focus to continuous risk management, which means looking for falls, mobility decline, and subtle behavior changes before a major event happens.</p>
+<p>That matters because many falls go unreported. Some people are unconscious, while others get up and say nothing. AI can detect these “silent falls” and send a notification so staff can see what happened right away.</p>
+<h4>Key takeaways</h4>
+<ul>
+<li><p>Faster response can reduce complications after a fall</p>
+</li>
+<li><p>Silent falls often go unnoticed in older adults</p>
+</li>
+<li><p>Prevention matters as much as detection</p>
+</li>
+</ul>
+<h3>Better Care Through Behavioral Patterns</h3>
+<p>The real value of AI in senior care is not just recording incidents. It’s learning patterns over time, such as gait changes, reduced movement, or shifts in daily activity.</p>
+<p>Those signals can help identify risk before it becomes a hospitalization, hip fracture, or a move into higher-acuity care. In other words, the goal is to help people age in place longer and more safely.</p>
+<h2>Privacy Is Not Optional</h2>
+<h3>Designing for Dignity</h3>
+<p>The biggest concern with camera-based fall detection is obvious: privacy. Families want reassurance, but they do not want their loved ones watched by people around the clock.</p>
+<p>A strong deployment model solves that by using AI to monitor the environment, not humans to livestream the person. When an event happens, a blurred clip can confirm whether it was a fall without exposing unnecessary personal detail.</p>
+<h3>What Makes Adoption Work in the Real World</h3>
+<p>Technology only works if it can actually be installed and used well. In senior care, that means balancing privacy, accuracy, support, and affordability.</p>
+<p>The most effective systems combine edge AI, cloud verification, and human review, which helps reach high accuracy while keeping false alarms down. It also matters that the solution can be deployed in nursing homes today and gradually extended into homes with hands-on setup support.</p>
+<h2>The Future of Aging in Place</h2>
+<h3>More Sensors, More Insight</h3>
+<p>The future of elder care is likely to be multi-sensor, not single-purpose. Cameras, radar, wearables, and remote vital monitoring can work together to create a fuller picture of health.</p>
+<p>That means leaders should think beyond alerts. The next wave of AI in healthcare will focus on prevention, earlier intervention, and better quality of life for older adults.</p>
+<h3>What Leaders Should Ask Now</h3>
+<p>If you manage care, serve families, or build health tech, ask whether your strategy is built to detect problems or prevent them. Ask whether the tools protect trust as well as they improve outcomes.</p>
+<p>The winners in this space will be the organizations that use AI to extend independence, reduce suffering, and support real-world care at scale.</p>
+<h2>Listen and Go Deeper</h2>
+<p>If this topic matters to you, listen to the full episode of <em>Embracing Digital Transformation</em> and explore how AI fall detection is reshaping senior care, privacy, and aging in place. Subscribe, share this post with a colleague, and join the conversation with your thoughts in the comments.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/en/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/en/episodes/",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/en/episodes/edt-381/#episode",
+  "url": "https://embracingdigital.org/en/episodes/edt-381/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/en/episodes/edt-381/"
+  },
+  "name": "How to Use AI for Fall Detection Without Breaking Privacy",
+  "episodeNumber": 381,
+  "datePublished": "2026-09-01",
+  "inLanguage": "en",
+  "description": "A fall can change everything in a second — and that's exactly why host Dr. Darren sits down with Mike Link to explore how AI fall detection is helping senior care teams respond faster without turning aging in place into surveillance. They dig into privacy, predictive health signals, and what the fut",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/en/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/en/episodes/edt-381/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "How to Use AI for Fall Detection Without Breaking Privacy Video",
+      "embedUrl": "https://www.youtube.com/embed/INMuIgOblmY"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "How to Use AI for Fall Detection Without Breaking Privacy Audio",
+      "contentUrl": "https://share.transistor.fm/s/17e8f129"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Mike Link",
+      "url": "https://embracingdigital.org/../../../en/guests/mike-link/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/en/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/en/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Use AI for Fall Detection Without Breaking Privacy",
+      "item": "https://embracingdigital.org/en/episodes/edt-381/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

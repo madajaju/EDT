@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Revolutionizing HPC Management | Embracing Digital Transformation</title>
+    <meta name="description" content="In this episode, Dr. Darren interviews Aaron Jezghani, who shares his journey from being an experimental nuclear physicist to managing high-performance computing (HPC) at Georgia Tech. He discusses the evolution of the PACE (Partnership for an Advanced Computing Environment) initiative, the challeng">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/en/episodes/edt-239/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Revolutionizing HPC Management | Embracing Digital Transformation">
+    <meta property="og:description" content="In this episode, Dr. Darren interviews Aaron Jezghani, who shares his journey from being an experimental nuclear physicist to managing high-performance computing (HPC) at Georgia Tech. He discusses the evolution of the PACE (Partnership for an Advanced Computing Environment) initiative, the challeng">
+    <meta property="og:url" content="https://embracingdigital.org/en/episodes/edt-239/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Revolutionizing HPC Management | Embracing Digital Transformation">
+    <meta name="twitter:description" content="In this episode, Dr. Darren interviews Aaron Jezghani, who shares his journey from being an experimental nuclear physicist to managing high-performance computing (HPC) at Georgia Tech. He discusses the evolution of the PACE (Partnership for an Advanced Computing Environment) initiative, the challeng">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/en/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/en/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/en/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/en/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/en/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/en/">Home</a></li>
+        <li><a href="/en/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 239: Revolutionizing HPC Management</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/en/episodes/edt-239/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/en/episodes/edt-239/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 239</span>
+                <span class="episode-title">Revolutionizing HPC Management</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2025-02-04" itemprop="datePublished">2025-02-04T03:43:10.805Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="239"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2025-02-04" data-publication-status="published">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="Revolutionizing HPC Management Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/9WtiCmRBhhg">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/9WtiCmRBhhg"
+                            title="Revolutionizing HPC Management Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         >
+                    <meta itemprop="name" content="Revolutionizing HPC Management Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/fa532dd1">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://transistor.fm/e/fa532dd1"
+                            title="Revolutionizing HPC Management Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="/en/episodes/">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>In this episode, Dr. Darren interviews Aaron Jezghani, who shares his journey from being an experimental nuclear physicist to managing high-performance computing (HPC) at Georgia Tech. He discusses the evolution of the PACE (Partnership for an Advanced Computing Environment) initiative, the challeng</p>
+
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../../en/search.html?query=highperformancecomputing"
+                   itemprop="keywords">highperformancecomputing</a>
+                
+                <a href="../../../en/search.html?query=resourceoptimization"
+                   itemprop="keywords">resourceoptimization</a>
+                
+                <a href="../../../en/search.html?query=collaborativeresearch"
+                   itemprop="keywords">collaborativeresearch</a>
+                
+                <a href="../../../en/search.html?query=userengagement"
+                   itemprop="keywords">userengagement</a>
+                
+                <a href="../../../en/search.html?query=innovation"
+                   itemprop="keywords">innovation</a>
+                
+                <a href="../../../en/search.html?query=moderncomputing"
+                   itemprop="keywords">moderncomputing</a>
+                
+                <a href="../../../en/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>In a world where technological advancements are outpacing the demand for innovation, understanding how to optimize high-performance computing (HPC) environments is more critical than ever. This article illuminates key considerations and effective strategies for managing HPC resources while ensuring adaptability to changing academic and research needs. </p>
+<h2>The Significance of Homogeneity in HPC Clusters</h2>
+<p>One of the most profound insights from recent developments in high-performance computing is the importance of having a homogeneous cluster environment. Homogeneity in this context refers to a cluster that consists of similar node types and configurations, as opposed to a patchwork of hardware from various generations. Academic institutions that previously relied on a patchwork of hardware are discovering that this architectural uniformity can significantly boost performance and reliability.</p>
+<p>A homogeneous architecture simplifies management and supports better scheduling. When a cluster consists of similar node types and configurations, the complexity of scheduling jobs is reduced. This improved clarity allows systems to operate more smoothly and efficiently. For example, issues about compatibility between different hardware generations and the operational complexities associated with heterogeneous environments can lead to performance bottlenecks and increased administrative overhead.</p>
+<p>Moreover, adopting a homogenous environment minimizes resource fragmentation—a situation where computational resources are underutilized due to the inefficiencies of a mixed-architecture cluster. By streamlining operations, institutions can enhance their computational capabilities without necessarily increasing the total computational power, as previously disparate systems are replaced by a unified framework.</p>
+<h2>Transitioning to a Consumption-Based Model</h2>
+<p>Transitioning from a traditional departmental model to a centralized, consumption-based approach can fundamentally change how computing resources are utilized in academic settings. In a consumption-based model, department-specific hardware is replaced with a shared resource pool, allowing flexible access based on current needs rather than fixed allocations.</p>
+<p>This adaptability means researchers can scale their computational resources up or down, depending on their project requirements. The introduction of credit-based systems allows faculty to access compute cycles without the rigid confines of hardware limitations. Institutions can facilitate collaborative research by effectively creating a private cloud environment while optimizing costs and resource allocation.</p>
+<p>Implementing such a model can significantly enhance the user experience. Faculty need not worry about occupying space with physical machines or the responsibilities associated with maintaining and supporting aging hardware. Instead, researchers can easily acquire resources as needed, encouraging experimentation and innovation across disciplines. As an added benefit, this approach allows departments to maximize grant funding by avoiding the traditional sunk costs associated with equipment procurement.</p>
+<h2>Enhancing User Engagement Through Effective Communication</h2>
+<p>As organizations shift their HPC management strategies, maintaining open lines of communication with faculty and researchers is vital. Establishing advisory committees consisting of IT professionals and faculty is an effective way to gauge needs and proactively address concerns. </p>
+<p>Transparency in operational changes, such as the introduction of new software systems or the shift to a consumption-based model, fosters an environment of trust and encourages shared insights about the computational needs of faculty across various disciplines.</p>
+<p>Additionally, providing educational resources such as workshops and tutorials can help demystify HPC operations for those unfamiliar with advanced computing concepts. Offering easily accessible interfaces or platforms, such as web-based dashboards, can enhance ease of use and increase faculty adoption. The goal is to bridge the knowledge gap and empower researchers with the tools they need to succeed.</p>
+<h2>The Path Forward</h2>
+<p>As academic institutions continue to adapt to the evolving landscape of research computing, the importance of efficient HPC management cannot be overstated. By focusing on homogeneity, resource adaptability, and user engagement, universities can navigate the challenges presented by modern computational demands.</p>
+<p>The ongoing developments within high-performance computing environments underscore the need for innovation in management practices. By embracing change and fostering a spirit of collaboration between IT and academic stakeholders, organizations can enhance their computational capabilities and drive groundbreaking research across varied fields. As the future unfolds, the ability to be agile and responsive will define successful HPC strategies.</p>
+<p>Interested in exploring more about high-performance computing and its transformative potential? Engage with your local research computing community or reach out to your institution’s HPC group to learn how they are reshaping the future of research.</p>
+<pre><code>
+</code></pre>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/en/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/en/episodes/",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/en/episodes/edt-239/#episode",
+  "url": "https://embracingdigital.org/en/episodes/edt-239/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/en/episodes/edt-239/"
+  },
+  "name": "Revolutionizing HPC Management",
+  "episodeNumber": 239,
+  "datePublished": "2025-02-04",
+  "inLanguage": "en",
+  "description": "In this episode, Dr. Darren interviews Aaron Jezghani, who shares his journey from being an experimental nuclear physicist to managing high-performance computing (HPC) at Georgia Tech. He discusses the evolution of the PACE (Partnership for an Advanced Computing Environment) initiative, the challeng",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/en/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/en/episodes/edt-239/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Revolutionizing HPC Management Video",
+      "embedUrl": "https://www.youtube.com/embed/9WtiCmRBhhg"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Revolutionizing HPC Management Audio",
+      "contentUrl": "https://share.transistor.fm/s/fa532dd1"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/en/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/en/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Revolutionizing HPC Management",
+      "item": "https://embracingdigital.org/en/episodes/edt-239/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

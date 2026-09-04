@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>What Is Reflective AI and How Does It Work? | Embracing Digital Transformation</title>
+    <meta name="description" content="AI is getting more intimate than ever — but what if it could also make us more human? Dr. Darren welcomes Lyle Maxson, founder of Above , to explore reflective AI , a new class of ambient AI designed to build emotional intelligence, improve self-awareness, and support healthier relationships at work">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/en/episodes/edt-382/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="What Is Reflective AI and How Does It Work? | Embracing Digital Transformation">
+    <meta property="og:description" content="AI is getting more intimate than ever — but what if it could also make us more human? Dr. Darren welcomes Lyle Maxson, founder of Above , to explore reflective AI , a new class of ambient AI designed to build emotional intelligence, improve self-awareness, and support healthier relationships at work">
+    <meta property="og:url" content="https://embracingdigital.org/en/episodes/edt-382/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="What Is Reflective AI and How Does It Work? | Embracing Digital Transformation">
+    <meta name="twitter:description" content="AI is getting more intimate than ever — but what if it could also make us more human? Dr. Darren welcomes Lyle Maxson, founder of Above , to explore reflective AI , a new class of ambient AI designed to build emotional intelligence, improve self-awareness, and support healthier relationships at work">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/en/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/en/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/en/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/en/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/en/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/en/">Home</a></li>
+        <li><a href="/en/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 382: What Is Reflective AI and How Does It Work?</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/en/episodes/edt-382/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/en/episodes/edt-382/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 382</span>
+                <span class="episode-title">What Is Reflective AI and How Does It Work?</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-09-03" itemprop="datePublished">2026-09-03</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="382"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-09-03" data-publication-status="published">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="What Is Reflective AI and How Does It Work? Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/_O5UGzCGsvE">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/_O5UGzCGsvE"
+                            title="What Is Reflective AI and How Does It Work? Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>AI is getting more intimate than ever — but what if it could also make us more human? Dr. Darren welcomes Lyle Maxson, founder of <strong>Above</strong>, to explore <strong>reflective AI</strong>, a new class of ambient AI designed to build emotional intelligence, improve self-awareness, and support healthier relationships at work and at home. They unpack the promise and risks of AI, privacy, consent, and why the future of AI strategy should be judged by human outcomes — not just productivity.</p>
+<h2>Key Takeaways</h2>
+<ul>
+<li><strong>AI strategy is becoming a behavior strategy:</strong> the real measure of success is whether AI improves judgment, communication, and human performance.</li>
+<li><strong>Engagement is not the goal:</strong> tools optimized for stickiness can create dependency, not capability.</li>
+<li><strong>Reflective AI can act like a coach or “Jiminy Cricket”:</strong> offering feedback loops, daily reflections, and intention-setting to help users grow.</li>
+<li><strong>Emotional intelligence matters more than ever:</strong> EQ can be strengthened through intentional practice, self-awareness, and feedback.</li>
+<li><strong>Privacy and consent must be built in from day one:</strong> ambient AI should use strong safeguards, encryption, and clear user control.</li>
+<li><strong>The best AI helps people become more capable, not more dependent:</strong> the goal is to support better relationships, clearer thinking, and stronger self-development.</li>
+</ul>
+<h2>Chapters</h2>
+<ul>
+<li><strong>00:00</strong> Intro: AI, intimacy, and why this conversation matters</li>
+<li><strong>01:18</strong> Lyle Maxson’s “superhero” origin story and lucid dreaming</li>
+<li><strong>04:10</strong> From spirituality and mental health to building technology</li>
+<li><strong>06:35</strong> Why social media fear is being amplified by AI</li>
+<li><strong>10:05</strong> The middle path: using technology without becoming dependent</li>
+<li><strong>13:20</strong> What “reflective AI” is and how Above works</li>
+<li><strong>17:40</strong> Accountability, intention-setting, and daily mirror insights</li>
+<li><strong>22:05</strong> Voice analysis, transcription, and conversational context</li>
+<li><strong>25:20</strong> Emotional intelligence, social cues, and real-world use cases</li>
+<li><strong>29:10</strong> Safeguards, bias, and why Above avoids dependency</li>
+<li><strong>33:00</strong> Privacy, consent, and recording laws</li>
+<li><strong>37:05</strong> Relationship and business applications of ambient AI</li>
+<li><strong>41:10</strong> Where to find Above and final thoughts</li>
+</ul>
+
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/lyle-maxson/index.html" itemprop="url">
+                <span itemprop="name">Lyle Maxson</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>The New AI Question: Does It Make Us Better?</h2>
+<p>What if the biggest risk in AI isn’t that it gets smarter, but that it gets more emotionally persuasive? Reflective AI is emerging as a new category of technology built not just to automate work, but to improve how people think, communicate, and show up in their lives.</p>
+<p>Lyle Maxson, founder of Above, shares a different vision for enterprise AI: one centered on self-awareness, emotional intelligence, and better human performance. For business and technology leaders, that shift matters because the next wave of AI strategy may be judged less by speed and more by whether it builds trust, judgment, and resilience.</p>
+<h2>Why Engagement Is the Wrong Goal</h2>
+<h3>AI should strengthen capability, not dependency</h3>
+<p>The warning here is familiar. Social platforms optimized for engagement changed behavior by keeping people hooked. Now AI tools risk doing something similar through intimacy, creating dependency instead of growth.</p>
+<p>That’s why the most important design question is not “How sticky is this product?” but “What human outcome does it improve?” If AI leaves people more distracted, more anxious, or more reliant on the tool itself, it is failing the long game.</p>
+<h3>The middle path for leaders</h3>
+<p>There are two bad extremes: blind techno-optimism and total AI panic. The more useful path is the middle one—using technology in ways that support human development without replacing human judgment.</p>
+<p>For leaders, that means building systems that encourage reflection, accountability, and better decision-making. AI should be a guide, not a crutch.</p>
+<h4>Key takeaways</h4>
+<ul>
+<li>Optimize for capability, not addiction.</li>
+<li>Measure whether AI improves judgment and communication.</li>
+<li>Design for the “middle path” between hype and fear.</li>
+</ul>
+<h2>Reflective AI in Practice</h2>
+<h3>A mirror for behavior</h3>
+<p>Above’s approach uses an AI-powered wearable and app to help users set intentions, transcribe conversations, and review daily patterns. The idea is simple: make hidden blind spots visible so people can improve over time.</p>
+<p>Instead of nudging users in real time like a chatbot assistant, reflective AI works afterward. It gives a “daily mirror” that helps users see how they spoke, what they repeated, and where they drifted from their goals.</p>
+<h3>Built for self-awareness, not replacement</h3>
+<p>This kind of tool could be especially valuable in coaching, leadership development, therapy support, and even for people who struggle to read social cues. The value is not in replacing relationships, but in strengthening them.</p>
+<p>Privacy is also central to the model. Data is encrypted, user-controlled, and not used to train models—an important standard for any ambient AI product that touches personal conversation.</p>
+<h4>Key takeaways</h4>
+<ul>
+<li>Use AI to support emotional intelligence.</li>
+<li>Make consent and privacy non-negotiable.</li>
+<li>Build feedback loops that help people improve over time.</li>
+</ul>
+<h2>The Leadership Lesson</h2>
+<h3>Ask better questions about AI</h3>
+<p>If AI is going to be truly useful in enterprise and personal settings, leaders need to ask harder questions. Is this tool making people more capable? Is it helping them think more clearly? Is it making them better to work with, not just busier?</p>
+<p>That’s the real promise of reflective AI: not a machine that thinks for you, but one that helps you become more of who you want to be.</p>
+<h3>A call for more human technology</h3>
+<p>As AI continues to spread across business, coaching, and everyday communication, the winners will be the organizations that use it to sharpen human performance. The future belongs to technology that helps people become more aware, more intentional, and more human.</p>
+<h2>Listen to the full conversation</h2>
+<p>If this perspective on reflective AI, emotional intelligence, and human-centered technology resonates with you, listen to the full episode and share it with a colleague who’s shaping AI strategy. If you’d like more conversations like this, subscribe to the show and join the community for bonus content and continued discussion.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/en/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/en/episodes/",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/en/episodes/edt-382/#episode",
+  "url": "https://embracingdigital.org/en/episodes/edt-382/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/en/episodes/edt-382/"
+  },
+  "name": "What Is Reflective AI and How Does It Work?",
+  "episodeNumber": 382,
+  "datePublished": "2026-09-03",
+  "inLanguage": "en",
+  "description": "AI is getting more intimate than ever — but what if it could also make us more human? Dr. Darren welcomes Lyle Maxson, founder of Above , to explore reflective AI , a new class of ambient AI designed to build emotional intelligence, improve self-awareness, and support healthier relationships at work",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/en/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/en/episodes/edt-382/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "What Is Reflective AI and How Does It Work? Video",
+      "embedUrl": "https://www.youtube.com/embed/_O5UGzCGsvE"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Lyle Maxson",
+      "url": "https://embracingdigital.org/../../../en/guests/lyle-maxson/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/en/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/en/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "What Is Reflective AI and How Does It Work?",
+      "item": "https://embracingdigital.org/en/episodes/edt-382/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

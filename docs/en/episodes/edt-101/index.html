@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Network Controller Security with Elisity | Embracing Digital Transformation</title>
+    <meta name="description" content="Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, interviews network security experts Dana Yanch and Dan Demers from Elisity about network controller security techniques and zero trust architectures.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/en/episodes/edt-101/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Network Controller Security with Elisity | Embracing Digital Transformation">
+    <meta property="og:description" content="Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, interviews network security experts Dana Yanch and Dan Demers from Elisity about network controller security techniques and zero trust architectures.">
+    <meta property="og:url" content="https://embracingdigital.org/en/episodes/edt-101/">
+    <meta property="og:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Network Controller Security with Elisity | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, interviews network security experts Dana Yanch and Dan Demers from Elisity about network controller security techniques and zero trust architectures.">
+    <meta name="twitter:image" content="https://embracingdigital.org/images/logo.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/en/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/en/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/en/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/en/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/en/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/en/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/en/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/en/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/en/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/en/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/en/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/en/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/en/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/en/">Home</a></li>
+        <li><a href="/en/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 101: Network Controller Security with Elisity</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/en/episodes/edt-101/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/en/episodes/edt-101/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 101</span>
+                <span class="episode-title">Network Controller Security with Elisity</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2022-08-23" itemprop="datePublished">2022-08-23T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="101"/>
+            <meta itemprop="inLanguage" content="en"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2022-08-23" data-publication-status="published">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="Network Controller Security with Elisity Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/url">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/url"
+                            title="Network Controller Security with Elisity Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         >
+                    <meta itemprop="name" content="Network Controller Security with Elisity Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/d4feba70">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://transistor.fm/e/d4feba70"
+                            title="Network Controller Security with Elisity Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="/en/episodes/">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, interviews network security experts Dana Yanch and Dan Demers from Elisity about network controller security techniques and zero trust architectures.</p>
+
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../../en/search.html?query=networksecurity"
+                   itemprop="keywords">networksecurity</a>
+                
+                <a href="../../../en/search.html?query=moderncomputing"
+                   itemprop="keywords">moderncomputing</a>
+                
+                <a href="../../../en/search.html?query=microsegmentation"
+                   itemprop="keywords">microsegmentation</a>
+                
+                <a href="../../../en/search.html?query=iot"
+                   itemprop="keywords">iot</a>
+                
+                <a href="../../../en/search.html?query=cloudsecurity"
+                   itemprop="keywords">cloudsecurity</a>
+                
+                <a href="../../../en/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../../en/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../../en/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../../en/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/darren-w-pulsipher/index.html" itemprop="url">
+                <span itemprop="name">Darren W Pulsipher</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/dan-demers/index.html" itemprop="url">
+                <span itemprop="name">Dan Demers</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../../en/guests/dana-yanch/index.html" itemprop="url">
+                <span itemprop="name">Dana Yanch</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Dana has been working in hardcore networking for the last 15 years. He has worked with software-defined networking and wide-area networking and focused on the SD-WAN world for a time. He then worked with cloud but returned to his roots with network security at Elisity.</p>
+<p>Dan has worked chiefly in networking, but he started with advanced services at Cisco and did some oil and gas work in Houston. He then moved into the SASE SD-WAN space, where he worked with Dana. He is now focused on network security as well as software-defined security. Dan says the term, however, is elusive because the technology is micro-segmentation through identity.</p>
+<p>The traditional way to create micro-segmentation through VLANs and firewalls is no longer enough. For 15 years, network security has focused on hardening the network’s perimeter. Making an impenetrable wall around an enterprise is still essential, and firewalls do an incredible job of keeping people out of the network. But for the most part, the inside of the network, where there has been an explosion of new connectivity requirements because of IoT, and OT, is a free-for-all once a user is inside. Since the outer wall is robust, anyone inside is often considered a legitimate or trusted user.</p>
+<p>The reality is that most current attacks are happening inside the network via exploited trusted users, devices, and applications.</p>
+<p>There are many reasons why leveraging VLANS, IP ACLs, firewalls, and traditional segmentation methods, don’t work today for lateral movement security. They can work in static environments at a small scale. They work great for the edge of the network and specific places such as bottlenecks or aggregation points, but there are three common reasons why these are no longer ideal.</p>
+<p>First, traditional methods’ scalability and operational efficiency are questionable. Managing VLANs, IP ACLs, and firewalls across large enterprises is done manually. It is not a distributed software-defined architecture but requires a box-by-box configuration, line by line. They are not dynamic or responsive to anything on the network. Their use also creates a Swiss cheese network full of random holes. Users, especially operators of networks, are often a system’s most significant risk. They may, for example, open up a VLAN or change one piece to do a quick test but then don’t undo the change.</p>
+<p>Another example is that a VLAN will start with a use case and slowly creep to other use cases. Suddenly, what was a ten-device VLAN now has 60 devices. In the OT world, it might have six or seven different processes running inside of it because it was the trusted LAN. Still, often these environments grow slowly and are undocumented, so the risk goes unnoticed.</p>
+<p>The second issue is that VLANs and firewalls are inherently in the wrong place in the network to provide lateral movement security. If you are in the same VLAN as another device, user, or application, that communication channel is open even though it may not have to be. Firewalls are not typically deployed in a strategic place where they can handle the access level of lateral movement. You have to funnel traffic to a firewall and get it back down, which is inefficient. Then you have a bottleneck.</p>
+<p>Bad actors are looking at networks to see how they can twist them to get some outcome, not how they should or were intended to function. For example, if a user is in a VLAN and a process is running inside a use case, there is nothing to stop them from going from port 3 to port 32 in that same VLAN. Often people design security around intended use rather than how it could be used. It’s common, for example, for software developers to jump ports to work effectively, but that’s dangerous because it leaves them open. No one can place hundreds or thousands of firewalls across the entire access edge. That would be fiscally restrictive and impossible to manage.</p>
+<p>The third problem is that these legacy segmentation solutions don’t consider the identity, context, or behavior of the asset connected to the network. It’s a rigid, network-centric topology that provides some essential security measures. But an IP address says nothing about the asset’s legitimacy and the network it’s attached to. So how can you dynamically secure this network when you don’t know what’s connecting to the network? You can’t make a policy in the first place without any granularity; it doesn’t work now to treat every device as equal.</p>
+<p>Even if there is an analysis of the type of traffic, it typically happens several hops up, which means you have exposure now. Any enforcement may or may not be able to protect the infrastructure fully.</p>
+<p>This detection ability still has value, even if there is no protection. Still, the ability to stop something that could have happened right at the edge, as close to the asset as possible, is a better solution.</p>
+<p>Check out the next episode in this series <a href="episode-EDT101">here</a>.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/en/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/en/episodes/",
+  "inLanguage": "en",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/en/episodes/edt-101/#episode",
+  "url": "https://embracingdigital.org/en/episodes/edt-101/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/en/episodes/edt-101/"
+  },
+  "name": "Network Controller Security with Elisity",
+  "episodeNumber": 101,
+  "datePublished": "2022-08-23",
+  "inLanguage": "en",
+  "description": "Intel's Darren Pulsipher, Chief Solutions Architect, Public Sector, interviews network security experts Dana Yanch and Dan Demers from Elisity about network controller security techniques and zero trust architectures.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/en/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/en/episodes/edt-101/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Network Controller Security with Elisity Video",
+      "embedUrl": "https://www.youtube.com/embed/url"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Network Controller Security with Elisity Audio",
+      "contentUrl": "https://share.transistor.fm/s/d4feba70"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Darren W Pulsipher",
+      "url": "https://embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Dan Demers",
+      "url": "https://embracingdigital.org/../../../en/guests/dan-demers/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "Dana Yanch",
+      "url": "https://embracingdigital.org/../../../en/guests/dana-yanch/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/en/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/en/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Network Controller Security with Elisity",
+      "item": "https://embracingdigital.org/en/episodes/edt-101/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
