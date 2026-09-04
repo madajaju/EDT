@@ -15,6 +15,9 @@ const {validateCanonicalUrls} = require('./validateCanonicalUrls');
 const {validateCrawlerFiles} = require('./validateCrawlerFiles');
 const {validateOdxaClaims} = require('./validateOdxaClaims');
 const {validateFrameworkArchitecture} = require('./validateFrameworkArchitecture');
+const {validateFrameworkAeo} = require('./validateFrameworkAeo');
+const {validateShowsModel} = require('./validateShowsModel');
+const {validateInternalLinks} = require('./validateInternalLinks');
 let _languages = {};
 const SITE_URL = "https://embracingdigital.org";
 
@@ -89,6 +92,9 @@ module.exports = {
         validateCanonicalUrls(output);
         validateOdxaClaims(output);
         validateFrameworkArchitecture(output);
+        validateFrameworkAeo(output);
+        validateShowsModel(output);
+        validateInternalLinks(output);
         await _buildSearch(output, source);
         await _writeCrawlerFiles(output);
         validateCrawlerFiles(output);
@@ -1847,7 +1853,7 @@ const _deepDivesPage = (episodes, output, source) => {
         let pepisodes = {};
         for (let j in episodes) {
             let episode = episodes[j];
-            if (episode.state === "Published" && episode.artifacts[`${lang.id}/deepdive.html`]) {
+            if (episode.state === "Published" && episode.artifacts[`${lang.id}/deepdive.html`] && episode.assets[`${lang.id}/deepdive-video`] && episode.assets[`${lang.id}/deepdive-audio`]) {
                 let summary = episode.summary;
                 summary = summary.length > 250 ? summary.substring(0, 250) + '..' : summary;
                 let dateFormatted = new Date(episode.releaseDate).toLocaleDateString(lang.id, {

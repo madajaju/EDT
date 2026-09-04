@@ -134,13 +134,15 @@ lang.urls.pt = `${siteBase}/pt/briefs/`;
       "itemListOrder": "http://schema.org/ItemListOrderDescending",
       "numberOfItems": <%= Object.keys(episodes || {}).length %>,
       "itemListElement": [
-        <% let idx=0; for(let i in episodes) { let episode = episodes[i]; %>
+        <% let idx=0; for(let i in episodes) { let episode = episodes[i]; 
+           let itemTitle = (episode.title && episode.title.includes('|')) ? episode.title : ((episode.title ? episode.title + ' | ' : '') + 'EDTW #' + episode.number);
+        %>
             {
               "@type": "ListItem",
               "position": <%= idx + 1 %>,
-          "url": "<%= episode.slug.startsWith('http') ? episode.slug : (siteBase + '/' + langId + '/briefs/' + episode.slug.replace(/^\/+/, '')) %>",
-          "name": "#<%= episode.number %> <%= episode.title %>"
-        }<%= idx < Object.keys(episodes || {}).length - 1 ? ',' : '' %>
+              "url": "<%= episode.slug.startsWith('http') ? episode.slug : (siteBase + '/' + langId + '/briefs/' + episode.slug.replace(/^\/+/, '')) %>",
+              "name": <%- JSON.stringify(itemTitle) %>
+            }<%= idx < Object.keys(episodes || {}).length - 1 ? ',' : '' %>
         <% idx++; }; %>
         ]
       }

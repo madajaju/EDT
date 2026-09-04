@@ -8,22 +8,28 @@ const stripHtml = (html = '') =>
         .replace(/<[^>]+>/g, ' ')
         .replace(/&amp;/g, '&')
         .replace(/&nbsp;/g, ' ')
-        .replace(/&#039;/g, "'")
-        .replace(/&quot;/g, '"')
+        .replace(/&#0*39;|&apos;/gi, "'")
+        .replace(/&quot;|&#0*34;/gi, '"')
+        .replace(/&lt;|&#0*60;/gi, '<')
+        .replace(/&gt;|&#0*62;/gi, '>')
         .replace(/\s+/g, ' ')
         .trim();
 
 function cleanTopicText(text) {
     if (!text) return '';
     let t = stripHtml(text).trim();
+    // Replace newlines, tabs, and control characters with space
+    t = t.replace(/[\r\n\t]+/g, ' ');
+    // Replace double quotes and smart double quotes with single quotes to prevent breaking attributes/JSON
+    t = t.replace(/["“”]/g, "'");
     // Remove wrapping quotes
-    t = t.replace(/^["'“”]+|["'“”]+$/g, '').trim();
+    t = t.replace(/^['‘’]+|['‘’]+$/g, '').trim();
     // Remove trailing ellipsis or dots
     t = t.replace(/\s*(?:\.{2,}|…)+$/g, '').trim();
     // Remove generic prefixes
     t = t.replace(/^In\s+(?:the\s+)?[A-Za-z\s]+\s+news[:\-—]?\s*/i, '').trim();
     t = t.replace(/^(?:Breaking|Special|Update)[:\-—]\s*/i, '').trim();
-    return t;
+    return t.replace(/\s+/g, ' ').trim();
 }
 
 function deriveTopicFromHtml(html, epNumber) {
@@ -140,9 +146,38 @@ function updateEdtwTitles(rootDir = process.cwd()) {
         html = html.replace(/(<span\b[^>]*class=["'][^"']*brief-date[^"']*["'][^>]*>)([\s\S]*?)(<\/span>)/i,
             (match, p1, p2, p3) => `${p1}— ${standardTitle}${p3}`);
 
-        // 5. Update JSON-LD breadcrumb name
-        html = html.replace(/("name":\s*)"(?:Embracing Digital This Week|#?\d+\s*Embracing Digital This Week|\d{4}-\d{2}-\d{2})[^"]*"(,\s*"item":\s*"https:\/\/embracingdigital\.org\/en\/briefs\/edw-\d+\/")/g,
-            `$1"${standardTitle}"$2`);
+        // 5. Update JSON-LD breadcrumb block cleanly
+        const breadcrumbJson = {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://embracingdigital.org/en/home/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Embracing Digital This Week",
+                    "item": "https://embracingdigital.org/en/briefs/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": standardTitle,
+                    "item": `https://embracingdigital.org/en/briefs/edw-${epNum}/`
+                }
+            ]
+        };
+
+        html = html.replace(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi, (fullMatch, jsonContent) => {
+            if (jsonContent.includes('"BreadcrumbList"')) {
+                return `<script type="application/ld+json">\n${JSON.stringify(breadcrumbJson, null, 4)}\n</script>`;
+            }
+            return fullMatch;
+        });
 
         fs.writeFileSync(indexPath, html, 'utf8');
 
@@ -163,16 +198,71 @@ function updateEdtwTitles(rootDir = process.cwd()) {
         for (const ep of updatedEpisodes) {
             // Replace card heading: <h3>#152 Embracing Digital This Week</h3> -> <h3>#152 Topic</h3>
             // or <h3>#152 2026-1-26</h3>
-            const cardRegex = new RegExp(`(<a\\b[^>]*href=["']https:\\/\\/embracingdigital\\.org\\/en\\/briefs\\/${ep.dir}\\/["'][^>]*aria-label=["'])([^"']+)(["'][\\s\\S]*?<img\\b[^>]*alt=["'])([^"']+)(["'][\\s\\S]*?<div\\b[^>]*class=["']episode-card-content["'][\\s\\S]*?<h3\\b[^>]*>)([\\s\\S]*?)(<\\/h3>)`, 'i');
+            const cardRegex = new RegExp(`(<a\\b[^>]*href=["'](?:https:\\/\\/embracingdigital\\.org)?\\/en\\/briefs\\/${ep.dir}\\/["'][^>]*aria-label=["'])([^"']+)(["'][\\s\\S]*?<img\\b[^>]*alt=["'])([^"']+)(["'][\\s\\S]*?<div\\b[^>]*class=["']episode-card-content["'][\\s\\S]*?<h3\\b[^>]*>)([\\s\\S]*?)(<\\/h3>)`, 'i');
 
             hubHtml = hubHtml.replace(cardRegex, (match, p1, p2, p3, p4, p5, p6, p7) => {
                 return `${p1}${ep.standardTitle}${p3}${ep.standardTitle}${p5}#${ep.number} ${ep.topic}${p7}`;
             });
-
-            // Update JSON-LD ItemList name if present
-            const jsonldItemRegex = new RegExp(`("url":\\s*"https:\\/\\/embracingdigital\\.org\\/en\\/briefs\\/${ep.dir}\\/",\\s*"name":\\s*)"[^"]+"`, 'g');
-            hubHtml = hubHtml.replace(jsonldItemRegex, `$1"${ep.standardTitle}"`);
         }
+
+        // Reconstruct the valid JSON-LD graph for briefs hub page
+        const itemListElements = updatedEpisodes.map((ep, idx) => ({
+            "@type": "ListItem",
+            "position": idx + 1,
+            "url": `https://embracingdigital.org/en/briefs/${ep.dir}/`,
+            "name": ep.standardTitle
+        }));
+
+        const hubGraphJson = {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "PodcastSeries",
+                    "@id": "https://embracingdigital.org/#edtw",
+                    "name": "Embracing Digital This Week",
+                    "url": "https://embracingdigital.org/en/briefs/",
+                    "inLanguage": "en",
+                    "description": "Weekly news briefs on digital transformation across AI, cybersecurity, edge computing, data management, ubiquitous computing, and more.",
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Embracing Digital Transformation",
+                        "url": "https://embracingdigital.org/"
+                    },
+                    "sameAs": [
+                        "https://www.youtube.com/@embracingdigital",
+                        "https://www.linkedin.com/company/embracingdigital"
+                    ]
+                },
+                {
+                    "@type": "CollectionPage",
+                    "@id": "https://embracingdigital.org/en/briefs/#edtw-briefs",
+                    "url": "https://embracingdigital.org/en/briefs/",
+                    "name": "Embracing Digital This Week — All News Briefs",
+                    "description": "Weekly news briefs on digital transformation across AI, cybersecurity, edge computing, data management, ubiquitous computing, and more.",
+                    "isPartOf": {
+                        "@id": "https://embracingdigital.org/#website"
+                    },
+                    "about": [
+                        { "@id": "https://embracingdigital.org/#edtw", "@type": "PodcastSeries" }
+                    ]
+                },
+                {
+                    "@type": "ItemList",
+                    "@id": "https://embracingdigital.org/en/briefs/#episode-list",
+                    "name": "Embracing Digital This Week — News Briefs",
+                    "itemListOrder": "http://schema.org/ItemListOrderDescending",
+                    "numberOfItems": itemListElements.length,
+                    "itemListElement": itemListElements
+                }
+            ]
+        };
+
+        hubHtml = hubHtml.replace(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi, (fullMatch, jsonContent) => {
+            if (jsonContent.includes('"@graph"') || jsonContent.includes('"ItemList"')) {
+                return `<script type="application/ld+json">\n${JSON.stringify(hubGraphJson, null, 2)}\n</script>`;
+            }
+            return fullMatch;
+        });
 
         fs.writeFileSync(hubPath, hubHtml, 'utf8');
     }
