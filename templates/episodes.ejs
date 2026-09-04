@@ -13,7 +13,7 @@
 // Normalize relpath to avoid double dots / double slashes
 
 const siteUrl = "https://embracingdigital.org"
-const pageUrl = (page && (page.canonical || page.url)) ? (page.canonical || page.url) : `${langRoot}/episodes/index.html`;
+const pageUrl = (page && (page.canonical || page.url)) ? (page.canonical || page.url) : `${langRoot}/episodes/`;
 
 const base = (typeof relpath === "string" ? relpath : "").replace(/\/$/, "");
 const langRoot = `${base}/${lang.id}`.replace(/\/{2,}/g, "/");

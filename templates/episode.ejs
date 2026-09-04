@@ -49,7 +49,8 @@ const tagNames = episode?.tags ? Object.keys(episode.tags) : [];
 // Media URLs
 const youtubeEmbed = youtubeID ? `https://www.youtube.com/embed/${safeText(youtubeID)}` : "";
 
-const transistorEmbed = audioID ? `https://share.transistor.fm/s/${safeText(audioID)}` : "";
+const transistorEmbed = audioID ? `https://transistor.fm/e/${safeText(audioID)}` : "";
+const transistorContentUrl = safeText(audioURL || transistorEmbed);
 
 // Episode image
 const episodeImage = safeText(episode?.image || "");
@@ -58,7 +59,7 @@ const episodeImageAbs = episodeImage
         : "";
 
 // Stable IDs
-const seriesId = abs(`/${lang.id}/episodes/index.html#series`);
+const seriesId = abs(`/${lang.id}/episodes/#series`);
 const episodeId = canonicalAbs ? `${canonicalAbs}#episode` : "";
 
 // Series schema
@@ -67,7 +68,7 @@ const podcastSeries = {
     "@type": "PodcastSeries",
     "@id": seriesId,
     "name": "Embracing Digital Transformation",
-    "url": abs(`/${lang.id}/episodes/index.html`),
+    "url": abs(`/${lang.id}/episodes/`),
     "inLanguage": safeText(lang?.id || "en"),
     "description": "A podcast about the digital transformation of the world.",
     "publisher": {
@@ -109,7 +110,7 @@ const episodeJsonLd = {
         transistorEmbed ? {
             "@type": "AudioObject",
             "name": `${safeText(title || episode?.title || "")} Audio`,
-            "contentUrl": transistorEmbed
+            "contentUrl": transistorContentUrl
         } : null
     ].filter(Boolean),
     ...(guestList.length ? {
@@ -126,8 +127,8 @@ const episodeJsonLd = {
 
 <nav class="breadcrumbs" aria-label="Breadcrumb">
     <ol>
-        <li><a href="<%= `${relpath}/${lang.id}/home/index.html` %>">Home</a></li>
-        <li><a href="<%= `${relpath}/${lang.id}/episodes/index.html` %>">Episodes</a></li>
+        <li><a href="/<%= lang.id %>/">Home</a></li>
+        <li><a href="/<%= lang.id %>/episodes/">Episodes</a></li>
         <li aria-current="page">Episode <%= episode.number %>: <%= episode.title %></li>
     </ol>
 </nav>
@@ -200,7 +201,7 @@ const episodeJsonLd = {
                          itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
                          <% if (!isAvailable) { %>hidden<% } %>>
                     <meta itemprop="name" content="<%- safeText(title || episode?.title) %> Audio">
-                    <meta itemprop="contentUrl" content="<%= transistorEmbed %>">
+                    <meta itemprop="contentUrl" content="<%= transistorContentUrl %>">
                     <iframe
                             width="100%"
                             height="180"
@@ -212,7 +213,7 @@ const episodeJsonLd = {
                     ></iframe>
 
                     <p class="listen-note">
-                        Explore more in the <a href="<%= `${relpath}/${lang.id}/episodes/index.html` %>">episode archive</a>.
+                        Explore more in the <a href="/<%= lang.id %>/episodes/">episode archive</a>.
                     </p>
                 </section>
             <% } %>
