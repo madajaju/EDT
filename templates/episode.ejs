@@ -121,6 +121,15 @@ const episodeJsonLd = {
         }))
     } : {})
 };
+const episodeBreadcrumbs = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": abs(`/${lang.id}/home/`)},
+        {"@type": "ListItem", "position": 2, "name": "Episodes", "item": abs(`/${lang.id}/episodes/`)},
+        {"@type": "ListItem", "position": 3, "name": safeText(title || episode?.title), "item": canonicalAbs}
+    ]
+};
 %>
 
 <a class="skip-link" href="#main">Skip to content</a>
@@ -171,7 +180,7 @@ const episodeJsonLd = {
                 episode?.publicationStatus || episode?.status || episode?.state
         ).toLowerCase();
         const hasExplicitPublicationStatus = explicitPublicationStatus.length > 0;
-        const isPublished = explicitPublicationStatus === 'published';
+        const isPublished = ['published', 'archived'].includes(explicitPublicationStatus);
         const hasValidReleaseDate = !Number.isNaN(releaseDate.getTime());
         const isReleasedByDate = hasValidReleaseDate && releaseDate <= currentDate;
         const isAvailable = hasExplicitPublicationStatus ? isPublished : isReleasedByDate;
@@ -287,5 +296,6 @@ const episodeJsonLd = {
 <!-- Structured Data -->
 <script type="application/ld+json"><%-  JSON.stringify(podcastSeries, null, 2)  %></script>
 <script type="application/ld+json"><%-  JSON.stringify(episodeJsonLd, null, 2)  %></script>
+<script type="application/ld+json"><%-  JSON.stringify(episodeBreadcrumbs, null, 2)  %></script>
 
 <%- include(`${baseDir}/${lang.id}/footer.html`) %>

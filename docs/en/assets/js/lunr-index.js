@@ -588006,9 +588006,9 @@ const lobjects = {
       "title": "Untitled",
       "summary": "Biography\n            Ori Yudilevich is the CTO of MaterialsZone, an end-to-end materials informatics solution for the lean R&D process. He has a background in software development and expertise in artificial intelligence (AI) and machine learning (ML). He obtained his Ph.D. in mathematics from Utrecht University and previously studied physics and chemistry. Ori grew up in Israel and the United States but now resides in Utrecht in the Netherlands. His diverse experiences make him a key player in advancing technology at MaterialsZone.",
       "id": 741,
-      "image": "guests\\ori-yudilevich-/https://embracingdigital.org/images/logo.png",
+      "image": "guests\\ori-yudilevich/https://embracingdigital.org/images/logo.png",
       "type": "Guest",
-      "link": "./guests\\ori-yudilevich-\\index.html"
+      "link": "./guests\\ori-yudilevich\\index.html"
     },
     {
       "title": "Untitled",
@@ -589102,9 +589102,9 @@ const lobjects = {
       "title": "Untitled",
       "summary": "Biography\n            Denis O'shea — guest on Embracing Digital Transformation. Explore episodes and key topics.",
       "id": 878,
-      "image": "guests\\denis-o'shea/https://embracingdigital.org/images/logo.png",
+      "image": "guests\\denis-oshea/https://embracingdigital.org/images/logo.png",
       "type": "Guest",
-      "link": "./guests\\denis-o'shea\\index.html"
+      "link": "./guests\\denis-oshea\\index.html"
     },
     {
       "title": "Untitled",

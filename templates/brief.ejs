@@ -7,7 +7,7 @@
         <ol>
             <li><a href="/<%= lang.id %>/">Home</a></li>
             <li><a href="/<%= lang.id %>/briefs/">Embracing Digital This Week</a></li>
-            <li aria-current="page"><%= brief.date %></li>
+            <li aria-current="page"><%= brief.title ? (brief.title.includes('EDTW #') ? brief.title : `${brief.title} | EDTW #${brief.number || ''}`.trim()) : brief.date %></li>
         </ol>
     </nav>
 
@@ -16,7 +16,7 @@
         <div class="brief-hero-main">
             <h1>
                 <%= lang.newsTitle %>
-                <span class="brief-date">— <%= brief.date %></span>
+                <span class="brief-date">— <%= brief.title ? (brief.title.includes('EDTW #') ? brief.title : `${brief.title} | EDTW #${brief.number || ''}`.trim()) : brief.date %></span>
             </h1>
 
             <!-- At a glance / summary -->
@@ -215,5 +215,48 @@
         <% } %>
     </section>
 </main>
+
+<%
+const briefDate = new Date(brief.releaseDate || brief.publishDate || '');
+const briefDateISO = Number.isNaN(briefDate.getTime()) ? '' : briefDate.toISOString().slice(0, 10);
+const briefUpdatedDate = new Date(brief.updatedAt || brief.modifiedAt || '');
+const briefUpdatedISO = Number.isNaN(briefUpdatedDate.getTime()) ? '' : briefUpdatedDate.toISOString();
+const briefDescription = String(page.description || summary || '')
+        .replace(/<[^>]*>/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+const briefCanonical = page.canonical || `https://embracingdigital.org/${lang.id}/briefs/edw-${brief.number}/`;
+const briefImage = `https://embracingdigital.org/${lang.id}/briefs/edw-${brief.number}/${brief.thumbnail || thumbnail || 'thumbnail.png'}`;
+const briefStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    headline: brief.title || brief.date || lang.newsTitle,
+    description: briefDescription,
+    mainEntityOfPage: {'@type': 'WebPage', '@id': briefCanonical},
+    url: briefCanonical,
+    ...(briefDateISO ? {datePublished: briefDateISO} : {}),
+    ...(briefUpdatedISO ? {dateModified: briefUpdatedISO} : {}),
+    inLanguage: lang.id,
+    image: briefImage,
+    author: {'@type': 'Person', name: 'Dr. Darren Pulsipher'},
+    publisher: {
+        '@type': 'Organization',
+        name: 'Embracing Digital Transformation',
+        url: 'https://embracingdigital.org/',
+        logo: {'@type': 'ImageObject', url: 'https://embracingdigital.org/images/logo.png'}
+    }
+};
+const briefBreadcrumbs = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+        {'@type': 'ListItem', position: 1, name: 'Home', item: `https://embracingdigital.org/${lang.id}/home/`},
+        {'@type': 'ListItem', position: 2, name: 'Embracing Digital This Week', item: `https://embracingdigital.org/${lang.id}/briefs/`},
+        {'@type': 'ListItem', position: 3, name: brief.title || brief.date || lang.newsTitle, item: briefCanonical}
+    ]
+};
+%>
+<script type="application/ld+json"><%- JSON.stringify(briefStructuredData, null, 2) %></script>
+<script type="application/ld+json"><%- JSON.stringify(briefBreadcrumbs, null, 2) %></script>
 
 <%- include(`${baseDir}/${lang.id}/footer.html`, { ...locals }) %>

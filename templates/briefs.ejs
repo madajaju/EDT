@@ -31,12 +31,21 @@ lang.urls.pt = `${siteBase}/pt/briefs/`;
 
 <%- include(`${baseDir}/${langId}/header.html`) %>
 
-<section id="all-episodes" class="transformation-container">
-    <h1><%= lang.allNews || 'All News Briefs' %></h1>
-
-    <p class="hero-subtitle" style="text-align: center; max-width: 900px; margin: 0 auto 2rem;">
-        <%- summary %>
+<section id="hero" class="hero-section alt-bg">
+    <h1 class="section-title"><%= pageName %></h1>
+    <p class="hero-subtitle">
+        <strong>The Synthesis / What's Next</strong> &mdash; Weekly executive briefings and analysis filtering emerging developments in AI, cybersecurity, ubiquitous computing, and data management through architectural lenses.
     </p>
+    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/<%= langId %>/digital-transformation/" class="listen-now" style="background: #193B73;">Transformation Architecture Hub</a>
+        <a href="/<%= langId %>/shows/" class="listen-now" style="background: #497BA3;">All Shows Overview</a>
+        <a href="/<%= langId %>/lectures/" class="listen-now" style="background: #497BA3;">The Canon (DTA)</a>
+        <a href="/<%= langId %>/episodes/" class="listen-now" style="background: #497BA3;">Interviews (EDT)</a>
+    </div>
+</section>
+
+<section id="all-episodes" class="transformation-container">
+    <h2 style="text-align: center; margin-bottom: 2rem;"><%= lang.allNews || 'All News Briefs' %></h2>
 
     <div class="episodes-grid">
         <% for (let i in episodes) { const episode = episodes[i]; %>
@@ -123,7 +132,7 @@ lang.urls.pt = `${siteBase}/pt/briefs/`;
       "@id": "<%- pageUrl %>#episode-list",
       "name": "<%- pageName %> — News Briefs",
       "itemListOrder": "http://schema.org/ItemListOrderDescending",
-      "numberOfItems": <%= episodes.length %>,
+      "numberOfItems": <%= Object.keys(episodes || {}).length %>,
       "itemListElement": [
         <% let idx=0; for(let i in episodes) { let episode = episodes[i]; %>
             {
@@ -131,7 +140,7 @@ lang.urls.pt = `${siteBase}/pt/briefs/`;
               "position": <%= idx + 1 %>,
           "url": "<%= episode.slug.startsWith('http') ? episode.slug : (siteBase + '/' + langId + '/briefs/' + episode.slug.replace(/^\/+/, '')) %>",
           "name": "#<%= episode.number %> <%= episode.title %>"
-        }<%= idx < episodes.length - 1 ? ',' : '' %>
+        }<%= idx < Object.keys(episodes || {}).length - 1 ? ',' : '' %>
         <% idx++; }; %>
         ]
       }

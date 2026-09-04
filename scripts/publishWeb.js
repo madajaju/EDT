@@ -5,6 +5,16 @@ const {exec, execSync} = require('child_process');
 const lunr = require('lunr');
 const {glob} = require('glob');
 const cheerio = require('cheerio');
+const {validateCommonNavigation} = require('./validateCommonNavigation');
+const {validateHomepageContent} = require('./validateHomepageContent');
+const {resolvePublicationStatus, isPubliclyAvailable} = require('./publicationState');
+const {validatePublicationOutput} = require('./validatePublicationOutput');
+const {validateMarkupLeakage} = require('./validateMarkupLeakage');
+const {validateStructuredData} = require('./validateStructuredData');
+const {validateCanonicalUrls} = require('./validateCanonicalUrls');
+const {validateCrawlerFiles} = require('./validateCrawlerFiles');
+const {validateOdxaClaims} = require('./validateOdxaClaims');
+const {validateFrameworkArchitecture} = require('./validateFrameworkArchitecture');
 let _languages = {};
 const SITE_URL = "https://embracingdigital.org";
 
@@ -71,57 +81,18 @@ module.exports = {
         await _sponsors(edt.sponsors, output, source);
         await _sponsorsPage(edt.sponsors, output, source);
         _episodeHome(output, source, edt, edw, dta);
-        await _validateGeneratedHtml(output);
+        validateCommonNavigation(output);
+        validateHomepageContent(output);
+        validatePublicationOutput(output);
+        validateMarkupLeakage(output);
+        validateStructuredData(output);
+        validateCanonicalUrls(output);
+        validateOdxaClaims(output);
+        validateFrameworkArchitecture(output);
         await _buildSearch(output, source);
         await _writeCrawlerFiles(output);
+        validateCrawlerFiles(output);
         await _syncGitRepo(output);
-    }
-};
-
-const GENERATED_SOURCE_DIRECTIVES = [
-    /:(?:doctype|icons|sectnums|imagesdir):(?:\s|$)/i,
-    /(?:^|\s)(?:ifdef::|endif::|include::)/i,
-    /^\s*===\s*$/
-];
-
-/**
- * Prevent source-format controls from leaking into rendered page text.
- * This intentionally examines body text after removing non-visible elements,
- * so JavaScript operators and metadata inside <head> do not create false hits.
- */
-const _validateGeneratedHtml = async (output) => {
-    const htmlFiles = await glob("**/*.html", {
-        cwd: output,
-        absolute: true,
-        nodir: true
-    });
-    const failures = [];
-
-    for (const htmlFile of htmlFiles) {
-        const html = fs.readFileSync(htmlFile, "utf8");
-        const $ = cheerio.load(html);
-        $("head, script, style, noscript, template, [hidden], [aria-hidden='true']").remove();
-
-        const visibleLines = $("body").text().split(/\r?\n/);
-        visibleLines.forEach((line, index) => {
-            const text = line.trim();
-            if (text && GENERATED_SOURCE_DIRECTIVES.some(pattern => pattern.test(text))) {
-                failures.push({
-                    file: path.relative(output, htmlFile),
-                    line: index + 1,
-                    text: text.slice(0, 160)
-                });
-            }
-        });
-    }
-
-    if (failures.length) {
-        const details = failures
-            .map(failure => `  ${failure.file}:${failure.line} ${failure.text}`)
-            .join("\n");
-        throw new Error(
-            `Generated HTML contains source-format directives in visible text:\n${details}`
-        );
     }
 };
 
@@ -550,7 +521,8 @@ const _episodes = async (episodes, output, source) => {
         let episode = episodes[i];
         AEvent.emit("publish.inprogress", {message: episode.name});
 
-        if (episode.state !== "Published") continue;
+        const publicationStatus = resolvePublicationStatus(episode);
+        if (!isPubliclyAvailable(publicationStatus)) continue;
 
         for (let j in langs) {
             const lang = langs[j];
@@ -624,7 +596,7 @@ const _episodes = async (episodes, output, source) => {
             const summaryText = _stripHtml(summaryHTML).slice(0, 300);
 
             // Canonical + dateISO for schema / <time datetime>
-            const canonicalAbs = `${siteUrl}/${lang.id}/episodes/edt-${episode.number}/index.html`;
+            const canonicalAbs = `${siteUrl}/${lang.id}/episodes/edt-${episode.number}/`;
             const dateISO = _toISODate(episode.releaseDate);
 
             // OG image should resolve (thumbnail is copied into the episode output folder)
@@ -635,7 +607,7 @@ const _episodes = async (episodes, output, source) => {
             // The generator only reaches this point for explicitly published
             // episodes. Preserve that decision in the render context so the
             // template does not need client-side date logic to infer status.
-            episode.publicationStatus = "published";
+            episode.publicationStatus = publicationStatus;
 
             // Prepare files for generator
             const files = {
@@ -818,7 +790,7 @@ const _lectures = async (episodes, output, source) => {
             const summaryText = _stripHtml(summaryHTML).slice(0, 300);
 
             // Canonical + dateISO for schema / <time datetime>
-            const canonicalAbs = `${siteUrl}/${lang.id}/lectures/dta-${episode.number}/index.html`;
+            const canonicalAbs = `${siteUrl}/${lang.id}/lectures/dta-${episode.number}/`;
             const dateISO = _toISODate(episode.releaseDate);
 
             // OG image should resolve (thumbnail is copied into the episode output folder)
@@ -1079,21 +1051,21 @@ const _writeCrawlerFiles = async (output) => {
         }
     };
 
+    const canonicalPattern = /<link\b(?=[^>]*\brel=["']canonical["'])[^>]*\bhref=["']([^"']+)["'][^>]*>/i;
     const sitemapUrls = walkHtml(output)
         .map((file) => path.normalize(file))
         .map((file) => {
             const rel = path.relative(output, file).replace(/\\/g, "/");
             return {file, rel};
         })
-        .filter(({rel, file}) => !isRootRedirect(rel) && !isNoIndex(file))
+        .filter(({rel, file}) => !rel.startsWith("images/") && !isRootRedirect(rel) && !isNoIndex(file))
         .map(({file, rel}) => {
-            let urlPath = `/${rel}`;
-            if (urlPath.endsWith("/index.html")) {
-                urlPath = urlPath.slice(0, -"index.html".length);
-            }
+            const html = fs.readFileSync(file, "utf8");
+            const canonical = html.match(canonicalPattern)?.[1];
             const lastmod = fs.statSync(file).mtime.toISOString();
-            return {loc: `${SITE_URL}${urlPath}`, lastmod};
+            return canonical ? {loc: canonical, lastmod} : null;
         })
+        .filter(Boolean)
         .sort((a, b) => a.loc.localeCompare(b.loc));
 
     const sitemapXml = [
@@ -1817,7 +1789,7 @@ Return ONLY valid JSON. No markdown. No commentary.
 
                     page: {
                         canonical,
-                        title: `${lang.newsTitle || "Embracing Digital This Week"} | ${episode.title}`,
+                        title: `${lang.newsTitle || "Embracing Digital This Week"} | ${episode.title ? (episode.title.includes('EDTW #') ? episode.title : `${episode.title} | EDTW #${episode.number}`.trim()) : `EDTW #${episode.number}`}`,
                         description: descriptionText
                     },
 

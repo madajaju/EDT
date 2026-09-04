@@ -53,8 +53,21 @@ const THUMB_W = 640;
 const THUMB_H = 360;
 %>
 
-<section id="all-episodes" aria-labelledby="all-episodes-title">
-    <h1 id="all-episodes-title"><%= lang.allEpisodes %></h1>
+<section id="hero" class="hero-section alt-bg">
+    <h1 class="section-title">Embracing Digital Transformation</h1>
+    <p class="hero-subtitle">
+        <strong>The Evidence / Who</strong> &mdash; In-depth interviews and case studies with real-world leaders validating architecture patterns and sharing transformation lessons.
+    </p>
+    <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/<%= lang.id %>/digital-transformation/" class="listen-now" style="background: #193B73;">Transformation Architecture Hub</a>
+        <a href="/<%= lang.id %>/shows/" class="listen-now" style="background: #497BA3;">All Shows Overview</a>
+        <a href="/<%= lang.id %>/lectures/" class="listen-now" style="background: #497BA3;">The Canon (DTA)</a>
+        <a href="/<%= lang.id %>/briefs/" class="listen-now" style="background: #497BA3;">Weekly News (EDTW)</a>
+    </div>
+</section>
+
+<section id="all-episodes" class="transformation-container" aria-labelledby="all-episodes-title">
+    <h2 id="all-episodes-title" style="text-align: center; margin-bottom: 2rem;"><%= lang.allEpisodes %></h2>
 
     <div class="episodes-grid">
         <% for (let i = 0; i < normalized.length; i++) {
