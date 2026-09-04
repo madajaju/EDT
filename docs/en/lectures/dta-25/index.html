@@ -270,7 +270,25 @@
 
         
 
-        <div id="episode-media" data-release-date="Tue Jul 14 2026 00:00:00 GMT-0700 (Pacific Daylight Time)">
+        <div id="episode-media" data-release-date="2026-07-15" data-publication-status="function (...args) {
+            return statenethandler.processevent(this, obj, prop, args);
+        }">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         hidden>
+                    <meta itemprop="name" content="What the Physical Domain Encompasses Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/7qLjMt0ftL0">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/7qLjMt0ftL0"
+                            title="What the Physical Domain Encompasses Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
             
 
             
@@ -278,13 +296,13 @@
                          itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
                          hidden>
                     <meta itemprop="name" content="What the Physical Domain Encompasses Audio">
-                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/3aa3210f">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/9056197b">
                     <iframe
                             width="100%"
                             height="180"
                             frameborder="0"
                             scrolling="no"
-                            src="https://transistor.fm/e/3aa3210f"
+                            src="https://transistor.fm/e/9056197b"
                             title="What the Physical Domain Encompasses Audio"
                             loading="lazy"
                     ></iframe>
@@ -295,39 +313,12 @@
                 </section>
             
 
-            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+            
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon">
                 <h1>Coming Soon...<br>Come back on 2026-07-15<br>to see and listen to this amazing episode</h1>
             </section>
+            
         </div>
-
-        <script>
-            (function () {
-                const mediaRoot = document.getElementById('episode-media');
-                if (!mediaRoot) return;
-
-                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
-                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
-
-                const video = mediaRoot.querySelector('.video-container');
-                const audio = mediaRoot.querySelector('.podcast-container');
-                const comingSoon = document.getElementById('coming-soon');
-
-                if (!releaseDate || isNaN(releaseDate.getTime())) {
-                    if (comingSoon) comingSoon.hidden = false;
-                    return;
-                }
-
-                const today = new Date();
-                today.setHours(0, 0, 0, 0);
-                releaseDate.setHours(0, 0, 0, 0);
-
-                const isReleased = releaseDate <= today;
-
-                if (video) video.hidden = !isReleased;
-                if (audio) audio.hidden = !isReleased;
-                if (comingSoon) comingSoon.hidden = isReleased;
-            })();
-        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>
@@ -395,9 +386,9 @@ date: 2026-07-15</h2>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "PodcastSeries",
-  "@id": "https://embracingdigital.org/en/episodes/index.html#series",
+  "@id": "https://embracingdigital.org/en/episodes/#series",
   "name": "Embracing Digital Transformation",
-  "url": "https://embracingdigital.org/en/episodes/index.html",
+  "url": "https://embracingdigital.org/en/episodes/",
   "inLanguage": "en",
   "description": "A podcast about the digital transformation of the world.",
   "publisher": {
@@ -428,7 +419,7 @@ date: 2026-07-15</h2>
   "inLanguage": "en",
   "description": "The Physical Domain is the part of O-DXA where transformation meets material reality, so it must be modeled as a core architectural domain rather than treated as a background operational concern.",
   "partOfSeries": {
-    "@id": "https://embracingdigital.org/en/episodes/index.html#series"
+    "@id": "https://embracingdigital.org/en/episodes/#series"
   },
   "author": {
     "@type": "Person",
@@ -444,9 +435,14 @@ date: 2026-07-15</h2>
   },
   "associatedMedia": [
     {
+      "@type": "VideoObject",
+      "name": "What the Physical Domain Encompasses Video",
+      "embedUrl": "https://www.youtube.com/embed/7qLjMt0ftL0"
+    },
+    {
       "@type": "AudioObject",
       "name": "What the Physical Domain Encompasses Audio",
-      "contentUrl": "https://share.transistor.fm/s/3aa3210f"
+      "contentUrl": "https://share.transistor.fm/s/9056197b"
     }
   ],
   "actor": [
@@ -454,6 +450,30 @@ date: 2026-07-15</h2>
       "@type": "Person",
       "name": "Darren W Pulsipher",
       "url": "https://embracingdigital.org/../../../en/guests/darren-w-pulsipher/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/en/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/en/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "What the Physical Domain Encompasses",
+      "item": "https://embracingdigital.org/en/lectures/dta-25/"
     }
   ]
 }</script>
