@@ -26,7 +26,7 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
     const truncate = (s, n=220) => {
         const t = stripHtml(s);
         if (t.length <= n) return t;
-        return t.slice(0, n).replace(/\s+\S*$/, '') + '…';
+        return t.slice(0, n).replace(/\s+\S*$/, '') + '\u2026';
     };
 
     // Normalize content item for display
@@ -37,7 +37,7 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
                 ? x.guests.map(g => (g && g.name) ? g.name : String(g)).join(', ')
                 : '';
 
-        const read = x.slug || x.read || x.page || x.url || '';
+        const read = (x.slug || x.read || x.page || x.url || '').replace(/\/index\.html$/, '/');
 
         return {
             title: x.title || x.name || '',
@@ -52,6 +52,28 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
             guestsText
         };
     };
+
+    // Build the same Mon-Fri editorial arc at generation time so the useful
+    // homepage content is present before client-side JavaScript runs.
+    const serverContent = typeof contentData === 'string' ? JSON.parse(contentData) : (contentData || {});
+    const slotConfig = [
+        { key: 'mon', day: 'Monday', name: 'Embracing Digital This Week', intent: 'What changed', type: 'briefs', index: 0 },
+        { key: 'tues', day: 'Tuesday', name: 'Embracing Digital Transformation', intent: 'How others did it', type: 'episodes', index: 0 },
+        { key: 'wed', day: 'Wednesday', name: 'Digital Transformation Architect', intent: 'How to think', type: 'lectures', index: 0 },
+        { key: 'thu', day: 'Thursday', name: 'Embracing Digital Transformation', intent: 'How others did it', type: 'episodes', index: 1 },
+        { key: 'fri', day: 'Friday', name: 'Digital Deep Dive', intent: 'What to do next', type: 'deepdives', index: 0 }
+    ];
+    const generatedAt = new Date();
+    const latestReleased = type => (Array.isArray(serverContent[type]) ? serverContent[type] : [])
+            .filter(item => {
+                const releaseDate = new Date(item.releaseDate);
+                return !Number.isNaN(releaseDate.getTime()) && releaseDate <= generatedAt;
+            })
+            .sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
+    const weeklySlots = slotConfig.map(slot => {
+        const raw = latestReleased(slot.type)[slot.index] || null;
+        return { ...slot, raw, data: raw ? normalize(raw) : null };
+    });
     %>
 
     <!-- Page intro -->
@@ -65,8 +87,7 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
     <section class="transformation-container">
         <p>Click on the day to see a preview</p>
         <div class="week-grid" role="tablist" aria-label="Weekly guidance">
-            <% /* Placeholder buttons - will be updated dynamically */ %>
-            <% ['mon','tues','wed','thu','fri'].forEach((key, idx) => { %>
+            <% weeklySlots.forEach((slot, idx) => { %>
                 <button
                         type="button"
                         class="week-card"
@@ -74,21 +95,30 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
                         aria-selected="false"
                         aria-controls="week-details"
                         data-idx="<%= idx %>"
-                        data-key="<%= key %>"
-                        disabled // will be enabled if content loaded
+                        data-key="<%= slot.key %>"
+                        <% if (!slot.raw) { %>disabled aria-disabled="true"<% } %>
                 >
                 <div class="week-card-top">
                     <div class="week-badge">
-                        <span class="week-day"><%= key.charAt(0).toUpperCase() + key.slice(1) %></span>
-                        <span class="week-intent"></span> <!-- will be filled -->
+                        <h3 class="week-card-heading">
+                            <span class="week-day"><%= slot.day %></span>
+                            <span aria-hidden="true"> &mdash; </span>
+                            <span class="week-intent"><%= slot.intent %></span>
+                        </h3>
                     </div>
-                    <div class="week-show"></div> <!-- will be filled -->
+                    <div class="week-show"><%= slot.name %></div>
                 </div>
 
-                <img class="week-image" src="">
+                <img class="week-image" src="<%= slot.data?.image || '/images/logo.png' %>" alt="<%= slot.data?.title || slot.name %>">
                 <div class="week-card-body">
-                    <div class="week-title"><a href="">Loading...</a></div>
-                    <div class="week-summary"></div>
+                    <div class="week-title">
+                        <% if (slot.data?.read) { %>
+                        <a href="<%= slot.data.read %>"><%= slot.data.title || slot.name %></a>
+                        <% } else { %>
+                        <span><%= slot.data?.title || 'Coming soon' %></span>
+                        <% } %>
+                    </div>
+                    <p class="week-summary"><%= slot.data?.shortSummary || 'No published item available for this slot yet.' %></p>
                 </div>
                 </button>
             <% }) %>
@@ -117,7 +147,7 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
         function truncate(s, n=220) {
             if (!s) return '';
             const tmp = s.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
-            return tmp.length <= n ? tmp : tmp.slice(0, n).replace(/\s+\S*$/, '') + '…';
+            return tmp.length <= n ? tmp : tmp.slice(0, n).replace(/\s+\S*$/, '') + '\u2026';
         }
 
         function normalize(item) {
@@ -131,7 +161,7 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
                 image: item.image || '/images/logo.png',
                 watch: item.watch || item.video || '',
                 listen: item.listen || item.audio || '',
-                read: item.slug || item.read || item.page || item.url || '',
+                read: (item.slug || item.read || item.page || item.url || '').replace(/\/index\.html$/, '/'),
                 guestsText: Array.isArray(item.guests) && item.guests.length
                     ? item.guests.map(g => g?.name || String(g)).join(', ')
                     : ''
@@ -173,10 +203,19 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
             };
 
             // Build normalized data per slot
-            const slotItems = slotConfig.map((slot) => {
+            const slotItems = slotConfig.map((slot, slotIndex) => {
                 const contentList = window.contentData[slot.type];
                 const released = getLatestReleased(contentList);
-                const raw = (released && released[slot.index]) ? released[slot.index] : null;
+                const releasedItem = (released && released[slot.index]) ? released[slot.index] : null;
+                const renderedCard = cards[slotIndex];
+                const renderedLink = renderedCard?.querySelector('.week-title a');
+                const renderedItem = renderedLink ? {
+                    title: renderedLink.textContent.trim(),
+                    summary: renderedCard.querySelector('.week-summary')?.textContent.trim() || '',
+                    image: renderedCard.querySelector('.week-image')?.src || '/images/logo.png',
+                    slug: renderedLink.href
+                } : null;
+                const raw = releasedItem || renderedItem;
                 return {
                     ...slot,
                     raw,
@@ -199,7 +238,7 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
                 card.querySelector('.week-intent').textContent = item.intent;
                 card.querySelector('.week-show').textContent = item.name;
 
-                if (item.data) {
+                if (item.raw) {
                     card.querySelector('.week-image').src = item.data.image;
                     card.querySelector('.week-image').alt = item.data.title || item.name;
                     card.querySelector('.week-title a').textContent = item.data.title || item.name;

@@ -166,13 +166,21 @@ const episodeJsonLd = {
         currentDate.setHours(0,0,0,0);
         const releaseDate = new Date(episode.releaseDate || dateISO);
         releaseDate.setHours(0,0,0,0);
+        const explicitPublicationStatus = safeText(
+                episode?.publicationStatus || episode?.status || episode?.state
+        ).toLowerCase();
+        const hasExplicitPublicationStatus = explicitPublicationStatus.length > 0;
+        const isPublished = explicitPublicationStatus === 'published';
+        const hasValidReleaseDate = !Number.isNaN(releaseDate.getTime());
+        const isReleasedByDate = hasValidReleaseDate && releaseDate <= currentDate;
+        const isAvailable = hasExplicitPublicationStatus ? isPublished : isReleasedByDate;
         %>
 
-        <div id="episode-media" data-release-date="<%= releaseDate %>">
+        <div id="episode-media" data-release-date="<%= dateISO %>" data-publication-status="<%= explicitPublicationStatus %>">
             <% if (youtubeID) { %>
                 <section class="video-container" aria-label="Watch the episode"
                          itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
-                         hidden>
+                         <% if (!isAvailable) { %>hidden<% } %>>
                     <meta itemprop="name" content="<%- safeText(title || episode?.title) %> Video">
                     <meta itemprop="embedUrl" content="<%= youtubeEmbed %>">
                     <iframe
@@ -190,7 +198,7 @@ const episodeJsonLd = {
             <% if (audioID) { %>
                 <section class="podcast-container" aria-label="Listen to this episode"
                          itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
-                         hidden>
+                         <% if (!isAvailable) { %>hidden<% } %>>
                     <meta itemprop="name" content="<%- safeText(title || episode?.title) %> Audio">
                     <meta itemprop="contentUrl" content="<%= transistorEmbed %>">
                     <iframe
@@ -209,39 +217,12 @@ const episodeJsonLd = {
                 </section>
             <% } %>
 
-            <section id="coming-soon" class="podcast-container" aria-label="Coming soon" hidden>
+            <% if (!isAvailable) { %>
+            <section id="coming-soon" class="podcast-container" aria-label="Coming soon">
                 <h1>Coming Soon...<br>Come back on <%- dateDisplay %><br>to see and listen to this amazing episode</h1>
             </section>
+            <% } %>
         </div>
-
-        <script>
-            (function () {
-                const mediaRoot = document.getElementById('episode-media');
-                if (!mediaRoot) return;
-
-                const releaseDateValue = mediaRoot.getAttribute('data-release-date');
-                const releaseDate = releaseDateValue ? new Date(releaseDateValue) : null;
-
-                const video = mediaRoot.querySelector('.video-container');
-                const audio = mediaRoot.querySelector('.podcast-container');
-                const comingSoon = document.getElementById('coming-soon');
-
-                if (!releaseDate || isNaN(releaseDate.getTime())) {
-                    if (comingSoon) comingSoon.hidden = false;
-                    return;
-                }
-
-                const today = new Date();
-                today.setHours(0, 0, 0, 0);
-                releaseDate.setHours(0, 0, 0, 0);
-
-                const isReleased = releaseDate <= today;
-
-                if (video) video.hidden = !isReleased;
-                if (audio) audio.hidden = !isReleased;
-                if (comingSoon) comingSoon.hidden = isReleased;
-            })();
-        </script>
 
         <section class="show-summary" aria-label="Episode summary" itemprop="description">
             <h2>Summary</h2>

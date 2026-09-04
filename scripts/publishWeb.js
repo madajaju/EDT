@@ -71,9 +71,57 @@ module.exports = {
         await _sponsors(edt.sponsors, output, source);
         await _sponsorsPage(edt.sponsors, output, source);
         _episodeHome(output, source, edt, edw, dta);
+        await _validateGeneratedHtml(output);
         await _buildSearch(output, source);
         await _writeCrawlerFiles(output);
         await _syncGitRepo(output);
+    }
+};
+
+const GENERATED_SOURCE_DIRECTIVES = [
+    /:(?:doctype|icons|sectnums|imagesdir):(?:\s|$)/i,
+    /(?:^|\s)(?:ifdef::|endif::|include::)/i,
+    /^\s*===\s*$/
+];
+
+/**
+ * Prevent source-format controls from leaking into rendered page text.
+ * This intentionally examines body text after removing non-visible elements,
+ * so JavaScript operators and metadata inside <head> do not create false hits.
+ */
+const _validateGeneratedHtml = async (output) => {
+    const htmlFiles = await glob("**/*.html", {
+        cwd: output,
+        absolute: true,
+        nodir: true
+    });
+    const failures = [];
+
+    for (const htmlFile of htmlFiles) {
+        const html = fs.readFileSync(htmlFile, "utf8");
+        const $ = cheerio.load(html);
+        $("head, script, style, noscript, template, [hidden], [aria-hidden='true']").remove();
+
+        const visibleLines = $("body").text().split(/\r?\n/);
+        visibleLines.forEach((line, index) => {
+            const text = line.trim();
+            if (text && GENERATED_SOURCE_DIRECTIVES.some(pattern => pattern.test(text))) {
+                failures.push({
+                    file: path.relative(output, htmlFile),
+                    line: index + 1,
+                    text: text.slice(0, 160)
+                });
+            }
+        });
+    }
+
+    if (failures.length) {
+        const details = failures
+            .map(failure => `  ${failure.file}:${failure.line} ${failure.text}`)
+            .join("\n");
+        throw new Error(
+            `Generated HTML contains source-format directives in visible text:\n${details}`
+        );
     }
 };
 
@@ -131,6 +179,14 @@ const _episodeHome = (output, source, edt, edw, dta) => {
     const now = new Date().setHours(0, 0, 0, 0);
     const isPublished = (ep) => ep && ep.state === "Published"
     const byNewestNumber = (a, b) => Number(b.number) - Number(a.number);
+    const latestPublished = (episodes, count = 1) => [...episodes]
+        .filter(isPublished)
+        .filter(ep => {
+            const releaseDate = new Date(ep.releaseDate);
+            return !Number.isNaN(releaseDate.getTime()) && releaseDate.getTime() <= now;
+        })
+        .sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate))
+        .slice(0, count);
 
 
     AEvent.emit("publish.start", {message: "Starting publish"});
@@ -139,10 +195,12 @@ const _episodeHome = (output, source, edt, edw, dta) => {
         const lang = langs[i];
         const langId = lang.id;
 
+        const currentLectures = dta.episodes.filter(l => isInTwoWeekWindow(l));
+        const homepageLectures = currentLectures.length ? currentLectures : latestPublished(dta.episodes);
         const filteredContent = {
             briefs: edw.episodes.filter(b => isInTwoWeekWindow(b)).map(ep => serializeBrief(ep, lang)),
             episodes: edt.episodes.filter(e => isInTwoWeekWindow(e)).map(ep => serializeEpisode(ep, lang)),
-            lectures: dta.episodes.filter(l => isInTwoWeekWindow(l)).map(ep => serializeLecture(ep, lang)),
+            lectures: homepageLectures.map(ep => serializeLecture(ep, lang)),
             deepdives: edw.episodes.filter(d => isInTwoWeekWindow(d)).map(ep => serializeDeepDive(ep, lang))
         };
         const contentData = JSON.stringify(filteredContent);
@@ -574,6 +632,10 @@ const _episodes = async (episodes, output, source) => {
 
             episode.dateISO = dateISO;
             episode.image = `edt-${episode.number}/${episode.thumbnail}`;
+            // The generator only reaches this point for explicitly published
+            // episodes. Preserve that decision in the render context so the
+            // template does not need client-side date logic to infer status.
+            episode.publicationStatus = "published";
 
             // Prepare files for generator
             const files = {
@@ -2088,8 +2150,8 @@ function serializeEpisode(episode, lang) {
         listen: episode?.assets[`audio`]?.url || null,
         watch: episode?.assets[`video`]?.url || null,
         image: `${SITE_URL}/${lang.id}/episodes/edt-${episode.number}/${episode.thumbnail}`,
-        slug: `${SITE_URL}/${lang.id}/episodes/edt-${episode.number}/index.html`,
-        read: `${SITE_URL}/${lang.id}/episodes/edt-${episode.number}/index.html`,
+        slug: `${SITE_URL}/${lang.id}/episodes/edt-${episode.number}/`,
+        read: `${SITE_URL}/${lang.id}/episodes/edt-${episode.number}/`,
         title: episode.assets[`${lang.id}/blog`]?.title || episode.title
     }
     return retval;
@@ -2131,8 +2193,8 @@ function serializeBrief(episode, lang) {
         listen: episode?.assets[`${lang.id}/audio`]?.url || null,
         watch: episode?.assets[`${lang.id}/video`]?.url || null,
         image: `${SITE_URL}/${lang.id}/briefs/edw-${episode.number}/thumbnail.png`,
-        slug: `${SITE_URL}/${lang.id}/briefs/edw-${episode.number}/index.html`,
-        read: `${SITE_URL}/${lang.id}/briefs/edw-${episode.number}/index.html`,
+        slug: `${SITE_URL}/${lang.id}/briefs/edw-${episode.number}/`,
+        read: `${SITE_URL}/${lang.id}/briefs/edw-${episode.number}/`,
         title: episode.assets[`${lang.id}/blog`]?.title || episode.title
     }
     return retval;
@@ -2153,8 +2215,8 @@ function serializeLecture(episode, lang) {
         listen: episode?.assets[`audio`]?.url || null,
         watch: episode?.assets[`video`]?.url || null,
         image: `${SITE_URL}/${lang.id}/lectures/dta-${episode.number}/thumbnail.png`,
-        slug: `${SITE_URL}/${lang.id}/lectures/dta-${episode.number}/index.html`,
-        read: `${SITE_URL}/${lang.id}/lectures/dta-${episode.number}/index.html`,
+        slug: `${SITE_URL}/${lang.id}/lectures/dta-${episode.number}/`,
+        read: `${SITE_URL}/${lang.id}/lectures/dta-${episode.number}/`,
         title: episode.assets[`${lang.id}/blog`]?.title || episode.title
     }
     return retval;
