@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="<%= lang.id || 'en' %>">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="<%= page?.noindex ? 'noindex, follow' : 'index, follow' %>">
+
+    <!-- Dynamic Title / Meta -->
+    <title><%= page?.title || 'Embracing Digital Transformation' %></title>
+    <meta name="description" content="<%= page?.description || 'Weekly briefings, frameworks, interviews, and architectural analysis to help leaders navigate digital transformation.' %>">
+    <% if (page?.keywords) { %>
+    <meta name="keywords" content="<%= page.keywords %>">
+    <% } %>
+    <% if (page?.canonical) { %>
+    <link rel="canonical" href="<%= page.canonical %>">
+    <% } %>
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<%= page?.title || 'Embracing Digital Transformation' %>">
+    <meta property="og:description" content="<%= page?.description || 'Weekly briefings, frameworks, interviews, and architectural analysis to help leaders navigate digital transformation.' %>">
+    <meta property="og:url" content="<%= page?.canonical || ('https://embracingdigital.org/' + (lang.id || 'en') + '/home/') %>">
+    <meta property="og:image" content="<%= page?.ogImage || 'https://embracingdigital.org/images/logo.png' %>">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= page?.title || 'Embracing Digital Transformation' %>">
+    <meta name="twitter:description" content="<%= page?.description || 'Weekly briefings, frameworks, interviews, and architectural analysis to help leaders navigate digital transformation.' %>">
+    <meta name="twitter:image" content="<%= page?.ogImage || 'https://embracingdigital.org/images/logo.png' %>">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/<%= (lang.id || 'en') %>/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/<%= (lang?.id || 'en') %>/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/<%= (lang?.id || 'en') %>/home/"
+                <%= (page?.id === 'home') ? 'aria-current="page"' : '' %>>
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/<%= (lang?.id || 'en') %>/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                <%= (['shows','guidance','briefs','episodes','deepdive'].includes(page?.id)) ? 'aria-current="page"' : '' %>>
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/<%= (lang?.id || 'en') %>/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/<%= (lang?.id || 'en') %>/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/<%= (lang?.id || 'en') %>/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/<%= (lang?.id || 'en') %>/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                <%= (String(page?.id || '').startsWith('dt-') || ['digital-transformation','pillars','odxa','whitepapers','articles','lectures'].includes(page?.id)) ? 'aria-current="page"' : '' %>>
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/<%= (lang?.id || 'en') %>/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/<%= (lang?.id || 'en') %>/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/<%= (lang?.id || 'en') %>/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/<%= (lang?.id || 'en') %>/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/<%= (lang?.id || 'en') %>/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/<%= (lang?.id || 'en') %>/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/<%= (lang?.id || 'en') %>/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                <%= (['community','newsletter'].includes(page?.id)) ? 'aria-current="page"' : '' %>>
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/<%= (lang?.id || 'en') %>/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/<%= (lang?.id || 'en') %>/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/<%= (lang?.id || 'en') %>/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                <%= (['about','host','sponsors'].includes(page?.id)) ? 'aria-current="page"' : '' %>>
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/<%= (lang?.id || 'en') %>/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/<%= (lang?.id || 'en') %>/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/<%= (lang?.id || 'en') %>/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/<%= (lang?.id || 'en') %>/search.html"
+                <%= (page?.id === 'search') ? 'aria-current="page"' : '' %>>
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>

@@ -84,6 +84,9 @@ module.exports = {
         await _sponsors(edt.sponsors, output, source);
         await _sponsorsPage(edt.sponsors, output, source);
         _episodeHome(output, source, edt, edw, dta);
+        // ED-18 is a presentation layer over reviewed editorial data. Generate
+        // its pilot after the canonical episode pages are available.
+        execSync('node scripts/generateEditorialIntelligence.js', {cwd: targetDir, stdio: 'inherit'});
         validateCommonNavigation(output);
         validateHomepageContent(output);
         validatePublicationOutput(output);

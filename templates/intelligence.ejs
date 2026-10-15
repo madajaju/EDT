@@ -1,0 +1,22 @@
+<%- include(`${baseDir}/${lang.id}/header.html`, { ...locals, page }) %>
+<main class="transformation-container intelligence-page">
+  <p class="eyebrow">Editorial intelligence · Updated <%= intelligence.updated %></p>
+  <h1 class="section-title">Signals to trends to better decisions</h1>
+  <p class="hero-subtitle">A small, reviewed set of evolving technology signals and the implications they may have for people, process, and technology.</p>
+  <% intelligence.trends.forEach(trend => { %>
+    <article class="intelligence-trend" id="<%= trend.slug %>">
+      <div class="intelligence-meta"><span><%= trend.label %></span><span><%= trend.pillar %></span><span><%= trend.confidence %></span><span><%= trend.momentum %></span></div>
+      <h2><%= trend.title %></h2>
+      <p class="intelligence-thesis"><%= trend.thesis %></p>
+      <p><%= trend.summary %></p>
+      <div class="intelligence-grid">
+        <section><h3>Evidence</h3><ul><% trend.evidence.forEach(item => { %><li><%= item %></li><% }) %></ul></section>
+        <section><h3>Counterevidence and limits</h3><p><%= trend.counterevidence %></p><h3>Watch for next</h3><ul><% trend.watchFor.forEach(item => { %><li><%= item %></li><% }) %></ul></section>
+      </div>
+      <section class="intelligence-section"><h3>Signal</h3><% trend.signals.forEach(signal => { %><div class="signal-card"><p class="eyebrow"><%= signal.status %> · <%= signal.date %></p><h4><%= signal.title %></h4><p><%= signal.observation %></p><a href="<%= signal.source.url %>"><%= signal.source.label %> →</a></div><% }) %></section>
+      <section class="intelligence-section"><h3>Analysis</h3><h4><%= trend.analysis.title %></h4><p><%= trend.analysis.synthesis %></p><p><strong>Interpretation:</strong> <%= trend.analysis.interpretation %></p><p><strong>Open question:</strong> <%= trend.analysis.openQuestion %></p></section>
+      <section class="intelligence-section"><h3>Continue the conversation</h3><div class="content-links"><% trend.content.forEach(item => { %><a href="<%= item.url %>"><span><%= item.type %></span><%= item.title %> →</a><% }) %></div></section>
+    </article>
+  <% }) %>
+</main>
+<%- include(`${baseDir}/${lang.id}/footer.html`, { ...locals }) %>

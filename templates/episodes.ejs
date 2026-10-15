@@ -12,11 +12,11 @@
 
 // Normalize relpath to avoid double dots / double slashes
 
+const base = (typeof relpath === "string" ? relpath : "").replace(/\/$/, "");
+const langRoot = `${base}/${lang.id}`.replace(/\/{2,}/g, "/");
 const siteUrl = "https://embracingdigital.org"
 const pageUrl = (page && (page.canonical || page.url)) ? (page.canonical || page.url) : `${langRoot}/episodes/`;
 
-const base = (typeof relpath === "string" ? relpath : "").replace(/\/$/, "");
-const langRoot = `${base}/${lang.id}`.replace(/\/{2,}/g, "/");
 
 const safeText = (v) => (v == null ? "" : String(v));
 const slugify = (s) => safeText(s).toLowerCase().trim().replace(/\s+/g, "-");
