@@ -1,0 +1,76 @@
+<%
+const safe = value => value == null ? '' : String(value);
+const issueRecord = typeof issue === 'object' && issue ? issue : {};
+const newsletterRecord = typeof newsletter === 'object' && newsletter ? newsletter : {};
+const content = issueRecord.content || {};
+const sources = Array.isArray(issueRecord.sources) ? issueRecord.sources.filter(item => item && item.type !== 'editorial') : [];
+const stories = sources.filter(item => item.type === 'podcast' || item.type === 'offering' || item.type === 'shop');
+const period = issueRecord.period || {};
+const displayDate = value => {
+    if (!value) return '';
+    const dateValue = new Date(`${safe(value).slice(0, 10)}T00:00:00Z`);
+    return Number.isNaN(dateValue.getTime()) ? safe(value) : new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(dateValue);
+};
+const lastDay = period.end ? new Date(`${safe(period.end).slice(0, 10)}T00:00:00Z`) : null;
+if (lastDay && !Number.isNaN(lastDay.getTime())) lastDay.setUTCDate(lastDay.getUTCDate() - 1);
+const periodLabel = [displayDate(period.start), lastDay ? displayDate(lastDay.toISOString().slice(0, 10)) : ''].filter(Boolean).join(' – ');
+const issueTitle = safe(content.title || issueRecord.title || newsletterRecord.name || 'Digital Transformation Leadership Briefing');
+const pageRecord = {
+    ...(page || {}),
+    title: safe((page && page.title) || `${issueTitle}${periodLabel ? ` | ${periodLabel}` : ''}`),
+    description: safe((page && page.description) || content.previewText || newsletterRecord.description || ''),
+    canonical: safe((page && page.canonical) || issueRecord.website?.url || ''),
+    noindex: issueRecord.editorial?.status !== 'approved'
+};
+%>
+<%- include(`${baseDir}/${lang.id}/header.html`, { page: pageRecord, lang }) %>
+
+<main id="content" class="newsletter-archive leadership-briefing" style="max-width:820px;margin:0 auto;padding:2rem 1.25rem;">
+    <header style="margin-bottom:2rem;">
+        <p style="color:#526579;font-weight:600;">Digital Transformation Leadership Briefing <%= periodLabel %></p>
+        <h1><%= issueTitle %></h1>
+        <% if (content.previewText) { %><p style="font-size:1.2rem;color:#40566b;"><%= content.previewText %></p><% } %>
+        <% if (content.opening) { %><div class="newsletter-opening"><p><%= content.opening %></p></div><% } %>
+    </header>
+
+    <% if (stories.length) { %>
+        <section aria-labelledby="leadership-stories">
+            <h2 id="leadership-stories">Featured leadership insights</h2>
+            <% stories.forEach(item => { const links = item.links || {}; const primaryUrl = links.blog || links.resource || links.shop || item.url; %>
+                <article style="border-bottom:1px solid #d9e0e7;padding:1rem 0;">
+                    <h3><%= safe(item.title) %></h3>
+                    <% if (item.summary) { %><p><%= item.summary %></p><% } %>
+                    <% if (item.whyItMatters) { %><p><strong>Leadership implication:</strong> <%= item.whyItMatters %></p><% } %>
+                    <% if (primaryUrl) { %><p><a href="<%= safe(primaryUrl) %>"><%= item.type === 'podcast' ? 'Read the full article' : 'Explore this resource' %></a></p><% } %>
+                    <% if (links.youtube || links.audio) { %><p style="font-size:.9rem;">Also available: <% if (links.youtube) { %><a href="<%= safe(links.youtube) %>">Watch on YouTube</a><% } %><% if (links.youtube && links.audio) { %> | <% } %><% if (links.audio) { %><a href="<%= safe(links.audio) %>">Listen to the audio</a><% } %></p><% } %>
+                </article>
+            <% }); %>
+        </section>
+    <% } %>
+
+    <% if (content.leadershipTakeaway) { %>
+        <section aria-labelledby="leadership-takeaway" style="margin-top:2rem;padding:1.25rem;background:#f3f7fa;border-left:4px solid #0878a5;">
+            <h2 id="leadership-takeaway">The leadership takeaway</h2>
+            <p><%= content.leadershipTakeaway %></p>
+        </section>
+    <% } %>
+
+    <% if (content.upcoming && content.upcoming.text) { %>
+        <section aria-labelledby="leadership-upcoming" style="margin-top:2rem;">
+            <h2 id="leadership-upcoming">Upcoming events</h2>
+            <p><%= safe(content.upcoming.text) %></p>
+        </section>
+    <% } %>
+
+    <% if (newsletterRecord.communityEngagement && newsletterRecord.communityEngagement.url) { %>
+        <section aria-labelledby="leadership-community" style="margin-top:2rem;padding:1.25rem;background:#eef5f8;">
+            <h2 id="leadership-community">Continue the discussion</h2>
+            <p>Share your perspective with the EmbracingDigital community.</p>
+            <p><a href="<%= safe(newsletterRecord.communityEngagement.url) %>">Join the EmbracingDigital LinkedIn Group</a></p>
+        </section>
+    <% } %>
+
+    <% if (content.closing) { %><section style="margin-top:2rem;"><p><%= content.closing %></p></section><% } %>
+</main>
+
+<%- include(`${baseDir}/${lang.id}/footer.html`, { page: pageRecord, lang }) %>

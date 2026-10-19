@@ -72,7 +72,8 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
             .sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
     const weeklySlots = slotConfig.map(slot => {
         const raw = latestReleased(slot.type)[slot.index] || null;
-        return { ...slot, raw, data: raw ? normalize(raw) : null };
+        const upcoming = !raw && slot.type === 'episodes' ? (serverContent.upcomingEpisodes || [])[0] : null;
+        return { ...slot, raw: raw || upcoming, scheduled: Boolean(upcoming), data: raw || upcoming ? normalize(raw || upcoming) : null };
     });
     %>
 
@@ -112,10 +113,10 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
                 <img class="week-image" src="<%= slot.data?.image || '/images/logo.png' %>" alt="<%= slot.data?.title || slot.name %>">
                 <div class="week-card-body">
                     <div class="week-title">
-                        <% if (slot.data?.read) { %>
+                        <% if (slot.data?.read && !slot.scheduled) { %>
                         <a href="<%= slot.data.read %>"><%= slot.data.title || slot.name %></a>
                         <% } else { %>
-                        <span><%= slot.data?.title || 'Coming soon' %></span>
+                        <span><%= slot.data?.title || 'Coming soon' %><% if (slot.scheduled) { %> <small>(Scheduled <%= slot.raw.releaseDate %>)</small><% } %></span>
                         <% } %>
                     </div>
                     <p class="week-summary"><%= slot.data?.shortSummary || 'No published item available for this slot yet.' %></p>
@@ -215,10 +216,13 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
                     image: renderedCard.querySelector('.week-image')?.src || '/images/logo.png',
                     slug: renderedLink.href
                 } : null;
-                const raw = releasedItem || renderedItem;
+                const upcomingItem = slot.type === 'episodes' && window.contentData.upcomingEpisodes?.length
+                    ? window.contentData.upcomingEpisodes[0] : null;
+                const raw = releasedItem || upcomingItem || renderedItem;
                 return {
                     ...slot,
                     raw,
+                    scheduled: !releasedItem && Boolean(upcomingItem),
                     data: raw ? normalize(raw) : {
                         title: 'Coming soon',
                         shortSummary: 'No published item available for this slot yet.',
@@ -241,8 +245,12 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
                 if (item.raw) {
                     card.querySelector('.week-image').src = item.data.image;
                     card.querySelector('.week-image').alt = item.data.title || item.name;
-                    card.querySelector('.week-title a').textContent = item.data.title || item.name;
-                    card.querySelector('.week-title a').href = item.data.read;
+                    if (item.scheduled || !item.data.read) {
+                        card.querySelector('.week-title').textContent = `${item.data.title || item.name}${item.scheduled ? ` (Scheduled ${item.raw.releaseDate})` : ''}`;
+                    } else {
+                        card.querySelector('.week-title a').textContent = item.data.title || item.name;
+                        card.querySelector('.week-title a').href = item.data.read;
+                    }
                     card.querySelector('.week-summary').textContent = item.data.shortSummary;
                 } else {
                     card.querySelector('.week-image').src = item.data.image;
@@ -275,7 +283,7 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
                 }
 
                 details.titleEl.textContent = d.title || item.name || '';
-                details.metaEl.textContent = [item.name, item.key.charAt(0).toUpperCase() + item.key.slice(1), d.date]
+                details.metaEl.textContent = [item.scheduled ? `Scheduled for ${item.raw.releaseDate}` : '', item.name, item.key.charAt(0).toUpperCase() + item.key.slice(1), d.date]
                     .filter(Boolean).join(' • ');
                 details.summaryEl.innerHTML = d.summary || '';
                 details.imgEl.src = d.image || '/images/logo.png';
