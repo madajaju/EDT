@@ -40,7 +40,7 @@ lang.urls.pt = `${siteBase}/pt/briefs/`;
     <div class="episodes-grid">
         <% for (let i in episodes) { const episode = episodes[i]; %>
         <article class="episode-card">
-            <a href="<%= episode.slug.startsWith('http') ? episode.slug : (siteBase + '/' + langId + '/briefs/' + episode.slug.replace(/^\/+/, '')) %>" aria-label="<%- episode.title %>">
+            <a href="<%= episode.slug.startsWith('http') ? episode.slug : (episode.slug.startsWith('/') ? siteBase + episode.slug : (siteBase + '/' + langId + '/briefs/' + episode.slug.replace(/^\/+/, ''))) %>" aria-label="<%- episode.title %>">
                 <img
                         src="<%= episode.image.startsWith('http') ? episode.image : (episode.image.startsWith('/') ? siteBase + episode.image : (siteBase + '/' +langId + '/briefs/' + episode.image.replace(/^\/+/,''))) %>"
                         alt="<%= episode.title %>"

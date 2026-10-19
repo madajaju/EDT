@@ -33,7 +33,7 @@
                 <p class="summary guest-summary"><%- summary %></p>
 
                 <% if (tags.length) { %>
-                    <nav class="tags" aria-label="Guest tags">
+                    <nav class="tags" aria-label="<%= lang.guestTags || lang.tags || 'Guest tags' %>">
                         <% for (let ti = 0; ti < tags.length && ti < 8; ti++) { %>
                             <a href="<%- relpath %>/<%- lang.id %>/search.html?query=<%- tags[ti] %>">
                                 <span><%= tags[ti] %></span>

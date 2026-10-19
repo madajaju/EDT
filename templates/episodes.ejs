@@ -75,7 +75,8 @@ const THUMB_H = 360;
             const title = safeText(episode.title);
             const imagePath = safeText(episode.image);
             const img = safeText(/^https?:\/\//i.test(imagePath) ? imagePath : imagePath.startsWith('/') ? siteUrl + imagePath : siteUrl + '/' + lang.id + '/episodes/' + imagePath);
-            const href = safeText(siteUrl + '/' + lang.id + '/episodes/' + episode.slug);
+            const slugPath = safeText(episode.slug);
+            const href = safeText(/^https?:\/\//i.test(slugPath) ? slugPath : slugPath.startsWith('/') ? siteUrl + slugPath : siteUrl + '/' + lang.id + '/episodes/' + slugPath);
             const dateTxt = displayDate(episode);
 
             const guestNames = episode.guests ? Object.keys(episode.guests) : [];
