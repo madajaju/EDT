@@ -137,7 +137,12 @@ const itemListJsonLd = episodeItems.length ? {
                     const rawSummary = episode.assets?.[`${lang.id}/blog`]?.summary || episode.summary || '';
                     const epSummary = stripHtml(rawSummary).slice(0, 220);
                     const epUrl = `${relpath}/${lang.id}/episodes/edt-${episode.number}/`;
-                    const epImg = `${relpath}/${lang.id}/episodes/edt-${episode.number}/${episode.thumbnail}`;
+                    const thumbnail = safeText(episode.thumbnail || 'thumbnail.png');
+                    const epImg = /^https?:\/\//i.test(thumbnail)
+                            ? thumbnail
+                            : thumbnail.startsWith('/')
+                                    ? thumbnail
+                                    : `${relpath}/${lang.id}/episodes/edt-${episode.number}/${thumbnail.replace(/^\/+/, '')}`;
                 %>
 
                 <article class="episode-card">

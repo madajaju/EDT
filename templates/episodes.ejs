@@ -73,7 +73,8 @@ const THUMB_H = 360;
         <% for (let i = 0; i < normalized.length; i++) {
             const episode = normalized[i];
             const title = safeText(episode.title);
-            const img = safeText(siteUrl + '/' + lang.id + '/episodes/' + episode.image);
+            const imagePath = safeText(episode.image);
+            const img = safeText(/^https?:\/\//i.test(imagePath) ? imagePath : imagePath.startsWith('/') ? siteUrl + imagePath : siteUrl + '/' + lang.id + '/episodes/' + imagePath);
             const href = safeText(siteUrl + '/' + lang.id + '/episodes/' + episode.slug);
             const dateTxt = displayDate(episode);
 

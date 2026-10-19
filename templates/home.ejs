@@ -66,12 +66,18 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
     const generatedAt = new Date();
     const latestReleased = type => (Array.isArray(serverContent[type]) ? serverContent[type] : [])
             .filter(item => {
-                const releaseDate = new Date(item.releaseDate);
-                return !Number.isNaN(releaseDate.getTime()) && releaseDate <= generatedAt;
+                const value = item.releaseDate || item.dateISO;
+                const releaseDate = new Date(value);
+                // The content arrays contain public releases; retain entries
+                // with missing legacy dates so an older week can fill a slot.
+                return Number.isNaN(releaseDate.getTime()) || releaseDate <= generatedAt;
             })
-            .sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
+            .sort((a, b) => new Date(b.releaseDate || b.dateISO || 0) - new Date(a.releaseDate || a.dateISO || 0));
     const weeklySlots = slotConfig.map(slot => {
-        const raw = latestReleased(slot.type)[slot.index] || null;
+        const available = latestReleased(slot.type);
+        // Prefer the matching week's item; reuse the latest older release if
+        // this content type does not have enough entries to fill every slot.
+        const raw = available[slot.index] || available[0] || null;
         const upcoming = !raw && slot.type === 'episodes' ? (serverContent.upcomingEpisodes || [])[0] : null;
         return { ...slot, raw: raw || upcoming, scheduled: Boolean(upcoming), data: raw || upcoming ? normalize(raw || upcoming) : null };
     });
@@ -155,7 +161,7 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
             if (!item) return null;
             return {
                 title: item.title || item.name || '',
-                date: item.date || '',
+                date: item.releaseDate || item.dateISO || item.date || '',
                 summary: item.summary || item.description || '',
                 shortSummary: truncate(item.summary || item.description || '', 220),
                 url: item.url || '',
@@ -182,9 +188,12 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
         function getLatestReleased(contentArray) {
             const today = new Date();
             if (!Array.isArray(contentArray)) return [];
-            const filtered = contentArray.filter(c => new Date(c.releaseDate) <= today);
+            const filtered = contentArray.filter(c => {
+                const date = new Date(c.releaseDate || c.dateISO);
+                return Number.isNaN(date.getTime()) || date <= today;
+            });
             if (!filtered.length) return [];
-            filtered.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
+            filtered.sort((a, b) => new Date(b.releaseDate || b.dateISO || 0) - new Date(a.releaseDate || a.dateISO || 0));
             return filtered;
         }
 
@@ -207,7 +216,7 @@ ogImage: (page && page.ogImage) || 'https://embracingdigital.org/images/logo.png
             const slotItems = slotConfig.map((slot, slotIndex) => {
                 const contentList = window.contentData[slot.type];
                 const released = getLatestReleased(contentList);
-                const releasedItem = (released && released[slot.index]) ? released[slot.index] : null;
+                const releasedItem = released[slot.index] || released[0] || null;
                 const renderedCard = cards[slotIndex];
                 const renderedLink = renderedCard?.querySelector('.week-title a');
                 const renderedItem = renderedLink ? {
