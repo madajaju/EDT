@@ -44,7 +44,9 @@ const guestList = guestObjs
         .filter(g => g.name);
 
 // Tags
-const tagNames = episode?.tags ? Object.keys(episode.tags) : [];
+const tagNames = Array.isArray(episode?.tags)
+        ? episode.tags
+        : episode?.tags ? Object.keys(episode.tags) : [];
 
 // Media URLs
 const youtubeEmbed = youtubeID ? `https://www.youtube.com/embed/${safeText(youtubeID)}` : "";
@@ -55,7 +57,7 @@ const transistorContentUrl = safeText(audioURL || transistorEmbed);
 // Episode image
 const episodeImage = safeText(episode?.image || "");
 const episodeImageAbs = episodeImage
-        ? abs(`/${lang.id}/episodes/${episodeImage}`.replace(/\/{2,}/g, "/"))
+        ? abs(episodeImage.startsWith("/") ? episodeImage : `/${lang.id}/${section || "episodes"}/${episodeImage}`)
         : "";
 
 // Stable IDs
