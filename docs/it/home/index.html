@@ -451,7 +451,7 @@
             if (!item) return null;
             return {
                 title: item.title || item.name || '',
-                date: item.date || '',
+                date: item.releaseDate || item.dateISO || item.date || '',
                 summary: item.summary || item.description || '',
                 shortSummary: truncate(item.summary || item.description || '', 220),
                 url: item.url || '',
@@ -478,9 +478,12 @@
         function getLatestReleased(contentArray) {
             const today = new Date();
             if (!Array.isArray(contentArray)) return [];
-            const filtered = contentArray.filter(c => new Date(c.releaseDate) <= today);
+            const filtered = contentArray.filter(c => {
+                const date = new Date(c.releaseDate || c.dateISO);
+                return Number.isNaN(date.getTime()) || date <= today;
+            });
             if (!filtered.length) return [];
-            filtered.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
+            filtered.sort((a, b) => new Date(b.releaseDate || b.dateISO || 0) - new Date(a.releaseDate || a.dateISO || 0));
             return filtered;
         }
 
@@ -503,7 +506,7 @@
             const slotItems = slotConfig.map((slot, slotIndex) => {
                 const contentList = window.contentData[slot.type];
                 const released = getLatestReleased(contentList);
-                const releasedItem = (released && released[slot.index]) ? released[slot.index] : null;
+                const releasedItem = released[slot.index] || released[0] || null;
                 const renderedCard = cards[slotIndex];
                 const renderedLink = renderedCard?.querySelector('.week-title a');
                 const renderedItem = renderedLink ? {
