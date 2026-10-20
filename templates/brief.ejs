@@ -86,7 +86,7 @@
                                     height="180"
                                     frameborder="0"
                                     scrolling="no"
-                                    src="https://transistor.fm/e/<%- items[items.length-1]%>"
+                                    src="https://share.transistor.fm/e/<%- items[items.length-1]%>"
                                     title="Embracing Digital This Week audio"
                                     loading="lazy"
                             ></iframe>
@@ -101,119 +101,11 @@
         </div>
     </section>
 
-    <!-- TOP STORIES -->
-    <% if (topStories?.length) { %>
-        <section class="brief-top-stories">
-            <h2><%- lang.topStories %></h2>
-
-            <% topStories.forEach(story => {
-                const hasTitle = story.title && story.title.trim().length;
-                let fallbackTitle = '';
-                if (!hasTitle && story.text) {
-                    // strip basic HTML tags if any and trim for fallback
-                    const plain = String(story.text).replace(/<[^>]+>/g, '').trim();
-                    fallbackTitle = plain.length > 80 ? plain.slice(0, 80) + '…' : plain;
-                }
-                const displayTitle = hasTitle ? story.title : fallbackTitle;
-            %>
-            <article class="top-story">
-                <% if (story.image) { %>
-                    <img src="<%= story.image %>"
-                         alt="<%- displayTitle || 'Story image' %>"
-                         loading="lazy">
-                <% } else { %>
-                    <img src="/images/logo.png"
-                         alt="Embracing Digital Transformation Placeholder"
-                         class="fallback-image"
-                         loading="lazy">
-                <% } %>
-
-                <div class="top-story-content">
-                    <% if (displayTitle) { %>
-                        <h3><%- displayTitle %></h3>
-                    <% } %>
-
-                    <% if (story.text) { %>
-                        <p><%- story.text %></p>
-                    <% } %>
-
-                    <% if (story.urls?.length) { %>
-                        <div class="story-links">
-                            <% story.urls.forEach(l => { %>
-                                <a href="<%= l.url %>" target="_blank" rel="noopener">
-                                    <%= l.label || lang.readMore %>
-                                </a>
-                            <% }) %>
-                        </div>
-                    <% } %>
-
-                    <% if (story.pillar) { %>
-                        <span class="story-pillar"><%= story.pillar %></span>
-                    <% } %>
-                </div>
-            </article>
-            <% }) %>
-        </section>
+    <% if (content) { %>
+        <article class="brief-episode-article">
+            <%- content %>
+        </article>
     <% } %>
-
-    <!-- FULL COVERAGE BY PILLAR -->
-    <section class="brief-pillars">
-        <h2><%- lang.fullCoverage %></h2>
-
-        <% for (let pillarName in pillars) {
-            const pillar = pillars[pillarName];
-            if (!pillar || !pillar.articles || !pillar.articles.length) continue;
-        %>
-        <section class="pillar-section" id="<%= pillarName.toLowerCase().replace(/\s+/g,'-') %>">
-            <h3><%= pillarName %></h3>
-
-            <% pillar.articles.forEach(article => {
-                const hasTitle = article.title && article.title.trim().length;
-                let fallbackTitle = '';
-                if (!hasTitle && article.text) {
-                    const plain = String(article.text).replace(/<[^>]+>/g, '').trim();
-                    fallbackTitle = plain.length > 80 ? plain.slice(0, 80) + '…' : plain;
-                }
-                const displayTitle = hasTitle ? article.title : fallbackTitle;
-            %>
-            <article class="pillar-article">
-                <div class="pillar-article-image">
-                    <% if (article.image) { %>
-                        <img src="<%= article.image %>"
-                             alt="<%- displayTitle || (pillarName + ' story image') %>"
-                             loading="lazy">
-                    <% } else { %>
-                        <img src="/images/logo.png"
-                             alt="Embracing Digital Transformation Placeholder"
-                             class="fallback-image"
-                             loading="lazy">
-                    <% } %>
-                </div>
-
-                <div class="pillar-article-content">
-                    <% if (displayTitle) { %>
-                        <h4><%- displayTitle %></h4>
-                    <% } %>
-
-                    <% if (article.text) { %>
-                        <p><%- article.text %></p>
-                    <% } %>
-
-                    <% if (article.urls?.length) { %>
-                        <div class="story-links">
-                            <% article.urls.forEach(l => { %>
-                                <a href="<%= l.url %>" target="_blank" rel="noopener">
-                                    <%= l.label ||  lang.readMore %>
-                                </a>
-                            <% }) %>
-                        </div>
-                    <% } %>
-                </div>
-            </article>
-            <% }) %>
-        </section>
-        <% } %>
-    </section>
 </main>
 
 <%
