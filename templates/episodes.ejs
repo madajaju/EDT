@@ -19,7 +19,6 @@ const pageUrl = (page && (page.canonical || page.url)) ? (page.canonical || page
 
 
 const safeText = (v) => (v == null ? "" : String(v));
-const slugify = (s) => safeText(s).toLowerCase().trim().replace(/\s+/g, "-");
 
 // Accept either array or object input
 const inputEpisodes = Array.isArray(episodes)
@@ -80,6 +79,9 @@ const THUMB_H = 360;
             const dateTxt = displayDate(episode);
 
             const guestNames = episode.guests ? Object.keys(episode.guests) : [];
+            const guestLinks = Array.isArray(episode.guestLinks)
+                ? episode.guestLinks
+                : guestNames.map(name => ({ name, href: '' }));
             const tags = episode.tags ? Object.keys(episode.tags) : [];
         %>
 
@@ -105,17 +107,23 @@ const THUMB_H = 360;
                     <p class="episode-date"><%= dateTxt %></p>
                 <% } %>
 
-                <% if (guestNames.length) { %>
+                <% if (guestLinks.length) { %>
                     <p class="guests" style="text-align:left">
-                        <%- guestNames.map(guestname => {
-                            const guestSlug = slugify(guestname);
-                            return `<a href="${langRoot}/guests/${guestSlug}/index.html">${guestname}</a>`;
-                        }).join(' ') %>
+                        <% for (let guestIndex = 0; guestIndex < guestLinks.length; guestIndex++) {
+                            const guest = guestLinks[guestIndex];
+                        %>
+                            <% if (guest.href) { %>
+                                <a href="<%= safeText(guest.href) %>"><%= safeText(guest.name) %></a>
+                            <% } else { %>
+                                <%= safeText(guest.name) %>
+                            <% } %>
+                            <%= guestIndex < guestLinks.length - 1 ? ' ' : '' %>
+                        <% } %>
                     </p>
                 <% } %>
 
                 <% if (episode.summary) { %>
-                    <p class="summary" style="text-align:left"><%- episode.summary %></p>
+                    <p class="summary" style="text-align:left"><%= safeText(episode.summary) %></p>
                 <% } %>
 
                 <% if (tags.length) { %>
