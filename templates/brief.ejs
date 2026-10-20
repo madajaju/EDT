@@ -1,4 +1,4 @@
-<%- include(`${baseDir}/${lang.id}/header.html`, { ...locals }) %>
+<%- await include(`${baseDir}/${lang.id}/header.html`, { ...locals }) %>
 
 <main id="content" class="brief-editorial">
 
@@ -151,4 +151,4 @@ const briefBreadcrumbs = {
 <script type="application/ld+json"><%- JSON.stringify(briefStructuredData, null, 2) %></script>
 <script type="application/ld+json"><%- JSON.stringify(briefBreadcrumbs, null, 2) %></script>
 
-<%- include(`${baseDir}/${lang.id}/footer.html`, { ...locals }) %>
+<%- await include(`${baseDir}/${lang.id}/footer.html`, { ...locals }) %>
