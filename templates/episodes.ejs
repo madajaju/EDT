@@ -82,9 +82,17 @@ const THUMB_H = 360;
             const guestLinks = Array.isArray(episode.guestLinks)
                 ? episode.guestLinks
                 : guestNames.map(name => ({ name, href: '' }));
+            const tagNames = Array.isArray(episode.tags)
+                ? episode.tags.map(tag => typeof tag === 'string' ? tag : tag?.name || tag?.label || tag?.title || tag?.tag || tag?.id || '')
+                    .map(name => safeText(name).trim()).filter(Boolean)
+                : episode.tags && typeof episode.tags === 'object'
+                    ? Object.keys(episode.tags)
+                    : typeof episode.tags === 'string'
+                        ? episode.tags.split(/[,;|]/).map(name => name.trim()).filter(Boolean)
+                        : [];
             const tagLinks = Array.isArray(episode.tagLinks)
                 ? episode.tagLinks
-                : (episode.tags ? Object.keys(episode.tags) : []).map(name => ({
+                : tagNames.map(name => ({
                     name,
                     href: `${langRoot}/search.html?query=${encodeURIComponent(name)}`
                 }));
