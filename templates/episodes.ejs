@@ -82,7 +82,12 @@ const THUMB_H = 360;
             const guestLinks = Array.isArray(episode.guestLinks)
                 ? episode.guestLinks
                 : guestNames.map(name => ({ name, href: '' }));
-            const tags = episode.tags ? Object.keys(episode.tags) : [];
+            const tagLinks = Array.isArray(episode.tagLinks)
+                ? episode.tagLinks
+                : (episode.tags ? Object.keys(episode.tags) : []).map(name => ({
+                    name,
+                    href: `${langRoot}/search.html?query=${encodeURIComponent(name)}`
+                }));
         %>
 
         <article class="episode-card" aria-label="<%= title %>">
@@ -126,12 +131,12 @@ const THUMB_H = 360;
                     <p class="summary" style="text-align:left"><%= safeText(episode.summary) %></p>
                 <% } %>
 
-                <% if (tags.length) { %>
+                <% if (tagLinks.length) { %>
                     <nav class="tags" aria-label="Episode tags" style="text-align:left">
-                        <% for (let k = 0; k < Math.min(tags.length, 8); k++) {
-                            const tname = tags[k];
+                        <% for (let k = 0; k < Math.min(tagLinks.length, 8); k++) {
+                            const tag = tagLinks[k];
                         %>
-                        <a href="<%= `${langRoot}/search.html?query=${encodeURIComponent(tname)}` %>"><span><%= tname %></span></a>
+                        <a href="<%= safeText(tag.href) %>"><span><%= safeText(tag.name) %></span></a>
                         <% } %>
                     </nav>
                 <% } %>
