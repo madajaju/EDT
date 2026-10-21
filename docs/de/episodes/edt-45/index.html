@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Nicht alle Kerne sind gleich. | Embracing Digital Transformation</title>
+    <meta name="description" content="In this episode, Darren Pulsipher, Chief Solution Architect, Intel, and Stephen Holt, Cloud Solution Architect, Intel discuss cloud optimization and studies that show that cores perform differently for various workloads.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/de/episodes/edt-45/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nicht alle Kerne sind gleich. | Embracing Digital Transformation">
+    <meta property="og:description" content="In this episode, Darren Pulsipher, Chief Solution Architect, Intel, and Stephen Holt, Cloud Solution Architect, Intel discuss cloud optimization and studies that show that cores perform differently for various workloads.">
+    <meta property="og:url" content="https://embracingdigital.org/de/episodes/edt-45/">
+    <meta property="og:image" content="https://embracingdigital.org/de/episodes/edt-45/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nicht alle Kerne sind gleich. | Embracing Digital Transformation">
+    <meta name="twitter:description" content="In this episode, Darren Pulsipher, Chief Solution Architect, Intel, and Stephen Holt, Cloud Solution Architect, Intel discuss cloud optimization and studies that show that cores perform differently for various workloads.">
+    <meta name="twitter:image" content="https://embracingdigital.org/de/episodes/edt-45/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/de/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/de/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/de/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/de/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/de/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/de/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/de/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/de/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/de/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/de/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/de/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/de/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/de/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/de/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/de/">Home</a></li>
+        <li><a href="/de/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 45: Nicht alle Kerne sind gleich.</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/de/episodes/edt-45/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/de/episodes/edt-45/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 45</span>
+                <span class="episode-title">Nicht alle Kerne sind gleich.</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2021-03-31T00:00:00.000Z" itemprop="datePublished">2021-03-31T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="45"/>
+            <meta itemprop="inLanguage" content="de"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2021-03-31T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            In this episode, Darren Pulsipher, Chief Solution Architect, Intel, and Stephen Holt, Cloud Solution Architect, Intel discuss cloud optimization and studies that show that cores perform differently for various workloads.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../de/search.html?query=cloudmigration"
+                   itemprop="keywords">cloudmigration</a>
+                
+                <a href="../../de/search.html?query=testingandbenchmarking"
+                   itemprop="keywords">testingandbenchmarking</a>
+                
+                <a href="../../de/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../de/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../de/search.html?query=technology"
+                   itemprop="keywords">technology</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../de/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../de/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Intel hat Cloud-Lösungsarchitekten eingestellt, um Kunden dabei zu unterstützen, intelligent zu den richtigen Cloud-Instanzen für ihre Workloads zu wechseln. Stephen ist kürzlich bei Intel eingestiegen und verfügt über eine lange Erfahrung in Datenbanken im Allgemeinen, wobei er sich in den letzten sieben oder acht Jahren auf die Cloud konzentriert hat und deren Ressourcen zum Vorteil der Kunden nutzt.</p>
+<p>Einige der schwierigsten Aspekte, mit denen Stephen bei der Unterstützung von Kunden beim Umzug in die Cloud konfrontiert war, sind die Preisgestaltung und die Erwartungen an den Umzug. Cloud-Service-Anbieter behaupten oft, dass Kunden Geld sparen werden, indem sie in die Cloud wechseln, aber das ist oft nicht der Fall.</p>
+<p>Ein Grund dafür liegt darin, dass es ständige Veränderungen in den Merkmalen, Funktionen und Fähigkeiten des wettbewerbsintensiven Marktes der Cloud-Service-Provider gibt. Ein weiterer Grund ist Unwissenheit, zum Beispiel die Annahme, dass ein Kern-VCP überall gleich ist. Eine Migration mit einer &quot;Lift and Shift&quot; Denkweise kann auch sehr teuer sein. Optimierung ist der Schlüssel für eine intelligente Cloud-Migration.</p>
+<p>Um Kosten zu senken und potenziell viel Geld zu sparen, müssen Sie die richtigen Instanzen für die richtigen Leistungen auswählen. Nicht alle Kerne oder virtuellen CPUs sind gleich. Innerhalb von AWS gibt es den M4, Intels Broadwell, und den M5, der eine Mischung aus Cascade Lake und Skylake ist. Unterschiedliche Arbeitslasten können diese Plattformen sehr unterschiedlich nutzen.</p>
+<h2>Leistungsstärke von CoreMark</h2>
+<p>CoreMark ist eine Anwendung mit einem einzigen Thread, die Registerbewegungen und einfache Additionen für beliebige Anzahl von CPUs testet. Über drei Generationen von Intel-Prozessoren, nämlich Broadwell, Skylake und Cascade Lake, zeigt dieser Test nur sehr geringe Unterschiede zwischen ihnen. Diese Informationen wurden irrtümlicherweise zur Unterstützung von Kundenentscheidungen verwendet, da der Test keine effektive Methode darstellt, um die Unterschiede in den Prozessen selbst zu messen. Es können erhebliche Unterschiede in der Leistungsfähigkeit bei unterschiedlichen Arbeitslasten auftreten.</p>
+<h2>Datenbank WL-Leistung</h2>
+<p>Stephen führte digitale Tests an realen Arbeitslasten durch, die sich auf Open-Source-Datenbanken konzentrierten. Die Cascade Lake-Umgebung war für Open-Source drei Mal besser als die Broadwell-Umgebung, was angesichts der Fortschritte bei Geschwindigkeit und On-Chip-Verbesserungen, die von einer geringen Latenz profitieren, Sinn macht. Eine Erhöhung um zwei Generationen ergibt eine zwei- oder dreifach bessere Leistung bei diesen Arbeitslasten.</p>
+<p>Die Arbeitsbelastung und der Kern müssen zusammen betrachtet werden. Zum Beispiel könnte ein Kunde dazu verleitet werden, auf eine VCPU umzusteigen, die laut Amazon um 10% günstiger ist. AWS könnte jedoch Kerne auf diese Prozessoren packen, und Sie wechseln nun von einer Umgebung, in der Sie eine von 48 virtuellen Maschinen auf einem Server sind, zu einer, in der es 128 virtuelle Maschinen gibt. Ihr Zugriff auf den Speicher ist begrenzt, und Sie könnten 60% weniger Leistung für 10% Ersparnis erhalten.</p>
+<p>Organisationen glauben oft, dass sie keinen Systemarchitekten mehr benötigen, wenn sie in die Cloud auslagern. Es ist wahr, dass Architekten keine physischen Maschinen mehr aufstellen und stapeln, aber sie tun es jetzt virtuell und müssen verstehen, was verschiedene Instanzen für unterschiedliche Arbeitslasten bieten.</p>
+<p>Intel arbeitet an einem Tool, um zu zeigen, welche Workloads am besten auf welchen Instanzen laufen. In der Zwischenzeit hat Intel einige allgemeine Richtlinien und Cloud-Lösungsarchitekten, um Kunden zu beraten.</p>
+<p>Darüber hinaus ist es wichtig, umfangreich zu testen, um zu verstehen, wo man Workloads platzieren sollte. Gleichzeitig ist es auch wichtig, zu testen und zu benchmarken, um zu überprüfen, ob man das erhält, was man von einem Anbieter erwartet.</p>
+<h2>Datenbank WL Performance - Non NVMe</h2>
+<p>Intel hat einige Tests an Arbeitslasten auf frisch installierten 64-Kern-Fixed-64-VCPU-Instanzen durchgeführt. Nachdem die anfängliche Anzahl ermittelt wurde, wurde eine weitere Instanz erstellt und der gleiche Test erneut durchgeführt. Die Ergebnisse unterscheiden sich dramatisch für den gleichen Test jedes Mal. Dies könnte darauf zurückzuführen sein, dass möglicherweise eine Mischung von Prozessen angeboten wird, die auf einer bestimmten Stufenebene verfügbar sind, oder es könnten zusätzliche Latenzen und Verzögerungen bei der Anbindung an den Blockspeicher existieren, oder sogar laute Nachbarn. Daher ist es sinnvoll, Tests durchzuführen, um sicherzustellen, dass das System den Erwartungen entspricht.</p>
+<p>Kurz gesagt, um den größten Nutzen aus der Cloud zu ziehen, müssen Sie sich informieren, die Systeme testen und die verfügbare Hilfe in Anspruch nehmen.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/de/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/de/episodes/",
+  "inLanguage": "de",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/de/episodes/edt-45/#episode",
+  "url": "https://embracingdigital.org/de/episodes/edt-45/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/de/episodes/edt-45/"
+  },
+  "name": "Nicht alle Kerne sind gleich.",
+  "episodeNumber": 45,
+  "datePublished": "2021-03-31T00:00:00.000Z",
+  "inLanguage": "de",
+  "description": "In this episode, Darren Pulsipher, Chief Solution Architect, Intel, and Stephen Holt, Cloud Solution Architect, Intel discuss cloud optimization and studies that show that cores perform differently for various workloads.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/de/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/de/episodes/edt-45/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../de/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../de/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/de/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/de/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Nicht alle Kerne sind gleich.",
+      "item": "https://embracingdigital.org/de/episodes/edt-45/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

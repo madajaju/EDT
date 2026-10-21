@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Protegendo seu Castelo com Confiança Zero | Embracing Digital Transformation</title>
+    <meta name="description" content="On this episode, Darren discusses zero trust security with Intel’s Steve Orrin, CTO Public Sector, and Cameron Chehreh, VP-GM Public Sector.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/pt/episodes/edt-84/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Protegendo seu Castelo com Confiança Zero | Embracing Digital Transformation">
+    <meta property="og:description" content="On this episode, Darren discusses zero trust security with Intel’s Steve Orrin, CTO Public Sector, and Cameron Chehreh, VP-GM Public Sector.">
+    <meta property="og:url" content="https://embracingdigital.org/pt/episodes/edt-84/">
+    <meta property="og:image" content="https://embracingdigital.org/pt/episodes/edt-84/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Protegendo seu Castelo com Confiança Zero | Embracing Digital Transformation">
+    <meta name="twitter:description" content="On this episode, Darren discusses zero trust security with Intel’s Steve Orrin, CTO Public Sector, and Cameron Chehreh, VP-GM Public Sector.">
+    <meta name="twitter:image" content="https://embracingdigital.org/pt/episodes/edt-84/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/pt/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/pt/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/pt/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/pt/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/pt/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/pt/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/pt/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/pt/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/pt/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/pt/">Home</a></li>
+        <li><a href="/pt/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 84: Protegendo seu Castelo com Confiança Zero</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/pt/episodes/edt-84/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/pt/episodes/edt-84/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 84</span>
+                <span class="episode-title">Protegendo seu Castelo com Confiança Zero</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2022-08-21T00:00:00.000Z" itemprop="datePublished">2022-08-21T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="84"/>
+            <meta itemprop="inLanguage" content="pt"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2022-08-21T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            On this episode, Darren discusses zero trust security with Intel’s Steve Orrin, CTO Public Sector, and Cameron Chehreh, VP-GM Public Sector.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../pt/search.html?query=asset_inventory"
+                   itemprop="keywords">asset_inventory</a>
+                
+                <a href="../../pt/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../pt/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../pt/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+                <a href="../../pt/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>O antigo modelo de segurança poderia ser comparado a um castelo, com guardas ao longo da estrada e um fosso cercando o castelo. Todas as joias da coroa, neste caso, dados, estariam localizadas e gerenciadas centralmente dentro do castelo. A emergência da confiança-zero criou um novo framework.</p>
+<p>A maior ameaça aos dados é o usuário final, portanto, a estratégia número um é um plano de trabalho que começa na borda externa com pilares de excelência e proteções internas. Essa forma atualizada de pensar permite que as organizações envolvam sua missão e parceiros comerciais de maneira real na conversa.</p>
+<p>O antigo estilo de pensamento era mais baseado em uma abordagem de concha rígida, com proteções e controles nos pontos vulneráveis. Uma parte fundamental da arquitetura de confiança zero é uma abordagem baseada em riscos, que é mais dinâmica e se baseia em duas coisas: o que funcionou e o que não funcionou no passado. Então, se os atacantes entraram pela porta esquerda da última vez, é claro que você reforçará as defesas lá, mas também aprenderá com esse ataque e reforçará outros lugares com base no novo conhecimento sobre como isso aconteceu. Uma abordagem baseada em riscos não é apenas resolver o último ataque, mas pensar adiante e aplicar os controles corretos para ameaças atuais e futuras em toda a empresa.</p>
+<p>Parte da abordagem baseada em risco é entender o ecossistema. Clientes, parceiros e utilizadores são todos parte do cálculo de segurança. A antiga abordagem de casca dura não funciona. Assim como um castelo tem pessoas e suprimentos entrando e saindo, e as riquezas podem estar localizadas em vários pontos do reino, a confiança zero leva a segurança um passo adiante, considerando todas as entradas e saídas dos dados ou das pessoas que estão acessando-os.</p>
+<p>Tradicionalmente, alguém poderia ter acesso com um único registro ao castelo corporativo. Existem vários princípios de zero trust (confiança zero), mas as duas bases são negação padrão e monitoramento e autorização contínuos. A confiança não é automaticamente conquistada, nem é permanente. Por exemplo, se um visitante entra no castelo, eles são validados na recepção e depois perguntam qual é o motivo da visita. Eles podem ser autorizados a visitar uma pessoa em um determinado quarto por um certo período de tempo, e serão acompanhados durante a visita. Também será feito um monitoramento do que eles trazem e levam em sua visita.</p>
+<p>A abordagem &quot;zero trust&quot; aplica-se ao acesso em todos os locais: data centers, nuvens, dispositivos de borda, ambientes empresariais, etc. É centrada em dados e acesso, casada com uma abordagem baseada em risco. Deve haver mais estratégia envolvida. A abordagem resultante baseada em &quot;zero trust&quot; não descarta o que funcionou bem antes, mas combina os bons processos, princípios e tecnologias e adiciona um elemento temporal.</p>
+<p>Este novo elemento não é tão difícil como muitas vezes tem sido retratado, mas é um problema de processo e cultura que pode ser complicado.</p>
+<p>Muitos desenvolvedores têm o medo de que uma arquitetura de confiança zero os torne mais lentos, mas especialistas em segurança e desenvolvedores precisam ter uma parceria para superar essa percepção. Um exemplo do mundo real é o Log4j. Há seis meses, os desenvolvedores podiam baixá-lo sem problemas, mas agora o ambiente de ameaça mudou. Sem uma abordagem baseada em riscos, um desenvolvedor seria capaz de baixar o Log4j até alguém da segurança chegar e desativá-lo. Com uma abordagem baseada em riscos, juntamente com abordagens de acesso, o Log4j estaria indisponível e uma alternativa seria oferecida. Outro exemplo seria quando o Log4j já está incorporado em um produto, a avaliação dinâmica de confiança poderia adicionar controles extras em vez de bloqueá-lo completamente. Trata-se dos dois lados do cálculo em jogo.</p>
+<p>Esta parceria é similar ao treinamento conjunto e compartilhamento de informações que acontece no processo de incorporação de segurança no desenvolvimento. À medida que um produto está sendo construído e testado, a segurança também monitora e avalia os riscos tanto para as entidades com as quais você está trabalhando quanto para as vulnerabilidades do produto em tempo real. Desenvolver uma abordagem baseada em riscos no processo aproveita a inteligência que aborda grande parte do que percebemos como difícil.</p>
+<p>Qual é o primeiro passo para CISOs, CIOs ou CTOs iniciar o zero trust? Cameron sugere abandonar o &quot;geekspeak&quot; e comunicar em inglês comum. Iniciar a iniciativa pode ser desafiador, pois normalmente os líderes trabalham com um resultado ou objetivo em mente. O zero trust não tem um objetivo definido para trabalhar, além de criar um ambiente mais confiável para que os usuários operem. Existem, é claro, KPIs e outras medidas para mostrar aumento da segurança, mas é uma jornada, não um destino. Ele também enfatiza o financiamento contínuo; não incorpore o orçamento de cibersegurança ao orçamento de TI. Precisa ser separado e distinto.</p>
+<p>O melhor lugar para encontrar informações de alto nível com orientações práticas é a publicação do NIST SP 800-207. Ele também apresenta os cinco pilares de confiança, que são bons pontos de partida.</p>
+<p>Um aspecto fundamental primário é ter um bom inventário de ativos do que precisa ser protegido, como fontes de dados, bancos de dados, processos de negócios e aplicações de transação. Basicamente, você precisa definir o perímetro do seu castelo. É importante não apenas pensar no que você possui, mas no que você depende, como o ambiente SAAS, a infraestrutura de nuvem e ferramentas de terceiros.</p>
+<p>O panorama maior é conhecer sua cadeia de valor. Não é apenas o que está dentro do seu castelo, mas sim como você ganha dinheiro, como esse dinheiro é distribuído, quem você paga e seus fornecedores. Cada um é uma peça crítica da cadeia.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/pt/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/pt/episodes/",
+  "inLanguage": "pt",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/pt/episodes/edt-84/#episode",
+  "url": "https://embracingdigital.org/pt/episodes/edt-84/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/pt/episodes/edt-84/"
+  },
+  "name": "Protegendo seu Castelo com Confiança Zero",
+  "episodeNumber": 84,
+  "datePublished": "2022-08-21T00:00:00.000Z",
+  "inLanguage": "pt",
+  "description": "On this episode, Darren discusses zero trust security with Intel's Steve Orrin, CTO Public Sector, and Cameron Chehreh, VP-GM Public Sector.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/pt/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/pt/episodes/edt-84/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/pt/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/pt/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Protegendo seu Castelo com Confiança Zero",
+      "item": "https://embracingdigital.org/pt/episodes/edt-84/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

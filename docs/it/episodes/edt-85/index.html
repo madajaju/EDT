@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Intelligenza Artificiale e Sicurezza. | Embracing Digital Transformation</title>
+    <meta name="description" content="On this episode, Darren discusses the data aspects of artificial intelligence (AI) and the importance of securing that data.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/it/episodes/edt-85/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Intelligenza Artificiale e Sicurezza. | Embracing Digital Transformation">
+    <meta property="og:description" content="On this episode, Darren discusses the data aspects of artificial intelligence (AI) and the importance of securing that data.">
+    <meta property="og:url" content="https://embracingdigital.org/it/episodes/edt-85/">
+    <meta property="og:image" content="https://embracingdigital.org/it/episodes/edt-85/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Intelligenza Artificiale e Sicurezza. | Embracing Digital Transformation">
+    <meta name="twitter:description" content="On this episode, Darren discusses the data aspects of artificial intelligence (AI) and the importance of securing that data.">
+    <meta name="twitter:image" content="https://embracingdigital.org/it/episodes/edt-85/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/it/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/it/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/it/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/it/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/it/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/it/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/it/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/it/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/it/">Home</a></li>
+        <li><a href="/it/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 85: Intelligenza Artificiale e Sicurezza.</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/it/episodes/edt-85/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/it/episodes/edt-85/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 85</span>
+                <span class="episode-title">Intelligenza Artificiale e Sicurezza.</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2022-05-05T00:00:00.000Z" itemprop="datePublished">2022-05-05T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="85"/>
+            <meta itemprop="inLanguage" content="it"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2022-05-05T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            On this episode, Darren discusses the data aspects of artificial intelligence (AI) and the importance of securing that data.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../it/search.html?query=advancedcommunications"
+                   itemprop="keywords">advancedcommunications</a>
+                
+                <a href="../../it/search.html?query=datasecurity"
+                   itemprop="keywords">datasecurity</a>
+                
+                <a href="../../it/search.html?query=datamanagement"
+                   itemprop="keywords">datamanagement</a>
+                
+                <a href="../../it/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../it/search.html?query=encryption"
+                   itemprop="keywords">encryption</a>
+                
+                <a href="../../it/search.html?query=generativeai"
+                   itemprop="keywords">generativeai</a>
+                
+                <a href="../../it/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../it/search.html?query=technology"
+                   itemprop="keywords">technology</a>
+                
+                <a href="../../it/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+                <a href="../../it/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>Fallimenti dell&#39;Intelligenza Artificiale</h2>
+<p>Di recente, Darren ha chiesto a una classe di studenti delle scuole superiori e dell&#39;università che studiavano l&#39;IA di trovare dei fallimenti dell&#39;IA. Hanno trovato esempi come Microsoft Tay, un chatbot che ha imparato conversazioni informali da Twitter e, entro 24 ore, stava esprimendo commenti razzisti e misogini basati sulla manipolazione dei feed di Twitter. Un altro esempio è stato un sistema di tracciamento della palla dell&#39;Inverness Football Club che doveva tracciare un pallone da calcio ma invece ha seguito la testa calva di un arbitro. Più grave è stato un incidente mortale quando un veicolo autonomo di Uber non ha riconosciuto un pedone al di fuori di un attraversamento pedonale e non è riuscito a fermarsi.</p>
+<h2>Implementazione di soluzioni</h2>
+<p>Tutti questi fallimenti dell&#39;intelligenza artificiale erano legati ai dati. Quando si implementano soluzioni di intelligenza artificiale, è necessario porsi domande critiche: Dove sto effettuando il mio ragionamento? L&#39;endpoint è sicuro? Se si sta effettuando tutto il ragionamento nell&#39;endpoint, ad esempio attraverso la rilevazione oggetti tramite una telecamera, è importante assicurarsi che sia sicuro; nessuno dovrebbe essere in grado di manipolare i dati, la telecamera o il modello.</p>
+<p>Un&#39;altra domanda è, cosa verrà implementato? Sto implementando una rete neurale o un algoritmo sul campo, o semplicemente sto trasmettendo i dati dal campo a un centro dati per effettuare l&#39;inferenza lì? Inoltre, quando l&#39;IA viene operazionalizzata, è necessario chiedersi con quale frequenza i modelli o gli algoritmi verranno aggiornati.</p>
+<h2>Alveare Intelligente</h2>
+<p>Il flusso di lavoro per lo sviluppo, l&#39;addestramento, il testing, il deployment e le inferenze dell&#39;AI ha bisogno di tre elementi: l&#39;applicazione, il modello e i dati. Questi tre elementi devono migrare nel flusso di lavoro insieme e essere protetti contemporaneamente. È necessario assicurarsi che i dati di produzione non vengano manipolati neppure durante la fase di produzione.</p>
+<h2>Minacce di sicurezza AI.</h2>
+<p>Le minacce per l&#39;AI sono significative, che siano spionaggio, sabotaggio o frodi perché la superficie di attacco è ampia.</p>
+<h2>Gli attacchi</h2>
+<p>Prima vengono i modelli. Un modello può essere manipolato, ad esempio qualcuno che mette adesivi bianchi e neri sui segnali di stop in modo che non vengano riconosciuti come tali o qualcuno che modifica la rilevazione di modelli per attuare attacchi indetecti. I modelli devono essere protetti non solo durante l&#39;addestramento, ma anche durante il testing, la distribuzione e l&#39;inferenza. Critici sono la crittografia, il controllo degli accessi e il controllo dei modelli e delle versioni, proprio come nella sviluppo di un&#39;applicazione.</p>
+<p>I dati di formazione e produzione di origine devono anche essere protetti dalla manipolazione.</p>
+<h2>Tipi di attacchi</h2>
+<p>Un articolo del Belfer Center colloca le minacce su un asse del formato e un asse della visibilità. L&#39;asse del formato varia dal fisico al digitale. L&#39;asse della visibilità va dal percettibile all&#39;impercettibile.</p>
+<h2>Attacchi fisici</h2>
+<p>Gli attacchi fisici possono alterare oggetti fisici come l&#39;adesivo sul segnale di stop. Questi attacchi sono stati evidenti fin dall&#39;inizio con la guida autonoma e il riconoscimento facciale. Abbiamo bisogno di una migliore formazione degli algoritmi di intelligenza artificiale per contrastare questi attacchi, utilizzando tecniche di apprendimento rinforzato e di apprendimento di casi negativi.</p>
+<h2>Attacchi digitali</h2>
+<p>Gli attacchi digitali sono più difficili da rilevare poiché non sono visibili. Un attacco potrebbe essere un rumore bianco iniettato nel flusso di dati per confondere l&#39;algoritmo. Questi attacchi sono difficili da contrastare a meno che non venga condotta un&#39;inferenza al margine o venga utilizzata la rilevazione dei modelli. Per questo motivo, è essenziale sapere da dove provengono i dati di origine, sia nell&#39;addestramento, nei test che nella produzione dei dati.</p>
+<h2>Identificare le fonti di dati</h2>
+<p>Le fonti di dati devono essere verificate e testate attraverso fonti di dati pubbliche. I dati open-source non sono ben protetti. Valuta la possibilità di generare fonti di dati in modo da avere maggiore controllo. Se utilizzi una fonte di dati condivisa, utilizza un sistema di controllo delle versioni come GitHub o GitLab per garantire coerenza. Anche i dati di test hanno bisogno di un controllo delle versioni, del controllo degli accessi e di altre misure di sicurezza, proprio come fai di solito in un flusso di lavoro DevOps.</p>
+<p>L&#39;ultima e più impegnativa parte è proteggere i dati di produzione. Avvicinarsi il più possibile ai dati durante la deduzione è un buon inizio. Molte speculazioni possono essere fatte direttamente sul bordo con elaborazione neuromorfica e persino con set di istruzioni nei processori Intel per ridurre il rischio di manipolazione dei dati durante il trasporto. Invece, è possibile crittografare i dati e inviarli al centro di dati.</p>
+<p>Proteggere e gestire i dati / Sicurezza del flusso di intelligenza artificiale.</p>
+<p>Una volta identificate tutte le fonti dei tuoi dati, ci sono tre aspetti fondamentali per la protezione: controllo, sicurezza e crittografia.</p>
+<p>La prima cosa è il controllo. Dovresti avere un controllo di versione, librerie protette e un backup e ripristino in caso di file di dati corrotti. Queste sono pratiche standard di buona sicurezza che l&#39;IA dovrebbe adottare come nel caso dello sviluppo di app.</p>
+<p>La sicurezza dovrebbe includere l&#39;autorizzazione di accesso, anche alcuni concetti di &quot;zero trust&quot; come dare accesso alle persone che ne hanno bisogno solo per un breve periodo di tempo. Assicurarsi che i modelli non vengano manipolati e che siano vincolati a specifiche applicazioni.</p>
+<p>I dati devono essere criptati durante il riposo, durante il trasferimento e durante l&#39;utilizzo. In passato, ciò era costoso in termini di utilizzo della CPU e di tempo, ma ora gran parte della crittografia avviene nel silicio ed è molto veloce con un minimo o nullo ritardo delle prestazioni.</p>
+<h2>Chiamata all&#39;azione</h2>
+<p>I dati sono fondamentali per rendere l&#39;IA di successo e sicura, quindi proteggili e utilizza fin da subito le migliori pratiche sulla sicurezza. Operazionalizza i flussi di lavoro per liberare gli esseri umani dalla monotonia quotidiana del rilascio e del test degli algoritmi di intelligenza artificiale. Automatizza il più possibile e inserisci la sicurezza nel percorso DevOps dell&#39;IA per proteggere i tuoi dati di origine, il modello e l&#39;applicazione.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/it/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/it/episodes/",
+  "inLanguage": "it",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/it/episodes/edt-85/#episode",
+  "url": "https://embracingdigital.org/it/episodes/edt-85/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/it/episodes/edt-85/"
+  },
+  "name": "Intelligenza Artificiale e Sicurezza.",
+  "episodeNumber": 85,
+  "datePublished": "2022-05-05T00:00:00.000Z",
+  "inLanguage": "it",
+  "description": "On this episode, Darren discusses the data aspects of artificial intelligence (AI) and the importance of securing that data.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/it/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/it/episodes/edt-85/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/it/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/it/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Intelligenza Artificiale e Sicurezza.",
+      "item": "https://embracingdigital.org/it/episodes/edt-85/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

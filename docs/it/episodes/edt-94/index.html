@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>la Rinascita del Cloud Privato | Embracing Digital Transformation</title>
+    <meta name="description" content="Darren Pulsipher, Chief Solutions Architect, Intel, discusses Verge.io’s software-defined data centers that simplify IT and make private cloud easy and efficient with Verge.io’s CTO, Greg Campbell.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/it/episodes/edt-94/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="la Rinascita del Cloud Privato | Embracing Digital Transformation">
+    <meta property="og:description" content="Darren Pulsipher, Chief Solutions Architect, Intel, discusses Verge.io’s software-defined data centers that simplify IT and make private cloud easy and efficient with Verge.io’s CTO, Greg Campbell.">
+    <meta property="og:url" content="https://embracingdigital.org/it/episodes/edt-94/">
+    <meta property="og:image" content="https://embracingdigital.org/it/episodes/edt-94/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="la Rinascita del Cloud Privato | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Darren Pulsipher, Chief Solutions Architect, Intel, discusses Verge.io’s software-defined data centers that simplify IT and make private cloud easy and efficient with Verge.io’s CTO, Greg Campbell.">
+    <meta name="twitter:image" content="https://embracingdigital.org/it/episodes/edt-94/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/it/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/it/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/it/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/it/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/it/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/it/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/it/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/it/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/it/">Home</a></li>
+        <li><a href="/it/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 94: la Rinascita del Cloud Privato</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/it/episodes/edt-94/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/it/episodes/edt-94/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 94</span>
+                <span class="episode-title">la Rinascita del Cloud Privato</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2022-07-07T00:00:00.000Z" itemprop="datePublished">2022-07-07T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="94"/>
+            <meta itemprop="inLanguage" content="it"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2022-07-07T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Darren Pulsipher, Chief Solutions Architect, Intel, discusses Verge.io’s software-defined data centers that simplify IT and make private cloud easy and efficient with Verge.io’s CTO, Greg Campbell.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../it/search.html?query=cloudcomputing"
+                   itemprop="keywords">cloudcomputing</a>
+                
+                <a href="../../it/search.html?query=privatecloud"
+                   itemprop="keywords">privatecloud</a>
+                
+                <a href="../../it/search.html?query=datamanagement"
+                   itemprop="keywords">datamanagement</a>
+                
+                <a href="../../it/search.html?query=infrastructure"
+                   itemprop="keywords">infrastructure</a>
+                
+                <a href="../../it/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../it/search.html?query=businesscontinuity"
+                   itemprop="keywords">businesscontinuity</a>
+                
+                <a href="../../it/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../it/search.html?query=technology"
+                   itemprop="keywords">technology</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Greg ha iniziato a programmare sul Commodore 64 quando era un bambino e non ha mai smesso. Ha lavorato su tutto, dai motori di gioco in 3D alle comunicazioni, agli engine per database, ai server web e all&#39;encryption. Ha sviluppato software e soluzioni hardware per le comunicazioni interoperabili per i primi soccorritori dopo che sono emersi problemi durante l&#39;11 settembre. Ad esempio, la polizia non poteva parlare con il dipartimento dei vigili del fuoco perché tutti erano su sistemi diversi.</p>
+<p>Dopo un&#39;uscita di successo da quella società, ha avviato una nuova azienda per costruire un motore di ricerca verticale da zero. Presto si è reso conto che la parte difficile non era il motore di ricerca o gli algoritmi, ma i problemi di infrastruttura. Ha scoperto che gran parte del codice era specifico dell&#39;hardware e mancava uno strato di astrazione. Questo è stato alla base di ciò che è diventata Yottabyte, la sua azienda che ha iniziato risolvendo il problema dello storage mettendo insieme unità economiche e presentandole come una piattaforma semplificata per cui è possibile scrivere software senza preoccuparsi di ciò che c&#39;è sotto il cofano. La sua visione si è poi ampliata includendo calcolo, memoria e networking. Yottabyte è recentemente diventata Verge.io.</p>
+<p>Il successo di Verge.io sta nel fatto che tutto è stato sviluppato da zero, compreso il design del loro linguaggio di programmazione e la scrittura dei motori di database in modo che il software possa fare tutto. Non è legato a nessuna specifica componente hardware. L&#39;obiettivo era la semplicità: non si tratta solo di un insieme di pezzi cuciti insieme per creare un&#39;unica cloud privata, ma di un intero centro dati virtualizzato.</p>
+<p>Ciò conferisce affidabilità e sicurezza, poiché sono presenti, ad esempio, aggiornamenti senza soluzione di continuità, nessuna dipendenza da hardware specifico e meno punti di accesso vulnerabili. Inoltre, gli utenti target del sistema sono generalmente esperti di IT, non esperti di SAN o programmatori.</p>
+<p>La piattaforma Verge.io offre la stessa esperienza che un cliente potrebbe ottenere da un cloud pubblico: semplicità, self-service e agilità, ma ha un costo considerevole e un beneficio di attrazione dei dati. Paghi per cose come IOP o egress con un cloud pubblico. Molti piccoli costi cominciano ad accumularsi e puoi diventare conto agli ecosistemi. Al contrario, puoi eseguire il software Verge.io, ad esempio, su server bare metal per risparmiare denaro e avere la possibilità di scalare rapidamente verso l&#39;alto o verso il basso. In un cloud pubblico, rinunci anche a molto controllo. Con un cloud privato, mantieni i tuoi dati più vicini a dove vengono generati e puoi operare efficientemente al margine.</p>
+<p>Parte della ragione per cui i fornitori di servizi scelgono Verge.io è che possono gestire i carichi di lavoro dei loro clienti senza rinunciare al margine di costo e ridurre le complicazioni del passaggio al cloud pubblico.</p>
+<p>Le esigenze degli altri clienti vengono soddisfatte perché possono realizzare cose che sono molto difficili da fare con altri software. Ad esempio, l&#39;Università del Michigan ha riscontrato un notevole miglioramento dell&#39;efficienza e della facilità d&#39;uso. Hanno migliaia di ricercatori e, quando ottengono finanziamenti, hanno bisogno di un ambiente conforme a HIPAA o CUI. Prima, ogni richiesta richiedeva sei o nove mesi per distribuire, installare e certificare l&#39;hardware. Verge.io ha creato un ambiente, e l&#39;avvio è semplice come premere un pulsante. All&#39;utente viene fornito un enclave virtuale completamente conforme e molto sicuro perché l&#39;enclave è incapsulato ed isolato.</p>
+<p>Un altro beneficio è che il sistema di snapshotting di Verge.io include un&#39;elevata continuità operativa e un ripristino dopo un disastro integrato. È possibile prelevare lo snapshot e spostarlo su un&#39;architettura hardware completamente diversa, e funzionerà allo stesso modo. Il funzionamento dello snapshotting consente di creare una copia clone, anche se di dieci petabyte, in meno di 30 millisecondi.</p>
+<p>Poiché il centro dati può ora migrare facilmente verso le nuvole o un centro di colocation, i proprietari di aziende hanno molta più flessibilità nel negoziare il prezzo e le prestazioni dell&#39;hardware. Inoltre, non vi è alcun tempo di inattività per gli aggiornamenti dell&#39;hardware o i cicli di aggiornamento. Il sistema non si spegne mai.</p>
+<p>Una delle aree su cui Verge.io sta lavorando è l&#39;espansione nella creazione di software di aggregazione multi-cloud con vantaggi come un pannello di gestione centralizzato.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/it/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/it/episodes/",
+  "inLanguage": "it",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/it/episodes/edt-94/#episode",
+  "url": "https://embracingdigital.org/it/episodes/edt-94/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/it/episodes/edt-94/"
+  },
+  "name": "la Rinascita del Cloud Privato",
+  "episodeNumber": 94,
+  "datePublished": "2022-07-07T00:00:00.000Z",
+  "inLanguage": "it",
+  "description": "Darren Pulsipher, Chief Solutions Architect, Intel, discusses Verge.io's software-defined data centers that simplify IT and make private cloud easy and efficient with Verge.io's CTO, Greg Campbell.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/it/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/it/episodes/edt-94/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/it/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/it/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "la Rinascita del Cloud Privato",
+      "item": "https://embracingdigital.org/it/episodes/edt-94/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Proteggere le infrastrutture critiche | Embracing Digital Transformation</title>
+    <meta name="description" content="Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, and Carla Trevino, Solutions Architect, Irdeto, talk about the importance of security in critical infrastructure.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/it/episodes/edt-107/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Proteggere le infrastrutture critiche | Embracing Digital Transformation">
+    <meta property="og:description" content="Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, and Carla Trevino, Solutions Architect, Irdeto, talk about the importance of security in critical infrastructure.">
+    <meta property="og:url" content="https://embracingdigital.org/it/episodes/edt-107/">
+    <meta property="og:image" content="https://embracingdigital.org/it/episodes/edt-107/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Proteggere le infrastrutture critiche | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, and Carla Trevino, Solutions Architect, Irdeto, talk about the importance of security in critical infrastructure.">
+    <meta name="twitter:image" content="https://embracingdigital.org/it/episodes/edt-107/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/it/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/it/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/it/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/it/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/it/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/it/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/it/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/it/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/it/">Home</a></li>
+        <li><a href="/it/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 107: Proteggere le infrastrutture critiche</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/it/episodes/edt-107/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/it/episodes/edt-107/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 107</span>
+                <span class="episode-title">Proteggere le infrastrutture critiche</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2022-09-20T00:00:00.000Z" itemprop="datePublished">2022-09-20T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="107"/>
+            <meta itemprop="inLanguage" content="it"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2022-09-20T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, and Carla Trevino, Solutions Architect, Irdeto, talk about the importance of security in critical infrastructure.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../it/search.html?query=operationaltechnology"
+                   itemprop="keywords">operationaltechnology</a>
+                
+                <a href="../../it/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../it/search.html?query=criticalinfrastructure"
+                   itemprop="keywords">criticalinfrastructure</a>
+                
+                <a href="../../it/search.html?query=edgecomputing"
+                   itemprop="keywords">edgecomputing</a>
+                
+                <a href="../../it/search.html?query=datasecurity"
+                   itemprop="keywords">datasecurity</a>
+                
+                <a href="../../it/search.html?query=riskmanagement"
+                   itemprop="keywords">riskmanagement</a>
+                
+                <a href="../../it/search.html?query=connectivity"
+                   itemprop="keywords">connectivity</a>
+                
+                <a href="../../it/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../it/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../it/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Carla è originaria del Messico, vive ad Amsterdam dopo aver vissuto in diversi paesi, tra cui la Germania, negli ultimi quattro anni. Ha studiato ingegneria industriale e meccatronica, poi dopo aver lavorato per alcuni anni nel settore, ha ottenuto una laurea magistrale in ingegneria dei sistemi di mobilità, concentrandosi sui veicoli autonomi.</p>
+<p>La definizione di infrastruttura critica OT è qualsiasi punto che può scatenare il caos nel mondo reale. Questo è molto diverso dall&#39;infrastruttura IT; l&#39;IT manca di infrastrutture vitali. Nel mondo OT, le persone possono morire se le cose vanno storte. Senza dubbio, può esserci caos nel mondo IT, ma il problema può essere risolto riparando le cose. Quando c&#39;è il caos nelle infrastrutture critiche come i trasporti, possono verificarsi incidenti e la vita delle persone è in pericolo.</p>
+<p>Negli ultimi cinque anni, è aumentata l&#39;importanza della sicurezza nelle infrastrutture critiche, e certamente durante la pandemia da COVID-19; in alcuni casi, le infrastrutture critiche sono state incessantemente attaccate. Ciò può essere attribuito al fatto che le persone diventano annoiate e più creative, ma anche perché la superficie di attacco è aumentata con il repentino passaggio al lavoro da remoto, che ha infranto alcune delle misure di sicurezza precedentemente adottate.</p>
+<p>Nei trasporti, parte del problema è l&#39;aumento della connettività, che porta a potenziali attacchi. I clienti desiderano più servizi, mentre le aziende cercano più dati e accesso alle informazioni. Con ciò si apre la rete di trasporto. La distanza di separazione, che in passato forniva sicurezza, sta diminuendo.</p>
+<p>L&#39;industria non può utilizzare le misure di sicurezza che l&#39;IT ha utilizzato per anni, poiché l&#39;IT e l&#39;OT sono completamente diverse. L&#39;IT è generalmente standardizzato, mentre l&#39;OT non lo è. L&#39;OT ha un ecosistema enorme con notevoli differenze nei dispositivi che seguono altri protocolli e implementazioni. Ad esempio, ogni paese ha implementazioni diverse. Inoltre, l&#39;OT si trova su un altro livello poiché letteralmente delle vite sono in gioco.</p>
+<p>Un&#39;altra differenza tra le infrastrutture critiche IT e OT è che nell&#39;IT, se c&#39;è un problema nella tua rete, puoi isolare e persino spegnere quella parte e spostare il carico di lavoro altrove. Ciò non è possibile nelle infrastrutture critiche, quindi l&#39;approccio è diverso.</p>
+<p>Il pericolo sta nel fatto che le reti IT e OT si sono sfaldate a causa del desiderio di una maggiore connettività e, nello stesso tempo, si è registrato un aumento delle minacce informatiche. Irdeto cerca di educare l&#39;industria sulle complessità di questi problemi e offrire soluzioni. Si tratta di soluzioni preventive, non di reazioni dopo che si è verificato un disastro.</p>
+<p>Carla afferma che le organizzazioni devono avere esperti per la sicurezza. Sviluppare la sicurezza internamente basandosi su standard obbligatori non è sufficiente poiché gli standard sono sempre in ritardo rispetto allo sviluppo.</p>
+<p>Irdeto ha garantito la sicurezza delle infrastrutture critiche per 50 anni. Hanno circa 1.000 dipendenti, e il 70 percento di essi lavora nella ricerca e sviluppo per rimanere al passo con il tipo di attacchi che avvengono oggi e quali tipi di attacchi possono esistere in futuro. Irdeto si impegna ad essere un passo avanti o a prova di futuro. I loro servizi si evolvono insieme al sistema.</p>
+<p>Irdeto può aiutare i clienti che sanno cosa ci serve, che sia PKI, chiavi e credenziali, gestione del ciclo di vita o protezione software. Possono anche aiutare i clienti che non sanno cosa ci serve e fornire soluzioni durature man mano che le minacce si evolvono.</p>
+<p>Per ulteriori informazioni su Irdeto, vai al loro sito web <a href="http://www.Irdeto.com/connected-transport">www.Irdeto.com/connected-transport</a> per saperne di più sul loro servizio.</p>
+<p>Prodotti o contattarli direttamente.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/it/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/it/episodes/",
+  "inLanguage": "it",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/it/episodes/edt-107/#episode",
+  "url": "https://embracingdigital.org/it/episodes/edt-107/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/it/episodes/edt-107/"
+  },
+  "name": "Proteggere le infrastrutture critiche",
+  "episodeNumber": 107,
+  "datePublished": "2022-09-20T00:00:00.000Z",
+  "inLanguage": "it",
+  "description": "Intel's Darren Pulsipher, Chief Solutions Architect, Public Sector, and Carla Trevino, Solutions Architect, Irdeto, talk about the importance of security in critical infrastructure.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/it/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/it/episodes/edt-107/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/it/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/it/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Proteggere le infrastrutture critiche",
+      "item": "https://embracingdigital.org/it/episodes/edt-107/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

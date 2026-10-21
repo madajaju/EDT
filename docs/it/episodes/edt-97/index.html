@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>I benefici dei database a grafo | Embracing Digital Transformation</title>
+    <meta name="description" content="Darren Pulsipher, Chief Solutions Architect, Intel, Dr. Hadi Ahmadi, Director of Solutions Architecture, Katana Graph discuss the benefits of graph databases.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/it/episodes/edt-97/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="I benefici dei database a grafo | Embracing Digital Transformation">
+    <meta property="og:description" content="Darren Pulsipher, Chief Solutions Architect, Intel, Dr. Hadi Ahmadi, Director of Solutions Architecture, Katana Graph discuss the benefits of graph databases.">
+    <meta property="og:url" content="https://embracingdigital.org/it/episodes/edt-97/">
+    <meta property="og:image" content="https://embracingdigital.org/it/episodes/edt-97/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="I benefici dei database a grafo | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Darren Pulsipher, Chief Solutions Architect, Intel, Dr. Hadi Ahmadi, Director of Solutions Architecture, Katana Graph discuss the benefits of graph databases.">
+    <meta name="twitter:image" content="https://embracingdigital.org/it/episodes/edt-97/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/it/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/it/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/it/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/it/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/it/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/it/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/it/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/it/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/it/">Home</a></li>
+        <li><a href="/it/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 97: I benefici dei database a grafo</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/it/episodes/edt-97/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/it/episodes/edt-97/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 97</span>
+                <span class="episode-title">I benefici dei database a grafo</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2022-07-28T00:00:00.000Z" itemprop="datePublished">2022-07-28T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="97"/>
+            <meta itemprop="inLanguage" content="it"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2022-07-28T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Darren Pulsipher, Chief Solutions Architect, Intel, Dr. Hadi Ahmadi, Director of Solutions Architecture, Katana Graph discuss the benefits of graph databases.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../it/search.html?query=moderncomputing"
+                   itemprop="keywords">moderncomputing</a>
+                
+                <a href="../../it/search.html?query=datamodeling"
+                   itemprop="keywords">datamodeling</a>
+                
+                <a href="../../it/search.html?query=identitymanagement"
+                   itemprop="keywords">identitymanagement</a>
+                
+                <a href="../../it/search.html?query=dataanalytics"
+                   itemprop="keywords">dataanalytics</a>
+                
+                <a href="../../it/search.html?query=generativeai"
+                   itemprop="keywords">generativeai</a>
+                
+                <a href="../../it/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../it/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../it/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../it/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../it/search.html?query=technology"
+                   itemprop="keywords">technology</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Hadi ha conseguito il suo dottorato in informatica nel 2012 e ha approfondito la ricerca sulla crittografia e la sicurezza delle informazioni di rete. Ha lavorato nel mondo accademico per alcuni anni e poi è passato all&#39;industria, concentrandosi su diversi aspetti delle soluzioni di sicurezza, tra cui la gestione delle identità e degli accessi. Nel 2015 ha iniziato a studiare il modellamento di grafi e si è reso conto di come il modellamento dei dati a grafo potesse risolvere alcuni dei problemi affascinanti e complessi nel suo campo di studio.</p>
+<p>Nei database a grafo, un grafo non significa grafici o interfacce grafiche, ma è un modo per strutturare i dati a livello di archiviazione in modo che possano essere recuperati e elaborati per risolvere problemi complessi, specialmente se i dati sono interconnessi. Il grafo offre molti vantaggi e può integrarsi con le strutture dati o le soluzioni esistenti, come i modelli di database relazionali o l&#39;archiviazione degli oggetti.</p>
+<p>La differenza principale tra i database grafici e i database relazionali è che, sebbene entrambi si occupino di relazioni, i database relazionali portano le relazioni al livello dei metadati e dello schema, mentre i database grafici si basano sulle relazioni guidate dai dati. In altre parole, nei database relazionali si mettono in relazione le colonne delle tabelle. Per introdurre una nuova relazione, è necessario modificare lo schema. Il grafico fornisce un&#39;infrastruttura senza schema in cui è possibile aggiungere una maggiore struttura ai dati ma rimanere comunque flessibili per poter acquisire qualsiasi dato non strutturato.</p>
+<p>La metà dei dati del mondo è stata creata negli ultimi anni, raccolti da molte fonti diverse, ma meno del due percento è stato analizzato, la maggior parte dei quali sono dati strutturati. I dati vengono raccolti, ma le informazioni sono insufficienti per l&#39;elaborazione. Deve esserci un modo per aggiungere in modo flessibile un po&#39; di struttura che sia sufficientemente dinamica da poter cambiare in caso di incertezza, ma che consenta comunque di beneficiare del calcolo avanzato ottimizzato. Il grafico è un ottimo modo per farlo.</p>
+<p>Se stai cercando di lavorare con dati correlati o interconnessi, rispetto ad esempio a dati isolati con valori critici, un grafico offrirà vantaggi grazie alle relazioni. Quasi ogni settore può trarne beneficio perché i dati non strutturati provengono solitamente da varie fonti e di diverse nature.</p>
+<p>Un esempio sarebbero le soluzioni per la sicurezza informatica. Ci sono dati provenienti dai log e dai treni di controllo degli ambienti di rete, dalle infrastrutture cloud, dagli host terminali, eccetera. I dati provengono da diverse fonti, come ad esempio directory o file di log grezzi. Sarebbe utile correlare i dati, ad esempio, perché tipicamente un&#39;identità o un utente che potrebbe far parte di un log del sistema di gestione dell&#39;identità potrebbe essere lo stesso utente che attiva un processo su un laptop, come ad esempio il download di un allegato da una email. Analizzando questi schemi, è possibile utilizzare questa correlazione per ottenere maggiori informazioni. In altre parole, non importa come o da dove provengano i dati, ma fornendo questo collegamento si può imparare qualcosa su ogni record osservandoli nel contesto.</p>
+<p>Un vantaggio è che non ci sono problemi di trasformazione dei dati, quindi ciò aumenta la velocità. Questo riduce anche i requisiti di archiviazione.</p>
+<p>Gli schemi grafici e le strutture di database relazionali, in generale, sono compatibili. Ecco un esempio di rete sociale semplice: I tipi di nodi nel grafico assomigliano a tabelle. Quindi puoi avere un nodo chiamato &quot;persona&quot; e quindi una tabella chiamata &quot;persona&quot;. Potresti avere un altro nodo chiamato &quot;luogo&quot; e collegare la persona a un luogo specifico. Puoi avere una tabella chiamata &quot;luogo&quot; e collegarli a chiavi esterne. Quindi hai questa relazione di amici. Un amico di una persona in un modello grafico è semplicemente un loop su se stesso. Questo ti permetterebbe di modellare tale schema. In un database relazionale, dovresti creare una nuova tabella chiamata &quot;amici&quot; e quindi connetterla. Quindi, anche a livello di schema, stai aggiungendo ridondanza e una certa struttura in cima ad essa. E se hai bisogno di aggiungere un nuovo concetto di amicizia o relazione, devi creare nuove tabelle, creando ridondanza e complessità.</p>
+<p>Altri vantaggi dei grafici rispetto ai database relazionali sono i grafici sugli elementi, l&#39;IA sui grafi e l&#39;idea di modellare i dati in tempo reale per individuare modelli basati sulla connessione dei dati. È possibile ridurre il set di dati che stai cercando o analizzando grazie alle relazioni. Si sta utilizzando il potere dei dati per potenziare ulteriormente i dati stessi. Gli algoritmi in un database a grafo sono molto diversi rispetto a quelli dei database relazionali e sono più ottimizzati per raggiungere grandi set di dati più velocemente.</p>
+<p>Uno dei limiti di un database grafico è che è difficile scalare. In un database relazionale, è facile suddividere una tabella e metterla su due server, ad esempio. I primi database grafici sono stati progettati per essere una soluzione unica, quindi se volevi scalare, avresti avuto bisogno di aggiungere più memoria e CPU.</p>
+<p>Ora, se vuoi lavorare con petabyte di dati in grafici, vuoi scalare verticalmente il più possibile con tecnologie come le VM Intel, ma vuoi anche scalare orizzontalmente. Nuove tecnologie, come la piattaforma grafica di Katana, aiutano a risolvere questo problema di scalabilità con l&#39;elaborazione distribuita. Puoi suddividere il problema in pezzi e far lavorare ognuno su una piccola parte del grafico per ottenere una soluzione finale. Katana ha dimostrato che puoi utilizzare 256 o più macchine per elaborare i dati, in modo da poter rapidamente gestire decine di terabyte di dati in memoria.</p>
+<p>Un database di tipo grafo richiede un ecosistema simile a un database relazionale. Il grafo è leggermente più dinamico e flessibile. Se si desidera passare a una piattaforma di analisi grafica, che vada oltre i semplici database operativi, si potrebbe sfruttare altre cose come capacità di data warehousing e data lake. Memorizzazione e calcolo sarebbero separati, il che significa che le tecnologie di elaborazione del grafo che eseguono tutto in memoria non hanno bisogno di fare affidamento sulla memorizzazione collegata ai servizi in modo che sia possibile avere un servizio di memorizzazione diverso.</p>
+<p>Katana utilizza lo storage degli oggetti e successivamente, quando vogliono elaborare, caricano opportunisticamente ciò che desiderano dal grafo alla memoria distribuita di tutte le macchine. I dati tornano immutabili allo storage, quindi se, ad esempio, distruggi l&#39;intero cluster, non perdi nulla. Tutti i dati sono già presenti e archiviati. I database relazionali sono un campo più maturo, ma i database grafici stanno diventando sempre più supportati nell&#39;ecosistema.</p>
+<p>In base ai otto anni di esperienza di Hadi nel settore parlando con interlocutori e clienti, tutti vedono immediatamente il beneficio dei grafi nei database. Le limitazioni potrebbero essere la loro incapacità di tenere il passo con la scalabilità o i costi. Il lavoro di Katana e altre società di tecnologia a grafo è quello di rendere i grafi uno strumento più comune che i clienti possono utilizzare per varie attività e meno un lusso nel database. Ad esempio, Katana sta fornendo ai clienti soluzioni di gestione di identità basate su grafi e gestione di dati massivi.</p>
+<p>Buoni casi d&#39;uso dei grafi includono l&#39;invenzione precoce di soluzioni grafiche specifiche per alcune aziende come LinkedIn e Facebook, che possiedono i loro grafi sociali. Attualmente, un&#39;applicazione naturale si trova nel settore dell&#39;e-commerce per i motori di raccomandazione. Trovare connessioni tra clienti, account, acquisti e altri comportamenti consente di fornire immediatamente migliori raccomandazioni agli acquirenti, in un modo che non può essere realizzato tramite interrogazioni di database relazionali.</p>
+<p>Per saperne di più su Katana o su come contattare Hadi, vai su embracingdigital.org.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/it/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/it/episodes/",
+  "inLanguage": "it",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/it/episodes/edt-97/#episode",
+  "url": "https://embracingdigital.org/it/episodes/edt-97/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/it/episodes/edt-97/"
+  },
+  "name": "I benefici dei database a grafo",
+  "episodeNumber": 97,
+  "datePublished": "2022-07-28T00:00:00.000Z",
+  "inLanguage": "it",
+  "description": "Darren Pulsipher, Chief Solutions Architect, Intel, Dr. Hadi Ahmadi, Director of Solutions Architecture, Katana Graph discuss the benefits of graph databases.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/it/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/it/episodes/edt-97/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/it/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/it/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "I benefici dei database a grafo",
+      "item": "https://embracingdigital.org/it/episodes/edt-97/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

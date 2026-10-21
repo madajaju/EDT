@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Put the title Right Here | Embracing Digital Transformation</title>
+    <meta name="description" content="AI may be making data easier to use, but the real breakthrough is helping more people make smarter decisions with it. Host Dr. Darren interviews Wei Zheng, Chief Product Officer at Conductor, for a history lesson in AI, data management, and the evolu...">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/it/episodes/edt-359/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Put the title Right Here | Embracing Digital Transformation">
+    <meta property="og:description" content="AI may be making data easier to use, but the real breakthrough is helping more people make smarter decisions with it. Host Dr. Darren interviews Wei Zheng, Chief Product Officer at Conductor, for a history lesson in AI, data management, and the evolu...">
+    <meta property="og:url" content="https://embracingdigital.org/it/episodes/edt-359/">
+    <meta property="og:image" content="https://embracingdigital.org/it/episodes/edt-359/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Put the title Right Here | Embracing Digital Transformation">
+    <meta name="twitter:description" content="AI may be making data easier to use, but the real breakthrough is helping more people make smarter decisions with it. Host Dr. Darren interviews Wei Zheng, Chief Product Officer at Conductor, for a history lesson in AI, data management, and the evolu...">
+    <meta name="twitter:image" content="https://embracingdigital.org/it/episodes/edt-359/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/it/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/it/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/it/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/it/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/it/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/it/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/it/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/it/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/it/">Home</a></li>
+        <li><a href="/it/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 359: Put the title Right Here</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/it/episodes/edt-359/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/it/episodes/edt-359/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 359</span>
+                <span class="episode-title">Put the title Right Here</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="6/11/2026" itemprop="datePublished">6/11/2026</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="359"/>
+            <meta itemprop="inLanguage" content="it"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="6/11/2026" data-publication-status="">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="Put the title Right Here Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/2Imz3XZRdSw">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/2Imz3XZRdSw"
+                            title="Put the title Right Here Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         >
+                    <meta itemprop="name" content="Put the title Right Here Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/03aca8d5">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://share.transistor.fm/e/03aca8d5"
+                            title="Put the title Right Here Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="/it/episodes/">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            AI may be making data easier to use, but the real breakthrough is helping more people make smarter decisions with it. Host Dr. Darren interviews Wei Zheng, Chief Product Officer at Conductor, for a history lesson in AI, data management, and the evolu...
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>AI e Dati nella Trasformazione Digitale: Perché il Prossimo Grande Cambiamento È Rendettere i Dati Utilizzabili per Tutti</h1>
+<h2>Una Nuova Era per i Dati e l&#39;Intelligenza Artificiale</h2>
+<p>Cosa succede quando potenti strumenti di analisi dei dati diventano finalmente utilizzabili da persone che non sono esperte di dati? Questa è la grande domanda che sta plasmando l&#39;IA, la gestione dei dati e la trasformazione digitale in questo momento.</p>
+<p>Il Dr. Darren si siede con Wei Zheng, un esperto in strategia dei dati aziendali e di prodotto, per tracciare come siamo arrivati a questo punto—dall&#39;era delle dot-com all&#39;attuale ambiente di lavoro guidato dall&#39;intelligenza artificiale. La loro conversazione è importante per tecnologi e leader aziendali perché la prossima ondata di innovazione non riguarda solo l&#39;archiviazione di maggiori quantità di dati; si tratta di sbloccarli.</p>
+<h2>&quot;Come il boom di Internet ha plasmato un leader dei dati&quot;</h2>
+<h2>Dall&#39;era dot-com al pensiero orientato al prodotto</h2>
+<p>La storia di Wei inizia a Shanghai, prosegue a Berkeley durante il boom originale di Internet e atterra nel veloce mondo tecnologico della Silicon Valley. Quel tempismo era importante. Ha visto in prima persona come idee brillanti potessero fallire se il mercato, i prezzi o la tecnologia arrivavano troppo presto.</p>
+<p>Quella lezione è ancora valida oggi. Molte organizzazioni assumono che una buona tecnologia da sola garantisca il successo, ma la carriera di Wei dimostra che la formula reale è più complessa: l&#39;adattamento prodotto-mercato, il tempismo e il valore pratico devono allinearsi.</p>
+<h2>&quot;Perché i dati sono diventati la spina dorsale nascosta&quot;</h2>
+<p>Dopo essere passato dall&#39;ingegneria alla gestione del prodotto, Wei ha trovato la sua strada nell&#39;infrastruttura dei dati, un lavoro che alimenta tutto, dalle transazioni degli sportelli ATM ai sistemi sanitari. Spiega che i dati potrebbero non essere stati glamour, ma sono sempre stati fondamentali.</p>
+<p>Per anni, la sfida è stata che solo i team tecnici potevano lavorare direttamente con i sistemi di dati. Gli utenti aziendali dipendevano dagli specialisti per tradurre, pulire e spostare i dati. Questo divario ha creato la necessità di strumenti che potessero rendere i dati più accessibili e utilizzabili.</p>
+<h2>Perché l&#39;IA sta cambiando le regole del gioco dei dati</h2>
+<h2>Il vero problema: silos e traduzione.</h2>
+<p>Wei sottolinea che la maggiore sfida dei dati non è solo tecnica, ma organizzativa. I dati sono conservati in silos tra dipartimenti, magazzini, fogli di calcolo e piattaforme, il che rende difficile utilizzarli in modo coerente.</p>
+<p>Anche quando strumenti moderni come Snowflake, Databricks o Amazon Redshift sono in uso, i team hanno comunque bisogno di persone che comprendano sia la struttura tecnica sia il significato commerciale. Questa è una competenza rara e rallenta il processo decisionale.</p>
+<h2>In Italian, &quot;Key takeaways&quot; can be translated as &quot;Punti chiave&quot;.</h2>
+<p>I silos di dati ostacolano ancora la comprensione aziendale.</p>
+<p>I metadati aiutano a spiegare il significato dei dati.</p>
+<p>La conoscenza del dominio è altrettanto importante quanto la piattaforma stessa.</p>
+<p>L&#39;intelligenza artificiale può ridurre il carico di traduzione.</p>
+<h2>AI come il grande comprimente</h2>
+<p>Secondo Wei, l&#39;IA sta iniziando a cambiare questa equazione. Gli utenti aziendali possono ora descrivere ciò di cui hanno bisogno in linguaggio naturale, e l&#39;IA può aiutare a generare il risultato tecnico o accorciare il percorso verso l&#39;intuizione.</p>
+<p>Questo non elimina l&#39;expertise umana. Piuttosto, sposta le persone verso lavori di maggiore valore: strategia, analisi e azione. Wei vede questo come un grande miglioramento, non come una minaccia.</p>
+<h2>Cosa significa questo per i team e i leader</h2>
+<h2>I lavori stanno cambiando, non scomparendo.</h2>
+<p>Darren e Wei tracciano entrambi un potente parallelo con le piscine di digitazione e i lavori di inserimento dati delle decadi precedenti. L&#39;automazione non ha eliminato il valore umano; ha spostato le persone in ruoli più strategici.</p>
+<p>La stessa cosa sta accadendo ora con l&#39;IA. Compiti come riassumere riunioni, generare report e tradurre in modo base tra team aziendali e tecnici sono sempre più automatizzati. Questo libera le persone per concentrarsi su ciò che solo gli esseri umani possono fare bene: giudizio, creatività e leadership.</p>
+<h2>L&#39;opportunità per i leader aziendali.</h2>
+<p>Il lavoro di Wei presso Conductor riflette questo cambiamento. L&#39;azienda aiuta i marchi a farsi trovare nelle piattaforme di ricerca e intelligenza artificiale generativa, utilizzando dati per migliorare la visibilità e la strategia. Per i leader, il messaggio è semplice: se i vostri dati non sono utilizzabili, non hanno valore.</p>
+<p>Le organizzazioni che vinceranno saranno quelle che connettono dati, intelligenza artificiale e intenti aziendali in un unico flusso di lavoro.</p>
+<h2>Ascolta la conversazione completa.</h2>
+<p>Se desideri un approccio pratico e ottimista sull&#39;IA, la trasformazione dei dati e ciò che serve realmente per rendere utili i dati aziendali, ascolta l&#39;episodio completo di <strong>Abbracciare la Trasformazione Digitale</strong>. Iscriviti, condividilo con il tuo team e unisciti alla conversazione mentre le organizzazioni ripensano a come viene svolto il lavoro.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/it/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/it/episodes/",
+  "inLanguage": "it",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/it/episodes/edt-359/#episode",
+  "url": "https://embracingdigital.org/it/episodes/edt-359/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/it/episodes/edt-359/"
+  },
+  "name": "Put the title Right Here",
+  "episodeNumber": 359,
+  "datePublished": "6/11/2026",
+  "inLanguage": "it",
+  "description": "AI may be making data easier to use, but the real breakthrough is helping more people make smarter decisions with it. Host Dr. Darren interviews Wei Zheng, Chief Product Officer at Conductor, for a history lesson in AI, data management, and the evolu...",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/it/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/it/episodes/edt-359/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Put the title Right Here Video",
+      "embedUrl": "https://www.youtube.com/embed/2Imz3XZRdSw"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Put the title Right Here Audio",
+      "contentUrl": "https://share.transistor.fm/s/03aca8d5"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/it/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/it/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Put the title Right Here",
+      "item": "https://embracingdigital.org/it/episodes/edt-359/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

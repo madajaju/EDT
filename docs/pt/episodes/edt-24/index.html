@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Estratégia Digital e Arquitetura de Dados | Embracing Digital Transformation</title>
+    <meta name="description" content="Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel outlines digital strategy and architecture to effectively transform your organization. He explains how organizational, procedural, and technological elements must be balanced to work e...">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/pt/episodes/edt-24/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Estratégia Digital e Arquitetura de Dados | Embracing Digital Transformation">
+    <meta property="og:description" content="Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel outlines digital strategy and architecture to effectively transform your organization. He explains how organizational, procedural, and technological elements must be balanced to work e...">
+    <meta property="og:url" content="https://embracingdigital.org/pt/episodes/edt-24/">
+    <meta property="og:image" content="https://embracingdigital.org/pt/episodes/edt-24/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Estratégia Digital e Arquitetura de Dados | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel outlines digital strategy and architecture to effectively transform your organization. He explains how organizational, procedural, and technological elements must be balanced to work e...">
+    <meta name="twitter:image" content="https://embracingdigital.org/pt/episodes/edt-24/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/pt/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/pt/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/pt/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/pt/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/pt/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/pt/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/pt/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/pt/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/pt/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/pt/">Home</a></li>
+        <li><a href="/pt/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 24: Estratégia Digital e Arquitetura de Dados</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/pt/episodes/edt-24/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/pt/episodes/edt-24/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 24</span>
+                <span class="episode-title">Estratégia Digital e Arquitetura de Dados</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2020-10-07T00:00:00.000Z" itemprop="datePublished">2020-10-07T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="24"/>
+            <meta itemprop="inLanguage" content="pt"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2020-10-07T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel outlines digital strategy and architecture to effectively transform your organization. He explains how organizational, procedural, and technological elements must be balanced to work e...
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../pt/search.html?query=digitaltransformation"
+                   itemprop="keywords">digitaltransformation</a>
+                
+                <a href="../../pt/search.html?query=organizationalchange"
+                   itemprop="keywords">organizationalchange</a>
+                
+                <a href="../../pt/search.html?query=moderncomputing"
+                   itemprop="keywords">moderncomputing</a>
+                
+                <a href="../../pt/search.html?query=agiledevelopment"
+                   itemprop="keywords">agiledevelopment</a>
+                
+                <a href="../../pt/search.html?query=dataarchitecture"
+                   itemprop="keywords">dataarchitecture</a>
+                
+                <a href="../../pt/search.html?query=itgovernance"
+                   itemprop="keywords">itgovernance</a>
+                
+                <a href="../../pt/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../pt/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../pt/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../pt/search.html?query=people"
+                   itemprop="keywords">people</a>
+                
+                <a href="../../pt/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../pt/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Ter um plano para a transformação digital da sua organização é fundamental para evitar se perder no labirinto de apenas seguir com as últimas e melhores tecnologias e processos. Essa estratégia ao acaso fará com que a sua transformação digital fracasse. Um plano, ou um roteiro, desde onde a sua organização está atualmente até onde você deseja chegar é a parte mais importante de uma transformação efetiva.</p>
+<p>Os três elementos-chave que devem ser coordenados e equilibrados no seu plano são organizacional, procedimental e tecnológico.</p>
+<h2>Divisões Organizacionais</h2>
+<p>Para entender a mudança organizacional, vamos primeiro analisar os grupos comuns na maioria das organizações.</p>
+<h2>Desenvolvimento</h2>
+<p>Este grupo é a sua equipe diurna; eles estão desenvolvendo novos produtos. Os processos da equipe de desenvolvimento são bem conhecidos e maduros. Eles se concentram no trabalho de desenvolvimento, teste e lançamento do produto em produção. Quase toda equipe utiliza algum tipo de técnica Ágil ou de iteração rápida.</p>
+<h2>IT - Tecnologia da Informação</h2>
+<p>O objetivo da equipe de TI é otimizar a infraestrutura em termos de custo e eficiência. Eles garantem que a infraestrutura seja confiável e tenha controle e segurança incorporados. Principalmente, eles avaliam computação, armazenamento, rede, conformidade e custos.</p>
+<h2>Segurança</h2>
+<p>O papel da segurança tornou-se cada vez mais importante nos últimos anos, e ainda mais recentemente, com os funcionários trabalhando em casa devido à COVID-19. A equipe de segurança concentra-se principalmente em garantir a propriedade intelectual, os dados e a infraestrutura. As ferramentas comuns são gestão de identidade, proteção, detecção e remediação. Entender como essas ferramentas funcionam em um nível mais alto é importante para a mudança organizacional.</p>
+<h2>Data</h2>
+<p>Este novo grupo, que anteriormente poderia ter sido um estatístico ou matemático que fazia mineração de dados, está agora ganhando força com a chegada dos chefes de dados e das organizações construídas ao redor deles. Eles se concentram em analisar, categorizar e entregar valor real a partir dos seus dados. Seja a sua organização na área de manufatura ou serviços, ou se você está tentando capturar novos clientes ou economizar dinheiro, existem muitas áreas onde cientistas de dados podem fornecer valor.</p>
+<h2>Reunindo os Grupos</h2>
+<p>Para realizar uma mudança digital eficaz, todos esses grupos precisam ter uma compreensão mútua do que cada um traz para a mesa e uma visão unificada. Você não quer que seus cientistas de dados explorem dados que não têm valor para o desenvolvimento ou TI. Você não quer que sua equipe de segurança restrinja tudo tão rigidamente que a equipe de desenvolvimento não consiga concluir seu trabalho. Entre os grupos, deve haver estratégias, processos e arquiteturas comuns.</p>
+<p>Embora objetivos e resultados comuns sejam o ideal, existem obstáculos a serem superados. Uma das áreas mais difíceis na mudança organizacional é a quebra de comunicação nas fronteiras. Algumas organizações criaram novos grupos para suavizar as diferenças entre os grupos. Por exemplo, entre segurança e TI, poderia haver um Sec Ops ou Sec Dev Ops, onde eles automatizam as políticas e procedimentos provenientes da equipe de segurança. Outro exemplo seria uma equipe de desenvolvimento de dados, que são desenvolvedores que trabalham com cientistas de dados para fornecer processos mais repetíveis através do desenvolvimento de aplicativos ou integração de ferramentas e aplicativos. Arquiteturas comuns em conjuntos comuns de ferramentas com as quais todos os grupos podem contar tornam o processo e as mudanças muito mais fáceis.</p>
+<h2>O Sistema Perfeito</h2>
+<p>Como seria uma arquitetura comum? Uma versão utópica não existe hoje, mas podemos analisar os elementos e talvez construir algo em direção a esse ideal.</p>
+<p>O autosserviço é essencial. Por exemplo, se um cientista de dados precisa de mais espaço de armazenamento para dados, eles não precisariam ligar para o setor de TI e preencher uma série de formulários etc..., mas sim usar um portal de autosserviço que economiza tempo e forneceria o espaço de armazenamento. Claro que o portal seria orientado por políticas, para que a equipe de segurança possa ter certeza de que os dados confidenciais que o cientista coloca em uma unidade estão criptografados e o controle de acesso é automático.</p>
+<p>Outra característica ideal seria que o sistema seja auto-regenerativo e orientado por dados. Se as máquinas forem infectadas, por exemplo, elas seriam automaticamente colocadas em quarentena e as cargas de trabalho seriam migradas para outra área no centro de dados ou para a nuvem pública. Novamente, a TI teria que estabelecer políticas e monitorar processos, mas o sistema seria em grande parte automático. O sistema não deve ser apenas automático, mas também inteligente, aprendendo com experiências passadas e se tornando mais eficiente.</p>
+<p>Podemos obter alguns elementos deste sistema utópico hoje em dia com produtos prontos para uso, integrando-os e fazendo com que todos os utilizem. Vamos analisar o que cada organização deseja desta arquitetura.</p>
+<h2>Arquitetura de TI (Multi-Nuvem Híbrida)</h2>
+<p>A TI é responsável pela infraestrutura subjacente e pelas informações de dados na organização. Se a TI pudesse estabelecer uma base sólida, todos os outros poderiam construir em cima dela. A TI precisa migrar para uma solução de nuvem multi-híbrida para que a infraestrutura possa ser facilmente orquestrada conforme necessário, com flexibilidade baseada em política. Sempre há uma troca entre custo e confiabilidade, mas você tem opções. Uma camada de infraestrutura definida por software permite facilmente a orquestração de computação, armazenamento, rede, segurança e agora até coisas novas, como memória e aceleradores. A base de nuvem multi-híbrida é um aspecto-chave de sua arquitetura comum.</p>
+<h2>Arquitetura de Segurança</h2>
+<p>A equipe de segurança adicionaria a este sistema e o tornaria o mais automatizado possível. O primeiro aspecto seria a identidade. Isso significa que não apenas é possível identificar usuários, mas também infraestrutura, aplicativos e serviços, para que tudo tenha uma identidade. Essas identidades podem estar vinculadas a autorizações e acessos específicos para garantir que tudo esteja autenticado. Em relação à segurança, é desejável ter criptografia e remediação quando houver problemas. Idealmente, seria possível estabelecer uma raiz de confiança para que tudo no ecossistema, tanto em aplicativos e serviços quanto em firmwares e BIOS das máquinas, seja confiável.</p>
+<h2>Arquitetura de Desenvolvimento</h2>
+<p>Os desenvolvedores podem se preocupar que todo esse processo possa retardar o desenvolvimento, então ele precisa acontecer quase automaticamente. A maioria dos desenvolvedores agora está focada em componentes reutilizáveis ​​que podem ser testados para que eles saibam que estão seguros. Eles fazem isso por meio de ecossistemas em contêineres como Kubernetes, Docker ou Mesos. A segurança pode ser injetada no ciclo de vida do desenvolvimento na etapa de implantação antes de ser movida com sucesso para a produção. Acima da camada de serviço está uma camada de aplicação onde os desenvolvedores podem aproveitar os fluxos de trabalho. Esses fluxos de trabalho podem ser fluxos de trabalho de desenvolvimento como CI/CD ou fluxos de trabalho de negócios por meio de ferramentas de automação como Robotic Process Automation. Ter tanto a camada de serviço quanto a camada de aplicação são elementos-chave nesta arquitetura utópica.</p>
+<h2>Arquitetura de Dados</h2>
+<p>Com dados dispersos por vários ecossistemas, nuvens públicas e até mesmo nas bordas, precisamos de uma forma melhor de gerenciar dados para cientistas de dados e desenvolvedores de aplicativos. Extrair dados do armazenamento é um dos elementos importantes aqui. Com essa estrutura, você pode orquestrar dados em toda a vasta infraestrutura e vincular esses dados apenas às aplicações e serviços onde são necessários. Os dados podem ser abstraídos para serem armazenados na melhor posição durante esse período de tempo, seja nas bordas, no centro de dados ou processados em vários locais diferentes para réplicas de aplicativos. A segurança seria necessária para proteger os dados, uma vez que os dados são o motivo da infraestrutura em primeiro lugar. Algumas empresas iniciantes estão competindo neste espaço para assumir o controle da camada de gerenciamento de dados.</p>
+<p>Esta arquitetura utópica, com sua infinidade de partes móveis, é chamada de arquitetura Edgemere. Estamos tentando analisar como todas essas partes se encaixam para ajudar as organizações a acelerar sua transformação digital. Precisamos entender o que cada organização precisa, quais são seus casos de uso e quais são as semelhanças entre os grupos para desenvolver uma arquitetura na qual toda a organização possa trabalhar.</p>
+<p>A parte da sua organização é romper as barreiras entre os grupos, desenvolver uma visão comum de onde você quer estar organizacionalmente, procedimentalmente e arquitetonicamente, e desenvolver uma rota para como chegar lá.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/pt/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/pt/episodes/",
+  "inLanguage": "pt",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/pt/episodes/edt-24/#episode",
+  "url": "https://embracingdigital.org/pt/episodes/edt-24/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/pt/episodes/edt-24/"
+  },
+  "name": "Estratégia Digital e Arquitetura de Dados",
+  "episodeNumber": 24,
+  "datePublished": "2020-10-07T00:00:00.000Z",
+  "inLanguage": "pt",
+  "description": "Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel outlines digital strategy and architecture to effectively transform your organization. He explains how organizational, procedural, and technological elements must be balanced to work e...",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/pt/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/pt/episodes/edt-24/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/pt/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/pt/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Estratégia Digital e Arquitetura de Dados",
+      "item": "https://embracingdigital.org/pt/episodes/edt-24/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Avançando as Operações com 5G | Embracing Digital Transformation</title>
+    <meta name="description" content="Intel’s Darren Pulsipher, Chief Solutions Architect, Leland Brown, Principal Engineer: Technical Director of Advanced Communications, and Dr. Anna Scott, Chief Edge Architect for Public Sector, talk about the history of advanced comms and future use ...">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/pt/episodes/edt-109/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Avançando as Operações com 5G | Embracing Digital Transformation">
+    <meta property="og:description" content="Intel’s Darren Pulsipher, Chief Solutions Architect, Leland Brown, Principal Engineer: Technical Director of Advanced Communications, and Dr. Anna Scott, Chief Edge Architect for Public Sector, talk about the history of advanced comms and future use ...">
+    <meta property="og:url" content="https://embracingdigital.org/pt/episodes/edt-109/">
+    <meta property="og:image" content="https://embracingdigital.org/pt/episodes/edt-109/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Avançando as Operações com 5G | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Intel’s Darren Pulsipher, Chief Solutions Architect, Leland Brown, Principal Engineer: Technical Director of Advanced Communications, and Dr. Anna Scott, Chief Edge Architect for Public Sector, talk about the history of advanced comms and future use ...">
+    <meta name="twitter:image" content="https://embracingdigital.org/pt/episodes/edt-109/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/pt/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/pt/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/pt/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/pt/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/pt/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/pt/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/pt/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/pt/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/pt/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/pt/">Home</a></li>
+        <li><a href="/pt/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 109: Avançando as Operações com 5G</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/pt/episodes/edt-109/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/pt/episodes/edt-109/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 109</span>
+                <span class="episode-title">Avançando as Operações com 5G</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2020-10-06T00:00:00.000Z" itemprop="datePublished">2020-10-06T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="109"/>
+            <meta itemprop="inLanguage" content="pt"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2020-10-06T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Intel’s Darren Pulsipher, Chief Solutions Architect, Leland Brown, Principal Engineer: Technical Director of Advanced Communications, and Dr. Anna Scott, Chief Edge Architect for Public Sector, talk about the history of advanced comms and future use ...
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../pt/search.html?query=5g"
+                   itemprop="keywords">5g</a>
+                
+                <a href="../../pt/search.html?query=edgecomputing"
+                   itemprop="keywords">edgecomputing</a>
+                
+                <a href="../../pt/search.html?query=moderncomputing"
+                   itemprop="keywords">moderncomputing</a>
+                
+                <a href="../../pt/search.html?query=augmentedreality"
+                   itemprop="keywords">augmentedreality</a>
+                
+                <a href="../../pt/search.html?query=networksecurity"
+                   itemprop="keywords">networksecurity</a>
+                
+                <a href="../../pt/search.html?query=generativeai"
+                   itemprop="keywords">generativeai</a>
+                
+                <a href="../../pt/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../pt/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>5G abre várias possibilidades. Agora é possível configurar redes privadas, com definição por software, o que permite adicionar mais funcionalidades à sua rede. Para onde essa tecnologia habilitadora nos levará?</p>
+<p>Anna diz que, embora ainda estejamos nos estágios iniciais do ponto de vista de largura de banda e latência, existem vantagens reais no 5G, como a abertura do espectro, como o CBRS, a capacidade de aproveitar o equipamento do usuário existente e a capacidade de os clientes terem acesso móvel.</p>
+<p>Um caso de uso que não é sexy, mas tem vastas ramificações é que você pode levar seu laptop para o chão de fábrica e usá-lo para conectividade total. Em vez de ir para o chão de fábrica com um bloco de notas e papel e transferir as informações de volta para o escritório, você pode convergir os dois ambientes. Os padrões 5G permitem isso, mas não necessariamente é um implantação completa do 5G.</p>
+<p>Uma evolução que está acontecendo é a capacidade de transmitir vídeo de alta definição de uma câmera sem fio pela rede 5G e ter uma latência suficientemente baixa para realizar análises em tempo real. Atualmente, poucas câmeras 5G conseguem operar nesse ambiente, então as câmeras geralmente são conectadas por fio próximo a computação em borda acoplada para obter esse aspecto em tempo real, mas essa opção de transmissão vantajosa está próxima de chegar.</p>
+<p>Outro exemplo de vantagem do 5G é usar de 10 a 20 headsets de AR em vez de um ou dois com Wi-Fi. O ponto chave é o MEC (Mobile Edge Compute) que permite ter as aplicações no local em vez de ter que voltar para o switch ou para o núcleo da operadora e ter aquele tempo RAN.</p>
+<p>Compreender como as frequências são implantadas é essencial em casos de uso, pois alguns operadores implantaram mmWave apesar dos desafios; as frequências n41 e n42 reagem de maneira diferente no mundo real. Portanto, em implantações no local, o MEC e o design de RF são extremamente importantes.</p>
+<p>Um caso de uso convincente para o 5G fora da fábrica é o uso de drones em respostas a emergências. Um precursor inicial para a eventual capacidade de trazer drones e avaliar uma área danificada é conectar os drones, compreender uma missão para fazer uma cobertura aérea e, em seguida, reunir todos os dados. Embora ainda não possamos transmitir vídeo ao vivo de vários drones e unificá-los, estamos próximos de coletar, combinar e analisar esses dados, embora não em tempo real.</p>
+<p>Outro caso de uso é utilizar 5G, IA, modelagem, simulação e computação de borda para treinamento em várias indústrias, incluindo o Departamento de Defesa. Há uma grande vantagem em criar uma simulação de treinamento realista sem colocar a pessoa em perigo ou gastar quantias enormes de dinheiro em treinamento ao vivo.</p>
+<p>Por mais que o 5G possibilite esse tipo de caso de uso, muito depende do 5G se conectando a uma MEC em vez do 5G ir para a nuvem. A física entra em jogo. Você precisa de uma latência super baixa, então não pode ter uma arquitetura que vá de um headset para a nuvem, desça para uma MEC e depois para visualização. Precisa ir do headset para a MEC, onde ocorre o processamento em tempo real. Então você pode compartilhar dados através da nuvem para uma experiência em tempo real.</p>
+<p>Também existe a capacidade de interligar ou agrupar MECs juntos, de forma que os dados talvez nunca precisem ir para a nuvem. Os MECs podem realizar todo o processamento e análise diretamente no switch. Isso poderia possibilitar avanços como edifícios e cidades inteligentes. Esse tipo de tecnologia habilitada para 5G é a combinação perfeita para mudanças consideráveis na indústria.</p>
+<p>Leland destaca que a história das novas redes é a computação distribuída. Tudo está conectado por meio de conectividade sem fio, mas os pontos de computação estão espalhados pela paisagem, onde os aplicativos estão nas bordas e permitem os casos de uso. Para onde estamos indo é calcular sem fio de forma individual.</p>
+<p>Qual papel a Intel desempenha no 5G? É muito além de apenas fornecer chips. Como o 5G é projetado por software, a Intel possibilitou que o ecossistema construísse ou projetasse em cima de seu L15. Ao migrar do 4G para o 5G, a Intel pegou o bloco funcional do RAN, chamado FlexRan, e permitiu às empresas projetarem suas arquiteturas de banda base e virtualizá-las. Escrever a arquitetura de referência do FlexRan tornou muito mais fácil para novos participantes utilizarem como ponto de partida.</p>
+<p>Do lado do hardware, a Intel gastou muitos ciclos para garantir que o hardware comercial, pronto para uso, funcionasse bem para suportar todas as faixas de frequência básicas, aplicações RAN e servidores. Os novos sistemas que surgem ao abandonar os sistemas proprietários devem ser facilmente suportados pelo mesmo tipo de servidor que funciona na nuvem e no centro de dados, pois agora você tem a escala e a vantagem de custo.</p>
+<p>Isso reduzirá os preços e incentivará mais inovação na indústria.</p>
+<p>Confira a primeira parte desta entrevista <a href="epis%C3%B3dio-EDT108">aqui</a>.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/pt/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/pt/episodes/",
+  "inLanguage": "pt",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/pt/episodes/edt-109/#episode",
+  "url": "https://embracingdigital.org/pt/episodes/edt-109/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/pt/episodes/edt-109/"
+  },
+  "name": "Avançando as Operações com 5G",
+  "episodeNumber": 109,
+  "datePublished": "2020-10-06T00:00:00.000Z",
+  "inLanguage": "pt",
+  "description": "Intel's Darren Pulsipher, Chief Solutions Architect, Leland Brown, Principal Engineer: Technical Director of Advanced Communications, and Dr. Anna Scott, Chief Edge Architect for Public Sector, talk about the history of advanced comms and future use ...",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/pt/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/pt/episodes/edt-109/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/pt/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/pt/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Avançando as Operações com 5G",
+      "item": "https://embracingdigital.org/pt/episodes/edt-109/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

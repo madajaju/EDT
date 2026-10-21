@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Put the title Right Here | Embracing Digital Transformation</title>
+    <meta name="description" content="Data is the lifeblood of technological advancement, and this episode of Embracing Digital Transformation dives deep into the critical nature of edge computing. Hosted by Dr. Darren, this conversation features Chris Pasternak, a seasoned CTO at Deloit...">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/fr/episodes/edt-302/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Put the title Right Here | Embracing Digital Transformation">
+    <meta property="og:description" content="Data is the lifeblood of technological advancement, and this episode of Embracing Digital Transformation dives deep into the critical nature of edge computing. Hosted by Dr. Darren, this conversation features Chris Pasternak, a seasoned CTO at Deloit...">
+    <meta property="og:url" content="https://embracingdigital.org/fr/episodes/edt-302/">
+    <meta property="og:image" content="https://embracingdigital.org/fr/episodes/edt-302/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Put the title Right Here | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Data is the lifeblood of technological advancement, and this episode of Embracing Digital Transformation dives deep into the critical nature of edge computing. Hosted by Dr. Darren, this conversation features Chris Pasternak, a seasoned CTO at Deloit...">
+    <meta name="twitter:image" content="https://embracingdigital.org/fr/episodes/edt-302/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/fr/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/fr/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/fr/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/fr/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/fr/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/fr/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/fr/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/fr/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/fr/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/fr/">Home</a></li>
+        <li><a href="/fr/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 302: Put the title Right Here</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/fr/episodes/edt-302/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/fr/episodes/edt-302/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 302</span>
+                <span class="episode-title">Put the title Right Here</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2025-11-04T13:14:20.549Z" itemprop="datePublished">2025-11-04T13:14:20.549Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="302"/>
+            <meta itemprop="inLanguage" content="fr"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2025-11-04T13:14:20.549Z" data-publication-status="">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="Put the title Right Here Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/HupK1G1ptxY">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/HupK1G1ptxY"
+                            title="Put the title Right Here Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         >
+                    <meta itemprop="name" content="Put the title Right Here Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/781360c9">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://share.transistor.fm/e/781360c9"
+                            title="Put the title Right Here Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="/fr/episodes/">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Data is the lifeblood of technological advancement, and this episode of Embracing Digital Transformation dives deep into the critical nature of edge computing. Hosted by Dr. Darren, this conversation features Chris Pasternak, a seasoned CTO at Deloit...
+
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>Pourquoi l&#39;informatique en périphérie est importante</h2>
+<p>Dans le paysage actuel axé sur les données, la manière dont nous traitons et utilisons l&#39;information peut avoir un impact significatif sur le succès dans n&#39;importe quelle industrie. L&#39;informatique en périphérie (edge computing) n&#39;est pas seulement un jargon technologique, mais une approche cruciale pour les organisations qui visent l&#39;efficacité et la réactivité dans leurs opérations. Alors que les entreprises sont de plus en plus sous pression pour prendre des décisions en temps réel sur la base de grandes quantités de données, la discussion sur l&#39;informatique en périphérie devient vitale.</p>
+<p>Dans cette exploration, nous tirons des enseignements des experts de l&#39;industrie qui soulignent la nécessité d&#39;exploiter les données plus près de leur source. Avec l&#39;informatique en périphérie, les organisations peuvent optimiser le traitement et la prise de décision, renforçant ainsi leur avantage concurrentiel.</p>
+<h2>La Transition vers l&#39;Informatique en Bordure</h2>
+<h2>Redéfinir le traitement des données</h2>
+<p>Le modèle traditionnel de traitement des données basé sur le cloud est en train de changer alors que les organisations luttent contre les problèmes de latence et les limitations de bande passante. Lorsque les données sont générées plus près de la source, elles peuvent être traitées en temps réel, réduisant ainsi le délai associé au transfert d&#39;informations vers les serveurs centraux.</p>
+<p>L&#39;informatique en périphérie répond à des préoccupations clés telles que :</p>
+<p><strong>Accès Immédiat aux Données</strong> : Les données générées sur place peuvent être analysées instantanément sans nécessiter une communication aller-retour avec le cloud.</p>
+<ul>
+<li><p><strong>Efficacité des coûts</strong> : Le stockage d&#39;ensembles de données massifs dans le cloud peut être coûteux ; en traitant les données à la périphérie, les entreprises peuvent minimiser les coûts de stockage et de bande passante.</p>
+</li>
+<li><p><strong>Fiabilité accrue</strong> : Dans des environnements éloignés ou critiques, comme la défense ou les plates-formes pétrolières, le traitement immédiat des données peut faire toute la différence en matière de sécurité et de réussite opérationnelles.</p>
+</li>
+</ul>
+<h2>Points Clés :</h2>
+<p>L&#39;informatique en périphérie réduit la latence et améliore les temps de réponse.</p>
+<p>Le traitement des données à la périphérie est plus rentable que les modèles centralisés.</p>
+<ul>
+<li>Les industries critiques bénéficient d&#39;un accès immédiat à l&#39;information, améliorant la sécurité et l&#39;efficacité opérationnelle.</li>
+</ul>
+<h2>Défis et Considérations</h2>
+<h2>Mise en œuvre de Solutions Edge</h2>
+<p>Bien que l&#39;informatique en périphérie présente des avantages convaincants, l&#39;intégration de ces systèmes présente des défis. Les organisations doivent soigneusement examiner leurs architectures de données, en veillant à gérer et optimiser le flux d&#39;informations de manière efficace.</p>
+<p>Les défis courants comprennent :</p>
+<ul>
+<li><p><strong>Complexité de gestion</strong>: Avec de nombreux appareils de bord, le maintien d&#39;une approche standardisée de la sécurité et de la gestion des données peut devenir difficile.</p>
+</li>
+<li><p><strong>Interopérabilité</strong>: Il est primordial de garantir que différents systèmes et appareils peuvent communiquer efficacement.</p>
+</li>
+<li><p><strong>Comprendre les besoins en données</strong>: Toutes les données ne sont pas créées de la même manière; les entreprises doivent identifier quelles données sont essentielles pour le traitement en temps réel et lesquelles peuvent être stockées pour des analyses futures.</p>
+</li>
+</ul>
+<h2>Principaux points à retenir :</h2>
+<p>La gestion efficace des appareils Edge est essentielle pour maximiser les avantages.</p>
+<p>L&#39;interopérabilité entre les appareils et les systèmes est cruciale pour le succès.</p>
+<p>Les entreprises doivent prioriser les données qu&#39;elles traitent à la périphérie pour éviter de surcharger leurs systèmes.</p>
+<h2>Combler le Fossé : L&#39;Avenir de l&#39;Informatique en Bordure</h2>
+<h2>Stratégies pour le succès</h2>
+<p>Pour exploiter pleinement le potentiel de l&#39;informatique en périphérie, les entreprises devraient adopter une stratégie proactive. En reconnaissant leurs besoins uniques en données et en mettant en œuvre des solutions robustes en périphérie, les organisations peuvent prioriser l&#39;efficacité et l&#39;innovation.</p>
+<p>Prenez en compte les stratégies suivantes :</p>
+<ul>
+<li><p><strong>Évaluer l&#39;infrastructure</strong>: Comprendre les flux de données actuels et identifier les opportunités de mise en œuvre des pratiques de calcul en périphérie.</p>
+</li>
+<li><p><strong>Investir dans la Formation</strong>: Équipez les équipes des compétences nécessaires pour gérer et optimiser efficacement les solutions de pointe.</p>
+</li>
+<li><p><strong>Adoptez la Flexibilité</strong> : Alors que la technologie évolue rapidement, le maintien d&#39;une approche flexible garantira que les entreprises peuvent s&#39;adapter à de nouveaux défis et opportunités.</p>
+</li>
+</ul>
+<h2>Principaux points à retenir :</h2>
+<p>Les organisations doivent évaluer leur infrastructure existante pour les capacités de bord.</p>
+<p>La formation des employés est essentielle pour l&#39;adoption de nouvelles technologies.</p>
+<p>La flexibilité jouera un rôle crucial dans la pertinence continue de l&#39;informatique en périphérie à l&#39;avenir.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/fr/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/fr/episodes/",
+  "inLanguage": "fr",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/fr/episodes/edt-302/#episode",
+  "url": "https://embracingdigital.org/fr/episodes/edt-302/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/fr/episodes/edt-302/"
+  },
+  "name": "Put the title Right Here",
+  "episodeNumber": 302,
+  "datePublished": "2025-11-04T13:14:20.549Z",
+  "inLanguage": "fr",
+  "description": "Data is the lifeblood of technological advancement, and this episode of Embracing Digital Transformation dives deep into the critical nature of edge computing. Hosted by Dr. Darren, this conversation features Chris Pasternak, a seasoned CTO at Deloit...",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/fr/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/fr/episodes/edt-302/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Put the title Right Here Video",
+      "embedUrl": "https://www.youtube.com/embed/HupK1G1ptxY"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Put the title Right Here Audio",
+      "contentUrl": "https://share.transistor.fm/s/781360c9"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/fr/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/fr/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Put the title Right Here",
+      "item": "https://embracingdigital.org/fr/episodes/edt-302/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

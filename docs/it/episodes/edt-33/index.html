@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Il black out di AWS di novembre 2020. | Embracing Digital Transformation</title>
+    <meta name="description" content="Darren Pulsipher, Chief Solution Architect, Public Sector, at Intel talks about the lessons learned from the AWS outage in November 2020 and preventative solutions to navigating such outages.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/it/episodes/edt-33/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Il black out di AWS di novembre 2020. | Embracing Digital Transformation">
+    <meta property="og:description" content="Darren Pulsipher, Chief Solution Architect, Public Sector, at Intel talks about the lessons learned from the AWS outage in November 2020 and preventative solutions to navigating such outages.">
+    <meta property="og:url" content="https://embracingdigital.org/it/episodes/edt-33/">
+    <meta property="og:image" content="https://embracingdigital.org/it/episodes/edt-33/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Il black out di AWS di novembre 2020. | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Darren Pulsipher, Chief Solution Architect, Public Sector, at Intel talks about the lessons learned from the AWS outage in November 2020 and preventative solutions to navigating such outages.">
+    <meta name="twitter:image" content="https://embracingdigital.org/it/episodes/edt-33/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/it/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/it/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/it/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/it/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/it/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/it/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/it/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/it/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/it/">Home</a></li>
+        <li><a href="/it/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 33: Il black out di AWS di novembre 2020.</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/it/episodes/edt-33/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/it/episodes/edt-33/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 33</span>
+                <span class="episode-title">Il black out di AWS di novembre 2020.</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2020-12-15T00:00:00.000Z" itemprop="datePublished">2020-12-15T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="33"/>
+            <meta itemprop="inLanguage" content="it"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2020-12-15T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Darren Pulsipher, Chief Solution Architect, Public Sector, at Intel talks about the lessons learned from the AWS outage in November 2020 and preventative solutions to navigating such outages.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../it/search.html?query=aws"
+                   itemprop="keywords">aws</a>
+                
+                <a href="../../it/search.html?query=datamanagement"
+                   itemprop="keywords">datamanagement</a>
+                
+                <a href="../../it/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../it/search.html?query=devops"
+                   itemprop="keywords">devops</a>
+                
+                <a href="../../it/search.html?query=microservices"
+                   itemprop="keywords">microservices</a>
+                
+                <a href="../../it/search.html?query=incidentresponse"
+                   itemprop="keywords">incidentresponse</a>
+                
+                <a href="../../it/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../it/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../it/search.html?query=technology"
+                   itemprop="keywords">technology</a>
+                
+                <a href="../../it/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+                <a href="../../it/search.html?query=people"
+                   itemprop="keywords">people</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>Cosa abbiamo imparato dall&#39;interruzione di AWS.</h2>
+<p>Amazon Web Services (AWS) ha subito un&#39;importante interruzione al momento più inopportuno: il giorno prima del Ringraziamento nel 2020. Dato che hanno pubblicato i registri dei loro servizi, è interessante analizzarli per capire cosa è successo e cosa possiamo imparare.</p>
+<h2>Cronologia dell&#39;interruzione di AWS</h2>
+<p>Mercoledì 25 novembre 2020, intorno alle 3:00 del mattino, ora standard del Pacifico (PST), AWS stava aggiornando la regione Est, aggiungendo server per aumentare la capacità di Kinesis. Kinesis è un servizio AI popolare che esegue la ricerca di modelli nei file di log e nei file video. Circa un&#39;ora e mezza dopo l&#39;inizio dell&#39;aggiornamento, le allerte del server hanno iniziato a segnalare errori nei record di Kinesis. Piuttosto rapidamente, verso le 8 del mattino, hanno inizialmente individuato un paio di possibili cause all&#39;interno dei servizi front-end. Kinesis ha diversi servizi più piccoli, un gruppo di servizi front-end e un gruppo di servizi back-end. La modalità con cui è progettato il sistema fa sì che ogni volta che un servizio back-end è in esecuzione, un thread attiva il front-end. Uno dei problemi era che il front-end ha raggiunto la soglia dei thread a causa dell&#39;aggiunta di server al back-end durante l&#39;aggiornamento. Una volta che hanno identificato questo problema, hanno apportato una soluzione temporanea con aggiornamenti (patch) al sistema operativo e Kinesis è tornato online verso le 10:30 di sera, completamente ripristinato intorno all&#39;1:15 del mattino del 26 novembre. Alla fine, Kinesis non ha funzionato pienamente per 21 ore e, sebbene non tutti utilizzino questo strumento AI, l&#39;impatto è stato diffuso.</p>
+<h2>Kinesis Impact = Impatto di Kinesis</h2>
+<p>Diversi altri servizi di Amazon utilizzano Kinesis, come Amazon Cognito e CloudWatch, e hanno subito varie interruzioni. Cognito è stato sovraccaricato fino alle 14:00 circa; CloudWatch è stato fuori servizio fino alle 22:00 circa. In un effetto domino, i servizi dipendenti da CloudWatch come Lambda ed EventBridge sono stati anche fuori servizio. Poiché EventBridge non era disponibile, i servizi container LCS e LKS sono stati anch&#39;essi influenzati.</p>
+<p>Le interruzioni sono avvenute solo nella regione Est e AWS ha tempestivamente aggiunto capacità nelle altre regioni per evitare che Kinesis fallisse in modo simile. Durante l&#39;interruzione, gli utenti nella regione Est hanno riscontrato un problema perplesso, poiché il loro dashboard di servizio e i dashboard di servizio personali non ricevevano informazioni e mostravano falsi positivi. Quindi, ci sono state molte altre organizzazioni IT che hanno investigato sugli inconvenienti poiché non ricevevano le informazioni corrette. Sorprendentemente, AWS è stata aperta sull&#39;intero incidente, quindi è stata una grande esperienza di apprendimento.</p>
+<h2>Lezioni apprese</h2>
+<p>Una delle prime lezioni è che le operazioni semplici all&#39;infrastruttura, come aumentare la capacità, devono essere comprese e pianificate. Ovviamente, AWS non ha solo effettuato gli aggiornamenti a caso, ma non ha compreso appieno l&#39;impatto. Anche se un&#39;operazione sembra routinaria, è sempre una buona idea testarla in un ambiente di prova fino alla sua completa disfunzione durante gli aggiornamenti, anche se richiede più tempo. Ciò è particolarmente importante con servizi critici per altri servizi dipendenti dal nucleo.</p>
+<p>Inoltre, le architetture di servizio o micro-servizio devono comprendere l&#39;intera struttura di dipendenza dei servizi in modo da poter risolvere i problemi quando si verificano interruzioni. È anche importante essere il più possibile disaccoppiati dalle dipendenze e includere la programmazione difensiva con i microservizi per evitare l&#39;effetto domino che si è verificato in questo caso.</p>
+<p>Un altro problema da tenere d&#39;occhio sono le dipendenze circolari. Se, in una catena di microservizi che dipendono tra loro, uno riscontra un problema, tutto può fermarsi bruscamente, consumando risorse e non ottenendo risultati.</p>
+<p>Quando sviluppi micro servizi, tieni presente che non avrai sempre connettività ai servizi di cui dipendi. Scrivere programmi che possano funzionare in uno stato degradato, o almeno indicare che un servizio non sta funzionando, può risparmiare tempo e problemi. In questo caso di interruzione, ricorda che i pannelli di controllo erano verdi nonostante non arrivasse alcuna nuova informazione.</p>
+<h2>Chi ha gestito al meglio l&#39;interruzione</h2>
+<p>Molte aziende sono state colpite dal disservizio di AWS, incluso alcune di proprietà stessa di Amazon. Alcune sono riuscite a superare agevolmente il disservizio, mentre altre hanno avuto più difficoltà nel riprendersi. Coloro che sono stati in grado di adattarsi velocemente avevano una strategia di cloud multi-ibrido, quindi avevano cloud alternativi come backup. Alcuni hanno utilizzato una diversa regione di AWS, mentre altri hanno utilizzato Google o Azure, e alcuni addirittura hanno fatto ritorno ai loro centri dati o siti web esterni. Almeno i siti web hanno mostrato un messaggio che stavano attualmente riscontrando problemi, invece di un errore 404.</p>
+<p>Le aziende che non utilizzavano alcuni dei servizi specializzati di Amazon hanno ottenuto risultati migliori. Ad esempio, le offerte di container gestiti EKS ed ECS e Lambda sono state colpite duramente e sono state inattive per un periodo di tempo notevole, quindi coloro che dipendevano da questi servizi sono rimasti senza opzioni.</p>
+<p>Durante il black out, i servizi di auto scaling non funzionavano correttamente, quindi qualsiasi azienda che aveva molto traffico in quel momento doveva capire cosa stesse succedendo e scalare i servizi manualmente. Questo era un problema più grande di quanto possa essere normalmente poiché era il giorno prima del Ringraziamento, un momento in cui molti consumatori sono in viaggio e fanno acquisti online. Ad esempio, Etsy è rimasta attiva, ma non potevano scalare come avrebbero normalmente fatto, il che ha portato a una diminuzione delle vendite.</p>
+<p>Le aziende che hanno un proprio monitoraggio esterno hanno ottenuto risultati migliori. Alcune di esse hanno persino avvisato AWS dei disservizi. Non erano dipendenti solo dalla dashboard di salute di AWS, ma avevano il proprio monitoraggio in esecuzione sui loro server.</p>
+<p>Qual è la lezione principale che dovremmo imparare da questo? Le organizzazioni dovrebbero prendere in carico le proprie risorse cloud, proprio come farebbero con qualsiasi servizio pubblico. Come per avere un generatore di backup per l&#39;elettricità per garantire la continuazione delle attività in caso di interruzione, le aziende dovrebbero utilizzare le stesse best practice per i servizi cloud. Ciò significa che avere una nuvola di backup che può mantenerti operativo, anche a capacità ridotte, è essenziale per superare una tempesta come l&#39;interruzione di AWS.</p>
+<h2>Risorse</h2>
+<ul>
+<li><p><a href="https://aws.amazon.com/message/11201/">https://aws.amazon.com/message/11201/</a></p>
+</li>
+<li><p><a href="https://aws.amazon.com/message/11201/">https://aws.amazon.com/message/11201/</a></p>
+</li>
+<li><p><a href="https://aws.amazon.com/message/11201/">https://aws.amazon.com/message/11201/</a></p>
+</li>
+</ul>
+<p>Tradurre in italiano il seguente testo: * <a href="https://www.theverge.com/2020/11/25/21719396/amazon-web-services-aws-outage-down-internet">https://www.theverge.com/2020/11/25/21719396/amazon-web-services-aws-outage-down-internet</a></p>
+<p>Non è possibile tradurre testo da un URL. Si prega di fornire un testo specifico da tradurre.</p>
+<p>Ecco cosa ha causato il grande black out di AWS la scorsa settimana, scuse.</p>
+<p>Amazon Web Services colpito da un&#39;interruzione del servizio.</p>
+<p>Traduci il seguente testo in italiano: *<a href="https://www.washingtonpost.com/technology/2020/11/28/amazon-outage-explained">https://www.washingtonpost.com/technology/2020/11/28/amazon-outage-explained</a></p>
+<p>Spiegazione dell&#39;interruzione di Amazon</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/it/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/it/episodes/",
+  "inLanguage": "it",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/it/episodes/edt-33/#episode",
+  "url": "https://embracingdigital.org/it/episodes/edt-33/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/it/episodes/edt-33/"
+  },
+  "name": "Il black out di AWS di novembre 2020.",
+  "episodeNumber": 33,
+  "datePublished": "2020-12-15T00:00:00.000Z",
+  "inLanguage": "it",
+  "description": "Darren Pulsipher, Chief Solution Architect, Public Sector, at Intel talks about the lessons learned from the AWS outage in November 2020 and preventative solutions to navigating such outages.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/it/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/it/episodes/edt-33/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/it/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/it/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Il black out di AWS di novembre 2020.",
+      "item": "https://embracingdigital.org/it/episodes/edt-33/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

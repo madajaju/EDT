@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Securing the Supply Chain #110 | Embracing Digital Transformation</title>
+    <meta name="description" content="In this episode, Darren talks with Lieutenant General Thomas Horlander, who recently joined the Intel Public Sector Team, about the microelectronics supply chain and national security.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/fr/episodes/edt-110/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Securing the Supply Chain #110 | Embracing Digital Transformation">
+    <meta property="og:description" content="In this episode, Darren talks with Lieutenant General Thomas Horlander, who recently joined the Intel Public Sector Team, about the microelectronics supply chain and national security.">
+    <meta property="og:url" content="https://embracingdigital.org/fr/episodes/edt-110/">
+    <meta property="og:image" content="https://embracingdigital.org/fr/episodes/edt-110/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Securing the Supply Chain #110 | Embracing Digital Transformation">
+    <meta name="twitter:description" content="In this episode, Darren talks with Lieutenant General Thomas Horlander, who recently joined the Intel Public Sector Team, about the microelectronics supply chain and national security.">
+    <meta name="twitter:image" content="https://embracingdigital.org/fr/episodes/edt-110/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/fr/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/fr/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/fr/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/fr/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/fr/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/fr/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/fr/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/fr/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/fr/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/fr/">Home</a></li>
+        <li><a href="/fr/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 110: Securing the Supply Chain #110</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/fr/episodes/edt-110/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/fr/episodes/edt-110/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 110</span>
+                <span class="episode-title">Securing the Supply Chain #110</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2022-10-20T00:00:00.000Z" itemprop="datePublished">2022-10-20T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="110"/>
+            <meta itemprop="inLanguage" content="fr"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2022-10-20T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            In this episode, Darren talks with Lieutenant General Thomas Horlander, who recently joined the Intel Public Sector Team, about the microelectronics supply chain and national security.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../fr/search.html?query=microelectronics"
+                   itemprop="keywords">microelectronics</a>
+                
+                <a href="../../fr/search.html?query=artificialintelligence"
+                   itemprop="keywords">artificialintelligence</a>
+                
+                <a href="../../fr/search.html?query=supplychain"
+                   itemprop="keywords">supplychain</a>
+                
+                <a href="../../fr/search.html?query=technology"
+                   itemprop="keywords">technology</a>
+                
+                <a href="../../fr/search.html?query=generativeai"
+                   itemprop="keywords">generativeai</a>
+                
+                <a href="../../fr/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../fr/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../fr/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../fr/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../fr/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Dans cet épisode, Darren discute avec le lieutenant-général Thomas Horlander, qui a récemment rejoint l&#39;équipe du secteur public d&#39;Intel, de la chaîne d&#39;approvisionnement en microélectronique et de la sécurité nationale.</p>
+<p>Thomas a rejoint l&#39;armée en 1983 après avoir obtenu son diplôme de baccalauréat en finance et avoir conclu que le secteur privé n&#39;était pas fait pour lui. Il a rejoint l&#39;armée pour ce qu&#39;il pensait être une carrière de trois à cinq ans et s&#39;est finalement engagé pendant 39 ans, occupant le poste de Contrôleur de l&#39;armée à la fin de sa carrière. Il a pris sa retraite il y a environ un an et a rejoint Intel.</p>
+<p>Thomas est inspiré par les grands individus, la culture et la mission importante chez Intel. Il apprécie le rôle fondamental que joue Intel dans la vie quotidienne de chacun et l&#39;opportunité d&#39;influencer l&#39;avenir du pays.</p>
+<p>Lorsque Thomas a rejoint l&#39;armée en 1983, la microélectronique était encore à l&#39;état embryonnaire ; ils n&#39;avaient même pas d&#39;ordinateurs. En tant que jeune officier, il s&#39;inquiétait de savoir s&#39;il avait suffisamment de piles D pour faire fonctionner les radios. Ainsi, Thomas se considère comme un &quot;immigrant numérique&quot; car il a vécu l&#39;évolution qui s&#39;est produite avec le silicium.</p>
+<p>La société et l&#39;armée sont maintenant dépendantes du silicium, et la chaîne d&#39;approvisionnement autour des microélectroniques est critique : il s&#39;agit d&#39;un enjeu de sécurité nationale. Thomas affirme que l&#39;industrie des microélectroniques occupe une place centrale aux côtés de l&#39;industrie pétrolière en tant que centre de gravité en ce qui concerne la sécurité nationale, mondiale et la stabilité économique.</p>
+<p>Dans l&#39;armée, les véhicules et les systèmes d&#39;armes sont tous équipés de microélectronique. Ils permettent à l&#39;armée, par exemple, d&#39;être plus précise et plus meurtrière tout en étant plus légère, d&#39;avoir un système de localisation plus précis et des communications plus fiables.</p>
+<p>Notre dépendance aux microélectroniques a stimulé l&#39;adoption récente de la loi Chips. Bien que le besoin soit apparu avant la crise en Ukraine, le fait de voir ce que l&#39;Ukraine a été capable de faire grâce aux microélectroniques a mis en évidence la nécessité de sécuriser la chaîne d&#39;approvisionnement.</p>
+<p>Thomas a été étudiant en sécurité nationale toute sa carrière, et il l&#39;envisage de manière plus holistique que simplement la défense et le rôle des forces armées. Pour lui, la sécurité nationale implique une bonne gouvernance et l&#39;État de droit. Cela englobe une économie saine et fonctionnelle, l&#39;enseignement pratique, les soins de santé, et bien sûr, les forces armées. Presque toutes les professions de la société américaine jouent un rôle dans la sécurité nationale. À partir de cette perspective, pratiquement chaque aspect nécessaire à la sécurité nationale repose sur la microélectronique.</p>
+<p>La loi Chips était nécessaire, selon Thomas, en raison du déséquilibre massif au sein de l&#39;écosystème de l&#39;industrie. En même temps, bien que ce ne soit pas la solution ultime pour la redistribution de l&#39;équilibre, la loi Chips est une première étape essentielle qui aura un impact sur la sécurité nationale. Lorsque l&#39;on examine les activités principales de l&#39;industrie des microélectroniques, depuis l&#39;origine des éléments de terres rares jusqu&#39;aux fabricants d&#39;équipements de conception et de fabrication, il est évident que cela forme un incroyable ensemble d&#39;activités et c&#39;est pourquoi il est si difficile d&#39;en avoir une vision claire. Une puce électronique peut changer de mains dix fois au cours d&#39;un processus de fabrication.</p>
+<p>COVID, de bien des façons, a révélé cette chaîne d&#39;approvisionnement complexe et fragile lorsque, par exemple, des usines ont été fermées en Malaisie, en Irlande ou en Chine en raison d&#39;une épidémie de COVID, et tout à coup, vous ne pouvez pas livrer une voiture parce qu&#39;elle n&#39;a pas de puce électronique. La plupart des gens ne réalisent pas le déséquilibre mondial significatif qui existe actuellement. Seulement huit pour cent du silicium est fabriqué aux États-Unis. Soixante-dix ou quatre-vingts pour cent est fabriqué en Asie du Sud-Est, précisément dans trois pays : la Chine, la Corée du Sud et Taïwan.</p>
+<p>Avec cette connaissance, il est évident que rééquilibrer l&#39;écosystème de la chaîne d&#39;approvisionnement mondiale et rétablir la capacité et les compétences aux États-Unis est d&#39;une importance primordiale. Aucune industrie ne devrait avoir de points de défaillance uniques, une préoccupation dans l&#39;industrie de la microélectronique.</p>
+<p>Le gouvernement fédéral, la base industrielle de la défense et l&#39;écosystème commencent tous à prendre conscience de ce problème, et le &quot;Chips Act&quot; est représentatif de cette reconnaissance que nous devons agir. Thomas sait que six entreprises ont déclaré qu&#39;elles investiront dans des usines de fabrication aux États-Unis au cours des huit à dix prochaines années.</p>
+<p>L&#39;une de ces entreprises est, bien sûr, Intel. Intel construit actuellement des usines à Ohio, Arizona et Nouveau-Mexique. La relocalisation de capacités et compétences dans l&#39;industrie des microélectroniques est nécessaire pour la sécurité nationale, mais renforcera également les économies locales et offrira des opportunités aux travailleurs, revitalisant ainsi des communautés entières.</p>
+<p>La perfusion de l&#39;investissement en capital provenant du Chips Act est fondamentalement essentielle car il s&#39;agit d&#39;une course contre la montre. Thomas est optimiste quant à l&#39;avenir de l&#39;industrie et aux mesures prises pour garantir un avenir prometteur et une innovation continue.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/fr/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/fr/episodes/",
+  "inLanguage": "fr",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/fr/episodes/edt-110/#episode",
+  "url": "https://embracingdigital.org/fr/episodes/edt-110/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/fr/episodes/edt-110/"
+  },
+  "name": "Securing the Supply Chain #110",
+  "episodeNumber": 110,
+  "datePublished": "2022-10-20T00:00:00.000Z",
+  "inLanguage": "fr",
+  "description": "In this episode, Darren talks with Lieutenant General Thomas Horlander, who recently joined the Intel Public Sector Team, about the microelectronics supply chain and national security.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/fr/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/fr/episodes/edt-110/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/fr/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/fr/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Securing the Supply Chain #110",
+      "item": "https://embracingdigital.org/fr/episodes/edt-110/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Organizzazione Cloud Broker Parte 2 | Embracing Digital Transformation</title>
+    <meta name="description" content="In part two of two, Darren Pulsipher, Chief Solution Architect, and Intel Cloud Solution Architects Dave Shrestha and Kevin Bleckman talk about the benefits and services of a cloud broker organization.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/it/episodes/edt-57/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Organizzazione Cloud Broker Parte 2 | Embracing Digital Transformation">
+    <meta property="og:description" content="In part two of two, Darren Pulsipher, Chief Solution Architect, and Intel Cloud Solution Architects Dave Shrestha and Kevin Bleckman talk about the benefits and services of a cloud broker organization.">
+    <meta property="og:url" content="https://embracingdigital.org/it/episodes/edt-57/">
+    <meta property="og:image" content="https://embracingdigital.org/it/episodes/edt-57/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Organizzazione Cloud Broker Parte 2 | Embracing Digital Transformation">
+    <meta name="twitter:description" content="In part two of two, Darren Pulsipher, Chief Solution Architect, and Intel Cloud Solution Architects Dave Shrestha and Kevin Bleckman talk about the benefits and services of a cloud broker organization.">
+    <meta name="twitter:image" content="https://embracingdigital.org/it/episodes/edt-57/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/it/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/it/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/it/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/it/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/it/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/it/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/it/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/it/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/it/">Home</a></li>
+        <li><a href="/it/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 57: Organizzazione Cloud Broker Parte 2</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/it/episodes/edt-57/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/it/episodes/edt-57/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 57</span>
+                <span class="episode-title">Organizzazione Cloud Broker Parte 2</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2021-07-15T00:00:00.000Z" itemprop="datePublished">2021-07-15T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="57"/>
+            <meta itemprop="inLanguage" content="it"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2021-07-15T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            In part two of two, Darren Pulsipher, Chief Solution Architect, and Intel Cloud Solution Architects Dave Shrestha and Kevin Bleckman talk about the benefits and services of a cloud broker organization.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../it/search.html?query=moderncomputing"
+                   itemprop="keywords">moderncomputing</a>
+                
+                <a href="../../it/search.html?query=cloudsecurity"
+                   itemprop="keywords">cloudsecurity</a>
+                
+                <a href="../../it/search.html?query=publiccloud"
+                   itemprop="keywords">publiccloud</a>
+                
+                <a href="../../it/search.html?query=workloadoptimization"
+                   itemprop="keywords">workloadoptimization</a>
+                
+                <a href="../../it/search.html?query=dataprivacy"
+                   itemprop="keywords">dataprivacy</a>
+                
+                <a href="../../it/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../it/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../it/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../it/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../it/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+                <a href="../../it/search.html?query=people"
+                   itemprop="keywords">people</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>Considerazioni sulla selezione del cloud</h1>
+<p>Sette anni fa, quando Dave e Kevin hanno avviato per la prima volta il team di intermediari cloud di Intel, c&#39;erano significative differenze tra i fornitori di servizi cloud, come la disponibilità regionale, ma ora, grazie alla maturità, le differenze sono minori. Alcuni fornitori si specializzano in determinate aree come l&#39;IA e l&#39;apprendimento automatico o servizi di database gestiti avanzati, e ci sono fattori di costo, ma sono più simili che diversi. In generale, i fornitori cloud stanno diventando sempre più una utility man mano che maturano.</p>
+<p>La sicurezza è buona e abbastanza standard tra i fornitori di servizi cloud. In passato, Intel utilizzava prodotti di fornitori esterni per gestire la sicurezza con i servizi cloud. I fornitori di servizi cloud hanno ora integrato gran parte di questi componenti nelle loro piattaforme e Intel ha iniziato a utilizzare componenti integrati in maggior misura. Ci sono ancora molte cose da fare in questo settore. In alcuni casi, sarà ancora necessario gestire la propria sicurezza, ma i fornitori stanno andando nella giusta direzione. Utilizzare gli strumenti integrati non è l&#39;opzione più semplice per le nuove aziende perché non è completamente gestita, ma una volta acquisite le competenze e la maturità, almeno gli strumenti sono forniti.</p>
+<p>La gestione dei costi è ancora un&#39;arte; molte persone sono sorprese dalla loro prima fattura del cloud. Nonostante ci siano strumenti integrati che aiutano, consulenti e calcolatori del cloud pubblico, ci sono alcuni costi nascosti. I costi di ingresso e uscita sono probabilmente la sorpresa numero uno, seguiti dalla sovradimensionamento delle risorse. Intel ha un ottimizzatore del cloud che è alimentato da Densify e aiuta a identificare le risorse sovradimensionate e consiglia, attraverso un&#39;analisi dettagliata, le dimensioni delle istanze e le famiglie più ottimali.</p>
+<p>Alcuni carichi di lavoro dovrebbero rimanere in loco, specialmente per grandi aziende come Intel che hanno un grande data center in loco. Il team dell&#39;intermediario cloud dispone di un&#39;attrezzatura interna chiamata strumento per l&#39;assunzione di decisioni che può aiutare a collocare il carico di lavoro giusto nel posto giusto, e talvolta la soluzione migliore è quella in loco.</p>
+<p>Considerazione sul carico di lavoro per la posizione del cloud pubblico</p>
+<p>Senza uno strumento per prendere la decisione, ci sono cinque aree da considerare.</p>
+<p>Sicurezza: Assicurati di conoscere i fornitori di identità, la crittografia, la conformità e le opzioni di accesso singolo. Questi sono gli stessi elementi con cui normalmente ti occupi in ambiente locale. Invece di strumenti separati, è meglio avere strumenti che coprano sia l&#39;ambiente locale che il cloud pubblico, in modo che le tue squadre non debbano imparare nuovamente strumenti separati.</p>
+<ul>
+<li>Privacy</li>
+</ul>
+<p>Stabilità del carico di lavoro</p>
+<p>Affinità dei dati/gravità dei dati: Assicurati che il tuo fornitore di cloud abbia disponibilità nelle regioni di cui hai bisogno. Alcuni fornitori di cloud hanno zone di disponibilità, o centri di dati, in tutte le loro regioni, mentre altri no. Inoltre, se un carico di lavoro si connette a molti sistemi on-premises, non ha senso mettere quel carico di lavoro nel cloud pubblico.</p>
+<p>Costo: Ci sono ancora delle differenze di costo tra i fornitori di cloud pubblico, soprattutto con le istanze di calcolo di grande dimensione. Considera anche i costi di uscita.</p>
+<h2>Come vendere il tuo servizio di Cloud Broker.</h2>
+<p>Acquistare il servizio di cloud broker può essere difficile per alcuni, come gli sviluppatori abituati a avere il controllo e a creare istanze a loro piacimento. Ci possono essere anche problemi di crescita. Quando le persone alla Intel hanno aperto i loro account, si sono sentite insicure e poi il reparto di sicurezza delle informazioni ha inviato messaggi quando stavano commettendo degli errori, senza che loro sapessero necessariamente cosa avessero fatto o come correggerlo. Con l&#39;evoluzione e la maturazione del servizio, questi problemi si sono risolti da soli grazie all&#39;intervento del team che ha offerto aiuto e ha implementato correzioni automatiche.</p>
+<p>Le persone hanno visto che il servizio alla fine era un beneficio perché forniva un modo rapido e facile per accedere al cloud pubblico con tutto il supporto di cui avevano bisogno. Dopo un certo periodo, il servizio ha cominciato a vendersi da solo.</p>
+<p>Uno dei servizi chiave che il team offre è agire da ponte tra i partner commerciali finali di Intel e i gruppi di sicurezza dell&#39;informazione per neutralizzare politiche di sicurezza eccessivamente aggressive che creano problemi e troppi ticket. Il team fornisce l&#39;equilibrio corretto che consente agli sviluppatori di lavorare all&#39;interno di un framework sicuro e di soddisfare comunque i requisiti di sicurezza. I mediatori, in sostanza, lavorano come intermediari tra la sicurezza dell&#39;informazione e gli sviluppatori.</p>
+<p>Il team del broker cloud fornisce anche formazione invitando i fornitori di cloud a tenere workshop. Questo vantaggio è inoltre derivato dal Cloud Center of Excellence, dove le persone hanno richiesto formazione in aree specifiche e poi il team trattava con i fornitori per organizzarla.</p>
+<p>Oltre ai fornitori esterni, Intel ha utilizzato squadre interne per mostrare ciò che avevano fatto con il cloud pubblico in modo che altre squadre potessero trarne beneficio.</p>
+<p>I team di broker cloud all&#39;interno delle aziende possono fornire una serie di servizi e vantaggi come la sicurezza e l&#39;efficienza dei costi, specialmente man mano che i servizi cloud pubblici maturano, si espandono e diventano sempre più necessari per le operazioni.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/it/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/it/episodes/",
+  "inLanguage": "it",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/it/episodes/edt-57/#episode",
+  "url": "https://embracingdigital.org/it/episodes/edt-57/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/it/episodes/edt-57/"
+  },
+  "name": "Organizzazione Cloud Broker Parte 2",
+  "episodeNumber": 57,
+  "datePublished": "2021-07-15T00:00:00.000Z",
+  "inLanguage": "it",
+  "description": "In part two of two, Darren Pulsipher, Chief Solution Architect, and Intel Cloud Solution Architects Dave Shrestha and Kevin Bleckman talk about the benefits and services of a cloud broker organization.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/it/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/it/episodes/edt-57/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/it/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/it/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Organizzazione Cloud Broker Parte 2",
+      "item": "https://embracingdigital.org/it/episodes/edt-57/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

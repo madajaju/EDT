@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Demistificazione di 5G, Edge e AI | Embracing Digital Transformation</title>
+    <meta name="description" content="Darren Pulsipher, Chief Solution Architect, Intel, discusses the groundbreaking changes 5G will bring to edge and AI with Dr. Anna Scott, Chief Edge Architect, Intel.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/it/episodes/edt-62/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Demistificazione di 5G, Edge e AI | Embracing Digital Transformation">
+    <meta property="og:description" content="Darren Pulsipher, Chief Solution Architect, Intel, discusses the groundbreaking changes 5G will bring to edge and AI with Dr. Anna Scott, Chief Edge Architect, Intel.">
+    <meta property="og:url" content="https://embracingdigital.org/it/episodes/edt-62/">
+    <meta property="og:image" content="https://embracingdigital.org/it/episodes/edt-62/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Demistificazione di 5G, Edge e AI | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Darren Pulsipher, Chief Solution Architect, Intel, discusses the groundbreaking changes 5G will bring to edge and AI with Dr. Anna Scott, Chief Edge Architect, Intel.">
+    <meta name="twitter:image" content="https://embracingdigital.org/it/episodes/edt-62/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/it/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/it/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/it/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/it/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/it/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/it/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/it/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/it/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/it/">Home</a></li>
+        <li><a href="/it/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 62: Demistificazione di 5G, Edge e AI</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/it/episodes/edt-62/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/it/episodes/edt-62/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 62</span>
+                <span class="episode-title">Demistificazione di 5G, Edge e AI</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2021-08-19T00:00:00.000Z" itemprop="datePublished">2021-08-19T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="62"/>
+            <meta itemprop="inLanguage" content="it"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2021-08-19T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Darren Pulsipher, Chief Solution Architect, Intel, discusses the groundbreaking changes 5G will bring to edge and AI with Dr. Anna Scott, Chief Edge Architect, Intel.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../it/search.html?query=5g"
+                   itemprop="keywords">5g</a>
+                
+                <a href="../../it/search.html?query=iot"
+                   itemprop="keywords">iot</a>
+                
+                <a href="../../it/search.html?query=edgecomputing"
+                   itemprop="keywords">edgecomputing</a>
+                
+                <a href="../../it/search.html?query=artificialintelligence"
+                   itemprop="keywords">artificialintelligence</a>
+                
+                <a href="../../it/search.html?query=augmentedreality"
+                   itemprop="keywords">augmentedreality</a>
+                
+                <a href="../../it/search.html?query=generativeai"
+                   itemprop="keywords">generativeai</a>
+                
+                <a href="../../it/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../it/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../it/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../it/search.html?query=technology"
+                   itemprop="keywords">technology</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Lo sfondo di Anna è nel settore industriale e manifatturiero dell&#39;informazione. Ha un dottorato in ingegneria chimica, oltre a un MBA. Ha trascorso 15 anni lavorando come ingegnere di processo e di progettazione, successivamente ha lavorato per startup e nella gestione dell&#39;ingegneria. È stata con Intel per poco più di sei anni, negli ultimi due anni e mezzo ha lavorato nel team del settore pubblico dove supporta principalmente le attività di IoT e edge di Intel, con un coinvolgimento crescente anche nel 5G perché il 5G, insieme all&#39;IA, sta cambiando in modo drastico quel settore.</p>
+<h2>La trasformazione della rete è fondamentale per l&#39;infrastruttura 5G.</h2>
+<p>Nel mondo industriale, l&#39;IoT non era nulla di nuovo; era solo cablato. Con i sistemi che si stanno ora spostando verso il wireless, si ha la stretta combinazione di IT e OT per convertire l&#39;analisi, invece di avere solo un insieme di dati di processo specifici per quel mondo OT. Un diverso insieme di sistemi ora si sposa con il business, quindi tutto questo viene portato nello stesso spazio. Anche se ci sono alcune differenze ben definite nei casi d&#39;uso e nelle architetture nel settore pubblico, come militare e città intelligenti, vi è una convergenza comune nell&#39;analisi, nell&#39;applicazione e nella tempistica per prendere decisioni aziendali migliori.</p>
+<p>Un motivo per cui l&#39;IoT ha impiegato così tanto tempo per diffondersi al di fuori del settore manifatturiero e in altre aree è principalmente il costo di cablaggio fisso. La sicurezza è stata anche un ostacolo.</p>
+<p>Il 5G sta ora liberando l&#39;IoT e il mondo del bordo grazie alla convenienza economica, soprattutto dal lato dei consumatori. Quando si tratta di infrastrutture critiche aziendali, però, si tratta di una conversazione diversa su come farlo in modo da proteggere i dati. Il 5G sarà trasformativo, ma non sta accadendo ancora sul lato commerciale. Parte del divario è dovuto al ritardo tra il rilascio degli standard e la produzione dell&#39;hardware per sfruttare tali standard.</p>
+<p>Per chiunque abbia trascorso molto tempo con 3GPP o altri organismi di standardizzazione nel campo delle telecomunicazioni, questo tempismo non è sorprendente. Al momento è possibile realizzare una rete 5G, ma siamo ancora nella fase di creazione di prototipi in cui dobbiamo dimostrare il valore del 5G. Dobbiamo mostrare nuovi casi d&#39;uso che non possono essere supportati da LTE o dal 4G.</p>
+<h2>Diversi modelli di implementazione 5G offrono flessibilità.</h2>
+<p>Perché non restare semplicemente con il WiFi 6 invece di usare il 5G? La risposta è complicata. Molte delle organizzazioni che hanno promosso il 5G hanno anche sostenuto il WiFi 6, quindi si tratta di una tecnologia complementare. La differenza sta nell&#39;attrezzatura, quindi è necessario conoscere i dettagli dei casi d&#39;uso per determinare quale sarebbe la soluzione più economica. Ad esempio, il 5G è incredibile, ma non sarebbe conveniente installare una rete 5G su una nave da crociera perché la penetrazione del segnale non sarebbe sufficiente. L&#39;ambiente non è favorevole a qualsiasi tipo di segnale wireless, ma il WiFi 6 con i punti di accesso ha più senso.</p>
+<p>Il 5G è convincente, tuttavia, per diverse ragioni e può fare cose che il 4G e LTE non possono fare. Per la realtà aumentata e la realtà virtuale, è necessaria una latenza molto bassa e una banda larga elevata per consentire utilizzi più interattivi, ad esempio la riparazione di attrezzature o macchinari. Hai bisogno di un esperto remoto che si trovi di fronte a un problema che può effettuare lo streaming video e audio con sovrapposizione di disegni e funzionalità che sono gestiti da una posizione centrale o remota, che porta tutta quella conoscenza ed esperienza direttamente al punto in cui stai cercando di lavorare. Quel tipo di caso d&#39;uso non può essere realizzato su una rete LTE. La banda larga svolge un ruolo importante, ma la latenza è la forza trainante. Per evitare di ammalarti mentre si utilizza un visore, è necessario avere latenze molto basse senza ritardi o far sì che le cose procedano in modo asincrono.</p>
+<p>Il mondo LTE e 4G è cambiato a causa del 5G grazie alla gestione dello spettro. Un settore in cui questo sta cambiando nell&#39;industria è che ora è possibile per un&#39;azienda ottenere una licenza prioritaria per lo spettro CBRS e creare la propria rete privata, totalmente separata dai principali operatori di telecomunicazioni governativi. Ad esempio, un grande produttore può coprire uno spazio enorme in modo più conveniente con un LTE privato rispetto a punti di accesso. Ci sono anche grandi vantaggi come la possibilità di riconfigurare il proprio spazio senza dover collegare tutti i workstation con cavi, o ad esempio se si devono spostare enormi pezzi di metallo come la fusoliera di un aereo nello spazio, che potrebbero interferire con i segnali WiFi, è possibile creare un&#39;infrastruttura portatile che non sia vincolata a posizioni cablate.</p>
+<p>La sicurezza è una preoccupazione centrale per qualsiasi organizzazione. Sebbene il 5G non sia stato progettato con la sicurezza in mente, il 6G lo sarà. Fortunatamente, con le capacità del 5G, possiamo fare molto per quanto riguarda la rete a fiducia zero e altre misure di sicurezza che daranno ai clienti la certezza su come i loro dati vengono spostati attraverso le reti.</p>
+<p>Gli standard 5G hanno cambiato il problema di alcuni anni fa quando l&#39;infrastruttura wireless esisteva in hardware proprietari e software proprietari, con uno spettro licenziato a disposizione solo di poche aziende che potevano permetterselo. La rete definita dal software consente di hostare l&#39;infrastruttura di rete su hardware comune, reperibile sul mercato. Non c&#39;è bisogno di hardware specializzato come nelle generazioni precedenti. Questo sta accadendo anche nel lato LTE, ad esempio, rendendo disponibile lo spettro CBRS e allontanandosi dall&#39;hardware e software proprietari.</p>
+<p>Intel spende molto tempo lavorando con disruptor che utilizzano la nostra architettura di riferimento FlexRAN. L&#39;architettura FlexRAN diventa la base per aiutare la tecnologia disruptiva a proliferare nel nuovo mercato 5G perché fornisce una pila software 5G che funziona su hardware comune di tipo off-the-shelf, dove in precedenza era necessario un hardware proprietario. Ora c&#39;è uno spazio molto più aperto e portatile, e il costo di ingresso è molto più economico rispetto a prima. Non sono più solo poche aziende a controllare tutto. Intel e altre stanno cercando di aprire tutto e sfruttare gli standard aperti per supportare tutti questi disruptor e cambiare l&#39;intera dinamica.</p>
+<h2>Spettro 5G e Regolamentazione per le Reti del Domani</h2>
+<p>Con una connettività migliorata, una bassa latenza e una banda larga elevata, saranno disponibili molti nuovi casi d&#39;uso. Ciò che sta cambiando nel mercato è il modo in cui verrà monetizzato il 5G. Ad esempio, un provider di servizi cloud insieme a un operatore di telecomunicazioni può offrire servizi migliori ai propri clienti perché non sono più separati. Si tratta di uno sforzo commerciale combinato che mette al primo posto ciò che conta davvero: la qualità e la prioritizzazione. Un altro modo di vedere la questione è che i provider di servizi cloud stanno acquistando capacità che apriranno le funzionalità della rete allo stesso modo in cui i fornitori di telecomunicazioni stanno esplorando cosa possono fare sul lato cloud. Di nuovo, questo avviene perché il silos è stato abbattuto; il tubo dei dati non è più un insieme di servizi.</p>
+<p>Non è chiaro come finirà tutto questo, tranne che sta ridefinendo il tipo di lavoro che puoi fare a causa dell&#39;accessibilità ai dati e dove si troveranno queste carichi di lavoro. C&#39;è un&#39;enorme valore nel passare in modo fluido dal bordo al cloud e farlo in modo basato sulle esigenze del cliente, cosa che ora è possibile.</p>
+<h2>Un nuovo paradigma di calcolo supporta nuove esigenze di dati.</h2>
+<p>Il 5G sta liberando molti modelli architettonici diversi. Ad esempio, offre due opzioni di architetture per l&#39;intelligenza artificiale, mentre in precedenza ce n&#39;era solo una con limitazioni.</p>
+<p>Senza la banda larga fornita dalla rete 5G, l&#39;IA era limitata all&#39;elaborazione sui dispositivi periferici, il che richiedeva di inviare i modelli di IA ai dispositivi periferici. Questa restrizione ingombrante ha aumentato il ciclo di sviluppo e di implementazione dell&#39;IA e limita il numero di carichi di lavoro dell&#39;IA che possono essere sfruttati sul campo. Con un aumento della banda, grandi flussi di dati provenienti da telecamere o sensori possono essere inviati a un centro dati, consentendo l&#39;esecuzione di più carichi di lavoro dell&#39;IA e consentendo un apprendimento continuo dell&#39;IA. Ciò offre alle organizzazioni l&#39;opportunità di eseguire sia l&#39;elaborazione sul campo che il miglioramento dell&#39;apprendimento approfondito richiesto dalle mutevoli esigenze dei dati di così tante organizzazioni.</p>
+<p>Con la Realtà Aumentata, ad esempio, il 5G significa che gli occhiali possono essere mobili invece che collegati con le stesse funzionalità, perché il 5G permette la condivisione di set di dati più grandi in un mondo senza collegamenti. I tradizionali muri dei centri dati si stanno abbattendo.</p>
+<p>Se non hai molta assistenza tecnica o una conoscenza dettagliata su come mantenere i tuoi sistemi in funzione, puoi eseguirli tutti nel cloud. Se non desideri che i tuoi dati siano nel cloud, puoi effettuare una versione che sia in locale su una rete privata che ti fornisce tutti i tipi di funzionalità per aggregare e correlare i dati al fine di fornire una comprensione di alto livello di ciò che sta accadendo nel tuo sistema in modo sicuro ed economicamente vantaggioso.</p>
+<p>In pratica, i tuoi dati possono ora risiedere sull&#39;edge, nel cloud, in loco o in quello che Cisco chiama &quot;la nebbia&quot;. Non importa più dove viene eseguita la tua applicazione, quindi puoi utilizzare il modello più conveniente in termini di costi. Nello spazio industriale, ad esempio, ci sono enormi risparmi nel non avere un componente di cablaggio rigido, o nell&#39;utilizzare una struttura LTE privata anziché punti di accesso WiFi. Ridurre questi tipi di costi porterà alla possibilità di avere dati estremamente ricchi. Questi ostacoli legati ai costi e alla connettività fisica sono ciò che mancava affinché l&#39;IoT decollasse come tutti avevano previsto.</p>
+<p>Anna prevede che per le applicazioni non di controllo, i prossimi due anni saranno diversi a causa del 5G. Un semplice esempio è che nell&#39;industria, qualcuno potrebbe portare il proprio PC normale fuori dall&#39;ufficio e sulla linea di produzione e essere in grado di fare tutto lì. Il 5G cambierà ciò che è possibile con riferimento ai controlli e al controllo di robot e macchine tramite una rete wireless nei prossimi cinque anni. Il prossimo livello di trasformazione sarà quello di poter fare controllo attraverso una rete wireless e farlo in modo sicuro ed efficace, senza mettere nessuno a rischio. Ciò richiederà molta validazione e rigorosa revisione, ma è all&#39;orizzonte.</p>
+<p>Inoltre, sarà emozionante vedere cosa il tuo provider di servizi cloud e la tua compagnia telefonica preferita faranno insieme per cambiare ciò che è possibile dal punto di vista dei servizi.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/it/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/it/episodes/",
+  "inLanguage": "it",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/it/episodes/edt-62/#episode",
+  "url": "https://embracingdigital.org/it/episodes/edt-62/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/it/episodes/edt-62/"
+  },
+  "name": "Demistificazione di 5G, Edge e AI",
+  "episodeNumber": 62,
+  "datePublished": "2021-08-19T00:00:00.000Z",
+  "inLanguage": "it",
+  "description": "Darren Pulsipher, Chief Solution Architect, Intel, discusses the groundbreaking changes 5G will bring to edge and AI with Dr. Anna Scott, Chief Edge Architect, Intel.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/it/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/it/episodes/edt-62/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/it/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/it/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Demistificazione di 5G, Edge e AI",
+      "item": "https://embracingdigital.org/it/episodes/edt-62/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

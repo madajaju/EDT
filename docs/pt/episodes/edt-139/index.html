@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Análise Logística Resiliente | Embracing Digital Transformation</title>
+    <meta name="description" content="In this episode Darren interviews the Adrian Kosowski CPO of Pathway about their unique ability to handle logistical data from the edge in DDIL environments with real-time analytics.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/pt/episodes/edt-139/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Análise Logística Resiliente | Embracing Digital Transformation">
+    <meta property="og:description" content="In this episode Darren interviews the Adrian Kosowski CPO of Pathway about their unique ability to handle logistical data from the edge in DDIL environments with real-time analytics.">
+    <meta property="og:url" content="https://embracingdigital.org/pt/episodes/edt-139/">
+    <meta property="og:image" content="https://embracingdigital.org/pt/episodes/edt-139/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Análise Logística Resiliente | Embracing Digital Transformation">
+    <meta name="twitter:description" content="In this episode Darren interviews the Adrian Kosowski CPO of Pathway about their unique ability to handle logistical data from the edge in DDIL environments with real-time analytics.">
+    <meta name="twitter:image" content="https://embracingdigital.org/pt/episodes/edt-139/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/pt/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/pt/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/pt/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/pt/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/pt/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/pt/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/pt/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/pt/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/pt/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/pt/">Home</a></li>
+        <li><a href="/pt/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 139: Análise Logística Resiliente</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/pt/episodes/edt-139/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/pt/episodes/edt-139/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 139</span>
+                <span class="episode-title">Análise Logística Resiliente</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2023-05-18T00:00:00.000Z" itemprop="datePublished">2023-05-18T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="139"/>
+            <meta itemprop="inLanguage" content="pt"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2023-05-18T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            In this episode Darren interviews the Adrian Kosowski CPO of Pathway about their unique ability to handle logistical data from the edge in DDIL environments with real-time analytics.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../pt/search.html?query=artificialintelligence"
+                   itemprop="keywords">artificialintelligence</a>
+                
+                <a href="../../pt/search.html?query=dataanalytics"
+                   itemprop="keywords">dataanalytics</a>
+                
+                <a href="../../pt/search.html?query=iot"
+                   itemprop="keywords">iot</a>
+                
+                <a href="../../pt/search.html?query=edgecomputing"
+                   itemprop="keywords">edgecomputing</a>
+                
+                <a href="../../pt/search.html?query=machinelearning"
+                   itemprop="keywords">machinelearning</a>
+                
+                <a href="../../pt/search.html?query=supplychain"
+                   itemprop="keywords">supplychain</a>
+                
+                <a href="../../pt/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../pt/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../pt/search.html?query=technology"
+                   itemprop="keywords">technology</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Você está interessado em aprender sobre como a transformação digital está afetando a logística? Neste episódio de &quot;Abraçando a Transformação Digital&quot;, o convidado especial Adrian Kosowski, diretor de produto da Pathway, discute análises resilientes na logística. A Pathway se concentra em estudar sistemas do mundo real a partir de uma perspectiva de computação distribuída e trabalha especificamente com dados na vertical de logística e transporte. Um dos maiores desafios nesse campo é agregar dados em grande escala e dar sentido a eles, é aí que a aprendizagem de máquina e as análises entram em jogo. Kosowski também observa que a logística é um mercado altamente concentrado, controlado apenas por algumas empresas, o que torna até mesmo pequenas melhorias nos processos incrivelmente valiosas para a economia mundial. No entanto, coletar dados do extremo, como contêineres no meio do oceano, apresenta seus próprios desafios, como otimizar energia e comunicação para dispositivos IoT alimentados por bateria. Em resumo, se você está interessado na intersecção entre logística e transformação digital, este episódio oferece insights valiosos sobre os desafios e oportunidades desse campo.</p>
+<p>O uso de dispositivos de internet das coisas (Internet of Things - IoT) na indústria logística e da cadeia de suprimentos pode trazer grandes benefícios para as empresas, proporcionando visibilidade de ponta a ponta e melhor capacidade de análise. No entanto, existem vários desafios associados ao uso desses dispositivos que precisam ser tratados.</p>
+<p>Um dos principais desafios é a estabilidade e confiabilidade desses dispositivos periféricos. No caso de uma falha ou travamento do dispositivo, as empresas devem ter um meio de otimizar esses dispositivos sem que eles adivinhem ou atuem de maneira incorreta. Isso é especialmente crítico para sistemas em tempo real que são utilizados para receber eventos em ordem.</p>
+<p>Outro desafio é a precisão dos dados coletados pelos dispositivos IoT. Alguns dados podem ser inferidos, e análises contextuais podem ser necessárias para interpretar o significado de um determinado ponto de dados e distinguir problemas de medição de problemas de processo. Dados imprecisos ou fora de tempo podem levar a riscos na cadeia de suprimentos e dificultar a otimização da rede de transporte.</p>
+<p>No entanto, o uso generalizado de dispositivos IoT pode levar à visibilidade e observabilidade completa dos processos ao longo da cadeia de suprimentos. Isso pode ajudar as empresas a otimizarem seus processos e se tornarem proativas em sua abordagem. Isso pode beneficiar todos os atores na cadeia de suprimentos - desde provedores de transporte e logística até varejistas e fabricantes.</p>
+<p>Enquanto não há um grupo ou segmento específico que as empresas devam direcionar para a adoção de dispositivos IoT, a adoção e cooperação generalizada entre todos os participantes pode levar a benefícios significativos para a cadeia de suprimentos global.</p>
+<p>Pathway foi desenvolvido para abordar as deficiências nas tecnologias de transmissão de dados existentes e fornecer uma ferramenta para pipelines de análise avançada em cima de fluxos de dados. Uma das características-chave que diferencia o Pathway é a facilidade de descrever lógica como se fosse destinado a um sistema em lote, ao mesmo tempo em que garante que funcione em um sistema de tempo real com dados fora de ordem.</p>
+<p>A Pathway foi desenvolvida tendo em mente dados de IoT, mas também pode lidar com dados de monitoramento de vídeo, monitoramento de desempenho do servidor, monitoramento de logs e outras entidades físicas. Isso permite lidar com as complexidades dos dados quando se trata de detecção de anomalias, notificações com dados fora de ordem e dados com elementos de séries temporais e geoespaciais de forma independente da nuvem.</p>
+<p>Outra característica importante do Pathway é a capacidade de usar scripts em Python para análise de fluxo de dados, tanto em tempo real quanto em modo de lote. Isso significa que cientistas de dados e engenheiros podem desenvolver suas tubulações de análise no ambiente de desenvolvimento normal ao qual estão acostumados e trabalhar de forma conveniente com o sistema de streaming. Além disso, o Pathway permite que uma quantidade muito maior de histórico seja considerada ao executar os cálculos, o que é uma grande diferença em relação aos processadores de fluxo leves que lidam apenas com pequenas quantidades de dados.</p>
+<p>No geral, o Pathway oferece uma solução de interligação para organizações que precisam combinar processamento de dados em lote e em tempo real e fornece uma maneira de adicionar valor aos dados ao adicionar estrutura e informações de extensão para uso subsequente em inteligência de negócios e análise.</p>
+<p>A tecnologia de Streaming de Dados está se tornando cada vez mais importante à medida que as empresas procuram tomar decisões mais rápidas e responder mais rapidamente às necessidades dos clientes. Quando você usa o streaming de dados, pode detectar e responder rapidamente a tendências, anomalias e outras informações importantes. A Pathway oferece um conjunto de produtos projetados especificamente para trabalhar com dados de séries temporais, dados logísticos e streaming de dados. Eles oferecem exemplos e informações para desenvolvedores no GitHub, além de uma comunidade ativa no Discord.</p>
+<p>A transmissão de dados é uma tecnologia crítica para empresas em uma ampla variedade de setores. Por exemplo, ela pode ser usada na logística para otimizar rotas e prever quando os envios chegarão. Na área financeira, pode ajudar a detectar fraudes e prever tendências de mercado antes que se tornem amplamente conhecidas. No transporte, pode ser usada para monitorar o desempenho de motores e veículos em tempo real.</p>
+<p>Se você está interessado em aprender mais sobre data streaming e como isso pode beneficiar o seu negócio, não deixe de conferir o site e a comunidade da Pathway [<a href="http://www.pathway.com%5D">www.pathway.com]</a>. Com as ferramentas certas e expertise adequada, você pode aproveitar essa tecnologia poderosa para melhorar suas operações e se manter à frente do mercado.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/pt/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/pt/episodes/",
+  "inLanguage": "pt",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/pt/episodes/edt-139/#episode",
+  "url": "https://embracingdigital.org/pt/episodes/edt-139/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/pt/episodes/edt-139/"
+  },
+  "name": "Análise Logística Resiliente",
+  "episodeNumber": 139,
+  "datePublished": "2023-05-18T00:00:00.000Z",
+  "inLanguage": "pt",
+  "description": "In this episode Darren interviews the Adrian Kosowski CPO of Pathway about their unique ability to handle logistical data from the edge in DDIL environments with real-time analytics.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/pt/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/pt/episodes/edt-139/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/pt/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/pt/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Análise Logística Resiliente",
+      "item": "https://embracingdigital.org/pt/episodes/edt-139/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Elastic Search e Intel Optane DCPMM | Embracing Digital Transformation</title>
+    <meta name="description" content="Darren Pulsipher shows how he increased Elasticsearch performance using Intel%92s Optane Persistent Memory in 100 percent app direct mode. His tests show an incredible performance increase of 2x. By doubling the throughput capacity, you can greatly d...">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/pt/episodes/edt-17/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Elastic Search e Intel Optane DCPMM | Embracing Digital Transformation">
+    <meta property="og:description" content="Darren Pulsipher shows how he increased Elasticsearch performance using Intel%92s Optane Persistent Memory in 100 percent app direct mode. His tests show an incredible performance increase of 2x. By doubling the throughput capacity, you can greatly d...">
+    <meta property="og:url" content="https://embracingdigital.org/pt/episodes/edt-17/">
+    <meta property="og:image" content="https://embracingdigital.org/pt/episodes/edt-17/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Elastic Search e Intel Optane DCPMM | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Darren Pulsipher shows how he increased Elasticsearch performance using Intel%92s Optane Persistent Memory in 100 percent app direct mode. His tests show an incredible performance increase of 2x. By doubling the throughput capacity, you can greatly d...">
+    <meta name="twitter:image" content="https://embracingdigital.org/pt/episodes/edt-17/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/pt/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/pt/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/pt/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/pt/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/pt/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/pt/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/pt/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/pt/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/pt/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/pt/">Home</a></li>
+        <li><a href="/pt/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 17: Elastic Search e Intel Optane DCPMM</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/pt/episodes/edt-17/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/pt/episodes/edt-17/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 17</span>
+                <span class="episode-title">Elastic Search e Intel Optane DCPMM</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2020-08-31T00:00:00.000Z" itemprop="datePublished">2020-08-31T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="17"/>
+            <meta itemprop="inLanguage" content="pt"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2020-08-31T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Darren Pulsipher shows how he increased Elasticsearch performance using Intel%92s Optane Persistent Memory in 100 percent app direct mode. His tests show an incredible performance increase of 2x. By doubling the throughput capacity, you can greatly d...
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../pt/search.html?query=intel"
+                   itemprop="keywords">intel</a>
+                
+                <a href="../../pt/search.html?query=optane"
+                   itemprop="keywords">optane</a>
+                
+                <a href="../../pt/search.html?query=moderncomputing"
+                   itemprop="keywords">moderncomputing</a>
+                
+                <a href="../../pt/search.html?query=dataanalytics"
+                   itemprop="keywords">dataanalytics</a>
+                
+                <a href="../../pt/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../pt/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../pt/search.html?query=technology"
+                   itemprop="keywords">technology</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Recentemente, realizei alguns testes com a nova tecnologia da Intel chamada Memória Persistente Optane DC (PMEM) com o Kafka. Ao utilizar o Optane de uma maneira não-tradicional, montado como um sistema de arquivos, consegui obter uma melhoria significativa no throughput. Confira meu podcast sobre isso aqui. (você pode colocar um link aqui?) Eu tentei fazer a mesma coisa com o Elasticsearch para ver se conseguiria alcançar uma melhoria de desempenho semelhante.</p>
+<p>O Elasticsearch é um mecanismo de busca e análise altamente escalável que permite a distribuição de dados em vários nós para expandir a solução e suportar quantidades substanciais de dados. Em outras palavras, é um gerenciador de metadados distribuído, usado principalmente para análise de logs. O próprio Elastic é uma ótima ferramenta para normalizar dados no formato JSON. Posso enviar qualquer tipo de dado para o Elastic e ele pode se estender por um cluster distribuído. Não é um barramento de mensagens como o Kafka, mas sim indexa os dados que estão sendo recebidos. Como o Elastic armazena esses dados em unidades de armazenamento, percebi que poderia usar o PMEM da mesma forma que fiz com o Kafka.</p>
+<h2>Traduza o seguinte para o português: Intel Optane DC Persistent Memory</h2>
+<p>A Memória Persistente Intel Optane DC está disponível no formato DDR4, portanto, se encaixa perfeitamente no seu servidor em um slot de memória DDR4. Os módulos estão disponíveis em capacidades de 128, 256 e 512 gigabytes, então em um sistema de dois soquetes, posso ter 6 terabytes de PMEM. Uma característica importante é que o hardware é criptografado e vinculado à sua CPU com essa criptografia, portanto, é seguro e altamente confiável. Já está sendo usado para fazer algumas mudanças profundas na forma como é usado em ferramentas em muitos bancos de dados, como na plataforma Exadata da Oracle e no SAP HANA.</p>
+<h2>Suporte para uma Ampla Gama de Aplicações</h2>
+<p>Existem várias maneiras de usar essa tecnologia:</p>
+<p>A primeira é o modo de memória, que amplia a capacidade de uma servidor. Ele utiliza o PMEM assim como a memória normal. A memória DDR4 atua como um cache para o PMEM. Neste modo, a velocidade é comparável à DDR4; na maioria das aplicações, você não verá uma mudança.</p>
+<p>O segundo modo é o modo de aplicativo direto. No modo de aplicativo direto, posso escrever um aplicativo para que ele escreva diretamente em PMEM, ignorando etapas demoradas.</p>
+<p>O terceiro modo utiliza o modo de aplicativo direto para criar um sistema de arquivos de memória não volátil que fica diretamente no barramento de memória, o qual é muitas vezes mais rápido do que o barramento NVMe ou até mesmo o barramento SATA.</p>
+<p>Usando esse terceiro modo, tive que aprender um pouco sobre a arquitetura do Elastic para descobrir quais partes eu deveria executar neste sistema de arquivos ultra-rápido e quais deveria deixar onde estão. Também queria saber se poderia fazer essas alterações apenas com o arquivo de configuração.</p>
+<h2>Usando o Linux Kernel</h2>
+<p>Primeiro, tive que aprender a usar os comandos do kernel do Linux para manipular essa PMEM.</p>
+<p>Com o comando de controle de memória persistente da Intel (ipmctl), descobri que posso configurar e gerenciar o PMEM para alocá-lo para executar no modo de memória, modo direto de aplicativo ou um percentual no modo de memória.</p>
+<p>O outro comando é o controle do dispositivo de memória não volátil (ndctl). Isso me permite criar espaços de nomes e regiões nessa PMEM que criei, para que eu possa montar essa região como um dispositivo. Em seguida, posso montar esse dispositivo como um sistema de arquivos.</p>
+<h2>Teste de Desempenho do ESRally</h2>
+<p>Encontrei o ESRally, uma ferramenta de benchmark, para usar nos meus testes. Na primeira vez que configurei o teste, executei o ESRally a partir do meu disco SATA normal, onde o Elastic estava executando tudo a partir do disco PMEM. Obtive alguma melhoria de desempenho, mas o que descobri foi que, como estava transmitindo dados do disco SATA armazenados no meu ESRally, estava limitado pela velocidade com que podia inserir dados no Elasticsearch. Portanto, não era o Elastic que estava diminuindo a velocidade, era o ESRally porque meu disco SATA era muito mais lento que o meu disco PMEM. Mudei o ESRally para o disco PMEM. Isso melhorou o desempenho e obtive resultados interessantes.</p>
+<h2>Testando restrições</h2>
+<p>Para ver quais seriam os efeitos deste disco PMEM ultra-rápido no Elastic, executei o teste em uma máquina. Isso removeu a variabilidade de rede, o que eliminou gargalos de rede como um fator limitante. Reduzi a comunicação entre serviços, o que diminuiu os gargalos de réplica, e executei todas as consultas em PMEMs, o que eliminou a variabilidade do disco SATA.</p>
+<h2>Desempenho Ótimo (100%) App Direto</h2>
+<p>Primeiro, aloquei toda a PMEM para o modo de acesso direto do aplicativo, para que eu pudesse montar tudo como um sistema de arquivos. Usei DIMMS de 128 gigabytes, então eu tinha um drive com 1,5 terabytes disponíveis. Eu sabia, a partir dos meus testes anteriores com Kafka, que obtenho melhor desempenho com o modo de acesso direto do aplicativo em 100% em comparação com 50%.</p>
+<p>Taxa de transferência média (deve ser Throughput - pode ser necessário alterar no slide) docs/seg</p>
+<p>Usando as estatísticas do ESRally, obtive a taxa de transferência média de documentos por segundo em comparação ao número de corridas concorrentes que estava executando ao mesmo tempo com produtores e consumidores. Observei números promissores com a unidade de disco SATA, comparáveis a outros testes publicados. Com a unidade de disco PMEM, consegui processar quase o dobro de documentos por segundo. Isso é incrível, considerando que não houve alterações no código, apenas uma mudança de configuração.</p>
+<h2>Tempo de Resposta do Serviço</h2>
+<p>O outro resultado foi o tempo de resposta às funções. Como esperado, à medida que o número de corridas simultâneas aumenta, o tempo de resposta a essas consultas ou funções também aumenta. Mas com o PMEM, o tempo de resposta é quase duas vezes mais rápido. A partir deste teste simples, aprendi que onde você armazena os dados que o Elasticsearch precisa (PMEM ou SATA) afeta o tempo de resposta.</p>
+<h2>Conclusão</h2>
+<p>Usar o Optane Persistent Memory no modo de sistema de arquivos para aumentar o desempenho e reduzir os custos dos servidores Elasticsearch requer mudanças mínimas na configuração de hardware e software e não exige alterações no Elasticsearch ou em aplicativos subjacentes. Dobrar a capacidade de processamento do Elasticsearch significa que você pode diminuir o número total de servidores em seu cluster do Elasticsearch, reduzindo o custo total de propriedade.</p>
+<h2>Para mais informações.</h2>
+<p>Para obter informações mais detalhadas, acesse o link no podcast para o documento que criamos em resposta a esses resultados de teste. Você também pode entrar em contato comigo pelo e-mail <a href="mailto:darren.w.pulsipher@intel.com">darren.w.pulsipher@intel.com</a> ou no LinkedIn @darrenpulsipher.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/pt/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/pt/episodes/",
+  "inLanguage": "pt",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/pt/episodes/edt-17/#episode",
+  "url": "https://embracingdigital.org/pt/episodes/edt-17/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/pt/episodes/edt-17/"
+  },
+  "name": "Elastic Search e Intel Optane DCPMM",
+  "episodeNumber": 17,
+  "datePublished": "2020-08-31T00:00:00.000Z",
+  "inLanguage": "pt",
+  "description": "Darren Pulsipher shows how he increased Elasticsearch performance using Intel%92s Optane Persistent Memory in 100 percent app direct mode. His tests show an incredible performance increase of 2x. By doubling the throughput capacity, you can greatly d...",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/pt/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/pt/episodes/edt-17/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/pt/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/pt/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Elastic Search e Intel Optane DCPMM",
+      "item": "https://embracingdigital.org/pt/episodes/edt-17/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

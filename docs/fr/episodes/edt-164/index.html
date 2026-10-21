@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Put the title Right Here | Embracing Digital Transformation</title>
+    <meta name="description" content="In this episode, Darren interviews Sarah Musick, Cloud Solution Architect at Intel. Together, they dive into the topic of application and workload portfolios in cloud migration. With Sarah&#39;s background in cloud consulting and optimization, she brings...">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/fr/episodes/edt-164/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Put the title Right Here | Embracing Digital Transformation">
+    <meta property="og:description" content="In this episode, Darren interviews Sarah Musick, Cloud Solution Architect at Intel. Together, they dive into the topic of application and workload portfolios in cloud migration. With Sarah&#39;s background in cloud consulting and optimization, she brings...">
+    <meta property="og:url" content="https://embracingdigital.org/fr/episodes/edt-164/">
+    <meta property="og:image" content="https://embracingdigital.org/fr/episodes/edt-164/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Put the title Right Here | Embracing Digital Transformation">
+    <meta name="twitter:description" content="In this episode, Darren interviews Sarah Musick, Cloud Solution Architect at Intel. Together, they dive into the topic of application and workload portfolios in cloud migration. With Sarah&#39;s background in cloud consulting and optimization, she brings...">
+    <meta name="twitter:image" content="https://embracingdigital.org/fr/episodes/edt-164/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/fr/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/fr/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/fr/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/fr/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/fr/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/fr/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/fr/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/fr/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/fr/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/fr/">Home</a></li>
+        <li><a href="/fr/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 164: Put the title Right Here</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/fr/episodes/edt-164/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/fr/episodes/edt-164/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 164</span>
+                <span class="episode-title">Put the title Right Here</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2023-10-03T07:00:00.000Z" itemprop="datePublished">2023-10-03T07:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="164"/>
+            <meta itemprop="inLanguage" content="fr"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2023-10-03T07:00:00.000Z" data-publication-status="">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="Put the title Right Here Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Jv47E_WJbu8">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/Jv47E_WJbu8"
+                            title="Put the title Right Here Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         >
+                    <meta itemprop="name" content="Put the title Right Here Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/6f8bf732">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://share.transistor.fm/e/6f8bf732"
+                            title="Put the title Right Here Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="/fr/episodes/">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            In this episode, Darren interviews Sarah Musick, Cloud Solution Architect at Intel. Together, they dive into the topic of application and workload portfolios in cloud migration. With Sarah's background in cloud consulting and optimization, she brings...
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../fr/search.html?query=cloudmigration"
+                   itemprop="keywords">cloudmigration</a>
+                
+                <a href="../../fr/search.html?query=moderncomputing"
+                   itemprop="keywords">moderncomputing</a>
+                
+                <a href="../../fr/search.html?query=compliance"
+                   itemprop="keywords">compliance</a>
+                
+                <a href="../../fr/search.html?query=technicaldebt"
+                   itemprop="keywords">technicaldebt</a>
+                
+                <a href="../../fr/search.html?query=hybridcloud"
+                   itemprop="keywords">hybridcloud</a>
+                
+                <a href="../../fr/search.html?query=digitaltransformation"
+                   itemprop="keywords">digitaltransformation</a>
+                
+                <a href="../../fr/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../fr/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../fr/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../fr/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>Comprendre les portefeuilles d&#39;applications et de charges de travail dans la migration vers le cloud</h2>
+<p>En ce qui concerne la migration vers le cloud, les organisations se répartissent généralement en deux groupes. Le premier groupe est constitué d&#39;organisations nées dans le cloud qui ont conçu leurs applications dans le cloud, éliminant ainsi toutes les dépendances vis-à-vis des data centers. Le deuxième groupe adopte une stratégie hybride, en s&#39;appuyant à la fois sur le data center et le cloud. Cependant, même ces organisations hybrides peuvent avoir une dette technique qu&#39;il est nécessaire de résoudre.</p>
+<p>L&#39;un des principaux défis de la migration vers le cloud est de comprendre la complexité des applications et des charges de travail. Sarah introduit le concept de &quot;capital politique&quot; qu&#39;une application porte. Alors que les applications orientées vers l&#39;extérieur et axées sur les clients reçoivent souvent le plus d&#39;attention et d&#39;investissement, les petites applications qui peuvent ne pas sembler significatives peuvent avoir un impact important sur l&#39;organisation si elles dysfonctionnent ou sont négligées.</p>
+<h2>L&#39;importance de la rationalisation des applications</h2>
+<p>Sarah partage une expérience personnelle qui met en évidence l&#39;importance de prendre en compte l&#39;ensemble du portefeuille d&#39;applications et de charges de travail lors de la migration vers le cloud. Elle a été témoin d&#39;une perturbation de l&#39;activité causée par le manque d&#39;attention accordée à une application en apparence mineure pour les clients. Cette expérience souligne la nécessité pour les organisations de mener une analyse approfondie et une rationalisation de leur portefeuille d&#39;applications avant de migrer vers le cloud.</p>
+<p>En comprenant les complexités et dépendances des applications et des charges de travail, les organisations peuvent garantir une transition en douceur vers le cloud avec moins de surprises ou de perturbations. Sarah met l&#39;accent sur la nécessité pour les organisations de donner la priorité à la rationalisation des applications afin d&#39;identifier les applications critiques qui peuvent nécessiter des investissements et une attention supplémentaires, même si elles ne sont pas les plus visibles.</p>
+<h2>Toucher ou ne pas toucher : Évaluer les charges de travail pour la migration vers le cloud.</h2>
+<p>Alors que la migration des charges de travail vers le cloud peut apporter de nombreux avantages, il n&#39;est pas toujours nécessaire ou bénéfique de modifier certaines charges de travail ou applications. Certaines charges de travail peuvent fonctionner harmonieusement depuis des années et être cruciales pour les opérations de l&#39;organisation. Dans de tels cas, il peut ne pas être judicieux d&#39;apporter des modifications ou de les migrer vers le cloud.</p>
+<p>Les facteurs à prendre en compte lors de la prise de décision comprennent le niveau de personnalisation et d&#39;intégration de la charge de travail, la présence de dettes techniques et la prochaine retraite des systèmes hérités. Cependant, il est essentiel de réévaluer régulièrement ces charges de travail pour s&#39;assurer qu&#39;elles continuent à répondre aux besoins de l&#39;organisation. La surveillance des tendances de l&#39;industrie et des avancées technologiques peut aider à identifier d&#39;éventuels changements à l&#39;avenir.</p>
+<h2>Naviguer dans les exigences de conformité lors de la migration vers le cloud.</h2>
+<p>Les exigences de conformité peuvent poser des défis lors de la migration vers le cloud, en particulier pour les organisations des industries réglementées. Cependant, les fournisseurs de services cloud ont réalisé d&#39;importants progrès pour répondre à ces préoccupations. Ils proposent des outils et des services qui facilitent la surveillance et le reporting automatisés de la conformité, ce qui allège la charge imposée aux organisations pour rester en conformité.</p>
+<p>Pour faire face à ces défis, les organisations devraient effectuer une évaluation approfondie de leurs exigences en matière de conformité. Consulter des experts capables de fournir des conseils sur les normes de conformité et concevoir une architecture cloud qui satisfait à ces exigences est crucial. Des audits réguliers et une surveillance doivent être mis en place pour assurer une conformité continue.</p>
+<h2>Conclusion</h2>
+<p>Dans cet épisode de podcast, Darren Pulsipher et Sarah Musick mettent en lumière des aspects importants de la migration vers le cloud, notamment la rationalisation des portefeuilles d&#39;applications, la prise de décision concernant les charges de travail à modifier et la prise en compte des exigences de conformité. En comprenant ces facteurs et en gérant activement la dette technique, les organisations peuvent se lancer dans un voyage de migration vers le cloud réussi, en tirant parti de l&#39;agilité et de la flexibilité offertes par le cloud tout en minimisant les risques et les perturbations.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/fr/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/fr/episodes/",
+  "inLanguage": "fr",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/fr/episodes/edt-164/#episode",
+  "url": "https://embracingdigital.org/fr/episodes/edt-164/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/fr/episodes/edt-164/"
+  },
+  "name": "Put the title Right Here",
+  "episodeNumber": 164,
+  "datePublished": "2023-10-03T07:00:00.000Z",
+  "inLanguage": "fr",
+  "description": "In this episode, Darren interviews Sarah Musick, Cloud Solution Architect at Intel. Together, they dive into the topic of application and workload portfolios in cloud migration. With Sarah's background in cloud consulting and optimization, she brings...",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/fr/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/fr/episodes/edt-164/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Put the title Right Here Video",
+      "embedUrl": "https://www.youtube.com/embed/Jv47E_WJbu8"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Put the title Right Here Audio",
+      "contentUrl": "https://share.transistor.fm/s/6f8bf732"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/fr/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/fr/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Put the title Right Here",
+      "item": "https://embracingdigital.org/fr/episodes/edt-164/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

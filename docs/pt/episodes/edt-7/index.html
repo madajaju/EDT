@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Garantindo a segurança do trabalhador remoto | Embracing Digital Transformation</title>
+    <meta name="description" content="With the huge shift in people now working from home instead of the office, security is a growing concern for many IT organizations. In this episode, Steve Orrin, CTO of Intel Federal, and Darren discuss the security threats and solutions to help secu...">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/pt/episodes/edt-7/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Garantindo a segurança do trabalhador remoto | Embracing Digital Transformation">
+    <meta property="og:description" content="With the huge shift in people now working from home instead of the office, security is a growing concern for many IT organizations. In this episode, Steve Orrin, CTO of Intel Federal, and Darren discuss the security threats and solutions to help secu...">
+    <meta property="og:url" content="https://embracingdigital.org/pt/episodes/edt-7/">
+    <meta property="og:image" content="https://embracingdigital.org/pt/episodes/edt-7/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Garantindo a segurança do trabalhador remoto | Embracing Digital Transformation">
+    <meta name="twitter:description" content="With the huge shift in people now working from home instead of the office, security is a growing concern for many IT organizations. In this episode, Steve Orrin, CTO of Intel Federal, and Darren discuss the security threats and solutions to help secu...">
+    <meta name="twitter:image" content="https://embracingdigital.org/pt/episodes/edt-7/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/pt/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/pt/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/pt/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/pt/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/pt/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/pt/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/pt/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/pt/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/pt/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/pt/">Home</a></li>
+        <li><a href="/pt/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 7: Garantindo a segurança do trabalhador remoto</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/pt/episodes/edt-7/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/pt/episodes/edt-7/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 7</span>
+                <span class="episode-title">Garantindo a segurança do trabalhador remoto</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2020-07-14T00:00:00.000Z" itemprop="datePublished">2020-07-14T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="7"/>
+            <meta itemprop="inLanguage" content="pt"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2020-07-14T00:00:00.000Z" data-publication-status="">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="Garantindo a segurança do trabalhador remoto Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/Fjez8L0h2M4">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/Fjez8L0h2M4"
+                            title="Garantindo a segurança do trabalhador remoto Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            With the huge shift in people now working from home instead of the office, security is a growing concern for many IT organizations. In this episode, Steve Orrin, CTO of Intel Federal, and Darren discuss the security threats and solutions to help secu...
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../pt/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../pt/search.html?query=advancedcommunications"
+                   itemprop="keywords">advancedcommunications</a>
+                
+                <a href="../../pt/search.html?query=multifactorauthentication"
+                   itemprop="keywords">multifactorauthentication</a>
+                
+                <a href="../../pt/search.html?query=cloudsecurity"
+                   itemprop="keywords">cloudsecurity</a>
+                
+                <a href="../../pt/search.html?query=dataprotection"
+                   itemprop="keywords">dataprotection</a>
+                
+                <a href="../../pt/search.html?query=endpointsecurity"
+                   itemprop="keywords">endpointsecurity</a>
+                
+                <a href="../../pt/search.html?query=policyenforcement"
+                   itemprop="keywords">policyenforcement</a>
+                
+                <a href="../../pt/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../pt/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+                <a href="../../pt/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>Modos de operação de teletrabalho &lt;h2&gt;</h2>
+<p>Os modos de operação de teletrabalho não são novos, seja usando um dispositivo como terminal (VDI), parte da rede interna ou como um portal para serviços/software (SAAS); o que é novo é o grande volume de funcionários, contratados e parceiros que agora estão usando os ambientes existentes para realizar seu trabalho principal, ao invés de apenas um número limitado e gerenciável. A segurança é um desafio em todos esses modos de operação. As organizações precisam descobrir a melhor forma de implantar suas capacidades existentes para garantir e proteger o acesso, os dados, os dispositivos e os usuários.</p>
+<h2>Ameaças do Teletrabalho</h2>
+<p>Alguns dos riscos de segurança são aqueles que sempre estiveram presentes no teletrabalho: segurança do dispositivo final e dos dados, ponto de acesso e acesso aos serviços corporativos. No entanto, ao se adaptar ao ambiente do COVID-19, surgiram novos problemas devido ao grande número de pessoas que agora trabalham em casa e à pressa em habilitá-las.</p>
+<p>Uma questão é trabalhadores em casa em ambientes inseguros em redes que nunca foram destinadas a serem usadas fora da corporação. Isso leva a ataques direcionados de phishing e malware. Outro problema é a introdução de novas ferramentas, como aquelas de colaboração e videoconferência que podem expor sua empresa e dados a ataques e uso malicioso. Basicamente, agora há uma área de superfície de ataque aumentada, muito maior do que a maioria das organizações inicialmente planejou, e novos ambientes que nunca fizeram parte do plano original.</p>
+<h2>Soluções para garantir a segurança do trabalhador remoto</h2>
+<h2>Traga seu próprio dispositivo (BYOD).</h2>
+<p>Um dos problemas mais difíceis de lidar é quando os trabalhadores usam seus próprios dispositivos. O desafio chave é que esses dispositivos não são gerenciados, sem todos os agentes de segurança em execução e gerenciados pelo departamento de TI; o dispositivo é de propriedade e gerenciado pelo usuário. Você pode ter a capacidade de instalar alguns agentes ou ter alguma aplicação de política, mas há apenas tanto que você pode fazer sem impedir que o trabalhador o utilize como um dispositivo pessoal. Então, como você pode proteger um usuário com um BYOD?</p>
+<p>Certifique-se de que esses fundamentos estejam em vigor: Aplique os patches mais recentes como requisito, imponha um bom controle de acesso à sua empresa e serviços, implemente autenticação de múltiplos fatores e proteja seus ativos com as devidas proteções, como gerenciamento de direitos empresariais para controle de acesso aos dados e imponha controle de acesso baseado em políticas nos pontos finais.</p>
+<p>Outra opção para reduzir seu risco pode ser limitar o acesso direto aos serviços da empresa e fazer com que os usuários trabalhem em um ambiente SASS.</p>
+<h2>Pontos Finais e Ambientes Não Seguros</h2>
+<p>A melhor solução para muitos desses problemas seria um cliente empresarial robusto, mas ainda há riscos envolvidos. Os trabalhadores estão utilizando um dispositivo que é uma extensão gerenciada da rede empresarial. A segurança pode ser implementada com inicialização segura, criptografia de disco completo, proteção de dados, firewalls locais e aplicação de boas práticas de atualização. No entanto, o risco surge porque muitas organizações já possuem trabalhadores remotos, como vendedores ou engenheiros de campo, que podem não ter o mesmo nível de segurança dos trabalhadores que nunca foram destinados a sair do prédio, como os departamentos financeiro e de recursos humanos.</p>
+<p>As organizações devem estar vigilantes para garantir que todos os trabalhadores tenham agora a mesma segurança, ou até adicionar camadas extras que os trabalhadores precisam para trabalhar remotamente em redes não seguras. A autenticação de múltiplos fatores agora deve ser um requisito, e a aplicação da política de ponto final e a gestão dos direitos empresariais são agora mais importantes do que nunca.</p>
+<p>Estamos vendo inovações nessa área, como um cliente que está fornecendo aos novos funcionários não apenas laptops, mas também um roteador gerenciado para evitar redes não seguras.</p>
+<h2>Sistemas de VDI e Serviços de Nuvem</h2>
+<p>Implementar segurança para sistemas VDI e serviços em nuvem inclui os conceitos básicos de segurança: proteção de dados, segurança de virtualização tanto para o centro de dados da empresa quanto nos pontos de acesso, segurança de aplicativos, inicializações seguras, aplicação de patches e criptografia de rede. A chave está em realizar uma pesquisa precisa sobre a empresa e os serviços em nuvem que estão sendo implantados para seus funcionários, garantindo que todos estejam igualmente protegidos. Cada aplicativo, mesmo aqueles que não são essenciais, pode ser um ponto de ataque potencial.</p>
+<h2>Clientes como Serviço</h2>
+<p>Os clientes do SASS utilizam serviços na nuvem e também utilizam aplicativos em seus clientes ricos, portanto, existem algumas questões de segurança adicionais com que se preocupar. Deve haver uma proteção adequada aos dados no gerenciamento de direitos empresariais (ERM) para o acesso aos dados por meio dos serviços em nuvem e de volta ao centro de dados. A proteção em ambos os lados é crítica. O acesso dos clientes aos serviços em nuvem deve ser protegido por autenticação multifatorial e criptografia de rede. O acesso dos serviços em nuvem ao data center privado da empresa e aos recursos empresariais também deve ser protegido nas camadas de acesso à rede, dados e aplicativos. Compreender como os clientes estão utilizando os serviços e quais dados estão acessando é onde as decisões do ERM entram em jogo.</p>
+<h2>Mau uso e abuso de Insiders&lt;h3&gt;</h2>
+<p>A TI deve utilizar diversos métodos para gerenciar a ameaça e risco de erros, mau uso e ações maliciosas de insiders. O controle de acesso baseado em políticas e a aplicação das mesmas, desde as aplicações até os dados, em nível empresarial e de nuvem é importante para evitar o mau uso e abuso de usuários já autenticados. A principal defesa que a TI possui é a auditoria e monitoramento da inteligência de ameaças. Gerenciar essa informação em toda a empresa e na nuvem ao longo de um longo período de tempo pode ser muito eficaz na detecção de comportamentos aberrantes.</p>
+<p>Não há dúvida de que agora temos que pensar de forma diferente nas questões de segurança com o teletrabalho. Nossas principais recomendações são, em primeiro lugar, implementar a tecnologia que você vem testando; em segundo lugar, educar seus usuários; e em terceiro lugar, ativar a autenticação de dois fatores e proteger seus dados em grande escala. Se conseguirmos fazer essas três coisas, podemos reduzir o risco e estar melhor preparados para o futuro.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/pt/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/pt/episodes/",
+  "inLanguage": "pt",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/pt/episodes/edt-7/#episode",
+  "url": "https://embracingdigital.org/pt/episodes/edt-7/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/pt/episodes/edt-7/"
+  },
+  "name": "Garantindo a segurança do trabalhador remoto",
+  "episodeNumber": 7,
+  "datePublished": "2020-07-14T00:00:00.000Z",
+  "inLanguage": "pt",
+  "description": "With the huge shift in people now working from home instead of the office, security is a growing concern for many IT organizations. In this episode, Steve Orrin, CTO of Intel Federal, and Darren discuss the security threats and solutions to help secu...",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/pt/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/pt/episodes/edt-7/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Garantindo a segurança do trabalhador remoto Video",
+      "embedUrl": "https://www.youtube.com/embed/Fjez8L0h2M4"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/pt/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/pt/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Garantindo a segurança do trabalhador remoto",
+      "item": "https://embracingdigital.org/pt/episodes/edt-7/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

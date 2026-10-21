@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Ransomware: Préparez-vous et ne paniquez pas. | Embracing Digital Transformation</title>
+    <meta name="description" content="Darren Pulsipher, Chief Solution Architect, Intel, talks to Stephanie Sabatini, Sr. Director, Professional Services, Hitachi Systems Security, about preventing and preparing for ransomware attacks and what to do if your organization is attacked.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/fr/episodes/edt-74/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ransomware: Préparez-vous et ne paniquez pas. | Embracing Digital Transformation">
+    <meta property="og:description" content="Darren Pulsipher, Chief Solution Architect, Intel, talks to Stephanie Sabatini, Sr. Director, Professional Services, Hitachi Systems Security, about preventing and preparing for ransomware attacks and what to do if your organization is attacked.">
+    <meta property="og:url" content="https://embracingdigital.org/fr/episodes/edt-74/">
+    <meta property="og:image" content="https://embracingdigital.org/fr/episodes/edt-74/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ransomware: Préparez-vous et ne paniquez pas. | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Darren Pulsipher, Chief Solution Architect, Intel, talks to Stephanie Sabatini, Sr. Director, Professional Services, Hitachi Systems Security, about preventing and preparing for ransomware attacks and what to do if your organization is attacked.">
+    <meta name="twitter:image" content="https://embracingdigital.org/fr/episodes/edt-74/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/fr/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/fr/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/fr/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/fr/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/fr/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/fr/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/fr/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/fr/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/fr/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/fr/">Home</a></li>
+        <li><a href="/fr/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 74: Ransomware: Préparez-vous et ne paniquez pas.</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/fr/episodes/edt-74/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/fr/episodes/edt-74/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 74</span>
+                <span class="episode-title">Ransomware: Préparez-vous et ne paniquez pas.</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2022-01-27T00:00:00.000Z" itemprop="datePublished">2022-01-27T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="74"/>
+            <meta itemprop="inLanguage" content="fr"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2022-01-27T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Darren Pulsipher, Chief Solution Architect, Intel, talks to Stephanie Sabatini, Sr. Director, Professional Services, Hitachi Systems Security, about preventing and preparing for ransomware attacks and what to do if your organization is attacked.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../fr/search.html?query=ransomware"
+                   itemprop="keywords">ransomware</a>
+                
+                <a href="../../fr/search.html?query=incidentresponse"
+                   itemprop="keywords">incidentresponse</a>
+                
+                <a href="../../fr/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../fr/search.html?query=vulnerabilitymanagement"
+                   itemprop="keywords">vulnerabilitymanagement</a>
+                
+                <a href="../../fr/search.html?query=dataprivacy"
+                   itemprop="keywords">dataprivacy</a>
+                
+                <a href="../../fr/search.html?query=networksecurity"
+                   itemprop="keywords">networksecurity</a>
+                
+                <a href="../../fr/search.html?query=duediligence"
+                   itemprop="keywords">duediligence</a>
+                
+                <a href="../../fr/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../fr/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+                <a href="../../fr/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Bien que pour la plupart des organisations, une attaque de ransomware commence par une demande de rançon quelconque, l&#39;histoire complète est généralement en préparation depuis plusieurs mois.</p>
+<p>La demande de rançon survient après que les attaquants ont encrypté des informations à partir de systèmes compromis et les ont bloqués, ou après qu&#39;ils ont volé des informations sensibles et menacent maintenant de les rendre publiques. Dans les deux cas, ils demandent une somme d&#39;argent pour empêcher la divulgation ou rétablir les informations.</p>
+<p>Le montant d&#39;argent peut être ciblé car les attaquants connaissent les capacités financières de l&#39;entreprise, et ils demanderont une somme massive. Les attaques moins ciblées demanderont un montant aléatoire et espéreront obtenir un résultat. De plus en plus, cependant, les attaques sont sophistiquées et les attaquants ont fait leurs devoirs. Ils peuvent avoir obtenu une traction significative, se déplaçant latéralement à travers l&#39;environnement et compromettant plusieurs domaines. Ils savent que cela coûtera une énorme somme à l&#39;organisation pour rétablir leurs services, donc ils peuvent demander davantage.</p>
+<p>Mais avant que les attaquants ne réclament la rançon, ils ont été présents dans le système pendant un certain temps, en moyenne un peu moins de 300 jours, jusqu&#39;à ce qu&#39;ils exécutent pleinement leur plan. Ils essaient d&#39;aller le plus loin possible dans le réseau pour rendre l&#39;impact aussi important que possible. Par exemple, ils supprimeront le responsable des sauvegardes pour paralyser l&#39;organisation, laissant des données de sauvegarde corrompues et inutilisables. Ils passeront également du temps à compromettre des identifiants pour une élévation de privilèges afin de se déplacer latéralement dans le réseau et dénicher toute faille.</p>
+<p>Chaque attaque est différente, il est donc difficile de nommer la vulnérabilité la plus courante. Les attaquants trouvent n&#39;importe quel moyen d&#39;accès qu&#39;ils peuvent, que ce soit une faiblesse dans la gestion des vulnérabilités ou même chez les individus, par exemple les attaques par phishing ou les tactiques d&#39;ingénierie sociale. Ils passeront des appels téléphoniques et se feront passer pour des cadres ou utiliseront des noms similaires à ceux des cadres pour obtenir des informations et des données auprès des employés en ligne.</p>
+<p>De nombreux acteurs de l&#39;industrie diront que ce n&#39;est pas une question de savoir si, mais quand vous serez attaqué. Cependant, Stephanie ne croit pas que cela soit le cas, car avec une diligence raisonnable, une sécurisation appropriée et la prise des mesures nécessaires, vous ne serez pas ciblé.</p>
+<p>La diligence raisonnable est ce que les experts en sécurité prêchent depuis des décennies : effectuez une gestion des vulnérabilités et des correctifs, changez les mots de passe et réduisez les privilèges si possible. Formez votre personnel. Les administrateurs ne devraient pas être sur internet avec des comptes administratifs participant à des forums, par exemple. Tout est une question de compréhension des surfaces d&#39;attaque et de leur gestion.</p>
+<p>Que devez-vous faire si vous êtes victime d&#39;une attaque de ransomware ? Stephanie dit que ce que les gens devraient faire et ce qu&#39;ils font réellement sont deux choses différentes. La première réaction instinctive des services informatiques est souvent de redémarrer, de corriger ou de modifier l&#39;environnement de manière significative. Cela ne fera qu&#39;alerter les attaquants que leur temps est écoulé. Pour l&#39;enquête forensique, il est extrêmement important de ne pas perturber ces environnements. Effectuez le moins de frappes au clavier possible et ne redémarrez certainement pas.</p>
+<p>Certaines entreprises vont paniquer et se livrer à des déni de services sur elles-mêmes, passant en mode verrouillage total, en fermant tout. Au lieu de paniquer, elles devraient s&#39;appuyer sur leurs politiques de gestion des incidents et réaliser que le problème peut être résolu même si ce ne sera pas agréable.</p>
+<p>De toute évidence, chaque entreprise devrait avoir ces politiques de réponse aux incidents qui peuvent être rapidement mises en œuvre pour gérer les communications internes et avec les médias, et maintenir les activités de l&#39;entreprise autant que possible. Les professionnels de la sécurité peuvent aider à mettre en place ces plans de réponse et peuvent intervenir pendant une attaque.</p>
+<p>Leur première étape pour préserver les informations est d&#39;observer certaines des activités douteuses qui se déroulent sur le réseau. Les attaques de ransomware ne commencent pas par le chiffrement ou le vol d&#39;informations; il y a de nombreuses attaques préalables. Il est important d&#39;identifier d&#39;où elles viennent, où elles ont commencé et où elles ont été. Pour cela, les professionnels de la sécurité ont besoin de preuves et d&#39;informations qui doivent être correctement préservées. Un bon début consiste à placer les bonnes personnes au bon endroit pour gérer ce qui se passe.</p>
+<p>Suivant est de gérer correctement l&#39;environnement. Malheureusement, une fois qu&#39;il y ait un ransomware ou toute autre violation ou incident, l&#39;organisation est très vulnérable. Cent pour cent du temps, lorsque les environnements ont subi des attaques réussies de ransomwares, médiatisées ou non, ils sont ciblés par le même groupe ou un groupe différent. C&#39;est comme un animal blessé avec des vautours qui tournent autour. Les attaquants savent que vous êtes blessé et vulnérable. Une autre attaque est imminente.</p>
+<p>Le plus souvent, lorsque les professionnels de la sécurité mènent leur enquête, ils découvrent d&#39;autres indicateurs d&#39;attaque et de compromission dans différentes parties du réseau. Ils doivent déterminer s&#39;il s&#39;agit de la même attaque ou d&#39;une attaque différente. Cette enquête est une partie essentielle de la récupération des logiciels malveillants, car même lorsque vous pensez avoir éliminé une attaque et que l&#39;entreprise fonctionne à nouveau correctement, il existe toujours un potentiel pour ces autres attaques.</p>
+<p>Une attaque typique coûte en moyenne quatre millions et demi de dollars pour nettoyer, et cela n&#39;inclut pas la rançon. Le montant peut être beaucoup plus élevé et est proportionnel à la taille de l&#39;organisation.</p>
+<p>Il est impossible d&#39;être certain du nombre d&#39;organisations qui paient la rançon. Beaucoup de rançons sont assorties de menaces de ne pas contacter les forces de l&#39;ordre ou de divulguer l&#39;attaque. Pour cette raison, les statistiques disponibles concernant le nombre d&#39;organisations qui paient sont variées.</p>
+<p>Certaines organisations répondent en disant qu&#39;elles ne paieront en aucune circonstance, même si cela coûte plus cher de reconstruire, ce qui détruit ainsi la possibilité de négocier. C&#39;est une décision émotionnelle qui peut troubler le jugement. En fin de compte, si l&#39;objectif est de continuer à faire des affaires et à gagner de l&#39;argent, payer une rançon faible, peut-être de dix ou vingt mille dollars, sera moins cher que les analyses médico-légales et le reste du processus. D&#39;un autre côté, il existe des cas documentés où la rançon a été payée et les données n&#39;ont pas été entièrement restaurées. De plus, l&#39;organisation n&#39;a aucune garantie de la sécurité de son environnement. Il n&#39;y a aucune garantie lorsque vous payez une rançon; vous demandez aux criminels d&#39;agir de bonne foi.</p>
+<p>De nombreux gouvernements à travers le monde ont rendu illégal le fait de payer une rançon car les attaquants sont considérés comme des terroristes, et il est interdit de négocier avec des terroristes. Une autre difficulté est que les attaquants refusent parfois de traiter avec des négociateurs professionnels. Ils désignent souvent une personne au sein de l&#39;organisation comme le seul interlocuteur avec qui ils accepteront de négocier, espérant ainsi que cette personne prendra des décisions émotionnelles.</p>
+<p>Les menaces sont communiquées de différentes manières : par e-mail, par téléphone, et même en changeant l&#39;arrière-plan du bureau.</p>
+<p>La meilleure stratégie pour éviter ou atténuer une attaque est de ne pas attendre que votre organisation se retrouve dans cette situation. Au contraire, engagez-vous dans une due diligence. Effectuez des évaluations au moins une fois par an afin de repérer les failles de sécurité. Les menaces et les attaques évoluent constamment et deviennent de plus en plus sophistiquées, il est donc essentiel que la sécurité de votre organisation suive le rythme. Effectuez une surveillance continue et appliquez des correctifs. Mettez en place une gestion des vulnérabilités, changez régulièrement les mots de passe et rappelez et sensibilisez les utilisateurs aux menaces. Ces stratégies ne sont pas nouvelles. Les professionnels de la sécurité les recommandent depuis des décennies ; c&#39;est simplement que les organisations échouent à les mettre en œuvre correctement et à évoluer.</p>
+<p>Il est également judicieux de faire appel à des experts pour guider le processus de plans et exercices de réponse aux incidents. Tout le monde au sein de l&#39;organisation devrait savoir quoi faire et qui appeler dans un scénario d&#39;attaque afin d&#39;éviter tout dommage supplémentaire.</p>
+<p>Si votre organisation est attaquée, espérons que l&#39;impact sera minimal, ou du moins contenu et gérable s&#39;il y a eu une préparation. Quel que soit le temps, l&#39;énergie et l&#39;argent qu&#39;une entreprise investit dans des mesures préventives représentent une fraction minime du coût d&#39;une attaque.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/fr/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/fr/episodes/",
+  "inLanguage": "fr",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/fr/episodes/edt-74/#episode",
+  "url": "https://embracingdigital.org/fr/episodes/edt-74/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/fr/episodes/edt-74/"
+  },
+  "name": "Ransomware: Préparez-vous et ne paniquez pas.",
+  "episodeNumber": 74,
+  "datePublished": "2022-01-27T00:00:00.000Z",
+  "inLanguage": "fr",
+  "description": "Darren Pulsipher, Chief Solution Architect, Intel, talks to Stephanie Sabatini, Sr. Director, Professional Services, Hitachi Systems Security, about preventing and preparing for ransomware attacks and what to do if your organization is attacked.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/fr/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/fr/episodes/edt-74/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/fr/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/fr/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Ransomware: Préparez-vous et ne paniquez pas.",
+      "item": "https://embracingdigital.org/fr/episodes/edt-74/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

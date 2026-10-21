@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Soluzioni di cibersicurezza con Hitachi | Embracing Digital Transformation</title>
+    <meta name="description" content="Darren Pulsipher, Chief Solution Architect, Intel, talks to Hitachi’s Colin McLean, Intel Global Team Lead, and David Rowley, Senior Solutions Consultant, about Hitachi’s full circle cyber security offerings.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/it/episodes/edt-75/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Soluzioni di cibersicurezza con Hitachi | Embracing Digital Transformation">
+    <meta property="og:description" content="Darren Pulsipher, Chief Solution Architect, Intel, talks to Hitachi’s Colin McLean, Intel Global Team Lead, and David Rowley, Senior Solutions Consultant, about Hitachi’s full circle cyber security offerings.">
+    <meta property="og:url" content="https://embracingdigital.org/it/episodes/edt-75/">
+    <meta property="og:image" content="https://embracingdigital.org/it/episodes/edt-75/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Soluzioni di cibersicurezza con Hitachi | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Darren Pulsipher, Chief Solution Architect, Intel, talks to Hitachi’s Colin McLean, Intel Global Team Lead, and David Rowley, Senior Solutions Consultant, about Hitachi’s full circle cyber security offerings.">
+    <meta name="twitter:image" content="https://embracingdigital.org/it/episodes/edt-75/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/it/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/it/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/it/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/it/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/it/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/it/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/it/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/it/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/it/">Home</a></li>
+        <li><a href="/it/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 75: Soluzioni di cibersicurezza con Hitachi</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/it/episodes/edt-75/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/it/episodes/edt-75/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 75</span>
+                <span class="episode-title">Soluzioni di cibersicurezza con Hitachi</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2022-02-03T00:00:00.000Z" itemprop="datePublished">2022-02-03T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="75"/>
+            <meta itemprop="inLanguage" content="it"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2022-02-03T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Darren Pulsipher, Chief Solution Architect, Intel, talks to Hitachi’s Colin McLean, Intel Global Team Lead, and David Rowley, Senior Solutions Consultant, about Hitachi’s full circle cyber security offerings.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../it/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../it/search.html?query=edgecomputing"
+                   itemprop="keywords">edgecomputing</a>
+                
+                <a href="../../it/search.html?query=iot"
+                   itemprop="keywords">iot</a>
+                
+                <a href="../../it/search.html?query=identitymanagement"
+                   itemprop="keywords">identitymanagement</a>
+                
+                <a href="../../it/search.html?query=cloudsecurity"
+                   itemprop="keywords">cloudsecurity</a>
+                
+                <a href="../../it/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../it/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../it/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+                <a href="../../it/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../it/search.html?query=technology"
+                   itemprop="keywords">technology</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Colin è stato con Hitachi per quasi 24 anni dopo aver lavorato per IBM subito dopo il college. Si concentra principalmente sui conti nel Nord-ovest del Pacifico e sui conti SLED. Ha avuto l&#39;insolita opportunità di prendere il posto di suo padre quando suo padre si è ritirato da Hitachi.</p>
+<p>David è nel settore dell&#39;informatica da più di vent&#39;anni, iniziando proprio prima della frenesia del .com. È stato per gran parte della sua carriera una persona pratica, occupandosi di server, storage e sicurezza.</p>
+<p>Molte persone pensano a Hitachi come a un&#39;azienda di grandi attrezzature o utensili elettrici, fino ad arrivare a quella che produce macchine per il pane. Hitachi è, infatti, un&#39;azienda di ingegneria e produzione centenaria che ha iniziato a produrre motori elettrici nel 1910 e si è trasformata in centinaia di organizzazioni operative e sussidiarie interamente possedute, tra cui Hitachi Vantara. Hitachi Vantara è la più grande sussidiaria interamente posseduta, focalizzata principalmente sulla gestione dei dati. Costruiscono e forniscono non solo sistemi di archiviazione aziendale tradizionali a blocchi, ma si sono sviluppati in un&#39;azienda di soluzioni digitali che abbraccia l&#39;estrema espansione nell&#39;IoT e nelle intuizioni basate sui dati.</p>
+<p>Robert Mueller ha detto: &quot;Ci sono solo due tipi di aziende: quelle che sono state hackerate e quelle che lo saranno. Anche questo si sta fondendo in una sola categoria: quelle che sono state hackerate e lo saranno di nuovo.&quot; Questa citazione prepara il terreno su come Hitachi può aiutare le aziende. Non è una questione di se, ma di quando, verrai hackerato, e quando verrai hackerato di nuovo. Questo si applica non solo alle aziende, ma anche alle organizzazioni nel settore pubblico.</p>
+<p>Hitachi ha una divisione federale completa che opera a Washington D.C., focalizzata principalmente sul Dipartimento della Difesa e sui conti federali. Hitachi Vantara lavora molto con i conti SLED e collabora con la divisione federale per fornire soluzioni per i requisiti federali, statali e locali.</p>
+<p>Il modo migliore per visualizzare una soluzione di sicurezza da parte di Hitachi è immaginare la tua organizzazione come la tua casa e in quella casa ci sono quattro elementi di protezione che dobbiamo implementare.</p>
+<p>Prima cosa è la sicurezza fisica. Hitachi ha un sistema intelligente, una soluzione di intelligenza visiva, che può fornire sorveglianza video con intelligenza. Può fare tutto, dalla rilevazione degli spari al tracciamento delle targhe fino al riconoscimento facciale. Hitachi dispiega tutto ciò in tutto il mondo. Le telecamere Hitachi hanno rilevato molti eventi al centro commerciale di Washington l&#39;anno scorso e vengono utilizzate da organizzazioni di polizia in tutto il paese. Tutto ciò è cresciuto dalla divisione dei trasporti di Hitachi, che dipende molto dalla tecnologia video per la sicurezza.</p>
+<p>La sicurezza fisica non è spesso un argomento di discussione, ma è un aspetto fondamentale. Se non riesci a controllare il tuo edificio e il tuo centro dati, allora non hai sicurezza. Se qualcuno riesce a entrare attraverso la porta, può entrare anche nel tuo centro dati.</p>
+<p>Dopo la sicurezza fisica arriva Hitachi ID. Questo è fondamentalmente la serratura della tua porta d&#39;ingresso. Un recente sondaggio ha rivelato che solo il 40 percento delle aziende ha un gestore di accesso privilegiato e circa il 74 percento ha un gestore delle identità. Questo non è sufficiente perché ciò comporta una grande esposizione e lo spazio SLED è un obiettivo di alto profilo. Hitachi ID fornisce soluzioni di privilegi e identità di password su una singola piattaforma; questa è una soluzione completa in cui è possibile identificare non solo gli utenti, ma anche dispositivi e applicazioni, sia in locale che nel cloud.</p>
+<p>Il terzo aspetto riguarda come proteggere i tuoi dati quando qualcuno varca la porta.</p>
+<p>La sicurezza informatica è un problema di big data, e Pentaho è lo strumento ideale per il big data. Con Pentaho, puoi gestire tutte le tue fonti di dati, controllare il tuo data lake e ottenere risultati utili. Hitachi ha scoperto che gli scienziati dei dati e gli analisti di sicurezza informatica trascorrono l&#39;80 percento del loro tempo solo nella gestione, nel reperimento e nella pulizia dei dati, e solo il 20 percento del loro tempo effettivamente nell&#39;analizzarli. Con Pentaho, questi numeri si invertono e possono dedicare l&#39;80 percento del loro tempo all&#39;analisi dei dati e all&#39;analisi e risposta delle minacce in tempo reale.</p>
+<p>Pentaho è un sistema di rilevamento delle intrusioni, ma è anche un sistema di prevenzione. Ad esempio, una grande azienda energetica aveva fatto tutto in modo improvvisato, scrivendo i propri script internamente. Hanno trasferito tutte quelle funzionalità in Pentaho in un solo giorno. Così sono stati in grado di effettuare quell&#39;analisi in tempo reale e tenere il passo con gli attaccanti invece di stare sempre indietro. Quello che rende Pentaho unico in un campo affollato è la sua flessibilità. Può effettuare qualsiasi tipo di analisi dei dati e può essere basato sulle esigenze della tua organizzazione.</p>
+<p>Proteggere i dati da un punto di vista dei contenuti è anche molto importante per lo spazio SLED. Hitachi Content Platform Anywhere fornisce un file sync e share sicuro e una dropbox sicura. È comparabile a Google Drive o Dropbox, per esempio, ma la differenza è che HCP Anywhere è controllato dal proprio team di sicurezza.</p>
+<p>Viene utilizzato dal Dipartimento della Difesa, che lo ha rinominato Mill Drive. Le forze sul campo trasmettono dati sensibili da e verso vari luoghi segreti e li inviano al quartier generale per missioni di ricognizione e altre operazioni. A livello locale, le città lo utilizzano per trasmettere prove video non solo tramite l&#39;amministrazione, le forze dell&#39;ordine e altre agenzie, ma anche all&#39;ufficio del procuratore distrettuale per la gestione delle prove.</p>
+<p>HCP Anywhere è costruito sulla Hitachi Content Platform, che è la loro archiviazione ad oggetti. Ha incorporato l&#39;archiviazione ad oggetti, non solo quella di Hitachi, ma tutta l&#39;archiviazione ad oggetti. Invece di sovrascrivere un file, e quindi permettere a un attaccante di sovrascrivere il tuo file, crei una nuova versione del file. Quindi, se vieni attaccato, puoi tornare a una versione precedente prima che avvenisse l&#39;attacco. Alcune agenzie di valutazione concordano sul fatto che l&#39;archiviazione ad oggetti di Hitachi sia la migliore sul mercato. Di default, ottieni 16 versioni di ogni file, 16 metadati di sistema e un numero illimitato di tag personalizzati per i metadati.</p>
+<p>Hitachi ha anche una console per la gestione delle politiche dei dati oltre al Gateway della Piattaforma dei Contenuti Hitachi, che mette un NAS di fronte al negozio di oggetti che può essere sia NFS che CIFS. Aggiunto a questo c&#39;è Hitachi Content Intelligence; è un motore di ricerca potenziato. Puoi trovare qualsiasi oggetto nel tuo archivio in base ai metadati, alla data, all&#39;ora, ecc. Può estendersi oltre l&#39;hardware fisico del proprio (o di Hitachi?) negozio di oggetti su più archivi. La ricerca funzionerà su qualsiasi cosa. È anche compatibile al 100% con AWS s3.</p>
+<p>Per i clienti di SLED, c&#39;è un&#39;opportunità con il partner di Hitachi, Flexential, per fornire Hitachi Content Platform come servizio. Se un governo cittadino, ad esempio, non desidera applicare il proprio archivio di oggetti, può far parte di un ambiente multilocatario attraverso questa partnership.</p>
+<p>Infine, la Sicurezza del Sistema Hitachi può aiutarti se sei attaccato da ransomware. Possono fornire un&#39;analisi sull&#39;impatto e negoziare con gli attaccanti del ransomware. Possono iniziare a creare posizioni difensive attorno alla tua organizzazione. Gli attaccanti non sono giocatori solitari, ma organizzazioni criminali con sviluppatori e management, quindi richiede una risposta professionale. La Sicurezza del Sistema Hitachi può accompagnare un&#39;organizzazione dall&#39;inizio alla fine.</p>
+<p>Se sei un membro di ISSA, cerca Hitachi per sponsorizzare un evento nella tua zona.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/it/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/it/episodes/",
+  "inLanguage": "it",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/it/episodes/edt-75/#episode",
+  "url": "https://embracingdigital.org/it/episodes/edt-75/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/it/episodes/edt-75/"
+  },
+  "name": "Soluzioni di cibersicurezza con Hitachi",
+  "episodeNumber": 75,
+  "datePublished": "2022-02-03T00:00:00.000Z",
+  "inLanguage": "it",
+  "description": "Darren Pulsipher, Chief Solution Architect, Intel, talks to Hitachi's Colin McLean, Intel Global Team Lead, and David Rowley, Senior Solutions Consultant, about Hitachi's full circle cyber security offerings.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/it/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/it/episodes/edt-75/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/it/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/it/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Soluzioni di cibersicurezza con Hitachi",
+      "item": "https://embracingdigital.org/it/episodes/edt-75/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

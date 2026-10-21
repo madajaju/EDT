@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Put the title Right Here | Embracing Digital Transformation</title>
+    <meta name="description" content="In this episode, Dr. Darren and Arun Gupta, VP from Intel, delve into the Open Platform for Enterprise AI (OPEA) and its profound significance in developer services. They share valuable insights on the journey from sandbox to production for GenAI app...">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/fr/episodes/edt-241/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Put the title Right Here | Embracing Digital Transformation">
+    <meta property="og:description" content="In this episode, Dr. Darren and Arun Gupta, VP from Intel, delve into the Open Platform for Enterprise AI (OPEA) and its profound significance in developer services. They share valuable insights on the journey from sandbox to production for GenAI app...">
+    <meta property="og:url" content="https://embracingdigital.org/fr/episodes/edt-241/">
+    <meta property="og:image" content="https://embracingdigital.org/fr/episodes/edt-241/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Put the title Right Here | Embracing Digital Transformation">
+    <meta name="twitter:description" content="In this episode, Dr. Darren and Arun Gupta, VP from Intel, delve into the Open Platform for Enterprise AI (OPEA) and its profound significance in developer services. They share valuable insights on the journey from sandbox to production for GenAI app...">
+    <meta name="twitter:image" content="https://embracingdigital.org/fr/episodes/edt-241/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/fr/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/fr/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/fr/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/fr/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/fr/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/fr/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/fr/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/fr/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/fr/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/fr/">Home</a></li>
+        <li><a href="/fr/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 241: Put the title Right Here</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/fr/episodes/edt-241/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/fr/episodes/edt-241/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 241</span>
+                <span class="episode-title">Put the title Right Here</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2/11/2025" itemprop="datePublished">2/11/2025</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="241"/>
+            <meta itemprop="inLanguage" content="fr"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2/11/2025" data-publication-status="">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="Put the title Right Here Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/9j5Kr4V7HTQ">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/9j5Kr4V7HTQ"
+                            title="Put the title Right Here Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         >
+                    <meta itemprop="name" content="Put the title Right Here Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/6ab74e7d">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://share.transistor.fm/e/6ab74e7d"
+                            title="Put the title Right Here Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="/fr/episodes/">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            In this episode, Dr. Darren and Arun Gupta, VP from Intel, delve into the Open Platform for Enterprise AI (OPEA) and its profound significance in developer services. They share valuable insights on the journey from sandbox to production for GenAI app...
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../fr/search.html?query=moderncomputing"
+                   itemprop="keywords">moderncomputing</a>
+                
+                <a href="../../fr/search.html?query=generativeai"
+                   itemprop="keywords">generativeai</a>
+                
+                <a href="../../fr/search.html?query=cloudnative"
+                   itemprop="keywords">cloudnative</a>
+                
+                <a href="../../fr/search.html?query=microservices"
+                   itemprop="keywords">microservices</a>
+                
+                <a href="../../fr/search.html?query=security"
+                   itemprop="keywords">security</a>
+                
+                <a href="../../fr/search.html?query=compliance"
+                   itemprop="keywords">compliance</a>
+                
+                <a href="../../fr/search.html?query=opensource"
+                   itemprop="keywords">opensource</a>
+                
+                <a href="../../fr/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../fr/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../fr/search.html?query=technology"
+                   itemprop="keywords">technology</a>
+                
+                <a href="../../fr/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../fr/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>Adopter le futur du déploiement d&#39;applications avec Open Platform pour l&#39;IA</h1>
+<p>Dans le monde numérique rapide d&#39;aujourd&#39;hui, adopter la technologie pour rationaliser les opérations et améliorer la productivité est plus crucial que jamais. Une avancée notable dans ce domaine est la Plateforme Ouverte pour l&#39;IA (OPEA), qui soutient efficacement les développeurs dans la création d&#39;applications évolutives. Alors que les organisations comptent de plus en plus sur les solutions d&#39;IA, comprendre l&#39;importance et la fonctionnalité de telles plates-formes peut responsabiliser les technologues et les leaders d&#39;entreprise.</p>
+<h2>Comprendre la Plateforme Ouverte pour l&#39;IA</h2>
+<p>L&#39;essentiel d&#39;OPEA réside dans sa capacité à permettre un déploiement d&#39;applications sans faille, en particulier dans le domaine de l&#39;intelligence artificielle (IA). En exploitant des microservices au niveau des composants, OPEA simplifie le processus de développement, permettant aux technologues de transformer leur innovation d&#39;une simple preuve de concept en une solution entièrement déployable. Des éléments clés, tels que les bases de données vectorielles, les grands modèles de langage (LLM) et les mécanismes de récupération, sont orchestrés de manière cohésive au sein de cette plateforme.</p>
+<p>Cette architecture soutient finalement le développement des applications d&#39;IA générative (GenAI). Les développeurs peuvent créer vOPEA, en exploitant l&#39;écosystème et les fonctionnalités bien définis de OPEA. La beauté d&#39;OPEA est qu&#39;elle met les développeurs aux commandes, leur permettant d&#39;expérimenter localement et de passer ensuite à un déploiement au niveau de production, minimisant les frictions et maximisant l&#39;efficacité.</p>
+<h2>Reliant le Développement de Sandbox à la Production</h2>
+<p>Un obstacle courant dans le développement de logiciels est la disparité entre la construction d&#39;applications dans un environnement contrôlé et les complexités du déploiement en production. La base native au cloud de l&#39;OPEA aborde ces défis de front. En créant un ensemble de microservices prédéfinis, l&#39;OPEA simplifie le processus de codage et réduit les obstacles opérationnels qui freinent souvent l&#39;innovation.</p>
+<p>Pour les développeurs habitués à travailler dans des environnements isolés, OPEA fournit un chemin structuré pour migrer de l&#39;expérimentation à la mise en œuvre à grande échelle sans compromettre l&#39;agilité. L&#39;utilisation de conteneurs Docker et de Kubernetes pour le déploiement signifie que les développeurs peuvent maintenir des environnements cohérents à la fois localement et dans le cloud, ce qui est essentiel pour réduire le syndrome &quot;ça fonctionne sur ma machine&quot;. Une stratégie de déploiement bien architecturée est essentielle pour les entreprises qui visent à exploiter les capacités de l&#39;IA sans épuiser leurs ressources.</p>
+<h2>Garantir la Sécurité et la Conformité</h2>
+<p>Au fur et à mesure que les organisations adoptent des solutions comme OPEA, les considérations de sécurité et de conformité émergent comme des préoccupations primordiales. La confidentialité des données doit être gérée de manière rigoureuse, en particulier dans un monde de plus en plus orienté vers l&#39;infrastructure cloud. OPEA offre de multiples fonctionnalités de sécurité pour protéger les informations sensibles tout au long du cycle de vie de l&#39;application.</p>
+<p>Un tel mécanisme est les garde-corps, qui aident à gérer efficacement les données sensibles au sein de l&#39;application. Les organisations peuvent mettre en œuvre le masquage des données et les contrôles d&#39;accès pour construire des applications qui respectent les normes de l&#39;industrie tout en utilisant des capacités IA puissantes. Cela permet aux développeurs de se concentrer sur la création de solutions innovantes sans la constante préoccupation d&#39;exposer des informations confidentielles. De plus, le modèle de responsabilité partagée signifie que les développeurs et les responsables de la plateforme contribuent à un environnement opérationnel sécurisé.</p>
+<h2>Le Paysage de l&#39;Innovation avec l&#39;Open Source</h2>
+<p>OPEA fonctionne selon un modèle open-source, encourageant les développeurs à participer activement à son évolution. Cet esprit de collaboration est particulièrement bénéfique pour l&#39;innovation impulsée par la communauté, favorisant un sentiment d&#39;appartenance et d&#39;objectif partagé. Avec un nombre croissant de partenaires contribuant à l&#39;écosystème de la plateforme, le potentiel d&#39;OPEA pour stimuler l&#39;innovation en IA est illimité.</p>
+<p>Cet aspect de l&#39;OPEA permet aux développeurs d&#39;exploiter les cadres existants et les invite à contribuer leurs propres idées et fonctionnalités à la communauté. À mesure que les industries évoluent et que la demande de solutions pilotées par l&#39;IA augmente, l&#39;adoption d&#39;une telle approche inclusive et open-source pourrait bien être le catalyseur du prochain percée technologique.</p>
+<p>Des plateformes comme OPEA ne font pas simplement évoluer la manière dont les applications sont déployées, mais transforment l&#39;ensemble du paysage de l&#39;IA. En exploitant ces outils, les technologues et les dirigeants d&#39;entreprise peuvent considérablement renforcer leur capacité à stimuler l&#39;innovation, à maintenir la sécurité et, en fin de compte, à acquérir un avantage concurrentiel dans l&#39;économie numérique.</p>
+<p>You need to provide the text you want to be translated into French.</p>
+<p>Si vous êtes intéressé à explorer comment OPEA peut s&#39;intégrer à votre stratégie de développement, recherchez des ressources et guides supplémentaires. Rejoignez la conversation et partagez vos pensées ou expériences sur l&#39;exploitation de l&#39;IA et des cadres open source dans les commentaires ci-dessous!</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/fr/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/fr/episodes/",
+  "inLanguage": "fr",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/fr/episodes/edt-241/#episode",
+  "url": "https://embracingdigital.org/fr/episodes/edt-241/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/fr/episodes/edt-241/"
+  },
+  "name": "Put the title Right Here",
+  "episodeNumber": 241,
+  "datePublished": "2/11/2025",
+  "inLanguage": "fr",
+  "description": "In this episode, Dr. Darren and Arun Gupta, VP from Intel, delve into the Open Platform for Enterprise AI (OPEA) and its profound significance in developer services. They share valuable insights on the journey from sandbox to production for GenAI app...",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/fr/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/fr/episodes/edt-241/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Put the title Right Here Video",
+      "embedUrl": "https://www.youtube.com/embed/9j5Kr4V7HTQ"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Put the title Right Here Audio",
+      "contentUrl": "https://share.transistor.fm/s/6ab74e7d"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/fr/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/fr/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Put the title Right Here",
+      "item": "https://embracingdigital.org/fr/episodes/edt-241/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

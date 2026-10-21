@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>La naissance des plates-formes d&#39;intelligence graphique. | Embracing Digital Transformation</title>
+    <meta name="description" content="Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector and Greg Steck, Senior Director of Industry Solutions, Katana Graph, talk about the benefits of Katana’s graph intelligence platform.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/fr/episodes/edt-106/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="La naissance des plates-formes d&#39;intelligence graphique. | Embracing Digital Transformation">
+    <meta property="og:description" content="Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector and Greg Steck, Senior Director of Industry Solutions, Katana Graph, talk about the benefits of Katana’s graph intelligence platform.">
+    <meta property="og:url" content="https://embracingdigital.org/fr/episodes/edt-106/">
+    <meta property="og:image" content="https://embracingdigital.org/fr/episodes/edt-106/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="La naissance des plates-formes d&#39;intelligence graphique. | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector and Greg Steck, Senior Director of Industry Solutions, Katana Graph, talk about the benefits of Katana’s graph intelligence platform.">
+    <meta name="twitter:image" content="https://embracingdigital.org/fr/episodes/edt-106/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/fr/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/fr/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/fr/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/fr/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/fr/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/fr/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/fr/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/fr/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/fr/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/fr/">Home</a></li>
+        <li><a href="/fr/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 106: La naissance des plates-formes d&#39;intelligence graphique.</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/fr/episodes/edt-106/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/fr/episodes/edt-106/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 106</span>
+                <span class="episode-title">La naissance des plates-formes d&#39;intelligence graphique.</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2022-09-20T00:00:00.000Z" itemprop="datePublished">2022-09-20T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="106"/>
+            <meta itemprop="inLanguage" content="fr"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2022-09-20T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector and Greg Steck, Senior Director of Industry Solutions, Katana Graph, talk about the benefits of Katana’s graph intelligence platform.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../fr/search.html?query=moderncomputing"
+                   itemprop="keywords">moderncomputing</a>
+                
+                <a href="../../fr/search.html?query=machinelearning"
+                   itemprop="keywords">machinelearning</a>
+                
+                <a href="../../fr/search.html?query=datamanagement"
+                   itemprop="keywords">datamanagement</a>
+                
+                <a href="../../fr/search.html?query=cloudnative"
+                   itemprop="keywords">cloudnative</a>
+                
+                <a href="../../fr/search.html?query=devops"
+                   itemprop="keywords">devops</a>
+                
+                <a href="../../fr/search.html?query=generativeai"
+                   itemprop="keywords">generativeai</a>
+                
+                <a href="../../fr/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../fr/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../fr/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../fr/search.html?query=technology"
+                   itemprop="keywords">technology</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Greg a commencé sa carrière dans une banque d&#39;investissement en tant que responsable du risque de crédit, au moment où ils ont commencé à mettre en œuvre les tests de résistance CCAR. Après avoir été fortement impliqué dans cette activité pendant un certain temps, il a commencé à faire du conseil et a découvert les graphiques lors de la validation des modèles de risque de crédit. Il a remarqué comment les graphiques pouvaient être exploités pour de nombreuses analyses différentes et présentaient des avantages dans la gestion des données et l&#39;apprentissage automatique, en particulier dans la modélisation de crédit. C&#39;est ainsi qu&#39;il a découvert Katana.</p>
+<p>Les analystes et les scientifiques des données luttent constamment pour intégrer différents ensembles de données. Greg a été attiré par les graphiques car, après avoir été introduit à RDF, un format de graphe de connaissances sémantiques, il était évident de comprendre comment les données pourraient être combinées et structurées en tant que graphe.</p>
+<p>Avec les solutions graphiques existantes, les analystes rencontraient des difficultés pour adapter leurs solutions, car une grande partie de leurs données étaient trop volumineuses. Katana Graph a développé la capacité de s&#39;adapter à l&#39;échelle et de se concentrer également sur l&#39;apprentissage automatique.</p>
+<p>Au début des bases de données de type graphique, les grandes entreprises telles qu&#39;Amazon et Facebook ont construit en interne leurs propres bases de données graphiques, effectuant leur modélisation et leur apprentissage automatique. Puis vinrent les versions grand public de plateformes telles que Neo4j et TigerGraph, destinées à des cas d&#39;utilisation généraux. Le défi résidait dans le fait qu&#39;elles étaient centrées sur la base de données et moins sur l&#39;analyse et l&#39;apprentissage automatique, les processus et les calculs graphiques réels. Elles étaient limitées à être une sorte de magasin de données, axées sur l&#39;ingestion et les opérations CRUD, et moins sur les données elles-mêmes.</p>
+<p>Il existe trois types différents de domaines informatiques de graphes. Le premier est la requête graphique, la base de données graphique et les opérations CRUD. Le deuxième concerne l&#39;analyse et l&#39;exploration de graphes avec des algorithmes tels que PageRank ou le clustering, qui gagnent en popularité. Le troisième domaine concerne l&#39;IA et l&#39;apprentissage automatique de graphes. C&#39;est là que les réseaux de neurones graphiques interviennent. Il existe des solutions ponctuelles qui résoudront des parties spécifiques de ces domaines, mais Katana Graph se situe à l&#39;intersection de ces derniers.</p>
+<p>Chacune des trois plateformes est importante. Pour faire de l&#39;apprentissage automatique, vous avez besoin des deux autres domaines. Lorsque les données sont d&#39;abord ingérées, elles doivent subir de nombreuses transformations pour les préparer à l&#39;apprentissage automatique, donc si vous n&#39;avez pas tout cela dans une seule solution, le pipeline sera lent, envoyant les données à l&#39;extérieur et les rapatriant. Il est plus efficace d&#39;itérer rapidement sur l&#39;ensemble du pipeline. Cela réduit également le risque de perte de données car vous diminuez le nombre de fois où vous transformez les données.</p>
+<p>De plus, puisque Katana Graph est une plate-forme nativement cloud, vous pouvez mettre en pause, sauvegarder un point de contrôle, réduire le cluster et le relancer ultérieurement exactement où vous vous êtes arrêté.</p>
+<p>Une bonne démonstration consiste à détecter les fraudes avec un ensemble de données de transactions Bitcoin. La plateforme ingère les données, qui sont structurées, de sorte que les portefeuilles Bitcoin soient les nœuds du graphe, et les transactions entre eux les arêtes. C&#39;est un graphe simple. L&#39;idée est de prédire si un portefeuille Bitcoin est frauduleux. Les portefeuilles illicites liés au blanchiment d&#39;argent, au trafic de drogue, etc. ont été étiquetés. Lorsqu&#39;un nouveau compte arrive, la tâche consiste à prédire s&#39;il est frauduleux. La partie difficile consiste alors à pré-traiter les caractéristiques numériques des comptes. Un ensemble d&#39;API a été conçu pour résoudre ce problème. Toutes les étapes que les scientifiques des données effectuent pour préparer leurs caractéristiques sont réalisées ici. À partir de là, le graphe est prêt à être intégré dans le modèle d&#39;apprentissage automatique, où il est entraîné, puis, en utilisant des réseaux neuronaux, on peut apprendre à classer les comptes.</p>
+<p>Un avantage de la plateforme est que les scientifiques des données et les ingénieurs peuvent travailler à partir d&#39;une même plateforme au lieu de rassembler les éléments ensemble.</p>
+<p>Un autre avantage est le coût total de possession. Contrairement à d&#39;autres plateformes, vous n&#39;avez pas besoin de maintenir la base de données graphique en marche tout le temps. Étant donné que les pipelines Katana Graph sont conçus avec une séparation du stockage et du calcul, vous pouvez facilement créer un cluster, effectuer un traitement par lot au préalable, puis exécuter une inférence dans un système distinct tout en exploitant ce qui a été généré dans le graphe.</p>
+<p>Katana Graph est également plus rapide avec de grands ensembles de données car il ne charge pas toutes les données au préalable, mais dispose d&#39;une manière innovante et dynamique de charger les données au fur et à mesure que vous en avez besoin lorsque vous travaillez dans le pipeline.</p>
+<p>Les analyses de base sont bien plus faciles sur une base de données graphique plutôt que sur une base de données relationnelle. Si vous disposez de dix ensembles de données différents, il peut être fastidieux et sujet aux erreurs pour un analyste de déterminer comment les joindre pour rédiger une requête dans une base de données relationnelle. Avec un graphique, vous disposez d&#39;un modèle unique, déjà prédéfini et construit, de sorte que les questions seront bien plus faciles car les données sont déjà connectées. Vous pouvez intuitivement voir comment les informations sont liées.</p>
+<p>L&#39;une des nouvelles fonctionnalités de Katana est l&#39;importateur de cadres de données Dash. Dash est un cadre communément utilisé par les scientifiques des données pour le traitement parallèle de cadres de données. Les scientifiques des données peuvent travailler avec le cadre de données qu&#39;ils utilisent déjà et l&#39;ingérer directement dans Katana Graph pour une expérience fluide et simplifiée.</p>
+<p>Le DevOps est une grande partie de ce que Katana essaie de faciliter avec leur plateforme. Ils s&#39;intègrent facilement aux pipelines d&#39;apprentissage existants. Lorsque les réseaux neuronaux graphiques sont exécutés, les embeddings peuvent être exportés. Ces caractéristiques qu&#39;un graphe génère peuvent être utilisées par un processus d&#39;apprentissage automatique en aval. Ainsi, l&#39;intégration devient beaucoup plus simple et plus facile à opérationnaliser et à mettre en production.</p>
+<p>Au cours des cinq prochaines années, Greg envisage que des organisations telles que les banques disposent de référentiels centralisés permettant d&#39;analyser les données clients, de marketing ou de crédit à des fins multiples. Les résultats obtenus à partir des modèles d&#39;apprentissage automatique pourraient être utilisés à la fois pour évaluer les risques de crédit et détecter les fraudes, par exemple. Au lieu d&#39;utiliser des ensembles de données cloisonnés avec beaucoup de réplications et de redondances entre eux, il existerait un modèle commun synchronisé au sein d&#39;un graphique.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/fr/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/fr/episodes/",
+  "inLanguage": "fr",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/fr/episodes/edt-106/#episode",
+  "url": "https://embracingdigital.org/fr/episodes/edt-106/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/fr/episodes/edt-106/"
+  },
+  "name": "La naissance des plates-formes d'intelligence graphique.",
+  "episodeNumber": 106,
+  "datePublished": "2022-09-20T00:00:00.000Z",
+  "inLanguage": "fr",
+  "description": "Intel's Darren Pulsipher, Chief Solutions Architect, Public Sector and Greg Steck, Senior Director of Industry Solutions, Katana Graph, talk about the benefits of Katana's graph intelligence platform.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/fr/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/fr/episodes/edt-106/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/fr/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/fr/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "La naissance des plates-formes d'intelligence graphique.",
+      "item": "https://embracingdigital.org/fr/episodes/edt-106/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

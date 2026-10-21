@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Put the title Right Here | Embracing Digital Transformation</title>
+    <meta name="description" content="On this episode, Darren interviews Phillip Griffith, a community leader of the open-source project OpenZiti. They discuss the importance of Zero Trust networking in modern IT networks.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/fr/episodes/edt-178/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Put the title Right Here | Embracing Digital Transformation">
+    <meta property="og:description" content="On this episode, Darren interviews Phillip Griffith, a community leader of the open-source project OpenZiti. They discuss the importance of Zero Trust networking in modern IT networks.">
+    <meta property="og:url" content="https://embracingdigital.org/fr/episodes/edt-178/">
+    <meta property="og:image" content="https://embracingdigital.org/fr/episodes/edt-178/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Put the title Right Here | Embracing Digital Transformation">
+    <meta name="twitter:description" content="On this episode, Darren interviews Phillip Griffith, a community leader of the open-source project OpenZiti. They discuss the importance of Zero Trust networking in modern IT networks.">
+    <meta name="twitter:image" content="https://embracingdigital.org/fr/episodes/edt-178/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/fr/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/fr/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/fr/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/fr/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/fr/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/fr/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/fr/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/fr/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/fr/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/fr/">Home</a></li>
+        <li><a href="/fr/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 178: Put the title Right Here</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/fr/episodes/edt-178/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/fr/episodes/edt-178/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 178</span>
+                <span class="episode-title">Put the title Right Here</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2023-12-28T08:00:00.000Z" itemprop="datePublished">2023-12-28T08:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="178"/>
+            <meta itemprop="inLanguage" content="fr"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2023-12-28T08:00:00.000Z" data-publication-status="">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="Put the title Right Here Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/JKSoW8NLJpw">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/JKSoW8NLJpw"
+                            title="Put the title Right Here Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         >
+                    <meta itemprop="name" content="Put the title Right Here Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/8c780a1f">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://share.transistor.fm/e/8c780a1f"
+                            title="Put the title Right Here Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="/fr/episodes/">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            On this episode, Darren interviews Phillip Griffith, a community leader of the open-source project OpenZiti. They discuss the importance of Zero Trust networking in modern IT networks.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../fr/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../fr/search.html?query=overlaynetworks"
+                   itemprop="keywords">overlaynetworks</a>
+                
+                <a href="../../fr/search.html?query=networksecurity"
+                   itemprop="keywords">networksecurity</a>
+                
+                <a href="../../fr/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../fr/search.html?query=softwaredefinednetworking"
+                   itemprop="keywords">softwaredefinednetworking</a>
+                
+                <a href="../../fr/search.html?query=dataprotection"
+                   itemprop="keywords">dataprotection</a>
+                
+                <a href="../../fr/search.html?query=identitymanagement"
+                   itemprop="keywords">identitymanagement</a>
+                
+                <a href="../../fr/search.html?query=secureconnectivity"
+                   itemprop="keywords">secureconnectivity</a>
+                
+                <a href="../../fr/search.html?query=advancedcommunications"
+                   itemprop="keywords">advancedcommunications</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>Dévoiler la dynamique des réseaux à confiance zéro et des réseaux superposés</h1>
+<p>Alors que l&#39;ère numérique progresse, la conversation autour de la sécurité des réseaux prend une position de premier plan. Dans un paysage numérique en évolution rapide, le réseau de confiance zéro et les réseaux superposés sont des stratégies essentielles pour relever les défis actuels de sécurité. Ici, nous explorons ces concepts, comment ils façonnent nos systèmes numériques et fournissons une compréhension de leurs avantages potentiels et applications.</p>
+<h2>Un regard plus approfondi sur le réseau à confiance zéro</h2>
+<p>Le réseau de confiance zéro est un état d&#39;esprit qui place la sécurité comme préoccupation première dans la conception et l&#39;exploitation des systèmes numériques. Son aspect crucial est la présomption de menaces potentielles de toutes les parties du réseau, indépendamment de leur apparence sécuritaire. Cette approche s&#39;écarte du concept traditionnel de forteresse en matière de sécurité et conduit à des réseaux plus robustes qui ne dépendent pas uniquement de la protection d&#39;un seul pare-feu.</p>
+<p>Tout d&#39;abord, la beauté des réseaux de confiance zéro réside dans leur capacité à fonctionner efficacement et en toute sécurité, présentant un avantage pour les développeurs et les ingénieurs logiciels. La sécurité devient un facilitateur plutôt qu&#39;un obstacle au processus de développement logiciel. Avec la mise en réseau de confiance zéro, les développeurs peuvent se concentrer sur le développement de fonctionnalités sans se soucier des ports bloqués ou de la consultation des équipes réseau - une avancée significative vers des lancements sur le marché plus rapides.</p>
+<p>Néanmoins, le réseau à confiance zéro n&#39;élimine pas le besoin de défenses périmétriques ou de pare-feu. La stratégie de confiance zéro suppose une possible compromission du réseau; par conséquent, elle appelle à une superposition des défenses au lieu de se fier uniquement à la défense périmétrique élémentaire.</p>
+<h2>L&#39;essor des réseaux superposés</h2>
+<p>Au milieu des menaces croissantes à la sécurité et des violations de données, les réseaux superposés émergent comme un outil inestimable. Ces réseaux virtuels définis par logiciel fournissent une couche supplémentaire de sécurité par rapport aux réseaux sous-jacents tels que les routeurs ou les pare-feu.</p>
+<p>Les réseaux superposés tels que le VPN et Wireguard permettent une communication sécurisée entre les ressources, même lorsque le réseau sous-jacent a été compromis. Ils offrent des fonctionnalités attrayantes, comme la réorganisation automatique en fonction des conditions, leur conférant des caractéristiques temporaires. Ces réseaux proposent également des options pour une communication sécurisée au sein de l&#39;application ou du système de données. De plus, une option de point de terminaison sans client renforce la connectivité des utilisateurs, ne nécessitant aucune installation de logiciel sur les appareils individuels.</p>
+<p>Les réseaux superposés offrent une flexibilité en termes de déploiement. Il n&#39;est pas nécessaire de réécrire le code de votre application, car le code pour le réseau superposé peut être intégré directement dans le code de l&#39;application. Sinon, un appareil virtuel peut être déployé à la place si vous souhaitez éviter de modifier votre application. Cette commodité, combinée à une sécurité renforcée, positionne les réseaux superposés comme des solutions à l&#39;épreuve du futur pour la sécurité des réseaux.</p>
+<h2>Le pouvoir des solutions ZTN et OpenZiti</h2>
+<p>Les offres de réseau Zero Trust (ZTN), comme Open Zero Trust (Open Ziti), fournissent des solutions compétentes en matière de Zero Trust et de réseau superposé. Ils intègrent des principes de Zero Trust robustes dans le domaine des solutions réseau superposées.</p>
+<p>Par exemple, ZTN apporte son système d&#39;identité à la table, parfait pour les appareils IoT de bord qui ne peuvent pas accéder aux services d&#39;identité typiques. Il offre une transmission de données sécurisée grâce au tunneling mutuel et à un tissu de routage intelligent qui détermine le chemin le plus efficace du point A au point B. D&#39;autre part, Open Ziti facilite de nombreux cas d&#39;utilisation, gérant les connexions est-ouest et nord-sud de manière fluide et sécurisée. Il s&#39;intègre bien avec les maillages de service pour fournir une sécurité de haut niveau.</p>
+<p>Ainsi, l&#39;adoption de telles mesures de sécurité holistiques devient nécessaire alors que nous entrons dans l&#39;ère numérique. ZTN et OpenZiti présentent des solutions pratiques pour ceux qui adoptent le modèle Zero Trust, avec des caractéristiques avantageuses allant de la gestion des identités à la connectivité sécurisée. Sans aucun doute, ces innovations établissent les références pour la sécurité des réseaux.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/fr/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/fr/episodes/",
+  "inLanguage": "fr",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/fr/episodes/edt-178/#episode",
+  "url": "https://embracingdigital.org/fr/episodes/edt-178/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/fr/episodes/edt-178/"
+  },
+  "name": "Put the title Right Here",
+  "episodeNumber": 178,
+  "datePublished": "2023-12-28T08:00:00.000Z",
+  "inLanguage": "fr",
+  "description": "On this episode, Darren interviews Phillip Griffith, a community leader of the open-source project OpenZiti. They discuss the importance of Zero Trust networking in modern IT networks.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/fr/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/fr/episodes/edt-178/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Put the title Right Here Video",
+      "embedUrl": "https://www.youtube.com/embed/JKSoW8NLJpw"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Put the title Right Here Audio",
+      "contentUrl": "https://share.transistor.fm/s/8c780a1f"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/fr/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/fr/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Put the title Right Here",
+      "item": "https://embracingdigital.org/fr/episodes/edt-178/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

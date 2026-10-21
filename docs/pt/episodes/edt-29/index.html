@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Banco de dados hipercala da próxima geração - Aerospike | Embracing Digital Transformation</title>
+    <meta name="description" content="Databases are showing their age, still taking some time to get results. Aerospike, with the help of Intel technology (Optane), breaks through with speed, volume, and low latency. Tim Faulkes, Vice President of Solutions Architecture at Aerospike, joi...">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/pt/episodes/edt-29/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Banco de dados hipercala da próxima geração - Aerospike | Embracing Digital Transformation">
+    <meta property="og:description" content="Databases are showing their age, still taking some time to get results. Aerospike, with the help of Intel technology (Optane), breaks through with speed, volume, and low latency. Tim Faulkes, Vice President of Solutions Architecture at Aerospike, joi...">
+    <meta property="og:url" content="https://embracingdigital.org/pt/episodes/edt-29/">
+    <meta property="og:image" content="https://embracingdigital.org/pt/episodes/edt-29/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Banco de dados hipercala da próxima geração - Aerospike | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Databases are showing their age, still taking some time to get results. Aerospike, with the help of Intel technology (Optane), breaks through with speed, volume, and low latency. Tim Faulkes, Vice President of Solutions Architecture at Aerospike, joi...">
+    <meta name="twitter:image" content="https://embracingdigital.org/pt/episodes/edt-29/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/pt/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/pt/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/pt/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/pt/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/pt/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/pt/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/pt/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/pt/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/pt/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/pt/">Home</a></li>
+        <li><a href="/pt/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 29: Banco de dados hipercala da próxima geração - Aerospike</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/pt/episodes/edt-29/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/pt/episodes/edt-29/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 29</span>
+                <span class="episode-title">Banco de dados hipercala da próxima geração - Aerospike</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2020-11-12T00:00:00.000Z" itemprop="datePublished">2020-11-12T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="29"/>
+            <meta itemprop="inLanguage" content="pt"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2020-11-12T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Databases are showing their age, still taking some time to get results. Aerospike, with the help of Intel technology (Optane), breaks through with speed, volume, and low latency. Tim Faulkes, Vice President of Solutions Architecture at Aerospike, joi...
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../pt/search.html?query=artificialintelligence"
+                   itemprop="keywords">artificialintelligence</a>
+                
+                <a href="../../pt/search.html?query=iot"
+                   itemprop="keywords">iot</a>
+                
+                <a href="../../pt/search.html?query=cloud"
+                   itemprop="keywords">cloud</a>
+                
+                <a href="../../pt/search.html?query=datasecurity"
+                   itemprop="keywords">datasecurity</a>
+                
+                <a href="../../pt/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../pt/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../pt/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../pt/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../pt/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+                <a href="../../pt/search.html?query=people"
+                   itemprop="keywords">people</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>Próxima Geração de Banco de Dados Hiperescala</h2>
+<p>Os bancos de dados estão mostrando sua idade, ainda demoram um pouco para obter resultados. O Aerospike, com a ajuda da tecnologia da Intel, rompe com velocidade, volume e baixa latência. Tim Faulkes, Vice-Presidente de Arquitetura de Soluções da Aerospike, junta-se a Darren neste episódio para discutir os benefícios de sua tecnologia.</p>
+<h2>NoSQL - Um mercado em crescimento com múltiplas tecnologias</h2>
+<p>A Aerospike foi criada em 2009, com as primeiras implantações de produção em 2011. Os fundadores estavam cientes dos desafios futuros. Eles construíram a arquitetura do zero com o objetivo de que ela fosse confiável, dimensionável para empresas, jamais sair do ar e capaz de lidar com ingestão maciça de dados. A arquitetura da Aerospike dependia muito de SSDs, tanto de unidades NVMe nas encarnações modernas, quanto de unidades SATA SAS. Ambos estavam em seus estágios iniciais, então os fundadores foram visionários em relação ao futuro do mercado. Eles dependiam desses dispositivos para obter velocidade, e é por isso que a tecnologia Intel era tão importante. Desde então, outras tecnologias da Intel, como a memória persistente, tornaram as coisas muito mais fáceis.</p>
+<h2>Índices em DRAM, Dados em SSD</h2>
+<p>A abordagem da Aerospike para bancos de dados é diferente. Os SSDs não são simplesmente discos rígidos mais rápidos. Um disco rígido possui setores físicos e cabeças e elementos que precisam ser movidos para ler dados. Um SSD pode ler rapidamente milhares de peças de dados em paralelo. Ele não funciona bem em discos rotacionais, mas com NVMe/SSD, funciona extremamente rápido. Ninguém tem o mesmo tipo de desempenho, nem mesmo um banco de dados em memória.</p>
+<p>A arquitetura única é projetada para alto volume, alto rendimento e latência muito baixa. Por exemplo, alguns clientes realizam regularmente 20 milhões de transações por segundo. Alguns estão chegando a petabytes de dados. Tipicamente, os clientes executam em hardware bastante bom, mas o tempo de ida e volta é crucial. Leva cerca de 200 microssegundos para o Aerospike pesquisar um dado e trazê-lo de volta para o cliente, não dezenas ou centenas de milissegundos. Quando você precisa de uma grande quantidade de dados rapidamente, como na detecção de fraudes, ou se está ingestando muitos dados, como em IoT, veículos autônomos, leituras de sensores ou dispositivos médicos, o Aerospike pode realizar milhões de transações por segundo em leituras e escritas. Você não precisa colocá-lo em um barramento de mensagens e em seguida, permitir que o banco de dados notifique os sistemas downstream via barramento de mensagens que ele tem os dados. Eles já são persistentes.</p>
+<h2>Impulsionando Inovação Líder na Indústria em todo o Mundo</h2>
+<p>Quais são os casos de uso ideais para o Aerospike? Existem mercados óbvios, como o já mencionado Internet das Coisas (IoT), detecção de fraudes e dados de sensores, mas é um mercado emergente. O Aerospike começou na tecnologia de publicidade, onde a recuperação de dados deve ser feita em milissegundos ou mais rápido. É aí que o bom desempenho foi testado em grande escala.</p>
+<p>Indústrias adicionais em que o Aerospike pode ser útil são diversas. Um exemplo é uma grande empresa de telecomunicações na Índia. A infraestrutura lá nem sempre é confiável e, às vezes, as chamadas são perdidas. Essa empresa, com a tecnologia Aerospike, pode identificar em tempo real que uma chamada foi perdida e eles podem entrar em contato imediatamente e oferecer ao cliente créditos ou outras compensações para manter a satisfação do cliente.</p>
+<h2>Regulação em Tempo Real de Pagamentos Imediatos.</h2>
+<p>Uma nova área na qual a Aerospike tem se envolvido intensamente é o pagamento digital em tempo real. Isso não requer especificamente uma grande quantidade de dados ou alta taxa de transferência, mas o que essas empresas precisam é de consistência absoluta e disponibilidade absoluta, mesmo diante, por exemplo, da perda de um centro de dados.</p>
+<p>O chão de fábrica também é um mercado emergente para a tecnologia Aerospike em coisas como a fabricação de semicondutores, onde é usada para armazenar dados de sensores para fornecer análises em tempo real. O Aerospike se destaca em qualquer indústria onde haja muitos dados e você precise deles rapidamente.</p>
+<h2>Desempenho em Escala - Resultados de Teste de Terceiros Independentes</h2>
+<p>Existem muitos bancos de dados com boa tecnologia disponíveis, mas há desafios de escala. Tome o Redis, por exemplo. Por armazenar todas as informações na memória, não é possível chegar a dez terabytes sem um custo significativo, quanto mais centenas de terabytes ou petabytes. Já o Aerospike armazena as informações em SSDs, a diferença de tempo entre buscar dados em um SSD e na memória é de cerca de 100 microssegundos. Na escala de petabytes, o Aerospike substitui tecnologias mais antigas, como o Cassandra, que escala muito bem, mas falta velocidade.</p>
+<h2>Custo total de propriedade</h2>
+<p>Além disso, comparado a essas tecnologias, as pessoas economizam muito dinheiro ao adotar o Aerospike, pois o número de nós diminui drasticamente devido à arquitetura única. As economias ocorrem não apenas no investimento inicial, mas também nas despesas operacionais, pois há menos máquinas para supervisionar.</p>
+<p>A Aerospike colapsou alguns dos níveis tradicionais na arquitetura. Frequentemente, sistemas legados terão caches extras na frente para acelerá-los. Isso introduz complexidade. Aerospike não precisa de um cache. Não há uma grande quantidade de DRAM. Ele depende da velocidade dos SSDs e da tecnologia subjacente para obter o desempenho do armazenamento bruto sem um cache. Como os níveis de cache e armazenamento estão colapsados, a solução é simplificada, o que significa confiabilidade e velocidade incorporadas.</p>
+<h2>Exemplo de Implantação Continental</h2>
+<p>A consistência em múltiplas áreas geográficas é também um benefício importante da tecnologia. A arquitetura moderna requer baixa latência, o que geralmente significa que existem vários clusters H onde os dados estão próximos ao usuário. Caso contrário, a velocidade da luz se torna um fator. O Aerospike pode fazer com que todos os clusters H se comuniquem entre si, então se um registro é alterado em um cluster, ele será propagado automaticamente para os outros clusters, de forma assíncrona. No entanto, em alguns casos, como pagamentos digitais, deve haver uma forte consistência entre os clusters, então eles podem querer replicar os dados de forma síncrona. Eles preferem ler a partir da cópia local dos dados. As leituras se tornam muito rápidas; as escritas são afetadas pela velocidade da luz, mas garantem a consistência em distâncias geográficas. Portanto, isso não é resolução de conflito, é evitar conflitos. Ser capaz de espalhar essas escritas de forte consistência ao redor do mundo e talvez ter múltiplos sistemas de registros tem um enorme potencial e valor.</p>
+<h2>Aerospike Connect para Spark.</h2>
+<p>Por exemplo, atualmente, o Aerospike se integra ao Spark, uma tecnologia analítica que requer que seus dados estejam em memória. Ao carregar os dados do Aerospike, o quadro de dados do Spark pode processar dezenas ou centenas de terabytes com enormes economias de custo e velocidade. A integração com outras ferramentas de IA é uma das forças motrizes que abrirão algumas portas emocionantes.</p>
+<p>Obter dados no Aerospike é simples e direto. Como as aplicações possuem uma camada de API como a maioria dos bancos de dados, o Aerospike pode receber dados de fontes padrão do setor, como Kafka e Janus. A capacidade bidirecional de se comunicar com barramentos de mensagens faz sentido, porque o Aerospike não só pode receber dados dessas fontes, mas também enviá-los. Se o Aerospike é uma fonte confiável quando você grava um registro, você pode enviá-lo para sistemas downstream.</p>
+<h2>Aerospike Connect for Kafka: Conexão Aerospike para Kafka</h2>
+<p>Se você deseja usar o Aerospike para ingestão em vez de um mecanismo de ingestão na frente, o Aerospike pode determinar se quer fragmentar os dados ou mantê-los no mesmo formato e apenas colocá-los no Aerospike; Com sua estrutura de plug-in, é uma chamada de API. Quando os dados são armazenados, um barramento de mensagens pode ser notificado para processamento posterior. Isso elimina uma das etapas de ingestão e aumenta o rendimento total.</p>
+<p>Escalar para milhares de clientes é possível devido à forma como o cliente Aerospike é projetado como multithreaded para escalar em um único processo e ingestar uma grande quantidade de dados com isso. O cliente é inteligente para aumentar a velocidade. Qualquer registro vai diretamente do cliente para o nó que possui essa parte de dados. Não há intermediários desse tipo. Isso significa que o cliente deve conhecer todos os nós, portanto, existem limites de conexão finitos, tornando impraticável centenas de milhares de clientes.</p>
+<h2>Exemplo de Implementação Continental</h2>
+<p>Se, no entanto, você tiver centenas de milhares de clientes, é porque você possui uma população distribuída globalmente. Se eles estivessem se comunicando com apenas um grupo, a velocidade da luz se tornaria um grande problema. Existem maneiras de configurar clusters menores baseados nas bordas que compartilham informações ou se comunicam com um sistema de registro em um modelo de hub e falou, então é possível de ser feito.</p>
+<h2>Aerospike é um banco de dados para aplicações de sistema de registro.</h2>
+<p>À medida que os dados se movem pelo mundo, diferentes camadas de privacidade entram em jogo e padrões como GDPR e CCPA, fazendo com que os clientes tenham que conhecer a origem dos dados. O Aerospike tem a flexibilidade de analisar os dados com granularidade e, com base no conteúdo dos dados, saber quando e onde podem ser enviados. Isso faz parte da configuração de envio de dados do Aerospike, que é transparente na aplicação. Você não precisa alterar nada nas aplicações, apenas na configuração.</p>
+<p>A Aerospike também garante que os dados estejam seguros. Assim como em todos os bancos de dados de alta capacidade empresarial, o Aerospike suporta criptografia em repouso e em trânsito, e integração de segurança com coisas como o Hashicorp Vault. Ele pode ser, e está sendo usado, como um sistema de registro.</p>
+<p>Um objetivo fundamental na Aerospike é usar as últimas inovações e tecnologias para o sucesso dos clientes. Por exemplo, quando a Intel lançou o PMem, eles o usaram no modo direto do aplicativo para aproveitar todas as suas capacidades. Isso significa que, para uma atualização contínua em, digamos, um petabyte de informações, o tempo necessário é pequeno. A Aerospike armazena esse petabyte em cerca de 50 ou 60 nós, em vez de milhares de nós, e quando um nó é desligado, não é necessário reconstruí-lo, portanto, o tempo de reinicialização é muito rápido.</p>
+<p>No geral, o Aerospike oferece segurança, alta disponibilidade, velocidade, baixa latência, escalabilidade, consistência e baixo custo de propriedade.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/pt/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/pt/episodes/",
+  "inLanguage": "pt",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/pt/episodes/edt-29/#episode",
+  "url": "https://embracingdigital.org/pt/episodes/edt-29/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/pt/episodes/edt-29/"
+  },
+  "name": "Banco de dados hipercala da próxima geração - Aerospike",
+  "episodeNumber": 29,
+  "datePublished": "2020-11-12T00:00:00.000Z",
+  "inLanguage": "pt",
+  "description": "Databases are showing their age, still taking some time to get results. Aerospike, with the help of Intel technology (Optane), breaks through with speed, volume, and low latency. Tim Faulkes, Vice President of Solutions Architecture at Aerospike, joi...",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/pt/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/pt/episodes/edt-29/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/pt/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/pt/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Banco de dados hipercala da próxima geração - Aerospike",
+      "item": "https://embracingdigital.org/pt/episodes/edt-29/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

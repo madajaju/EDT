@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Put the title Right Here | Embracing Digital Transformation</title>
+    <meta name="description" content="In this episode, Dr Darren interviews Matt Van Itallie who shares his insights on the evolution of software development, the impact of generative AI, and the importance of understanding code health. He discusses the role of constraints in fostering c...">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/fr/episodes/edt-249/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Put the title Right Here | Embracing Digital Transformation">
+    <meta property="og:description" content="In this episode, Dr Darren interviews Matt Van Itallie who shares his insights on the evolution of software development, the impact of generative AI, and the importance of understanding code health. He discusses the role of constraints in fostering c...">
+    <meta property="og:url" content="https://embracingdigital.org/fr/episodes/edt-249/">
+    <meta property="og:image" content="https://embracingdigital.org/fr/episodes/edt-249/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Put the title Right Here | Embracing Digital Transformation">
+    <meta name="twitter:description" content="In this episode, Dr Darren interviews Matt Van Itallie who shares his insights on the evolution of software development, the impact of generative AI, and the importance of understanding code health. He discusses the role of constraints in fostering c...">
+    <meta name="twitter:image" content="https://embracingdigital.org/fr/episodes/edt-249/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/fr/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/fr/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/fr/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/fr/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/fr/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/fr/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/fr/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/fr/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/fr/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/fr/">Home</a></li>
+        <li><a href="/fr/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 249: Put the title Right Here</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/fr/episodes/edt-249/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/fr/episodes/edt-249/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 249</span>
+                <span class="episode-title">Put the title Right Here</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="3/13/2025" itemprop="datePublished">3/13/2025</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="249"/>
+            <meta itemprop="inLanguage" content="fr"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="3/13/2025" data-publication-status="">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="Put the title Right Here Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/6-lDfmBj_Ug">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/6-lDfmBj_Ug"
+                            title="Put the title Right Here Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         >
+                    <meta itemprop="name" content="Put the title Right Here Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/89834121">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://share.transistor.fm/e/89834121"
+                            title="Put the title Right Here Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="/fr/episodes/">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            In this episode, Dr Darren interviews Matt Van Itallie who shares his insights on the evolution of software development, the impact of generative AI, and the importance of understanding code health. He discusses the role of constraints in fostering c...
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../fr/search.html?query=generativeai"
+                   itemprop="keywords">generativeai</a>
+                
+                <a href="../../fr/search.html?query=codequality"
+                   itemprop="keywords">codequality</a>
+                
+                <a href="../../fr/search.html?query=continuouslearning"
+                   itemprop="keywords">continuouslearning</a>
+                
+                <a href="../../fr/search.html?query=dataanalytics"
+                   itemprop="keywords">dataanalytics</a>
+                
+                <a href="../../fr/search.html?query=crossfunctionalcollaboration"
+                   itemprop="keywords">crossfunctionalcollaboration</a>
+                
+                <a href="../../fr/search.html?query=datamanagement"
+                   itemprop="keywords">datamanagement</a>
+                
+                <a href="../../fr/search.html?query=employeeengagement"
+                   itemprop="keywords">employeeengagement</a>
+                
+                <a href="../../fr/search.html?query=people"
+                   itemprop="keywords">people</a>
+                
+                <a href="../../fr/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Le monde du développement logiciel est en constante évolution à une vitesse vertigineuse, alimenté par les avancées dans les technologies d&#39;IA génératives. Alors que les dirigeants d&#39;entreprise et les technologues naviguent dans ce paysage, comprendre l&#39;impact de ces innovations est non seulement crucial, mais aussi stimulant. Cet article de blog explore l&#39;état actuel du développement logiciel, l&#39;importance de la qualité du code et l&#39;avenir de la dynamique de la main-d&#39;œuvre à l&#39;ère des outils pilotés par l&#39;IA, vous donnant les connaissances pour conduire un changement efficace.</p>
+<h2>Le besoin d&#39;un code de qualité dans le développement de logiciels</h2>
+<p>Dans le paysage actuel où le logiciel est l&#39;épine dorsale des opérations commerciales, la qualité du code sous-jacent n&#39;est pas seulement importante, elle est primordiale. Chaque programmeur comprend qu&#39;un code sans contexte est comme un roman à moitié écrit. Tout comme un auteur a besoin de clarté et de direction, les développeurs de logiciels ont besoin d&#39;une compréhension claire de la base de code pour produire des résultats efficaces et efficients.</p>
+<p>La qualité du logiciel ne concerne pas seulement la satisfaction des exigences fonctionnelles, mais également la lisibilité, la maintenabilité et la sécurité du code. L&#39;évolution des pratiques telles que l&#39;analyse statique joue un rôle significatif dans la garantie de la qualité. En évaluant la structure du code avant son exécution, les développeurs peuvent identifier les vulnérabilités potentielles tôt dans le cycle de développement, évitant ainsi des corrections coûteuses par la suite. Cette approche proactive non seulement maintient un niveau de qualité de code élevé, mais favorise également un environnement de développement sain, conduisant finalement à de meilleurs résultats commerciaux.</p>
+<p>De plus, lorsque les équipes intègrent davantage de développeurs ou passent à des environnements plus collaboratifs, elles doivent également répondre au défi du transfert et de la rétention du savoir. L&#39;aspect humain de la programmation est souvent négligé, mais la santé technique d&#39;une organisation est directement liée aux compétences de ses ingénieurs et aux taux de rétention. L&#39;équilibre entre la technologie et le capital humain est essentiel pour maintenir la force d&#39;une base de code.</p>
+<h2>Exploiter les données pour une visibilité améliorée</h2>
+<p>Les organisations qui utilisent des outils et des plateformes avancés fournissant des informations en temps réel sur la santé de la base de code peuvent mieux aligner leurs efforts de développement avec les objectifs commerciaux. Cette approche basée sur les données permet aux équipes de visualiser ce qu&#39;elles construisent et comment cela s&#39;aligne avec les objectifs immédiats. Les techniques de surveillance qui intègrent des systèmes de gestion de projets comme JIRA avec d&#39;autres sources de données peuvent créer une image complète de la progression et de la productivité d&#39;une équipe.</p>
+<p>En triangulant les données provenant de diverses sources, les dirigeants peuvent améliorer leurs processus de prise de décision. Par exemple, l&#39;identification de la dette technique et la compréhension de ses implications sur les délais du projet permettent à la direction de prendre des décisions d&#39;investissement éclairées pour répondre aux problèmes immédiats et prioriser efficacement les ressources. L&#39;émergence de tableaux de bord et d&#39;outils de rapport signifie que tout le monde - des cadres aux développeurs - peut saisir l&#39;état actuel du développement de logiciels avec clarté et précision.</p>
+<p>Avec les bons outils, les entreprises peuvent analyser les tendances, reconnaître les modèles et se concentrer sur les domaines qui nécessitent une attention particulière. Ces connaissances aident à créer une culture de responsabilité et d&#39;amélioration continue, en brisant les silos entre les départements et en encourageant la collaboration transversale. Avec l&#39;avancement de la technologie, comprendre comment exploiter au mieux ces connaissances devient impératif pour les entreprises qui souhaitent rester compétitives.</p>
+<h2>L&#39;avenir de la dynamique des effectifs dans le développement de logiciels</h2>
+<p>Alors que les outils d&#39;IA génératifs améliorent la productivité, des préoccupations grandissantes se manifestent quant au rôle des développeurs humains dans le processus de développement de logiciels. Bien qu&#39;il soit impossible de nier l&#39;efficacité de l&#39;IA, il faut prendre en compte les implications pour la dynamique de la main-d&#39;œuvre, en particulier pour les ingénieurs en début de carrière. Avec l&#39;IA capable d&#39;effectuer de nombreuses tâches précédemment assignées aux juniors, il est essentiel de repenser la formation et le mentorat dans l&#39;industrie.</p>
+<p>La valeur du jugement humain, de l&#39;expérience et de la créativité ne doit pas être sous-estimée. Bien que l&#39;IA puisse automatiser des tâches spécifiques, elle ne peut pas reproduire la compréhension nuancée que les ingénieurs expérimentés ont développée au fil des ans. Par conséquent, les organisations doivent se concentrer sur le développement des compétences de pensée d&#39;ordre supérieur, essentielles pour déterminer la meilleure utilisation de la technologie et pour comprendre le contexte des problèmes.</p>
+<p>Un changement dans les paradigmes de formation peut être nécessaire pour se préparer à l&#39;avenir. Plutôt que de se fier uniquement aux voies traditionnelles vers le développement de logiciels, les programmes de formation pourraient avoir besoin de mettre l&#39;accent sur la pensée critique, la résolution de problèmes et la capacité à collaborer avec les outils d&#39;IA. La création d&#39;environnements où les développeurs juniors peuvent apprendre de professionnels chevronnés est essentielle pour prévenir l&#39;épuisement des compétences et garantir que la prochaine génération est équipée pour naviguer dans le paysage logiciel de plus en plus complexe.</p>
+<h2>Embrassez le changement et adaptez-vous aux innovations pilotées par l&#39;IA</h2>
+<p>L&#39;évolution constante du développement de logiciels nécessite une volonté d&#39;embrasser le changement. Au fur et à mesure que la technologie progresse, le potentiel d&#39;innovation augmente de manière exponentielle. Les organisations qui s&#39;adaptent rapidement à ces tendances - en particulier celles qui exploitent l&#39;incroyable synergie humain-IA - seront mieux positionnées pour réussir.</p>
+<p>Face à ces changements rapides, l&#39;apprentissage continu devient non seulement essentiel, mais aussi une source de motivation et d&#39;engagement. S&#39;engager dans une formation continue, rester ouvert à de nouvelles méthodologies et privilégier une communication efficace au sein des équipes peut aider à construire une main-d&#39;œuvre résiliente. En favorisant une culture de collaboration, les champions de l&#39;innovation peuvent clairement articuler leur vision, leurs résultats et leurs objectifs, gardant tout le monde engagé et motivé.</p>
+<p>Alors que nous nous aventurons de plus en plus profondément dans cette nouvelle ère de développement de logiciels, l&#39;intégration de l&#39;IA générative représente un défi et une opportunité de repenser et de remodeler la manière dont nous construisons, maintenons et comprenons les logiciels. La clé réside dans notre capacité collective à exploiter la puissance des données, à valoriser notre capital humain et à nous adapter à un paysage technique en constante évolution.</p>
+<p>Sorry, you didn&#39;t input the text you want translated to French.</p>
+<p>Êtes-vous prêt à explorer comment ces développements pourraient impacter votre organisation? En apprendre davantage sur l&#39;intégration de l&#39;IA avancée dans votre pile technologique peut fournir des insights significatifs et des points d’actions concrets. Restez engagés, embrassez l&#39;apprentissage et n&#39;oubliez pas de partager ce post avec quelqu&#39;un qui pourrait bénéficier de ces connaissances!</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/fr/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/fr/episodes/",
+  "inLanguage": "fr",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/fr/episodes/edt-249/#episode",
+  "url": "https://embracingdigital.org/fr/episodes/edt-249/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/fr/episodes/edt-249/"
+  },
+  "name": "Put the title Right Here",
+  "episodeNumber": 249,
+  "datePublished": "3/13/2025",
+  "inLanguage": "fr",
+  "description": "In this episode, Dr Darren interviews Matt Van Itallie who shares his insights on the evolution of software development, the impact of generative AI, and the importance of understanding code health. He discusses the role of constraints in fostering c...",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/fr/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/fr/episodes/edt-249/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "Put the title Right Here Video",
+      "embedUrl": "https://www.youtube.com/embed/6-lDfmBj_Ug"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "Put the title Right Here Audio",
+      "contentUrl": "https://share.transistor.fm/s/89834121"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/fr/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/fr/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Put the title Right Here",
+      "item": "https://embracingdigital.org/fr/episodes/edt-249/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

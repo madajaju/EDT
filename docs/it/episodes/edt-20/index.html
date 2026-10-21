@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Distruggere la complessità dei livelli di archiviazione | Embracing Digital Transformation</title>
+    <meta name="description" content="Randy Hayes from VAST Data and Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, discuss VAST Data’s innovative storage architecture that eliminates the need for tiers using NVMe over Fabrics, QLC Flash, and 3D XPoint Optane">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/it/episodes/edt-20/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Distruggere la complessità dei livelli di archiviazione | Embracing Digital Transformation">
+    <meta property="og:description" content="Randy Hayes from VAST Data and Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, discuss VAST Data’s innovative storage architecture that eliminates the need for tiers using NVMe over Fabrics, QLC Flash, and 3D XPoint Optane">
+    <meta property="og:url" content="https://embracingdigital.org/it/episodes/edt-20/">
+    <meta property="og:image" content="https://embracingdigital.org/it/episodes/edt-20/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Distruggere la complessità dei livelli di archiviazione | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Randy Hayes from VAST Data and Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, discuss VAST Data’s innovative storage architecture that eliminates the need for tiers using NVMe over Fabrics, QLC Flash, and 3D XPoint Optane">
+    <meta name="twitter:image" content="https://embracingdigital.org/it/episodes/edt-20/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/it/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/it/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/it/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/it/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/it/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/it/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/it/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/it/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/it/">Home</a></li>
+        <li><a href="/it/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 20: Distruggere la complessità dei livelli di archiviazione</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/it/episodes/edt-20/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/it/episodes/edt-20/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 20</span>
+                <span class="episode-title">Distruggere la complessità dei livelli di archiviazione</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2020-09-09T00:00:00.000Z" itemprop="datePublished">2020-09-09T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="20"/>
+            <meta itemprop="inLanguage" content="it"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2020-09-09T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Randy Hayes from VAST Data and Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, discuss VAST Data’s innovative storage architecture that eliminates the need for tiers using NVMe over Fabrics, QLC Flash, and 3D XPoint Optane
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../it/search.html?query=storage"
+                   itemprop="keywords">storage</a>
+                
+                <a href="../../it/search.html?query=cloudcomputing"
+                   itemprop="keywords">cloudcomputing</a>
+                
+                <a href="../../it/search.html?query=datamanagement"
+                   itemprop="keywords">datamanagement</a>
+                
+                <a href="../../it/search.html?query=dataarchitecture"
+                   itemprop="keywords">dataarchitecture</a>
+                
+                <a href="../../it/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../it/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../it/search.html?query=technology"
+                   itemprop="keywords">technology</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>Trent&#39;anni di complessità di archiviazione</h2>
+<p>L&#39;archiviazione potrebbe essere un concetto vecchio, ma VAST Data è diventata una startup di successo in poco più di un anno di vendite. VAST ha sostituito la vecchia architettura dei sistemi di archiviazione a più livelli con un unico sistema monolitico che è veloce ed economico. Le soluzioni VAST eliminano anche il problema dei grossi e disordinati sistemi di archiviazione composti da diversi sistemi di file e diverse architetture.</p>
+<h2>Una Fondazione per una Nuova Architettura</h2>
+<p>Il fondatore di VAST stava analizzando lo storage da una prospettiva totalmente nuova. Ha scoperto che i clienti non avevano necessariamente bisogno di prestazioni superiori dal Flash, ma avevano bisogno di supporto per lo storage di file e oggetti a un costo inferiore. Ha sfruttato tre tecnologie che non esistevano prima del 2018. La prima è NVMe over Fabrics, che viene utilizzato come una sorta di SAN ad iperscala per collegare tutto insieme con bassa latenza. Successivamente c&#39;è il QLC Flash, perché è economico e non ha parti in movimento come gli hard disk. La terza è l&#39;Intel 3D XPoint Optane. Optane ha una parità di lettura-scrittura ed è molto resistente ad un prezzo ragionevole. Unendo queste tre tecnologie, VAST è in grado di offrire ai clienti prestazioni all-flash, ma a un prezzo paragonabile a quello di un hard disk. Elimina la necessità di altri livelli che le organizzazioni acquistano perché sono economici.</p>
+<h2>Presentiamo il Vast Data Universal Storage</h2>
+<p>Il sistema VAST è la prima architettura scomposta e condivisa. Ciò significa che la logica è scomposta dallo stato del file system. Invece, lo stato del file system risiede in casse di dati che contengono QLC Flash e Optane. L&#39;Optane viene utilizzato come un grande archivio di metadati. È multiuso, proprio come il sistema, che è marchiato come storage universale. Con queste casse, non c&#39;è un singolo punto di errore, quindi la capacità è, teoricamente, illimitata. (VAST ha testato il sistema a circa 50 petabyte in un singolo file system.) Puoi aumentare la capacità semplicemente aggiungendo server x86 a basso costo ai cluster. Poiché si tratta di un file system parallelo, qualsiasi utente può accedere a qualsiasi parte dei dati da uno qualsiasi dei server come se fosse direttamente collegato, quindi puoi continuare a scalare.</p>
+<p>Puoi anche aumentare le prestazioni indipendentemente dalla capacità. L&#39;unica cosa che inibirebbe le prestazioni del flash è il processore, quindi avendo la possibilità di aumentare senza soluzione di continuità il numero di CPU nel cluster, puoi migliorare le prestazioni.</p>
+<p>Uno dei problemi che viene risolto con questa struttura è la latenza. Molte organizzazioni necessitano di una bassa latenza per tutti i loro dati. Poiché ciascuno di questi server privi di stato ha accesso a tutto, si ha un accesso rapido a tutti i dati.</p>
+<h2>DASE Architettura: Pool di server</h2>
+<p>Un altro grande vantaggio è che è facile ottimizzare lo spazio di archiviazione di un&#39;organizzazione. La natura componibile dei server senza stato, e l&#39;assenza di comunicazione tra di essi, ti dà la possibilità di costruire un cluster che si adatti meglio alle tue esigenze. Ad esempio, puoi segmentare le tue casse di controllo in base a diverse carichi di lavoro, ma possono tutti accedere agli stessi dati.</p>
+<p>Inoltre, il sistema funziona bene con un&#39;organizzazione che ha bisogno di diversi livelli di classificazione per accedere ai dati. Hai la possibilità di segregare ciò a cui gli utenti hanno accesso creando più zone di accesso con indirizzi IP virtuali. Una delle sfide con NFS è che trasmette in pratica a tutto. Se limiti le trasmissioni a un sottoinsieme di indirizzi IP, ti dà la possibilità di suddividere quelle diverse architetture in sistemi distinti.</p>
+<h2>Applicazione Eras di Universal Storage Bridges</h2>
+<p>Questa non è solo una soluzione ideata per i cluster HPC; non è costosa. Molte aziende utilizzano VAST prima per il backup per stabilire la fiducia. Ad esempio, il National Cancer Institute ha un archivio di librerie a nastro e voleva essere in grado di accedere alle informazioni più velocemente. Hanno valutato diverse piattaforme e VAST è risultato più conveniente e dotato di un sistema All-Flash, più veloce del loro sistema di produzione NAS. Quindi la soluzione ha un buon rapporto qualità-prezzo ed è utile per la condivisione generale dei file e una varietà di carichi di lavoro, come l&#39;IA, l&#39;analisi dei log, Splunk, ecc., non solo per l&#39;HPC. Le soluzioni VAST sono semplici da gestire e veramente universali.</p>
+<p>VAST è una giovane azienda, ma ha diverse installazioni in agenzie governative come l&#39;Istituto Nazionale della Salute e i Tri-labs del Dipartimento dell&#39;Energia, dove è necessario un alto livello di prestazioni per questi supercomputer. Si tratta di un potente sistema in alcuni dei più grandi ambienti HPC al mondo, che supporta applicazioni mission-critical.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/it/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/it/episodes/",
+  "inLanguage": "it",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/it/episodes/edt-20/#episode",
+  "url": "https://embracingdigital.org/it/episodes/edt-20/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/it/episodes/edt-20/"
+  },
+  "name": "Distruggere la complessità dei livelli di archiviazione",
+  "episodeNumber": 20,
+  "datePublished": "2020-09-09T00:00:00.000Z",
+  "inLanguage": "it",
+  "description": "Randy Hayes from VAST Data and Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, discuss VAST Data's innovative storage architecture that eliminates the need for tiers using NVMe over Fabrics, QLC Flash, and 3D XPoint Optane",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/it/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/it/episodes/edt-20/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/it/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/it/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Distruggere la complessità dei livelli di archiviazione",
+      "item": "https://embracingdigital.org/it/episodes/edt-20/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

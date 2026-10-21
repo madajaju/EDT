@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Calcul confidentiel en DevSecOps | Embracing Digital Transformation</title>
+    <meta name="description" content="In this episode, Darren Pulsipher, Chief Solutions Architect, Intel, and Ofir Azoulay-Rozanes, Director of Product Management, Anjuna, discuss Anjuna’s solutions for confidential computing in the DevOps lifecycle.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/fr/episodes/edt-87/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Calcul confidentiel en DevSecOps | Embracing Digital Transformation">
+    <meta property="og:description" content="In this episode, Darren Pulsipher, Chief Solutions Architect, Intel, and Ofir Azoulay-Rozanes, Director of Product Management, Anjuna, discuss Anjuna’s solutions for confidential computing in the DevOps lifecycle.">
+    <meta property="og:url" content="https://embracingdigital.org/fr/episodes/edt-87/">
+    <meta property="og:image" content="https://embracingdigital.org/fr/episodes/edt-87/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calcul confidentiel en DevSecOps | Embracing Digital Transformation">
+    <meta name="twitter:description" content="In this episode, Darren Pulsipher, Chief Solutions Architect, Intel, and Ofir Azoulay-Rozanes, Director of Product Management, Anjuna, discuss Anjuna’s solutions for confidential computing in the DevOps lifecycle.">
+    <meta name="twitter:image" content="https://embracingdigital.org/fr/episodes/edt-87/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/fr/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/fr/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/fr/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/fr/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/fr/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/fr/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/fr/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/fr/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/fr/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/fr/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/fr/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/fr/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/fr/">Home</a></li>
+        <li><a href="/fr/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 87: Calcul confidentiel en DevSecOps</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/fr/episodes/edt-87/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/fr/episodes/edt-87/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 87</span>
+                <span class="episode-title">Calcul confidentiel en DevSecOps</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2022-05-19T00:00:00.000Z" itemprop="datePublished">2022-05-19T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="87"/>
+            <meta itemprop="inLanguage" content="fr"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2022-05-19T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            In this episode, Darren Pulsipher, Chief Solutions Architect, Intel, and Ofir Azoulay-Rozanes, Director of Product Management, Anjuna, discuss Anjuna’s solutions for confidential computing in the DevOps lifecycle.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../fr/search.html?query=confidentialcomputing"
+                   itemprop="keywords">confidentialcomputing</a>
+                
+                <a href="../../fr/search.html?query=secureenclaves"
+                   itemprop="keywords">secureenclaves</a>
+                
+                <a href="../../fr/search.html?query=devsecops"
+                   itemprop="keywords">devsecops</a>
+                
+                <a href="../../fr/search.html?query=intelsgx"
+                   itemprop="keywords">intelsgx</a>
+                
+                <a href="../../fr/search.html?query=datasecurity"
+                   itemprop="keywords">datasecurity</a>
+                
+                <a href="../../fr/search.html?query=cloudsecurity"
+                   itemprop="keywords">cloudsecurity</a>
+                
+                <a href="../../fr/search.html?query=devops"
+                   itemprop="keywords">devops</a>
+                
+                <a href="../../fr/search.html?query=encryption"
+                   itemprop="keywords">encryption</a>
+                
+                <a href="../../fr/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../fr/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../fr/search.html?query=moderncomputing"
+                   itemprop="keywords">moderncomputing</a>
+                
+                <a href="../../fr/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+                <a href="../../fr/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../fr/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Le logiciel d&#39;Anjuna permet aux applications de fonctionner avec la protection SGX d&#39;Intel et résout le problème de la protection des données en cours d&#39;utilisation. La mission d&#39;Anjuna est de rendre les enclaves sécurisées aussi simples que possible. Avec le logiciel d&#39;Anjuna, il n&#39;est pas nécessaire de modifier quoi que ce soit dans l&#39;application ; il suffit de la prendre, de l&#39;exécuter dans une enclave et la technologie SGX fonctionnera immédiatement. Le logiciel fonctionne avec toutes les applications, sur n&#39;importe quelle plateforme cloud et à n&#39;importe quelle échelle.</p>
+<p>La chaîne d&#39;approvisionnement mondiale des logiciels est attaquée. SolarWinds, notamment, a été une attaque contre DevOps, et bien qu&#39;il y ait eu des idées sur la façon de résoudre le problème, cela n&#39;a pas encore été verrouillé. La technologie Anjuna peut être une solution facile. Il n&#39;est pas nécessaire de réorganiser votre logiciel ou de changer de méthodologie. Vous les exécutez dans des enclaves sécurisées.</p>
+<p>Lorsqu&#39;il a essayé le logiciel d&#39;Anjuna, Darren a créé une pile en utilisant Intel SGX en bas, Red Hat OpenShift, Anjuna pour la partie de calcul confidentiel, et HashiCorp&#39;s Vault pour stocker un registre sécurisé. Il a été choqué de voir à quel point la solution était rapidement mise en place et opérationnelle en moins d&#39;une semaine.</p>
+<p>Darren appelle ce processus le pipeline sécurisé de DevSecOps, bien qu&#39;il soit composé de plusieurs éléments en mouvement. Ofir est d&#39;accord avec cette terminologie, car ce processus est un nouvel DevOps renforcé avec la technologie matérielle SGX associée au logiciel d&#39;Anjuna.</p>
+<p>L&#39;informatique confidentielle, ou enclave sécurisée, résout le problème de la protection des données. Lorsque vous stockez des données dans un stockage persistant, la solution pour les données au repos est déjà présente. Il existe également une solution pour les données en transit avec le protocole TLS. La sécurisation des données en cours d&#39;utilisation n&#39;a pas encore été résolue car lorsque les données sont en cours d&#39;utilisation, l&#39;application doit y accéder en mémoire en clair. Elles ne peuvent pas être simultanément chiffrées et utilisées. Cela pose un problème sans fin. Si un acteur malveillant a accès à une machine sur laquelle l&#39;application est en cours d&#39;exécution, une intrusion est aussi simple que de passer par le dispositif, d&#39;identifier le processus et de créer une copie de la mémoire. Ils auront ainsi accès à tous les secrets et données confidentielles stockées, et celles-ci ne seront pas chiffrées. Cela inclurait également les clés de chiffrement des données au repos et en transit car le logiciel a besoin de les utiliser pour chiffrer les données. L&#39;acteur malveillant aura accès aux clés du royaume.</p>
+<p>Le problème est résolu si vous exécutez les différentes applications dans des enclaves sécurisées. Même si quelqu&#39;un parvient à accéder à la machine, il n&#39;aura pas accès à la mémoire de chaque application. Cela ne signifie pas que vous n&#39;avez pas à résoudre les vulnérabilités, mais vous êtes beaucoup moins stressé pour les résoudre le plus rapidement possible. Même s&#39;il existe des vulnérabilités du noyau, lorsque quelque chose s&#39;exécute dans une enclave sécurisée, le noyau ne peut pas accéder à sa mémoire.</p>
+<p>Le logiciel Anjuna fonctionne sur d&#39;autres technologies matérielles en plus de SGX. Contrairement à l&#39;exécution du chiffrement en logiciel, où l&#39;impact sur les performances serait élevé, Anjuna peut ajuster finement la configuration pour exécuter votre application avec un impact négligeable sur les performances : moins de cinq pour cent.</p>
+<p>Donc, vous ne voudrez peut-être pas tout mettre dans une enclave sécurisée pour le moment, mais c&#39;est l&#39;avenir de la sécurité.</p>
+<p>L&#39;un des usages d&#39;une enclave sécurisée est de stocker des données qui couvrent différentes étapes du pipeline DevOps dans un registre sécurisé. Le registre contient toutes les informations liées à la construction, les clés de sécurité et les valeurs de hachage utilisées pour la vérification. Ces valeurs de hachage de vérification doivent rester inchangées tout au long du cycle afin que personne ne puisse injecter de code, de bibliothèques ou de binaires dans le package que vous livrez. Tout devrait s&#39;exécuter dans un conteneur dans le monde moderne.</p>
+<p>Un autre candidat à la protection est une clé de signature. Sans des enclaves sécurisées, une fois que vous avez un fichier binaire prêt, vous devez le transférer vers une autre machine dans une pièce sombre à laquelle personne n&#39;a accès. Mais trois personnes avec trois clés différentes le signent là-bas. Les enclaves sécurisées permettent d&#39;accéder à cette clé de signature dans votre environnement familier, mais seule l&#39;enclave y aura accès. Cela sera basé sur l&#39;identité complexe du logiciel en cours d&#39;exécution à l&#39;intérieur de l&#39;enclave SGX, qui est mise en œuvre via la citation d&#39;attestation. En d&#39;autres termes, vous pouvez attester une enclave vers une autre enclave. Vous pouvez également attester des éléments qui s&#39;exécutent en dehors des enclaves. Cela vous donne la possibilité de faire confiance à un logiciel qui s&#39;exécute ailleurs.</p>
+<p>La compilation des binaires est une autre utilisation. L&#39;un des grands problèmes au sein du Département de la Défense, par exemple, est qu&#39;ils veulent être assurés que tout ce qui a été intégré à la construction peut être retracé jusqu&#39;au développeur qui l&#39;a écrit. Surtout dans les systèmes embarqués, où le logiciel contrôle des machines valant des millions de dollars qui peuvent tuer des gens ou sauver des vies. Il doit y avoir une traçabilité complète pour aider à garantir la responsabilité et le bon déroulement du développement sécurisé.</p>
+<p>En plus des attaques par vidage de mémoire, un autre problème d&#39;attaque que Anjuna résout est de s&#39;assurer que dans les cas où vous avez besoin d&#39;accéder au noyau, il protégera tout ce qui doit être couvert dans cette interaction entre l&#39;enclave et le monde extérieur. Il peut également protéger contre l&#39;accès au code et rendre les secrets uniquement disponibles pour l&#39;enclave. De plus, si quelqu&#39;un pénètre dans une machine, il ne pourra pas trouver un certificat TLS en clair ou la clé utilisée pour l&#39;encrypter.</p>
+<p>Chaque fournisseur de services cloud propose des enclaves sécurisées, et Anjuna les prend tous en charge. Ils prennent également en charge les technologies locales. En plus de l&#39;offre principale, Anjuna peut également permettre la capacité de chiffrer vos données au repos et en transit sans modifier votre logiciel, même dans les applications héritées ou les nouvelles applications qui ne prennent pas en charge le chiffrement de chaque fichier de données.</p>
+<p>Pour plus d&#39;informations, visitez anjuna.io, ou consultez un livre blanc rédigé par Darren et Ofir sur embracingdigital.com.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/fr/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/fr/episodes/",
+  "inLanguage": "fr",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/fr/episodes/edt-87/#episode",
+  "url": "https://embracingdigital.org/fr/episodes/edt-87/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/fr/episodes/edt-87/"
+  },
+  "name": "Calcul confidentiel en DevSecOps",
+  "episodeNumber": 87,
+  "datePublished": "2022-05-19T00:00:00.000Z",
+  "inLanguage": "fr",
+  "description": "In this episode, Darren Pulsipher, Chief Solutions Architect, Intel, and Ofir Azoulay-Rozanes, Director of Product Management, Anjuna, discuss Anjuna's solutions for confidential computing in the DevOps lifecycle.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/fr/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/fr/episodes/edt-87/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../fr/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/fr/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/fr/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Calcul confidentiel en DevSecOps",
+      "item": "https://embracingdigital.org/fr/episodes/edt-87/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

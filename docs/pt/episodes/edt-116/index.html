@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>An Argument for a Holistic Approach to Critical Infrastructure Security | Embracing Digital Transformation</title>
+    <meta name="description" content="In this episode, Darren talks about the convergence of OT and IT cybersecurity with Security expert Steve Orrin and Industrial OT expert Dr. Anna Scott">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/pt/episodes/edt-116/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="An Argument for a Holistic Approach to Critical Infrastructure Security | Embracing Digital Transformation">
+    <meta property="og:description" content="In this episode, Darren talks about the convergence of OT and IT cybersecurity with Security expert Steve Orrin and Industrial OT expert Dr. Anna Scott">
+    <meta property="og:url" content="https://embracingdigital.org/pt/episodes/edt-116/">
+    <meta property="og:image" content="https://embracingdigital.org/pt/episodes/edt-116/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="An Argument for a Holistic Approach to Critical Infrastructure Security | Embracing Digital Transformation">
+    <meta name="twitter:description" content="In this episode, Darren talks about the convergence of OT and IT cybersecurity with Security expert Steve Orrin and Industrial OT expert Dr. Anna Scott">
+    <meta name="twitter:image" content="https://embracingdigital.org/pt/episodes/edt-116/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/pt/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/pt/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/pt/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/pt/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/pt/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/pt/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/pt/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/pt/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/pt/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/pt/">Home</a></li>
+        <li><a href="/pt/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 116: An Argument for a Holistic Approach to Critical Infrastructure Security</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/pt/episodes/edt-116/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/pt/episodes/edt-116/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 116</span>
+                <span class="episode-title">An Argument for a Holistic Approach to Critical Infrastructure Security</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2022-12-15T00:00:00.000Z" itemprop="datePublished">2022-12-15T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="116"/>
+            <meta itemprop="inLanguage" content="pt"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2022-12-15T00:00:00.000Z" data-publication-status="">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="An Argument for a Holistic Approach to Critical Infrastructure Security Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/TsSBgmOnujk">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/TsSBgmOnujk"
+                            title="An Argument for a Holistic Approach to Critical Infrastructure Security Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         >
+                    <meta itemprop="name" content="An Argument for a Holistic Approach to Critical Infrastructure Security Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/b7873e57">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://share.transistor.fm/e/b7873e57"
+                            title="An Argument for a Holistic Approach to Critical Infrastructure Security Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="/pt/episodes/">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            In this episode, Darren talks about the convergence of OT and IT cybersecurity with Security expert Steve Orrin and Industrial OT expert Dr. Anna Scott
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../pt/search.html?query=criticalinfrastructure"
+                   itemprop="keywords">criticalinfrastructure</a>
+                
+                <a href="../../pt/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../pt/search.html?query=patchmanagement"
+                   itemprop="keywords">patchmanagement</a>
+                
+                <a href="../../pt/search.html?query=dataprivacy"
+                   itemprop="keywords">dataprivacy</a>
+                
+                <a href="../../pt/search.html?query=businesscontinuity"
+                   itemprop="keywords">businesscontinuity</a>
+                
+                <a href="../../pt/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../pt/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+                <a href="../../pt/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h2>Existe uma ameaça real para a Infraestrutura Crítica.</h2>
+<p>De acordo com o Dr. Scott, as organizações de OT ainda utilizam o modelo tradicional de Purdue, que utiliza redes isoladas e protegidas por firewall. No entanto, esse modelo está começando a se desfazer à medida que as redes de TI e OT se convergem. As empresas estão tentando obter uma melhor compreensão do que está acontecendo em sua infraestrutura operacional. Como resultado, eles abrem brechas nas redes anteriormente bem isoladas, expondo-as a ameaças cibernéticas. Além disso, os cibercriminosos estão encontrando maneiras de contornar redes com isolamento aéreo e protegidas por firewall.</p>
+<p>Steve argumenta que aproveitar as melhores práticas de TI pode ajudar, mas os profissionais de OT e os profissionais de TI têm motivadores e modelos operacionais diferentes. Continuar isolando sua rede ainda é uma boa estratégia, mas deve ser um dos muitos instrumentos utilizados na proteção da cibersegurança da infraestrutura crítica. A segurança de OT deve analisar as melhores práticas de cibersegurança de TI para obter ideias para aprimorar suas redes e infraestrutura.</p>
+<h2>Diferenças entre TI e OT impedindo as Melhores Práticas</h2>
+<p>Os sistemas de TI são tradicionalmente atualizados rapidamente ou continuamente com base em perfis de segurança. Uma das principais ferramentas para melhorar a segurança é a higiene básica de segurança, através da atualização de sistemas operacionais, firmware e software na infraestrutura de TI. No entanto, conforme o Dr. Scott nos esclarece, sistemas OT que gerenciam infraestruturas críticas não podem ter tempo de inatividade, e o período para atualizar esses sistemas é medido em anos, não em dias. Não é incomum, em dispositivos de infraestrutura OT, que as máquinas funcionem por 5 a 10 anos sem tempo de inatividade, o que significa nenhuma atualização de patches.</p>
+<p>Por exemplo, na indústria de petróleo e gás, as refinarias operam continuamente por quatro a cinco anos, têm um período de inatividade de uma a três semanas para atualizações e, em seguida, operam novamente por quatro a cinco anos. Esses modelos de operação não são propícios para as tradicionais correções contínuas de segurança que as organizações de TI normalmente utilizam. No entanto, Steve detalha muitas outras ferramentas de cibersegurança que devem ser aproveitadas quando os patches de segurança não podem ser aplicados aos dispositivos existentes devido à sua infraestrutura de controle crítico.</p>
+<h2>Melhores Práticas de Avaliação de Riscos</h2>
+<p>A melhor prática primária de cibersegurança é a avaliação de riscos. Embora a remediação de riscos possa ser diferente, o processo de avaliação de riscos pode ser utilizado de forma igual em OT (Tecnologia Operacional) e seus ambientes. Steve argumenta que o primeiro passo do processo de avaliação de riscos é obter uma inventariação completa dos ativos de hardware, firmware e software em seu ambiente de OT. Este primeiro passo é crucial para avaliar sua posição de ameaça cibernética e avaliar o risco que sua organização está disposta a assumir. O próximo passo é avaliar as CVEs (Vulnerabilidades e Exposições Comuns) em relação ao seu inventário conhecido.</p>
+<p>É fundamental reconhecer que este é um processo contínuo e não deve ser feito apenas uma vez ou periodicamente. Alguns profissionais OT argumentam que seus ambientes OT são estáticos e não requerem avaliação contínua de riscos. No entanto, Steve destaca que, mesmo que os ambientes OT possam ser fixos, o ambiente de ameaças está em constante mudança e os fatores empresariais podem alterar a posição de risco da organização. Portanto, a avaliação contínua de riscos deve ser feita para proteger a infraestrutura crítica de atores de cibersegurança prejudiciais.</p>
+<h2>Lidando com fornecedores de OT</h2>
+<p>Outro fator interessante na infraestrutura OT é o modelo de segurança compartilhada com os fornecedores de dispositivos. Em muitos casos, esses dispositivos embutidos que controlam infraestruturas críticas de milhões de dólares são gerenciados pelo fornecedor, não pelo profissional de OT. O fornecedor só pode fazer correções e atualizações de segurança cibernética nos dispositivos. Isso às vezes pode levar a vulnerabilidades em seu ambiente OT, aumentando o risco de infiltração cibernética. Steve traz ferramentas adicionais de segurança cibernética para ajudar a proteger ativos que não podem ser corrigidos com patches críticos de segurança cibernética, incluindo o aumento do isolamento dos dispositivos afetados, a implantação de dispositivos de monitoramento e padrões de design de canário na infraestrutura OT. Essas ferramentas podem ajudar a proteger e isolar o dispositivo para evitar a propagação e o acesso a ativos comprometidos.</p>
+<h2>O que fazer quando você está comprometido.</h2>
+<p>Então, o que você faz quando tem uma infraestrutura crítica comprometida? A organização consegue lidar com o desligamento da infraestrutura infectada? Quais planos de continuidade de negócios estão em vigor quando situações de risco ocorrem? Isso pode ser utilizado quando um evento de segurança cibernética acontece também?</p>
+<p>A chave aqui é isolar a infecção o mais rapidamente possível para minimizar o impacto na infraestrutura crítica. Estou diminuindo o efeito na confiabilidade operacional da infraestrutura necessária. O objetivo é reduzir o impacto e proteger a segurança das pessoas e da infraestrutura envolvida.</p>
+<h2>Descubra mais.</h2>
+<p>Continue a procurar mais podcasts sobre cibersegurança em OT. Além disso, um whitepaper descreve os desafios da convergência entre os ambientes de cibersegurança de OT e TI.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/pt/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/pt/episodes/",
+  "inLanguage": "pt",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/pt/episodes/edt-116/#episode",
+  "url": "https://embracingdigital.org/pt/episodes/edt-116/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/pt/episodes/edt-116/"
+  },
+  "name": "An Argument for a Holistic Approach to Critical Infrastructure Security",
+  "episodeNumber": 116,
+  "datePublished": "2022-12-15T00:00:00.000Z",
+  "inLanguage": "pt",
+  "description": "In this episode, Darren talks about the convergence of OT and IT cybersecurity with Security expert Steve Orrin and Industrial OT expert Dr. Anna Scott",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/pt/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/pt/episodes/edt-116/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "An Argument for a Holistic Approach to Critical Infrastructure Security Video",
+      "embedUrl": "https://www.youtube.com/embed/TsSBgmOnujk"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "An Argument for a Holistic Approach to Critical Infrastructure Security Audio",
+      "contentUrl": "https://share.transistor.fm/s/b7873e57"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/pt/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/pt/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "An Argument for a Holistic Approach to Critical Infrastructure Security",
+      "item": "https://embracingdigital.org/pt/episodes/edt-116/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

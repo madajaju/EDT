@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Programmazione eterogenea con OneAPI | Embracing Digital Transformation</title>
+    <meta name="description" content="Darren Pulsipher, Chief Solution Architect, Intel, discusses the capabilities and future of OneAPI, a cross-industry, open, standards-based unified programming model that delivers a common developer experience across accelerator architectures, with I...">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/it/episodes/edt-81/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Programmazione eterogenea con OneAPI | Embracing Digital Transformation">
+    <meta property="og:description" content="Darren Pulsipher, Chief Solution Architect, Intel, discusses the capabilities and future of OneAPI, a cross-industry, open, standards-based unified programming model that delivers a common developer experience across accelerator architectures, with I...">
+    <meta property="og:url" content="https://embracingdigital.org/it/episodes/edt-81/">
+    <meta property="og:image" content="https://embracingdigital.org/it/episodes/edt-81/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Programmazione eterogenea con OneAPI | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Darren Pulsipher, Chief Solution Architect, Intel, discusses the capabilities and future of OneAPI, a cross-industry, open, standards-based unified programming model that delivers a common developer experience across accelerator architectures, with I...">
+    <meta name="twitter:image" content="https://embracingdigital.org/it/episodes/edt-81/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/it/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/it/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/it/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/it/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/it/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/it/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/it/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/it/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/it/">Home</a></li>
+        <li><a href="/it/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 81: Programmazione eterogenea con OneAPI</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/it/episodes/edt-81/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/it/episodes/edt-81/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 81</span>
+                <span class="episode-title">Programmazione eterogenea con OneAPI</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2022-03-24T00:00:00.000Z" itemprop="datePublished">2022-03-24T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="81"/>
+            <meta itemprop="inLanguage" content="it"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2022-03-24T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Darren Pulsipher, Chief Solution Architect, Intel, discusses the capabilities and future of OneAPI, a cross-industry, open, standards-based unified programming model that delivers a common developer experience across accelerator architectures, with I...
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../it/search.html?query=oneapi"
+                   itemprop="keywords">oneapi</a>
+                
+                <a href="../../it/search.html?query=artificialintelligence"
+                   itemprop="keywords">artificialintelligence</a>
+                
+                <a href="../../it/search.html?query=highperformancecomputing"
+                   itemprop="keywords">highperformancecomputing</a>
+                
+                <a href="../../it/search.html?query=iot"
+                   itemprop="keywords">iot</a>
+                
+                <a href="../../it/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../it/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>L&#39;obiettivo di oneAPI è aiutare ad astrarre l&#39;enorme diversità che sta emergendo nel campo dell&#39;hardware, in modo che gli ingegneri del software possano sfruttarla più in alto nella pila e ottenere il massimo dall&#39;hardware. James, un ingegnere del software che lavora anche a stretto contatto con l&#39;hardware, è entusiasta di ciò che oneAPI può contribuire alla luce della tendenza al calcolo eterogeneo.</p>
+<p>La parola eterogeneo qui significa fondamentalmente che ci sono dispositivi diversi in un sistema che possono eseguire calcoli, ma non eseguono lo stesso insieme di istruzioni. Ad esempio, la CPU ha un modo di eseguire le istruzioni e la GPU ne ha uno diverso. FPGA, altre ASIC e dispositivi specializzati hanno ognuno modi diversi di essere programmati. Approfittare di tutti questi è l&#39;obiettivo.</p>
+<p>John Hennessy e David Patterson, leader nel campo dell&#39;architettura informatica, lo hanno definito la nuova era d&#39;oro dell&#39;architettura informatica. Per gli architetti informatici, è un momento straordinario per progettare dispositivi specializzati di ogni tipo per migliorare le performance in specifici domini, ma per i programmatori può essere difficile e persino spaventoso a causa della complessità. Ed è qui che entra in gioco l&#39;iniziativa oneAPI e i prodotti oneAPI.</p>
+<p>Il nome, oneAPI, è sia un&#39;iniziativa con una specifica sia un&#39;implementazione. L&#39;iniziativa è un concetto semplice: gli sviluppatori di software dovrebbero avere la libertà di utilizzare qualsiasi dispositivo desiderino con piena performance e il loro codice dovrebbe preservare il suo valore; non dovrebbero dover riscrivere per ogni nuovo dispositivo. Queste caratteristiche possono essere applicate a compilatori, librerie, debugger e qualsiasi tipo di strumento.</p>
+<p>Un gran numero di software per implementare specifiche particolari è stato aperto come open-source. Molti di essi provengono da Intel, ma poi Intel li rende disponibili anche come toolkit scaricabili che sono già precompilati e pronti all&#39;uso per supportare l&#39;hardware Intel. Altri fornitori che creano parti di oneAPI hanno le proprie implementazioni, quindi tutti collaborano sulle specifiche ma ognuno può creare un supporto per il proprio hardware in un modo aperto e multivendor.</p>
+<p>L&#39;obiettivo principale è scrivere il codice una volta e farlo funzionare bene ovunque. Tuttavia, si tratta di un problema complesso che richiederà del tuning delle prestazioni. Ad esempio, se un algoritmo funziona bene su una GPU, funzionerà in modo simile su qualsiasi altra GPU. Se si passa l&#39;algoritmo a un FPGA, è possibile massimizzare il riutilizzo del programma, ma si ha la possibilità di ricodificare parti dell&#39;algoritmo affinché funzioni altrettanto bene. Si tratta di un approccio complesso che consente di sfruttare l&#39;hardware con diversi gradi di riscritture isolate, si spera.</p>
+<p>Puoi creare un solo codice per dispositivi diversi. Ci sono approcci di runtime ancora più sofisticati che ti consentono di rilevare ciò che è presente ed eseguire diverse parti di codice in modo da poter effettivamente avere un codice sorgente comune che decide dinamicamente. Puoi applicare un programma di distribuzione e può capire cosa c&#39;è nel tuo computer e usarlo dinamicamente anziché chiedere all&#39;utente di eseguire un binario diverso a seconda del computer su cui ti trovi.</p>
+<p>Questa è emozionante perché, per molto tempo, gli ingegneri hanno utilizzato una pila software che era la migliore per la loro macchina. Oggi, vogliono compilare un programma che può utilizzare dispositivi da vari fornitori. Il programma dovrebbe reagire a questo. Affinché ciò funzioni, il compilatore deve essere in grado di generare codice per questi vari dispositivi in ​​modo affidabile. Qui entra in gioco l&#39;apertura.</p>
+<p>Alcuni sosterranno che un sistema chiuso otterrà prestazioni migliori poiché le librerie e il linguaggio sono ottimizzati specificamente per le capacità dell&#39;hardware. Ma la domanda è, come si può ottenere il meglio di entrambi i mondi? Se, ad esempio, esiste una implementazione specifica del fornitore per una libreria matematica, può esserci un programma comune. Una grande parte di oneAPI non cerca di reinventare l&#39;intero mondo, ma cerca di organizzarlo in modo da sfruttare al massimo il meglio su ogni piattaforma possibile.</p>
+<p>OneAPI ha la capacità di spostare la memoria e i dati. Diversi modelli di programmazione si trovano sopra a OneAPI ed è tua scelta quanto vuoi essere coinvolto nella gestione della memoria. Spostare i dati è costoso e consuma energia, quindi non puoi evitarlo, ma OneAPI ti fornisce gli strumenti per gestirlo interrogando il sistema e consentendo al tuo programma, durante l&#39;esecuzione, di prendere le decisioni dinamiche giuste che ti garantiranno la migliore performance.</p>
+<p>Intel ha decenni di esperienza nella costruzione di strumenti per aiutare nella messa a punto e nella migrazione, e dispone di compilatori altamente ottimizzanti. V2 ha contribuito a far evolvere l&#39;industria intorno ai contatori hardware sui processori, diventando la norma. Ci sono una varietà di altri strumenti di analisi per fornire feedback dalla struttura del tuo programma alla ricerca di deadlock e applicazioni parallele, per trovare dove è necessario aggiungere alcune protezioni. Intel sta rendendo tutti questi strumenti disponibili in stile oneAPI, per essere più versatili rispetto a essere solo per una CPU.</p>
+<p>I primi gruppi ad adottare oneAPI includono il calcolo ad alte prestazioni (HPC). Con l&#39;esplosione di nuove idee di architettura informatica, ci sarà un maggior livello di diversità e innovazione in questo settore. I grandi codici in grado di aiutare a risolvere i più grandi problemi di ingegneria del mondo, o ad esempio, risolvere problemi farmaceutici e valutare nuovi medicinali, richiedono hardware all&#39;avanguardia. Quindi questo concetto di portabilità delle prestazioni è arrivato ai laboratori nazionali, alle università e ai centri di ricerca.</p>
+<p>L&#39;HPC di oggi è il server del dipartimento di domani, quindi la capacità di utilizzare hardware diversi richiede agli ingegneri del software di pianificare e prestare attenzione a quanto il codice sia portabile perché il codice non muore rapidamente; dura decenni. Tra pochi anni, i sistemi eterogenei toccheranno tutti e ora è il momento di informarsi a riguardo.</p>
+<p>Gli ingegneri del software non hanno bisogno di programmare in parallelo per trarre vantaggio da oneAPI. Si tratta di utilizzare cose che sono aperte e capaci di funzionare con più venditori e più architetture. Anche gli ingegneri che sono al vertice della pila dovrebbero capire cosa c&#39;è nella pila e cosa è in grado di fare in termini di portabilità e portabilità delle prestazioni.</p>
+<p>La comunità IoT è un altro gruppo che è stato molto avanti nella programmazione su dispositivi di calcolo multipli ed eterogenei, utilizzando metodi diversi per gestirli. Le loro capacità di calcolo continuano ad aumentare man mano che la tecnologia avanza. Quindi, oneAPI è applicabile qui e può aiutare a formalizzare o standardizzare cose che sono state innovative per prime nel mondo degli embedded.</p>
+<p>L&#39;idea di una singola API è passata dall&#39;essere una folle idea di cui parlavano solo poche persone, fino ad essere sempre più riconosciuta come sensata e risolutiva per i problemi della propria organizzazione.</p>
+<p>Il luogo più semplice per apprendere dell&#39;iniziativa è il sito web oneapi.io. Per apprendere dell&#39;implementazione, clicca sulla scheda di implementazione per seguire un link che ti porterà alle implementazioni Intel. Lì, potrai scaricare i diversi toolkit. Cerca il cloud per sviluppatori Intel per provare gratuitamente gli strumenti nel cloud, inclusi su hardware diversi. Il sito web oneapi.io offre anche una varietà di tutorial e risorse.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/it/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/it/episodes/",
+  "inLanguage": "it",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/it/episodes/edt-81/#episode",
+  "url": "https://embracingdigital.org/it/episodes/edt-81/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/it/episodes/edt-81/"
+  },
+  "name": "Programmazione eterogenea con OneAPI",
+  "episodeNumber": 81,
+  "datePublished": "2022-03-24T00:00:00.000Z",
+  "inLanguage": "it",
+  "description": "Darren Pulsipher, Chief Solution Architect, Intel, discusses the capabilities and future of OneAPI, a cross-industry, open, standards-based unified programming model that delivers a common developer experience across accelerator architectures, with I...",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/it/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/it/episodes/edt-81/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/it/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/it/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Programmazione eterogenea con OneAPI",
+      "item": "https://embracingdigital.org/it/episodes/edt-81/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

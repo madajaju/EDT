@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Operationalisierung Ihrer KI-Projekte | Embracing Digital Transformation</title>
+    <meta name="description" content="Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, and Gretchen Stewart, Chief Data Scientist, Public Sector, discuss operationalizing AI projects.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/de/episodes/edt-103/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Operationalisierung Ihrer KI-Projekte | Embracing Digital Transformation">
+    <meta property="og:description" content="Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, and Gretchen Stewart, Chief Data Scientist, Public Sector, discuss operationalizing AI projects.">
+    <meta property="og:url" content="https://embracingdigital.org/de/episodes/edt-103/">
+    <meta property="og:image" content="https://embracingdigital.org/de/episodes/edt-103/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Operationalisierung Ihrer KI-Projekte | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, and Gretchen Stewart, Chief Data Scientist, Public Sector, discuss operationalizing AI projects.">
+    <meta name="twitter:image" content="https://embracingdigital.org/de/episodes/edt-103/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/de/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/de/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/de/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/de/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/de/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/de/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/de/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/de/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/de/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/de/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/de/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/de/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/de/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/de/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/de/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/de/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/de/">Home</a></li>
+        <li><a href="/de/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 103: Operationalisierung Ihrer KI-Projekte</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/de/episodes/edt-103/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/de/episodes/edt-103/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 103</span>
+                <span class="episode-title">Operationalisierung Ihrer KI-Projekte</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2022-08-30T00:00:00.000Z" itemprop="datePublished">2022-08-30T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="103"/>
+            <meta itemprop="inLanguage" content="de"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2022-08-30T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Intel’s Darren Pulsipher, Chief Solutions Architect, Public Sector, and Gretchen Stewart, Chief Data Scientist, Public Sector, discuss operationalizing AI projects.
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../de/search.html?query=machinelearning"
+                   itemprop="keywords">machinelearning</a>
+                
+                <a href="../../de/search.html?query=edgecomputing"
+                   itemprop="keywords">edgecomputing</a>
+                
+                <a href="../../de/search.html?query=artificialintelligence"
+                   itemprop="keywords">artificialintelligence</a>
+                
+                <a href="../../de/search.html?query=datagovernance"
+                   itemprop="keywords">datagovernance</a>
+                
+                <a href="../../de/search.html?query=generativeai"
+                   itemprop="keywords">generativeai</a>
+                
+                <a href="../../de/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../de/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../de/search.html?query=people"
+                   itemprop="keywords">people</a>
+                
+                <a href="../../de/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../de/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../de/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../de/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Gretchen ist ein ausgezeichnetes Beispiel für jemanden, der kontinuierlich lernt und sich anpasst. Ihr Bachelor-Abschluss ist in Mathematik. Sie hat einen Master-Abschluss in Betriebswirtschaft und vor einigen Jahren ein Programm an der Harvard University abgeschlossen, das sich auf Datenwissenschaften konzentrierte und sie zur Chefin der Datenwissenschaftler im öffentlichen Sektor bei Intel führte. Sie arbeitet seit über 20 Jahren in der Technologiebranche, zunächst im Bereich Softwareentwicklung, und verbrachte 15 Jahre im öffentlichen Sektor.</p>
+<p>Sie findet die Arbeit im öffentlichen Sektor besonders lohnenswert, da sie einen Unterschied im Leben der Bürgerinnen und Bürger im Alltag bewirkt. Darüber hinaus verfügt die Bundesregierung über die meisten Daten auf dem Planeten, was perfekt für jemanden ist, der gerne von Daten umgeben ist und weiter lernen möchte.</p>
+<p>Es gibt viele Begriffe rund um KI. Zunächst ist es wichtig, den Unterschied zwischen künstlicher Intelligenz (KI) und maschinellem Lernen (ML) zu verstehen. ML ist eine Technik, die Teil von KI ist; sie ist eine Untergruppe. ML-Algorithmen beziehen ihre Stärke daraus, dass sie aus verfügbaren Daten lernen können. In erster Linie lernt man entweder aus überwachtem oder nicht-überwachtem Datensatz.</p>
+<p>Der einfache Unterschied zwischen überwachtem und nicht überwachtem Lernen liegt in der Datenkennzeichnung. Beim überwachten Lernen sind die Datensätze gekennzeichnet. Das bedeutet, dass das Aussehen der Daten bereits festgelegt ist. Dadurch wird die Klassifizierung und Vorhersage wesentlich einfacher. Beim nicht überwachten Lernen versucht man, Muster in den Daten zu finden; die Maschine lernt, Beziehungen zwischen Daten zu erstellen, indem sie gemeinsame Wege, Ähnlichkeiten oder Unterschiede findet.</p>
+<p>Ein Beispiel für überwachtes Lernen wäre ein Online-Shop, der einem Kunden anhand seiner Einkaufshistorie einen Artikel empfiehlt, den er vielleicht kaufen möchte, oder ein Streaming-Dienst, der basierend auf den Sehgewohnheiten einer Person einen Film empfiehlt.</p>
+<p>Viele Begriffe haben jetzt die Abkürzung &quot;ops&quot; am Ende. Zum Beispiel sagen die Leute &quot;DL ops&quot; für Deep Learning Operationen, eine Unterkategorie des Maschinenlernens. Warum das &quot;ops&quot;? Zunächst ist es nicht so anspruchsvoll wie DevOps. Stattdessen wurde es von der weit verbreiteten Idee des DevOps-Ansatzes zur Erstellung und Anpassung von Anwendungen beeinflusst. Die Menschen versuchen, eine Reihe von Praktiken zu entwickeln, um die Zuverlässigkeit und Effizienz des Designs, der Entwicklung und der Ausführung von maschinellem Lernen zu optimieren. Es wäre also fast wie ein Marktplatz, auf dem Sie benutzerdefinierte Anwendungen erstellen und betreiben können und sie dann mit anderen teilen können.</p>
+<p>Viele Modelle und Algorithmen sind bereits optimiert und in Tools wie Converge.io oder C3 AI verfügbar. Diese Methoden und Technologien können Ihnen dabei helfen, Ihre maschinellen Lernmodelle zu optimieren. Der beste Weg, dies zu tun, besteht darin, viele Tools zu verwenden, die entweder Open Source sind oder spezifisch vom Hersteller entwickelte Software, um das Erstellen, Entwickeln, Designen, Ausführen und die Ansteuerung wesentlich zugänglicher zu machen.</p>
+<p>Die Entwicklung von künstlicher Intelligenz ähnelt dem Stand der Softwareentwicklung vor 30 Jahren. Viele der Schritte sind immer noch manuell und hoffentlich bald automatisiert.</p>
+<p>In früheren Episoden haben Darren und Gretchen darüber diskutiert, wie viele KI- und ML-Projekte einmalige wissenschaftliche Experimente sind. Dann geht der Data Scientist zu etwas anderem über und es wird nie operationalisiert. Im Gegensatz dazu zielt ML Ops darauf ab, das Modell nach dem Training und Lernen bereitzustellen, um einen echten Mehrwert zu bieten.</p>
+<p>Einige Unternehmen nutzen diese Werkzeuge explizit. Domino Labs zum Beispiel, schafft fast diesen Marktplatz. Arbeit im öffentlichen Sektor, sagen wir, bei nuklearen U-Booten zur Objekterkennung oder Clusterklassifizierung, könnte auch in der Luftwaffe oder anderen Hilfseinrichtungen anwendbar sein, damit diese Arbeit katalogisiert werden kann, um agile Umgebungen zu unterstützen und aufzubauen. Sie könnten einige Algorithmen nutzen und je nach den Ergebnissen unterschiedlich gewichten. Sie könnten es anhand der Unterschiede in den Datensätzen anpassen, aber zumindest gibt es... Anhaltspunkte? Gemeinsamkeiten? Geteilte Werkzeuge? Ihre letzten Worte hier sind abgebrochen...</p>
+<p>Sicherheit beschäftigt sich immer mit Open-Source-Software und -Modellen, und KI hat einzigartige Umstände. Zum Beispiel, wie weiß man, ob der Entwickler es nicht trainiert hat, sein Gesicht in einem Gesichtserkennungsmodell zu ignorieren? Es wird jetzt erwartet, dass Menschen Dinge dokumentieren, zum Beispiel, woher ein Datensatz stammt.</p>
+<p>Es gibt auch das Thema Ethik und Verantwortung. Der Tay Chatbot und die voreingenommenen Gesichtserkennungsprogramme waren großartige Beispiele dafür, wie KI ohne böswillige Absicht schiefgehen kann. In der ML-Operations (ML-Ops) wurde lange Zeit von einer einzelnen Person gearbeitet, die die Ergebnisse produzierte. Jetzt geht es darum, dass man ein vielfältiges Team von Menschen mit unterschiedlichen Fähigkeiten und Weltanschauungen benötigt.</p>
+<p>Die erste Konferenz zur Diskussion von KI und ML fand 1956 am Dartmouth College statt. Die Wahrheit ist, dass viele Grundlagen der KI, wie die logistische Regression, lineare Regression, Clustering-Algorithmen usw., mathematische Gleichungen sind, die schon lange existieren. Natürlich gibt es brillante zusätzliche Frameworks wie TensorFlow, auf denen man aufbauen kann, aber die Grundlagen sind/waren immer noch die Basis. Wir haben Rechenleistung, Speicher, 5G und einzigartige Fähigkeiten hinzugefügt. Sobald das Training abgeschlossen ist, haben wir die Daten und Informationen neben der Technologie anstatt alles zur Technologie bringen zu müssen. Die Technologie zu den Daten zu bringen eröffnet uns nun einige unterhaltsame und aufregende Probleme, die wir lösen können.</p>
+<p>Aber Gespräche darüber, wie das Modell trainiert wurde, was die ursprünglichen Daten waren und wie man den Modelldruck berücksichtigt, müssen immer stattfinden. Nach einer gewissen Zeit muss man das Modell erneut trainieren; vielleicht muss man einen anderen Algorithmus hinzuziehen oder den aktuellen anders gewichten, um genauere Informationen zu erhalten, da es mehr und vielfältigere Daten gibt. Das ist alles gut, denn es erhöht das Genauigkeitsniveau.</p>
+<p>Mit der Entwicklung hin zu ML Ops können Sie dies kontinuierlich tun. Genau wie die Softwareentwicklung auf kontinuierliche Integration und Bereitstellung hingearbeitet hat, wird dasselbe in KI oder ML geschehen, wo Modelle aktualisiert werden und immer genauer werden.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/de/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/de/episodes/",
+  "inLanguage": "de",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/de/episodes/edt-103/#episode",
+  "url": "https://embracingdigital.org/de/episodes/edt-103/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/de/episodes/edt-103/"
+  },
+  "name": "Operationalisierung Ihrer KI-Projekte",
+  "episodeNumber": 103,
+  "datePublished": "2022-08-30T00:00:00.000Z",
+  "inLanguage": "de",
+  "description": "Intel's Darren Pulsipher, Chief Solutions Architect, Public Sector, and Gretchen Stewart, Chief Data Scientist, Public Sector, discuss operationalizing AI projects.",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/de/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/de/episodes/edt-103/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../de/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../de/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/de/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/de/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Operationalisierung Ihrer KI-Projekte",
+      "item": "https://embracingdigital.org/de/episodes/edt-103/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

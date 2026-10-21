@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Seis Pilares da Cibersegurança. | Embracing Digital Transformation</title>
+    <meta name="description" content="With cyber-attacks on the rise in all industries, security is more important than ever. In this episode, Darren Pulsipher, Chief Solution Architect, and Steve Orrin, Federal CTO at Intel Federal, outline the attack vectors, the six pillars of cyberse...">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/pt/episodes/edt-36/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Seis Pilares da Cibersegurança. | Embracing Digital Transformation">
+    <meta property="og:description" content="With cyber-attacks on the rise in all industries, security is more important than ever. In this episode, Darren Pulsipher, Chief Solution Architect, and Steve Orrin, Federal CTO at Intel Federal, outline the attack vectors, the six pillars of cyberse...">
+    <meta property="og:url" content="https://embracingdigital.org/pt/episodes/edt-36/">
+    <meta property="og:image" content="https://embracingdigital.org/pt/episodes/edt-36/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Seis Pilares da Cibersegurança. | Embracing Digital Transformation">
+    <meta name="twitter:description" content="With cyber-attacks on the rise in all industries, security is more important than ever. In this episode, Darren Pulsipher, Chief Solution Architect, and Steve Orrin, Federal CTO at Intel Federal, outline the attack vectors, the six pillars of cyberse...">
+    <meta name="twitter:image" content="https://embracingdigital.org/pt/episodes/edt-36/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/pt/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/pt/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/pt/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/pt/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/pt/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/pt/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/pt/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/pt/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/pt/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/pt/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/pt/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/pt/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/pt/">Home</a></li>
+        <li><a href="/pt/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 36: Seis Pilares da Cibersegurança.</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/pt/episodes/edt-36/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/pt/episodes/edt-36/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 36</span>
+                <span class="episode-title">Seis Pilares da Cibersegurança.</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2021-01-21T00:00:00.000Z" itemprop="datePublished">2021-01-21T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="36"/>
+            <meta itemprop="inLanguage" content="pt"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2021-01-21T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            With cyber-attacks on the rise in all industries, security is more important than ever. In this episode, Darren Pulsipher, Chief Solution Architect, and Steve Orrin, Federal CTO at Intel Federal, outline the attack vectors, the six pillars of cyberse...
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../pt/search.html?query=cybersecurity"
+                   itemprop="keywords">cybersecurity</a>
+                
+                <a href="../../pt/search.html?query=datasecurity"
+                   itemprop="keywords">datasecurity</a>
+                
+                <a href="../../pt/search.html?query=hostsecurity"
+                   itemprop="keywords">hostsecurity</a>
+                
+                <a href="../../pt/search.html?query=threatdetection"
+                   itemprop="keywords">threatdetection</a>
+                
+                <a href="../../pt/search.html?query=networksecurity"
+                   itemprop="keywords">networksecurity</a>
+                
+                <a href="../../pt/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../pt/search.html?query=policy"
+                   itemprop="keywords">policy</a>
+                
+                <a href="../../pt/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../pt/search.html?query=people"
+                   itemprop="keywords">people</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../pt/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Com o aumento dos ciberataques em todas as indústrias, a segurança é mais importante do que nunca. Neste episódio, Darren e Steve Orrin, CTO Federal da Intel, descrevem os vetores de ataque, os seis pilares da cibersegurança e como a Intel pode ajudar.</p>
+<p>Steve tem visto a segurança evoluir nos 25 anos em que trabalha na área, tanto como uma ciência quanto como uma arte. Ao mesmo tempo, o nível de complexidade com o qual as organizações precisam lidar para proteger seus dados, sistemas e aplicativos nunca foi tão difícil.</p>
+<h2>Grandes-escala infrações e ataques cibernéticos continuam</h2>
+<p>Grandes violações de dados em grande escala e intrusões profundas estão ocorrendo em todos os níveis, desde plataformas de mídia social até serviços financeiros e saúde. Nenhum tipo de dado está isento de ser alvo de técnicas cada vez mais sofisticadas.</p>
+<p>O que está impulsionando esses ataques? Uma resposta é que hoje, um ataque em larga escala ou profundo requer menos recursos e investimento financeiro. O alcance e a dimensão do que um hacker pode fazer com um pequeno investimento tem dado aos adversários uma vantagem em um sistema complexo.</p>
+<h2>Três Forças Que Impactam a Segurança Empresarial e Missão</h2>
+<p>Outra resposta para o que está impulsionando os ataques é que os dados são um ativo valioso: o novo petróleo. Os dados são vulneráveis ​​à medida que a expansão da superfície de ataque continua a crescer.</p>
+<p>Existem mais pontos de integração, produtos, sistemas operacionais de fornecedores e dispositivos envolvidos na gestão, consumo e transporte dos dados. Os dados estão ainda mais distantes do controle da empresa. Às vezes, nem temos certeza de onde nossos dados existem. Por exemplo, talvez você tenha compartilhado seus dados com outra organização e eles compartilharam as análises realizadas nos dados. Esses metadados frequentemente se tornam resíduos de dados. Seus dados estão passando por múltiplos sistemas, podendo ser acessados por um atacante posteriormente.</p>
+<p>A indústria de segurança em si é composta por milhares de fornecedores e produtos de segurança que resolvem uma peça específica do quebra-cabeça, então há apenas tanto que um CIO pode fazer com um orçamento limitado e apenas tanto que eles podem lidar dada a complexidade. Devemos pensar de forma holística sobre como podemos proteger nossos dados, não apenas como proteger uma transferência entre o ponto A e o ponto B. Os dados são comprometidos no elo mais fraco, então temos que analisar toda a cadeia.</p>
+<p>A terceira força que impacta as empresas é a localização dos ataques. Eles incluem ataques em toda a estrutura do hardware, firmware, bios, software, serviços e aplicações. Com o aumento da sofisticação dos ataques, estamos presenciando ataques em múltiplas camadas de forma assíncrona e independente.</p>
+<h2>Os Vetores de Ataque</h2>
+<p>Traduza o seguinte para o português: Hackers não estão apenas atacando o hardware ou um software específico, mas através de múltiplos vetores: pessoas, processos e tecnologia.</p>
+<p>Tradicionalmente, implementar controles de segurança envolvia o treinamento adequado das pessoas e o uso dos processos e tecnologias corretas, mas diante dos ataques recentes, precisamos lembrar que o próprio processo é vulnerável. Por exemplo, precisamos mudar para aplicação automatizada de correções para reduzir o período de exposição desde quando uma vulnerabilidade é descoberta até quando uma correção é lançada e implantada por uma organização. Tradicionalmente, temos convivido com o risco de que os atacantes tenham meses para explorar a vulnerabilidade.</p>
+<p>Existem outros ataques de processo que estamos apenas agora selando, seja no processo de construção ou no ciclo de desenvolvimento de software. Integrar a segurança cedo no ciclo de desenvolvimento é o aspecto mais importante para garantir a segurança de uma aplicação. Isso significa que desenvolvedores, QA e designers devem todos estar envolvidos no processo de segurança. Parte do desafio é a natureza isolada de cada parte do processo, onde vulnerabilidades podem se infiltrar nas brechas e transições.</p>
+<h2>Seis pilares da cibersegurança</h2>
+<h2>Segurança da Cadeia de Suprimentos</h2>
+<p>A segurança da cadeia de suprimentos tem estado em destaque apenas nos últimos anos. Uma organização precisa ser capaz de confiar nos servidores, componentes e software. Uma boa cadeia de suprimentos, com transparência, é importante para validar que tudo vem de fontes legítimas. Tem havido um foco, particularmente no governo, na cadeia de suprimentos de hardware, mas não podemos esquecer da cadeia de suprimentos de software. A cadeia de suprimentos de software é um pouco mais difícil do que a de hardware, pois muitas vezes há uma falta de visibilidade, pois os produtos podem ser montados a partir de ferramentas de código aberto, produtos de outras pessoas, etc. Em um ataque recente, a cadeia de suprimentos de software foi o problema, e isso é apenas a ponta do iceberg.</p>
+<h2>Hospedagem e Segurança do Sistema</h2>
+<p>Uma vez que tenhamos uma cadeia de suprimentos confiável, o próximo passo está na segurança do sistema de hospedagem. A base são as tecnologias de inicialização segura e as capacidades criptográficas para garantir e proteger dispositivos físicos e sistemas onde as aplicações funcionarão e os dados serão executados. Esse sistema suporta recursos de segurança de pilha em níveis superiores no hardware.</p>
+<h2>Segurança de Dados e Aplicações</h2>
+<p>Acima da segurança do host e do sistema é onde você constrói a segurança da carga de trabalho de sua aplicação. Os dados devem ser protegidos durante todo o seu ciclo de vida, em repouso, em uso e em trânsito. Já fazemos segurança para dados em repouso e em trânsito há muito tempo, usando criptografia de transporte, TLS e IP sec, e outras capacidades de criptografia, e então criptografia completa de disco e de arquivos. O elo perdido tem sido a memória criptografada &quot;em uso&quot; com isolamento de hardware. Nos últimos anos, tecnologias e pilhas de soluções estão possibilitando a proteção dessa última milha em torno da proteção de dados.</p>
+<h2>Segurança de rede</h2>
+<p>Em paralelo com essa pilha de hospedeiros de cadeia de suprimentos e segurança de dados, precisamos de segurança de rede. A integridade e disponibilidade das redes são importantes para resistir a ataques de negação de serviço. Os dados precisam chegar onde precisam ir de forma segura. Também devemos monitorar e proteger redes de intrusões externas, seja essa rede empresarial ou uma rede distribuída por toda a nuvem e a borda. A segurança aqui não se trata apenas de firewall; envolve produção ativa.</p>
+<h2>Identidade e Gestão de Acesso</h2>
+<p>A gestão de identidade e acesso é uma capacidade fundamental. Não precisamos apenas saber quem está fazendo login, mas quem está fazendo login em qual dispositivo. O ser humano é apenas uma pequena parte do quebra-cabeça. Precisamos ter identidade para todas as coisas, processos e serviços que estão acessando e gerenciando os dados. Uma pessoa pode realizar seu trabalho com apenas algumas teclas, mas pode haver 20 dispositivos diferentes e 100 serviços e processos que atuam nos dados. Precisamos ter políticas e autorizações para todas essas entidades. E à medida que avançamos para processos autônomos, há menos humanos envolvidos, então torna-se ainda mais importante ter uma identidade forte para esses processos sem um ser humano envolvido.</p>
+<h2>Detecção de ameaças, Inteligência e Análise</h2>
+<p>Este último pilar é uma combinação de muitas coisas, incluindo inteligência de ameaças, análise, monitoramento e auditoria. É a visibilidade abrangente para garantir que tudo esteja funcionando como deveria e, se algo estiver errado, a capacidade de entender rapidamente de onde vem e por quê. Este é o guarda-chuva que impulsiona a segurança de dados e tudo deve contribuir para cima e para baixo. Há uma mudança de trabalhar em um ambiente isolado, digamos, um fornecedor que está apenas preocupado com a segurança de rede, para trabalhar em todo o sistema como um todo. Empresas bem-sucedidas têm equipes diversas com pessoas de diferentes domínios para atender às necessidades complexas de segurança.</p>
+<h2>Domínios de Cibersegurança: Alcançando a Confiança Zero com Tecnologias Intel.</h2>
+<p>A Intel oferece capacidades fundamentais em cada um dos seis pilares, seja por meio da nossa iniciativa de garantia de ciclo de vida de computação para ajudar a envolver os OEMs e fornecedores de componentes em uma cadeia de suprimentos confiável, fornecendo os blocos de construção fundamentais da segurança do sistema, ou garantindo que a inicialização segura comece com o hardware. Temos tecnologia de execução e tecnologia de proteção de inicialização com aceleração criptográfica incorporada, para que os usuários possam ativá-la para proteção de dados em repouso, dados em uso e dados em trânsito, sem impacto no desempenho.</p>
+<p>No caso da inteligência de detecção de ameaças, a Intel fornece primitivas como o TPD, onde uma solução de pilha de nível superior pode fornecer visibilidade e detecção de ameaças onde nunca tivemos antes.</p>
+<p>A Intel é uma provedora de tecnologia, mas também trabalhamos na área de pessoas e processos. Um bom exemplo é a cadeia de abastecimento. Nós construímos um processo com o ecossistema para permitir que uma empresa seja capaz de validar os componentes e credenciais para uma determinada plataforma e seus componentes. Da mesma forma, existem processos envolvidos com a proteção de dados e uso através de capacidades no hardware, como SGX, sendo capaz de criptografar a memória e isolar os dados e código para uma determinada aplicação.</p>
+<p>A Intel está possibilitando processos seguros para aproveitar as tecnologias em grande escala. Outra parte fundamental em relação aos processos é se adequar à estrutura geral de riscos de uma organização. A Intel fornece as provas e a atribuição necessárias dentro de nossas tecnologias para mapear isso em sua estrutura de riscos existente.</p>
+<p>A última peça são as pessoas. Lidar com o comportamento humano aleatório às vezes é a parte mais difícil da segurança, seja em golpes de phishing ou ataques planejados a senhas fracas. O treinamento é crucial, mas muitas vezes não é suficiente. Processos e tecnologias podem ajudar a complementar o treinamento, por exemplo, tornando as senhas mais fortes ou eliminando o phishing caso as credenciais do usuário não possam ser comprometidas. No final do dia, no entanto, o treinamento e a educação contínuos sempre serão críticos, juntamente com as tecnologias de mitigação.</p>
+<p>A segurança é difícil, mas há luz no fim do túnel com todas as inovações no ecossistema e com organizações abertas a fazer as coisas de maneira diferente. Precisamos manter o foco em duas coisas: a adoção de estruturas de risco e a confiança zero. Vinculando esses dois mundos juntos, o domínio da cibersegurança para motores de políticas e aplicação pode fornecer uma abordagem abrangente para a segurança. Há muita atividade aqui e ainda há muito trabalho a ser feito.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/pt/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/pt/episodes/",
+  "inLanguage": "pt",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/pt/episodes/edt-36/#episode",
+  "url": "https://embracingdigital.org/pt/episodes/edt-36/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/pt/episodes/edt-36/"
+  },
+  "name": "Seis Pilares da Cibersegurança.",
+  "episodeNumber": 36,
+  "datePublished": "2021-01-21T00:00:00.000Z",
+  "inLanguage": "pt",
+  "description": "With cyber-attacks on the rise in all industries, security is more important than ever. In this episode, Darren Pulsipher, Chief Solution Architect, and Steve Orrin, Federal CTO at Intel Federal, outline the attack vectors, the six pillars of cyberse...",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/pt/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/pt/episodes/edt-36/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../pt/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/pt/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/pt/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Seis Pilares da Cibersegurança.",
+      "item": "https://embracingdigital.org/pt/episodes/edt-36/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+

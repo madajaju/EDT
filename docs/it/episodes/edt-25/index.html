@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>Operazionalizzare i flussi di dati | Embracing Digital Transformation</title>
+    <meta name="description" content="Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, talks to Sarah Kalicin, Lead Data Scientist, Intel about operationalizing your organization’s data pipeline. It takes a team effort to model, monitor, and produce an ongoing source of...">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/it/episodes/edt-25/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Operazionalizzare i flussi di dati | Embracing Digital Transformation">
+    <meta property="og:description" content="Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, talks to Sarah Kalicin, Lead Data Scientist, Intel about operationalizing your organization’s data pipeline. It takes a team effort to model, monitor, and produce an ongoing source of...">
+    <meta property="og:url" content="https://embracingdigital.org/it/episodes/edt-25/">
+    <meta property="og:image" content="https://embracingdigital.org/it/episodes/edt-25/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Operazionalizzare i flussi di dati | Embracing Digital Transformation">
+    <meta name="twitter:description" content="Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, talks to Sarah Kalicin, Lead Data Scientist, Intel about operationalizing your organization’s data pipeline. It takes a team effort to model, monitor, and produce an ongoing source of...">
+    <meta name="twitter:image" content="https://embracingdigital.org/it/episodes/edt-25/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/it/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/it/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/it/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/it/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/it/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/it/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/it/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/it/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/it/">Home</a></li>
+        <li><a href="/it/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 25: Operazionalizzare i flussi di dati</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/it/episodes/edt-25/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/it/episodes/edt-25/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 25</span>
+                <span class="episode-title">Operazionalizzare i flussi di dati</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2020-10-14T00:00:00.000Z" itemprop="datePublished">2020-10-14T00:00:00.000Z</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="25"/>
+            <meta itemprop="inLanguage" content="it"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2020-10-14T00:00:00.000Z" data-publication-status="">
+            
+
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, talks to Sarah Kalicin, Lead Data Scientist, Intel about operationalizing your organization’s data pipeline. It takes a team effort to model, monitor, and produce an ongoing source of...
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../it/search.html?query=dataanalytics"
+                   itemprop="keywords">dataanalytics</a>
+                
+                <a href="../../it/search.html?query=advancedcommunications"
+                   itemprop="keywords">advancedcommunications</a>
+                
+                <a href="../../it/search.html?query=automation"
+                   itemprop="keywords">automation</a>
+                
+                <a href="../../it/search.html?query=collaboration"
+                   itemprop="keywords">collaboration</a>
+                
+                <a href="../../it/search.html?query=dataquality"
+                   itemprop="keywords">dataquality</a>
+                
+                <a href="../../it/search.html?query=operationalization"
+                   itemprop="keywords">operationalization</a>
+                
+                <a href="../../it/search.html?query=generativeai"
+                   itemprop="keywords">generativeai</a>
+                
+                <a href="../../it/search.html?query=multicloud"
+                   itemprop="keywords">multicloud</a>
+                
+                <a href="../../it/search.html?query=zerotrust"
+                   itemprop="keywords">zerotrust</a>
+                
+                <a href="../../it/search.html?query=process"
+                   itemprop="keywords">process</a>
+                
+                <a href="../../it/search.html?query=people"
+                   itemprop="keywords">people</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="../../it/guests/true/index.html" itemprop="url">
+                <span itemprop="name">true</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <p>Per l&#39;ultimo episodio di questa serie, Darren parla con Sarah Kalicin, Lead Data Scientist presso Intel, riguardo all&#39;operazionalizzazione del tuo flusso di dati. Discutono di come, una volta ottenute le tue informazioni sui dati, puoi trasformarle da un esperimento scientifico a tempo determinato in una fonte continua di informazioni.</p>
+<h2>Come operazionalizziamo le intuizioni analitiche?</h2>
+<p>La prima cosa da comprendere riguardo al data pipeline è che non è come un sistema elettrico chiuso che puoi installare, dimenticare e sei mesi dopo premere un interruttore sapendo che la lampadina si accenderà. Un data pipeline è diverso perché i dati sono variabili; possono cambiare o degradare, ad esempio, quindi non sarai necessariamente ricompensato con l&#39;accensione della lampadina in nessun momento, o in questo caso, l&#39;approfondimento che stai cercando. Devi sempre pensare a ciò che può andare storto nel sistema e come correggere questi cortocircuiti.</p>
+<p>Rilevare anomalie è parte integrante del processo. Non si può pianificare tutto, ma almeno è necessario essere in grado di riconoscere quando qualcosa è accaduto al di fuori dei limiti delle analisi originali. Un esempio è la crisi del COVID, un evento imprevedibile che ha causato schemi molto diversi dalla norma per molti sistemi. Un altro esempio potrebbe essere un&#39;azienda produttrice di widget. Per sapere quanti widget produrre, il flusso di dati contiene la domanda dei clienti, la fornitura attuale e la perdita di rendimento. Questi dati potrebbero essere abbastanza stabili nel tempo, ma potrebbe verificarsi, ad esempio, un evento di pubbliche relazioni che provoca un&#39;esplosione della domanda dei clienti. Questo potrebbe influire notevolmente sui modelli. L&#39;apprendimento automatico e l&#39;apprendimento profondo osservano schemi familiari e, se non hanno mai visto questi schemi prima, i modelli avranno problemi o si degraderanno. Bisogna rimanere sull&#39;orlo della scoperta.</p>
+<p>L&#39;unico modo per restare al passo con le scoperte è automatizzare le tue condotte di dati per un accesso tempestivo alle informazioni. Questo è il vantaggio competitivo: dati aggiornati e illuminanti che possono aiutarti a risolvere rapidamente le tue domande.</p>
+<p>Le squadre IT e le squadre di dati devono collaborare sull&#39;automazione e determinare cosa deve essere automatizzato per i dati in arrivo e sulla gestione di eventuali modifiche al modello che gli scienziati dei dati desiderano apportare in modo che possa essere facilmente integrato nel flusso di lavoro.</p>
+<h2>Dispiego brevi circuiti</h2>
+<p>Ci sono due tipi di controlli che possono prevenire i cortocircuiti nella distribuzione: i controlli del sistema analitico e i controlli organizzativi.</p>
+<p>Il controllo del sistema analitico si tratta di mettere in funzione i modelli che hai addestrato, alimentando i dati per rispondere facilmente alle tue domande. Questi modelli implementati devono essere moderati per verificare l&#39;accuratezza dei dati. Molte cose possono causare un impatto negativo sui dati, come i cambiamenti ambientali, la calibrazione delle macchine, problemi di distribuzione e così via.</p>
+<p>Ciò non è così diverso dal mondo dello sviluppo software in cui i cambiamenti possono influenzare le previsioni. Il dipartimento IT è familiare con il processo di esecuzione dei test per assicurarsi che i loro modelli o applicazioni funzionino secondo le linee guida stabilite, quindi i dev ops e gli scienziati dei dati dovrebbero approfittare di queste risorse e conoscenze. Non c&#39;è bisogno di inventare nuovi processi, ma invece, i gruppi dovrebbero unire le risorse per prepararsi al successo.</p>
+<p>I controlli organizzativi risalgono a una fondazione organizzativa che si impegna ad essere centrata sui dati e a fornire le persone e le risorse corrette per lavorare insieme verso obiettivi comuni. La migliore possibilità per ottenere l&#39;operazionalizzazione si verifica quando c&#39;è collaborazione, fiducia, comprensione delle esigenze e loop di feedback tra i gruppi all&#39;interno dell&#39;organizzazione.</p>
+<p>I cicli di feedback sono fondamentali in questo processo. Ad esempio, gli specialisti della materia possono fornire informazioni sulle dinamiche di mercato in modo che gli scienziati dei dati possano monitorare il modello per queste variazioni nei dati. Se un modello verrà utilizzato nel tempo, avrà sempre bisogno di essere iterato e migliorato costantemente.</p>
+<p>I consumatori dei dati dovrebbero avere un cruscotto che fornisce loro informazioni e consente loro di approfondire il motivo per cui qualcosa sembra un po&#39; strano. Più possono indagare o sollevare ciò che deve essere indagato, più la vostra organizzazione si sentirà autonoma.</p>
+<h2>Pipeline</h2>
+<p>Una chiave dal lato IT per operazionalizzare la pipeline dei dati è utilizzare un controllo delle versioni come GitHub, in modo da poter avere accesso alle versioni precedenti del tuo modello. Per scopi di controllo, è altrettanto importante poter archiviare i dati che hanno creato il modello e altri dati storici. Si desidera essere in grado di osservare i pattern e vedere come una determinata caratteristica è cambiata o ha influenzato il modello. È anche possibile inserire dati storici nei nuovi modelli per vedere quanto influiscono sui dati attuali.</p>
+<p>Ad esempio, alcuni sistemi avranno una visione distorta con un numero elevato di persone che lavorano da casa durante la pandemia di COVID-19. Un esempio è la Marina. Da quando è iniziata la pandemia, il 95% dei loro dipendenti IT lavora da remoto e la loro produttività è aumentata del 35%. Da questo singolo dato, potremmo dire che tutti lavoreranno da casa da ora in poi. Riuscirai a mantenere un aumento del 35% o, se le persone torneranno in ufficio, vedrai una diminuzione del 35%? Ovviamente, questo singolo dato non è necessariamente sufficiente per prevedere la produttività effettiva.</p>
+<p>Un altro strumento che l&#39;IT può offrire è l&#39;integrazione e il deployment continui. Utilizzando Jenkins o GitHub Actions o un tool simile durante il lavoro su un modello, è possibile eseguire automaticamente test sul modello con i propri dati o generare dati di prova al volo.</p>
+<p>Le persone di IT e gli scienziati dei dati devono collaborare su cosa e come monitorare l&#39;output dei modelli. IT può monitorare l&#39;output automaticamente e possono anche monitorare le prestazioni dei modelli nell&#39;infrastruttura. Un esempio è che IT, con la distribuzione automatizzata di integrazione continua, può avvertire rapidamente gli scienziati dei dati quando un modello richiede più tempo del normale per evitare che sfugga al controllo. Se IT è interessato alla creazione di valore dei dati, che è generalmente mancante nell&#39;intero settore, il processo sarà più facile e coerente per tutti.</p>
+<p>Un altro aspetto da considerare è il disegno degli esperimenti, poiché le interazioni tra variabili e caratteristiche sono altrettanto importanti. Gli esperti del settore possono aiutare a determinare quali sono le potenziali interazioni, e tu puoi modellarle per comprendere quale variabilità ci si può aspettare.</p>
+<p>È emozionante che un data scientist possa prendere materiale grezzo e trasformarlo in conoscenza. Tuttavia, richiede un team. Più tutti nell&#39;organizzazione possono imparare gli uni dagli altri in un ambiente di squadra, più cose straordinarie possono accadere.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/it/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/it/episodes/",
+  "inLanguage": "it",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/it/episodes/edt-25/#episode",
+  "url": "https://embracingdigital.org/it/episodes/edt-25/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/it/episodes/edt-25/"
+  },
+  "name": "Operazionalizzare i flussi di dati",
+  "episodeNumber": 25,
+  "datePublished": "2020-10-14T00:00:00.000Z",
+  "inLanguage": "it",
+  "description": "Darren Pulsipher, Chief Solutions Architect, Public Sector, Intel, talks to Sarah Kalicin, Lead Data Scientist, Intel about operationalizing your organization's data pipeline. It takes a team effort to model, monitor, and produce an ongoing source of...",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/it/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/it/episodes/edt-25/thumbnail.png"
+  },
+  "associatedMedia": [],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    },
+    {
+      "@type": "Person",
+      "name": "true",
+      "url": "https://embracingdigital.org/../../it/guests/true/index.html"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/it/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/it/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Operazionalizzare i flussi di dati",
+      "item": "https://embracingdigital.org/it/episodes/edt-25/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
