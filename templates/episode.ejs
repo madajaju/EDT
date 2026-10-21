@@ -39,7 +39,7 @@ const guestList = guestObjs
         .map(g => {
             const name = safeText(g.name || g).trim();
             const slug = name.toLowerCase().replace(/[^\w\s-]/g, "").trim().replace(/\s+/g, "-");
-            return {name, url: `${relpath}/${lang.id}/guests/${slug}/index.html`};
+            return {name, url: safeText(g.url) || `${relpath}/${lang.id}/guests/${slug}/index.html`};
         })
         .filter(g => g.name);
 
