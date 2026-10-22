@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>O-DXA Viewer</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --fg: #0f172a;
+            --muted: #64748b;
+            --line: #e5e7eb;
+            --accent: #4f46e5;
+            --brand: #456789;
+            --brand-contrast: #ffcc88;
+
+            --sidebar-w: 280px;
+            --radius: 10px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+
+            /* 2-row grid: header, content. Content is 2 columns: left tools, right viewer */
+            display: grid;
+            grid-template-rows: auto 1fr;
+            grid-template-columns: var(--sidebar-w) 1fr;
+            min-height: 100dvh;
+            overflow: hidden; /* no body scrollbars */
+            gap: 0;
+        }
+
+        header {
+            grid-column: 1 / -1;
+            padding: 10px 12px;
+            background: var(--brand);
+            color: #fff;
+            border-bottom: 1px solid rgba(255, 255, 255, .15);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        /* Left: toolbar */
+        aside {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            border-right: 1px solid var(--line);
+            overflow: hidden; /* its internals can scroll if needed */
+        }
+
+        .tools-header {
+            padding: 10px 12px;
+            font-weight: 600;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .tools-body {
+            padding: 12px;
+            overflow: auto;
+            display: grid;
+            gap: 10px;
+            align-content: start;
+        }
+
+        .tools-footer {
+            padding: 10px 12px;
+            border-top: 1px solid var(--line);
+            font-size: 12px;
+            color: var(--muted);
+        }
+        .overlay-pin.selected > circle {
+            stroke: #ffff00;
+            stroke-width: 3px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 10px;
+            border-radius: 8px;
+            border: 1px solid var(--line);
+            background: #fff;
+            cursor: pointer;
+            font: inherit;
+        }
+
+        .btn.primary {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+        }
+
+        .btn:hover {
+            filter: brightness(0.98);
+        }
+
+        .btn:disabled {
+            opacity: .5;
+            cursor: not-allowed;
+        }
+
+        .btn-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .btn-wide {
+            width: 100%;
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 8px;
+            border-radius: 999px;
+            border: 1px solid var(--line);
+            background: #fafafa;
+            font-size: 12px;
+            color: var(--muted);
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .dropzone {
+            border: 2px dashed var(--line);
+            border-radius: var(--radius);
+            padding: 12px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--muted);
+            background: #fcfcfd;
+        }
+
+        .dropzone.dragover {
+            border-color: var(--accent);
+            background: #f5f7ff;
+            color: var(--fg);
+        }
+
+        .help {
+            font-size: 12px;
+            color: var(--muted);
+            background: #f8fafc;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 10px;
+        }
+
+        .help h4 {
+            margin: 0 0 6px;
+            font-size: 12px;
+            color: #111827;
+        }
+
+        /* Right: main viewer column as a 3-row grid */
+        .main {
+            display: grid;
+            grid-template-rows: auto auto 1fr;
+            min-width: 0; /* allow child to shrink */
+            min-height: 0;
+        }
+
+        #navigation-ribbon {
+            padding: 8px 12px;
+            background: var(--brand);
+            color: var(--brand-contrast);
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+            flex-wrap: wrap;
+            border-bottom: 1px solid rgba(255, 255, 255, .15);
+        }
+
+        #navigation-ribbon nav {
+            display: inline-flex;
+            gap: .5rem;
+            align-items: center;
+        }
+
+        #navigation-ribbon button {
+            background: transparent;
+            border: 0;
+            color: var(--brand-contrast);
+            font: inherit;
+            cursor: pointer;
+            padding: 2px 4px;
+            border-radius: 6px;
+        }
+
+        #navigation-ribbon button:hover,
+        #navigation-ribbon button:focus-visible {
+            outline: 2px solid rgba(255, 255, 255, .5);
+            outline-offset: 2px;
+        }
+
+        #navigation-ribbon .sep {
+            opacity: .7;
+        }
+
+        #description-panel {
+            padding: 8px 12px;
+            background: #f5f5f5;
+            font-size: 1.05rem;
+            min-height: 2em;
+            max-height: 5.5rem; /* clamp height */
+            overflow: auto; /* only this area can scroll if long */
+            border-bottom: 1px solid var(--line);
+        }
+
+        .viewer {
+            min-height: 0;
+            min-width: 0;
+            position: relative;
+        }
+
+        #graph2d {
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* SVG scales instead */
+        }
+
+        #graph2d svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+            user-select: none;
+        }
+
+        .layer-group {
+            cursor: pointer;
+        }
+
+        .layer-group:hover {
+            filter: brightness(0.98);
+        }
+
+        .layer-group:focus {
+            outline: none;
+        }
+
+        .legend-row {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            margin: .25rem 0;
+        }
+
+        .legend-swatch {
+            width: 14px;
+            height: 14px;
+            border-radius: 3px;
+            border: 1px solid var(--line);
+        }
+
+        .badge {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            font-size: 10px;
+            padding: 2px 5px;
+            border-radius: 999px;
+            background: #111827;
+            color: #fff;
+            opacity: .9;
+            pointer-events: none;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+        <h1>O-DXA Viewer</h1>
+</header>
+
+<!-- Left: Tools -->
+<aside>
+    <div class="tools-header">Tools</div>
+    <div class="tools-body">
+        <!-- Add Customer (file input + dropzone) -->
+        <input id="file-input" type="file" accept="application/json" hidden/>
+        <button id="btn-add" class="btn primary btn-wide">Add customer file</button>
+
+        <div id="dropzone" class="dropzone" aria-label="Customer JSON dropzone">
+            Drag &amp; drop customer JSON here
+        </div>
+
+        <div class="pill" id="customer-pill" title="No customer loaded">
+            <span>Customer:</span><span id="customer-name">none</span>
+        </div>
+
+        <div class="btn-row">
+            <button id="btn-remove" class="btn" disabled>Remove customer</button>
+            <button id="btn-clear" class="btn">Clear</button>
+        </div>
+
+        <div class="btn-row">
+            <button id="btn-reset" class="btn">Reset view</button>
+            <button id="btn-export" class="btn">Export PNG</button>
+        </div>
+
+        <div class="help">
+            <h4>Tips</h4>
+            <ul style="margin:0 0 0 1rem; padding:0; list-style: disc;">
+                <li>Click a box to select; double-click to zoom in.</li>
+                <li>Add a customer JSON; we’ll overlay it next.</li>
+            </ul>
+        </div>
+        <div id="legend" class="help" style="display:none">
+            <h4>Overlay legend</h4>
+            <div id="legend-items"></div>
+        </div>
+
+    </div>
+    <div class="tools-footer">v1.0 • No page scrollbars</div>
+</aside>
+
+<!-- Right: Viewer -->
+<div class="main">
+    <div id="navigation-ribbon" aria-label="Breadcrumb">
+        <nav id="breadcrumb"></nav>
+    </div>
+
+    <div id="description-panel">
+        Click on a layer to see its description here. Double-click a layer to zoom into it.
+    </div>
+
+    <div id="graph2d" class="viewer"></div>
+</div>
+
+<!-- Import gdxa.js as module and expose to window for the non-module code -->
+<script type="module">
+    import gdxa from './gdxa.js';
+
+    window.gdxa = gdxa;
+</script>
+<script type="module" src="./pinUtils.js"></script>
+<script type="module" src="./customerOverlay.js"></script>
+
+<script type="module">
+    import {applyOverlay, clearOverlay, setCustomerData, getCustomerData} from './customerOverlay.js';
+    import {getFontColor, tint} from './pinUtils.js';
+
+    // ===== Utilities =====
+    const isObj = (v) => v && typeof v === 'object' && !Array.isArray(v);
+    const text = (v) => (v == null ? '' : String(v));
+
+
+    function wrapText(str, maxWidth, fontSize) {
+        const words = String(str).split(/\s+/);
+        const lines = [];
+        if (!words.length) return lines;
+        let current = words[0];
+        const charW = fontSize * 0.6;
+        for (let i = 1; i < words.length; i++) {
+            const test = current + ' ' + words[i];
+            if (test.length * charW > maxWidth) {
+                lines.push(current);
+                current = words[i];
+            } else {
+                current = test;
+            }
+        }
+        lines.push(current);
+        return lines;
+    }
+
+
+    function escapeHtml(s) {
+        return String(s)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/\"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
+    // ===== Data find =====
+    function _findLayer(gdxa, layerName) {
+        if (!gdxa || !layerName) return null;
+        if (gdxa.name === layerName) {
+            gdxa.parent = [];
+            return gdxa;
+        }
+        if (gdxa.layers) {
+            for (const layer of Object.values(gdxa.layers)) {
+                const item = _findLayer(layer, layerName);
+                if (item) {
+                    if (!item.parent) item.parent = [];
+                    item.parent.push(gdxa);
+                    return item;
+                }
+            }
+        }
+        return null;
+    }
+
+    // ===== Core renderer =====
+    function generateSVG(layer, vbWidth = 2400, vbHeight = 1400, depth = 1) {
+        let svgContent =
+            `<svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 ${vbWidth} ${vbHeight}"
+          preserveAspectRatio="xMidYMid meet"
+          role="img" aria-label="GEAR layered diagram">`;
+
+        svgContent += `
+    <defs>
+        <filter id="pinGlowShadow">
+            <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#000" flood-opacity="0.3"/>
+            <!-- then your Gaussian blur/feMerge steps for glow -->
+            <!-- blur the source graphic -->
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+            <!-- make the blur a bright color -->
+            <feFlood flood-color="#ffffff" flood-opacity="0.6" result="color"/>
+            <feComposite in="color" in2="blur" operator="in" result="glow"/>
+            <!-- put the glow behind the original -->
+            <feMerge>
+              <feMergeNode in="glow"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+  `;
+        svgContent += `<rect width="${vbWidth}" height="${vbHeight}" fill="#ffffff"/>`;
+
+        const boxPadding = 12;
+        const totalHeight = vbHeight;
+
+        const drawLayer = (parentLayer, x, y, availW, availH, maxDepth, currDepth = 0, path = []) => {
+            const color = parentLayer.color || '#dbeafe';
+            const baseFontSize = Math.max(12, totalHeight / 32);
+            const children = parentLayer.layers || [];
+            const childCount = children.length;
+
+            let labelH = Math.min(Math.max(baseFontSize * (childCount ? 1.4 : 2.0), 22), availH);
+            let fontSize = Math.max(10, Math.min(baseFontSize, labelH - 6));
+
+            const myPath = [...path, parentLayer.name || ''].filter(Boolean);
+            const pathStr = myPath.join(' - ');
+
+            // my node is already normalized
+            const myPathStr = parentLayer._path;
+
+            let s = `<g class="layer-group" tabindex="0"
+      id="${escapeHtml(parentLayer._id)}"
+      data-layer-name="${escapeHtml(parentLayer.name)}"
+      data-layer-id="${escapeHtml(parentLayer.id || '')}"
+      data-path="${escapeHtml(myPathStr)}"
+      data-depth="${parentLayer._depth}">`;
+
+            s += `<title>${escapeHtml(parentLayer.description || '')}</title>`;
+            s += `<rect x="${x}" y="${y}" width="${availW}" height="${availH}"
+                fill-original="${color}" fill="${color}"
+                stroke="#333" stroke-width="2" rx="10" ry="10"/>`;
+
+            const labelMaxWidth = Math.max(16, availW - boxPadding * 2);
+            let lines = wrapText(parentLayer.name || '', labelMaxWidth, fontSize);
+            while (lines.length * fontSize * 1.2 > labelH && fontSize > 9) {
+                fontSize -= 1;
+                lines = wrapText(parentLayer.name || '', labelMaxWidth, fontSize);
+            }
+            let textY = y + fontSize + 4;
+            const fontColor = getFontColor(color);
+            lines.forEach(line => {
+                s += `<text x="${x + availW / 2}" y="${textY}" fill="${fontColor}" font-size="${fontSize}" text-anchor="middle">${escapeHtml(line)}</text>`;
+                textY += fontSize * 1.2;
+            });
+
+            if (currDepth < maxDepth && childCount) {
+                const list = Array.isArray(children) ? children : Object.values(children);
+
+                let maxRow = 1, maxCol = 1, anyPosition = false;
+                for (const child of list) {
+                    if (child) {
+                        const p = child?.position || {};
+                        if (p.row || p.col || p.rowspan || p.colspan) anyPosition = true;
+                        maxRow = Math.max(maxRow, (p.row || 1) + ((p.rowspan || 1) - 1));
+                        maxCol = Math.max(maxCol, (p.col || 1) + ((p.colspan || 1) - 1));
+                    }
+                }
+                if (!anyPosition) {
+                    const cols = Math.ceil(Math.sqrt(list.length));
+                    const rows = Math.ceil(list.length / cols);
+                    maxRow = rows;
+                    maxCol = cols;
+                    list.forEach((child, i) => {
+                        if (child) {
+                            child.position = child.position || {};
+                            child.position.row = Math.floor(i / cols) + 1;
+                            child.position.col = (i % cols) + 1;
+                            child.position.rowspan = child.position.rowspan || 1;
+                            child.position.colspan = child.position.colspan || 1;
+                        }
+                    });
+                }
+
+                const gridTop = y + labelH;
+                const cellW = (availW - boxPadding * (maxCol + 1)) / maxCol;
+                const cellH = (availH - labelH - boxPadding * (maxRow + 1)) / maxRow;
+
+                const newColor = tint(color, 0.3);
+
+                for (const child of list) {
+                    if (child) {
+                        const p = child.position || {};
+                        const col = p.col || 1, row = p.row || 1;
+                        const colspan = p.colspan || 1, rowspan = p.rowspan || 1;
+                        const childX = x + boxPadding + (col - 1) * (cellW + boxPadding);
+                        const childY = gridTop + boxPadding + (row - 1) * (cellH + boxPadding);
+                        const childW = cellW * colspan + boxPadding * (colspan - 1);
+                        const childH = cellH * rowspan + boxPadding * (rowspan - 1);
+
+                        child.name = child.name || '(unnamed)';
+                        child.color = child.color || newColor;
+
+                        s += drawLayer(child, childX, childY, childW, childH, maxDepth, currDepth + 1);
+                    }
+                }
+            }
+
+            s += `</g>`;
+            return s;
+        };
+
+        svgContent += drawLayer(layer, 40, 40, vbWidth - 80, vbHeight - 80, depth, 0, []);
+        svgContent += `</svg>`;
+        return svgContent;
+    }
+
+    function visibleAncestorForPath(pathStr, model, currentRoot, currentDepth) {
+        const target = model.byPath.get(pathStr);
+        if (!target) return null;
+
+        let node = target;
+        // walk up until inside current root & within depth budget
+        while (node) {
+            if (isDescendant(node, currentRoot)) {
+                const depthFromRoot = node._depth - currentRoot._depth + 1; // 1 = root itself
+                if (depthFromRoot <= currentDepth + 1) return node;
+            }
+            node = node._parent;
+        }
+        return null;
+    }
+
+
+    // Keep DOM ids readable & stable
+    function pathToId(pathStr) {
+        return 'node-' + String(pathStr)
+            .toLowerCase()
+            .replace(/\s*-\s*/g, '__')
+            .replace(/[^a-z0-9_]+/g, '_')
+            .replace(/^_+|_+$/g, '');
+    }
+
+    // True if `node` is inside `root` subtree
+    function isDescendant(node, root) {
+        let p = node;
+        while (p) {
+            if (p === root) return true;
+            p = p._parent || null;
+        }
+        return false;
+    }
+
+    // Returns { root, byPath: Map<string,node>, byId: Map<string,node> }
+    function normalizeModel(rawRoot) {
+        const byPath = new Map();
+        const byId = new Map();
+
+        function toArrayLayers(layers) {
+            if (!layers) return [];
+            if (Array.isArray(layers)) return layers;
+            // object -> array (keys become names if missing)
+            return Object.keys(layers).map(k => {
+                const v = layers[k] || {};
+                if (typeof v === 'object') {
+                    return {"name": v.name || k, ...v};
+                }
+                // primitive fallback
+                return {"name": k, value: v};
+            });
+        }
+
+        function walk(node, parent, pathParts, depth) {
+            // ensure base props
+            node.name = node.name || '(unnamed)';
+            node.layers = toArrayLayers(node.layers);
+
+            node._parent = parent || null;
+            node._depth = depth;
+            node._pathParts = [...pathParts, node.name];
+            node._path = node._pathParts.join(' - ');
+            node._id = pathToId(node._path);
+
+            byPath.set(node._path, node);
+            byId.set(node._id, node);
+
+            // recurse
+            node.layers.forEach(child => walk(child, node, node._pathParts, depth + 1));
+            return node;
+        }
+
+        const root = walk(rawRoot, null, [], 1);
+        return {root, byPath, byId};
+    }
+
+    // ---- Phase styles (unchanged; tweak as you like)
+    const PHASE_STYLES = {
+        "Current": {stroke: "#ffff00", dash: ""},       // amber, solid
+        "Future": {stroke: "#ff00ff", dash: "6 4"}     // green, dashed
+    };
+
+    // Global, rebuilt whenever a customer file is loaded
+    let PHASE_THEME = null; // { order: string[], styles: Record<phase,{stroke:string}> }
+
+    // Build a consistent style & order for all phases in the customer JSON
+    function buildPhaseTheme(customerData) {
+        const phasesObj = customerData?.phases || {};
+        const names = Object.keys(phasesObj);
+
+        // Sort by explicit "order" if present, otherwise by name
+        const decorated = names.map(n => ({"name": n, order: phasesObj[n]?.order ?? Number.POSITIVE_INFINITY}));
+        decorated.sort((a, b) => (a.order - b.order) || a.name.localeCompare(b.name));
+        const order = decorated.map(d => d.name);
+
+        // Use custom phase.color if provided, else assign from a palette
+        const palette = ['#ff0000', '#ffff00', '#ff00ff', '#00ffff', '#0000ff', '#00ff00'];
+        const styles = {};
+        order.forEach((name, i) => {
+            const custom = phasesObj[name]?.color;
+            styles[name] = {stroke: custom || palette[i % palette.length]};
+        });
+
+        return {order, styles};
+    }
+
+
+    // Build: full data index path -> { phase -> {count, engagements[]} }
+    // Normalizes customer paths so they always start with the model root (e.g., "GEAR - ...")
+    function buildOverlayIndex(data, opts = {}) {
+        const index = new Map();
+        if (!data?.phases) return index;
+
+        // Discover the root name from the model if available; fallback to "GEAR"
+        const rootName = String(
+            opts.rootName ?? (window.gdxa?.name || 'GEAR')
+        ).trim();
+        const rootLC = rootName.toLowerCase();
+
+        // Canonicalize "A- B -C" -> ["A","B","C"]; join back as "A - B - C"
+        const splitPath = (raw) =>
+            String(raw).split(/\s*-\s*/g).map(s => s.trim()).filter(Boolean);
+        const joinPath = (parts) => parts.join(' - ');
+
+        // Ensure the path starts with the root; don’t double-prefix if already present (case-insensitive)
+        const normalizePath = (raw) => {
+            const parts = splitPath(raw);
+            if (!parts.length) return rootName; // degenerate case
+            if (parts[0].toLowerCase() !== rootLC) parts.unshift(rootName);
+            return joinPath(parts);
+        };
+
+        for (const [phaseName, phase] of Object.entries(data.phases)) {
+            const phaseKey = String(phaseName);
+            const suppliers = phase?.suppliers || {};
+            for (const sup of Object.values(suppliers)) {
+                const engagements = sup?.engagements || [];
+                for (const eng of engagements) {
+                    const layers = eng?.layers || [];
+                    for (const raw of layers) {
+                        const path = normalizePath(raw); // prepend "GEAR - " if missing
+                        if (!index.has(path)) index.set(path, {});
+                        const bucket = index.get(path);
+                        if (!bucket[phaseKey]) bucket[phaseKey] = {count: 0, engagements: []};
+                        bucket[phaseKey].count += 1;
+                        bucket[phaseKey].engagements.push({
+                            supplier: sup.name || "",
+                            "name": eng.name || "",
+                            element: eng.element || "",
+                            description: eng.description || ""
+                        });
+                    }
+                }
+            }
+        }
+        return index;
+    }
+
+    // Find the nearest *rendered* group for a full path by walking up its ancestors
+    function getNearestVisibleGroup(svgEl, fullPath) {
+        if (!svgEl || !fullPath) return null;
+        const parts = fullPath.split(" - ").map(s => s.trim()).filter(Boolean);
+        // Try full -> parent -> grandparent -> ...
+        for (let end = parts.length; end >= 1; end--) {
+            const candidate = parts.slice(0, end).join(" - ");
+            const g = svgEl.querySelector(`g.layer-group[data-path="${CSS.escape(candidate)}"]`);
+            if (g) return {group: g, visiblePath: candidate};
+        }
+        // If nothing, it means the path is outside the current root; ignore.
+        return null;
+    }
+
+    // Draw a 2.5D map-pin at (cx, cy). Shows number only if count > 1.
+    // Returns the <g> created.
+    function drawPin(svgEl, parentGroup, {phaseName, color, cx, cy, count = 1}) {
+        const r = 15;          // bubble radius
+        const tipH = 10;       // pointer height (a touch taller with r=15)
+        const stroke = shade(color, 0.50);
+        const fill = ensurePinGradient(svgEl, `grad-${parentGroup.id}-${phaseName}`, color);
+
+        const pinG = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        pinG.setAttribute('class', 'overlay-pin');
+        pinG.setAttribute('filter', 'url(#pinShadow)');
+
+        // Bubble
+        const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        c.setAttribute('cx', cx);
+        c.setAttribute('cy', cy);
+        c.setAttribute('r', r);
+        c.setAttribute('fill', fill);
+        c.setAttribute('stroke', stroke);
+        c.setAttribute('stroke-width', '2');
+        pinG.appendChild(c);
+
+        // Pointer (width scales with r)
+        const base = Math.max(6, Math.round(r * 0.45));
+        const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        const left = `${cx - base},${cy + r - 2}`;
+        const mid = `${cx},${cy + r + 2}`;
+        const right = `${cx + base},${cy + r - 2}`;
+        const tip = `${cx},${cy + r + tipH}`;
+        p.setAttribute('d', `M ${left} L ${mid} L ${right} L ${tip} Z`);
+        p.setAttribute('fill', shade(color, 0.45));
+        p.setAttribute('stroke', stroke);
+        p.setAttribute('stroke-width', '1.25');
+        pinG.appendChild(p);
+
+        // Highlight
+        const hl = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        hl.setAttribute('cx', cx - r * 0.35);
+        hl.setAttribute('cy', cy - r * 0.35);
+        hl.setAttribute('r', r * 0.38);
+        hl.setAttribute('fill', '#ffffff');
+        hl.setAttribute('opacity', '0.35');
+        pinG.appendChild(hl);
+
+        // Count (only if > 1): larger and black, with white outline for legibility
+        if (count > 1) {
+            const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+            t.setAttribute('x', cx);
+            t.setAttribute('y', cy + 4);
+            t.setAttribute('text-anchor', 'middle');
+            t.setAttribute('font-size', '13');     // larger text
+            t.setAttribute('font-weight', '800');
+            t.setAttribute('fill', '#000');       // black as requested
+            // outline for contrast on bright fills
+            t.setAttribute('stroke', '#fff');
+            t.setAttribute('stroke-width', '0.8');
+            t.setAttribute('paint-order', 'stroke');
+            t.textContent = String(count);
+            pinG.appendChild(t);
+        }
+
+        parentGroup.appendChild(pinG);
+        return pinG;
+    }
+
+
+    // Place many phase pins at the upper-left, wrapping to new rows as needed.
+    function addPinsForNode(svgEl, group, phases) {
+        const rect = group.querySelector('rect');
+        if (!rect || !PHASE_THEME) return;
+
+        // Clear any previous pins on this group
+        group.querySelectorAll('.overlay-pin').forEach(n => n.remove());
+
+        const x = +rect.getAttribute('x');
+        const y = +rect.getAttribute('y');
+        const w = +rect.getAttribute('width');
+
+        // Layout constants (tuned for r=15)
+        const margin = 8;                 // padding from edges
+        const r = 15, tipH = 10;
+        const pinW = r * 2;               // nominal horizontal footprint
+        const gap = 8;                   // horizontal gap between pins
+        const rowH = r + tipH + 8;        // vertical step between rows
+
+        const xLeft = x + margin;
+        const xRight = x + w - margin;
+
+        let row = 0;
+        let xCursor = xLeft;
+
+        // Keep the phase order consistent via PHASE_THEME.order
+        PHASE_THEME.order.forEach(phaseName => {
+            const bucket = phases[phaseName];
+            const count = (bucket?.count | 0);
+            if (!bucket || count <= 0) return;
+
+            // Wrap if the next pin would overflow the right margin
+            if (xCursor + pinW > xRight) {
+                row += 1;
+                xCursor = xLeft;
+            }
+
+            const cx = xCursor + r;                   // center of the bubble
+            const cy = y + margin + r + row * rowH;   // top-left start with margin
+
+            const color = PHASE_THEME.styles[phaseName]?.stroke || '#2b2b2b';
+            const pin = drawPin(svgEl, group, {phaseName, color, cx, cy, count});
+
+            // Tooltip with engagement snippets
+            const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+            const lines = [];
+            lines.push(`${phaseName}: ${count} engagement${count > 1 ? 's' : ''}`);
+            bucket.engagements?.slice(0, 6).forEach(e => {
+                lines.push(` • ${e.name}${e.supplier ? ' (' + e.supplier + ')' : ''}`);
+            });
+            if ((bucket.engagements?.length || 0) > 6) lines.push(' …');
+            title.textContent = lines.join('\n');
+            pin.prepend(title);
+
+            xCursor += (pinW + gap); // advance to next slot
+        });
+    }
+
+    // Apply overlay, bubbling to the nearest visible node for each referenced path
+    // Apply overlay: aggregate to nearest visible ancestor, then drop pins (no outlines/badges)
+    // ===== App wiring =====
+    const container = document.getElementById('graph2d');
+    const breadcrumbEl = document.getElementById('breadcrumb');
+    const descEl = document.getElementById('description-panel');
+
+    // Toolbar controls
+    const fileInput = document.getElementById('file-input');
+    const btnAdd = document.getElementById('btn-add');
+    const dropzone = document.getElementById('dropzone');
+    const btnRemove = document.getElementById('btn-remove');
+    const btnClear = document.getElementById('btn-clear');
+    const btnDepthDec = document.getElementById('btn-depth-dec');
+    const btnDepthInc = document.getElementById('btn-depth-inc');
+    const btnReset = document.getElementById('btn-reset');
+    const btnExport = document.getElementById('btn-export');
+    const custNameEl = document.getElementById('customer-name');
+
+    let rootLayer = null;   // current zoom root
+    let currentDepth = 2;     // how many levels to show (controls wired)
+    let customerOverlay = null; // holds parsed customer JSON
+
+    function render() {
+        if (!rootLayer) return;
+        const svgMarkup = generateSVG(rootLayer, 2400, 1400, currentDepth);
+        container.innerHTML = svgMarkup;
+
+        const svgEl = container.querySelector('svg');
+        if (getCustomerData()) {
+            applyOverlay(svgEl, getCustomerData(), MODEL, rootLayer, currentDepth);
+        } else {
+            clearOverlay(svgEl);
+        }
+
+
+        // wire clicks for selection and double clicks for zoom
+        container.querySelectorAll('.layer-group').forEach(g => {
+            g.addEventListener('click', (ev) => {
+                ev.stopPropagation();
+                const rect = g.querySelector('rect');
+                const textEl = g.querySelector('text');
+                const id = g.getAttribute('data-layer-name');
+                if (rect && textEl && id) _selectLayer(container, id, rect, textEl);
+
+                const layerName = id;
+                const selectedLayer = _findLayer(window.gdxa, layerName);
+                if (selectedLayer && selectedLayer.description) {
+                    descEl.innerHTML = selectedLayer.description;
+                }
+            });
+
+            g.addEventListener('dblclick', (ev) => {
+                ev.stopPropagation();
+                const layerName = g.getAttribute('data-layer-name');
+                if (!layerName) return;
+                // Use the path on the clicked group to get the model node exactly
+                const path = g.getAttribute('data-path');
+                const layer = MODEL?.byPath.get(path);
+
+                if (layer) {
+                    rootLayer = layer;
+                    buildBreadcrumb(layer);
+                    render();
+                }
+            });
+        });
+    }
+
+    function _selectLayer(container, id, rect, textEl) {
+        container.querySelectorAll('rect[fill-original]').forEach(r => {
+            const orig = r.getAttribute('fill-original');
+            r.setAttribute('fill', orig);
+            const t = r.parentElement.querySelector('text');
+            if (t) t.setAttribute('fill', getFontColor(orig));
+        });
+        rect.setAttribute('fill', '#ffff00');
+        if (textEl) textEl.setAttribute('fill', '#000000');
+    }
+
+    function buildBreadcrumb(layer) {
+        // Build array from root -> ... -> current
+        const chain = [];
+        let ptr = layer;
+        while (ptr) {
+            chain.unshift(ptr);
+            ptr = (ptr.parent && ptr.parent[0]) || null;
+        }
+
+        breadcrumbEl.innerHTML = '';
+        chain.forEach((node, idx) => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.textContent = node.name || 'O-DXA';
+            btn.setAttribute('aria-current', idx === chain.length - 1 ? 'page' : 'false');
+            btn.addEventListener('click', () => {
+                const target = _findLayer(window.gdxa, node.name);
+                if (target) {
+                    rootLayer = target;
+                    render();
+                    buildBreadcrumb(target);
+                }
+            });
+            breadcrumbEl.appendChild(btn);
+            if (idx < chain.length - 1) {
+                const sep = document.createElement('span');
+                sep.className = 'sep';
+                sep.textContent = '›';
+                breadcrumbEl.appendChild(sep);
+            }
+        });
+
+        // Ensure top “GEAR”
+        if (!chain.length || chain[0].name !== 'O-DXA') {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.textContent = 'O-DXA';
+            btn.addEventListener('click', () => {
+                rootLayer = window.gdxa;
+                render();
+                buildBreadcrumb(window.gdxa);
+            });
+            breadcrumbEl.prepend(btn, Object.assign(document.createElement('span'), {
+                classname: 'sep',
+                textContent: '›'
+            }));
+        }
+    }
+
+    // ===== Toolbar wiring =====
+    btnAdd.addEventListener('click', () => fileInput.click());
+    fileInput.addEventListener('change', async (e) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+        if (file) await loadCustomerFile(file);
+    });
+
+    // Drag & drop
+    ;['dragenter', 'dragover'].forEach(evt =>
+        dropzone.addEventListener(evt, (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            dropzone.classList.add('dragover');
+        })
+    );
+    ;['dragleave', 'drop'].forEach(evt =>
+        dropzone.addEventListener(evt, (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            dropzone.classList.remove('dragover');
+        })
+    );
+    dropzone.addEventListener('drop', async (e) => {
+        const file = e.dataTransfer?.files?.[0];
+        if (file) await loadCustomerFile(file);
+    });
+
+    async function loadCustomerFile(file) {
+        try {
+            const txt = await file.text();
+            const data = JSON.parse(txt);
+
+            setCustomerData(data);
+            custNameEl.textContent = data.name;
+            btnRemove.disabled = false;
+            render();
+        } catch (err) {
+            alert('Failed to parse JSON: ' + (err?.message || err));
+        }
+    }
+
+    btnRemove.addEventListener('click', () => {
+        setCustomerData(null);
+        custNameEl.textContent = 'none';
+        btnRemove.disabled = true;
+        render();
+    });
+
+    btnClear.addEventListener('click', () => {
+        // clear selection + description
+        descEl.textContent = 'Cleared.';
+        // re-render to reset yellow highlight
+        render();
+    });
+
+
+    btnReset.addEventListener('click', () => {
+        rootLayer = window.gdxa;
+        buildBreadcrumb(rootLayer);
+        render();
+    });
+
+    btnExport.addEventListener('click', () => {
+        const svg = container.querySelector('svg');
+        if (!svg) return;
+        const xml = new XMLSerializer().serializeToString(svg);
+        const svgBlob = new Blob([xml], {type: 'image/svg+xml;charset=utf-8'});
+        // Draw to canvas -> PNG
+        const url = URL.createObjectURL(svgBlob);
+        const img = new Image();
+        img.onload = () => {
+            const canvas = document.createElement('canvas');
+            // Choose export resolution (2x the viewBox for a crisp image)
+            const vb = svg.viewBox.baseVal;
+            canvas.width = vb.width * 2;
+            canvas.height = vb.height * 2;
+            const ctx = canvas.getContext('2d');
+            ctx.imageSmoothingEnabled = true;
+            ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+            URL.revokeObjectURL(url);
+            canvas.toBlob((blob) => {
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = 'gear-view.png';
+                a.click();
+                URL.revokeObjectURL(a.href);
+            }, 'image/png');
+        };
+        img.src = url;
+    });
+
+    // ===== Boot: load and normalize once =====
+    let MODEL = null;
+
+    (function bootWhenReady() {
+        if (window.gdxa) {
+            MODEL = normalizeModel(window.gdxa);
+            rootLayer = MODEL.root;
+            buildBreadcrumb(rootLayer);
+            render();
+        } else {
+            setTimeout(bootWhenReady, 20);
+        }
+    })();
+
+</script>
+</body>
+</html>
