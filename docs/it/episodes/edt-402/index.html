@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://embracingdigital.org/" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Dynamic Title / Meta -->
+    <title>How Semiconductor Innovation Keeps Moore’s Law Alive | Embracing Digital Transformation</title>
+    <meta name="description" content="This episode argues that chips are not a background utility; they are a central constraint and enabler in modern digital strategy. Rakesh Kumar explains how the industry has kept scaling through packaging, layering, specialization, and new compute models, while also facing real limits in power, cost, and manufacturing economics.">
+    
+    
+    <link rel="canonical" href="https://embracingdigital.org/it/episodes/edt-402/">
+    
+
+    <!-- Preconnect & CSS -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="How Semiconductor Innovation Keeps Moore’s Law Alive | Embracing Digital Transformation">
+    <meta property="og:description" content="This episode argues that chips are not a background utility; they are a central constraint and enabler in modern digital strategy. Rakesh Kumar explains how the industry has kept scaling through packaging, layering, specialization, and new compute models, while also facing real limits in power, cost, and manufacturing economics.">
+    <meta property="og:url" content="https://embracingdigital.org/it/episodes/edt-402/">
+    <meta property="og:image" content="https://embracingdigital.org/it/episodes/edt-402/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How Semiconductor Innovation Keeps Moore’s Law Alive | Embracing Digital Transformation">
+    <meta name="twitter:description" content="This episode argues that chips are not a background utility; they are a central constraint and enabler in modern digital strategy. Rakesh Kumar explains how the industry has kept scaling through packaging, layering, specialization, and new compute models, while also facing real limits in power, cost, and manufacturing economics.">
+    <meta name="twitter:image" content="https://embracingdigital.org/it/episodes/edt-402/thumbnail.png">
+
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4XHVE79DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-P4XHVE79DL');
+    </script>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"Organization",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "logo":"https://embracingdigital.org/images/logo.png",
+            "sameAs":[
+                "https://www.youtube.com/@embracingdigital",
+                "https://www.linkedin.com/company/embracingdigital"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"WebSite",
+            "name":"Embracing Digital Transformation",
+            "url":"https://embracingdigital.org/",
+            "potentialAction":{
+                "@type":"SearchAction",
+                "target":"https://embracingdigital.org/it/search.html?query={query}",
+                "query-input":"required name=query"
+            }
+        }
+    </script>
+</head>
+
+<body>
+<header class="site-header" role="banner">
+    <div class="header-inner">
+        <!-- Brand -->
+        <div class="brand">
+            <a class="brand-link" href="/it/home/" aria-label="Embracing Digital home">
+                <img src="/images/logo.png" alt="Embracing Digital Transformation logo" class="site-icon">
+                <span class="brand-text">Embracing Digital</span>
+            </a>
+        </div>
+    </div>
+
+    <nav id="primary-nav" aria-label="Primary">
+        <!-- Main nav (left) -->
+        <ul class="nav-main">
+            <li>
+                <a href="/it/home/"
+                >
+                Home
+                </a>
+            </li>
+
+            <!-- Guidance (Shows / weekly arc) -->
+            <li class="dropdown">
+                <a href="/it/shows/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Guidance
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/">
+                            Briefings (EDTW)
+                            <small class="nav-note">What changed</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/episodes/">
+                            Interviews (EDT)
+                            <small class="nav-note">How others did it</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/briefs/deepdives.html">
+                            Architectural Deep Dives
+                            <small class="nav-note">What to do next</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Learn (Documentation / learning library) -->
+            <li class="dropdown">
+                <a href="/it/digital-transformation/"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Learn
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/">
+                            Digital Transformation
+                            <small class="nav-note">Overview</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/pillars/">
+                            Pillars
+                            <small class="nav-note">AI, Cyber, Data, Edge, Computing, Comms</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/odxa/">
+                            ODXA
+                            <small class="nav-note">Domains &amp; mappings</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/whitepapers/">
+                            Whitepapers
+                            <small class="nav-note">Monthly canonical synthesis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/digital-transformation/articles/">
+                            Articles
+                            <small class="nav-note">Explainers &amp; analysis</small>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="/it/lectures/">
+                            Lectures (DTA)
+                            <small class="nav-note">Learning series</small>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/it/intelligence/"
+                >
+                Intelligence
+                </a>
+            </li>
+
+            <!-- Community -->
+            <li class="dropdown">
+                <a href="/it/community.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                Community
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/community.html">Community</a></li>
+                    <li role="none"><a role="menuitem" href="/it/newsletter.html">Newsletter</a></li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.patreon.com/embracingdigital" target="_blank" rel="noopener">
+                            Patreon
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a role="menuitem" href="https://www.linkedin.com/company/embracing-digital-transformation" target="_blank" rel="noopener">
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- About (also holds Sponsors + Shop to keep top-level count low) -->
+            <li class="dropdown">
+                <a href="/it/about.html"
+                   aria-haspopup="true"
+                   aria-expanded="false"
+                >
+                About
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="none"><a role="menuitem" href="/it/about.html">About</a></li>
+                    <li role="none"><a role="menuitem" href="/it/host.html">Host</a></li>
+                    <li role="none"><a role="menuitem" href="/it/sponsors/">Sponsors</a></li>
+                    <li role="none"><a role="menuitem" href="https://6704f0-2.myshopify.com/" target="_blank" rel="noopener">Shop</a></li>
+                </ul>
+            </li>
+
+            <!-- Search -->
+            <li>
+                <a href="/it/search.html"
+                >
+                Search
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+        <li><a href="/it/">Home</a></li>
+        <li><a href="/it/episodes/">Episodes</a></li>
+        <li aria-current="page">Episode 402: How Semiconductor Innovation Keeps Moore’s Law Alive</li>
+    </ol>
+</nav>
+
+<main id="main" role="main">
+    <article class="episode-container" itemscope itemtype="https://schema.org/PodcastEpisode">
+
+        <header id="one-episode">
+            
+                <link itemprop="url" href="https://embracingdigital.org/it/episodes/edt-402/">
+                <meta itemprop="mainEntityOfPage" content="https://embracingdigital.org/it/episodes/edt-402/"/>
+            
+
+            <h1 id="episode-title" itemprop="name">
+                <span class="episode-number">Episode 402</span>
+                <span class="episode-title">How Semiconductor Innovation Keeps Moore’s Law Alive</span>
+            </h1>
+
+            <p class="episode-meta">
+                
+                    <time datetime="2026-11-17" itemprop="datePublished">2026-11-17</time>
+                
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Dr. Darren Pulsipher">
+          Hosted by <span class="host-name">Dr. Darren Pulsipher</span>
+        </span>
+            </p>
+            <meta itemprop="episodeNumber" content="402"/>
+            <meta itemprop="inLanguage" content="it"/>
+        </header>
+
+        
+
+        <div id="episode-media" data-release-date="2026-11-17" data-publication-status="">
+            
+                <section class="video-container" aria-label="Watch the episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/VideoObject"
+                         >
+                    <meta itemprop="name" content="How Semiconductor Innovation Keeps Moore’s Law Alive Video">
+                    <meta itemprop="embedUrl" content="https://www.youtube.com/embed/watch?v=iLJA3NMhMpI">
+                    <iframe
+                            width="auto"
+                            height="auto"
+                            src="https://www.youtube.com/embed/watch?v=iLJA3NMhMpI"
+                            title="How Semiconductor Innovation Keeps Moore’s Law Alive Video"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                    ></iframe>
+                </section>
+            
+
+            
+                <section class="podcast-container" aria-label="Listen to this episode"
+                         itemprop="associatedMedia" itemscope itemtype="https://schema.org/AudioObject"
+                         >
+                    <meta itemprop="name" content="How Semiconductor Innovation Keeps Moore’s Law Alive Audio">
+                    <meta itemprop="contentUrl" content="https://share.transistor.fm/s/a7cac963">
+                    <iframe
+                            width="100%"
+                            height="180"
+                            frameborder="0"
+                            scrolling="no"
+                            src="https://share.transistor.fm/e/a7cac963"
+                            title="How Semiconductor Innovation Keeps Moore’s Law Alive Audio"
+                            loading="lazy"
+                    ></iframe>
+
+                    <p class="listen-note">
+                        Explore more in the <a href="/it/episodes/">episode archive</a>.
+                    </p>
+                </section>
+            
+
+            
+        </div>
+
+        <section class="show-summary" aria-label="Episode summary" itemprop="description">
+            <h2>Summary</h2>
+            <p>This episode argues that chips are not a background utility; they are a central constraint and enabler in modern digital strategy. Rakesh Kumar explains how the industry has kept scaling through packaging, layering, specialization, and new compute models, while also facing real limits in power, cost, and manufacturing economics.</p>
+
+
+            
+            <nav class="tags" aria-label="Tags">
+                
+                <a href="../../it/search.html?query=semiconductors"
+                   itemprop="keywords">semiconductors</a>
+                
+                <a href="../../it/search.html?query=chips"
+                   itemprop="keywords">chips</a>
+                
+                <a href="../../it/search.html?query=Moore&#39;s%20Law"
+                   itemprop="keywords">Moore&#39;s Law</a>
+                
+                <a href="../../it/search.html?query=AI%20chips"
+                   itemprop="keywords">AI chips</a>
+                
+                <a href="../../it/search.html?query=advanced%20packaging"
+                   itemprop="keywords">advanced packaging</a>
+                
+                <a href="../../it/search.html?query=GPU"
+                   itemprop="keywords">GPU</a>
+                
+                <a href="../../it/search.html?query=quantum%20computing"
+                   itemprop="keywords">quantum computing</a>
+                
+                <a href="../../it/search.html?query=digital%20transformation"
+                   itemprop="keywords">digital transformation</a>
+                
+            </nav>
+            
+
+            
+            <div class="guests" aria-label="Guests">
+                
+                <span itemprop="actor" itemscope itemtype="https://schema.org/Person">
+              <a href="/it/guests/rakesh-kumar/" itemprop="url">
+                <span itemprop="name">Rakesh Kumar</span>
+              </a>
+            </span>
+                
+            </div>
+            
+        </section>
+
+        <section class="show-notes" aria-label="Show notes">
+            <h1>Why Chips Still Matter: The Tiny Technology Powering Modern Transformation</h1>
+<p>Semiconductors are easy to overlook because they are everywhere. They sit inside phones, cars, medical devices, cloud systems, aircraft, and the infrastructure that keeps modern business moving. But as Rakesh explains, chips are not just another component in the technology stack—they are the foundation of computing itself, and increasingly, the foundation of AI, connectivity, logistics, and national competitiveness.</p>
+<p>What makes the topic especially relevant for technology leaders is that chips are no longer just getting smaller. They are being redesigned, stacked, packaged differently, and specialized for new workloads. That means the chip industry is not only shaping what systems can do today, but also influencing how businesses will build, buy, and scale technology in the years ahead.</p>
+<h2>From a Small Town to the Core of the Chip Industry</h2>
+<p>Rakesh’s path into semiconductors was anything but linear. He grew up in a small town in India, studied computer science without much early exposure to computers, and then discovered an interest in the organization and design of computing systems. During college, he even took on freelance work for companies in Europe before the dot-com bust pushed him toward graduate school.</p>
+<p>That detour became the turning point. Once he began researching chips, he was hooked by their complexity and by the scale of collaboration required to make them work. His description is useful for non-engineers: a chip is essentially a tiny brain made up of microscopic switches. Those switches are smaller than viruses, yet billions of them are packed into devices no larger than a thumbnail.</p>
+<p>The scale of the industry is staggering. These chips are manufactured in ultra-clean facilities that can cost $20 billion to $30 billion to build. Rakesh notes that chip fabs are among the most expensive factories in the world, and the production environment is far cleaner than an operating theater. In other words, semiconductors sit at the intersection of physics, chemistry, and engineering at the highest level.</p>
+<h2>Moore’s Law Is Evolving, Not Ending</h2>
+<p>The conversation returns often to Moore’s Law, the observation by Intel co-founder Gordon Moore that the number of switches on a chip seemed to double every couple of years. Rakesh is careful to point out that it began as an observation, not a law of nature. But the industry took it as a challenge and sustained that pace for decades.</p>
+<p>Today, that challenge has become more difficult. Transistors can no longer be shrunk at the same pace. Rather than stop, the industry has responded by building upward and outward. Stacking chips in the third dimension and using advanced packaging now allow designers to combine multiple chips into a single system. That can bring together different types of silicon—logic, memory, analog, and power—much more efficiently than a traditional board-level design.</p>
+<p>This is where the city-planning analogy helps. If a city cannot expand outward, it grows vertically. If a chip can no longer shrink in one dimension, the industry can stack layers or stitch multiple chips together to reduce distance, friction, and latency. The result is not the end of progress, but a different kind of progress.</p>
+<h2>AI, Specialized Chips, and the Next Wave of Computing</h2>
+<p>For executives, the biggest takeaway may be how deeply chips and AI now depend on one another. AI needs enormous computing power, and that demand has accelerated investment in chips built for AI workloads. Today, many AI systems run on GPUs, which were originally designed for graphics and video games. Their parallel processing capabilities turned out to be ideal for AI.</p>
+<p>That history matters because it shows how innovation often emerges from repurposing existing technology. But Rakesh believes the market is now moving toward even more specialized chips, designed for particular AI models or tasks. At the same time, he expects some consolidation: many designs will appear, but not all will survive. The likely outcome is a smaller set of winners around which the market coalesces.</p>
+<p>Looking further ahead, he sees pressure to make computing more energy efficient. Training large AI models can require hundreds of thousands of GPUs and power loads comparable to a mid-sized city. That is not sustainable long term. As a result, he expects continued experimentation with stacked chips, biology-inspired architectures such as neuromorphic computing, and eventually quantum computing for problems that are still intractable today—such as material discovery and some kinds of simulation.</p>
+<p>The chip industry is moving fast, but it is also shaping the future at a foundational level. If you want a deeper view into where it has been and where it is headed, listen to the full conversation.</p>
+
+        </section>
+
+        
+
+    </article>
+</main>
+
+<!-- Structured Data -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "@id": "https://embracingdigital.org/it/episodes/#series",
+  "name": "Embracing Digital Transformation",
+  "url": "https://embracingdigital.org/it/episodes/",
+  "inLanguage": "it",
+  "description": "A podcast about the digital transformation of the world.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://embracingdigital.org/#org",
+    "name": "Embracing Digital Transformation",
+    "url": "https://embracingdigital.org",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://embracingdigital.org/images/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "PodcastEpisode",
+  "@id": "https://embracingdigital.org/it/episodes/edt-402/#episode",
+  "url": "https://embracingdigital.org/it/episodes/edt-402/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://embracingdigital.org/it/episodes/edt-402/"
+  },
+  "name": "How Semiconductor Innovation Keeps Moore’s Law Alive",
+  "episodeNumber": 402,
+  "datePublished": "2026-11-17",
+  "inLanguage": "it",
+  "description": "This episode argues that chips are not a background utility; they are a central constraint and enabler in modern digital strategy. Rakesh Kumar explains how the industry has kept scaling through packaging, layering, specialization, and new compute models, while also facing real limits in power, cost",
+  "partOfSeries": {
+    "@id": "https://embracingdigital.org/it/episodes/#series"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Dr. Darren Pulsipher"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://embracingdigital.org/it/episodes/edt-402/thumbnail.png"
+  },
+  "associatedMedia": [
+    {
+      "@type": "VideoObject",
+      "name": "How Semiconductor Innovation Keeps Moore’s Law Alive Video",
+      "embedUrl": "https://www.youtube.com/embed/watch?v=iLJA3NMhMpI"
+    },
+    {
+      "@type": "AudioObject",
+      "name": "How Semiconductor Innovation Keeps Moore’s Law Alive Audio",
+      "contentUrl": "https://share.transistor.fm/s/a7cac963"
+    }
+  ],
+  "actor": [
+    {
+      "@type": "Person",
+      "name": "Rakesh Kumar",
+      "url": "https://embracingdigital.org/it/guests/rakesh-kumar/"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://embracingdigital.org/it/home/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Episodes",
+      "item": "https://embracingdigital.org/it/episodes/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How Semiconductor Innovation Keeps Moore’s Law Alive",
+      "item": "https://embracingdigital.org/it/episodes/edt-402/"
+    }
+  ]
+}</script>
+
+<footer id="footer">
+    <div class="footer-content">
+        <p>Copyright &copy; <span id="y"></span> Paidar Productions LLC</p>
+        <p>All rights reserved</p>
+    </div>
+</footer>
+
+<script>
+    // year
+    (function(){ var y=document.getElementById('y'); if(y){ y.textContent = new Date().getFullYear(); } })();
+
+    const nav = document.querySelector('nav#primary-nav');
+    if (nav) {
+        // Dropdowns: tap/click + keyboard
+        document.querySelectorAll('li.dropdown > a').forEach(link => {
+            const li = link.parentElement;
+            const submenu = li.querySelector('.dropdown-menu');
+
+            link.addEventListener('click', (e) => {
+                if (!submenu) return;
+                e.preventDefault();
+
+                // close others
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    if (a !== link) {
+                        a.setAttribute('aria-expanded', 'false');
+                        a.parentElement.classList.remove('open');
+                    }
+                });
+
+                const isOpen = li.classList.toggle('open');
+                link.setAttribute('aria-expanded', String(isOpen));
+            });
+
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); submenu?.querySelector('a')?.focus(); }
+                if (e.key === 'Escape')    { li.classList.remove('open'); link.setAttribute('aria-expanded','false'); link.focus(); }
+            });
+        });
+
+        // Close dropdowns on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                document.querySelectorAll('li.dropdown.open > a').forEach(a => {
+                    a.setAttribute('aria-expanded','false');
+                    a.parentElement.classList.remove('open');
+                });
+            }
+        });
+    }
+</script>
+
